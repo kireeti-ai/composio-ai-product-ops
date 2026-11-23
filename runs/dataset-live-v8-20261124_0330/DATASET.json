@@ -1,5 +1,5 @@
 {
- "created": "2026-11-23T23:04:43+0530",
+ "created": "2026-11-23T23:08:07+0530",
  "registry_source": "supplied Notion export; see runs/registry-lock-v1-20261123_2110/RECONCILIATION.json",
  "registry_sha256": "98d8aa537105ddc34ce4785a4b192a14a338f1e1a7e96bf9f95a69c5a97e1120",
  "note": "lexical evidence validation only; no accuracy claim; human_review blank | v7: manual_research now source-quoted (refetched, claim-audited) for 46 unextracted positions; claim_review = model-reviewed verdicts for 229 flagged claims (not human-verified). | v8: adds manual_research.profile (normalised enums) for 46 positions",
@@ -3137,7 +3137,7 @@
      {
       "field": "buildability",
       "value": "Yes: REST with admin-created bearer token, region-specific base URLs",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "US region: https://api.usepylon.com EU region: https://api.eu.usepylon.com",
       "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
@@ -4879,7 +4879,7 @@
      {
       "field": "buildability",
       "value": "Yes, conditional on tenant-admin approval of requested scopes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "**\u4f01\u4e1a\u81ea\u5efa\u5e94\u7528**\uff1a\u5e94\u7528\u5f00\u53d1\u8005\u7533\u8bf7\u7684\u6743\u9650\u9700\u8981\u901a\u8fc7 **\u79df\u6237\u7ba1\u7406\u5458** \u7684\u5ba1\u6838\u3002",
       "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
@@ -6308,7 +6308,7 @@
      {
       "field": "buildability",
       "value": "Conditional: production use requires Explorer/Basic/Standard approval of the Cloud project",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "conditional",
       "quote": "Explorer access (automated review and approval in\nmost cases, for up to 2,880 operations per day against production accounts)",
       "url": "https://developers.google.com/google-ads/api/docs/access-levels",
@@ -7442,7 +7442,7 @@
      {
       "field": "buildability",
       "value": "Yes with an account and API key",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "your only option right now is to attach your API key to the X-API-Key header of each request",
       "url": "https://developer.systeme.io/reference/api",
@@ -7965,7 +7965,7 @@
      {
       "field": "buildability",
       "value": "Yes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "include an Authorization header with the value Bearer <YOUR_API_KEY_HERE>",
       "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
@@ -8469,7 +8469,7 @@
      {
       "field": "buildability",
       "value": "Yes, but credentials are per merchant store; no central tenant",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "go to WooCommerce > Settings > Advanced > REST API.",
       "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
@@ -9058,7 +9058,7 @@
      {
       "field": "buildability",
       "value": "Conditional on deployment model (different auth in self-hosted vs SaaS)",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "The traditional admin and integration token generation methods is not supported in SaaS environments.",
       "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
@@ -9649,7 +9649,7 @@
      {
       "field": "buildability",
       "value": "Yes (self-serve account + OAuth app)",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "You\u2019ll need a Gumroad account and an assistant that supports MCP.",
       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/views/mcp_connectors/index.html.erb",
@@ -10695,7 +10695,7 @@
      {
       "field": "buildability",
       "value": "Yes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "Include your API token in the x-api-token HTTP header on every request:",
       "url": "https://docs.mrscraper.com/docs/api/authentication",
@@ -10874,7 +10874,7 @@
      {
       "field": "buildability",
       "value": "yes (no blocker found)",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "To access the Apify API in your integrations, you need to authenticate using your secret API token.",
       "url": "https://docs.apify.com/platform/integrations/api",
@@ -11226,7 +11226,7 @@
      {
       "field": "buildability",
       "value": "yes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "Every new account includes 5,000 free requests per month.",
       "url": "https://docs.brightdata.com/products/mcp-server/overview",
@@ -12651,7 +12651,7 @@
      {
       "field": "buildability",
       "value": "yes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "Create an API token",
       "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
@@ -13254,7 +13254,7 @@
      {
       "field": "buildability",
       "value": "conditional: needs account + role/privilege setup",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "Access to the MCP Server does not give access to the tools. Permission needs to be granted for each tool.",
       "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
@@ -14015,7 +14015,7 @@
      {
       "field": "buildability",
       "value": "yes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "Use a personal access token for scripts, tools, and Workers that run with your Notion permissions.",
       "url": "https://developers.notion.com/guides/get-started/getting-started",
@@ -14389,7 +14389,7 @@
      {
       "field": "buildability",
       "value": "yes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "For personal scripts API keys are the easiest way to access the API.",
       "url": "https://linear.app/developers/graphql",
@@ -14596,7 +14596,7 @@
      {
       "field": "buildability",
       "value": "yes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "Basic authentication",
       "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
@@ -15152,7 +15152,7 @@
      {
       "field": "buildability",
       "value": "yes",
-      "verdict": "researcher_judgement_from_quoted_facts",
+      "verdict": "judgement_from_quoted_facts",
       "original_prior_claim": "yes",
       "quote": "Personal tokens never expire.",
       "url": "https://developer.clickup.com/docs/authentication",

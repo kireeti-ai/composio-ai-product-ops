@@ -101,7 +101,7 @@ def evidence_ledger(rd):
         out["refetch"] = {"quotations": len(quotes), "reproduced": sum(v.startswith("reproduced") for v in quotes.values()),
                           "statuses": {k: sum(v == k for v in quotes.values()) for k in sorted(set(quotes.values()))}}
         out["new_claims"] = {"claims": len(claims), "with_quotation": sum(bool(x["evidence"]) for x in claims),
-                             "verdicts": {k: sum(x["final_verdict"] == k for x in claims) for k in sorted({x["final_verdict"] for x in claims})}}
+                             "verdicts": {k.replace("researcher_judgement", "judgement"): sum(x["final_verdict"] == k for x in claims) for k in sorted({x["final_verdict"] for x in claims})}}
     chk = sorted(glob.glob("runs/human-review-worksheet-*/CLAUDE_INDEPENDENT_CHECK.csv"))
     if chk:
         rows = list(csv.DictReader(open(chk[-1], newline="")))
@@ -174,7 +174,7 @@ def main():
     report_data["registry_provenance"] = registry.get("provenance", {})
     report_data["model_provenance"] = dict(__import__("collections").Counter(
         f'{a["provider_model"]}' for a in report_data["apps"] if a["provider_model"]))
-    report_data["category_names"] = registry["categories"]
+    report_data["category_names"] = [c.replace("Research", "Analysis") for c in registry["categories"]]
 
     template = Path("src/report_template.html").read_text()
     payload = json.dumps(report_data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

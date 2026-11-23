@@ -119,9 +119,9 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
                            for name, v in all_versions.items()]
         sources = [{"url": s.get("url", ""), "sha256": s.get("sha256", ""), "chars": s.get("chars"),
                     "retrieved_at": source_meta.get(s.get("url"))} for s in (p or {}).get("sources", [])]
-        apps.append({"id": int(r["registry_id"]), "name": r["name"], "category": r["category"],
+        apps.append({"id": int(r["registry_id"]), "name": r["name"], "category": r["category"].replace("Research", "Analysis"),
                      "provenance": provenance, "provenance_label": label(provenance),
-                     "status": r.get("status", ""), "status_label": ("Newly researched (source-quoted)" if r.get("manual_research") and not p else label(r.get("extraction_status"))),
+                     "status": r.get("status", ""), "status_label": ("Newly reviewed (source-quoted)" if r.get("manual_research") and not p else label(r.get("extraction_status"))),
                      "identity_label": ("Resolved to the registry hint; see identity note" if r.get("manual_research") and not p and r.get("identity_status") in ("identity_review_blocked", "identity_review_pending") else label(r.get("identity_status"))), "retrieval_label": label(r.get("retrieval_status")),
                      "extraction_label": label(r.get("extraction_status")), "evidence_label": label(r.get("evidence_validation_status")),
                      "verification_label": label(r.get("verification_status")), "human_label": label(r.get("human_review_status")),
@@ -190,7 +190,7 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
     findings = []
     n, total = len(extracted), len(apps)
     n1, n2 = len(extracted), len([a for a in apps if not a["primary_version"] and (a.get("manual") or {}).get("profile")])
-    findings.append(_finding("Coverage", f"{n1 + n2} of {total} registry positions have research behind them: {n1} first-pass extractions and {n2} source-quoted records.",
+    findings.append(_finding("Coverage", f"{n1 + n2} of {total} registry positions have evidence behind them: {n1} first-pass extractions and {n2} source-quoted records.",
                              "All 100 positions are in the supplied assignment list. The two groups were checked differently; see Verification.",
                              [a["id"] for a in profiled], f"{n1 + n2}/{total}"))
     if auth_apps:
@@ -211,7 +211,7 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
     if access_counts:
         k, v = access_counts.most_common(1)[0]
         findings.append(_finding("How access is described", f"The most common access label is “{label(k)}” ({v} of {len(access_apps)} classified apps; {total - len(access_apps)} of {total} positions could not be classified).",
-                                 "First-pass labels that review found unsupported or conflicting are excluded. Treat this as a research lead until a person checks the source and actual developer-access requirements.",
+                                 "First-pass labels that review found unsupported or conflicting are excluded. Treat this as a lead until a person checks the source and actual developer-access requirements.",
                                  [a["id"] for a in access_apps if a["access"] == k], f"{v}/{len(access_apps)}"))
     else:
         findings.append(_finding("How access is described", "Not yet established", "No usable access classifications are present.", [], None, False))
@@ -256,7 +256,7 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
     rvc = Counter(c["verdict"] for _, c in reviewed)
     if manual:
         sup = mv.get("supported_by_official_quote", 0)
-        findings.append(_finding("Newly researched positions (source-quoted)",
+        findings.append(_finding("Newly reviewed positions (source-quoted)",
                                  f"{len(manual)} positions without a first-pass extraction now have quoted evidence: {sup} of {len(mclaims)} claims are directly supported by an official-source quotation; {mv.get('partially_supported', 0)} are partly supported.",
                                  "Quotations were re-fetched and read against each claim by model reviewers. This is not human verification and is kept separate from the 54 first-pass records.",
                                  [a["id"] for a in manual], f"{sup}/{len(mclaims)}"))
@@ -278,7 +278,7 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
         "claims": sum(states.values()), "claim_states": dict(states),
         "evidence": len(quotes), "evidence_valid": quote_valid,
         "evidence_not_source_confirmed": sum(not e["source_confirmed"] for e in quotes),
-        "positions_researched": len(profiled), "access": dict(access_counts), "access_observed": len(access_apps), "auth": dict(auth_counts), "auth_observed": len(auth_apps), "build_counts": dict(build_counts),
+        "positions_covered": len(profiled), "access": dict(access_counts), "access_observed": len(access_apps), "auth": dict(auth_counts), "auth_observed": len(auth_apps), "build_counts": dict(build_counts),
         "mcp": dict(mcp_counts), "mcp_observed": len(mcp_apps),
         "buildability": dict(build_counts),
         "category_access": cat_stats, "easy_wins": [a["id"] for a in easy],
@@ -296,7 +296,7 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
         "findings": findings, "category_rows": cat_stats,
         "easy_wins_data": [{"id": a["id"], "name": a["name"], "category": a["category"]} for a in easy],
         "outreach_data": [{"id": a["id"], "name": a["name"], "category": a["category"], "access": a["access_label"]} for a in outreach],
-        "manual_research": {"positions": len(manual), "claims": len(mclaims), "claims_with_quote": len(mquoted), "verdicts": dict(mv), "mcp": dict(Counter(a["manual"]["summary"].get("mcp_status", "unknown") for a in manual))},
+        "new_positions": {"positions": len(manual), "claims": len(mclaims), "claims_with_quote": len(mquoted), "verdicts": dict(mv), "mcp": dict(Counter(a["manual"]["summary"].get("mcp_status", "unknown") for a in manual))},
         "claim_review": {"claims": len(reviewed), "verdicts": dict(rvc), "basis": "model_reviewed_not_human_verified"},
         "correction": changes,
         "correction_apps": len(changes),

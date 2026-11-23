@@ -1,6 +1,6 @@
 # Composio AI Product Ops take-home: 100-app integration-readiness research
 
-Live case study: https://kireeti-ai.github.io/composio-ai-product-ops-research/ (static copy of `report/index.html`, served from the `gh-pages` branch). Source: https://github.com/kireeti-ai/composio-ai-product-ops-research. Self-contained case study file: [`report/index.html`](report/index.html) (open it in a browser; no server needed). Rebuilt from the saved audit data, never hand-edited.
+Live case study: https://kireeti-ai.github.io/composio-ai-product-ops/ (static copy of `report/index.html`, served from the `gh-pages` branch). Source: https://github.com/kireeti-ai/composio-ai-product-ops. Self-contained case study file: [`report/index.html`](report/index.html) (open it in a browser; no server needed). Rebuilt from the saved audit data, never hand-edited.
 
 ## Status (read before relying on any number)
 
@@ -11,7 +11,7 @@ Headline findings are computed over all 100 positions (54 first-pass extractions
 |---|---|
 | Registry | 100 apps, matched to the supplied Notion export (`data/apps.json`, lock record in `runs/registry-lock-v1-20261123_2110/`) |
 | First-pass extractions | 54 of 100 positions (model-extracted, lexically quote-checked; a quote match is not factual verification) |
-| Newly researched | 46 of 100 positions: 332 claims, 424 distinct quotations, 411 re-fetched successfully (`runs/evidence-capture-v1-20261123_2359/`) |
+| Newly reviewed | 46 of 100 positions: 332 claims, 424 distinct quotations, 411 re-fetched successfully (`runs/evidence-capture-v1-20261123_2359/`) |
 | Model review | 229 flagged first-pass claims and all new claims reviewed by model reviewers. **Not human verification.** |
 | Human verification | 30-claim worksheet prepared, **0 labelled** (`runs/human-review-worksheet-v1-20261124/`). No accuracy figure is claimed. |
 | Composio | Connect MCP infrastructure calls work (4 of 4); 1 real application-toolkit operation succeeded (GitHub, read-only); the SDK client is not authenticated (see below) |
@@ -26,7 +26,7 @@ python3 -I src/build_report.py runs/dataset-live-v8-20261124_0330/DATASET.json r
 
 Credentials live in a local `.env` (git-ignored; never commit it). Variables: `COMPOSIO_API_KEY` (Composio Connect key), optional `COMPOSIO_SDK_API_KEY` (SDK project key) and `COMPOSIO_USER_ID`. Groq extraction is paused; nothing here needs it.
 
-### Run the research agent (stages)
+### Run the analysis agent (stages)
 
 Each stage writes to a new `runs/<id>/` folder; credentials come from `.env`.
 
@@ -37,7 +37,7 @@ python3 src/verify_v2.py --out runs/<run>/verify --records "<glob>"   # 3. indep
 python3 src/assemble_dataset.py <out_dir> label=<run_dir> ...         # 4. assemble the 100-position dataset
 python3 -I src/build_report.py <DATASET.json> report/index.html       # 5. build the page
 ```
-Stage 2 is currently blocked by exhausted provider quota; this repository's 46 newly researched positions were done by quote-level capture and model review instead (see `runs/evidence-capture-v1-20261123_2359/`). A new-run guide for that path: capture pages, save them, quote verbatim, re-fetch with `refetch.py`, then `consolidate.py`.
+Stage 2 is currently blocked by exhausted provider quota; this repository's 46 newly reviewed positions were done by quote-level capture and model review instead (see `runs/evidence-capture-v1-20261123_2359/`). A new-run guide for that path: capture pages, save them, quote verbatim, re-fetch with `refetch.py`, then `consolidate.py`.
 
 ### Composio demonstration
 

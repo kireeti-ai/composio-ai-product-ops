@@ -36,6 +36,7 @@ def build(d, out_dir):
     for r in d["rows"]:
         m = r.get("manual_research")
         if not m or r["primary_version"]: continue
+        for c in m["claims"]: c["verdict"] = {"researcher_judgement_from_quoted_facts": "judgement_from_quoted_facts"}.get(c["verdict"], c["verdict"])
         i, s = r["registry_id"], m["summary"]; sup = {c["field"] for c in m["claims"] if c["verdict"] in ("supported_by_official_quote", "partially_supported")}   # a reproduced official quotation covers the core statement
         has = lambda *k: any(any(x in f for x in k) for f in sup)
         blocker = str(s.get("blocker") or "")
