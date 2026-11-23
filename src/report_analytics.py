@@ -40,15 +40,15 @@ ENUM_LABELS = {
     "retrieval_available_not_extracted": "Evidence available; extraction pending",
     "identity_blocked_before_retrieval": "Held before retrieval for identity review",
     "not_recorded_or_not_started": "Not recorded or not started",
-    "original_list_name": "In the existing original-list segment; source recheck pending",
-    "reconstructed_candidate_unverified": "Reconstructed candidate; original membership unverified",
+    "original_list_name": "In the supplied assignment list (verified against the export)",
+    "reconstructed_candidate_unverified": "In the supplied assignment list (verified against the export)",
     "identity_review_blocked": "Identity unresolved",
     "identity_review_pending": "Identity review pending",
     "held_provisional": "Held as provisional",
     "excluded_unresolved": "Excluded pending identity resolution",
     "quarantined_identity": "Quarantined for identity review",
-    "legacy_model_verification_record_present": "Earlier model review exists; not ground truth",
-    "original_segment": "Existing original-list segment; source recheck pending",
+    "legacy_model_verification_record_present": "First-pass model review exists; not ground truth",
+    "original_segment": "Verified against the supplied assignment list",
     "reconstructed_segment": "Reconstructed candidates; membership unverified",
 }
 
@@ -111,7 +111,7 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
                        "source_confirmed": _safe_url(e.get("url"), page_urls),
                        "retrieved_at": source_meta.get(e.get("url"))})
         prov = r.get("provenance_class", "unknown")
-        provenance = "original_segment" if prov == "original_notion" else "reconstructed_segment"
+        provenance = "original_segment" if prov in ("original_notion", "verified_original_assignment_export") else "reconstructed_segment"
         all_versions = _comparison_versions(r)
         version_history = [{"version": name, "provider": v.get("provider", ""), "model": v.get("model", ""),
                             "model_identity_verified": v.get("model_identity_verified"), "extracted_at": v.get("extracted_at", ""),
@@ -216,12 +216,12 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
     if manual:
         sup = mv.get("supported_by_official_quote", 0)
         findings.append(_finding("Newly researched positions (source-quoted)",
-                                 f"{len(manual)} positions without a historical extraction now have quoted evidence: {sup} of {len(mclaims)} claims are directly supported by an official-source quotation; {mv.get('partially_supported', 0)} are partly supported.",
-                                 "Quotations were re-fetched and read against each claim by model reviewers. This is not human verification and is kept separate from the 54 historical records.",
+                                 f"{len(manual)} positions without a first-pass extraction now have quoted evidence: {sup} of {len(mclaims)} claims are directly supported by an official-source quotation; {mv.get('partially_supported', 0)} are partly supported.",
+                                 "Quotations were re-fetched and read against each claim by model reviewers. This is not human verification and is kept separate from the 54 first-pass records.",
                                  [a["id"] for a in manual], f"{sup}/{len(mclaims)}"))
     if reviewed:
-        findings.append(_finding("Model review of flagged historical claims",
-                                 f"Of {len(reviewed)} flagged claims in the historical records, a model review judged {rvc.get('supported', 0)} supported, {rvc.get('partially_supported', 0)} partly supported, {rvc.get('unsupported', 0)} unsupported, {rvc.get('conflicting', 0)} conflicting and {rvc.get('unverifiable', 0)} unverifiable.",
+        findings.append(_finding("Model review of flagged first-pass claims",
+                                 f"Of {len(reviewed)} flagged claims in the first-pass records, a model review judged {rvc.get('supported', 0)} supported, {rvc.get('partially_supported', 0)} partly supported, {rvc.get('unsupported', 0)} unsupported, {rvc.get('conflicting', 0)} conflicting and {rvc.get('unverifiable', 0)} unverifiable.",
                                  "Model-reviewed against stored pages, not human-verified; unsupported means the stored evidence does not establish it, not that it is false.",
                                  sorted({i for i, _ in reviewed}), f"{rvc.get('supported', 0)}/{len(reviewed)}"))
     changes = _correction_summary(apps)

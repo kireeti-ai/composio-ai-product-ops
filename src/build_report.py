@@ -115,6 +115,8 @@ def evidence_ledger(rd):
         rows = [r for r in csv.DictReader(open(done[-1], newline="")) if r.get("human_verdict", "").strip()]
         comp = [r for r in rows if r.get("model_verdict") in cmap]
         out["human"].update(labelled=len(rows), comparable=len(comp), agree=sum(cmap[r["model_verdict"]] == r["human_verdict"].strip() for r in comp))
+        out["handcheck"] = [{"app": r.get("app", ""), "field": r.get("field", ""), "claim": r.get("claim", "")[:140], "model": r.get("model_verdict", ""), "human": r["human_verdict"].strip(),
+                             "hit": ("n/a" if r.get("model_verdict") not in cmap else "hit" if cmap[r["model_verdict"]] == r["human_verdict"].strip() else "miss")} for r in rows]
     return out
 
 
@@ -135,8 +137,16 @@ def main():
     registry = json.loads(Path("data/apps.json").read_text())
     comparison_path = Path(sorted(glob.glob("runs/correction5-v1-*/reports/COMPARISON_V1_VS_CORRECTED.json"))[-1])
     comparison = json.loads(comparison_path.read_text())
-    source_path = Path(sorted(glob.glob("runs/registry-reconciliation-v*/RECONCILIATION.json"))[-1])
-    source_check = json.loads(source_path.read_text())
+    lock = sorted(glob.glob("runs/registry-lock-v*/RECONCILIATION.json"))
+    if lock:   # authoritative: registry locked against the supplied assignment export
+        source_path = Path(lock[-1]); raw = json.loads(source_path.read_text())
+        ok = raw.get("source_rows") == raw.get("id_category_name_matches") == 100
+        source_check = {"checked_at": raw.get("created_at", "not recorded"), "reconciliation_status": "matched_supplied_export" if ok else "mismatch",
+                        "access_result": f"All {raw.get('id_category_name_matches')} of {raw.get('source_rows')} entries match the supplied assignment export (ID, name and category); {raw.get('hints_restored', 0)} website hints were restored from it.",
+                        "registry_changed": False}
+    else:
+        source_path = Path(sorted(glob.glob("runs/registry-reconciliation-v*/RECONCILIATION.json"))[-1])
+        source_check = json.loads(source_path.read_text())
     legacy = legacy_verification()
     labels = human_labels()
     retrieval = retrieval_stats()

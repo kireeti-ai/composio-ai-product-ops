@@ -23,6 +23,19 @@ python3 -I src/build_report.py runs/dataset-live-v7-20261124_0010/DATASET.json r
 
 Credentials live in a local `.env` (git-ignored; never commit it). Variables: `COMPOSIO_API_KEY` (Composio Connect key), optional `COMPOSIO_SDK_API_KEY` (SDK project key) and `COMPOSIO_USER_ID`. Groq extraction is paused; nothing here needs it.
 
+### Run the research agent (stages)
+
+Each stage writes to a new `runs/<id>/` folder; credentials come from `.env`.
+
+```bash
+python3 src/retrieve_wave.py runs/<new_dir> 15,24,31        # 1. retrieve official sources via Composio MCP (free, no model call)
+python3 src/run_p1.py --run <run_id>                         # 2. extract with the frozen prompt/schema; needs runs/<run_id>/APPROVED.json (per-model request cap); stops at the first quota error
+python3 src/verify_v2.py --out runs/<run>/verify --records "<glob>"   # 3. independent-model verification (needs APPROVED_PASS2.json)
+python3 src/assemble_dataset.py <out_dir> label=<run_dir> ...         # 4. assemble the 100-position dataset
+python3 -I src/build_report.py <DATASET.json> report/index.html       # 5. build the page
+```
+Stage 2 is currently blocked by exhausted provider quota; this repository's 46 newly researched positions were done by quote-level capture and model review instead (see `runs/evidence-capture-v1-20261123_2359/`). A new-run guide for that path: capture pages, save them, quote verbatim, re-fetch with `refetch.py`, then `consolidate.py`.
+
 ### Composio demonstration
 
 ```bash
