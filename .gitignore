@@ -19,7 +19,6 @@ __pycache__/
 .vscode/
 .idea/
 *.crdownload
-*.log
 *.tmp
 
 # local-only working copies of frozen inputs

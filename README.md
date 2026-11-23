@@ -1,6 +1,11 @@
 # Composio AI Product Ops take-home: 100-app integration-readiness research
 
-Live case study: https://kireeti-ai.github.io/composio-ai-product-ops/ (static copy of `report/index.html`, served from the `gh-pages` branch). Source: https://github.com/kireeti-ai/composio-ai-product-ops. Self-contained case study file: [`report/index.html`](report/index.html) (open it in a browser; no server needed). Rebuilt from the saved audit data, never hand-edited.
+**Reviewer's guide (2 minutes)**
+- **Case study:** https://kireeti-ai.github.io/composio-ai-product-ops/ (the same file is `report/index.html`).
+- **The pipeline:** `src/retrieve_wave.py` (retrieve sources via Composio MCP) -> `src/run_p1.py` (extract) -> `src/verify_v2.py` (verify) -> `src/assemble_dataset.py` and `src/normalize_profiles.py` (dataset) -> `src/build_report.py` (page). `src/composio_demo.py` is the live Composio proof.
+- **Run it:** `./reproduce.sh` (offline, 79 tests, rebuilds the page). Commands for each stage are below.
+- **Evidence:** `runs/evidence-capture-v1-20261123_2359/` (quoted evidence for 46 apps, `RECONCILIATION.csv` lists every claim), `runs/claim-review-v1-20261123_2359/` (model review of 229 flagged claims), `runs/human-review-worksheet-v1-20261124/` (the human hand check).
+- **Everything else under `runs/`** is the audit trail of earlier passes, kept on purpose; `runs/README.md` explains each group. `baseline/` is the frozen first pass.
 
 ## Status (read before relying on any number)
 
