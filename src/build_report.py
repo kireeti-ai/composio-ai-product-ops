@@ -126,7 +126,7 @@ def composio_demo():
         return None
     d = json.loads(Path(f[-1]).read_text())
     return {"run_at": d["run_at"], "summary": d.get("summary", {}), "path": f[-1],
-            "steps": [{"step": x["step"], "layer": x.get("layer", "mcp_infrastructure" if x["step"][:2] in ("S2", "S3", "S4", "S7") else "app_toolkit" if x["step"][:2] in ("S5", "S6", "S8") else "sdk"), "status": x["status"], "detail": (x.get("error") or json.dumps(x.get("result"))[:240])} for x in d["steps"]]}
+            "steps": [{"step": x["step"], "layer": x.get("layer", "mcp_infrastructure" if x["step"][:2] in ("S2", "S3", "S4", "S7") else "app_toolkit" if x["step"][:2] in ("S5", "S6", "S8", "S9") else "sdk"), "status": x["status"], "detail": (x.get("error") or json.dumps(x.get("result"))[:240])} for x in d["steps"]]}
 
 
 def main():
