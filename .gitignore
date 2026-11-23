@@ -1,20 +1,31 @@
-.env
-__pycache__/
-.venv/
-work/
-# local credentials and tooling
+# credentials and local config (never publish)
 .env
 .env.*
 *.pem
+*.key
+.claude/
+.codex/
+
+# environments and caches
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# editor / OS / browser leftovers
 .DS_Store
-# third-party public API keys embedded in saved vendor pages (kept locally, not published; hashes remain in REFETCH.json / SHA256SUMS)
-runs/evidence-capture-v1-20261123_2359/batch1/refetch/snap_64804c7fc9c730cf.txt
-runs/evidence-capture-v1-20261123_2359/batch1/refetch/snap_7d3c389d2c820bbb.txt
-runs/evidence-capture-v1-20261123_2359/batch1/refetch/snap_187ab7c4c0eae367.txt
-runs/evidence-capture-v1-20261123_2359/batch1/refetch/snap_2505e386d3bc23d6.txt
-runs/evidence-capture-v1-20261123_2359/batch4/refetch/snap_a08f40400d34d45a.txt
-runs/evidence-capture-v1-20261123_2359/batch4/refetch/snap_5437488dad3364a8.txt
-runs/evidence-capture-v1-20261123_2359/batch4/refetch/snap_7be9db94e3abfe6b.txt
-runs/evidence-capture-v1-20261123_2359/batch4/refetch/snap_42b32788e14cb367.txt
-runs/official-hint-topup-v1-20261123_2130/raw/91.bin
+.vscode/
+.idea/
+*.crdownload
+*.log
+*.tmp
+
+# local-only working copies of frozen inputs
+work/
+
+# saved vendor page snapshots from quote re-fetches: large, and a few embed third-party public keys.
+# Their hashes stay in runs/evidence-capture-*/batch*/refetch/REFETCH.json
 runs/evidence-capture-*/batch*/refetch/snap_*.txt
+runs/official-hint-topup-v1-20261123_2130/raw/91.bin
