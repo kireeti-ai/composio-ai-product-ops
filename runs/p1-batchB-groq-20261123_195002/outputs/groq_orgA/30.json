@@ -1,0 +1,154 @@
+{
+ "tag": "groq_orgA",
+ "app": 30,
+ "name": "Vonage",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 1,
+ "latency_s": 2.56,
+ "tokens_in": 3905,
+ "tokens_out": 817,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.vonage.com/en/dashboard/build/applications",
+    "quote": "Vonage APIs (Voice, Messages, Conversation, etc) use JSON Web Tokens (JWTs) for authentication.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "quote": "API Key and Secret (Header) | JSON Web Token (JWT)",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://developer.vonage.com/en/dashboard/build/applications",
+    "quote": "Click + Create a new application... The API key is pre-filled with your current account's API key.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.vonage.com/en/documentation",
+    "quote": "Explore our comprehensive guides, API references, and tools to build powerful communication and security experiences.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developer.vonage.com/en/mcp-server/overview",
+    "quote": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "jwt_or_signed",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "basic",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "supported_lexical"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 3,
+   "unsupported": 3
+  },
+  "evidence_total": 5,
+  "evidence_valid": 4,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 1,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Vonage provides communication APIs (voice, messaging, video, etc.) accessible via REST with JWT or API key authentication and an official MCP Server for AI agent integration.",
+  "auth_methods": [
+   "jwt_or_signed",
+   "api_key",
+   "basic"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can create a Vonage application directly in the dashboard using their own account\u2019s API key and generate JWTs, without contacting sales.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "buildability": "yes",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.vonage.com/en/dashboard/build/applications",
+    "quote": "Vonage APIs (Voice, Messages, Conversation, etc) use JSON Web Tokens (JWTs) for authentication."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "quote": "API Key and Secret (Header) | JSON Web Token (JWT)"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.vonage.com/en/dashboard/build/applications",
+    "quote": "Click + Create a new application... The API key is pre-filled with your current account's API key."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.vonage.com/en/documentation",
+    "quote": "Explore our comprehensive guides, API references, and tools to build powerful communication and security experiences."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developer.vonage.com/en/mcp-server/overview",
+    "quote": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "97aa791c3dcde86092f5ba2864bceda65aa5a2a52b2c24e157ec55e83e437ee1",
+ "at": "2026-11-23T19:54:37+05:30"
+}

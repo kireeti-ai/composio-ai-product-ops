@@ -1,0 +1,74 @@
+{
+ "question": "Which Neo4j API surface is 'Neo4j' for the toolkit? Two different products/APIs share the name.",
+ "surfaces": {
+  "aura_management_api": {
+   "what": "REST API to manage Aura instances/projects (create, get, list, pause, update)",
+   "evidence": [
+    {
+     "url": "https://neo4j.com/docs/aura/api/overview/",
+     "quote": "The Aura API allows you to programmatically perform actions on your Aura instances without the need to log in to the Console.",
+     "verified": true
+    },
+    {
+     "url": "https://neo4j.com/docs/aura/api/overview/",
+     "quote": "Before using the API, you must follow the steps outlined in Authentication to create",
+     "verified": true
+    }
+   ],
+   "measured_operations": [
+    "GET /v1/instances"
+   ],
+   "auth": "credentials created per the Aura 'Authentication' page (page not retrieved) - mechanism unconfirmed",
+   "access": "needs an Aura account; free trial gives $150 credits on Professional/Business Critical; tier availability of the API not stated in retrieved pages",
+   "state": {
+    "surface": "partial",
+    "access": "partial"
+   }
+  },
+  "database_query_api": {
+   "what": "HTTPS endpoint executing Cypher statements against a Neo4j database (supersedes the deprecated HTTP API); separate from Bolt drivers",
+   "evidence": [
+    {
+     "url": "https://neo4j.com/docs/query-api/current",
+     "quote": "The Query API allows to execute Cypher statements against a Neo4j server through HTTP requests.",
+     "verified": true
+    },
+    {
+     "url": "https://neo4j.com/docs/query-api/current",
+     "quote": "This API supersedes the deprecated HTTP API.",
+     "verified": true
+    },
+    {
+     "url": "https://neo4j.com/docs/http-api/current/authentication-authorization",
+     "quote": "Not available on Aura",
+     "verified": true
+    }
+   ],
+   "measured_operations": [],
+   "auth": "DB user credentials, basic or bearer (stated for the legacy HTTP API page; Query API authorize page not retrieved)",
+   "access": "no developer registration: requires a reachable database (self-managed, or Aura if the Query API is available there - not stated in retrieved text); disabled by default on self-managed <5.25",
+   "state": {
+    "surface": "partial",
+    "access": "unresolved"
+   }
+  }
+ },
+ "composio_coverage": {
+  "toolkit": "neo4j",
+  "tools": [
+   "NEO4J_CREATE_INSTANCE_BETA",
+   "NEO4J_GET_INSTANCE_BETA",
+   "NEO4J_GET_PROJECT_BETA",
+   "NEO4J_LIST_INSTANCES_BETA",
+   "NEO4J_LIST_PROJECTS",
+   "NEO4J_PAUSE_INSTANCE_BETA",
+   "NEO4J_UPDATE_INSTANCE",
+   "NEO4J_UPDATE_INSTANCE_BETA"
+  ],
+  "targets": "Aura management API only (instance + project tools; several are v1beta endpoints)",
+  "query_api_tools_found": false,
+  "limitation": "catalog metadata search only (3 queries); absence of a Query-API toolkit is not proof it does not exist",
+  "retrieved_at": "2026-11-23T17:42:55+05:30"
+ },
+ "status": "HELD - decision needed: research as two separate rows (aura_management_api, database_query_api) or pick one; the 100-app count would not change if reported as sub-rows"
+}

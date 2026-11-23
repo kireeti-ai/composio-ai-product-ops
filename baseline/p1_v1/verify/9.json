@@ -1,0 +1,66 @@
+{
+ "id": 9,
+ "name": "Copper",
+ "pass1_sha": "145aa05bd21eb6c8",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt lists OAuth2.0 as a supported authentication method.",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms API keys are a supported authentication method.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt does not mention bearer tokens; token usage differs from standard Bearer scheme.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_trial_or_paid_plan :: API keys can be generated directly by users/admins in Copper system settings. OAuth 2.0 app registration requires contacting Copper support.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms API key generation but does not mention contacting support for OAuth registration.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts state Copper can be accessed via plain REST",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention MCP existence",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

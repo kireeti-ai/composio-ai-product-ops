@@ -1,0 +1,6 @@
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 0.096s
+
+OK
+   adversarial run: 0 contradictions survived the guardrails (each has an item-specific quote with explicit negation)

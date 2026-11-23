@@ -1,0 +1,8 @@
+id,name,identity_status,claims_with_official_source_excerpt,research_status,confidence
+58,Sherlock,resolved_to_exact_registry_hint,4,partial_manual_primary,medium for product identity/interface; low for API/connectors
+59,Waterfall.io,resolved_to_registry_hint_product,6,partial_manual_primary,"medium; pages are product marketing/docs, no full API reference body retained"
+60,Clay,resolved_to_registry_hint_product,6,partial_manual_primary,medium-high on MCP and key setup; partial overall
+68,MongoDB Atlas,resolved_to_registry_hint_product,6,partial_manual_primary,medium-high for admin API; query surface incomplete
+73,Linear,resolved_to_registry_hint_product,0,official_page_retrieval_needed,not established
+78,Coda,resolved_to_registry_hint_product,2,partial_manual_primary,medium for API existence and operations; partial overall
+80,Harvest,resolved_to_registry_hint_product,4,partial_manual_primary,high for API/auth; partial overall

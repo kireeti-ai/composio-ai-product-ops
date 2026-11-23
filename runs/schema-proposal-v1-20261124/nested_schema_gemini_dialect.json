@@ -1,0 +1,138 @@
+{
+ "type": "OBJECT",
+ "required": [
+  "one_liner",
+  "surfaces"
+ ],
+ "properties": {
+  "one_liner": {
+   "type": "STRING"
+  },
+  "surfaces": {
+   "type": "ARRAY",
+   "items": {
+    "type": "OBJECT",
+    "required": [
+     "surface_id",
+     "surface_name",
+     "auth_methods",
+     "access",
+     "access_note",
+     "api_types",
+     "api_breadth",
+     "existing_mcp",
+     "buildability",
+     "blocker",
+     "evidence"
+    ],
+    "properties": {
+     "surface_id": {
+      "type": "STRING"
+     },
+     "surface_name": {
+      "type": "STRING"
+     },
+     "surface_description": {
+      "type": "STRING"
+     },
+     "auth_methods": {
+      "type": "ARRAY",
+      "items": {
+       "type": "STRING",
+       "enum": [
+        "oauth2",
+        "api_key",
+        "basic",
+        "bearer_token",
+        "jwt_or_signed",
+        "other",
+        "unknown"
+       ]
+      }
+     },
+     "access": {
+      "type": "STRING",
+      "enum": [
+       "self_serve_free",
+       "self_serve_trial_or_paid_plan",
+       "approval_or_review_required",
+       "partner_or_contact_sales",
+       "no_public_api",
+       "unknown"
+      ]
+     },
+     "access_note": {
+      "type": "STRING"
+     },
+     "api_types": {
+      "type": "ARRAY",
+      "items": {
+       "type": "STRING",
+       "enum": [
+        "rest",
+        "graphql",
+        "soap",
+        "sdk_or_cli_only",
+        "websocket",
+        "none",
+        "unknown"
+       ]
+      }
+     },
+     "api_breadth": {
+      "type": "STRING",
+      "enum": [
+       "narrow",
+       "medium",
+       "broad",
+       "unknown"
+      ]
+     },
+     "existing_mcp": {
+      "type": "STRING",
+      "enum": [
+       "official",
+       "community",
+       "none_found",
+       "unknown"
+      ]
+     },
+     "buildability": {
+      "type": "STRING",
+      "enum": [
+       "yes",
+       "yes_with_caveats",
+       "no",
+       "unknown"
+      ]
+     },
+     "blocker": {
+      "type": "STRING"
+     },
+     "evidence": {
+      "type": "ARRAY",
+      "items": {
+       "type": "OBJECT",
+       "required": [
+        "field",
+        "url",
+        "quote"
+       ],
+       "properties": {
+        "field": {
+         "type": "STRING"
+        },
+        "url": {
+         "type": "STRING"
+        },
+        "quote": {
+         "type": "STRING"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

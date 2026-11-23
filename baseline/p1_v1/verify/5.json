@@ -1,0 +1,74 @@
+{
+ "id": 5,
+ "name": "Twenty",
+ "pass1_sha": "e60843b640129119",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "API keys can be created and used for authentication",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Authorization header uses Bearer with API key",
+    "needs_human": false
+   },
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "OAuth-based access is provided for external apps",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: API keys can be generated directly within any workspace under Settings > Developers > API, and Twenty is open source.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "API key generation is confirmed; open source status not mentioned in excerpts.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt lists Core API with /rest/ endpoint.",
+    "needs_human": false
+   },
+   {
+    "item": "graphql",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt lists Core API with /graphql/ endpoint.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "supported",
+    "evidence_quote": "The recommended way to give an LLM agent (Claude Desktop, Cursor, Windsurf, \u2026) access to your workspace is the **Twenty MCP server**, not this OpenAPI schema.",
+    "suggested_value": "",
+    "reason": "Excerpt confirms an official Twenty MCP server exists.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

@@ -1,0 +1,130 @@
+{
+ "tag": "groq_orgA",
+ "app": 52,
+ "name": "SE Ranking",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 5,
+ "latency_s": 2.48,
+ "tokens_in": 1839,
+ "tokens_out": 869,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://seranking.com/api/project/getting-started",
+    "quote": "In order to use the API, it is necessary to have an API key from the SE Ranking user account. The API key must be transferred via the token parameter for each invoked method or via the Authorization HTTP header.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://seranking.com/api/how-to-get-api",
+    "quote": "The Project API is available on every current subscription plan: Essential, Pro, Business, Core, Growth, and Enterprise.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://seranking.com/api/project/getting-started",
+    "quote": "All API method invocations are HTTP GET/POST/PUT/DELETE requests to the URL:",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://seranking.com/api/project/getting-started",
+    "quote": "unknown",
+    "issues": [
+     "placeholder_or_too_short"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_trial_or_paid_plan",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 2,
+   "unsupported": 1,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 4,
+  "evidence_valid": 3,
+  "issue_counts": {
+   "placeholder_or_too_short": 1,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 0,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "SE Ranking offers REST APIs for SEO data and project management, accessible with an API key tied to a paid subscription.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "access": "self_serve_trial_or_paid_plan",
+  "access_note": "API key is available to any user on a paid subscription plan; no free tier is offered.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "buildability": "yes",
+  "blocker": "none",
+  "existing_mcp": "none_found",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://seranking.com/api/project/getting-started",
+    "quote": "In order to use the API, it is necessary to have an API key from the SE Ranking user account. The API key must be transferred via the token parameter for each invoked method or via the Authorization HTTP header."
+   },
+   {
+    "field": "access",
+    "url": "https://seranking.com/api/how-to-get-api",
+    "quote": "The Project API is available on every current subscription plan: Essential, Pro, Business, Core, Growth, and Enterprise."
+   },
+   {
+    "field": "api_types",
+    "url": "https://seranking.com/api/project/getting-started",
+    "quote": "All API method invocations are HTTP GET/POST/PUT/DELETE requests to the URL:"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://seranking.com/api/project/getting-started",
+    "quote": "unknown"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "920cdf8811e72975e884544011fc02aecc2764e97896868b7cfd45184b2271b4",
+ "at": "2026-11-23T19:36:37+05:30"
+}

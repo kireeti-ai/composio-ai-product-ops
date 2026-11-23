@@ -1,0 +1,104 @@
+
+ Sandboxes | Stripe Documentation
+Skip to content
+Sandboxes
+Create account or Sign in
+Search/Ask AI
+Create accountSign in
+Get started 
+Payments 
+Revenue 
+Risk 
+Data 
+Money management 
+Stablecoins 
+Embedded Finance 
+Developer resources 
+More
+APIs & SDKsHelp
+Overview
+Versioning
+Changelog
+Upgrade your integrationHow API versioning works
+Essentials
+SDKs
+API
+Events
+Testing
+Testing
+Testing use cases
+Sandboxes
+Manage sandboxes
+Manage API keys and access
+Manage organisation sandboxes
+Sandbox settings
+Create claimable sandboxes for your app-building platform's users
+Test Apple Pay and Google Pay rendering
+Stripe CLI
+Tools
+Stripe Dashboard
+Stripe Projects
+Provisioning
+Workbench
+Developers Dashboard
+Stripe for Visual Studio Code
+Terraform
+Stripe Discord server
+Features
+Workflows
+Batch Jobs
+Stripe health alertsFile uploads
+AI toolsAgent pluginsModel Context ProtocolAgent skills
+Stripe Directory
+Extend Stripe
+Overview
+Build Stripe apps
+Use apps from Stripe
+Build extensions
+Custom objects
+Security and privacy
+Security
+Activity logsStripebot web crawler
+Privacy
+Partners
+Partner ecosystem
+Partner certification
+India
+English (United Kingdom)
+Home/
+Developer resources/
+Testing
+Sandboxes
+Test Stripe functionality in an isolated environment.
+Ask about this pageCopy for LLM
+View as Markdown
+Set up agent
+A sandbox is an isolated test environment. You can use your sandbox to test Stripe functionality in your account, and experiment with new features without affecting your live integration. For example, when testing in a sandbox, the payments you create aren’t processed by card networks or payment providers.
+For new integrations, use general sandboxes instead of your test mode sandbox. Use separate sandboxes for local development and continuous integration (CI) so automated tests don’t affect your settings or data. Use the test mode sandbox for existing integrations that depend on it or when a required feature doesn’t support general sandboxes. Learn more about the differences between general sandboxes and the test mode sandbox.
+Use cases
+Sandboxes provide an environment for testing various functionalities and scenarios without the implications of real transactions. The following are some common use cases for sandboxes in your Stripe integrations:
+ScenarioDescription
+Simulate Stripe events to test without real money movementUse your sandbox to test payments functionality without real money movement. Create payments in your business account to accumulate a test balance or use test helpers to simulate external events.
+Scale isolated sandboxes for teamsYour team can test in separate sandboxes to make sure that data and actions are completely isolated from other sandboxes. Changes made in one sandbox don’t interfere with changes in another.
+Invite external usersYou can invite another user, such as an implementation partner or design agency, to access all sandboxes, or a specific sandbox, without providing them access to your live mode data.
+Test in the Dashboard or the CLIAccess your sandbox from the Dashboard or the Stripe CLI. Test Stripe functionality directly in the Dashboard or use familiar CLI commands and fixtures.
+Manage sandboxes in the Dashboard
+To access sandboxes, click Sandboxes within the Dashboard account picker. Depending on your permissions, you can view, create, delete, and open sandboxes from the sandboxes overview page. To manage user access and API keys for a specific sandbox, first open the sandbox and then manage those settings directly within the sandbox. Learn more about managing your sandbox.
+Test in a sandbox
+You can simulate payments and use test cards to test your integration without moving money. Learn more about using test cards to confirm that your integration works correctly.
+Limitations
+You can’t test IC+ pricing in a sandbox.
+You can’t create connections between a Connect platform’s sandbox and connected account sandboxes.
+See also
+Testing
+Testing use cases
+Was this page helpful?
+YesNo
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc
+On this page
+ 

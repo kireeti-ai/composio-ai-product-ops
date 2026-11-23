@@ -1,0 +1,1547 @@
+{
+ "batch": "batch3",
+ "records": [
+  {
+   "app_id": 79,
+   "name": "Smartsheet",
+   "identity_note": "Smartsheet developer docs (developers.smartsheet.com), matches registry hint.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "Personal access token (Bearer) and OAuth 2.0 3-legged",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:04Z",
+       "quote": "The API authenticates using access tokens (API keys). You can generate access tokens in the Smartsheet UI.",
+       "quote_sha256": "f9747476eadecd80ac4b6da49427a43b3fa3c79450cf085154c6902f02a9a56c",
+       "raw_file": "raw/79_3.txt",
+       "page_sha256": "470cf98f5a6809d72510ec4da4c7bc9ad7b3326a90556671c0c85dd753e77e1c"
+      },
+      {
+       "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+       "title": "OAuth",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "Your app must implement an OAuth flow to retrieve an access token it can use to access Smartsheet data on behalf of an end user.",
+       "quote_sha256": "49b4e40b4fac953db9161ac5cb3f7d9930f1b6ee46dac28c3788b068e800428e",
+       "raw_file": "raw/79_1.txt",
+       "page_sha256": "1717dcc650236a57823ea3ed33eb85ca91a0300d790068008c98a2b658d7b3dd"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "OAuth apps require registering a user account for Developer Tools (account registration, agreement acceptance); tokens generated in UI by a user",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+       "title": "OAuth",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "Developer Tools is a Smartsheet user interface for registering client applications that use OAuth to access Smartsheet user resources with the user's consent.",
+       "quote_sha256": "01dd3d05c6ca7b1b841bba02057b8e2510e956fc0798972bd06b1772a1791b13",
+       "raw_file": "raw/79_1.txt",
+       "page_sha256": "1717dcc650236a57823ea3ed33eb85ca91a0300d790068008c98a2b658d7b3dd"
+      },
+      {
+       "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+       "title": "OAuth",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "In the Developer Tools Registration page, enter the email address of a user account to associate with your apps.",
+       "quote_sha256": "12567e8bc7e6be46d81202fcd5726745a03b764f4abfa7b4d651814293a28a3c",
+       "raw_file": "raw/79_1.txt",
+       "page_sha256": "1717dcc650236a57823ea3ed33eb85ca91a0300d790068008c98a2b658d7b3dd"
+      }
+     ],
+     "note": "Plan-level gating of API access not shown on pages fetched."
+    },
+    {
+     "field": "scopes",
+     "value": "Access scopes (e.g. WRITE_SHEETS) requested in authorization request",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+       "title": "OAuth",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "Access scopes specify the types of resources your app needs to access and the types of actions to perform on those resources.",
+       "quote_sha256": "badd7035b316b365be87200ebbc5bab0efc1d8d3ef7dc28db16f1fdbc786defd",
+       "raw_file": "raw/79_1.txt",
+       "page_sha256": "1717dcc650236a57823ea3ed33eb85ca91a0300d790068008c98a2b658d7b3dd"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+       "title": "Manually configure the MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:02Z",
+       "quote": "API tokens are unnecessary if your AI assistant supports Smartsheet's OAuth, such as ChatGPT (web or mobile), Claude AI, Claude Desktop, Gemini Enterprise Plus, or Microsoft 365 Copilot.",
+       "quote_sha256": "9a628fe5cfa28b6baeb0f8cc453a837b39a5c3f6e53504ad21b153454579ca52",
+       "raw_file": "raw/79_2.txt",
+       "page_sha256": "fd482643ddc094a429b76d6430e33cdc5794663cc9f9f07a4311587cbcedae03"
+      },
+      {
+       "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+       "title": "Manually configure the MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:02Z",
+       "quote": "\"httpUrl\": \"https://mcp.smartsheet.com\",",
+       "quote_sha256": "ab164da9059913bef1e26377c5122053d9ebc6fbb580710806a1b999daec2593",
+       "raw_file": "raw/79_2.txt",
+       "page_sha256": "fd482643ddc094a429b76d6430e33cdc5794663cc9f9f07a4311587cbcedae03"
+      }
+     ],
+     "note": "Hosted on developers.smartsheet.com / smartsheet.com domains."
+    },
+    {
+     "field": "api_types",
+     "value": "rest/sdk/webhooks",
+     "status": "unknown",
+     "evidence": [],
+     "note": "No quote captured on fetched pages for REST/SDK/webhook; rate-limit guide URL returned 404."
+    },
+    {
+     "field": "rate_limits",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "rate-limiting URL returned 404; not verified."
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Not found in fetched pages."
+    },
+    {
+     "field": "plan_gating",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": "Pricing page fetched (smartsheet.com/pricing) but no quote tying API access to a plan."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "access_token",
+     "oauth2_3lo"
+    ],
+    "access": "account registration (Developer Tools) / user-generated token; plan gating unverified",
+    "api_types": [
+     "unknown"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "plan gating and rate limits unverified"
+   },
+   "prior_record_corrections": [
+    "Prior \"paid_plan_required (per third-party)\" and rest/sdk not supported by any fetched official page; left unknown.",
+    "Prior MCP=official is confirmed (hosted mcp.smartsheet.com)."
+   ],
+   "open_questions": [
+    "Does API/MCP access require a paid plan?",
+    "Rate limits?",
+    "Sandbox/dev account?"
+   ]
+  },
+  {
+   "app_id": 81,
+   "name": "Stripe",
+   "identity_note": "docs.stripe.com, official.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "API keys (secret/restricted/publishable) via HTTP Basic or Bearer; OAuth for MCP; agent API keys for MCP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.stripe.com/api/authentication",
+       "title": "Authentication | Stripe API Reference",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:18Z",
+       "quote": "The Stripe API authenticates requests using HTTP Basic Auth. Provide your API key as the basic auth username value. You don’t need to provide a password.",
+       "quote_sha256": "0a2ad6b6b0c945a74967eabeb2efb0977233bc4a9176f5ff8f208b9025898588",
+       "raw_file": "raw/81_3.txt",
+       "page_sha256": "9908204a3046977b580524eae604e1cc5463eb35698c97f08211f62f609186bf"
+      },
+      {
+       "url": "https://docs.stripe.com/keys",
+       "title": "API keys | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:13Z",
+       "quote": "Restricted API key (RAK) rk_...NoAPI key with permissions you control.",
+       "quote_sha256": "042c0ab095926ab2a43daa3f7629b8f22a252073058e2ef97f6c9364fd1c0403",
+       "raw_file": "raw/81_2.txt",
+       "page_sha256": "17513c4ff882c8b9401f874538dc8005b35ec909c9009e520517ada49cc62cc0"
+      },
+      {
+       "url": "https://docs.stripe.com/mcp",
+       "title": "Model Context Protocol (MCP) | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:10Z",
+       "quote": "OAuth: Use OAuth when a client accesses Stripe on behalf of your Stripe user account.",
+       "quote_sha256": "cb545cf035f2aecafdaeadc179150bfee57e8f9f127b46f1980dd7d875ebdad9",
+       "raw_file": "raw/81_1.txt",
+       "page_sha256": "9e10f597e6bf2b63e49d7e300f466745b424540e7dfd8b248031b67467909070"
+      },
+      {
+       "url": "https://docs.stripe.com/mcp",
+       "title": "Model Context Protocol (MCP) | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:10Z",
+       "quote": "Agent API keys: Use an agent API key when an AI application needs independent, persistent access to Stripe.",
+       "quote_sha256": "126b24c25f2be06b429994095031da6510cddb40143f93929fb97485c55cf601",
+       "raw_file": "raw/81_1.txt",
+       "page_sha256": "9e10f597e6bf2b63e49d7e300f466745b424540e7dfd8b248031b67467909070"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Keys created in Dashboard; sandbox keys available; no sales/partner approval quoted",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.stripe.com/keys",
+       "title": "API keys | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:13Z",
+       "quote": "Use the API keys page in the Dashboard to create, reveal, expire and rotate keys for the account or sandbox you’re viewing.",
+       "quote_sha256": "386ef537254cc5743811a37343309b69209a46f366ba93efc01873a63d2bd039",
+       "raw_file": "raw/81_2.txt",
+       "page_sha256": "17513c4ff882c8b9401f874538dc8005b35ec909c9009e520517ada49cc62cc0"
+      }
+     ],
+     "note": "Account signup requirement implied by Dashboard; not separately quoted."
+    },
+    {
+     "field": "sandbox",
+     "value": "Sandboxes with test keys",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.stripe.com/keys",
+       "title": "API keys | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:13Z",
+       "quote": "Sandbox keys start with pk_test_ for publishable keys, rk_test_ for restricted keys, and sk_test_ for secret keys.",
+       "quote_sha256": "583feadb6366c1c0ea8ccea94a56a1bb899bd900c5695632706dd038ce39bfed",
+       "raw_file": "raw/81_2.txt",
+       "page_sha256": "17513c4ff882c8b9401f874538dc8005b35ec909c9009e520517ada49cc62cc0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Live 100 rps; sandbox 25 rps",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.stripe.com/rate-limits",
+       "title": "Rate limits | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:29Z",
+       "quote": "Live mode: 100 requests per second",
+       "quote_sha256": "524f4c02ebb6748510e726c0685d2449cb28d623c3db2963f359a1c2b60fe390",
+       "raw_file": "raw/81_6.txt",
+       "page_sha256": "f616cae6a63f2ca4b6560f1d003b973afa1002f2a47d948b3d362ab63b2b901c"
+      },
+      {
+       "url": "https://docs.stripe.com/rate-limits",
+       "title": "Rate limits | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:29Z",
+       "quote": "Sandbox: 25 requests per second",
+       "quote_sha256": "5e4d010aa6abbc12210948ccf87602395c1cc811a33e6624d99e2e707a1fa3a2",
+       "raw_file": "raw/81_6.txt",
+       "page_sha256": "f616cae6a63f2ca4b6560f1d003b973afa1002f2a47d948b3d362ab63b2b901c"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "rest + webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.stripe.com/webhooks",
+       "title": "Receive Stripe events in your webhook endpoint | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:26Z",
+       "quote": "Stripe requires the raw body of the request to perform signature verification.",
+       "quote_sha256": "2fa287d7be2a7cae015e80542a7bfce4bc2925b8a5a6adb49eab57dad1919adc",
+       "raw_file": "raw/81_5.txt",
+       "page_sha256": "0241b117daa42531f96925380bfdd13b0720c8da72fd5ef4e538c06a1ac48ebd"
+      }
+     ],
+     "note": "Webhooks quoted; REST implied by api reference auth page. SDK not quoted."
+    },
+    {
+     "field": "mcp",
+     "value": "official",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.stripe.com/mcp",
+       "title": "Model Context Protocol (MCP) | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:10Z",
+       "quote": "The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use to interact with the Stripe API and search the Stripe knowledge base, including documentation and support articles.",
+       "quote_sha256": "c065caef6fb4edb002ef4a30742ed0fd72f496606f0149412b893b8b174f179a",
+       "raw_file": "raw/81_1.txt",
+       "page_sha256": "9e10f597e6bf2b63e49d7e300f466745b424540e7dfd8b248031b67467909070"
+      },
+      {
+       "url": "https://docs.stripe.com/mcp",
+       "title": "Model Context Protocol (MCP) | Stripe DocumentationThe Stripe Docs logo",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:10Z",
+       "quote": "\"url\": \"https://mcp.stripe.com\"",
+       "quote_sha256": "d6ed3a90fd359f6ec4f1d3bdaaeb2642ed1e2f6525a2ea0683b8445fd08ba711",
+       "raw_file": "raw/81_1.txt",
+       "page_sha256": "9e10f597e6bf2b63e49d7e300f466745b424540e7dfd8b248031b67467909070"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "secret_api_key",
+     "restricted_api_key",
+     "oauth2_mcp",
+     "agent_api_key"
+    ],
+    "access": "self_serve (Dashboard keys, sandboxes)",
+    "api_types": [
+     "rest",
+     "webhooks"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified"
+   },
+   "prior_record_corrections": [
+    "Prior MCP/keys claims confirmed. Prior \"Agent-tagged keys by 2026-11-30\" not checked (no quote captured)."
+   ],
+   "open_questions": [
+    "SDK availability not quoted."
+   ]
+  },
+  {
+   "app_id": 82,
+   "name": "Plaid",
+   "identity_note": "plaid.com/docs, official.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "client_id + secret",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://plaid.com/docs/api/",
+       "title": "API - Overview | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:34Z",
+       "quote": "Almost all Plaid API endpoints require a client_id and secret. These may be sent either in the request body or in the headers PLAID-CLIENT-ID and PLAID-SECRET.",
+       "quote_sha256": "f5a92da84f68d4219db337f4ce1a3ce35b6816bbbfe740d3486121595b784681",
+       "raw_file": "raw/82_3.txt",
+       "page_sha256": "06a3a85a5b79c681d60b8d29ee3a39f7c1a8d1a0d067a1ba5ae9c44e5bcc5f72"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Create a Dashboard account for client_id/secret; Production requires approval",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://plaid.com/docs/api/",
+       "title": "API - Overview | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:34Z",
+       "quote": "To gain access to the Plaid API, create an account on the Plaid Dashboard. Once you've completed the signup process and acknowledged our terms, we'll provide a live client_id and secret via the Dashboard.",
+       "quote_sha256": "01e7486c75930c886674302fe4593119dcc5d25ac4aa32c6957390a50f795798",
+       "raw_file": "raw/82_3.txt",
+       "page_sha256": "06a3a85a5b79c681d60b8d29ee3a39f7c1a8d1a0d067a1ba5ae9c44e5bcc5f72"
+      },
+      {
+       "url": "https://plaid.com/docs/resources/mcp/",
+       "title": "Resources - MCP Server | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:31Z",
+       "quote": "Your team must be approved for Production access with at least one Plaid product to use the MCP server.",
+       "quote_sha256": "67f7ba6a9cf98f893a84de495abf4fd37b70e37d566e68186d1cc6d980dc8e8b",
+       "raw_file": "raw/82_1.txt",
+       "page_sha256": "25ff1dcf957e62441f0b1565f2c03e6c7b033fd3d4f19ede28c038828a3c601b"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "Free Sandbox environment",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://plaid.com/docs/quickstart/glossary/",
+       "title": "Quickstart - Glossary | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "Sandbox is a free test environment that uses test data rather than real financial accounts.",
+       "quote_sha256": "89d9cef764b8fc6be4f13dc0e3d6c7e39b7202802f97bb2211959c39b750b981",
+       "raw_file": "raw/82_2.txt",
+       "page_sha256": "51bce3e44d21fd198c13626192a1fe08393ae03aff675ab7e16665e07a76fa01"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "development_environment",
+     "value": "Development environment retired; conflicts with prior note resolved by glossary text",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://plaid.com/docs/quickstart/glossary/",
+       "title": "Quickstart - Glossary | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "Development (https://development.plaid.com) was a Plaid environment on which you could run your code, along with Sandbox and Production.",
+       "quote_sha256": "63db21566a0e9287f45758b26661b6346b64d7c3daec65cecdc0bea34cd3c19d",
+       "raw_file": "raw/82_2.txt",
+       "page_sha256": "51bce3e44d21fd198c13626192a1fe08393ae03aff675ab7e16665e07a76fa01"
+      },
+      {
+       "url": "https://plaid.com/docs/quickstart/glossary/",
+       "title": "Quickstart - Glossary | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "For Plaid teams created on or after April 15, 2026, Limited Production is no longer offered and has been replaced by Trial plans.",
+       "quote_sha256": "90fcef880669c803b0ff92a8fef7b90c61ef119a95a74c0232b5e5a847ef6f0a",
+       "raw_file": "raw/82_2.txt",
+       "page_sha256": "51bce3e44d21fd198c13626192a1fe08393ae03aff675ab7e16665e07a76fa01"
+      }
+     ],
+     "note": "Prior record flagged Development status as conflicting; official glossary says it was replaced."
+    },
+    {
+     "field": "api_types",
+     "value": "REST (JSON over HTTP)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://plaid.com/docs/api/",
+       "title": "API - Overview | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:34Z",
+       "quote": "The Plaid API is JSON over HTTP.",
+       "quote_sha256": "cdb30a9585f08a7609b41d891b3a86a2de1a84422c7430e7af0bced34c19ba6a",
+       "raw_file": "raw/82_3.txt",
+       "page_sha256": "06a3a85a5b79c681d60b8d29ee3a39f7c1a8d1a0d067a1ba5ae9c44e5bcc5f72"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: local Sandbox/dev MCP and remote Dashboard MCP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://plaid.com/docs/resources/mcp/",
+       "title": "Resources - MCP Server | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:31Z",
+       "quote": "The Plaid AI coding toolkit includes a local MCP server for development.",
+       "quote_sha256": "82bf5ca5fafd3c0fe8bb2456debc448dfb6aa671e8fcf1e35149dff2c42372e5",
+       "raw_file": "raw/82_1.txt",
+       "page_sha256": "25ff1dcf957e62441f0b1565f2c03e6c7b033fd3d4f19ede28c038828a3c601b"
+      },
+      {
+       "url": "https://plaid.com/docs/resources/mcp/",
+       "title": "Resources - MCP Server | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:31Z",
+       "quote": "The Dashboard MCP server is a remote MCP server hosted by Plaid.",
+       "quote_sha256": "a1e7d8534d8b2aee88cfcf50e1d92cca717ad03e2a1ff4c62c87b18001017cc5",
+       "raw_file": "raw/82_1.txt",
+       "page_sha256": "25ff1dcf957e62441f0b1565f2c03e6c7b033fd3d4f19ede28c038828a3c601b"
+      },
+      {
+       "url": "https://plaid.com/docs/resources/mcp/",
+       "title": "Resources - MCP Server | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:31Z",
+       "quote": "The Dashboard MCP server works with Production data only.",
+       "quote_sha256": "ebd7a33cd1ab10a18098294dd2125f43309852dc0a2a8a8386da4347cc5595b2",
+       "raw_file": "raw/82_1.txt",
+       "page_sha256": "25ff1dcf957e62441f0b1565f2c03e6c7b033fd3d4f19ede28c038828a3c601b"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Per-Item/per-client limits table exists; numbers not quoted",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://plaid.com/docs/errors/rate-limit-exceeded/",
+       "title": "Errors - Rate Limit Exceeded errors | Plaid Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:40Z",
+       "quote": "Errors of type RATE_LIMIT_EXCEEDED will occur when the rate limit for a",
+       "quote_sha256": "d77d7e3d1198d6d836581009d05f690005a03b54604f52eeb9acbbf2829fabbd",
+       "raw_file": "raw/82_6.txt",
+       "page_sha256": "502a5d9f4e1eceb55b6ef221f499156b026bf09f67e380c858588b21f1247156"
+      }
+     ],
+     "note": "Only existence of rate limits quoted; values not captured."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "client_id+secret"
+    ],
+    "access": "Dashboard signup self-serve; Production needs approval",
+    "api_types": [
+     "rest"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "Production approval"
+   },
+   "prior_record_corrections": [
+    "Development-env conflict: official glossary says Development was replaced by free Production testing (now Trial plans for new teams)."
+   ],
+   "open_questions": [
+    "Exact rate-limit values; SDK/webhook quotes."
+   ]
+  },
+  {
+   "app_id": 83,
+   "name": "Binance",
+   "identity_note": "developers.binance.com was unreachable (connection failed); evidence comes from official repo github.com/binance/binance-spot-api-docs (raw files). Spot API only.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "HMAC, RSA, Ed25519 API keys; Ed25519 recommended; SIGNED endpoints need signature",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+       "title": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:35Z",
+       "quote": "- Ed25519 (recommended)",
+       "quote_sha256": "37fcd5e903e68577a6970b153fe1019215eb0319efc18963fff9b2140f22c983",
+       "raw_file": "raw/83_7.txt",
+       "page_sha256": "7897f8ea48e8700b67de598833fb10756d2de7985c7a1d11f6c72d9c2d20ff12"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+       "title": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:35Z",
+       "quote": "Binance APIs require an API key to access authenticated endpoints for trading, account history, etc.",
+       "quote_sha256": "c0f89785fdbe3cee5fc9f2b940cefa7246167a30f06150d91f5fd384c439eeff",
+       "raw_file": "raw/83_7.txt",
+       "page_sha256": "7897f8ea48e8700b67de598833fb10756d2de7985c7a1d11f6c72d9c2d20ff12"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+       "title": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:34Z",
+       "quote": "- We support HMAC, RSA, and Ed25519 keys.",
+       "quote_sha256": "c70d340685a8ff94482ca0a5ffcff6bebe190773e9599d99f62f5ff6b30dc6e8",
+       "raw_file": "raw/83_6.txt",
+       "page_sha256": "f1500faf7ede9e1b24087e31e3d2517eb56db28f1d936fdfde845ce418ae3ca8"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "API key required for authenticated endpoints; creation/account steps not quoted",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+       "title": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:35Z",
+       "quote": "Binance APIs require an API key to access authenticated endpoints for trading, account history, etc.",
+       "quote_sha256": "c0f89785fdbe3cee5fc9f2b940cefa7246167a30f06150d91f5fd384c439eeff",
+       "raw_file": "raw/83_7.txt",
+       "page_sha256": "7897f8ea48e8700b67de598833fb10756d2de7985c7a1d11f6c72d9c2d20ff12"
+      }
+     ],
+     "note": "Account/KYC/regional restrictions not documented in fetched files."
+    },
+    {
+     "field": "api_types",
+     "value": "REST, WebSocket API, WebSocket streams, user data stream",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+       "title": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:35Z",
+       "quote": "[web-socket-api.md](./web-socket-api.md)          | Spot WebSocket API",
+       "quote_sha256": "4a694f5a9deead6468de8e7fa5229c6bbf34f8538b33a4ec216ec76921e8fd34",
+       "raw_file": "raw/83_8.txt",
+       "page_sha256": "85d18214a27bb248d15722ed4e8221a28789bcc0aaa3632785a614a2e2fed0f2"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+       "title": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:35Z",
+       "quote": "[web-socket-streams.md](./web-socket-streams.md)  | Spot Market Data WebSocket streams",
+       "quote_sha256": "6dd6579f735c601f7ce989ae4bcd37ae3128636de498c82bb7d376f0e96a2c14",
+       "raw_file": "raw/83_8.txt",
+       "page_sha256": "85d18214a27bb248d15722ed4e8221a28789bcc0aaa3632785a614a2e2fed0f2"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Limits based on IP, not API keys; RAW_REQUESTS/REQUEST_WEIGHT/ORDERS",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+       "title": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:34Z",
+       "quote": "- **The limits on the API are based on the IPs, not the API keys.**",
+       "quote_sha256": "ff999a2f60e0c79bc9fd49febeb97d918720975a31a0c87cc8abd7e485374e4d",
+       "raw_file": "raw/83_6.txt",
+       "page_sha256": "f1500faf7ede9e1b24087e31e3d2517eb56db28f1d936fdfde845ce418ae3ca8"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "SPOT Testnet exists",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+       "title": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:35Z",
+       "quote": "[testnet](./testnet/)           | API docs for features available only on SPOT Testnet",
+       "quote_sha256": "2ae19ba277fc6dea3d9792f28aeb6fc4ba872c86500726820d420cfa9ce92f5e",
+       "raw_file": "raw/83_8.txt",
+       "page_sha256": "85d18214a27bb248d15722ed4e8221a28789bcc0aaa3632785a614a2e2fed0f2"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Official portal unreachable; github.com/binance/binance-mcp 404. Cannot confirm or deny."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "hmac",
+     "rsa",
+     "ed25519"
+    ],
+    "access": "API key (account required); details unverified",
+    "api_types": [
+     "rest",
+     "websocket"
+    ],
+    "mcp_status": "not_verified",
+    "buildability": "unknown",
+    "blocker": "official portal unreachable; account/regional restrictions unverified"
+   },
+   "prior_record_corrections": [
+    "Prior mcp=official not verifiable (portal unreachable). Prior \"HMAC deprecated\" not found in fetched files (Ed25519 only \"recommended\")."
+   ],
+   "open_questions": [
+    "MCP status; regional restrictions; developers.binance.com content."
+   ]
+  },
+  {
+   "app_id": 85,
+   "name": "iPayX",
+   "identity_note": "ipayx.ai = \"iPayX Protocol\", an FX forensic audit API/MCP (matches registry hint ipayx.ai/docs). github.com/IpayX-org/ipayx describes an invoice/payments testnet POC; relationship unconfirmed, not used as evidence.",
+   "claims": [
+    {
+     "field": "mcp",
+     "value": "official (vendor-published MCP server)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://ipayx.ai/llms.txt",
+       "title": "https://ipayx.ai/llms.txt",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:38:37Z",
+       "quote": "- Endpoint: https://mcp.ipayx.ai/mcp",
+       "quote_sha256": "526f4f9f182c5505da372df65f0273c9a8e7c7691308bf46f1e07ae1db8735d1",
+       "raw_file": "raw/85_4.txt",
+       "page_sha256": "967deeb0c3efef097891f62156d2d28a1960a5f688fe33174f7e6a17dfbcd74a"
+      },
+      {
+       "url": "https://ipayx.ai/llms.txt",
+       "title": "https://ipayx.ai/llms.txt",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:38:37Z",
+       "quote": "- Transport: Streamable HTTP (MCP spec)",
+       "quote_sha256": "af0be1929a95c520cfc66591afbfbcb07a26e28322b54d72fb9f944c4a1b0925",
+       "raw_file": "raw/85_4.txt",
+       "page_sha256": "967deeb0c3efef097891f62156d2d28a1960a5f688fe33174f7e6a17dfbcd74a"
+      }
+     ],
+     "note": "Vendor self-published llms.txt; not independently verified."
+    },
+    {
+     "field": "authentication",
+     "value": "Bearer API key for full_forensic_fx_report; other tools public rate-limited per IP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.ipayx.ai/.well-known/mcp.json",
+       "title": "https://www.ipayx.ai/.well-known/mcp.json",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:39:00Z",
+       "quote": "Authorization: Bearer <ipx_live_...>",
+       "quote_sha256": "7657155c145bd73c878d62e6d252e4c5b4fb29d3001bfd9d9f92e97643a7fc2b",
+       "raw_file": "raw/85_7.txt",
+       "page_sha256": "859231d50f5da4d4975d8bf10e51aa06788a28f3d71ac66ab69f4ef72b36c5f4"
+      },
+      {
+       "url": "https://www.ipayx.ai/.well-known/openapi.json",
+       "title": "https://www.ipayx.ai/.well-known/openapi.json",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:39:02Z",
+       "quote": "\"description\": \"Supabase JWT or iPayX API key (ipx_live_...)\"",
+       "quote_sha256": "74e08d867363c61e424ef83f500da234912ef57154aeab98227d2e823d56b1c9",
+       "raw_file": "raw/85_8.txt",
+       "page_sha256": "fc3e29ad0f4dd43a43f9a508f5b6680c836257df1af16171cbaf7ed3084dd8f5"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Free allowance for some tools; API plans paid",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://ipayx.ai/llms.txt",
+       "title": "https://ipayx.ai/llms.txt",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:38:37Z",
+       "quote": "- [Pricing](/pricing) — Forensic Pack from $297, API plans from $99/mo.",
+       "quote_sha256": "b1604b5f5c986871467cbfd71c875ab705153967b65610cc567b53489f9205c1",
+       "raw_file": "raw/85_4.txt",
+       "page_sha256": "967deeb0c3efef097891f62156d2d28a1960a5f688fe33174f7e6a17dfbcd74a"
+      },
+      {
+       "url": "https://ipayx.ai/llms.txt",
+       "title": "https://ipayx.ai/llms.txt",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:38:37Z",
+       "quote": "No API key required; shares the free allowance of 3 audits per IP per month.",
+       "quote_sha256": "1c1c3434f59eab012c46d607d78ac4f55cfd9a6267437fa8416664886b60fa65",
+       "raw_file": "raw/85_4.txt",
+       "page_sha256": "967deeb0c3efef097891f62156d2d28a1960a5f688fe33174f7e6a17dfbcd74a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST (OpenAPI 3.1) + MCP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://ipayx.ai/llms.txt",
+       "title": "https://ipayx.ai/llms.txt",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:38:37Z",
+       "quote": "- OpenAPI 3.1: https://www.ipayx.ai/.well-known/openapi.json",
+       "quote_sha256": "4b9fcc9a64ab2a3f19601a841871b72d1101e39e2c184a52b06804f2a95dfb6c",
+       "raw_file": "raw/85_4.txt",
+       "page_sha256": "967deeb0c3efef097891f62156d2d28a1960a5f688fe33174f7e6a17dfbcd74a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Anonymous 10 req/min + 100/day; authenticated 30 req/min (on one endpoint)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.ipayx.ai/.well-known/openapi.json",
+       "title": "https://www.ipayx.ai/.well-known/openapi.json",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:39:02Z",
+       "quote": "Hybrid auth: anonymous = 10 req/min + 100/day; authenticated = 30 req/min.",
+       "quote_sha256": "670f4b51c27648821416d0ff840a9ede1ab810dafcd036d2436a285faeb8b021",
+       "raw_file": "raw/85_8.txt",
+       "page_sha256": "fc3e29ad0f4dd43a43f9a508f5b6680c836257df1af16171cbaf7ed3084dd8f5"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Not found."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "bearer_api_key"
+    ],
+    "access": "free tier + paid API plans from $99/mo (per vendor llms.txt)",
+    "api_types": [
+     "rest",
+     "mcp"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "vendor is small; docs are vendor-asserted only; /docs page is JS shell"
+   },
+   "prior_record_corrections": [
+    "Prior record said no official iPayX docs found; vendor llms.txt, mcp.json and openapi.json exist at ipayx.ai and were fetched."
+   ],
+   "open_questions": [
+    "Is IpayX-org GitHub project the same company?",
+    "Sandbox?"
+   ]
+  },
+  {
+   "app_id": 86,
+   "name": "QuickBooks",
+   "identity_note": "developer.intuit.com doc pages are JS shells (no content retrieved); evidence from official repo github.com/intuit/quickbooks-online-mcp-server.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "OAuth 2.0 via Intuit Developer Portal app",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+       "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:40Z",
+       "quote": "QuickBooks Online integration is gated by Intuit's OAuth app setup. You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake.",
+       "quote_sha256": "67c817ae9a39660561223567864fa2ac03e8faf5ccae67097017d75e166b7f54",
+       "raw_file": "raw/86_7.txt",
+       "page_sha256": "c4868b56b7a5bfbf5c714c5b789c092fe10f34e6aeafacda723b16154d13c712"
+      },
+      {
+       "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+       "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:40Z",
+       "quote": "OAuth 2.0 Authentication - Secure token-based authentication",
+       "quote_sha256": "683ce8a35b040dc0d5d6d2885ab03cfd7d893de5d36a414343140f2b091305ac",
+       "raw_file": "raw/86_7.txt",
+       "page_sha256": "c4868b56b7a5bfbf5c714c5b789c092fe10f34e6aeafacda723b16154d13c712"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Register app on Intuit Developer Portal (account registration)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+       "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:40Z",
+       "quote": "You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake.",
+       "quote_sha256": "0fde6113f10f67e51d29f70795d218b090a6091521bf72cf4de31e9f00f858e8",
+       "raw_file": "raw/86_7.txt",
+       "page_sha256": "c4868b56b7a5bfbf5c714c5b789c092fe10f34e6aeafacda723b16154d13c712"
+      }
+     ],
+     "note": "Production-access gating not verified."
+    },
+    {
+     "field": "sandbox",
+     "value": "Sandbox environment supported",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+       "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:40Z",
+       "quote": "QUICKBOOKS_ENVIRONMENT=sandbox",
+       "quote_sha256": "ec440c884b66289e287b0afa087908c6b1b66f8088cae40652e6cd9c3a15723e",
+       "raw_file": "raw/86_7.txt",
+       "page_sha256": "c4868b56b7a5bfbf5c714c5b789c092fe10f34e6aeafacda723b16154d13c712"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official (local stdio server in intuit GitHub org)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+       "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:40Z",
+       "quote": "Note: this is a local MCP server. It runs as a stdio subprocess on the developer's or partner's machine and authenticates to a QuickBooks Online company.",
+       "quote_sha256": "31c3cb9fcabf8ed19566b6b6c7a8c044808c04976ca6920fd902168d858ee172",
+       "raw_file": "raw/86_7.txt",
+       "page_sha256": "c4868b56b7a5bfbf5c714c5b789c092fe10f34e6aeafacda723b16154d13c712"
+      }
+     ],
+     "note": "Ownership inferred from github.com/intuit org; not stated in README."
+    },
+    {
+     "field": "api_types",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "REST/SDK/webhooks pages were JS shells."
+    },
+    {
+     "field": "rate_limits",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Not fetched."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "oauth2"
+    ],
+    "access": "Developer Portal app registration; sandbox available",
+    "api_types": [
+     "unknown"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "production access gating unverified; official docs unrenderable via curl"
+   },
+   "prior_record_corrections": [
+    "Prior mcp not_verified is corrected: official-org repo intuit/quickbooks-online-mcp-server found."
+   ],
+   "open_questions": [
+    "REST/SDK/webhooks, rate limits, production review requirements."
+   ]
+  },
+  {
+   "app_id": 87,
+   "name": "Xero",
+   "identity_note": "developer.xero.com; FAQ and pricing pages fetched; OAuth/limits pages are JS shells.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "OAuth 2.0 (custom connections or bearer token via MCP)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+       "title": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:41Z",
+       "quote": "- Xero OAuth2 authentication with custom connections",
+       "quote_sha256": "0beb16e2a1d0d342c148407b0a96c3109ab3bc5e289d801f0df8e690aa9ad9b6",
+       "raw_file": "raw/87_7.txt",
+       "page_sha256": "40a3be8915579ad801cf684092b90c05f8de08586801d754e9acb5e92774a134"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+       "title": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:41Z",
+       "quote": "There are 2 modes of authentication supported in the Xero MCP server:",
+       "quote_sha256": "4d2b6530d9ed289045e4ee83a5d50303f9e83c685d9a6d5a5d5d78e8ffe4da00",
+       "raw_file": "raw/87_7.txt",
+       "page_sha256": "40a3be8915579ad801cf684092b90c05f8de08586801d754e9acb5e92774a134"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Developer account; app tiers (Starter no charge) with connection limits",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.xero.com/pricing",
+       "title": "Pricing — Xero Developer",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:37:51Z",
+       "quote": "Monthly Tier FeeNo charge$35 AUD$245 AUD$1445 AUDPrice on Application",
+       "quote_sha256": "60e30b699cec2c4265a4911efca218a79846446f367fae6a9ecd82e3478c6cd5",
+       "raw_file": "raw/87_2.txt",
+       "page_sha256": "d15159096c953a0f034fbc5a69a5e519e87ff3a75fea7c2ba42d826df911c512"
+      },
+      {
+       "url": "https://developer.xero.com/pricing",
+       "title": "Pricing — Xero Developer",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:37:51Z",
+       "quote": "Connections (maximum)550100010,000No limit",
+       "quote_sha256": "e576f0c6a16a15dc1a355d999b5a15939ff8a39d867cfaf251bfbacb7c892856",
+       "raw_file": "raw/87_2.txt",
+       "page_sha256": "d15159096c953a0f034fbc5a69a5e519e87ff3a75fea7c2ba42d826df911c512"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Per-tier daily limits",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.xero.com/pricing",
+       "title": "Pricing — Xero Developer",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:37:51Z",
+       "quote": "Rate Limits1000 per day per org5000 per day per org5000 per day per org5000 per day per org5000 per day per org",
+       "quote_sha256": "41d9219b6af92bd40e89f3671e03ebbfeae05470eb42a5ef5c2ecf52ed52f8cd",
+       "raw_file": "raw/87_2.txt",
+       "page_sha256": "d15159096c953a0f034fbc5a69a5e519e87ff3a75fea7c2ba42d826df911c512"
+      }
+     ],
+     "note": "Table column mapping partly flattened; Starter appears 1000/day/org."
+    },
+    {
+     "field": "custom_connection_sunset",
+     "value": "No new Custom Connection apps from 1 Dec 2026",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.xero.com/faq/custom-integration",
+       "title": "Custom Integration FAQs — Xero Developer",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:37:49Z",
+       "quote": "From 1 December 2026, we are making changes to Custom Connections. From that date, you won't be able to:",
+       "quote_sha256": "90f9002fe33e7bf95e1bea28cd77809d0826735599bde704ab6721c82beea147",
+       "raw_file": "raw/87_1.txt",
+       "page_sha256": "cdcf968f2153aa9b273199aace650be49502e5a82d6c44ea7c36672991bf7358"
+      },
+      {
+       "url": "https://developer.xero.com/faq/custom-integration",
+       "title": "Custom Integration FAQs — Xero Developer",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:37:49Z",
+       "quote": "Create a new Custom Connection app",
+       "quote_sha256": "ae98e3af3ebfd97c56216796cd84249e822e0e5dd8f005db8e159b1be6aa8a97",
+       "raw_file": "raw/87_1.txt",
+       "page_sha256": "cdcf968f2153aa9b273199aace650be49502e5a82d6c44ea7c36672991bf7358"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official (XeroAPI org repo)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+       "title": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:41Z",
+       "quote": "This is a Model Context Protocol (MCP) server implementation for Xero.",
+       "quote_sha256": "24120e351df9b27090986bdd6dfd82aa7f1f4ff9f3c526464a8ed1d65112d3d7",
+       "raw_file": "raw/87_7.txt",
+       "page_sha256": "40a3be8915579ad801cf684092b90c05f8de08586801d754e9acb5e92774a134"
+      }
+     ],
+     "note": "Ownership inferred from raw.githubusercontent.com/XeroAPI path."
+    },
+    {
+     "field": "sandbox",
+     "value": "Demo Company",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+       "title": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:38:41Z",
+       "quote": "We recommend using a Demo Company to start with because it comes with some pre-loaded sample data.",
+       "quote_sha256": "3f64420dcef7143bcf638129f3ef7cfda6df252fee9577faf956eb751aa910fd",
+       "raw_file": "raw/87_7.txt",
+       "page_sha256": "40a3be8915579ad801cf684092b90c05f8de08586801d754e9acb5e92774a134"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "REST OAuth pages were JS shells; OpenAPI repo README fetched but not quoted."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "oauth2",
+     "custom_connection_client_credentials"
+    ],
+    "access": "developer account; tiered app plans",
+    "api_types": [
+     "unknown"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "app-tier limits; custom-connection sunset 2026-12-01"
+   },
+   "prior_record_corrections": [
+    "Prior mcp not_verified corrected: XeroAPI/xero-mcp-server exists.",
+    "Prior custom-connection sunset and tiered limits confirmed."
+   ],
+   "open_questions": [
+    "REST/webhooks quotes."
+   ]
+  },
+  {
+   "app_id": 88,
+   "name": "Brex",
+   "identity_note": "developer.brex.com, official.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "User token (Bearer) created by admin; OAuth for MCP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.brex.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:01Z",
+       "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers.",
+       "quote_sha256": "aecb14324776dfe0c52a24ecc1aa20202ac193426e8401b05ce60eadc24b0b3e",
+       "raw_file": "raw/88_2.txt",
+       "page_sha256": "87759061932e3bd75abb0093bf5270a6079806d2dfd2b8d0bdb1d2b5eff9298a"
+      },
+      {
+       "url": "https://developer.brex.com/docs/mcp",
+       "title": "Brex MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:37:58Z",
+       "quote": "If your client supports OAuth with Dynamic Client Registration, authentication is handled automatically.",
+       "quote_sha256": "575e865a73b1e759c596e5f465acf7ba0c89cf4df980a3a2e71451a746116b71",
+       "raw_file": "raw/88_1.txt",
+       "page_sha256": "f27fc0815a9584fd490af7ac5dc638c75c291d5744f1aec752a3f6f91dd8fc1d"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Account admin or card admin creates token; developer API agreement must be accepted",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.brex.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:01Z",
+       "quote": "Sign in to dashboard.brex.com as an account admin or card admin.",
+       "quote_sha256": "56201d39923ecc9d50ccc6cc97dae7a21e43a0f76e5740d2bf95f0f08f70a5ec",
+       "raw_file": "raw/88_2.txt",
+       "page_sha256": "87759061932e3bd75abb0093bf5270a6079806d2dfd2b8d0bdb1d2b5eff9298a"
+      },
+      {
+       "url": "https://developer.brex.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:01Z",
+       "quote": "If your company has not accepted the developer API agreement, please review the terms and conditions.",
+       "quote_sha256": "b01cb10a3ead306f5c71ec4fce755f2dd0675ed49376702e1c3bb3277b463325",
+       "raw_file": "raw/88_2.txt",
+       "page_sha256": "87759061932e3bd75abb0093bf5270a6079806d2dfd2b8d0bdb1d2b5eff9298a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "token_expiry",
+     "value": "90 days unused",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.brex.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:01Z",
+       "quote": "User tokens will expire if they are not used to make an API call for 90 days",
+       "quote_sha256": "7e047439b6fb120fd33f4db1ae86d768612d25d465604398611796a9f794ace6",
+       "raw_file": "raw/88_2.txt",
+       "page_sha256": "87759061932e3bd75abb0093bf5270a6079806d2dfd2b8d0bdb1d2b5eff9298a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "No sandbox server offered",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.brex.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:01Z",
+       "quote": "Brex currently only offers a production API server at https://api.brex.com.",
+       "quote_sha256": "c27c437a18a91d708c4485c08db233649816f5f006d0a1c49cea29cbc22dd5ad",
+       "raw_file": "raw/88_2.txt",
+       "page_sha256": "87759061932e3bd75abb0093bf5270a6079806d2dfd2b8d0bdb1d2b5eff9298a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official (beta)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.brex.com/docs/mcp",
+       "title": "Brex MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:37:58Z",
+       "quote": "The server is hosted at https://api.brex.com/mcp and supports any MCP-compatible client.",
+       "quote_sha256": "3999b7cd1f45cdaae1baf0b8ed68787902eb23d6aae4aae8fb411bb07002e39d",
+       "raw_file": "raw/88_1.txt",
+       "page_sha256": "f27fc0815a9584fd490af7ac5dc638c75c291d5744f1aec752a3f6f91dd8fc1d"
+      },
+      {
+       "url": "https://developer.brex.com/docs/mcp",
+       "title": "Brex MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:37:58Z",
+       "quote": "Enable the beta. Go to Settings → Beta features in the Brex Dashboard and select Brex in AI assistants.",
+       "quote_sha256": "4abdaaa4be5fbae2c70066416cc887d589406761fd2e7ce8d6cec9dd98dcc3f0",
+       "raw_file": "raw/88_1.txt",
+       "page_sha256": "f27fc0815a9584fd490af7ac5dc638c75c291d5744f1aec752a3f6f91dd8fc1d"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "scopes",
+     "value": "Token scopes chosen at creation",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.brex.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:01Z",
+       "quote": "Choose what level of data access you need for your application; these are the scopes your token will have.",
+       "quote_sha256": "b7a64bc6b4f18a198333dd149c95f81a2165a10650aa434bdac1a9d9e69a2740",
+       "raw_file": "raw/88_2.txt",
+       "page_sha256": "87759061932e3bd75abb0093bf5270a6079806d2dfd2b8d0bdb1d2b5eff9298a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "rate-limit page URLs 404."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "user_token",
+     "oauth2"
+    ],
+    "access": "admin-created token; MCP beta enabled in dashboard",
+    "api_types": [
+     "rest"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "admin-only token; no sandbox; MCP is beta"
+   },
+   "prior_record_corrections": [
+    "Prior confirmed; new: no sandbox server, MCP is beta."
+   ],
+   "open_questions": [
+    "Rate limits; webhooks."
+   ]
+  },
+  {
+   "app_id": 89,
+   "name": "Ramp",
+   "identity_note": "docs.ramp.com (via official llms-guides text), support.ramp.com, agents.ramp.com.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "OAuth 2.0; client credentials for server-to-server",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+       "title": "https://docs.ramp.com/llms-guides/authorization.txt",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:48Z",
+       "quote": "Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth), and scopes control what the token can access.",
+       "quote_sha256": "2823f0b500737debf0764c2ef019fac688607e6abbd1f6acf2a874fad9c04739",
+       "raw_file": "raw/89_6.txt",
+       "page_sha256": "c1d1dbfea0b14fb17b774e7c342914d75a40c21a218ac429016f0ed39c82d58a"
+      },
+      {
+       "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+       "title": "https://docs.ramp.com/llms-guides/authorization.txt",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:48Z",
+       "quote": "| **Client Credentials** | Internal integrations, server-to-server | None required |",
+       "quote_sha256": "09d28dd098bac6234c012714e317b435cfc39e0f5ff624297299e2fc6536f2e8",
+       "raw_file": "raw/89_6.txt",
+       "page_sha256": "c1d1dbfea0b14fb17b774e7c342914d75a40c21a218ac429016f0ed39c82d58a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Admin access required to create developer app",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+       "title": "Ramp Help Center",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:06Z",
+       "quote": "To begin using the Ramp Developer API, you must first create a developer app to obtain your API credentials. Admin access is required.",
+       "quote_sha256": "319390ad2d2b06329bd56d5ef33872eecc6962ae8de28dc554e932e6690427ff",
+       "raw_file": "raw/89_1.txt",
+       "page_sha256": "d8aafad862752960efd5f82ac0e37775e63bc8fd926346ae4b8a2eaafa7ad3e3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "scopes",
+     "value": "resource:permission pattern",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+       "title": "https://docs.ramp.com/llms-guides/authorization.txt",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:48Z",
+       "quote": "Scopes follow the pattern `resource:permission`, where the permission is usually `read` or `write`, such as `transactions:read`.",
+       "quote_sha256": "0fb621fd08cc2a7036045a44345b161991683ecd8b2033e17f3e4074c3ee681c",
+       "raw_file": "raw/89_6.txt",
+       "page_sha256": "c1d1dbfea0b14fb17b774e7c342914d75a40c21a218ac429016f0ed39c82d58a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "200 req/10s per source IP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.ramp.com/llms-guides/rate-limiting.txt",
+       "title": "https://docs.ramp.com/llms-guides/rate-limiting.txt",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:50Z",
+       "quote": "The standard Developer API limit is **200 requests per 10 seconds per source IP address**.",
+       "quote_sha256": "25294d78fecdd4861c1af2a1dd41b4892bed3ced17b7614ac08e2bb9a74cd4d4",
+       "raw_file": "raw/89_10.txt",
+       "page_sha256": "d203d9a59baf77c27da306397c8dcb9247a8a00632bb50bc7125ddd8159fa0b1"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "Separate sandbox (demo-api.ramp.com) via access request form",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+       "title": "Ramp Help Center",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:06Z",
+       "quote": "Sandbox API base URL: https://demo-api.ramp.com",
+       "quote_sha256": "f479f06d9912a98093a60e54aa2101449869801294ee5ea312bda1ce7dc3fab2",
+       "raw_file": "raw/89_1.txt",
+       "page_sha256": "d8aafad862752960efd5f82ac0e37775e63bc8fd926346ae4b8a2eaafa7ad3e3"
+      },
+      {
+       "url": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+       "title": "Ramp Help Center",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:06Z",
+       "quote": "Request access using the sandbox access form.",
+       "quote_sha256": "f20de6718057df39a12b0e02c700214d23a0fc24e57b2d8468913d917d68a6cb",
+       "raw_file": "raw/89_1.txt",
+       "page_sha256": "d8aafad862752960efd5f82ac0e37775e63bc8fd926346ae4b8a2eaafa7ad3e3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST + webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.ramp.com/llms-guides/webhooks.txt",
+       "title": "https://docs.ramp.com/llms-guides/webhooks.txt",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:50Z",
+       "quote": "summary: Webhooks allow your application to receive real-time notifications about events that occur in your Ramp account.",
+       "quote_sha256": "07b3c9ff3624818253806f7e0f9a6a19aa3ba070255d95883e1a347d9d50f60b",
+       "raw_file": "raw/89_11.txt",
+       "page_sha256": "fb6ef27424ce859943784d883eefef8b84ab4aa0810b3a919ce07fb04e2014bb"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official (hosted)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+       "title": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:49Z",
+       "quote": "claude mcp add --transport http ramp https://mcp.ramp.com/mcp",
+       "quote_sha256": "c11bbbcacdc73a6bc547e03151935ba24630e4b240edc100fc9e7f094250325d",
+       "raw_file": "raw/89_8.txt",
+       "page_sha256": "a4eb62e75b3cf031a488c40f48175ebe65f43da0d4942472099077c3accc4488"
+      },
+      {
+       "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+       "title": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:38:49Z",
+       "quote": "**\"The app you are using is not currently supported\"** means your client's redirect URI isn't allowlisted.",
+       "quote_sha256": "9010a3cd91c66038ce67aa9d8b776d0040eb1a88614c1bf04690591fae3b2622",
+       "raw_file": "raw/89_8.txt",
+       "page_sha256": "a4eb62e75b3cf031a488c40f48175ebe65f43da0d4942472099077c3accc4488"
+      }
+     ],
+     "note": "Custom clients need redirect URI allowlisting."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "oauth2_client_credentials",
+     "oauth2"
+    ],
+    "access": "self_serve for Ramp customer admins; sandbox by request",
+    "api_types": [
+     "rest",
+     "webhooks"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "requires Ramp customer admin; custom MCP clients need redirect allowlist"
+   },
+   "prior_record_corrections": [
+    "Prior confirmed. \"ramp-public community-style server\" not verified here."
+   ],
+   "open_questions": [
+    "Pricing/plan requirement for API."
+   ]
+  },
+  {
+   "app_id": 90,
+   "name": "PitchBook",
+   "identity_note": "All pitchbook.com pages returned a Cloudflare challenge (HTTP 403, \"Just a moment...\"); no official page content retrieved.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Fetch blocked; prior record unverified."
+    },
+    {
+     "field": "access",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Fetch blocked."
+    },
+    {
+     "field": "api_types",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Fetch blocked."
+    },
+    {
+     "field": "mcp",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Fetch blocked; not inferred."
+    }
+   ],
+   "summary": {
+    "auth_methods": [],
+    "access": "unknown",
+    "api_types": [],
+    "mcp_status": "not_verified",
+    "buildability": "unknown",
+    "blocker": "official pages blocked by Cloudflare to curl"
+   },
+   "prior_record_corrections": [
+    "All prior claims (contract gate, PB-Token, Claude connector) remain UNVERIFIED."
+   ],
+   "open_questions": [
+    "Retry with browser-capable fetch."
+   ]
+  }
+ ]
+}

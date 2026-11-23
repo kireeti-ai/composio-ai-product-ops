@@ -1,0 +1,26 @@
+{
+  "run_id": "manual-research-v2-20261123_2250",
+  "positions": 46,
+  "with_cached_pages": 33,
+  "no_cached_pages": [
+    50,
+    58,
+    59,
+    60,
+    68,
+    73,
+    78,
+    80,
+    86,
+    91,
+    92,
+    98,
+    99
+  ],
+  "bounded_candidate_spans": 215,
+  "accepted_records": 0,
+  "model_calls": 0,
+  "network_calls": 0,
+  "created_local": "2026-11-23T21:46:11+0530",
+  "source_packet_run": "runs/manual-research-v1-20261123_2240/REVIEW_PACKETS.json"
+}

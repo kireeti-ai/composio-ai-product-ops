@@ -1,0 +1,711 @@
+{
+ "run_at": "2026-11-23T22:35:55+0530",
+ "key_prefix": "ck_",
+ "steps": [
+  {
+   "step": "S1_sdk_surface_and_auth",
+   "status": "ok",
+   "result": {
+    "composio_version": "0.27.0",
+    "client_attrs": [
+     "auth_configs",
+     "client",
+     "connected_accounts",
+     "create",
+     "experimental",
+     "keyring",
+     "logger",
+     "logs",
+     "mcp",
+     "provider",
+     "sessions",
+     "tool_router",
+     "toolkits",
+     "tools",
+     "triggers",
+     "use",
+     "webhooks"
+    ],
+    "tools_methods": [
+     "execute",
+     "get",
+     "get_raw_composio_tool_by_slug",
+     "get_raw_composio_tools",
+     "get_raw_tool_router_meta_tools",
+     "logger",
+     "provider",
+     "proxy",
+     "sanitize_payload"
+    ],
+    "sdk_toolkits_get": "AuthenticationError: 401 Invalid API key: ck_**yCBw"
+   },
+   "layer": "sdk",
+   "seconds": 2.02
+  },
+  {
+   "step": "S2_mcp_tools_list",
+   "status": "ok",
+   "result": [
+    {
+     "name": "COMPOSIO_GET_TOOL_SCHEMAS",
+     "required": [
+      "tool_slugs"
+     ],
+     "params": [
+      "tool_slugs",
+      "include",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_MANAGE_CONNECTIONS",
+     "required": [
+      "toolkits"
+     ],
+     "params": [
+      "toolkits",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_MULTI_EXECUTE_TOOL",
+     "required": [
+      "tools",
+      "sync_response_to_workbench"
+     ],
+     "params": [
+      "tools",
+      "thought",
+      "sync_response_to_workbench",
+      "current_step",
+      "current_step_metric",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_PROXY_EXECUTE",
+     "required": [
+      "toolkit_slug",
+      "endpoint",
+      "method"
+     ],
+     "params": [
+      "toolkit_slug",
+      "endpoint",
+      "method",
+      "body",
+      "parameters"
+     ]
+    },
+    {
+     "name": "COMPOSIO_REMOTE_BASH_TOOL",
+     "required": [
+      "command"
+     ],
+     "params": [
+      "command",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_REMOTE_WORKBENCH",
+     "required": [
+      "code_to_execute"
+     ],
+     "params": [
+      "code_to_execute",
+      "thought",
+      "current_step",
+      "current_step_metric",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_SEARCH_TOOLS",
+     "required": [
+      "queries"
+     ],
+     "params": [
+      "queries",
+      "session",
+      "model",
+      "search_strategy"
+     ]
+    },
+    {
+     "name": "COMPOSIO_SUBMIT_FEEDBACK",
+     "required": [
+      "category",
+      "explanation",
+      "reported_by"
+     ],
+     "params": [
+      "subject",
+      "tool_slug",
+      "plan_id",
+      "category",
+      "step_number",
+      "pitfall_number",
+      "explanation",
+      "reported_by"
+     ]
+    },
+    {
+     "name": "COMPOSIO_WAIT_FOR_CONNECTIONS",
+     "required": [
+      "toolkits"
+     ],
+     "params": [
+      "toolkits",
+      "mode",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_MANAGE_SKILL",
+     "required": null,
+     "params": [
+      "create",
+      "update",
+      "delete"
+     ]
+    },
+    {
+     "name": "COMPOSIO_SEARCH_SKILLS",
+     "required": [
+      "query"
+     ],
+     "params": [
+      "query",
+      "limit"
+     ]
+    },
+    {
+     "name": "COMPOSIO_USE_SKILL",
+     "required": [
+      "slug"
+     ],
+     "params": [
+      "slug"
+     ]
+    }
+   ],
+   "layer": "mcp_infrastructure",
+   "seconds": 1.4
+  },
+  {
+   "step": "S3_search_tools",
+   "status": "ok",
+   "result": {
+    "results": [
+     {
+      "index": 1,
+      "use_case": "list public GitHub repositories of an organization",
+      "execution_guidance": "Found 4 tools for this query. Look at the schemas to know how to use them.",
+      "primary_tool_slugs": [
+       "GITHUB_LIST_ORGANIZATION_REPOSITORIES"
+      ],
+      "related_tool_slugs": [
+       "GITHUB_GET_A_REPOSITORY",
+       "GITHUB_FIND_REPOSITORIES",
+       "GITHUB_ADD_OR_UPDATE_TEAM_REPOSITORY_PERMISSIONS"
+      ],
+      "toolkits": [
+       "github"
+      ]
+     }
+    ],
+    "connection_status": [
+     {
+      "toolkit": "github",
+      "has_active_connection": true,
+      "status_message": "Connection is active and ready to use"
+     }
+    ]
+   },
+   "layer": "mcp_infrastructure",
+   "seconds": 1.11
+  },
+  {
+   "step": "S4_get_tool_schemas",
+   "status": "ok",
+   "result": {
+    "GETANYAPI_GET_API_CONTRACT": {
+     "description": "Read the current AnyAPI contract, pricing, route identities, schemas, and observed latency for one SKU before a paid run. AnyAPI is the provider; route sources describe its aggregation options.",
+     "required": [
+      "sku"
+     ],
+     "properties": [
+      "sku"
+     ]
+    },
+    "GITHUB_LIST_ORGANIZATION_REPOSITORIES": {
+     "description": "Retrieves a list of repositories for a specified GitHub organization, allowing filtering by type and sorting.",
+     "required": [
+      "org"
+     ],
+     "properties": [
+      "org",
+      "page",
+      "sort",
+      "type",
+      "per_page",
+      "direction"
+     ]
+    }
+   },
+   "layer": "mcp_infrastructure",
+   "seconds": 0.71
+  },
+  {
+   "step": "S5_execute_github_list_org_repos",
+   "status": "ok",
+   "result": {
+    "successful": true,
+    "data": {
+     "results": [
+      {
+       "response": {
+        "successful": true,
+        "data": {
+         "details": [
+          {
+           "allow_forking": true,
+           "archive_url": "https://api.github.com/repos/ComposioHQ/pidge/{archive_format}{/ref}",
+           "archived": false,
+           "assignees_url": "https://api.github.com/repos/ComposioHQ/pidge/assignees{/user}",
+           "blobs_url": "https://api.github.com/repos/ComposioHQ/pidge/git/blobs{/sha}",
+           "branches_url": "https://api.github.com/repos/ComposioHQ/pidge/branches{/branch}",
+           "clone_url": "https://github.com/ComposioHQ/pidge.git",
+           "collaborators_url": "https://api.github.com/repos/ComposioHQ/pidge/collaborators{/collaborator}",
+           "comments_url": "https://api.github.com/repos/ComposioHQ/pidge/comments{/number}",
+           "commits_url": "https://api.github.com/repos/ComposioHQ/pidge/commits{/sha}",
+           "compare_url": "https://api.github.com/repos/ComposioHQ/pidge/compare/{base}...{head}",
+           "contents_url": "https://api.github.com/repos/ComposioHQ/pidge/contents/{+path}",
+           "contributors_url": "https://api.github.com/repos/ComposioHQ/pidge/contributors",
+           "created_at": "2026-11-16T15:30:18Z",
+           "custom_properties": {
+            "vanta_production_branch_name": "master"
+           },
+           "default_branch": "main",
+           "deployments_url": "https://api.github.com/repos/ComposioHQ/pidge/deployments",
+           "description": "Pidge: Trust Instinct. Experimental self-hosted iMessage assistant built on Eve, Photon and Composio",
+           "disabled": false,
+           "downloads_url": "https://api.github.com/repos/ComposioHQ/pidge/downloads",
+           "events_url": "https://api.github.com/repos/ComposioHQ/pidge/events",
+           "fork": false,
+           "forks": 0,
+           "forks_count": 0,
+           "forks_url": "https://api.github.com/repos/ComposioHQ/pidge/forks",
+           "full_name": "ComposioHQ/pidge",
+           "git_commits_url": "https://api.github.com/repos/ComposioHQ/pidge/git/commits{/sha}",
+           "git_refs_url": "https://api.github.com/repos/ComposioHQ/pidge/git/refs{/sha}",
+           "git_tags_url": "https://api.github.com/repos/ComposioHQ/pidge/git/tags{/sha}",
+           "git_url": "git://github.com/ComposioHQ/pidge.git",
+           "has_discussions": false,
+           "has_downloads": false,
+           "has_issues": true,
+           "has_pages": false,
+           "has_projects": true,
+           "has_pull_requests": true,
+           "has_wiki": true,
+           "homepage": null,
+           "hooks_url": "https://api.github.com/repos/ComposioHQ/pidge/hooks",
+           "html_url": "https://github.com/ComposioHQ/pidge",
+           "id": 1460205077,
+           "is_template": false,
+           "issue_comment_url": "https://api.github.com/repos/ComposioHQ/pidge/issues/comments{/number}",
+           "issue_events_url": "https://api.github.com/repos/ComposioHQ/pidge/issues/events{/number}",
+           "issues_url": "https://api.github.com/repos/ComposioHQ/pidge/issues{/number}",
+           "keys_url": "https://api.github.com/repos/ComposioHQ/pidge/keys{/key_id}",
+           "labels_url": "https://api.github.com/repos/ComposioHQ/pidge/labels{/name}",
+           "language": "TypeScript",
+           "languages_url": "https://api.github.com/repos/ComposioHQ/pidge/languages",
+           "license": {
+            "key": "mit",
+            "name": "MIT License",
+            "node_id": "MDc6TGljZW5zZTEz",
+            "spdx_id": "MIT",
+            "url": "https://api.github.com/licenses/mit"
+           },
+           "merges_url": "https://api.github.com/repos/ComposioHQ/pidge/merges",
+           "milestones_url": "https://api.github.com/repos/ComposioHQ/pidge/milestones{/number}",
+           "mirror_url": null,
+           "name": "pidge",
+           "node_id": "R_kgDOVwj2FQ",
+           "notifications_url": "https://api.github.com/repos/ComposioHQ/pidge/notifications{?since,all,participating}",
+           "open_issues": 1,
+           "open_issues_count": 1,
+           "owner": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/128464815?v=4",
+            "events_url": "https://api.github.com/users/ComposioHQ/events{/privacy}",
+            "followers_url": "https://api.github.com/users/ComposioHQ/followers",
+            "following_url": "https://api.github.com/users/ComposioHQ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ComposioHQ/gists{/gist_id}",
+            "gravatar_id": "",
+            "html_url": "https://github.com/ComposioHQ",
+            "id": 128464815,
+            "login": "ComposioHQ",
+            "node_id": "O_kgDOB6g3rw",
+            "organizations_url": "https://api.github.com/users/ComposioHQ/orgs",
+            "received_events_url": "https://api.github.com/users/ComposioHQ/received_events",
+            "repos_url": "https://api.github.com/users/ComposioHQ/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/ComposioHQ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ComposioHQ/subscriptions",
+            "type": "Organization",
+            "url": "https://api.github.com/users/ComposioHQ",
+            "user_view_type": "public"
+           },
+           "permissions": {
+            "admin": false,
+            "maintain": false,
+            "pull": true,
+            "push": false,
+            "triage": false
+           },
+           "private": false,
+           "pull_request_creation_policy": "all",
+           "pulls_url": "https://api.github.com/repos/ComposioHQ/pidge/pulls{/number}",
+           "pushed_at": "2026-11-16T16:05:40Z",
+           "releases_url": "https://api.github.com/repos/ComposioHQ/pidge/releases{/id}",
+           "size": 1062,
+           "ssh_url": "git@github.com:ComposioHQ/pidge.git",
+           "stargazers_count": 0,
+           "stargazers_url": "https://api.github.com/repos/ComposioHQ/pidge/stargazers",
+           "statuses_url": "https://api.github.com/repos/ComposioHQ/pidge/statuses/{sha}",
+           "subscribers_url": "https://api.github.com/repos/ComposioHQ/pidge/subscribers",
+           "subscription_url": "https://api.github.com/repos/ComposioHQ/pidge/subscription",
+           "svn_url": "https://github.com/ComposioHQ/pidge",
+           "tags_url": "https://api.github.com/repos/ComposioHQ/pidge/tags",
+           "teams_url": "https://api.github.com/repos/ComposioHQ/pidge/teams",
+           "topics": [],
+           "trees_url": "https://api.github.com/repos/ComposioHQ/pidge/git/trees{/sha}",
+           "updated_at": "2026-11-19T20:11:33Z",
+           "url": "https://api.github.com/repos/ComposioHQ/pidge",
+           "visibility": "public",
+           "watchers": 0,
+           "watchers_count": 0,
+           "web_commit_signoff_required": false
+          },
+          {
+           "allow_forking": true,
+           "archive_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/{archive_format}{/ref}",
+           "archived": false,
+           "assignees_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/assignees{/user}",
+           "blobs_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/git/blobs{/sha}",
+           "branches_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/branches{/branch}",
+           "clone_url": "https://github.com/ComposioHQ/connect-flow-governance.git",
+           "collaborators_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/collaborators{/collaborator}",
+           "comments_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/comments{/number}",
+           "commits_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/commits{/sha}",
+           "compare_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/compare/{base}...{head}",
+           "contents_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/contents/{+path}",
+           "contributors_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/contributors",
+           "created_at": "2026-10-06T19:37:11Z",
+           "custom_properties": {
+            "vanta_production_branch_name": "master"
+           },
+           "default_branch": "main",
+           "deployments_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/deployments",
+           "description": "Chat agent on Composio sessions: any toolkit, choose app access before login, auto-resume after auth",
+           "disabled": false,
+           "downloads_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/downloads",
+           "events_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/events",
+           "fork": false,
+           "forks": 0,
+           "forks_count": 0,
+           "forks_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/forks",
+           "full_name": "ComposioHQ/connect-flow-governance",
+           "git_commits_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/git/commits{/sha}",
+           "git_refs_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/git/refs{/sha}",
+           "git_tags_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/git/tags{/sha}",
+           "git_url": "git://github.com/ComposioHQ/connect-flow-governance.git",
+           "has_discussions": false,
+           "has_downloads": false,
+           "has_issues": true,
+           "has_pages": false,
+           "has_projects": true,
+           "has_pull_requests": true,
+           "has_wiki": true,
+           "homepage": null,
+           "hooks_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/hooks",
+           "html_url": "https://github.com/ComposioHQ/connect-flow-governance",
+           "id": 1407838242,
+           "is_template": false,
+           "issue_comment_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/issues/comments{/number}",
+           "issue_events_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/issues/events{/number}",
+           "issues_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/issues{/number}",
+           "keys_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/keys{/key_id}",
+           "labels_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/labels{/name}",
+           "language": "HTML",
+           "languages_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/languages",
+           "license": null,
+           "merges_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/merges",
+           "milestones_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/milestones{/number}",
+           "mirror_url": null,
+           "name": "connect-flow-governance",
+           "node_id": "R_kgDOU-noIg",
+           "notifications_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/notifications{?since,all,participating}",
+           "open_issues": 2,
+           "open_issues_count": 2,
+           "owner": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/128464815?v=4",
+            "events_url": "https://api.github.com/users/ComposioHQ/events{/privacy}",
+            "followers_url": "https://api.github.com/users/ComposioHQ/followers",
+            "following_url": "https://api.github.com/users/ComposioHQ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ComposioHQ/gists{/gist_id}",
+            "gravatar_id": "",
+            "html_url": "https://github.com/ComposioHQ",
+            "id": 128464815,
+            "login": "ComposioHQ",
+            "node_id": "O_kgDOB6g3rw",
+            "organizations_url": "https://api.github.com/users/ComposioHQ/orgs",
+            "received_events_url": "https://api.github.com/users/ComposioHQ/received_events",
+            "repos_url": "https://api.github.com/users/ComposioHQ/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/ComposioHQ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ComposioHQ/subscriptions",
+            "type": "Organization",
+            "url": "https://api.github.com/users/ComposioHQ",
+            "user_view_type": "public"
+           },
+           "permissions": {
+            "admin": false,
+            "maintain": false,
+            "pull": true,
+            "push": false,
+            "triage": false
+           },
+           "private": false,
+           "pull_request_creation_policy": "collaborators_only",
+           "pulls_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/pulls{/number}",
+           "pushed_at": "2026-11-01T07:51:01Z",
+           "releases_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/releases{/id}",
+           "size": 328,
+           "ssh_url": "git@github.com:ComposioHQ/connect-flow-governance.git",
+           "stargazers_count": 1,
+           "stargazers_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/stargazers",
+           "statuses_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/statuses/{sha}",
+           "subscribers_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/subscribers",
+           "subscription_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/subscription",
+           "svn_url": "https://github.com/ComposioHQ/connect-flow-governance",
+           "tags_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/tags",
+           "teams_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/teams",
+           "topics": [],
+           "trees_url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance/git/trees{/sha}",
+           "updated_at": "2026-10-21T05:19:54Z",
+           "url": "https://api.github.com/repos/ComposioHQ/connect-flow-governance",
+           "visibility": "public",
+           "watchers": 1,
+           "watchers_count": 1,
+           "web_commit_signoff_required": false
+          },
+          {
+           "allow_forking": true,
+           "archive_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/{archive_format}{/ref}",
+           "archived": false,
+           "assignees_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/assignees{/user}",
+           "blobs_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/git/blobs{/sha}",
+           "branches_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/branches{/branch}",
+           "clone_url": "https://github.com/ComposioHQ/composio-plugin-openai.git",
+           "collaborators_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/collaborators{/collaborator}",
+           "comments_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/comments{/number}",
+           "commits_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/commits{/sha}",
+           "compare_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/compare/{base}...{head}",
+           "contents_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/contents/{+path}",
+           "contributors_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/contributors",
+           "created_at": "2026-07-10T22:35:39Z",
+           "custom_properties": {
+            "vanta_production_branch_name": "master"
+           },
+           "default_branch": "main",
+           "deployments_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/deployments",
+           "description": null,
+           "disabled": false,
+           "downloads_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/downloads",
+           "events_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/events",
+           "fork": false,
+           "forks": 4,
+           "forks_count": 4,
+           "forks_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/forks",
+           "full_name": "ComposioHQ/composio-plugin-openai",
+           "git_commits_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/git/commits{/sha}",
+           "git_refs_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/git/refs{/sha}",
+           "git_tags_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/git/tags{/sha}",
+           "git_url": "git://github.com/ComposioHQ/composio-plugin-openai.git",
+           "has_discussions": false,
+           "has_downloads": false,
+           "has_issues": true,
+           "has_pages": false,
+           "has_projects": true,
+           "has_pull_requests": true,
+           "has_wiki": true,
+           "homepage": null,
+           "hooks_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/hooks",
+           "html_url": "https://github.com/ComposioHQ/composio-plugin-openai",
+           "id": 1296951573,
+           "is_template": false,
+           "issue_comment_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/issues/comments{/number}",
+           "issue_events_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/issues/events{/number}",
+           "issues_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/issues{/number}",
+           "keys_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/keys{/key_id}",
+           "labels_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/labels{/name}",
+           "language": "Python",
+           "languages_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/languages",
+           "license": {
+            "key": "mit",
+            "name": "MIT License",
+            "node_id": "MDc6TGljZW5zZTEz",
+            "spdx_id": "MIT",
+            "url": "https://api.github.com/licenses/mit"
+           },
+           "merges_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/merges",
+           "milestones_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/milestones{/number}",
+           "mirror_url": null,
+           "name": "composio-plugin-openai",
+           "node_id": "R_kgDOTU3pFQ",
+           "notifications_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/notifications{?since,all,participating}",
+           "open_issues": 1,
+           "open_issues_count": 1,
+           "owner": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/128464815?v=4",
+            "events_url": "https://api.github.com/users/ComposioHQ/events{/privacy}",
+            "followers_url": "https://api.github.com/users/ComposioHQ/followers",
+            "following_url": "https://api.github.com/users/ComposioHQ/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ComposioHQ/gists{/gist_id}",
+            "gravatar_id": "",
+            "html_url": "https://github.com/ComposioHQ",
+            "id": 128464815,
+            "login": "ComposioHQ",
+            "node_id": "O_kgDOB6g3rw",
+            "organizations_url": "https://api.github.com/users/ComposioHQ/orgs",
+            "received_events_url": "https://api.github.com/users/ComposioHQ/received_events",
+            "repos_url": "https://api.github.com/users/ComposioHQ/repos",
+            "site_admin": false,
+            "starred_url": "https://api.github.com/users/ComposioHQ/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ComposioHQ/subscriptions",
+            "type": "Organization",
+            "url": "https://api.github.com/users/ComposioHQ",
+            "user_view_type": "public"
+           },
+           "permissions": {
+            "admin": false,
+            "maintain": false,
+            "pull": true,
+            "push": false,
+            "triage": false
+           },
+           "private": false,
+           "pull_request_creation_policy": "collaborators_only",
+           "pulls_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/pulls{/number}",
+           "pushed_at": "2026-08-11T19:53:58Z",
+           "releases_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/releases{/id}",
+           "size": 130,
+           "ssh_url": "git@github.com:ComposioHQ/composio-plugin-openai.git",
+           "stargazers_count": 11,
+           "stargazers_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/stargazers",
+           "statuses_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/statuses/{sha}",
+           "subscribers_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/subscribers",
+           "subscription_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/subscription",
+           "svn_url": "https://github.com/ComposioHQ/composio-plugin-openai",
+           "tags_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/tags",
+           "teams_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/teams",
+           "topics": [],
+           "trees_url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai/git/trees{/sha}",
+           "updated_at": "2026-10-21T05:20:43Z",
+           "url": "https://api.github.com/repos/ComposioHQ/composio-plugin-openai",
+           "visibility": "public",
+           "watchers": 11,
+           "watchers_count": 11,
+           "web_commit_signoff_required": false
+          }
+         ]
+        }
+       },
+       "tool_slug": "GITHUB_LIST_ORGANIZATION_REPOSITORIES",
+       "index": 0
+      }
+     ],
+     "total_count": 1,
+     "success_count": 1,
+     "error_count": 0,
+     "session": {
+      "id": "page",
+      "instructions": "REQUIRED: Pass session_id \"page\" in ALL subsequent meta tool calls for this workflow."
+     }
+    },
+    "error": null,
+    "log_id": "log_6egYVmT0Rjp8"
+   },
+   "layer": "app_toolkit",
+   "seconds": 1.31
+  },
+  {
+   "step": "S6_execute_getanyapi_get_api_contract",
+   "status": "tool_call_failed",
+   "result": {
+    "successful": false,
+    "data": {
+     "results": [
+      {
+       "error": "GETANYAPI_GET_API_CONTRACT is not available on the instant account for toolkit getanyapi",
+       "tool_slug": "GETANYAPI_GET_API_CONTRACT",
+       "index": 0
+      }
+     ],
+     "total_count": 1,
+     "success_count": 0,
+     "error_count": 1,
+     "session": {
+      "id": "page",
+      "instructions": "REQUIRED: Pass session_id \"page\" in ALL subsequent meta tool calls for this workflow."
+     }
+    },
+    "error": "1 out of 1 tools failed",
+    "log_id": "log_OpyAHHOac5xs"
+   },
+   "layer": "app_toolkit",
+   "seconds": 0.6
+  },
+  {
+   "step": "S7_execute_composio_remote_bash (Composio meta-tool, not an app toolkit)",
+   "status": "ok",
+   "result": {
+    "successful": true,
+    "data": {
+     "stdout": "4\n",
+     "stdoutLines": 1,
+     "stderr": "",
+     "stderrLines": 0,
+     "sandbox_id_suffix": "fg3k",
+     "session": {
+      "id": "page",
+      "instructions": "REQUIRED: Pass session_id \"page\" in ALL subsequent meta tool calls for this workflow."
+     }
+    },
+    "error": null,
+    "log_id": "log_0FqyudaG3v-e"
+   },
+   "layer": "mcp_infrastructure",
+   "seconds": 1.17
+  },
+  {
+   "step": "S8_sdk_execute_github_list_org_repos",
+   "status": "error",
+   "error_type": "RuntimeError",
+   "error": "skipped: COMPOSIO_SDK_API_KEY not set (SDK project key required)",
+   "layer": "app_toolkit",
+   "seconds": 0.0
+  }
+ ],
+ "summary": {
+  "app_toolkit_calls_succeeded": 1,
+  "app_toolkit_calls_attempted": 2,
+  "app_toolkit_calls_skipped": 1,
+  "sdk_authenticated": false,
+  "mcp_infrastructure_calls_succeeded": 4,
+  "mcp_infrastructure_calls_attempted": 4,
+  "note": "GitHub needs an interactive OAuth connection (COMPOSIO_MANAGE_CONNECTIONS) that the account owner must approve; not initiated here. GetAnyAPI instant account does not expose the contract tool and its other tools are paid."
+ }
+}

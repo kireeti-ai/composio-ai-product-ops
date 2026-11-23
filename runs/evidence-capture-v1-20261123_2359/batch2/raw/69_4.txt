@@ -1,0 +1,1064 @@
+
+Datadog API Reference
+For AI agents: A markdown version of this page is available at 
+https://docs.datadoghq.com/api/latest.md
+. A documentation index is available at 
+/llms.txt
+.
+Product
+The integrated platform for monitoring & security
+Observability
+Security
+Digital Experience
+Software Delivery
+Service Management
+AI
+Platform Capabilities
+View Product Pricing
+Observability
+End-to-end, simplified visibility into your stack’s health & performance
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+End User Device Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Agent Observability
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Sensitive Data Scanner
+Security
+Outpace AI-powered attacks with unified security and observability
+Learn More
+Code Security
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Cloud Security
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+SIEM
+Cloud SIEM
+Bits Security Analyst
+AI & Data Security
+AI Guard
+Sensitive Data Scanner
+Digital Experience
+Optimize front-end performance and enhance user experiences
+Digital Experience
+Product Analytics
+Experiments
+Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Continuous Testing
+Error Tracking
+Dashboards
+Software Delivery
+Build, test, secure and ship quality code faster
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+Software Composition Analysis
+DORA Metrics + AI Impact
+Service Management
+Integrated, streamlined workflows for faster time-to-resolution
+Incident Response
+Incident Management
+Work Management
+Service Level Objectives
+Actions
+Workflow Automation
+Datadog Apps
+Event Management
+Context Graph
+Internal Developer Portal (IDP)
+Software Catalog
+AI
+Monitor and improve model performance. Pinpoint root causes and detect anomalies
+AI for Datadog
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Datadog for AI
+Agent Observability
+AI Guard
+MCP Server
+Pup CLI
+GPU Monitoring
+Platform Capabilities
+Built-in features & integrations that power the Datadog platform
+Built-in Features
+Bits AI
+Bits Chat
+Bits Agent Builder
+Alerts
+Custom Metrics
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+DORA Metrics + AI Impact
+Incident Management
+Work Management
+Workflow Automation
+Teams
+Extensibility
+OpenTelemetry
+integrations
+IDE Plugins
+MCP Server
+Agent Directory
+Datadog Apps
+API
+Marketplace
+Pup CLI
+Software Catalog
+Service Level Objectives
+Customers
+Pricing
+Solutions
+Industry
+Financial Services
+Manufacturing & Logistics
+Healthcare/Life Sciences
+Retail/E-Commerce
+Government
+Education
+Media & Entertainment
+Technology
+Gaming
+Technology
+Amazon Web Services Monitoring
+Azure Monitoring
+Google Cloud Monitoring
+Oracle Cloud Monitoring
+Kubernetes Monitoring
+Red Hat OpenShift
+Pivotal Platform
+OpenAI
+SAP Monitoring
+OpenTelemetry
+Use-case
+Application Security
+Cloud Migration
+Monitoring Consolidation
+Unified Commerce Monitoring
+SOAR
+DevOps
+FinOps
+Shift-Left Testing
+Digital Experience Monitoring
+Security Analytics
+Compliance for CIS Benchmarks
+Hybrid Cloud Monitoring
+Edge Device Monitoring
+Real-Time BI
+On-Premises Monitoring
+Log Analysis & Correlation
+CNAPP
+Database Visibility
+Looking for Datadog logos?
+You can find the logo assets on our press page.
+Download Media Assets
+About
+Contact
+Partners
+Newsroom
+Events & Webinars
+Leadership
+Careers
+Analyst Reports
+Investor Relations
+ESG Report
+Trust Hub
+Blog
+The Monitor
+Engineering
+AI
+Security Labs
+Login
+GET STARTED FREE
+Free Trial
+Home
+Docs
+API
+/
+Overview
+Authorization Scopes for OAuth Clients
+Rate Limits
+Using the API
+Changelog
+Action Connection
+Actions Datastores
+Agent Health
+Agent Observability
+Agentless Scanning
+AI Gateway
+AI Guard
+Annotations
+Anthropic Usage And Costs Integration
+API Management
+APM
+APM Retention Filters
+APM Trace
+App Builder
+Application Security
+Audit
+Authentication
+AuthN Mappings
+AWS Integration
+AWS Logs Integration
+Azure Integration
+Bits AI
+Bits Security Analyst
+Change Management
+ChatGPT Enterprise Integration
+CI Visibility GitHub Accounts
+CI Visibility Logs
+CI Visibility Pipelines
+CI Visibility Tests
+Claude Compliance Integration
+Cloud Authentication
+Cloud Cost Management
+Cloud Network Monitoring
+Cloudflare Integration
+Code Coverage
+Compliance
+Confluent Cloud
+Container Images
+Containers
+CoreWeave Integration
+CSM Agents
+CSM Coverage Analysis
+CSM Ownership
+CSM Settings
+CSM Threats
+Customer Org
+Dashboard Lists
+Dashboard Secure Embed
+Dashboard Sharing
+Dashboards
+Data Deletion
+Data Observability
+Databricks Integration
+Datasets
+DDSQL
+Delivery Performance
+DEM
+Deployment Gates
+Domain Allowlist
+Downtimes
+Elastic Cloud Integration
+Embeddable Graphs
+End User Device Monitoring
+Entity Integration Configs
+Entity Risk Scores
+Error Tracking
+Events
+Execution Policy
+Experiments
+Fastly Integration
+Feature Flags
+Fleet Automation
+Forms
+GCP Integration
+Google Chat Integration
+Governance Console
+High Availability MultiRegion
+Hosts
+Identity Providers
+Incidents
+Integrations
+IP Allowlist
+IP Ranges
+Jira Integration
+Key Management
+Logs
+Logs Archive Searches
+Logs Archives
+Logs Custom Destinations
+Logs Indexes
+Logs Metrics
+Logs Pipelines
+Logs Restriction Queries
+Metrics
+Microsoft Teams Integration
+Model Lab API
+Monitors
+Nebius Cloud Integration
+Network Device Monitoring
+Notebooks
+OAuth2 Client Public
+Observability Pipelines
+OCI Integration
+Okta Integration
+On-Call
+On-Call Paging
+OpenAI Codex Integration
+Opsgenie Integration
+Org Authorized Clients
+Org Connections
+Org Groups
+Organizations
+PagerDuty Integration
+Powerpack
+Processes
+Product Analytics
+Product Catalog
+Reference Tables
+Report Schedules
+Reporting And Sharing
+Restriction Policies
+Roles
+RUM
+Rum Audience Management
+RUM Config
+RUM Insights
+RUM Managed Archives
+RUM Metrics
+RUM Operations
+RUM Recovery
+RUM Remote Config
+RUM Replay Heatmaps
+RUM Replay Playlists
+RUM Replay Sessions
+RUM Replay Viewership
+RUM Retention Filters
+RUM Retention Quotas
+Rum Teams Ownership
+SCIM
+Scorecards
+Seats
+Security Monitoring
+Sensitive Data Scanner
+Service Accounts
+Service Checks
+Service Definition
+Service Dependencies
+Service Level Objective Corrections
+Service Level Objectives
+ServiceNow Integration
+Slack Integration
+Snapshots
+Snowflake Integration
+Software Catalog
+Spans
+Spans Metrics
+Static Analysis
+Status Pages
+Statuspage Integration
+Stegadography
+Storage Management
+Synthetics
+Tag Rules
+Tags
+Teams
+Temporal Cloud OpenMetrics Integration
+Test Optimization
+Threat Intelligence
+Timeseries Anomaly Investigations
+Twilio Integration
+Usage Metering
+User Authorized Clients
+Users
+Webhooks Integration
+Widgets
+Work Management
+Work Management Attribute
+Work Management Type
+Workflow Automation
+Datadog Docs 
+API
+/
+Overview
+Authorization Scopes for OAuth Clients
+Rate Limits
+Using the API
+Changelog
+Action Connection
+Actions Datastores
+Agent Health
+Agent Observability
+Agentless Scanning
+AI Gateway
+AI Guard
+Annotations
+Anthropic Usage And Costs Integration
+API Management
+APM
+APM Retention Filters
+APM Trace
+App Builder
+Application Security
+Audit
+Authentication
+AuthN Mappings
+AWS Integration
+AWS Logs Integration
+Azure Integration
+Bits AI
+Bits Security Analyst
+Change Management
+ChatGPT Enterprise Integration
+CI Visibility GitHub Accounts
+CI Visibility Logs
+CI Visibility Pipelines
+CI Visibility Tests
+Claude Compliance Integration
+Cloud Authentication
+Cloud Cost Management
+Cloud Network Monitoring
+Cloudflare Integration
+Code Coverage
+Compliance
+Confluent Cloud
+Container Images
+Containers
+CoreWeave Integration
+CSM Agents
+CSM Coverage Analysis
+CSM Ownership
+CSM Settings
+CSM Threats
+Customer Org
+Dashboard Lists
+Dashboard Secure Embed
+Dashboard Sharing
+Dashboards
+Data Deletion
+Data Observability
+Databricks Integration
+Datasets
+DDSQL
+Delivery Performance
+DEM
+Deployment Gates
+Domain Allowlist
+Downtimes
+Elastic Cloud Integration
+Embeddable Graphs
+End User Device Monitoring
+Entity Integration Configs
+Entity Risk Scores
+Error Tracking
+Events
+Execution Policy
+Experiments
+Fastly Integration
+Feature Flags
+Fleet Automation
+Forms
+GCP Integration
+Google Chat Integration
+Governance Console
+High Availability MultiRegion
+Hosts
+Identity Providers
+Incidents
+Integrations
+IP Allowlist
+IP Ranges
+Jira Integration
+Key Management
+Logs
+Logs Archive Searches
+Logs Archives
+Logs Custom Destinations
+Logs Indexes
+Logs Metrics
+Logs Pipelines
+Logs Restriction Queries
+Metrics
+Microsoft Teams Integration
+Model Lab API
+Monitors
+Nebius Cloud Integration
+Network Device Monitoring
+Notebooks
+OAuth2 Client Public
+Observability Pipelines
+OCI Integration
+Okta Integration
+On-Call
+On-Call Paging
+OpenAI Codex Integration
+Opsgenie Integration
+Org Authorized Clients
+Org Connections
+Org Groups
+Organizations
+PagerDuty Integration
+Powerpack
+Processes
+Product Analytics
+Product Catalog
+Reference Tables
+Report Schedules
+Reporting And Sharing
+Restriction Policies
+Roles
+RUM
+Rum Audience Management
+RUM Config
+RUM Insights
+RUM Managed Archives
+RUM Metrics
+RUM Operations
+RUM Recovery
+RUM Remote Config
+RUM Replay Heatmaps
+RUM Replay Playlists
+RUM Replay Sessions
+RUM Replay Viewership
+RUM Retention Filters
+RUM Retention Quotas
+Rum Teams Ownership
+SCIM
+Scorecards
+Seats
+Security Monitoring
+Sensitive Data Scanner
+Service Accounts
+Service Checks
+Service Definition
+Service Dependencies
+Service Level Objective Corrections
+Service Level Objectives
+ServiceNow Integration
+Slack Integration
+Snapshots
+Snowflake Integration
+Software Catalog
+Spans
+Spans Metrics
+Static Analysis
+Status Pages
+Statuspage Integration
+Stegadography
+Storage Management
+Synthetics
+Tag Rules
+Tags
+Teams
+Temporal Cloud OpenMetrics Integration
+Test Optimization
+Threat Intelligence
+Timeseries Anomaly Investigations
+Twilio Integration
+Usage Metering
+User Authorized Clients
+Users
+Webhooks Integration
+Widgets
+Work Management
+Work Management Attribute
+Work Management Type
+Workflow Automation
+Docs
+API
+Language
+English
+English
+Français
+日本語
+한국어
+Español
+Datadog site
+US1
+US1
+US3
+US5
+EU
+AP1
+AP2
+UK1
+US1-FED
+US2-FED
+API Reference
+Copy page
+Copied
+The Datadog API is an HTTP REST API. The API uses resource-oriented URLs to call the API, uses status codes to indicate the success or failure of requests, returns JSON from all requests, and uses standard HTTP response codes. Use the Datadog API to access the Datadog platform programmatically.
+Getting started
+Authenticate to the API with an 
+API key
+ using the header 
+DD-API-KEY
+. For some endpoints, you also need an 
+Application key
+, which uses the header 
+DD-APPLICATION-KEY
+.
+To try out the API 
+Note
+: To authenticate to the Datadog API through Postman, add your Datadog API and Application key values to the 
+Collection variables
+ of the Datadog API collection.
+Using the API
+ is a guide to the endpoints.
+Notes
+:
+Add your API and application key values to the 
+Variables
+ tab of the Datadog API Collection.
+cURL code examples assume usage of BASH and GNU coreutils. On macOS, you can install coreutils with the 
+Homebrew package manager
+: 
+brew install coreutils
+Client libraries
+By default, the Datadog API Docs show examples in cURL. Select one of our official 
+client libraries
+ languages in each endpoint to see code examples from that library. To install each library:
+Java
+Python [legacy]
+Python
+Ruby [legacy]
+Ruby
+Go
+TypeScript
+Rust
+Installation
+Maven - Add this dependency to your project's POM:
+Copy
+<dependency>
+ <groupId>
+com.datadoghq
+</groupId>
+ <artifactId>
+datadog-api-client
+</artifactId>
+ <version>
+2.62.0
+</version>
+ <scope>
+compile
+</scope>
+</dependency>
+Gradle - Add this dependency to your project's build file:
+Copy
+compile 
+"com.datadoghq:datadog-api-client:2.62.0"
+Usage
+Copy
+import
+ com.datadog.api.client.ApiClient;
+import
+ com.datadog.api.client.ApiException;
+import
+ com.datadog.api.client.Configuration;
+import
+ com.datadog.api.<VERSION>.client.api.*;
+import
+ com.datadog.api.<VERSION>.client.model.*;
+Note
+: Replace 
+<VERSION>
+ with v1 or v2, depending on which endpoints you want to use.
+Examples
+Maven 
+pom.xml
+ for running examples:
+Copy
+<project>
+ <modelVersion>
+4.0.0
+</modelVersion>
+ <groupId>
+com.example
+</groupId>
+ <artifactId>
+example
+</artifactId>
+ <version>
+1
+</version>
+ <dependencies>
+ <dependency>
+ <groupId>
+com.datadoghq
+</groupId>
+ <artifactId>
+datadog-api-client
+</artifactId>
+ <version>
+2.62.0
+</version>
+ <scope>
+compile
+</scope>
+ </dependency>
+ </dependencies>
+</project>
+Make sure that 
+CLASSPATH
+ variable contains all dependencies.
+Copy
+export
+ CLASSPATH=$(mvn 
+-q
+ exec:exec
+ -Dexec.executable=echo
+ -Dexec.args="%classpath"
+)
+Gradle 
+build.gradle
+ for running examples:
+Copy
+plugins {
+ id 
+'java'
+ id 
+'application'
+}
+repositories {
+ jcenter()
+}
+dependencies {
+ implementation 
+'com.datadoghq:datadog-api-client:2.62.0'
+}
+application {
+ mainClassName = 
+'Example.java'
+}
+Execute example by running 
+gradle run
+ command.
+Installation
+Copy
+pip 
+install
+ datadog
+Usage
+Copy
+import
+ datadog
+Installation
+Copy
+pip3 install datadog-api-client
+Usage
+Copy
+import
+ datadog_api_client
+Installation
+Copy
+gem 
+install
+ dogapi
+Usage
+Copy
+require
+ 'dogapi'
+Installation
+Copy
+gem 
+install
+ datadog_api_client
+ -v
+ 2.61.0
+Usage
+Copy
+require
+ 'datadog_api_client'
+Installation
+Copy
+go 
+mod
+ init
+ main
+ && go 
+get
+ github.com/DataDog/datadog-api-client-go/v2/api/datadog
+Usage
+Copy
+import
+ (
+ "github.com/DataDog/datadog-api-client-go/v2/api/datadog"
+ "github.com/DataDog/datadog-api-client-go/v2/api/datadog<VERSION>"
+)
+Note
+: Replace 
+<VERSION>
+ with 
+V1
+ or 
+V2
+, depending on which endpoints you want to use.
+Installation
+The package is under 
+@datadog/datadog-api-client
+ and can be installed through NPM or Yarn:
+Copy
+# NPM
+npm install @datadog/datadog-api-client
+# Yarn
+yarn add @datadog/datadog-api-client
+Usage
+Copy
+import
+ { <VERSION> } 
+from
+ 'datadog-api-client'
+;
+Note
+: Replace 
+<VERSION>
+ with v1 or v2, depending on which endpoints you want to use.
+Installation
+Run 
+cargo add datadog-api-client
+, or add the following to 
+Cargo.toml
+ under 
+[dependencies]
+:
+Copy
+datadog-api-client = "0"
+Usage
+Try the following snippet to validate your Datadog API key:
+Copy
+use
+ datadog_api_client::datadog::
+Configuration
+;
+use
+ datadog_api_client::datadogV1::api_authentication::
+AuthenticationAPI
+;
+#[tokio::main]
+async
+ fn
+ main() {
+ let
+ configuration = 
+Configuration
+::new();
+ let
+ api = 
+AuthenticationAPI
+::with_config(configuration);
+ let
+ resp = api.validate().
+await
+;
+ if
+ let
+ Ok
+(value) = resp {
+ println!(
+"
+{
+:#?
+}
+"
+, value);
+ } 
+else
+ {
+ println!(
+"
+{
+:#?
+}
+"
+, resp.unwrap_err());
+ }
+}
+Or check out the libraries directly:
+Trying to get started with the application instead? Check out Datadog's general 
+Getting Started docs
+.
+Can't find something?
+Our friendly, knowledgeable solutions engineers are here to help!
+Contact Us
+Product
+Observability
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+End User Device Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Security
+Code Security
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Cloud Security
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+SIEM
+Cloud SIEM
+AI & Data Security
+AI Guard
+Sensitive Data Scanner
+Digital Experience
+Digital Experience
+Product Analytics
+Experiments
+Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Software Delivery
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+DORA Metrics + AI Impact
+Service Management
+Incident Response
+Incident Management
+Work Management
+Actions
+Workflow Automation
+Datadog Apps
+Event Management
+Context Graph
+Software Catalog
+AI
+AI for Datadog
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Datadog for AI
+Agent Observability
+AI Guard
+MCP Server
+Pup CLI
+Platform Capabilities
+Built-in Features
+Alerts
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+Teams
+Extensibility
+OpenTelemetry
+integrations
+IDE Plugins
+Agent Directory
+API
+Marketplace
+Service Level Objectives
+resources
+Pricing
+Events and Webinars
+Product Preview Program
+Documentation
+Knowledge Center
+Learning Resources
+Support
+Services & Enablement
+Certification
+Open Source
+Architecture Center
+Blog
+The Monitor
+Engineering
+AI
+Security Labs
+About
+Contact Us
+Partners
+Press
+Leadership
+Careers
+Investor Relations
+Analyst Reports
+ESG Report
+Vendor Help
+Legal
+Privacy Center
+Trust Hub
+Download mobile app
+© Datadog 2026
+Terms
+ | 
+Privacy
+ | 
+Cookies
+English
+English
+English
+Français
+French
+日本語
+Japanese
+한국어
+Korean
+Español
+Spanish

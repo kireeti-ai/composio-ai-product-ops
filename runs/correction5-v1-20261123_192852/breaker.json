@@ -1,0 +1,21 @@
+{
+ "openrouter:main:particle-ai/particle-1:free": {
+  "state": "open",
+  "consec": 6,
+  "opened_at": 1795442161.3548841,
+  "cooldown_s": 1200.0,
+  "opens": 2,
+  "probes": 1,
+  "seeded_from": "bench5-v1 log: 5 consecutive 429 fleet_capacity_exhausted",
+  "probe_started": false
+ },
+ "groq:orgA:openai/gpt-oss-120b": {
+  "state": "closed",
+  "consec": 0,
+  "opened_at": null,
+  "cooldown_s": 600.0,
+  "opens": 0,
+  "probes": 0,
+  "probe_started": false
+ }
+}

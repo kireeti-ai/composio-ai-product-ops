@@ -1,0 +1,38 @@
+title: Ramp MCP
+source_url: /developer-api/v1/ramp-mcp
+summary: Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account. Each connection acts as the signed-in user, with that user's Ramp permissions.
+
+content:
+Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account. Each connection acts as the signed-in user, with that user's Ramp permissions.
+
+## Connect
+
+- **Claude:** Install Ramp from [Claude's directory↗](<https://claude.ai/directory/61bac03c-3f98-4b3c-affb-1b99533fa82c>), then sign in to Ramp.
+
+- **ChatGPT:** Install Ramp from the [ChatGPT app directory↗](<https://chatgpt.com/apps/ramp/asdk_app_69250fb6281c819195b52a1556b0060c>).
+
+- **Cursor:** [Add Ramp to Cursor](<cursor://anysphere.cursor-deeplink/mcp/install?name=ramp&config=eyJ1cmwiOiJodHRwczovL21jcC5yYW1wLmNvbS9tY3AifQ>) with one click.
+
+- **Claude Code:**
+
+```bash
+claude mcp add --transport http ramp https://mcp.ramp.com/mcp
+```
+
+- **Codex:**
+
+```bash
+codex mcp add ramp --url https://mcp.ramp.com/mcp
+```
+
+- **Other clients:** Coding agents can also use [Ramp CLI](</developer-api/v1/cli>). For other MCP clients, gateways, and the sandbox, see [Connect to Ramp↗](<https://agents.ramp.com/docs/guides/connecting>).
+
+When you sign in, choose **Full access** or **Read-only**. Connections expire after 30 days; reconnect to renew.
+
+## Connection issues
+
+- **"The app you are using is not currently supported"** means your client's redirect URI isn't allowlisted. [Request a redirect URI](</developer-api/v1/mcp-redirect-whitelist-request>).
+
+- **You can't connect at all:** your Ramp role may not include access to AI tools. Ask your Admin; see [Manage connected AI tools↗](<https://support.ramp.com/managing-connected-ai-tools>).
+
+For the full tool list and more troubleshooting, see [Connect to Ramp↗](<https://agents.ramp.com/docs/guides/connecting>) and the [Agent tools reference↗](<https://agents.ramp.com/docs/reference/agent-tools>).

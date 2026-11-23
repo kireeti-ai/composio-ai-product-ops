@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v28252 -->
+
+
+  <title>Help Center</title>
+
+  
+
+  <link rel="canonical" href="https://help.otter.ai/hc/en-us">
+<link rel="alternate" hreflang="en-us" href="https://help.otter.ai/hc/en-us">
+<link rel="alternate" hreflang="es" href="https://help.otter.ai/hc/es">
+<link rel="alternate" hreflang="fr" href="https://help.otter.ai/hc/fr">
+<link rel="alternate" hreflang="x-default" href="https://help.otter.ai/hc/en-us">
+
+  <link rel="stylesheet" href="//static.zdassets.com/hc/assets/application-bb4463c65634cf19f082a9fd1169b8ce.css" media="all" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/hc/theming_assets/9465264/360003221634/style.css?digest=45133963595287">
+
+  <link rel="icon" type="image/x-icon" href="/hc/theming_assets/01KACNEP1MYD3GM3SH26QNVFWJ">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFHG0FC41J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RFHG0FC41J');
+</script>
+
+
+  <!-- redirect to form immediately -->
+<script>
+(function () {
+  "use strict";
+
+  var path = window.location.pathname;
+  var params = new URLSearchParams(window.location.search);
+
+  var supportFormId = "1500002735781";
+
+  // Only redirect the main Submit a request page.
+  if (!/\/hc\/[^/]+\/requests\/new\/?$/.test(path)) {
+    return;
+  }
+
+  // Respect an existing form selection.
+  if (params.has("ticket_form_id")) {
+    return;
+  }
+
+  // Preserve any other existing query parameters.
+  params.set("ticket_form_id", supportFormId);
+
+  window.location.replace(
+    path + "?" + params.toString() + window.location.hash
+  );
+})();
+</script>
+
+<!-- Intercom -->
+<script>
+(function () {
+  // Only load Intercom on the "Submit a request" page
+  if (!window.location.pathname.includes("/requests/new")) return;
+
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: "qkf37x9c"
+  };
+
+  // Create stub if needed
+  if (typeof window.Intercom !== "function") {
+    var q = function () { q.c(arguments); };
+    q.q = [];
+    q.c = function (args) { q.q.push(args); };
+    window.Intercom = q;
+  }
+
+  function loadIntercom() {
+    if (window.__intercomLoaded) return;
+    window.__intercomLoaded = true;
+
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://widget.intercom.io/widget/qkf37x9c";
+    s.onload = function () {
+      try { window.Intercom("boot", window.intercomSettings); } catch (e) {}
+    };
+    document.head.appendChild(s);
+  }
+
+  // ✅ Load automatically once the page is ready (best UX on request form)
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", loadIntercom, { once: true });
+  } else {
+    loadIntercom();
+  }
+})();
+</script>
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<!-- Make the translated search clear button label available for use in JS -->
+<!-- See buildClearSearchButton() in script.js -->
+<script type="text/javascript">window.searchClearButtonLabelLocalized = "Clear search";</script>
+<script type="text/javascript">
+  // Load ES module polyfill only for browsers that don't support ES modules
+  if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
+    document.write('<script async src="/hc/theming_assets/01J912PENY8SNCGJBYMN5M9M33"><\/script>');
+  }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "new-request-form": "/hc/theming_assets/01KACN1Y321WWFDTEZ4MB9TN72",
+    "flash-notifications": "/hc/theming_assets/01KACN1Y4QY4TPH33H51S6PT0W",
+    "service-catalog": "/hc/theming_assets/01KACN1Y523W906WNXFH9QE9ZP",
+    "approval-requests": "/hc/theming_assets/01KACN1XDAM696YP0KHM67QK5V",
+    "approval-requests-translations": "/hc/theming_assets/01K2C7T02SGKNTSEQQV3SJYPD3",
+    "new-request-form-translations": "/hc/theming_assets/01K2C7T02Z62K6RGH4E0N2WVH2",
+    "service-catalog-translations": "/hc/theming_assets/01K2C7T02HYN7PNK8XDXV9HEXS",
+    "shared": "/hc/theming_assets/01KACN1XPNNQA497EAAP7WJW3B",
+    "ticket-fields": "/hc/theming_assets/01KACN1Y54BYRV0RQTRZD8XJK1",
+    "wysiwyg": "/hc/theming_assets/01KACN1Y7J82J6J886TP3R3C37"
+  }
+}
+</script>
+<script type="module">
+  import { renderFlashNotifications } from "flash-notifications";
+
+  const settings = {"brand_color":"rgba(16, 111, 214, 1)","brand_text_color":"#FFFFFF","text_color":"#2F3941","link_color":"#1F73B7","hover_link_color":"#0F3554","visited_link_color":"rgba(31, 115, 183, 1)","background_color":"#FFFFFF","heading_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif","text_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif","logo":"/hc/theming_assets/01KACNEBZ7H8WRV0TBG5AY2K7S","show_brand_name":true,"favicon":"/hc/theming_assets/01KACNEP1MYD3GM3SH26QNVFWJ","homepage_background_image":"/hc/theming_assets/01KACPFG0AY3NN316QSQJV10ZW","community_background_image":"/hc/theming_assets/01J4800G0FG6AKE3AGZ9SGKBPW","community_image":"/hc/theming_assets/01J4800GGJM0XZA2586B30RCTD","instant_search":true,"scoped_kb_search":true,"scoped_community_search":false,"show_recent_activity":false,"show_articles_in_section":true,"show_article_author":true,"show_article_comments":true,"show_follow_article":true,"show_recently_viewed_articles":true,"show_related_articles":true,"show_article_sharing":true,"show_follow_section":true,"show_follow_post":true,"show_post_sharing":true,"show_follow_topic":true,"request_list_beta":true};
+  const baseLocale = "en-us";
+
+  renderFlashNotifications(settings, baseLocale);
+</script>
+
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+  
+
+<!-- Amplitude SDK -->
+<script src="https://cdn.amplitude.com/script/1edd6ec91d887d8778846bbb67d6db08.js"></script>
+<script>
+  window.amplitude.add({
+  name: "zendesk_event_enrichment",
+  type: "enrichment",
+  setup: function () {
+    return Promise.resolve();
+  },
+  execute: function (evt) {
+    evt.platform = "Zendesk";
+
+    try {
+      var properties = evt.event_properties;
+      var elementText = properties["[Amplitude] Element Text"];
+      var elementTag = properties["[Amplitude] Element Tag"];
+      var elementClass = properties["[Amplitude] Element Class"];
+      var elementParentLabel = properties["[Amplitude] Element Parent Label"];
+      var pageTitle = properties["[Amplitude] Page Title"];
+      var pageLocation = properties["[Amplitude] Page Location"];
+      var pagePath = properties["[Amplitude] Page Path"];
+  
+  var formId =
+  properties[
+    "[Amplitude] Form ID"
+  ];
+
+if (
+  (
+    evt.event_type ===
+      "[Amplitude] Form Started" ||
+    evt.event_type ===
+      "[Amplitude] Form Submitted"
+  ) &&
+  formId === "otter_docs_form"
+) {
+  return null;
+}
+
+      if (evt.event_type === "WebPageView") {
+        var url = new URL(pageLocation);
+        evt.event_properties = {
+          ...properties,
+          origin: url.origin,
+          path: pagePath,
+          search: url.search,
+        };
+      } else if (evt.event_type === "[Amplitude] Element Clicked") {
+        if (elementTag === "button") {
+          evt.event_type = "Zendesk_ButtonClick";
+
+          if (elementParentLabel === "Was this article helpful?") {
+            evt.event_type = "Article_Helpful";
+            evt.event_properties = {
+              ...properties,
+              WasHelpful: elementText === "Yes",
+            };
+          } else if (elementText === "Follow") {
+            evt.event_type = "Article_Follow";
+            evt.event_properties = {
+              ...properties,
+              ArticleName: pageTitle,
+            };
+          }
+        } else if (elementText === "Yes, close my request") {
+          evt.event_type = "SupportTicket_Closed";
+        } else if (elementText === "No, I need help") {
+          evt.event_type = "SupportTicket_NeedsHelp";
+        } else if (elementClass === "search-container") {
+          evt.event_type = "SearchBar_Clicked";
+        } else if (elementClass.includes("intercom")) {
+          evt.event_type = "Intercom_Clicked";
+        } else if (elementClass.includes("nesty-panel") || elementClass.includes("request_")) {
+					return null;
+  			}
+      } else if (evt.event_type === "[Amplitude] Form Submitted") {
+        evt.event_type = "SupportTicket_Submitted";
+      } else if (evt.event_type === "[Amplitude] Form Started" && properties["[Amplitude] Form ID"] === "new_request") {
+        evt.event_type = "SupportTicket_Started";
+      }
+    } catch (err) {}
+
+    return Promise.resolve(evt);
+  },
+});
+
+  var amplitudeApiKey = "1edd6ec91d887d8778846bbb67d6db08";
+  let anonymousId = null;
+
+  function findExistingAnonymousId() {
+    var cookies = document.cookie.split("; ");
+
+    try {
+      var cookieName = "AMP_" + amplitudeApiKey.substring(0, 10);
+      var cookie = cookies.find(function (c) {
+        return c.startsWith(cookieName);
+      });
+      if (cookie) {
+        var value = cookie.split("=")[1];
+        var decoded = JSON.parse(decodeURIComponent(atob(value)));
+        if (decoded.deviceId) {
+          anonymousId = decoded.deviceId;
+          return;
+        }
+      }
+    } catch (e) {}
+
+    try {
+      var legacyName = "amp_" + amplitudeApiKey.substring(0, 6);
+      var legacyCookie = cookies.find(function (c) {
+        return c.startsWith(legacyName);
+      });
+      if (legacyCookie) {
+        var deviceId = legacyCookie.split("=")[1].split(".")[0];
+        if (deviceId) {
+          anonymousId = deviceId; 
+          return;
+        }
+      }
+    } catch (e) {}
+
+    try {
+      var rudderCookie = cookies.find(function (c) {
+        return c.startsWith("rl_anonymous_id=");
+      });
+      if (rudderCookie) {
+        var rudderValue = rudderCookie.split("=")[1];
+        if (rudderValue) anonymousId = rudderValue;
+      }
+    } catch (e) {}
+
+    try {
+      var rudderLocalStorage = localStorage.getItem("rl_anonymous_id");
+      if (rudderLocalStorage) anonymousId = rudderLocalStorage;
+    } catch (e) {}
+  }
+
+  findExistingAnonymousId();
+
+  window.amplitude.init(amplitudeApiKey, {
+    fetchRemoteConfig: true,
+    ...(anonymousId && { deviceId: anonymousId }),
+    autocapture: {
+  pageViews: { eventType: "WebPageView" },
+  elementInteractions: { cssSelectorAllowlist: ["button"] },
+  formInteractions: true  // restores SupportTicket_Started + SupportTicket_Submitted
+},
+  });
+</script>
+<!-- End of Amplitude SDK -->
+
+  
+
+
+<script>
+(function () {
+  var isArticle = /\/hc\/[^/]+\/articles\/\d+/.test(window.location.pathname);
+  if (!isArticle) return;
+
+  function hasCodeBlocks() {
+    return !!document.querySelector(
+      "pre.wysiwyg-code-block, .article-body pre, .article-content pre, .w-embed pre"
+    );
+  }
+
+  function loadPrism() {
+    if (window.__prismLoaded) return;
+    window.__prismLoaded = true;
+
+    // Prism CSS (Default theme = light)
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "/hc/theming_assets/01KFKXRJ8AGFQ8D4X88SNXCQWA";
+    document.head.appendChild(link);
+
+    // Prism core
+    var core = document.createElement("script");
+    core.defer = true;
+    core.src = "/hc/theming_assets/01KFKXRKVGA4NC9KR3MX3QH7J3";
+
+    // Prism autoloader
+    var auto = document.createElement("script");
+    auto.defer = true;
+    auto.src = "/hc/theming_assets/01KFKXRK36TKV5WC44KDWS5RRE";
+
+    core.onload = function () {
+      document.head.appendChild(auto);
+    };
+
+    auto.onload = function () {
+      try {
+        if (window.Prism && Prism.plugins && Prism.plugins.autoloader) {
+          Prism.plugins.autoloader.languages_path =
+            "https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/";
+        }
+      } catch (e) {}
+
+      // Let script.js know Prism is ready
+      try { window.dispatchEvent(new Event("otter:prism-ready")); } catch (e) {}
+    };
+
+    document.head.appendChild(core);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      if (hasCodeBlocks()) loadPrism();
+    }, { once: true });
+  } else {
+    if (hasCodeBlocks()) loadPrism();
+  }
+})();
+</script>
+  
+    
+  <link rel="preconnect" href="https://otter-hc-placeholder.vercel.app" crossorigin>
+<link rel="dns-prefetch" href="https://otter-hc-placeholder.vercel.app">
+
+  <script>
+  window.__INLINE_VARS_URL__ = "https://otter-hc-placeholder.vercel.app/api/inline-vars";
+</script>
+  
+  
+<script src="https://player.vimeo.com/api/player.js"></script>
+  
+</head>
+<body class="">
+  
+  
+  
+
+  <a class="skip-navigation" tabindex="1" href="#main-content">Skip to main content</a>
+
+<header class="header">
+  <div class="logo">
+    <a title="Home" href="/hc/en-us">
+      <img src="/hc/theming_assets/01KACNEBZ7H8WRV0TBG5AY2K7S" alt="Help Center Help Center home page" />
+      
+  <span class="brand-separator">|</span>
+  <span class="brand-name">Help Center</span>
+
+    </a>
+  </div>
+
+  <div class="nav-wrapper-desktop">
+    <nav class="user-nav" id="user-nav" aria-label="User">
+      <ul class="user-nav-list">
+        
+        <li></li>
+      
+       <li><a class="submit-a-request" href="/hc/en-us/requests/new">Submit a request</a></li>
+        
+      </ul>
+    </nav>
+    
+  </div>
+
+  <div class="nav-wrapper-mobile">
+    <button class="menu-button-mobile" aria-controls="user-nav-mobile" aria-expanded="false" aria-label="Toggle navigation menu">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-menu">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" d="M1.5 3.5h13m-13 4h13m-13 4h13"/>
+      </svg>
+    </button>
+    <nav class="menu-list-mobile" id="user-nav-mobile" aria-expanded="false">
+      <ul class="menu-list-mobile-items">
+        
+          <li class="item">
+           
+          </li>
+          <li class="nav-divider"></li>
+        
+        
+        <li class="item"><a class="submit-a-request" href="/hc/en-us/requests/new">Submit a request</a></li>
+        <li class="item"></li>
+        <li class="nav-divider"></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+</header>
+
+
+  <main role="main">
+    <h1 class="visibility-hidden">Help Center</h1>
+
+<section id="main-content" class="section hero home-support-hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">
+      Hi there! How can we help?
+      <img class="otter-emoji" src="/hc/theming_assets/01KACW62G7E06HX0275A41MGBE" alt="">
+    </h1>
+    <h2 class="visibility-hidden">Search</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon --extra-top" aria-hidden="true">
+      <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
+      <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
+    </svg>
+    <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="How do I stop Otter from joining a meeting?" autocomplete="off" aria-label="How do I stop Otter from joining a meeting?" /></form>
+
+    <div class="hero-support-grid">
+      <section class="hero-support-card hero-popular" aria-labelledby="popular-questions-title">
+        <div class="hero-support-card__header">
+          <div>
+            <h2 id="popular-questions-title">Top questions this week</h2>
+          </div>
+          <span class="hero-support-badge">Updated weekly</span>
+        </div>
+
+        
+        <ol class="hero-question-list">
+  <li>
+    <a href="/hc/en-us/articles/23346776714903-Cancel-an-Otter-subscription" target="_blank" rel="noopener noreferrer">
+      <span>Cancel an Otter subscription</span>
+      <span class="hero-link-arrow" aria-hidden="true">→</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="/hc/en-us/articles/360047870454-Delete-your-Otter-account" target="_blank" rel="noopener noreferrer">
+      <span>Delete your Otter account</span>
+      <span class="hero-link-arrow" aria-hidden="true">→</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="/hc/en-us/articles/12906714508823-Stop-Otter-Notetaker-from-automatically-joining-your-meetings" target="_blank" rel="noopener noreferrer">
+      <span>Stop Otter Notetaker from automatically joining your meetings</span>
+      <span class="hero-link-arrow" aria-hidden="true">→</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="/hc/en-us/articles/13675989227543-Manage-your-Otter-Notetaker-settings" target="_blank" rel="noopener noreferrer">
+      <span>Manage your Otter Notetaker settings</span>
+      <span class="hero-link-arrow" aria-hidden="true">→</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="/hc/en-us/articles/360048593513-View-your-payment-history-and-download-invoices" target="_blank" rel="noopener noreferrer">
+      <span>View your payment history and download invoices</span>
+      <span class="hero-link-arrow" aria-hidden="true">→</span>
+    </a>
+  </li>
+</ol>
+      </section>
+
+      <section class="hero-support-card hero-shortcuts" aria-labelledby="tips-shortcuts-title">
+        <h2 id="tips-shortcuts-title">Tips &amp; shortcuts</h2>
+        <ul class="hero-shortcut-list">
+          <li>
+            <a href="https://help.otter.ai/hc/en-us/articles/35973988280215#otter-botless-recording" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M16 3v4M8 3v4M3 10h18"></path></svg>
+              <span>Record meetings without a bot (Desktop App)</span>
+            </a>
+          </li>
+          <li>
+            <a href="/hc/en-us/search?query=manage%20conversation%20sharing%20" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M15 3v5h5M9 12h6M9 16h4"></path></svg>
+              <span>Review and share meeting notes</span>
+            </a>
+          </li>
+          <li>
+            <a href="/hc/en-us/articles/13675989227543" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3V2.8h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"></path></svg>
+              <span>Manage calendar and auto-join settings</span>
+            </a>
+          </li>
+        </ul>
+        <a class="hero-shortcuts-all" href="/hc/en-us/search?query=tips" target="_blank" rel="noopener noreferrer">See all tips <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+  <section class="section knowledge-base">
+    <h2 class="browse-topics-heading">Browse help by topic</h2>
+    <section class="categories blocks">
+     <ul class="blocks-list">
+  
+    
+
+      
+      
+        <li class="blocks-item blocks-item--getting-started">
+          <a href="/hc/en-us/categories/360002285334-Getting-started" class="blocks-item-link">
+            <span class="blocks-item-title">Getting started</span>
+            <span class="blocks-item-description">New to Otter? Here are the basics to get started with Otter.</span>
+          </a>
+        </li>
+
+      
+
+    
+  
+    
+
+      
+      
+
+        
+        
+          <li class="blocks-item blocks-item--using-otter">
+            <a href="/hc/en-us/categories/360003569513-Using-Otter" class="blocks-item-link">
+              <span class="blocks-item-title">Using Otter</span>
+              <span class="blocks-item-description">From recording to creating groups, learn how Otter works from top to bottom.</span>
+            </a>
+          </li>
+
+        
+      
+
+    
+  
+    
+
+      
+      
+
+        
+        
+
+          
+          
+
+            
+            
+              <li class="blocks-item blocks-item--meeting-settings">
+                <a href="/hc/en-us/categories/13674443883031-Meeting-settings-recordings" class="blocks-item-link">
+                  <span class="blocks-item-title">Meeting settings &amp; recordings</span>
+                  <span class="blocks-item-description">Learn about managing your settings and features for your online meetings.</span>
+                </a>
+              </li>
+
+            
+          
+        
+      
+
+    
+  
+    
+
+      
+      
+
+        
+        
+
+          
+          
+            <li class="blocks-item blocks-item--enterprise">
+              <a href="/hc/p/enterprise" class="blocks-item-link">
+                <span class="blocks-item-title">Otter Enterprise</span>
+                <span class="blocks-item-description">Learn how to use and manage Otter Enterprise features.</span>
+              </a>
+            </li>
+
+          
+        
+      
+
+    
+  
+    
+
+      
+      
+
+        
+        
+
+          
+          
+
+            
+            
+
+              
+              <li class="blocks-item">
+                <a href="/hc/en-us/categories/360003570373-Otter-Workspaces" class="blocks-item-link">
+                  <span class="blocks-item-title">Otter Workspaces</span>
+                  <span class="blocks-item-description">Learn how to manage your team in Otter. </span>
+                </a>
+              </li>
+
+            
+          
+        
+      
+
+    
+  
+    
+
+      
+      
+
+        
+        
+
+          
+          
+
+            
+            
+
+              
+              <li class="blocks-item">
+                <a href="/hc/en-us/categories/360003539134-Integrations" class="blocks-item-link">
+                  <span class="blocks-item-title">Integrations</span>
+                  <span class="blocks-item-description">Connect, simplify, and automate. Discover the power of apps.</span>
+                </a>
+              </li>
+
+            
+          
+        
+      
+
+    
+  
+    
+
+      
+      
+
+        
+        
+
+          
+          
+
+            
+            
+
+              
+              <li class="blocks-item">
+                <a href="/hc/en-us/categories/360003570313-Account-settings-billing" class="blocks-item-link">
+                  <span class="blocks-item-title">Account settings &amp; billing</span>
+                  <span class="blocks-item-description">Adjust your settings and manage your billing in Otter.</span>
+                </a>
+              </li>
+
+            
+          
+        
+      
+
+    
+  
+    
+
+      
+      
+
+        
+        
+
+          
+          
+
+            
+            
+
+              
+              <li class="blocks-item">
+                <a href="/hc/en-us/categories/4408667432215-Announcements" class="blocks-item-link">
+                  <span class="blocks-item-title">Announcements</span>
+                  <span class="blocks-item-description"></span>
+                </a>
+              </li>
+
+            
+          
+        
+      
+
+    
+  
+</ul>
+      
+    </section>
+    
+    
+    
+      <section class="featured-articles-section" aria-labelledby="featured-articles-heading">
+        <div class="featured-articles-header">
+          <h2 id="featured-articles-heading">Featured articles</h2>
+          <p>Refreshed weekly from article views and support trends</p>
+        </div>
+
+        <ul class="featured-articles-grid">
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/360035266494-What-is-Otter" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    What is Otter?
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/360047872833-Otter-ai-features" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter.ai features
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/360049722894-Otter-Quick-Start-Guide" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter Quick Start Guide
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/44255228081559-Desktop-Automatic-Screenshots" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Desktop Automatic Screenshots
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/35973988280215-Otter-Desktop-App-Mac-Windows" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter Desktop App (Mac &amp; Windows)
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/31402572907415-Custom-Meeting-Type-Templates" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Custom Meeting Type Templates
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/19682180167575-Otter-AI-Chat-Overview" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter AI Chat Overview
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/40917035359255-Otter-Recording-Best-Practices-Pause-Resume-and-Upload" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter Recording Best Practices: Pause, Resume and Upload
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/10255386160151-I-have-an-issue-with-one-of-my-conversations" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    I have an issue with one of my conversations
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/4403627500951-Troubleshoot-audio-recording-problems" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Troubleshoot audio recording problems
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/45189713707671-Take-private-meeting-notes-and-enhance-them-with-AI" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Take private meeting notes and enhance them with AI
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/40586357592471-Speaker-Management" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Speaker Management
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/5093228433687-Conversation-Page-Overview" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Conversation Page Overview 🆕
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/360048338793-Share-a-conversation" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Share a conversation
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/360051342914-Fix-problems-importing-files-to-Otter" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Fix problems importing files to Otter
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/42873945911703-Set-up-Otter-Notetaker-to-join-Microsoft-Teams-Meeting" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Set up Otter Notetaker to join Microsoft Teams Meeting
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/19504911385495-Set-up-Otter-Notetaker-to-join-your-Zoom-meeting" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Set up Otter Notetaker to join your Zoom meeting
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/13674910923671-Automatically-add-Otter-Notetaker-to-your-meetings" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Automatically add Otter Notetaker to your meetings
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/13675989227543-Manage-your-Otter-Notetaker-settings" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Manage your Otter Notetaker settings
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/12906714508823-Stop-Otter-Notetaker-from-automatically-joining-your-meetings" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Stop Otter Notetaker from automatically joining your meetings
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/37155387250583--Otter-ai-Enterprise-Onboarding-Guide" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    🚀 Otter.ai Enterprise Onboarding Guide
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Enterprise Admin Controls Overview
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/14474312169367-Set-up-SAML-Single-Sign-On-SSO" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Set up SAML Single Sign-On (SSO)
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/40426498007959-Otter-HubSpot-for-Enterprise" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter HubSpot for Enterprise
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/40317607861271-Otter-Salesforce-for-Enterprise" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter Salesforce for Enterprise
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/33975072019991-HIPAA-Otter-ai" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    HIPAA | Otter.ai
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/44432914889879-Manage-Enterprise-Workspace-Settings" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Manage Enterprise Workspace Settings
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/42007027609879-Workspace-Admin-Logs" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Workspace Admin Logs
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/14365647347863-Workspace-Overview" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Workspace Overview
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/360050540033-Otter-Workspace-Admin-Guide" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter Workspace Admin Guide
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/360049123413-Invite-members-to-join-your-Workspace" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Invite members to join your Workspace
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/7239355763735-Managing-your-Workspace-trial-members" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Managing your Workspace trial members
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/360060819314-Understanding-how-seats-licenses-work" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Understanding how seats (licenses) work
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/27616131311127-Connect-Otter-to-Zapier" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Connect Otter to Zapier
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/15671309340183-Connect-Salesforce-with-Otter-ai" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Connect Salesforce with Otter.ai
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/13627121851799-Connect-Slack-to-Otter-ai" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Connect Slack to Otter.ai
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/19439009788951-Connect-HubSpot-with-Otter-ai" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Connect HubSpot with Otter.ai
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/12985594261015-My-paid-subscription-is-not-showing" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    My paid subscription is not showing
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/1500000001541-Contact-Otter-ai-Support" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Contact Otter.ai Support
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+            <li class="featured-article-card">
+              <a href="/hc/en-us/articles/11892740449815-Otter-transcript-missing-audio-when-using-a-Chrome-browser" target="_blank" rel="noopener noreferrer">
+                <span class="featured-article-icon" aria-hidden="true">
+                  <svg class="featured-icon featured-icon--rocket" viewBox="0 0 48 48" focusable="false">
+                    <path d="M29 8c6 1 10 5 11 11-5 7-11 12-19 15l-7-7c3-8 8-14 15-19Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <circle cx="30" cy="18" r="3.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="m16 25-7 1 5-8 5-2M23 32l-1 7 8-5 2-5M14 34l-5 5M18 35l-4 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--people" viewBox="0 0 48 48" focusable="false">
+                    <circle cx="17" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <circle cx="33" cy="17" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M7 39v-4c0-6 4-10 10-10s10 4 10 10v4H7Zm20 0v-4c0-4-1-7-4-9 2-1 5-1 7-1 6 0 11 4 11 10v4H27Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="featured-icon featured-icon--sparkles" viewBox="0 0 48 48" focusable="false">
+                    <path d="M22 7c1 8 5 12 12 13-7 1-11 5-12 13-1-8-5-12-12-13 7-1 11-5 12-13Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M37 7c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5ZM37 29c.5 3 2 5 5 5.5-3 .5-4.5 2.5-5 5.5-.5-3-2-5-5-5.5 3-.5 4.5-2.5 5-5.5Z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+
+                <span class="featured-article-content">
+                  <span class="featured-article-label" aria-hidden="true"></span>
+                  <span class="featured-article-title">
+                    Otter transcript missing audio when using a Chrome browser
+                    
+                  </span>
+                </span>
+              </a>
+            </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section class="otter-tips-wrapper otter-resources-section" aria-label="Helpful Otter resources">
+      <div class="otter-tips-row">
+        <!-- Tip 1: Otter Chat & Quick Search -->
+        <div class="otter-tip-card">
+          <div class="otter-tip-icon" aria-hidden="true">
+            <svg class="otter-tip-icon-svg" viewBox="0 0 24 24" role="presentation">
+              <rect x="4" y="6" width="10" height="1.6" rx="0.8"></rect>
+              <rect x="4" y="11" width="8" height="1.6" rx="0.8"></rect>
+              <rect x="4" y="16" width="6" height="1.6" rx="0.8"></rect>
+              <circle cx="17" cy="11" r="3.2" fill="none"></circle>
+              <line x1="19.7" y1="13.7" x2="21.5" y2="15.5"></line>
+            </svg>
+          </div>
+          <div class="otter-tip-body">
+            <div class="otter-tip-title">Otter Chat &amp; Quick Search</div>
+            <div class="otter-tip-text">
+              Press <strong>⌘/Ctrl + K</strong> to open the search bar to ask Otter Chat or search for conversations.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tip 2: Manage Notetaker settings -->
+        <div class="otter-tip-card">
+          <div class="otter-tip-icon" aria-hidden="true">
+            <svg class="otter-tip-icon-svg" viewBox="0 0 24 24" role="presentation" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="
+                M12 3
+                L13.3 3.2
+                L14.1 5
+                A6 6 0 0 1 16 6
+                L17.8 5.2
+                L18.8 6.2
+                L18 8
+                A6 6 0 0 1 19 10
+                L20.8 10.7
+                L20.8 12.3
+                L19 13
+                A6 6 0 0 1 18 15
+                L18.8 16.8
+                L17.8 17.8
+                L16 17
+                A6 6 0 0 1 14.1 18
+                L13.3 19.8
+                L12 20
+                L10.7 19.8
+                L9.9 18
+                A6 6 0 0 1 8 17
+                L6.2 17.8
+                L5.2 16.8
+                L6 15
+                A6 6 0 0 1 5 13
+                L3.2 12.3
+                L3.2 10.7
+                L5 10
+                A6 6 0 0 1 6 8
+                L5.2 6.2
+                L6.2 5.2
+                L8 6
+                A6 6 0 0 1 9.9 5
+                L10.7 3.2
+                Z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <div class="otter-tip-body">
+            <div class="otter-tip-title">Manage Otter Notetaker Settings</div>
+            <div class="otter-tip-text">
+              All Notetaker settings (e.g., <strong>auto-share</strong>, <strong>auto-join</strong>) can be managed in <strong><a href="https://otter.ai/setting/share-notes?utm_source=help_center&amp;utm_medium=homepage&amp;utm_campaign=tips" target="_blank" rel="noopener noreferrer">Account Settings → Meetings</a></strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tip 3: Record without headphones -->
+        <div class="otter-tip-card">
+          <div class="otter-tip-icon" aria-hidden="true">
+            <svg class="otter-tip-icon-svg" viewBox="0 0 24 24" role="presentation" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12a8 8 0 0 1 16 0" />
+              <rect x="3" y="12" width="4" height="8" rx="2" ry="2" />
+              <rect x="17" y="12" width="4" height="8" rx="2" ry="2" />
+            </svg>
+          </div>
+          <div class="otter-tip-body">
+            <div class="otter-tip-title">Record Botless</div>
+            <div class="otter-tip-text">
+              Download our <strong><a href="https://otter.ai/integrations/desktop?utm_source=help_center&amp;utm_medium=homepage&amp;utm_campaign=tips" target="_blank" rel="noopener noreferrer">Desktop app</a></strong> to record meetings without Notetaker.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- HIDING COMMUNITY ON HOMEPAGE -->
+  
+
+  <section class="section home-section activity">
+    
+  </section>
+</div>
+
+  </main>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <a title="Home" href="/hc/en-us">Help Center</a>
+
+    <div class="footer-language-selector">
+      
+        <div class="dropdown language-selector">
+          <button class="dropdown-toggle" aria-haspopup="true">
+            English (United States)
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
+            </svg>
+          </button>
+          <span class="dropdown-menu dropdown-menu-end" role="menu">
+            
+              <a href="/hc/change_language/es?return_to=%2Fhc%2Fes" dir="ltr" rel="nofollow" role="menuitem">
+                Español
+              </a>
+            
+              <a href="/hc/change_language/fr?return_to=%2Fhc%2Ffr" dir="ltr" rel="nofollow" role="menuitem">
+                Français
+              </a>
+            
+          </span>
+        </div>
+      
+    </div>
+  </div>
+</footer>
+
+<div class="zd-lightbox-overlay" id="zd-lightbox">
+  <button class="zd-lightbox-close" id="zd-lightbox-close">&times;</button>
+
+  <button class="zd-lightbox-arrow zd-lightbox-prev" id="zd-lightbox-prev">&#10094;</button>
+  <img id="zd-lightbox-img" src="" alt="">
+  <button class="zd-lightbox-arrow zd-lightbox-next" id="zd-lightbox-next">&#10095;</button>
+
+  <div class="zd-lightbox-caption" id="zd-lightbox-caption"></div>
+
+  <!-- Spinner for lazy loading -->
+  <div class="zd-lightbox-spinner" id="zd-lightbox-spinner"></div>
+
+  <!-- Thumbnails strip -->
+  <div class="zd-lightbox-thumbnails" id="zd-lightbox-thumbnails"></div>
+</div>
+
+<!-- OTTER FOOTER -->
+<footer class="otter-footer" role="contentinfo">
+  <div class="otter-footer-inner">
+
+<!-- Logo row -->
+<div class="otter-footer-logo-row">
+  <a
+    href="https://otter.ai?utm_source=help_center&utm_medium=footer&utm_campaign=hc"
+    class="otter-footer-logo"
+    aria-label="Otter.ai home"
+  >
+    <img
+      src="/hc/theming_assets/01KBGGWG3F6RA3PFZCBPGVF2MD"
+      alt="Otter.ai logo"
+      class="otter-footer-logo-img"
+    />
+  </a>
+</div>
+
+    <!-- Main columns -->
+    <div class="otter-footer-grid">
+      <div class="otter-footer-column">
+        <h3 class="otter-footer-heading">AI Agents</h3>
+        <ul>
+          <li><a href="https://otter.ai/sales-agent?utm_source=help_center&utm_medium=footer&utm_campaign=hc">Sales Agent</a></li>
+          <li><a href="https://otter.ai/recruiting-agent?utm_source=help_center&utm_medium=footer&utm_campaign=hc">Recruiting Agent</a></li>
+          <li><a href="https://otter.ai/education-agent?utm_source=help_center&utm_medium=footer&utm_campaign=hc">Education Agent</a></li>
+          <li><a href="https://otter.ai/media-agent?utm_source=help_center&utm_medium=footer&utm_campaign=hc">Media Agent</a></li>
+        </ul>
+      </div>
+
+      <div class="otter-footer-column">
+        <h3 class="otter-footer-heading">Resources</h3>
+        <ul>
+          <li><a href="/hc/en-us">Help Center</a></li>
+          <li><a href="https://otter.ai/careers?utm_source=help_center&utm_medium=footer&utm_campaign=hc">Careers</a></li>
+          <li><a href="https://otter.ai/press?utm_source=help_center&utm_medium=footer&utm_campaign=hc">Press</a></li>
+          <li><a href="https://otter.ai/blog?utm_source=help_center&utm_medium=footer&utm_campaign=hc">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="otter-footer-column otter-footer-column-download">
+        <h3 class="otter-footer-heading">Download</h3>
+
+        
+        <div class="otter-footer-qr">
+          <a href="https://go.onelink.me/KBef/3aei1tmc?af_qr=true&utm_source=help_center&utm_medium=footer&utm_campaign=hc" loading="lazy"><img src="/hc/theming_assets/01KBGHHD8Z01N8Y72F7VWRXHEE" alt="Download Otter.ai app" style="border-radius: 5px;"></a>
+        </div>
+
+        <ul>
+          <li><a href="https://apps.apple.com/app/otter-voice-notes/id1276437113?utm_source=help_center&utm_medium=footer&utm_campaign=hc">iOS app</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.aisense.otter&utm_source=help_center&utm_medium=footer&utm_campaign=hc">Android app</a></li>
+          <li><a href="https://chromewebstore.google.com/detail/otterai-record-transcribe/bnmojkbbkkonlmlfgejehefjldooiedp?utm_source=help_center&utm_medium=footer&utm_campaign=hc">Chrome extension</a></li>
+        </ul>
+      </div>
+
+      <div class="otter-footer-column">
+        <h3 class="otter-footer-heading">Social</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/company/otterai?utm_source=help_center&utm_medium=footer&utm_campaign=hc">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@Otterai?utm_source=help_center&utm_medium=footer&utm_campaign=hc">YouTube</a></li>
+          <li><a href="https://x.com/Otter_ai?utm_source=help_center&utm_medium=footer&utm_campaign=hc">X</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div class="otter-footer-bottom">
+      <p class="otter-footer-copy">
+        © <span id="otter-footer-year"></span> Otter.ai Inc
+      </p>
+      <div class="otter-footer-legal">
+        <a href="https://otter.ai/privacy-policy">Privacy policy</a>
+        <a href="https://otter.ai/terms-of-service">Terms of service</a>
+        <a href="https://otter.ai/software-services-agreement">Software service agreement</a>
+        <a href="https://otter.ai/jp">JP</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var el = document.getElementById('otter-footer-year');
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+  </script>
+</footer>
+<!-- OTTER FOOTER END -->
+
+
+  <!-- / -->
+
+  
+  <script src="//static.zdassets.com/hc/assets/en-us.5357a97777d7f77bdf0a.js"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"otterai","environment":"production","name":"Otter.ai"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":"","role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"external_id":null,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":null,"shared_csrf_token":null},"usage_tracking":{"event":"front_page_viewed","data":"BAh7BjoKX21ldGF7DDoPYWNjb3VudF9pZGkDsG2QOhNoZWxwX2NlbnRlcl9pZGwrCB6mtdFTADoNYnJhbmRfaWRsKwiCON3RUwA6DHVzZXJfaWQwOhN1c2VyX3JvbGVfbmFtZUkiDkFOT05ZTU9VUwY6BkVUOgtsb2NhbGVJIgplbi11cwY7C1Q6GmFub255bW91c190cmFja2luZ19pZDA=--bc1157105f508bf39989ce780fe288dad47c57ed","url":"https://help.otter.ai/hc/activity"},"current_record_id":null,"current_record_url":null,"current_record_title":null,"current_text_direction":"ltr","current_brand_id":360003221634,"current_brand_name":"Otter.ai","current_brand_url":"https://otterai.zendesk.com","current_brand_active":true,"current_path":null,"show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_end_user_attachments":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":true,"has_multi_language_help_center":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_help_center_auth_enabled":false,"embeddables_connect_ipms":false},"answer_bot_subdomain":"static","gather_plan_state":"subscribed","has_article_verification":true,"has_gather":true,"has_ckeditor":true,"has_community_enabled":false,"has_community_badges":true,"has_community_post_content_tagging":false,"has_gather_content_tags":true,"has_guide_content_tags":true,"has_user_segments":true,"has_answer_bot_web_form_enabled":true,"has_garden_modals":false,"has_auth_email_less_sso":false,"theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-2-preview","is_preview":false,"has_search_settings_in_plan":true,"theming_api_version":4,"theming_settings":{"brand_color":"rgba(16, 111, 214, 1)","brand_text_color":"#FFFFFF","text_color":"#2F3941","link_color":"#1F73B7","hover_link_color":"#0F3554","visited_link_color":"rgba(31, 115, 183, 1)","background_color":"#FFFFFF","heading_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif","text_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif","logo":"/hc/theming_assets/01KACNEBZ7H8WRV0TBG5AY2K7S","show_brand_name":true,"favicon":"/hc/theming_assets/01KACNEP1MYD3GM3SH26QNVFWJ","homepage_background_image":"/hc/theming_assets/01KACPFG0AY3NN316QSQJV10ZW","community_background_image":"/hc/theming_assets/01J4800G0FG6AKE3AGZ9SGKBPW","community_image":"/hc/theming_assets/01J4800GGJM0XZA2586B30RCTD","instant_search":true,"scoped_kb_search":true,"scoped_community_search":false,"show_recent_activity":false,"show_articles_in_section":true,"show_article_author":true,"show_article_comments":true,"show_follow_article":true,"show_recently_viewed_articles":true,"show_related_articles":true,"show_article_sharing":true,"show_follow_section":true,"show_follow_post":true,"show_post_sharing":true,"show_follow_topic":true,"request_list_beta":true},"has_pci_credit_card_custom_field":true,"help_center_restricted":false,"is_assuming_someone_else":false,"flash_messages":[],"user_photo_editing_enabled":true,"user_preferred_locale":"en-us","base_locale":"en-us","login_url":"https://otterai.zendesk.com/access?locale=en-us\u0026brand_id=360003221634\u0026return_to=https%3A%2F%2Fhelp.otter.ai%2Fhc%2Fen-us","has_alternate_templates":true,"has_custom_statuses_enabled":true,"has_hc_generative_answers_setting_enabled":true,"has_suggested_initial_questions_enabled":false,"has_contentful_eap":false,"has_contentful_eap_eligible":false,"has_pdf_ingestion_eap":true,"has_pdf_ingestion_eap_eligible":true,"has_saas_management":true,"has_knowledge_category_translation_modal":false,"has_guide_service_catalog":true,"has_csat_reverse_2_scale_in_mobile":false,"has_knowledge_locale_display_names":true,"has_csat_bet365_branding":false,"has_csat_flora":false,"has_csat_theming_integration_phase_1":false,"has_help_center_gen_search_follow_up_conversation":true,"chat_page_renderable":false,"version":"v28252","dev_mode":false};
+</script>
+
+  
+  
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-f4a04b6285ef8d4fd369deeaf227bdc0.js"></script>
+  <script type="text/javascript" src="/hc/theming_assets/9465264/360003221634/script.js?digest=45133963595287"></script>
+  
+</body>
+</html>

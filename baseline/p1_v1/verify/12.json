@@ -1,0 +1,58 @@
+{
+ "id": 12,
+ "name": "Intercom",
+ "pass1_sha": "320383223c9806c0",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts state OAuth is required for app installation and authentication.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No mention of bearer token authentication in the excerpts.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can set up free developer workspaces for app creation and testing.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts say developer workspaces are free for development purposes.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt explicitly states it is documentation for the REST API.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt does not mention whether the Intercom app is official or not.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

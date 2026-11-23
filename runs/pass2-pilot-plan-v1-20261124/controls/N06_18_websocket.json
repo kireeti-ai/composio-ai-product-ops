@@ -1,0 +1,68 @@
+{
+ "id": 18,
+ "name": "Help Scout",
+ "category": "Support and Helpdesk",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developer.helpscout.com/docs-api/objects/category/",
+  "https://developer.helpscout.com/docs-api/restricted-docs",
+  "https://developer.helpscout.com/docs-api",
+  "https://developer.helpscout.com/mailbox-api/overview/authentication"
+ ],
+ "one_liner": "Help Scout is a customer support platform offering APIs for managing helpdesk mailboxes, support docs, and user authentication.",
+ "auth_methods": [
+  "oauth2",
+  "api_key",
+  "basic",
+  "bearer_token",
+  "jwt_or_signed"
+ ],
+ "access": "self_serve_trial_or_paid_plan",
+ "access_note": "Developers can self-serve OAuth2 apps and API keys from their user profile. Some features like Restricted Docs require Plus or Pro plans.",
+ "api_types": [
+  "rest",
+  "websocket"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+   "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+   "quote": "Create one by navigating to Your Profile > My apps and click Create My App.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developer.helpscout.com/docs-api",
+   "quote": "All API requests are made to https://docsapi.helpscout.net/ and all requests are served over HTTPS. The current version is v1.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developer.helpscout.com/docs-api",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ],
+ "planted_control": {
+  "field": "api_types",
+  "planted_item": "websocket",
+  "original_value": [
+   "rest"
+  ],
+  "proof": "regex found no support in any stored source page: websocket|web socket|wss://"
+ }
+}

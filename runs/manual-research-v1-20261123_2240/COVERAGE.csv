@@ -1,0 +1,47 @@
+id,name,cached_pages,official_domain_candidates,quote_candidates,failed_attempts,status
+15,Pylon,18,18,371,4,manual_review_required
+24,Lark (Larksuite),21,21,517,0,manual_review_required
+31,Google Ads,14,14,398,2,manual_review_required
+37,systeme.io,19,0,0,0,manual_review_required
+40,SendGrid,22,13,342,0,manual_review_required
+42,WooCommerce,23,23,827,2,manual_review_required
+45,Magento (Adobe Commerce),16,16,476,2,manual_review_required
+48,Gumroad,16,16,153,4,manual_review_required
+50,fanbasis,0,0,0,0,official_retrieval_gap
+54,MrScraper,16,16,440,0,manual_review_required
+55,Apify,19,17,454,0,manual_review_required
+57,Bright Data,18,18,441,0,manual_review_required
+58,Sherlock,0,0,0,0,official_retrieval_gap
+59,Waterfall.io,0,0,0,0,official_retrieval_gap
+60,Clay,0,0,0,0,official_retrieval_gap
+64,Cloudflare,22,22,645,1,manual_review_required
+66,Neo4j,2,2,42,1,manual_review_required
+67,Snowflake,16,16,816,2,manual_review_required
+68,MongoDB Atlas,0,0,0,0,official_retrieval_gap
+69,Datadog,17,15,259,2,manual_review_required
+71,Notion,14,14,274,0,manual_review_required
+73,Linear,0,0,0,0,official_retrieval_gap
+74,Jira,2,0,0,0,manual_review_required
+77,ClickUp,20,20,371,0,manual_review_required
+78,Coda,0,0,0,0,official_retrieval_gap
+79,Smartsheet,19,17,268,1,manual_review_required
+80,Harvest,0,0,0,0,official_retrieval_gap
+81,Stripe,11,11,356,0,manual_review_required
+82,Plaid,12,12,402,2,manual_review_required
+83,Binance,2,0,0,4,manual_review_required
+85,iPayX,7,7,7,0,manual_review_required
+86,QuickBooks,0,0,0,0,official_retrieval_gap
+87,Xero,8,8,202,2,manual_review_required
+88,Brex,15,15,295,0,manual_review_required
+89,Ramp,12,12,180,1,manual_review_required
+90,PitchBook,11,0,0,0,manual_review_required
+91,NotebookLM,0,0,0,0,official_retrieval_gap
+92,Otter AI,0,0,0,0,official_retrieval_gap
+93,Fathom,6,0,0,0,manual_review_required
+94,Consensus,10,0,0,1,manual_review_required
+95,Reducto,9,0,0,1,manual_review_required
+96,Devin,13,0,0,0,manual_review_required
+97,higgsfield,11,11,120,1,manual_review_required
+98,Mermaid CLI,0,0,0,0,official_retrieval_gap
+99,YouTube Transcript,0,0,0,0,official_retrieval_gap
+100,Grain,13,0,0,0,manual_review_required

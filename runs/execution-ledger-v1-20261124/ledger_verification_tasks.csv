@@ -1,0 +1,102 @@
+record_ref,registry_id,app,surface_id,kind,groq_calls_planned
+baseline/p1_v1/pass1/1.json,1,Salesforce,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/2.json,2,HubSpot,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/3.json,3,Pipedrive,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/4.json,4,Attio,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/5.json,5,Twenty,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/6.json,6,Podio,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/7.json,7,Zoho CRM,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/8.json,8,Close,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/9.json,9,Copper,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/10.json,10,DealCloud,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/11.json,11,Zendesk,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/12.json,12,Intercom,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/13.json,13,Freshdesk,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/14.json,14,Front,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/16.json,16,LiveAgent,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/17.json,17,Plain,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/18.json,18,Help Scout,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/19.json,19,Gorgias,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/21.json,21,Slack,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/22.json,22,Twilio,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/23.json,23,Zoho Cliq,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/28.json,28,WhatsApp Business,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/49.json,49,Amazon Selling Partner,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/51.json,51,DataForSEO,default,re-verify baseline record (v2),4
+baseline/p1_v1/pass1/58.json,58,Sherlock,default,re-verify baseline record (v2),3
+baseline/p1_v1/pass1/84.json,84,Paygent Connect,default,re-verify baseline record (v2),4
+(new record from G001),27,Telegram,default,verify new record (v2),4
+(new record from G002),32,Meta Ads,default,verify new record (v2),4
+(new record from G003),33,LinkedIn Ads,default,verify new record (v2),4
+(new record from G004),34,GoHighLevel,default,verify new record (v2),4
+(new record from G005),39,Threads (Meta),default,verify new record (v2),4
+(new record from G006),41,Shopify,default,verify new record (v2),4
+(new record from G007),43,BigCommerce,default,verify new record (v2),4
+(new record from G008),52,SE Ranking,default,verify new record (v2),4
+(new record from G009),53,Ahrefs,default,verify new record (v2),4
+(new record from G010),56,Firecrawl,default,verify new record (v2),4
+(new record from G011),76,Monday.com,default,verify new record (v2),4
+(new record from G012),65,Supabase,default,verify new record (v2),4
+(new record from G013),72,Airtable,default,verify new record (v2),4
+(new record from G014),71,Notion,default,verify new record (v2),4
+(new record from G015),61,GitHub,default,verify new record (v2),4
+(new record from G016),38,Pinterest,default,verify new record (v2),4
+(new record from G017),62,Vercel,default,verify new record (v2),4
+(new record from G018),63,Netlify,default,verify new record (v2),4
+(new record from G019),36,Klaviyo,default,verify new record (v2),4
+(new record from G020),29,Aircall,default,verify new record (v2),4
+(new record from G021),47,Ecwid,default,verify new record (v2),4
+(new record from G022),44,Salesforce Commerce Cloud,default,verify new record (v2),4
+(new record from G023),26,Discord,default,verify new record (v2),4
+(new record from G024),70,Sentry,default,verify new record (v2),4
+(new record from G025),25,Pumble,default,verify new record (v2),4
+(new record from G026),75,Asana,default,verify new record (v2),4
+(new record from G027),46,Squarespace,default,verify new record (v2),4
+(new record from G028),20,Gladly,default,verify new record (v2),4
+(new record from G029),66,Neo4j,aura_management_api,verify new record (v2),4
+(new record from G030),66,Neo4j,database_query_api,verify new record (v2),4
+(new record from G031),30,Vonage,default,verify new record (v2),4
+(new record from G032),35,Mailchimp,default,verify new record (v2),4
+(new record from G033),37,systeme.io,default,verify new record (v2),4
+(new record from G034),40,SendGrid,default,verify new record (v2),4
+(new record from G035),42,WooCommerce,default,verify new record (v2),4
+(new record from G036),45,Magento (Adobe Commerce),default,verify new record (v2),4
+(new record from G037),48,Gumroad,default,verify new record (v2),4
+(new record from G038),54,MrScraper,default,verify new record (v2),4
+(new record from G039),57,Bright Data,default,verify new record (v2),4
+(new record from G040),64,Cloudflare,default,verify new record (v2),4
+(new record from G041),67,Snowflake,default,verify new record (v2),4
+(new record from G042),68,MongoDB Atlas,default,verify new record (v2),4
+(new record from G043),74,Jira,default,verify new record (v2),4
+(new record from G044),77,ClickUp,default,verify new record (v2),4
+(new record from G045),15,Pylon,default,verify new record (v2),4
+(new record from G046),24,Lark (Larksuite),default,verify new record (v2),4
+(new record from G047),31,Google Ads,default,verify new record (v2),4
+(new record from G048),55,Apify,default,verify new record (v2),4
+(new record from G049),69,Datadog,default,verify new record (v2),4
+(new record from G050),79,Smartsheet,default,verify new record (v2),4
+(new record from G051),81,Stripe,default,verify new record (v2),4
+(new record from G052),82,Plaid,default,verify new record (v2),4
+(new record from G053),83,Binance,default,verify new record (v2),4
+(new record from G054),85,iPayX,default,verify new record (v2),4
+(new record from G055),86,QuickBooks,default,verify new record (v2),4
+(new record from G056),87,Xero,default,verify new record (v2),4
+(new record from G057),88,Brex,default,verify new record (v2),4
+(new record from G058),89,Ramp,default,verify new record (v2),4
+(new record from G059),90,PitchBook,default,verify new record (v2),4
+(new record from G060),91,NotebookLM,default,verify new record (v2),4
+(new record from G061),92,Otter AI,default,verify new record (v2),4
+(new record from G062),93,Fathom,default,verify new record (v2),4
+(new record from G063),94,Consensus,default,verify new record (v2),4
+(new record from G064),95,Reducto,default,verify new record (v2),4
+(new record from G065),96,Devin,default,verify new record (v2),4
+(new record from G066),97,higgsfield,default,verify new record (v2),4
+(new record from G067),98,Mermaid CLI,default,verify new record (v2),4
+(new record from G068),99,YouTube Transcript,default,verify new record (v2),4
+(new record from G069),100,Grain,default,verify new record (v2),4
+(new record from G070),73,Linear,default,verify new record (v2),4
+(new record from G071),78,Coda,default,verify new record (v2),4
+(new record from G072),80,Harvest,default,verify new record (v2),4
+(new record from G073),50,fanbasis,default,verify new record (v2),4
+(new record from G074),59,Waterfall.io,default,verify new record (v2),4
+(new record from G075),60,Clay,default,verify new record (v2),4

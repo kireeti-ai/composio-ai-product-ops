@@ -1,0 +1,58 @@
+{
+ "id": 19,
+ "name": "Gorgias",
+ "pass1_sha": "1ecf253115057564",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "OAuth2 required for apps",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "terminology_difference",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "OAuth2 access token used as Bearer token",
+    "needs_human": true
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Private apps do not require approval and can be built directly using REST API credentials, whereas public apps require joining the Developer Portal and app review.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms no approval for private apps but does not mention REST API credentials usage.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms Gorgias provides an open REST API.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention any MCP for Gorgias.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

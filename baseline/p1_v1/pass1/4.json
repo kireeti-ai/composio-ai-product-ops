@@ -1,0 +1,80 @@
+{
+ "id": 4,
+ "name": "Attio",
+ "category": "CRM and Sales",
+ "model": "gemini-2.5-flash",
+ "pages_read": [
+  "https://attio.com/developers/authentication",
+  "https://docs.attio.com/rest-api/overview",
+  "https://docs.attio.com/docs/overview",
+  "https://docs.attio.com/sdk/server/connections/connections"
+ ],
+ "one_liner": "Attio is a highly customizable CRM platform offering a public REST API and an App SDK for building integrations and automations.",
+ "auth_methods": [
+  "oauth2",
+  "api_key",
+  "bearer_token",
+  "basic"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers can generate an API key for a single workspace or use OAuth 2.0 for up to 25 workspaces without publishing.",
+ "api_types": [
+  "rest",
+  "sdk_or_cli_only"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://attio.com/developers/authentication",
+   "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key for your workspace",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://attio.com/developers/authentication",
+   "quote": "Pass the value of the token in the Authorization header of your requests like so. Authorization: Bearer <access_token>",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://attio.com/developers/authentication",
+   "quote": "We also support HTTP Basic Authentication, where the username is the token and the password is left blank.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://attio.com/developers/authentication",
+   "quote": "If you only need a token for a single workspace, you can generate an API key in the developer settings page of your apps.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://docs.attio.com/rest-api/overview",
+   "quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://docs.attio.com/docs/overview",
+   "quote": "App SDK This allows developers to embed Typescript React applications within the Attio interface and run server functions with access to our REST API.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://docs.attio.com/docs/overview",
+   "quote": "MCP Manage Attio via AI. Connect Claude, ChatGPT or your AI tool of choice to search, update and manage your Attio workspace.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

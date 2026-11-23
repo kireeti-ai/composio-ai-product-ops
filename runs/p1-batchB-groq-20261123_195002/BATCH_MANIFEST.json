@@ -1,0 +1,352 @@
+{
+ "created": "2026-11-23T19:50:25+05:30",
+ "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+ "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+ "apps": [
+  {
+   "id": 30,
+   "name": "Vonage",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 4906,
+   "pages_full": 9,
+   "pages_shown": 9
+  },
+  {
+   "id": 35,
+   "name": "Mailchimp",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 5194,
+   "pages_full": 10,
+   "pages_shown": 10
+  },
+  {
+   "id": 37,
+   "name": "systeme.io",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 4540,
+   "pages_full": 10,
+   "pages_shown": 10
+  },
+  {
+   "id": 40,
+   "name": "SendGrid",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 4198,
+   "pages_full": 7,
+   "pages_shown": 6
+  },
+  {
+   "id": 42,
+   "name": "WooCommerce",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 5026,
+   "pages_full": 9,
+   "pages_shown": 8
+  },
+  {
+   "id": 45,
+   "name": "Magento (Adobe Commerce)",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 2916,
+   "pages_full": 6,
+   "pages_shown": 6
+  },
+  {
+   "id": 48,
+   "name": "Gumroad",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 3550,
+   "pages_full": 8,
+   "pages_shown": 8
+  },
+  {
+   "id": 54,
+   "name": "MrScraper",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 4740,
+   "pages_full": 7,
+   "pages_shown": 7
+  },
+  {
+   "id": 57,
+   "name": "Bright Data",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 5064,
+   "pages_full": 10,
+   "pages_shown": 8
+  },
+  {
+   "id": 64,
+   "name": "Cloudflare",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate_dominant_tld",
+   "budget_chars": 12000,
+   "est_tokens": 4663,
+   "pages_full": 9,
+   "pages_shown": 9
+  },
+  {
+   "id": 67,
+   "name": "Snowflake",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate_dominant_tld",
+   "budget_chars": 12000,
+   "est_tokens": 4872,
+   "pages_full": 8,
+   "pages_shown": 6
+  },
+  {
+   "id": 68,
+   "name": "MongoDB Atlas",
+   "status": "BLOCKED_C_identity_review"
+  },
+  {
+   "id": 74,
+   "name": "Jira",
+   "status": "BLOCKED_C_identity_review"
+  },
+  {
+   "id": 77,
+   "name": "ClickUp",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 4761,
+   "pages_full": 10,
+   "pages_shown": 10
+  },
+  {
+   "id": 15,
+   "name": "Pylon",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 4288,
+   "pages_full": 8,
+   "pages_shown": 8
+  },
+  {
+   "id": 24,
+   "name": "Lark (Larksuite)",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 5185,
+   "pages_full": 10,
+   "pages_shown": 9
+  },
+  {
+   "id": 31,
+   "name": "Google Ads",
+   "status": "READY",
+   "tier": "A_hint_resolved_original_list",
+   "budget_chars": 12000,
+   "est_tokens": 5081,
+   "pages_full": 8,
+   "pages_shown": 6
+  },
+  {
+   "id": 55,
+   "name": "Apify",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 5017,
+   "pages_full": 10,
+   "pages_shown": 8
+  },
+  {
+   "id": 69,
+   "name": "Datadog",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 4513,
+   "pages_full": 7,
+   "pages_shown": 7
+  },
+  {
+   "id": 79,
+   "name": "Smartsheet",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 4678,
+   "pages_full": 9,
+   "pages_shown": 9
+  },
+  {
+   "id": 81,
+   "name": "Stripe",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate_dominant_tld",
+   "budget_chars": 12000,
+   "est_tokens": 4468,
+   "pages_full": 5,
+   "pages_shown": 5
+  },
+  {
+   "id": 82,
+   "name": "Plaid",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 2936,
+   "pages_full": 4,
+   "pages_shown": 4
+  },
+  {
+   "id": 83,
+   "name": "Binance",
+   "status": "BLOCKED_D_retrieval_gap"
+  },
+  {
+   "id": 85,
+   "name": "iPayX",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 270,
+   "pages_full": 1,
+   "pages_shown": 0
+  },
+  {
+   "id": 86,
+   "name": "QuickBooks",
+   "status": "BLOCKED_C_identity_review"
+  },
+  {
+   "id": 87,
+   "name": "Xero",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 2692,
+   "pages_full": 3,
+   "pages_shown": 3
+  },
+  {
+   "id": 88,
+   "name": "Brex",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 4236,
+   "pages_full": 6,
+   "pages_shown": 6
+  },
+  {
+   "id": 89,
+   "name": "Ramp",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 3791,
+   "pages_full": 5,
+   "pages_shown": 5
+  },
+  {
+   "id": 90,
+   "name": "PitchBook",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 2154,
+   "pages_full": 5,
+   "pages_shown": 5
+  },
+  {
+   "id": 91,
+   "name": "NotebookLM",
+   "status": "BLOCKED_C_identity_review"
+  },
+  {
+   "id": 92,
+   "name": "Otter AI",
+   "status": "BLOCKED_C_identity_review"
+  },
+  {
+   "id": 93,
+   "name": "Fathom",
+   "status": "BLOCKED_C_identity_review"
+  },
+  {
+   "id": 94,
+   "name": "Consensus",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 3826,
+   "pages_full": 5,
+   "pages_shown": 5
+  },
+  {
+   "id": 95,
+   "name": "Reducto",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 2554,
+   "pages_full": 5,
+   "pages_shown": 4
+  },
+  {
+   "id": 96,
+   "name": "Devin",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate",
+   "budget_chars": 12000,
+   "est_tokens": 4991,
+   "pages_full": 6,
+   "pages_shown": 6
+  },
+  {
+   "id": 97,
+   "name": "higgsfield",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate_dominant_tld",
+   "budget_chars": 12000,
+   "est_tokens": 2928,
+   "pages_full": 5,
+   "pages_shown": 5
+  },
+  {
+   "id": 98,
+   "name": "Mermaid CLI",
+   "status": "BLOCKED_C_identity_review"
+  },
+  {
+   "id": 99,
+   "name": "YouTube Transcript",
+   "status": "BLOCKED_D_retrieval_gap"
+  },
+  {
+   "id": 100,
+   "name": "Grain",
+   "status": "READY",
+   "tier": "B_name_resolved_candidate_dominant_tld",
+   "budget_chars": 12000,
+   "est_tokens": 3986,
+   "pages_full": 6,
+   "pages_shown": 6
+  }
+ ]
+}

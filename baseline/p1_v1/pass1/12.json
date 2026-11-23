@@ -1,0 +1,56 @@
+{
+ "id": 12,
+ "name": "Intercom",
+ "category": "Support and Helpdesk",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+  "https://developers.intercom.com/docs/references/introduction",
+  "https://intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+  "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+ ],
+ "one_liner": "Intercom is a customer service and engagement platform offering a REST API to manage conversations, contacts, tickets, and help center resources.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers can set up free developer workspaces for app creation and testing.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+   "quote": "Third-parties (i.e. other Intercom workspaces) must authenticate via OAuth.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+   "quote": "You can create a new developer workspace for developing apps. Developer workspaces are free and intended for development purposes only.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developers.intercom.com/docs/references/introduction",
+   "quote": "This is documentation for version 2.16 of the REST API.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+   "quote": "Install MCP server on Cursor",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

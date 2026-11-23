@@ -1,0 +1,91 @@
+{
+ "created": "2026-11-23T18:53:29+0530",
+ "status": "PREPARED - UNAPPROVED. Not runnable: no APPROVED.json; no Groq limits documented",
+ "purpose": "Smallest live check of the frozen Pass 1 path before the other 23 targets",
+ "subset_of": "runs/p1-v1f-gemini-20261124 phase 1 (15 apps). Frozen plan NOT modified; this is a separate selection.",
+ "apps": [
+  {
+   "id": 27,
+   "provenance": "notion"
+  },
+  {
+   "id": 32,
+   "provenance": "notion"
+  },
+  {
+   "id": 41,
+   "provenance": "notion"
+  },
+  {
+   "id": 53,
+   "provenance": "reconstructed_unverified"
+  },
+  {
+   "id": 61,
+   "provenance": "reconstructed_unverified"
+  }
+ ],
+ "selection_rationale": "mixed categories (messaging, ads, e-commerce, SEO, dev platform); 3 original-Notion + 2 reconstructed-provenance; all phase-1 apps have sufficient cached evidence (tier A). Selection is for operational coverage, not for expected accuracy and not a random sample.",
+ "model": "gemini-2.5-flash ONLY (3.5 temporarily unavailable; 3.6 not introduced)",
+ "key": "GEMINI_API_KEY (key 1) only",
+ "call_budget": {
+  "minimum": 5,
+  "expected": 6,
+  "expected_basis": "1 call/app x 87/75 observed-estimate retry ratio, rounded up",
+  "hard_cap_total_requests": 8,
+  "why_8": "40% of the 20 RPD planning ceiling; leaves >=12 for later because today's remaining quota is unknown; each retry counts"
+ },
+ "pacing": {
+  "min_seconds_between_requests": 13,
+  "basis": "5 RPM -> 12 s + 1 s margin; dashboard already shows a 6/5 RPM peak"
+ },
+ "tokens": {
+  "avg_prompt_tokens": 8500,
+  "max_prompt_tokens": 17400,
+  "est_total_tokens": 42500,
+  "tpm_limit": 250000
+ },
+ "checkpoints": [
+  "one pass1/<id>.json per app, written atomically and read-only; existing outputs never overwritten",
+  "append-only request log + STOPPED.json with per-model counts",
+  "after app 1 and after app 5: operator review of quote_found rate, schema validity, request_attempts before any further call",
+  "hash index of outputs after the run"
+ ],
+ "stop_conditions": [
+  "first 429 containing 'per day' -> stop whole run, no retry, no rotation",
+  "request count reaches 8 -> stop",
+  "any 429 'rate' twice in a row -> stop (RPM breach)",
+  "2 consecutive 503/5xx on different apps -> stop, no fallback to another model",
+  "any schema-invalid or quote-verification-failure on app 1 -> pause for review",
+  "any unexpected model name in a response -> stop",
+  "Groq not involved in this pilot"
+ ],
+ "runner_gaps_found": [
+  "frozen runner v6 has NO inter-request pacing (only retry back-off 15/30 s) -> could breach 5 RPM",
+  "no stop on consecutive 5xx (it continues to the next app)",
+  "no hard stop on repeated rate 429 beyond 3 tries/app",
+  "it reads the subset from APPROVED.phases / plan.ids only: a 5-app subset needs its own PLAN.json in a new run dir with the identical runner copy; adding pacing/stop rules = new runner v7, which needs your approval and a new FROZEN.json"
+ ],
+ "not_done": [
+  "no runner v7 written",
+  "no FROZEN.json for this pilot",
+  "no APPROVED.json"
+ ],
+ "approval_template_NOT_ACTIVE": {
+  "models": [
+   "gemini-2.5-flash"
+  ],
+  "cap_per_model": {
+   "gemini-2.5-flash": 8
+  },
+  "phases": [
+   1
+  ],
+  "note": "saved only inside this plan; becomes APPROVED.json only after explicit user approval"
+ },
+ "gates": [
+  "explicit approval of this pilot",
+  "Groq RPM and daily token limit documented (user condition)",
+  "decision on runner v7 pacing/stop rules"
+ ]
+}

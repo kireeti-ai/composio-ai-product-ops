@@ -1,0 +1,124 @@
+{
+ "created": "2026-11-23T18:17:36+0530",
+ "apps": 100,
+ "status_counts": {
+  "COMPLETED_BASELINE": 25,
+  "UNPLANNED": 41,
+  "PLANNED_FROZEN_V1F": 28,
+  "EXCLUDED_IDENTITY_UNRESOLVED": 2,
+  "COMPLETED_BASELINE_QUARANTINED": 1,
+  "HELD_NEO4J_OPTION_B_PREPARED": 1,
+  "HELD_IDENTITY_PROVISIONAL": 2
+ },
+ "gemini_extraction": {
+  "mandatory": {
+   "v1f_targets": 28,
+   "neo4j_two_surface_calls": 2,
+   "expansion_waves_3A_3B_4": 39,
+   "identity_gated_after_confirmation": 6
+  },
+  "optional": {
+   "reextract_quarantined_or_weak_baseline_58_14": 2,
+   "corrected_pass_for_20pct_of_new_records": 15
+  },
+  "calls": {
+   "minimum": 75,
+   "expected_with_15pct_retries": 87,
+   "worst_case_3_attempts": 225,
+   "worst_case_both_models_6_attempts": 450,
+   "with_optional": 92
+  }
+ },
+ "groq_verification": {
+  "records_to_verify_new": 75,
+  "baseline_reverify": 26,
+  "per_record_calls": 3.96,
+  "minimum": 401,
+  "observed_retry_ratio_in_baseline_logs": 1.71,
+  "expected_attempts": 687,
+  "worst_case_5_attempts": 2005,
+  "avg_prompt_chars_measured": 3327,
+  "est_tokens_per_call": 982,
+  "est_total_tokens_expected": 674521
+ },
+ "composio_free_retrieval": {
+  "estimated_minimum": 372,
+  "with_50pct_retries": 558,
+  "cost_usd": 0.0,
+  "note": "free TinyFish via Composio; instant_charge asserted 0 on every call; includes 5 Neo4j gap fetches (need approval)"
+ },
+ "days_needed_gemini_by_daily_cap_scenario": {
+  "cap_20_per_model_per_day": {
+   "models_1": {
+    "min": 4,
+    "expected": 5,
+    "worst_3x": 12
+   },
+   "models_2": {
+    "min": 2,
+    "expected": 3,
+    "worst_3x": 6
+   }
+  },
+  "cap_50_per_model_per_day": {
+   "models_1": {
+    "min": 2,
+    "expected": 2,
+    "worst_3x": 5
+   },
+   "models_2": {
+    "min": 1,
+    "expected": 1,
+    "worst_3x": 3
+   }
+  },
+  "cap_100_per_model_per_day": {
+   "models_1": {
+    "min": 1,
+    "expected": 1,
+    "worst_3x": 3
+   },
+   "models_2": {
+    "min": 1,
+    "expected": 1,
+    "worst_3x": 2
+   }
+  },
+  "cap_250_per_model_per_day": {
+   "models_1": {
+    "min": 1,
+    "expected": 1,
+    "worst_3x": 1
+   },
+   "models_2": {
+    "min": 1,
+    "expected": 1,
+    "worst_3x": 1
+   }
+  }
+ },
+ "days_needed_groq_by_token_cap_scenario": {
+  "hypothetical_100k_tokens_per_day": 7,
+  "hypothetical_250k_tokens_per_day": 3,
+  "hypothetical_500k_tokens_per_day": 2,
+  "hypothetical_1000k_tokens_per_day": 1
+ },
+ "human_labelling": {
+  "claims_scored": 252,
+  "label_rows_two_labelers": 504,
+  "calibration_rows_two_labelers": 42,
+  "adjudication": "only disagreements queued"
+ },
+ "assumptions": [
+  "transient retry rate 15% for Gemini is an ASSUMPTION to be replaced by the first run's observed ratio",
+  "daily caps are SCENARIOS: active Gemini/Groq limits are unverified (last observed: 20 requests/day on one Gemini model for one project)",
+  "Groq retry ratio is OBSERVED from the baseline verify log",
+  "one Gemini call per app (frozen prompt/schema); Neo4j = 2 calls",
+  "apps in wave 3H and identity-gated apps need user identity confirmation first"
+ ],
+ "not_counted": [
+  "calls for apps whose retrieval turns out unusable (they would be dropped, lowering the count)",
+  "any schema change (would require re-extraction)",
+  "second labeler or adjudicator tooling"
+ ]
+}

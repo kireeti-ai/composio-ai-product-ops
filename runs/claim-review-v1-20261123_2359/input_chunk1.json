@@ -1,0 +1,1827 @@
+[
+ {
+  "row_id": 0,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "quote": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs. Bulk API 2.0 requires an access token (also known as a \u201cbearer token\u201d) for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "oauth2",
+    "review_disposition": "supported_by_cited_text_with_scope_limit",
+    "reason": "The Bulk API 2.0 quotation explicitly says it supports OAuth 2.0 flows. The evidence supports OAuth 2.0 for the documented Bulk API context, not necessarily every Salesforce API or every access configuration."
+   },
+   {
+    "item": "bearer_token",
+    "review_disposition": "supported_by_cited_text_with_scope_limit",
+    "reason": "The same cited Bulk API 2.0 passage explicitly identifies the required access token as a bearer token. Scope is limited to that documented API context."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 1,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "quote": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs. Bulk API 2.0 requires an access token (also known as a \u201cbearer token\u201d) for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "oauth2",
+    "review_disposition": "supported_by_cited_text_with_scope_limit",
+    "reason": "The Bulk API 2.0 quotation explicitly says it supports OAuth 2.0 flows. The evidence supports OAuth 2.0 for the documented Bulk API context, not necessarily every Salesforce API or every access configuration."
+   },
+   {
+    "item": "bearer_token",
+    "review_disposition": "supported_by_cited_text_with_scope_limit",
+    "reason": "The same cited Bulk API 2.0 passage explicitly identifies the required access token as a bearer token. Scope is limited to that documented API context."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 2,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "quote": "Complete these steps in your Developer Edition org or development sandbox.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "self_serve_free",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quote says to complete steps in a Developer Edition org or development sandbox. It does not establish free access terms, self-serve provisioning, or general API entitlement. Underlying access may exist; this citation does not prove it."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 3,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "quote": "To successfully send requests, REST API requires an access token obtained by authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 4,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "quote": "Bulk API uses a session ID obtained with an X-SFDC-Session header fetched with SOAP API\u2019s login() call.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 5,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "quote": "Salesforce CLI is a connected app that you can authenticate, and it requires no work to configure.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 6,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "soap",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "quote": "To successfully send requests, REST API requires an access token obtained by authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 7,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "soap",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "quote": "Bulk API uses a session ID obtained with an X-SFDC-Session header fetched with SOAP API\u2019s login() call.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 8,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "soap",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "quote": "Salesforce CLI is a connected app that you can authenticate, and it requires no work to configure.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 9,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "quote": "To successfully send requests, REST API requires an access token obtained by authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 10,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "quote": "Bulk API uses a session ID obtained with an X-SFDC-Session header fetched with SOAP API\u2019s login() call.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 11,
+  "app_id": 1,
+  "app_name": "Salesforce",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "quote": "Salesforce CLI is a connected app that you can authenticate, and it requires no work to configure.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/1.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "item": "rest",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited page explicitly names REST API and states it requires an access token."
+   },
+   {
+    "item": "soap",
+    "review_disposition": "supported_by_cited_text",
+    "reason": "The cited Bulk API documentation explicitly refers to SOAP API login()."
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "review_disposition": "unsupported_by_cited_evidence",
+    "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 12,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "quote": "You can then include your service key as a *Bearer* token in your preferred API client or programming language.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "service key bearer",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The source explicitly says a service key can be sent as a Bearer token; scope is this service-key mechanism."
+   },
+   {
+    "claim": "OAuth/static access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The official overview distinguishes OAuth for multiple accounts from static access tokens for a single account."
+   },
+   {
+    "claim": "developer API key",
+    "disposition": "unsupported_by_submitted_quote",
+    "reason": "The submitted quote contains an ellipsis and failed quote validation; do not retain this mechanism from that quote."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 13,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "quote": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "service key bearer",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The source explicitly says a service key can be sent as a Bearer token; scope is this service-key mechanism."
+   },
+   {
+    "claim": "OAuth/static access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The official overview distinguishes OAuth for multiple accounts from static access tokens for a single account."
+   },
+   {
+    "claim": "developer API key",
+    "disposition": "unsupported_by_submitted_quote",
+    "reason": "The submitted quote contains an ellipsis and failed quote validation; do not retain this mechanism from that quote."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 14,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "quote": "You can then include your service key as a *Bearer* token in your preferred API client or programming language.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "service key bearer",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The source explicitly says a service key can be sent as a Bearer token; scope is this service-key mechanism."
+   },
+   {
+    "claim": "OAuth/static access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The official overview distinguishes OAuth for multiple accounts from static access tokens for a single account."
+   },
+   {
+    "claim": "developer API key",
+    "disposition": "unsupported_by_submitted_quote",
+    "reason": "The submitted quote contains an ellipsis and failed quote validation; do not retain this mechanism from that quote."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 15,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "quote": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "service key bearer",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The source explicitly says a service key can be sent as a Bearer token; scope is this service-key mechanism."
+   },
+   {
+    "claim": "OAuth/static access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The official overview distinguishes OAuth for multiple accounts from static access tokens for a single account."
+   },
+   {
+    "claim": "developer API key",
+    "disposition": "unsupported_by_submitted_quote",
+    "reason": "The submitted quote contains an ellipsis and failed quote validation; do not retain this mechanism from that quote."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 16,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "quote": "You can then include your service key as a *Bearer* token in your preferred API client or programming language.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "service key bearer",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The source explicitly says a service key can be sent as a Bearer token; scope is this service-key mechanism."
+   },
+   {
+    "claim": "OAuth/static access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The official overview distinguishes OAuth for multiple accounts from static access tokens for a single account."
+   },
+   {
+    "claim": "developer API key",
+    "disposition": "unsupported_by_submitted_quote",
+    "reason": "The submitted quote contains an ellipsis and failed quote validation; do not retain this mechanism from that quote."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 17,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "quote": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "service key bearer",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The source explicitly says a service key can be sent as a Bearer token; scope is this service-key mechanism."
+   },
+   {
+    "claim": "OAuth/static access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The official overview distinguishes OAuth for multiple accounts from static access tokens for a single account."
+   },
+   {
+    "claim": "developer API key",
+    "disposition": "unsupported_by_submitted_quote",
+    "reason": "The submitted quote contains an ellipsis and failed quote validation; do not retain this mechanism from that quote."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 18,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://developers.hubspot.com/docs",
+  "quote": "1. Install the HubSpot CLI globally 2. Authorize your HubSpot account 3. Start building",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_free",
+    "disposition": "not_established",
+    "reason": "Direct REST usage and public beta do not establish that access is free or generally self-serve."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 19,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "quote": "Service keys to query HubSpot\u2019s REST APIs directly without having to use the CLI or other platform developer tools first.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official source explicitly identifies service keys querying HubSpot REST APIs."
+   },
+   {
+    "claim": "sdk_or_cli_only",
+    "disposition": "unsupported_by_submitted_evidence",
+    "reason": "CLI install/authentication steps do not establish an API surface category."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 20,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.hubspot.com/docs",
+  "quote": "1. Install the HubSpot CLI globally",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official source explicitly identifies service keys querying HubSpot REST APIs."
+   },
+   {
+    "claim": "sdk_or_cli_only",
+    "disposition": "unsupported_by_submitted_evidence",
+    "reason": "CLI install/authentication steps do not establish an API surface category."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 21,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "quote": "Service keys to query HubSpot\u2019s REST APIs directly without having to use the CLI or other platform developer tools first.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official source explicitly identifies service keys querying HubSpot REST APIs."
+   },
+   {
+    "claim": "sdk_or_cli_only",
+    "disposition": "unsupported_by_submitted_evidence",
+    "reason": "CLI install/authentication steps do not establish an API surface category."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 22,
+  "app_id": 2,
+  "app_name": "HubSpot",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://developers.hubspot.com/docs",
+  "quote": "1. Install the HubSpot CLI globally",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/2.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official source explicitly identifies service keys querying HubSpot REST APIs."
+   },
+   {
+    "claim": "sdk_or_cli_only",
+    "disposition": "unsupported_by_submitted_evidence",
+    "reason": "CLI install/authentication steps do not establish an API surface category."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 23,
+  "app_id": 3,
+  "app_name": "Pipedrive",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+  "quote": "Calls to our API are validated against an API token or an access_token when using OAuth 2.0.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/3.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API token or OAuth access token",
+    "disposition": "supported",
+    "reason": "Cited official API reference explicitly says requests are validated against an API token or OAuth access_token."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 24,
+  "app_id": 3,
+  "app_name": "Pipedrive",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+  "quote": "Calls to our API are validated against an API token or an access_token when using OAuth 2.0.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/3.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API token or OAuth access token",
+    "disposition": "supported",
+    "reason": "Cited official API reference explicitly says requests are validated against an API token or OAuth access_token."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 25,
+  "app_id": 3,
+  "app_name": "Pipedrive",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://developers.pipedrive.com/",
+  "quote": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/3.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_free",
+    "disposition": "partially_supported_not_generalized",
+    "reason": "The quote supports sign-up for a sandbox in a risk-free environment, not unrestricted or free production API access."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 26,
+  "app_id": 3,
+  "app_name": "Pipedrive",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+  "quote": "Pipedrive is a sales CRM with an intuitive RESTful API, webhooks, app extensions and API clients to help you build an app for the Pipedrive Marketplace.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/3.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST and webhooks",
+    "disposition": "supported",
+    "reason": "Official product/API page explicitly identifies RESTful API and webhooks."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 27,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key for your workspace",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 28,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "Pass the value of the token in the Authorization header of your requests like so. Authorization: Bearer <access_token>",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 29,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "We also support HTTP Basic Authentication, where the username is the token and the password is left blank.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 30,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key for your workspace",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 31,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "Pass the value of the token in the Authorization header of your requests like so. Authorization: Bearer <access_token>",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 32,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "We also support HTTP Basic Authentication, where the username is the token and the password is left blank.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 33,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key for your workspace",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 34,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "Pass the value of the token in the Authorization header of your requests like so. Authorization: Bearer <access_token>",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 35,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "We also support HTTP Basic Authentication, where the username is the token and the password is left blank.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 36,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "There are two ways to generate an access token: 1. By implementing an OAuth 2.0 flow 2. By generating an API key for your workspace",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 37,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "Pass the value of the token in the Authorization header of your requests like so. Authorization: Bearer <access_token>",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 38,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://attio.com/developers/authentication",
+  "quote": "We also support HTTP Basic Authentication, where the username is the token and the password is left blank.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and API key",
+    "disposition": "supported",
+    "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+   },
+   {
+    "claim": "Bearer token and HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 39,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.attio.com/rest-api/overview",
+  "quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Attio docs explicitly call it a public REST API."
+   },
+   {
+    "claim": "SDK",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The citation explicitly describes an App SDK; it is not an SDK/CLI-only API classification because the REST API is separately documented."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 40,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.attio.com/docs/overview",
+  "quote": "App SDK This allows developers to embed Typescript React applications within the Attio interface and run server functions with access to our REST API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Attio docs explicitly call it a public REST API."
+   },
+   {
+    "claim": "SDK",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The citation explicitly describes an App SDK; it is not an SDK/CLI-only API classification because the REST API is separately documented."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 41,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://docs.attio.com/rest-api/overview",
+  "quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Attio docs explicitly call it a public REST API."
+   },
+   {
+    "claim": "SDK",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The citation explicitly describes an App SDK; it is not an SDK/CLI-only API classification because the REST API is separately documented."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 42,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://docs.attio.com/docs/overview",
+  "quote": "App SDK This allows developers to embed Typescript React applications within the Attio interface and run server functions with access to our REST API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Attio docs explicitly call it a public REST API."
+   },
+   {
+    "claim": "SDK",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The citation explicitly describes an App SDK; it is not an SDK/CLI-only API classification because the REST API is separately documented."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 43,
+  "app_id": 4,
+  "app_name": "Attio",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://docs.attio.com/docs/overview",
+  "quote": "MCP Manage Attio via AI. Connect Claude, ChatGPT or your AI tool of choice to search, update and manage your Attio workspace.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/4.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "supported_by_official_docs",
+    "reason": "Official Attio docs state that MCP can manage Attio and connect AI tools to search/update workspace; provenance is vendor documentation."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 44,
+  "app_id": 5,
+  "app_name": "Twenty",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.twenty.com/developers/extend/api",
+  "quote": "Both are available as REST and GraphQL.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/5.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST and GraphQL",
+    "disposition": "supported",
+    "reason": "The official docs explicitly state both are available."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 45,
+  "app_id": 5,
+  "app_name": "Twenty",
+  "field": "api_types",
+  "claim_value": "graphql",
+  "source_url": "https://docs.twenty.com/developers/extend/api",
+  "quote": "Both are available as REST and GraphQL.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/5.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST and GraphQL",
+    "disposition": "supported",
+    "reason": "The official docs explicitly state both are available."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 46,
+  "app_id": 6,
+  "app_name": "Podio",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.podio.com/authentication",
+  "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/6.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2",
+    "disposition": "supported",
+    "reason": "The official Podio authentication guide explicitly says the API uses OAuth2."
+   },
+   {
+    "claim": "bearer token / password flow",
+    "disposition": "citation_failed",
+    "reason": "Both submitted quotes fail lexical validation in the saved source; keep these mechanisms unaccepted until exact source quotations are recovered."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 47,
+  "app_id": 6,
+  "app_name": "Podio",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developers.podio.com/authentication",
+  "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/6.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2",
+    "disposition": "supported",
+    "reason": "The official Podio authentication guide explicitly says the API uses OAuth2."
+   },
+   {
+    "claim": "bearer token / password flow",
+    "disposition": "citation_failed",
+    "reason": "Both submitted quotes fail lexical validation in the saved source; keep these mechanisms unaccepted until exact source quotations are recovered."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 48,
+  "app_id": 6,
+  "app_name": "Podio",
+  "field": "auth_methods",
+  "claim_value": "other",
+  "source_url": "https://developers.podio.com/authentication",
+  "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/6.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2",
+    "disposition": "supported",
+    "reason": "The official Podio authentication guide explicitly says the API uses OAuth2."
+   },
+   {
+    "claim": "bearer token / password flow",
+    "disposition": "citation_failed",
+    "reason": "Both submitted quotes fail lexical validation in the saved source; keep these mechanisms unaccepted until exact source quotations are recovered."
+   }
+  ],
+  "claim_state_before": "needs_human"
+ },
+ {
+  "row_id": 49,
+  "app_id": 6,
+  "app_name": "Podio",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.podio.com/authentication/server_side",
+  "quote": "HTTP METHOD: POST URL: https://api.podio.com/oauth/token/v2 HEADER: \"Content-Type: application/json\"",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/6.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "The documented endpoint uses HTTP POST to the Podio OAuth API; supports HTTP/REST-style API usage in this context."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 50,
+  "app_id": 7,
+  "app_name": "Zoho CRM",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://www.zoho.com/crm/developer/",
+  "quote": "The fully featured free Developer Edition is the perfect environment for users to learn their way around Zoho CRM's configuration, data model, and developer tools without risking access to any of your production data.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/7.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "free self-serve",
+    "disposition": "partially_supported_scope_limited",
+    "reason": "The quoted page establishes a free Developer Edition learning environment, not free production API entitlement."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 51,
+  "app_id": 7,
+  "app_name": "Zoho CRM",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://www.zoho.com/crm/developer/docs/",
+  "quote": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/7.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly describe flexible RESTful endpoints and CRUD operations."
+   },
+   {
+    "claim": "GraphQL",
+    "disposition": "unsupported_by_recorded_evidence",
+    "reason": "No supplied citation supports GraphQL."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 52,
+  "app_id": 7,
+  "app_name": "Zoho CRM",
+  "field": "api_types",
+  "claim_value": "graphql",
+  "source_url": "https://www.zoho.com/crm/developer/docs/",
+  "quote": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/7.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly describe flexible RESTful endpoints and CRUD operations."
+   },
+   {
+    "claim": "GraphQL",
+    "disposition": "unsupported_by_recorded_evidence",
+    "reason": "No supplied citation supports GraphQL."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 53,
+  "app_id": 7,
+  "app_name": "Zoho CRM",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://www.zoho.com/crm/developer/",
+  "quote": "Configure an MCP server to enable AI agents to autonomously perform end-to-end tasks, removing repetitive manual steps across 950+ Zoho and third-party services.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/7.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "unsupported_generic_mcp_reference",
+    "reason": "The quote refers to a generic MCP server for Zoho and third-party services, without establishing a Zoho CRM-specific vendor-maintained server or its tool coverage."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 54,
+  "app_id": 8,
+  "app_name": "Close",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developer.close.com/api/overview/oauth-authentication",
+  "quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/8.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official docs require creating an OAuth app and provide client ID/secret."
+   },
+   {
+    "claim": "API key",
+    "disposition": "supported",
+    "reason": "Official docs describe managing API keys in a Close account."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 55,
+  "app_id": 8,
+  "app_name": "Close",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developer.close.com/api/overview/oauth-authentication",
+  "quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/8.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official docs require creating an OAuth app and provide client ID/secret."
+   },
+   {
+    "claim": "API key",
+    "disposition": "supported",
+    "reason": "Official docs describe managing API keys in a Close account."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 56,
+  "app_id": 8,
+  "app_name": "Close",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://developer.close.com/api/overview/oauth-authentication",
+  "quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/8.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official docs require creating an OAuth app and provide client ID/secret."
+   },
+   {
+    "claim": "API key",
+    "disposition": "supported",
+    "reason": "Official docs describe managing API keys in a Close account."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 57,
+  "app_id": 8,
+  "app_name": "Close",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developer.close.com/api/overview/oauth-authentication",
+  "quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/8.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official docs require creating an OAuth app and provide client ID/secret."
+   },
+   {
+    "claim": "API key",
+    "disposition": "supported",
+    "reason": "Official docs describe managing API keys in a Close account."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 58,
+  "app_id": 8,
+  "app_name": "Close",
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "source_url": "https://developer.close.com/api/overview/api-key-authentication",
+  "quote": "API keys can be created and managed in your Close account under Settings \u2192 Developer \u2192 API Keys.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/8.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "trial_or_paid_plan",
+    "disposition": "not_established",
+    "reason": "Account API-key settings do not prove paid-plan requirements or public self-serve access; classify exact access tier as unknown pending pricing/plan evidence."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 59,
+  "app_id": 8,
+  "app_name": "Close",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.close.com/",
+  "quote": "Push leads, contacts, activities, and custom data into Close from your website or other systems via the REST API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/8.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official source explicitly names a REST API and representative lead/contact/activity/custom-data operations."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 60,
+  "app_id": 8,
+  "app_name": "Close",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://developer.close.com/",
+  "quote": "Give Claude, ChatGPT, Cursor, and other tools direct access to Close data via the MCP server \u2014 no code required.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/8.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "supported_by_vendor_docs",
+    "reason": "Official developer documentation explicitly offers access to Close data via \u201cthe MCP server\u201d."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 61,
+  "app_id": 9,
+  "app_name": "Copper",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developer.copper.com/introduction/authentication.html",
+  "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/9.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API key and OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official documentation explicitly lists both methods."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 62,
+  "app_id": 9,
+  "app_name": "Copper",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developer.copper.com/introduction/authentication.html",
+  "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/9.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API key and OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official documentation explicitly lists both methods."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 63,
+  "app_id": 9,
+  "app_name": "Copper",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developer.copper.com/introduction/authentication.html",
+  "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/9.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API key and OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official documentation explicitly lists both methods."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 64,
+  "app_id": 9,
+  "app_name": "Copper",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.copper.com/introduction/oauth/index.html",
+  "quote": "Although it's entirely feasible to implement the OAuth 2.0 flow through plain REST",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/9.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "The official OAuth documentation explicitly describes implementing OAuth through plain REST."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 65,
+  "app_id": 10,
+  "app_name": "DealCloud",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://api.docs.dealcloud.com/docs/token",
+  "quote": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token, which is then used in the HTTP Authentication header for API requests.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/10.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2 client credentials and bearer token",
+    "disposition": "supported",
+    "reason": "Official API docs explicitly state the Client Credentials flow generates a bearer token for HTTP authorization."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 66,
+  "app_id": 10,
+  "app_name": "DealCloud",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://api.docs.dealcloud.com/docs/token",
+  "quote": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token, which is then used in the HTTP Authentication header for API requests.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/10.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2 client credentials and bearer token",
+    "disposition": "supported",
+    "reason": "Official API docs explicitly state the Client Credentials flow generates a bearer token for HTTP authorization."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 67,
+  "app_id": 10,
+  "app_name": "DealCloud",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://api.docs.dealcloud.com/docs",
+  "quote": "This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/10.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official API documentation portal explicitly identifies REST APIs and capabilities."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 68,
+  "app_id": 10,
+  "app_name": "DealCloud",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://api.docs.dealcloud.com/mcp/authentication",
+  "quote": "DealCloud MCP uses OAuth to authenticate, letting AI assistants connect on behalf of an individual user.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/10.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "supported_by_vendor_docs",
+    "reason": "Official DealCloud MCP authentication docs explicitly describe DealCloud MCP and OAuth for individual users."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 69,
+  "app_id": 11,
+  "app_name": "Zendesk",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "quote": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/11.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth access tokens",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state OAuth access tokens authenticate API requests."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 70,
+  "app_id": 11,
+  "app_name": "Zendesk",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "quote": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/11.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth access tokens",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state OAuth access tokens authenticate API requests."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 71,
+  "app_id": 11,
+  "app_name": "Zendesk",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "quote": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/11.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth access tokens",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state OAuth access tokens authenticate API requests."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 72,
+  "app_id": 11,
+  "app_name": "Zendesk",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "quote": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/11.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth access tokens",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state OAuth access tokens authenticate API requests."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 73,
+  "app_id": 11,
+  "app_name": "Zendesk",
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "source_url": "https://developer.zendesk.com/documentation/",
+  "quote": "Try out the Sunshine Platform with a free, 14-day trial account.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/11.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "trial_or_paid",
+    "disposition": "partially_supported",
+    "reason": "Evidence establishes a free 14-day Sunshine Platform trial, not access conditions for all Zendesk APIs."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 74,
+  "app_id": 11,
+  "app_name": "Zendesk",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.zendesk.com/documentation/",
+  "quote": "Zendesk's APIs are organized around REST principles.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/11.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly describe Zendesk APIs as organized around REST principles."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 75,
+  "app_id": 12,
+  "app_name": "Intercom",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+  "quote": "Third-parties (i.e. other Intercom workspaces) must authenticate via OAuth.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/12.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The quote applies to third-party integrations connecting other Intercom workspaces."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 76,
+  "app_id": 12,
+  "app_name": "Intercom",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+  "quote": "Third-parties (i.e. other Intercom workspaces) must authenticate via OAuth.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/12.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The quote applies to third-party integrations connecting other Intercom workspaces."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 77,
+  "app_id": 12,
+  "app_name": "Intercom",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+  "quote": "You can create a new developer workspace for developing apps. Developer workspaces are free and intended for development purposes only.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/12.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "free developer workspace",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official docs explicitly state free developer workspaces are for development only; this does not establish free production use."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 78,
+  "app_id": 12,
+  "app_name": "Intercom",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.intercom.com/docs/references/introduction",
+  "quote": "This is documentation for version 2.16 of the REST API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/12.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "The page explicitly identifies a versioned REST API."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 79,
+  "app_id": 12,
+  "app_name": "Intercom",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+  "quote": "Install MCP server on Cursor",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/12.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "verify_provenance_before_acceptance",
+    "reason": "A source says to install an MCP server on Cursor, but the retained evidence lacks the page URL/title in this summary; exact vendor ownership must be verified before classifying official."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ }
+]

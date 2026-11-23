@@ -1,0 +1,916 @@
+{
+  "checked_at": "2026-11-23T20:28:29+05:30",
+  "source_of_truth": "https://composio.notion.site/AI-Product-Ops-Intern-The-take-home-assignment-391f261a6dfe80e9946bee899d3a3762",
+  "access_method": "web.open on the supplied Notion URL",
+  "access_result": "not accessible via the available reader; no bypass attempted",
+  "registry_changed": false,
+  "registry_sha256": "6ee8d2dcddd29bc3cae5f22c4f99c2993701bdf867fe806fd1bba57face090cc",
+  "position_count": 100,
+  "source_counts": {
+    "notion_attributed_in_existing_registry": 50,
+    "reconstructed_secondary_candidate": 50
+  },
+  "reconciliation_status": "incomplete_authoritative_source_unavailable",
+  "entries": [
+    {
+      "id": 1,
+      "current_name": "Salesforce",
+      "current_category": "CRM and Sales",
+      "current_hint": "salesforce.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 2,
+      "current_name": "HubSpot",
+      "current_category": "CRM and Sales",
+      "current_hint": "hubspot.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 3,
+      "current_name": "Pipedrive",
+      "current_category": "CRM and Sales",
+      "current_hint": "pipedrive.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 4,
+      "current_name": "Attio",
+      "current_category": "CRM and Sales",
+      "current_hint": "attio.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 5,
+      "current_name": "Twenty",
+      "current_category": "CRM and Sales",
+      "current_hint": "twenty.com (open-source CRM)",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 6,
+      "current_name": "Podio",
+      "current_category": "CRM and Sales",
+      "current_hint": "podio.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 7,
+      "current_name": "Zoho CRM",
+      "current_category": "CRM and Sales",
+      "current_hint": "zoho.com/crm",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 8,
+      "current_name": "Close",
+      "current_category": "CRM and Sales",
+      "current_hint": "close.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 9,
+      "current_name": "Copper",
+      "current_category": "CRM and Sales",
+      "current_hint": "copper.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 10,
+      "current_name": "DealCloud",
+      "current_category": "CRM and Sales",
+      "current_hint": "api.docs.dealcloud.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 11,
+      "current_name": "Zendesk",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "zendesk.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 12,
+      "current_name": "Intercom",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "intercom.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 13,
+      "current_name": "Freshdesk",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "freshdesk.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 14,
+      "current_name": "Front",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "front.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 15,
+      "current_name": "Pylon",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "usepylon.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 16,
+      "current_name": "LiveAgent",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "liveagent.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 17,
+      "current_name": "Plain",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "plain.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 18,
+      "current_name": "Help Scout",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "helpscout.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 19,
+      "current_name": "Gorgias",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "gorgias.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 20,
+      "current_name": "Gladly",
+      "current_category": "Support and Helpdesk",
+      "current_hint": "gladly.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 21,
+      "current_name": "Slack",
+      "current_category": "Communications and Messaging",
+      "current_hint": "slack.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 22,
+      "current_name": "Twilio",
+      "current_category": "Communications and Messaging",
+      "current_hint": "twilio.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 23,
+      "current_name": "Zoho Cliq",
+      "current_category": "Communications and Messaging",
+      "current_hint": "zoho.com/cliq",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 24,
+      "current_name": "Lark (Larksuite)",
+      "current_category": "Communications and Messaging",
+      "current_hint": "open.larksuite.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 25,
+      "current_name": "Pumble",
+      "current_category": "Communications and Messaging",
+      "current_hint": "pumble.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 26,
+      "current_name": "Discord",
+      "current_category": "Communications and Messaging",
+      "current_hint": "discord.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 27,
+      "current_name": "Telegram",
+      "current_category": "Communications and Messaging",
+      "current_hint": "core.telegram.org",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 28,
+      "current_name": "WhatsApp Business",
+      "current_category": "Communications and Messaging",
+      "current_hint": "developers.facebook.com/docs/whatsapp",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 29,
+      "current_name": "Aircall",
+      "current_category": "Communications and Messaging",
+      "current_hint": "aircall.io",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 30,
+      "current_name": "Vonage",
+      "current_category": "Communications and Messaging",
+      "current_hint": "developer.vonage.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 31,
+      "current_name": "Google Ads",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "developers.google.com/google-ads",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 32,
+      "current_name": "Meta Ads",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "developers.facebook.com/docs/marketing-apis",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 33,
+      "current_name": "LinkedIn Ads",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "learn.microsoft.com/linkedin/marketing",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 34,
+      "current_name": "GoHighLevel",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "highlevel.stoplight.io",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 35,
+      "current_name": "Mailchimp",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "mailchimp.com/developer",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 36,
+      "current_name": "Klaviyo",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "developers.klaviyo.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 37,
+      "current_name": "systeme.io",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "systeme.io (funnel builder)",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 38,
+      "current_name": "Pinterest",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "developers.pinterest.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 39,
+      "current_name": "Threads (Meta)",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "developers.facebook.com/docs/threads",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 40,
+      "current_name": "SendGrid",
+      "current_category": "Marketing, Ads, Email and Social",
+      "current_hint": "sendgrid.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 41,
+      "current_name": "Shopify",
+      "current_category": "Ecommerce",
+      "current_hint": "shopify.dev",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 42,
+      "current_name": "WooCommerce",
+      "current_category": "Ecommerce",
+      "current_hint": "woocommerce.com/document/woocommerce-rest-api",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 43,
+      "current_name": "BigCommerce",
+      "current_category": "Ecommerce",
+      "current_hint": "developer.bigcommerce.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 44,
+      "current_name": "Salesforce Commerce Cloud",
+      "current_category": "Ecommerce",
+      "current_hint": "developer.salesforce.com/docs/commerce",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 45,
+      "current_name": "Magento (Adobe Commerce)",
+      "current_category": "Ecommerce",
+      "current_hint": "developer.adobe.com/commerce",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 46,
+      "current_name": "Squarespace",
+      "current_category": "Ecommerce",
+      "current_hint": "developers.squarespace.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 47,
+      "current_name": "Ecwid",
+      "current_category": "Ecommerce",
+      "current_hint": "api-docs.ecwid.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 48,
+      "current_name": "Gumroad",
+      "current_category": "Ecommerce",
+      "current_hint": "gumroad.com/api",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 49,
+      "current_name": "Amazon Selling Partner",
+      "current_category": "Ecommerce",
+      "current_hint": "developer-docs.amazon.com/sp-api",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 50,
+      "current_name": "fanbasis",
+      "current_category": "Ecommerce",
+      "current_hint": "fanbasis.com",
+      "current_provenance": "notion",
+      "comparison_status": "not_reverified_authoritative_page_inaccessible",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 51,
+      "current_name": "DataForSEO",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 52,
+      "current_name": "SE Ranking",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 53,
+      "current_name": "Ahrefs",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 54,
+      "current_name": "MrScraper",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 55,
+      "current_name": "Apify",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 56,
+      "current_name": "Firecrawl",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 57,
+      "current_name": "Bright Data",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 58,
+      "current_name": "Sherlock",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 59,
+      "current_name": "Waterfall.io",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 60,
+      "current_name": "Clay",
+      "current_category": "Data, SEO and Scraping",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 61,
+      "current_name": "GitHub",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 62,
+      "current_name": "Vercel",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 63,
+      "current_name": "Netlify",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 64,
+      "current_name": "Cloudflare",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 65,
+      "current_name": "Supabase",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 66,
+      "current_name": "Neo4j",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 67,
+      "current_name": "Snowflake",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 68,
+      "current_name": "MongoDB Atlas",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 69,
+      "current_name": "Datadog",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 70,
+      "current_name": "Sentry",
+      "current_category": "Developer, Infra and Data platforms",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 71,
+      "current_name": "Notion",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 72,
+      "current_name": "Airtable",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 73,
+      "current_name": "Linear",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 74,
+      "current_name": "Jira",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 75,
+      "current_name": "Asana",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 76,
+      "current_name": "Monday.com",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 77,
+      "current_name": "ClickUp",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 78,
+      "current_name": "Coda",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 79,
+      "current_name": "Smartsheet",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 80,
+      "current_name": "Harvest",
+      "current_category": "Productivity and Project Management",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 81,
+      "current_name": "Stripe",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 82,
+      "current_name": "Plaid",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 83,
+      "current_name": "Binance",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 84,
+      "current_name": "Paygent Connect",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 85,
+      "current_name": "iPayX",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 86,
+      "current_name": "QuickBooks",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 87,
+      "current_name": "Xero",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 88,
+      "current_name": "Brex",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 89,
+      "current_name": "Ramp",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 90,
+      "current_name": "PitchBook",
+      "current_category": "Finance and Fintech",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 91,
+      "current_name": "NotebookLM",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 92,
+      "current_name": "Otter AI",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 93,
+      "current_name": "Fathom",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 94,
+      "current_name": "Consensus",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 95,
+      "current_name": "Reducto",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 96,
+      "current_name": "Devin",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 97,
+      "current_name": "higgsfield",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 98,
+      "current_name": "Mermaid CLI",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 99,
+      "current_name": "YouTube Transcript",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    },
+    {
+      "id": 100,
+      "current_name": "Grain",
+      "current_category": "AI, Research and Media-native",
+      "current_hint": "",
+      "current_provenance": "recovered",
+      "comparison_status": "reconstructed_secondary_candidate_not_verified",
+      "discrepancy": "unknown_until_original_source_can_be_compared"
+    }
+  ]
+}

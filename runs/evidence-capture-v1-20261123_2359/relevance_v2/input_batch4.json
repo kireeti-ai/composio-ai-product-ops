@@ -1,0 +1,1190 @@
+[
+ {
+  "claim_id": "91:0",
+  "app": "NotebookLM",
+  "field": "authentication",
+  "claim_value": "User-credential OAuth access token via gcloud (gcloud auth print-access-token); Bearer header",
+  "claim_note": "Docs sample uses a user account token, not a service-account example, on the notebooks pages.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "source_type": "official_docs",
+    "quote": "gcloud auth print-access-token generates an access token for your user"
+   }
+  ]
+ },
+ {
+  "claim_id": "91:1",
+  "app": "NotebookLM",
+  "field": "access",
+  "claim_value": "Requires Google Cloud project with billing enabled, Discovery Engine API enabled, a per-user Gemini Notebook license and the Cloud NotebookLM User IAM role",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "source_type": "official_docs",
+    "quote": "and assign a license to your user account."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+    "source_type": "official_docs",
+    "quote": "In addition to the Cloud NotebookLM User role, users need a license for"
+   },
+   {
+    "i": 2,
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+    "source_type": "official_docs",
+    "quote": "Verify that billing is enabled for your Google Cloud project ."
+   }
+  ]
+ },
+ {
+  "claim_id": "91:2",
+  "app": "NotebookLM",
+  "field": "api_types",
+  "claim_value": "REST (projects.locations.notebooks methods)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "source_type": "official_docs",
+    "quote": "The projects.locations.notebooks REST"
+   }
+  ]
+ },
+ {
+  "claim_id": "91:3",
+  "app": "NotebookLM",
+  "field": "maturity",
+  "claim_value": "Notebooks API is Preview (Pre-GA terms)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "source_type": "official_docs",
+    "quote": "Pre-GA features are available \"as is\" and might have limited support."
+   }
+  ]
+ },
+ {
+  "claim_id": "91:4",
+  "app": "NotebookLM",
+  "field": "naming",
+  "claim_value": "Product renamed; subscription page still shows old name",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+    "source_type": "official_docs",
+    "quote": "Note: The subscription page displays the previous name NotebookLM Enterprise."
+   }
+  ]
+ },
+ {
+  "claim_id": "92:0",
+  "app": "Otter AI",
+  "field": "mcp",
+  "claim_value": "official: Otter MCP server at mcp.otter.ai",
+  "claim_note": "Endpoint host mcp.otter.ai confirmed live (HTTP 401 without token, metadata served).",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+    "source_type": "official_marketing",
+    "quote": "Otter's MCP Server connects your meeting data directly to AI tools like Claude and ChatGPT"
+   },
+   {
+    "i": 1,
+    "url": "https://mcp.otter.ai/.well-known/oauth-protected-resource",
+    "source_type": "official_docs",
+    "quote": "\"authorization_servers\":[\"https://otter.ai\"]"
+   }
+  ]
+ },
+ {
+  "claim_id": "92:1",
+  "app": "Otter AI",
+  "field": "authentication_mcp",
+  "claim_value": "OAuth, scopes profile:read and conversations:read, bearer header",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+    "source_type": "official_marketing",
+    "quote": "OAuth-authenticated with granular permissions"
+   },
+   {
+    "i": 1,
+    "url": "https://mcp.otter.ai/.well-known/oauth-protected-resource",
+    "source_type": "official_docs",
+    "quote": "\"scopes_supported\":[\"profile:read\",\"conversations:read\"]"
+   }
+  ]
+ },
+ {
+  "claim_id": "92:2",
+  "app": "Otter AI",
+  "field": "api_listing",
+  "claim_value": "Otter API & Webhooks is listed in the Enterprise plan card",
+  "claim_note": "Plain-text extraction cannot show per-plan checkmarks in the comparison table; the card listing is the only plan evidence.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://otter.ai/pricing",
+    "source_type": "official_marketing",
+    "quote": "HIPAA compliance (add-on)\nOtter API & Webhooks"
+   }
+  ]
+ },
+ {
+  "claim_id": "92:3",
+  "app": "Otter AI",
+  "field": "access",
+  "claim_value": "Enterprise-oriented: pricing card \"Custom pricing / Schedule a demo\"; blog ends with request-a-demo",
+  "claim_note": "Which plans include MCP is NOT determined (pricing table row \"MCP server integration for AI assistants\" present but checkmarks not extractable).",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://otter.ai/pricing",
+    "source_type": "official_marketing",
+    "quote": "Custom pricing"
+   },
+   {
+    "i": 1,
+    "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+    "source_type": "official_marketing",
+    "quote": "Request a demo to see how the MCP Server can transform your team"
+   }
+  ]
+ },
+ {
+  "claim_id": "93:0",
+  "app": "Fathom",
+  "field": "authentication",
+  "claim_value": "API key (X-Api-Key) generated in User Settings; OAuth for public apps. Pages differ on whether REST accepts only API keys.",
+  "claim_note": "api-overview says REST is authenticated with API keys; OAuth page and FAQ (\"X-Api-Key (or Bearer for OAuth)\") describe OAuth tokens. Likely overview is stale; not resolved.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.fathom.ai/quickstart",
+    "source_type": "official_docs",
+    "quote": "Head to the API Access section of your User Settings and generate an API key."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.fathom.ai/api-overview.md",
+    "source_type": "official_docs",
+    "quote": "All REST API resources are authenticated with API keys generated via the Fathom website's settings area."
+   },
+   {
+    "i": 2,
+    "url": "https://developers.fathom.ai/oauth.md",
+    "source_type": "official_docs",
+    "quote": "If you're developing a public app that you wish to integrate with Fathom, you should build it using OAuth."
+   }
+  ]
+ },
+ {
+  "claim_id": "93:1",
+  "app": "Fathom",
+  "field": "access",
+  "claim_value": "Self-serve; API and webhooks included on all plans",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.fathom.ai/faq.md",
+    "source_type": "official_docs",
+    "quote": "API access\u2014keys and webhooks\u2014 are included on all plans. Generate a key in User Settings \u2192 API Access."
+   }
+  ]
+ },
+ {
+  "claim_id": "93:2",
+  "app": "Fathom",
+  "field": "access_oauth",
+  "claim_value": "OAuth apps register via a form and are subject to review",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.fathom.ai/oauth.md",
+    "source_type": "official_docs",
+    "quote": "Configure your redirects and receive your OAuth credentials. (2 mins)"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.fathom.ai/oauth.md",
+    "source_type": "official_docs",
+    "quote": "They are subject to review to ensure the best experience for all users."
+   }
+  ]
+ },
+ {
+  "claim_id": "93:3",
+  "app": "Fathom",
+  "field": "api_types",
+  "claim_value": "REST, official TS/Python SDKs, webhooks",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.fathom.ai/api-overview.md",
+    "source_type": "official_docs",
+    "quote": "This documentation describes Fathom's REST API."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.fathom.ai/llms.txt",
+    "source_type": "official_docs",
+    "quote": "Get started with Fathom using our official TypeScript and Python SDKs"
+   },
+   {
+    "i": 2,
+    "url": "https://developers.fathom.ai/llms.txt",
+    "source_type": "official_docs",
+    "quote": "Automatically trigger webhook events after your meetings"
+   }
+  ]
+ },
+ {
+  "claim_id": "93:4",
+  "app": "Fathom",
+  "field": "rate_limits",
+  "claim_value": "60 calls/60s global; heavy requests 30/60s; downloads 30/60s",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.fathom.ai/api-overview.md",
+    "source_type": "official_docs",
+    "quote": "Currently, you are able to make a maximum of 60 calls to the API in a 60 second window."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.fathom.ai/api-overview.md",
+    "source_type": "official_docs",
+    "quote": "For heavy requests, the maximum allowed number of calls is 30 in a 60 second window."
+   }
+  ]
+ },
+ {
+  "claim_id": "93:5",
+  "app": "Fathom",
+  "field": "scopes",
+  "claim_value": "Keys are per-user; see only own or shared meetings; no org-level keys",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.fathom.ai/quickstart",
+    "source_type": "official_docs",
+    "quote": "API keys are scoped to the user who creates them."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.fathom.ai/faq.md",
+    "source_type": "official_docs",
+    "quote": "API keys are per user, not per org, and there are no org-level keys."
+   }
+  ]
+ },
+ {
+  "claim_id": "93:6",
+  "app": "Fathom",
+  "field": "mcp",
+  "claim_value": "official: https://api.fathom.ai/mcp",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.fathom.ai/mcp-docs/index.md",
+    "source_type": "official_docs",
+    "quote": "Fathom now offers an official MCP (Model Context Protocol) server"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.fathom.ai/mcp-docs/index.md",
+    "source_type": "official_docs",
+    "quote": "**MCP server URL:** `https://api.fathom.ai/mcp`"
+   }
+  ]
+ },
+ {
+  "claim_id": "94:0",
+  "app": "Consensus",
+  "field": "identity",
+  "claim_value": "Consensus is an AI research engine over scholarly papers",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.consensus.app/llms.txt",
+    "source_type": "official_docs",
+    "quote": "> Developer documentation for Consensus, the AI research engine."
+   }
+  ]
+ },
+ {
+  "claim_id": "94:1",
+  "app": "Consensus",
+  "field": "api_types",
+  "claim_value": "REST: GET /v1/search and POST /v1/threads, api.consensus.app",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://consensus.app/home/blog/threads-in-the-consensus-api-and-mcp/",
+    "source_type": "official_marketing",
+    "quote": "GET /v1/search returns ranked peer-reviewed papers in seconds"
+   },
+   {
+    "i": 1,
+    "url": "https://consensus.app/home/blog/threads-in-the-consensus-api-and-mcp/",
+    "source_type": "official_marketing",
+    "quote": "POST /v1/threads"
+   },
+   {
+    "i": 2,
+    "url": "https://consensus.app/home/mcp/",
+    "source_type": "official_marketing",
+    "quote": "curl -G \"https://api.consensus.app/v1/search\""
+   }
+  ]
+ },
+ {
+  "claim_id": "94:2",
+  "app": "Consensus",
+  "field": "authentication_rest",
+  "claim_value": "API key in x-api-key header",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://consensus.app/home/mcp/",
+    "source_type": "official_marketing",
+    "quote": "-H \"x-api-key: $CONSENSUS_API_KEY\" \\"
+   }
+  ]
+ },
+ {
+  "claim_id": "94:3",
+  "app": "Consensus",
+  "field": "authentication_mcp",
+  "claim_value": "OAuth 2 authorization-code with PKCE S256, dynamic client registration, scope \"search\"",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://mcp.consensus.app/.well-known/oauth-authorization-server",
+    "source_type": "official_docs",
+    "quote": "\"scopes_supported\":[\"search\"]"
+   },
+   {
+    "i": 1,
+    "url": "https://mcp.consensus.app/.well-known/oauth-authorization-server",
+    "source_type": "official_docs",
+    "quote": "\"code_challenge_methods_supported\":[\"S256\"]"
+   },
+   {
+    "i": 2,
+    "url": "https://mcp.consensus.app/.well-known/oauth-authorization-server",
+    "source_type": "official_docs",
+    "quote": "\"registration_endpoint\":\"https://consensus.app/oauth/register/\""
+   },
+   {
+    "i": 3,
+    "url": "https://mcp.consensus.app/mcp",
+    "source_type": "official_docs",
+    "quote": "{\"error\":\"unauthorized\",\"error_description\":\"Authentication required\"}"
+   }
+  ]
+ },
+ {
+  "claim_id": "94:4",
+  "app": "Consensus",
+  "field": "mcp",
+  "claim_value": "official: https://mcp.consensus.app/mcp",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.consensus.app/llms.txt",
+    "source_type": "official_docs",
+    "quote": "Connect Consensus to ChatGPT, Claude, or Microsoft 365 Copilot in one click, or build on it with the API, so answers cite real peer-reviewed papers."
+   },
+   {
+    "i": 1,
+    "url": "https://consensus.app/home/blog/threads-in-the-consensus-api-and-mcp/",
+    "source_type": "official_marketing",
+    "quote": "The Consensus Research Agent, now available through the API and MCP."
+   },
+   {
+    "i": 2,
+    "url": "https://mcp.consensus.app",
+    "source_type": "official_docs",
+    "quote": "{\"status\":\"healthy\",\"name\":\"Consensus Academic Research\"}"
+   }
+  ]
+ },
+ {
+  "claim_id": "94:5",
+  "app": "Consensus",
+  "field": "access",
+  "claim_value": "API key creation button on API page; plan-tiered API access documented on a page that returned Cloudflare 403 to curl",
+  "claim_note": "Actual plan limits/pricing not read; whether a free tier exists is unknown.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://consensus.app/home/api/",
+    "source_type": "official_marketing",
+    "quote": "Create API key"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.consensus.app/llms.txt",
+    "source_type": "official_docs",
+    "quote": "What each Consensus plan includes on the API: monthly calls, papers per request, pagination, full-text excerpts, complete text, citations, and rate limits."
+   }
+  ]
+ },
+ {
+  "claim_id": "95:0",
+  "app": "Reducto",
+  "field": "authentication",
+  "claim_value": "Bearer API key created in Studio; local MCP/CLI use browser OAuth device flow that saves a key",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.reducto.ai/quickstart",
+    "source_type": "official_docs",
+    "quote": "-H \"Authorization: Bearer $REDUCTO_API_KEY \""
+   },
+   {
+    "i": 1,
+    "url": "https://docs.reducto.ai/quickstart",
+    "source_type": "official_docs",
+    "quote": "Create a key right here. Give it a name and copy it. It also shows up in Studio under API Keys ."
+   },
+   {
+    "i": 2,
+    "url": "https://docs.reducto.ai/mcp-server",
+    "source_type": "official_docs",
+    "quote": "This opens an OAuth device-code flow in your browser. Once approved, your API key is saved to ~/.reducto/config.yaml with chmod 600 ."
+   }
+  ]
+ },
+ {
+  "claim_id": "95:1",
+  "app": "Reducto",
+  "field": "access",
+  "claim_value": "Self-serve signup; free usage credit then pay-as-you-go; Enterprise via sales",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.reducto.ai/quickstart",
+    "source_type": "official_docs",
+    "quote": "Sign up for a free account without leaving the docs."
+   },
+   {
+    "i": 1,
+    "url": "https://reducto.ai/pricing",
+    "source_type": "official_marketing",
+    "quote": "Free $150 in free usage"
+   },
+   {
+    "i": 2,
+    "url": "https://reducto.ai/pricing",
+    "source_type": "official_marketing",
+    "quote": "After your free $150, standard rates apply."
+   }
+  ]
+ },
+ {
+  "claim_id": "95:2",
+  "app": "Reducto",
+  "field": "api_types",
+  "claim_value": "REST, SDKs (Python, Node, Go), CLI",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.reducto.ai/quickstart",
+    "source_type": "official_docs",
+    "quote": "pip install reductoai"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.reducto.ai/quickstart",
+    "source_type": "official_docs",
+    "quote": "go get github.com/reductoai/reducto-go-sdk"
+   },
+   {
+    "i": 2,
+    "url": "https://docs.reducto.ai/llms.txt",
+    "source_type": "official_docs",
+    "quote": "[Reducto CLI](https://docs.reducto.ai/cli/index.md) \u2014 Access Reducto from your terminal."
+   }
+  ]
+ },
+ {
+  "claim_id": "95:3",
+  "app": "Reducto",
+  "field": "rate_limits",
+  "claim_value": "Page concurrency limit plus per-API-key requests-per-second edge limit (429)",
+  "claim_note": "Numeric limits not captured.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.reducto.ai/reference/rate-limits",
+    "source_type": "official_docs",
+    "quote": "Page concurrency is the number of pages of your r-1 and r-1 mini jobs that Reducto processes at the same time for your account."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.reducto.ai/reference/rate-limits",
+    "source_type": "official_docs",
+    "quote": "They cap requests per second , not concurrent work. Requests above the cap return 429 immediately."
+   }
+  ]
+ },
+ {
+  "claim_id": "95:4",
+  "app": "Reducto",
+  "field": "mcp",
+  "claim_value": "official: hosted https://mcp.reducto.ai/mcp (bearer key) and local uvx server",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.reducto.ai/llms.txt",
+    "source_type": "official_docs",
+    "quote": "[Reducto MCP Server](https://docs.reducto.ai/mcp-server/index.md) \u2014 Connect AI agents to Reducto via the Model Context Protocol."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.reducto.ai/mcp-server",
+    "source_type": "official_docs",
+    "quote": "The hosted server runs at https://mcp.reducto.ai/mcp ."
+   }
+  ]
+ },
+ {
+  "claim_id": "96:0",
+  "app": "Devin",
+  "field": "authentication",
+  "claim_value": "Bearer token with cog_ prefix: service user API key (recommended) or personal access token; legacy apk_ keys deprecated",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "All API credentials use the cog_ prefix format. Include your token in the Authorization header of every request:"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "Legacy API keys are deprecated. Use API v3 with service user authentication."
+   }
+  ]
+ },
+ {
+  "claim_id": "96:1",
+  "app": "Devin",
+  "field": "access",
+  "claim_value": "Service users provisioned in Settings > Devin API per org or enterprise; PATs on enterprise governed by admin policy (disabled by default); plan requirement for API not stated",
+  "claim_note": "Pricing page lists plans but does not state API entitlement per plan; unverified.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "Provision a service user in Settings > Devin API ( Service users tab) for an organization, or Enterprise settings > Devin API ( Service users tab) for the enterprise"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "For enterprise accounts, PATs are governed by an enterprise-wide policy (disabled by default)"
+   }
+  ]
+ },
+ {
+  "claim_id": "96:2",
+  "app": "Devin",
+  "field": "scopes",
+  "claim_value": "Organization scope /v3/organizations/*, Enterprise scope /v3/enterprise/*; role-based",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "Organization Settings > Devin API > Service users /v3/organizations/* Session management, knowledge, playbooks, secrets"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "Assign a role that controls which endpoints the service user can access."
+   }
+  ]
+ },
+ {
+  "claim_id": "96:3",
+  "app": "Devin",
+  "field": "api_types",
+  "claim_value": "REST",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.devin.ai/api-reference/overview",
+    "source_type": "official_docs",
+    "quote": "Learn how to programmatically interact with Devin using our REST APIs"
+   }
+  ]
+ },
+ {
+  "claim_id": "96:4",
+  "app": "Devin",
+  "field": "mcp",
+  "claim_value": "official: https://mcp.devin.ai/mcp, API key required",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "source_type": "official_docs",
+    "quote": "Base Server URL: https://mcp.devin.ai/"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "source_type": "official_docs",
+    "quote": "To use the Devin MCP server, you need a Devin API key:"
+   }
+  ]
+ },
+ {
+  "claim_id": "96:5",
+  "app": "Devin",
+  "field": "mcp_legacy_keys",
+  "claim_value": "Legacy apk_ keys only work with wiki tools; other tools reject them",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "source_type": "official_docs",
+    "quote": "Legacy API keys ( apk_ / apk_user_ prefix) only work with the repository documentation tools"
+   }
+  ]
+ },
+ {
+  "claim_id": "96:6",
+  "app": "Devin",
+  "field": "plans",
+  "claim_value": "Pricing page: Free, Pro $20/mo (cloud agents), Max $200/mo, Teams $80/mo, Enterprise via sales",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://devin.ai/pricing",
+    "source_type": "official_marketing",
+    "quote": "Access to cloud agents (Devin Cloud)"
+   },
+   {
+    "i": 1,
+    "url": "https://devin.ai/pricing",
+    "source_type": "official_marketing",
+    "quote": "$80 per month"
+   }
+  ]
+ },
+ {
+  "claim_id": "97:0",
+  "app": "higgsfield",
+  "field": "authentication_api",
+  "claim_value": "Authorization: Key KEY_ID:KEY_SECRET (credentials created in Higgsfield Console)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.higgsfield.ai/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Create and manage API credentials in Higgsfield Console . Each credential consists of a key ID and a secret."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.higgsfield.ai/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Authorization : Key YOUR_KEY_ID:YOUR_KEY_SECRET"
+   }
+  ]
+ },
+ {
+  "claim_id": "97:1",
+  "app": "higgsfield",
+  "field": "authentication_cli",
+  "claim_value": "Browser sign-in, no API key; uses plan credits",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+    "source_type": "official_help",
+    "quote": "Sign in: run higgsfield auth login . No API key needed."
+   },
+   {
+    "i": 1,
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+    "source_type": "official_help",
+    "quote": "Both use the same Higgsfield account and plan credits with no API key (API keys belong to the Higgsfield API, a separate developer product)"
+   }
+  ]
+ },
+ {
+  "claim_id": "97:2",
+  "app": "higgsfield",
+  "field": "access_billing",
+  "claim_value": "API charges an account balance (funds expire after one year); CLI/MCP bill plan credits",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
+    "source_type": "official_docs",
+    "quote": "Higgsfield charges successful generation requests to your account balance."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
+    "source_type": "official_docs",
+    "quote": "Funds added to your account balance expire one year after they are added."
+   }
+  ]
+ },
+ {
+  "claim_id": "97:3",
+  "app": "higgsfield",
+  "field": "api_types",
+  "claim_value": "REST (queue/poll/webhook) and CLI",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.higgsfield.ai/docs/concepts/billing-and-retention.md",
+    "source_type": "official_docs",
+    "quote": "The status response and the webhook include `expires_at`, the time of deletion."
+   },
+   {
+    "i": 1,
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+    "source_type": "official_help",
+    "quote": "Install skills: run npx skills add higgsfield-ai/skills ."
+   }
+  ]
+ },
+ {
+  "claim_id": "97:4",
+  "app": "higgsfield",
+  "field": "rate_limits",
+  "claim_value": "Concurrency-based per account/model; queue-full returns 429",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.higgsfield.ai/docs/concepts/rate-limits.md",
+    "source_type": "official_docs",
+    "quote": "The primary generation limit is concurrency: the number of requests that may be processing at the same time."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.higgsfield.ai/docs/concepts/rate-limits.md",
+    "source_type": "official_docs",
+    "quote": "View the limits assigned to your account in [Higgsfield Console](https://console.higgsfield.ai)."
+   }
+  ]
+ },
+ {
+  "claim_id": "97:5",
+  "app": "higgsfield",
+  "field": "mcp",
+  "claim_value": "official: Higgsfield MCP for chat agents (URL not captured)",
+  "claim_note": "MCP endpoint URL and MCP auth not read.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+    "source_type": "official_help",
+    "quote": "MCP is a full connection for chat agents that exposes all tools with free parameter selection"
+   }
+  ]
+ },
+ {
+  "claim_id": "98:0",
+  "app": "Mermaid CLI",
+  "field": "identity",
+  "claim_value": "CLI that converts mermaid definitions to SVG/PNG/PDF",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+    "source_type": "official_repo",
+    "quote": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output."
+   }
+  ]
+ },
+ {
+  "claim_id": "98:1",
+  "app": "Mermaid CLI",
+  "field": "license",
+  "claim_value": "MIT",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/LICENSE",
+    "source_type": "official_repo",
+    "quote": "MIT License"
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/package.json",
+    "source_type": "official_repo",
+    "quote": "\"license\": \"MIT\","
+   }
+  ]
+ },
+ {
+  "claim_id": "98:2",
+  "app": "Mermaid CLI",
+  "field": "api_types",
+  "claim_value": "CLI (mmdc), Node.js API, Docker image",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+    "source_type": "official_repo",
+    "quote": "mmdc -i input.mmd -o output.svg"
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+    "source_type": "official_repo",
+    "quote": "It's possible to call `mermaid-cli` via a Node.JS API."
+   },
+   {
+    "i": 2,
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+    "source_type": "official_repo",
+    "quote": "docker pull minlag/mermaid-cli"
+   }
+  ]
+ },
+ {
+  "claim_id": "98:3",
+  "app": "Mermaid CLI",
+  "field": "stability",
+  "claim_value": "Node API not semver-covered",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+    "source_type": "official_repo",
+    "quote": "**the NodeJS API is not covered by semver**"
+   }
+  ]
+ },
+ {
+  "claim_id": "99:0",
+  "app": "YouTube Transcript",
+  "field": "authentication",
+  "claim_value": "Bearer API key; MCP uses OAuth 2.1 or API key bearer",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://transcriptapi.com/docs/api/",
+    "source_type": "official_docs",
+    "quote": "The API uses Bearer token authentication. Include your API key in the Authorization header of every request:"
+   },
+   {
+    "i": 1,
+    "url": "https://transcriptapi.com/docs/mcp/",
+    "source_type": "official_docs",
+    "quote": "Authentication: OAuth 2.1 (Claude, ChatGPT) or an API key sent as a Bearer token (OpenAI Agent Builder and other clients)."
+   }
+  ]
+ },
+ {
+  "claim_id": "99:1",
+  "app": "YouTube Transcript",
+  "field": "access",
+  "claim_value": "Self-serve signup; 100 free credits, no card; paid from $5/month for 1,000 credits",
+  "claim_note": "Monthly plan card text: \"$5.00 /month\", \"1,000 credits per month\".",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://transcriptapi.com/",
+    "source_type": "official_marketing",
+    "quote": "100 free credits to try the API \u2014 no card required."
+   },
+   {
+    "i": 1,
+    "url": "https://transcriptapi.com/",
+    "source_type": "official_marketing",
+    "quote": "Top-ups at $2.50 per 1K"
+   }
+  ]
+ },
+ {
+  "claim_id": "99:2",
+  "app": "YouTube Transcript",
+  "field": "api_types",
+  "claim_value": "REST v2",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://transcriptapi.com/docs/api/",
+    "source_type": "official_docs",
+    "quote": "https://transcriptapi.com/api/v2"
+   },
+   {
+    "i": 1,
+    "url": "https://transcriptapi.com/docs/api/",
+    "source_type": "official_docs",
+    "quote": "GET /youtube/transcript"
+   }
+  ]
+ },
+ {
+  "claim_id": "99:3",
+  "app": "YouTube Transcript",
+  "field": "rate_limits",
+  "claim_value": "200 req/min (Starter Monthly), 300 (Annual); per account",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://transcriptapi.com/docs/api/",
+    "source_type": "official_docs",
+    "quote": "200 requests per minute"
+   },
+   {
+    "i": 1,
+    "url": "https://transcriptapi.com/docs/api/",
+    "source_type": "official_docs",
+    "quote": "The limit applies per account : all API keys on your account share it."
+   }
+  ]
+ },
+ {
+  "claim_id": "99:4",
+  "app": "YouTube Transcript",
+  "field": "mcp",
+  "claim_value": "official (vendor-hosted): https://transcriptapi.com/mcp",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://transcriptapi.com/docs/mcp/",
+    "source_type": "official_docs",
+    "quote": "TranscriptAPI runs a hosted (remote) MCP server at https://transcriptapi.com/mcp ."
+   }
+  ]
+ },
+ {
+  "claim_id": "100:0",
+  "app": "Grain",
+  "field": "authentication",
+  "claim_value": "Bearer token: Personal Access Token, Workspace Access Token, or OAuth2 (code + PKCE)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.grain.com/authentication.html",
+    "source_type": "official_docs",
+    "quote": "Authorization : Bearer TOKEN"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.grain.com/authentication.html",
+    "source_type": "official_docs",
+    "quote": "Personal Access Token ( PAT )"
+   },
+   {
+    "i": 2,
+    "url": "https://developers.grain.com/authentication.html",
+    "source_type": "official_docs",
+    "quote": "Workspace Access Token ( WAT )"
+   },
+   {
+    "i": 3,
+    "url": "https://developers.grain.com/authentication.html",
+    "source_type": "official_docs",
+    "quote": "The API supports a standard OAuth2 Authorization Code flow, including the PKCE extension"
+   }
+  ]
+ },
+ {
+  "claim_id": "100:1",
+  "app": "Grain",
+  "field": "access",
+  "claim_value": "PAT on every plan incl. Free; WAT needs admin and Business/Enterprise; OAuth2 for distributed integrations",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://support.grain.com/en/articles/15507288-g",
+    "source_type": "official_help",
+    "quote": "Available on every plan, including Free."
+   },
+   {
+    "i": 1,
+    "url": "https://support.grain.com/en/articles/15507288-g",
+    "source_type": "official_help",
+    "quote": "Requires admin access to generate and is available on Business and Enterprise plans."
+   }
+  ]
+ },
+ {
+  "claim_id": "100:2",
+  "app": "Grain",
+  "field": "mcp",
+  "claim_value": "official: https://api.grain.com/_/mcp; OAuth; personal-scope tokens/PAT also work, workspace tokens not accepted",
+  "claim_note": "Dev docs and support agree PAT works for MCP; prior \"sources conflict\" not reproduced.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.grain.com/mcp/",
+    "source_type": "official_docs",
+    "quote": "The Grain MCP (Model Context Protocol) connects Claude.ai (and other AI chat clients) directly to your meeting data in Grain"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.grain.com/authentication.html",
+    "source_type": "official_docs",
+    "quote": "Tokens with the personal scope, including Personal Access Tokens, also authenticate the Grain MCP server at https://api.grain.com/_/mcp ."
+   },
+   {
+    "i": 2,
+    "url": "https://developers.grain.com/authentication.html",
+    "source_type": "official_docs",
+    "quote": "Tokens with the workspace scope are not accepted by the MCP server."
+   },
+   {
+    "i": 3,
+    "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+    "source_type": "official_help",
+    "quote": "Grain's MCP server uses OAuth and HTTPS. Developers can also connect with a personal access token"
+   }
+  ]
+ },
+ {
+  "claim_id": "100:3",
+  "app": "Grain",
+  "field": "mcp_plan_gating",
+  "claim_value": "Support article has a \"Plan required\" column with values including \"Any plan\" and \"Business or Enterprise\" per use case",
+  "claim_note": "Row-to-tool mapping not extractable from text.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+    "source_type": "official_help",
+    "quote": "Plan required"
+   },
+   {
+    "i": 1,
+    "url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+    "source_type": "official_help",
+    "quote": "Business or Enterprise"
+   }
+  ]
+ },
+ {
+  "claim_id": "100:4",
+  "app": "Grain",
+  "field": "rate_limits",
+  "claim_value": "Sources conflict: 300 req/min per token (support) vs token bucket cap 30, sustained 120 req/min (dev docs)",
+  "claim_note": "Dev docs also say limits for sunsetting versions are reduced; dev docs are likely newer.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://support.grain.com/en/articles/15507288-g",
+    "source_type": "official_help",
+    "quote": "The API allows 300 requests per minute per token."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.grain.com/rate-limits.html",
+    "source_type": "official_docs",
+    "quote": "120 req/min"
+   },
+   {
+    "i": 2,
+    "url": "https://developers.grain.com/rate-limits.html",
+    "source_type": "official_docs",
+    "quote": "30 requests"
+   }
+  ]
+ },
+ {
+  "claim_id": "100:5",
+  "app": "Grain",
+  "field": "api_types",
+  "claim_value": "REST v2 + webhooks",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://support.grain.com/en/articles/15507288-g",
+    "source_type": "official_help",
+    "quote": "register webhooks to receive a payload whenever a new recording is processed in your workspace"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.grain.com/",
+    "source_type": "official_docs",
+    "quote": "https://api.grain.com/_/public-api/v2/token-info"
+   }
+  ]
+ },
+ {
+  "claim_id": "100:6",
+  "app": "Grain",
+  "field": "versioning",
+  "claim_value": "Public-Api-Version header required; pages disagree on current value (2025-10-31 vs 2026-10-01)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://support.grain.com/en/articles/15507288-g",
+    "source_type": "official_help",
+    "quote": "The current API version is 2025-10-31 ."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.grain.com/",
+    "source_type": "official_docs",
+    "quote": "Public-Api-Version: 2026-10-01"
+   }
+  ]
+ }
+]

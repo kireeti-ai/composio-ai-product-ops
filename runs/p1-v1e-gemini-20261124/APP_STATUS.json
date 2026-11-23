@@ -1,0 +1,1203 @@
+[
+ {
+  "id": 27,
+  "name": "Telegram",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 2,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 4,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 2,
+    "access": 1,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 32,
+  "name": "Meta Ads",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 4,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 3,
+    "access": 1,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 33,
+  "name": "LinkedIn Ads",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "partial",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 2,
+   "baseline_pages": 2,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 1,
+    "access": 1,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 34,
+  "name": "GoHighLevel",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 123,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 4,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 3,
+    "access": 1,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 39,
+  "name": "Threads (Meta)",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 3,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 3,
+   "baseline_pages": 3,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 1,
+    "access": 0,
+    "api_surface": 2
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 41,
+  "name": "Shopify",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 4,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 1,
+    "access": 2,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 43,
+  "name": "BigCommerce",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 2,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 3,
+   "baseline_pages": 3,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 3,
+    "access": 2,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 52,
+  "name": "SE Ranking",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 4,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 3,
+    "access": 3,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 53,
+  "name": "Ahrefs",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 3,
+   "baseline_pages": 3,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 3,
+    "access": 3,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 56,
+  "name": "Firecrawl",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 4,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 4,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 4,
+    "access": 1,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 76,
+  "name": "Monday.com",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 4,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 4,
+    "access": 0,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 65,
+  "name": "Supabase",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 8,
+   "baseline_pages": 4,
+   "topup_pages": 4,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 7,
+    "access": 2,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 72,
+  "name": "Airtable",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 8,
+   "baseline_pages": 4,
+   "topup_pages": 4,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 5,
+    "access": 6,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 71,
+  "name": "Notion",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "partial",
+   "measured_operations": 2,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 6,
+   "baseline_pages": 4,
+   "topup_pages": 2,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 5,
+    "access": 2,
+    "api_surface": 2
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 61,
+  "name": "GitHub",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 7,
+   "baseline_pages": 4,
+   "topup_pages": 3,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 4,
+    "access": 1,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 38,
+  "name": "Pinterest",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 1,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 6,
+   "baseline_pages": 3,
+   "topup_pages": 3,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 2,
+    "access": 1,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 62,
+  "name": "Vercel",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 5,
+   "access": "inferred_self_serve",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 8,
+   "baseline_pages": 4,
+   "topup_pages": 4,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 5,
+    "access": 0,
+    "api_surface": 2
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 63,
+  "name": "Netlify",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 9,
+   "access": "inferred_self_serve",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 8,
+   "baseline_pages": 4,
+   "topup_pages": 4,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 5,
+    "access": 0,
+    "api_surface": 2
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 36,
+  "name": "Klaviyo",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 2,
+   "access": "inferred_self_serve",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 8,
+   "baseline_pages": 4,
+   "topup_pages": 4,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 5,
+    "access": 1,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 29,
+  "name": "Aircall",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 8,
+   "baseline_pages": 4,
+   "topup_pages": 4,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 3,
+    "access": 2,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 47,
+  "name": "Ecwid",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "partial",
+   "measured_operations": 1,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 6,
+   "baseline_pages": 3,
+   "topup_pages": 3,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 2,
+    "access": 3,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 44,
+  "name": "Salesforce Commerce Cloud",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 3,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 6,
+   "baseline_pages": 3,
+   "topup_pages": 3,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 2,
+    "access": 1,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 26,
+  "name": "Discord",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 1,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 3,
+   "topup_pages": 1,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 3,
+    "access": 0,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 70,
+  "name": "Sentry",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 3,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 7,
+   "baseline_pages": 4,
+   "topup_pages": 3,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 1,
+    "access": 2,
+    "api_surface": 2
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 25,
+  "name": "Pumble",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 7,
+   "baseline_pages": 4,
+   "topup_pages": 3,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 2,
+    "access": 2,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 75,
+  "name": "Asana",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 2,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "candidate_research_target_from_reconstructed_list": true,
+  "retrieval": {
+   "usable_planned_input_pages": 7,
+   "baseline_pages": 4,
+   "topup_pages": 3,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 5,
+    "access": 1,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 46,
+  "name": "Squarespace",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 6,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 7,
+   "baseline_pages": 3,
+   "topup_pages": 4,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 3,
+    "access": 2,
+    "api_surface": 2
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 20,
+  "name": "Gladly",
+  "extraction_eligibility": {
+   "eligible": false,
+   "phase": null,
+   "blocking_reasons": [
+    "official evidence still unresolved after retry (pricing empty on 2 attempts; onboarding page thin)"
+   ]
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_assessed",
+   "measured_operations": null,
+   "access": "unresolved",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": null,
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 3,
+   "baseline_pages": 3,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 2,
+    "access": 2,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 73,
+  "name": "Linear",
+  "extraction_eligibility": {
+   "eligible": false,
+   "phase": null,
+   "blocking_reasons": [
+    "identity provisional, not confirmed"
+   ]
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_assessed",
+   "measured_operations": null,
+   "access": "n/a",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": null,
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 0,
+   "baseline_pages": 0,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 0,
+    "access": 0,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 78,
+  "name": "Coda",
+  "extraction_eligibility": {
+   "eligible": false,
+   "phase": null,
+   "blocking_reasons": [
+    "identity provisional, not confirmed"
+   ]
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_assessed",
+   "measured_operations": null,
+   "access": "n/a",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": null,
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 0,
+   "baseline_pages": 0,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 0,
+    "access": 0,
+    "api_surface": 0
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ },
+ {
+  "id": 66,
+  "name": "Neo4j",
+  "extraction_eligibility": {
+   "eligible": false,
+   "phase": null,
+   "blocking_reasons": [
+    "API scope ambiguity (Aura management vs database Query API)"
+   ]
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_assessed",
+   "measured_operations": null,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  },
+  "provenance": null,
+  "candidate_research_target_from_reconstructed_list": false,
+  "retrieval": {
+   "usable_planned_input_pages": 4,
+   "baseline_pages": 4,
+   "topup_pages": 0,
+   "note": "retrieval usability only; says nothing about whether the content answers the question"
+  },
+  "evidence_relevance_summary": {
+   "pages_with_direct_relevance": {
+    "auth": 1,
+    "access": 0,
+    "api_surface": 1
+   },
+   "method": "heuristic_v1_not_ground_truth; can miss relevant pages (e.g. Gladly sandbox page) and over-credit generic ones"
+  }
+ }
+]

@@ -1,0 +1,362 @@
+{
+ "id": 93,
+ "name": "Fathom",
+ "started": "2026-11-23T19:40:35+05:30",
+ "searches": [
+  {
+   "q": "Fathom API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:38+05:30"
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:40+05:30"
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:42+05:30"
+  },
+  {
+   "q": "Fathom MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:45+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://developers.fathom.ai/mcp-docs.md",
+   "requested_at": "2026-11-23T19:40:46+05:30",
+   "status": "ok",
+   "final_url": "https://developers.fathom.ai/mcp-docs.md",
+   "title": null,
+   "chars": 1423,
+   "sha256": "53b80d27a2cdbecf9a9db0dee703902ed6f5b88ef7d5716e00cb070cb31d3c26",
+   "text": "> ## Documentation Index\n> Fetch the complete documentation index at: https://developers.fathom.ai/llms.txt\n> Use this file to discover all available pages before exploring further.\n# Overview\n> Connect your meeting data to LLMs using the Model Context Protocol\n## How to Connect the Fathom MCP Server\nFathom now offers an official MCP (Model Context Protocol) server, allowing you to connect your Fathom meeting data to AI assistants like ChatGPT, Claude, and more. This guide walks you through setup on each supported platform.\n## Choose your assistant\n![](https://mintcdn.com/fathom-e4df0608/AEC-X4jFplvaRPpa/images/mcp-openai.svg?fit=max\\&auto=format\\&n=AEC-X4jFplvaRPpa\\&q=85\\&s=04f58adf9a687318bb186120a128fc96)\nChatGPT\nConnect to the Fathom app in ChatGPT\n[Open](https://developers.fathom.ai/mcp-docs/chatgpt.md)\n![](https://mintcdn.com/fathom-e4df0608/AEC-X4jFplvaRPpa/images/mcp-claude.svg?fit=max\\&auto=format\\&n=AEC-X4jFplvaRPpa\\&q=85\\&s=d2f891fb486f17463e4b0df958c45507)\nClaude\nConnect to the Fathom connector in Claude, or add the MCP in Claude Code\n[Open](https://developers.fathom.ai/mcp-docs/claude.md)\n## Use with other tools\nConnect Fathom to any MCP-compatible tool using the server URL below, then authenticate to access your meeting data.\n\\*\\*MCP server URL:\\*\\* `https://api.fathom.ai/mcp`\nThis documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.",
+   "retrieved_at": "2026-11-23T19:40:46+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.fathom.ai/mcp-docs",
+   "requested_at": "2026-11-23T19:40:47+05:30",
+   "status": "ok",
+   "final_url": "https://developers.fathom.ai/mcp-docs",
+   "title": "Overview - Fathom API",
+   "chars": 617,
+   "sha256": "bfd9df8f0135cdfd8732eb43dc56086779f4117433fc4ffece3b9b10ea221bb3",
+   "text": "## How to Connect the Fathom MCP Server\n\nFathom now offers an official MCP (Model Context Protocol) server, allowing you to connect your Fathom meeting data to AI assistants like ChatGPT, Claude, and more. This guide walks you through setup on each supported platform.\n\n## Choose your assistant\n\nChatGPT\n\nConnect to the Fathom app in ChatGPT\n\nClaude\n\nConnect to the Fathom connector in Claude, or add the MCP in Claude Code\n\n## Use with other tools\n\nConnect Fathom to any MCP-compatible tool using the server URL below, then authenticate to access your meeting data. MCP server URL:\n\n```\nhttps://api.fathom.ai/mcp\n```",
+   "retrieved_at": "2026-11-23T19:40:47+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://fathom.ai/features/mcp-server",
+   "requested_at": "2026-11-23T19:40:49+05:30",
+   "status": "ok",
+   "final_url": "https://www.fathom.ai/features/mcp-server",
+   "title": "AI Meeting Notetaker MCP Server for Claude & ChatGPT | Fathom",
+   "chars": 7565,
+   "sha256": "2ef9deec444a51380199d4a9aa9ba4f2c806b9c5301cd86ad0f08667be8ee9ed",
+   "text": "Feature: Fathom MCP\n\n# It\u2019s your meeting. Bring context into Claude, ChatGPT, and the AI tools you use.\n\nFathom\u2019s AI meeting notetaker MCP server connects your meeting data to Claude, ChatGPT, \u00a0and other MCP-compatible tools, so your AI assistant can answer questions and draft work from what was actually said.\n\nsign up free\n\nStop pasting summaries and transcripts into chat to get context.\n\nAsk your AI assistant about any meeting you can access in Fathom.\n\nCombine meeting context with your docs, plans, and other connected tools.\n\n### Ask your assistant about your meetings.\n\nAsk Claude what a customer pushed back on last week, or have ChatGPT pull the decisions from Monday\u2019s planning call. Your assistant retrieves the context from Fathom directly, so you\u2019re not hunting for the right summary to paste in.\n\n### Turn meeting context into finished work.\n\nAsk Fathom answers questions inside Fathom. MCP brings the same meeting context into the assistant where you\u2019re already drafting, so a recap email, QBR narrative, or launch brief starts from what was said, right alongside your docs and other connected tools.\n\n### Connect in a few steps, on the permissions you already have.\n\nAdd the Fathom app in ChatGPT or the Fathom connector in Claude, or point any MCP-compatible tool at Fathom\u2019s MCP server and sign in. Your assistant can only reach meetings you can already view in Fathom. MCP doesn\u2019t open up any new data.\n\nread the Fathom MCP setup guide\n\nPut Fathom MCP to work for your team\n\nCustomer Success\n\n### Draft QBR narratives.\n\nAsk Claude to build a QBR story from a quarter of meetings with that customer.\n\n### Turn open loops into a success plan.\n\nPull commitments from recent calls into a customer-facing success plan.\n\n### Package requests for product.\n\nHave ChatGPT group recurring feature requests into a voice-of-customer summary.\n\nmore about fathom for cs \u00a0\u2192\n\nSales\n\n### Write the mutual action plan.\n\nDraft a mutual action plan from your last call\u2019s next steps and owners.\n\n### Answer objections with real quotes.\n\nTurn recent call themes into objection responses backed by what customers said.\n\n### Prep with calls and your account plan together.\n\nCombine past calls with your account plan doc before the next meeting.\n\nmore about fathom for sales\u00a0\u00a0\u2192\n\nMarketing\n\n### Draft launch messaging in customer language.\n\nPull how customers describe a problem into a first messaging draft.\n\n### Outline case studies.\n\nTurn a customer interview into a case study outline in Claude.\n\n### Write win/loss narratives.\n\nCombine call context with deal notes to draft the story behind a win or loss.\n\nmore about fathom for marketing\u00a0\u00a0\u2192\n\nSales Enablement\n\n### Build battlecards from real calls.\n\nPull recent competitor mentions into a battlecard with supporting quotes.\n\n### Draft a 60-second pitch.\n\nTurn recent call themes into a tight pitch reps can practice.\n\n### Write roleplay scenarios.\n\nTurn real objections from calls into practice scripts for new reps.\n\nRevOps\n\n### Draft weekly risk briefs.\n\nSummarize this week\u2019s call themes, risks, and decisions alongside your forecast sheet.\n\n### Keep a decision log.\n\nProduce a log of decisions, rationale, and owners from cross-team meetings.\n\n### File open action items.\n\nAsk your assistant to pull open action items and add them to your task tool.\n\nProduct\n\n### Turn discovery calls into requirements.\n\nPull customer pain points from discovery calls into a product requirements draft.\n\n### Draft rollout docs.\n\nUse decisions from planning meetings to draft a feature rollout doc and FAQ.\n\n### Pull customer context in Claude Code.\n\nAdd the Fathom MCP in Claude Code to reference customer calls while you build.\n\nTestimonials\n\n\u201cI integrate Fathom with Claude and I save countless hours. It\u2019s become the one thing I can\u2019t live without.\u201d\n\nNir Shney-Dor\n\nDirector of Solutions Architecture & AI/ML\n\nIt is much more stable and reliable than Copilot. Also, the customer support has been fantastic!\n\nCarlos O.\n\nCEO\n\nThe level of detail and the accuracy in the notes are truly impressive. This is much better than the built-in Zoom AI Companion!\n\nPaul O.\n\nSenior IT SRE Engineering Manager\n\nI have been trying a number of different notetakers in the past 6 months (Read AI, Otter, Google Meet's Gemini) and Fathom provides far and away the best summaries post-meeting. I used to take my own notes alongside the other notetakers as my notes were generally better, but now I don't bother doing that any more!\n\nVerified G2 User\n\nMotion Pictures and Film\n\nIt\u2019s such a nice experience to not worry about missing important notes or to do\u2019s during calls I\u2019m also a big fan of using fathom to transcribe sales calls, so I can gather valuable insights about my ideal clients. I recommend Fathom to all my friends and clients!\n\nLuke\n\nOwner\n\nA real game changer for meetings. You can be focused in the meeting itself instead of taking notes or trying to remember tasks and topics after the call. Recap, summaries, highlights, recording, stats... that's a bunch of features that make everything easy and profitable for your business!\n\nEduardo K.\n\nCountry Sales Manager for Spain\n\n## Works where you work\n\nFathom syncs meeting insights automatically with the tools your team uses. Zero friction, maximum flexibility.\n\nSee all integrations\n\n## Related features\n\n### Fathom API\n\nFor building your own workflows and apps on meeting data, with webhooks and TypeScript and Python SDKs.\n\nsee fathom api\n\n### Ask Fathom\n\nFor asking questions of your meetings inside Fathom, across one call or your team\u2019s meeting history.\n\nsee ask fathom\n\n### Highlights\n\nFor marking the moments that matter so they\u2019re easy to find, share, and reuse.\n\nsee highlights\n\n## FAQs\n\nQuestions? We\u2019ve got you covered.\n\n### What is an AI meeting notetaker MCP server?\n\nAn AI meeting notetaker MCP server connects your meeting notes to AI assistants using the Model Context Protocol. Fathom\u2019s MCP server lets Claude, ChatGPT, and other MCP-compatible tools answer questions and draft work from what was actually said in your meetings.\n\n### Which AI tools work with Fathom MCP?\n\nFathom MCP works with ChatGPT (through the Fathom app), Claude (through the Fathom connector or Claude Code), and any MCP-compatible tool using the server URL https://api.fathom.ai/mcp.\n\n### How do I connect Fathom to Claude or ChatGPT?\n\nAdd the Fathom app in ChatGPT or the Fathom connector in Claude, or point any MCP-compatible tool at Fathom\u2019s MCP server and sign in with your Fathom account.\n\n### Which meetings can my AI assistant see?\n\nYour AI assistant can access only the meetings you have permission to view in Fathom. MCP doesn\u2019t open up any new data.\n\n### Is Fathom MCP free?\n\nYes. Fathom MCP is available on every Fathom plan, including Free. Your AI assistant\u2019s own plan requirements may apply.\n\n### How is Fathom MCP different from Ask Fathom?\n\nAsk Fathom answers questions inside Fathom. Fathom MCP brings the same meeting context into the AI assistant where you\u2019re already working, alongside your docs and other connected tools.\n\n### Can I use Fathom MCP in Claude Code?\n\nYes. Add the Fathom MCP server in Claude Code to reference customer calls and meeting decisions while you build.\n\n### What can I do with Fathom MCP?\n\nDraft QBR narratives, mutual action plans, battlecards, launch messaging, and product requirements from real meeting context, or ask your assistant what a customer pushed back on last week.\n\nNever miss what matters\n\n### Stop pasting summaries into chat. Start working from what was said.\n\n### **Start today, for free.**\n\nGet Started. It\u2019s Free.",
+   "retrieved_at": "2026-11-23T19:40:49+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.fathom.ai/mcp-docs/claude",
+   "requested_at": "2026-11-23T19:40:50+05:30",
+   "status": "ok",
+   "final_url": "https://developers.fathom.ai/mcp-docs/claude",
+   "title": "Claude - Fathom API",
+   "chars": 680,
+   "sha256": "e639d7010695f81155e58ab47ff9e8ad34afc5321d19a4783cd05adb55c2a204",
+   "text": "## Claude (web & desktop)\n\nFathom is available as an **official connector** in Claude:\n\n### Steps:\n\n1. Go to the **Fathom connector for Claude**.\n\nIf you\u2019re using Claude in a team or organization, an owner must first enable the connector before it will appear for members.\n\n2. Click **Connect** and complete the authorization prompts.\n\nThat\u2019s it! You can now ask Claude about your meetings.\n\n## Claude Code\n\nClaude Code supports adding MCP servers directly from the command line.\nRun the following command in your terminal:\n\n```\nclaude mcp add fathom -- npx mcp-remote@latest https://api.fathom.ai/mcp\n```\n\nThe Fathom MCP server will now be available in your Claude Code sessions.",
+   "retrieved_at": "2026-11-23T19:40:50+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.fathom.ai/sdks/authentication.md",
+   "requested_at": "2026-11-23T19:41:14+05:30",
+   "status": "ok",
+   "final_url": "https://developers.fathom.ai/sdks/authentication.md",
+   "title": null,
+   "chars": 1449,
+   "sha256": "218c215250f96c46671423c404fd1151c1100801e1d999a947d971d1631c23d9",
+   "text": "> ## Documentation Index\n> Fetch the complete documentation index at: https://developers.fathom.ai/llms.txt\n> Use this file to discover all available pages before exploring further.\n# Authentication\n> Authenticate with the Fathom SDKs using API keys\n## API Key Authentication\n```typescript TypeScript theme={null}\nimport { Fathom } from 'fathom-typescript';\nconst fathom = new Fathom({\nsecurity: {\napiKeyAuth: process.env.FATHOM\\_API\\_KEY\\_AUTH || \"\"\n}\n});\n```\n```python Python theme={null}\nfrom fathom\\_python import models, Fathom\nimport os\nfathom = Fathom(security=models.Security(\napi\\_key\\_auth=os.getenv(\"FATHOM\\_API\\_KEY\\_AUTH\", \"\")\n))\n```\n## Bearer Token Authentication\n```typescript TypeScript theme={null}\nimport { Fathom } from 'fathom-typescript';\nconst fathom = new Fathom({\nsecurity: {\nbearerAuth: \"YOUR\\_BEARER\\_TOKEN\"\n}\n});\n```\n```python Python theme={null}\nfrom fathom\\_python import models, Fathom\nfathom = Fathom(security=models.Security(\nbearer\\_auth=\"YOUR\\_BEARER\\_TOKEN\"\n))\n```\n## Security Schemes\n| Name | Type | Environment Variable |\n| - | - | - |\n| `apiKeyAuth` | apiKey | `FATHOM\\_API\\_KEY\\_AUTH` |\n| `bearerAuth` | http | `FATHOM\\_BEARER\\_AUTH` |\n## Security Best Practices\n\\* Use environment variables for credentials\n\\* Use OAuth for multi-user integrations\n\\* Rotate API keys regularly\n\\* Monitor API usage\nThis documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.",
+   "retrieved_at": "2026-11-23T19:41:14+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.fathom.ai/sdks/authentication",
+   "requested_at": "2026-11-23T19:41:15+05:30",
+   "status": "ok",
+   "final_url": "https://developers.fathom.ai/sdks/authentication",
+   "title": "Authentication - Fathom API",
+   "chars": 986,
+   "sha256": "d3cb2f1f3a4b8a76ba27e954d03bbf359c6b1b9ce1b780c5be1d4519cdf1fe15",
+   "text": "## API Key Authentication\n\n```\nimport { Fathom } from 'fathom-typescript';\n\nconst fathom = new Fathom({\n  security: {\n    apiKeyAuth: process.env.FATHOM_API_KEY_AUTH || \"\"\n  }\n});\n```\n\n```\nfrom fathom_python import models, Fathom\nimport os\n\nfathom = Fathom(security=models.Security(\n    api_key_auth=os.getenv(\"FATHOM_API_KEY_AUTH\", \"\")\n))\n```\n\n## Bearer Token Authentication\n\n```\nimport { Fathom } from 'fathom-typescript';\n\nconst fathom = new Fathom({\n  security: {\n    bearerAuth: \"YOUR_BEARER_TOKEN\"\n  }\n});\n```\n\n```\nfrom fathom_python import models, Fathom\n\nfathom = Fathom(security=models.Security(\n    bearer_auth=\"YOUR_BEARER_TOKEN\"\n))\n```\n\n## Security Schemes\n\n| Name | Type | Environment Variable |\n| --- | --- | --- |\n| `apiKeyAuth` | apiKey | `FATHOM_API_KEY_AUTH` |\n| `bearerAuth` | http | `FATHOM_BEARER_AUTH` |\n\n## Security Best Practices\n\n* Use environment variables for credentials\n* Use OAuth for multi-user integrations\n* Rotate API keys regularly\n* Monitor API usage",
+   "retrieved_at": "2026-11-23T19:41:15+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Fathom API documentation",
+   "url": "https://developers.fathom.ai/sdks/available-methods",
+   "title": "Available Methods",
+   "snippet": "For complete parameter documentation including types, examples, and detailed descriptions, see [API Reference](/api-reference/meetings/list-meetings)."
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://api-docs.fathom.global/sdk/python.html",
+   "title": "Python - Fathom API",
+   "snippet": "The Python SDK is a convenient way to access Fathom's global flood risk intelligence data.\nNote\nThe Fathom Python SDK supports Python 3.12, 3.13 and 3.14."
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://api-docs.fathom.global/index.html",
+   "title": "Fathom API",
+   "snippet": "Fathom provides two methods of access to data via the API: a RESTful HTTP API, and client SDKs. REST is a common form of data exchange between web services; ..."
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://developers.fathom.ai/api-reference/webhook-payloads/new-meeting-content-ready",
+   "title": "New meeting content ready",
+   "snippet": "#### Authorizations\nInclude your API key in the `X-Api-Key` header of every request.\n#### Headers\nwebhook-id\nstring\nrequired\nUnique message identifier for the webhook message. This identifier is"
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://developers.fathom.ai/quickstart.md",
+   "title": "developers.fathom.ai/quickstart.md",
+   "snippet": "> **[API documentation](/api-overview)**\n>\n> See all available endpoints and methods"
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://developers.fathom.ai",
+   "title": "Introduction",
+   "snippet": "## Quickstart Guide\nGenerate an API key and make your first call in minutes.\n## API docs\nSee all available endpoints and methods."
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://developers.fathom.ai/api-reference",
+   "title": "List meetings",
+   "snippet": "#### Authorizations\nInclude your API key in the `X-Api-Key` header of every request."
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://api-docs.fathom.global/usage.html",
+   "title": "Basic Usage",
+   "snippet": "For more detailed information, see the documentation for the [SDKs](https://api-docs.fathom.global/sdk/overview.html) and the [REST reference](https://api-docs.fathom.global/reference/rest.html)."
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://developers.fathom.ai/api-overview",
+   "title": "Api overview",
+   "snippet": "60 requests per 60 seconds per OAuth app for the `https://api.fathom.ai/external/v1/oauth2/token` endpoint"
+  },
+  {
+   "q": "Fathom API documentation",
+   "url": "https://developers.fathom.ai/llms.txt",
+   "title": "developers.fathom.ai/llms.txt",
+   "snippet": "## OpenAPI Specs\n- [openapi](/api-reference/openapi.yaml)"
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/faq",
+   "title": "FAQ",
+   "snippet": "API key or build an OAuth app?\nUse an **API key** if you only need access to your own (or your team\u2019s) meetings\u2014for internal tools or personal automation. Use **OAuth** if you\u2019re building an app that"
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/api-overview",
+   "title": "Api overview",
+   "snippet": "All REST API resources are authenticated with API keys generated via the Fathom website\u2019s settings area."
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/sdks/breaking-changes/python-changes",
+   "title": "Python SDK Changes",
+   "snippet": "Older versions of the SDK continue to work with API key authentication, but they don\u2019t support OAuth features."
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/sdks/authentication.md",
+   "title": "developers.fathom.ai/sdks/authentication.md",
+   "snippet": "} from 'fathom-typescript';\nconst fathom = new Fathom({\nsecurity: {\napiKeyAuth: process.env.FATHOM_API_KEY_AUTH || \"\"\n}\n});\n```\n```python Python theme={null}\nfrom fathom_python import"
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/sdks/authentication",
+   "title": "Authentication",
+   "snippet": "Schemes\n| Name | Type | Environment Variable |\n|---|---|---|\n| `apiKeyAuth` | apiKey | `FATHOM_API_KEY_AUTH` |\n| `bearerAuth` | http | `FATHOM_BEARER_AUTH` |\n##\n\u200b\nSecurity Best Practices\n- Use"
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/oauth",
+   "title": "Building with OAuth",
+   "snippet": "### \ud83d\udd11 Step 3: Configure OAuth Authentication\nOnce you have your OAuth credentials, [set up authentication](/sdks/oauth) using our SDK."
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/quickstart.md",
+   "title": "developers.fathom.ai/quickstart.md",
+   "snippet": "**[Get your Fathom API Key](https://fathom.video/customize#api-access-header)**\n>\n> Head to the API Access section of your User Settings and generate an API key.\n> [!TIP]\n>\n> API keys are scoped to"
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/quickstart",
+   "title": "Quickstart",
+   "snippet": "## OAuth\nBuild a Fathom integration with OAuth"
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai/sdks/oauth",
+   "title": "OAuth",
+   "snippet": "OAuth users need to register an app with us before using this feature. Visit our [OAuth Setup Guide](/oauth) to get your client credentials and configure your redirect URL."
+  },
+  {
+   "q": "Fathom API authentication OAuth API key developer",
+   "url": "https://developers.fathom.ai",
+   "title": "Introduction",
+   "snippet": "## OAuth\nBuild a Fathom integration that other users can install."
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://developers.fathom.ai/faq.md",
+   "title": "developers.fathom.ai/faq.md",
+   "snippet": "### Does my plan include API access?\nYes. API access\u2014keys and webhooks\u2014 are included on all plans. Generate a key in User Settings \u2192 API Access."
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://fathom.ai/pricing",
+   "title": "Free Plan or Plans from $15/mo",
+   "snippet": "Public API & MCP\nBuild custom integrations and workflows. See more at developers.fathom.ai"
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://developers.fathom.ai/faq",
+   "title": "FAQ",
+   "snippet": "those via the `/recordings` endpoints instead.\n---\n### Does my plan include API access?\nYes. API access\u2014keys and webhooks\u2014 are included on all plans. Generate a key in User Settings \u2192 API Access."
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://help.fathom.video/en/articles/8368641",
+   "title": "Public API",
+   "snippet": "Fathom now has a public API that gives you developer\u2011friendly access to meeting insights so you can build workflows and integrations that connect Fathom with the rest of your tools."
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://developers.fathom.ai",
+   "title": "Introduction",
+   "snippet": "Building a **public OAuth app** (for other Fathom users to install)? [Start here](/oauth) instead.\n## Getting Started\n## Quickstart Guide\nGenerate an API key and make your first call in minutes."
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://usefathom.com/changelog/jun2026-api-plans",
+   "title": "Pick Your API Limits - Fathom Analytics",
+   "snippet": "requests** across every endpoint, so you can run more at the same time.\nPlans start at $19/mo and go up to $399/mo for heavy volume, which gets you 16,000 requests an hour and 25 running"
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://anchorterminal.com/tools/fathom",
+   "title": "anchorterminal.com/tools/fathom",
+   "snippet": "owner can start without a contract. The developer FAQ says API access is on all plans. Premium $20 a user a month ($16 billed annually), Team $19 ($15 annually, two users minimum), Business $34"
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://raw.githubusercontent.com/api-evangelist/fathom/refs/heads/main/plans/fathom-plans-pricing.yml",
+   "title": "raw.githubusercontent.com/api-evangelist/fathom/refs/heads/main/plans/fathom-plans-pricing.yml",
+   "snippet": "Starter\ndescription: >\nEntry-level paid plan for small websites. Includes API access, up to 50\nsites, ecommerce/event tracking, forever data retention, and all core\n"
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://medium.com/@stacy_wag/fathom-api-in-2026-what-it-gives-you-and-why-i-pick-circleback-912753568837",
+   "title": "Fathom API in 2026: What It Gives You, and Why I Pick Circleback",
+   "snippet": "**Keys and plans.** Fathom\u2019s FAQ says API access, keys and webhooks, is included on all plans. You generate a key in User Settings under API Access and send it in an `X-Api-Key` header."
+  },
+  {
+   "q": "Fathom API access pricing plans developer account",
+   "url": "https://pipeline.zoominfo.com/sales/fathom-api-review",
+   "title": "Fathom API Review: Endpoints, SDKs & Rate Limits [Aug 2026]",
+   "snippet": "| **Pricing / access** | Included on [all plans including free](https://fathom.ai/pricing); no per-call or per-credit charges |"
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://developers.fathom.ai/mcp-docs.md",
+   "title": "developers.fathom.ai/mcp-docs.md",
+   "snippet": "Connect Fathom to any MCP-compatible tool using the server URL below, then authenticate to access your meeting data.\n**MCP server URL:** `https://api.fathom.ai/mcp`"
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://developers.fathom.ai/mcp-docs",
+   "title": "Overview",
+   "snippet": "Connect Fathom to any MCP-compatible tool using the server URL below, then authenticate to access your meeting data. **MCP server URL:** `https://api.fathom.ai/mcp`"
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://fathom.ai/features/mcp-server",
+   "title": "AI Meeting Notetaker MCP Server for Claude & ChatGPT",
+   "snippet": "Fathom MCP works with ChatGPT (through the Fathom app), Claude (through the Fathom connector or Claude Code), and any MCP-compatible tool using the server URL https://api.fathom.ai/mcp."
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://tldv.io/blog/fathom-mcp",
+   "title": "What Fathom\u2019s MCP Server Actually Does (Tested August 2026, Updated September 2026)",
+   "snippet": "The official Fathom MCP server is at api.fathom.ai/mcp. It\u2019s first-party and authenticates against your existing Fathom account. Checked August 2026. There are also community-built servers wrapping"
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://fathom-mcp-server.com",
+   "title": "Fathom MCP Server - Connect Claude to Your Meetings",
+   "snippet": "# Fathom AI MCP Server\nConnect Claude to your Fathom meetings, transcripts, and AI summaries.\nOpen Source MIT License MCP Compatible\nAdd to Claude Desktop\nhttps://fathom-mcp-server.com/mcp\n##"
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://help.fathom.video/en/articles/14649409",
+   "title": "MCP Access",
+   "snippet": "Fathom's MCP integration connects your meetings to AI assistants like ChatGPT and Claude. MCP is available to Fathom 3.0+ users. Connect the ..."
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://help.fathom.video/en/articles/11497793",
+   "title": "Fathom MCP: Connect Claude & ChatGPT",
+   "snippet": "To learn more about Fathom's MCP and how to connect it to any other MCP-compatible tool, visit [api.fathom.ai/mcp](http://api.fathom.ai/mcp)."
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://developers.fathom.ai/mcp-docs/claude",
+   "title": "Claude",
+   "snippet": "Fathom is available as an **official connector** in Claude:\n### Steps:\n1. Go to the **[Fathom connector for Claude](https://claude.ai/directory/connectors/fathom)**."
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://support.fathomhq.com/en/articles/17312058-connect-to-fathom-s-mcp-server",
+   "title": "Connect to Fathom's MCP server",
+   "snippet": "You can connect your AI tool to Fathom\u2019s MCP server with a Personal Access Token (PAT). The PAT will provide your AI tool with read-only access to your data in Fathom."
+  },
+  {
+   "q": "Fathom MCP server official",
+   "url": "https://github.com/agencyenterprise/fathom-mcp-server/blob/main/README.md",
+   "title": "fathom-mcp-server/README.md at main \u00b7 agencyenterprise/fathom-mcp-server",
+   "snippet": "It was fun while it lasted! Fathom now has an offical mcp: [https://developers.fathom.ai/mcp-docs](https://developers.fathom.ai/mcp-docs)"
+  }
+ ],
+ "official_domain_candidates": {
+  "fathom.ai": 25,
+  "fathom.global": 3,
+  "fathom.video": 3,
+  "usefathom.com": 1,
+  "fathom-mcp-server.com": 1,
+  "fathomhq.com": 1
+ },
+ "identity_flag": "multiple_candidate_domains_review_identity",
+ "selected_domain": "fathom.ai",
+ "completed": "2026-11-23T19:41:15+05:30"
+}

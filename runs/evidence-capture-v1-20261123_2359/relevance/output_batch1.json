@@ -1,0 +1,602 @@
+[
+ {
+  "row_id": "15:0:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "15:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "15:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "15:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "15:4:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "15:4:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "15:4:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "15:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "15:7:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "15:7:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "15:8:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:6:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:7:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "24:8:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:2:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:4:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "31:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "31:7:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "37:0:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "37:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "37:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "37:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "37:4:0",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Quote is only a page title and says nothing about REST or webhooks."
+ },
+ {
+  "row_id": "37:4:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Quote concerns the MCP server, not REST or webhooks."
+ },
+ {
+  "row_id": "37:7:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "37:7:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "37:8:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "37:9:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "37:10:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:0:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "40:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:2:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:4:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:4:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:5:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "40:7:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:7:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "40:8:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "42:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:3:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:6:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:7:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:7:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "42:8:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "45:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "45:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "45:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "45:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "45:3:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "45:4:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "45:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "45:9:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:2:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:6:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "48:7:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "48:8:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "50:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "50:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "50:1:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "50:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "50:4:0",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Quote is unrelated marketing copy and says nothing about access terms."
+ },
+ {
+  "row_id": "54:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "54:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "54:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "54:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "54:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "54:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "54:5:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "54:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "54:6:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ },
+ {
+  "row_id": "54:7:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component of the claim; other parts of the claim value are not stated in it."
+ }
+]

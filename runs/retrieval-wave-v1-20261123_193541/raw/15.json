@@ -1,0 +1,349 @@
+{
+ "id": 15,
+ "name": "Pylon",
+ "started": "2026-11-23T19:37:27+05:30",
+ "searches": [
+  {
+   "q": "Pylon API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:32+05:30"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:34+05:30"
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:35+05:30"
+  },
+  {
+   "q": "Pylon MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:38+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+   "requested_at": "2026-11-23T19:37:43+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://usepylon.com/integrations/mcp",
+   "requested_at": "2026-11-23T19:37:45+05:30",
+   "status": "ok",
+   "final_url": "https://www.usepylon.com/integrations/mcp",
+   "title": "Pylon MCP server: connect ChatGPT, Claude, and Cursor",
+   "chars": 5011,
+   "sha256": "59a19dec6461c44403ae118cba8831f96f867e8fa7da5c54c192aac049b79f78",
+   "text": "# Pylon MCP server\n\nConnect ChatGPT, Claude, and Cursor to Pylon. Work issues, accounts, contacts, and your knowledge base with the permissions you already have.\n\nThank you! Your submission has been received!\n\nOops! Something went wrong while submitting the form.\n\nTrusted by 1,800+ B2B customers globally\n\nWhat is Pylon\u2019s MCP server?\n\nDeploy AI agents that handle questions end-to-end, gather context for your team, and escalate to humans when it matters.\n\nCan ChatGPT, Claude, and Cursor use Pylon data?\n\nYes. Point a supported MCP client at your regional Pylon MCP URL, sign in with OAuth or use an API token, and work issues, accounts, contacts, and your knowledge base from the AI tool you already use. For ChatGPT, you can also install Pylon\u2019s native ChatGPT app from Settings > Plugins (some older views, including very old iOS or Android apps, show Apps instead of Plugins). See how to connect Pylon to ChatGPT with MCP.\n\nIs access scoped to each user?\n\nYes. Every action runs as the authenticated user. The server cannot return data that user cannot see in Pylon, or write changes that user cannot already make in the UI. Connecting needs the MCP Access permission, which the standard Member and Admin roles include.\n\nCan engineers investigate from their editor?\n\nYes. Tools like Claude Code or Cursor can open a Pylon issue, pull message history, and keep working in the same flow your team already uses for debugging. Opening a pull request still depends on that coding tool\u2019s own GitHub or codebase connection, not on a Pylon MCP \"create PR\" tool.\n\nCan you turn support evidence into docs and analysis?\n\nYes. Feed issue context into an AI tool to draft an internal note, a product brief, or an account summary, and combine Pylon data with other sources those tools can reach (for example Notion or Linear) when those connections are configured.\n\nHow do you set up the Pylon MCP server?\n\nStep 1\n\nEnable MCP Access\n\nMake sure each user or API token identity that connects has the MCP Access permission, which the standard Member and Admin roles include. Access follows the same scoping as the Pylon dashboard.\n\nStep 2\n\nOpen the MCP Server settings in Pylon\n\nIn Pylon, go to Settings \u2192 AI Controls \u2192 MCP Server. Copy your workspace\u2019s regional MCP URL from Installation.\n\nStep 3\n\nConnect your AI tool\n\nAdd the URL in your AI tool\u2019s MCP settings, or for ChatGPT install the Pylon app from Settings > Plugins. Auth is OAuth 2.0 or an API token. Transport is Streamable HTTP (stateless).\n\nUS server: mcp.usepylon.com\n\nEU server: mcp.eu.usepylon.com\n\nSee Pylon\u2019s MCP docs for the full tool list.\n\nSee the MCP setup guide for client steps.\n\nSee how to connect Pylon to ChatGPT with MCP.\n\nSee how to connect Pylon to Claude with MCP.\n\nFrequently asked questions\n\nWhat is the Pylon MCP server?\n\nMCP is an open standard that lets AI tools like ChatGPT, Claude, and Cursor connect to external products. Pylon\u2019s MCP server exposes your Pylon workspace (issues, accounts, contacts, and more) to those tools over OAuth 2.0 or an API token, so your team can query and act on support data from the AI clients they already use.\n\nWhich AI tools can connect to Pylon via MCP?\n\nPylon\u2019s MCP server works with MCP clients such as Claude Desktop, Claude Code, ChatGPT, and Cursor. For ChatGPT, the fastest path is Pylon\u2019s native ChatGPT app; you can also add the regional MCP URL as a custom connector. Headless workers, scripts, and clients that support custom authorization headers can connect with an existing Pylon API token instead of OAuth.\n\nWhat actions can an AI tool take in Pylon through MCP?\n\nConnected AI tools can search and update issues, post internal notes, and send customer replies, which AI tools are instructed to show you for approval before sending. They can also manage accounts and contacts, draft and publish knowledge base articles, and work with macros, tags, and triggers. Tools for tasks, projects, account notes, and call recordings require Account Intelligence. Feature requests and some other tools require additional plan features. All actions stay within your Pylon permissions.\n\nIs the Pylon MCP server secure?\n\nConnections use OAuth 2.0 or an API token. Actions run as the signed-in user or the token\u2019s identity, with that identity\u2019s current role and permissions. No extra permissions are granted. The identity also needs the MCP Access permission, which the standard Member and Admin roles include.\n\nHow do I set up the Pylon MCP server?\n\nOpen Settings \u2192 AI Controls \u2192 MCP Server in Pylon, copy your regional URL (https://mcp.usepylon.com or https://mcp.eu.usepylon.com), and add it in your AI tool (or install the ChatGPT app). Sign in with OAuth, or send an existing API token in an Authorization: Bearer header if your client supports it.\n\nIs the Pylon MCP server on every plan?\n\nYes. The pricing Features by tier table lists the Pylon MCP server on Professional, Advanced, and Enterprise. Some individual MCP tools still require add-ons or plan features such as Account Intelligence.",
+   "retrieved_at": "2026-11-23T19:37:45+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "requested_at": "2026-11-23T19:37:53+05:30",
+   "status": "ok",
+   "final_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "title": "Authentication | Pylon",
+   "chars": 4877,
+   "sha256": "b8f09b4322868234c0669836e74dd5ec0f7abb5f48ed7e1365bf87e6b19ec8af",
+   "text": "The Pylon API uses Bearer authentication. This means you\u2019ll need to pass your API token in the header of your request:\n\n```\nAuthorization: Bearer <token>\n```\n\nGenerate an API token in the Pylon dashboard.\n\n### API regions\n\nPylon\u2019s API is available in two regions. Use the base URL that matches where your Pylon tenant is hosted:\n\n* US region: https://api.usepylon.com\n* EU region: https://api.eu.usepylon.com\n\nBoth regions use the same API endpoints and authentication. Configure your integration to use the region where your Pylon tenant is hosted.\n\nYou can tell a token's region from its prefix:\n\nPrefix\n\nRegion\n\n`pylon_api_eu_`\n\nEU\n\n`pylon_api_`\n\nUS\n\nTokens created before prefixes were introduced have no prefix. Sending a token to the other region's API returns `401` with the `wrong_region_token` error code, and the message names the correct URL.\n\nOnce you've created a token, call the `/me` endpoint to retrieve details about your organization and confirm your token works.\n\n## Create an API token\n\nOnly Admins can create and manage API tokens.\n\n1. Go to **Settings > Integrations & dev > API**. On the **Tokens** tab, click **Create API Token**.\n2. Enter a **Name**.\n3. Choose who the token acts as:\n\n   * Leave **Act as user or bot (optional)** empty to give the token its own identity. Pick a **Role** to control what it can access, and optionally upload an icon.\n   * Or select a teammate or bot. The token uses that user's current role and permissions.\n4. Optionally, add an **IP allowlist** (see below).\n5. Click **Create** and copy the token. Pylon shows it only once.\n\nTokens don't expire, and their access is controlled only by the role. There are no separate scopes.\n\n### Roles\n\nA token with its own identity uses the role you pick when you create it. You can change the role later with **Edit**. Older tokens that have no role act as Admin.\n\nA token that acts as a user or bot has no role of its own. It always uses that user's current role, so changing the user's role changes what the token can do.\n\nSee Roles and user management for what each role allows.\n\n### Who actions are attributed to\n\n* **Token with its own identity:** actions show up under the token's name and icon.\n* **Token that acts as a user or bot:** actions are attributed to that user or bot.\n\n### Bots\n\nBots are identities for automation, so API activity is attributed to the bot instead of to a teammate. Bots can't sign in to Pylon.\n\nTo create one, go to **Settings > Workspace > Users**, open the **Bots** tab, and click **New Bot**. Give it a name, an avatar, and a role. Then select the bot under **Act as user or bot** when you create a token.\n\n### IP allowlist\n\nAdd IP addresses (for example `203.0.113.10`) or CIDR blocks (for example `203.0.113.0/24`) to restrict where the token can be used. You can add up to 20 entries. If the list is empty, the token works from any IP.\n\nPylon checks the public IP address your requests come from, so add the public egress IPs or ranges of the servers that call the API. Private addresses such as `10.0.0.0/8` or `192.168.0.0/16` never match.\n\nA request from an address that isn't on the list returns `401` with the `invalid_api_token` error code.\n\n## Manage tokens\n\nThe **Tokens** tab shows each token's **Acts as**, **Token preview**, **Role**, **Created by**, **Last used**, and **Created** values. From the **\u2026** menu on a token you can:\n\n* **Edit:** change the name, role, or IP allowlist.\n* **Duplicate Token:** create a new token with the same settings.\n* **Rotate:** generate a new token value. The current token stops working immediately.\n* **Delete:** permanently revoke the token. Calls using it stop working immediately.\n* **View Activity:** open the token's request logs.\n\n## Review API request logs\n\nOnly Admins can view request logs. Go to **Settings > Integrations & dev > API** and open the **Logs** tab, or choose **View Activity** from a token's **\u2026** menu to see only that token's requests.\n\nFilter by token, or choose **All tokens**, and by a date range of up to 90 days. The range defaults to the last 7 days. Each request shows when it was made, the token, who it acted as, the method, endpoint, response status, source IP, user agent, and request ID. Requests made with a token that was since deleted still appear.\n\nRequests rejected for authentication or rate limits aren't logged, and older requests may not show a token.\n\n### When tokens are revoked automatically\n\nWhen a user is deactivated, Pylon deletes:\n\n* every API token that user created, and\n* every API token that acts as that user.\n\nBefore you deactivate someone who created tokens your integrations rely on, create replacement tokens from another Admin's account.\n\nAn Admin who has created Admin-role tokens can't be moved to a different role until those tokens are deleted.\n\nPreviousAPI\n\nNextAPI conventions\n\nLast updated 26 days ago\n\nWas this helpful?",
+   "retrieved_at": "2026-11-23T19:37:53+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+   "requested_at": "2026-11-23T19:37:56+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/conventions",
+   "requested_at": "2026-11-23T19:38:07+05:30",
+   "status": "ok",
+   "final_url": "https://docs.usepylon.com/pylon-docs/developer/api/conventions",
+   "title": "API conventions | Pylon",
+   "chars": 14466,
+   "sha256": "6c08d397680ee9c52d461a6a7034498c1fafe38a947bef926c684e0171d43089",
+   "text": "For the complete documentation index, see llms.txt. This page is also available as Markdown.\n\nThese rules apply across Pylon's API. The API reference lists each endpoint's parameters; this page explains how they behave.\n\n## Requests and responses\n\n* Send request bodies as JSON with `Content-Type: application/json`. The one exception is `POST /attachments`, which takes `multipart/form-data`.\n* Successful responses put the result in `data` and include a `request_id`. List and search responses also include `pagination`.\n* Unknown fields are ignored, not rejected. A misspelled field name is silently dropped, so check the field names in the reference.\n* Sending `null` for an optional field is the same as leaving it out.\n\n## IDs\n\nMost endpoints take Pylon IDs. A few path parameters also accept another identifier:\n\nPath\n\nAccepts\n\n`/issues/{id}` and its sub-paths\n\nIssue ID or issue number\n\n`/accounts/{id}`, and account activities, highlights, and files\n\nAccount ID or account external ID\n\n`/contacts/{id}`\n\nContact ID or contact external ID\n\nSee External IDs for attaching your own identifiers to accounts.\n\n## Timestamps\n\n* Every timestamp uses RFC 3339, for example `2026-10-01T00:00:00Z` or `2026-10-01T09:00:00+02:00`. A timezone (`Z` or an offset) is required.\n* Responses return timestamps in UTC to the second, for example `2026-10-01T14:03:27Z`.\n* In query strings, encode `+` as `%2B` or use `Z`. An unencoded `+` is read as a space, and the request fails with `400`.\n\nList and search endpoints use cursor pagination.\n\n1. Send a `limit` (optional). Leave out `cursor` for the first page.\n2. If the response has `pagination.has_next_page: true`, send `pagination.cursor` as `cursor` in the next request, with the same filter and other parameters.\n3. Stop when `pagination` is missing or `has_next_page` is `false`.\n\n`GET` endpoints take `cursor` and `limit` as query parameters. `POST .../search` endpoints take them in the JSON body. Treat cursors as opaque.\n\nLimits vary by endpoint and are listed on each endpoint's `limit` parameter. Most search endpoints default to 100 results and accept up to 1,000. `GET /issues` defaults to and allows up to 20,000.\n\n## Listing issues by time\n\n`GET /issues` requires a time window:\n\nQuestion\n\nAnswer\n\nWhich field is filtered?\n\nThe issue's `created_at`.\n\nAre the bounds inclusive?\n\n`start_time` is inclusive. `end_time` is exclusive.\n\nAre both required?\n\nYes. Leaving either out returns `400`.\n\nMaximum window\n\n365 days between `start_time` and `end_time`.\n\nOrder\n\nNewest `created_at` first.\n\nPage size\n\n`limit` defaults to 20,000, the maximum.\n\nTo filter on another timestamp, such as `updated_at`, `resolved_at`, or `latest_message_activity_at`, use `POST /issues/search`. Search has no maximum window:\n\n## Search filters\n\nEvery `POST .../search` endpoint except feature requests takes a `filter` object with the same structure.\n\nKey\n\nUse\n\n`operator`\n\nRequired unless the filter sets `related_object`. See the operators below.\n\n`field`\n\nThe field to compare. Required unless `operator` is `and` or `or`.\n\n`value`\n\nA single value, for operators that take one.\n\n`values`\n\nAn array, for operators that take several.\n\n`subfilters`\n\nAn array of filters. Only used with `and` and `or`.\n\n`related_object`\n\nMatches on a related object, such as an issue's account. See Filter on a related object.\n\nCombine conditions with `and` and `or`:\n\n* A filter can be at most **3 levels deep**, counting the top-level filter. The example above uses all 3.\n* In the example, `priority` is a custom field slug. Custom fields are filtered by slug, like built-in fields.\n* `and` and `or` must have `subfilters` and can't have a `field` or `value`.\n* Use `value` or `values` according to the operator. Sending the other one returns `400`.\n\n### Filter on a related object\n\nTo match on a field of a related object, such as an issue's account or requester, put a `related_object` in place of a condition. `relationship` names the related object and `filter` is the condition it must match:\n\nEndpoint\n\nRelationship\n\nRelated object\n\nRequires\n\n`POST /issues/search`\n\n`account`\n\nAccount\n\nAccount read\n\n`requester`\n\nContact\n\nContact read\n\n`assignee`\n\nUser\n\nUser read\n\n`POST /contacts/search`\n\n`account`\n\nAccount\n\nAccount read\n\n`POST /accounts/search`\n\n`owner`\n\nUser\n\nUser read\n\n`POST /tasks/search`\n\n`account`\n\nAccount\n\nAccount read\n\n`project`\n\nProject\n\nTask management read\n\n`assignee`\n\nUser\n\nUser read\n\n`POST /projects/search`\n\n`account`\n\nAccount\n\nAccount read\n\n* A filter with `related_object` sets nothing else: no `operator`, `field`, `value`, `values`, or `subfilters`.\n* `related_object.filter` uses the fields, operators, and custom field slugs of the related object's own search endpoint, listed in Allowed fields. Every one of those fields works, including account `account_id` and `tags`. Project `is_archived` takes `true` or `false`.\n* To check several conditions on the same related object, make `related_object.filter` an `and` or `or` group.\n* A `related_object` can't contain another `related_object`. It doesn't count toward the depth limit.\n* Each relationship needs the read permission of the related object, without restrictions. Without it, the request returns `403`.\n* Dotted paths such as `account.name` aren't supported. The error message shows the `related_object` form to use instead.\n* Ticket form visibility conditions (`fields[].visibility_conditions[].filter` from `GET /ticket-forms`) use this format, and can contain `related_object` with the issue relationships `account`, `requester`, and `assignee`. A condition this format can't express, such as a hop through a relationship custom field, a chain of hops, or a value relative to the viewer, has `filter_unsupported: true` and no `filter`.\n\n### Operators\n\nOperator\n\nTakes\n\nMatches when the field...\n\n`equals` / `not_equals`\n\n`value`\n\nis / isn't exactly the value\n\n`in` / `not_in`\n\n`values`\n\nis / isn't one of the values\n\n`contains` / `does_not_contain`\n\n`value`\n\nhas / doesn't have the value (multi-value fields such as `tags`)\n\n`includes_all_of`\n\n`values`\n\nhas every value (multi-value fields)\n\n`string_contains` / `string_does_not_contain`\n\n`value`\n\ncontains / doesn't contain the text\n\n`starts_with` / `ends_with`\n\n`value`\n\nstarts / ends with the text\n\n`time_is_after` / `time_is_before`\n\n`value` (RFC 3339)\n\nis strictly after / before the time\n\n`time_range`\n\n`values`: `[start, end]`\n\nis between the two times, including both ends\n\n`greater_than`, `greater_than_or_equals`, `less_than`, `less_than_or_equals`\n\n`value`\n\ncompares numerically\n\n`is_set` / `is_unset`\n\nnothing\n\nhas / doesn't have a value\n\n### Allowed fields\n\nEach search endpoint accepts its own fields, and each field allows only some operators. The full field-and-operator table is in the endpoint's description in the API reference. An invalid filter, such as one with an unknown field or a disallowed operator, returns `400` with code `invalid_filter`. The response lists every problem in the filter, each with its location and, where possible, the closest valid field, operator, or value. See Filter errors.\n\nEndpoint\n\nBuilt-in fields\n\nCustom fields\n\n`search_text`\n\n`POST /issues/search`\n\n`created_at`, `updated_at`, `resolved_at`, `latest_message_activity_at`, `state`, `tags`, `subject`, `body_html`, `account_id`, `requester_id`, `assignee_id`, `team_id`, `follower_user_id`, `follower_contact_id`, `ticket_form_id`, `issue_type`, `issue_is_issue_group`, `customer_portal_visible`, `reopened`, `slack_channel_id`, `workspace_email`\n\nYes\n\nYes\n\n`POST /accounts/search`\n\n`account_id`, `name`, `domains`, `tags`, `external_ids`, `owner_id`\n\nYes\n\nYes\n\n`POST /contacts/search`\n\n`id`, `email`, `name`, `account_id`\n\nYes\n\nYes\n\n`POST /users/search`\n\n`email` (`equals`, `in`, `not_in`)\n\nNo\n\nNo\n\n`POST /custom-objects/{type}/search`\n\n`name`, `account`, `created_at`, `updated_at`\n\nYes\n\nNo\n\n`POST /tasks/search`\n\n`account_id`, `project_id`, `status`, `assignee_id`, `milestone_id`, `created_at`, `due_date`, `updated_at`\n\nYes\n\nNo\n\n`POST /projects/search`\n\n`account_id`, `status`, `owner_id`, `is_archived`, `created_at`, `updated_at`\n\nYes\n\nNo\n\n`POST /milestones/search`\n\n`project_id`, `account_id`, `due_date`, `created_at`, `updated_at`, `started_at`, `completed_at`\n\nNo\n\nNo\n\n`POST /call-recordings/search`\n\n`account_id`, `source`, `title`, `start_time`\n\nNo\n\nNo\n\n`POST /surveys/search`\n\n`updated_at`\n\nNo\n\nNo\n\n`POST /audit-logs/search`\n\n`action`, `action_happened_at`, `object_id`\n\nNo\n\nNo\n\n`POST /feature-requests/search` doesn't take a `filter`. It takes `query`, `request_statuses`, `account_ids`, and `limit`.\n\nSome fields also accept an earlier name: account `id` for `account_id`, and issue `title` for `subject`. Responses and error messages use the current names.\n\n`search_text` runs a fuzzy text search. When you also send a `filter`, results must match both.\n\n### Values to use\n\n* `state`**:** `new`, `waiting_on_you`, `waiting_on_customer`, `on_hold`, `closed`, or a custom status slug.\n* `tags`**:** the tag name.\n* **Custom fields:** set `field` to the field's slug. For select and multi-select fields, use option slugs as values. See Find slugs.\n\nOperators for a custom field depend on its type:\n\nCustom field type\n\nOperators\n\nText, URL, Email, Select\n\n`equals`, `not_equals`, `in`, `not_in`, `string_contains`, `string_does_not_contain`, `starts_with`, `ends_with`, `is_set`, `is_unset`\n\nNumber\n\n`equals`, `not_equals`, `in`, `not_in`, `greater_than`, `greater_than_or_equals`, `less_than`, `less_than_or_equals`, `is_set`, `is_unset`\n\nDate, Datetime\n\n`equals`, `not_equals`, `in`, `not_in`, `time_is_after`, `time_is_before`, `time_range`, `is_set`, `is_unset`\n\nMulti-select\n\n`contains`, `does_not_contain`, `in`, `not_in`, `includes_all_of`, `is_set`, `is_unset`\n\nTrue/False, User, Contact, Relationship\n\n`equals`, `not_equals`, `in`, `not_in`, `is_set`, `is_unset`\n\n## Updating records\n\n`PATCH` endpoints change only the fields you send.\n\n* **Omitted fields don't change.** `null` counts as omitted.\n* **Arrays replace the whole list.** Send the complete list you want, not just additions. Send `[]` to clear it.\n* **Clear a reference with an empty string.** For example, `\"assignee_id\": \"\"` unassigns an issue.\n* `custom_fields` **updates only the fields you list.** Other custom fields keep their values. For a multi-select field, `values` replaces the current selection. To clear a field, send its `slug` with no `value` or `values`.\n\nEndpoint\n\nField\n\nBehavior\n\n`PATCH /issues/{id}`\n\n`tags`\n\nReplaces all tags on the issue.\n\n`assignee_id`, `team_id`, `requester_id`\n\n`\"\"` removes the value.\n\n`PATCH /accounts/{id}`\n\n`channels`\n\nReplaces the linked channels. Channels you leave out are unlinked from the account.\n\n`domains`, `primary_domain`\n\nReplaces the domains. `primary_domain` must be in `domains`.\n\n`tags`, `external_ids`\n\nReplaces the list.\n\n`subaccount_ids`\n\nReplaces the subaccounts. Accounts you leave out stop being subaccounts.\n\n`owner_id`\n\n`\"\"` removes the owner.\n\n`PATCH /accounts` (bulk)\n\n`tags`\n\nSet `tags_apply_mode` to `replace` (default), `append_only`, or `remove_only`.\n\n`PATCH /contacts/{id}`\n\n`email`\n\nReplaces all of the contact's emails with this one.\n\n`emails`, `phone_numbers`, `external_ids`\n\nReplaces the list.\n\n`account_id`\n\n`\"\"` removes the contact from its account.\n\n`PATCH /teams/{id}`\n\n`user_ids`\n\nReplaces the team's members.\n\n`PATCH /knowledge-bases/{id}/articles/{article_id}`\n\n`tag_ids`\n\nReplaces the article's tags.\n\n### Updating knowledge base articles\n\n* `body_html` saves a new **draft**. The published article doesn't change until you publish.\n* To publish the new body in the same request, also send `\"publish_updated_body_html\": true` or `\"is_published\": true`.\n* `\"is_published\": false` unpublishes the article.\n* `title`, `is_unlisted`, `visibility_config`, `collection_id`, and `author_user_id` apply to the live article right away.\n* To update a translation, add `language`. The same draft and publish rules apply.\n\n## Files and attachments\n\n### Upload a file\n\n`POST /attachments` takes `multipart/form-data` with these fields:\n\nField\n\nRequired\n\nDescription\n\n`file`\n\nOne of `file` or `file_url`\n\nThe file to upload. One file per request.\n\n`file_url`\n\nOne of `file` or `file_url`\n\nA URL Pylon downloads the file from.\n\n`description`\n\nNo\n\nA description of the file.\n\nThe response's `data` has the file's `id`, `name`, `url`, and `description`. Pass `url` in `attachment_urls` when you create an issue, reply, or internal note.\n\n* Files up to 100 MB are supported. Larger files can be rejected with `413`; share those as a link instead. Email and chat channels may have smaller limits.\n* Executables and script files are rejected with `400`.\n* `attachment_urls` also accepts any publicly reachable URL. Pylon downloads the file and stores its own copy.\n\n### Download a file\n\nAn issue's `attachment_urls` lists the files on its messages. Each message from `GET /issues/{id}/messages` has its files in `file_urls`.\n\n* Most of these are signed links. Download them with a plain `GET`, without an `Authorization` header.\n* They don't expire, so you can store them. Anyone with a link can download the file, so treat links as sensitive.\n* Use the URL exactly as returned. Changing it invalidates the signature.\n* Some older attachments return the URL they were originally stored with.\n\n## Find slugs\n\nThe API refers to custom fields, select options, and statuses by slug, not by label.\n\nSlug\n\nIn Pylon\n\nThrough the API\n\nCustom field\n\nThe **API Slug** column on field settings pages, such as **Settings > Issue data > Fields** and **Settings > Account data > Fields**\n\n`GET /custom-fields?object_type=issue` returns `slug`\n\nSelect option\n\n**View and edit slugs** in the field's **\u2026** menu\n\n`select_metadata.options[].slug` in the same response\n\nIssue status\n\n\u2014\n\n`GET /issue-statuses` returns `slug`\n\nUser status\n\n\u2014\n\n`GET /user-statuses` returns `slug`\n\n`object_type` can be `account`, `issue`, `contact`, `task`, `project`, `meeting`, or `opportunity`. If you change a slug, update every integration that uses the old one.\n\nSome slugs are reserved because they match built-in field names, for example account `state`, `source`, and `account_id`, and issue `subject`. If you send a reserved slug in `slug` when creating a custom field, the request is rejected. If you leave `slug` out and the field's label would produce a reserved slug, Pylon adds a number, for example `state_1`.\n\nPreviousAuthentication\n\nNextErrors\n\nWas this helpful?",
+   "retrieved_at": "2026-11-23T19:38:07+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/contacts",
+   "requested_at": "2026-11-23T19:38:09+05:30",
+   "status": "ok",
+   "final_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/contacts",
+   "title": "Contacts | Pylon",
+   "chars": 19447,
+   "sha256": "5b86c1e1a8a8cc21e356fbbfe18065e5db4b8e9be9609c524e77ccc728db3f56",
+   "text": "### Get all contacts\n\nget/contacts\n\nReturns a paginated list of contacts for the organization.\n\n**Rate limit:** 300 requests per minute\n\nAuthorizations\n\nAuthorizationstringRequired\n\nAuthorization: Bearer\n\nQuery parameters\n\ncursorstringOptional\n\nThe cursor to use for pagination.\n\nlimitinteger \u00b7 int64Optional\n\nThe number of contacts to fetch. Defaults to 100. Must be greater than 0 and less than 1000.\n\nResponses\n\n200Success\n\napplication/json\n\nrequest\\_idstringRequired\n\nThe request ID for tracking.\n\n400\n\nThe request was invalid or could not be completed.\n\napplication/json\n\n401\n\nThe request could not be authenticated for this API.\n\napplication/json\n\n403\n\nThe authenticated caller or organization is not allowed to access this endpoint or operation.\n\napplication/json\n\n404Error\n\napplication/json\n\n429\n\nThe request exceeded the applicable rate limit.\n\napplication/json\n\n500\n\nAn unexpected internal error occurred.\n\napplication/json\n\nget/contacts\n\n```\nGET /contacts HTTP/1.1\nHost: api.usepylon.com\nAuthorization: Bearer YOUR_SECRET_TOKEN\nAccept: */*\n```\n\n```\n{\n  \"data\": [\n    {\n      \"account\": {\n        \"external_ids\": [\n          {\n            \"external_id\": \"text\",\n            \"label\": \"text\"\n          }\n        ],\n        \"id\": \"text\"\n      },\n      \"avatar_url\": \"text\",\n      \"custom_fields\": {\n        \"role\": {\n          \"value\": \"admin\"\n        }\n      },\n      \"email\": \"text\",\n      \"emails\": [\n        \"text\"\n      ],\n      \"external_ids\": [\n        {\n          \"external_id\": \"text\",\n          \"label\": \"text\"\n        }\n      ],\n      \"id\": \"text\",\n      \"integration_user_ids\": [\n        {\n          \"id\": \"text\",\n          \"source\": \"text\"\n        }\n      ],\n      \"name\": \"text\",\n      \"phone_numbers\": [\n        \"text\"\n      ],\n      \"portal_role\": \"text\",\n      \"portal_role_id\": \"text\",\n      \"primary_phone_number\": \"text\"\n    }\n  ],\n  \"pagination\": {\n    \"cursor\": \"text\",\n    \"has_next_page\": true\n  },\n  \"request_id\": \"text\"\n}\n```\n\n### Create a new contact\n\npost/contacts\n\nCreates a new contact with the specified email and optional metadata.\n\n**Rate limit:** 300 requests per minute\n\nAuthorizations\n\nAuthorizationstringRequired\n\nAuthorization: Bearer\n\nBody\n\naccount\\_external\\_idstringOptional\n\nThe external ID of the account that this contact belongs to. Cannot be used together with account\\_id.\n\naccount\\_idstringOptional\n\nThe account that this contact belongs to.\n\navatar\\_urlstringOptional\n\nThe avatar URL of the contact. Must be a square .png, .jpg or .jpeg.\n\nemailstringOptional\n\nThe email of the contact.\n\nnamestringRequired\n\nThe name of the contact.\n\nphone\\_numbersstring[]Optional\n\nThe phone numbers of the contact. Must contain only digits 0-9, optionally preceded by + (E.164, e.g. +4365446231), and be 15 digits or less. Include the + and country code for non-US numbers; a 10-digit number without + is treated as US.\n\nportal\\_rolestringOptional\n\nThe portal role to assign to the contact. If not provided uses the default portal role from the portal settings.\n\nKnown values: `no_access`, `member`, `admin`. This list is not exhaustive.\n\nportal\\_role\\_idstringOptional\n\nThe ID of the custom portal role to assign to the contact. Takes precedence over portal\\_role if provided.\n\nprimary\\_phone\\_numberstringOptional\n\nThe primary phone number. Must be in the list of phone\\_numbers. If there are any phone\\_numbers and this is not specified, the first phone number will be primary.\n\nResponses\n\n200Success\n\napplication/json\n\nrequest\\_idstringRequired\n\nThe request ID for tracking.\n\n400\n\nThe request was invalid or could not be completed.\n\napplication/json\n\n401\n\nThe request could not be authenticated for this API.\n\napplication/json\n\n403\n\nThe authenticated caller or organization is not allowed to access this endpoint or operation.\n\napplication/json\n\n404Error\n\napplication/json\n\n429\n\nThe request exceeded the applicable rate limit.\n\napplication/json\n\n500\n\nAn unexpected internal error occurred.\n\napplication/json\n\npost/contacts\n\n```\nPOST /contacts HTTP/1.1\nHost: api.usepylon.com\nAuthorization: Bearer YOUR_SECRET_TOKEN\nContent-Type: application/json\nAccept: */*\nContent-Length: 321\n\n{\n  \"account_external_id\": \"text\",\n  \"account_id\": \"text\",\n  \"avatar_url\": \"text\",\n  \"custom_fields\": [\n    {\n      \"slug\": \"text\",\n      \"value\": \"text\",\n      \"values\": [\n        \"text\"\n      ]\n    }\n  ],\n  \"email\": \"text\",\n  \"external_ids\": [\n    {\n      \"external_id\": \"text\",\n      \"label\": \"text\"\n    }\n  ],\n  \"name\": \"text\",\n  \"phone_numbers\": [\n    \"text\"\n  ],\n  \"portal_role\": \"text\",\n  \"portal_role_id\": \"text\",\n  \"primary_phone_number\": \"text\"\n}\n```\n\n```\n{\n  \"data\": {\n    \"account\": {\n      \"external_ids\": [\n        {\n          \"external_id\": \"text\",\n          \"label\": \"text\"\n        }\n      ],\n      \"id\": \"text\"\n    },\n    \"avatar_url\": \"text\",\n    \"custom_fields\": {\n      \"role\": {\n        \"value\": \"admin\"\n      }\n    },\n    \"email\": \"text\",\n    \"emails\": [\n      \"text\"\n    ],\n    \"external_ids\": [\n      {\n        \"external_id\": \"text\",\n        \"label\": \"text\"\n      }\n    ],\n    \"id\": \"text\",\n    \"integration_user_ids\": [\n      {\n        \"id\": \"text\",\n        \"source\": \"text\"\n      }\n    ],\n    \"name\": \"text\",\n    \"phone_numbers\": [\n      \"text\"\n    ],\n    \"portal_role\": \"text\",\n    \"portal_role_id\": \"text\",\n    \"primary_phone_number\": \"text\"\n  },\n  \"request_id\": \"text\"\n}\n```\n\n### Get a contact by its ID or external ID\n\nget/contacts/{id}\n\nReturns a single contact by ID or external ID.\n\n**Rate limit:** 300 requests per minute\n\nAuthorizations\n\nAuthorizationstringRequired\n\nAuthorization: Bearer\n\nPath parameters\n\nidstringRequired\n\nThe ID or external ID of the contact.\n\nResponses\n\n200Success\n\napplication/json\n\nrequest\\_idstringRequired\n\nThe request ID for tracking.\n\n400\n\nThe request was invalid or could not be completed.\n\napplication/json\n\n401\n\nThe request could not be authenticated for this API.\n\napplication/json\n\n403\n\nThe authenticated caller or organization is not allowed to access this endpoint or operation.\n\napplication/json\n\n404Error\n\napplication/json\n\n429\n\nThe request exceeded the applicable rate limit.\n\napplication/json\n\n500\n\nAn unexpected internal error occurred.\n\napplication/json\n\nget/contacts/{id}\n\n```\nGET /contacts/{id} HTTP/1.1\nHost: api.usepylon.com\nAuthorization: Bearer YOUR_SECRET_TOKEN\nAccept: */*\n```\n\n```\n{\n  \"data\": {\n    \"account\": {\n      \"external_ids\": [\n        {\n          \"external_id\": \"text\",\n          \"label\": \"text\"\n        }\n      ],\n      \"id\": \"text\"\n    },\n    \"avatar_url\": \"text\",\n    \"custom_fields\": {\n      \"role\": {\n        \"value\": \"admin\"\n      }\n    },\n    \"email\": \"text\",\n    \"emails\": [\n      \"text\"\n    ],\n    \"external_ids\": [\n      {\n        \"external_id\": \"text\",\n        \"label\": \"text\"\n      }\n    ],\n    \"id\": \"text\",\n    \"integration_user_ids\": [\n      {\n        \"id\": \"text\",\n        \"source\": \"text\"\n      }\n    ],\n    \"name\": \"text\",\n    \"phone_numbers\": [\n      \"text\"\n    ],\n    \"portal_role\": \"text\",\n    \"portal_role_id\": \"text\",\n    \"primary_phone_number\": \"text\"\n  },\n  \"request_id\": \"text\"\n}\n```\n\n### Update a contact by its ID or external ID\n\npatch/contacts/{id}\n\nUpdates a contact by ID or external ID. Only provided fields are modified.\n\n**Rate limit:** 300 requests per minute\n\nAuthorizations\n\nAuthorizationstringRequired\n\nAuthorization: Bearer\n\nPath parameters\n\nidstringRequired\n\nThe ID or external ID of the contact to update.\n\nBody\n\naccount\\_external\\_idstringOptional\n\nThe external ID of the account to move the contact to. Cannot be used together with account\\_id.\n\naccount\\_idstringOptional\n\nThe account to move the contact to. If empty string is passed in, the contact will be removed from its account.\n\navatar\\_urlstringOptional\n\nThe avatar URL of the contact. Must be a square .png, .jpg or .jpeg.\n\nemailstringOptional\n\nThe email of the contact. Replaces all of the contact's emails with this single email. Cannot be used together with the `emails` array field.\n\nnamestringOptional\n\nin: body\nThe name of the contact.\n\nphone\\_numbersstring[]Optional\n\nThe phone numbers of the contact. Must contain only digits 0-9, optionally preceded by + (E.164, e.g. +4365446231), and be 15 digits or less. Include the + and country code for non-US numbers; a 10-digit number without + is treated as US.\n\nportal\\_rolestringOptional\n\nThe portal role to assign to the contact. Can be one of `no_access`, `member`, or `admin`, or a custom role slug.\n\nKnown values: `no_access`, `member`, `admin`. This list is not exhaustive.\n\nportal\\_role\\_idstringOptional\n\nThe ID of the custom portal role to assign to the contact. Takes precedence over portal\\_role if provided.\n\nprimary\\_phone\\_numberstringOptional\n\nThe primary phone number. Must be in the list of phone\\_numbers. If there are any phone\\_numbers and this is not specified, the first phone number will be primary.\n\nResponses\n\n200Success\n\napplication/json\n\nrequest\\_idstringRequired\n\nThe request ID for tracking.\n\n400\n\nThe request was invalid or could not be completed.\n\napplication/json\n\n401\n\nThe request could not be authenticated for this API.\n\napplication/json\n\n403\n\nThe authenticated caller or organization is not allowed to access this endpoint or operation.\n\napplication/json\n\n404Error\n\napplication/json\n\n429\n\nThe request exceeded the applicable rate limit.\n\napplication/json\n\n500\n\nAn unexpected internal error occurred.\n\napplication/json\n\npatch/contacts/{id}\n\n```\nPATCH /contacts/{id} HTTP/1.1\nHost: api.usepylon.com\nAuthorization: Bearer YOUR_SECRET_TOKEN\nContent-Type: application/json\nAccept: */*\nContent-Length: 367\n\n{\n  \"account_external_id\": \"text\",\n  \"account_id\": \"text\",\n  \"avatar_url\": \"text\",\n  \"custom_fields\": [\n    {\n      \"slug\": \"text\",\n      \"value\": \"text\",\n      \"values\": [\n        \"text\"\n      ]\n    }\n  ],\n  \"email\": \"text\",\n  \"emails\": [\n    {\n      \"email\": \"text\",\n      \"is_primary\": true\n    }\n  ],\n  \"external_ids\": [\n    {\n      \"external_id\": \"text\",\n      \"label\": \"text\"\n    }\n  ],\n  \"name\": \"text\",\n  \"phone_numbers\": [\n    \"text\"\n  ],\n  \"portal_role\": \"text\",\n  \"portal_role_id\": \"text\",\n  \"primary_phone_number\": \"text\"\n}\n```\n\n```\n{\n  \"data\": {\n    \"account\": {\n      \"external_ids\": [\n        {\n          \"external_id\": \"text\",\n          \"label\": \"text\"\n        }\n      ],\n      \"id\": \"text\"\n    },\n    \"avatar_url\": \"text\",\n    \"custom_fields\": {\n      \"role\": {\n        \"value\": \"admin\"\n      }\n    },\n    \"email\": \"text\",\n    \"emails\": [\n      \"text\"\n    ],\n    \"external_ids\": [\n      {\n        \"external_id\": \"text\",\n        \"label\": \"text\"\n      }\n    ],\n    \"id\": \"text\",\n    \"integration_user_ids\": [\n      {\n        \"id\": \"text\",\n        \"source\": \"text\"\n      }\n    ],\n    \"name\": \"text\",\n    \"phone_numbers\": [\n      \"text\"\n    ],\n    \"portal_role\": \"text\",\n    \"portal_role_id\": \"text\",\n    \"primary_phone_number\": \"text\"\n  },\n  \"request_id\": \"text\"\n}\n```\n\n### Delete a contact by its ID or external ID\n\ndelete/contacts/{id}\n\nPermanently deletes a contact by ID or external ID.\n\n**Rate limit:** 30 requests per minute\n\nAuthorizations\n\nAuthorizationstringRequired\n\nAuthorization: Bearer\n\nPath parameters\n\nidstringRequired\n\nThe ID or external ID of the contact to delete.\n\nResponses\n\n200Success\n\napplication/json\n\nrequest\\_idstringRequired\n\nThe request ID for tracking.\n\n401\n\nThe request could not be authenticated for this API.\n\napplication/json\n\n403\n\nThe authenticated caller or organization is not allowed to access this endpoint or operation.\n\napplication/json\n\n404Error\n\napplication/json\n\n429\n\nThe request exceeded the applicable rate limit.\n\napplication/json\n\n500\n\nAn unexpected internal error occurred.\n\napplication/json\n\ndelete/contacts/{id}\n\n```\nDELETE /contacts/{id} HTTP/1.1\nHost: api.usepylon.com\nAuthorization: Bearer YOUR_SECRET_TOKEN\nAccept: */*\n```\n\n```\n{\n  \"request_id\": \"text\"\n}\n```\n\n### Search for contacts by a given filter\n\npost/contacts/search\n\nFilterable fields and their allowed operators:\n\nField\n\nAllowed operators\n\n`id`\n\n`equals`, `in`, `not_in`\n\n`email`\n\n`equals`, `in`, `not_in`, `string_contains`, `string_does_not_contain`\n\n`name`\n\n`equals`, `in`, `not_in`, `string_contains`, `string_does_not_contain`\n\n`account_id`\n\n`equals`, `in`, `not_in`\n\n#### Filter syntax and operators\n\nSee Search filters for filter structure and operator definitions. The table above lists the operators supported by each field.\n\n#### Custom fields\n\nSet `field` to the custom field's slug.\n\n**Rate limit:** 120 requests per minute\n\nAuthorizations\n\nAuthorizationstringRequired\n\nAuthorization: Bearer\n\nBody\n\ncursorstringOptional\n\nThe cursor to use for pagination.\n\nlimitinteger \u00b7 int64Optional\n\nThe number of contacts to fetch. Defaults to 100. Must be between 1 and 1000.\n\nsearch\\_textstringOptional\n\nText search across contact name, primary email, secondary emails, primary phone number, and secondary phone numbers. Results are intersected with any provided filter.\n\nResponses\n\n200Success\n\napplication/json\n\nrequest\\_idstringRequired\n\nThe request ID for tracking.\n\n400\n\nThe request was invalid or could not be completed.\n\napplication/json\n\n401\n\nThe request could not be authenticated for this API.\n\napplication/json\n\n403\n\nThe authenticated caller or organization is not allowed to access this endpoint or operation.\n\napplication/json\n\n429\n\nThe request exceeded the applicable rate limit.\n\napplication/json\n\n500\n\nAn unexpected internal error occurred.\n\napplication/json\n\npost/contacts/search\n\n```\nPOST /contacts/search HTTP/1.1\nHost: api.usepylon.com\nAuthorization: Bearer YOUR_SECRET_TOKEN\nContent-Type: application/json\nAccept: */*\nContent-Length: 621\n\n{\n  \"cursor\": \"text\",\n  \"filter\": {\n    \"field\": \"text\",\n    \"operator\": \"equals\",\n    \"related_object\": {\n      \"custom_field\": \"text\",\n      \"filter\": {\n        \"field\": \"text\",\n        \"operator\": \"equals\",\n        \"related_object\": {\n          \"custom_field\": \"text\",\n          \"filter\": {\n            \"field\": \"text\",\n            \"operator\": \"equals\",\n            \"related_object\": \"[Circular Reference]\",\n            \"subfilters\": \"[Circular Reference]\",\n            \"value\": \"text\",\n            \"values\": [\n              \"text\"\n            ]\n          },\n          \"relationship\": \"text\"\n        },\n        \"subfilters\": [\n          {\n            \"field\": \"state\",\n            \"operator\": \"equals\",\n            \"value\": \"new\"\n          }\n        ],\n        \"value\": \"text\",\n        \"values\": [\n          \"text\"\n        ]\n      },\n      \"relationship\": \"text\"\n    },\n    \"subfilters\": [\n      {\n        \"field\": \"state\",\n        \"operator\": \"equals\",\n        \"value\": \"new\"\n      }\n    ],\n    \"value\": \"text\",\n    \"values\": [\n      \"text\"\n    ]\n  },\n  \"limit\": 1,\n  \"search_text\": \"text\"\n}\n```\n\n```\n{\n  \"data\": [\n    {\n      \"account\": {\n        \"external_ids\": [\n          {\n            \"external_id\": \"text\",\n            \"label\": \"text\"\n          }\n        ],\n        \"id\": \"text\"\n      },\n      \"avatar_url\": \"text\",\n      \"custom_fields\": {\n        \"role\": {\n          \"value\": \"admin\"\n        }\n      },\n      \"email\": \"text\",\n      \"emails\": [\n        \"text\"\n      ],\n      \"external_ids\": [\n        {\n          \"external_id\": \"text\",\n          \"label\": \"text\"\n        }\n      ],\n      \"id\": \"text\",\n      \"integration_user_ids\": [\n        {\n          \"id\": \"text\",\n          \"source\": \"text\"\n        }\n      ],\n      \"name\": \"text\",\n      \"phone_numbers\": [\n        \"text\"\n      ],\n      \"portal_role\": \"text\",\n      \"portal_role_id\": \"text\",\n      \"primary_phone_number\": \"text\"\n    }\n  ],\n  \"pagination\": {\n    \"cursor\": \"text\",\n    \"has_next_page\": true\n  },\n  \"request_id\": \"text\"\n}\n```\n\n### Merge contacts\n\npost/contacts/merge\n\nMerges a contact into a surviving contact. Both contacts must belong to the same account, unless the merged contact has no account, in which case it is first moved to the surviving contact's account. Issues, emails, phone numbers, survey responses, and other associated data are then transferred to the surviving contact, and the merged contact is permanently deleted. This cannot be undone.\n\n**Rate limit:** 30 requests per minute\n\nAuthorizations\n\nAuthorizationstringRequired\n\nAuthorization: Bearer\n\nBody\n\nmerge\\_contact\\_idstringRequired\n\nThe ID of the contact to merge into the surviving contact. This contact is permanently deleted after its data is transferred.\n\nmerge\\_into\\_contact\\_idstringRequired\n\nThe ID of the contact that will survive the merge and receive the merged data. If the merged contact belongs to an account, this contact must belong to the same account.\n\nResponses\n\n200Success\n\napplication/json\n\nrequest\\_idstringRequired\n\nThe request ID for tracking.\n\n400\n\nThe request was invalid or could not be completed.\n\napplication/json\n\n401\n\nThe request could not be authenticated for this API.\n\napplication/json\n\n403\n\nThe authenticated caller or organization is not allowed to access this endpoint or operation.\n\napplication/json\n\n404Error\n\napplication/json\n\n429\n\nThe request exceeded the applicable rate limit.\n\napplication/json\n\n500\n\nAn unexpected internal error occurred.\n\napplication/json\n\npost/contacts/merge\n\n```\nPOST /contacts/merge HTTP/1.1\nHost: api.usepylon.com\nAuthorization: Bearer YOUR_SECRET_TOKEN\nContent-Type: application/json\nAccept: */*\nContent-Length: 58\n\n{\n  \"merge_contact_id\": \"text\",\n  \"merge_into_contact_id\": \"text\"\n}\n```\n\n```\n{\n  \"data\": {\n    \"account\": {\n      \"external_ids\": [\n        {\n          \"external_id\": \"text\",\n          \"label\": \"text\"\n        }\n      ],\n      \"id\": \"text\"\n    },\n    \"avatar_url\": \"text\",\n    \"custom_fields\": {\n      \"role\": {\n        \"value\": \"admin\"\n      }\n    },\n    \"email\": \"text\",\n    \"emails\": [\n      \"text\"\n    ],\n    \"external_ids\": [\n      {\n        \"external_id\": \"text\",\n        \"label\": \"text\"\n      }\n    ],\n    \"id\": \"text\",\n    \"integration_user_ids\": [\n      {\n        \"id\": \"text\",\n        \"source\": \"text\"\n      }\n    ],\n    \"name\": \"text\",\n    \"phone_numbers\": [\n      \"text\"\n    ],\n    \"portal_role\": \"text\",\n    \"portal_role_id\": \"text\",\n    \"primary_phone_number\": \"text\"\n  },\n  \"request_id\": \"text\"\n}\n```\n\n### Send a customer portal invitation\n\npost/contacts/{id}/portal-invitation\n\nSends or resends a portal invitation to the contact's primary email. The portal must be enabled and the contact must already have portal access. Does not change the contact's role. Requires customer portal settings write permission and write access to the contact's primary account, if any. Each successful call requests another invitation; success does not guarantee email delivery.\n\n**Rate limit:** 30 requests per minute\n\nAuthorizations\n\nAuthorizationstringRequired\n\nAuthorization: Bearer\n\nPath parameters\n\nidstringRequired\n\nThe ID of the contact to invite.\n\nResponses\n\n200Success\n\napplication/json\n\nrequest\\_idstringRequired\n\nThe request ID for tracking.\n\n400\n\nThe request was invalid or could not be completed.\n\napplication/json\n\n401\n\nThe request could not be authenticated for this API.\n\napplication/json\n\n403\n\nThe authenticated caller or organization is not allowed to access this endpoint or operation.\n\napplication/json\n\n404Error\n\napplication/json\n\n429\n\nThe request exceeded the applicable rate limit.\n\napplication/json\n\n500\n\nAn unexpected internal error occurred.\n\napplication/json\n\npost/contacts/{id}/portal-invitation\n\n```\nPOST /contacts/{id}/portal-invitation HTTP/1.1\nHost: api.usepylon.com\nAuthorization: Bearer YOUR_SECRET_TOKEN\nAccept: */*\n```\n\n```\n{\n  \"data\": {\n    \"accepted\": true\n  },\n  \"request_id\": \"text\"\n}\n```\n\nPreviousCall Recordings\n\nNextCustom Fields\n\nLast updated 26 days ago\n\nWas this helpful?",
+   "retrieved_at": "2026-11-23T19:38:09+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Pylon API documentation",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+   "title": "Accounts | Pylon",
+   "snippet": "### Get a list of accounts\nget/accounts\nReturns a paginated list of accounts for the organization.\n**Rate limit:** 300 requests per minute\nAuthorizations\nAuthorizationstringRequired\n"
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/conventions",
+   "title": "API conventions | Pylon",
+   "snippet": "pagination, search filters, updates, files, and slugs\nThese rules apply across Pylon's API. The [API reference](https://docs.usepylon.com/pylon-docs/developer/api/api-reference) lists each"
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/contacts",
+   "title": "Contacts | Pylon",
+   "snippet": "### Get all contacts\nget/contacts\nReturns a paginated list of contacts for the organization.\n**Rate limit:** 300 requests per minute\nAuthorizations\nAuthorizationstringRequired\nAuthorization:"
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://getpylon.com/developers/",
+   "title": "Pylon Developer Hub",
+   "snippet": "API. Web API Documentation. Access the data in your Pylon team and automate business processes with our JSON-based web API. Read API documentation. Integration."
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/custom-fields",
+   "title": "Custom Fields | Pylon",
+   "snippet": "### Update a custom field\npatch/custom-fields/{id}\nUpdates a custom field definition. Only provided fields are modified.\n**Rate limit:** 120 requests per minute"
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+   "title": "API | Pylon",
+   "snippet": "read and write data in Pylon\nPylon\u2019s API can be used to programmatically access and take action on data within Pylon.\nOnly Admin users can create API tokens. To learn more about Admins, see [Roles"
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base",
+   "title": "Knowledge Base | Pylon",
+   "snippet": "### Get a knowledge base theme\nget/knowledge-bases/{id}/themes/{theme_id}\nReturns a theme's editable files, including current draft and published content.\n**Rate limit:** 300 requests per minute"
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/messages",
+   "title": "Messages | Pylon",
+   "snippet": "\n# Messages\npatch/issues/{id}/messages/{message_id}\nReplaces the body of a message and syncs the edit to its connected channel (Slack, Microsoft Teams, Discord, Google Chat,"
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://pylon.bot/docs/",
+   "title": "Welcome to Pylon | Pylon Documentation",
+   "snippet": "Pylon is a new way to build, deploy, and manage Discord bots. The Pylon JavaScript SDK enables you to write serverless bots that interact with both the ..."
+  },
+  {
+   "q": "Pylon API documentation",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts/activities",
+   "title": "Activities | Pylon",
+   "snippet": "newest to oldest. The {id} parameter accepts either: Internal account ID (UUID format) External ID (any string format)\n**Rate limit:** 300 requests per minute\nAuthorizations\n"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://docs.pylonsync.com/auth/overview",
+   "title": "Auth overview",
+   "snippet": "| OAuth | Google + GitHub built in; CSRF-protected via state tokens |\n\n| API keys | `pk.\u2026` bearer tokens, optional scopes + expiry, server-issued at `/api/auth/api-keys` |"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://docs.pylonsync.com/auth/native",
+   "title": "Native sign-in (Apple, Google, Steam)",
+   "snippet": "account from the platform SDK. The app sends that proof to Pylon, and Pylon checks it with the platform. Each route then links the account and returns a session, the same as [OAuth](/auth/oauth):"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://docs.pylonsync.com/auth/oauth",
+   "title": "OAuth \u2014 25+ providers + OIDC",
+   "snippet": "Pylon stores the provider\u2019s access and refresh tokens on the account link. Server code reads a fresh access token with `ctx.auth.providerToken`:"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://pydantic.dev/docs/ai/harness/pylon",
+   "title": "Pylon",
+   "snippet": "Set `PYLON_ACCESS_TOKEN` or pass a Pylon access token as `auth`. The agent then acts as that user and sees the same data they see in the Pylon dashboard."
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://docs.pylonsync.com/auth/connections",
+   "title": "Connections",
+   "snippet": "function needs to call another service. Pylon runs the OAuth flow, stores the tokens encrypted, and refreshes them before they expire. Your function calls `ctx.connections.get(name)` and uses the"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "title": "Authentication | Pylon",
+   "snippet": "The Pylon API uses [Bearer](https://www.rfc-editor.org/rfc/rfc6750#section-2.1) authentication. This means you\u2019ll need to pass your API token in the header of your request:"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+   "title": "Pylon MCP | Pylon",
+   "snippet": "Some clients only support OAuth connections. Use their OAuth flow if they don't let you configure an authorization header."
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://github.com/airbytehq/airbyte-agent-connectors/blob/main/connectors/pylon/AUTH.md",
+   "title": "airbyte-agent-sdk/connectors/pylon/AUTH.md at main \u00b7 airbytehq/airbyte-agent-sdk",
+   "snippet": "### OAuth\nThis authentication method isn't available for this connector.\n### Token\n`credentials` fields you need:\n| Field Name | Type | Required | Description |\n|---|---|---|---|\n| `api_token` |"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://c1.ai/docs/product/admin/mcp-server/pylon",
+   "title": "Set up the Pylon MCP server",
+   "snippet": "| **Authentication** | Per-user OAuth with dynamic client registration (DCR) only \u2014 no bearer token or API key option | Bearer token (API token) only \u2014 no OAuth option |"
+  },
+  {
+   "q": "Pylon API authentication OAuth API key developer",
+   "url": "https://www.youtube.com/watch?v=SID5QkDNMjs",
+   "title": "API Authentication - Which One Should You Actually Use?",
+   "snippet": "This video walks through the four authentication mechanisms for APIs: Basic auth, API keys, JSON Web Tokens, and OAuth 2.0."
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://pylonapi.com/pricing.html",
+   "title": "Pricing \u2014 Pylon AI",
+   "snippet": "endpoint uses pay-per-request. No tiers, no surprises.\n| API | Price |\n|---|---|\n| Web Search | $0.003 |\n| Screenshot | $0.01 |\n| PDF Parse | $0.01 |\n| QR Code | $0.01 |\n| Domain Intel | $0.01 |\n|"
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+   "title": "API | Pylon",
+   "snippet": "API can be used to programmatically access and take action on data within Pylon.\nOnly Admin users can create API tokens. To learn more about Admins, see [Roles & User"
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://github.com/api-evangelist/pylon/blob/main/plans/pylon-plans-pricing.yml",
+   "title": "pylon/plans/pylon-plans-pricing.yml at main \u00b7 api-evangelist/pylon",
+   "snippet": "per-seat subscription pricing across\nthree core tiers (Starter, Professional, Enterprise) billed monthly or\nannually, with minimum seat counts. The public REST API is included starting\n"
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://usepylon.com/pricing",
+   "title": "Pricing | Pylon",
+   "snippet": "and requests are coming in faster than you can hire. Pylon brings every channel into one queue and lets AI handle the busywork. You pay for the seats and AI credits your team uses, never per ticket."
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://getpylon.com/pricing",
+   "title": "Pylon - Pricing",
+   "snippet": "- AI Assistance\nStarting from\n$49.00\nper user per month, billed monthly.\n\n## API\nAll Teams\nEnterprise\nAPI Access\nSolar production API\nCustom CRM integration"
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://getpylon.com/developers",
+   "title": "Pylon Developer Hub",
+   "snippet": "Does the API cost extra?\nNo, using the API itself does not incur additional charges. However, our API may trigger downstream activities which could cost money."
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+   "title": "Accounts",
+   "snippet": "Get a list of accounts. get. https://api.usepylon.com ..."
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://usepylon.com/pylon-facts",
+   "title": "Pricing, Channels, and Product (Updated November 10, 2026)",
+   "snippet": "**Developer platform:** REST API, scoped API tokens, webhooks, iFrame embeds, custom apps, Pylon MCP server."
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://pylonsync.com/pricing",
+   "title": "Pricing - One Subscription, Metered Usage | Stack0",
+   "snippet": "## Start on the $20 plan\nOne card, one bill, one API key across every product. Cancel any time."
+  },
+  {
+   "q": "Pylon API access pricing plans developer account",
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "title": "Authentication | Pylon",
+   "snippet": "Pylon\u2019s API is available in two regions. Use the base URL that matches where your Pylon tenant is hosted:\n- US region: https://api.usepylon.com\n- EU region: https://api.eu.usepylon.com\nBoth regions"
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://mcp.so/servers/pylon-remote",
+   "title": "Pylon MCP Server: Tools, Setup & Config",
+   "snippet": "## About Pylon MCP Server\nPylon helps teams search and manage support issues. Its connector gives assistants support-workflow context for finding customer issues, tracking status, and coordinating"
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://pydantic.dev/docs/ai/harness/pylon",
+   "title": "Pylon",
+   "snippet": "You need a Pylon Member or Admin seat with the `MCP Access` role; Viewer and Integration users cannot sign in. Pylon MCP takes an OAuth access token. Pylon REST API tokens do not work with it."
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://pylonsync.com/developers",
+   "title": "docs, CLI, MCP server, API spec",
+   "snippet": "Point Claude Code, or any MCP client, at the hosted server. It exposes four read-only tools and needs no credentials."
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://town.com/integrations/pylon",
+   "title": "Pylon MCP Integration | Town",
+   "snippet": "2. Authorize the connection\nSign in to Pylon when prompted. Town connects through Pylon's official MCP server (mcp.usepylon.com), so there's nothing to install or configure."
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://github.com/pylonapi/pylon-mcp/blob/main/README.md",
+   "title": "pylon-mcp/README.md at main \u00b7 pylonapi/pylon-mcp",
+   "snippet": "- **Website:** [pylonapi.com](https://pylonapi.com)\n- **Protocol:** [x402.org](https://x402.org)\n- **GitHub:** [github.com/pylon-apis/pylon](https://github.com/pylon-apis/pylon)\n- **npm:**"
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://github.com/JustinBeckwith/pylon-mcp/blob/main/README.md",
+   "title": "pylon-mcp/README.md at main \u00b7 JustinBeckwith/pylon-mcp",
+   "snippet": "## Requirements\n- Node.js 24+\n- Pylon API token (Admin access required)"
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+   "title": "Pylon MCP | Pylon",
+   "snippet": "projects, triggers, and more within the authenticated identity's permissions.\n- **Server URL (US):** `https://mcp.usepylon.com`\n- **Server URL (EU):** `https://mcp.eu.usepylon.com`\n- **Auth:** OAuth"
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://github.com/JustinBeckwith/pylon-mcp",
+   "title": "GitHub - JustinBeckwith/pylon-mcp: MCP server for Pylon customer support platform",
+   "snippet": "## Requirements\n- Node.js 24+\n- Pylon API token (Admin access required)"
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://pulsemcp.com/servers/pylon",
+   "title": "Official Pylon MCP Server | PulseMCP",
+   "snippet": "URL\n![Info icon](https://storage.googleapis.com/pulse_public/static/icons/info.svg)\nThis is the exact URL you should copy/paste into your MCP client's configuration.\nhttps://mcp.usepylon.com/..."
+  },
+  {
+   "q": "Pylon MCP server official",
+   "url": "https://usepylon.com/integrations/mcp",
+   "title": "Pylon MCP server: connect ChatGPT, Claude, and Cursor",
+   "snippet": "# Pylon MCP server\nConnect ChatGPT, Claude, and Cursor to Pylon. Work issues, accounts, contacts, and your knowledge base with the permissions you already have."
+  }
+ ],
+ "official_domain_candidates": {
+  "usepylon.com": 17,
+  "getpylon.com": 3,
+  "pylon.bot": 1,
+  "pylonsync.com": 6,
+  "pylonapi.com": 1
+ },
+ "identity_flag": "multiple_candidate_domains_review_identity",
+ "selected_domain": "usepylon.com",
+ "completed": "2026-11-23T19:38:09+05:30"
+}

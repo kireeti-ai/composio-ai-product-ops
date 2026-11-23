@@ -1,0 +1,128 @@
+{
+ "run_id": "audit-raw-v1-20261123",
+ "rubric": "raw-audit-v1",
+ "inputs": "baseline/p1_v1/raw (81 files, read-only)",
+ "network": "none",
+ "llm_calls": 0,
+ "all_81": {
+  "READY": 74,
+  "PARTIAL": 7
+ },
+ "without_pass1_55": {
+  "PARTIAL": 4,
+  "READY": 51
+ },
+ "with_pass1_26": {
+  "READY": 23,
+  "PARTIAL": 3
+ },
+ "coverage_55": {
+  "auth": 55,
+  "auth_official": 55,
+  "access": 35,
+  "access_official": 35,
+  "api": 52,
+  "api_official": 51,
+  "mcp_text": 14
+ },
+ "gap_counts_55": {
+  "no_access_or_pricing_evidence": 20,
+  "no_api_surface_evidence": 3,
+  "identity_check_needed": 10,
+  "truncated_pages": 32
+ },
+ "identity_check_needed_55": [
+  "Pylon",
+  "Gladly",
+  "Lark (Larksuite)",
+  "Threads (Meta)",
+  "fanbasis",
+  "Waterfall.io",
+  "Clay",
+  "Linear",
+  "Coda",
+  "Harvest"
+ ],
+ "mcp_query_hits_apps_55": 55,
+ "injection_marker_pages": 0,
+ "pages_total": 324,
+ "pages_usable": 303,
+ "pages_official_usable": 294,
+ "calibration_on_26_(indicative_only_small_n)": {
+  "READY": {
+   "n_apps": 23,
+   "quote_found_rate": 0.86,
+   "insufficient_rate": 0.32,
+   "needs_human_rate": 0.11
+  },
+  "PARTIAL": {
+   "n_apps": 3,
+   "quote_found_rate": 0.83,
+   "insufficient_rate": 0.4,
+   "needs_human_rate": 0.2
+  }
+ },
+ "by_verdict_ids_55": {
+  "READY": [
+   20,
+   24,
+   25,
+   26,
+   27,
+   29,
+   30,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79
+  ],
+  "PARTIAL": [
+   15,
+   31,
+   50,
+   80
+  ],
+  "WEAK": [],
+  "UNUSABLE": []
+ }
+}

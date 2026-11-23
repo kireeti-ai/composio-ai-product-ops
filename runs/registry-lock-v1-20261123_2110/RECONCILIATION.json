@@ -1,0 +1,2406 @@
+{
+  "created_at": "2026-11-23T21:07:38+0530",
+  "source_archive": "1a4e2f2d-ee13-4234-80be-ef2ec6af30b0_ExportBlock-f24b1f34-8e4e-4e7f-a056-ba241f715ea7.zip",
+  "archive_sha256": "936c083b10dbcc36c3bad3863ce5cdb96a14dad2b680f910e018a4433e21930c",
+  "source_html_member": "AI Product Ops Intern -The take-home assignment 2ed8a3054592833990dc8178b0652c1c.html",
+  "previous_registry_sha256": "6ee8d2dcddd29bc3cae5f22c4f99c2993701bdf867fe806fd1bba57face090cc",
+  "source_registry_sha256": "5d3596d41bb1b2d919850cabcffb981a7edffd3119c6418cd8043cd2e108d705",
+  "registry_updated": true,
+  "source_rows": 100,
+  "unique_ids": 100,
+  "unique_names_casefolded": 100,
+  "id_category_name_matches": 100,
+  "hint_matches_before_update": 50,
+  "hints_restored": 50,
+  "rows": [
+    {
+      "id": 1,
+      "category_heading": "1. CRM and Sales",
+      "name": "Salesforce",
+      "hint": "salesforce.com",
+      "links": [
+        "http://salesforce.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 1,
+        "category_id": 1,
+        "name": "Salesforce",
+        "hint": "salesforce.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 2,
+      "category_heading": "1. CRM and Sales",
+      "name": "HubSpot",
+      "hint": "hubspot.com",
+      "links": [
+        "http://hubspot.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 2,
+        "category_id": 1,
+        "name": "HubSpot",
+        "hint": "hubspot.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 3,
+      "category_heading": "1. CRM and Sales",
+      "name": "Pipedrive",
+      "hint": "pipedrive.com",
+      "links": [
+        "http://pipedrive.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 3,
+        "category_id": 1,
+        "name": "Pipedrive",
+        "hint": "pipedrive.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 4,
+      "category_heading": "1. CRM and Sales",
+      "name": "Attio",
+      "hint": "attio.com",
+      "links": [
+        "http://attio.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 4,
+        "category_id": 1,
+        "name": "Attio",
+        "hint": "attio.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 5,
+      "category_heading": "1. CRM and Sales",
+      "name": "Twenty",
+      "hint": "twenty.com (open-source CRM)",
+      "links": [
+        "http://twenty.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 5,
+        "category_id": 1,
+        "name": "Twenty",
+        "hint": "twenty.com (open-source CRM)",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 6,
+      "category_heading": "1. CRM and Sales",
+      "name": "Podio",
+      "hint": "podio.com",
+      "links": [
+        "http://podio.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 6,
+        "category_id": 1,
+        "name": "Podio",
+        "hint": "podio.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 7,
+      "category_heading": "1. CRM and Sales",
+      "name": "Zoho CRM",
+      "hint": "zoho.com/crm",
+      "links": [
+        "http://zoho.com/crm"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 7,
+        "category_id": 1,
+        "name": "Zoho CRM",
+        "hint": "zoho.com/crm",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 8,
+      "category_heading": "1. CRM and Sales",
+      "name": "Close",
+      "hint": "close.com",
+      "links": [
+        "http://close.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 8,
+        "category_id": 1,
+        "name": "Close",
+        "hint": "close.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 9,
+      "category_heading": "1. CRM and Sales",
+      "name": "Copper",
+      "hint": "copper.com",
+      "links": [
+        "http://copper.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 9,
+        "category_id": 1,
+        "name": "Copper",
+        "hint": "copper.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 10,
+      "category_heading": "1. CRM and Sales",
+      "name": "DealCloud",
+      "hint": "api.docs.dealcloud.com",
+      "links": [
+        "http://api.docs.dealcloud.com/"
+      ],
+      "source_category": "CRM and Sales",
+      "previous_local": {
+        "id": 10,
+        "category_id": 1,
+        "name": "DealCloud",
+        "hint": "api.docs.dealcloud.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 11,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Zendesk",
+      "hint": "zendesk.com",
+      "links": [
+        "http://zendesk.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 11,
+        "category_id": 2,
+        "name": "Zendesk",
+        "hint": "zendesk.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 12,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Intercom",
+      "hint": "intercom.com",
+      "links": [
+        "http://intercom.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 12,
+        "category_id": 2,
+        "name": "Intercom",
+        "hint": "intercom.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 13,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Freshdesk",
+      "hint": "freshdesk.com",
+      "links": [
+        "http://freshdesk.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 13,
+        "category_id": 2,
+        "name": "Freshdesk",
+        "hint": "freshdesk.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 14,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Front",
+      "hint": "front.com",
+      "links": [
+        "http://front.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 14,
+        "category_id": 2,
+        "name": "Front",
+        "hint": "front.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 15,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Pylon",
+      "hint": "usepylon.com",
+      "links": [
+        "http://usepylon.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 15,
+        "category_id": 2,
+        "name": "Pylon",
+        "hint": "usepylon.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 16,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "LiveAgent",
+      "hint": "liveagent.com",
+      "links": [
+        "http://liveagent.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 16,
+        "category_id": 2,
+        "name": "LiveAgent",
+        "hint": "liveagent.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 17,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Plain",
+      "hint": "plain.com",
+      "links": [
+        "http://plain.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 17,
+        "category_id": 2,
+        "name": "Plain",
+        "hint": "plain.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 18,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Help Scout",
+      "hint": "helpscout.com",
+      "links": [
+        "http://helpscout.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 18,
+        "category_id": 2,
+        "name": "Help Scout",
+        "hint": "helpscout.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 19,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Gorgias",
+      "hint": "gorgias.com",
+      "links": [
+        "http://gorgias.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 19,
+        "category_id": 2,
+        "name": "Gorgias",
+        "hint": "gorgias.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 20,
+      "category_heading": "2. Support and Helpdesk",
+      "name": "Gladly",
+      "hint": "gladly.com",
+      "links": [
+        "http://gladly.com/"
+      ],
+      "source_category": "Support and Helpdesk",
+      "previous_local": {
+        "id": 20,
+        "category_id": 2,
+        "name": "Gladly",
+        "hint": "gladly.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 21,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Slack",
+      "hint": "slack.com",
+      "links": [
+        "http://slack.com/"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 21,
+        "category_id": 3,
+        "name": "Slack",
+        "hint": "slack.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 22,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Twilio",
+      "hint": "twilio.com",
+      "links": [
+        "http://twilio.com/"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 22,
+        "category_id": 3,
+        "name": "Twilio",
+        "hint": "twilio.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 23,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Zoho Cliq",
+      "hint": "zoho.com/cliq",
+      "links": [
+        "http://zoho.com/cliq"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 23,
+        "category_id": 3,
+        "name": "Zoho Cliq",
+        "hint": "zoho.com/cliq",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 24,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Lark (Larksuite)",
+      "hint": "open.larksuite.com",
+      "links": [
+        "http://open.larksuite.com/"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 24,
+        "category_id": 3,
+        "name": "Lark (Larksuite)",
+        "hint": "open.larksuite.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 25,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Pumble",
+      "hint": "pumble.com",
+      "links": [
+        "http://pumble.com/"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 25,
+        "category_id": 3,
+        "name": "Pumble",
+        "hint": "pumble.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 26,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Discord",
+      "hint": "discord.com",
+      "links": [
+        "http://discord.com/"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 26,
+        "category_id": 3,
+        "name": "Discord",
+        "hint": "discord.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 27,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Telegram",
+      "hint": "core.telegram.org",
+      "links": [
+        "http://core.telegram.org/"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 27,
+        "category_id": 3,
+        "name": "Telegram",
+        "hint": "core.telegram.org",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 28,
+      "category_heading": "3. Communications and Messaging",
+      "name": "WhatsApp Business",
+      "hint": "developers.facebook.com/docs/whatsapp",
+      "links": [
+        "http://developers.facebook.com/docs/whatsapp"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 28,
+        "category_id": 3,
+        "name": "WhatsApp Business",
+        "hint": "developers.facebook.com/docs/whatsapp",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 29,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Aircall",
+      "hint": "aircall.io",
+      "links": [
+        "http://aircall.io/"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 29,
+        "category_id": 3,
+        "name": "Aircall",
+        "hint": "aircall.io",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 30,
+      "category_heading": "3. Communications and Messaging",
+      "name": "Vonage",
+      "hint": "developer.vonage.com",
+      "links": [
+        "http://developer.vonage.com/"
+      ],
+      "source_category": "Communications and Messaging",
+      "previous_local": {
+        "id": 30,
+        "category_id": 3,
+        "name": "Vonage",
+        "hint": "developer.vonage.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 31,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "Google Ads",
+      "hint": "developers.google.com/google-ads",
+      "links": [
+        "http://developers.google.com/google-ads"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 31,
+        "category_id": 4,
+        "name": "Google Ads",
+        "hint": "developers.google.com/google-ads",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 32,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "Meta Ads",
+      "hint": "developers.facebook.com/docs/marketing-apis",
+      "links": [
+        "http://developers.facebook.com/docs/marketing-apis"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 32,
+        "category_id": 4,
+        "name": "Meta Ads",
+        "hint": "developers.facebook.com/docs/marketing-apis",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 33,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "LinkedIn Ads",
+      "hint": "learn.microsoft.com/linkedin/marketing",
+      "links": [
+        "http://learn.microsoft.com/linkedin/marketing"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 33,
+        "category_id": 4,
+        "name": "LinkedIn Ads",
+        "hint": "learn.microsoft.com/linkedin/marketing",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 34,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "GoHighLevel",
+      "hint": "highlevel.stoplight.io",
+      "links": [
+        "http://highlevel.stoplight.io/"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 34,
+        "category_id": 4,
+        "name": "GoHighLevel",
+        "hint": "highlevel.stoplight.io",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 35,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "Mailchimp",
+      "hint": "mailchimp.com/developer",
+      "links": [
+        "http://mailchimp.com/developer"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 35,
+        "category_id": 4,
+        "name": "Mailchimp",
+        "hint": "mailchimp.com/developer",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 36,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "Klaviyo",
+      "hint": "developers.klaviyo.com",
+      "links": [
+        "http://developers.klaviyo.com/"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 36,
+        "category_id": 4,
+        "name": "Klaviyo",
+        "hint": "developers.klaviyo.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 37,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "systeme.io",
+      "hint": "systeme.io (funnel builder)",
+      "links": [
+        "http://systeme.io/"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 37,
+        "category_id": 4,
+        "name": "systeme.io",
+        "hint": "systeme.io (funnel builder)",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 38,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "Pinterest",
+      "hint": "developers.pinterest.com",
+      "links": [
+        "http://developers.pinterest.com/"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 38,
+        "category_id": 4,
+        "name": "Pinterest",
+        "hint": "developers.pinterest.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 39,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "Threads (Meta)",
+      "hint": "developers.facebook.com/docs/threads",
+      "links": [
+        "http://developers.facebook.com/docs/threads"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 39,
+        "category_id": 4,
+        "name": "Threads (Meta)",
+        "hint": "developers.facebook.com/docs/threads",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 40,
+      "category_heading": "4. Marketing, Ads, Email and Social",
+      "name": "SendGrid",
+      "hint": "sendgrid.com",
+      "links": [
+        "http://sendgrid.com/"
+      ],
+      "source_category": "Marketing, Ads, Email and Social",
+      "previous_local": {
+        "id": 40,
+        "category_id": 4,
+        "name": "SendGrid",
+        "hint": "sendgrid.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 41,
+      "category_heading": "5. Ecommerce",
+      "name": "Shopify",
+      "hint": "shopify.dev",
+      "links": [],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 41,
+        "category_id": 5,
+        "name": "Shopify",
+        "hint": "shopify.dev",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 42,
+      "category_heading": "5. Ecommerce",
+      "name": "WooCommerce",
+      "hint": "woocommerce.com/document/woocommerce-rest-api",
+      "links": [
+        "http://woocommerce.com/document/woocommerce-rest-api"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 42,
+        "category_id": 5,
+        "name": "WooCommerce",
+        "hint": "woocommerce.com/document/woocommerce-rest-api",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 43,
+      "category_heading": "5. Ecommerce",
+      "name": "BigCommerce",
+      "hint": "developer.bigcommerce.com",
+      "links": [
+        "http://developer.bigcommerce.com/"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 43,
+        "category_id": 5,
+        "name": "BigCommerce",
+        "hint": "developer.bigcommerce.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 44,
+      "category_heading": "5. Ecommerce",
+      "name": "Salesforce Commerce Cloud",
+      "hint": "developer.salesforce.com/docs/commerce",
+      "links": [
+        "http://developer.salesforce.com/docs/commerce"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 44,
+        "category_id": 5,
+        "name": "Salesforce Commerce Cloud",
+        "hint": "developer.salesforce.com/docs/commerce",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 45,
+      "category_heading": "5. Ecommerce",
+      "name": "Magento (Adobe Commerce)",
+      "hint": "developer.adobe.com/commerce",
+      "links": [
+        "http://developer.adobe.com/commerce"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 45,
+        "category_id": 5,
+        "name": "Magento (Adobe Commerce)",
+        "hint": "developer.adobe.com/commerce",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 46,
+      "category_heading": "5. Ecommerce",
+      "name": "Squarespace",
+      "hint": "developers.squarespace.com",
+      "links": [
+        "http://developers.squarespace.com/"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 46,
+        "category_id": 5,
+        "name": "Squarespace",
+        "hint": "developers.squarespace.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 47,
+      "category_heading": "5. Ecommerce",
+      "name": "Ecwid",
+      "hint": "api-docs.ecwid.com",
+      "links": [
+        "http://api-docs.ecwid.com/"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 47,
+        "category_id": 5,
+        "name": "Ecwid",
+        "hint": "api-docs.ecwid.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 48,
+      "category_heading": "5. Ecommerce",
+      "name": "Gumroad",
+      "hint": "gumroad.com/api",
+      "links": [
+        "http://gumroad.com/api"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 48,
+        "category_id": 5,
+        "name": "Gumroad",
+        "hint": "gumroad.com/api",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 49,
+      "category_heading": "5. Ecommerce",
+      "name": "Amazon Selling Partner",
+      "hint": "developer-docs.amazon.com/sp-api",
+      "links": [
+        "http://developer-docs.amazon.com/sp-api"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 49,
+        "category_id": 5,
+        "name": "Amazon Selling Partner",
+        "hint": "developer-docs.amazon.com/sp-api",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 50,
+      "category_heading": "5. Ecommerce",
+      "name": "fanbasis",
+      "hint": "fanbasis.com",
+      "links": [
+        "http://fanbasis.com/"
+      ],
+      "source_category": "Ecommerce",
+      "previous_local": {
+        "id": 50,
+        "category_id": 5,
+        "name": "fanbasis",
+        "hint": "fanbasis.com",
+        "source_label": "notion"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": true
+      },
+      "hint_restored": false
+    },
+    {
+      "id": 51,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "DataForSEO",
+      "hint": "docs.dataforseo.com",
+      "links": [
+        "http://docs.dataforseo.com/"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 51,
+        "category_id": 6,
+        "name": "DataForSEO",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 52,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "SE Ranking",
+      "hint": "seranking.com/api",
+      "links": [
+        "http://seranking.com/api"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 52,
+        "category_id": 6,
+        "name": "SE Ranking",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 53,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "Ahrefs",
+      "hint": "ahrefs.com/api",
+      "links": [
+        "http://ahrefs.com/api"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 53,
+        "category_id": 6,
+        "name": "Ahrefs",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 54,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "MrScraper",
+      "hint": "docs.mrscraper.com",
+      "links": [
+        "http://docs.mrscraper.com/"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 54,
+        "category_id": 6,
+        "name": "MrScraper",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 55,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "Apify",
+      "hint": "docs.apify.com",
+      "links": [
+        "http://docs.apify.com/"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 55,
+        "category_id": 6,
+        "name": "Apify",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 56,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "Firecrawl",
+      "hint": "firecrawl.dev",
+      "links": [],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 56,
+        "category_id": 6,
+        "name": "Firecrawl",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 57,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "Bright Data",
+      "hint": "brightdata.com",
+      "links": [
+        "http://brightdata.com/"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 57,
+        "category_id": 6,
+        "name": "Bright Data",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 58,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "Sherlock",
+      "hint": "github.com/sherlock-project/sherlock",
+      "links": [
+        "http://github.com/sherlock-project/sherlock"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 58,
+        "category_id": 6,
+        "name": "Sherlock",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 59,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "Waterfall.io",
+      "hint": "waterfall.io (contact/company intel)",
+      "links": [
+        "http://waterfall.io/"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 59,
+        "category_id": 6,
+        "name": "Waterfall.io",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 60,
+      "category_heading": "6. Data, SEO and Scraping",
+      "name": "Clay",
+      "hint": "clay.com",
+      "links": [
+        "http://clay.com/"
+      ],
+      "source_category": "Data, SEO and Scraping",
+      "previous_local": {
+        "id": 60,
+        "category_id": 6,
+        "name": "Clay",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 61,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "GitHub",
+      "hint": "docs.github.com/rest",
+      "links": [
+        "http://docs.github.com/rest"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 61,
+        "category_id": 7,
+        "name": "GitHub",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 62,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "Vercel",
+      "hint": "vercel.com/docs/rest-api",
+      "links": [
+        "http://vercel.com/docs/rest-api"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 62,
+        "category_id": 7,
+        "name": "Vercel",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 63,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "Netlify",
+      "hint": "docs.netlify.com/api",
+      "links": [
+        "http://docs.netlify.com/api"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 63,
+        "category_id": 7,
+        "name": "Netlify",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 64,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "Cloudflare",
+      "hint": "developers.cloudflare.com/api",
+      "links": [
+        "http://developers.cloudflare.com/api"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 64,
+        "category_id": 7,
+        "name": "Cloudflare",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 65,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "Supabase",
+      "hint": "supabase.com/docs",
+      "links": [
+        "http://supabase.com/docs"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 65,
+        "category_id": 7,
+        "name": "Supabase",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 66,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "Neo4j",
+      "hint": "neo4j.com/docs/api",
+      "links": [
+        "http://neo4j.com/docs/api"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 66,
+        "category_id": 7,
+        "name": "Neo4j",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 67,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "Snowflake",
+      "hint": "docs.snowflake.com",
+      "links": [
+        "http://docs.snowflake.com/"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 67,
+        "category_id": 7,
+        "name": "Snowflake",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 68,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "MongoDB Atlas",
+      "hint": "mongodb.com/docs/atlas/api",
+      "links": [
+        "http://mongodb.com/docs/atlas/api"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 68,
+        "category_id": 7,
+        "name": "MongoDB Atlas",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 69,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "Datadog",
+      "hint": "docs.datadoghq.com/api",
+      "links": [
+        "http://docs.datadoghq.com/api"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 69,
+        "category_id": 7,
+        "name": "Datadog",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 70,
+      "category_heading": "7. Developer, Infra and Data platforms",
+      "name": "Sentry",
+      "hint": "docs.sentry.io/api",
+      "links": [
+        "http://docs.sentry.io/api"
+      ],
+      "source_category": "Developer, Infra and Data platforms",
+      "previous_local": {
+        "id": 70,
+        "category_id": 7,
+        "name": "Sentry",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 71,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Notion",
+      "hint": "developers.notion.com",
+      "links": [
+        "http://developers.notion.com/"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 71,
+        "category_id": 8,
+        "name": "Notion",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 72,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Airtable",
+      "hint": "airtable.com/developers",
+      "links": [
+        "http://airtable.com/developers"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 72,
+        "category_id": 8,
+        "name": "Airtable",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 73,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Linear",
+      "hint": "developers.linear.app",
+      "links": [],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 73,
+        "category_id": 8,
+        "name": "Linear",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 74,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Jira",
+      "hint": "developer.atlassian.com",
+      "links": [
+        "http://developer.atlassian.com/"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 74,
+        "category_id": 8,
+        "name": "Jira",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 75,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Asana",
+      "hint": "developers.asana.com",
+      "links": [
+        "http://developers.asana.com/"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 75,
+        "category_id": 8,
+        "name": "Asana",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 76,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Monday.com",
+      "hint": "developer.monday.com",
+      "links": [
+        "http://developer.monday.com/"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 76,
+        "category_id": 8,
+        "name": "Monday.com",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 77,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "ClickUp",
+      "hint": "clickup.com/api",
+      "links": [
+        "http://clickup.com/api"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 77,
+        "category_id": 8,
+        "name": "ClickUp",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 78,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Coda",
+      "hint": "coda.io/developers",
+      "links": [
+        "http://coda.io/developers"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 78,
+        "category_id": 8,
+        "name": "Coda",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 79,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Smartsheet",
+      "hint": "smartsheet.com/developers",
+      "links": [
+        "http://smartsheet.com/developers"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 79,
+        "category_id": 8,
+        "name": "Smartsheet",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 80,
+      "category_heading": "8. Productivity and Project Management",
+      "name": "Harvest",
+      "hint": "harvestapp.com (help.getharvest.com/api-v2)",
+      "links": [
+        "http://harvestapp.com/",
+        "http://help.getharvest.com/api-v2"
+      ],
+      "source_category": "Productivity and Project Management",
+      "previous_local": {
+        "id": 80,
+        "category_id": 8,
+        "name": "Harvest",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 81,
+      "category_heading": "9. Finance and Fintech",
+      "name": "Stripe",
+      "hint": "stripe.com/docs/api",
+      "links": [
+        "http://stripe.com/docs/api"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 81,
+        "category_id": 9,
+        "name": "Stripe",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 82,
+      "category_heading": "9. Finance and Fintech",
+      "name": "Plaid",
+      "hint": "plaid.com/docs",
+      "links": [
+        "http://plaid.com/docs"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 82,
+        "category_id": 9,
+        "name": "Plaid",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 83,
+      "category_heading": "9. Finance and Fintech",
+      "name": "Binance",
+      "hint": "binance-docs.github.io",
+      "links": [
+        "http://binance-docs.github.io/"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 83,
+        "category_id": 9,
+        "name": "Binance",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 84,
+      "category_heading": "9. Finance and Fintech",
+      "name": "Paygent Connect",
+      "hint": "paygent (NMI-powered)",
+      "links": [],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 84,
+        "category_id": 9,
+        "name": "Paygent Connect",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 85,
+      "category_heading": "9. Finance and Fintech",
+      "name": "iPayX",
+      "hint": "ipayx.ai/docs",
+      "links": [
+        "http://ipayx.ai/docs"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 85,
+        "category_id": 9,
+        "name": "iPayX",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 86,
+      "category_heading": "9. Finance and Fintech",
+      "name": "QuickBooks",
+      "hint": "developer.intuit.com",
+      "links": [
+        "http://developer.intuit.com/"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 86,
+        "category_id": 9,
+        "name": "QuickBooks",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 87,
+      "category_heading": "9. Finance and Fintech",
+      "name": "Xero",
+      "hint": "developer.xero.com",
+      "links": [
+        "http://developer.xero.com/"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 87,
+        "category_id": 9,
+        "name": "Xero",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 88,
+      "category_heading": "9. Finance and Fintech",
+      "name": "Brex",
+      "hint": "developer.brex.com",
+      "links": [
+        "http://developer.brex.com/"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 88,
+        "category_id": 9,
+        "name": "Brex",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 89,
+      "category_heading": "9. Finance and Fintech",
+      "name": "Ramp",
+      "hint": "docs.ramp.com",
+      "links": [
+        "http://docs.ramp.com/"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 89,
+        "category_id": 9,
+        "name": "Ramp",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 90,
+      "category_heading": "9. Finance and Fintech",
+      "name": "PitchBook",
+      "hint": "pitchbook.com (research API)",
+      "links": [
+        "http://pitchbook.com/"
+      ],
+      "source_category": "Finance and Fintech",
+      "previous_local": {
+        "id": 90,
+        "category_id": 9,
+        "name": "PitchBook",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 91,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "NotebookLM",
+      "hint": "cloud.google.com/gemini (Enterprise API)",
+      "links": [
+        "http://cloud.google.com/gemini"
+      ],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 91,
+        "category_id": 10,
+        "name": "NotebookLM",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 92,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "Otter AI",
+      "hint": "help.otter.ai (MCP server)",
+      "links": [
+        "http://help.otter.ai/"
+      ],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 92,
+        "category_id": 10,
+        "name": "Otter AI",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 93,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "Fathom",
+      "hint": "fathom.video",
+      "links": [],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 93,
+        "category_id": 10,
+        "name": "Fathom",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 94,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "Consensus",
+      "hint": "consensus.app (OAuth requested)",
+      "links": [],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 94,
+        "category_id": 10,
+        "name": "Consensus",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 95,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "Reducto",
+      "hint": "reducto.ai (document parsing)",
+      "links": [
+        "http://reducto.ai/"
+      ],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 95,
+        "category_id": 10,
+        "name": "Reducto",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 96,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "Devin",
+      "hint": "docs.devin.ai (MCP)",
+      "links": [
+        "http://docs.devin.ai/"
+      ],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 96,
+        "category_id": 10,
+        "name": "Devin",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 97,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "higgsfield",
+      "hint": "higgsfield.ai/cli (content suite)",
+      "links": [
+        "http://higgsfield.ai/cli"
+      ],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 97,
+        "category_id": 10,
+        "name": "higgsfield",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 98,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "Mermaid CLI",
+      "hint": "github.com/mermaid-js/mermaid-cli",
+      "links": [
+        "http://github.com/mermaid-js/mermaid-cli"
+      ],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 98,
+        "category_id": 10,
+        "name": "Mermaid CLI",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 99,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "YouTube Transcript",
+      "hint": "transcriptapi.com",
+      "links": [
+        "http://transcriptapi.com/"
+      ],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 99,
+        "category_id": 10,
+        "name": "YouTube Transcript",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    },
+    {
+      "id": 100,
+      "category_heading": "10. AI, Research and Media-native",
+      "name": "Grain",
+      "hint": "grain.com (meeting notes)",
+      "links": [
+        "http://grain.com/"
+      ],
+      "source_category": "AI, Research and Media-native",
+      "previous_local": {
+        "id": 100,
+        "category_id": 10,
+        "name": "Grain",
+        "hint": "",
+        "source_label": "recovered"
+      },
+      "checks": {
+        "id_match": true,
+        "category_match": true,
+        "name_match": true,
+        "hint_match": false
+      },
+      "hint_restored": true
+    }
+  ]
+}

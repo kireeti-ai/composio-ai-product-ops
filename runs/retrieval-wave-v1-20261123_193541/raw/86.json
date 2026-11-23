@@ -1,0 +1,281 @@
+{
+ "id": 86,
+ "name": "QuickBooks",
+ "started": "2026-11-23T19:39:25+05:30",
+ "searches": [
+  {
+   "q": "QuickBooks API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:27+05:30"
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:28+05:30"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:31+05:30"
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:32+05:30"
+  }
+ ],
+ "fetched": [],
+ "candidate_hits": [
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://apitracker.io/a/quickbooks",
+   "title": "QuickBooks API - Documentation & Integration",
+   "snippet": "QuickBooks Online provides an Accounting API for applications integrating accounting data. Start with Intuit's developer documentation."
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://www.apideck.com/integrations/quickbooks",
+   "title": "QuickBooks API Integration",
+   "snippet": "Access 30+ data models for QuickBooks including customers, invoices and payments. Read and write data through a single standardized API."
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://developers.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api/data-queries",
+   "title": "Query operations and syntax",
+   "snippet": "| `Entity` | Customer, Vendor, Invoice, etc | The name of the queried entity. For example: Customer, Vendor, Invoice, etc. Case sensitive. **Tip**: You can only query one entity at a time (You can\u2019t"
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://coefficient.io/quickbooks-api/setup-quickbooks-api-integration",
+   "title": "How to Set Up QuickBooks API Integration: A Quick Starter Guide",
+   "snippet": "Get started with QuickBooks API integration. Learn auth setup, REST API calls, pitfalls to avoid & quick alternatives. Quick starter guide."
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://help.developer.intuit.com/s/topic/0TOG00000004r2AOAQ/quickbooks-online-api",
+   "title": "QuickBooks Online API - Help - Intuit",
+   "snippet": "We would appreciate clarification from the QuickBooks API engineering team, including any relevant documentation or recommended configuration steps. Thank ..."
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://developer.intuit.com/docs/0100_quickbooks_online/0300_references/0000_programming_guide/0000_rest_api_quick_reference",
+   "title": "Docs | REST API quick reference",
+   "snippet": "| POST *baseURL*/quickbooks/v4/*resourceName* |\n| **Single-object read** | |\n| GET *baseURL/v3*/company/*realmID*/*resourceName*/*entityID* | GET *baseURL*/quickbooks/v4/resourceName |\n|"
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://developer.intuit.com/docs/00_quickbooks_online/2_build/20_explore_the_quickbooks_online_api/30_rest_api_features",
+   "title": "Docs | Making calls with the REST API",
+   "snippet": "Here is a quick reference of REST API essentials that will help you get going with the QuickBooks Online API."
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://www.youtube.com/watch?v=330s8FDfxd0",
+   "title": "Quickbooks API Integration: Proven Strategies to Avoid Common Traps",
+   "snippet": "In this video, we delve into the world of Quickbooks API integration, guiding you through the process and highlighting potential pitfalls to\u00a0..."
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://developer.intuit.com/app/developer/qbdesktop/docs/api-reference",
+   "title": "API Reference \u00b7 QuickBooks Desktop",
+   "snippet": "This set of pages provides detailed information on the api-reference for QuickBooks Desktop and QuickBooks Point of Sale."
+  },
+  {
+   "q": "QuickBooks API documentation",
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+   "title": "Develop \u00b7 QuickBooks Online",
+   "snippet": "Learn about Develop on the Intuit Developer platform."
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://developer.intuit.com/docs/00_quickbooks_online/2_build/20_explore_the_quickbooks_online_api/20_postman",
+   "title": "Docs | Postman | Intuit Developer",
+   "snippet": "the collection, Postman must generate an OAuth 2.0 access token based on OAuth 2.0 keys from your app's dashboard on developer.intuit.com.\n1. Sign-on to your developer account on"
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://www.reddit.com/r/QuickBooks/comments/1sdqixx/api_key_and_connections/",
+   "title": "API Key and Connections",
+   "snippet": ""
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://apideck.com/blog/how-to-get-your-quickbooks-api-key",
+   "title": "apideck.com/blog/how-to-get-your-quickbooks-api-key",
+   "snippet": "> Note: QuickBooks doesn't use traditional API keys. Instead, it uses OAuth 2.0 authentication with Client ID and Client Secret credentials. This guide walks you through obtaining those credentials"
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/faq",
+   "title": "QuickBooks Online",
+   "snippet": "Here's a deeper dive into the OAuth 2.0 and authorization process to connect apps with the Intuit Financial Ecosystem."
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://intuit-developer-faq.readthedocs.io/en/latest/getting_started",
+   "title": "Getting Started",
+   "snippet": "to generate an OAuth 2.0 access token.\n### Get an OAuth 2.0 access token\nYour app needs an OAuth 2.0 Access Token to access QuickBooks Online data. The [OAuth 2.0"
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://developer.intuit.com/docs/0100_quickbooks_online/0300_references/0000_programming_guide/0000_rest_api_quick_reference",
+   "title": "Docs | REST API quick reference",
+   "snippet": "via **My Apps** on the developer site. There are two versions of this key: - Development key\u2014use only in the sandbox environment. - Production key\u2014use only in the production environment. |"
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/postman",
+   "title": "Set up and test queries in Postman",
+   "snippet": "the redirect URI in the Developer Portal\nPostman needs your app\u2019s authorization keys to generate access tokens and connect to the QuickBooks Online API:\n1. [Sign"
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://blogs.a.intuit.com/2016/04/25/quick-start-to-quickbooks-online-rest-api-with-oauth1-0",
+   "title": "Quick start to QuickBooks Online REST API with OAuth1.0",
+   "snippet": "two sets:\n- Development keys for connecting to your QuickBooks Online sandbox company.\n- Production keys for connecting to a QuickBooks Online production company.\nBelow, we use development keys to"
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://erpag.com/news/erpag-api-intuit-quickbooks-online-oauth-2-0-authorization",
+   "title": "ERPAG API \u2013 \u200bIntuit QuickBooks online OAuth 2.0 authorization",
+   "snippet": "For API calls to QuickBooks, it is necessary to first authorize the application. This means that you have to enter a large number of parameters that you can find on the following website:"
+  },
+  {
+   "q": "QuickBooks API authentication OAuth API key developer",
+   "url": "https://stackoverflow.com/questions/54381095/is-there-a-simple-way-to-access-the-quickbooks-api-using-oauth2",
+   "title": "Is there a simple way to access the Quickbooks API using OAuth2?",
+   "snippet": "All API access in QBO starts with a Service Context. You can create one with code like this:"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+   "title": "apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+   "snippet": "The new program includes four partner tiers with different pricing models:"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://developers.apideck.com/connectors/quickbooks/docs/application_owner+api_changes",
+   "title": "developers.apideck.com/connectors/quickbooks/docs/application_owner+api_changes",
+   "snippet": "| --- | --- |\n| Builder | None | 500,000 | Not billed: calls above the cap are blocked |\n| Silver | $300 | 1,000,000 | $3.50 (1M to 10M), $1.75 (10M to 75M), $0.35 (above 75M) |\n| Gold | $1,700 |"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://coefficient.io/quickbooks-api/setup-quickbooks-api-integration",
+   "title": "How to Set Up QuickBooks API Integration: A Quick Starter Guide - Coefficient",
+   "snippet": "- **QuickBooks Developer Account:** Sign up at the Intuit Developer Portal for API credentials and sandbox access"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://quickbooks.intuit.com/community/reports-87/can-you-provide-quickbooks-api-access-for-historical-client-data-to-build-our-internal-dashboard-including-any-api-limits-restrictions-and-charges-376139",
+   "title": "Can you provide QuickBooks API access for historical client data to build our internal dashboard, including any API limits, restrictions, and charges? | QuickBooks Community",
+   "snippet": "Full tier and pricing details can be found here: [Intuit App Partner Program Guide](https://static.developer.intuit.com/resources/Intuit_App_Partner_Program_Guide.pdf)"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://apideck.com/blog/exploring-the-quickbooks-online-accounting-api.md",
+   "title": "apideck.com/blog/exploring-the-quickbooks-online-accounting-api.md",
+   "snippet": "below). Requests are throttled at 500 per minute and 10 per second per company. Intuit also provides free sandbox companies, up to 10 per developer account. If you want to use it with your own real"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits",
+   "title": "truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits",
+   "snippet": "500,000 read operations per month before blocking further requests. Paid tiers range from **$300/month to $4,500/month**, with overage fees on top. Combined with strict rate limits (500"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://quickbooks.intuit.com/global/pricing/",
+   "title": "QuickBooks Online Pricing - Intuit",
+   "snippet": "Decide which plan is right for you. Compare QuickBooks online pricing plans for starting and growing your business."
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://bindbee.dev/feeds/blog/quickbooks-integration-api",
+   "title": "QuickBooks API Integration Guide",
+   "snippet": "- QuickBooks uses OAuth 2.0 authentication: create an Intuit Developer account, configure an OAuth app with the correct scopes, and test in sandbox before production"
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://merge.dev/blog/quickbooks-online-api-key",
+   "title": "How to access your API key in QuickBooks Online",
+   "snippet": "If you don\u2019t have an account, you can sign up with your business email address. Just fill out the details below to get started."
+  },
+  {
+   "q": "QuickBooks API access pricing plans developer account",
+   "url": "https://activepieces.com/blog/quickbooks-api-setup-pricing-and-errors-2026-guide",
+   "title": "QuickBooks API: Setup, Pricing and Errors (2026 Guide)",
+   "snippet": "The free plan includes unlimited flows and 1,000 credits a month, so you can set the connection up and try it without paying anything."
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://raw.githubusercontent.com/intuit/intuit-plugins-official/main/plugins/quickbooks-labs/.mcp.json",
+   "title": "raw.githubusercontent.com/intuit/intuit-plugins-official/main/plugins/quickbooks-labs/.mcp.json",
+   "snippet": "\"mcpServers\": {\n\"quickbooks-labs\": {\n\"type\": \"http\",\n\"url\": \"https://mcp-nttf.quickbooks.intuit.com/mcp\",\n\"oauth\": {\n\"clientId\":"
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://kipper.com/blog/setup-quickbooks-mcp",
+   "title": "How to Install Intuit's Official QuickBooks MCP Server",
+   "snippet": "Intuit ships an official [QuickBooks Online MCP server](https://github.com/intuit/quickbooks-online-mcp-server): 140+ tools across 29 entity types and 11 financial reports, callable by any"
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+   "title": "intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. \u00b7 GitHub",
+   "snippet": "# QuickBooks Online MCP Server\n**A comprehensive Model Context Protocol (MCP) server for QuickBooks Online**"
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://reflektlab.ai/blog/quickbooks-mcp",
+   "title": "QuickBooks MCP Server: Intuit's Claude Connector vs Your Own",
+   "snippet": "GitHub. It has 145 tools across 29 entity types (customers, invoices, bills, payments and the rest) and 11 reports such as the balance sheet and profit and loss. It runs locally, as a subprocess of"
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://truefoundry.com/docs/ai-gateway/mcp/quickbooks-mcp-server",
+   "title": "Set up QuickBooks MCP Server",
+   "snippet": "A QuickBooks MCP server can expose QuickBooks Online entities such as customers, vendors, accounts, invoices, and transactions. Use an Intuit OAuth app and the company Realm ID when registering the"
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://codewords.ai/blog/quickbooks-mcp",
+   "title": "QuickBooks MCP: Official Server, Setup and Desktop Options",
+   "snippet": "Intuit's official QuickBooks MCP server gives AI agents 145 tools for QuickBooks Online. Setup steps, plus the options for QuickBooks Desktop."
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://www.reddit.com/r/quickbooksonline/comments/1s45cad/official_quickbooks_online_mcp_server/",
+   "title": "Official QuickBooks Online MCP server? : r/quickbooksonline",
+   "snippet": "Is there, or are there any hints, that an official MCP server will be released for QuickBooks Online? Thanks!"
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://www.scalekit.com/blog/quickbooks-mcp-vs-api",
+   "title": "QuickBooks MCP vs API for AI Agents: Capability & Auth Guide",
+   "snippet": "Intuit's official QuickBooks MCP server is a local stdio server, released as an early preview in October 2025. The repository exposes 144 tools ..."
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://github.com/laf-rge/quickbooks-mcp",
+   "title": "GitHub - laf-rge/quickbooks-mcp: MCP server for QuickBooks Online - query, create, and edit accounting data with Claude",
+   "snippet": "# QuickBooks MCP Server\nAn MCP server for QuickBooks Online \u2014 built for bookkeepers, CFOs, and accountants who use AI assistants in their daily workflow."
+  },
+  {
+   "q": "QuickBooks MCP server official",
+   "url": "https://github.com/intuit/quickbooks-online-mcp-server/releases",
+   "title": "Releases \u00b7 intuit/quickbooks-online-mcp-server",
+   "snippet": "\nYou can create a release to package software, along with release notes and links to binary files, for other people to use. Learn more about releases in [our"
+  }
+ ],
+ "official_domain_candidates": {},
+ "identity_flag": "no_domain_matched_name",
+ "completed": "2026-11-23T19:39:32+05:30"
+}

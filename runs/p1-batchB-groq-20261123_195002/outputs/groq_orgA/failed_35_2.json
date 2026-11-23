@@ -1,0 +1,13 @@
+{
+ "tag": "groq_orgA",
+ "app": 35,
+ "name": "Mailchimp",
+ "status": "failed",
+ "category": "daily_quota",
+ "http": 429,
+ "error": "{\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kesrd2tpffwb6vqer2dn5nwd` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 195940, Requested 5210. Please try again in 8m16.8s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n",
+ "model": "openai/gpt-oss-120b",
+ "attempt": 2,
+ "retry_after": 497.0,
+ "at": "2026-11-23T19:55:35+05:30"
+}

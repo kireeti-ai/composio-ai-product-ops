@@ -1,0 +1,184 @@
+{
+ "tag": "groq_orgA",
+ "app": 41,
+ "name": "Shopify",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 3,
+ "latency_s": 2.9,
+ "tokens_in": 2124,
+ "tokens_out": 1025,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "OAuth, usually token exchange",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "Create public or private tokens",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "Buyer signs in with OAuth 2.0 and PKCE",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "The Dev Dashboard is where you create and manage apps, set up dev stores",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "Storefront API ... Create public or private tokens",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "Shopify MCP lets merchants and partners set up and manage a store through the AI agent of their choice.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "graphql",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "supported_lexical"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 3,
+   "unsupported": 4
+  },
+  "evidence_total": 7,
+  "evidence_valid": 6,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 1,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Shopify provides a comprehensive suite of REST and GraphQL APIs for e\u2011commerce, enabling apps to manage storefronts, orders, customers, and partner data.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can create apps and obtain API credentials via the Dev Dashboard without a paid plan.",
+  "api_breadth": "broad",
+  "api_types": [
+   "rest",
+   "graphql"
+  ],
+  "existing_mcp": "official",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "OAuth, usually token exchange"
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "Create public or private tokens"
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "Buyer signs in with OAuth 2.0 and PKCE"
+   },
+   {
+    "field": "access",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "The Dev Dashboard is where you create and manage apps, set up dev stores"
+   },
+   {
+    "field": "api_types",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory"
+   },
+   {
+    "field": "api_types",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "Storefront API ... Create public or private tokens"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "Shopify MCP lets merchants and partners set up and manage a store through the AI agent of their choice."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "15214844ac637a4f1ae067d12e144b43dab0b2683f9cff461f9096bfa7f305d3",
+ "at": "2026-11-23T19:31:21+05:30"
+}

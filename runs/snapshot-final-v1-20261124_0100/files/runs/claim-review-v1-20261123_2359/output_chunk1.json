@@ -1,0 +1,802 @@
+[
+ {
+  "row_id": 0,
+  "app_id": 1,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states Bulk API 2.0 supports all OAuth 2.0 flows (scope: Bulk API 2.0/REST APIs).",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs."
+ },
+ {
+  "row_id": 1,
+  "app_id": 1,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page states Bulk API 2.0 requires an access token also called a bearer token (scope: Bulk API 2.0).",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "Bulk API 2.0 requires an access token (also known as a “bearer token”) for authentication."
+ },
+ {
+  "row_id": 2,
+  "app_id": 1,
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "verdict": "unsupported",
+  "reason": "Page only says steps are done in a Developer Edition org or sandbox; it does not say that access is free or self-serve.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "evidence_snippet": "Complete these steps in your Developer Edition org or development sandbox."
+ },
+ {
+  "row_id": 3,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page establishes Salesforce REST API requires an access token, i.e. a REST API exists.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "evidence_snippet": "To successfully send requests, REST API requires an access token obtained by authentication."
+ },
+ {
+  "row_id": 4,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Cited Bulk/session quote is not about REST, but the same page says Bulk API 2.0 is REST-based, establishing REST.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "Bulk API 2.0 is a REST-based API"
+ },
+ {
+  "row_id": 5,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Cited CLI quote is not about REST, but the bundle's REST API pages establish a Salesforce REST API.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "evidence_snippet": "To successfully send requests, REST API requires an access token obtained by authentication."
+ },
+ {
+  "row_id": 6,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "soap",
+  "verdict": "supported",
+  "reason": "Page refers to SOAP API's login() call, establishing a SOAP API exists; cited quote itself is about REST auth.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "fetched with SOAP API’s `login()` call."
+ },
+ {
+  "row_id": 7,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "soap",
+  "verdict": "supported",
+  "reason": "Page refers to SOAP API's login() call, establishing a SOAP API exists.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "fetched with SOAP API’s `login()` call."
+ },
+ {
+  "row_id": 8,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "soap",
+  "verdict": "supported",
+  "reason": "Cited CLI quote does not mention SOAP, but another stored page (Bulk auth) refers to SOAP API's login() call.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "fetched with SOAP API’s `login()` call."
+ },
+ {
+  "row_id": 9,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Stored pages show REST/Bulk APIs used directly via cURL with access tokens; 'sdk_or_cli_only' is contradicted (CLI only a convenience).",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs."
+ },
+ {
+  "row_id": 10,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Stored pages show REST/Bulk APIs used directly via cURL; 'sdk_or_cli_only' is contradicted.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs."
+ },
+ {
+  "row_id": 11,
+  "app_id": 1,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Stored pages show REST/Bulk APIs used directly via cURL; the CLI is only a convenience, so 'sdk_or_cli_only' is contradicted.",
+  "evidence_url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "evidence_snippet": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs."
+ },
+ {
+  "row_id": 12,
+  "app_id": 2,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Cited service-key quote is about bearer keys, but the overview page in the bundle establishes OAuth for HubSpot apps.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "evidence_snippet": "your app must be built using OAuth authentication."
+ },
+ {
+  "row_id": 13,
+  "app_id": 2,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states OAuth is an app authentication type (required for multi-account distribution).",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "evidence_snippet": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time."
+ },
+ {
+  "row_id": 14,
+  "app_id": 2,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "partially_supported",
+  "reason": "Service keys are key-style credentials (public beta) and a developer API key exists only for some app features; no general API-key auth is stated.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "evidence_snippet": "You can then include your service key as a *Bearer* token in your preferred API client or programming language."
+ },
+ {
+  "row_id": 15,
+  "app_id": 2,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "partially_supported",
+  "reason": "Page documents a developer API key (hapikey) only for some app features/settings, not general API auth.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "evidence_snippet": "Some app features and settings require a developer API key"
+ },
+ {
+  "row_id": 16,
+  "app_id": 2,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page states the service key is sent as a Bearer token.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "evidence_snippet": "You can then include your service key as a *Bearer* token in your preferred API client or programming language."
+ },
+ {
+  "row_id": 17,
+  "app_id": 2,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page states OAuth access tokens are provided via the Bearer Authorization header; cited quote itself is about OAuth vs static.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "evidence_snippet": "This access token is provided using the `Bearer` HTTP authorization header."
+ },
+ {
+  "row_id": 18,
+  "app_id": 2,
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "verdict": "unsupported",
+  "reason": "Quote shows CLI install/authorize steps only; nothing states free or self-serve access.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 19,
+  "app_id": 2,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page says service keys query HubSpot's REST APIs directly.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "evidence_snippet": "use service keys to query HubSpot’s REST APIs directly"
+ },
+ {
+  "row_id": 20,
+  "app_id": 2,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Cited CLI-install quote does not show REST, but the service-keys page in the bundle references HubSpot's REST APIs.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "evidence_snippet": "use service keys to query HubSpot’s REST APIs directly"
+ },
+ {
+  "row_id": 21,
+  "app_id": 2,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Page says REST APIs can be queried directly without the CLI, contradicting 'sdk_or_cli_only'.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "evidence_snippet": "use service keys to query HubSpot’s REST APIs directly without having to use the CLI or other platform developer tools first."
+ },
+ {
+  "row_id": 22,
+  "app_id": 2,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Stored page says REST APIs can be used directly without the CLI, contradicting 'sdk_or_cli_only'.",
+  "evidence_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "evidence_snippet": "use service keys to query HubSpot’s REST APIs directly without having to use the CLI or other platform developer tools first."
+ },
+ {
+  "row_id": 23,
+  "app_id": 3,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states calls are validated with an access_token when using OAuth 2.0.",
+  "evidence_url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+  "evidence_snippet": "Calls to our API are validated against an API token or an `access_token` when using OAuth 2.0."
+ },
+ {
+  "row_id": 24,
+  "app_id": 3,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Page states calls are validated against an API token.",
+  "evidence_url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+  "evidence_snippet": "Calls to our API are validated against an API token or an `access_token` when using OAuth 2.0."
+ },
+ {
+  "row_id": 25,
+  "app_id": 3,
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "verdict": "partially_supported",
+  "reason": "Page offers Sandbox Account sign-up (self-serve-like) but does not say it is free.",
+  "evidence_url": "https://developers.pipedrive.com/",
+  "evidence_snippet": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment"
+ },
+ {
+  "row_id": 26,
+  "app_id": 3,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page describes Pipedrive's RESTful API.",
+  "evidence_url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+  "evidence_snippet": "Pipedrive is a sales CRM with an intuitive RESTful API"
+ },
+ {
+  "row_id": 27,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page lists implementing an OAuth 2.0 flow as a way to get an access token.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "1. By implementing an OAuth 2.0 flow"
+ },
+ {
+  "row_id": 28,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Cited Bearer quote is about token use, but the page establishes OAuth 2.0 as a token method.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "1. By implementing an OAuth 2.0 flow"
+ },
+ {
+  "row_id": 29,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Cited Basic quote is not about OAuth, but the page establishes OAuth 2.0 as a token method.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "1. By implementing an OAuth 2.0 flow"
+ },
+ {
+  "row_id": 30,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Page lists generating an API key for the workspace as a token method.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "2. By generating an API key for your workspace"
+ },
+ {
+  "row_id": 31,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Page establishes workspace API keys; the Bearer quote shows how tokens are passed.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "2. By generating an API key for your workspace"
+ },
+ {
+  "row_id": 32,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Page establishes workspace API keys as a token method.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "2. By generating an API key for your workspace"
+ },
+ {
+  "row_id": 33,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page states tokens are passed as Authorization: Bearer.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "Authorization: Bearer <access_token>"
+ },
+ {
+  "row_id": 34,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page states tokens are passed as Authorization: Bearer.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "Authorization: Bearer <access_token>"
+ },
+ {
+  "row_id": 35,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page states tokens are passed as Authorization: Bearer.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "Authorization: Bearer <access_token>"
+ },
+ {
+  "row_id": 36,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "supported",
+  "reason": "Page states HTTP Basic Authentication is supported with the token as username.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "We also support HTTP Basic\nAuthentication,"
+ },
+ {
+  "row_id": 37,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "supported",
+  "reason": "Page states HTTP Basic Authentication is supported (cited Bearer quote alone does not).",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "We also support HTTP Basic\nAuthentication,"
+ },
+ {
+  "row_id": 38,
+  "app_id": 4,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "supported",
+  "reason": "Page states HTTP Basic Authentication is supported.",
+  "evidence_url": "https://attio.com/developers/authentication",
+  "evidence_snippet": "We also support HTTP Basic\nAuthentication,"
+ },
+ {
+  "row_id": 39,
+  "app_id": 4,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page states Attio has a public REST API.",
+  "evidence_url": "https://docs.attio.com/rest-api/overview",
+  "evidence_snippet": "Attio provides a public REST API which exchanges JSON over HTTPS."
+ },
+ {
+  "row_id": 40,
+  "app_id": 4,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page lists a REST API as part of the developer platform.",
+  "evidence_url": "https://docs.attio.com/docs/overview",
+  "evidence_snippet": "This allows developers to build apps that read and write information to and from Attio workspaces."
+ },
+ {
+  "row_id": 41,
+  "app_id": 4,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Page states Attio provides a public REST API usable directly, contradicting 'sdk_or_cli_only'.",
+  "evidence_url": "https://docs.attio.com/rest-api/overview",
+  "evidence_snippet": "Attio provides a public REST API which exchanges JSON over HTTPS."
+ },
+ {
+  "row_id": 42,
+  "app_id": 4,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Page lists a standalone REST API besides the App SDK, contradicting 'sdk_or_cli_only'.",
+  "evidence_url": "https://docs.attio.com/docs/overview",
+  "evidence_snippet": "## REST API\n\nThis allows developers to build apps that read and write information to and from Attio workspaces."
+ },
+ {
+  "row_id": 43,
+  "app_id": 4,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "supported",
+  "reason": "Attio's own docs list an MCP component for connecting AI tools to an Attio workspace.",
+  "evidence_url": "https://docs.attio.com/docs/overview",
+  "evidence_snippet": "Manage Attio via AI. Connect Claude, ChatGPT or your AI tool of choice to search, update and\nmanage your Attio workspace."
+ },
+ {
+  "row_id": 44,
+  "app_id": 5,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page states the APIs are available as REST and GraphQL.",
+  "evidence_url": "https://docs.twenty.com/developers/extend/api",
+  "evidence_snippet": "Both are available as REST and GraphQL."
+ },
+ {
+  "row_id": 45,
+  "app_id": 5,
+  "field": "api_types",
+  "claim_value": "graphql",
+  "verdict": "supported",
+  "reason": "Page states the APIs are available as REST and GraphQL.",
+  "evidence_url": "https://docs.twenty.com/developers/extend/api",
+  "evidence_snippet": "Both are available as REST and GraphQL."
+ },
+ {
+  "row_id": 46,
+  "app_id": 6,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states Podio API uses OAuth2.",
+  "evidence_url": "https://developers.podio.com/authentication",
+  "evidence_snippet": "The Podio API uses the OAuth2 protocol for authentication."
+ },
+ {
+  "row_id": 47,
+  "app_id": 6,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "partially_supported",
+  "reason": "Token response shows token_type bearer, but requests use 'Authorization: OAuth2 ACCESS_TOKEN', not Bearer.",
+  "evidence_url": "https://developers.podio.com/authentication",
+  "evidence_snippet": "\"token_type\": \"bearer\","
+ },
+ {
+  "row_id": 48,
+  "app_id": 6,
+  "field": "auth_methods",
+  "claim_value": "other",
+  "verdict": "unverifiable",
+  "reason": "Claim value 'other' is not specific enough to judge against the stored text (page describes username/password and app flows, all under OAuth2).",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 49,
+  "app_id": 6,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "unsupported",
+  "reason": "Quote is an OAuth token endpoint call; stored Podio pages never describe the API as REST.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 50,
+  "app_id": 7,
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "verdict": "partially_supported",
+  "reason": "Page says a fully featured free Developer Edition exists, but does not say sign-up is self-serve.",
+  "evidence_url": "https://www.zoho.com/crm/developer/",
+  "evidence_snippet": "The fully featured free Developer Edition is the perfect environment"
+ },
+ {
+  "row_id": 51,
+  "app_id": 7,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page describes RESTful endpoints for CRUD operations.",
+  "evidence_url": "https://www.zoho.com/crm/developer/docs/",
+  "evidence_snippet": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints."
+ },
+ {
+  "row_id": 52,
+  "app_id": 7,
+  "field": "api_types",
+  "claim_value": "graphql",
+  "verdict": "supported",
+  "reason": "Cited REST quote does not mention GraphQL, but the docs page lists GraphQL APIs.",
+  "evidence_url": "https://www.zoho.com/crm/developer/docs/",
+  "evidence_snippet": "Learn how to request specific resources, fields of the resources and relationships of the resources in a single query."
+ },
+ {
+  "row_id": 53,
+  "app_id": 7,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "supported",
+  "reason": "Zoho's own developer page documents a Zoho MCP server for CRM.",
+  "evidence_url": "https://www.zoho.com/crm/developer/",
+  "evidence_snippet": "Configure an MCP server to enable AI agents to autonomously perform end-to-end tasks"
+ },
+ {
+  "row_id": 54,
+  "app_id": 8,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page describes OAuth 2.0 authentication with client ID/secret.",
+  "evidence_url": "https://developer.close.com/api/overview/oauth-authentication",
+  "evidence_snippet": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your **Client ID** and **Client Secret**."
+ },
+ {
+  "row_id": 55,
+  "app_id": 8,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Cited OAuth quote is not about API keys, but the API-key page documents them.",
+  "evidence_url": "https://developer.close.com/api/overview/api-key-authentication",
+  "evidence_snippet": "API keys can be created and managed in your Close account under **Settings** → **Developer** → **API Keys**."
+ },
+ {
+  "row_id": 56,
+  "app_id": 8,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "supported",
+  "reason": "API-key page states API keys use HTTP Basic authentication.",
+  "evidence_url": "https://developer.close.com/api/overview/api-key-authentication",
+  "evidence_snippet": "API keys use\nHTTP Basic client side authentication."
+ },
+ {
+  "row_id": 57,
+  "app_id": 8,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "OAuth page shows Bearer token_type and Authorization: Bearer header.",
+  "evidence_url": "https://developer.close.com/api/overview/oauth-authentication",
+  "evidence_snippet": "Send your HTTP requests with an `Authorization` header that contains the word\n`Bearer` followed by a space and the Access Token."
+ },
+ {
+  "row_id": 58,
+  "app_id": 8,
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "verdict": "unsupported",
+  "reason": "Page says where API keys are created in the account but does not say a trial or paid plan is required.",
+  "evidence_url": "https://developer.close.com/api/overview/api-key-authentication",
+  "evidence_snippet": "API keys can be created and managed in your Close account under **Settings** → **Developer** → **API Keys**."
+ },
+ {
+  "row_id": 59,
+  "app_id": 8,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page names the REST API as a way to push data into Close.",
+  "evidence_url": "https://developer.close.com/",
+  "evidence_snippet": "Push leads, contacts, activities, and custom data into Close from your website or other systems via the REST API."
+ },
+ {
+  "row_id": 60,
+  "app_id": 8,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "supported",
+  "reason": "Close's developer page offers access to Close data via the MCP server.",
+  "evidence_url": "https://developer.close.com/",
+  "evidence_snippet": "direct access to Close data via the MCP server"
+ },
+ {
+  "row_id": 61,
+  "app_id": 9,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page lists OAuth2.0 as one of two ways to access the API.",
+  "evidence_url": "https://developer.copper.com/introduction/authentication.html",
+  "evidence_snippet": "There are two ways to access the Copper Developer API: API keys and OAuth2.0."
+ },
+ {
+  "row_id": 62,
+  "app_id": 9,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Page lists API keys as one of two ways to access the API.",
+  "evidence_url": "https://developer.copper.com/introduction/authentication.html",
+  "evidence_snippet": "There are two ways to access the Copper Developer API: API keys and OAuth2.0."
+ },
+ {
+  "row_id": 63,
+  "app_id": 9,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "partially_supported",
+  "reason": "OAuth flow page shows Authorization: Bearer for OAuth tokens only; API keys use X-PW-AccessToken headers, so bearer is limited to OAuth.",
+  "evidence_url": "https://developer.copper.com/introduction/oauth/flow.html",
+  "evidence_snippet": "curl -H \"Authorization: Bearer {access_token}\""
+ },
+ {
+  "row_id": 64,
+  "app_id": 9,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "unsupported",
+  "reason": "Quote only mentions implementing OAuth through plain REST; no stored page states the Copper API is REST.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 65,
+  "app_id": 10,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states DealCloud uses the OAuth2 Client Credentials flow.",
+  "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+  "evidence_snippet": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token"
+ },
+ {
+  "row_id": 66,
+  "app_id": 10,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page states a bearer token is generated and used in the Authorization header.",
+  "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+  "evidence_snippet": "The client includes this token in the `Authorization` header for subsequent API requests `Authorization: Bearer {{token}}`."
+ },
+ {
+  "row_id": 67,
+  "app_id": 10,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page states the site documents DealCloud's REST APIs.",
+  "evidence_url": "https://api.docs.dealcloud.com/docs",
+  "evidence_snippet": "This site provides a comprehensive overview of our REST APIs"
+ },
+ {
+  "row_id": 68,
+  "app_id": 10,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "supported",
+  "reason": "DealCloud's own docs describe a DealCloud MCP server using OAuth (cited quote supports MCP existence, not the 'official' label beyond vendor-hosted docs).",
+  "evidence_url": "https://api.docs.dealcloud.com/mcp/authentication",
+  "evidence_snippet": "DealCloud MCP uses OAuth to authenticate"
+ },
+ {
+  "row_id": 69,
+  "app_id": 11,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states Zendesk supports OAuth access tokens for API authentication.",
+  "evidence_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "evidence_snippet": "Zendesk supports using OAuth access tokens to authenticate API requests."
+ },
+ {
+  "row_id": 70,
+  "app_id": 11,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page shows OAuth access tokens sent as Authorization: Bearer.",
+  "evidence_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "evidence_snippet": "Authorization: Bearer {access_token}"
+ },
+ {
+  "row_id": 71,
+  "app_id": 11,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "partially_supported",
+  "reason": "Basic auth is documented for API tokens but is labeled deprecated; the cited OAuth quote does not establish it.",
+  "evidence_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "evidence_snippet": "Basic authentication is used for API tokens."
+ },
+ {
+  "row_id": 72,
+  "app_id": 11,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "partially_supported",
+  "reason": "API tokens are documented but marked deprecated, with migration to OAuth advised; cited OAuth quote does not establish it.",
+  "evidence_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "evidence_snippet": "### API token (deprecated)"
+ },
+ {
+  "row_id": 73,
+  "app_id": 11,
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "verdict": "supported",
+  "reason": "Page offers a free 14-day trial account.",
+  "evidence_url": "https://developer.zendesk.com/documentation/",
+  "evidence_snippet": "Try out the Sunshine Platform with a free, 14-day trial account."
+ },
+ {
+  "row_id": 74,
+  "app_id": 11,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page states Zendesk APIs are organized around REST principles.",
+  "evidence_url": "https://developer.zendesk.com/documentation/",
+  "evidence_snippet": "Zendesk's APIs are organized around REST principles."
+ },
+ {
+  "row_id": 75,
+  "app_id": 12,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states third parties must authenticate via OAuth.",
+  "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+  "evidence_snippet": "Third-parties (i.e. other Intercom workspaces) must authenticate via OAuth."
+ },
+ {
+  "row_id": 76,
+  "app_id": 12,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Cited quote is about OAuth only, but the page shows an Authorization: Bearer header with the Access Token.",
+  "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+  "evidence_snippet": "-H 'Authorization:Bearer <Access token>'"
+ },
+ {
+  "row_id": 77,
+  "app_id": 12,
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "verdict": "supported",
+  "reason": "Page says developer workspaces are free and can be created by the developer.",
+  "evidence_url": "https://intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+  "evidence_snippet": "Developer workspaces are free and intended for development purposes only."
+ },
+ {
+  "row_id": 78,
+  "app_id": 12,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page documents the REST API version 2.16.",
+  "evidence_url": "https://developers.intercom.com/docs/references/introduction",
+  "evidence_snippet": "This is documentation for version 2.16 of the REST API."
+ },
+ {
+  "row_id": 79,
+  "app_id": 12,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "partially_supported",
+  "reason": "Page only shows a docs-page widget 'Install MCP server on Cursor'; it does not describe an official Intercom product MCP for workspace data.",
+  "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+  "evidence_snippet": "Install MCP server on Cursor"
+ }
+]

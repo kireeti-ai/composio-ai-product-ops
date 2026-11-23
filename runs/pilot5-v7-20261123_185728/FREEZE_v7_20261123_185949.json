@@ -1,0 +1,77 @@
+{
+ "frozen_at": "2026-11-23T18:59:49+0530",
+ "status": "RUNNER v7 + FIVE-APP MANIFEST PREPARED AND FROZEN FOR HUMAN REVIEW. NOT AUTHORIZED. No execution.",
+ "file_inventory_sha256": {
+  "PILOT5_MANIFEST.json": "4a8c338a2f8ec65d721ab01d22f8907b09fbe5eaad16fa5c1f0e06497d7816d3",
+  "build_manifest.py": "8ea823104ae5474deccbe488d0367c803dcbae8b1a8fc2eef223aaa49d8eebe5",
+  "run_pilot5_v7.py": "d87e52a64fe72ed081b707443899f44fc251b4ddf3312c9a957b2bf3ba02cd92",
+  "test_pilot5_v7.py": "3d955c5dec66e7db8078b5f3959846bea87f726ad060fc8a3ceaa1d32188ddae",
+  "results/dry_run_cli.json": "21a9661d2d1920bba871b083a9fc0cbda88d41c38abff852871b75a128893b61",
+  "results/reg_test_claims_guard.txt": "dcd2147edfda2291b456dfb6d9f3021f0fed07760d5a1c8869fc5446f30e28fe",
+  "results/reg_test_eval_agreement.txt": "62cfbeb2911bb226088bfb0918eb4b05008ea70b20bce854ee2ca8a564bd37a5",
+  "results/reg_test_eval_score.txt": "4e9583fbd8b7dfd17b1b52f963bca5e078ab351e78d6c9726b2c05ff184c10db",
+  "results/reg_test_eval_seal.txt": "3872f5a85da677f909ec5c55a5821758c34e2394460567a29f8043b480cc1105",
+  "results/reg_test_neo4j_surfaces.txt": "43019a081faada2ed642805fd5a486fe3e81b95f67e8f03d4601cde2f22e20b5",
+  "results/reg_test_pass2_pilot.txt": "3b276704f3e563f93455088f7ce46c6323f4b89f61012ff8ddd99bba729ec60f",
+  "results/reg_test_pass2_pilot_v2.txt": "cedb82dc56386349028ceffb44102c4710aeaac8c7851a279af282486d8d23a8",
+  "results/reg_test_quota_plan.txt": "698d16d7b93c4bd9707d3cfacda6fb1e0fea99ed0cda6e69bedc42772940540a",
+  "results/reg_test_runner_v1f.txt": "935df34f4c682200db3994e79e63ab45ba1e0df47c7295c964bc0f790f47d636",
+  "results/reg_test_verify_v2.txt": "f73a3969264426c7f750fef5ab00bd07a42d5fd44046ff46ca16b91e264530c0",
+  "results/test_pilot5_v7.txt": "b5dcc120e039128b62d9a2f14c0fb8a7db47b89885915bf7cbbce8c9cfeed9f5"
+ },
+ "manifest_sha256": "4a8c338a2f8ec65d721ab01d22f8907b09fbe5eaad16fa5c1f0e06497d7816d3",
+ "runner_v7_sha256": "d87e52a64fe72ed081b707443899f44fc251b4ddf3312c9a957b2bf3ba02cd92",
+ "test_results": {
+  "pilot5_v7_offline": "26 tests OK (mocked provider, fake clock, no network)",
+  "reg_test_claims_guard.txt": "OK | Ran 6 tests",
+  "reg_test_eval_agreement.txt": "OK | Ran 6 tests",
+  "reg_test_eval_score.txt": "OK | Ran 12 tests",
+  "reg_test_eval_seal.txt": "OK | Ran 5 tests",
+  "reg_test_neo4j_surfaces.txt": "OK | 13 PASS lines",
+  "reg_test_pass2_pilot.txt": "OK | Ran 6 tests",
+  "reg_test_pass2_pilot_v2.txt": "OK | Ran 7 tests",
+  "reg_test_quota_plan.txt": "OK | Ran 8 tests",
+  "reg_test_runner_v1f.txt": "OK | 34 PASS lines",
+  "reg_test_verify_v2.txt": "OK | Ran 13 tests (regex in freeze script mis-flagged CHECK; output inspected: all passed)",
+  "test_pilot5_v7.txt": "OK | Ran 26 tests"
+ },
+ "integrity": {
+  "frozen_artefacts_match_recorded_hashes": {
+   "v6_runner_src/run_p1.py": true,
+   "v6_recovery_copy": true,
+   "v1f_PLAN": true,
+   "v1f_APP_STATUS": true,
+   "v1f_eligibility": true,
+   "v1f_registry_validation": true,
+   "v1f_README": true,
+   "baseline_MANIFEST": true
+  },
+  "baseline_sha256sums": "151 OK, 0 not OK",
+  "all_unchanged": true
+ },
+ "confirmations": {
+  "runner_v6_unchanged": true,
+  "v1f_prompt_schema_hash": [
+   "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+   "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9"
+  ],
+  "model_config_changed": false,
+  "generation_calls_made_this_task": 0,
+  "retrieval_or_external_api_calls_this_task": 0,
+  "approved_json_files_found": [],
+  "note_on_calls": "This task ran only local scripts and offline tests; the .env key file was not read (only the gated live path reads it)."
+ },
+ "known_limitations": [
+  "429 body format is ASSUMED: classification relies on 'per day'/'per minute' (case/space-insensitive) in quotaId/message; no live 429 body has been captured, so real-world ambiguity may stop the run (safe direction).",
+  "Gemini response field 'modelVersion' presence/format unverified live: if absent the app-1 checkpoint is written with model_identity_verified=false and the run stops for review; if it returns a variant string (e.g. with a suffix) the run stops as unexpected_model_identity.",
+  "Schema check is a minimal custom validator (required/enum/types/unknown keys); v6 had no local validation beyond the API responseSchema.",
+  "Resume pacing relies on wall-clock; if the clock moves backwards a full 13 s is waited; a forward jump shortens the wait.",
+  "Pacing is measured from the end of the previous request (stricter than start-to-start).",
+  "After kill -9, .lock stays and any in-flight request blocks restart until a human reviews (counted against the budget).",
+  "Rate-limit policy (max 2 retries/app, back-off 30/60 s) replaces the earlier plan's 'stop on 2 consecutive rate 429'; with budget 8 a pilot may end with fewer than 5 apps checkpointed by design.",
+  "Today's Gemini remaining quota is unknown; cap 8 is a ceiling not a guarantee.",
+  "Groq RPM/TPD still undocumented (not used by this pilot, but your stated condition for approval).",
+  "Synthetic fixtures prove control logic only; they say nothing about extraction quality.",
+  "Runner loads prompt/schema/check_quotes by importing src/run_p1.py (byte-identical to v6, hash-verified); the v7 record meta is a new layout, not byte-compatible with v6 meta."
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "id": 27,
+ "name": "Telegram",
+ "category": "Communications and Messaging",
+ "model": "m1",
+ "pages_read": [
+  "https://core.telegram.org/api/obtaining_api_id",
+  "https://core.telegram.org/api/srp",
+  "https://core.telegram.org/api/qr-login",
+  "https://core.telegram.org/widgets/login"
+ ],
+ "one_liner": "FAKE",
+ "auth_methods": [
+  "unknown"
+ ],
+ "access": "unknown",
+ "access_note": "",
+ "api_types": [
+  "unknown"
+ ],
+ "api_breadth": "unknown",
+ "existing_mcp": "unknown",
+ "buildability": "unknown",
+ "blocker": "",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "x",
+   "quote": "zz",
+   "quote_found": false,
+   "url_in_sources": false
+  }
+ ],
+ "meta": {
+  "run_id": "prov",
+  "code_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+  "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+  "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+  "temperature": 0,
+  "key_id": "GEMINI_API_KEY",
+  "extracted_at": "2026-11-23T20:39:40+05:30",
+  "request_attempts": 1,
+  "excluded_pages": [],
+  "tier": "A_prior_access_evidence_sufficient",
+  "uncertainty": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "registry_provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "api_surface_state": {
+   "measured_operations_count": 2,
+   "state": "not_individually_assessed"
+  },
+  "retrieval_topup": null,
+  "retrieval": {
+   "path": "baseline/p1_v1/raw/27.json",
+   "raw_sha256": "859854697d3fd6945d3623d81fc575bc89e74f556a7c5a4d67ef025da60acfb0",
+   "fetched_at": "2026-11-23T16:32:47+05:30",
+   "tool": "composio:TINYFISH_FETCH_URLS",
+   "pages": [
+    {
+     "url": "https://core.telegram.org/api/obtaining_api_id",
+     "chars": 1888
+    },
+    {
+     "url": "https://core.telegram.org/api/srp",
+     "chars": 9000
+    },
+    {
+     "url": "https://core.telegram.org/api/qr-login",
+     "chars": 3059
+    },
+    {
+     "url": "https://core.telegram.org/widgets/login",
+     "chars": 9000
+    }
+   ]
+  }
+ }
+}

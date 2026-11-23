@@ -1,0 +1,30 @@
+{
+ "id": 28,
+ "name": "WhatsApp Business",
+ "checks": [
+  {
+   "field": "auth_methods",
+   "claim": "WhatsApp Business API supports these auth methods: oauth2, bearer_token",
+   "verdict": "contradicted",
+   "reason": "Excerpt says authentication uses OAuth (not 2.0) and Bearer tokens; OAuth2 is not supported."
+  },
+  {
+   "field": "access",
+   "claim": "Developer access for WhatsApp Business is 'self_serve_trial_or_paid_plan' (Developers can get a free test WhatsApp account and phone number for testing, but full functionality and template messages often require approval and are subject to pricing.)",
+   "verdict": "supported",
+   "reason": "Excerpt describes free test accounts and need for approval, implying self\u2011serve trial and paid production access"
+  },
+  {
+   "field": "api_types",
+   "claim": "WhatsApp Business offers these API types: rest, websocket",
+   "verdict": "contradicted",
+   "reason": "Excerpt mentions REST/HTTP Graph API only; no mention of a WebSocket API for WhatsApp Business."
+  },
+  {
+   "field": "existing_mcp",
+   "claim": "MCP server status for WhatsApp Business: none_found",
+   "verdict": "not_enough_info",
+   "reason": "Excerpt lacks any mention of MCP server status for WhatsApp Business."
+  }
+ ]
+}

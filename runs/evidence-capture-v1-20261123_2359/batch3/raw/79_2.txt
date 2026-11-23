@@ -1,0 +1,129 @@
+
+ Manually configure the MCP server
+Skip to content
+APIs
+Smartsheet APIBrandfolder APIResource Management API
+AI & MCP
+SearchCtrl+K
+AI & MCP
+Introduction
+Quickstart
+Install the MCP server
+Connect Claude Code
+Connect Codex
+Connect Cursor
+Connect Gemini CLI
+Manually configure the MCP server
+CLI Agent Power Tools
+MCP server tools
+MCP server toolsets
+Load server-side skills
+Changelog
+Install the MCP server
+Manually configure the MCP server
+Connect Claude Code
+Connect Codex
+Connect Cursor
+Connect Gemini CLI/
+Manually configure the MC...
+Last updated 1 month ago
+Manually configure the MCP server
+Copy
+Copy for LLM
+Copy page as Markdown for LLMs
+View as Markdown
+Open this page as Markdown
+Open in ChatGPT
+Get insights from ChatGPT
+Open in Claude
+Get insights from Claude
+Connect to Cursor
+Install MCP server on Cursor
+Connect to VS Code
+Install MCP server on VS Code
+If your AI assistant uses a command-line interface (CLI) or integrates with an integrated development environment (IDE), it's likely that you will have to configure Smartsheet MCP Server access using a configuration file or command-line parameters. Exact paths and formats (for example, JSON, TOML, and others) vary by AI assistant. And some assistants support using environment values.
+Environment variables
+For confidential information, such as Smartsheet API tokens, consider using environment variables.
+To create an API token, refer to the Get started article.
+API tokens are unnecessary if your AI assistant supports Smartsheet's OAuth, such as ChatGPT (web or mobile), Claude AI, Claude Desktop, Gemini Enterprise Plus, or Microsoft 365 Copilot.
+Benefits:
+No secrets in configuration files that might get shared or committed
+One place to update when rotating tokens
+Same configuration file works for everyone on a team (each person sets their own environment variable)
+Same environment variable referenced for all MCP server configs for all assistants
+Set an environment variable (the name is arbitrary).
+export SMARTSHEET_API_TOKEN="value"
+If you configure your connection via a terminal command or a configuration file, use your environment variable (${SMARTSHEET_API_TOKEN}) in place of your API token.
+Example configuration
+Here's an MCP server configuration from a settings.json file for Gemini CLI:
+{
+ "mcpServers": {
+ "smartsheet-mcp": {
+ "httpUrl": "https://mcp.smartsheet.com",
+ "headers": {
+ "Authorization": "Bearer ${SMARTSHEET_API_TOKEN}"
+ }
+ }
+ }
+}
+In the above example, you would replace:
+smartsheet-mcp with an arbitrary name you want to use for your connection.
+The URL with your region's URL, if you're using a regional server outside the US.
+${SMARTSHEET_API_TOKEN} with the environment variable for your Smartsheet API token.
+If you want to connect to Smartsheet production servers in multiple regions simultaneously, add their configurations to your mcpServers object.
+For example,
+{
+ "mcpServers": {
+ "smartsheet-us": {
+ "httpUrl": "https://mcp.smartsheet.com",
+ "headers": {
+ "Authorization": "Bearer ${SMARTSHEET_API_TOKEN}"
+ }
+ },
+ "smartsheet-eu": {
+ "httpUrl": "https://mcp.smartsheet.eu",
+ "headers": {
+ "Authorization": "Bearer ${SMARTSHEET_API_TOKEN_EU}"
+ }
+ },
+ "smartsheet-au": {
+ "httpUrl": "https://mcp.smartsheet.au",
+ "headers": {
+ "Authorization": "Bearer ${SMARTSHEET_API_TOKEN_AU}"
+ }
+ }
+ }
+}
+The configuration above registers connections to production servers for the United States, European Union, and Australia regions.
+Testing your server connection
+After registering the Smartsheet MCP Server and connecting to it, test your server connection.
+Test prompt:
+List the Smartsheet MCP server tools.
+The response includes Smartsheet tools such as get_sheet_summary and more.
+What's next?
+Once you're connected to the MCP server, you can:
+Check out the example prompts described in Smartsheet MCP prompt library.
+Learn more about the MCP server's capabilities at Smartsheet MCP server tools.
+Was this helpful?
+Connect Gemini CLIPrevious page
+CLI Agent Power ToolsNext page
+On this pageEnvironment variablesExample configurationTesting your server connectionWhat's next?
+Logo
+Help Center
+Articles
+Functions List
+Other Resources
+Community
+Smartsheet University
+Content Center
+Product updates & insights
+Support Packages
+Company
+About us
+Newsroom
+Privacy
+Legal
+Contact Support
+Smartsheet Status
+©2025. All Rights Reserved Smartsheet Inc.Ask AI
+ 

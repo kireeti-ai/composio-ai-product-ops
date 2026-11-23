@@ -1,0 +1,281 @@
+
+ Access levels and permissible use | Google Ads API | Google for Developers 
+ Skip to main content
+ Ads API
+ / 
+ English 
+ Deutsch 
+ Español 
+ Español – América Latina 
+ Français 
+ Indonesia 
+ Italiano 
+ Polski 
+ Português – Brasil 
+ Tiếng Việt 
+ Türkçe 
+ Русский 
+ עברית 
+ العربيّة 
+ فارسی 
+ हिंदी 
+ বাংলা 
+ ภาษาไทย 
+ 中文 – 简体 
+ 中文 – 繁體 
+ 日本語 
+ 한국어 
+ Sign in 
+ Guides
+ Reference
+ Libraries and samples
+ Policies
+ Support
+ Ads API
+ Guides
+ Reference
+ Libraries and samples
+ Policies
+ Support
+ Developer Token 
+ Access levels & permissible use 
+ Brand verification 
+ Rate sheet 
+ Required Minimum Functionality 
+ Non-compliance fees 
+ Terms & conditions 
+ Support for European Union Political Ads Regulation 
+ Home
+ Products
+ Google Ads API
+ Policies
+ Send feedback
+ Access levels and permissible use 
+ Stay organized with collections
+ Save and categorize content based on your preferences.
+ Page Summary 
+ outlined_flag 
+ Google Ads API developer tokens have an access level determining production account access and operation limits, and "permissible use" defining allowed API features. 
+ There are three access levels: Test Account Access for test accounts with a 15,000 operation limit, Basic Access for test and production accounts with a 15,000 operation limit, and Standard Access for test and production accounts with an unlimited operation limit. 
+ You start with Test Account Access and can apply to increase your access level through additional steps. 
+ Permissible use, applicable to Basic and Standard Access, is based on intended API use and determines specific feature access like ad creation/management, reporting, or keyword research. 
+ Your Google Cloud project is assigned an access level and "permissible use." The
+ access level determines whether you can affect production accounts and the
+number of operations and requests that you can execute daily. Permissible
+use determines the specific Google Ads API features that the project is allowed to
+use. 
+ Key Point: Getting started with the Google Ads API? Developer tokens were
+ sunset on September 9, 2026 , and API access levels are now managed
+per Google Cloud project. After you enable the Google Ads API 
+(which grants Test access), you can immediately apply on
+the Google Ads API Overview page in the Google Cloud Console for
+ Explorer access (automated review and approval in
+most cases, for up to 2,880 operations per day against production accounts). For
+end-to-end setup, see the Make your first call quickstart or
+the Google Ads MCP server guide . 
+ Go to Google Ads API Overview in
+ Cloud Console 
+ Access levels 
+ There are four different API access levels listed in order in the
+table. If you don't already have Google Ads API access, you can start by
+ enabling the API to obtain Test access
+level for your Google Cloud project, and then apply for Explorer
+access on the Google Ads API Overview page to access
+production accounts. 
+ Access level 
+ Can access... 
+ Daily operation limit 1 
+ How to apply 
+ How long do reviews typically take? 
+ Test 
+ Test accounts 
+ 15,000 operations / day 
+ Apply for Test access 
+ Explorer 
+ Test and production accounts 
+ 2,880 operations / day for production accounts 15,000 operations / day for test accounts 
+ Apply for Explorer access 
+ Basic 
+ Test and production accounts 
+ 15,000 operations / day for both test and production accounts 
+ Apply for Basic access 
+ Standard 
+ Test and production accounts 
+ Unlimited operations / day for both test and production accounts 
+ Apply for Standard access 
+ 10 business days 
+ 1 "Per day" is based on a sliding 24 hour time period in which API
+requests were made with your Google Cloud project. Your application will receive
+an error if it exceeds the request limit for your access level within the last
+24 hours. 
+ Test access 
+ After you've enabled Google Ads API, your Google Cloud project is granted Test access.
+This means that the project can only make Google Ads API requests against test
+accounts. 
+ Important: Refer to the test account guide to learn more about
+how to create a test account. 
+ Apply for Test access 
+ Enable Google Ads API 
+in your Google Cloud project to automatically be granted Test access for your
+project. 
+ Explorer access level 
+ After you've completed the initial sign-up for the Google Ads API, Google may let you
+apply for Explorer access level. 
+ The Explorer access level allows your Google Cloud project to make Google Ads API
+requests against both test accounts and production accounts. Production
+accounts are any accounts that serve real, live Google ads—test accounts
+don't serve ads. 
+ The Explorer access level allows your Google Cloud project to execute up to
+2,880 operations per day against production accounts. This is sufficient for
+most developers to get started with the API and build basic automation. 
+ The Explorer access level restricts access to the following features. If you
+need to use these features, you need to apply for
+ Basic access level or Standard access level . 
+ Restricted functionality 
+ Restricted services and methods 
+ Account creation and linking 
+ CustomerService.CreateCustomerClient CustomerClientLinkService CustomerManagerLinkService 
+ User management 
+ CustomerUserAccessInvitationService CustomerUserAccessService 
+ Planning 
+ KeywordPlanService KeywordPlanIdeaService KeywordPlanCampaignService KeywordPlanCampaignKeywordService KeywordPlanAdGroupService KeywordPlanAdGroupKeywordService AudienceInsightsService ReachPlanService 
+ Account billing and payment 
+ PaymentsAccountService BillingSetupService AccountBudgetProposalService InvoiceService 
+ Multi-party approvals 
+ MultiPartyAuthReviewService 
+ Apply for Explorer access level 
+ Navigate to the Google Ads API Overview page in your Google Cloud
+project. 
+ Verify that the page displays your current access level as Test . 
+ Click to expand the Upgrade access level section. 
+ Confirm that the Next access level is displayed as Explorer . 
+ Click the Apply for access button to apply for Explorer access level. 
+ Google may automatically upgrade your project's API access level to Explorer
+after you submit your application. 
+ Basic access level 
+ The Basic access level allows your Google Cloud project to make Google Ads API requests
+against both test accounts and production accounts. Production accounts are
+any accounts that serve real, live Google ads—test accounts don't serve
+ads. 
+ The Basic access level allows your Google Cloud project to execute up to 15,000
+operations per day. This is sufficient for most developers. 
+ Apply for Basic access level 
+ Note: Completing brand verification for your Google Cloud project is a
+prerequisite to apply for Basic access level. Refer to the brand verification
+guide to learn more. 
+ Navigate to the Google Ads API Overview page in your Google Cloud
+project. 
+ Verify that the page displays your current access level as Explorer . 
+ Click to expand the Upgrade access level section. 
+ Confirm that the Next access level is displayed as Basic . 
+ Confirm that there are no warnings indicating that you haven't completed
+brand verification for your project. If there are,
+ follow the instructions to complete brand verification
+before continuing. 
+ Click the Apply for access button to apply for Basic access level. 
+ Google may automatically upgrade your project's API access level to Basic
+ once you submit your application. 
+ Standard access level 
+ Standard access level allows your Google Cloud project to execute an unlimited
+number of operations per day for all services. Individual services and features
+may still have rate limits and restrictions that are specific to
+those features, which will continue to apply even if your project has Standard
+access level. 
+ The Standard access level is only granted to developers who require unlimited
+Google Ads API operations, such as large companies or tools that serve many users. 
+ Apply for Standard access level 
+ Navigate to the Google Ads API Overview page in your Google Cloud
+project. 
+ Verify that the page displays your current access level as Basic . 
+ Click to expand the Upgrade access level section. 
+ Confirm that the Next access level is displayed as Standard . 
+ Click the Start application button to start the Standard access level
+application. 
+ The Standard access application involves a detailed manual audit of your
+application. Be prepared to answer questions about your tool's functionality and
+its target audience. If your tool is used by external users, be prepared to
+provide demo sign-in access to your tool. Note that your tool must comply with
+the Required Minimum Functionality . 
+ Throughout the review process, the Google Compliance team will communicate with
+you using your email address. Make sure you respond promptly to the queries from
+the Compliance team to make progress with your Standard access application. When
+the review is complete, Google will email you with the final outcome of the
+review process. 
+ API quotas and system rate limits 
+ Regardless of the access level, all API operations are subject to system rate
+limits, which restricts how many operations you may perform in a period of time,
+that is the number of operations per hour. To learn more about how to handle
+rate limit errors, see error types . 
+ Individual services may enforce additional limits and quota restrictions due to
+reasons such as product design limitations, product policy restrictions, API
+performance and latency considerations. See the documentation about API
+quotas to learn more about these restrictions. 
+ Permissible use 
+ Permissible use only applies to Google Cloud projects with Standard access
+level. Permissible use is allocated based on intended use of the Google Ads API. These
+permissions determine which features of the API your tool can use, as
+elaborated in the following table: 
+ Permissible Use 
+ Description 
+ Ad creation / management 
+ Provide access to all services of the API for creating and managing Google Ads campaigns, ad groups, ads, and keywords. 
+ Reporting 
+ Only make GoogleAdsService.Search or GoogleAdsService.SearchStream requests, or read-only calls. This is for developers who only use the API to request stats. 
+ Researching keywords and recommendations 
+ Allow the Google Cloud project to access RecommendationService , KeywordPlanIdeaService , and KeywordPlanService . This is only used by tools requiring suggestions to help facilitate the creation and management of Google Ads campaigns. 
+ Change permissible use 
+ If your Google Cloud project has been approved for Standard access level, you
+can fill out the application to update permissible use . Fill out
+the application if you would like to update your permissible use or grant your
+clients access to your tool. 
+ Previous 
+ arrow_back
+ Developer Token
+ Next 
+ Brand verification
+ arrow_forward
+ Send feedback
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License , and code samples are licensed under the Apache 2.0 License . For details, see the Google Developers Site Policies . Java is a registered trademark of Oracle and/or its affiliates. 
+ Last updated 2026-11-19 UTC. 
+ Need to tell us more?
+ [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-11-19 UTC."],[],[]]
+ Blog
+ Visit our blog for important announcements. 
+ Client Libraries
+ Use our officially supported client libraries. 
+ YouTube
+ Watch developer videos and release highlights. 
+ Discord
+ Join the Google Ads Discord server. 
+ Android
+ Chrome
+ Firebase
+ Google Cloud Platform
+ Google AI
+ All products
+ Terms
+ Privacy
+ Manage cookies
+ English 
+ Deutsch 
+ Español 
+ Español – América Latina 
+ Français 
+ Indonesia 
+ Italiano 
+ Polski 
+ Português – Brasil 
+ Tiếng Việt 
+ Türkçe 
+ Русский 
+ עברית 
+ العربيّة 
+ فارسی 
+ हिंदी 
+ বাংলা 
+ ภาษาไทย 
+ 中文 – 简体 
+ 中文 – 繁體 
+ 日本語 
+ 한국어 
+ 

@@ -1,0 +1,242 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "iPayX Forensic FX Infrastructure API",
+    "version": "1.4.0",
+    "description": "Forensic FX audit infrastructure for AI agents and fintechs. Detect hidden bank spreads in basis points with timestamped proof. Includes affiliate / AI-agent attribution.",
+    "contact": { "name": "iPayX Protocol", "url": "https://www.ipayx.ai", "email": "support@ipayx.ai" },
+    "license": { "name": "Commercial", "url": "https://www.ipayx.ai/api-terms" }
+  },
+  "servers": [
+    { "url": "https://hvujzsdwcoweirroubeh.supabase.co/functions/v1", "description": "Production Edge Functions" }
+  ],
+  "security": [{ "bearerAuth": [] }],
+  "tags": [
+    { "name": "audit", "description": "Forensic FX transaction audits" },
+    { "name": "rates", "description": "Live mid-market FX rates" },
+    { "name": "roi", "description": "Switching ROI calculator" }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "description": "Supabase JWT or iPayX API key (ipx_live_...)"
+      }
+    },
+    "schemas": {
+      "Money": {
+        "type": "number",
+        "format": "double",
+        "minimum": 0,
+        "description": "Monetary amount with 2-decimal precision"
+      },
+      "FxRate": {
+        "type": "number",
+        "format": "double",
+        "minimum": 0,
+        "description": "FX rate with up to 6-decimal precision"
+      },
+      "CurrencyCode": {
+        "type": "string",
+        "pattern": "^[A-Z]{3}$",
+        "example": "USD"
+      },
+      "ManualTransaction": {
+        "type": "object",
+        "required": ["amount", "from_currency", "to_currency", "bank_rate"],
+        "properties": {
+          "amount": { "$ref": "#/components/schemas/Money", "example": 50000 },
+          "from_currency": { "$ref": "#/components/schemas/CurrencyCode", "example": "USD" },
+          "to_currency": { "$ref": "#/components/schemas/CurrencyCode", "example": "EUR" },
+          "bank_rate": { "$ref": "#/components/schemas/FxRate", "example": 0.91, "description": "Rate the bank quoted (target per 1 source)" },
+          "transaction_date": { "type": "string", "format": "date", "example": "2026-04-15" },
+          "description": { "type": "string", "maxLength": 500 }
+        }
+      },
+      "FxAuditRequest": {
+        "type": "object",
+        "required": ["company_id"],
+        "properties": {
+          "company_id": { "type": "string", "format": "uuid" },
+          "company_owner_id": { "type": "string", "format": "uuid" },
+          "language": { "type": "string", "enum": ["en", "fr", "es"], "default": "en" },
+          "transactions": {
+            "type": "array",
+            "maxItems": 500,
+            "items": { "$ref": "#/components/schemas/ManualTransaction" }
+          },
+          "source": {
+            "type": "string",
+            "enum": ["manual", "csv", "pdf", "api", "vision", "engine", "demo"]
+          },
+          "partner_rate": {
+            "type": "number",
+            "format": "double",
+            "minimum": 0,
+            "maximum": 50,
+            "description": "B2B2B whitelabel: partner's own rate (% spread vs mid-market). When supplied with api_client_id, scoring is computed against this rate instead of pure mid-market."
+          },
+          "api_client_id": { "type": "string", "format": "uuid", "description": "Whitelabel partner identifier" },
+          "affiliate_id": {
+            "type": "string",
+            "maxLength": 120,
+            "description": "Affiliate / AI agent identifier for attribution",
+            "example": "claude-mcp-v1"
+          },
+          "platform_origin": {
+            "type": "string",
+            "maxLength": 120,
+            "description": "Originating platform (e.g. 'composio', 'anthropic-mcp', 'zapier', 'n8n', 'copilot-studio')",
+            "example": "composio"
+          }
+        }
+      },
+      "FxAuditResponse": {
+        "type": "object",
+        "properties": {
+          "audit_id": { "type": "string", "format": "uuid" },
+          "fx_score": { "type": "integer", "minimum": 1, "maximum": 10, "example": 4 },
+          "score_rating": { "type": "string", "enum": ["excellent", "good", "fair", "poor", "critical"] },
+          "avg_markup_pct": { "type": "number", "format": "double", "example": 1.85 },
+          "total_overpaid_cad": { "$ref": "#/components/schemas/Money", "example": 925.5 },
+          "total_volume_cad": { "$ref": "#/components/schemas/Money" },
+          "transaction_count": { "type": "integer", "minimum": 0 },
+          "recommended_partner": { "type": "string", "example": "provider-a" },
+          "projected_annual_loss_cad": { "$ref": "#/components/schemas/Money" },
+          "company_name": { "type": "string" },
+          "audit_source": { "type": "string" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      },
+      "SpotRateRequest": {
+        "type": "object",
+        "required": ["date", "time"],
+        "properties": {
+          "date": { "type": "string", "format": "date", "example": "2026-04-15" },
+          "time": { "type": "string", "pattern": "^\\d{2}:\\d{2}$", "example": "14:30" },
+          "timezone": { "type": "string", "default": "America/Toronto" },
+          "pair": { "type": "string", "pattern": "^[A-Z]{6}$", "default": "USDCAD", "example": "USDCAD" }
+        }
+      },
+      "SpotRateResponse": {
+        "type": "object",
+        "properties": {
+          "spot": { "$ref": "#/components/schemas/FxRate", "example": 1.4312 },
+          "high": { "$ref": "#/components/schemas/FxRate" },
+          "low": { "$ref": "#/components/schemas/FxRate" },
+          "open": { "$ref": "#/components/schemas/FxRate" },
+          "close": { "$ref": "#/components/schemas/FxRate" },
+          "timestamp": { "type": "string", "format": "date-time" },
+          "source": { "type": "string", "enum": ["market", "oxr"] },
+          "marketOpen": { "type": "boolean" },
+          "pair": { "type": "string", "example": "USDCAD" }
+        }
+      },
+      "RoiRequest": {
+        "type": "object",
+        "required": ["annual_volume_usd", "current_markup_pct"],
+        "properties": {
+          "annual_volume_usd": { "$ref": "#/components/schemas/Money", "example": 1000000 },
+          "current_markup_pct": { "type": "number", "format": "double", "minimum": 0, "maximum": 10, "example": 2.0 },
+          "corridor": { "type": "string", "example": "USD/CAD", "default": "USD/CAD" }
+        }
+      },
+      "RoiPartnerOption": {
+        "type": "object",
+        "properties": {
+          "partner_id": { "type": "string", "example": "provider-a" },
+          "display_name": { "type": "string" },
+          "markup_pct": { "type": "number", "format": "double" },
+          "annual_cost_usd": { "$ref": "#/components/schemas/Money" },
+          "annual_savings_usd": { "$ref": "#/components/schemas/Money" },
+          "savings_3yr_usd": { "$ref": "#/components/schemas/Money" },
+          "savings_5yr_usd": { "$ref": "#/components/schemas/Money" }
+        }
+      },
+      "RoiResponse": {
+        "type": "object",
+        "properties": {
+          "corridor": { "type": "string" },
+          "live_rate": { "$ref": "#/components/schemas/FxRate" },
+          "annual_volume_usd": { "$ref": "#/components/schemas/Money" },
+          "current_markup_pct": { "type": "number", "format": "double" },
+          "current_annual_cost_usd": { "$ref": "#/components/schemas/Money" },
+          "partners": { "type": "array", "items": { "$ref": "#/components/schemas/RoiPartnerOption" } },
+          "best_option": { "$ref": "#/components/schemas/RoiPartnerOption" },
+          "cached": { "type": "boolean" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": { "type": "string" },
+          "code": { "type": "string" },
+          "details": { "type": "string" }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/fx-audit-engine": {
+      "post": {
+        "summary": "Run a forensic FX audit on one or more transactions",
+        "description": "Returns a 1-10 forensic score, hidden spread vs mid-market in basis points, total overpayment in CAD, and the recommended switching partner. Supports affiliate / AI-agent attribution via affiliate_id + platform_origin.",
+        "operationId": "runFxAudit",
+        "tags": ["audit"],
+        "security": [{ "bearerAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "$ref": "#/components/schemas/FxAuditRequest" } } }
+        },
+        "responses": {
+          "200": { "description": "Audit complete", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/FxAuditResponse" } } } },
+          "400": { "description": "Invalid payload", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } } },
+          "401": { "description": "Unauthorized" },
+          "402": { "description": "Free-tier quota exhausted (2 audits lifetime)" },
+          "429": { "description": "Rate limit exceeded" },
+          "500": { "description": "Server error" }
+        }
+      }
+    },
+    "/fetch-spot-rate": {
+      "post": {
+        "summary": "Get historical mid-market FX rate at a precise minute",
+        "description": "Returns the mid-market rate for a currency pair at a specific date+time. Twelve Data primary, Open Exchange Rates fallback. Hybrid auth: anonymous = 10 req/min + 100/day; authenticated = 30 req/min.",
+        "operationId": "fetchSpotRate",
+        "tags": ["rates"],
+        "security": [{ "bearerAuth": [] }, {}],
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SpotRateRequest" } } }
+        },
+        "responses": {
+          "200": { "description": "Rate found", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SpotRateResponse" } } } },
+          "400": { "description": "Invalid request" },
+          "429": { "description": "Rate limited" },
+          "500": { "description": "Provider unavailable" }
+        }
+      }
+    },
+    "/roi-calculator": {
+      "post": {
+        "summary": "Calculate switching ROI vs partner brokers",
+        "description": "Compares the caller's current FX markup cost against alternative providers. Returns 1-, 3-, and 5-year savings per provider and identifies the best option.",
+        "operationId": "calculateRoi",
+        "tags": ["roi"],
+        "security": [{ "bearerAuth": [] }, {}],
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "$ref": "#/components/schemas/RoiRequest" } } }
+        },
+        "responses": {
+          "200": { "description": "ROI computed", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/RoiResponse" } } } },
+          "429": { "description": "Rate limited" },
+          "500": { "description": "Server error" }
+        }
+      }
+    }
+  }
+}

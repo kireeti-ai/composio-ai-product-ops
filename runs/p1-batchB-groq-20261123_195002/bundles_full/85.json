@@ -1,0 +1,23 @@
+{
+ "id": 85,
+ "name": "iPayX",
+ "pages": [
+  {
+   "url": "https://ipayx.ai/mcp",
+   "text": "# iPayX Protocol \u2014 Neutral FX Verification Layer\n\niPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\n\n## How It Works\n\n* Enter your transaction \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied.\n* We capture the mid-market rate \u2013 From regulated interbank data sources at the exact transaction time.\n* Instant audit report \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\n\n## Trust & Compliance\n\nMSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada \ud83c\udde8\ud83c\udde6\n\n## Links\n\nContact: info@ipayx.ai",
+   "origin": "retrieved 2026-11-23T19:39:33+05:30 sha256=104e14f909cacd8a"
+  }
+ ],
+ "identity": {
+  "id": 85,
+  "name": "iPayX",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "ipayx.ai"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ }
+}

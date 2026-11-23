@@ -1,0 +1,30 @@
+test01_backoff_floor_ignores_retry_after_1s (__main__.T) ... ok
+test02_two_failures_open_breaker_not_five_calls (__main__.T) ... ok
+test03_open_breaker_blocks_until_cooldown_then_exactly_one_probe (__main__.T) ... ok
+test04_probe_success_closes_and_resumes (__main__.T) ... ok
+test05_gives_up_after_max_opens (__main__.T) ... ok
+test06_breaker_persists_across_restart (__main__.T) ... ok
+test07_success_resets_consecutive (__main__.T) ... ok
+test08_min_gap_between_requests (__main__.T) ... ok
+test09_seed_or_breaker_from_v1_log (__main__.T) ... ok
+test10_unknown_placeholder_rejected (__main__.T) ... ok
+test11_ellipsis_and_stitched_rejected (__main__.T) ... ok
+test12_quote_must_be_in_cited_page (__main__.T) ... ok
+test13_non_unknown_claim_requires_valid_supporting_quote (__main__.T) ... ok
+test14_unknown_and_not_found_stay_separate_and_absence_not_inferred (__main__.T) ... ok
+test15_mcp_official_needs_mcp_term_in_valid_quote (__main__.T) ... ok
+test16_gemini_refuses_before_reset (__main__.T) ... ok
+test17_capability_first_then_five_apps (__main__.T) ... ok
+test18_capability_failure_blocks_benchmark (__main__.T) ... ok
+test19_p2_p4_disabled (__main__.T) ... ok
+test20_v1_outputs_and_bundles_unchanged (__main__.T) ... ok
+test21_reduction_v2_keeps_mcp_deterministic_and_fits_groq (__main__.T) ... ok
+test22_tpd_soft_limit (__main__.T) ... ok
+test23_frozen_inputs_and_no_approved_file (__main__.T) ... ok
+test24_unsent_probe_not_consumed (__main__.T) ... ok
+test25_log_chain_continues_across_instances (__main__.T) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.115s
+
+OK

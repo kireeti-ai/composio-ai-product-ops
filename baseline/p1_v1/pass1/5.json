@@ -1,0 +1,58 @@
+{
+ "id": 5,
+ "name": "Twenty",
+ "category": "CRM and Sales",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://docs.twenty.com/developers/extend/api",
+  "https://docs.twenty.com/developers/introduction",
+  "https://api.twenty.com/open-api/core",
+  "https://docs.twenty.com/developers/extend/apps/operations/cli"
+ ],
+ "one_liner": "Twenty is an open-source CRM platform offering schema-per-tenant REST and GraphQL APIs, workspace automation, and native MCP support.",
+ "auth_methods": [
+  "api_key",
+  "bearer_token",
+  "oauth2"
+ ],
+ "access": "self_serve_free",
+ "access_note": "API keys can be generated directly within any workspace under Settings > Developers > API, and Twenty is open source.",
+ "api_types": [
+  "rest",
+  "graphql"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.twenty.com/developers/extend/api",
+   "quote": "Authorization: Bearer YOUR_API_KEY",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://docs.twenty.com/developers/extend/api",
+   "quote": "Create an API key in Settings \u2192 Developers \u2192 API \u2192 + Create key.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://docs.twenty.com/developers/extend/api",
+   "quote": "Both are available as REST and GraphQL.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://api.twenty.com/open-api/core",
+   "quote": "The recommended way to give an LLM agent (Claude Desktop, Cursor, Windsurf, \u2026) access to your workspace is the **Twenty MCP server**",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ]
+}

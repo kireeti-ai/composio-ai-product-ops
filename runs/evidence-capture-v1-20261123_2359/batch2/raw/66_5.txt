@@ -1,0 +1,1812 @@
+
+Cloud & self-hosted graph database platform pricing | Neo4j
+Skip to content
+ New! Relate by Neo4j | An embedded database for AI agents 
+|
+Learn More
+Menu
+Search
+Close Menu
+Products
+FULLY-MANAGED
+ AuraDB 
+Store and query connected data at scale
+ Virtual Graph 
+Create and query a knowledge graph on existing data
+ Aura Graph Analytics 
+Run graph algorithms on any data, any cloud
+ Aura Agent 
+Build and deploy context-aware agents fast
+SELF-MANAGED
+ Graph Database 
+Store connected data with a graph database
+ Graph Analytics 
+Run graph algorithms on self-managed graph databases
+ Graph Data Science 
+Run graph algorithms on connected data
+ Enterprise Studio 
+Securely query, explore, and visualize data
+ Fleet Manager 
+Manage all your Neo4j deployments from one place
+AI CAPABILITIES
+ Knowledge layer 
+ AI systems 
+ AI integrations 
+ GraphRAG 
+Solutions
+INDUSTRIES
+ Financial services 
+ Healthcare & life sciences 
+ Public sector 
+ Retail 
+ Telecommunications 
+TECHNICAL PATTERNS
+ Digital twin 
+ Knowledge graphs 
+ Pattern matching 
+GRAPHAWARE
+ Intelligence analysis 
+ Financial crime intelligence 
+USE CASES
+ AI systems 
+ Customer experiences 
+ Data privacy, risk, & compliance 
+ Fraud detection & analytics 
+ Identity & access management 
+ Master data management 
+ Network & IT 
+ Real-time recommendations 
+ Supply chain 
+PARTNERS
+ AWS 
+ Databricks 
+ Google Cloud 
+ Microsoft Azure 
+ Snowflake 
+ Partner directory 
+ Become a partner 
+ Customer success stories 
+Case studies, customer videos, proof points, and more
+ Neo4j Startup Program 
+Why Neo4j
+FOR EXECUTIVES
+ Executive insights 
+ AI systems 
+ IDC business value study 
+ Business value calculator 
+CUSTOMERS
+ Customer success stories 
+Case studies, customer videos, proof points, and more
+ Contact Sales 
+Developers
+LEARNING CENTERS
+ Dev Center 
+Best practices, guides, tutorials, and downloads
+ GraphAcademy 
+Free online courses and certifications. Join the 100k+ Neo4j experts.
+DEV RESOURCES
+ Community 
+ Discord 
+ Developer blog 
+ Documentation 
+ Deployment Center 
+BUILD WITH AI
+ AI + graph 
+ GraphRAG 
+ Agent memory 
+ Model Context Protocol (MCP) 
+ Customer support 
+Resources
+LEARN
+ Blog 
+Announcements, guides, and best practices
+ Customer success stories 
+Case studies, customer videos, proof points, and more
+ Events hub 
+Live and on-demand events, training, webinars, and demos
+ GraphAcademy 
+Free online courses and certifications. Join the 100k+ Neo4j experts.
+ Newsroom 
+Latest news, awards, press releases, and media resources
+ Resource library 
+Whitepapers, datasheets, and more
+ Video hub 
+Covering graph databases, data science, analytics, and AI
+FEATURED EVENTS
+ AWS re:Invent 2026 | Nov 30 – Dec 4 
+Meet us at booth #732 in Las Vegas
+ NODES 2026 | November 12 
+Virtual Conference: Engineering better intelligence
+ Careers 
+Pricing
+Aura Login
+Support
+Get started free
+Contact us
+Products
+Products: submenu
+Graph Intelligence Platform
+We are the knowledge layer that delivers accurate, explainable, and trusted AI.
+Learn more
+Context Engine
+Gives agents meaning for trustworthy AI
+Get started free
+Fully-managed
+ AuraDB 
+Store and query connected data at scale
+ Virtual Graph 
+Create and query a knowledge graph on existing data
+ Aura Graph Analytics 
+Run graph algorithms on any data, any cloud
+ Aura Agent 
+AI
+Build and deploy context-aware agents fast
+Self-managed
+ Graph Database 
+Store connected data with a graph database
+ Graph Analytics 
+Run graph algorithms on self-managed graph databases
+ Graph Data Science 
+Run graph algorithms on connected data
+ Enterprise Studio 
+Securely query, explore, and visualize data
+ Fleet Manager 
+Manage all your Neo4j deployments from one place
+ AI Capabilities 
+AI
+ Knowledge layer 
+ AI systems 
+ AI integrations 
+ GraphRAG 
+Solutions
+Solutions: submenu
+Solutions
+AI and graph technologies give agents the understanding they need to generate trustworthy outputs, and humans the understanding they need to make better decisions.
+Customer success stories
+Neo4j Startup Program
+Get started free
+Industries
+ Financial services 
+ Healthcare & life sciences 
+ Public sector 
+ Retail 
+ Telecommunications 
+Technical patterns
+ Digital twin 
+ Knowledge graphs 
+ Pattern matching 
+GraphAware
+ Intelligence analysis 
+ Financial crime intelligence 
+Use cases
+ AI systems 
+AI
+ Customer experiences 
+ Data privacy, risk, & compliance 
+ Fraud detection & analytics 
+ Identity & access management 
+ Master data management 
+ Network & IT 
+ Real-time recommendations 
+ Supply chain 
+ Partners 
+ AWS 
+ Databricks 
+ Google Cloud 
+ Microsoft Azure 
+ Snowflake 
+ Partner directory 
+ Become a partner 
+Why Neo4j
+Why Neo4j: submenu
+Why Neo4j
+The knowledge layer that makes AI precise, trusted, and built to scale.
+Contact Sales
+Get started free
+For executives
+ Executive insights 
+ AI systems 
+AI
+ IDC business value study 
+ Business value calculator 
+Customers
+ Customer success stories 
+ The business value of Neo4j 
+IDC business value study
+Better context. Trustworthy AI. 230% ROI.
+ See full story 
+Developers
+Developers: submenu
+Developers
+Discover how to model a knowledge graph, retrieve context with GraphRAG, connect agents with MCP, and build trustworthy AI that reasons over connected data.
+Customer support
+Get started free
+Learning centers
+Dev Center
+Best practices, guides, tutorials, and downloads
+GraphAcademy
+Free online courses and certifications. Join the 100k+ Neo4j experts.
+Dev resources
+Community
+Discord
+ Developer blog 
+ Documentation 
+ Deployment Center 
+ Build with AI 
+AI
+ AI + graph 
+ GraphRAG 
+ Agent memory 
+ Model Context Protocol (MCP) 
+Resources
+Resources: submenu
+Resources
+Everything you need to take AI from concept to production.
+Careers
+Customer support
+Get started free
+Learn
+Blog
+Announcements, guides, and best practices
+Customer success stories
+Case studies, customer videos, proof points, and more
+Events hub
+Live and on-demand events, training, webinars, and demos
+GraphAcademy
+Free online courses and certifications
+Newsroom
+Latest news, awards, press releases, and media resources
+Resource library
+Whitepapers, datasheets, and more
+Video hub
+Covering graph databases, data science, analytics, and AI
+ Featured events 
+Informed AI.
+Trustworthy results.
+Meet us at booth #732 in Las Vegas to learn how Neo4j gives AI a knowledge layer.
+Free 24-hour global event
+The largest online conference dedicated to engineering better intelligence.
+Pricing
+Contact
+Aura login
+Get started free
+Neo4j pricing
+Graph Database
+Graph Analytics
+Virtual Graph
+Graph database pricing plans
+Deploy Neo4j AuraDB on any cloud provider of your choice.
+Graph database pricing plans
+The best way to run Neo4j on premises in your private cloud, or public cloud infrastructure.
+Fully Managed
+Self Managed
+AuraDB Free
+Learn
+ and Explore Graphs
+$0
+Start learning
+No credit card or other payment method required
+Start learning with access to all graph tools
+AuraDB Professional
+Build
+ Production-Ready Apps
+Starting at
+ $0.09
+/GB/hour*
+ (minimum 1GB instance)
+View pricing details
+Try for free
+Up to 128GB memory and 2TB storage per instance
+Scalable on demand
+Daily backups, 7-day retention
+Available on AWS, Azure, and Google Cloud
+Advanced instance-level metrics
+AuraDB Business Critical
+Scale
+ Apps for Enterprise Use
+Starting at
+ $0.20
+/GB/hour*
+ (minimum 2GB instance)
+View pricing details
+Try for free
+Up to 2TB memory (AWS & GCP), 512GB (Azure), and 5TB storage per instance
+Highly available, multi-zone, with 99.95% uptime SLA
+Supports multiple databases per instance
+Fine-grained access controls (RBAC, PBAC, ABAC), instance-level SSO, and IP filtering
+Daily backups with 30-day retention and hourly point-in-time restore
+Read-only secondaries and change data capture (CDC)
+Pay-as-you-go and prepaid consumption billing options
+24x7 support
+AuraDB Virtual Dedicated Cloud
+Deploy applications, using all capabilities of AuraDB Business Critical, but in a dedicated environment
+Contact Us
+Contact us
+about AuraDB Virtual Dedicated Cloud
+This form is temporarily unavailable. Please try again later.
+The information you provide will be used in accordance with 
+Neo4j's Privacy Notice
+, including in respect of marketing our products, events and services.
+×
+VPC isolation and dedicated infrastructure
+Up to 2TB memory (AWS & GCP), 512GB (Azure), and 5TB storage per instance
+Hourly backups with 60-day retention
+Enhanced
+ 24x7 support and services
+Evaluating AuraDB and need more?
+Contact us
+ to discuss your sizing and configuration needs.
+ Also available via cloud marketplaces for simplified billing 
+Amazon Web Services
+Microsoft Azure
+Google Cloud
+Simple pricing, predictable cost
+Simple, transparent pricing
+Pay for provisioned database capacity — no extras for storage, compute, IO, network, or backups. With hourly metering, costs are simple to model and predict.
+Scale seamlessly, on demand
+Easily add or reduce capacity with a few clicks to meet your changing needs, without any service interruption.
+Pause database, save 80% costs
+Pause your database when not in use and save 80% of running costs. Your data and backups are stored securely. Resume with just a click.
+Capacity-based consumption pricing
+Included in your price: Storage, IO, Backup, and Data Transfer.
+ Start learning 
+ Try for free 
+ Try for free 
+ Contact us 
+AuraDB Free
+Starting at
+ $0 
+ Start learning 
+Database administration
+ DB Instance Size 
+ ^Limits on node and relationship counts 
+ DB Instance Storage 
+ ^Limits on node and relationship counts 
+Multiple databases per instance
+Not Included
+Availability Zone (AZ) Configuration
+ Single-zone 
+Service Availability SLA
+Not Included
+DB Instance Control
+ Auto-pause/resume 
+Automated Rolling Updates
+Included
+Database Monitoring
+Not Included
+ API to Provision and Manage Instances 
+Included
+Backup Frequency | Retention With Point-in-Time Recovery
+Not Included
+Query Log forwarding
+Not Included
+Performance and scalability
+Block Format
+Included
+Query Log Analyzer
+Not Included
+Advanced Metrics
+Not Included
+Pipelined and Parallel Runtime
+Not Included
+Secondaries
+Not Included
+Vector Optimization
+Not Included
+Security
+Industry Standard Compliance
+Trust Center
+ Encryption (at rest and in transit) 
+Included
+RBAC and Fine-Grained Access Control
+Not Included
+SSO Authentication
+Not Included
+Customer Managed Keys
+Not Included
+Security Log Forwarding
+Not Included
+Private Endpoints
+Not Included
+IP Filtering
+Not Included
+Property-Based Access Control
+Not Included
+Multi-Factor Authentication (MFA)
+Included
+Activity Feed
+Included
+Productivity and visualization
+Aura Console
+Included
+Neo4j Data Importer
+Included
+Query API
+Included
+GraphQL Library
+Included
+Neo4j Bloom/Visualization Library
+ Bloom Basic 
+Dashboards
+Included
+Change Data Capture
+Not Included
+AI and analytics
+Graph Analytics
+Included
+Aura Agent
+Included
+Pricing and usage
+Capacity-Based Consumption-Pricing Model
+Not Included
+Cloud Marketplace Billing
+Not Included
+ Payment Methods 
+Not Included
+ Terms of Service 
+Not Included
+ Cloud Marketplace Private Offers 
+Not Included
+Customer support and success
+ Customer Support 
+ Community 
+ Access to Neo4j Professional Services 
+Not Included
+AuraDB Professional
+Starting at
+ $0.09 
+/GB/hour* 
+(minimum 1GB instance) 
+ Try for free 
+Database administration
+ DB Instance Size 
+ Up to 128GB (RAM) 
+ DB Instance Storage 
+ Up to 2TB 
+Multiple databases per instance
+Not Included
+Availability Zone (AZ) Configuration
+ Single-zone 
+Service Availability SLA
+Not Included
+DB Instance Control
+Included
+Automated Rolling Updates
+Included
+Database Monitoring
+Included
+ API to Provision and Manage Instances 
+Included
+Backup Frequency | Retention With Point-in-Time Recovery
+ Daily | 7 days 
+Query Log forwarding
+Not Included
+Performance and scalability
+Block Format
+Included
+Query Log Analyzer
+Included
+Advanced Metrics
+Included
+Pipelined and Parallel Runtime
+ Pipelined runtime only 
+Secondaries
+Not Included
+Vector Optimization
+Included
+Security
+Industry Standard Compliance
+Trust Center
+ Encryption (at rest and in transit) 
+Included
+RBAC and Fine-Grained Access Control
+Not Included
+SSO Authentication
+Not Included
+Customer Managed Keys
+Not Included
+Security Log Forwarding
+Not Included
+Private Endpoints
+Not Included
+IP Filtering
+Not Included
+Property-Based Access Control
+Not Included
+Multi-Factor Authentication (MFA)
+Included
+Activity Feed
+Included
+Productivity and visualization
+Aura Console
+Included
+Neo4j Data Importer
+Included
+Query API
+Included
+GraphQL Library
+Included
+Neo4j Bloom/Visualization Library
+Included
+Dashboards
+Included
+Change Data Capture
+Not Included
+AI and analytics
+Graph Analytics
+Included
+Aura Agent
+Included
+Pricing and usage
+Capacity-Based Consumption-Pricing Model
+Included
+Cloud Marketplace Billing
+Included
+ Payment Methods 
+ Pay as you go with credit card 
+ Terms of Service 
+ Click through 
+ Cloud Marketplace Private Offers 
+Not Included
+Customer support and success
+ Customer Support 
+ Best Effort 
+ Access to Neo4j Professional Services 
+Not Included
+AuraDB Business Critical
+Starting at
+ $0.20 
+/GB/hour* 
+(minimum 2GB instance) 
+ Try for free 
+Database administration
+ DB Instance Size 
+ Up to 2TB RAM (AWS & GCP), 512GB (Azure)† 
+ DB Instance Storage 
+ Up to 5TB† 
+Multiple databases per instance
+Included
+Availability Zone (AZ) Configuration
+ Multi-zone 
+Service Availability SLA
+99.95% uptime
+DB Instance Control
+Included
+Automated Rolling Updates
+Included
+Database Monitoring
+Included
+ API to Provision and Manage Instances 
+Included
+Backup Frequency | Retention With Point-in-Time Recovery
+ Daily | 30 days 
+Query Log forwarding
+Included
+†Evaluating AuraDB and need more? 
+Contact us
+Performance and scalability
+Block Format
+Included
+Query Log Analyzer
+Included
+Advanced Metrics
+ In addition, includes integrations with third party monitoring tools such as Datadog, Grafana 
+Pipelined and Parallel Runtime
+Included
+Secondaries
+Included
+Vector Optimization
+Included
+Security
+Industry Standard Compliance
+Trust Center
+ Encryption (at rest and in transit) 
+Included
+RBAC and Fine-Grained Access Control
+Included
+SSO Authentication
+Included
+Customer Managed Keys
+Not Included
+Security Log Forwarding
+Included
+Private Endpoints
+Not Included
+IP Filtering
+Included
+Property-Based Access Control
+Included
+Multi-Factor Authentication (MFA)
+Included
+Activity Feed
+Included
+Productivity and visualization
+Aura Console
+Included
+Neo4j Data Importer
+Included
+Query API
+Included
+GraphQL Library
+Included
+Neo4j Bloom/Visualization Library
+Included
+Dashboards
+Included
+Change Data Capture
+Included
+AI and analytics
+Graph Analytics
+Included
+Aura Agent
+Included
+Pricing and usage
+Capacity-Based Consumption-Pricing Model
+Included
+Cloud Marketplace Billing
+Included
+ Payment Methods 
+ Pay as you go with credit card and prepaid contract terms 
+ Terms of Service 
+ Click through and enterprise with commercial negotiations 
+ Cloud Marketplace Private Offers 
+Included
+Customer support and success
+ Customer Support 
+ 24x7 Premium, One-Hour Response 
+ Access to Neo4j Professional Services 
+Included
+AuraDB Virtual Dedicated Cloud
+ Talk to sales 
+ Contact us 
+Database administration
+ DB Instance Size 
+ Up to 2TB RAM (AWS & GCP), 512GB (Azure)† 
+ DB Instance Storage 
+ Up to 5TB† 
+Multiple databases per instance
+Included
+Availability Zone (AZ) Configuration
+ Multi-zone 
+Service Availability SLA
+99.95% uptime
+DB Instance Control
+Included
+Automated Rolling Updates
+Included
+Database Monitoring
+Included
+ API to Provision and Manage Instances 
+Included
+Backup Frequency | Retention With Point-in-Time Recovery
+ Hourly | 60 days 
+Query Log forwarding
+Included
+†Evaluating AuraDB and need more? 
+Contact us
+Performance and scalability
+Block Format
+Included
+Query Log Analyzer
+Included
+Advanced Metrics
+ In addition, includes integrations with third party monitoring tools such as Datadog, Grafana 
+Pipelined and Parallel Runtime
+Included
+Secondaries
+Included
+Vector Optimization
+Included
+Security
+Industry Standard Compliance
+Trust Center
+ Encryption (at rest and in transit) 
+Included
+RBAC and Fine-Grained Access Control
+Included
+SSO Authentication
+Included
+Customer Managed Keys
+Included
+Security Log Forwarding
+Included
+Private Endpoints
+Included
+IP Filtering
+Included
+Property-Based Access Control
+Included
+Multi-Factor Authentication (MFA)
+Included
+Activity Feed
+Included
+Productivity and visualization
+Aura Console
+Included
+Neo4j Data Importer
+Included
+Query API
+Included
+GraphQL Library
+Included
+Neo4j Bloom/Visualization Library
+Included
+Dashboards
+Included
+Change Data Capture
+Included
+AI and analytics
+Graph Analytics
+Included
+Aura Agent
+Not Included
+Pricing and usage
+Capacity-Based Consumption-Pricing Model
+Included
+Cloud Marketplace Billing
+Included
+ Payment Methods 
+ Prepaid contract terms 
+ Terms of Service 
+ Enterprise with commercial negotiations 
+ Cloud Marketplace Private Offers 
+Included
+Customer support and success
+ Customer Support 
+ 24x7 Premium, One-Hour Response 
+ Access to Neo4j Professional Services 
+Included
+See all plan details
+Free
+$0
+^
+ Start learning 
+Professional
+Starting at
+$0.09
+/GB/hour*
+ Try for free 
+Business Critical
+Starting at
+$0.20
+/GB/hour*
+ Try for free 
+Virtual Dedicated Cloud
+Talk to sales
+ Contact us 
+Database administration
+DB Instance Size
+^Limits on node and relationship counts
+Up to 128GB (RAM)
+Up to 2TB RAM (AWS & GCP), 512GB (Azure)†
+Up to 2TB RAM (AWS & GCP), 512GB (Azure)†
+DB Instance Storage
+^Limits on node and relationship counts
+Up to 2TB
+Up to 5TB†
+Up to 5TB†
+Multiple databases per instance
+Not Included
+Not Included
+Included
+Included
+Availability Zone (AZ) Configuration
+Single-zone
+Single-zone
+Multi-zone
+Multi-zone
+Service Availability SLA
+Not Included
+Not Included
+99.95% uptime
+99.95% uptime
+DB Instance Control
+Auto-pause/resume
+Included
+Included
+Included
+Automated Rolling Updates
+Included
+Included
+Included
+Included
+Database Monitoring
+Not Included
+Included
+Included
+Included
+API to Provision and Manage Instances
+Included
+Included
+Included
+Included
+Backup Frequency | Retention With Point-in-Time Recovery
+Not Included
+Daily | 7 days
+Daily | 30 days
+Hourly | 60 days
+Query Log forwarding
+Not Included
+Not Included
+Included
+Included
+†Evaluating AuraDB and need more? 
+Contact us
+Performance and scalability
+Block Format
+Included
+Included
+Included
+Included
+Query Log Analyzer
+Not Included
+Included
+Included
+Included
+Advanced Metrics
+Not Included
+Included
+In addition, includes integrations with third party monitoring tools such as Datadog, Grafana
+In addition, includes integrations with third party monitoring tools such as Datadog, Grafana
+Pipelined and Parallel Runtime
+Not Included
+Pipelined runtime only
+Included
+Included
+Secondaries
+Not Included
+Not Included
+Included
+Included
+Vector Optimization
+Not Included
+Included
+Included
+Included
+Security
+Industry Standard Compliance
+Trust Center
+Trust Center
+Trust Center
+Trust Center
+Encryption (at rest and in transit)
+Included
+Included
+Included
+Included
+RBAC and Fine-Grained Access Control
+Not Included
+Not Included
+Included
+Included
+SSO Authentication
+Not Included
+Not Included
+Included
+Included
+Customer Managed Keys
+Not Included
+Not Included
+Not Included
+Included
+Security Log Forwarding
+Not Included
+Not Included
+Included
+Included
+Private Endpoints
+Not Included
+Not Included
+Not Included
+Included
+IP Filtering
+Not Included
+Not Included
+Included
+Included
+Property-Based Access Control
+Not Included
+Not Included
+Included
+Included
+Multi-Factor Authentication (MFA)
+Included
+Included
+Included
+Included
+Activity Feed
+Included
+Included
+Included
+Included
+Productivity and visualization
+Aura Console
+Included
+Included
+Included
+Included
+Neo4j Data Importer
+Included
+Included
+Included
+Included
+Query API
+Included
+Included
+Included
+Included
+GraphQL Library
+Included
+Included
+Included
+Included
+Neo4j Bloom/Visualization Library
+Bloom Basic
+Included
+Included
+Included
+Dashboards
+Included
+Included
+Included
+Included
+Change Data Capture
+Not Included
+Not Included
+Included
+Included
+AI and analytics
+Graph Analytics
+Included
+Included
+Included
+Included
+Aura Agent
+Included
+Included
+Included
+Not Included
+Pricing and usage
+Capacity-Based Consumption-Pricing Model
+Not Included
+Included
+Included
+Included
+Cloud Marketplace Billing
+Not Included
+Included
+Included
+Included
+Payment Methods
+Not Included
+Pay as you go with credit card
+Pay as you go with credit card and prepaid contract terms
+Prepaid contract terms
+Terms of Service
+Not Included
+Click through
+Click through and enterprise with commercial negotiations
+Enterprise with commercial negotiations
+Cloud Marketplace Private Offers
+Not Included
+Not Included
+Included
+Included
+Customer support and success
+Customer Support
+Community
+Best Effort
+24x7 Premium, One-Hour Response
+24x7 Premium, One-Hour Response
+Access to Neo4j Professional Services
+Not Included
+Not Included
+Included
+Included
+Pricing and features are subject to change and are based on the latest Neo4j Graph Database version.
+*
+Sales tax may be applied to all orders shipping to MA, NY, TN, TX or WA, and this amount will be updated and added to your order total once you have entered your shipping address. If you are located elsewhere, your jurisdiction may require you to report this purchase and pay the appropriate taxes directly.
+Are you an educator or startup?
+Learn more about 
+Neo4j for Educators
+. Get tools/training for your students.
+Interested in building solid data foundations for your startup? Learn more about 
+Neo4j for Startups
+.
+Community Edition
+GPL3
+-licensed with community support. For projects that don’t need automatic HA, horizontal scalability, or beyond-basic security
+Download Free
+Fully featured, best-in-class native graph database
+GQL-compliant Cypher graph query language
+Fully ACID transactions
+Fully compatible with Neo4j Graph Data Science community edition
+Enterprise Edition 
+Enterprise-grade availability and security with scale-up and scale-out options. Run in your private cloud or public cloud infrastructure.
+Contact Sales
+Includes all features from community edition
+Unlimited horizontal read scaling with replication
+Fine-grained access controls
+High availability and advanced manageability
+Available as an operational cluster or stand-alone data science environment
+Support for analytical queries using Parallel Runtime
+Change Data Capture
+Federated scale-out across multiple databases
+Infinigraph Edition
+AI-ready graph scale with no code changes or compromises
+Contact Sales
+Includes all features from Enterprise edition
+Unlimited horizontal scaling with automatic sharding
+Graph Data Science included with license
+Two ways to get started graphing
+Neo4j Desktop: Code, Query, Visualize
+Code, query, manage, and visualize with desktop. Includes tools and an unlimited free developer license for Neo4j Graph Database Enterprise Edition for Developers.
+Download
+Community Edition: Free, Community-Supported
+Start using Neo4j for free, upgrade to a commercial license when you are ready for enterprise-class features and support.
+Download
+ Download Free 
+ Contact Sales 
+ Contact Sales 
+Community
+ Community 
+ Download Free 
+Server architecture
+ Native graph processing and storage 
+Included
+ ACID transactions 
+Included
+ Auto reuse of deleted space 
+Included
+ Property graph model 
+Included
+ High-performance caching 
+Included
+ Cypher graph query language 
+Included
+Indexing
+ Full text indexing and search 
+Included
+ Native index population 
+Included
+ Vector indexing 
+Included
+Client, drivers, and connectivity
+ Neo4j Desktop and Browser 
+Included
+Neo4j Enterprise Studio
+Not Included
+ Bolt binary protocol 
+Included
+Language drivers
+Included
+ Reactive drivers 
+Included
+ High-throughput load balancing 
+Included
+ Spring Boot starter 
+Included
+Graph Data Science
+Algorithms and embeddings
+Included
+Pregel API
+Included
+Parallelization
+ <= 4 cpus. 
+Model catalog
+ 3 models 
+Fine-grained security
+Not Included
+Model persistence and publication
+Not Included
+Low memory analytics graph format
+Not Included
+High availability & operations
+Autonomous clustering
+Not Included
+Hot backups
+Not Included
+Multi-database
+Not Included
+Consistent 24x7 performance with auto cache reheating
+Not Included
+Advanced monitoring
+Not Included
+Enterprise diagnostics
+Not Included
+Fleet Management
+Included
+Production certified
+Not Included
+Security
+Role-based security
+Not Included
+LDAP/Active Directory integration
+Not Included
+Schema-based security
+Not Included
+Intra-cluster encryption
+Not Included
+Security event logging
+Not Included
+Brute force protections
+Not Included
+Scalability and performance
+Advanced On-Disk Format
+Not Included
+Federation with Fabric
+Not Included
+Graphs of unlimited size
+Not Included
+Scale out with Infinigraph
+Not Included
+Faster Cypher
+Not Included
+Fabric
+Multi-Graph Database
+Not Included
+Federated data
+Not Included
+Data sharding
+Not Included
+Enterprise
+ Enterprise 
+ Contact Sales 
+Server architecture
+ Native graph processing and storage 
+Included
+ ACID transactions 
+Included
+ Auto reuse of deleted space 
+Included
+ Property graph model 
+Included
+ High-performance caching 
+Included
+ Cypher graph query language 
+Included
+Indexing
+ Full text indexing and search 
+Included
+ Native index population 
+Included
+ Vector indexing 
+Included
+Client, drivers, and connectivity
+ Neo4j Desktop and Browser 
+Included
+Neo4j Enterprise Studio
+Included
+ Bolt binary protocol 
+Included
+Language drivers
+Included
+ Reactive drivers 
+Included
+ High-throughput load balancing 
+Included
+ Spring Boot starter 
+Included
+Graph Data Science
+Algorithms and embeddings
+Included
+Pregel API
+Included
+Parallelization
+ Unlimited 
+Model catalog
+ Unlimited 
+Fine-grained security
+Included
+Model persistence and publication
+Included
+Low memory analytics graph format
+Included
+High availability & operations
+Autonomous clustering
+Included
+Hot backups
+Included
+Multi-database
+Included
+Consistent 24x7 performance with auto cache reheating
+Included
+Advanced monitoring
+Included
+Enterprise diagnostics
+Included
+Fleet Management
+Included
+Production certified
+Included
+Security
+Role-based security
+Included
+LDAP/Active Directory integration
+Included
+Schema-based security
+Included
+Intra-cluster encryption
+Included
+Security event logging
+Included
+Brute force protections
+Included
+Scalability and performance
+Advanced On-Disk Format
+Included
+Federation with Fabric
+Included
+Graphs of unlimited size
+Included
+Scale out with Infinigraph
+Not Included
+Faster Cypher
+Included
+Fabric
+Multi-Graph Database
+Included
+Federated data
+Included
+Data sharding
+Included
+Infinigraph
+ Infinigraph 
+ Contact Sales 
+Server architecture
+ Native graph processing and storage 
+Included
+ ACID transactions 
+Included
+ Auto reuse of deleted space 
+Included
+ Property graph model 
+Included
+ High-performance caching 
+Included
+ Cypher graph query language 
+Included
+Indexing
+ Full text indexing and search 
+Included
+ Native index population 
+Included
+ Vector indexing 
+Included
+Client, drivers, and connectivity
+ Neo4j Desktop and Browser 
+Included
+Neo4j Enterprise Studio
+Included
+ Bolt binary protocol 
+Included
+Language drivers
+Included
+ Reactive drivers 
+Included
+ High-throughput load balancing 
+Included
+ Spring Boot starter 
+Included
+Graph Data Science
+Algorithms and embeddings
+Included
+Pregel API
+Included
+Parallelization
+ Unlimited 
+Model catalog
+ Unlimited 
+Fine-grained security
+Included
+Model persistence and publication
+Included
+Low memory analytics graph format
+Included
+High availability & operations
+Autonomous clustering
+Included
+Hot backups
+Included
+Multi-database
+Included
+Consistent 24x7 performance with auto cache reheating
+Included
+Advanced monitoring
+Included
+Enterprise diagnostics
+Included
+Fleet Management
+Included
+Production certified
+Included
+Security
+Role-based security
+Included
+LDAP/Active Directory integration
+Included
+Schema-based security
+Included
+Intra-cluster encryption
+Included
+Security event logging
+Included
+Brute force protections
+Included
+Scalability and performance
+Advanced On-Disk Format
+Included
+Federation with Fabric
+Included
+Graphs of unlimited size
+Included
+Scale out with Infinigraph
+Included
+Faster Cypher
+Included
+Fabric
+Multi-Graph Database
+Included
+Federated data
+Included
+Data sharding
+Included
+See all plan details
+Community
+ Download Free 
+Enterprise
+ Contact Sales 
+Infinigraph
+ Contact Sales 
+Server architecture
+Native graph processing and storage
+Included
+Included
+Included
+ACID transactions
+Included
+Included
+Included
+Auto reuse of deleted space
+Included
+Included
+Included
+Property graph model
+Included
+Included
+Included
+High-performance caching
+Included
+Included
+Included
+Cypher graph query language
+Included
+Included
+Included
+Indexing
+Full text indexing and search
+Included
+Included
+Included
+Native index population
+Included
+Included
+Included
+Vector indexing
+Included
+Included
+Included
+Client, drivers, and connectivity
+Neo4j Desktop and Browser
+Included
+Included
+Included
+Neo4j Enterprise Studio
+Not Included
+Included
+Included
+Bolt binary protocol
+Included
+Included
+Included
+Language drivers
+Included
+Included
+Included
+Reactive drivers
+Included
+Included
+Included
+High-throughput load balancing
+Included
+Included
+Included
+Spring Boot starter
+Included
+Included
+Included
+Graph Data Science
+Algorithms and embeddings
+Included
+Included
+Included
+Pregel API
+Included
+Included
+Included
+Parallelization
+<= 4 cpus.
+Unlimited
+Unlimited
+Model catalog
+3 models
+Unlimited
+Unlimited
+Fine-grained security
+Not Included
+Included
+Included
+Model persistence and publication
+Not Included
+Included
+Included
+Low memory analytics graph format
+Not Included
+Included
+Included
+High availability & operations
+Autonomous clustering
+Not Included
+Included
+Included
+Hot backups
+Not Included
+Included
+Included
+Multi-database
+Not Included
+Included
+Included
+Consistent 24x7 performance with auto cache reheating
+Not Included
+Included
+Included
+Advanced monitoring
+Not Included
+Included
+Included
+Enterprise diagnostics
+Not Included
+Included
+Included
+Fleet Management
+Included
+Included
+Included
+Production certified
+Not Included
+Included
+Included
+Security
+Role-based security
+Not Included
+Included
+Included
+LDAP/Active Directory integration
+Not Included
+Included
+Included
+Schema-based security
+Not Included
+Included
+Included
+Intra-cluster encryption
+Not Included
+Included
+Included
+Security event logging
+Not Included
+Included
+Included
+Brute force protections
+Not Included
+Included
+Included
+Scalability and performance
+Advanced On-Disk Format
+Not Included
+Included
+Included
+Federation with Fabric
+Not Included
+Included
+Included
+Graphs of unlimited size
+Not Included
+Included
+Included
+Scale out with Infinigraph
+Not Included
+Not Included
+Included
+Faster Cypher
+Not Included
+Included
+Included
+Fabric
+Multi-Graph Database
+Not Included
+Included
+Included
+Federated data
+Not Included
+Included
+Included
+Data sharding
+Not Included
+Included
+Included
+Pricing and features are subject to change and are based on the latest Neo4j Graph Database version.
+*
+Sales tax may be applied to all orders shipping to MA, NY, TN, TX or WA, and this amount will be updated and added to your order total once you have entered your shipping address. If you are located elsewhere, your jurisdiction may require you to report this purchase and pay the appropriate taxes directly.
+Are you an educator or startup?
+Learn more about 
+Neo4j for Educators
+. Get tools/training for your students.
+Interested in building solid data foundations for your startup? Learn more about 
+Neo4j for Startups
+.
+Graph analytics pricing plans
+Unlock insights from connected data to improve decisions on any cloud, any data—no ETL required. Apply 65+ ready-to-use graph algorithms, cutting costs by 70% and boosting accuracy by 50-80%. Compare our offerings and start extracting insights from your data today.
+Graph analytics pricing plans
+Unlock insights from connected data to improve decisions on any cloud, any data—no ETL required. Apply 65+ ready-to-use graph algorithms, cutting costs by 70% and boosting accuracy by 50-80%. Compare our offerings and start extracting insights from your data today.
+Fully Managed
+Self Managed
+Aura Graph Analytics
+$0.40
+/GB/hour
+Unlock insights from connected data to improve decisions on any cloud, any data—no ETL required.
+Sign up
+Up to 512 GB (RAM)
+Pay-as-you-go and prepaid consumption billing
+Unlimited concurrent sessions; Spin up and down as needed
+Works with any data source including AuraDB, relational databases, CSVs – no ETL required
+Native integration with AuraDB (not included)
+Available on Azure, AWS, and Google Cloud
+Scale compute up or down independently with serverless architecture
+AuraDS Enterprise
+Run graph data science on persistent, dedicated infrastructure, with premium support, security, and negotiable contracts.
+Contact Us
+8-384GB (RAM)
+Custom pricing and sales contracts
+Pause instances when not in use, pay 80% less
+Includes Neo4j AuraDB
+Premium 24x7 support
+Pay with committed spend from AWS, Azure, and Google Cloud
+Private marketplace offers for AWS, Azure, and Google Cloud
+Dedicated virtual private cloud (VPC)
+Customer managed keys
+Graph Data Science community
+Open source for small projects, learning, experimentation, and prototyping.
+Start for Free
+Maximum of 4 CPU cores
+Open source
+Graph Data Science enterprise
+A self-hosted offer with annual licensing is available on-premises or in the cloud.
+Contact Us
+Premium support included
+Pay with committed spend from AWS, Azure, and Google Cloud
+Read replicas
+Hybrid clusters
+Virtual Graph pricing
+Create zero-ETL knowledge graphs in Aura from your data warehouse on the cloud provider of your choice with Neo4j Virtual Graph.
+Virtual Graph
+Standard
+Starting at
+ $0.20*
+/GB/hour*
+min 4GB instance
+View pricing details
+Try for free
+Up to 128GB per instance
+Scalable on demand
+200 GB
+ monthly data ingress included*
+Aura roles and projects
+Neo4j RBAC read-only, warehouse RBAC
+Instance level SSO
+IP filtering
+Available on Azure, AWS, and Google Cloud
+Advanced instance-level metrics
+Pay-as-you-go and prepaid billing options
+24x7 support
+Virtual Graph
+Dedicated
+Starting at
+ $0.325*
+/GB/hour*
+min 4GB instance
+View pricing details
+Contact sales
+Includes all features from standard
+500 GB
+ monthly data ingress included*
+VPC isolation and dedicated infrastructure
+Private Link
+Prepaid billing
+24x7 support
+*Additional ingress is billed. 
+View pricing details.
+Pricing frequently asked questions
+How do the different Neo4j AuraDB plans compare?
+Free
+: Start with a free plan to learn and explore graph data.
+Professional
+: Build high-performance applications with a production-ready cloud database.
+Business Critical
+: Ideal for mission-critical applications requiring a highly available database, robust enterprise controls, and 24/7 support. Perfect for running production workloads in a fully managed, secure, and flexible environment where uninterrupted access and security are essential.
+Virtual Dedicated Cloud
+: Ideal for customers needing highly customized, dedicated infrastructure with Virtual Private Cloud (VPC) and specific networking requirements. It offers a highly available database, robust security controls, and premium 24/7 support.
+For more details on AuraDB capabilities, visit 
+Neo4j AuraDB.
+How does Neo4j AuraDB Professional differ from the free plan?
+The free plan places limits on the number of nodes and relationships. It is suitable for small projects, learning, and prototyping. In contrast, AuraDB Professional offers enhanced performance and best-effort support, making it ideal for building high-performance, production-ready applications.
+Is there a free trial for the paid plans?
+Neo4j provides free trials on the AuraDB Professional tier as part of the paid plans, allowing users to explore the features and benefits before committing. The AuraDB Professional trial is available only in certain geographies for now. Contact 
+[email protected]
+ or 
+sign up directly
+.
+Can you use AuraDB on multiple cloud providers and marketplaces?
+AuraDB is available on AWS, Microsoft Azure, and Google Cloud. You can deploy AuraDB in over 60 global cloud regions. You can easily access and deploy AuraDB Professional through the following marketplaces:
+AuraDB on AWS Marketplace
+AuraDB on Azure Marketplace
+AuraDB on Google Cloud Marketplace
+What are the differences between Neo4j graph analytics product offerings?
+Neo4j offers several ways to run its 65+ graph algorithms for tasks like community detection, node similarity, and centrality. The right choice depends on where your data lives and how much of the infrastructure you want to manage.
+Neo4j Aura Graph Analytics
+ (fully managed, pay-as-you-go): runs algorithms in on-demand sessions, with no infrastructure to manage. It’s available in every Aura tier, from Free (at no cost) to Virtual Dedicated Cloud, with limits on session size, concurrent sessions, and maximum session duration that vary by tier. 
+See the tier comparison.
+AuraDB Professional Graph Analytics Plugin
+ (fully managed, no extra charge): a built-in plugin that runs algorithms directly on your AuraDB Professional database. Best suited to experimentation and non-production use.
+Neo4j Graph Analytics
+ (self-managed): runs in a dedicated analytics environment separate from your database, so you can scale and manage it independently based on your analytics needs.
+Neo4j Graph Data Science
+ (self-managed): runs alongside your Neo4j database and shares its compute resources, so you deploy and manage both together.
+Neo4j Graph Analytics for Snowflake
+ (fully managed, pay-as-you-go via Snowflake Marketplace): deployed in your Snowflake environment, it runs algorithms on demand directly on data in your Snowflake tables. 
+See pricing on Snowflake Marketplace.
+Knowledge is at your fingertips
+Make your AI accurate, explainable, and trustworthy.
+Start for free
+Talk to us
+Products
+AuraDB
+Aura Graph Analytics
+Aura Agent
+Enterprise Studio
+Community Edition
+Cypher Query Language
+Fleet Manager
+Graph Analytics
+Graph Database
+Graph Data Science
+GraphQL
+Knowledge layer
+Pricing
+Virtual Graph
+Solutions
+AI systems
+AI integrations
+Case studies
+Financial crime intelligence
+GraphRAG
+Industries & use cases
+Intelligence analysis
+Knowledge graphs
+Model context protocol (MCP)
+Pattern matching
+Developers
+AI + graph
+Agent memory
+Changelog
+Community
+Developer home
+Documentation
+Deployment Center
+Developer blog
+GraphAcademy
+Release notes
+Data Scientists
+Data science community
+Data science documentation
+Get started with graph data science
+Graph data science home
+GraphAcademy for data science
+For Executives
+Customer success stories
+Executive insights
+IDC business value whitepaper
+Resources
+Blog
+Events hub
+GraphAcademy
+GraphSummit
+NODES
+NODES AI
+Resource library
+Research center
+Video hub
+Webinars
+Partners
+Become a partner
+Find a partner
+OEM partners
+Partner portal login
+Solution partners
+Technology partners
+Company
+About Us
+Awards and honors
+Careers
+Culture
+Graphs4Good
+Leadership
+Newsroom
+Support
+Trust center
+Contact Us ❯
+US: 
+1-855-636-4532
+Sweden: 
++46 171 480 113
+UK: 
++44 20 3868 3223
+France: 
++33 (0) 1 88 46 13 20
+Singapore: 
++65 6859 0336
+Australia: 
++61 2 8395 2895
+India: 
++91 6827 521 210
+Social Networks
+Neo4j on LinkedIn
+Neo4j on X
+Neo4j on YouTube
+Neo4j on Facebook
+Neo4j Community
+Neo4j on GitHub
+© 
+2026
+ Neo4j, Inc.
+Terms
+ | 
+Privacy Notice
+ | 
+Sitemap
+Anti-Corruption Policy
+ ©2026 Neo4j, Inc., Neo Technology®, Neo4j®, Cypher®, Neo4j Bloom
+™
+,
+ Neo4j Graph Data Science Library
+™
+, Neo4j® Aura
+™
+, Neo4j® AuraDB
+™
+,
+ GraphAware®, GraphAware Hume
+™
+ and Hume® are registered trademarks or a trademark of Neo4j, Inc.
+ and/or the Neo4j Group. All other marks are owned by their respective companies.
+ Contact Us
+Search Neo4j.com
+Load more results
+↑
+↓
+ Navigate
+↵
+ Select
+Esc
+ Close

@@ -1,0 +1,95 @@
+{
+ "created": "2026-11-23T18:21:58+0530",
+ "total_apps": 100,
+ "apps_with_existing_baseline_record": 26,
+ "apps_with_a_new_gemini_call": 74,
+ "gemini_calls_total_minimum": 75,
+ "formula": "28 (v1f) + 2 (Neo4j, 1 app) + 39 (expansion waves 3A+3B+4) + 6 (identity-gated) = 75 calls over 74 apps",
+ "calls_by_group": {
+  "A_v1f_frozen": 28,
+  "B_neo4j_optionB": 2,
+  "C_expansion": 39,
+  "D_identity_gated": 6
+ },
+ "apps_by_group": {
+  "A_v1f_frozen": 28,
+  "B_neo4j_optionB": 1,
+  "C_expansion": 39,
+  "D_identity_gated": 6
+ },
+ "the_six_identity_gated_calls": {
+  "73": {
+   "app": "Linear",
+   "status": "HELD_IDENTITY_PROVISIONAL",
+   "why_gated": "identity provisional (name + domain consistency only)",
+   "what_unlocks_it": "user confirms identity; access-evidence top-up (free retrieval)",
+   "provenance": "reconstructed"
+  },
+  "78": {
+   "app": "Coda",
+   "status": "HELD_IDENTITY_PROVISIONAL",
+   "why_gated": "identity provisional; superhuman.com hits suggest docs migration",
+   "what_unlocks_it": "user confirms identity and canonical docs; access top-up",
+   "provenance": "reconstructed"
+  },
+  "80": {
+   "app": "Harvest",
+   "status": "EXCLUDED_IDENTITY_UNRESOLVED",
+   "why_gated": "3 different products retrieved (getharvest / harvestapi / Greenhouse Harvest API); #80 has NO hint (reconstructed list)",
+   "what_unlocks_it": "authoritative identity (Notion hint) then fresh targeted retrieval",
+   "provenance": "reconstructed"
+  },
+  "50": {
+   "app": "fanbasis",
+   "status": "EXCLUDED_IDENTITY_UNRESOLVED",
+   "why_gated": "fanbasis.io unconfirmed; openstage.live excluded; dev-docs password-gated",
+   "what_unlocks_it": "user confirms fanbasis.io; retrieval of public docs may be impossible (docs gated)",
+   "provenance": "original"
+  },
+  "59": {
+   "app": "Waterfall.io",
+   "status": "EXPANSION_3H_PROVISIONAL_IDENTITY",
+   "why_gated": "provisional identity (user decision); reconstructed list",
+   "what_unlocks_it": "user confirms identity; access top-up",
+   "provenance": "reconstructed"
+  },
+  "60": {
+   "app": "Clay",
+   "status": "EXPANSION_3H_PROVISIONAL_IDENTITY",
+   "why_gated": "provisional identity (user decision); reconstructed list",
+   "what_unlocks_it": "user confirms identity; access top-up",
+   "provenance": "reconstructed"
+  }
+ },
+ "commitment_breakdown": {
+  "committed_after_approval(A)": 28,
+  "conditional_retrieval_recommended(B)": 2,
+  "conditional_on_retrieval_and_identity(C)": 39,
+  "conditional_on_identity(D)": 6
+ },
+ "why_no_double_counting": [
+  "the 6 gated apps are NOT in the 28 (v1f) nor in the 39: wave 3H (Waterfall.io, Clay) is excluded from the 39 and counted once in the 6",
+  "Neo4j (#66) is not in the 28 and not in the 39; its 2 calls are 1 app x 2 surfaces",
+  "Sherlock (#58) and Front (#14) already have baseline records and are NOT counted (optional re-extraction listed separately)",
+  "41 unplanned apps = 39 (group C) + 2 (3H, counted in group D): checked",
+  "unique (app, surface) pairs = 75; apps with a new call = 74; 26 baseline + 74 = 100: checked"
+ ],
+ "not_in_the_75": {
+  "optional_reextraction_58_and_14": 2,
+  "corrected_pass_estimate_20pct": 15,
+  "note": "a corrected pass would be a new versioned run"
+ },
+ "groq_verification": {
+  "records": 101,
+  "planned_calls": 403,
+  "note": "baseline records use the measured plan (103); new records use 4 per record (estimate)"
+ },
+ "approvable_now": {
+  "count": 28,
+  "group": "A_v1f_frozen (needs your approval + quota check only)"
+ },
+ "conditional": {
+  "count": 47,
+  "note": "B + C + D need retrieval and/or identity confirmation and their own approved plans"
+ }
+}

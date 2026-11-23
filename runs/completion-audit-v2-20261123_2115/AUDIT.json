@@ -1,0 +1,4325 @@
+{
+  "created_local": "2026-11-23T21:09:04.257243+05:30",
+  "source_dataset": "runs/dataset-live-v4-20261123_2040/DATASET.json",
+  "registry_sha256": "98d8aa537105ddc34ce4785a4b192a14a338f1e1a7e96bf9f95a69c5a97e1120",
+  "accepted_records_audited": 54,
+  "network_calls": 0,
+  "model_calls": 0,
+  "accuracy_claimed": false,
+  "method": "Re-ran existing strict lexical/URL/contiguity checks against full stored source bundles (baseline raw evidence for V1); did not judge factual semantics.",
+  "claim_state_totals": {
+    "supported_lexical": 124,
+    "unsupported": 143,
+    "not_found_in_provided_evidence": 27,
+    "needs_human": 2,
+    "unknown": 2
+  },
+  "evidence_issue_totals": {
+    "not_contiguous_in_cited_page": 74,
+    "stitched_ellipsis": 30,
+    "placeholder_or_too_short": 29,
+    "not_in_shown_evidence": 3,
+    "url_not_in_sources": 3
+  },
+  "claims_by_field_and_state": {
+    "auth_methods:supported_lexical": 52,
+    "access:unsupported": 30,
+    "api_types:supported_lexical": 35,
+    "existing_mcp:unsupported": 12,
+    "auth_methods:unsupported": 68,
+    "access:supported_lexical": 22,
+    "existing_mcp:not_found_in_provided_evidence": 27,
+    "existing_mcp:supported_lexical": 15,
+    "auth_methods:needs_human": 1,
+    "api_types:unsupported": 33,
+    "access:unknown": 2,
+    "api_types:needs_human": 1
+  },
+  "records": [
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "evidence_count": 7,
+      "evidence_lexically_valid": 6,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "soap",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "sdk_or_cli_only",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 5,
+        "unsupported": 2
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 2,
+      "name": "HubSpot",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "evidence_count": 9,
+      "evidence_lexically_valid": 8,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developers.hubspot.com/docs",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access_note",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.hubspot.com/docs",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.hubspot.com/docs",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "sdk_or_cli_only",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 4,
+        "unsupported": 3
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 3,
+      "name": "Pipedrive",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developers.pipedrive.com/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.pipedrive.com/",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 4,
+      "name": "Attio",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "evidence_count": 7,
+      "evidence_lexically_valid": 7,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://attio.com/developers/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://attio.com/developers/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://attio.com/developers/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://attio.com/developers/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.attio.com/rest-api/overview",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.attio.com/docs/overview",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://docs.attio.com/docs/overview",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "sdk_or_cli_only",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 7,
+        "unsupported": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.twenty.com/developers/extend/api",
+          "issues": [
+            "placeholder_or_too_short"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://docs.twenty.com/developers/extend/api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.twenty.com/developers/extend/api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://api.twenty.com/open-api/core",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "graphql",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 4,
+        "supported_lexical": 3
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 6,
+      "name": "Podio",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "evidence_count": 7,
+      "evidence_lexically_valid": 5,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.podio.com/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developers.podio.com/authentication",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developers.podio.com/authentication",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developers.podio.com/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.podio.com/authentication/server_side",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_breadth",
+          "url": "https://developers.podio.com/clients/python",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.podio.com/clients/python",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "other",
+          "state": "needs_human"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "community",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 2,
+        "needs_human": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 7,
+      "name": "Zoho CRM",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://zoho.com/crm/developer/docs/api/v8/api-collection.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://www.zoho.com/crm/developer/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://www.zoho.com/crm/developer/docs/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://www.zoho.com/crm/developer/",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "graphql",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 2,
+        "supported_lexical": 3
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 8,
+      "name": "Close",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.close.com/api/overview/oauth-authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developer.close.com/api/overview/api-key-authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.close.com/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.close.com/",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 4
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 9,
+      "name": "Copper",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.copper.com/introduction/authentication.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developer.copper.com/introduction/authentication.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.copper.com/introduction/oauth/index.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.copper.com/introduction/authentication.html",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 2,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 10,
+      "name": "DealCloud",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://api.docs.dealcloud.com/docs/token",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://api.docs.dealcloud.com/docs",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://api.docs.dealcloud.com/docs",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://api.docs.dealcloud.com/mcp/authentication",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "unknown",
+          "state": "unknown"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 4,
+        "unknown": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developer.zendesk.com/documentation/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.zendesk.com/documentation/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.zendesk.com/api-reference/",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 4,
+        "unsupported": 2,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 12,
+      "name": "Intercom",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.intercom.com/docs/references/introduction",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 4,
+        "unsupported": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developers.freshdesk.com/",
+          "issues": [
+            "placeholder_or_too_short"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000009511-automation-examples-using-webhooks",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.freshdesk.com/",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "jwt_or_signed",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 4,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 14,
+      "name": "Front",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://integrations.sh/front.com",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://integrations.sh/front.com",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://integrations.sh/front.com",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://integrations.sh/front.com",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "unknown",
+          "state": "unknown"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 4,
+        "unsupported": 1,
+        "unknown": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 16,
+      "name": "LiveAgent",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://support.liveagent.com/docs/api/v3/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://support.liveagent.com/docs/api/v3/",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 1,
+        "unsupported": 2,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 17,
+      "name": "Plain",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://plain.com/docs/graphql/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://www.plain.com/llms.txt",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://www.plain.com/llms.txt",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://plain.com/docs/getting-started",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "graphql",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 5,
+        "unsupported": 2
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 18,
+      "name": "Help Scout",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.helpscout.com/docs-api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.helpscout.com/docs-api",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "jwt_or_signed",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 2,
+        "unsupported": 5,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 19,
+      "name": "Gorgias",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developers.gorgias.com/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.gorgias.com/",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 2,
+        "unsupported": 2,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 20,
+      "name": "Gladly",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access_note",
+          "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.gladly.com/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://api.slack.com/docs/oauth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://api.slack.com/authentication/basics",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://api.slack.com/docs/oauth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://api.slack.com/authentication/basics",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "jwt_or_signed",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "sdk_or_cli_only",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "websocket",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 2,
+        "unsupported": 6
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 22,
+      "name": "Twilio",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "sdk_or_cli_only",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 4,
+        "unsupported": 2
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 23,
+      "name": "Zoho Cliq",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://zoho.com/cliq/help/platform/faq.html",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 25,
+      "name": "Pumble",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://pumble.com/integrations",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 3,
+        "supported_lexical": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 26,
+      "name": "Discord",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 1,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.discord.com/developers/reference",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://docs.discord.com/developers/discord-social-sdk/how-to/use-with-discord-apis",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 5,
+        "supported_lexical": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "version": "corrected5",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://core.telegram.org/widgets/login",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://core.telegram.org/api/obtaining_api_id",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://core.telegram.org/api/obtaining_api_id",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://core.telegram.org/widgets/login",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://core.telegram.org/api/obtaining_api_id",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 3,
+        "supported_lexical": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 28,
+      "name": "WhatsApp Business",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "evidence_count": 7,
+      "evidence_lexically_valid": 5,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "issues": [
+            "stitched_ellipsis"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "websocket",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 2,
+        "unsupported": 3,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 29,
+      "name": "Aircall",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.aircall.io/docs/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developer.aircall.io/docs/basic-authentication",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.aircall.io/docs/introduction",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.aircall.io/docs/introduction",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "webhook",
+          "state": "needs_human"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 2,
+        "needs_human": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 30,
+      "name": "Vonage",
+      "version": "batchB",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.vonage.com/en/dashboard/build/applications",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developer.vonage.com/en/dashboard/build/applications",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.vonage.com/en/documentation",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.vonage.com/en/mcp-server/overview",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "jwt_or_signed",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 3
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 32,
+      "name": "Meta Ads",
+      "version": "corrected5",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 1,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+          "issues": [
+            "not_in_shown_evidence"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/using-the-api/faq.md",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+          "issues": [
+            "not_in_shown_evidence"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "approval_or_review_required",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 2,
+        "supported_lexical": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 33,
+      "name": "LinkedIn Ads",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_breadth",
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://learn.microsoft.com/en-us/linkedin/",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "approval_or_review_required",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 2,
+        "unsupported": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://github.com/GoHighLevel/highlevel-api-sdk",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://marketplace.gohighlevel.com/docs/Authorization/DeveloperGlossary",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 1,
+        "unsupported": 4
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "version": "batchB",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 6,
+      "evidence_lexically_valid": 1,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys.md",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/oauth-2.md",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "buildability",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys.md",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 4,
+        "supported_lexical": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developers.klaviyo.com/en/docs/get_started",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.klaviyo.com/en/docs/get_started",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 5,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 38,
+      "name": "Pinterest",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 0,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://dev.pinterest.com/docs/getting-started",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "approval_or_review_required",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 4,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 39,
+      "name": "Threads (Meta)",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.facebook.com/documentation/threads/get-started",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developers.facebook.com/documentation/threads/get-started",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.facebook.com/documentation/threads/overview",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "",
+          "issues": [
+            "placeholder_or_too_short",
+            "url_not_in_sources"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "approval_or_review_required",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 1,
+        "unsupported": 2,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 41,
+      "name": "Shopify",
+      "version": "corrected5",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 7,
+      "evidence_lexically_valid": 6,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://shopify.dev/docs/api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://shopify.dev/docs/api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://shopify.dev/docs/api",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://shopify.dev/docs/api",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "graphql",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 4
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 6,
+      "evidence_lexically_valid": 1,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.bigcommerce.com/docs/rest-authentication/current-customer",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developer.bigcommerce.com",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_breadth",
+          "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.bigcommerce.com",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "graphql",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 3,
+        "supported_lexical": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas-best-practices.html",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer.salesforce.com",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "partner_or_contact_sales",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 4,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 46,
+      "name": "Squarespace",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developers.squarespace.com/oauth",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.squarespace.com/commerce-apis/website-overview",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 47,
+      "name": "Ecwid",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://api-docs.ecwid.com/reference/authentication-in-native-apps",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://api-docs.ecwid.com/reference/implement-sso",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://api-docs.ecwid.com/reference/authentication-in-native-apps",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 3,
+        "supported_lexical": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 49,
+      "name": "Amazon Selling Partner",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications?ld=NSGoogle&pageName=US:SPDS:SPAPI-vendor",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://developer-docs.amazon.com/sp-api/docs/tutorial-test-selling-partner-api-endpoints",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer-docs.amazon.com/sp-api/docs/tutorial-test-selling-partner-api-endpoints",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications?ld=NSGoogle&pageName=US:SPDS:SPAPI-vendor",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "approval_or_review_required",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 2,
+        "unsupported": 2,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 51,
+      "name": "DataForSEO",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.dataforseo.com/v3/auth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://docs.dataforseo.com/v3/auth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.dataforseo.com/v3/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://docs.dataforseo.com/v3/",
+          "issues": [
+            "placeholder_or_too_short",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "basic",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 52,
+      "name": "SE Ranking",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://seranking.com/api/project/getting-started",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://seranking.com/api/how-to-get-api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://seranking.com/api/project/getting-started",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://seranking.com/api/project/getting-started",
+          "issues": [
+            "placeholder_or_too_short"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 2,
+        "unsupported": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 53,
+      "name": "Ahrefs",
+      "version": "corrected5",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "access",
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://docs.ahrefs.com/",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_trial_or_paid_plan",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 3,
+        "unsupported": 2
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 56,
+      "name": "Firecrawl",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.firecrawl.dev/oauth",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://docs.firecrawl.dev/authentication",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://docs.firecrawl.dev/introduction",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.firecrawl.dev/api-reference/introduction",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://docs.firecrawl.dev/introduction",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 3,
+        "supported_lexical": 2
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 61,
+      "name": "GitHub",
+      "version": "corrected5",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 5,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://docs.github.com/en/copilot/concepts/context/mcp",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 3,
+        "supported_lexical": 2
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 62,
+      "name": "Vercel",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 7,
+      "evidence_lexically_valid": 7,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://vercel.com/docs",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://vercel.com/docs/accounts/access-tokens",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://vercel.com/docs",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://vercel.com/docs/rest-api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_breadth",
+          "url": "https://vercel.com/docs",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://vercel.com/docs",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "supported_lexical"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 5,
+        "unsupported": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 63,
+      "name": "Netlify",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://docs.netlify.com/",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 1,
+        "unsupported": 4,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 65,
+      "name": "Supabase",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 6,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://supabase.com/docs/guides/functions/auth-headers",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://supabase.com/pricing",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://supabase.com/docs/guides/auth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_breadth",
+          "url": "https://supabase.com/docs/guides/auth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://supabase.com/docs/guides/auth",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 2,
+        "unsupported": 2,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 70,
+      "name": "Sentry",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 6,
+      "evidence_lexically_valid": 4,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.sentry.io/api/auth",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://docs.sentry.io/api/auth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://docs.sentry.io/api/auth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "access",
+          "url": "https://docs.sentry.io/api/auth",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.sentry.io/api/",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://sentry.io/pricing",
+          "issues": [
+            "placeholder_or_too_short"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "official",
+          "state": "unsupported"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 6
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 72,
+      "name": "Airtable",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 6,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "access",
+          "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://airtable.com/developers/web/api/authentication.md",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_breadth",
+          "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "",
+          "issues": [
+            "placeholder_or_too_short",
+            "url_not_in_sources"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 1,
+        "unsupported": 3,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 75,
+      "name": "Asana",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 5,
+      "evidence_lexically_valid": 1,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developers.asana.com/docs/personal-access-token",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://developers.asana.com/docs/authentication",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developers.asana.com/docs/personal-access-token",
+          "issues": [
+            "not_in_shown_evidence"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "api_types",
+          "url": "https://developers.asana.com/docs/quick-start",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://developers.asana.com/docs/personal-access-token",
+          "issues": [
+            "stitched_ellipsis",
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "supported_lexical": 1,
+        "unsupported": 3,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 76,
+      "name": "Monday.com",
+      "version": "batchA",
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "evidence_count": 4,
+      "evidence_lexically_valid": 2,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "issues": [
+            "not_contiguous_in_cited_page"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://developer.monday.com/api-reference/docs/getting-started",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://developer.monday.com/api-reference/docs/getting-started",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "existing_mcp",
+          "url": "unknown",
+          "issues": [
+            "placeholder_or_too_short",
+            "url_not_in_sources"
+          ],
+          "valid_lexical": false
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "oauth2",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "unsupported"
+        },
+        {
+          "field": "api_types",
+          "item": "graphql",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 4,
+        "supported_lexical": 1,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "version": "baseline_p1_v1",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "evidence_count": 6,
+      "evidence_lexically_valid": 3,
+      "evidence": [
+        {
+          "field": "auth_methods",
+          "url": "https://docs.paygent.to/getting-started/assign-users-to-plans",
+          "issues": [
+            "stitched_ellipsis"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "auth_methods",
+          "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+          "issues": [
+            "placeholder_or_too_short"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "access",
+          "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.paygent.to/getting-started/assign-users-to-plans",
+          "issues": [],
+          "valid_lexical": true
+        },
+        {
+          "field": "api_types",
+          "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+          "issues": [
+            "placeholder_or_too_short"
+          ],
+          "valid_lexical": false
+        },
+        {
+          "field": "existing_mcp",
+          "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+          "issues": [],
+          "valid_lexical": true
+        }
+      ],
+      "claim_states": [
+        {
+          "field": "auth_methods",
+          "item": "bearer_token",
+          "state": "unsupported"
+        },
+        {
+          "field": "auth_methods",
+          "item": "api_key",
+          "state": "unsupported"
+        },
+        {
+          "field": "access",
+          "item": "self_serve_free",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "rest",
+          "state": "supported_lexical"
+        },
+        {
+          "field": "api_types",
+          "item": "sdk_or_cli_only",
+          "state": "unsupported"
+        },
+        {
+          "field": "existing_mcp",
+          "item": "none_found",
+          "state": "not_found_in_provided_evidence"
+        }
+      ],
+      "claim_state_counts": {
+        "unsupported": 3,
+        "supported_lexical": 2,
+        "not_found_in_provided_evidence": 1
+      },
+      "interpretation": "Lexical evidence validation only; no semantic or accuracy claim."
+    }
+  ]
+}

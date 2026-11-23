@@ -1,0 +1,133 @@
+{
+ "tag": "groq_orgA",
+ "app": 25,
+ "name": "Pumble",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 10,
+ "latency_s": 4.77,
+ "tokens_in": 3197,
+ "tokens_out": 571,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+    "quote": "By using the Pumble API addon, you can ... generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://pumble.com/integrations",
+    "quote": "Yes you can. The Pumble API is publicly available for anyone to explore. You can view our documentation and get started.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/",
+    "quote": "curl -X POST \\ --location \"https://api.pumble.com/workspaces/WORKSPACE-ID/incomingWebhooks/postMessage/WEBHOOK-CODE\" ...",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+    "quote": "Pumble maintains a native MCP (Model Context Protocol) server hosted directly at pumble.com, helping you connect your workspace to your AI agent of choice.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "supported_lexical"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 3,
+   "supported_lexical": 1
+  },
+  "evidence_total": 4,
+  "evidence_valid": 2,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 2,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 2,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Pumble offers a public REST API with API\u2011key authentication, allowing developers to send messages, react, and manage channels, and provides a native MCP server for AI agent integration.",
+  "auth_methods": [
+   "api_key"
+  ],
+  "access": "self_serve_free",
+  "access_note": "API keys can be generated directly in the workspace via the API addon without a paid plan.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "buildability": "yes",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+    "quote": "By using the Pumble API addon, you can ... generate an API key that allows you to send messages, reactions, and more via simple HTTP requests."
+   },
+   {
+    "field": "access",
+    "url": "https://pumble.com/integrations",
+    "quote": "Yes you can. The Pumble API is publicly available for anyone to explore. You can view our documentation and get started."
+   },
+   {
+    "field": "api_types",
+    "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/",
+    "quote": "curl -X POST \\ --location \"https://api.pumble.com/workspaces/WORKSPACE-ID/incomingWebhooks/postMessage/WEBHOOK-CODE\" ..."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+    "quote": "Pumble maintains a native MCP (Model Context Protocol) server hosted directly at pumble.com, helping you connect your workspace to your AI agent of choice."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "dad6c23723bbbaa74e5f6aa4c1b454dbb7b9eaa88b10d6a5107fb7cb4cdf9e9e",
+ "at": "2026-11-23T19:50:40+05:30"
+}

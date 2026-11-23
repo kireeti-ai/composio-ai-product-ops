@@ -1,0 +1,339 @@
+{
+ "id": 48,
+ "name": "Gumroad",
+ "started": "2026-11-23T19:36:26+05:30",
+ "searches": [
+  {
+   "q": "Gumroad API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:28+05:30"
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:30+05:30"
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:32+05:30"
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:35+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://gumroad.com/mcp",
+   "requested_at": "2026-11-23T19:36:36+05:30",
+   "status": "ok",
+   "final_url": "https://gumroad.com/mcp",
+   "title": "Gumroad MCP | Sell digital products from your AI assistant",
+   "chars": 3152,
+   "sha256": "df000cfb0aa165c957424d3d91cb630097699af570f127fe6a8257887a0d5112",
+   "text": "An MCP server for selling digital products\n\n## What can you do with it?\n\nModel Context Protocol (MCP) lets your AI assistant work with your store. Manage ebooks, templates, courses, and other digital products without leaving the chat.\n\n### \u201cShow my recent sales.\u201d\n\nSee which products people bought and what they paid.\n\n### \u201cDraft my next product.\u201d\n\nAsk for a product name, price, and description. Add the product files in Gumroad before publishing.\n\n### \u201cCheck my latest payouts.\u201d\n\nCheck recent payout amounts and their status.\n\nChoose your assistant\n\n## Which assistant can I connect?\n\n### Gumroad MCP for Muse\n\nSubmitted for review. The Gumroad connector is not yet available in Muse.\n\nRead the technical details\n\n### Gumroad MCP for Claude\n\nAvailable now in Claude\u2019s connector directory.\n\nListed in Claude\u2019s connector directory. You can also add it as a custom connector.\n\nSet up Gumroad MCP\n\n### Gumroad MCP for Cursor\n\nAvailable now as a custom connector.\n\nSet up Gumroad MCP\n\n### Gumroad MCP for Google Antigravity\n\nAvailable now as a custom connector.\n\nSet up Gumroad MCP\n\n### Gumroad MCP for ChatGPT\n\nAvailable now in ChatGPT\u2019s plugin directory.\n\nListed in ChatGPT\u2019s plugin directory.\n\nSet up Gumroad MCP\n\nEvery assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste.\n\nSet up Gumroad MCP\n\n## How do you connect?\n\nSetup takes three steps in the assistant you use. You stay signed in to Gumroad, and you can revoke access whenever you want.\n\n1. ### 1. Add the connector\n\n   Add Gumroad from your assistant\u2019s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page.\n\n   Gumroad MCP for Claude connector page\n   Gumroad MCP for Cursor connector page\n   Gumroad MCP for Google Antigravity connector page\n   Gumroad MCP for ChatGPT connector page\n2. ### 2. Connect your Gumroad account\n\n   Sign in to Gumroad when prompted. Review the requested permissions before you authorize access.\n3. ### 3. Start a conversation\n\n   Select the connector in your chat. Try asking, \u201cShow my Gumroad products.\u201d\n4. ### Full step-by-step guide\n\n   The help center covers the permissions you grant, revoking access, and what to do when publishing fails.\n\n   Connecting AI assistants to your Gumroad store\n\n## What access do you give your assistant?\n\n### What data can it read?\n\nYour products, sales, buyer emails, and payouts, according to the permissions you grant. You can grant some and not others.\n\n### Can it publish products?\n\nNew products start as unpublished drafts. With product access, the connector can publish or unpublish them. Review these actions in your MCP client.\n\n### How do customers buy?\n\nShare your product\u2019s Gumroad link. Customers pay through Gumroad checkout. The MCP server does not take payments in your chat.\n\n### How do I revoke access?\n\nRevoke the connection any time in Settings > Applications. Disconnecting the connector in your chat app does not revoke its access token, so revoke it here to end the connection.\n\nSubscribe to get tips and tactics to grow the way you want.\n\n\u24b8 Gumroad, Inc.",
+   "retrieved_at": "2026-11-23T19:36:36+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://helloitsraman.gumroad.com/l/x-post-mcp-server",
+   "requested_at": "2026-11-23T19:36:38+05:30",
+   "status": "ok",
+   "final_url": "https://helloitsraman.gumroad.com/l/x-post-mcp-server",
+   "title": "X Post MCP Server",
+   "chars": 901,
+   "sha256": "73496b0d46d88a9f20292996f6137f37763591ec6ed427278a3326cf80582830",
+   "text": "$1\n\nhttps://schema.org/InStock\n\nUSD\n\nRamandeep Singh\n\nI want this!\n\nAlready bought this? Get your download link\n\nYou will get the MCP server setup zip file which includes the MCP server file and setup guide to setup on your local machine\n\n##### Size\n\n3.89 KB\n\nAdd to wishlist\n\nRamandeep Singh\n\n## Post to X (formerly Twitter) with a single click.\n\n*Want to share content from your favorite LLM tools like Claude or Cursor directly to X (formerly Twitter) \u2014 without logging in? Now you can! With the X Post MCP Server, you can post seamlessly from your Claude Desktop UI and focus on crafting engaging, impactful content for your audience, while we handle the technical side of posting to X. \u2728*\n\n```\n\ud83c\udfac How It Works:\n1. Open Claude Desktop UI.\n2. Click the MCP server icon.\n3. Select \"X Post MCP Server\".\n4. Enter your content.\n5. Hit the \"Post\" button.\n6. Instantly receive the link to your X post!\n```",
+   "retrieved_at": "2026-11-23T19:36:38+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "requested_at": "2026-11-23T19:36:39+05:30",
+   "status": "ok",
+   "final_url": "https://gumroad.com/help/article/280-create-application-api",
+   "title": "Create an application for the API - Gumroad Help Center",
+   "chars": 5362,
+   "sha256": "3c414ad6b887d2fb17e890745b2265eaaecf42f0e35df822467c6c2d125d0876",
+   "text": "In this article:\n\nTo create an application for general use, you'll need to build a Redirect URI handler to generate access tokens for each of your users. However, if you only want to use the API on your own Gumroad account, you can manually generate an access token, which is a simpler process.\n\n### For just your account\n\nIf you're writing some custom code you need to run with your Gumroad account, all you need is an access token. Your access token is used in the request header of every request to the API and should be kept secret, like a password.\n\n### Generating an access token\n\nFirst, sign in to your Gumroad account. Then, go to advanced settings. Here, you'll see a form to create a new application.\n\nProvide the following information and click \"Create application\":\n\n* Application icon: A small thumbnail image to identify your application.\n* Application name: A name for your application\n* Redirect URI: While this is very important when making a general-purpose application, when you just want an access token to use the API with your own account, simply enter localhost (http://127.0.0.1) in this field, as its value is not meaningful.\n\nKeep the application ID and secret values safe and confidential, but they are not necessary for manually generating an access token. Instead, use the \"Generate access token\" button to get your access token.\n\nKeep your access token safe and confidential, like a password. When you make an API call, include it in the request's header. Here's an example of a request with the access token (replace ACCESS\\_TOKEN with the string from your application):\n\n> curl https://api.gumroad.com/v2/products \\\n>\n> -d \"access\\_token=ACCESS\\_TOKEN\" \\\n>\n> -X GET\n\nYou can always edit your application or find your Access Token again through the advanced settings page.\n\nWhile we also provide a\n\n```\nrefresh_token\n```\n\nwhen authenticating a user, we do not expire the\n\n```\naccess_token\n```\n\nuntil it is revoked manually.\n\nWith your access token in hand, head back to our API documentation for a list of endpoints the API makes available.\n\n### For any Gumroad account\n\nSetting up an application to use with any account starts off with the same process: creating an application through the advanced settings page.\n\nAgain, you'll need an Application icon, Application name, and Redirect URI. Now, when creating an application for any Gumroad account, the Redirect URI is actually important. To explain why, we must first detour to \"Sign in with Gumroad.\"\n\n### Sign in with Gumroad\n\nIf your website is built on Ruby on Rails, you can use the Gumroad Omniauth gem to enable \"Sign in with Gumroad\" in your software. Otherwise, use whatever OAuth/OmniAuth library your framework of choice supports. You will be provided with an Application ID (aka client\\_id ) and Application Secret (aka client\\_secret ) to use in the authentication process.\n\nHere is a step-by-step example:\n\n* From the third-party app, send the user to Gumroad for authorization using a URL like this:\n\n> https://gumroad.com/oauth/authorize?client\\_id=CLIENT\\_ID&redirect\\_uri=REDIRECT\\_URI&scope=SCOPE\n\n2. Replace CLIENT\\_ID, REDIRECT\\_URI, and SCOPE with the correct values. Here's a sample URL:\n\n> https://gumroad.com/oauth/authorize?client\\_id=f74e4939f6f9efe74f85ff034af9e9e04540d1e8fce609d652715db5480d4dbe&redirect\\_uri=https://oauthdebugger.com/debug&scope=edit\\_products\n\n3. Get the temporary authorization code from the URL redirected from Gumroad after authorization. For example, after authorization, Gumroad would redirect the user to the configured redirect\\_uri, something like this:\n\n> https://oauthdebugger.com/debug?code=c302a5e2330ea9a581e370c9c7c9b87760734336ae3253d37e5425a9aa1a04d9\n\n4. Use that code with client\\_id and client\\_secret to send an HTTPS request to Gumroad (as shown in the curl example) to get the access\\_token. We can then use this access\\_token in all API requests. Here is an example of getting that token:\n\n> curl --request POST \\\n>\n> --url https://api.gumroad.com/oauth/token \\\n>\n> --data code=c302a5e2330ea9a581e370c9c7c9b87760734336ae3253d37e5425a9aa1a04d9 \\\n>\n> --data client\\_id=f74e4939f6f9efe74f85ff034af9e9e04540d1e8fce609d652715db5480d4dbe \\\n>\n> --data client\\_secret=10173a92c55744b097f0e2a1c4ea03d9dd5b54ad04c82e8efaabbec2d3a8f1f6 \\\n>\n> --data redirect\\_uri=https://oauthdebugger.com/debug\n>\n> {\"access\\_token\":\"abf11e4ab2850ffd50ef690257f7a1c998a443059513d1a4826f2b3159620505\",\"token\\_type\":\"Bearer\",\"refresh\\_token\":\"77d7836232246508a6c5b1a9d153d8edbce74249edafaef228554e7be8a29b5e\",\"scope\":\"edit\\_products\",\"created\\_at\":1609038258}\n\n### Using a Redirect URI\n\nThe Redirect URI can be any endpoint on your website. After a user authenticates through a \"Log in with Gumroad\" button, Gumroad will redirect them back to the configured Redirect URI with a temporary authorization code. The application can then use that temporary code along with the Application ID and Application Secret to get an access token for that user.\n\nYou can change your Redirect URI at any time.\n\n### Enabling your application\n\nFollowing the OmniAuth library's documentation, configure your Application ID and Application Secret, and then make sure you store the Access Tokens that the system generates appropriately for each user during the Redirect URI step. Each of these values should be treated like passwords, kept secret and safe.",
+   "retrieved_at": "2026-11-23T19:36:39+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://gumroad.com/api",
+   "requested_at": "2026-11-23T19:36:44+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "http://api.gumroad.com/api",
+   "requested_at": "2026-11-23T19:36:50+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://api.gumroad.com/api",
+   "requested_at": "2026-11-23T19:36:52+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "title": "Create an application for the API - Gumroad Help Center",
+   "snippet": "With your access token in hand, head back to our [API documentation](https://gumroad.com/api) for a list of endpoints the API makes available."
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://gumroad.com/api",
+   "title": "Gumroad",
+   "snippet": "/products/:id/disable\nDisable an existing product.\n```\nhttps://api.gumroad.com/v2/products/:id/disable\n```"
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "http://api.gumroad.com/api",
+   "title": "Gumroad API Reference",
+   "snippet": "## get /sales/:id\nRetrieves the details of a sale by this user. Available with the 'view_sales' scope.\n```\nhttps://api.gumroad.com/v2/sales/:id\n```"
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://gumroad.com/help/article/76-license-keys",
+   "title": "License keys - Gumroad Help Center",
+   "snippet": "- **Can I make API calls from the browser?** Yes, you can send API requests to `api.gumroad.com` from the browser."
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://github.com/sethvincent/gumroadjs",
+   "title": "GitHub - sethvincent/node-gumroad-client: node.js api wrapper for gumroad.com",
+   "snippet": "Gumroad api documentation\nBe sure to read the api docs so you know what options to pass: [https://gumroad.com/api/methods](https://gumroad.com/api/methods)\n## methods:\n### sessions\n"
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://github.com/antiwork/gumroad/blob/755e0a67/app/javascript/components/ApiDocumentation/Endpoints/Products.tsx",
+   "title": "gumroad/app/javascript/components/ApiDocumentation/Endpoints/Products.tsx at 755e0a67dd7f1f1434bc463240810654af8fca1d \u00b7 antiwork/gumroad",
+   "snippet": "\nconst ProductResponseFields = () => (\n<ApiResponseFields>\n{renderFields([\n{ name: \"success\", type: \"boolean\", description: \"Whether the request succeeded\" },\n{ name:"
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://github.com/antiwork/gumroad/blob/main/app/javascript/components/ApiDocumentation/Endpoints/Files.tsx",
+   "title": "gumroad/app/javascript/components/ApiDocumentation/Endpoints/Files.tsx at main \u00b7 antiwork/gumroad",
+   "snippet": "a presigned URL for each 100 MB part.\n</li>\n<li>\nUpload \u2014 <code>PUT</code> each part's bytes to its presigned URL and capture the <code>ETag</code> response\nheader."
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://docs.n8n.io/integrations/builtin/credentials/gumroad",
+   "title": "Gumroad credentials | Nodes",
+   "snippet": "Refer to the Gumroad Create an application for the API documentation for detailed instructions on creating a new application and generating an ..."
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://github.com/opencue/cuecards/blob/main/.agents/skills/api-gateway/references/gumroad.md",
+   "title": "cuecards/.agents/skills/api-gateway/references/gumroad.md at main \u00b7 opencue/cuecards",
+   "snippet": "# Gumroad Routing Reference\n**App name:** `gumroad` **Base URL proxied:** `api.gumroad.com`\n## API Path Pattern\n```\n/gumroad/v2/{resource}\n```\n## Common Endpoints\n### Get Current User\n```\nGET"
+  },
+  {
+   "q": "Gumroad API documentation",
+   "url": "https://mintlify.com/antiwork/gumroad/api/products/retrieve",
+   "title": "Retrieve Product",
+   "snippet": "```\ncurl -X GET \"https://api.gumroad.com/v2/products/kUxDaJMg5NP9PpHRCNYCrw==\" \\\n-H \"Authorization: Bearer YOUR_ACCESS_TOKEN\"\n```"
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://api.gumroad.com/api",
+   "title": "Gumroad",
+   "snippet": "## Authentication\nOn the application page, click **Generate access token** to get the token you will use with the API."
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "title": "Create an application for the API - Gumroad Help Center",
+   "snippet": "While we also provide a `refresh_token` when authenticating a user, we do not expire the `access_token` until it is revoked manually."
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://github.com/bluemods/GumroadAPI",
+   "title": "GitHub - bluemods/GumroadAPI: A Kotlin client for the Gumroad API",
+   "snippet": "## Getting an access token (API key)\n- Visit the [OAuth application dashboard](https://app.gumroad.com/oauth/applications/)\n- Create an application. Redirect URI can be set to `http://127.0.0.1` if"
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://docs.n8n.io/integrations/builtin/credentials/gumroad.md",
+   "title": "docs.n8n.io/integrations/builtin/credentials/gumroad.md",
+   "snippet": "## Supported authentication methods <a href=\"#supported-authentication-methods\" id=\"supported-authentication-methods\"></a>\n* API access token\n* OAuth2"
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://github.com/Alofoxx/oauth2-gumroad",
+   "title": "GitHub - Alofoxx/oauth2-gumroad: Gumroad provider for the OAuth 2.0 Client",
+   "snippet": "This package provides Gumroad OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client), v2.0 and up."
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://nocodeapi.com/docs/gumroad-api/",
+   "title": "Gumroad API",
+   "snippet": "Connect with Gumroad API and get get products, sales, subscribers, verify licence with simple HTTP REST API. With NoCodeAPI you can secure your API keys and."
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://dev.to/zsevic/license-key-verification-with-gumroad-api-58f9?comments_sort=top",
+   "title": "gumroad - # - api",
+   "snippet": "Gumroad allows verifying license keys via API calls to limit the usage of the keys. It can be helpful to prevent the redistribution of ..."
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://github.com/antiwork/gumroad-cli/commit/f9278e31e8054fc69b0e1623232a84e318c53249",
+   "title": "Add explicit token auth helpers (#132) \u00b7 antiwork/gumroad-cli@f9278e3",
+   "snippet": "`gumroad auth login # Browser-based OAuth (default)` | |\n| `65` | `65` | `gumroad auth login --web # Force browser OAuth, no fallback` |"
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://cdn.cdata.com/help/FAN/api/gumroad/pg_connectionprofile.htm",
+   "title": "Connecting to Gumroad",
+   "snippet": "Gumroad and connect to your own data or to allow other users to connect to their data, you can use the OAuth 2.0 standard. This is the recommended authentication method.\nFirst you need to register"
+  },
+  {
+   "q": "Gumroad API authentication OAuth API key developer",
+   "url": "https://www.youtube.com/watch?v=y3vtvmnw0sc",
+   "title": "How To Generate A Gumroad API Key",
+   "snippet": "In this tutorial, you'll learn how to access your Gumroad settings, open the developer or API section, generate a new API key, and copy it\u00a0..."
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://gumroad.com/developers",
+   "title": "Sanjay Yadav",
+   "snippet": "Gumroad API The Gumroad API is a powerful way to automate creation, customization, and analysis of your Gumroad products. Photographers use it to create products for each of their photos, and record"
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://gumroad.com/api",
+   "title": "Gumroad",
+   "snippet": "limited to 20 per 10 minutes. Accounts that are suspended or closed cannot upload, and a token holding only the broad `account` scope is rejected \u2014 this endpoint requires `edit_profile` specifically."
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://gumroad.com/api?rel=noopener,noreferrer&target=_blank",
+   "title": "API",
+   "snippet": "**subscription_duration** (optional, membership only, \"monthly\", \"quarterly\", \"biannually\", \"yearly\", or \"every_two_years\")"
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://gumroad.com/help/article/280-create-application-api",
+   "title": "Create an application for the API - Gumroad Help Center",
+   "snippet": "access tokens for each of your users. However, if you only want to use the API on your own Gumroad account, you can manually generate an access token, which is a simpler process.\n### For just your"
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "http://api.gumroad.com/api",
+   "title": "Gumroad API Reference",
+   "snippet": "To start using the Gumroad API, you'll need to [register your OAuth application](/settings/advanced#application-form). The [Licenses API](/help/license-keys) does not require an OAuth application."
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://api.sh/gumroad-api",
+   "title": "Gumroad API: products, creators, reviews & search as JSON \u00b7 API.SH",
+   "snippet": "Every Gumroad endpoint costs 1 credit per call: credits are $1 per 1,000 on a monthly plan, $2 pay-as-you-go. [Pricing](/pricing)"
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://www.youtube.com/watch?v=y3vtvmnw0sc",
+   "title": "How To Generate A Gumroad API Key",
+   "snippet": "A Gumroad API key allows developers, creators, and online business owners to access Gumroad data programmatically and connect their account\u00a0..."
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://github.com/sinanisler/gumroad-api",
+   "title": "sinanisler/gumroad-api: A WordPress plugin that automatically ...",
+   "snippet": "A WordPress plugin that automatically creates user accounts when customers purchase products from your Gumroad store. Connect Gumroad API."
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://nocodeapi.com/marketplace/gumroad/",
+   "title": "Gumroad JSON API to Read and Write",
+   "snippet": "Gumroad API to get products, sales, subscribers, verify licence without any server setup and coding. Gumroad is an online platform for creators to monetize ..."
+  },
+  {
+   "q": "Gumroad API access pricing plans developer account",
+   "url": "https://reportei.com/connect/en/toolkit/gumroad/tool/publish-product",
+   "title": "Publish product with the Gumroad API",
+   "snippet": "Gumroad API Publishes a draft or unpublished product, so buyers can buy it. Plans and pricing FAQ Company. Developers Documentation Build it with AI Start free ..."
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://gumroad.com/chatgpt",
+   "title": "Gumroad MCP for ChatGPT | Sell digital products",
+   "snippet": "MCP server URL\n`https://gumroad.com/chatgpt/v1/mcp`\n2. ### 2. Connect your Gumroad account\nSign in to Gumroad when prompted. Review the"
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+   "title": "Connecting AI assistants to your Gumroad store - Gumroad Help Center",
+   "snippet": "Setup instructions for every assistant we support are also at [gumroad.com/mcp](https://gumroad.com/mcp)."
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://gumroad.com/mcp",
+   "title": "Gumroad MCP | Sell digital products from your AI assistant",
+   "snippet": "### Gumroad MCP for Claude\nAvailable now in Claude\u2019s connector directory.\nListed in Claude\u2019s connector directory. You can also add it as a custom connector.\n[Set up Gumroad MCP](/claude)"
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://helloitsraman.gumroad.com/l/x-post-mcp-server",
+   "title": "X Post MCP Server - Ramandeep Singh - Gumroad",
+   "snippet": "Post to X (formerly Twitter) with a single click. Want to share content from your favorite LLM tools like Claude or Cursor directly to X (formerly Twitter) ..."
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://gumroad.com/cursor",
+   "title": "Gumroad MCP for Cursor | Sell digital products",
+   "snippet": "## How do you connect Cursor?\nAvailable today as a custom remote MCP server. There is no published Gumroad listing in Cursor\u2019s directory yet.\n1. ### 1. Add the connector\nAdd a remote MCP server"
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://gumroad.com/claude",
+   "title": "Gumroad MCP for Claude | Sell digital products",
+   "snippet": "If you cannot add connectors, ask your organization administrator.\n[Gumroad in Claude\u2019s connector directory](https://claude.ai/directory/gumroad)\nMCP server URL\n`https://gumroad.com/claude/v1/mcp`"
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://github.com/LiZhuBin/gumroad-mcp",
+   "title": "GitHub - LiZhuBin/gumroad-mcp",
+   "snippet": "(e.g., in `claude_desktop_config.json` or your MCP settings):\n```\n{\n\"mcpServers\": {\n\"gumroad\": {\n\"command\": \"npx\",\n\"args\": [\"gumroad-mcp\"],\n\"env\": {\n"
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://composio.dev/toolkits/gumroad",
+   "title": "Gumroad MCP Server | Composio",
+   "snippet": "Managed auth, hosted MCP servers, and every Gumroad tool your agent needs.Free to start."
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://mcp.pipedream.com/app/gumroad",
+   "title": "Gumroad MCP Server | Pipedream",
+   "snippet": "for every client. You'll authenticate when you add the server to your application.\n`https://mcp.pipedream.net/v2`\n### Add the server to your app\nSelect your chat client to learn how to get"
+  },
+  {
+   "q": "Gumroad MCP server official",
+   "url": "https://github.com/rmarescu/gumroad-mcp",
+   "title": "GitHub - rmarescu/gumroad-mcp: A Model Context Protocol (MCP) server implementation for Gumroad API",
+   "snippet": "To install gumroad-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@rmarescu/gumroad-mcp):\n```\nnpx -y @smithery/cli install @rmarescu/gumroad-mcp --client claude\n```"
+  }
+ ],
+ "official_domain_candidates": {
+  "gumroad.com": 17
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "gumroad.com",
+ "completed": "2026-11-23T19:36:52+05:30"
+}

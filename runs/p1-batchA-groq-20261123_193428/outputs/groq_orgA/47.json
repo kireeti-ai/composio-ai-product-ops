@@ -1,0 +1,145 @@
+{
+ "tag": "groq_orgA",
+ "app": 47,
+ "name": "Ecwid",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 6,
+ "latency_s": 2.14,
+ "tokens_in": 1748,
+ "tokens_out": 719,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://api-docs.ecwid.com/reference/authentication-in-native-apps",
+    "quote": "Authorization: Bearer secret_token",
+    "issues": [
+     "placeholder_or_too_short",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+    "quote": "Sign up as a developer to create an Ecwid account.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://api-docs.ecwid.com/reference/implement-sso",
+    "quote": "Find full list of available JS API calls",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://api-docs.ecwid.com/reference/authentication-in-native-apps",
+    "quote": "POST https://app.ecwid.com/api/v3/{storeId}/customers",
+    "issues": [
+     "placeholder_or_too_short",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+    "quote": "sell it in the Ecwid App Market to merchants all over the world",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "unsupported"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 3,
+   "supported_lexical": 1
+  },
+  "evidence_total": 5,
+  "evidence_valid": 3,
+  "issue_counts": {
+   "placeholder_or_too_short": 2,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 2,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Ecwid provides a REST API secured with bearer tokens (secret_token) for apps that can be created via a self\u2011serve developer portal and published in the official Ecwid App Market.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free Ecwid developer account, create an app in the admin, and obtain client credentials and tokens without a paid plan.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "official",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://api-docs.ecwid.com/reference/authentication-in-native-apps",
+    "quote": "Authorization: Bearer secret_token"
+   },
+   {
+    "field": "access",
+    "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+    "quote": "Sign up as a developer to create an Ecwid account."
+   },
+   {
+    "field": "api_types",
+    "url": "https://api-docs.ecwid.com/reference/implement-sso",
+    "quote": "Find full list of available JS API calls"
+   },
+   {
+    "field": "api_types",
+    "url": "https://api-docs.ecwid.com/reference/authentication-in-native-apps",
+    "quote": "POST https://app.ecwid.com/api/v3/{storeId}/customers"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+    "quote": "sell it in the Ecwid App Market to merchants all over the world"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "403de8a16100edc3fd3c1bd11075107184e5806071c0cd3855db3e588eee5653",
+ "at": "2026-11-23T19:47:37+05:30"
+}

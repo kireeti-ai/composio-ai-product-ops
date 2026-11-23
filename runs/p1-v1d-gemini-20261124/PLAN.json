@@ -1,0 +1,562 @@
+{
+ "run_id": "p1-v1d-gemini-20261124",
+ "status": "PREPARED - AWAITING EXPLICIT APPROVAL (no Gemini calls made; no APPROVED.json)",
+ "supersedes": "p1-v1c-gemini-20261124",
+ "purpose": "Resume Pass 1; same frozen prompt/schema/models; sources = baseline cached pages + verified official top-up pages (usable_unique only)",
+ "phases": {
+  "1": [
+   27,
+   32,
+   33,
+   34,
+   39,
+   41,
+   43,
+   52,
+   53,
+   56,
+   76,
+   65,
+   72,
+   71,
+   61
+  ],
+  "2": [
+   38,
+   62,
+   63,
+   36,
+   29,
+   47,
+   44,
+   26,
+   70,
+   25,
+   75,
+   46
+  ]
+ },
+ "tiers": {
+  "27": "A_prior_access_evidence_sufficient",
+  "32": "A_prior_access_evidence_sufficient",
+  "33": "A_prior_access_evidence_sufficient",
+  "34": "A_prior_access_evidence_sufficient",
+  "39": "A_prior_access_evidence_sufficient",
+  "41": "A_prior_access_evidence_sufficient",
+  "43": "A_prior_access_evidence_sufficient",
+  "52": "A_prior_access_evidence_sufficient",
+  "53": "A_prior_access_evidence_sufficient",
+  "56": "A_prior_access_evidence_sufficient",
+  "76": "A_prior_access_evidence_sufficient",
+  "65": "A_topup_access_explicit",
+  "72": "A_topup_access_explicit",
+  "71": "A_topup_access_explicit",
+  "61": "A_topup_access_explicit",
+  "38": "B2_topup_access_explicit_phase2",
+  "62": "B_access_inferred_self_serve",
+  "63": "B_access_inferred_self_serve",
+  "36": "B_access_inferred_self_serve",
+  "29": "C_access_partial",
+  "47": "C_access_partial",
+  "44": "C_access_partial",
+  "26": "C_access_partial",
+  "70": "C_access_partial",
+  "25": "C_access_partial",
+  "75": "C_access_partial",
+  "46": "C_access_partial"
+ },
+ "uncertainty": {
+  "27": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "32": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "33": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "34": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "39": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "41": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "43": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "52": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "53": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "56": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "76": {
+   "access_state": "explicit_prior",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "65": {
+   "access_state": "explicit",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "72": {
+   "access_state": "explicit",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "71": {
+   "access_state": "explicit",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "61": {
+   "access_state": "explicit",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "38": {
+   "access_state": "explicit",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "62": {
+   "access_state": "inferred_self_serve",
+   "access_confirmed": false,
+   "rule": "NEVER report as confirmed self-serve; label 'inferred'; model output on `access` is a hypothesis"
+  },
+  "63": {
+   "access_state": "inferred_self_serve",
+   "access_confirmed": false,
+   "rule": "NEVER report as confirmed self-serve; label 'inferred'; model output on `access` is a hypothesis"
+  },
+  "36": {
+   "access_state": "inferred_self_serve",
+   "access_confirmed": false,
+   "rule": "NEVER report as confirmed self-serve; label 'inferred'; model output on `access` is a hypothesis"
+  },
+  "29": {
+   "access_state": "partial",
+   "access_confirmed": false,
+   "rule": "report `access` as partial/unknown unless the model quotes explicit gating"
+  },
+  "47": {
+   "access_state": "partial",
+   "access_confirmed": false,
+   "rule": "report `access` as partial/unknown unless the model quotes explicit gating"
+  },
+  "44": {
+   "access_state": "partial",
+   "access_confirmed": false,
+   "rule": "report `access` as partial/unknown unless the model quotes explicit gating"
+  },
+  "26": {
+   "access_state": "partial",
+   "access_confirmed": false,
+   "rule": "report `access` as partial/unknown unless the model quotes explicit gating"
+  },
+  "70": {
+   "access_state": "partial",
+   "access_confirmed": false,
+   "rule": "report `access` as partial/unknown unless the model quotes explicit gating"
+  },
+  "25": {
+   "access_state": "partial",
+   "access_confirmed": false,
+   "rule": "report `access` as partial/unknown unless the model quotes explicit gating"
+  },
+  "75": {
+   "access_state": "partial",
+   "access_confirmed": false,
+   "rule": "report `access` as partial/unknown unless the model quotes explicit gating"
+  },
+  "46": {
+   "access_state": "partial",
+   "access_confirmed": false,
+   "rule": "report `access` as partial/unknown unless the model quotes explicit gating"
+  }
+ },
+ "api_surface": {
+  "27": {
+   "measured_operations_count": 2,
+   "state": "not_individually_assessed"
+  },
+  "32": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "33": {
+   "measured_operations_count": 0,
+   "state": "partial",
+   "basis": "resource-level only: Ad Accounts, Account Users, Campaign Groups, Campaigns, Creatives + 6 product APIs; operations not itemized"
+  },
+  "34": {
+   "measured_operations_count": 123,
+   "state": "not_individually_assessed"
+  },
+  "39": {
+   "measured_operations_count": 3,
+   "state": "not_individually_assessed"
+  },
+  "41": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "43": {
+   "measured_operations_count": 2,
+   "state": "not_individually_assessed"
+  },
+  "52": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "53": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "56": {
+   "measured_operations_count": 4,
+   "state": "not_individually_assessed"
+  },
+  "76": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "65": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "72": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "71": {
+   "measured_operations_count": 2,
+   "state": "partial",
+   "basis": "2 operations with paths, 7 resource types named; reference index not retrieved"
+  },
+  "61": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "38": {
+   "measured_operations_count": 1,
+   "state": "not_individually_assessed"
+  },
+  "62": {
+   "measured_operations_count": 5,
+   "state": "not_individually_assessed"
+  },
+  "63": {
+   "measured_operations_count": 9,
+   "state": "not_individually_assessed"
+  },
+  "36": {
+   "measured_operations_count": 2,
+   "state": "not_individually_assessed"
+  },
+  "29": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "47": {
+   "measured_operations_count": 1,
+   "state": "partial",
+   "basis": "1 operation (customers); REST confirmed"
+  },
+  "44": {
+   "measured_operations_count": 3,
+   "state": "not_individually_assessed"
+  },
+  "26": {
+   "measured_operations_count": 1,
+   "state": "not_individually_assessed"
+  },
+  "70": {
+   "measured_operations_count": 3,
+   "state": "not_individually_assessed"
+  },
+  "25": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "75": {
+   "measured_operations_count": 2,
+   "state": "not_individually_assessed"
+  },
+  "46": {
+   "measured_operations_count": 6,
+   "state": "not_individually_assessed"
+  }
+ },
+ "extra_retrieval": {
+  "65": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/65.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://supabase.com/docs/guides/platform/billing-faq",
+     "https://supabase.com/pricing",
+     "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+     "https://supabase.com/docs/guides/api/api-keys.md"
+    ]
+   }
+  ],
+  "72": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/72.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://airtable.com/pricing",
+     "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+     "https://airtable.com/developers/web/guides/personal-access-tokens"
+    ]
+   },
+   {
+    "raw": "runs/topup-v1r-20261123/raw/72.json",
+    "list_key": "attempts",
+    "use_urls": [
+     "https://support.airtable.com/docs/airtable-billing-overview"
+    ]
+   }
+  ],
+  "71": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/71.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://notion.com/pricing",
+     "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens"
+    ]
+   }
+  ],
+  "61": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/61.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+     "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app"
+    ]
+   },
+   {
+    "raw": "runs/topup-v1r-20261123/raw/61.json",
+    "list_key": "attempts",
+    "use_urls": [
+     "https://github.com/pricing"
+    ]
+   }
+  ],
+  "38": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/38.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://business.pinterest.com/getting-started"
+    ]
+   },
+   {
+    "raw": "runs/topup-v1r-20261123/raw/38.json",
+    "list_key": "attempts",
+    "use_urls": [
+     "https://dev.pinterest.com/docs/getting-started",
+     "https://developers.pinterest.com/docs/getting-started/using-beta-and-restricted-features"
+    ]
+   }
+  ],
+  "62": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/62.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://vercel.com/docs/pricing",
+     "https://vercel.com/pricing",
+     "https://vercel.com/docs/accounts/access-tokens"
+    ]
+   },
+   {
+    "raw": "runs/topup-v1r-20261123/raw/62.json",
+    "list_key": "attempts",
+    "use_urls": [
+     "https://vercel.com/docs/cli/signup"
+    ]
+   }
+  ],
+  "63": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/63.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+     "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+     "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+     "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli"
+    ]
+   }
+  ],
+  "36": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/36.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+     "https://klaviyo.com/pricing",
+     "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+     "https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key."
+    ]
+   }
+  ],
+  "29": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/29.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://aircall.io/pricing",
+     "https://support.aircall.io/en-gb/articles/30599733509277",
+     "https://developer.aircall.io/build",
+     "https://developer.aircall.io/docs/webhooks-overview"
+    ]
+   }
+  ],
+  "47": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/47.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://www.ecwid.com/pricing",
+     "https://www.ecwid.com/pricing/business",
+     "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps"
+    ]
+   }
+  ],
+  "44": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/44.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://www.salesforce.com/commerce/pricing/",
+     "https://developer.salesforce.com",
+     "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html"
+    ]
+   }
+  ],
+  "26": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/26.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://docs.discord.com/developers/quick-start/overview-of-apps"
+    ]
+   }
+  ],
+  "70": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/70.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://sentry.io/pricing",
+     "https://docs.sentry.io/pricing",
+     "https://docs.sentry.io/get-started"
+    ]
+   }
+  ],
+  "25": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/25.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+     "https://pumble.com/pricing",
+     "https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins"
+    ]
+   }
+  ],
+  "75": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/75.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://asana.com/pricing/client-management",
+     "https://developers.asana.com/docs/personal-access-token.md"
+    ]
+   },
+   {
+    "raw": "runs/topup-v1r-20261123/raw/75.json",
+    "list_key": "attempts",
+    "use_urls": [
+     "https://asana.com/pricing.md"
+    ]
+   }
+  ],
+  "46": [
+   {
+    "raw": "runs/topup-v1-20261123/raw/46.json",
+    "list_key": "fetched",
+    "use_urls": [
+     "https://squarespace.com/pricing"
+    ]
+   },
+   {
+    "raw": "runs/topup-v1r-20261123/raw/46.json",
+    "list_key": "attempts",
+    "use_urls": [
+     "https://squarespace.com/pricing.txt",
+     "https://developers.squarespace.com/commerce-apis/discounts-overview",
+     "https://developers.squarespace.com/commerce-apis/website-overview"
+    ]
+   }
+  ]
+ },
+ "exclude_urls": {},
+ "status_file": "runs/p1-v1d-gemini-20261124/APP_STATUS.json",
+ "not_eligible": {
+  "unresolved_evidence": [
+   20
+  ],
+  "identity_held_provisional": [
+   73,
+   78
+  ],
+  "scope_held": [
+   66
+  ],
+  "excluded_identity": [
+   58,
+   80,
+   50
+  ]
+ },
+ "candidate_models": [
+  "gemini-2.5-flash",
+  "gemini-3.5-flash"
+ ],
+ "key_policy": "GEMINI_API_KEY only; GEMINI_API_KEY_2 is never read",
+ "approval_file_needed": "runs/p1-v1d-gemini-20261124/APPROVED.json = {\"models\":[...],\"cap_per_model\":{model:N},\"phases\":[1]}  (only after your explicit approval and the active-quota check)",
+ "created": "2026-11-23T17:44:52+0530"
+}

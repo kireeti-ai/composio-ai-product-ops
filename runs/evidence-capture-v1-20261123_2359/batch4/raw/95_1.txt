@@ -1,0 +1,42 @@
+# Reducto Documentation
+
+Reducto turns PDFs, spreadsheets, images, and office files into structured data.
+
+Full documentation (discoverable current pages, one document): https://docs.reducto.ai/llms-full.txt
+
+## Pages
+
+- [Reducto Documentation](https://docs.reducto.ai/index.md) — Reducto is the agentic document platform for AI teams who need production-grade document processing at enterprise scale.
+- [Reducto API Reference for Coding Agents](https://docs.reducto.ai/agent-guide/index.md) — Compact reference for AI coding agents integrating Reducto
+- [Api Reference](https://docs.reducto.ai/api-reference/llms.txt)
+- [Classify](https://docs.reducto.ai/classify/llms.txt)
+- [Reducto CLI](https://docs.reducto.ai/cli/index.md) — Access Reducto from your terminal.
+- [Configs](https://docs.reducto.ai/configs/llms.txt)
+- [Contextual Schema Optimization](https://docs.reducto.ai/contextual-schema-optimization/llms.txt)
+- [Cookbooks](https://docs.reducto.ai/cookbooks/llms.txt)
+- [Editing](https://docs.reducto.ai/editing/llms.txt)
+- [Enterprise](https://docs.reducto.ai/enterprise/llms.txt)
+- [Extract](https://docs.reducto.ai/extract/llms.txt)
+- [Extraction](https://docs.reducto.ai/extraction/llms.txt)
+- [Faq](https://docs.reducto.ai/faq/llms.txt)
+- [Reducto MCP Server](https://docs.reducto.ai/mcp-server/index.md) — Connect AI agents to Reducto via the Model Context Protocol.
+- [Reducto Office](https://docs.reducto.ai/office/llms.txt)
+- [Overview](https://docs.reducto.ai/overview/index.md) — The agentic document platform for leading AI teams
+- [Parse](https://docs.reducto.ai/parse/llms.txt)
+- [API Quickstart](https://docs.reducto.ai/quickstart/index.md) — Parse your first document with Reducto in 5 minutes.
+- [Recipes](https://docs.reducto.ai/recipes/llms.txt)
+- [Reference](https://docs.reducto.ai/reference/llms.txt)
+- [Sdk](https://docs.reducto.ai/sdk/llms.txt)
+- [Security](https://docs.reducto.ai/security/llms.txt)
+- [Split](https://docs.reducto.ai/split/index.md) — Divide documents into logical sections for targeted processing
+- [Account & Settings](https://docs.reducto.ai/studio-account/index.md) — Manage API keys, usage, billing, and organization settings in Reducto Studio
+- [Deploying to Production](https://docs.reducto.ai/studio-deploy-pipeline/index.md) — Publish pipelines, integrate with API, and monitor production usage
+- [Edit Pipeline](https://docs.reducto.ai/studio-edit/index.md) — Fill forms and modify documents with natural language instructions in Reducto Studio
+- [Extract Pipeline](https://docs.reducto.ai/studio-extract/index.md) — Pull specific fields from documents as structured JSON in Reducto Studio
+- [Parse Pipeline](https://docs.reducto.ai/studio-parse/index.md) — Turn documents into structured data in Studio
+- [Studio Quickstart](https://docs.reducto.ai/studio-quickstart/index.md) — Build and deploy your first document workflow in Reducto Studio.
+- [Roles & Permissions](https://docs.reducto.ai/studio-roles-permissions/index.md) — Organization roles in Reducto Studio and what each role can do
+- [Split Pipeline](https://docs.reducto.ai/studio-split/index.md) — Divide documents into sections for targeted workflows in Studio
+- [Upload](https://docs.reducto.ai/upload/llms.txt)
+- [V](https://docs.reducto.ai/v/llms.txt)
+- [Workflows](https://docs.reducto.ai/workflows/llms.txt)

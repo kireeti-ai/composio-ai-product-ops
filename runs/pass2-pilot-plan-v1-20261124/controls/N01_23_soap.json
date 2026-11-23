@@ -1,0 +1,65 @@
+{
+ "id": 23,
+ "name": "Zoho Cliq",
+ "category": "Communications and Messaging",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+  "https://zoho.com/cliq/help/platform/faq.html",
+  "https://zoho.com/cliq/help/restapi",
+  "https://www.zoho.com/cliq/help/developers.html"
+ ],
+ "one_liner": "Zoho Cliq is a team communication platform providing REST APIs to manage chats, messages, bots, channels, and platform extensions.",
+ "auth_methods": [
+  "oauth2",
+  "api_key"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers can register applications in the Zoho Developer Console to obtain OAuth credentials and API tokens.",
+ "api_types": [
+  "rest",
+  "soap"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+   "quote": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://zoho.com/cliq/help/platform/faq.html",
+   "quote": "Register as a new client in Zoho's Developer Console . Click on \"Add client ID\" and give the required details to register and obtain an OAuth token provided exclusively for your application.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+   "quote": "Zoho Cliq's REST API is designed based on RESTful architecture principles, enabling seamless communication between your applications and Zoho Cliq.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ],
+ "planted_control": {
+  "field": "api_types",
+  "planted_item": "soap",
+  "original_value": [
+   "rest"
+  ],
+  "proof": "regex found no support in any stored source page: soap|wsdl"
+ }
+}

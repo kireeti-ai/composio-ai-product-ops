@@ -1,0 +1,470 @@
+[
+ {
+  "row_id": "79:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "79:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "79:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "79:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "79:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "79:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "79:3:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:0:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "81:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:3:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:4:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "81:5:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "81:5:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "82:0:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "82:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "82:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "82:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "82:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "82:3:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Quote is unrelated to the claimed value for this field."
+ },
+ {
+  "row_id": "82:4:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "82:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "82:5:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "82:5:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "82:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "83:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "83:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "83:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "83:1:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "83:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "83:2:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "83:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "83:4:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "85:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "85:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "85:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "85:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "85:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "85:2:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "85:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "85:4:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "86:0:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "86:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "86:1:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "86:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "86:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "87:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "87:0:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Quote is unrelated to the claimed value for this field."
+ },
+ {
+  "row_id": "87:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "87:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "87:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "87:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "87:3:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "87:4:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "87:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "88:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "88:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "88:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "88:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "88:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "88:3:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "88:4:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "88:4:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "88:5:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "89:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "89:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "89:1:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "89:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "89:3:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Quote states the claimed value for this field."
+ },
+ {
+  "row_id": "89:4:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "89:4:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "89:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "89:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ },
+ {
+  "row_id": "89:6:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Quote supports only one component or an adjacent/implied version of the claim; the rest of claim_value is not stated."
+ }
+]

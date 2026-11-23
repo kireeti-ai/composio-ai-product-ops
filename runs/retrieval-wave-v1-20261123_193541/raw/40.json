@@ -1,0 +1,357 @@
+{
+ "id": 40,
+ "name": "SendGrid",
+ "started": "2026-11-23T19:35:54+05:30",
+ "searches": [
+  {
+   "q": "SendGrid API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:35:56+05:30"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:35:58+05:30"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:35:59+05:30"
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:02+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys",
+   "requested_at": "2026-11-23T19:36:05+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys",
+   "title": "Upgrade your authentication method to API keys | SendGrid Docs | Twilio",
+   "chars": 5876,
+   "sha256": "2d2bbba4128b302c2d0ab70b95fa962a5f3b42f3092ee3e5c995c6ff31bbec6f",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Upgrade your authentication method to API keys\n\n---\n\n(error)\n\n## Danger\n\nTwo-Factor Authentication (2FA) is required. All Twilio SendGrid API endpoints reject new API requests and SMTP configurations made with a username and password via Basic Authentication.\n\n---\n\n## Am I using Basic Authentication with username and password?\n\nTo determine which authentication method your integration uses, check the following:\n\n* If SMTP: Check the username you're using to authenticate. If it's the word \"apikey\" then you're using an API Key. If it's not, then you're using username and password authentication.\n* If V3: If you're using the most recent version of our open sourced libraries and followed the documentation, you should already be using API keys. If you aren't using our libraries, check the Authorization header on your API calls. If you see the word \"Bearer\" - you're good. If you see the word \"Basic\" you're using username and password.\n* If V2 non-mail send: You're using username and passwords.\n* If Premier 50M and below package: Use the Email Activity API to identify mail/send API Key usage. If the `api_key_id` parameter is empty, you will need to upgrade your authentication.\n\n---\n\n## Why should I use API keys for authentication?\n\nAPI keys are more secure than account username and password authentication because you can scope their permissions and revoke them at any time.\n\n(warning)\n\n## API keys limited to 69 characters\n\nTwilio support a key longer than 69 characters. No exceptions can be made for third-party infrastructure.\n\nUsing your account username and password for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of least privilege, using limited API Key permission to only provide access to what is needed for that request for maximum security.\n\nFor more about protecting your account, see our blog post, 7 Best Practices to Protect your Twilio SendGrid Account and Sending Reputation. To learn more about the principle of least privilege, see our Twilio blog post and OWASP's article on Access Control.\n\n---\n\n## Tips for upgrading to API Keys\n\n* Prioritize upgrading your authentication method to API Keys for your mail/send endpoints first\n* Store your API Keys in an environment variable\n* Test these changes in a staging environment before rolling out to your production environment\n\n---\n\n## Upgrade to API Keys for your API endpoint requests\n\nFollow these steps to identify and replace your authentication method to API Keys and then implement 2FA for enhanced security.\n\n1. Identify where you are storing your username and password credentials for basic authentication. Your credentials could be stored in environment variables or hard coded depending on how you integrated.\n2. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating. For more information, see API Key Permissions.\n3. Replace your username and password credentials with API Keys.\n\n* For v3 API: Follow these instructions.\n* For v2: Follow these instructions.\n\n---\n\n## Upgrade to API Keys for your SMTP integration\n\nTo upgrade your SMTP integration to use API keys, follow these steps:\n\n1. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating. For more information, see API Key Permissions. To send email only, your API key will require **Mail Send** > **Full Access** permissions.\n2. To use your API key with the SMTP integration, you must set your username to the string, `apikey`. Your password will be the API key you generated in the previous step.\n\n```\n1\n\nuser_name: \"apikey\"\n\n\n\n2\n\npassword: <Your API Key>\n```\n\n(information)\n\n## Info\n\nWhen submitting base64 encoded API key values, be sure you have not included any newline or whitespace characters by accident. This can happen when copying the encoded key from an environment that line wraps output. SMTP is a line-oriented protocol, and linefeed characters will prevent you from authenticating successfully.\n\nOnce the previous steps are completed, enable Two-Factor Authentication for all of your users, including subusers and teammates.\n\nIf you are new to our SMTP integration, you will find more integration instructions at Integrating with the SMTP API.\n\n---\n\n## Check for API rejections\n\nAfter enabling Two-Factor Authentication (2FA), monitor your API calls for rejections related to continued use of username and password authentication. The following sections describe the error messages you might encounter.\n\n### Error message for API calls\n\n`invalid authentication method` - declined because you are using basic authentication with 2FA enabled. to fix, update to using an API key or disable 2FA and switch to using IP Access Management for security. For more information, see https://sendgrid.com/docs/for-developers/sending-email/authentication/#basic-authentication\n\n### Error message for SMTP\n\nSMTP error message is: `535 Authentication failed: Basic authentication is not allowed with 2FA enabled`. To fix, see https://sendgrid.com/docs/for-developers/sending-email/authentication/#basic-authentication\n\nFor more information on how to secure your Twilio SendGrid account visit this blog post.",
+   "retrieved_at": "2026-11-23T19:36:05+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "requested_at": "2026-11-23T19:36:07+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "title": "Authentication | SendGrid Docs | Twilio",
+   "chars": 1667,
+   "sha256": "2a30ca335a484fc3909588acbbd93ab49b7df9cdc54d57464ae511ac0057a4c8",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Authentication\n\n---\n\n## Twilio supported SDKs\n\nThe Twilio SendGrid Web REST API v3 provides SDKs for seven different languages.\n\nC#GoJavaNode.jsPHPPythonRuby\n\n---\n\n## Authorization header\n\nTo authenticate, add an HTTP `Authorization` header to your API request that contains an API Key.\n\n---\n\n## API keys\n\nThe Twilio SendGrid Web API v3 supports API keys, which add an additional layer of security to your account. Using API keys, you can:\n\n* Use another method of authentication separate from your account username and password.\n* Assign specific permissions to API keys that limit which areas of your account the key can access.\n\nYou can create API keys in your account. To use an API key, include an `Authorization` header with the value `Bearer <YOUR_API_KEY_HERE>` in your request. Replace `<YOUR_API_KEY_HERE>` with your API secret key.\n\n#### Example API request header\n\n```\n1\n\nGET https://api.sendgrid.com/v3/resource HTTP/1.1\n\n\n\n2\n\nAuthorization: Bearer <YOUR_API_KEY_HERE>\n```\n\n#### Example API request using bash\n\n```\n1\n\ncurl -X \"GET\" \"https://api.sendgrid.com/v3/templates\" \\\n\n\n\n2\n\n-H \"Authorization: Bearer <YOUR_API_KEY_HERE>\" \\\n\n\n\n3\n\n-H \"Content-Type: application/json\"\n```",
+   "retrieved_at": "2026-11-23T19:36:07+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/api-reference/api-keys/create-api-keys",
+   "requested_at": "2026-11-23T19:36:10+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/api-reference/api-keys/create-api-keys",
+   "title": "Create API keys | SendGrid Docs | Twilio",
+   "chars": 7965,
+   "sha256": "5a6406b66d69223128ff769f6664500a53cd9131f2cefc76dd53a56264e8ccbf",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Create API keys\n\n---\n\n## API Overview\n\nYour application, mail client, or website can all use API (Application Programming Interface) keys to authenticate access to SendGrid services. You can revoke an API key at any time without having to change your username and password, and an API key can be scoped to perform a limited number of actions.\n\nThere are 3 different types of API keys:\n\n* **Full Access**  \n  Allows the API key to access `GET`, `PATCH`, `PUT`, `DELETE` and `POST` endpoints for all parts of your account, excluding billing and Email Address Validation.\n* **Custom Access**  \n  Customizes levels of access for all parts of your account, excluding billing and Email Address Validation.\n* **Billing Access**  \n  Allows the API key to access billing endpoints for the account.\n\nYou must create your first API key using the Twilio SendGrid App. Once you have a key with permissions to manage other keys, you can use the endpoints documented as part of this API.\n\n(warning)\n\n## API keys limited to 69 characters\n\nTwilio support a key longer than 69 characters. No exceptions can be made for third-party infrastructure.\n\n(information)\n\n## Info\n\nThere is a limit of 100 API Keys on your account.\n\n---\n\n## Operation overview\n\n## POST/v3/api\\_keys\n\n### Base url: https://api.sendgrid.com (for global users and subusers)\n\n### Base url: https://api.eu.sendgrid.com (for EU regional subusers)\n\n**This endpoint allows you to create a new API Key for the user.**\n\nTo create your initial SendGrid API Key, you should use the SendGrid App. Once you have created a first key with scopes to manage additional API keys, you can use this API for all other key management.\nA JSON request body containing a `name` property is required when making requests to this endpoint. If the number of maximum keys, 100, is reached, a `403` status will be returned.\nThough the `name` field is required, it does not need to be unique. A unique API key ID will be generated for each key you create and returned in the response body.\nIt is not necessary to pass a `scopes` field to the API when creating a key, but you should be aware that omitting the `scopes` field from your request will create a key with \"Full Access\" permissions by default.\nSee the API Key Permissions List for all available scopes. An API key's scopes can be updated after creation using the \"Update API keys\" endpoint.\n\n---\n\n## Operation details\n\n### Authentication\n\nAPI Key\n\n### Headers\n\nProperty nameTypeRequiredDescription\n\nAuthorizationstring\n\nrequired\n\nDefault: `Bearer <<YOUR_API_KEY_HERE>>`\n\n---\n\non-behalf-ofstring\n\nOptional\n\nThe `on-behalf-of` header allows you to make API calls from a parent account on behalf of the parent's Subusers or customer accounts. You will use the parent account's API key when using this header. When making a call on behalf of a customer account, the property value should be \"account-id\" followed by the customer account's ID (e.g., `on-behalf-of: account-id <account-id>`). When making a call on behalf of a Subuser, the property value should be the Subuser's username (e.g., `on-behalf-of: <subuser-username>`). See **On Behalf Of** for more information.\n\n### Request body\n\nEncoding type:`application/json`\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nnamestring\n\nrequired\n\nThe name you will use to describe this API Key.\n\n---\n\nscopesarray[string]\n\nOptional\n\nThe individual permissions that you are giving to this API Key.\n\n```\n{\n\n\n\n\"name\": \"My API Key\",\n\n\n\n\"scopes\": [\n\n\n\n\"mail.send\",\n\n\n\n\"alerts.create\",\n\n\n\n\"alerts.read\"\n\n\n\n]\n\n\n\n}\n```\n\n### Responses\n\n201400401403404500\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\napi\\_keystring\n\nOptional\n\n---\n\napi\\_key\\_idstring\n\nOptional\n\n---\n\nnamestring\n\nOptional\n\n---\n\nscopesarray[string]\n\nOptional\n\n```\n{\n\n\n\n\"api_key\": \"SG.xxxxxxxx.yyyyyyyy\",\n\n\n\n\"api_key_id\": \"xxxxxxxx\",\n\n\n\n\"name\": \"My API Key\",\n\n\n\n\"scopes\": [\n\n\n\n\"mail.send\",\n\n\n\n\"alerts.create\",\n\n\n\n\"alerts.read\"\n\n\n\n]\n\n\n\n}\n```\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nAn error message.\n\n---\n\nfieldstring or null\n\nOptional\n\nWhen applicable, this property value will be the field that generated the error.\n\n---\n\nhelpobject\n\nOptional\n\nWhen applicable, this property value will be helper text or a link to documentation to help you troubleshoot the error.\n\n---\n\nidstring\n\nOptional\n\nWhen applicable, this property value will be an error ID.\n\n```\n{\n\n\n\n\"errors\": [\n\n\n\n{\n\n\n\n\"field\": \"field_name\",\n\n\n\n\"message\": \"error message\"\n\n\n\n}\n\n\n\n]\n\n\n\n}\n```\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nAn error message.\n\n---\n\nfieldstring or null\n\nOptional\n\nWhen applicable, this property value will be the field that generated the error.\n\n---\n\nhelpobject\n\nOptional\n\nWhen applicable, this property value will be helper text or a link to documentation to help you troubleshoot the error.\n\n---\n\nidstring\n\nOptional\n\nWhen applicable, this property value will be an error ID.\n\n```\n{\n\n\n\n\"errors\": [\n\n\n\n{\n\n\n\n\"field\": \"field_name\",\n\n\n\n\"message\": \"error message\"\n\n\n\n}\n\n\n\n]\n\n\n\n}\n```\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nAn error message.\n\n---\n\nfieldstring or null\n\nOptional\n\nWhen applicable, this property value will be the field that generated the error.\n\n---\n\nhelpobject\n\nOptional\n\nWhen applicable, this property value will be helper text or a link to documentation to help you troubleshoot the error.\n\n---\n\nidstring\n\nOptional\n\nWhen applicable, this property value will be an error ID.\n\n```\n{\n\n\n\n\"errors\": [\n\n\n\n{\n\n\n\n\"field\": \"field_name\",\n\n\n\n\"message\": \"error message\"\n\n\n\n}\n\n\n\n]\n\n\n\n}\n```\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nAn error message.\n\n---\n\nfieldstring or null\n\nOptional\n\nWhen applicable, this property value will be the field that generated the error.\n\n---\n\nhelpobject\n\nOptional\n\nWhen applicable, this property value will be helper text or a link to documentation to help you troubleshoot the error.\n\n---\n\nidstring\n\nOptional\n\nWhen applicable, this property value will be an error ID.\n\n```\n{\n\n\n\n\"errors\": [\n\n\n\n{\n\n\n\n\"field\": \"field_name\",\n\n\n\n\"message\": \"error message\"\n\n\n\n}\n\n\n\n]\n\n\n\n}\n```\n\nSchema\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nCreate API keys\n\nNode.jsPythonC#JavaGoPHPRubycurl\n\n```\n1\n\nconst client = require(\"@sendgrid/client\");\n\n\n\n2\n\nclient.setApiKey(process.env.SENDGRID_API_KEY);\n\n\n\n3\n\n\n\n4\n\nconst data = {\n\n\n\n5\n\nname: \"My API Key\",\n\n\n\n6\n\nscopes: [\"mail.send\", \"alerts.create\", \"alerts.read\"],\n\n\n\n7\n\n};\n\n\n\n8\n\n\n\n9\n\nconst request = {\n\n\n\n10\n\nurl: `/v3/api_keys`,\n\n\n\n11\n\nmethod: \"POST\",\n\n\n\n12\n\nbody: data,\n\n\n\n13\n\n};\n\n\n\n14\n\n\n\n15\n\nclient\n\n\n\n16\n\n.request(request)\n\n\n\n17\n\n.then(([response, body]) => {\n\n\n\n18\n\nconsole.log(response.statusCode);\n\n\n\n19\n\nconsole.log(response.body);\n\n\n\n20\n\n})\n\n\n\n21\n\n.catch((error) => {\n\n\n\n22\n\nconsole.error(error);\n\n\n\n23\n\n});\n```",
+   "retrieved_at": "2026-11-23T19:36:10+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/v2-api/mail",
+   "requested_at": "2026-11-23T19:36:16+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/v2-api/mail",
+   "title": "v2 Mail Send | SendGrid Docs | Twilio",
+   "chars": 12464,
+   "sha256": "40651c049c75b6873922c0d69c890891e57f2852994df55d2276f0a7e0d33baa",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# v2 Mail Send\n\n---\n\n(warning)\n\n## This documentation is for the SendGrid Web API v2\n\nTo access all the latest features and upcoming developments, please see our v3 API. For assistance with transitioning, refer to our migration guide.\n\nThis endpoint allows you to send email over SendGrid's Web API v2. For information about the latest mail send endpoint, please visit our Web API v3 Mail Send documentation. We encourage our current v2 API customers to migrate to the new endpoint, so they can take advantage of our latest features.\n\nThere are a number of official SendGrid libraries that will help you send email through the Web API v2. We recommend using these if possible. Check our API Libraries page to view a list of supported libraries.\n\n---\n\n## Parameters\n\n| URI Parameter | Required | Requirements | Description |\n| --- | --- | --- | --- |\n| to | Yes | Must be a valid email address | Specify a recipient email as a single email with this parameter. To send to multiple emails, use an array to specify each email, for example: `to[]=a@mail.com&to[]=b@mail.com`. You can also use the `To` parameter in the x-smtpapi header to add additional recipients. If you use the API `to` parameter to specify a single recipient, that recipient is visible in the `For` field of the received header\u2014so if you specify a single address, it should be an address that you are comfortable with your customer seeing. For example, use a generic email address in the `to` field that your customer is already going to see, like your `from` address. To completely omit the email showing up in the `from` header: either specify multiple addresses in the `to` field as an array, for example, `to[]=a@mail.com&to[]=b@mail.com`, or use the V3 mail send endpoint. |\n| toname | No | Must be a string. If the `to` parameter is an array, `toname` must be an array with the exact number of array elements as the `to` field | Give a name to the recipient. This can also be passed as an array if the `to` parameter above is an array. Example: `toname[]=Alpha[]=Beta`. |\n| x-smtpapi | No | Must be in valid JSON format | Please review the SMTP API to view documentation on what you can do with the JSON headers |\n| subject | Yes | Must be a valid string | The subject of your email |\n| text | No | API call must include at least one of the `text` or `html` parameters. | The plain text content of your email message. |\n| html | No | API call must include at least one of the `text` or `html` parameters. | The HTML content of your email message. |\n| from | Yes | Must be a valid email address from your domain | This is where the email will appear to originate from for your recipient |\n| cc | No | Must be a valid email address | This can also be passed in as an array of email addresses for multiple recipients. Example: `cc[]=a@mail.com&cc[]=b@mail.com`. |\n| ccname | No | Must be a valid email address | This is the name be appended to the `cc` field. |\n| bcc | No | Must be a valid email address | This can also be passed in as an array of email addresses for multiple recipients. Example: `bcc[]=a@mail.com&bcc[]=b@mail.com`. |\n| bccname | No | Must be a valid email address | This is the name appended to the `bcc` field. |\n| fromname | No | Must a valid string | This is the name appended to the `from` email field (i.e. your name or company name) |\n| replyto | No | Must be a valid email address | Append a `reply-to` field to your email message |\n| date | No | Must be a valid date | Specify the `date` header of your email. One example: \"Thu, 21 Dec 2000 16:01:07 +0200\". PHP developers can use: `date('r');` |\n| files | No | Must be less than 7MB | Files to be attached. The file contents must be part of the multipart HTTP `POST`. Ex: `files[file1.jpg]=file1.jpg&files[file2.pdf]=file2.pdf` |\n| content | No | Required for sending inline images | Content IDs of the files to be used as inline images. Content IDs should match the cids used in the HTML markup. Ex: `content[file1.jpg]=ii_139db99fdb5c3704` would correspond with the HTML `<img src=\"cid:ii_139db99fdb5c3704\"></img>` and `files[file1.jpg]` would contain the contents. |\n| headers | No | Must be in valid JSON format without integers | A collection of key/value pairs in JSON format. This is specifically for non-SendGrid custom extension headers. Each key represents a header name and the value the header value. Ex: `{\"X-Accept-Language\": \"en\", \"X-Mailer\": \"MyApp\"}` |\n\n---\n\n## Sending email\n\n(information)\n\n## Info\n\nSendGrid's API keys should be used when sending email over the API. API keys are preferred because you can revoke an API key at any time without changing your username and password. You can also limit the permissions of an API key, which reduces the potential for harm in the event that your API key is compromised.\n\nWhen using an API key, pass it in an Authorization header and omit the `api_user` and `api_key` parameters from your request. Pass the API key as a Bearer Token: `\"Authorization: Bearer <Your API Key>\"`\n\nFor more information, see Upgrading your authentication method to API Keys.\n\n### Send to a single recipient\n\nJSONXML\n\n#### Call\n\n| `POST` | `https://api.sendgrid.com/api/mail.send.json` |\n| --- | --- |\n| `POST` Data | `to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com` |\n\n#### Response\n\n```\n1\n\n{\n\n\n\n2\n\n\"message\": \"success\"\n\n\n\n3\n\n}\n```\n\n#### Call\n\n| `POST` | `https://api.sendgrid.com/api/mail.send.xml` |\n| --- | --- |\n| `POST` Data | `to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com` |\n\n#### Response\n\n```\n1\n\n<result>\n\n\n\n2\n\n<message>success</message>\n\n\n\n3\n\n</result>\n```\n\n(information)\n\n## Info\n\nYou can have up to 1,000 recipients per Web API v2 request.\n\n### Send to multiple recipients\n\nJSONXML\n\n#### Call\n\n| `POST` | `https://api.sendgrid.com/api/mail.send.json` |\n| --- | --- |\n| `POST` Data | `to[]=destination@example.com&to[]=destination2@example.com&toname[]=Destination&to[]=example@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com` |\n\n#### Response\n\n```\n1\n\n{\n\n\n\n2\n\n\"message\": \"success\"\n\n\n\n3\n\n}\n```\n\n#### Call\n\n| `POST` | `https://api.sendgrid.com/api/mail.send.xml` |\n| --- | --- |\n| `POST` Data | `to[]=destination@example.com&to[]=destination2@example.com&toname[]=Destination&to[]=example@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com` |\n\n#### Response\n\n```\n1\n\n<result>\n\n\n\n2\n\n<message>success</message>\n\n\n\n3\n\n</result>\n```\n\n### Sending with a CC and CCname\n\nJSONXML\n\n#### Call\n\n| `POST` | `https://api.sendgrid.com/api/mail.send.json` |\n| --- | --- |\n| `POST` Data | `to[]=destination@example.com&toname[]=Destination&cc=ccdestination@mail.com&ccname=CCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com` |\n\n#### Response\n\n```\n1\n\n{\n\n\n\n2\n\n\"message\": \"success\"\n\n\n\n3\n\n}\n```\n\n#### Call\n\n| `POST` | `https://api.sendgrid.com/api/mail.send.xml` |\n| --- | --- |\n| `POST` Data | `to[]=destination@example.com&toname[]=Destination&cc=ccdestination@mail.com&ccname=CCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com` |\n\n#### Response\n\n```\n1\n\n<result>\n\n\n\n2\n\n<message>success</message>\n\n\n\n3\n\n</result>\n```\n\n### Sending with a BCC and BCCname\n\nJSONXML\n\n#### Call\n\n| `POST` | `https://api.sendgrid.com/api/mail.send.json` |\n| --- | --- |\n| `POST` Data | `to[]=destination@example.com&toname[]=Destination&bcc=bccdestination@mail.com&bccname=BCCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com` |\n\n#### Response\n\n```\n1\n\n{\n\n\n\n2\n\n\"message\": \"success\"\n\n\n\n3\n\n}\n```\n\n#### Call\n\n| `POST` | `https://api.sendgrid.com/api/mail.send.xml` |\n| --- | --- |\n| `POST` Data | `to[]=destination@example.com&toname[]=Destination&bcc=bccdestination@mail.com&bccname=BCCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com` |\n\n#### Response\n\n```\n1\n\n<result>\n\n\n\n2\n\n<message>success</message>\n\n\n\n3\n\n</result>\n```\n\n### cURL Examples\n\n#### Send to one email recipient\n\n```\n1\n\ncurl -X \"POST\" \"https://api.sendgrid.com/api/mail.send.json\" \\\n\n\n\n2\n\n-H 'Content-Type: application/x-www-form-urlencoded' \\\n\n\n\n3\n\n-H 'Authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--data-urlencode \"to=destination@example.com\" \\\n\n\n\n5\n\n--data-urlencode \"toname=Destination\" \\\n\n\n\n6\n\n--data-urlencode \"subject=Example Subject\" \\\n\n\n\n7\n\n--data-urlencode \"text=testingtextbody\" \\\n\n\n\n8\n\n--data-urlencode \"from=info@domain.com\"\n```\n\n#### Send to multiple email recipients\n\n```\n1\n\ncurl -X \"POST\" \"https://api.sendgrid.com/api/mail.send.json\" \\\n\n\n\n2\n\n-H 'Content-Type: application/x-www-form-urlencoded' \\\n\n\n\n3\n\n-H 'Authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--data-urlencode \"to[]=destination@example.com,example@example.com\" \\\n\n\n\n5\n\n--data-urlencode \"toname[]=Destination,Destination2\" \\\n\n\n\n6\n\n--data-urlencode \"subject=Example Subject\" \\\n\n\n\n7\n\n--data-urlencode \"text=testingtextbody\" \\\n\n\n\n8\n\n--data-urlencode \"from=info@domain.com\"\n```\n\n(information)\n\n## Info\n\nTo ensure that an attachment uploads from a local file, use `\\<@filename>`.\n\n```\n1\n\ncurl https://api.sendgrid.com/api/mail.send.json \\\n\n\n\n2\n\n-H 'Authorization: Bearer YOUR_API_KEY' \\\n\n\n\n3\n\n-F to=recipient@domain.com -F toname=test -F subject=\"Example Subject\" \\\n\n\n\n4\n\n-F text=\"testing text body\" --form-string html=\"<strong>testing html body</strong>\" \\\n\n\n\n5\n\n-F from=test@example.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \\\n\n\n\n6\n\n-F files[attachment.pdf\\]=@attachment.pdf;type=application/pdf\n```\n\n#### Send a test with an attachment\n\n```\n1\n\ncurl https://api.sendgrid.com/api/mail.send.json \\\n\n\n\n2\n\n-H 'Authorization: Bearer YOUR_API_KEY' \\\n\n\n\n3\n\n-F to=recipient@domain.com -F toname=test -F subject=\"Example Subject\" \\\n\n\n\n4\n\n-F text=\"testing text body\" --form-string html=\"<strong>testing html body</strong>\" \\\n\n\n\n5\n\n-F from=test@example.com \\\n\n\n\n6\n\n-F files[attachment.gz\\]=@f.php.gz\n```\n\n#### Send a test specifying the file content type by appending ';type=' to the file name\n\n```\n1\n\ncurl https://api.sendgrid.com/api/mail.send.json \\\n\n\n\n2\n\n-F to=recipient@domain.com -F toname=test -F subject=\"Example Subject\" \\\n\n\n\n3\n\n-F text=\"testing text body\" --form-string html=\"<strong>testing html body</strong>\" \\\n\n\n\n4\n\n-F from=test@example.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \\\n\n\n\n5\n\n-F files[attachment.pdf\\]=@attachment.pdf;type=application/pdf\n```\n\n### Raw HTTP Dump\n\nThe following is a dump of the HTTP data sent to our server to generate an email via our Web API v2.\n\n```\nPOST /api/mail.send.json HTTP/1.1\n```\n\n```\n1\n\nHost: sendgrid.com\n\n\n\n2\n\nAccept: */*\n\n\n\n3\n\nContent-Length: 999\n\n\n\n4\n\nExpect: 100-continue\n\n\n\n5\n\nContent-Type: multipart/form-data; boundary=----------------------------400f182a9360\n\n\n\n6\n\nAuthorization: Bearer YOUR_API_KEY\n\n\n\n7\n\nHTTP/1.1 100 Continue\n\n\n\n8\n\n------------------------------400f182a9360\n\n\n\n9\n\nContent-Disposition: form-data; name=\"to\"\n\n\n\n10\n\nsomeone@somewhere.com\n\n\n\n11\n\n------------------------------400f182a9360\n\n\n\n12\n\nContent-Disposition: form-data; name=\"subject\"\n\n\n\n13\n\ntest of file sends\n\n\n\n14\n\n------------------------------400f182a9360\n\n\n\n15\n\nContent-Disposition: form-data; name=\"html\"\n\n\n\n16\n\nthe HTML\n\n\n\n17\n\n------------------------------400f182a9360\n\n\n\n18\n\nContent-Disposition: form-data; name=\"text\"\n\n\n\n19\n\nthe plain text\n\n\n\n20\n\n------------------------------400f182a9360\n\n\n\n21\n\nContent-Disposition: form-data; name=\"from\"\n\n\n\n22\n\nexample@sendgrid.com\n\n\n\n23\n\n------------------------------400f182a9360\n\n\n\n24\n\nContent-Disposition: form-data; name=\"files[myfile]\"; filename=\"myfile\"\n\n\n\n25\n\nContent-Type: application/octet-stream\n\n\n\n26\n\nfile with stuff in it\n\n\n\n27\n\n------------------------------400f182a9360--\n\n\n\n28\n\nHTTP/1.1 200 OK\n\n\n\n29\n\nServer: nginx/0.7.65\n\n\n\n30\n\nDate: Fri, 03 Jun 2011 22:30:58 GMT\n\n\n\n31\n\nContent-Type: application/json\n\n\n\n32\n\nTransfer-Encoding: chunked\n\n\n\n33\n\nConnection: keep-alive\n```\n\n```\n{\"message\":\"success\"}\n```",
+   "retrieved_at": "2026-11-23T19:36:16+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/api-getting-started",
+   "requested_at": "2026-11-23T19:36:23+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+   "title": "Getting started with the SendGrid API | SendGrid Docs | Twilio",
+   "chars": 4352,
+   "sha256": "5988d7e3eede39214e1ae30100333ce84aaad6cd8d1b5b3945103ed6df3b4ecd",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Getting started with the SendGrid API\n\n---\n\nYou can send your first email with the SendGrid API using cURL or one of the official SendGrid libraries. This guide walks through the cURL approach.\n\n---\n\n## Prerequisites for sending your first email with the SendGrid API\n\nThese instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid API - we also have PHP, Python, Node.js, Java, C#, Go, and Ruby libraries.\n\nBefore you can start using the API, you need to do the following:\n\n1. Create a SendGrid account.\n2. Create an API Key.\n3. Make sure you have curl installed on your machine.\n\n(information)\n\n## Info\n\ncURL comes standard on Mac operating systems.\n\n---\n\n## How to send an API email\n\n### Build your API call\n\nYour API call must have the following components:\n\n* **A host.** The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`\n* **An Authorization header.** An API Key must be included in the Authorization header.\n* **A request.** When submitting data to a resource via `POST` or `PUT`, you must submit your payload in JSON.\n\n(information)\n\n## Message size limit\n\nThe total message size should not exceed 20MB. This includes the message\nitself, headers, and the combined size of any attachments.\n\n(information)\n\n## Setting Server Host\n\nSendGrid recommends setting your server host to `https://api.sendgrid.com/v3/`\nand not directly pointing to SendGrid IP addresses. SendGrid IP addresses\noccasionally change without notice and hardcoding IP addresses, especially\nwithout a way to regularly check for updates, can cause integrations to break.\n\n### Send your email using the API\n\n(information)\n\n## Info\n\nBasic Authentication is no longer accepted; you must use an API key.\n\nTo send an email using the SendGrid API, follow these steps:\n\n#### Send an email with the SendGrid API\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/send \\\n\n\n\n3\n\n--header 'Authorization: Bearer <<YOUR_API_KEY>>' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\"personalizations\":[{\"to\":[{\"email\":\"john.doe@example.com\",\"name\":\"John Doe\"}],\"subject\":\"Hello, World!\"}],\"content\": [{\"type\": \"text/plain\", \"value\": \"Heya!\"}],\"from\":{\"email\":\"sam.smith@example.com\",\"name\":\"Sam Smith\"},\"reply_to\":{\"email\":\"sam.smith@example.com\",\"name\":\"Sam Smith\"}}'\n```\n\n1. Copy the curl example above.\n2. Paste the curl call into your favorite text editor.\n3. Copy your API key and paste it in the \"Authorization\" header.\n4. In the data section, specify the \"to\", \"from\", and \"reply to\" names and email addresses and enter a subject.\n5. Copy the code and paste it in your terminal.\n6. Hit **Enter**.\n7. Check the inbox of the address you specified as the \"to\" email and see your message!\n\n(information)\n\n## Info\n\nIf you have not yet set up Sender\nAuthentication\nin your account, you may need to check your spam folder for the email you just\nsent.\n\nDo you want expert help to get your email program started on the right foot?\n\nSave time and feel confident you are set up for long-term success with Email\nImplementation. Our experts will work as an extension of your team to ensure\nyour email program is correctly set up and delivering value for your business.\n\nIMPLEMENTATION SERVICES\n\n### API response messages\n\nAll responses are returned in JSON format. We specify this by sending the `Content-Type` header. The Web API v3 provides a selection of response codes, content-type headers, and pagination options to help you interpret the responses to your API requests.\n\n(information)\n\n## Info\n\nGet additional onboarding support. Save time, increase the quality of your\nsending, and feel confident you are set up for long-term success with\nSendGrid Onboarding\nServices.\n\n---\n\n## Next steps\n\nFor more information on SendGrid and where you can go from here, check out these pages:",
+   "retrieved_at": "2026-11-23T19:36:23+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/curl-examples",
+   "requested_at": "2026-11-23T19:36:24+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/curl-examples",
+   "title": "cURL Examples for Common Use Cases | SendGrid Docs | Twilio",
+   "chars": 5151,
+   "sha256": "1ea835c2780dfa93bd179cdb752b855ff63677a2e545a9383860a73f5cb2ba43",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# cURL Examples for Common Use Cases\n\n---\n\nThese cURL examples cover common SendGrid email use cases, including sending a single message, sending to multiple recipients, using a template, and scheduling a send.\n\n---\n\n## Hello, World\n\nSend a \"Hello, World!\" email through SendGrid's v3 Mail Send endpoint. Replace YOUR\\_API\\_KEY with your actual API key:\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/send \\\n\n\n\n3\n\n--header 'Authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\"personalizations\": [{\"to\": [{\"email\": \"recipient@example.com\"}]}],\"from\": {\"email\": \"sendeexampexample@example.com\"},\"subject\": \"Hello, World!\",\"content\": [{\"type\": \"text/plain\", \"value\": \"Heya!\"}]}'\n```\n\n---\n\n## Sending a Basic Email to Multiple Recipients\n\nSend an email to multiple addresses by adding `cc` entries to the personalization:\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/send \\\n\n\n\n3\n\n--header 'authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\"personalizations\": [{\"to\": [{\"email\": \"recipient@example.com\"}],\"cc\": [{\"email\":\"recipient2@example.com\"}, {\"email\": \"recipient3@example.com\"}, {\"email\":\"recipient4@example.com\"}]}], \"from\": {\"email\": \"sendeexampexample@example.com\"},\"subject\":\"Hello, World!\", \"content\": [{\"type\": \"text/plain\", \"value\": \"Heya!\"}]}'\n```\n\n---\n\n## Sending a Basic Email Using a Template\n\nSend an email using a template by including the `template_id` field. Replace YOUR\\_TEMPLATE\\_ID with your actual template ID:\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/send \\\n\n\n\n3\n\n--header 'authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\"personalizations\": [{\"to\": [{\"email\": \"recipient@example.com\"}]}],\"from\": {\"email\": \"sendeexampexample@example.com\"},\"subject\":\"Hello, World!\",\"content\": [{\"type\": \"text/plain\",\"value\": \"Heya!\"}], \"template_id\" : \"YOUR_TEMPLATE_ID\"}'\n```\n\n---\n\n## Sending a Basic Email with Attachment\n\nSend an email with attachments by including an `attachments` array containing Base64-encoded file content:\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/send \\\n\n\n\n3\n\n--header 'authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\"personalizations\": [{\"to\": [{\"email\": \"recipient@example.com\"}]}],\"from\": {\"email\": \"sender@example.com\"},\"subject\":\"Hello, World!\",\"content\": [{\"type\": \"text/html\",\"value\": \"Hey, Please find attachment.\"}], \"attachments\": [{\"content\": \"BASE64_ENCODED_CONTENT\", \"type\": \"text/plain\", \"filename\": \"attachment.txt\"}]}'\n```\n\n---\n\n## Sending a Basic Email at a Scheduled Time\n\nSend an email at a specified time by including the `send_at` field. Replace UNIX\\_TIMESTAMP\\_HERE with your desired timestamp:\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/send \\\n\n\n\n3\n\n--header 'authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\"personalizations\": [{\"to\": [{\"email\": \"recipient@example.com\"}]}],\"from\": {\"email\": \"sendeexampexample@example.com\"},\"subject\":\"Hello, World!\",\"content\": [{\"type\": \"text/plain\",\"value\": \"Heya!\"}], \"send_at\" : UNIX_TIMESTAMP_HERE}'\n```\n\n---\n\n## Scheduling and Cancelling an Email\n\nYou can schedule an email to be sent up to 72 hours in the future by using the `send_at` parameter, then cancel that same scheduled email by using the Cancel Scheduled Sends endpoint. To schedule and cancel an email, follow these steps:\n\n**Step 1: Generate a batch ID**\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/batch \\\n\n\n\n3\n\n--header 'authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n```\n\n**Step 2: Schedule the email to be sent, using your new batch ID**\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/send \\\n\n\n\n3\n\n--header 'authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\"personalizations\": [{\"to\": [{\"email\": \"recipient@example.com\"}]}],\"from\": {\"email\": \"sendeexampexample@example.com\"},\"subject\":\"Hello, World!\",\"content\": [{\"type\": \"text/plain\",\"value\": \"Heya!\"}], \"send_at\" : UNIX_TIMESTAMP_HERE, \"batch_id\" : \"YOUR_BATCH_ID\"}'\n```\n\n**Step 3: Cancel the scheduled email**\n\n```\n1\n\ncurl --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/user/scheduled_sends \\\n\n\n\n3\n\n--header 'authorization: Bearer YOUR_API_KEY' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\"batch_id\":\"YOUR_BATCH_ID\",\"status\":\"cancel\"}'\n```",
+   "retrieved_at": "2026-11-23T19:36:24+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://docs.sendgrid.com/v2-api/mail",
+   "title": "v2 Mail Send",
+   "snippet": "# v2 Mail Send\nThis endpoint allows you to send email over SendGrid's Web API v2. For information about the latest mail send endpoint, please visit our [Web API v3 Mail Send"
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/api-getting-started",
+   "title": "Getting started with the SendGrid API",
+   "snippet": "### Build your API call\nYour API call must have the following components:\n- **A host.** The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`\n- **An [Authorization"
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/curl-examples",
+   "title": "cURL Examples for Common Use Cases",
+   "snippet": "\nSend a \"Hello, World!\" email through SendGrid's v3 Mail Send endpoint. Replace YOUR_API_KEY with your actual API key:\n```\n1curl --request POST \\\n2  --url https://api.sendgrid.com/v3/mail/send \\\n3"
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://login.sendgrid.com/",
+   "title": "SendGrid",
+   "snippet": "Web site for login SendGrid. contact support Twilio SendGrid. Don't have a Twilio SendGrid account? Sign up now!"
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://docs.sendgrid.com/api-reference/mail-send/limitations",
+   "title": "Mail Send API Overview",
+   "snippet": "and dynamic templates.\n---\n## Base URL\nSendGrid's v3 Web API uses `https://api.sendgrid.com` for global users and subusers and `https://api.eu.sendgrid.com` for regional subusers in the EU."
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/requests",
+   "title": "Requests",
+   "snippet": "### Base URL\nThe base URL for Web API v3 requests is `https://api.sendgrid.com/v3/` for global users and subusers, and `https://api.eu.sendgrid.com/v3/` for EU subusers.\n**All requests must be made"
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://docs.sendgrid.com/api-reference/send-test-e-mail/send-a-test-marketing-email",
+   "title": "Send a Test Marketing Email",
+   "snippet": "\nBase url: https://api.sendgrid.com\n**This endpoint allows you to send a test marketing email to a list of email addresses**.\nBefore sending a marketing message, you can"
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://docs.sendgrid.com/api-reference/mail-send/mail-send",
+   "title": "Mail Send",
+   "snippet": "url: https://api.eu.sendgrid.com (for EU regional subusers)\n*The Mail Send operation allows you to send email over SendGrid's v3 Web API*\nFor an overview of this API, including its features and"
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://docs.sendgrid.com/api-reference/campaigns-api/create-a-campaign",
+   "title": "Create a Campaign | SendGrid Docs",
+   "snippet": "at a later time.\n---\n## Operation overview\n## POST/v3/campaigns\n### Base url: https://api.sendgrid.com (The Twilio SendGrid v3 API)\n**This endpoint allows you to create a campaign.**\nIn order"
+  },
+  {
+   "q": "SendGrid API documentation",
+   "url": "https://stage.sendgrid.com/en-us/solutions/email-api",
+   "title": "Email API - Start for Free | SendGrid",
+   "snippet": "Integrate and deliver in minutes with our RESTful APIs and SMTP, libraries to support your programming language, and interactive documentation.\n```curl\ncurl --request POST \\\n--url"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys",
+   "title": "Upgrade your authentication method to API keys",
+   "snippet": "for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/api-getting-started",
+   "title": "Getting started with the SendGrid API",
+   "snippet": "Basic Authentication is no longer accepted; you must use an API key."
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "title": "Authentication",
+   "snippet": "the key can access.\nYou can create [API keys in your account](https://app.sendgrid.com/settings/api_keys). To use an API key, include an `Authorization` header with the value `Bearer"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://docs.sendgrid.com/api-reference/api-keys/create-api-keys",
+   "title": "Create API keys",
+   "snippet": "You can revoke an API key at any time without having to change your username and password, and an API key can be scoped to perform a limited number of actions.\nThere are 3 different types of API"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/quickstart-go",
+   "title": "Email API Quickstart for Go",
+   "snippet": "key\nUnlike a username and password \u2014 credentials that allow access to your full account \u2014 an API key is authorized to perform a limited scope of actions. If your API key is compromised, you can"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://docs.sendgrid.com/api-reference/webhooks/test-event-notification-settings",
+   "title": "Test Event Notification Settings | SendGrid Docs",
+   "snippet": "\nThe client ID Twilio SendGrid sends to your OAuth server or service provider to generate an OAuth access token. When passing data in this property, you must also include the `oauth_token_url`"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://login.sendgrid.com/",
+   "title": "SendGrid",
+   "snippet": "Web site for login SendGrid. contact support Twilio SendGrid. Don't have a Twilio SendGrid account? Sign up now!"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://github.com/nextauthjs/next-auth/blob/7b35fc39/docs/pages/getting-started/providers/sendgrid.mdx?plain=1",
+   "title": "next-auth/docs/pages/getting-started/providers/sendgrid.mdx at 7b35fc393da5120cc3552f19d636b14980557444 \u00b7 nextauthjs/next-auth",
+   "snippet": "have to generate an API key in the [Sendgrid Dashboard](https://sendgrid.com/api-keys). You can save this API key as the `AUTH_SENDGRID_KEY` environment variable.\n```sh\nAUTH_SENDGRID_KEY=abc\n```\n"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://docs.matillion.com/metl/docs/0964835",
+   "title": "Matillion Docs",
+   "snippet": "component in Matillion ETL.\n10. Ensure **Authentication Method** is set to **API Key**.\n11. Click into the **API Key** property. Paste your API key (copied from the SendGrid website earlier) into"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer",
+   "url": "https://twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+   "title": "Authentication",
+   "snippet": "two-factor authentication (2FA) to improve security.\n---\n## API key\nAuthenticate to the Twilio SendGrid API by creating an API Key in the [Settings section of the Twilio SendGrid"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+   "title": "Twilio SendGrid Email API pricing",
+   "snippet": "SendGrid Email API Plans ; Free Trial. $0/mo for 60 days. Send 100 emails/day. Start for free. No credit card, no commitment. ; Essentials. Starting $19.95/mo."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://www.emailsoftwareinsights.com/reviews/sendgrid/pricing/",
+   "title": "SendGrid Pricing: Here's What You'll Actually Pay in 2026",
+   "snippet": "Email API Plans (for developers/transactional emails) ; Plan. Starting Price ; Free Trial. $0/mo (60 days) ; Essentials. $19.95/mo ; Pro. $89.95/mo."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://apis.io/providers/sendgrid/",
+   "title": "SendGrid API \u2014 Docs, Pricing & OpenAPI",
+   "snippet": "SendGrid publishes its prices; its Essentials plan is $19.95 per monthly base / month \u00b7 Free as of 2026-10-12. APIs.io lists 4 pricing plans for SendGrid, with ..."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://www.twilio.com/en-us/sendgrid",
+   "title": "SendGrid Email API and Email Marketing Campaigns",
+   "snippet": "Start for free View Pricing Free trial No credit card required Flexible pricing. Find guidance and best practices for building with our Email API, improving ..."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://www.vendr.com/marketplace/twilio-sendgrid",
+   "title": "Twilio SendGrid Software Pricing & Plans 2026: See Your Cost",
+   "snippet": "List pricing starts at $15/month for up to 1,000 contacts, scaling to $60/month for 10,000 contacts. Includes email editor, segmentation, and basic automation."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://support.sendgrid.com/hc/en-us/articles/360041831393-How-to-Upgrade-or-Change-your-SendGrid-Pricing-Plan",
+   "title": "How to Upgrade or Change your SendGrid Pricing Plan",
+   "snippet": "Choose an Email API plan Access the Your Products tab on the Account Details page. Under \u201cEmail API\u201d, click Change Plan. Click Select next to the desired plan."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://zapro.ai/vendor/sendgrid-pricing/",
+   "title": "SendGrid Pricing: Email API and Marketing Campaigns Costs",
+   "snippet": "SendGrid Email API starts at $19.95 a month on Essentials and $89.95 on Pro; Marketing Campaigns from $15. When a dedicated IP is worth it."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://www.buildmvpfast.com/tools/api-pricing-estimator/sendgrid",
+   "title": "SendGrid API Pricing Calculator (2026)",
+   "snippet": "Pro $89.95/mo. Basic from $15/mo (10K), $20/mo (50K), $30/mo (100K). Free Developer plan (100/mo). Basic $15/mo + $1.80/1K extra. 5 emails per user x 1,000 ..."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://campaignrefinery.com/sendgrid-pricing/",
+   "title": "SendGrid Pricing in 2024: Breakdown of All Paid Plans",
+   "snippet": "SendGrid API Plan: Free ($0 Per Month). The SendGrid API Free plan can help developers test SendGrid's email delivery services without any ..."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account",
+   "url": "https://apidog.com/blog/sendgrid-api-guide/",
+   "title": "SendGrid v3 API: Features, Pricing, Keys and Integrations",
+   "snippet": "SendGrid APl Pricing ; 1. Free Plan: \u00b7 $0/month \u00b7 Up to 100 emails/day ; 2. Essentials Plan: \u00b7 Starts at $19.95/month \u00b7 Up to 50,000 emails/month ; 3. Pro Plan:."
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://mcp.ai/sendgrid/en",
+   "title": "SendGrid MCP Server and REST API",
+   "snippet": "account and use 364 tools for transactional email straight from your AI agent. Connect with your own API key. SendGrid is a cloud-based email delivery platform providing transactional and marketing"
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://mcp.ai/sendgrid/llms.txt",
+   "title": "mcp.ai/sendgrid/llms.txt",
+   "snippet": "\n## Connect (MCP protocol)\nRemote MCP endpoint (HTTP, streamable): https://api.mcp.ai/p_sendgrid?ms=1791787200000\nAdd it as a custom/remote MCP connector, then authenticate when prompted."
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://github.com/The-Focus-AI/sendgrid-mcp",
+   "title": "GitHub - The-Focus-AI/sendgrid-mcp: Allows AI Agents to interact with the Twilio SendGrid v3 API, managing contact lists, templates, single sends, and stats",
+   "snippet": "A Model Context Protocol (MCP) server that provides access to SendGrid's Marketing API for email marketing and contact management."
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://composio.dev/toolkits/sendgrid",
+   "title": "Sendgrid MCP Server | Composio",
+   "snippet": "Creates a sender identity for SendGrid Marketing Campaigns, including a required reply-to email.\nCreate a sender identity\n**Create a new sender identity in SendGrid.** A sender identity is required"
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+   "title": "Build a SendGrid MCP Server for AI Email Workflows",
+   "snippet": "- **fastmcp**: This package will provide the MCP server framework, allowing AI models to communicate with your server.\n- **sendgrid**: This is SendGrid\u2019s official SDK that will help in sending emails."
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://github.com/Garoth/sendgrid-mcp",
+   "title": "GitHub - Garoth/sendgrid-mcp: Allows AI Agents to interact with the Twilio SendGrid v3 API, managing contact lists, templates, single sends, and stats",
+   "snippet": "A Model Context Protocol (MCP) server that provides access to SendGrid's Marketing API for email marketing and contact management."
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://businessmcp.com/mcp-servers/mcp-server-sendgrid",
+   "title": "SendGrid MCP Server \u2014 Setup & Tools - BusinessMCP",
+   "snippet": "The SendGrid MCP server brings transactional and marketing email delivery directly into your AI agent workflows through a single hosted MCP ..."
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://github.com/deyikong/sendgrid-mcp",
+   "title": "GitHub - deyikong/sendgrid-mcp: Sendgrid MCP, Contacts, Templates, Campaigns, Stats, etc. more to come. With READ_ONLY option.",
+   "snippet": "\nA Model Context Protocol (MCP) server that provides comprehensive access to SendGrid's API v3 for email marketing, transactional"
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://github.com/garethcull/sendgrid-mcp",
+   "title": "GitHub - garethcull/sendgrid-mcp: An open source Sendgrid MCP server that helps marketing teams pull email stats and save html templates to sendgrid using AI Models. Built in Flask with Python.",
+   "snippet": "# SendGrid MCP Server\nA Model Context Protocol (MCP) server that exposes SendGrid Email Management and Reporting tools as MCP-compatible endpoints. This MCP Server provides endpoints for automated"
+  },
+  {
+   "q": "SendGrid MCP server official",
+   "url": "https://github.com/Neschadin/sendgrid-mcp",
+   "title": "GitHub - Neschadin/sendgrid-mcp",
+   "snippet": "Install: `bunx --no-env-file x @neschadin/sendgrid-mcp`.\nFull catalog and runbooks: [`MCP_TOOLS.md`](/Neschadin/sendgrid-mcp/blob/main/MCP_TOOLS.md)."
+  }
+ ],
+ "official_domain_candidates": {
+  "sendgrid.com": 18
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "sendgrid.com",
+ "completed": "2026-11-23T19:36:24+05:30"
+}

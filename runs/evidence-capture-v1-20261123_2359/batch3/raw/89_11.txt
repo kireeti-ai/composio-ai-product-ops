@@ -1,0 +1,458 @@
+title: Webhooks
+source_url: /developer-api/v1/webhooks
+summary: Webhooks allow your application to receive real-time notifications about events that occur in your Ramp account. Instead of polling our API, webhooks push notifications to your specified endpoint whenever an event happens.
+
+content:
+## Overview
+
+Webhooks allow your application to receive real-time notifications about events that occur in your Ramp account. Instead of polling our API, webhooks push notifications to your specified endpoint whenever an event happens.
+
+**Key benefits:**
+
+- Instant notification of events like transactions, approvals, or reimbursements
+
+- Reduces the need for polling APIs to check for updates
+
+- Enables automation of downstream workflows (e.g., syncing with accounting software)
+
+Ramp also exposes an inbound webhook endpoint for AI platforms that broadcast customer usage events into Ramp. If your product lets customers bring their Ramp API key and receive model, token, cost, and attribution data in Ramp, see [AI Usage Tracking](</developer-api/v1/ai-usage>). That endpoint uses `POST /developer/v1/ai-usage/unified` and does not require a webhook subscription through `POST /developer/v1/webhooks`.
+
+## Available events
+
+Subscribe to the event types below for business workflows. Where a public OAuth scope is available, request the scope for the underlying resource so your integration can read the object after receiving the event.
+
+| **Resource** | **Scope to request** | **Event** | **Description** |
+| --- | --- | --- | --- |
+| **Applications** | `applications:read` | `applications.status_updated` | Application status has changed, such as approved or rejected. |
+| **Bills** | `bills:read` | `bills.approved` | Bill has been approved. |
+|  |  | `bills.archived` | Bill has been archived. |
+|  |  | `bills.created` | Bill has been created. |
+|  |  | `bills.paid` | Bill payment has been completed. |
+|  |  | `bills.ready_to_sync` | Bill is ready to sync to an accounting system. |
+|  |  | `bills.rejected` | Bill has been rejected. |
+|  |  | `bills.updated` | Bill has been edited. Fires for invoice number updates, PO matching, accounting field updates, and payment detail changes. Does not fire for bill approvals or payments; use `bills.approved` and `bills.paid` for those updates. |
+| **Draft bills** | `bills:read` | `draft_bills.created` | A draft bill has been created. |
+| **Entities** | `entities:read` | `entities.created` | Business entity has been created. |
+| **Item Receipts** | `item_receipts:read` | `item_receipts.created` | Item receipt has been created. |
+| **Payments** | `payments:read` | `payments.updated` | A bill payment has been updated. |
+| **Purchase Orders** | `purchase_orders:read` | `purchase_orders.archived` | Purchase order has been archived. |
+|  |  | `purchase_orders.created` | Purchase order has been created. |
+|  |  | `purchase_orders.updated` | Purchase order has been modified. |
+| **Reimbursements** | `reimbursements:read` | `reimbursements.batch_payment_reimbursed` | Reimbursement batch payment has been reimbursed. |
+|  |  | `reimbursements.ready_for_review` | Reimbursement needs review. |
+|  |  | `reimbursements.ready_to_sync` | Reimbursement is ready to sync to an accounting system. |
+|  |  | `reimbursements.sync_requested` | Reimbursement sync has been requested. |
+| **Spend Requests** | `spend_requests:read` | `spend_requests.comment_created` | Comment has been added to a spend request. |
+|  |  | `spend_requests.created` | Spend request has been created. |
+| **Transactions** | `transactions:read` | `transactions.all_requirements_met_and_approved_changed` | The transaction's `all_requirements_met_and_approved` value changed in either direction, including from true to false. |
+|  |  | `transactions.authorized` | Transaction has been authorized. |
+|  |  | `transactions.body_coding_updated` | Transaction's body-level accounting coding has been created or changed. |
+|  |  | `transactions.cleared` | Transaction has settled. This also fires for refunds and reversals. |
+|  |  | `transactions.declined` | Transaction has been declined. |
+|  |  | `transactions.ready_for_review` | Transaction needs review or coding. |
+|  |  | `transactions.ready_to_sync` | Transaction is ready to sync to an accounting system. |
+|  |  | `transactions.receipt_added` | Receipt has been added to a transaction. |
+|  |  | `transactions.sync_requested` | Transaction sync has been requested. |
+|  |  | `transactions.synced` | Transaction has been marked as synced. |
+| **Unified Requests** | `unified_requests:read` | `unified_requests.created` | Unified request has been created. |
+|  |  | `unified_requests.external_approval_request` | Unified request is ready for external approval. |
+|  |  | `unified_requests.external_approval_request_reset` | External approval request on a unified request has been reset. |
+|  |  | `unified_requests.modified` | Unified request has been modified. |
+|  |  | `unified_requests.node_advanced` | Unified request advanced to another workflow node. |
+|  |  | `unified_requests.override_approved` | Unified request override has been approved. |
+|  |  | `unified_requests.updated` | Unified request has been updated. |
+| **Users** | `users:read` | `users.invite_accepted` | User has accepted an invitation. |
+| **Vendor Agreements** | `vendors:read` | `vendor_agreements.archived` | Vendor agreement has been archived. |
+|  |  | `vendor_agreements.created` | Vendor agreement has been created. |
+|  |  | `vendor_agreements.deleted` | Vendor agreement has been deleted. |
+|  |  | `vendor_agreements.document_added` | Document has been added to a vendor agreement. |
+|  |  | `vendor_agreements.renewal_milestone` | Vendor agreement has reached its fixed 90-day renewal milestone. |
+|  |  | `vendor_agreements.updated` | Vendor agreement has been updated. |
+| **Vendors** | `vendors:read` | `vendors.activated` | Vendor has been activated. |
+|  |  | `vendors.approved` | Vendor has been approved. |
+|  |  | `vendors.updated` | Vendor has been updated. |
+| **Testing** | None | `tests.test_event` | Test event for mock webhook delivery only; not a business-event subscription. |
+
+Ramp also sends `webhooks.verification` during endpoint verification. Do not use it for business-event subscriptions; see [Verify your webhook](<#3-verify-your-webhook>) for the verification flow.
+
+## Getting started
+
+### 1. Create a webhook endpoint
+
+Set up an HTTPS endpoint (URL) on your server that can receive `POST` requests from Ramp. Your endpoint must:
+
+- Be publicly accessible
+
+- Use HTTPS
+
+- Return a 2xx status code for successful receipt
+
+- Process requests within 10 seconds
+
+These minimal examples show request handling only. For production, add signature verification and durable queuing before acknowledging events; see [Best practices](<#best-practices>).
+
+```bash
+# Test your endpoint is reachable
+curl -X POST https://your-domain.com/webhooks \
+  -H "Content-Type: application/json" \
+  -d '{"test": "webhook"}'
+```
+
+### 2. Subscribe to events
+
+Create a webhook subscription using `POST /developer/v1/webhooks`. Your access token must include the required read scope for each selected business event. The new subscription starts in the `pending_verification` state and does not receive business events until verification succeeds.
+
+```bash
+curl -X POST https://api.ramp.com/developer/v1/webhooks \
+  -H "Authorization: Bearer $RAMP_API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "endpoint_url": "https://your-domain.com/webhooks",
+    "event_types": ["transactions.authorized", "transactions.cleared"]
+  }'
+# Response includes a 'secret' field - save it securely to verify webhook signatures
+```
+
+You can also include an optional `additional_headers` object in the request. Ramp sends these headers with both verification requests and event deliveries. You can configure up to five headers; header names can contain up to 100 characters and values can contain up to 1,000 characters.
+
+The following header names are reserved and cannot be used: `Host`, `User-Agent`, `Content-Length`, `Content-Type`, `Accept`, `Accept-Encoding`, `Connection`, and `Upgrade`. Header names that start with `X-Forwarded`, `X-Real`, or `X-Original` are also reserved. These restrictions are case-insensitive.
+
+### 3. Verify your webhook
+
+Ramp will send a `POST` request with a challenge to your endpoint during setup.
+
+The verification request uses a different payload from a business event:
+
+```json
+{
+  "type": "webhooks.verification",
+  "challenge": "ramp_challenge_a8f5f167f44f4964e6c998dee827110c"
+}
+```
+
+1. Read the `challenge` value from the verification request and return a `2xx` response.
+
+2. Submit the challenge to the verification endpoint. A successful request returns `{"success": true}` and activates the subscription:
+
+```bash
+curl -X POST https://api.ramp.com/developer/v1/webhooks/{webhook_id}/verify \
+  -H "Authorization: Bearer $RAMP_API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "challenge": "CHALLENGE_STRING_FROM_RAMP"
+  }'
+```
+
+## Webhook payload format
+
+Business-event payloads follow this structure. The setup verification challenge uses the separate payload shown above:
+
+```json
+{
+  "id": "a461a658-8d78-4e66-b1fd-9c818bcfea6b",
+  "type": "transactions.cleared",
+  "created_at": "2025-04-01T12:00:00Z",
+  "business_id": "945c7d8f-6c35-4d63-9c1c-79e67c9cee73",
+  "object": {
+    "id": "<resource-id>"
+  }
+}
+```
+
+**Payload fields:**
+
+- `id`: Unique event ID (constant across retries)
+
+- `type`: Event type from the available events table
+
+- `created_at`: Event timestamp in ISO 8601 format
+
+- `business_id`: Identifies which business the event belongs to
+
+- `object`: Contains the affected resource ID and any event-specific metadata supplied for that event
+
+Business-event requests also include an `X-Ramp-Webhook-ID` header with the same event ID as the payload. Verification requests do not include this header.
+
+### Example payloads
+
+**Transaction event:**
+
+```json
+{
+  "id": "a461a658-8d78-4e66-b1fd-9c818bcfea6b",
+  "type": "transactions.cleared",
+  "created_at": "2025-04-01T12:00:00Z",
+  "business_id": "945c7d8f-6c35-4d63-9c1c-79e67c9cee73",
+  "object": {
+    "id": "3aa9eed1-c793-4b52-a502-e7f2a7e4c1b2"
+  }
+}
+```
+
+**Bill event:**
+
+```json
+{
+  "id": "c683a860-0f90-4a88-a725-1f040aeada8e",
+  "type": "bills.ready_to_sync",
+  "created_at": "2025-04-01T12:10:00Z",
+  "business_id": "945c7d8f-6c35-4d63-9c1c-79e67c9cee73",
+  "object": {
+    "id": "9cd3f558-a005-4e34-8d26-3f9a8c7b4d2e"
+  }
+}
+```
+
+**Purchase order event:**
+
+```json
+{
+  "id": "d794a971-1a01-4b99-a836-2a151bcca99f",
+  "type": "purchase_orders.created",
+  "created_at": "2025-04-01T12:15:00Z",
+  "business_id": "945c7d8f-6c35-4d63-9c1c-79e67c9cee73",
+  "object": {
+    "id": "0de4a669-b116-4f45-8e37-4a0b9d8c5e3f"
+  }
+}
+```
+
+To get the full resource details, use the resource ID to fetch from the appropriate API endpoint, such as `GET /developer/v1/transactions/{transaction_id}` for transaction events or `GET /developer/v1/reimbursements/{reimbursement_id}` for reimbursement events.
+
+### Transaction amounts
+
+A `transactions.cleared` event can represent a purchase, refund, or reversal. The webhook payload does not include the transaction amount. Fetch the transaction and, if `entity_amount` is not `null`, check `entity_amount.value`, which is signed and can be negative for refunds or credits. If `entity_amount` is `null`, no settlement-currency amount is available, so do not classify the transaction by amount. Do not use the deprecated `amount` field.
+
+## Verifying webhook signatures
+
+To help ensure the security of your integration, Ramp includes a cryptographic signature with every webhook event we send. This allows you to verify that the payload was sent by Ramp and hasn't been modified in transit.
+
+While payload validation is optional, we recommend implementing it for any production environment.
+
+**Using a no-code or low-code platform?**
+
+If you're using a no-code or low-code platform (like Zapier, Make, or Pipedream), you may not have access to custom code for signature verification — and that's okay. Validation is encouraged, but not required for webhooks to work.
+
+### How it works
+
+When you create a webhook subscription, Ramp provides a `secret` field in the response. You'll use this secret to verify the authenticity of all subsequent webhook events.
+
+Every webhook request from Ramp includes an `X-Ramp-Signature` header, which contains an HMAC-SHA256 hash of the raw request body, signed with your webhook secret.
+
+Verify the exact raw request bytes before parsing or reserializing the JSON. Recreating the body with `JSON.stringify(req.body)` can change its formatting or key order and produce an invalid signature.
+
+**Sample X-Ramp-Signature from Ramp:**
+
+```text
+X-Ramp-Signature: 7f2a8b9c3d4e5f6a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a
+```
+
+### Implementation
+
+```bash
+# Signature verification should be done in your application code
+# This is just an example of extracting the header
+curl -v https://your-domain.com/webhooks \
+  -H "X-Ramp-Signature: expected_signature_here"
+```
+
+## Delivery and retry logic
+
+### Rate limiting
+
+Ramp can pace deliveries to the same business and endpoint URL. If your endpoint returns `429 Too Many Requests`, Ramp retries and can pause deliveries to that receiver. Include a `Retry-After` header with a delay in seconds or an HTTP date when you need a cooldown. Do not assume unlimited delivery throughput or an exact arrival time.
+
+### Retry schedule
+
+Ramp's retry behavior depends on the HTTP status code returned by your webhook endpoint:
+
+| Status Code | Behavior |
+| --- | --- |
+| **2xx** | Delivery successful - no retries |
+| **3xx, 4xx** (except 429) | Instant delivery failure - no retries |
+| **429, 5xx** (including timeouts and connection errors) | Up to **10 total delivery attempts**, with exponential backoff between attempts |
+
+**Retry timing:** Failed deliveries use exponential backoff with full jitter. The first retry delay is between 0 and 2 seconds, and later retry delays increase up to a maximum of 60 seconds. Webhook requests time out after 10 seconds.
+
+**Important:** The same event `id` is used for all retry attempts, allowing you to implement idempotency checks.
+
+**Event Ordering:** Webhooks may arrive out of order. For example:
+
+- `transactions.authorized` might be delayed or retried
+
+- `transactions.cleared` may arrive earlier if successful
+
+Design your system to handle **out-of-order events** gracefully by checking the event timestamp and fetching the latest resource state when needed.
+
+## Best practices
+
+### Reliability
+
+- **Implement idempotency checks** using the event `id` to handle duplicate deliveries
+
+- **Return 2xx responses within 10 seconds** to avoid timeout retries
+
+- **Durably queue payloads before returning 2xx**, then process them asynchronously. An in-memory set or background thread does not survive a process restart.
+
+- **Log raw payloads** for debugging and audit trails
+
+- **Handle retries gracefully** - the same event may be delivered up to 10 times for 429/5xx responses
+
+### Security
+
+- **Always verify webhook signatures** before processing
+
+- **Use HTTPS endpoints** to encrypt data in transit
+
+- **Validate event types** against your expected events
+
+### Error handling
+
+- Implement proper error handling for malformed payloads
+
+- Monitor for failed webhook deliveries
+
+- Set up alerting for webhook endpoint downtime
+
+The following business-event handler assumes `enqueueWebhookOnce` / `enqueue_webhook_once` is implemented by your application using a durable database or queue. It must atomically save the event with a unique event-ID key, treat an already saved event as success, and raise an error if saving fails. A worker processes saved events with its own retries. Handle the setup verification challenge separately, as described above.
+
+```js
+app.post('/webhooks', async (req, res) => {
+  const signature = req.headers['x-ramp-signature']
+  if (!verifyWebhookSignature(req.rawBody, signature, WEBHOOK_SECRET)) {
+    return res.status(401).send('Invalid signature')
+  }
+
+
+  const event = req.body
+  if (!event.id || !event.type || !event.business_id) {
+    return res.status(400).send('Invalid business event')
+  }
+
+
+  try {
+    // Application-defined durable storage: unique event ID, atomic insert.
+    // Duplicate events are already queued and must also return success.
+    await enqueueWebhookOnce(event.id, event)
+    return res.status(200).json({ received: true })
+  } catch (error) {
+    console.error('Unable to queue webhook:', event.id)
+    // Ramp can retry because the event has not been acknowledged.
+    return res.status(503).send('Please retry')
+  }
+})
+```
+
+## Managing webhook subscriptions
+
+### Send a test event
+
+Use `POST /developer/v1/webhooks/mock-webhook-event` to create a mock event for all matching active subscriptions within the token's business and integration. The endpoint does not target a single subscription. Mock events use the normal event payload and signature, with no test marker added by Ramp. In production, live receivers can process these events as real activity.
+
+Use a [sandbox](</developer-api/v1/sandbox>) access token and sandbox subscriptions for testing, as shown below. The request requires `event_type`, a valid resource UUID in `object_id`, and an `object_metadata` object:
+
+```bash
+curl -X POST https://demo-api.ramp.com/developer/v1/webhooks/mock-webhook-event \
+  -H "Authorization: Bearer $RAMP_SANDBOX_API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "event_type": "transactions.cleared",
+    "object_id": "3aa9eed1-c793-4b52-a502-e7f2a7e4c1b2",
+    "object_metadata": {}
+  }'
+```
+
+The endpoint returns the generated event payload with a `201 Created` status. It returns an error if no active subscription matches the event type.
+
+### List all subscriptions
+
+```bash
+curl -X GET https://api.ramp.com/developer/v1/webhooks \
+  -H "Authorization: Bearer $RAMP_API_TOKEN"
+```
+
+### Retrieve webhook details
+
+```bash
+curl -X GET https://api.ramp.com/developer/v1/webhooks/{webhook_id} \
+  -H "Authorization: Bearer $RAMP_API_TOKEN"
+```
+
+### Delete a webhook
+
+```bash
+curl -X DELETE https://api.ramp.com/developer/v1/webhooks/{webhook_id} \
+  -H "Authorization: Bearer $RAMP_API_TOKEN"
+```
+
+## For third-party integrators
+
+Use the same `/webhooks` endpoints to manage subscriptions for multi-customer applications.
+
+The webhook payload always includes a `business_id`, which can be used to identify the associated business:
+
+```bash
+# Use business_id to route events to the correct customer
+curl -X GET https://api.ramp.com/developer/v1/business \
+  -H "Authorization: Bearer $CUSTOMER_SPECIFIC_TOKEN"
+```
+
+## Troubleshooting
+
+## Need help?
+
+[Submit a Developer API support ticket](</developer-api/v1/debugging#how-to-submit-a-developer-api-support-ticket>) and our team will follow up.
+
+#### Why am I not receiving webhooks?
+
+- Verify your endpoint is publicly accessible and returns 2xx status codes
+
+- Check that your webhook subscription includes the correct event types
+
+- Ensure your access token has the required scopes for the events
+
+- Confirm your endpoint responds within 10 seconds
+
+#### What happens if my server was down?
+
+- Ramp will retry webhook deliveries with exponential backoff
+
+- Missed events during extended downtime may not be recoverable
+
+- Consider implementing a fallback polling mechanism for critical events
+
+#### How do I change my webhook URL?
+
+- Delete the existing webhook subscription
+
+- Create a new subscription with the updated URL
+
+- Re-verify the new endpoint
+
+#### How do I test webhooks in development?
+
+- Use tools like [ngrok↗](<https://ngrok.com/>) to expose your local server
+
+- Use [webhook.site↗](<https://webhook.site/>) to get a temporary URL for testing webhook delivery
+
+- Test with a small subset of event types initially
+
+- Monitor webhook logs for successful delivery and processing
+
+#### Will there be a dashboard to view delivery logs?
+
+- Keep delivery and processing logs in your integration, including the event ID and response status.
+
+- If you need help tracing a delivery, contact Developer API support.
+
+## Next steps
+
+Ready to implement webhooks in your integration? Here are some related guides:
+
+- **ERP Integrations**: Learn how `ready_to_sync` webhooks can replace polling in your [ERP integration](</developer-api/v1/erp-integrations>)
+
+- **Getting started**: Set up authentication and make your first API calls with our [Setup guide](</developer-api/v1/getting-started>)
+
+- **Bill Pay**: Automate bill payment workflows with our [Bill Pay guide](</developer-api/v1/bill-pay>)
+
+If you have questions or feedback about webhooks, [submit a Developer API support ticket](</developer-api/v1/debugging#how-to-submit-a-developer-api-support-ticket>) – we're here to help make your integration successful.

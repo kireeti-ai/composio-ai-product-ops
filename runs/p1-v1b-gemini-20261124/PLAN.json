@@ -1,0 +1,59 @@
+{
+ "run_id": "p1-v1b-gemini-20261124",
+ "status": "PREPARED - AWAITING EXPLICIT APPROVAL (no Gemini calls made)",
+ "purpose": "Resume Pass 1 for apps without a baseline record, same prompt/schema/models as baseline V1",
+ "ids": [
+  27,
+  32,
+  33,
+  34,
+  39,
+  41,
+  43,
+  52,
+  53,
+  56,
+  76,
+  29,
+  36,
+  46,
+  65,
+  66,
+  71,
+  72,
+  75,
+  20,
+  25,
+  26,
+  38,
+  44,
+  47,
+  61,
+  62,
+  63,
+  70
+ ],
+ "held_pending_identity": [
+  {
+   "id": 73,
+   "name": "Linear",
+   "reason": "identity unconfirmed (Linear)"
+  },
+  {
+   "id": 78,
+   "name": "Coda",
+   "reason": "identity unconfirmed (Coda)"
+  }
+ ],
+ "candidate_models": [
+  "gemini-2.5-flash",
+  "gemini-3.5-flash"
+ ],
+ "candidate_models_note": "same two models V1 used; per-model caps must come from the ACTIVE AI Studio limits and are required in APPROVED.json",
+ "retrieval": "baseline/p1_v1/raw (read-only cache); no new retrieval in this run",
+ "exclude_urls": {},
+ "key_policy": "GEMINI_API_KEY only; GEMINI_API_KEY_2 is never read",
+ "approval_file_needed": "runs/p1-v1b-gemini-20261124/APPROVED.json = {\"models\":[...],\"cap_per_model\":{model:N,...}}  (written only after your approval)",
+ "source_of_ids": "runs/eligibility-v1-20261123/eligibility.json (ordered: access-evidence sufficient -> partial -> insufficient)",
+ "created": "2026-11-23T17:23:31+0530"
+}

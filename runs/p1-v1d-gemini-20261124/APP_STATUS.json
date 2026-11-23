@@ -1,0 +1,599 @@
+[
+ {
+  "id": 27,
+  "name": "Telegram",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 2,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 32,
+  "name": "Meta Ads",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 33,
+  "name": "LinkedIn Ads",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "partial",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 34,
+  "name": "GoHighLevel",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 123,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 39,
+  "name": "Threads (Meta)",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 3,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 41,
+  "name": "Shopify",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 43,
+  "name": "BigCommerce",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 2,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 52,
+  "name": "SE Ranking",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 53,
+  "name": "Ahrefs",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 56,
+  "name": "Firecrawl",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 4,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 76,
+  "name": "Monday.com",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit_prior",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 65,
+  "name": "Supabase",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 72,
+  "name": "Airtable",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 71,
+  "name": "Notion",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "partial",
+   "measured_operations": 2,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 61,
+  "name": "GitHub",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 1,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 38,
+  "name": "Pinterest",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 1,
+   "access": "explicit",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 62,
+  "name": "Vercel",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 5,
+   "access": "inferred_self_serve",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 63,
+  "name": "Netlify",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 9,
+   "access": "inferred_self_serve",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 36,
+  "name": "Klaviyo",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 2,
+   "access": "inferred_self_serve",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 29,
+  "name": "Aircall",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 47,
+  "name": "Ecwid",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "partial",
+   "measured_operations": 1,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 44,
+  "name": "Salesforce Commerce Cloud",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 3,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 26,
+  "name": "Discord",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 1,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 70,
+  "name": "Sentry",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 3,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 25,
+  "name": "Pumble",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 0,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 75,
+  "name": "Asana",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 2,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 46,
+  "name": "Squarespace",
+  "extraction_eligibility": {
+   "eligible": true,
+   "phase": 2,
+   "blocking_reasons": []
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_individually_assessed",
+   "measured_operations": 6,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 20,
+  "name": "Gladly",
+  "extraction_eligibility": {
+   "eligible": false,
+   "phase": null,
+   "blocking_reasons": [
+    "official evidence still unresolved after retry (pricing empty on 2 attempts; onboarding page thin)"
+   ]
+  },
+  "research_completeness": {
+   "identity": "resolved_by_original_hint",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_assessed",
+   "measured_operations": null,
+   "access": "unresolved",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 73,
+  "name": "Linear",
+  "extraction_eligibility": {
+   "eligible": false,
+   "phase": null,
+   "blocking_reasons": [
+    "identity provisional, not confirmed"
+   ]
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_assessed",
+   "measured_operations": null,
+   "access": "n/a",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 78,
+  "name": "Coda",
+  "extraction_eligibility": {
+   "eligible": false,
+   "phase": null,
+   "blocking_reasons": [
+    "identity provisional, not confirmed"
+   ]
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_assessed",
+   "measured_operations": null,
+   "access": "n/a",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ },
+ {
+  "id": 66,
+  "name": "Neo4j",
+  "extraction_eligibility": {
+   "eligible": false,
+   "phase": null,
+   "blocking_reasons": [
+    "API scope ambiguity (Aura management vs database Query API)"
+   ]
+  },
+  "research_completeness": {
+   "identity": "reconstructed_list_name_only_not_authoritative",
+   "auth": "present_keyword_verified_not_individually_read",
+   "api_surface": "not_assessed",
+   "measured_operations": null,
+   "access": "partial",
+   "mcp": "not_retrieved (search candidates only)",
+   "buildability_blocker": "not evidenced pre-extraction (model inference, to be verified)",
+   "open_items": []
+  }
+ }
+]

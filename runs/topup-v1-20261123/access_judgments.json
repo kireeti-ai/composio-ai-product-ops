@@ -1,0 +1,334 @@
+{
+ "provenance": "assistant's reading of stored pages; provisional; quotes verified by code",
+ "levels": {
+  "explicit": 4,
+  "inferred_self_serve": 3,
+  "partial": 8,
+  "unresolved": 3
+ },
+ "apps": {
+  "65": {
+   "name": "Supabase",
+   "level": "explicit",
+   "note": "free plan documented with unlimited API requests; keys created in project settings",
+   "evidence": [
+    {
+     "url": "https://supabase.com/pricing",
+     "quote": "Unlimited API requests",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 1,
+    "admin_consent": 1,
+    "generic_approval_unclassified": 1
+   }
+  },
+  "72": {
+   "name": "Airtable",
+   "level": "explicit",
+   "note": "free plan exists; API usage capped by plan; enterprise admins can set token policies",
+   "evidence": [
+    {
+     "url": "https://airtable.com/pricing",
+     "quote": "Our Free plan is available to teams for no charge",
+     "verified": true
+    },
+    {
+     "url": "https://airtable.com/pricing",
+     "quote": "For automations and API limits, you will be capped at the usage limit on your current plan.",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 4,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "71": {
+   "name": "Notion",
+   "level": "explicit",
+   "note": "free plan on pricing page; token creation governed by a plan-dependent workspace PAT policy (workspace-owner control = admin policy, not OAuth consent)",
+   "evidence": [
+    {
+     "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+     "quote": "Only full workspace members can create tokens, subject to the workspace\u2019s PAT creation policy below.",
+     "verified": true
+    },
+    {
+     "url": "https://notion.com/pricing",
+     "quote": "Free$0 per seat/month",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 1,
+    "admin_consent": 2,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "61": {
+   "name": "GitHub",
+   "level": "explicit",
+   "note": "app registration open to personal accounts and organizations; GitHub pricing page fetch returned empty; marketplace paid plans are a separate gate",
+   "evidence": [
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "quote": "You can register a GitHub App under your personal account or under any organization you own.",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 12,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "62": {
+   "name": "Vercel",
+   "level": "inferred_self_serve",
+   "note": "Hobby/Pro/Enterprise plans on pricing docs + account-token creation documented; no restriction stated (inference, not proof)",
+   "evidence": [
+    {
+     "url": "https://vercel.com/docs/pricing",
+     "quote": "Hobby Included",
+     "verified": true
+    },
+    {
+     "url": "https://vercel.com/docs/accounts/access-tokens",
+     "quote": "requires a full-account token",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "63": {
+   "name": "Netlify",
+   "level": "inferred_self_serve",
+   "note": "Free/Personal/Pro plans documented + personal-access-token guide; no API restriction stated (inference)",
+   "evidence": [
+    {
+     "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+     "quote": "standard plans include the Free, Personal, and Pro plans",
+     "verified": true
+    },
+    {
+     "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+     "quote": "generate a Personal Access Token",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 1,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 1
+   }
+  },
+  "36": {
+   "name": "Klaviyo",
+   "level": "inferred_self_serve",
+   "note": "free plan on pricing page + private API keys created by account users; no plan restriction stated (inference)",
+   "evidence": [
+    {
+     "url": "https://klaviyo.com/pricing",
+     "quote": "Klaviyo free plan",
+     "verified": true
+    },
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+     "quote": "When you create a private API key, choose an access level for each API scope.",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "29": {
+   "name": "Aircall",
+   "level": "partial",
+   "note": "marketplace/partner gating evidenced (application review, technology-partner criteria); API-key plan requirement not evidenced",
+   "evidence": [
+    {
+     "url": "https://developer.aircall.io/build",
+     "quote": "while your application is under review",
+     "verified": true
+    },
+    {
+     "url": "https://developer.aircall.io/build",
+     "quote": "To be eligible for the Technology Partner program, your product must meet the following criteria",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 4
+   }
+  },
+  "47": {
+   "name": "Ecwid",
+   "level": "partial",
+   "note": "developer sign-up and app review for the App Market evidenced; plan requirement for store API tokens not evidenced; developers.ecwid.com/register fetch empty",
+   "evidence": [
+    {
+     "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+     "quote": "Sign up as a developer to create an Ecwid account.",
+     "verified": true
+    },
+    {
+     "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+     "quote": "contact the Ecwid team to submit your app for review.",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "44": {
+   "name": "Salesforce Commerce Cloud",
+   "level": "partial",
+   "note": "only Commerce App registry review (marketplace) evidenced; API-client access/plan not evidenced",
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+     "quote": "Submit your Commerce App to the registry for review and publication.",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 2
+   }
+  },
+  "26": {
+   "name": "Discord",
+   "level": "partial",
+   "note": "app registration in the Developer Portal evidenced; no pricing/verification/intents gating retrieved (developers/home is a JS shell)",
+   "evidence": [
+    {
+     "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+     "quote": "is backed by an application registered in the Discord Developer Portal",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "66": {
+   "name": "Neo4j",
+   "level": "partial",
+   "note": "Aura trial/plans evidenced; pricing fetch failed; and API scope is ambiguous (Aura management API vs database HTTP/Query API)",
+   "evidence": [
+    {
+     "url": "https://neo4j.com/docs/aura/getting-started/free-trial/",
+     "quote": "prompted to start a 14-day free trial",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "70": {
+   "name": "Sentry",
+   "level": "partial",
+   "note": "plan structure only (free Developer + paid plans); no statement about API/token access by plan",
+   "evidence": [
+    {
+     "url": "https://docs.sentry.io/pricing",
+     "quote": "Sentry has one free Developer plan and three paid plans: Team, Business, and Enterprise.",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "25": {
+   "name": "Pumble",
+   "level": "partial",
+   "note": "pricing/plan pages only; the only 'free' statement is about integrations, not API access",
+   "evidence": [
+    {
+     "url": "https://pumble.com/pricing",
+     "quote": "These integrations are free to use and do not affect your Pumble subscription plan limits.",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "75": {
+   "name": "Asana",
+   "level": "partial",
+   "note": "personal-access-token doc only; pricing and registration pages failed to fetch",
+   "evidence": [
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token.md",
+     "quote": "regularly review the list of personal access tokens you have created",
+     "verified": true
+    }
+   ],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 2,
+    "generic_approval_unclassified": 2
+   }
+  },
+  "46": {
+   "name": "Squarespace",
+   "level": "unresolved",
+   "note": "3 of 4 Squarespace pages failed to fetch (support articles); only the generic pricing page was retrieved",
+   "evidence": [],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "20": {
+   "name": "Gladly",
+   "level": "unresolved",
+   "note": "pricing page empty and onboarding page thin; no usable top-up evidence",
+   "evidence": [],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  },
+  "38": {
+   "name": "Pinterest",
+   "level": "unresolved",
+   "note": "developers.pinterest.com pages are JS shells (<500 chars); business.pinterest.com page is about business accounts, not API access",
+   "evidence": [],
+   "kept_separate_not_counted": {
+    "end_user_consent": 0,
+    "admin_consent": 0,
+    "generic_approval_unclassified": 0
+   }
+  }
+ }
+}

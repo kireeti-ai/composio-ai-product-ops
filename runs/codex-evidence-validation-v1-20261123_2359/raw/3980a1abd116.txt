@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en" data-view="articles"  data-layout="api2">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Overview – Harvest API V2 Documentation</title>
+    <meta name="description" content="The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically. You can track time, log expenses, create projects, a...">
+
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+
+    <header class="page-header forecast-header pds-pt-md">
+      <div class="pds-container-lg">
+        <div class="pds-flex-list pds-flex-wrap pds-justify-between">
+          <a class="logo" href="/api-v2">
+            <img src="/images/harvest-logo.svg" alt="Harvest">
+            <span>API V2 Documentation</span>
+          </a>
+          <div class="pds-flex-list pds-flex-wrap">
+            <a class="pds-button" href="https://www.getharvest.com/contact?from=helpcenter" target="_blank">Contact Us</a>
+            <a class="pds-button pds-button-primary" href="https://www.getharvest.com/contact?from=helpcenter&topic=api" target="_blank">
+              <img src="/images/icon-email-rebrand.svg" alt="email" class="pds-mr-sm">
+              Request new API
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <div id="search">
+        <div class="pds-container-md">
+          <h1 class="pds-mb-md">Welcome to the Harvest API v2 Help Center</h1>
+          <input type="text" class="st-default-search-input" placeholder="Search the API Documentation" autofocus>
+        </div>
+      </div>
+
+      
+      <div class="breadcrumbs-wrapper">
+        <div class="pds-container-lg pds-py-sm">
+          <ol class="breadcrumbs">
+            <li title="Harvest API V2 Documentation">
+              <a href="/api-v2/">Harvest API V2 Documentation</a>
+            </li>
+            
+            
+            
+            
+            
+              
+                <li title="
+            
+            Introduction
+            
+            ">
+                  <a href="/api-v2/introduction">
+            
+            Introduction
+            
+            </a>
+                </li>
+              
+              <li title="Overview">
+                <a href="/api-v2/introduction/overview/general/">Overview</a>
+              </li>
+            
+          </ol>
+        </div>
+      </div>
+      
+
+      <div class=" pds-container-lg  pds-py-sm pds-mb-lg">
+        <div role="alert" class="pds-card pds-card-notice pds-p-sm">This is the <a href="https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2/">current</a> API V2 documentation. You can still view the <a href="/api-v1/">legacy API V1 documentation</a>.</div>
+      </div>
+
+      <div class="pds-container-lg">
+  <div class="pds-row">
+    <div class="pds-column-9">
+      <button type="button" class="pds-button pds-button-sm button-show-sidebar js-show-sidebar js-toggle-sidebar">
+  <img src="/images/icon-menu.svg" class="pds-mr-xs" alt="" aria-hidden="true">
+  Help Topics
+</button>
+
+
+      <article class="post" data-swiftype-index="true">
+        <h1 class="post-title" data-swiftype-name="title" data-swiftype-type="string">
+          Overview
+        </h1>
+
+        <div class="post-content" data-swiftype-name="body" data-swiftype-type="text">
+          <p>The Harvest V2 API is a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST API</a> that allows you to interact with your Harvest account programmatically. You can track time, log expenses, create projects, and more.</p>
+
+<h2 id="api-requests">API requests</h2>
+
+<p>Harvest requires applications to authenticate all requests with <a href="/api-v2/authentication-api/authentication/authentication/">OAuth2 or Personal Access Tokens</a>.  The following HTTP methods are supported:</p>
+
+<ul>
+  <li>GET</li>
+  <li>POST</li>
+  <li>PATCH</li>
+  <li>DELETE</li>
+</ul>
+
+<p>When issuing a GET request, parameters should be included in the URL query string:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://api.harvestapp.com/v2/tasks?page=2&amp;per_page=10 \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "Harvest-Account-Id: $ACCOUNT_ID" \
+  -H "User-Agent: MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6910061c1b0708040c290c11080419050c470a0604">[email&#160;protected]</a>)"
+</code></pre></div></div>
+
+<p>When issuing a POST or PATCH request, parameters should be included in the request body. Request parameters can either be formatted in JSON or submitted as form data. When submitting request parameters as JSON, you must pass <code class="language-plaintext highlighter-rouge">application/json</code> in the <code class="language-plaintext highlighter-rouge">Content-Type</code> header.</p>
+
+<p>We also require that each request include a <code class="language-plaintext highlighter-rouge">User-Agent</code> header with both:</p>
+
+<ul>
+  <li>The name of your application</li>
+  <li>A link to your application or email address</li>
+</ul>
+
+<p>We use this information to get in touch if you’re doing something wrong (so we can warn you before you’re blocked) or something awesome (so we can congratulate you). Here are examples of acceptable <code class="language-plaintext highlighter-rouge">User-Agent</code> headers:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">User-Agent: Trello (http://trello.com/contact)</code></li>
+  <li><code class="language-plaintext highlighter-rouge">User-Agent: John's Harvest Integration (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2943464147694c51484459454c074a4644">[email&#160;protected]</a>)</code></li>
+</ul>
+
+<h3 id="notes-about-user-agents">Notes about user agents</h3>
+
+<ul>
+  <li>If you don’t include a <code class="language-plaintext highlighter-rouge">User-Agent</code> header, you’ll get a <code class="language-plaintext highlighter-rouge">400 Bad Request</code> response.</li>
+  <li>If you use a non-standard User Agent or deviate from the pattern suggested above, you may encounter connectivity issues with Harvest’s API.</li>
+</ul>
+
+<h4 id="json">JSON</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST https://api.harvestapp.com/v2/tasks \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "Harvest-Account-Id: $ACCOUNT_ID" \
+  -H "User-Agent: MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b5ccdac0c7dbd4d8d0f5d0cdd4d8c5d9d09bd6dad8">[email&#160;protected]</a>)" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"My New Task\"}"
+</code></pre></div></div>
+
+<h4 id="form-data">Form data</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST https://api.harvestapp.com/v2/tasks \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "Harvest-Account-Id: $ACCOUNT_ID" \
+  -H "User-Agent: MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ff6e0fafde1eee2eacfeaf7eee2ffe3eaa1ece0e2">[email&#160;protected]</a>)" \
+  -d name="My New Task"
+</code></pre></div></div>
+
+<h2 id="api-responses">API responses</h2>
+
+<p>Harvest formats response bodies in JSON and uses HTTP response codes to indicate the success or failure of an API request. The following are the HTTP status codes that you may encounter when using the API along with a brief explanation of when they occur.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>200</td>
+      <td>Your request was successful.</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>A new object has been created. Its representation will be returned in the response body.</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td>The object you requested was found but you don’t have authorization to perform your request.</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td>The object you requested can’t be found.</td>
+    </tr>
+    <tr>
+      <td>422</td>
+      <td>There were errors processing your request. Check the response body for additional information.</td>
+    </tr>
+    <tr>
+      <td>429</td>
+      <td>Your request has been throttled. Refer to the <a href="#rate-limiting">Rate Limiting</a> section for details.</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>There was a server error. Contact <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ffcfaffffe0fdfbcfe8eafbe7eefdf9eafcfba1ece0e2">[email&#160;protected]</a> for help.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="rate-limiting">Rate limiting</h2>
+
+<p>We have an <strong>API throttle</strong> that blocks accounts that exceed our API rate limits. We reserve the right to tune the limitations, but they are always set high enough to allow a well-behaving interactive program to do its job.</p>
+
+<ul>
+  <li>The rate limit for general API requests is <strong>100 requests per 15 seconds</strong>.</li>
+  <li>The rate limit for <a href="/api-v2/reports-api/">Reports API</a> requests is <strong>100 requests per 15 minutes</strong>.</li>
+</ul>
+
+<p>For batch processes and API developers who still need to perfect their code, this throttle may be an inadvertent blocker. Just wait a bit, and try again. Since the throttle is reset with each call, the throttle will lift itself in a few minutes and API calls may resume.</p>
+
+<p><strong>When the rate limit is exceeded Harvest will send an HTTP 429 status code.</strong> The number of seconds until the throttle is lifted is sent via the Retry-After HTTP header, as specified in <a href="http://tools.ietf.org/html/rfc2616#section-14.37">RFC 2616</a>.</p>
+
+<p>Please remember to write your application carefully, caching when possible. In case of abuse you may be blocked, disallowing further API access.</p>
+
+<h2 id="conventions">Conventions</h2>
+
+<p>When you encounter a value surrounded by curly braces, you should replace it with a value appropriate to your context.
+For example, if your Harvest project’s ID is <code class="language-plaintext highlighter-rouge">1234</code> and the documentation provides the following URL:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://api.harvestapp.com/v2/projects/{PROJECT_ID}
+</code></pre></div></div>
+
+<p>you would replace the <code class="language-plaintext highlighter-rouge">{PROJECT_ID}</code> with the actual project ID, like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://api.harvestapp.com/v2/projects/1234
+</code></pre></div></div>
+
+<p>We also make use of shell variables in our example requests (e.g. <code class="language-plaintext highlighter-rouge">$ACCESS_TOKEN</code>). If your operating system supports shell variables, you can set shell variables like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ACCESS_TOKEN="my-access-token"
+ACCOUNT_ID="my-account-id"
+USER_AGENT="MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bfc6d0cacdd1ded2daffdac7ded2cfd3da91dcd0d2">[email&#160;protected]</a>)"
+</code></pre></div></div>
+
+<p>Then, you can reference them by prefixing them with a <code class="language-plaintext highlighter-rouge">$</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -X POST https://api.harvestapp.com/v2/company \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "Harvest-Account-Id: $ACCOUNT_ID" \
+  -H "User-Agent: $USER_AGENT"
+</code></pre></div></div>
+
+<p>This should allow you to copy/paste most of the example requests without needing to change anything aside from IDs.</p>
+
+<h2 id="data-types">Data types</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>boolean</td>
+      <td><code class="language-plaintext highlighter-rouge">true</code></td>
+      <td>Either <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code>.</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td><code class="language-plaintext highlighter-rouge">"foo"</code></td>
+      <td>A double-quoted sequence of characters.</td>
+    </tr>
+    <tr>
+      <td>integer</td>
+      <td><code class="language-plaintext highlighter-rouge">42</code></td>
+      <td>A non-negative integer value.</td>
+    </tr>
+    <tr>
+      <td>decimal</td>
+      <td><code class="language-plaintext highlighter-rouge">6.8</code></td>
+      <td>A decimal value. The supported precision is field-dependent.</td>
+    </tr>
+    <tr>
+      <td>date</td>
+      <td><code class="language-plaintext highlighter-rouge">"2017-12-31"</code></td>
+      <td>An ISO 8601 formatted string containing just the date portion.</td>
+    </tr>
+    <tr>
+      <td>datetime</td>
+      <td><code class="language-plaintext highlighter-rouge">"2017-12-31T14:59:22Z"</code></td>
+      <td>An ISO 8601 formatted string containing a UTC date and time.</td>
+    </tr>
+    <tr>
+      <td>time</td>
+      <td><code class="language-plaintext highlighter-rouge">"14:59"</code><br /><code class="language-plaintext highlighter-rouge">"2:59pm"</code></td>
+      <td>A string containing a 12-hour or 24-hour time depending on the Time Format configured for your account. You can check this on the <strong>Settings</strong> page in your Harvest account or the <code class="language-plaintext highlighter-rouge">clock</code> attribute the <a href="/api-v2/company-api/company/company/">Company API</a>.</td>
+    </tr>
+    <tr>
+      <td>array</td>
+      <td><code class="language-plaintext highlighter-rouge">[ 1, 2, 3 </code>]</td>
+      <td>A JSON array.</td>
+    </tr>
+    <tr>
+      <td>object</td>
+      <td><code class="language-plaintext highlighter-rouge">{ name: "value" }</code></td>
+      <td>A JSON object.</td>
+    </tr>
+  </tbody>
+</table>
+
+        </div>
+      </article>
+
+      <div class="pds-card pds-card-secondary pds-p-md pds-mt-xl">
+  <div class="pds-flex-list pds-justify-between">
+    <h4>Still have questions? We’re happy to help!</h4>
+    <a href="https://www.getharvest.com/contact?from=helpcenter" class="pds-button pds-button-primary" target="_blank">Contact Us</a>
+  </div>
+</div>
+
+
+      <button type="button" class="pds-button pds-button-sm button-show-sidebar js-show-sidebar js-toggle-sidebar">
+  <img src="/images/icon-menu.svg" class="pds-mr-xs" alt="" aria-hidden="true">
+  Help Topics
+</button>
+
+    </div>
+
+    <aside class="pds-column-3 post-nav">
+      <button type="button" class="pds-button pds-button-sm button-hide-sidebar js-toggle-sidebar">
+        <img src="/images/icon-close.svg" class="pds-mr-xs" alt="" aria-hidden="">
+        Close Topics
+      </button>
+
+      
+      
+      
+
+<h4 class="pds-mb-md">API Introduction</h4>
+<nav>
+  <ul>
+    
+      
+      
+        
+        
+          
+            <li class="pds-mt-sm">
+  <a href="/api-v2/introduction/overview/general/" class="sidenav-item is-active-post">Overview</a>
+</li>
+
+          
+            <li class="pds-mt-sm">
+  <a href="/api-v2/introduction/overview/postman-collection/" class="sidenav-item">Postman Collection</a>
+</li>
+
+          
+            <li class="pds-mt-sm">
+  <a href="/api-v2/introduction/overview/supported-timezones/" class="sidenav-item">Supported Time Zones</a>
+</li>
+
+          
+            <li class="pds-mt-sm">
+  <a href="/api-v2/introduction/overview/supported-currencies/" class="sidenav-item">Supported Currencies</a>
+</li>
+
+          
+            <li class="pds-mt-sm">
+  <a href="/api-v2/introduction/overview/pagination/" class="sidenav-item">Pagination</a>
+</li>
+
+          
+            <li class="pds-mt-sm">
+  <a href="/api-v2/introduction/overview/code-samples/" class="sidenav-item">Code Samples</a>
+</li>
+
+          
+        
+      
+    
+  </ul>
+</nav>
+
+    </aside>
+  </div>
+</div>
+
+
+      
+    </main>
+
+    <footer class="page-footer">
+  <div class="pds-container-lg pds-py-lg">
+    <div class="footer-box">
+      Just need to add time tracking to your app?
+      <a href="https://www.getharvest.com/add-time-tracking" class="pds-color-inherit" target="_blank">Check out the
+        easy-to-use Harvest Button & Widget</a>.
+    </div>
+
+    <div class="pds-row">
+      <div class="pds-column-6">
+        <a href="https://www.getharvest.com" class="footer-box footer-hf" target="_blank">
+          <div class="pds-h3 pds-mb-xs">Harvest</div>
+          Modern time tracking trusted by 70,000+ businesses. Learn more
+        </a>
+      </div>
+
+      <div class="pds-column-6">
+        <a href="https://www.getharvest.com/forecast" class="footer-box footer-hf" target="_blank">
+          <div class="pds-h3 pds-mb-xs">Harvest Forecast</div>
+          The fast and simple way to schedule your team across projects. Learn more
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="https://www.getharvest.com/about">© 2006–2026 Harvest | <a
+          href="https://www.harveststatus.com/">Status</a></a>
+    </div>
+  </div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="/javascript/helpcenter.js"></script>
+    <script type="text/javascript" src="/javascript/api.js"></script>
+    <script type="text/javascript">
+      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+      })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+      _st('install','chnWDsKrQ3LfUecds3z4','2.0.0');
+    </script>
+  </body>
+</html>

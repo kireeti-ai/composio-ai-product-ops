@@ -1,0 +1,49 @@
+{
+ "id": 51,
+ "name": "DataForSEO",
+ "pass1_sha": "0a384581a4701f85",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "basic",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts describe using HTTP Basic Authentication with login and password",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Users can create a free account to obtain API credentials directly from the account dashboard.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts say create a free account and get API login/password from dashboard.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states DataForSEO API uses REST technology",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpts do not mention any MCP",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

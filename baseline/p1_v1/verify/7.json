@@ -1,0 +1,58 @@
+{
+ "id": 7,
+ "name": "Zoho CRM",
+ "pass1_sha": "87a917645f778493",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts list client-id, client-secret, redirect-uri, grant token, access and refresh tokens, indicating OAuth2 authentication.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can create a fully featured free Developer Edition account to build and test applications.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms a fully featured free Developer Edition for building and testing.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Core APIs provide flexible RESTful endpoints",
+    "needs_human": false
+   },
+   {
+    "item": "graphql",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "GraphQL APIs are explicitly listed",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Zoho CRM docs describe configuring an MCP server, indicating official MCP support.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

@@ -1,0 +1,15 @@
+{
+ "_instructions": "Fill from the Groq console limits page for model openai/gpt-oss-120b. Integers only; blanks are refused. Do not paste keys here.",
+ "observed_at": null,
+ "observed_by": null,
+ "model": "openai/gpt-oss-120b",
+ "tier": null,
+ "dashboard_source": "https://console.groq.com/settings/limits",
+ "rpm": null,
+ "rpd": null,
+ "tpm": null,
+ "tpd": null,
+ "used_requests_today": null,
+ "used_tokens_today": null,
+ "screenshot_sha256": null
+}

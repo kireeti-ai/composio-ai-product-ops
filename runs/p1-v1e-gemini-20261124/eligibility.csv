@@ -1,0 +1,28 @@
+id,name,phase,provenance,notion_verified,tier,access_state,access_confirmed,api_surface,usable_input_pages,direct_pages_auth/access/api
+27,Telegram,1,original_notion_page_public_data,True,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,4,2/1/1
+32,Meta Ads,1,original_notion_page_public_data,True,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,4,3/1/0
+33,LinkedIn Ads,1,original_notion_page_public_data,True,A_prior_access_evidence_sufficient,explicit_prior,True,partial,2,1/1/0
+34,GoHighLevel,1,original_notion_page_public_data,True,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,4,3/1/1
+39,Threads (Meta),1,original_notion_page_public_data,True,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,3,1/0/2
+41,Shopify,1,original_notion_page_public_data,True,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,4,1/2/0
+43,BigCommerce,1,original_notion_page_public_data,True,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,3,3/2/1
+52,SE Ranking,1,reconstructed_secondary_source,False,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,4,3/3/0
+53,Ahrefs,1,reconstructed_secondary_source,False,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,3,3/3/0
+56,Firecrawl,1,reconstructed_secondary_source,False,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,4,4/1/1
+76,Monday.com,1,reconstructed_secondary_source,False,A_prior_access_evidence_sufficient,explicit_prior,True,not_individually_assessed,4,4/0/0
+65,Supabase,1,reconstructed_secondary_source,False,A_topup_access_explicit,explicit,True,not_individually_assessed,8,7/2/0
+72,Airtable,1,reconstructed_secondary_source,False,A_topup_access_explicit,explicit,True,not_individually_assessed,8,5/6/0
+71,Notion,1,reconstructed_secondary_source,False,A_topup_access_explicit,explicit,True,partial,6,5/2/2
+61,GitHub,1,reconstructed_secondary_source,False,A_topup_access_explicit,explicit,True,not_individually_assessed,7,4/1/0
+38,Pinterest,2,original_notion_page_public_data,True,B2_topup_access_explicit_phase2,explicit,True,not_individually_assessed,6,2/1/1
+62,Vercel,2,reconstructed_secondary_source,False,B_access_inferred_self_serve,inferred_self_serve,False,not_individually_assessed,8,5/0/2
+63,Netlify,2,reconstructed_secondary_source,False,B_access_inferred_self_serve,inferred_self_serve,False,not_individually_assessed,8,5/0/2
+36,Klaviyo,2,original_notion_page_public_data,True,B_access_inferred_self_serve,inferred_self_serve,False,not_individually_assessed,8,5/1/1
+29,Aircall,2,original_notion_page_public_data,True,C_access_partial,partial,False,not_individually_assessed,8,3/2/0
+47,Ecwid,2,original_notion_page_public_data,True,C_access_partial,partial,False,partial,6,2/3/1
+44,Salesforce Commerce Cloud,2,original_notion_page_public_data,True,C_access_partial,partial,False,not_individually_assessed,6,2/1/1
+26,Discord,2,original_notion_page_public_data,True,C_access_partial,partial,False,not_individually_assessed,4,3/0/1
+70,Sentry,2,reconstructed_secondary_source,False,C_access_partial,partial,False,not_individually_assessed,7,1/2/2
+25,Pumble,2,original_notion_page_public_data,True,C_access_partial,partial,False,not_individually_assessed,7,2/2/0
+75,Asana,2,reconstructed_secondary_source,False,C_access_partial,partial,False,not_individually_assessed,7,5/1/1
+46,Squarespace,2,original_notion_page_public_data,True,C_access_partial,partial,False,not_individually_assessed,7,3/2/2

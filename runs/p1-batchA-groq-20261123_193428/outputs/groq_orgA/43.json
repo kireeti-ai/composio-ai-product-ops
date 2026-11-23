@@ -1,0 +1,171 @@
+{
+ "tag": "groq_orgA",
+ "app": 43,
+ "name": "BigCommerce",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 4,
+ "latency_s": 1.99,
+ "tokens_in": 1964,
+ "tokens_out": 673,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.bigcommerce.com/docs/rest-authentication/current-customer",
+    "quote": "Authentication consists of two parts; first, send the client ID of an app-level API account as a query parameter... use the same API account\u2019s client secret to decode the JWT",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+    "quote": "BigCommerce offers three types of OAuth\u2011based API accounts to developers who wish to use BigCommerce\u2019s REST APIs",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://developer.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+    "quote": "GraphQL Admin API \u2026 REST Store Management APIs \u2026 REST Storefront API \u2026 Current Customer API",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_breadth",
+    "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+    "quote": "BigCommerce offers three types of OAuth\u2011based API accounts to developers who wish to use BigCommerce\u2019s REST APIs",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developer.bigcommerce.com",
+    "quote": "unknown",
+    "issues": [
+     "placeholder_or_too_short",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "graphql",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 3,
+   "supported_lexical": 1,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 6,
+  "evidence_valid": 1,
+  "issue_counts": {
+   "placeholder_or_too_short": 1,
+   "stitched_ellipsis": 2,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 5,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "BigCommerce provides OAuth\u2011based REST and GraphQL APIs for store management, storefront, and customer data, accessible via self\u2011serve trial stores.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can sign up for a free BigCommerce trial store and obtain API credentials without payment.",
+  "api_types": [
+   "rest",
+   "graphql"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.bigcommerce.com/docs/rest-authentication/current-customer",
+    "quote": "Authentication consists of two parts; first, send the client ID of an app-level API account as a query parameter... use the same API account\u2019s client secret to decode the JWT"
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+    "quote": "BigCommerce offers three types of OAuth\u2011based API accounts to developers who wish to use BigCommerce\u2019s REST APIs"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+    "quote": "GraphQL Admin API \u2026 REST Store Management APIs \u2026 REST Storefront API \u2026 Current Customer API"
+   },
+   {
+    "field": "api_breadth",
+    "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+    "quote": "BigCommerce offers three types of OAuth\u2011based API accounts to developers who wish to use BigCommerce\u2019s REST APIs"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developer.bigcommerce.com",
+    "quote": "unknown"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "04ea7b1b99a256c715c76bfca62f420ccaddc04bf8c7b57ee4f71544c3fcc3f1",
+ "at": "2026-11-23T19:35:40+05:30"
+}

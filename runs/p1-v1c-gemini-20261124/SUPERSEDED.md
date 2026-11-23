@@ -1,0 +1,1 @@
+# SUPERSEDED by runs/p1-v1d-gemini-20261124 (never approved; no model calls). Its page lists included 4 duplicate pages and a single top-up source; run_p1_v2_script.py is the runner prepared for this plan.

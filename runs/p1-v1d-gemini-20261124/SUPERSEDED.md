@@ -1,0 +1,1 @@
+# SUPERSEDED by runs/p1-v1e-gemini-20261124 (same 27 apps; adds provenance + separated retrieval/relevance summaries). Never approved; no model calls. run_p1_v3_script.py = runner prepared for this plan.

@@ -1,0 +1,63 @@
+{
+ "id": 22,
+ "name": "Twilio",
+ "pass1_sha": "c7176125848f51a6",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states API keys can be used for authentication",
+    "needs_human": false
+   },
+   {
+    "item": "basic",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt explicitly instructs using HTTP Basic authentication",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can create API keys or use Account SID and Auth Token from the Twilio Console to access the API.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts confirm API keys can be created in Console and Account SID/Auth Token can be used for access.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "reason": "Excerpts show Twilio provides RESTful HTTP API endpoints.",
+    "needs_human": false
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "verdict": "contradicted",
+    "evidence_quote": "Twilio APIs use standard RESTful HTTP methods to perform actions on resources.",
+    "reason": "Excerpt confirms REST API exists, so not SDK/CLI\u2011only.",
+    "needs_human": true
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpts do not mention existing MCP status for Twilio.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

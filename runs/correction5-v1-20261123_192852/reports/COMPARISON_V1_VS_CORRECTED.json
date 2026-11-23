@@ -1,0 +1,131 @@
+{
+ "created": "2026-11-23T19:32:53+0530",
+ "caveat": "Lexical quote validation is NOT proof of claim correctness; no accuracy claim without independent human labels. Both versions preserved (v1: runs/bench5-v1-20261123_191136/outputs/groq_orgA; corrected: this directory outputs/groq_orgA).",
+ "apps": [
+  {
+   "id": 27,
+   "name": "Telegram",
+   "changed": {},
+   "claim_states_corrected": {
+    "unsupported": 3,
+    "supported_lexical": 1,
+    "not_found_in_provided_evidence": 1
+   },
+   "evidence_valid_corrected": "2/5",
+   "tokens": [
+    1746,
+    784
+   ],
+   "model": "openai/gpt-oss-120b",
+   "note": "UNCHANGED outputs; stitched ellipsis quotes persist (gpt-oss-120b does not reliably copy verbatim). existing_mcp none_found = not found in provided evidence (not absence)."
+  },
+  {
+   "id": 32,
+   "name": "Meta Ads",
+   "changed": {},
+   "claim_states_corrected": {
+    "unsupported": 2,
+    "supported_lexical": 1,
+    "not_found_in_provided_evidence": 1
+   },
+   "evidence_valid_corrected": "1/4",
+   "tokens": [
+    1809,
+    603
+   ],
+   "model": "openai/gpt-oss-120b",
+   "note": "UNCHANGED outputs. Two cited quotes are exact sentences from the full page but NOT in the evidence shown to the model (possible recall from memory, violating 'sources only'); flagged."
+  },
+  {
+   "id": 41,
+   "name": "Shopify",
+   "changed": {
+    "auth_methods": {
+     "v1": [
+      "oauth2",
+      "api_key"
+     ],
+     "corrected": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+     ]
+    }
+   },
+   "claim_states_corrected": {
+    "supported_lexical": 3,
+    "unsupported": 4
+   },
+   "evidence_valid_corrected": "6/7",
+   "tokens": [
+    2124,
+    1025
+   ],
+   "model": "openai/gpt-oss-120b",
+   "note": "auth_methods gained bearer_token (new, unvalidated). existing_mcp official kept with a valid verbatim quote from shopify.dev."
+  },
+  {
+   "id": 53,
+   "name": "Ahrefs",
+   "changed": {
+    "auth_methods": {
+     "v1": [
+      "bearer_token"
+     ],
+     "corrected": [
+      "api_key",
+      "bearer_token"
+     ]
+    },
+    "existing_mcp": {
+     "v1": "none_found",
+     "corrected": "official"
+    }
+   },
+   "claim_states_corrected": {
+    "supported_lexical": 3,
+    "unsupported": 2
+   },
+   "evidence_valid_corrected": "3/4",
+   "tokens": [
+    1623,
+    928
+   ],
+   "model": "openai/gpt-oss-120b",
+   "note": "FIXED: v1 existing_mcp=none_found was an evidence-reduction defect (MCP nav block dropped). Corrected bundle restores all 3 mentions; model now returns official with a verbatim quote from docs.ahrefs.com ('Connect your Ahrefs data to AI assistants and agents...'). Whether 'official' (vs third-party/client) is right is a semantic judgement still awaiting human labelling."
+  },
+  {
+   "id": 61,
+   "name": "GitHub",
+   "changed": {
+    "auth_methods": {
+     "v1": [
+      "oauth2",
+      "api_key",
+      "basic",
+      "bearer_token"
+     ],
+     "corrected": [
+      "api_key",
+      "oauth2"
+     ]
+    },
+    "existing_mcp": {
+     "v1": "none_found",
+     "corrected": "official"
+    }
+   },
+   "claim_states_corrected": {
+    "unsupported": 3,
+    "supported_lexical": 2
+   },
+   "evidence_valid_corrected": "5/5",
+   "tokens": [
+    4011,
+    803
+   ],
+   "model": "openai/gpt-oss-120b",
+   "note": "PARTLY FIXED: v1 none_found was an evidence gap (no MCP page). Official docs retrieved (docs.github.com Copilot MCP page, which states 'The GitHub MCP server is built in...'); model now returns official, BUT the quote it cites is only the generic MCP definition sentence, not the sentence naming the GitHub MCP server. Lexically valid, semantically weak: the claim is plausible and supported by another sentence on the same page, yet the citation does not prove it. Stale GHES v11.10.340 page excluded; auth list shrank from 4 to 2 (basic/bearer no longer asserted). Retrieval failures: github.com/github/github-mcp-server and the raw README fetch both returned errors (recorded, not retried)."
+  }
+ ]
+}

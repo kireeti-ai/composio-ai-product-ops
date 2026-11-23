@@ -1,0 +1,90 @@
+{
+ "created": "2026-11-23T18:25:45+0530",
+ "blind_sheets": {
+  "runs/human-eval-v1-20261124/label_sheet_blind_A.csv": {
+   "rows": 84,
+   "filled_truth_cells": 0,
+   "forbidden_columns": [],
+   "ok": true
+  },
+  "runs/human-eval-v1-20261124/label_sheet_blind_B.csv": {
+   "rows": 84,
+   "filled_truth_cells": 0,
+   "forbidden_columns": [],
+   "ok": true
+  },
+  "runs/human-eval-v2-20261124/label_sheet_blind_A.csv": {
+   "rows": 84,
+   "filled_truth_cells": 0,
+   "forbidden_columns": [],
+   "ok": true
+  },
+  "runs/human-eval-v2-20261124/label_sheet_blind_B.csv": {
+   "rows": 84,
+   "filled_truth_cells": 0,
+   "forbidden_columns": [],
+   "ok": true
+  },
+  "runs/human-eval-v2-20261124/label_sheet_blind_C.csv": {
+   "rows": 84,
+   "filled_truth_cells": 0,
+   "forbidden_columns": [],
+   "ok": true
+  },
+  "runs/human-eval-v2-20261124/label_sheet_blind_CAL.csv": {
+   "rows": 21,
+   "filled_truth_cells": 0,
+   "forbidden_columns": [],
+   "ok": true
+  }
+ },
+ "scoring_sheets": {
+  "runs/human-eval-v1-20261124/scoring_sheet_A.csv": {
+   "rows": 84,
+   "filled_label_cells": 0,
+   "ok": true
+  },
+  "runs/human-eval-v1-20261124/scoring_sheet_B_TEMPLATE.csv": {
+   "rows": 0,
+   "filled_label_cells": 0,
+   "ok": true
+  },
+  "runs/human-eval-v2-20261124/scoring_sheet_A.csv": {
+   "rows": 84,
+   "filled_label_cells": 0,
+   "ok": true
+  },
+  "runs/human-eval-v2-20261124/scoring_sheet_B_TEMPLATE.csv": {
+   "rows": 0,
+   "filled_label_cells": 0,
+   "ok": true
+  },
+  "runs/human-eval-v2-20261124/scoring_sheet_C_TEMPLATE.csv": {
+   "rows": 0,
+   "filled_label_cells": 0,
+   "ok": true
+  },
+  "runs/pass2-pilot-plan-v1-20261124/stage2_source_grounding_sheet_TEMPLATE.csv": {
+   "rows": 68,
+   "filled_label_cells": 0,
+   "verdict_columns": [],
+   "ok": true
+  }
+ },
+ "hashes": {
+  "runs/human-eval-v1-20261124/label_sheet_blind_A.csv": "e67fe0b41ea0ef501627d4f728157d45f51dc84d25896465d9db05649384aaff",
+  "runs/human-eval-v1-20261124/label_sheet_blind_B.csv": "67157de238f1720e28305c4540b6c54b084c12072c8a535c44937e32b2c55b97",
+  "runs/human-eval-v2-20261124/label_sheet_blind_A.csv": "e67fe0b41ea0ef501627d4f728157d45f51dc84d25896465d9db05649384aaff",
+  "runs/human-eval-v2-20261124/label_sheet_blind_B.csv": "67157de238f1720e28305c4540b6c54b084c12072c8a535c44937e32b2c55b97",
+  "runs/human-eval-v2-20261124/label_sheet_blind_C.csv": "b8e1dfa45a99cf13681ea0b007e1b596e451e1c028284e56648a3e2fde59311a",
+  "runs/human-eval-v2-20261124/label_sheet_blind_CAL.csv": "5b3fb3d63dc6194525a18e6695bacf2a57288ecc9a0e0885d08fbaea61cba640",
+  "runs/human-eval-v1-20261124/scoring_sheet_A.csv": "f2444726c35cc3661040d8ed76b77976787becdb6a54c8caea4268460c51d944",
+  "runs/human-eval-v1-20261124/scoring_sheet_B_TEMPLATE.csv": "84da8c7e4570d022e34cd6af882402763f325af022dfc468f68f24bc5fc23c1e",
+  "runs/human-eval-v2-20261124/scoring_sheet_A.csv": "f2444726c35cc3661040d8ed76b77976787becdb6a54c8caea4268460c51d944",
+  "runs/human-eval-v2-20261124/scoring_sheet_B_TEMPLATE.csv": "84da8c7e4570d022e34cd6af882402763f325af022dfc468f68f24bc5fc23c1e",
+  "runs/human-eval-v2-20261124/scoring_sheet_C_TEMPLATE.csv": "84da8c7e4570d022e34cd6af882402763f325af022dfc468f68f24bc5fc23c1e",
+  "runs/pass2-pilot-plan-v1-20261124/stage2_source_grounding_sheet_TEMPLATE.csv": "15e54ccd8a5f479d93379f6101f012770142309c94acf35c24782b1dc2e1b1b6"
+ },
+ "labels_status_all_zero": true,
+ "all_blind_sheets_empty_and_clean": true
+}

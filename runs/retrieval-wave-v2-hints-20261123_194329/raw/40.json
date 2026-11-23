@@ -1,0 +1,358 @@
+{
+ "id": 40,
+ "name": "SendGrid",
+ "started": "2026-11-23T19:44:16+05:30",
+ "searches": [
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:18+05:30"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:20+05:30"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:22+05:30"
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:24+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys",
+   "requested_at": "2026-11-23T19:44:25+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys",
+   "title": "Upgrade your authentication method to API keys | SendGrid Docs | Twilio",
+   "chars": 5876,
+   "sha256": "2d2bbba4128b302c2d0ab70b95fa962a5f3b42f3092ee3e5c995c6ff31bbec6f",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Upgrade your authentication method to API keys\n\n---\n\n(error)\n\n## Danger\n\nTwo-Factor Authentication (2FA) is required. All Twilio SendGrid API endpoints reject new API requests and SMTP configurations made with a username and password via Basic Authentication.\n\n---\n\n## Am I using Basic Authentication with username and password?\n\nTo determine which authentication method your integration uses, check the following:\n\n* If SMTP: Check the username you're using to authenticate. If it's the word \"apikey\" then you're using an API Key. If it's not, then you're using username and password authentication.\n* If V3: If you're using the most recent version of our open sourced libraries and followed the documentation, you should already be using API keys. If you aren't using our libraries, check the Authorization header on your API calls. If you see the word \"Bearer\" - you're good. If you see the word \"Basic\" you're using username and password.\n* If V2 non-mail send: You're using username and passwords.\n* If Premier 50M and below package: Use the Email Activity API to identify mail/send API Key usage. If the `api_key_id` parameter is empty, you will need to upgrade your authentication.\n\n---\n\n## Why should I use API keys for authentication?\n\nAPI keys are more secure than account username and password authentication because you can scope their permissions and revoke them at any time.\n\n(warning)\n\n## API keys limited to 69 characters\n\nTwilio support a key longer than 69 characters. No exceptions can be made for third-party infrastructure.\n\nUsing your account username and password for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of least privilege, using limited API Key permission to only provide access to what is needed for that request for maximum security.\n\nFor more about protecting your account, see our blog post, 7 Best Practices to Protect your Twilio SendGrid Account and Sending Reputation. To learn more about the principle of least privilege, see our Twilio blog post and OWASP's article on Access Control.\n\n---\n\n## Tips for upgrading to API Keys\n\n* Prioritize upgrading your authentication method to API Keys for your mail/send endpoints first\n* Store your API Keys in an environment variable\n* Test these changes in a staging environment before rolling out to your production environment\n\n---\n\n## Upgrade to API Keys for your API endpoint requests\n\nFollow these steps to identify and replace your authentication method to API Keys and then implement 2FA for enhanced security.\n\n1. Identify where you are storing your username and password credentials for basic authentication. Your credentials could be stored in environment variables or hard coded depending on how you integrated.\n2. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating. For more information, see API Key Permissions.\n3. Replace your username and password credentials with API Keys.\n\n* For v3 API: Follow these instructions.\n* For v2: Follow these instructions.\n\n---\n\n## Upgrade to API Keys for your SMTP integration\n\nTo upgrade your SMTP integration to use API keys, follow these steps:\n\n1. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating. For more information, see API Key Permissions. To send email only, your API key will require **Mail Send** > **Full Access** permissions.\n2. To use your API key with the SMTP integration, you must set your username to the string, `apikey`. Your password will be the API key you generated in the previous step.\n\n```\n1\n\nuser_name: \"apikey\"\n\n\n\n2\n\npassword: <Your API Key>\n```\n\n(information)\n\n## Info\n\nWhen submitting base64 encoded API key values, be sure you have not included any newline or whitespace characters by accident. This can happen when copying the encoded key from an environment that line wraps output. SMTP is a line-oriented protocol, and linefeed characters will prevent you from authenticating successfully.\n\nOnce the previous steps are completed, enable Two-Factor Authentication for all of your users, including subusers and teammates.\n\nIf you are new to our SMTP integration, you will find more integration instructions at Integrating with the SMTP API.\n\n---\n\n## Check for API rejections\n\nAfter enabling Two-Factor Authentication (2FA), monitor your API calls for rejections related to continued use of username and password authentication. The following sections describe the error messages you might encounter.\n\n### Error message for API calls\n\n`invalid authentication method` - declined because you are using basic authentication with 2FA enabled. to fix, update to using an API key or disable 2FA and switch to using IP Access Management for security. For more information, see https://sendgrid.com/docs/for-developers/sending-email/authentication/#basic-authentication\n\n### Error message for SMTP\n\nSMTP error message is: `535 Authentication failed: Basic authentication is not allowed with 2FA enabled`. To fix, see https://sendgrid.com/docs/for-developers/sending-email/authentication/#basic-authentication\n\nFor more information on how to secure your Twilio SendGrid account visit this blog post.",
+   "retrieved_at": "2026-11-23T19:44:25+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "requested_at": "2026-11-23T19:44:35+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "title": "Authentication | SendGrid Docs | Twilio",
+   "chars": 1667,
+   "sha256": "2a30ca335a484fc3909588acbbd93ab49b7df9cdc54d57464ae511ac0057a4c8",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Authentication\n\n---\n\n## Twilio supported SDKs\n\nThe Twilio SendGrid Web REST API v3 provides SDKs for seven different languages.\n\nC#GoJavaNode.jsPHPPythonRuby\n\n---\n\n## Authorization header\n\nTo authenticate, add an HTTP `Authorization` header to your API request that contains an API Key.\n\n---\n\n## API keys\n\nThe Twilio SendGrid Web API v3 supports API keys, which add an additional layer of security to your account. Using API keys, you can:\n\n* Use another method of authentication separate from your account username and password.\n* Assign specific permissions to API keys that limit which areas of your account the key can access.\n\nYou can create API keys in your account. To use an API key, include an `Authorization` header with the value `Bearer <YOUR_API_KEY_HERE>` in your request. Replace `<YOUR_API_KEY_HERE>` with your API secret key.\n\n#### Example API request header\n\n```\n1\n\nGET https://api.sendgrid.com/v3/resource HTTP/1.1\n\n\n\n2\n\nAuthorization: Bearer <YOUR_API_KEY_HERE>\n```\n\n#### Example API request using bash\n\n```\n1\n\ncurl -X \"GET\" \"https://api.sendgrid.com/v3/templates\" \\\n\n\n\n2\n\n-H \"Authorization: Bearer <YOUR_API_KEY_HERE>\" \\\n\n\n\n3\n\n-H \"Content-Type: application/json\"\n```",
+   "retrieved_at": "2026-11-23T19:44:35+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+   "requested_at": "2026-11-23T19:44:41+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+   "title": "API Keys | SendGrid Docs | Twilio",
+   "chars": 7817,
+   "sha256": "d5b2b62d54b7feb28370b538fc4202c58bc1f89a48a1bfcaa70c93a7d428beb9",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# API Keys\n\n---\n\n(warning)\n\n## Twilio SendGrid API key limitations\n\n* Twilio supports a key longer than 69 characters. No exceptions can be made for third-party infrastructure.\n* Twilio limits accounts to 100 API keys.\n* You can't give an API key greater permissions than your own.\n* The Twilio SendGrid Console displays the API key only once at creation.\n* Treat your API key like a password and store it somewhere safe.\n* Twilio can't retrieve or restore an unknown or deleted API key.\n\nTo authenticate access to Twilio SendGrid services, use *Application Programming Interface* (API) keys.\n\nThey are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid's services.\n\n---\n\n## Manage API keys\n\nGo to **Settings** > **API Keys**. The **API Keys** page displays your current API keys with the following parameters:\n\n| Parameter | Purpose |\n| --- | --- |\n| Name | The name you defined for your API key. |\n| API Key ID | The way you would reference your API key for management through the API. |\n| Action | Actions you can perform on your API keys, such as editing or deleting the key. |\n\n### Create an API key\n\nTo use the Mail API, you need an API key.\n\n1. Go to **Settings** > **API Keys**. The **API Keys** page appears.\n2. Click **Create API Key**. The **Create API Key** appears.\n3. Type a human-readable name for your API key in the **API Key Name** box.\n4. Choose the permissions for your API Key:\n\n   | API key permission | Access details for account |\n   | --- | --- |\n   | **Full Access** | Grants all API endpoints **full access** to your account. |\n   | **Custom Access** | Choose both which API endpoints and which access levels each have to your account. |\n   | **Billing Access** | Grants all billing API endpoints **full access** to your account. |\n   | **Email Address Validation Access** | Grants **read access** to the reporting console and **full access** to validation API endpoints on your account. |\n\n   View all access details for custom access\n\n   * API Keys\n   * Alerts\n   * Category Management\n   * Deliverability Insights\n   * Design Library\n   * Email Activity\n   * Email Testing\n   * IP Management\n   * Inbound Parse\n   * Mail Send\n     + Mail Send\n     + Scheduled Sends\n   * Mail Settings\n     + Address Allow List\n     + BCC\n     + Bounce Purge\n     + Event Notification\n     + Footer\n     + Forward Bounce\n     + Forward Spam\n     + Legacy Email Template\n     + Mail Settings\n     + Plain Content\n     + Spam Checker\n   * Marketing\n     + Automation\n     + Marketing\n   * Marketing Campaigns\n   * Partners\n   * Recipients Data Erasure\n   * SSO Settings\n   * Security\n   * Sender Authentication\n   * Stats\n     + Browser Stats\n     + Category Stats\n     + Email Clients and Devices\n     + Geographical\n     + Global Stats\n     + Mailbox Provider Stats\n     + Parse Webhook\n     + Stats Overview\n     + Subuser Stats\n   * Subusers\n   * Suppressions\n     + Suppressions\n     + Unsubscribe Groups\n   * Teammates\n     + SSO Teammates\n     + Teammates\n   * Template Engine\n   * Tracking\n     + Click Tracking\n     + Google Analytics\n     + Open Tracking\n     + Subscription Tracking\n     + Tracking Settings\n   * User Account\n     + Account Profile\n     + Enforced TLS\n     + Timezone\n     + User Profile\n5. Click **Create & View**. The **API Key Created** page displays your created API Key.\n6. To copy the API key, click on it.\n\n   * Store this key somewhere not in the public view.\n   * Never include your API Key in your code or commit it to a public location or repository like GitHub.\n\nTo make billing-related API calls, Twilio requires a separate API key.\nBy providing greater control over who has access to the responsibilities associated with your account, this segmentation improves security.\n\n### Store your API key in an environment variable\n\nTo further improve account security, store your API key in a local environment variable. This limits access to the API to individuals with the API key stored on their local environment. Supported programming languages can read environment variables for the API key values.\n\nThis section stores your key in a local environment variable named `SENDGRID_API_KEY`.\n\nTo store your Twilio SendGrid API key, open your command line and run the following command, replacing `YOUR_API_KEY` with the API key you created and saved in the previous section:\n\nmacOS TerminalWindows command linePowerShell\n\n```\nexport SENDGRID_API_KEY=YOUR_API_KEY\n```\n\n```\nsetx SENDGRID_API_KEY=YOUR_API_KEY\n```\n\n```\n[System.Environment]::SetEnvironmentVariable(\"SENDGRID_API_KEY\", \"YOUR_API_KEY\", \"User\")\n```\n\nTo access the variable in your app, follow the convention from your programming language.\n\nPythonNode.jsPHPC# or .NETJavaRubyGo\n\n#### Read the API key in Python\n\n```\napi_key = os.environ.get('SENDGRID_API_KEY')\n```\n\n#### Read the API key in Node.js\n\n```\nconst apiKey = process.env.SENDGRID_API_KEY;\n```\n\n#### Read the API key in PHP\n\n```\n$apiKey = getenv('SENDGRID_API_KEY');\n```\n\n#### Read the API key in C#\n\n```\nvar apiKey = Environment.GetEnvironmentVariable(\"SENDGRID_API_KEY\");\n```\n\n#### Read the API key in Java\n\n```\napiKey = System.getenv(\"SENDGRID_API_KEY\");\n```\n\n#### Read the API key in Ruby\n\n```\napi_key = ENV['SENDGRID_API_KEY']\n```\n\n#### Read the API key in Go\n\n```\napiKey := os.Getenv(\"SENDGRID_API_KEY\")\n```\n\n---\n\n## Edit your API key\n\nTo change the human-readable name or the permission levels of an API key, follow this procedure:\n\n1. Go to **Settings** > **API Keys**. The **API Keys** page appears.\n2. Click the action menu, then **Edit API Key** for the key you want to edit. The **Edit API Key** panel displays.\n3. From this panel, you can change the name or permission levels of your key.\n4. When finished making changes, click **Update**. The **API Key** page displays.\n\n---\n\n## Delete your API key\n\nTo change the human-readable name or the permission levels of an API key, follow this procedure:\n\n1. Go to **Settings** > **API Keys**. The **API Keys** page appears.\n2. Click the action menu, then **Delete API Key** for the key you want to delete. The **Delete API Key?** modal displays.\n3. Click **Confirm**. The **API Key** page displays without the deleted API key.\n\nTwilio SendGrid rejects any subsequent API calls made using this deleted API key.\n\n---\n\n## Replace your API key\n\nTo replace your API key, follow this procedure:\n\n1. Delete your API key.\n2. Create an API key.\n3. Replace the old API key with the new one in your code.\n\n---\n\n## Test your API key\n\nTo test your created API key, use cURL:\n\n#### Test an API key against the Mail Send endpoint\n\n```\n1\n\ncurl -i --request POST \\\n\n\n\n2\n\n--url https://api.sendgrid.com/v3/mail/send \\\n\n\n\n3\n\n--header 'Authorization: Bearer YOUR_API_KEY_HERE' \\\n\n\n\n4\n\n--header 'Content-Type: application/json' \\\n\n\n\n5\n\n--data '{\n\n\n\n6\n\n\"personalizations\": [\n\n\n\n7\n\n{\n\n\n\n8\n\n\"to\": [\n\n\n\n9\n\n{\n\n\n\n10\n\n\"email\": \"recipient@example.com\"\n\n\n\n11\n\n}\n\n\n\n12\n\n]\n\n\n\n13\n\n}\n\n\n\n14\n\n],\n\n\n\n15\n\n\"from\": {\n\n\n\n16\n\n\"email\": \"sendeexampexample@example.com\"\n\n\n\n17\n\n},\n\n\n\n18\n\n\"subject\": \"Hello, World!\",\n\n\n\n19\n\n\"content\": [\n\n\n\n20\n\n{\n\n\n\n21\n\n\"type\": \"text/plain\",\n\n\n\n22\n\n\"value\": \"Howdy!\"\n\n\n\n23\n\n}\n\n\n\n24\n\n]\n\n\n\n25\n\n}'\n```\n\nLook for a **202 Accepted** in the HTTP response headers.",
+   "retrieved_at": "2026-11-23T19:44:41+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features",
+   "requested_at": "2026-11-23T19:44:45+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/for-developers/tracking-events/getting-started-event-webhook-security-features",
+   "title": "Getting Started with the Event Webhook Security Features | SendGrid Docs | Twilio",
+   "chars": 13373,
+   "sha256": "6e85ed99bf72f90f0ee1fb654425c1cbfebc2e70892ff211686bf7d18c74259f",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Getting Started with the Event Webhook Security Features\n\n---\n\nTo verify that incoming `POST` requests originate from Twilio SendGrid, secure the Event Webhook. The Event Webhook notifies a URL through HTTP `POST` with information about events that occur as Twilio SendGrid processes your mail.\n\nFor more information about working with the Event Webhook and the data it provides, see **Getting Started with the Event Webhook** and the **Twilio SendGrid Event Webhook Overview**.\n\n(information)\n\n## Info\n\nMake sure your **API Key Permissions** are set to **Full Access**.\n\nTwilio SendGrid provides two methods for securing the Event Webhook: cryptographic signing and OAuth 2.0. These two security methods are independent of one another and can be used simultaneously.\n\n---\n\n## The Signed Event Webhook\n\nWhen using the Signed Event Webhook, Twilio SendGrid will generate a private and public key pair. The private key will be used to generate a signature that is posted to your HTTP webhook in the `X-Twilio-Email-Event-Webhook-Signature` header.\n\nYou can verify the signature with the public key provided. More information is provided in the Verification section of this page.\n\n### Enable signature verification\n\nTo enable signature verification and generate a key pair:\n\n1. Navigate to **Settings** > **Mail Settings** in the sidebar navigation.\n2. Under **Webhook Settings**, click **Event Webhooks**:\n\n   1. If you have Webhooks set up already, you will see them displayed in a table. You can edit a Webhook by following the \"Edit an Event Webhook\" instructions in the **Twilio SendGrid Event Webhook Overview**.\n   2. If you have not set up any Webhooks, you can create one by following the \"Add an Event Webhook\" instructions in the **Getting Started with the Event Webhook** documentation. For new Webhooks, you must enter mandatory information such as the **Post URL** and **Actions to be posted** before you can enable signature verification.\n3. Once you have begun creating or editing a Webhook, you will manage its security features in the **Security features** section of the dialog that opens.\n4. Scroll to **Security features** and toggle **Enable Signed Event Webhook**. You must click **Save** in order to generate a verification key and enable signature verification. If you click **Test Integration** before clicking **Save**, signature verification will not be tested because the key pair is only generated once the Webhook is saved.\n\n5. Once you click **Save**, the dialog will close. To confirm that signature verification is enabled, navigate back to the dialog by clicking the cog and then clicking **Edit**. Now you will see the **Signature verification** setting is enabled and your public verification key is displayed.\n6. You can now copy the public key and use it to verify that requests are coming from Twilio SendGrid.\n\n### Disable signature verification\n\nTo disable signature verification, which will delete the Webhook's existing key pair:\n\n1. Edit the Webhook by following the \"Edit an Event Webhook\" instructions in the **Twilio SendGrid Event Webhook Overview** documentation.\n2. When a signature exists, the Webhook's configuration dialog will show a toggle with **Enable Signed Event Webhook** as enabled (blue).\n3. Toggle **Enable Signed Event Webhook** to disable the feature (gray). Your key pair will not be deleted until you click **Save**.\n4. Click **Save** to delete your existing key pair for the Webhook.\n\n### Manage the Signed Event Webhook using the API\n\nYou can also manage signature verification for the Event Webhook using SendGrid's API. See the Event Webhook API reference for more information.\n\n### Verify the signature\n\nTwilio SendGrid generates the private and public key pair using the Elliptic Curve Digital Signature Algorithm (ECDSA).\n\nWe recommend using a package or library suitable for your language to verify the signature. Libraries are listed below in the \"Sample verification libraries\" section of this page. The general steps required to verify a signature are outlined below with Go code samples.\n\n(warning)\n\n## Warning\n\nWhen verifying the signature, be aware that we deliver a payload that must be\nused in its raw bytes form. Transformations from raw bytes to a JSON string\nmay remove characters that were used as part of the generated signature.\n\n1. Initiate the `GET` request by including the parameters listed (Headers and Responses) on the Get an Event Webhook documentation.\n2. Get the signature from the `\"X-Twilio-Email-Event-Webhook-Signature\"` HTTP header.\n\n```\n1\n\n// Golang Example\n\n\n\n2\n\ns := http.Request.Header.Get(\"X-Twilio-Email-Event-Webhook-Signature\")\n```\n\n3. Get the timestamp from the `\"X-Twilio-Email-Event-Webhook-Timestamp\"` HTTP header.\n\n```\n1\n\n// Golang Example\n\n\n\n2\n\nts := http.Request.Header.Get(\"X-Twilio-Email-Event-Webhook-Timestamp\")\n```\n\n4. Decode the Base64 encoded signature. Then perform an ASN.1 unmarshal of the decoded signature into a string. This string will be in the form of `{r value},{s value}`.\n\n```\n1\n\n// Golang Example\n\n\n\n2\n\nsignatureBytes, _ := base64.StdEncoding.DecodeString(s)\n\n\n\n3\n\necdsaSig := struct {\n\n\n\n4\n\nR *big.Int\n\n\n\n5\n\nS *big.Int\n\n\n\n6\n\n}\n\n\n\n7\n\n\n\n8\n\nasn1.Unmarshal(signatureBytes, &ecdsaSig)\n```\n\n5. Generate a sha256 hash of the timestamp + payload (use raw bytes).\n\n```\n1\n\n// Golang Example\n\n\n\n2\n\ntsBytes := []byte(ts)\n\n\n\n3\n\npayload, _ := ioutil.ReadAll(http.Request.Body)\n\n\n\n4\n\nh := sha256.New()\n\n\n\n5\n\nh.Write(tsBytes)\n\n\n\n6\n\nh.Write(payload)\n\n\n\n7\n\nhashedPayload := h.Sum(nil)\n```\n\n6. Verify the signature.\n\n```\n1\n\n// Golang Example\n\n\n\n2\n\n// uses https://golang.org/pkg/crypto/ecdsa/ to perform the verification\n\n\n\n3\n\necdsa.Verify(publicKey, hashedPayload, ecdsaSig.R, ecdsaSig.S)\n```\n\n7. The simplest way to verify the signature is to use a package or library that abstracts this process into a helper method or function.\n\n#### Sample verification libraries\n\nThe Twilio SendGrid API libraries contain helpers to assist you when verifying the ECDSA signature. The links below will take you to the Event Webhook helper in each library.\n\n---\n\n## OAuth 2.0\n\nOAuth offers an additional and separate way of providing security controls for the Event Webhook. OAuth is an open authorization protocol used to share resources with applications. Rather than sharing your username and password with an application, granting total access to your account, OAuth enables scoped access to your resources. For more on OAuth and how it works, see the OAuth community site.\n\nThe Twilio SendGrid Event Webhook uses the Client Credentials OAuth grant type, which is an authorization workflow meant for machine-to-machine communication. This authorization method creates a token that Twilio SendGrid can pass to your app in an Authorization header, allowing you to verify that the request originated from Twilio SendGrid.\n\n### OAuth Client Credentials flow\n\nThe OAuth setup flow works as follows.\n\n1. You, the customer, have an app that provides an HTTP webhook endpoint URL. You want the Twilio SendGrid Event Webhook to make `POST` requests to this URL. To ensure that the requests you receive are actually from Twilio SendGrid, you implement OAuth.\n2. This means you are responsible for generating a Client ID and Client Secret. You must also provide two URLs, the HTTP `POST` URL endpoint for your app and a URL to an authorization server or OAuth service.\n3. When you give Twilio SendGrid all of this information, it will pass the Client ID and Client Secret to the Token URL (your authorization server/OAuth service). The authorization server will then use the Client ID and Client Secret to generate an access token. This token is sent back to Twilio SendGrid.\n4. The access token is meaningless to SendGrid. It acts only as a key to pass back to your app at the HTTP `POST` URL endpoint. This will be done in an Authorization header.\n5. Because this access token is shared among only your app, the authorization server, and SendGrid, you can trust requests delivered with the token are from a trusted source.\n6. You can verify the access token is legitimate by checking with the authorization server that created it.\n\n### Enable OAuth 2.0\n\nTo enable OAuth 2.0:\n\n1. Navigate to **Settings** > **Mail Settings** in the sidebar navigation.\n2. Under **Webhook Settings**, click **Event Webhooks**:\n\n   1. If you have Webhooks set up already, you will see them displayed in a table. You can edit a Webhook by following the \"Edit an Event Webhook\" instructions in the **Twilio SendGrid Event Webhook Overview** documentation.\n   2. If you have not set up any Webhooks, you can create one by following the \"Add an Event Webhook\" instructions in the **Getting Started with the Event Webhook** documentation. For new Webhooks, you must enter mandatory information such as the **Post URL** and **Actions to be posted** before you can enable and configure OAuth verification.\n3. Once you have begun creating or editing a Webhook, you will manage its security features in the **Security features** section of the dialog that opens. Unlike signature verification, OAuth verification can be completed without first saving the Webhook.\n4. Scroll to **Security features** and toggle **Enable OAuth** to reveal **Client ID**, **Secret Token**, and **Token URL** fields.\n\n5. Fill the OAuth configuration fields:\n   1. **Client ID**: Required to generate an authorization token.\n   2. **Client Secret**: Required to generate an authorization token. This secret is needed only once to create an access token. SendGrid will store this secret, allowing you to update your Client ID and Token URL without passing the secret to SendGrid again.\n   3. **Token URL**: The URL where Twilio SendGrid should deliver the Client ID and Client Secret in order to create an access token. This URL should route to your own authorization server or an OAuth service such as Okta.\n6. With the above steps completed, requests to your **Post URL** by Twilio SendGrid will contain the access token in an Authorization header. You can now use this token to verify the requests using your OAuth service or authorization server.\n\n(information)\n\n## Info\n\nIt is your responsibility to verify the access token used in requests to your\nHTTP `POST` URL.\n\n### Disable OAuth\n\nTo disable OAuth 2.0:\n\n1. Edit the Webhook by following the \"Edit an Event Webhook\" instructions in the **Twilio SendGrid Event Webhook Overview** documentation.\n2. When OAuth is enabled, the Webhook's configuration dialog will show a toggle with **Enable OAuth** as enabled (blue).\n3. Toggle **Enable OAuth** to disable the feature (gray).\n4. Click **Save**.\n5. The requests to your HTTP `POST` URL by Twilio SendGrid will no longer contain an access token.\n\n### Manage OAuth 2.0 using the API\n\nTwilio SendGrid lets you manage OAuth setup using the API. For more information, see the Event Webhook API reference.\n\n(warning)\n\n## Warning\n\nUsing the v2 Web API's `eventnotify` API call will overwrite any previously\nconfigured Event Webhook notification settings, including OAuth 2.0. If your\nOAuth 2.0 settings are overwritten, please configure them again using either\nthe Mail Settings page or\nthe SendGrid v3\nAPI\n\n### Handling Expired or Invalid OAuth Access Tokens\n\nOnce you have established an OAuth Access Token per the above directions, SendGrid will cache that token so that it can be used in any further webhook requests without each time requesting that token again from your OAuth service.\n\nUpon receiving a webhook request with an invalid or expired token, your webhook needs to return a status code of 4xx (typically 400, 401 or 403) and the body payload must contain one of the following strings:\n\n\"`invalid_request`\", \"`invalid_token`\", \"`insufficient_scope`\".\n\nMore specifically, SendGrid follows RFC 6750, which defines the error codes as follows:\n\n**invalid\\_request**\n\n> The request is missing a required parameter, includes an  \n> unsupported parameter or parameter value, repeats the same  \n> parameter, uses more than one method for including an access  \n> token, or is otherwise malformed. The resource server SHOULD  \n> respond with the HTTP 400 (Bad Request) status code.\n\n**invalid\\_token**\n\n> The access token provided is expired, revoked, malformed, or  \n> invalid for other reasons. The resource SHOULD respond with  \n> the HTTP 401 (Unauthorized) status code.\n\n**insufficient\\_scope**\n\n> The request requires higher privileges than provided by the  \n> access token. The resource server SHOULD respond with the HTTP  \n> 403 (Forbidden) status code.\n\nUpon receiving any of these error codes from your webhook, SendGrid will request a new OAuth token from your OAuth service and retry the webhook.\n\n---\n\n## Next steps\n\nNow that you know how to secure the Event Webhook, you can begin using your event data to better understand your email. See the **Event Webhook Reference** for more information about the data it provides.\n\n---",
+   "retrieved_at": "2026-11-23T19:44:45+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/api-reference/api-keys/create-api-keys",
+   "requested_at": "2026-11-23T19:44:46+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/api-reference/api-keys/create-api-keys",
+   "title": "Create API keys | SendGrid Docs | Twilio",
+   "chars": 7965,
+   "sha256": "5a6406b66d69223128ff769f6664500a53cd9131f2cefc76dd53a56264e8ccbf",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Create API keys\n\n---\n\n## API Overview\n\nYour application, mail client, or website can all use API (Application Programming Interface) keys to authenticate access to SendGrid services. You can revoke an API key at any time without having to change your username and password, and an API key can be scoped to perform a limited number of actions.\n\nThere are 3 different types of API keys:\n\n* **Full Access**  \n  Allows the API key to access `GET`, `PATCH`, `PUT`, `DELETE` and `POST` endpoints for all parts of your account, excluding billing and Email Address Validation.\n* **Custom Access**  \n  Customizes levels of access for all parts of your account, excluding billing and Email Address Validation.\n* **Billing Access**  \n  Allows the API key to access billing endpoints for the account.\n\nYou must create your first API key using the Twilio SendGrid App. Once you have a key with permissions to manage other keys, you can use the endpoints documented as part of this API.\n\n(warning)\n\n## API keys limited to 69 characters\n\nTwilio support a key longer than 69 characters. No exceptions can be made for third-party infrastructure.\n\n(information)\n\n## Info\n\nThere is a limit of 100 API Keys on your account.\n\n---\n\n## Operation overview\n\n## POST/v3/api\\_keys\n\n### Base url: https://api.sendgrid.com (for global users and subusers)\n\n### Base url: https://api.eu.sendgrid.com (for EU regional subusers)\n\n**This endpoint allows you to create a new API Key for the user.**\n\nTo create your initial SendGrid API Key, you should use the SendGrid App. Once you have created a first key with scopes to manage additional API keys, you can use this API for all other key management.\nA JSON request body containing a `name` property is required when making requests to this endpoint. If the number of maximum keys, 100, is reached, a `403` status will be returned.\nThough the `name` field is required, it does not need to be unique. A unique API key ID will be generated for each key you create and returned in the response body.\nIt is not necessary to pass a `scopes` field to the API when creating a key, but you should be aware that omitting the `scopes` field from your request will create a key with \"Full Access\" permissions by default.\nSee the API Key Permissions List for all available scopes. An API key's scopes can be updated after creation using the \"Update API keys\" endpoint.\n\n---\n\n## Operation details\n\n### Authentication\n\nAPI Key\n\n### Headers\n\nProperty nameTypeRequiredDescription\n\nAuthorizationstring\n\nrequired\n\nDefault: `Bearer <<YOUR_API_KEY_HERE>>`\n\n---\n\non-behalf-ofstring\n\nOptional\n\nThe `on-behalf-of` header allows you to make API calls from a parent account on behalf of the parent's Subusers or customer accounts. You will use the parent account's API key when using this header. When making a call on behalf of a customer account, the property value should be \"account-id\" followed by the customer account's ID (e.g., `on-behalf-of: account-id <account-id>`). When making a call on behalf of a Subuser, the property value should be the Subuser's username (e.g., `on-behalf-of: <subuser-username>`). See **On Behalf Of** for more information.\n\n### Request body\n\nEncoding type:`application/json`\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nnamestring\n\nrequired\n\nThe name you will use to describe this API Key.\n\n---\n\nscopesarray[string]\n\nOptional\n\nThe individual permissions that you are giving to this API Key.\n\n```\n{\n\n\n\n\"name\": \"My API Key\",\n\n\n\n\"scopes\": [\n\n\n\n\"mail.send\",\n\n\n\n\"alerts.create\",\n\n\n\n\"alerts.read\"\n\n\n\n]\n\n\n\n}\n```\n\n### Responses\n\n201400401403404500\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\napi\\_keystring\n\nOptional\n\n---\n\napi\\_key\\_idstring\n\nOptional\n\n---\n\nnamestring\n\nOptional\n\n---\n\nscopesarray[string]\n\nOptional\n\n```\n{\n\n\n\n\"api_key\": \"SG.xxxxxxxx.yyyyyyyy\",\n\n\n\n\"api_key_id\": \"xxxxxxxx\",\n\n\n\n\"name\": \"My API Key\",\n\n\n\n\"scopes\": [\n\n\n\n\"mail.send\",\n\n\n\n\"alerts.create\",\n\n\n\n\"alerts.read\"\n\n\n\n]\n\n\n\n}\n```\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nAn error message.\n\n---\n\nfieldstring or null\n\nOptional\n\nWhen applicable, this property value will be the field that generated the error.\n\n---\n\nhelpobject\n\nOptional\n\nWhen applicable, this property value will be helper text or a link to documentation to help you troubleshoot the error.\n\n---\n\nidstring\n\nOptional\n\nWhen applicable, this property value will be an error ID.\n\n```\n{\n\n\n\n\"errors\": [\n\n\n\n{\n\n\n\n\"field\": \"field_name\",\n\n\n\n\"message\": \"error message\"\n\n\n\n}\n\n\n\n]\n\n\n\n}\n```\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nAn error message.\n\n---\n\nfieldstring or null\n\nOptional\n\nWhen applicable, this property value will be the field that generated the error.\n\n---\n\nhelpobject\n\nOptional\n\nWhen applicable, this property value will be helper text or a link to documentation to help you troubleshoot the error.\n\n---\n\nidstring\n\nOptional\n\nWhen applicable, this property value will be an error ID.\n\n```\n{\n\n\n\n\"errors\": [\n\n\n\n{\n\n\n\n\"field\": \"field_name\",\n\n\n\n\"message\": \"error message\"\n\n\n\n}\n\n\n\n]\n\n\n\n}\n```\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nAn error message.\n\n---\n\nfieldstring or null\n\nOptional\n\nWhen applicable, this property value will be the field that generated the error.\n\n---\n\nhelpobject\n\nOptional\n\nWhen applicable, this property value will be helper text or a link to documentation to help you troubleshoot the error.\n\n---\n\nidstring\n\nOptional\n\nWhen applicable, this property value will be an error ID.\n\n```\n{\n\n\n\n\"errors\": [\n\n\n\n{\n\n\n\n\"field\": \"field_name\",\n\n\n\n\"message\": \"error message\"\n\n\n\n}\n\n\n\n]\n\n\n\n}\n```\n\nSchemaExample\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nAn error message.\n\n---\n\nfieldstring or null\n\nOptional\n\nWhen applicable, this property value will be the field that generated the error.\n\n---\n\nhelpobject\n\nOptional\n\nWhen applicable, this property value will be helper text or a link to documentation to help you troubleshoot the error.\n\n---\n\nidstring\n\nOptional\n\nWhen applicable, this property value will be an error ID.\n\n```\n{\n\n\n\n\"errors\": [\n\n\n\n{\n\n\n\n\"field\": \"field_name\",\n\n\n\n\"message\": \"error message\"\n\n\n\n}\n\n\n\n]\n\n\n\n}\n```\n\nSchema\n\nProperty nameTypeRequiredDescriptionChild properties\n\nerrorsarray[object]\n\nOptional\n\nShow errors properties\n\nProperty nameTypeRequiredDescriptionChild properties\n\nmessagestring\n\nOptional\n\nCreate API keys\n\nNode.jsPythonC#JavaGoPHPRubycurl\n\n```\n1\n\nconst client = require(\"@sendgrid/client\");\n\n\n\n2\n\nclient.setApiKey(process.env.SENDGRID_API_KEY);\n\n\n\n3\n\n\n\n4\n\nconst data = {\n\n\n\n5\n\nname: \"My API Key\",\n\n\n\n6\n\nscopes: [\"mail.send\", \"alerts.create\", \"alerts.read\"],\n\n\n\n7\n\n};\n\n\n\n8\n\n\n\n9\n\nconst request = {\n\n\n\n10\n\nurl: `/v3/api_keys`,\n\n\n\n11\n\nmethod: \"POST\",\n\n\n\n12\n\nbody: data,\n\n\n\n13\n\n};\n\n\n\n14\n\n\n\n15\n\nclient\n\n\n\n16\n\n.request(request)\n\n\n\n17\n\n.then(([response, body]) => {\n\n\n\n18\n\nconsole.log(response.statusCode);\n\n\n\n19\n\nconsole.log(response.body);\n\n\n\n20\n\n})\n\n\n\n21\n\n.catch((error) => {\n\n\n\n22\n\nconsole.error(error);\n\n\n\n23\n\n});\n```",
+   "retrieved_at": "2026-11-23T19:44:46+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers/",
+   "requested_at": "2026-11-23T19:44:52+05:30",
+   "status": "ok",
+   "final_url": "https://www.twilio.com/docs/sendgrid/for-developers",
+   "title": "Twilio SendGrid developer documentation | SendGrid Docs | Twilio",
+   "chars": 1124,
+   "sha256": "eda8de6f95c1ee0067888d1d6d6248c47989434bc8a5038a891728bdd2144c5c",
+   "text": "Page tools\n\nUseful for sharing or LLM\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\nConnect your AI agentInstall Twilio Skills\n\nAccelerate development with AI\n\n---\n\nOn this page\n\nLooking for more inspiration?Visit the\n\nCopy and view\n\nView as markdown\n\n---\n\nOpen in assistant\n\nOpen in ChatGPTOpen in ClaudeOpen in CursorOpen in Perplexity\n\n---\n\nBuild with AI\n\nConnect your AI agentInstall Twilio Skills\n\n# Twilio SendGrid developer documentation\n\n---\n\nTwilio SendGrid documentation has three main sections:\n\n* Developer documentation (where you are now)\n* User interface (UI) documentation\n* API reference\n\nDeveloper documentation describes how to implement SendGrid's APIs and developer-focused features.\n\n---\n\n## Popular developer documentation\n\n### Email API quickstarts\n\n* C#\n* Go\n* Java\n* Node.js\n* PHP\n* Python\n* Ruby\n\n### Send with a SendGrid Partner\n\n* Microsoft Azure\n\n### Templates and dynamic data\n\n* Personalizations\n* Using Handlebars\n\n### Analytics and reporting\n\n### Parsing email\n\n### SDKs and tools\n\n### Glossary\n\n* Glossary of Terms",
+   "retrieved_at": "2026-11-23T19:44:52+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/",
+   "title": "Twilio SendGrid Docs",
+   "snippet": "SendGrid's for-developers documentation provides information on how to use and configure SendGrid's APIs and developer-focused tools, including how to send ..."
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/api-getting-started",
+   "title": "Getting started with the SendGrid API",
+   "snippet": "### Build your API call\nYour API call must have the following components:\n- **A host.** The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`\n- **An [Authorization"
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/",
+   "title": "SendGrid v3 API reference",
+   "snippet": "This API reference provides complete documentation for every endpoint and operation. For an overview of using SendGrid APIs, see the Getting Started section."
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/v2-api/mail",
+   "title": "v2 Mail Send",
+   "snippet": "# v2 Mail Send\nThis endpoint allows you to send email over SendGrid's Web API v2. For information about the latest mail send endpoint, please visit our [Web API v3 Mail Send"
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/mail-send/mail-send",
+   "title": "Mail Send",
+   "snippet": "url: https://api.eu.sendgrid.com (for EU regional subusers)\n*The Mail Send operation allows you to send email over SendGrid's v3 Web API*\nFor an overview of this API, including its features and"
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/requests",
+   "title": "Requests",
+   "snippet": "### Base URL\nThe base URL for Web API v3 requests is `https://api.sendgrid.com/v3/` for global users and subusers, and `https://api.eu.sendgrid.com/v3/` for EU subusers.\n**All requests must be made"
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/lists/get-a-list-by-id",
+   "title": "Get a List by ID",
+   "snippet": "Lists are static collections of Marketing Campaigns contacts. This API allows you to interact with the list objects themselves. To add contacts to a list, you must use the [Contacts"
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api",
+   "title": "How to use the SendGrid V3 API",
+   "snippet": "Learn how to use the Twilio SendGrid Web API v3, a RESTful API with official libraries in 7 languages, including authentication, requests, and responses."
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/curl-examples",
+   "title": "cURL Examples for Common Use Cases",
+   "snippet": "\nSend a \"Hello, World!\" email through SendGrid's v3 Mail Send endpoint. Replace YOUR_API_KEY with your actual API key:\n```\n1curl --request POST \\\n2  --url https://api.sendgrid.com/v3/mail/send \\\n3"
+  },
+  {
+   "q": "SendGrid API documentation site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/send-test-e-mail/send-a-test-marketing-email",
+   "title": "Send a Test Marketing Email",
+   "snippet": "\nBase url: https://api.sendgrid.com\n**This endpoint allows you to send a test marketing email to a list of email addresses**.\nBefore sending a marketing message, you can"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys",
+   "title": "Upgrade your authentication method to API keys",
+   "snippet": "for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+   "title": "Authentication",
+   "snippet": "the key can access.\nYou can create [API keys in your account](https://app.sendgrid.com/settings/api_keys). To use an API key, include an `Authorization` header with the value `Bearer"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/api-getting-started",
+   "title": "Getting started with the SendGrid API",
+   "snippet": "Basic Authentication is no longer accepted; you must use an API key."
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+   "title": "API Keys",
+   "snippet": "To authenticate access to Twilio SendGrid services, use *Application Programming Interface* (API) keys.\nThey are the preferred alternative to using a username and password because you can revoke an"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/webhooks/test-event-notification-settings",
+   "title": "Test Event Notification Settings | SendGrid Docs",
+   "snippet": "\nThe client ID Twilio SendGrid sends to your OAuth server or service provider to generate an OAuth access token. When passing data in this property, you must also include the `oauth_token_url`"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://sendgrid.com/en-us/blog/introducing-api-key-permissions",
+   "title": "API Key permissions | SendGrid Docs",
+   "snippet": "Utilize Twilio SendGrid API keys for secure and efficient access to v3 API endpoints. Manage different permissions for seamless integration."
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features",
+   "title": "Getting Started with the Event Webhook Security Features",
+   "snippet": "Secret to generate an access token. This token is sent back to Twilio SendGrid.\n4. The access token is meaningless to SendGrid. It acts only as a key to pass back to your app at the HTTP `POST` URL"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/api-keys/create-api-keys",
+   "title": "Create API keys",
+   "snippet": "You can revoke an API key at any time without having to change your username and password, and an API key can be scoped to perform a limited number of actions.\nThere are 3 different types of API"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/quickstart-go",
+   "title": "Email API Quickstart for Go",
+   "snippet": "key\nUnlike a username and password \u2014 credentials that allow access to your full account \u2014 an API key is authorized to perform a limited scope of actions. If your API key is compromised, you can"
+  },
+  {
+   "q": "SendGrid API authentication OAuth API key developer site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/integrating-with-the-smtp-api/",
+   "title": "Integrating with the SMTP API | SendGrid Docs",
+   "snippet": "To integrate with SendGrid's SMTP API, follow these steps: Create an API Key with at least \"Mail\" permissions. Set the server host in your email client or ..."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+   "title": "Upgrade your plan",
+   "snippet": "For more plan options, see [SendGrid pricing](https://sendgrid.com/pricing/)."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/quickstart-go",
+   "title": "Email API Quickstart for Go",
+   "snippet": "start a [free trial](https://docs.sendgrid.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan#free-trial)that allows you to send up to 100 emails per day for 60 days. After the 60-day"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+   "title": "API Keys",
+   "snippet": "API endpoints and which access levels each have to your account. |\n| **Billing Access** | Grants all billing API endpoints **full access** to your account. |\n| **Email Address Validation Access**"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/email-quickstart-for-java",
+   "title": "Email API Quickstart for Java | SendGrid Docs",
+   "snippet": "you can start a [free trial](/docs/sendgrid/ui/account-and-settings/upgrading-your-plan#free-trial)that allows you to send up to 100 emails per day for 60 days. After the 60-day trial period ends,"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/quickstart-nodejs",
+   "title": "Email API Quickstart for Node.js",
+   "snippet": "### Sign up for a SendGrid account\nWhen you sign up for a [SendGrid account](https://signup.sendgrid.com/), you can start a [free"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/partners/microsoft-azure-2021",
+   "title": "Sending Email with Microsoft Azure",
+   "snippet": "Create and configure a Twilio SendGrid account through the Microsoft Azure Marketplace, then set up 2FA, API keys, and Sender Authentication to send email."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://sendgrid.com/docs/for-developers/sending-email/quickstart-python",
+   "title": "Email API Quickstart: How to Send Email with Python",
+   "snippet": "you can start a [free trial](/docs/sendgrid/ui/account-and-settings/upgrading-your-plan#free-trial)that allows you to send up to 100 emails per day for 60 days. After the 60-day trial period ends,"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://sendgrid.com/en-us",
+   "title": "SendGrid",
+   "snippet": "Start for free View Pricing Free trial No credit card required Flexible pricing. Find guidance and best practices for building with our Email API, improving ..."
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://stage.sendgrid.com/en-us/pricing",
+   "title": "Pricing and Plans",
+   "snippet": "\nTry it out! Integrate fast and explore features with 100 emails/day.\n### $0/mo\nNo credit card, no commitment.\n- 1 teammate permission\n- Optimize your email deliverability at scale on our"
+  },
+  {
+   "q": "SendGrid API access pricing plans developer account site:sendgrid.com",
+   "url": "https://sendgrid.com/en-us/pricing?tab=1_2",
+   "title": "Marketing Campaigns Pricing",
+   "snippet": "Pricing is determined by monthly contact storage, email volume, and features. Select your volume below to see which plans are right for you."
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/parsing-email/setting-up-the-inbound-parse-webhook",
+   "title": "Configure the inbound parse webhook",
+   "snippet": "Twilio SendGrid can help process email using the Inbound Parse webhook. The Inbound Parse webhook parses the contents and attachments for incoming email to a email server, then send that data to a URL"
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/web-api-vs-smtp",
+   "title": "Web API vs. SMTP for Sending Email",
+   "snippet": "The SendGrid Web API uses HTTP to send messages. This is the fastest, most flexible, and most secure option for sending mail with SendGrid."
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/smtp-errors-and-troubleshooting",
+   "title": "SMTP Errors and Troubleshooting",
+   "snippet": "Each SMTP request made returns a numerical response from the recipient server.\n- `2xx` responses indicate success.\n- `4xx` responses indicate temporary failures."
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/getting-started-smtp",
+   "title": "How to send an Email with SMTP",
+   "snippet": "Protocol (SMTP)](/docs/sendgrid/glossary/smtp) provides the language that transmits email from one server to another. Twilio SendGrid provides an SMTP service to deliver your email using its servers."
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://mc.sendgrid.com/single-sends",
+   "title": "mc.sendgrid.com/single-sends",
+   "snippet": "Delivering your transactional and marketing email through one reliable platform."
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/curl-examples",
+   "title": "cURL Examples for Common Use Cases",
+   "snippet": "recipients, using a template, and scheduling a send.\n---\n## Hello, World\nSend a \"Hello, World!\" email through SendGrid's v3 Mail Send endpoint. Replace YOUR_API_KEY with your actual API key:"
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://sendgrid.com/en-us/blog/ai-based-email-marketing",
+   "title": "AI Email Marketing: Tools, Benefits & Best Practices in 2026",
+   "snippet": "While SendGrid doesn't offer native AI tools, our platform is designed to play well with others. You can easily integrate third-party AI services to automate and enhance your email workflows."
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://sendgrid.com/en-us/blog/smtp-server-response-codes-explained",
+   "title": "SMTP Error Codes: What Do These Server Responses Mean?",
+   "snippet": "SMTP error codes are three-digit responses that mail servers send to indicate whether your email was successfully delivered, temporarily delayed, or permanently rejected. These codes help diagnose"
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://sendgrid.com/en-us/solutions/email-api",
+   "title": "Twilio SendGrid Email API",
+   "snippet": "```python\n# using SendGrid's Python Library\n# https://github.com/sendgrid/sendgrid-python\nimport os\nfrom sendgrid import SendGridAPIClient\nfrom sendgrid.helpers.mail import Mail"
+  },
+  {
+   "q": "SendGrid MCP server official site:sendgrid.com",
+   "url": "https://docs.sendgrid.com/api-reference/mail-send/mail-send",
+   "title": "Mail Send",
+   "snippet": "(for global users and subusers)\n### Base url: https://api.eu.sendgrid.com (for EU regional subusers)\n*The Mail Send operation allows you to send email over SendGrid's v3 Web API*"
+  }
+ ],
+ "official_domain_candidates": {
+  "sendgrid.com": 40
+ },
+ "override_hint": "sendgrid.com",
+ "identity_flag": "hint_domain_from_original_list",
+ "selected_domain": "sendgrid.com",
+ "completed": "2026-11-23T19:44:52+05:30"
+}

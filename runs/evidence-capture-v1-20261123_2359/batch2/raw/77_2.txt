@@ -1,0 +1,111 @@
+
+Rate Limits
+For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+Home
+Guides
+API Docs
+Guides
+Jump to Content
+Home
+Guides
+API Docs
+Rate Limits
+Getting Started
+Authentication
+Try the API in your web browser
+General
+ClickUp API v2 and v3 Terminology
+Rate Limits
+API availability by Plan
+Date formatting
+OpenAPI Specification
+MCP
+ClickUp's MCP Server
+MCP Server Setup Instructions
+Supported Tools
+Tasks
+Tasks
+Attachments
+Move a task to a new List
+Custom Task Types
+Custom Fields
+Custom Fields
+Filter tasks using Custom Fields
+Range operator with Custom Fields
+Views
+Views
+Filter Views
+Communication
+Comments
+Chat
+Comment formatting
+Task comments pagination
+Docs
+Docs API limitation
+Webhooks
+Webhooks
+Webhook signature
+Webhook health status
+Space webhook payloads
+Folder webhook payloads
+List webhook payloads
+Task webhook payloads
+Automation Call webhook payload
+Goal and Target webhook payloads
+Automation Call webhook Legacy payload
+FAQ
+Frequently asked questions
+Common Errors
+Rate Limits
+Understand the rate limits that apply to the ClickUp API.
+Rate Limits
+The ClickUp API applies rate limits per token. These limits apply to both personal and OAuth tokens and vary by 
+Workspace
+ Plan of the Workspace hosting the token.
+Rate Limits by Workspace Plan
+Plan
+Limit/minute*
+FreeForever
+100
+Unlimited
+100
+Business
+100
+Business Plus
+1,000
+Enterprise / Enterprise Plus
+10,000
+* requests per minute per token.
+E
+rror handling
+If you exceed the rate limit, the API returns a 
+HTTP 429
+ status code.
+The response header on error contains
+X-RateLimit-Limit
+ - Current rate limit for the token.
+X-RateLimit-Remaining
+ - Number of requests remaining in the current rate limit window.
+X-RateLimit-Reset
+ - Time when the rate limit will reset, in Unix timestamp format.
+👍
+Tip
+Learn more about 
+ClickUp Plans
+.
+Updated
+2 months ago
+ClickUp API v2 and v3 Terminology
+API availability by Plan
+Did this page help you?
+Yes
+No
+Copy Page
+Rate Limits
+Rate Limits by Workspace Plan
+Error handling
+© 2026 ClickUp
+Security
+Your Privacy
+Terms

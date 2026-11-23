@@ -1,0 +1,309 @@
+{
+ "run_at": "2026-11-23T22:25:13+0530",
+ "key_prefix": "ck_",
+ "steps": [
+  {
+   "step": "S1_sdk_surface_and_auth",
+   "status": "ok",
+   "result": {
+    "composio_version": "0.27.0",
+    "client_attrs": [
+     "auth_configs",
+     "client",
+     "connected_accounts",
+     "create",
+     "experimental",
+     "keyring",
+     "logger",
+     "logs",
+     "mcp",
+     "provider",
+     "sessions",
+     "tool_router",
+     "toolkits",
+     "tools",
+     "triggers",
+     "use",
+     "webhooks"
+    ],
+    "tools_methods": [
+     "execute",
+     "get",
+     "get_raw_composio_tool_by_slug",
+     "get_raw_composio_tools",
+     "get_raw_tool_router_meta_tools",
+     "logger",
+     "provider",
+     "proxy",
+     "sanitize_payload"
+    ],
+    "sdk_toolkits_get": "AuthenticationError: 401 Invalid API key: ck_**yCBw"
+   },
+   "seconds": 1.91
+  },
+  {
+   "step": "S2_mcp_tools_list",
+   "status": "ok",
+   "result": [
+    {
+     "name": "COMPOSIO_GET_TOOL_SCHEMAS",
+     "required": [
+      "tool_slugs"
+     ],
+     "params": [
+      "tool_slugs",
+      "include",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_MANAGE_CONNECTIONS",
+     "required": [
+      "toolkits"
+     ],
+     "params": [
+      "toolkits",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_MULTI_EXECUTE_TOOL",
+     "required": [
+      "tools",
+      "sync_response_to_workbench"
+     ],
+     "params": [
+      "tools",
+      "thought",
+      "sync_response_to_workbench",
+      "current_step",
+      "current_step_metric",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_PROXY_EXECUTE",
+     "required": [
+      "toolkit_slug",
+      "endpoint",
+      "method"
+     ],
+     "params": [
+      "toolkit_slug",
+      "endpoint",
+      "method",
+      "body",
+      "parameters"
+     ]
+    },
+    {
+     "name": "COMPOSIO_REMOTE_BASH_TOOL",
+     "required": [
+      "command"
+     ],
+     "params": [
+      "command",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_REMOTE_WORKBENCH",
+     "required": [
+      "code_to_execute"
+     ],
+     "params": [
+      "code_to_execute",
+      "thought",
+      "current_step",
+      "current_step_metric",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_SEARCH_TOOLS",
+     "required": [
+      "queries"
+     ],
+     "params": [
+      "queries",
+      "session",
+      "model",
+      "search_strategy"
+     ]
+    },
+    {
+     "name": "COMPOSIO_SUBMIT_FEEDBACK",
+     "required": [
+      "category",
+      "explanation",
+      "reported_by"
+     ],
+     "params": [
+      "subject",
+      "tool_slug",
+      "plan_id",
+      "category",
+      "step_number",
+      "pitfall_number",
+      "explanation",
+      "reported_by"
+     ]
+    },
+    {
+     "name": "COMPOSIO_WAIT_FOR_CONNECTIONS",
+     "required": [
+      "toolkits"
+     ],
+     "params": [
+      "toolkits",
+      "mode",
+      "session_id"
+     ]
+    },
+    {
+     "name": "COMPOSIO_MANAGE_SKILL",
+     "required": null,
+     "params": [
+      "create",
+      "update",
+      "delete"
+     ]
+    },
+    {
+     "name": "COMPOSIO_SEARCH_SKILLS",
+     "required": [
+      "query"
+     ],
+     "params": [
+      "query",
+      "limit"
+     ]
+    },
+    {
+     "name": "COMPOSIO_USE_SKILL",
+     "required": [
+      "slug"
+     ],
+     "params": [
+      "slug"
+     ]
+    }
+   ],
+   "seconds": 2.46
+  },
+  {
+   "step": "S3_search_tools",
+   "status": "ok",
+   "result": {
+    "results": [
+     {
+      "index": 1,
+      "use_case": "list public GitHub repositories of an organization",
+      "execution_guidance": "Found 4 tools for this query. Look at the schemas to know how to use them.",
+      "primary_tool_slugs": [
+       "GITHUB_LIST_ORGANIZATION_REPOSITORIES"
+      ],
+      "related_tool_slugs": [
+       "GITHUB_GET_A_REPOSITORY",
+       "GITHUB_FIND_REPOSITORIES",
+       "GITHUB_ADD_OR_UPDATE_TEAM_REPOSITORY_PERMISSIONS"
+      ],
+      "toolkits": [
+       "github"
+      ]
+     }
+    ],
+    "connection_status": [
+     {
+      "toolkit": "github",
+      "has_active_connection": false,
+      "status_message": "No Active connection for toolkit=github. You MUST call COMPOSIO_MANAGE_CONNECTIONS (toolkit=\"github\") to create a connection BEFORE executing any github tools."
+     }
+    ]
+   },
+   "seconds": 1.23
+  },
+  {
+   "step": "S4_get_tool_schemas",
+   "status": "ok",
+   "result": {
+    "GETANYAPI_GET_API_CONTRACT": {
+     "description": "Read the current AnyAPI contract, pricing, route identities, schemas, and observed latency for one SKU before a paid run. AnyAPI is the provider; route sources describe its aggregation options.",
+     "required": [
+      "sku"
+     ],
+     "properties": [
+      "sku"
+     ]
+    },
+    "GITHUB_LIST_ORGANIZATION_REPOSITORIES": {
+     "description": "Retrieves a list of repositories for a specified GitHub organization, allowing filtering by type and sorting.",
+     "required": [
+      "org"
+     ],
+     "properties": [
+      "org",
+      "page",
+      "sort",
+      "type",
+      "per_page",
+      "direction"
+     ]
+    }
+   },
+   "seconds": 0.55
+  },
+  {
+   "step": "S5_execute_github_list_org_repos",
+   "status": "ok",
+   "result": {
+    "successful": false,
+    "data": {
+     "results": [
+      {
+       "error": "No active connection found for toolkit(s) 'github' in this session. To fix this, call COMPOSIO_MANAGE_CONNECTIONS with toolkits=['github'] to establish a connection, then retry this tool call.",
+       "tool_slug": "GITHUB_LIST_ORGANIZATION_REPOSITORIES",
+       "index": 0
+      }
+     ],
+     "total_count": 1,
+     "success_count": 0,
+     "error_count": 1,
+     "session": {
+      "id": "grew",
+      "instructions": "REQUIRED: Pass session_id \"grew\" in ALL subsequent meta tool calls for this workflow."
+     }
+    },
+    "error": "1 out of 1 tools failed",
+    "log_id": "log_SbVwiEcSeRVq"
+   },
+   "seconds": 0.42
+  },
+  {
+   "step": "S6_execute_getanyapi_get_api_contract",
+   "status": "ok",
+   "result": {
+    "successful": false,
+    "data": {
+     "results": [
+      {
+       "error": "GETANYAPI_GET_API_CONTRACT is not available on the instant account for toolkit getanyapi",
+       "tool_slug": "GETANYAPI_GET_API_CONTRACT",
+       "index": 0
+      }
+     ],
+     "total_count": 1,
+     "success_count": 0,
+     "error_count": 1,
+     "session": {
+      "id": "grew",
+      "instructions": "REQUIRED: Pass session_id \"grew\" in ALL subsequent meta tool calls for this workflow."
+     }
+    },
+    "error": "1 out of 1 tools failed",
+    "log_id": "log_uwmV4e7NXexi"
+   },
+   "seconds": 4.01
+  }
+ ]
+}

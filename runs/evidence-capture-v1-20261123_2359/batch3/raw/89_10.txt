@@ -1,0 +1,75 @@
+title: Rate Limits and Timeouts
+source_url: /developer-api/v1/rate-limiting
+summary: A 504 Gateway Timeout means a gateway did not receive an upstream response before its timeout. Avoid relying on long-running requests when working with large datasets or complex queries:
+
+content:
+## Request timeouts
+
+A **504 Gateway Timeout** means a gateway did not receive an upstream response before its timeout. Avoid relying on long-running requests when working with large datasets or complex queries:
+
+- **Use pagination** to break large requests into smaller chunks.
+
+- **Retry reads** with exponential backoff after a `504`. Before retrying a write, check whether it completed and follow the endpoint's idempotency behavior; a timeout does not prove the operation failed.
+
+## Rate limiting
+
+The standard Developer API limit is **200 requests per 10 seconds per source IP address**. Requests from integrations that share an outbound IP share this limit. Approved higher limits may differ.
+
+Production token issuance has an additional limit: **100 `POST /developer/v1/token` requests per 10 seconds per source IP**. Reuse access tokens until they expire rather than requesting a token for each API call.
+
+Exceeding a limit returns **429 Too Many Requests** and can block subsequent requests for **60 seconds**. A 10-second counting period does not mean access resumes 10 seconds after a burst.
+
+## Tips for handling rate limits
+
+- **Honor `Retry-After` when present.** Otherwise, use exponential backoff with jitter and allow for the rate-limit cooldown. Avoid immediate retries.
+
+- **Coordinate callers sharing an IP.** Budget requests across workers and integrations, including token requests.
+
+- **Reduce unnecessary requests.** Cache data where appropriate, reuse tokens, and use pagination or supported batch operations.
+
+## Requesting higher limits
+
+If your application requires a higher limit, you can request an increase. To do so:
+
+1. Analyze and document your expected API usage.
+
+2. [Submit a Developer API support ticket](</developer-api/v1/debugging#how-to-submit-a-developer-api-support-ticket>) with your account details and usage requirements.
+
+Providing clear information about your use case and anticipated volume will help expedite the review process.
+
+## Syncing data
+
+Pagination is the mechanism for moving through a result set, but building a reliable sync pipeline also requires knowing *which* records to fetch and how often. This section covers how to do an initial bulk pull and keep your local data up to date efficiently.
+
+### Initial seed pull
+
+The first time you sync a dataset, you will need to paginate through all records without any date filter. Expect this to be slow for large datasets — a business with years of transaction history may require hundreds of requests.
+
+**Recommendation:** persist the data locally (in a database or cache) rather than fetching it on every app load. Once you have a local copy, you only need to fetch new or changed records on subsequent syncs.
+
+### Incremental sync strategies
+
+After the initial seed, store the timestamp of your last successful sync and use an available date filter where its meaning matches your use case. A creation-date filter only finds newly created records. The transaction `synced_after` filter only finds transactions that have been synced to an accounting system after the specified time; it is not a general updated-at filter.
+
+Different endpoints expose different filtering capabilities:
+
+| Endpoint | Incremental param | Catches updates to existing records? | Notes |
+| --- | --- | --- | --- |
+| `GET /developer/v1/transactions` | `synced_after` | Only accounting sync events | Returns transactions with an accounting sync commit at or after the specified time. It does not return every new, changed, or late-posted transaction. |
+| `GET /developer/v1/bills` | `from_created_at` | New records only | No updated-at filter. Use webhooks or periodic full re-pulls to detect status changes such as payments and approvals. |
+| `GET /developer/v1/purchase-orders` | `from_created_at` | New records only | Use webhooks or periodic full re-pulls to detect updates to existing purchase orders. |
+
+For transaction changes that are not accounting sync events, use the relevant [webhook events](</developer-api/v1/webhooks>) or periodically reconcile the full dataset. Do not treat `synced_after` as a replacement for an updated-at filter.
+
+### Recommended polling cadence
+
+| Period | Suggested interval |
+| --- | --- |
+| Weekdays | Every 1–4 hours |
+| Weekends | Every 12 hours |
+
+Adjust based on how time-sensitive your integration is. Real-time use cases should consider [webhooks](</developer-api/v1/webhooks>) instead of polling.
+
+### Bulk pull throughput
+
+With the default limit of 200 requests per 10-second window and a maximum page size of 100 items, the theoretical maximum is **120,000 records per minute**. Actual throughput depends on endpoint latency, available records, and other requests that share the same limit.

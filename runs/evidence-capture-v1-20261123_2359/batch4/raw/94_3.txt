@@ -1,0 +1,123 @@
+
+Consensus MCP Server: Tools, Setup & Config
+Advertise
+MCP.so
+Search MCP servers, tools, integrations… ⌘ K
+Advertise Submit
+Switch language
+Toggle theme
+Sign In
+Discover Servers Remote Servers Clients CLI Loops Skills Agents Collections Rankings Feed
+Discover Remote Servers Consensus MCP Server
+Consensus MCP Server
+@ Consensus
+Documentation
+Basic information
+Transport
+Streamable HTTP
+Authentication
+OAuth
+Last updated
+2026-10-16
+Category
+Search
+Author
+Consensus
+About Consensus MCP Server
+Consensus connects assistants to a large corpus of peer-reviewed academic research. Its MCP connector supports searching, synthesizing, and building structured research outputs from scientific papers so answers can be grounded in scholarly sources.
+Connection details
+https://mcp.consensus.app/mcp
+Setup
+Claude Code
+Codex
+Cursor
+VS Code
+claude mcp add consensus --transport http https://mcp.consensus.app/mcp
+Consensus MCP Server tools
+1
+Fetch tools
+search
+Search over 200 million peer-reviewed academic papers.
+Use this tool when the user asks about research, studies, evidence,
+scientific findings, clinical trials, medical research, or academic
+literature. Covers Semantic Scholar, PubMed, Scopus, and ArXiv.
+Returns paper titles, authors, abstracts, citation counts, journal
+quality scores, and direct URLs to each paper.
+All filters are optional — only apply them when the user explicitly asks.
+Example query → filter mappings:
+- "what does the evidence say about metformin for longevity?"
+→ query="metformin longevity mortality",
+medical_mode=True, exclude_preprints=True
+- "recent peer-reviewed RCTs on SGLT2 inhibitors for heart failure"
+→ query="SGLT2 inhibitors heart failure outcomes",
+year_min=2022, exclude_preprints=True, study_types=["rct"]
+- "long-term studies of statin side effects (1+ year)"
+→ query="statin adverse effects long-term",
+duration_min=365, medical_mode=True
+- "what is dark matter?"
+→ query="dark matter" (no filters — general question)
+Frequently asked questions
+1
+What is the Consensus remote MCP server?
+The Consensus remote MCP server is a hosted Model Context Protocol endpoint at https://mcp.consensus.app/mcp, so AI assistants can connect to it without installing or running anything locally.
+2
+How do I connect to the Consensus MCP server?
+Add the endpoint https://mcp.consensus.app/mcp to any MCP-compatible client such as Claude Code, Cursor, or VS Code. The setup snippets on this page configure each client in one step.
+3
+Does the Consensus MCP server require authentication?
+Yes. Consensus uses OAuth: the first time you connect, your MCP client opens a browser window to sign in and authorize access, then reuses the credentials for future sessions.
+4
+Which transport does the Consensus MCP server use?
+Consensus exposes a Streamable HTTP endpoint, the transport used by remote MCP servers and supported by all major MCP clients.
+Comments
+More remote MCP servers
+Aard
+Aard connects Macroeconomic and other official data from 170+ publishers including World Bank, IMF, BIS, ECB, Eurostat, and National Statistical Offices. Aard is powered by a large graph of the metadata universe and an
+9apes
+The 9apes MCP server lets an AI assistant read the GitHub Actions data 9apes already collects for your organization: runs, jobs, steps, and their durations. Ask it why a build got slower, which jobs take the longest, or
+AI Trading Signals
+Live crypto trading signals via API. Full trade setups with entry, stop-loss, take-profit, leverage, and automated verification. Built for Claude Code, OpenAI Codex, and 30+ AI agents.
+A
+AXL
+Official MCP server for AXL, an AI-native sales and marketing platform
+APIXO AI
+Remote MCP for AI image, video, music, speech and custom voice generation. Discover models and input schemas for free; authorize your APIXO account to generate media and check results.
+The MCP marketplace — connect to everything in one click.
+Directory
+MCP clients
+MCP servers
+Remote MCP servers
+CLI
+Loops
+Skills
+Agents
+Codex Themes
+Resources
+DXT
+Grok Bot
+Blog
+Usecases
+Partners
+Advertise
+Protocol docs
+Discover
+Rankings
+Categories
+Tags
+Collections
+Feed
+Top servers
+Playwright MCP Server
+Figma MCP Server
+GitHub MCP Server
+PixelLab MCP Server
+Next.js MCP Server
+Blockbench MCP Plugin
+Supabase MCP Server
+View full rankings →
+Legal
+Privacy
+Terms
+© 2026 MCP.so All rights reserved. Built with ShipAny .
+Toggle theme
+Advertise

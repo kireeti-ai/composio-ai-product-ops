@@ -1,0 +1,82 @@
+{
+ "id": 4,
+ "name": "Attio",
+ "pass1_sha": "26d4e6ac0caa12fb",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "Attio implements the standard OAuth 2.0 specification, using the Authorization Code Grant Flow (RFC 6749 section 4.1).",
+    "suggested_value": "",
+    "reason": "Excerpt confirms OAuth 2.0 flow is supported.",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "By generating an API key for your workspace",
+    "suggested_value": "",
+    "reason": "Excerpt confirms API key generation is supported.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt does not explicitly mention Bearer token usage.",
+    "needs_human": false
+   },
+   {
+    "item": "basic",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No reference to Basic authentication in excerpts.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can generate an API key for a single workspace or use OAuth 2.0 for up to 25 workspaces without publishing.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms API key for one workspace and OAuth for up to 25 workspaces without publishing.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts state Attio provides a public REST API.",
+    "needs_human": false
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "verdict": "contradicted",
+    "evidence_quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+    "suggested_value": "",
+    "reason": "REST API existence contradicts SDK/CLI\u2011only claim.",
+    "needs_human": true
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt mentions MCP exists but does not state it is official",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

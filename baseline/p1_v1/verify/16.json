@@ -1,0 +1,50 @@
+{
+ "id": 16,
+ "name": "LiveAgent",
+ "pass1_sha": "d8beb1b266f99eb3",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states API key generation required for requests.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_trial_or_paid_plan :: API keys are generated within the LiveAgent account's admin panel, implying an existing subscription or trial.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt shows keys are generated via account admin panel, requiring a LiveAgent account (trial or paid).",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt references Swagger API descriptor and API versions, implying a RESTful HTTP API.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention any MCP, so cannot confirm none exist",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

@@ -1,0 +1,58 @@
+{
+ "id": 11,
+ "name": "Zendesk",
+ "category": "Support and Helpdesk",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developer.zendesk.com/api-reference/",
+  "https://developer.zendesk.com/documentation/",
+  "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+  "https://developer.zendesk.com/documentation/authentication/oauth-pkce"
+ ],
+ "one_liner": "Zendesk is a customer service and engagement platform offering REST APIs across ticketing, messaging, help center, voice, and CRM capabilities.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token",
+  "basic",
+  "api_key"
+ ],
+ "access": "self_serve_trial_or_paid_plan",
+ "access_note": "Developers can sign up for a free 14-day trial account to test the Sunshine platform and APIs.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+   "quote": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developer.zendesk.com/documentation/",
+   "quote": "Try out the Sunshine Platform with a free, 14-day trial account.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developer.zendesk.com/documentation/",
+   "quote": "Zendesk's APIs are organized around REST principles.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developer.zendesk.com/api-reference/",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ]
+}

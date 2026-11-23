@@ -1,0 +1,358 @@
+{
+ "id": 37,
+ "name": "systeme.io",
+ "started": "2026-11-23T19:44:10+05:30",
+ "searches": [
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:11+05:30"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:13+05:30"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:15+05:30"
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:18+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+   "requested_at": "2026-11-23T19:44:19+05:30",
+   "status": "ok",
+   "final_url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+   "title": "How to use the systeme.io MCP server (Model Context Protocol) - Help pages",
+   "chars": 4121,
+   "sha256": "1a169107cab79eea446dda0365d6ac4b06ed8eceb8272743f76d5187680cf051",
+   "text": "# How to use the systeme.io MCP server (Model Context Protocol)\n\nThe new MCP server feature gives users, partners, and developers a powerful new way to interact with systeme.io using AI tools.\n\nNote: The MCP server currently focuses on contact management (contacts, tags, and custom fields), newsletter management, and funnels.\n\n### 1. What is MCP?\n\nMCP (Model Context Protocol) is a standard that enables AI assistants (such as ChatGPT or Claude) to connect securely to external platforms.\n\nWith MCP, you can use natural language commands to interact with your systeme.io data. For example, you can ask ChatGPT to find a contact or add a tag just by typing a sentence.\n\nOur MCP feature currently provides direct access to specific contact-management features, allowing you to use AI to manage your contacts, tags, and contact fields.\n\n### 2. How does our MCP server work?\n\nThe systeme.io MCP server allows AI applications to access specific contact-management tools within your account.\n\nIt creates a bridge between:\n\n* The host: Your AI tool (e.g., ChatGPT, Claude).\n* The server: Your systeme.io account.\n\nOnce connected, the AI can execute commands to manage your contacts and tags automatically.\n\nFor technical details, please refer to our official MCP documentation: https://developer.systeme.io/docs/mcp-server\n\n### 3. How to generate your MCP keys\n\nTo connect an AI tool, you first need to generate a secure MCP key.\n\nClick on your profile picture and select Settings (1).\n\nIn the left menu, click MCP & API keys (2).\n\nScroll down to the MCP keys section and click Create (3).\n\nGive your key a name, set an expiration date, and click Save (4).\n\nYour key is now ready.\n\n### 4. Connect your AI tool\n\nOnce you have generated your MCP keys, follow the specific guide below to connect your preferred AI tool to systeme.io:\n\n* How to connect ChatGPT to your systeme.io account using MCP keys\n* How to connect Claude to your systeme.io account using MCP keys\n\n### 5. What can you do with our MCP server?\n\nYou can use AI tools to perform the following actions:\n\na. Contact management:\n\n* Create and update contacts: Add new contacts or update existing ones.\n* Delete contacts: Remove contacts from your list.\n* List and retrieve contacts: Use filters to list contacts or fetch specific contact details.\n* Manage tags: Create, assign, list, and remove tags from contacts.\n* Retrieve contact fields (custom fields): List available contact fields and their identifiers (slugs) so the AI can correctly fill in and update contact information.\n\nFor more information about contact management using the MCP server, check out our dedicated help article: How to manage your contacts with the systeme.io MCP server\n\nb. Newsletter management:\n\n* Create and update newsletters: Generate new newsletter drafts in seconds or update existing ones (including subject lines, preview text, and email content).\n* List and retrieve newsletters: Browse through your existing newsletters or find specific ones.\n\nNote on newsletters: Newsletters created via MCP will automatically use the default sender name and email address configured in your account settings (these cannot currently be changed via MCP). Additionally, it is not possible to delete newsletters using MCP tools.\n\nc. Funnel management:\n\n* Create funnels and opt-in steps: Use your AI tool to easily generate new funnels and specific opt-in funnel steps.\n* List and retrieve funnels: Browse through your existing funnels and opt-in steps, or search for specific ones.\n\nNote on funnels: Currently, this feature only supports creating and retrieving opt-in funnel steps. Modifying (editing) or deleting funnels and funnel steps via MCP is not supported at this time.\n\nNotes:\n\n* For security reasons, MCP keys are valid for a maximum of 90 days.\n* You can create a maximum of two MCP keys at a time.\n* This is an initial release implementation and does not yet support the recommended authentication method (OAuth). So you may experience minor stability issues.\n* OAuth support is currently planned. Once released, it will improve security and eliminate the need for key expiration.",
+   "retrieved_at": "2026-11-23T19:44:19+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://help.systeme.io/category/11216-model-context-protocol-mcp",
+   "requested_at": "2026-11-23T19:44:22+05:30",
+   "status": "ok",
+   "final_url": "https://help.systeme.io/category/11216-model-context-protocol-mcp",
+   "title": "systeme.io Help Center",
+   "chars": 1086,
+   "sha256": "f9ac53f8aa8922c64a8eeeffe9f8d027848747eb60a6e7b1c6e028fe2d84f823",
+   "text": "Loading the category\nCategories\n\u00b7 Model Context Protocol (MCP)\nAffiliation\nBlog\nBooking calendar\nContact management\nCourses\nCustomer support\nDeliverability\nEditor\nEmails\nGeneral\nMigrating to systeme.io\nModel Context Protocol (MCP)\nPayments\nSales funnels\nModel Context Protocol (MCP)\nSort by popularity\nSort A to Z\nSort by recently updated\nHow to use the systeme.io MCP server (Model Context Protocol)\nHow to connect your systeme.io account to ChatGPT using MCP keys\nHow to connect your systeme.io account to Claude using MCP keys\nHow to manage your contacts with the systeme.io MCP server\nHow to manage your funnels with the systeme.io MCP server\nHow to manage your newsletters and email campaigns with the systeme.io MCP server\nHow to manage your price plans and coupons with the systeme.io MCP server\nHow to manage your automation rules and work flows with the systeme.io MCP server\nHow to manage your digital products with the systeme.io MCP server\nHow to manage your booking calendar with the systeme.io MCP server\nHow to manage your physical products with the systeme.io MCP server",
+   "retrieved_at": "2026-11-23T19:44:22+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server",
+   "requested_at": "2026-11-23T19:44:23+05:30",
+   "status": "ok",
+   "final_url": "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server",
+   "title": null,
+   "chars": 2872,
+   "sha256": "ec0c8197e2bc91ed311905ada3b72d5e0d2a9aabf0787b493323472b31a1b135",
+   "text": "# How to manage your contacts with the systeme.io MCP server\n\nIn this article, you will learn how to manage your systeme.io contacts using natural language through our native MCP server. By connecting an AI tool like ChatGPT or Claude, you can add, update, and organize your contacts seamlessly without leaving your chat window.\n\nWhat you will need:\n\n* A systeme.io account\n* An MCP key generated from your systeme.io account (How to use the systeme.io MCP server (Model Context Protocol))\n* An AI tool connected to your systeme.io account using MCP keys:\n\nOnce your AI tool is connected to the systeme.io MCP server, you can manage your contacts using simple, natural language prompts.\n\n## 1. Managing contacts\n\nThe MCP server allows you to perform basic actions on your contacts directly from the chat. Provide the required details (such as an email address) and specify the action you want to perform.\n\na. Create a contact: You can ask the AI to add a new contact to your list.\n\nExample: Create the following contact: John Doe, systemeio.help.demo@gmail.com, (202) 555-0123.\n\nb. Update a contact: If you need to change a contact's information, simply provide the contact's email and the new details to the AI.\n\nExample: Update contact for systemeio.help.demo@gmail.com, change their name to \"Sami\" and the phone number to \"+12345678.\"\n\nc. List and retrieve contacts: You can use the AI to filter your lists or fetch specific contact details without searching through your dashboard manually.\n\nExample: List the last 3 contacts.\n\nOr: Find the contact with the email systemeio.help.demo@gmail.com.\n\nd. Delete a contact: Instruct the AI to remove a contact from your systeme.io contact list.\n\nExample: Remove contact with email systemeio.help.demo@gmail.com.\n\n## 2. Managing tags\n\nTags help you organize your contacts, and you can manage them completely through the AI chat.\n\na. Create, update, or delete tags: Tell the AI to create a new tag, change an existing tag's name, or delete a tag you no longer need.\n\nExample: Create a new tag named \"My course\".\n\nb. List tags: You can ask the AI to retrieve and display a list of all your currently existing tags.\n\nExample: List all my tags.\n\nc. Assign tags: You can instruct the AI to manage the tags assigned to specific contacts.\n\nExample: Assign the tag \"My course\" to the contact systemeio.help.demo@gmail.com.\n\n## 3. Contact fields (custom fields)\n\nThe AI can list your available contact fields and their slugs, allowing you to use them when searching for or updating contacts.\n\nExample: List my available contact fields and their slugs.\n\n> Notes:\n>\n>\n>\n>\n> The MCP server actions described above are available on all systeme.io plans.\n>\n>\n>\n> The AI will require confirmation prompts depending on the platform you use (for example, ChatGPT may ask for permission to run the action before creating or deleting a contact).",
+   "retrieved_at": "2026-11-23T19:44:23+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://help.systeme.io/article/11230-how-to-connect-your-systemeio-account-with-claude-using-mcp-keys",
+   "requested_at": "2026-11-23T19:44:25+05:30",
+   "status": "ok",
+   "final_url": "https://help.systeme.io/article/11230-how-to-connect-your-systemeio-account-with-claude-using-mcp-keys",
+   "title": null,
+   "chars": 2081,
+   "sha256": "3ba36cba11b221cf2c0be23fc7cc0226d972555ae80474a320332b2a20d2bc7b",
+   "text": "In this article, you will learn how to integrate the systeme.io MCP server with Claude so you can interact with your account data using AI.\n\nWhat you will need:\n\nA systeme.io account\n\nAn MCP key generated from your systeme.io account (How to use the systeme.io MCP server (Model Context Protocol)\n\nA Claude account (The feature is available for all plans)\n\nYou can connect systeme.io to Claude using their Connectors feature. This works on Claude.ai (Web), the Claude desktop app, and Claude mobile apps.\n\nTo do so, log in to your Claude account; on the left panel, select Customize (1).\n\nThen select Connectors (2).\n\nClick Add (3), then click Add custom connector (4).\n\nIn the setup popup, enter the following details:\n\nName (5): systeme.io\n\nRemote MCP server URL (6): https://mcp.systeme.io/mcp?mcpKey=YOURMCPKEY\n\n> Note: Replace YOURMCPKEY with the MCP key you created on your systeme.io account.\n\nClick on Continue (7).\n\nSelect No sign-in (8) under Authentication, and click Add (9).\n\nOnce connected, you'll see the systeme.io connector panel with a list of tools Claude can use on your behalf. These are divided into two categories:\n\na. Read-only tools (10): These let Claude retrieve information from your systeme.io account without making any changes (more options are available as you scroll).\n\nb. Write/delete tools (scroll further down) (11): These allow Claude to create, update, or delete data in your account (more options are available as you scroll).\n\nFor each tool, you can choose one of three permission levels that will apply to all the tools:\n\nAlways allow (12)\n\nNeeds approval (13)\n\nBlocked (14)\n\nCustom (15): Each tool can be configured individually according to your preference.\n\nOnce connected and all set, click the + button in the chat input, select Connectors, and toggle systeme.io on. Claude will now have access to your systeme.io account in this conversation.\n\nTo learn more about Claude connectors and how they can extend Claude's capabilities, see the official guide: Use connectors to extend Claude's capabilities.\n\nLast updated on November 9, 2026",
+   "retrieved_at": "2026-11-23T19:44:25+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://help.systeme.io/article/11414-how-to-manage-your-automation-rules-with-the-systeme-io-mcp-server",
+   "requested_at": "2026-11-23T19:44:26+05:30",
+   "status": "ok",
+   "final_url": "https://help.systeme.io/article/11414-how-to-manage-your-automation-rules-with-the-systeme-io-mcp-server",
+   "title": null,
+   "chars": 3872,
+   "sha256": "3208ee226482f03060d01b075eab9f4fff441e8921793f68916c4535adb54be1",
+   "text": "# How to manage your automation rules and work flows with the systeme.io MCP server\n\nIn this article, you will learn how to manage your systeme.io automation rules and workflows using natural language through our native MCP server. By connecting an AI tool like ChatGPT or Claude, you can easily create and retrieve simple automation rules to connect common events and actions without configuring them manually in your dashboard.\n\nWhat you will need:\n\n* A systeme.io account\n* An MCP key generated from your systeme.io account (How to use the systeme.io MCP server (Model Context Protocol))\n* An AI tool connected to your systeme.io account using MCP keys:\n\n## 1. Managing automation rules\n\nThe MCP server allows you to perform basic actions on your automation rules directly from the chat. You just need to specify the trigger and the action you want the rule to execute.\n\na. Create an automation rule: You can ask the AI to generate a brand-new automation rule in your account. Currently, the MCP server supports the following specific elements:\n\n* Triggers: Tags (Tag added, Tag removed), Courses (Enrolled in course, Course completed, Lecture completed, Module completed), Sales (Subscription payment failed, New sale, Sale canceled), Funnel form subscribed, Campaign completed, Booking created, and Page visited.\n* Actions: Tags (Add a tag, Remove a tag), Courses (Enroll in course, Revoke access to course), Emails (Send email, Send email to a specific address, Subscribe to campaign, Unsubscribe from campaign), Send webhook, and Send SMS.\n\nExample: Create an automation rule that adds the tag \"New Lead\" when someone subscribes to the \"Summer campaign\" funnel form.\n\nb. List and retrieve automation rules: You can use the AI to browse through your existing automation rules without having to navigate through your dashboard manually.\n\nExample: List my recent automation rules.\n\n## 2. Managing workflows\n\nThe MCP server allows you to build, manage, and activate automated workflows directly from the chat.\n\na. Create a workflow: You can ask the AI to generate a workflow and structure its sequence. Currently, the MCP server supports the following specific elements:\n\n* Triggers: Tags (Tag added, Tag removed), Courses (Enrolled in course, Course completed, Lecture completed, Module completed), Sales (Subscription payment failed, New sale, Sale canceled), Funnel form subscribed, Campaign completed, Booking created, and Page visited.\n* Actions: Tags (Add a tag, Remove a tag), Revoke access to a course, Subscribe to campaign, Unsubscribe from campaign, Send webhook, Send email to a specific address, and Send SMS.\n* Delays: You can instruct the AI to set a waiting period until a specific date and time (with timezone support).\n* Conditions (Decisions): You can split your workflow into YES/NO paths based on Tags, Registration date, Last activity date, or Contact status (including whether they have made a payment).\n\nExample: Create a new workflow that triggers when the \"Summer campaign\" funnel form is subscribed. First, add the tag \"New Leads\", wait until December 1st at 9:00 AM, and then check if the contact has the tag \"Purchased\". If yes, remove the \"New Lead\" tag.\n\nb. Activate and deactivate workflows: Workflows are inactive by default when created. You can instruct the AI to instantly turn them on or pause them.\n\nExample: Activate my \"Summer Campaign Follow-up\" workflow.\n\nc. List and retrieve workflows: You can use the AI to browse through your existing workflows and view their sequences.\n\nExample: List my 3 most recent workflows.\n\n> Notes:\n>\n>\n>\n>\n> Modifying (editing) and deleting automation rules and workflows are not supported at this time but will be added soon.\n>\n>\n>\n> The AI will require confirmation prompts depending on the platform you use (for example, ChatGPT may ask for permission to run the action before creating a rule).",
+   "retrieved_at": "2026-11-23T19:44:26+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://help.systeme.io/article/11408-how-to-manage-your-funnels-with-the-systeme-io-mcp-server",
+   "requested_at": "2026-11-23T19:44:28+05:30",
+   "status": "ok",
+   "final_url": "https://help.systeme.io/article/11408-how-to-manage-your-funnels-with-the-systeme-io-mcp-server",
+   "title": null,
+   "chars": 3198,
+   "sha256": "4a45ac99f3633271130f9aad65230fe0a9fe0b9f7f94b70acac8230299b91272",
+   "text": "# How to manage your funnels with the systeme.io MCP server\n\nIn this article, you will learn how to manage your systeme.io funnels using natural language through our native MCP server. By connecting an AI tool like ChatGPT or Claude, you can easily create and retrieve funnels and opt-in funnel steps seamlessly without leaving your chat window.\n\nWhat you will need:\n\n* A systeme.io account\n* An MCP key generated from your systeme.io account (How to use the systeme.io MCP server (Model Context Protocol))\n* An AI tool connected to your systeme.io account using MCP keys:\n\n## 1. Managing funnels\n\nThe MCP server allows you to perform basic actions on your funnels directly from the chat. Just provide the name of the funnel and specify the action you want to perform.\n\na. Create a funnel: You can ask the AI to generate a brand new funnel in your account.\n\nExample: Create a new funnel named \"Summer campaign\".\n\nb. List and retrieve funnels: You can use the AI to browse through your existing funnels or search for a specific one without having to navigate through your dashboard manually.\n\nExample: List my 3 recent funnels.\n\nOr find the funnel named \"Marketing strategies\".\n\n## 2. Managing funnel steps\n\nOnce you have a funnel created, you can instruct the AI to manage the steps inside of it.\n\na. Create an opt-in funnel step: Tell the AI to add a new opt-in step to an existing funnel. You will need to provide the name of the step and the funnel you want to add it to.\n\nExample: Create an opt-in funnel step named \"Summer leads\" for the \"Summer Campaign\" funnel.\n\n> Note: The more details you include in your prompt, the better the generated page will match your desired design and content.\n\nb. List and retrieve opt-in funnel steps: You can ask the AI to retrieve and display a list of all the opt-in steps within a specific funnel.\n\nExample: List all opt-in funnel steps for the \"Summer campaign\" funnel.\n\nc. Manage webinar funnel pages: You can instruct the AI to create all essential webinar funnel pages (including webinar registration, webinar thank you, and webinar broadcast pages). You can also easily view and search through your existing webinar funnels and their pages same as with your sales funnels.\n\nExample: Create a webinar funnel named \"Grow Your Business Webinar\" with registration, thank you, and webinar broadcast pages.\n\nd. Regenerate page content: You can use the AI to completely regenerate the content of a webinar page.\n\nExample: Regenerate the content of the webinar registration page for \"Grow Your Business Webinar\", hosted by Jane Doe, a business coach. Include two client testimonials, and target small business owners looking to attract more clients.\n\n> Notes:\n>\n>\n>\n>\n> Supported steps: Opt-in page, Opt-in thank you page, Link in bio, Info page, Inline form, Popup form, Webinar registration, Webinar thank you, and Webinar broadcast pages.\n>\n>\n>\n> Content editing: While the AI can regenerate the full content of a webinar page, small targeted edits (e.g., updating only a single headline) are not supported. It can only replace the step's full content.\n>\n>\n>\n> Deletions: Deleting funnels and funnel steps through the MCP server is not currently supported.",
+   "retrieved_at": "2026-11-23T19:44:28+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://developer.systeme.io/llms.txt",
+   "title": "developer.systeme.io/llms.txt",
+   "snippet": "to use them](https://developer.systeme.io/docs/api-recipes-and-how-to-use-them.md): Learn how to use our API through recipes\n- [Webhooks](https://developer.systeme.io/docs/webhooks.md)\n-"
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://developer.systeme.io/docs/api-recipes-and-how-to-use-them.md",
+   "title": "developer.systeme.io/docs/api-recipes-and-how-to-use-them.md",
+   "snippet": "Recipes are a simple way to walk developers through a code sample step by step to help them get started with API.\nHere is an example recipe to help you learn and use our API successfully."
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api",
+   "title": "Public API",
+   "snippet": "roadmap to the Systeme.io Public API. It details the endpoints available, their respective URLs, the expected formats for requests and responses, and outlines the basic constraints to be aware of."
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://aide.systeme.io/article/2322-comment-utiliser-api-publique-de-systeme-io",
+   "title": "Comment utiliser l'API publique de systeme.io (Interface de programmation d'applications)",
+   "snippet": "Pour en savoir plus : [Documentation de l'API](https://developer.systeme.io/reference/api)"
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "title": "How to use the systeme.io public API (Application Programming Interface)",
+   "snippet": "Learn more: [API documentation](https://developer.systeme.io/reference/api)."
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api_page-editorpages_idsave_put.md",
+   "title": "developer.systeme.io/reference/api_page-editorpages_idsave_put.md",
+   "snippet": "experience, allowing you to manage contacts, tags, and a variety of other operations integral to our platform. Adhering to RESTful conventions, our API ensures an intuitive and consistent"
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://help.systeme.io/",
+   "title": "systeme.io Help Center",
+   "snippet": "Help center and documentation for systeme.io. How to create and sell a physical product with systeme.io. How to connect your domain to systeme.io"
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api.md",
+   "title": "developer.systeme.io/reference/api.md",
+   "snippet": "# []()Introduction\nWelcome to this comprehensive guide for the Systeme.io Public API. Our API serves as a bridge, enabling developers to interact with Systeme's core functionalities programmatically."
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api_funnel-steps_id_get.md",
+   "title": "developer.systeme.io/reference/api_funnel-steps_id_get.md",
+   "snippet": "\"# Introduction\\nWelcome to the comprehensive guide for the Systeme.io Public API. Our API serves as a bridge, enabling developers to interact with Systeme's core functionalities programmatically."
+  },
+  {
+   "q": "systeme.io API documentation site:systeme.io",
+   "url": "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+   "title": "How to use systeme.io's Webhook service",
+   "snippet": "features, allowing developers to receive real-time notifications.\nIf you want to learn more about how it works, you can check [our documentation.](https://developer.systeme.io/docs/webhooks)"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://developer.systeme.io/docs/api-recipes-and-how-to-use-them.md",
+   "title": "developer.systeme.io/docs/api-recipes-and-how-to-use-them.md",
+   "snippet": "Recipes are a simple way to walk developers through a code sample step by step to help them get started with API."
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api",
+   "title": "Public API",
+   "snippet": "To begin using the Systeme.io Public API, you must first obtain an authentication key. This key is your ticket to unlocking the API's capabilities. Simply navigate to the profile settings within your"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api.md",
+   "title": "developer.systeme.io/reference/api.md",
+   "snippet": "To begin using the Systeme.io Public API, you must first obtain an authentication key. This key is your ticket to unlocking the API's capabilities. Simply navigate to the profile settings within your"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://developer.systeme.io/reference/lecture_activate.md",
+   "title": "developer.systeme.io/reference/lecture_activate.md",
+   "snippet": "\"securitySchemes\": {\n\"Api_Key\": {\n\"type\": \"apiKey\",\n\"description\": \"Value for the X-API-Key header parameter.\",\n\"name\": \"X-API-Key\",\n\"in\": \"header\"\n}\n}"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://systeme.io/dashboard/profile/public-api-settings",
+   "title": "Settings",
+   "snippet": "ones. Each key is associated with your account and should be kept secure\n- Make API Requests: Use these keys to authenticate your requests. You can include them in the request header or as a"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api_mailingcampaigns_get_collection.md",
+   "title": "developer.systeme.io/reference/api_mailingcampaigns_get_collection.md",
+   "snippet": "authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the `X-API-Key` header of each request.\\nLet us know what authentication methods you would"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://systeme.io/login",
+   "title": "Log in to your account",
+   "snippet": "Log in. Email address. Password. Forgot your password? Log in. Or. Google Continue with Google. Don't have an account? Create one for free!"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api_funnels_post.md",
+   "title": "developer.systeme.io/reference/api_funnels_post.md",
+   "snippet": "authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the `X-API-Key` header of each request.\\nLet us know what authentication methods you would"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://developer.systeme.io/reference/newsletter_schedule_put.md",
+   "title": "developer.systeme.io/reference/newsletter_schedule_put.md",
+   "snippet": "authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the `X-API-Key` header of each request.\\nLet us know what authentication methods you would"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer site:systeme.io",
+   "url": "https://developer.systeme.io/reference/course_activate.md",
+   "title": "developer.systeme.io/reference/course_activate.md",
+   "snippet": "\"securitySchemes\": {\n\"Api_Key\": {\n\"type\": \"apiKey\",\n\"description\": \"Value for the X-API-Key header parameter.\",\n\"name\": \"X-API-Key\",\n\"in\": \"header\"\n}\n}"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://systeme.io/pricing",
+   "title": "systeme.io Pricing \u2014 Free, Startup, Webinar, Unlimited Plans",
+   "snippet": "With systeme.io, every plan allows you to create unlimited sub-accounts. Each sub-account is a fully fledged systeme.io account with its own full set of limits The limits for each sub-account are the"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api_paymentprice-plans_post.md",
+   "title": "developer.systeme.io/reference/api_paymentprice-plans_post.md",
+   "snippet": "interaction pattern for all users.\\n\\n# Getting Started\\nTo begin utilizing the Systeme.io Public API, you must first obtain an authentication key. This key is your passcard to unlocking the API's"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://help.systeme.io/article/153-how-to-create-and-configure-a-price-plan",
+   "title": "How to create and configure a price plan",
+   "snippet": "To get started, you will need the following: A systeme.io account. A funnel. A payment page. 1. Using an existing price plan."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api_paymentprice-plans_id_get.md",
+   "title": "developer.systeme.io/reference/api_paymentprice-plans_id_get.md",
+   "snippet": "users.\\n\\n# Getting Started\\nTo begin utilizing the Systeme.io Public API, you must first obtain an authentication key. This key is your passcard to unlocking the API's capabilities. Simply navigate"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api",
+   "title": "Public API",
+   "snippet": "To begin using the Systeme.io Public API, you must first obtain an authentication key. This key is your ticket to unlocking the API's capabilities. Simply navigate to the profile settings within your"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://developer.systeme.io/reference/api.md",
+   "title": "developer.systeme.io/reference/api.md",
+   "snippet": "To begin using the Systeme.io Public API, you must first obtain an authentication key. This key is your ticket to unlocking the API's capabilities. Simply navigate to the profile settings within your"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+   "title": "How to use the systeme.io public API (Application Programming Interface)",
+   "snippet": "**d. Price plans and coupon management:**\n- **Create, edit, and delete:** Generate new price plans and coupons, or partially update and delete existing ones.\n- **List and search**: Browse through all"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://systeme-io-pricing.systeme.io/pricing",
+   "title": "Systeme.io Pricing Plans - Get 40% Discount Lifetime Today!",
+   "snippet": "**Get 40% Discount on all Systeme.io Plans for Lifetime!**\nChoose a plan tailored to your needs and cancel whenever you want:\n**Pay annually and get 40% Off. \ud83c\udf81**\n\n**API requests per minute**"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://systeme.io/sub-accounts",
+   "title": "Run your agency with unlimited sub-accounts",
+   "snippet": "The sub-accounts feature is available on all plans, including the free plan. There are no per-client or per-sub-account fees. You can create and manage your sub ..."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account site:systeme.io",
+   "url": "https://developer.systeme.io/reference/course_activate.md",
+   "title": "developer.systeme.io/reference/course_activate.md",
+   "snippet": "users.\\n\\n# Getting Started\\nTo begin utilizing the Systeme.io Public API, you must first obtain an authentication key. This key is your passcard to unlocking the API's capabilities. Simply navigate"
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+   "title": "How to use the systeme.io MCP server (Model Context Protocol)",
+   "snippet": "The systeme.io MCP server allows AI applications to access specific contact-management tools within your account. It creates a bridge between:."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/category/11216-model-context-protocol-mcp",
+   "title": "Model Context Protocol (MCP)",
+   "snippet": "Help center and documentation for systeme.io. How to use the systeme.io MCP server (Model Context Protocol) How to manage your contacts with the systeme.io \u2026 ..."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server",
+   "title": "Model Context Protocol (MCP)",
+   "snippet": "In this article, you will learn how to manage your systeme.io contacts using natural language through our native MCP server. (202) 555-0123."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/article/11230-how-to-connect-your-systemeio-account-with-claude-using-mcp-keys",
+   "title": "Model Context Protocol (MCP)",
+   "snippet": "In this article, you will learn how to integrate the systeme.io MCP server with Claude so you can interact with your account data using AI."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/article/11414-how-to-manage-your-automation-rules-with-the-systeme-io-mcp-server",
+   "title": "Model Context Protocol (MCP)",
+   "snippet": "In this article, you will learn how to manage your systeme.io automation rules using natural language through our native MCP server."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/article/11408-how-to-manage-your-funnels-with-the-systeme-io-mcp-server",
+   "title": "How to manage your funnels with ...",
+   "snippet": "In this article, you will learn how to manage your systeme.io funnels using natural language through our native MCP server."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/article/11229-how-to-connect-your-systemeio-account-with-chatgpt-using-mcp-keys",
+   "title": "Model Context Protocol (MCP)",
+   "snippet": "In this article, you will learn how to integrate the systeme.io MCP server with ChatGPT so you can interact with your account data using AI."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://systeme.io/",
+   "title": "Systeme.io - The only tool you need to launch your online business",
+   "snippet": "Systeme.io has all the tools you need to grow your online business. Click here to create your FREE account! Your platform for sales funnels email marketing ..."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/article/how-to-manage-your-physical-products-with-the-systeme-io-mcp-server",
+   "title": "Model Context Protocol (MCP)",
+   "snippet": "The MCP server allows you to perform full management actions on your physical products directly from the chat. Just provide the name of the ..."
+  },
+  {
+   "q": "systeme.io MCP server official site:systeme.io",
+   "url": "https://help.systeme.io/article/11407-how-to-manage-your-newsletters-and-email-campaigns-with-the-systemeio-mcp-server",
+   "title": "Model Context Protocol (MCP)",
+   "snippet": "The MCP server allows you to perform basic actions on your newsletters directly from the chat. Just provide the required details and specify the ..."
+  }
+ ],
+ "official_domain_candidates": {
+  "systeme.io": 40
+ },
+ "override_hint": "systeme.io",
+ "identity_flag": "hint_domain_from_original_list",
+ "selected_domain": "systeme.io",
+ "completed": "2026-11-23T19:44:28+05:30"
+}

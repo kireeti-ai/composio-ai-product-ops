@@ -1,0 +1,353 @@
+{
+ "id": 97,
+ "name": "higgsfield",
+ "started": "2026-11-23T19:41:17+05:30",
+ "searches": [
+  {
+   "q": "higgsfield API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:41:19+05:30"
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:41:22+05:30"
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:41:23+05:30"
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:41:26+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://higgsfield.ai/mcp",
+   "requested_at": "2026-11-23T19:41:29+05:30",
+   "status": "ok",
+   "final_url": "https://higgsfield.ai/mcp",
+   "title": "Higgsfield MCP | AI Image & Video Generation for Any Agent",
+   "chars": 14347,
+   "sha256": "4da4f019782ca09767d130174c8d9dade4049574dcd3a3ea95f7620d3d80538f",
+   "text": "# Generate Images & Videos in Claude with Higgsfield\n\nAdd Higgsfield to Claude\n\n### Cloud computer with GPU\n\n@Higgsfield Help me launch a cloud computer for rendering, creative apps or running my own models and LoRAs. Ask what I want to do, recommend the software and hardware, and show the price before starting\n\nTry in ClaudeExplore GPUs\n\n## One-click features for Claude\n\n38\n\n### Popular\n\n8\n\n* #### Short DramaNew\n\n  Turn your script into a series worth bingeing. Build your cast, shape each episode, and bring every scene to life.\n\n  Production\n\n  Try nowLearn more\n* #### Recreate aura editsNew\n\n  Turn your footage into an aura edit, or recreate a reference with your own subject, pacing, transitions, and visual effects.\n\n  ProductionMotion Design\n\n  Try nowLearn more\n* #### Product review UGC\n\n  Create a creator-style product review from your product brief and reference images.\n\n  UGC\n\n  Try nowLearn more\n* #### Ad Recreator\n\n  Turn a reference video\u2019s storytelling and sales structure into an original video ad for your product.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Ad Strategist\n\n  Turn product and competitor research into static ads tailored to your market. Explore different angles grounded in what your product offers.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Hook Multiplier\n\n  Give one video multiple opening hooks. Get complete edited versions ready to test different ways of grabbing attention.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Editorial Motion Graphics\n\n  Explain a story using editorial motion graphics and mixed visual media.\n\n  MarketingFaceless\n\n  Try nowLearn more\n* #### Stickman cartoon\n\n  Turn a story or concept into an animated explainer with simple stickman characters.\n\n  MarketingFaceless\n\n  Try nowLearn more\n\n### Paid Ads\n\n8\n\n* #### Ad Localizer\n\n  Translate and adapt your ads for new languages and markets. Keep your brand\u2019s message consistent while making the copy feel natural.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Ad Recreator\n\n  Turn a reference video\u2019s storytelling and sales structure into an original video ad for your product.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Ad Resizer\n\n  Adapt your static ads for different placements and aspect ratios. Adjust the layout to keep your product and message in focus.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Ad Strategist\n\n  Turn product and competitor research into static ads tailored to your market. Explore different angles grounded in what your product offers.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Campaign Analyst\n\n  Analyze campaign results to find what needs improvement. Get practical recommendations and a clear plan for what to test next.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Customer Voice Ads\n\n  Create static ads from real customer feedback. Build your message around the needs, concerns, and language of your audience.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Headline Multiplier\n\n  Turn one static ad into multiple headline variations. Keep the visuals consistent so you can test different messages.\n\n  Paid Ads\n\n  Try nowLearn more\n* #### Hook Multiplier\n\n  Give one video multiple opening hooks. Get complete edited versions ready to test different ways of grabbing attention.\n\n  Paid Ads\n\n  Try nowLearn more\n\n### Motion Design\n\n8\n\n* #### Recreate aura editsNew\n\n  Turn your footage into an aura edit, or recreate a reference with your own subject, pacing, transitions, and visual effects.\n\n  ProductionMotion Design\n\n  Try nowLearn more\n* #### Illustration Animation in After Effects\n\n  Bring illustrated characters to life in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Localization Motion in After Effects\n\n  Adapt animated designs for multiple languages in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Motion Design in After Effects\n\n  Create and refine editable motion design in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Paper Collage in After Effects\n\n  Turn paper cutouts into editable motion in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Presentation Animation in After Effects\n\n  Turn presentation slides into editable motion in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### SaaS Animation in After Effects\n\n  Bring SaaS interfaces and product stories to life in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Whiteboard Animation in After Effects\n\n  Turn whiteboard ideas into editable animation in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n\n### Marketing\n\n3\n\n* #### Editorial Motion Graphics\n\n  Explain a story using editorial motion graphics and mixed visual media.\n\n  MarketingFaceless\n\n  Try nowLearn more\n* #### Stickman cartoon\n\n  Turn a story or concept into an animated explainer with simple stickman characters.\n\n  MarketingFaceless\n\n  Try nowLearn more\n* #### Physical UGC video\n\n  Create a creator-style tutorial that demonstrates how a physical product works.\n\n  MarketingUGC\n\n  Try nowLearn more\n\n### Production\n\n13\n\n* #### Short DramaNew\n\n  Turn your script into a series worth bingeing. Build your cast, shape each episode, and bring every scene to life.\n\n  Production\n\n  Try nowLearn more\n* #### Recreate aura editsNew\n\n  Turn your footage into an aura edit, or recreate a reference with your own subject, pacing, transitions, and visual effects.\n\n  ProductionMotion Design\n\n  Try nowLearn more\n* #### Simulate destruction in Blender\n\n  Create cinematic destruction in Blender with fractured structures, simulated debris, dust, and editable scenes.\n\n  Production\n\n  Try nowLearn more\n* #### Animate object assembly in Blender\n\n  Animate objects assembling in Blender with coordinated parts, clear camera staging, and an editable final scene.\n\n  Production\n\n  Try nowLearn more\n* #### Build 3D scenes in Blender\n\n  Build editable Blender scenes from characters, architecture, and props, with room to refine poses and camera angles.\n\n  Production\n\n  Try nowLearn more\n* #### Create cartoon materials in Blender\n\n  Create stylized Blender materials with toon shading, expressive outlines, and adjustable textures.\n\n  Production\n\n  Try nowLearn more\n* #### Organize footage in Premiere Pro\n\n  Organize footage, synchronize sound, and prepare editable sequences in Adobe Premiere Pro.\n\n  Production\n\n  Try nowLearn more\n* #### Create VFX composites in After Effects\n\n  Combine footage and visual layers into editable VFX shots in After Effects, with matched lighting, depth, and grain.\n\n  Production\n\n  Try nowLearn more\n* #### Remove unwanted objects in After Effects\n\n  Clean up unwanted elements in After Effects while preserving the shot\u2019s movement, texture, and editable layers.\n\n  Production\n\n  Try nowLearn more\n* #### Convert images to vectors in Illustrator\n\n  Turn raster illustrations into editable Illustrator artwork with organized paths, groups, and layers.\n\n  Production\n\n  Try nowLearn more\n* #### Clean up images in Photoshop\n\n  Refine generated locations in Photoshop by fixing textures, removing unwanted objects, and preserving editable masks.\n\n  Production\n\n  Try nowLearn more\n* #### Create visual effects in TouchDesigner\n\n  Build visual effects for images and video in TouchDesigner, then preview, refine, and export the result.\n\n  Production\n\n  Try nowLearn more\n* #### Color grade footage in DaVinci Resolve\n\n  Grade footage in DaVinci Resolve Studio with balanced shots, natural skin tones, and an editable node structure.\n\n  Production\n\n  Try nowLearn more\n\n### UGC\n\n4\n\n* #### Product review UGC\n\n  Create a creator-style product review from your product brief and reference images.\n\n  UGC\n\n  Try nowLearn more\n* #### Physical UGC video\n\n  Create a creator-style tutorial that demonstrates how a physical product works.\n\n  MarketingUGC\n\n  Try nowLearn more\n* #### Unboxing UGC\n\n  Create a creator-style unboxing video with a product reveal and close-up details.\n\n  UGC\n\n  Try nowLearn more\n* #### Try-on UGC\n\n  Create a creator-style try-on video that shows how a product looks and fits.\n\n  UGC\n\n  Try nowLearn more\n\n### Faceless\n\n6\n\n* #### Editorial Motion Graphics\n\n  Explain a story using editorial motion graphics and mixed visual media.\n\n  MarketingFaceless\n\n  Try nowLearn more\n* #### Stickman cartoon\n\n  Turn a story or concept into an animated explainer with simple stickman characters.\n\n  MarketingFaceless\n\n  Try nowLearn more\n* #### Paper Diorama\n\n  Tell a story through layered paper-like scenes and cutout characters.\n\n  Faceless\n\n  Try nowLearn more\n* #### Pastel Flat 2D\n\n  Create a faceless explainer with soft pastel colors and simple flat illustrations.\n\n  Faceless\n\n  Try nowLearn more\n* #### Hand Drawn\n\n  Explain an idea through hand-drawn illustrations and animated scenes.\n\n  Faceless\n\n  Try nowLearn more\n* #### Mannequin\n\n  Tell a story with stylized mannequin figures instead of an on-camera presenter.\n\n  Faceless\n\n  Try nowLearn more\n\n### For After Effects\n\n9\n\n* #### Illustration Animation in After Effects\n\n  Bring illustrated characters to life in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Localization Motion in After Effects\n\n  Adapt animated designs for multiple languages in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Motion Design in After Effects\n\n  Create and refine editable motion design in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Paper Collage in After Effects\n\n  Turn paper cutouts into editable motion in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Presentation Animation in After Effects\n\n  Turn presentation slides into editable motion in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### SaaS Animation in After Effects\n\n  Bring SaaS interfaces and product stories to life in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Whiteboard Animation in After Effects\n\n  Turn whiteboard ideas into editable animation in After Effects.\n\n  Motion Design\n\n  Try nowLearn more\n* #### Create VFX composites in After Effects\n\n  Combine footage and visual layers into editable VFX shots in After Effects, with matched lighting, depth, and grain.\n\n  Production\n\n  Try nowLearn more\n* #### Remove unwanted objects in After Effects\n\n  Clean up unwanted elements in After Effects while preserving the shot\u2019s movement, texture, and editable layers.\n\n  Production\n\n  Try nowLearn more\n\n### For Blender\n\n4\n\n* #### Simulate destruction in Blender\n\n  Create cinematic destruction in Blender with fractured structures, simulated debris, dust, and editable scenes.\n\n  Production\n\n  Try nowLearn more\n* #### Animate object assembly in Blender\n\n  Animate objects assembling in Blender with coordinated parts, clear camera staging, and an editable final scene.\n\n  Production\n\n  Try nowLearn more\n* #### Build 3D scenes in Blender\n\n  Build editable Blender scenes from characters, architecture, and props, with room to refine poses and camera angles.\n\n  Production\n\n  Try nowLearn more\n* #### Create cartoon materials in Blender\n\n  Create stylized Blender materials with toon shading, expressive outlines, and adjustable textures.\n\n  Production\n\n  Try nowLearn more\n\n### Slash commands\n\n42\n\n* /short-drama\n\n  Turn a script into a bingeable series\n\n  Try in Claude\n* /marketing-adapt-video\n\n  Turn a reference ad into your own ad\n\n  Try in Claude\n* /vox-mixed-media\n\n  Editorial motion graphics explainer\n\n  Try in Claude\n* /content-factory\n\n  UGC series, ready to post\n\n  Try in Claude\n* /katana\n\n  Recreate aura edits from your footage\n\n  Try in Claude\n* /marketing-research-to-ads\n\n  Turn product research into static ads\n\n  Try in Claude\n* /stickman-explainer\n\n  Animated stickman explainer\n\n  Try in Claude\n* /upscale\n\n  Upscale an image or video up to 4K\n\n  Try in Claude\n* /ugc-flow\n\n  Creator-style product review from a brief\n\n  Try in Claude\n* /marketing-hook-variants\n\n  One video, several opening hooks\n\n  Try in Claude\n* /drama-ads\n\n  Turn a product into a short drama ad\n\n  Try in Claude\n* /help\n\n  List every skill\n\n  Try in Claude\n* /marketing-localize-ads\n\n  Adapt ads for new languages and markets\n\n  Try in Claude\n* /marketing-resize-ads\n\n  Refit static ads for every placement\n\n  Try in Claude\n* /marketing-headline-variants\n\n  One static ad, several headlines to test\n\n  Try in Claude\n* /marketing-feedback-to-ads\n\n  Static ads built from customer feedback\n\n  Try in Claude\n* /marketing-campaign-manager\n\n  Find what to fix and what to test next\n\n  Try in Claude\n* /physical-ugc-skill\n\n  Creator-style tutorial for a physical product\n\n  Try in Claude\n* /unboxing-ugc-skill\n\n  Creator-style unboxing with a product reveal\n\n  Try in Claude\n* /try-on-ugc-skill\n\n  Creator-style try-on that shows the fit\n\n  Try in Claude\n* /faceless-paper-diorama\n\n  A story told in layered paper scenes\n\n  Try in Claude\n* /faceless-pastel-flat-2d\n\n  Soft pastel flat 2D explainer\n\n  Try in Claude\n* /faceless-hand-drawn\n\n  Hand-drawn illustrated explainer\n\n  Try in Claude\n* /faceless-mannequin\n\n  A story told with stylized mannequins\n\n  Try in Claude\n* /use-after-effects\n\n  Editable motion design in After Effects\n\n  Try in Claude\n* /illustration-animation\n\n  Animate illustrated characters in After Effects\n\n  Try in Claude\n* /localization-motion\n\n  Localize animated designs in After Effects\n\n  Try in Claude\n* /paper-collage\n\n  Paper-cutout motion in After Effects\n\n  Try in Claude\n* /presentation-animation\n\n  Animate presentation slides in After Effects\n\n  Try in Claude\n* /saas-animation\n\n  Animate SaaS interfaces in After Effects\n\n  Try in Claude\n* /whiteboard-animation\n\n  Whiteboard explainers in After Effects\n\n  Try in Claude\n* /Shot-Composer\n\n  Composite VFX shots in After Effects\n\n  Try in Claude\n* /Shot-Cleanup\n\n  Remove unwanted objects in After Effects\n\n  Try in Claude\n* /Destruction-Studio\n\n  Simulate destruction in Blender\n\n  Try in Claude\n* /Exploded-view\n\n  Animate object assembly in Blender\n\n  Try in Claude\n* /Scene-Builder\n\n  Build editable 3D scenes in Blender\n\n  Try in Claude\n* /Cartoon-shaders\n\n  Toon materials and outlines in Blender\n\n  Try in Claude\n* /Project-sorter\n\n  Organize footage in Premiere Pro\n\n  Try in Claude\n* /Image-fixer\n\n  Clean up generated images in Photoshop\n\n  Try in Claude\n* /Vectorize\n\n  Turn images into Illustrator vectors\n\n  Try in Claude\n* /use-touchdesigner\n\n  Build visual effects in TouchDesigner\n\n  Try in Claude\n* /color-grading\n\n  Color grade footage in DaVinci Resolve\n\n  Try in Claude",
+   "retrieved_at": "2026-11-23T19:41:29+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp",
+   "requested_at": "2026-11-23T19:41:32+05:30",
+   "status": "ok",
+   "final_url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp",
+   "title": "What Is Higgsfield MCP and How It Differs",
+   "chars": 3360,
+   "sha256": "d7bbbfb0e45cc2a25b9a9e27453be1a8f885bf5b84f77dec2990aeeb9c0301ed",
+   "text": "Back\n\nHiggsfield MCP connects Higgsfield to AI agents. Connect once and generate images, videos, characters, and audio from Claude or any MCP-compatible agent, without leaving your agent. The main difference from generating on the web: MCP always uses credits. Unlimited access and free generations apply only on higgsfield.ai, so anything generated through MCP, CLI, Canvas, Supercomputer, or other automated tools deducts credits at standard rates.\n\n## What is Higgsfield MCP?\n\nMCP (Model Context Protocol) is an open protocol that lets AI agents connect to external services and call their tools. Higgsfield MCP is a connector that lets you generate images, videos, characters, and audio from Higgsfield directly inside Claude or another MCP-compatible agent. It isn't the Higgsfield API: MCP connects to your existing account and uses your existing plan credits, with no API key required. For building generation into your own product with per-request billing, see What is the Higgsfield API, and how do I get started?\n\nBecause MCP connects programmatically, using Higgsfield through it falls under the Developer Terms in the Terms of Use. In short: keep your connection secure, and you're responsible for anything an agent generates through your account.\n\n**MCP connector URL:** https://mcp.higgsfield.ai/mcp\n\n## How is MCP different from the web?\n\nThe most important difference is credit behavior: everything generated through MCP deducts credits, regardless of your plan.\n\nHow is MCP different from the web?\n\n| Criteria | Web (higgsfield.ai) | MCP |\n| --- | --- | --- |\n| Unlimited model access | Yes, where included in plan | No, always deducts credits |\n| Free generations | Yes, where included in plan | No |\n| Credit cost | Standard rates | Standard rates |\n| Generations appear in Assets | Yes | Yes |\n| Access to models | Yes | Yes |\n\n## Do Unlimited models and free generations work through MCP?\n\nNo. Unlimited access and free generations apply only on higgsfield.ai: they're intended for manual use, not for automated or programmatic generation. Anything generated through MCP, CLI, Canvas, Supercomputer, or other automated tools deducts credits at standard rates. To generate on a model where your plan includes Unlimited access without spending credits, do it on the web at higgsfield.ai.\n\n## What can I do through MCP?\n\n* **Image and video generation** across the Higgsfield model lineup, with results saved to your Assets.\n* **Marketing Studio:** paste a product link and get ready video ads built on a set of presets.\n* **Ad Multiplier:** turn a reference ad and your product or character images into new versions of the same ad with a different product, location, hook, or CTA.\n* **Genjutsu:** Motion Transfer, Object Swap, and Restyle for video.\n* **Upscale:** raise the resolution and quality of your images and videos. How Upscale works on the website is covered in How do I use Upscale?\n* **Soul characters:** train a character from photos and reuse it across generations.\n* **Higgsfield Audio** and credit balance checks.\n* **Asset Library:** browse your past generations and use them as references.\n\nFor the full list of operations and how to phrase requests to your agent, see How do I connect Higgsfield to Claude, ChatGPT, or another AI agent?\n\n## Got any questions left?\n\nShare Feedback\n\nWas this article helpful?\n\nby Higgsfield",
+   "retrieved_at": "2026-11-23T19:41:32+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.higgsfield.ai/docs/authentication",
+   "requested_at": "2026-11-23T19:41:34+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.higgsfield.ai/",
+   "requested_at": "2026-11-23T19:42:20+05:30",
+   "status": "ok",
+   "final_url": "https://docs.higgsfield.ai/docs",
+   "title": "Higgsfield API - Higgsfield API Docs",
+   "chars": 1385,
+   "sha256": "ece5c073c704bc4f38b36ea55bede0b8d162cede750dd0502b8802cdd20d0bf7",
+   "text": "Higgsfield provides one integration point for generative media models. Submit a request to a model endpoint, then poll for the result or receive a webhook when processing finishes.\n\n## Make a request\n\nEvery model uses the same authentication and asynchronous request lifecycle. The JSON body depends on the selected model.\nStart with Genjutsu motion transfer. Replace the example media URLs with publicly accessible URLs for your own video and reference image. The source video must be at least 4 seconds long.\n\n```\ncurl --request POST \\\n  --url https://api.higgsfield.ai/higgsfield/genjutsu/motion-transfer/v1.0 \\\n  --header \"Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\n    \"video_url\": \"https://example.com/input.mp4\",\n    \"image_urls\": [\"https://example.com/input.jpg\"]\n  }'\n```\n\nThe API immediately returns a request identifier and links for checking or canceling the request.\n\n```\n{\n  \"status\": \"queued\",\n  \"request_id\": \"d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff\",\n  \"status_url\": \"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/status\",\n  \"cancel_url\": \"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/cancel\"\n}\n```\n\n## Choose your path\n\nOutput files are available for at least seven days. Download completed output to your own storage for long-term retention.",
+   "retrieved_at": "2026-11-23T19:42:20+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.higgsfield.ai/docs",
+   "requested_at": "2026-11-23T19:42:22+05:30",
+   "status": "ok",
+   "final_url": "https://docs.higgsfield.ai/docs",
+   "title": "Higgsfield API - Higgsfield API Docs",
+   "chars": 2126,
+   "sha256": "3c76281533ef342c5448cc3c0c4681598d0337e31be780e5f7fa3f3e1a4f5aeb",
+   "text": "Higgsfield provides one integration point for generative media models. Submit a request to a model endpoint, then poll for the result or receive a webhook when processing finishes.\n\n## Run your first request\n\nCreate credentials and complete a generation from submission to result.\n\n## Get an API key\n\nCreate and manage server-side credentials in Higgsfield Console.\n\n## Make a request\n\nEvery model uses the same authentication and asynchronous request lifecycle. The JSON body depends on the selected model.\nStart with Genjutsu motion transfer. Replace the example media URLs with publicly accessible URLs for your own video and reference image. The source video must be at least 4 seconds long.\n\n```\ncurl --request POST \\\n  --url https://api.higgsfield.ai/higgsfield/genjutsu/motion-transfer/v1.0 \\\n  --header \"Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\n    \"video_url\": \"https://example.com/input.mp4\",\n    \"image_urls\": [\"https://example.com/input.jpg\"]\n  }'\n```\n\n```\ncurl --request POST \\\n  --url https://api.higgsfield.ai/higgsfield-ai/soul/v2/standard \\\n  --header \"Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\n    \"prompt\": \"Editorial portrait in soft daylight\"\n  }'\n```\n\nThe API immediately returns a request identifier and links for checking or canceling the request.\n\n```\n{\n  \"status\": \"queued\",\n  \"request_id\": \"d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff\",\n  \"status_url\": \"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/status\",\n  \"cancel_url\": \"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/cancel\"\n}\n```\n\n## Choose your path\n\n## Build a prototype\n\nUse the Python or TypeScript SDK to submit a request and wait for its result.\n\n## Ship to production\n\nLearn the request lifecycle, polling, webhooks, errors, and limits.\n\n## Upload media\n\nUpload input files to Higgsfield storage before generation.\n\nOutput files are available for at least seven days. Download completed output to your own storage for long-term retention.",
+   "retrieved_at": "2026-11-23T19:42:22+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.higgsfield.ai/docs/concepts/requests",
+   "requested_at": "2026-11-23T19:42:24+05:30",
+   "status": "ok",
+   "final_url": "https://docs.higgsfield.ai/docs/concepts/requests",
+   "title": "Requests and lifecycle - Higgsfield API Docs",
+   "chars": 3491,
+   "sha256": "c3f7920bca587b9890691a0c29c5da4c79ff6c9ede18f4d0ddb0bab67cd31058",
+   "text": "Generation is asynchronous. A successful submission creates a request and returns immediately while the work continues in the background.\n\n## Request lifecycle\n\n| Status | Terminal | Meaning |\n| --- | --- | --- |\n| `queued` | No | The request is waiting to start and may still be canceled. |\n| `in_progress` | No | Generation has started and can no longer be canceled. |\n| `completed` | Yes | Output URLs are available in the response. |\n| `failed` | Yes | Generation failed. The response may include an `error`. |\n| `nsfw` | Yes | Input or output was rejected by content moderation. |\n| `canceled` | Yes | The request was canceled before processing started. |\n\nStore the `request_id` as soon as a request is accepted. It is the stable identifier used by polling, cancellation, webhook deduplication, and support.\n\nSend an `Idempotency-Key` with generation submissions so an ambiguous timeout can be retried without creating a duplicate request.\n\n## Initial response\n\n```\n{\n  \"status\": \"queued\",\n  \"request_id\": \"d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff\",\n  \"status_url\": \"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/status\",\n  \"cancel_url\": \"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/cancel\",\n  \"expires_after\": 604800\n}\n```\n\nUse the URLs from the response instead of constructing them manually. `expires_after` is how long, in seconds, the request\u2019s data is kept after it finishes. See Data retention and deletion.\n\n## Completed output\n\nThe output field depends on the model\u2019s output type.\n\n```\n{\n  \"status\": \"completed\",\n  \"request_id\": \"d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff\",\n  \"expires_at\": \"2026-10-31T12:05:12.481Z\",\n  \"images\": [\n    { \"url\": \"https://cdn.example.com/image-1.jpg\" },\n    { \"url\": \"https://cdn.example.com/image-2.jpg\" }\n  ]\n}\n```\n\n```\n{\n  \"status\": \"completed\",\n  \"request_id\": \"d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff\",\n  \"video\": {\n    \"url\": \"https://cdn.example.com/video.mp4\"\n  }\n}\n```\n\n```\n{\n  \"status\": \"completed\",\n  \"request_id\": \"d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff\",\n  \"audio\": {\n    \"url\": \"https://cdn.example.com/audio.mp3\"\n  },\n  \"audios\": [\n    { \"url\": \"https://cdn.example.com/audio.mp3\" }\n  ]\n}\n```\n\nSome video and 3D operations can return additional artifacts such as `zip`, `mov`, `jsx`, `fbx`, or `ply`.\nOnce a request finishes, its status response includes `expires_at`: the time after which its files are deleted and output URLs stop working.\n\n## Cancel a request\n\nCancellation is available only while every job in the request remains queued.\n\n```\ncurl --request POST \\\n  --url \"https://api.higgsfield.ai/requests/${REQUEST_ID}/cancel\" \\\n  --header \"Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}\"\n```\n\nA successful cancellation returns `202 Accepted` with an empty body. If processing has started, the API returns `400 Bad Request`.\n\n## Delete a request\n\nDelete a finished request\u2019s files, prompt and parameters immediately:\n\n```\ncurl --request DELETE \\\n  --url \"https://api.higgsfield.ai/requests/${REQUEST_ID}\" \\\n  --header \"Authorization: Key ${HF_API_KEY_ID}:${HF_API_KEY_SECRET}\"\n```\n\nThe API returns `200 OK` with `{\"request_id\": \"...\", \"status\": \"deleted\"}`, also when the request was already deleted. A request that is still `queued` or `in_progress` returns `409 Conflict`. Billing records are kept.\n\nRequest data is kept for seven days after the request finishes, or less if you shorten the retention. Copy completed media to your own storage if you need it for longer.",
+   "retrieved_at": "2026-11-23T19:42:24+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://docs.higgsfield.ai/",
+   "title": "Higgsfield API",
+   "snippet": "Higgsfield provides one integration point for generative media models. Submit a request to a model endpoint, then poll for the result or receive a webhook when ..."
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://docs.higgsfield.ai/docs",
+   "title": "Higgsfield API",
+   "snippet": "API key\nCreate and manage server-side credentials in Higgsfield Console.\n## Make a request\nEvery model uses the same authentication and asynchronous request lifecycle. The JSON body depends on the"
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://docs.higgsfield.ai/docs/concepts/requests",
+   "title": "Requests and lifecycle",
+   "snippet": "  \"status_url\": \"https://api.higgsfield.ai/requests/d7e6c0f3-6699-4f6c-bb45-2ad7fd9158ff/status\",\n\"cancel_url\":"
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://docs.higgsfield.ai/docs/llms-full.txt",
+   "title": "docs.higgsfield.ai/docs/llms-full.txt",
+   "snippet": "Handle synchronous API errors and terminal generation failures.\nErrors can occur before a request is accepted or later during generation."
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://docs.higgsfield.ai/docs/quickstart",
+   "title": "Quickstart",
+   "snippet": "This guide uses the REST API so you can see the complete request lifecycle. It takes about five minutes."
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://higgsfield.ai/higgsfield-api",
+   "title": "Higgsfield API | Generative Video & Image Models via API",
+   "snippet": "[Read the docs](https://docs.higgsfield.ai/docs)\n1. 1\n### Configure credentials\n```\nexport HF_API_KEY_ID=\"your-api-key-id\"export HF_API_KEY_SECRET=\"your-api-key-secret\"\n```"
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://open.higgsfield.ai/quick-start",
+   "title": "Quick start - Higgsfield API",
+   "snippet": "Higgsfield is a generative media API. It serves image and video models (Seedance, Kling, Soul, Flux, Wan and more) behind one REST interface."
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://open.higgsfield.ai/explore",
+   "title": "Open Higgsfield AI | Official Higgsfield API Platform",
+   "snippet": "Access the official Higgsfield API for image and video generation. Explore models and pricing, get an API key, and start building."
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://docs.higgsfield.ai/docs/openapi.json",
+   "title": "docs.higgsfield.ai/docs/openapi.json",
+   "snippet": "API\",\n\"version\": \"2.0.0\",\n\"description\": \"Submit generation requests and retrieve their status and outputs.\"\n},\n\"servers\": [\n{\n\"url\":"
+  },
+  {
+   "q": "higgsfield API documentation",
+   "url": "https://docs.higgsfield.ai/docs/models/soul-standard/generate",
+   "title": "SOUL \u2014 Text to image API",
+   "snippet": "the character reference.\n##\n\u200b\nQuick start\n```\ncurl --request POST \\\n--url https://api.higgsfield.ai/higgsfield-ai/soul/standard \\\n--header \"Authorization: Key"
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://docs.higgsfield.ai/docs/authentication",
+   "title": "Authentication - Higgsfield API Docs",
+   "snippet": "Create and manage API credentials in Higgsfield Console. Each credential consists of a key ID and a secret. Use separate credentials for development and ..."
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://open.higgsfield.ai/quick-start",
+   "title": "Quick start - Higgsfield API",
+   "snippet": "Higgsfield is a generative media API. It serves image and video models. Create and manage API keys"
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://mindcloud.co/docs/universal/rest/higgsfield-ai/latest/introduction/authentication",
+   "title": "Higgsfield AI API Authentication - Universal API",
+   "snippet": "Every Higgsfield AI API request through MindCloud needs two things: a MindCloud API Key and a connectionId for your Higgsfield AI account."
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://www.scalekit.com/blog/higgsfield-mcp-vs-api",
+   "title": "Higgsfield MCP vs Higgsfield API for AI Agents",
+   "snippet": "Authentication is account sign-in through a browser OAuth flow. Higgsfield's own MCP page states that no API key is required,"
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://docs.higgsfield.ai/",
+   "title": "Higgsfield API - Higgsfield API Docs",
+   "snippet": "Create and manage server-side credentials in Higgsfield Console. Make a request. Every model uses the same authentication and asynchronous request lifecycle."
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://github.com/higgsfield-ai/cli/issues/72",
+   "title": "Website API returns Session expired because apps-marketplace rejects ...",
+   "snippet": "Summary. higgsfield auth login completes successfully, and user/workspace APIs accept the stored OAuth token, but every higgsfield website API ..."
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://apidog.com/blog/higgsfield-api/",
+   "title": "How to Use Higgsfield API",
+   "snippet": "Higgsfield API requires API key authentication for all endpoints. You include the key in the Authorization header as a Bearer token."
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://www.youtube.com/watch?v=Vn6zMLpg-g0",
+   "title": "How To Use The Higgsfield API (Full Tutorial 2026)",
+   "snippet": "This Complete Higgsfield AI Tutorial, To Check Official API Availability, Review Documentation, Configure Authentication, And Test Supported\u00a0..."
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://open.higgsfield.ai/explore",
+   "title": "Open Higgsfield AI | Official Higgsfield API Platform",
+   "snippet": "Access the official Higgsfield API for image and video generation. Explore models and pricing, get an API key, and start building."
+  },
+  {
+   "q": "higgsfield API authentication OAuth API key developer",
+   "url": "https://www.tryclout.ai/blog/higgsfield-api-guide",
+   "title": "Higgsfield API guide for creator campaign workflows - Clout AI",
+   "snippet": "Create and handle your Higgsfield API key. The authentication documentation describes a key ID and secret managed in the Higgsfield Console."
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://open.higgsfield.ai/pricing",
+   "title": "Pricing | Higgsfield API",
+   "snippet": "Add funds to unlock more concurrent generation requests for your account\n### 2 concurrent generations\nNeed higher limits?"
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://higgsfield.ai/pricing",
+   "title": "Pricing plans",
+   "snippet": "Explore pricing and choose a plan that fits your creative goals. Generate AI videos, animations, and ads with unlimited access to powerful AI video tools."
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://higgsfield.ai/blog/higgsfield-api",
+   "title": "Meet the Higgsfield API: How It Works and What You Get",
+   "snippet": "You add a payment method, top up a balance, and each generation deducts its cost from the balance. Access does not require a plan or a seat fee.\n- **The balance is held in US dollars.** Every price"
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://open.higgsfield.ai/explore",
+   "title": "Open Higgsfield AI | Official Higgsfield API Platform",
+   "snippet": "Access the official Higgsfield API for image and video generation. Explore models and pricing, get an API key, and start building."
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://cloud.higgsfield.ai/terms-of-service",
+   "title": "API Terms of Service | Higgsfield API",
+   "snippet": "access, and API usage draws on a separate prepaid API balance (Section 9). Consumer plans (including subscription tiers marketed as \u201cUnlimited\u201d) do not fund or entitle you to use of the API Service."
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://higgsfield.ai/blog/generate-ai-videos-higgsfield-api",
+   "title": "How To Generate AI Videos Straight From the Higgsfield API",
+   "snippet": "[higgsfield.ai](http://higgsfield.ai) account are separate products with separate billing. Website plans, plan credits, and Unlimited access do not extend to the API, and API charges never touch them."
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://higgsfield.ai/blog/unlimited-nano-banana-2-plans",
+   "title": "Where to Get Unlimited Nano Banana 2 in 2026: Plans, Daily Caps, and Cost per Image",
+   "snippet": "| Metered API | Gemini Developer API | Per image, $0.045 to $0.151 | Rate limits only | 4K | Your pipeline |"
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://higgsfield.ai/higgsfield-api",
+   "title": "Higgsfield API | Generative Video & Image Models via API",
+   "snippet": "# OPEN HIGGSFIELD API\nSign up for 15% off all sale models - then raise your favorites up to 75%, plus $15 on your balance. Your first result is minutes away"
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://higgsfield.ai/blog/higgsfield-pricing-explained",
+   "title": "Higgsfield Pricing Explained: Plans, Credits, and What\u2019s Included",
+   "snippet": "| Generations from your own code | Higgsfield API (separate balance) |"
+  },
+  {
+   "q": "higgsfield API access pricing plans developer account",
+   "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+   "title": "What is the Higgsfield API, and how do I get started?",
+   "snippet": "## How is API usage billed?\nBilling is pay-as-you-go from a US dollar balance, and the minimum top-up is $5. Video models are priced per second of output and image models per image; DoP is the"
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfieldmcp.com",
+   "title": "Higgsfield MCP AI",
+   "snippet": "This is an independent resource and is not affiliated with higgsfield.ai. Always confirm setup steps against the [official Higgsfield MCP documentation](https://higgsfield.ai/mcp)."
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield.ai/mcp",
+   "title": "Higgsfield MCP | AI Image & Video Generation for Any Agent",
+   "snippet": "@Higgsfield Help me launch a cloud computer for rendering, creative apps or running my own models and LoRAs. Ask what I want to do, recommend the software and hardware, and show the price before"
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield.ai/enterprise-help-center/platform/integrations",
+   "title": "MCP, CLI & Plugins",
+   "snippet": "Control**, **Soul** characters and **Elements**; create voiceover, voice clones and dubbing; send outputs to folders; run **Ad Multiplier**. Outputs appear in **Assets**. Voice clones: 5 per"
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield.ai/blog/higgsfield-mcp-moves-to-cimd",
+   "title": "Higgsfield MCP Moves to CIMD: What Developers Need to Know",
+   "snippet": "For a client that uses an official MCP SDK, update to a version that supports CIMD and pass the document URL in the client configuration."
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield-enterprise-help.higgsfield.app/docs/mcp-cli-integrations",
+   "title": "MCP, CLI & Integrations",
+   "snippet": "videos, characters and audio from Claude or any MCP-compatible agent without opening the app. Server URL: **https://mcp.higgsfield.ai/mcp**\n1\nAdd the connector\nIn Claude (web or Desktop):"
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield.ai/blog/unlimited-mcp",
+   "title": "Meet Higgsfield Unlimited MCP: How It Works and What You Get",
+   "snippet": "Higgsfield launched Unlimited access for MCP, the first time unlimited generation works directly inside Claude and ChatGPT."
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield.ai/blog/mcp-for-marketers",
+   "title": "MCP for Marketers: Creatives Without Leaving the Chat",
+   "snippet": "The full catalog with ready-to-run prompts for every skill is on the [Higgsfield MCP page](https://higgsfield.ai/mcp)."
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield.ai/cli",
+   "title": "Higgsfield CLI | AI Image & Video Tools for Any Agent",
+   "snippet": "No. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account. No API keys to manage or configure."
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield.ai/blog/Generate-AI-Videos-From-Claude-with-Higgsfield-MCP",
+   "title": "How to Generate AI Videos in Claude With the Higgsfield MCP Connector (2026)",
+   "snippet": "generate AI videos in Claude, add Higgsfield as a custom connector with the URL [https://mcp.higgsfield.ai/mcp](https://mcp.higgsfield.ai/mcp), sign in to your Higgsfield account, and describe the"
+  },
+  {
+   "q": "higgsfield MCP server official",
+   "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp",
+   "title": "What is Higgsfield MCP, and how is it different from the web?",
+   "snippet": "**MCP connector URL:** [https://mcp.higgsfield.ai/mcp](https://mcp.higgsfield.ai/mcp)"
+  }
+ ],
+ "official_domain_candidates": {
+  "higgsfield.ai": 32,
+  "higgsfieldmcp.com": 1,
+  "higgsfield.app": 1
+ },
+ "identity_flag": "multiple_candidate_domains_review_identity",
+ "selected_domain": "higgsfield.ai",
+ "completed": "2026-11-23T19:42:24+05:30"
+}

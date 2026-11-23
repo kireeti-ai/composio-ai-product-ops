@@ -1,0 +1,47 @@
+{
+ "method": "resource/operation coverage measured from stored pages (METHOD+path pairs, headings naming resources), not keyword counts",
+ "apps": {
+  "20": {
+   "name": "Gladly",
+   "measured_operations": [],
+   "verdict": "insufficient",
+   "basis": "REST API exists (developer.gladly.com lists it) but 0 operations and no resource catalogue in the retrieved pages; only webhook/API-token tutorials",
+   "to_resolve": "fetch the Gladly REST API reference index"
+  },
+  "33": {
+   "name": "LinkedIn Ads",
+   "measured_operations": [],
+   "verdict": "resource-level sufficient; operations not itemized",
+   "basis": "pages name core resources Ad Accounts, Account Users, Campaign Groups, Campaigns, Creatives and 6 API product areas (Advertising, Community Management, Lead Sync, Conversions, Event Management, Marketing Program); 0 METHOD+path pairs",
+   "to_resolve": "operation-level detail optional"
+  },
+  "47": {
+   "name": "Ecwid",
+   "measured_operations": [
+    "POST /api/v3/1003/customers"
+   ],
+   "verdict": "partial",
+   "basis": "REST confirmed with 1 operation (POST /api/v3/{storeId}/customers); orders/products only mentioned in a glossary; legacy api-docs host plus docs.ecwid.com",
+   "to_resolve": "fetch the docs.ecwid.com REST reference index"
+  },
+  "66": {
+   "name": "Neo4j",
+   "measured_operations": [
+    "GET /v1/instances"
+   ],
+   "verdict": "partial + scope ambiguous",
+   "basis": "1 operation (GET /v1/instances) = Aura management API; the database HTTP API is a separate surface ('Not available on Aura', deprecated)",
+   "to_resolve": "decide which Neo4j API the toolkit targets"
+  },
+  "71": {
+   "name": "Notion",
+   "measured_operations": [
+    "GET /v1/users/me",
+    "POST /v1/pages"
+   ],
+   "verdict": "partial",
+   "basis": "2 operations with paths (POST /v1/pages, GET /v1/users/me); guides name pages, databases/data sources, blocks, comments, users, search, webhooks; reference index not retrieved",
+   "to_resolve": "fetch the Notion API reference index"
+  }
+ }
+}

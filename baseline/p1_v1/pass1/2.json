@@ -1,0 +1,93 @@
+{
+ "id": 2,
+ "name": "HubSpot",
+ "category": "CRM and Sales",
+ "model": "gemini-2.5-flash",
+ "pages_read": [
+  "https://developers.hubspot.com/docs/api-reference/latest/overview",
+  "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+  "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "https://developers.hubspot.com/docs"
+ ],
+ "one_liner": "Build custom CRM and data-driven website experiences on HubSpot.",
+ "auth_methods": [
+  "oauth2",
+  "api_key",
+  "bearer_token"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Service keys, which allow direct REST API access, are currently in public beta.",
+ "api_types": [
+  "rest",
+  "sdk_or_cli_only"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+   "quote": "You can then include your service key as a *Bearer* token in your preferred API client or programming language.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "quote": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "quote": "Developer API keys... You\u2019ll provide the key value in the `hapikey` query parameter, usually with the `appId` query parameter which corresponds to the app you\u2019re making changes to.",
+   "quote_found": false,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+   "quote": "If you need to set up a simple third-party integration with HubSpot or try out specific HubSpot API endpoints, you can use service keys to query HubSpot\u2019s REST APIs directly",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developers.hubspot.com/docs",
+   "quote": "1. Install the HubSpot CLI globally 2. Authorize your HubSpot account 3. Start building",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access_note",
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+   "quote": "This functionality is currently in public beta.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+   "quote": "Service keys to query HubSpot\u2019s REST APIs directly without having to use the CLI or other platform developer tools first.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developers.hubspot.com/docs",
+   "quote": "1. Install the HubSpot CLI globally",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developers.hubspot.com/docs",
+   "quote": "1. Install the HubSpot CLI globally",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

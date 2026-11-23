@@ -1,0 +1,281 @@
+{
+ "id": 68,
+ "name": "MongoDB Atlas",
+ "started": "2026-11-23T19:37:04+05:30",
+ "searches": [
+  {
+   "q": "MongoDB Atlas API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:06+05:30"
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:07+05:30"
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:09+05:30"
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:11+05:30"
+  }
+ ],
+ "fetched": [],
+ "candidate_hits": [
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://docs.atlas.mongodb.com/reference/api/clusters-get-all-key",
+   "title": "Get All Clusters in All Projects",
+   "snippet": "## Request\u00b6\nBase URL: `https://cloud.mongodb.com/api/atlas/v1.0`\n```\nGET /clusters\n```"
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://mongodb.com/docs/atlas/configure-api-access",
+   "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs",
+   "snippet": "when configuring your preferred authentication method to complete the following procedures.\nAll Atlas Administration API endpoints have the following base URL:\n"
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://www.mongodb.com/docs/api/",
+   "title": "MongoDB REST APIs",
+   "snippet": "The MongoDB Atlas Administration API allows developers to manage all components in MongoDB Atlas. The Atlas Administration API supports OAuth2 Service Accounts ..."
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://mongodb.com/docs/api/doc/atlas-admin-api-v2/llms.txt",
+   "title": "mongodb.com/docs/api/doc/atlas-admin-api-v2/llms.txt",
+   "snippet": "exchange its client ID and secret for an access token using the OAuth 2.0 Client Credentials flow. Atlas provides a token endpoint at `POST https://cloud.mongodb.com/api/oauth/token`, which returns"
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://mongodb.com/docs/atlas/api/api-rate-limit",
+   "title": "Atlas Administration API Rate Limits - Atlas - MongoDB Docs",
+   "snippet": "You can view the rate limits for all the endpoint sets and scopes by sending a `GET` request to the `rateLimits` resource."
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://mongodb.com/docs/api/doc/atlas-admin-api-v2",
+   "title": "Atlas Admin API v2 documentation",
+   "snippet": "exchange its client ID and secret for an access token using the OAuth 2.0 Client Credentials flow. Atlas provides a token endpoint at `POST https://cloud.mongodb.com/api/oauth/token`, which returns"
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://mongodb.com/docs/atlas/cli/current/command/atlas-api",
+   "title": "atlas api - Atlas CLI - MongoDB Docs",
+   "snippet": "Atlas CLI.\nFor more information on - Atlas Administration API see: [https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/](https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/) - Getting"
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://mongodb.com/docs/atlas/api",
+   "title": "Atlas Programmatic Access - Atlas - MongoDB Docs",
+   "snippet": "resources.\n## Atlas Administration API\nProgrammatically perform administrative tasks on your Atlas cluster outside of the Atlas UI with the Atlas Administration API. Atlas Administration API"
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://mongodb.com/docs/api/doc/atlas-admin-api-v2/operation/operation-getgroupdbaccesshistorycluster",
+   "title": "Return Database Access History for One Cluster by Cluster Name | Atlas Admin API v2 documentation",
+   "snippet": "\nReturns the access logs of one cluster identified by the cluster's name. Access logs contain a list of authentication requests made against your cluster. You can't use this feature on"
+  },
+  {
+   "q": "MongoDB Atlas API documentation",
+   "url": "https://mongodb.com/docs/atlas/atlas-ui/triggers/functions/api",
+   "title": "MongoDB API Reference - Atlas - MongoDB Docs",
+   "snippet": "## collection.distinct()\nFinds documents that match a given query filter and returns a list of distinct values for a specific field across all matched documents."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "title": "Atlas Administration API Authentication Methods",
+   "snippet": "Learn how to authenticate Atlas Administration API requests using Service Accounts with OAuth 2.0 or API Keys with HTTP Digest Authentication to manage Atlas."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://www.mongodb.com/company/blog/product-release-announcements/introducing-mongodb-atlas-service-accounts-via-oauth-2-0",
+   "title": "Introducing MongoDB Atlas Service Accounts Via OAuth 2.0",
+   "snippet": "These API keys enable MongoDB Atlas project owners to authenticate access for their users. API keys include a public key and a private key."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2",
+   "title": "Atlas Admin API v2 documentation",
+   "snippet": "The Atlas Administration API supports OAuth2 Service Accounts and HTTP Digest-based API keys. Service accounts are the recommended authentication method"
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "title": "Get Started with the Atlas Administration API",
+   "snippet": "The Atlas Administration API uses one of two authentication methods to authenticate requests: service account or API keys. You'll need the keys or secret that ..."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://www.mongodb.com/products/updates/now-available-service-accounts-for-atlas-admin-api-access-in-atlas-for-government/",
+   "title": "Service Accounts for Atlas Admin API Access in Atlas for Government",
+   "snippet": "MongoDB Atlas for Government, enabling OAuth 2.0\u2013based, machine-to-machine authentication as an alternative to programmatic API keys."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://github.com/elastic/integrations/issues/18676",
+   "title": "[MongoDB Atlas] Support Service Accounts (OAuth 2.0 Client ...",
+   "snippet": "We are trying to authenticate the MongoDB Atlas integration using MongoDB Atlas Service Accounts (OAuth 2.0 Client Credentials) instead of the ..."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://stackoverflow.com/questions/77616796/connect-to-mongodb-with-api-public-and-private-key-instead-of-connection-string",
+   "title": "Connect to MongoDB with API public and private key instead of connection ...",
+   "snippet": "The API keys in Atlas are, as far as I know, about providing programmatic access to managing the cluster (similar to Atlas users). Credentials ..."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://developer.hashicorp.com/vault/api-docs/secret/mongodbatlas",
+   "title": "MongoDB Atlas - Secrets Engines - HTTP API | Vault",
+   "snippet": "The MongoDB Atlas Secrets Engine generates Programmatic API keys for MongoDB Atlas. This allows one to manage the lifecycle of these MongoDB Atlas secrets ..."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+   "title": "Guidance for Atlas Authentication - Atlas Architecture Center",
+   "snippet": "API key-based authentication uses HTTP Digest authentication to protect requests. To further enhance security and minimize the risk of unauthorized access:."
+  },
+  {
+   "q": "MongoDB Atlas API authentication OAuth API key developer",
+   "url": "https://hoop.dev/blog/mongodb-atlas-credentials-separating-administration-api-keys-from-database-user-accounts",
+   "title": "separating administration API keys from database user accounts",
+   "snippet": "MongoDB Atlas credentials split into two groups with different targets. Administration API keys manage cloud infrastructure like clusters, while ..."
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://mongodb.com/pricing",
+   "title": "Pricing",
+   "snippet": "resources](https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/).\n- **Flex:** Ideal for development and testing, offering the lowest cost option with certain [feature"
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://mongodb.com/docs/atlas/configure-api-access",
+   "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs",
+   "snippet": "To use the Atlas Administration API to manage your Atlas clusters, you must authenticate your API requests with one of the following authentication methods:\n- Service account access tokens ([OAuth"
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://mongodb.com/cloud/atlas/register?adgroup=200422946074&cq_cmp=23930728960&utm_ad_campaign_id=23930728960",
+   "title": "Sign Up for MongoDB Atlas, Explore a Free Account",
+   "snippet": "environment.\nSTORAGE\n512 MB\nRAM\nShared\nvCPU\nShared\nMax Conn.\n500\nFlex\n$0.011\n/hour\nUp to $30/month\nFor application development and testing; resources and costs scale to your needs.\n"
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://mongodb.com/services/support/atlas-support-plans",
+   "title": "MongoDB Atlas Support Plans & Pricing",
+   "snippet": "times and additional security features, we have a plan for you.\n| Security | Developer | Pro | Enterprise | Platinum |\n|---|---|---|---|---|\n| Granular database auditing | Available as add-on"
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://mongodb.com/products/updates/now-ga-mongodb-atlas-flex-tier",
+   "title": "mongodb.com/products/updates/now-ga-mongodb-atlas-flex-tier",
+   "snippet": "Customers will be billed an $8 base fee and additional fees based on usage. And pricing is capped at $30 per month. This prevents runaway costs\u2014a persistent challenge with serverless architectures."
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://mongodb.com/docs/atlas/billing/atlas-flex-costs.md",
+   "title": "mongodb.com/docs/atlas/billing/atlas-flex-costs.md",
+   "snippet": "| Total Monthly Cost | Total Hourly Cost |\n| --- | --- | --- | --- | --- |\n| 0 - 100 (Base) | $8.00 | 0% | $8.00 | $0.0110 |\n| 100 - 200 | $7.00 | 12.5% | $15.00 | $0.0205 |\n| 200 - 300 | $6.00 |"
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://mongodb.com/pricing.md",
+   "title": "mongodb.com/pricing.md",
+   "snippet": "### Flex\n\\$0.011/hour\nUp to \\$30/month\nFor application development and testing, with on-demand burst capacity for unpredictable traffic.\n| STORAGE | RAM | vCPU |\n| :---- | :---- | :---- |\n| Up to"
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://mongodb.com/docs/atlas/billing/atlas-flex-costs",
+   "title": "Estimate Atlas Flex Cluster Costs and Usage - Atlas - MongoDB Docs",
+   "snippet": "\n## Usage Cost Summary\nAs a user of an Atlas Flex cluster, you pay between $8 and $30 for 30 days of usage. As for all Atlas clusters, the Flex cluster tier follows a pay-as-you-go model billed"
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://usagepricing.com/blueprint/mongodb-atlas",
+   "title": "MongoDB Atlas Pricing",
+   "snippet": "- Paid Developer Support costs $49 a month or 20% of monthly Atlas usage, whichever is higher, while Pro, Enterprise and Platinum support plans are priced only through sales."
+  },
+  {
+   "q": "MongoDB Atlas API access pricing plans developer account",
+   "url": "https://www.mongodb.com/pricing/calculator",
+   "title": "Atlas Pricing Calculator",
+   "snippet": "Atlas Pricing Calculator MongoDB. Documentation Developer Articles & Topics Community Forums. EditionDevelop locally with MongoDB Tools. Reach out to MongoDB ..."
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/docs/mcp-server/get-started.md",
+   "title": "mongodb.com/docs/mcp-server/get-started.md",
+   "snippet": "2. Open the configuration wizard.\nIn the Atlas Managed MCP card, click Add new. If the project has no MCP configurations yet, click Create configuration."
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/docs/mcp-server/tools",
+   "title": "MongoDB MCP Server Tools - MongoDB MCP Server - MongoDB Docs",
+   "snippet": "same aggregation operations used by Atlas databases. You incur charges for all running processors.\nThe Atlas Stream Processing tools (`atlas-streams-discover`, `atlas-streams-build`,"
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/docs/mcp-server/remote-mcp/access-models",
+   "title": "MCP Access Models for MongoDB Atlas - MongoDB MCP Server - MongoDB Docs",
+   "snippet": "The MongoDB MCP Server provides two access models for connecting to Atlas:\nBoth access models use the same MongoDB MCP Server and the same set of"
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/products/tools/mcp-server",
+   "title": "MongoDB MCP Server: Connect AI Agents to Your Data",
+   "snippet": "The MongoDB MCP Server gives AI agents the tools they need to explore, query, and manage MongoDB deployments. Run it self-managed locally, or use the Atlas Managed MCP Server."
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server",
+   "title": "mongodb.com/products/updates/now-ga-mongodb-atlas-managed-mcp-server",
+   "snippet": "\u2014 including Claude, ChatGPT, Cursor, Devin, and Grok Build \u2014 backed by the MongoDB Atlas Managed MCP Server, a MongoDB-hosted Model Context Protocol (MCP) server. Each marketplace plugin packages"
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/docs/mcp-server/get-started?ai-client=claude-desktop-web",
+   "title": "Get Started with the MongoDB MCP Server - MongoDB MCP Server - MongoDB Docs",
+   "snippet": "### Connector Setup: Atlas Managed MCP Server (Recommended)\nSet up the Connector for MongoDB Atlas (Managed MCP Server)."
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/docs/mcp-server/prerequisites",
+   "title": "MongoDB MCP Server Prerequisites for Running Atlas Tools - MongoDB MCP Server - MongoDB Docs",
+   "snippet": "AI clients connect to Atlas through the MongoDB MCP Server. An organization owner must enable the AI Clients setting before members can connect with a plugin."
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/company/blog/announcing-mongodb-mcp-server",
+   "title": "Announcing the MongoDB MCP Server",
+   "snippet": "The MongoDB MCP Server enables AI-powered development by connecting MongoDB deployments\u2014whether they\u2019re on MongoDB Atlas, MongoDB Community Edition, or MongoDB Enterprise Advanced\u2014to"
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://mongodb.com/docs/mcp-server/overview",
+   "title": "MongoDB MCP Server Overview - MongoDB MCP Server - MongoDB Docs",
+   "snippet": "For **MongoDB Atlas Managed MCP Server**, an Atlas Organization Owner or Project Owner creates an MongoDB Atlas Managed MCP Server configuration via Atlas. This configuration:\n- Provisions a service"
+  },
+  {
+   "q": "MongoDB Atlas MCP server official",
+   "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+   "title": "MongoDB MCP server",
+   "snippet": "MongoDB MCP Server comes bundled with the official MongoDB plugins for AI agents. The following plugins are available: mongodb-atlas \u2014 connects to the ..."
+  }
+ ],
+ "official_domain_candidates": {},
+ "identity_flag": "no_domain_matched_name",
+ "completed": "2026-11-23T19:37:11+05:30"
+}

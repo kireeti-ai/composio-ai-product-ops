@@ -1,0 +1,206 @@
+{
+ "app_id": 38,
+ "app": "Pinterest",
+ "tool": "composio:TINYFISH_FETCH_URLS",
+ "session": "kind",
+ "attempts": [
+  {
+   "url": "https://developers.pinterest.com/apps/1558653/upgrade.md",
+   "requested_at": "2026-11-23T17:41:39+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://developers.pinterest.com/account-setup/",
+   "title": "Pinterest Developers",
+   "chars": 128,
+   "sha256": "ed4eeda3009fc7370ecd36eb5c6a70c51c4db17cdbc1c4fb4009666779de5fac",
+   "text": "Skip to content\nDeveloper Platform\nDocs\nAPI reference\nMy apps\nSearch docs & API\nLog in\nSign up\nCreate your new developer account",
+   "completed_at": "2026-11-23T17:41:42+05:30",
+   "app_id": 38,
+   "kind": "url_variant",
+   "parent_url": "https://developers.pinterest.com/apps/1558653/upgrade",
+   "reason": "alternative for thin_or_js_shell",
+   "outcome": "thin_or_js_shell",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://dev.pinterest.com/docs/getting-started",
+   "requested_at": "2026-11-23T17:41:46+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://dev.pinterest.com/docs/getting-started/connect-app/",
+   "title": "Pinterest Developers",
+   "chars": 2575,
+   "sha256": "8f4ce8441f7f650827e5f2e3be3063c23ceb6f33de8626387201681e1dd8d8d7",
+   "text": "Go to My apps and click through to accept our Developer Terms of Service\n\nOnce you've completed these requirements we'll ask for more details to register your app.\n\nRegister your app details to get your app ID and secret key\n\nWhile logged into the Pinterest account you want to use to administer your app complete the following steps:\n\nSelect Connect app and complete our request form with your app information. Your app name can be in any language, but it must include at least 3 Latin letters or numbers (A-Z, a-z, 0-9) and can't contain the word \"Pinterest\".\n\nSubmit your request for trial access.\n\nApplication requests are reviewed by Pinterest. You will receive an email notification after your app has been reviewed, letting you know whether it was approved or denied access.\n\nIf your app is approved for Trial access, you can log into your account and manage your app details on your My apps page. In your My apps view, you'll be able to find details such as your unique app ID and app secret.\n\nWe accept multiple redirect URIs when configuring your app. The value given for redirect\\_uri during OAuth authorization will be matched against the redirect URIs listed in your app profile. They must be an exact match to avoid any exceptions. The specified redirect URI must not cause the responding server to send a secondary redirect to yet another URI.\n\nGo to My apps and select Manage for the app you want to configure.\n\nOn the Configure tab scroll to the Redirect URIs section and enter your desired URI\n\nSelect Add to save your changes\n\nBuild a working authentication flow based on OAuth 2\n\nMake an authorization request to our OAuth page in your browser\n\nHandle the OAuth redirect to the appropriate location (e.g. localhost for testing)\n\nExchange the authorization code for an access token\n\nStore the access token and refresh it as needed\n\nHelpful resources\n\nWe offer a range of Developer tools to help you get started with the Pinterest API quickly.\n\nAPI Quickstart: Quickly get code samples and scripts with our API quickstart repo.There you can:\n\nPut your app ID and app secret key in an environment script file\n\nRun the sample environment set-up script and verify the results\n\nPython SDK: Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling. Check it out here\n\nProduct limited tokens: Once your app is approved for Trial access you can generate a token to test the API without setting up the Oauth flow.Test tokens expire after 24 hours and allow you to explore certain endpoints faster.",
+   "completed_at": "2026-11-23T17:41:47+05:30",
+   "app_id": 38,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/using-beta-and-restricted-features",
+   "requested_at": "2026-11-23T17:41:47+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://developers.pinterest.com/docs/key-concepts/using-beta-and-restricted-features/",
+   "title": "Pinterest Developers",
+   "chars": 1820,
+   "sha256": "f06a9890184bea15153ad11405cf58a703c877800c14099700b2904e6d37b4b4",
+   "text": "# Using beta and restricted features\n\nThe Pinterest API includes features that are in beta release as well as features that have restricted use. We identify these features with labels in the developer docs.\n\nBeta features are typically still in development. We encourage you to test them and provide feedback using this form, so that we can gauge their value and make improvements. Beta time windows vary from a few weeks to open-ended durations.\n\nPinterest releases two types of beta features:\n\n* Open beta features are available to all developers with access to the Pinterest API.\n* Closed beta features are available to specific invited developers and organizations. In some cases, we also grant access by request.\n\nCertain released features are only available to specific organizations. They are labeled Restricted in the documentation.\n\nRestricted features are also referred to as advanced elsewhere on Pinterest sites.\n\nIf you try to call a restricted or closed beta endpoint without having been granted access by a Pinterest representative, you are likely to receive an error response indicating that you do not have access.\n\nIf you try to call a restricted or closed beta endpoint without having been granted access by a Pinterest representative, you are likely to receive an error response indicating that you do not have access.\n\n## Request access to closed beta or restricted features\n\nReach out to your Pinterest representative or contact Support. Make sure to have your app ID available.\n\nTo submit a Support request for access to an API feature:\n\n* Go to\n\n  How can we help?\n\n  in Help Center.\n* Type API in the search box. The search is not case sensitive.\n* Select Request Access to Beta or Restricted Features from the results.\n* Click Still need more help?\n* Enter and submit the requested information.",
+   "completed_at": "2026-11-23T17:41:50+05:30",
+   "app_id": 38,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+   "requested_at": "2026-11-23T17:41:50+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "title": "Pinterest Developers",
+   "chars": 8899,
+   "sha256": "3af277ff588aa680a780e9c6b1a4300a4dd780f5922b6e653b8b53c17ff6d00b",
+   "text": "|  |  |  |\n| --- | --- | --- |\n| What you need | Why you need it | How to get it |\n| Your app ID and client secret | You will provide these as credentials when requesting an OAuth access token. | First, Register your app.  Then, find your app ID and client secret . |\n| Redirect URI | References your app's site, where Pinterest will send the user and an authorization code after the user authorizes your app in Step 1.  You will later provide the redirect URI in Step 3, when requesting the OAuth access token. | When you register your app, you provide at least one redirect URI.  See Configure your app's redirect URI to learn more. |\n| OAuth grant type selection | The grant type determines how your app authenticates and acquires authorization to access protected resources. | Learn about grant types. Then, select one. |\n| Scope(s) selection | Scopes are the permissions your users give your app to act on their behalf within Pinterest. Each scope allows your app to make different API requests, such as for creating ads or viewing secret boards. | Learn about scopes. Then select the ones you need. |\n\n```\nhttps://www.pinterest.com/oauth/\n```\n\n|  |  |\n| --- | --- |\n| Parameter | Description |\n| ``` client_id ```   Required | Unique ID for your app, also referred to as App ID.  See Before you begin. |\n| ``` redirect_uri ```   Required | Redirect URI registered for your app.  Must exactly match the value as registered with Pinterest.  See Before you begin. |\n| ``` response_type ```   Required | Type of credential you want the authorization server to return after the user authenticates and authorizes your app.  Set to literal string   ``` code ``` |\n| ``` scope ```   Required | Permission granted with the access token.  At least one is required.  Separate multiple scopes with spaces or commas.  For example, to include the scopes   ``` boards:read ```  ``` pins:read ```  ``` scope ```  ``` boards:read,pins:read ```  ``` boards:read pins:read ``` |\n| ``` state ```   Optional | Any string value you define, appended to your redirect URI as part of the request query string during the OAuth transaction.  Commonly used to prevent cross-site request forgery.  Learn more from the Open Worldwide Application Security Project (OWASP). |\n\n> https://www.pinterest.com/oauth/?client\\_id=1234567&redirect\\_uri=https://example.com/&response\\_type=code&scope=ads:read,ads:write,boards:read,pins:read&state=hello\n\n```\nredirect_uri\n```\n\n|  |  |\n| --- | --- |\n| Parameter | Description |\n| ``` code ``` | Code to be exchanged for an access token. |\n| ``` state ``` | Should match the string you entered in the redirect request. A non-matching string could indicate a cross-site request forgery attack. |\n\n```\nhttps://www.example.com/oauth/pinterest/oauth_response/\n```\n\n```\nhttps://www.example.com/oauth/pinterest/oauth_response/?code={code}&state={your_optional_string}\n```\n\n```\nclient_id\n```\n\n```\nclient_secret\n```\n\n```\nBasic {base64-encoded_string_made_of client_id:client_secret}\n```\n\n```\nclient_id\n```\n\n```\n123\n```\n\n```\nclient_secret\n```\n\n```\n456\n```\n\n```\n123:456\n```\n\n```\nMTIzOjQ1Ng==\n```\n\n```\nAuthorization: Basic MTIzOjQ1Ng==\n```\n\n|  |  |\n| --- | --- |\n| Parameter | Description |\n| ``` code ```   Required | Authorization code returned in preceding step. |\n| ``` redirect_uri ```   Required | Redirect URI used during registration, which must match exactly. |\n| ``` grant_type ```   Required | Set this to  ``` authorization_code ``` |\n| ``` continuous_refresh ```   Optional | Only applicable to apps created before September 25, 2025.  Set to   ``` true ```   If your app was created on or after September 25, 2025, disregard this parameter, as you are automatically using the continuous refresh token (60-day expiration, refreshable indefinitely). |\n\n|  |  |\n| --- | --- |\n| Parameter | Description |\n| ``` scope ```   Required | Permission granted with the access token. At least one is required.  Separate multiple scopes with spaces or commas. For example, to include the scopes   ``` boards:read ```  ``` pins:read ```  ``` boards:read,pins:read ```  ``` boards:read pins:read ``` |\n| ``` grant_type ```   Required | Set this to  ``` authorization_code ``` |\n\n> curl -X POST https://api.pinterest.com/v5/oauth/token \\ --header 'Authorization: Basic {base64-encoded\\_string\\_made\\_of client\\_id:client\\_secret}' \\ --header 'Content-Type: application/x-www-form-urlencoded' \\ --data-urlencode 'grant\\_type=authorization\\_code' \\ --data-urlencode 'code={your\\_code}' \\ --data-urlencode 'redirect\\_uri=http://localhost/' \\ --data-urlencode 'continuous\\_refresh=true'\n\n> curl -X POST https://api.pinterest.com/v5/oauth/token \\ --header 'Authorization: Basic {base64-encoded\\_string\\_made\\_of client\\_id:client\\_secret}' \\ --header 'Content-Type: application/x-www-form-urlencoded' \\ --data-urlencode 'grant\\_type=client\\_credentials' \\ --data-urlencode 'scope=boards:read,pins:read'\n\n```\npina\n```\n\n> { \"access\\_token\": \"{access\\_token\\_string\\_with\\_'pina'\\_prefix}\", \"refresh\\_token\": \"{refresh\\_token\\_string\\_with\\_'pinr'\\_prefix}\", \"response\\_type\": \"authorization\\_code\", \"token\\_type\": \"bearer\", \"expires\\_in\": 2592000, \"refresh\\_token\\_expires\\_in\": 31536000, \"scope\": \"boards:read boards:write pins:read\" }\n\n```\npinc\n```\n\n> { \"access\\_token\": \"{access\\_token\\_string\\_with\\_'pinc'\\_prefix}\", \"response\\_type\": \"client\\_credentials\", \"token\\_type\": \"bearer\", \"expires\\_in\": 2592000, \"scope\": \"boards:read catalogs:read catalogs:write pins:read\" }\n\n|  |  |\n| --- | --- |\n| Field | Description |\n| ``` access_token ``` | Token used to authenticate API requests. |\n| ``` refresh_token ``` | Token used to obtain a new access token without requiring user interaction. |\n| ``` token_type ``` | Type of token returned in the request. For example, the type   ``` bearer ``` |\n| ``` expires_in ``` | Lifetime of the access token in seconds. |\n| ``` refresh_token_expires_in ``` | Lifetime of the refresh token in seconds. |\n| ``` scope ``` | Permissions granted with the access token. |\n\n```\nAuthorization\n```\n\n```\nBearer {your_token}\n```\n\n> curl https://api.pinterest.com/v5/user\\_account --header 'Authorization: Bearer 123'\n\n```\nHTTP 401\n```\n\n```\n2\n```\n\n|  |  |\n| --- | --- |\n| Parameter | Description |\n| ``` refresh_token ```   Required | Full refresh token string, starting with   ``` pinr ``` |\n| ``` grant_type ```   Required | Set to the literal string  ``` refresh_token ``` |\n| ``` scope ```   Optional | One or more scopes. Include this parameter to get an access token with a subset of the scopes originally granted |\n\n> curl -X POST https://api.pinterest.com/v5/oauth/token \\ --header 'Authorization: Basic {base64-encoded\\_string\\_made\\_of client\\_id:client\\_secret}' \\ --header 'Content-Type: application/x-www-form-urlencoded' \\ --data-urlencode 'grant\\_type=refresh\\_token' \\ --data-urlencode 'refresh\\_token={your\\_refresh\\_token}' \\ --data-urlencode 'scope=boards:read'\n\n```\nrefresh_token_expires_at\n```\n\n```\n1730227664\n```\n\n```\nOctober 29, 2024\n```\n\n> { \"access\\_token\": \"{access\\_token\\_string\\_with\\_'pina'\\_prefix}\", \"response\\_type\": \"refresh\\_token\", \"token\\_type\": \"bearer\", \"expires\\_in\": 2592000, \"scope\": \"boards:read\", \"refresh\\_token\": \"{refresh\\_token\\_string\\_with\\_'pinr'\\_prefix}\", \"refresh\\_token\\_expires\\_in\": 5184000, \"refresh\\_token\\_expires\\_at\": 1730227664 }\n\n|  |  |\n| --- | --- |\n| Parameter | Description |\n| ``` access_token ``` | Token used to authenticate API requests. |\n| ``` response_type ``` | Set to literal string  ``` code ``` |\n| ``` token_type ``` | Type of token returned in the request. For example, the type   ``` bearer ``` |\n| ``` expires_in ``` | Lifetime of the access token in seconds. |\n| ``` scope ``` | Permissions granted with the access token. |\n\n```\n{entity}:read\n```\n\n```\n{entity}:write\n```\n\n```\nads:read,ads:write,boards:read,boards:write\n```\n\n```\nads:read ads:write boards:read boards:write\n```\n\n| Entity | ``` read ``` | ``` write ``` |\n| --- | --- | --- |\n| ``` ads ``` | See all data related to advertising, such as ads, ad groups and campaigns. | Create, update or delete ads, ad groups and campaigns. |\n| ``` billing ``` | See all of your billing data, such as your billing profile. | Create, update or delete billing data. |\n| ``` biz_access ``` | See all business access data. | Create, update or delete business access data. |\n| ``` boards ``` | See public boards, including group boards, with   ``` boards:read ```  ``` boards:read_secret ``` | Create, update or delete public boards with   ``` boards:write ```  ``` boards:write_secret ``` |\n| ``` catalogs ``` | See all catalog data. | Create, update or delete catalogs. |\n| ``` pins ``` | See public pins with   ``` pins:read ```  ``` pins:read_secret ``` | Create, update or delete public pins with   ``` pins:write ```  ``` pins:write_secret ``` |\n| ``` user_accounts ``` | See user accounts and followers. | Update user accounts and followers. |",
+   "completed_at": "2026-11-23T17:41:52+05:30",
+   "app_id": 38,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "duplicate_content",
+   "duplicate_of": "baseline_page",
+   "attempt": 2
+  }
+ ],
+ "app_level_search_hits": [
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://dev.pinterest.com/docs/getting-started",
+   "title": "dev.pinterest.com/docs/getting-started",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developers.pinterest.com/docs/getting-started/using-beta-and-restricted-features",
+   "title": "Using beta and restricted features",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developers.pinterest.com/docs/reference/scopes",
+   "title": "Pinterest Developers | Rate limits",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developers.pinterest.com/docs/faqs/faqs/",
+   "title": "App FAQs",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developers.pinterest.com/docs/reference/rate-limits",
+   "title": "developers.pinterest.com/docs/reference/rate-limits",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+   "title": "developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developers.pinterest.com/docs/getting-started/connect-app",
+   "title": "Pinterest Developers | Connect app",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developers.pinterest.com/",
+   "title": "Pinterest Developers",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+   "title": "developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest API access trial standard access developers",
+   "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+   "title": "Pinterest API - v5 docs",
+   "searched_at": "2026-11-23T17:41:44+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/docs/getting-started/development",
+   "title": "Pinterest Developers",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/docs/getting-started/connect-app",
+   "title": "Pinterest Developers | Connect app",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/docs/overview/welcome",
+   "title": "Pinterest Developers | Welcome",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/docs/key-concepts/best-practices",
+   "title": "Pinterest Developers | Best practices",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/docs/key-concepts/developer-guidelines",
+   "title": "Pinterest Developers | Access tiers",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/docs/reference/help-and-feedback",
+   "title": "Pinterest Developers | Help and feedback",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/account-setup/",
+   "title": "Create your new developer account",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/",
+   "title": "Pinterest Developers",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/docs/faqs/faqs",
+   "title": "developers.pinterest.com/docs/faqs/faqs",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Pinterest developers get started app review",
+   "url": "https://developers.pinterest.com/docs/work-with-organic-content-and-users/create-boards-and-pins",
+   "title": "Pinterest Developers | Create boards and pins",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  }
+ ]
+}

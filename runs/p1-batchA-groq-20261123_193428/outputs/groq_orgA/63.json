@@ -1,0 +1,160 @@
+{
+ "tag": "groq_orgA",
+ "app": 63,
+ "name": "Netlify",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 3,
+ "latency_s": 2.59,
+ "tokens_in": 3677,
+ "tokens_out": 930,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "To generate a personal access token... (PAT) ... a credential tied to your personal account that lets tools and scripts act on your behalf.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "If you\u2019re making a public integration with Netlify for others to enjoy, you must use OAuth2.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "To generate a personal access token... you can create one in the Netlify UI under Applications Personal access tokens.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "All URLs start with https://api.netlify.com/api/v1/. The Netlify REST API exposes endpoints for managing databases, branches, and snapshots programmatically.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.netlify.com/",
+    "quote": "One command installs MCP, CLI, and Netlify skills.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 1,
+   "unsupported": 4,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 5,
+  "evidence_valid": 2,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 2,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 3,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Netlify is a platform for deploying web projects, offering a REST API, CLI, and SDK to manage sites, deploys, DNS, and more programmatically.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can generate a personal access token in their Netlify user settings at no cost and use it for API authentication.",
+  "api_breadth": "broad",
+  "api_types": [
+   "rest"
+  ],
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "existing_mcp": "none_found",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "To generate a personal access token... (PAT) ... a credential tied to your personal account that lets tools and scripts act on your behalf."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "If you\u2019re making a public integration with Netlify for others to enjoy, you must use OAuth2."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "To generate a personal access token... you can create one in the Netlify UI under Applications Personal access tokens."
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "All URLs start with https://api.netlify.com/api/v1/. The Netlify REST API exposes endpoints for managing databases, branches, and snapshots programmatically."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.netlify.com/",
+    "quote": "One command installs MCP, CLI, and Netlify skills."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "78a01ed69a9061348bc6db3410b80377fae8ed5d7786e4d94f255e1a231d77b7",
+ "at": "2026-11-23T19:44:37+05:30"
+}

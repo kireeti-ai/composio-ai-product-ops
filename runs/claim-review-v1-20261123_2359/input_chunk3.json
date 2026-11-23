@@ -1,0 +1,1591 @@
+[
+ {
+  "row_id": 153,
+  "app_id": 35,
+  "app_name": "Mailchimp",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+  "quote": "The root url for the API is `https://api.mailchimp.com/3.0/`. All API endpoints for your account are available relative to this URL.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/35.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs identify the v3.0 API endpoint and account endpoints."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 154,
+  "app_id": 36,
+  "app_name": "Klaviyo",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.klaviyo.com/en/docs/authenticate_",
+  "quote": "All /api endpoints use API private keys to authenticate requests.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/36.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "not_established_by_submitted_quote",
+    "reason": "The quote says /api endpoints use private keys; it does not establish REST architecture."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 155,
+  "app_id": 39,
+  "app_name": "Threads (Meta)",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.facebook.com/documentation/threads/get-started",
+  "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/39.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 user access token",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state Threads user access tokens conform to OAuth 2.0."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 156,
+  "app_id": 39,
+  "app_name": "Threads (Meta)",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.facebook.com/documentation/threads/overview",
+  "quote": "The Threads API can be accessed by either `graph.threads.com` or `graph.threads.net`.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/39.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "not_established_by_submitted_quote",
+    "reason": "The quote identifies Graph.threads hosts but does not establish REST transport/semantics."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 157,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "OAuth, usually token exchange",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 158,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "Create public or private tokens",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 159,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "Buyer signs in with OAuth 2.0 and PKCE",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 160,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "OAuth, usually token exchange",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 161,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "Create public or private tokens",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 162,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "Buyer signs in with OAuth 2.0 and PKCE",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 163,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "OAuth, usually token exchange",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 164,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "Create public or private tokens",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 165,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://shopify.dev/docs/api/usage/authentication",
+  "quote": "Buyer signs in with OAuth 2.0 and PKCE",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+   },
+   {
+    "claim": "API key",
+    "disposition": "not_established",
+    "reason": "The quote \u201cCreate public or private tokens\u201d does not establish API keys as an auth mechanism."
+   },
+   {
+    "claim": "bearer token",
+    "disposition": "not_established",
+    "reason": "No cited quote explicitly supports bearer-token use."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 166,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://shopify.dev/docs/api",
+  "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "GraphQL",
+    "disposition": "supported",
+    "reason": "The quote describes GraphQL Admin API read/write resources."
+   },
+   {
+    "claim": "REST",
+    "disposition": "not_established_by_submitted_quotes",
+    "reason": "The cited API overview excerpts do not establish REST API availability; separate current API-version docs are needed."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 167,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "api_types",
+  "claim_value": "graphql",
+  "source_url": "https://shopify.dev/docs/api",
+  "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "GraphQL",
+    "disposition": "supported",
+    "reason": "The quote describes GraphQL Admin API read/write resources."
+   },
+   {
+    "claim": "REST",
+    "disposition": "not_established_by_submitted_quotes",
+    "reason": "The cited API overview excerpts do not establish REST API availability; separate current API-version docs are needed."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 168,
+  "app_id": 41,
+  "app_name": "Shopify",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://shopify.dev/docs/api",
+  "quote": "Shopify MCP lets merchants and partners set up and manage a store through the AI agent of their choice.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/41.json",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "supported_by_vendor_docs",
+    "reason": "Shopify Dev docs explicitly say Shopify MCP lets merchants/partners manage a store through an AI agent; vendor source."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 169,
+  "app_id": 43,
+  "app_name": "BigCommerce",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://developer.bigcommerce.com",
+  "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/43.json",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_free",
+    "disposition": "overstated",
+    "reason": "The evidence supports a free trial store for testing, not free production API use."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 170,
+  "app_id": 44,
+  "app_name": "Salesforce Commerce Cloud",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+  "quote": "Use a headless API to build custom apps. B2C Commerce API is also known as Salesforce Commerce API (SCAPI).",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/44.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST/headless Commerce API",
+    "disposition": "partially_supported",
+    "reason": "The quote mentions headless API and SCAPI; exact REST type is not explicit in retained quote."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 171,
+  "app_id": 46,
+  "app_name": "Squarespace",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "quote": "authenticate requests by using an API key or OAuth access token.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/46.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key and OAuth access token",
+    "disposition": "supported",
+    "reason": "Official docs explicitly name both credential methods."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 172,
+  "app_id": 46,
+  "app_name": "Squarespace",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "quote": "authenticate requests by using an API key or OAuth access token.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/46.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key and OAuth access token",
+    "disposition": "supported",
+    "reason": "Official docs explicitly name both credential methods."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 173,
+  "app_id": 46,
+  "app_name": "Squarespace",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.squarespace.com/commerce-apis/website-overview",
+  "quote": "Obtain an API key or use OAuth to authenticate your requests",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/46.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "not_established_by_quote",
+    "reason": "The quote only discusses authentication setup, not API architecture."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 174,
+  "app_id": 47,
+  "app_name": "Ecwid",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+  "quote": "Sign up as a developer to create an Ecwid account.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/47.json",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_free",
+    "disposition": "not_established",
+    "reason": "Developer sign-up/account creation does not establish free access or production entitlements."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 175,
+  "app_id": 47,
+  "app_name": "Ecwid",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://api-docs.ecwid.com/reference/implement-sso",
+  "quote": "Find full list of available JS API calls",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/47.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Evidence includes a POST endpoint on the Ecwid API host."
+   },
+   {
+    "claim": "JavaScript API",
+    "disposition": "supported_as_additional_surface",
+    "reason": "The page documents JS API calls, a separate interface from the REST endpoint."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 176,
+  "app_id": 49,
+  "app_name": "Amazon Selling Partner",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications?ld=NSGoogle&pageName=US:SPDS:SPAPI-vendor",
+  "quote": "Authorization method: OAuth 2.0 through Login with Amazon (LWA).",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/49.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 via LWA",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state OAuth 2.0 through Login with Amazon."
+   },
+   {
+    "claim": "bearer_token",
+    "disposition": "not_established",
+    "reason": "No submitted quotation supports bearer-token semantics."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 177,
+  "app_id": 49,
+  "app_name": "Amazon Selling Partner",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications?ld=NSGoogle&pageName=US:SPDS:SPAPI-vendor",
+  "quote": "Authorization method: OAuth 2.0 through Login with Amazon (LWA).",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/49.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 via LWA",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state OAuth 2.0 through Login with Amazon."
+   },
+   {
+    "claim": "bearer_token",
+    "disposition": "not_established",
+    "reason": "No submitted quotation supports bearer-token semantics."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 178,
+  "app_id": 49,
+  "app_name": "Amazon Selling Partner",
+  "field": "access",
+  "claim_value": "approval_or_review_required",
+  "source_url": "https://developer-docs.amazon.com/sp-api/docs/tutorial-test-selling-partner-api-endpoints",
+  "quote": "Use the Solution Provider Portal to register a sandbox application, with which you can call sandbox endpoints without seller authorization and while your developer profile is under review.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/49.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "developer profile/app review and sandbox",
+    "disposition": "partially_supported",
+    "reason": "Evidence says sandbox endpoints can be called without seller authorization while developer profile is under review; it does not fully establish production review requirements stated in the summary."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 179,
+  "app_id": 51,
+  "app_name": "DataForSEO",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://docs.dataforseo.com/v3/auth",
+  "quote": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/51.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state Basic Authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 180,
+  "app_id": 51,
+  "app_name": "DataForSEO",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://docs.dataforseo.com/v3/auth",
+  "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/51.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "free account / API credentials",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official auth docs say to create a free account and retrieve API login/password from dashboard."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 181,
+  "app_id": 51,
+  "app_name": "DataForSEO",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.dataforseo.com/v3/",
+  "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/51.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state the API uses REST technology."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 182,
+  "app_id": 52,
+  "app_name": "SE Ranking",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://seranking.com/api/project/getting-started",
+  "quote": "In order to use the API, it is necessary to have an API key from the SE Ranking user account. The API key must be transferred via the token parameter for each invoked method or via the Authorization HTTP header.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/52.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key in token parameter/header",
+    "disposition": "supported",
+    "reason": "Official docs explicitly describe the API key placement."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 183,
+  "app_id": 52,
+  "app_name": "SE Ranking",
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "source_url": "https://seranking.com/api/how-to-get-api",
+  "quote": "The Project API is available on every current subscription plan: Essential, Pro, Business, Core, Growth, and Enterprise.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/52.json",
+  "prior_codex_review": [
+   {
+    "claim": "subscription required",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Project API availability is stated across listed subscription plans; this supports plan gating, not necessarily free access."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 184,
+  "app_id": 52,
+  "app_name": "SE Ranking",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://seranking.com/api/project/getting-started",
+  "quote": "All API method invocations are HTTP GET/POST/PUT/DELETE requests to the URL:",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/52.json",
+  "prior_codex_review": [
+   {
+    "claim": "HTTP methods / REST-like",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official docs list GET/POST/PUT/DELETE requests to an API URL."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 185,
+  "app_id": 53,
+  "app_name": "Ahrefs",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+  "quote": "You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/53.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key in bearer header",
+    "disposition": "supported",
+    "reason": "Official key management docs directly show API key in Authorization Bearer header."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 186,
+  "app_id": 53,
+  "app_name": "Ahrefs",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+  "quote": "You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/53.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key in bearer header",
+    "disposition": "supported",
+    "reason": "Official key management docs directly show API key in Authorization Bearer header."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 187,
+  "app_id": 53,
+  "app_name": "Ahrefs",
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "source_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+  "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/53.json",
+  "prior_codex_review": [
+   {
+    "claim": "eligible paid plans; limited free queries otherwise",
+    "disposition": "supported",
+    "reason": "Official API introduction explicitly states eligible paid plan access and limited free test queries for other plans."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 188,
+  "app_id": 56,
+  "app_name": "Firecrawl",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://docs.firecrawl.dev/introduction",
+  "quote": "Create a free account for direct API access and higher limits",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/56.json",
+  "prior_codex_review": [
+   {
+    "claim": "free account/direct API",
+    "disposition": "partially_supported",
+    "reason": "Official docs state a free account enables direct API access/higher limits, but this does not show included request limits or current price terms."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 189,
+  "app_id": 56,
+  "app_name": "Firecrawl",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://docs.firecrawl.dev/introduction",
+  "quote": "MCP Server: Connect Firecrawl to any AI tool via the Model Context Protocol.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/56.json",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "supported_by_vendor_docs",
+    "reason": "Official docs name an MCP Server and describe connecting Firecrawl to AI tools."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 190,
+  "app_id": 61,
+  "app_name": "GitHub",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "quote": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/61.json",
+  "prior_codex_review": [
+   {
+    "claim": "personal access token",
+    "disposition": "supported",
+    "reason": "Official docs explicitly allow creating a personal access token for personal REST API use."
+   },
+   {
+    "claim": "GitHub App installation access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official Actions documentation names installation token generation in a workflow; context-specific."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 191,
+  "app_id": 61,
+  "app_name": "GitHub",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+  "quote": "create a GitHub App and generate an installation access token within your workflow.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/61.json",
+  "prior_codex_review": [
+   {
+    "claim": "personal access token",
+    "disposition": "supported",
+    "reason": "Official docs explicitly allow creating a personal access token for personal REST API use."
+   },
+   {
+    "claim": "GitHub App installation access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official Actions documentation names installation token generation in a workflow; context-specific."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 192,
+  "app_id": 61,
+  "app_name": "GitHub",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "quote": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/61.json",
+  "prior_codex_review": [
+   {
+    "claim": "personal access token",
+    "disposition": "supported",
+    "reason": "Official docs explicitly allow creating a personal access token for personal REST API use."
+   },
+   {
+    "claim": "GitHub App installation access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official Actions documentation names installation token generation in a workflow; context-specific."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 193,
+  "app_id": 61,
+  "app_name": "GitHub",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+  "quote": "create a GitHub App and generate an installation access token within your workflow.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/61.json",
+  "prior_codex_review": [
+   {
+    "claim": "personal access token",
+    "disposition": "supported",
+    "reason": "Official docs explicitly allow creating a personal access token for personal REST API use."
+   },
+   {
+    "claim": "GitHub App installation access token",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official Actions documentation names installation token generation in a workflow; context-specific."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 194,
+  "app_id": 61,
+  "app_name": "GitHub",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+  "quote": "You can authenticate to the REST API to access more endpoints and have a higher rate limit.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/61.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported_by_source_page_but_quote_weak",
+    "reason": "The source is an official REST API authentication page and the quote mentions REST API and rate limits; preserve exact quote but improve it to a direct sentence describing the REST API before treating as valid claim evidence."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 195,
+  "app_id": 61,
+  "app_name": "GitHub",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://docs.github.com/en/copilot/concepts/context/mcp",
+  "quote": "The Model Context Protocol (MCP) is an open standard that defines how applications share context with large language models (LLMs).",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/61.json",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "irrelevant_quote_and_unverified",
+    "reason": "The cited sentence defines MCP generically; it does not show a GitHub server or connector. MCP status remains unverified from this evidence."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 196,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://vercel.com/docs",
+  "quote": "Create an API key and export the key it prints",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 197,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://vercel.com/docs/accounts/access-tokens",
+  "quote": "Vercel access tokens authenticate requests to the Vercel REST API",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 198,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+  "quote": "The Authorization Server API exposes a set of endpoints which are used by your application for obtaining, refreshing, revoking, and introspecting tokens",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 199,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://vercel.com/docs",
+  "quote": "Create an API key and export the key it prints",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 200,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://vercel.com/docs/accounts/access-tokens",
+  "quote": "Vercel access tokens authenticate requests to the Vercel REST API",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 201,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+  "quote": "The Authorization Server API exposes a set of endpoints which are used by your application for obtaining, refreshing, revoking, and introspecting tokens",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 202,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://vercel.com/docs",
+  "quote": "Create an API key and export the key it prints",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 203,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://vercel.com/docs/accounts/access-tokens",
+  "quote": "Vercel access tokens authenticate requests to the Vercel REST API",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 204,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+  "quote": "The Authorization Server API exposes a set of endpoints which are used by your application for obtaining, refreshing, revoking, and introspecting tokens",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key, access token, OAuth",
+    "disposition": "supported",
+    "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 205,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://vercel.com/docs/rest-api",
+  "quote": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL `https://api.vercel.com` and follow the REST architecture.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official reference explicitly describes the API as REST architecture."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 206,
+  "app_id": 62,
+  "app_name": "Vercel",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://vercel.com/docs",
+  "quote": "npx -y add-mcp https://mcp.vercel.com -g",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/62.json",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "supported_by_vendor_docs",
+    "reason": "Vercel docs provide a command that installs the Vercel MCP endpoint; official provenance should be preserved."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 207,
+  "app_id": 63,
+  "app_name": "Netlify",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+  "quote": "If you\u2019re making a public integration with Netlify for others to enjoy, you must use OAuth2.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/63.json",
+  "prior_codex_review": [
+   {
+    "claim": "PAT and OAuth2",
+    "disposition": "partially_supported",
+    "reason": "OAuth2 requirement for public integrations is directly quoted; PAT quote is ellipsis-stitched and therefore unsupported by submitted citation."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 208,
+  "app_id": 63,
+  "app_name": "Netlify",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+  "quote": "If you\u2019re making a public integration with Netlify for others to enjoy, you must use OAuth2.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/63.json",
+  "prior_codex_review": [
+   {
+    "claim": "PAT and OAuth2",
+    "disposition": "partially_supported",
+    "reason": "OAuth2 requirement for public integrations is directly quoted; PAT quote is ellipsis-stitched and therefore unsupported by submitted citation."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 209,
+  "app_id": 63,
+  "app_name": "Netlify",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+  "quote": "If you\u2019re making a public integration with Netlify for others to enjoy, you must use OAuth2.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/63.json",
+  "prior_codex_review": [
+   {
+    "claim": "PAT and OAuth2",
+    "disposition": "partially_supported",
+    "reason": "OAuth2 requirement for public integrations is directly quoted; PAT quote is ellipsis-stitched and therefore unsupported by submitted citation."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 210,
+  "app_id": 63,
+  "app_name": "Netlify",
+  "field": "existing_mcp",
+  "claim_value": "none_found",
+  "source_url": "https://docs.netlify.com/",
+  "quote": "One command installs MCP, CLI, and Netlify skills.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/63.json",
+  "prior_codex_review": [
+   {
+    "claim": "none_found",
+    "disposition": "ambiguous_not_verified",
+    "reason": "One-command install of MCP/CLI/skills does not identify server ownership or tool coverage; do not infer none or official from generic line."
+   }
+  ],
+  "claim_state_before": "not_found_in_provided_evidence"
+ },
+ {
+  "row_id": 211,
+  "app_id": 65,
+  "app_name": "Supabase",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+  "quote": "An API key authenticates an application component to give it access to Supabase services.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/65.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key / bearer",
+    "disposition": "supported_with_context",
+    "reason": "Official docs describe API keys and SDK bearer handling for publishable keys; distinguish API key from end-user JWT."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 212,
+  "app_id": 65,
+  "app_name": "Supabase",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+  "quote": "An API key authenticates an application component to give it access to Supabase services.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/65.json",
+  "prior_codex_review": [
+   {
+    "claim": "API key / bearer",
+    "disposition": "supported_with_context",
+    "reason": "Official docs describe API keys and SDK bearer handling for publishable keys; distinguish API key from end-user JWT."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 213,
+  "app_id": 65,
+  "app_name": "Supabase",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://supabase.com/docs/guides/auth",
+  "quote": "Auth also enables access control to your database's automatically generated REST API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/65.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs identify the automatically generated REST API."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 214,
+  "app_id": 70,
+  "app_name": "Sentry",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://docs.sentry.io/api/auth",
+  "quote": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/70.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2, bearer token, personal tokens",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth2 and scoped personal tokens are directly documented; generic auth-header quote does not identify a precise bearer scheme on its own."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 215,
+  "app_id": 70,
+  "app_name": "Sentry",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://docs.sentry.io/api/auth",
+  "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (**User settings > Personal Tokens**) and assigned specific scopes.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/70.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2, bearer token, personal tokens",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth2 and scoped personal tokens are directly documented; generic auth-header quote does not identify a precise bearer scheme on its own."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 216,
+  "app_id": 70,
+  "app_name": "Sentry",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://docs.sentry.io/api/auth",
+  "quote": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/70.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2, bearer token, personal tokens",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth2 and scoped personal tokens are directly documented; generic auth-header quote does not identify a precise bearer scheme on its own."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 217,
+  "app_id": 70,
+  "app_name": "Sentry",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://docs.sentry.io/api/auth",
+  "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (**User settings > Personal Tokens**) and assigned specific scopes.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/70.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2, bearer token, personal tokens",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth2 and scoped personal tokens are directly documented; generic auth-header quote does not identify a precise bearer scheme on its own."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 218,
+  "app_id": 70,
+  "app_name": "Sentry",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://docs.sentry.io/api/auth",
+  "quote": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/70.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2, bearer token, personal tokens",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth2 and scoped personal tokens are directly documented; generic auth-header quote does not identify a precise bearer scheme on its own."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 219,
+  "app_id": 70,
+  "app_name": "Sentry",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://docs.sentry.io/api/auth",
+  "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (**User settings > Personal Tokens**) and assigned specific scopes.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/70.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2, bearer token, personal tokens",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth2 and scoped personal tokens are directly documented; generic auth-header quote does not identify a precise bearer scheme on its own."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 220,
+  "app_id": 70,
+  "app_name": "Sentry",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.sentry.io/api/",
+  "quote": "The Sentry web API is used to access the Sentry platform programmatically.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/70.json",
+  "prior_codex_review": [
+   {
+    "claim": "API",
+    "disposition": "partially_supported",
+    "reason": "Docs identify a web API but the retained quote does not name REST."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 221,
+  "app_id": 72,
+  "app_name": "Airtable",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+  "quote": "Personal access tokens should be passed with your API requests as a `Authorization: Bearer header`.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/72.json",
+  "prior_codex_review": [
+   {
+    "claim": "PAT bearer and OAuth",
+    "disposition": "supported",
+    "reason": "Official docs explicitly show bearer PATs and recommend OAuth for integrations serving other users."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 222,
+  "app_id": 72,
+  "app_name": "Airtable",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+  "quote": "Personal access tokens should be passed with your API requests as a `Authorization: Bearer header`.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/72.json",
+  "prior_codex_review": [
+   {
+    "claim": "PAT bearer and OAuth",
+    "disposition": "supported",
+    "reason": "Official docs explicitly show bearer PATs and recommend OAuth for integrations serving other users."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 223,
+  "app_id": 75,
+  "app_name": "Asana",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developers.asana.com/docs/personal-access-token",
+  "quote": "A personal access token (PAT) contains your security credentials for the Asana platform. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/75.json",
+  "prior_codex_review": [
+   {
+    "claim": "PAT, service accounts, OAuth",
+    "disposition": "partially_supported",
+    "reason": "PAT and OAuth are explicitly named; exact service-account support needs a dedicated citation."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 224,
+  "app_id": 75,
+  "app_name": "Asana",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.asana.com/docs/personal-access-token",
+  "quote": "A personal access token (PAT) contains your security credentials for the Asana platform. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/75.json",
+  "prior_codex_review": [
+   {
+    "claim": "PAT, service accounts, OAuth",
+    "disposition": "partially_supported",
+    "reason": "PAT and OAuth are explicitly named; exact service-account support needs a dedicated citation."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 225,
+  "app_id": 76,
+  "app_name": "Monday.com",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://developer.monday.com/api-reference/docs/getting-started",
+  "quote": "After setting up your monday.com account, you must authenticate with an Access Token.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/76.json",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_free",
+    "disposition": "not_established",
+    "reason": "A monday.com account and access token are prerequisites; no pricing/entitlement evidence establishes free access."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 226,
+  "app_id": 76,
+  "app_name": "Monday.com",
+  "field": "api_types",
+  "claim_value": "graphql",
+  "source_url": "https://developer.monday.com/api-reference/docs/getting-started",
+  "quote": "GraphQL APIs use a single endpoint for all operations (unlike REST APIs). Our API endpoint is: `https://api.monday.com/v2`",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/76.json",
+  "prior_codex_review": [
+   {
+    "claim": "GraphQL",
+    "disposition": "supported",
+    "reason": "Official API reference states the API uses a single GraphQL endpoint."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 227,
+  "app_id": 84,
+  "app_name": "Paygent Connect",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.paygent.to/getting-started/assign-users-to-plans",
+  "quote": "These are plain REST calls (curl and Python httpx shown).",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/84.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported_by_quote_identity_pending",
+    "reason": "The quote says plain REST calls; preserve the claim only provisionally until product identity/domain is resolved."
+   },
+   {
+    "claim": "SDK",
+    "disposition": "not_established",
+    "reason": "\u201cInstall the SDK\u201d is too short to support a distinct SDK interface claim."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 228,
+  "app_id": 84,
+  "app_name": "Paygent Connect",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://docs.paygent.to/getting-started/assign-users-to-plans",
+  "quote": "These are plain REST calls (curl and Python httpx shown).",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/84.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported_by_quote_identity_pending",
+    "reason": "The quote says plain REST calls; preserve the claim only provisionally until product identity/domain is resolved."
+   },
+   {
+    "claim": "SDK",
+    "disposition": "not_established",
+    "reason": "\u201cInstall the SDK\u201d is too short to support a distinct SDK interface claim."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ }
+]

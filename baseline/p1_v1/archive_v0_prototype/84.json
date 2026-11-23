@@ -1,0 +1,30 @@
+{
+ "id": 84,
+ "name": "Paygent Connect",
+ "checks": [
+  {
+   "field": "auth_methods",
+   "claim": "Paygent Connect API supports these auth methods: bearer_token, api_key",
+   "verdict": "supported",
+   "reason": "Excerpt shows Bearer token in curl and API key usage in SDK init, indicating both auth methods are supported."
+  },
+  {
+   "field": "access",
+   "claim": "Developer access for Paygent Connect is 'self_serve_free' (Developers can sign up and get an API key from the dashboard immediately.)",
+   "verdict": "supported",
+   "reason": "Excerpt shows sign\u2011up and immediate API key from dashboard, indicating self\u2011serve free access."
+  },
+  {
+   "field": "api_types",
+   "claim": "Paygent Connect offers these API types: rest, sdk_or_cli_only",
+   "verdict": "supported",
+   "reason": "Excerpt shows REST endpoints and SDKs, confirming both API types; no CLI mentioned but SDK satisfies sdk_or_cli_only."
+  },
+  {
+   "field": "existing_mcp",
+   "claim": "MCP server status for Paygent Connect: none_found",
+   "verdict": "not_enough_info",
+   "reason": "Excerpt lacks any mention of MCP server status for Paygent Connect."
+  }
+ ]
+}

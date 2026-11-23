@@ -1,0 +1,358 @@
+{
+ "id": 30,
+ "name": "Vonage",
+ "started": "2026-11-23T19:43:31+05:30",
+ "searches": [
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:43:33+05:30"
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:43:38+05:30"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:43:40+05:30"
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:43:41+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://developer.vonage.com/en/mcp-server/overview",
+   "requested_at": "2026-11-23T19:43:44+05:30",
+   "status": "ok",
+   "final_url": "https://developer.vonage.com/en/mcp-server/overview",
+   "title": "Vonage MCP Server Overview | Vonage MCP Server Documenation",
+   "chars": 785,
+   "sha256": "f35be96fb9f86a025dce1947ed61c3584f42c9d598b40912c0508b9707a506a8",
+   "text": "Documentation\n\nVonage MCP Server\n\n# Vonage MCP Server\n\nThe Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol.\n\nAgent-native docs search (Documentation MCP)\n\nTool discovery & granular permissions\n\nIDE & Claude Desktop integration\n\n#### Ready to Start Building ?\n\nExperience seamless connectivity, real-time messaging, and crystal-clear voice and video calls\u2014all at your fingertips.\n\n## Conceptual Guides\n\nHigh-level guides that clarify core Vonage API concepts, ideal for gaining a deeper understanding before planning your implementation.\n\n* Introduction to the Vonage MCP Servers\n\n## How-to Guides\n\nStep-by-step, practical guides to connect MCP servers and use them from your IDE or AI assistant.",
+   "retrieved_at": "2026-11-23T19:43:44+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.vonage.com/en/mcp-server/technical-details",
+   "requested_at": "2026-11-23T19:44:00+05:30",
+   "status": "ok",
+   "final_url": "https://developer.vonage.com/en/mcp-server/technical-details",
+   "title": "Technical Details",
+   "chars": 2565,
+   "sha256": "cd4112c1d9553602a843dabe6502087c1ad363d1fbde14ba066f87be64f789d5",
+   "text": "# Technical Details\n\nThe Vonage MCP Server allows AI agents and developer tools to interact with Vonage APIs through the Model Context Protocol (MCP) \u2014 an open standard that defines how large language models (LLMs) discover, describe, and use external tools and APIs.\n\nBy implementing MCP, Vonage makes its communication capabilities (Voice, Messaging, Video, and more) discoverable and usable in agentic environments such as Claude Desktop, Cursor, VS Code, and other MCP-enabled clients.\n\n## Overview\n\nMCP defines a structured interface between an AI model (the *MCP client*) and a service exposing standardized tools (the *MCP server*), enabling natural-language-driven access to Vonage APIs.\n\nIn practice:\n\n* The agent (such as Claude) receives a prompt from the user, such as \u201cSend an SMS to John\u201d.\n* It queries the Vonage MCP Server to find the right tool (e.g. `send_sms`).\n* The server executes the corresponding Vonage API call and returns the result.\n\nThis architecture allows developers to integrate Vonage\u2019s communication APIs into AI-assisted workflows \u2014 without writing glue code or custom integrations.\n\n## Key Features\n\n* **Tool Discovery** \u2013 MCP clients can automatically detect and describe available Vonage tools.\n* **Secure Access** \u2013 Each tool runs within a defined scope using Vonage API credentials.\n* **Agent Integration** \u2013 Works with AI-powered tools like Claude, Cursor, Windsurf, and VS Code.\n* **Extensibility** \u2013 Developers can add or customize tools for specific Vonage APIs.\n\n## Architecture\n\nThe MCP model consists of three main components:\n\n| Component | Role |\n| --- | --- |\n| **AI Agent (LLM)** | Understands user intent and determines when to use a tool. |\n| **MCP Client** | A local connector or plugin (e.g. in Claude or VS Code) that communicates with MCP servers. |\n| **MCP Server** | Exposes tools and schemas that describe what actions are possible (e.g., sending messages, querying docs). |\n\n### Request Flow Example\n\n1. User: \u201cSend an SMS to +1-202-555-0183 saying I\u2019ll be 10 minutes late.\u201d\n2. LLM identifies this as a telephony action.\n3. MCP Client queries the Vonage Telephony MCP Server for available tools.\n4. Server exposes the `send_sms` tool and executes it using Vonage APIs.\n5. The LLM receives confirmation and reports success to the user.\n\n## Getting Started\n\nSee the Introduction to the Vonage MCP Servers guide for more information on the different MCP servers Vonage provides.\n\nThen, follow our installation guides for instructions on how to install your chosen MCP server in your development environment:",
+   "retrieved_at": "2026-11-23T19:44:00+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-documentation-mcp-server",
+   "requested_at": "2026-11-23T19:44:02+05:30",
+   "status": "ok",
+   "final_url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-documentation-mcp-server",
+   "title": "How to Install the Vonage Documentation MCP Server",
+   "chars": 2184,
+   "sha256": "a88aae88d73be7800520d4b375a6e339093991d041aa5b81fba6e53b3755b9b9",
+   "text": "# How to Install the Vonage Documentation MCP Server\n\nThe Vonage Documentation MCP Server lets you query official Vonage API documentation directly from your development environment or AI assistant. Whether you\u2019re working in **VS Code**, **Cursor**, or **Claude Desktop**, you can now search Vonage docs inline \u2014 no browser required.\n\n## Setup in VS Code or Cursor\n\nThe setup process is identical in both editors.\n\n### Step 1: Open the MCP Configuration\n\n1. Press **Command+Shift+P** (macOS) or **Ctrl+Shift+P** (Windows/Linux).\n2. Search for **\u201cMCP: Open User Configuration.\u201d**\n3. In the `mcp.json` file that opens, add the following configuration:\n\nCopy\n\n```\n{\n  \"servers\": {\n    \"vonage-docs\": {\n      \"url\": \"https://documentation-mcp.vonage.dev/mcp\",\n      \"type\": \"http\",\n      \"description\": \"Vonage Developer Portal\"\n    }\n  },\n  \"inputs\": []\n}\n```\n\n### Step 2: Save and Reload\n\nSave the file, close your editor, and restart **VS Code** or **Cursor**.  \nThe MCP extension will automatically connect to the **Vonage Documentation MCP Server**.\n\nYou can now query Vonage docs directly inside your IDE \u2014 for example:\n\n\u201cShow me how to send an SMS with Node.js using the Vonage Messages API.\u201d\n\n## Setup in Claude Desktop\n\n### Step 1: Locate the Configuration File\n\nOpen (or create) your Claude MCP configuration file:\n\n* **macOS:**  \n  `~/Library/Application Support/Claude/claude_desktop_config.json`\n* **Windows:**  \n  `%APPDATA%\\Claude\\claude_desktop_config.json`\n\n### Step 2: Add the Vonage Docs Server\n\nAdd the following snippet inside the `\"servers\"` section:\n\nCopy\n\n```\n{\n  \"servers\": {\n    \"vonage-docs\": {\n      \"url\": \"https://documentation-mcp.vonage.dev/mcp\",\n      \"type\": \"http\",\n      \"description\": \"Vonage Developer Portal\"\n    }\n  },\n  \"inputs\": []\n}\n```\n\n### Step 3: Restart Claude\n\nRestart **Claude Desktop**. It will automatically connect to the **Vonage Documentation MCP Server**.\n\n## Verify the Connection\n\nOnce setup is complete, try a test query in your preferred tool:\n\n\u201cHow do I authenticate with the Vonage API using Python?\u201d\n\nIf the MCP Server is connected, you\u2019ll receive accurate documentation snippets directly from the **Vonage Developer Portal**.",
+   "retrieved_at": "2026-11-23T19:44:02+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+   "requested_at": "2026-11-23T19:44:03+05:30",
+   "status": "ok",
+   "final_url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+   "title": "Introduction to Vonage MCP Servers",
+   "chars": 3439,
+   "sha256": "44111d166de311734390bdd60c4f8661d5b742b5b86045fab51f017eb211bac9",
+   "text": "# Introduction to the Vonage MCP Servers\n\n## What Is the Model Context Protocol (MCP)?\n\nThe **Model Context Protocol (MCP)** is an open standard that defines how AI models can discover and use external tools, APIs, and data sources in a consistent, secure way.\n\nJust as **OpenAPI** helps developers understand how to call an API, MCP gives **AI agents** a structured way to understand and use tools.\n\nEach MCP tool clearly defines:\n\n* What it does\n* What inputs it requires\n* What it returns\n\nBy using this shared structure, agents can make API calls safely \u2014 without any hardcoded integrations.\n\n## What are the Vonage MCP Servers?\n\nVonage provides a few different individual MCP implementations, based on your needs. We have a Documentation Server which exposes our documentation to LLM models so you can get up-to-date answers, and a Server API Binding MCP server that expose Vonage APIs and developer tools in an AI-native format that can be used directly by MCP-compatible clients \u2014 such as Claude Desktop or VS Code\u2019s MCP extension.\n\nIn practice, this means developers and AI agents can query documentation, manage Vonage applications, and automate communication tasks simply by using natural language, providing several benefits:\n\n* **AI-Native Discovery** \u2013 Expose Vonage APIs directly to AI tools and assistants.\n* **Faster Setup** \u2013 Access documentation and account tools instantly.\n* **Secure & Structured** \u2013 All tool interactions follow a clear, schema-based format.\n* **Consistent Developer Experience** \u2013 The same MCP pattern works across documentation, configuration, and other Vonage services.\n\n## Vonage MCP Server Types\n\nVonage offers two MCP Servers designed for different purposes:\n\n| MCP Server | Description | Purpose |\n| --- | --- | --- |\n| **Documentation MCP Server** | Lets AI assistants search and return information from the Vonage API Documentation. | Quickly find API details, guides, and code snippets without leaving your IDE. |\n| **Server API Bindings MCP Server** | Also known as our Tooling MCP Server, it provides tools for managing Vonage applications, numbers, and reports programmatically. | Enables configuration and account management directly through AI commands. |\n\nEach server follows the same MCP structure, making them interoperable and easy to use together.\n\n## How It Works\n\nHere\u2019s an example of how the Vonage MCP Server fits into an AI workflow:\n\n1. A developer asks their AI assistant:\n\n   \u201cShow me how to send a WhatsApp message using Vonage APIs.\u201d\n2. The assistant\u2019s **MCP client** checks what servers are available and finds the **Documentation MCP Server**.\n3. The server returns relevant documentation sections directly from the official Vonage Developer Portal.\n4. Later, the developer asks:\n\n   \u201cCreate a new Vonage app with messaging enabled.\u201d\n5. The assistant switches to the **Tooling MCP Server**, which calls the appropriate API to create and configure the app \u2014 no manual setup required.\n\nThis workflow bridges natural language and API actions, allowing developers to stay focused on building rather than searching or scripting.\n\n## Supported Clients\n\nThe Vonage MCP Server works with any AI or IDE environment that supports the Model Context Protocol, including:\n\n* **Claude Desktop**\n* **VS Code MCP Extension**\n* **Cursor IDE**\n\nSetup guides are available for each environment in the installation guides for the documentation server and for the server API bindings server",
+   "retrieved_at": "2026-11-23T19:44:03+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-tooling-mcp-server",
+   "requested_at": "2026-11-23T19:44:04+05:30",
+   "status": "ok",
+   "final_url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-tooling-mcp-server",
+   "title": "How to Install the Vonage Server API Bindings MCP Server",
+   "chars": 3454,
+   "sha256": "5567396bef671c109bc8b4c8e64befa257869fb744a43da83106772cf588a7b1",
+   "text": "# How to Install the Vonage Server API Bindings MCP Server\n\nThe Vonage Server API Bindings MCP Server, also known as the Tooling MCP Server, lets you invoke various API actions directly through your LLM Assistant or IDE of choice. Whether you\u2019re working in **VS Code**, **Cursor**, or **Claude Desktop**, you can now get information that you used to have to visit the Vonage Customer Dashboard for.\n\n## Setup in VS Code or Cursor\n\nThe setup process is identical in both editors.\n\n### Step 1: Open the MCP Configuration\n\n1. Press **Command+Shift+P** (macOS) or **Ctrl+Shift+P** (Windows/Linux).\n2. Search for **\u201cMCP: Open User Configuration.\u201d**\n3. In the `mcp.json` file that opens, add the following configuration:\n\nCopy\n\n```\n{\n  \"servers\": {\n    \"vonage-mcp-server-api-bindings\": {\n        \"type\": \"stdio\",\n        \"command\": \"npx\",\n        \"args\": [\n            \"-y\",\n            \"@vonage/vonage-mcp-server-api-bindings\"\n        ],\n        \"env\": {\n            \"VONAGE_APPLICATION_ID\": \"<YOUR_VONAGE_APPLICATION_ID>\",\n            \"VONAGE_PRIVATE_KEY64\": \"<YOUR_VONAGE_PRIVATE_KEY64>\",\n            \"VONAGE_API_KEY\": \"<YOUR_VONAGE_API_KEY>\",\n            \"VONAGE_API_SECRET\": \"<YOUR_VONAGE_API_SECRET>\",\n            \"VONAGE_VIRTUAL_NUMBER\": \"<YOUR_VONAGE_VIRTUAL_NUMBER>\",\n            \"VONAGE_WHATSAPP_NUMBER\": \"<YOUR_VONAGE_WHATSAPP_NUMBER>\",\n            \"RCS_SENDER_ID\": \"<YOUR_RCS_SENDER_ID>\"\n        }\n    }\n  },\n  \"inputs\": []\n}\n```\n\nNote that we only support the Private Key in Base64 format. We recommend using https://mylight.work/private-key-to-environment-variable to convert your Private Key to base64 format, as this tool works entirely in your browser and does not transmit anything to a 3rd party server.\n\n### Step 2: Save and Reload\n\nSave the file, close your editor, and restart **VS Code** or **Cursor**.  \nThe MCP extension will automatically download and start the **Vonage Tooling MCP Server**.\n\nYou can now perform common dashboard actions, like:\n\n\u201cCan you create a new Vonage application called \"My Chat App\"?\u201d\n\n## Setup in Claude Desktop\n\n### Step 1: Locate the Configuration File\n\nOpen (or create) your Claude MCP configuration file:\n\n* **macOS:**  \n  `~/Library/Application Support/Claude/claude_desktop_config.json`\n* **Windows:**  \n  `%APPDATA%\\Claude\\claude_desktop_config.json`\n\n### Step 2: Add the Vonage Docs Server\n\nAdd the following snippet inside the `\"servers\"` section:\n\nCopy\n\n```\n{\n  \"servers\": {\n    \"vonage-mcp-server-api-bindings\": {\n        \"type\": \"stdio\",\n        \"command\": \"npx\",\n        \"args\": [\n            \"-y\",\n            \"@vonage/vonage-mcp-server-api-bindings\"\n        ],\n        \"env\": {\n            \"VONAGE_APPLICATION_ID\": \"<YOUR_VONAGE_APPLICATION_ID>\",\n            \"VONAGE_PRIVATE_KEY64\": \"<YOUR_VONAGE_PRIVATE_KEY64>\",\n            \"VONAGE_API_KEY\": \"<YOUR_VONAGE_API_KEY>\",\n            \"VONAGE_API_SECRET\": \"<YOUR_VONAGE_API_SECRET>\",\n            \"VONAGE_VIRTUAL_NUMBER\": \"<YOUR_VONAGE_VIRTUAL_NUMBER>\",\n            \"VONAGE_WHATSAPP_NUMBER\": \"<YOUR_VONAGE_WHATSAPP_NUMBER>\",\n            \"RCS_SENDER_ID\": \"<YOUR_RCS_SENDER_ID>\"\n        }\n    }\n  },\n  \"inputs\": []\n}\n```\n\n### Step 3: Restart Claude\n\nRestart **Claude Desktop**. It will automatically connect to the **Vonage Documentation MCP Server**.\n\nYou can now ask Claude questions like:\n\n\u201cCan you list the applications I have configured for my account?\u201d\n\nClaude will retrieve the answer directly from **Vonage\u2019s API** and display them for you.",
+   "retrieved_at": "2026-11-23T19:44:04+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "requested_at": "2026-11-23T19:44:07+05:30",
+   "status": "ok",
+   "final_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "title": "Authentication - API Concepts | Vonage API Documentation",
+   "chars": 26096,
+   "sha256": "36891d8afb6fc1fb2e32bfb23b755ea8d925076e7d47694b61aa068dab171065",
+   "text": "# Authentication\n\nVonage APIs support different authentication methods depending on which product you are using:\n\n| API{filter} | API Key and Secret (Header) | JSON Web Token (JWT) |\n| --- | --- | --- |\n| Accounts |  |  |\n| Application |  |  |\n| Audit |  |  |\n| Channel Manager |  |  |\n| Conversation |  |  |\n| Conversion |  |  |\n| Device Location Retrieval |  |  |\n| Dispatch |  |  |\n| External Accounts |  |  |\n| Identity Insights |  |  |\n| Media |  |  |\n| Messages1 |  |  |\n| Numbers |  |  |\n| Number Insight |  |  |\n| Pricing v1 |  |  |\n| Pricing v2 |  |  |\n| Programmable SIP |  |  |\n| Quality on Demand |  |  |\n| Redact |  |  |\n| Reports |  |  |\n| SMS |  |  |\n| Verify (Legacy) |  |  |\n| Verify2 |  |  |\n| Voice3 |  |  |\n| Video |  |  |\n\n1 Messages supports both JWT and Basic authentication, however basic authentication does not support webhooks or advanced features such as ACLs. For most use-cases we recommend JWT Authentication. See Messages API Authentication\n\n2 Verify supports both JWT and Basic authentication, however basic authentication does not support webhooks or advanced features such as ACLs.\n\n3 SIP Trunking uses Digest Authentication method with the API Key as user and API Secret as password.\n\n## Contents\n\nIn this document you can learn about authentication via the following means:\n\n## API Key and Secret\n\nWhen you create a Vonage account, an API key and secret will be created for you. These are located in your account settings in the Vonage Dashboard. You should always keep these secure and **never share these details**: be careful when adding it to your codebase to make sure they are not shared with anyone who may use it maliciously. If you use message signatures, these are generated using the `SIGNATURE_SECRET` rather than the `API_SECRET`; both values can be found in your account settings.\n\nNote: The secret should always be kept secure and never shared. Be careful when adding it to your codebase to make sure it is not shared with anyone who may use it maliciously. Read more about the Best Security Practices for your Vonage Account.\n\nVonage APIs may require your API Key and Secret in a number of different ways.\n\n### Basic Authentication\n\nA number of newer Vonage APIs require authentication to be done using an API key and secret sent Base64 encoded in the `Authorization` header.\n\nFor these APIs, you send your API key and secret in the following way:\n\nCopy\n\n```\nAuthorization: Basic base64(API_KEY:API_SECRET)\n```\n\nIf your API key were `aaa012` and your API secret were `abc123456789`, you would concatenate the key and secret with a `:` (colon) symbol and then encode them using Base64 encoding to produce a value like this:\n\nCopy\n\n```\nAuthorization: Basic YWFhMDEyOmFiYzEyMzQ1Njc4OQ==\n```\n\nA website for generating Base64 encoded strings can be found here:\n\n* General: Base64 Encode and Decode\n\nDetails on how to encode Base64 strings in a variety of programming languages can be found at the following websites:\n\n* C#/.NET: How do I encode and decode a Base64 string? from StackOverflow\n* Go: Base64 Encoding from Go By Example\n* Java: Base64\n* JavaScript: Base64 encoding and decoding from MDN web docs\n* PHP: base64\\_encode\n* Python: Base64\n* Ruby: Base64\n* Swift: Base64 Encode and Decode in Swift from iOS Developer Tips\n\n### Secret Rotation\n\nIt is possible to have two API secrets to be used against one API key at the same time. This way you can create a second API secret and test it before revoking the existing API secret in your production network. The API secret rotation procedure consists of the following steps:\n\n1. Create a second API secret in your account settings or by using the secret rotation API.\n2. Update one or more of your servers to use the newly created API secret for making calls to Vonage APIs\n3. Test that there are no connectivity issues and roll out the API secret update across the remaining servers\n4. Delete the replaced API secret\n\n## JSON Web Tokens\n\nJSON Web Tokens (JWTs) are a compact, URL-safe means of representing claims to be transferred between two parties. For a full list of the APIs that use JWTs, please see the table above.\n\n### Header and Payload\n\nJWTs consist of a Header and a Payload. The values for the Header are:\n\n| Name | Description | Required |\n| --- | --- | --- |\n| `alg` | The encryption algorithm used to generate the JWT. `RS256` is supported. |  |\n| `typ` | The token structure. Set to `JWT`. |  |\n\nThe values for the payload claim are:\n\n| Name | Description | Required |\n| --- | --- | --- |\n| `application_id` | The unique ID allocated to your application by Vonage. |  |\n| `iat` | The UNIX timestamp at UTC + 0 indicating the moment the JWT was requested. |  |\n| `jti` | A unique string identifier of the JWT. |  |\n| `nbf` | The UNIX timestamp at UTC + 0 indicating the moment the JWT became valid. |  |\n| `exp` | The UNIX timestamp at UTC + 0 indicating the moment the JWT is no longer valid. A minimum value of 30 seconds from the time the JWT is generated. A maximum value of 24 hours from the time the JWT is generated. A default value of 15 minutes from the time the JWT is generated. |  |\n\n### Generating JWTs\n\n#### Using the Vonage CLI to generate JWTs\n\nThe Vonage CLI provides a command for generating a JWT.\n\nAn example of generating a JWT for an application is as follows:\n\nCopy\n\n```\n# A command with parameters\nvonage jwt create `\n--app-id='00000000-0000-0000-0000-000000000000' `\n--private-key=./private.key\n\n# Will produce a token\neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYyODE5NDYsImp0aSI6IjBmZjcwZDNmLTAzN2EtNGY4MC04ODZjLWI3MmM3MmQyMWNmMiIsImlhdCI6MTczNjI4MTA0NiwiYXBwbGljYXRpb25faWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAifQ.gA7jClpqaZ2OoS0iri-zGCbda4jO7C0M8mka0EnSyjlds1EeY8fNoBEx3FTXHfkkzzrj0TskrWc_dcs1wuM8Kx55c5rLQ7taVpDAYopKSc_CeeOaad8S6aWnRkTUTNeduO4aIn-0CbyRTluBYsH1RBqYBQvobuQIDEwbFw8xBgx0UfREMMN6DAWknR57eiVXN9x_oD6CGQJ1yV3025nGboeMsP9YgX4Nwc-rE2r8c1ZGwCLO81x8i19Qil3Nwu5q1nzouyavQjIw00B_TZkushnI1ufdi_GNqk-h5q2HvGkg7Pj9bVkZHFdVTO8im03JYNyJmcV83vnpjOLuCFRzxQ\n```\n\nCopy\n\n```\nREM A command with parameters\nvonage jwt create ^\n--app-id='00000000-0000-0000-0000-000000000000' ^\n--private-key=./private.key\n\nREM Will produce a token\neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYyODE5NDYsImp0aSI6IjBmZjcwZDNmLTAzN2EtNGY4MC04ODZjLWI3MmM3MmQyMWNmMiIsImlhdCI6MTczNjI4MTA0NiwiYXBwbGljYXRpb25faWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAifQ.gA7jClpqaZ2OoS0iri-zGCbda4jO7C0M8mka0EnSyjlds1EeY8fNoBEx3FTXHfkkzzrj0TskrWc_dcs1wuM8Kx55c5rLQ7taVpDAYopKSc_CeeOaad8S6aWnRkTUTNeduO4aIn-0CbyRTluBYsH1RBqYBQvobuQIDEwbFw8xBgx0UfREMMN6DAWknR57eiVXN9x_oD6CGQJ1yV3025nGboeMsP9YgX4Nwc-rE2r8c1ZGwCLO81x8i19Qil3Nwu5q1nzouyavQjIw00B_TZkushnI1ufdi_GNqk-h5q2HvGkg7Pj9bVkZHFdVTO8im03JYNyJmcV83vnpjOLuCFRzxQ\n```\n\n# A command with parameters\nvonage jwt create \\\n--app-id='00000000-0000-0000-0000-000000000000' \\\n--private-key=./private.key\n\n# Will produce a token\neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYyODE5NDYsImp0aSI6IjBmZjcwZDNmLTAzN2EtNGY4MC04ODZjLWI3MmM3MmQyMWNmMiIsImlhdCI6MTczNjI4MTA0NiwiYXBwbGljYXRpb25faWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAifQ.gA7jClpqaZ2OoS0iri-zGCbda4jO7C0M8mka0EnSyjlds1EeY8fNoBEx3FTXHfkkzzrj0TskrWc\\_dcs1wuM8Kx55c5rLQ7taVpDAYopKSc\\_CeeOaad8S6aWnRkTUTNeduO4aIn-0CbyRTluBYsH1RBqYBQvobuQIDEwbFw8xBgx0UfREMMN6DAWknR57eiVXN9x\\_oD6CGQJ1yV3025nGboeMsP9YgX4Nwc-rE2r8c1ZGwCLO81x8i19Qil3Nwu5q1nzouyavQjIw00B\\_TZkushnI1ufdi\\_GNqk-h5q2HvGkg7Pj9bVkZHFdVTO8im03JYNyJmcV83vnpjOLuCFRzxQ\n\nThe private key in question is generated from the application dashboard or from `vonage apps create`. You can save this\ninformation for the CLI by running `vonage auth set`. The contents of the private key will then be saved in either\nthe `.vonagerc` file or `$HOME/.vonage/config.json`.\n\nFurther information on the Vonage CLI can be found in its repository on GitHub.\n\nExamples of using the Vonage libraries to generate JWTs can be found below. If you are not using a Vonage library you should refer to RFC 7519 to implement JWTs.\n\n### Vonage Client SDKs\n\nThe Vonage Client and Video SDKs use JWTs for authentication when a client connects to Vonage. These JWTs are generated using the application ID and private key that is provided when a new application is created.\n\n#### Claims\n\nUsing that `private.key` and the application ID, you can mint a new JWT. In order to log a user into a Vonage client, the JWT will need the following claims:\n\n##### Vonage Client SDK\n\n| Claim | Description |\n| --- | --- |\n| `sub` | The \"subject\". The subject, in this case, will be the name of the user created and associated with your Vonage Application. |\n| `acl` | Access control list. The Client SDK uses this as a permission system for users. Read more about it in the ACL overview. |\n| `application_id` | This is the ID of the Vonage Application you created. |\n| `iat` | \"Issued at time\" This is the time the JWT was issued, in unix epoch time. |\n| `jti` | \"JWT ID\". This is a unique string identifier for this JWT. |\n| `exp` | \"Expiration time\" This is the time in the future that the JWT will expire, in unix epoch time. |\n\n*The `exp` claim is optional.* If the claim is not provided, then the JWT will expire by default in 15 minutes. The max expiration time for a JWT is 24 hours. JWTs should typically be short-lived, as it is trivial to create a new JWT and some JWTs can have multiple far-reaching permissions.\n\n##### Sample Client SDK JWT Payload\n\nOnce all the claims have been provided, the resulting claims should appear like so:\n\nCopy\n\n```\n{\n  \"iat\": 1532093588,\n  \"jti\": \"705b6f50-8c21-11e8-9bcb-595326422d60\",\n  \"sub\": \"alice\",\n  \"exp\": \"1532179987\",\n  \"acl\": {\n    \"paths\": {\n      ...\n    }\n  },\n  \"application_id\": \"aaaaaaaa-bbbb-cccc-dddd-0123456789ab\"\n}\n```\n\n( `...` snippet is truncated)\n\n##### Vonage Video Client SDK\n\n| Claim | Description |\n| --- | --- |\n| `sub` | The \"subject\". The subject, in this case, should be the string `video`. |\n| `acl` | Access control list. The Client SDK uses this as a permission system for users. Read more about it in the ACL overview. |\n| `application_id` | This is the ID of the Vonage Application you created. |\n| `session_id` | This is the ID of the Session you created. |\n| `scope` | This is the scope of the token. It should be the string `session.connect`. |\n| `role` | This is the role of the token. It can be a range of string values depending on what permissions you want to grant this token. |\n| `data` | This custom metadata you can optionally add to describe the token. This is a string limited to 1000 characters. |\n| `initial_layout_class_list` | This lets you optionally, when broadcasting, specify the initial layout class list for streams published by the client. |\n| `iat` | \"Issued at time\" This is the time the JWT was issued, in unix epoch time. |\n| `jti` | \"JWT ID\". This is a unique string identifier for this JWT. |\n| `exp` | \"Expiration time\" This is the time in the future that the JWT will expire, in unix epoch time. |\n\n*The `exp` claim is optional.* If the claim is not provided, then the JWT will expire by default in 15 minutes. The max expiration time for a Video SDK JWT is 24 hours. JWTs should typically be short-lived, as it is trivial to create a new JWT and some JWTs can have multiple far-reaching permissions. Always make sure to try and set an `exp` time to the least amount of time that is feasible for your application.\n\n##### Sample Video Client SDK JWT Payload\n\nCopy\n\n```\n{\n  \"scope\": \"session.connect\",\n  \"session_id\": \"1_MX44YjY4NTFmZS01NjdjLTRlODYtYWRmOC0zYmVhODM2MzNjNjB-fjE3NDIzMDY0ODY0NjZ-WS9FOHhybUdHV0JtTGZYTEV2aVlwV1N4fn5-\",\n  \"role\": \"moderator\",\n  \"initial_layout_class_list\": \"\",\n  \"sub\": \"video\",\n  \"acl\": {\n    \"paths\": {\n      \"/session/**\": {}\n    }\n  },\n  \"jti\": \"c04c96ba-3229-4fd4-9f55-406b6a6eb485\",\n  \"iat\": 1742306486,\n  \"exp\": 1742307386,\n  \"application_id\": \"8b6851fe-567c-4e86-adf8-3bea83633c60\"\n}\n```\n\n### Access Control List (ACL)\n\nIn the sample JWT request payload above, notice how the `acl` claim has a `paths` object. The path object contains a list of endpoints that correspond to certain permissions a user has when using the Client SDK.\n\nBelow is the list of endpoints you can grant a user access to:\n\n| Endpoint | Description | Required for |\n| --- | --- | --- |\n| `/*/rtc/**` | Create signalling session to receive events and send metrics | In-app calls/message |\n| `/*/sessions/**` | Log in as an in-app voice or chat user | In-app calls/messages |\n| `/*/users/**` | Getting user conversations, user sessions and user object | In-app calls/messages |\n| `/*/conversations/**` | Create and manage conversations & send/receive messages | In-app calls/messages |\n| `/*/knocking/**` | Start phone calls | In-app calls |\n| `/*/devices/**` | Register device to receive push notifications | In-app calls/messages |\n| `/*/legs/**` | Create and manage legs in a conversation | In-app calls |\n| `/*/session/**` | Connect to a video session | Video |\n\nYou should provide the user you are generating with permissions to access only the relevant paths. For instance, if the Voice Client SDK user is not going to need to fetch information about their User object or other Users, you should omit the `users` path. To further illustrate, if you add the `/*/conversations/**` path to a JWT's ACL, the user will be able to create and manage conversations. Also, if this is the *only* ACL set, the user will only have access to the `/conversations` endpoint.\n\nNote: Using wildcards in your ACL paths (e.g. `/*/conversations/**`) will allow the JWT token to access all the operations for that endpoint. It is strongly recommended that you use more granular control of your ACL paths as illustrated below.\n\n### Granular ACL Paths\n\nAbove, we looked at how to grant users access to endpoints. You may also limit or grant access based on sub-paths and HTTP methods. This allows you to very granularly define what permissions a token should have. For example in your Voice Client SDK application you want users to be able to get information about a conversation:\n\nCopy\n\n```\n{\n  \"acl\": {\n    \"paths\": {\n      \"/*/conversations/**\": {}\n    }\n  }\n}\n```\n\nThe above ACL paths allows **anyone** with this token to make requests to **any** Conversation API endpoint linked to your Vonage application. This will allow whoever holds this token get a list of ongoing Conversations in your application, create new Conversations, or more. To mitigate this, you can specify which paths specifically should be accessible and which HTTP methods are allowed to be used on those paths.\n\nCopy\n\n```\n{\n  \"acl\": {\n    \"paths\": {\n      \"/*/conversations/*\": {\n        \"methods\": [\n          \"GET\"\n        ]\n      }\n    }\n  }\n}\n```\n\nThis new ACL paths allows anyone with this token to **only** make a `GET` request to a specific conversation and no further subpaths or operations. Which is far more restrictive than before.\n\n#### Minimum ACL Paths for Client SDKs\n\nBelow are the minimum ACL paths needed to perform various actions in the Vonage Client SDKs. To add support for more endpoints based on your use case, refer to the ACL table above and add them as restrictively as possible.\n\nThis supports the basic use case of creating a session, using `serverCall`, `reconnectCall`, and being able to answer, reject, hangup a call.\n\nCopy\n\n```\n{\n  \"acl\": {\n    \"paths\": {\n      \"/*/sessions/**\": { \"methods\": [\"POST\"] },\n      \"/*/conversations/*\": { \"methods\": [\"GET\"] },\n      \"/*/conversations/*/rtc/*/answer\": { \"methods\": [\"POST\"] },\n      \"/*/conversations/*/rtc/*/offer/*\": { \"methods\": [\"POST\"]},\n      \"/*/conversations/*/members/*\": { \"methods\": [\"PUT\", \"DELETE\"] },\n      \"/*/knocking/**\": { \"methods\": [\"POST\", \"DELETE\"] },\n      \"/*/legs/**\": { \"methods\": [\"POST\", \"GET\"] },\n      \"/*/v2/rtc/**\": { \"methods\": [\"POST\", \"GET\"] }\n    }\n  }\n}\n```\n\nIn addition to the base Calling case, this will allow you to use SDK functions such as `mute`, `say`, etc. This is needed for the Chat SDK.\n\nCopy\n\n```\n{\n  \"acl\": {\n    \"paths\": {\n      \"/*/sessions/**\": { \"methods\": [\"POST\"] },\n      \"/*/conversations/*\": { \"methods\": [\"GET\"] },\n      \"/*/conversations/*/events/*\": { \"methods\": [\"POST\", \"GET\"]},\n      \"/*/conversations/*/rtc/*/answer\": { \"methods\": [\"POST\"] },\n      \"/*/conversations/*/rtc/*/offer/*\": { \"methods\": [\"POST\"]},\n      \"/*/conversations/*/members/*\": { \"methods\": [\"PUT\", \"DELETE\"] },\n      \"/*/knocking/**\": { \"methods\": [\"POST\", \"DELETE\"] },\n      \"/*/legs/**\": { \"methods\": [\"POST\", \"GET\"] },\n      \"/*/v2/rtc/**\": { \"methods\": [\"POST\", \"GET\"] }\n    }\n  }\n}\n```\n\nIn addition to the base Calling case, this will allow you to use SDK functions to manage push tokens. Add the device methods you want to support as needed.\n\nCopy\n\n```\n{\n  \"acl\": {\n    \"paths\": {\n      \"/*/sessions/**\": { \"methods\": [\"POST\"] },\n      \"/*/conversations/*\": { \"methods\": [\"GET\"] },\n      \"/*/conversations/*/rtc/*/answer\": { \"methods\": [\"POST\"] },\n      \"/*/conversations/*/rtc/*/offer/*\": { \"methods\": [\"POST\"]},\n      \"/*/conversations/*/members/*\": { \"methods\": [\"PUT\", \"DELETE\"] },\n      \"/*/knocking/**\": { \"methods\": [\"POST\", \"DELETE\"] },\n      \"/*/legs/**\": { \"methods\": [\"POST\", \"GET\"] },\n      \"/*/v2/rtc/**\": { \"methods\": [\"POST\", \"GET\"] },\n      \"/*/devices/**\": { \"methods\": [] }\n    }\n  }\n}\n```\n\nDevices methods:\n\n* POST - Register new user devices.\n* GET - Fetch registered devices for the user.\n* PUT - Update registered devices for the user.\n* DELETE - Delete registered devices for the user.\n\nIn addition to the base Calling case, this will allow you to use SDK functions to get information about a specific user.\n\nCopy\n\n```\n{\n  \"acl\": {\n    \"paths\": {\n      \"/*/sessions/**\": { \"methods\": [\"POST\"] },\n      \"/*/conversations/*\": { \"methods\": [\"GET\"] },\n      \"/*/conversations/*/rtc/*/answer\": { \"methods\": [\"POST\"] },\n      \"/*/conversations/*/rtc/*/offer/*\": { \"methods\": [\"POST\"]},\n      \"/*/conversations/*/members/*\": { \"methods\": [\"PUT\", \"DELETE\"] },\n      \"/*/knocking/**\": { \"methods\": [\"POST\", \"DELETE\"] },\n      \"/*/legs/**\": { \"methods\": [\"POST\", \"GET\"] },\n      \"/*/v2/rtc/**\": { \"methods\": [\"POST\", \"GET\"] },\n      \"/*/users/*\": { \"methods\": [\"GET\"] },\n    }\n  }\n}\n```\n\nThis supports connecting to a session with the Video SDK\n\nCopy\n\n```\n{\n  \"acl\": {\n    \"paths\": {\n      \"/*/session/**\": {}\n    }\n  }\n}\n```\n\n### Generating JWTs using the Vonage CLI\n\nThe Server SDKs contain methods for generating JWT tokens. You may however use the Vonage CLI to do this as well.\nThis is particularly helpful during testing.\n\nCopy\n\n```\n# A command with parameters\nvonage jwt create `\n--app-id='00000000-0000-0000-0000-000000000000' `\n--private-key=./private.key `\n--sub='Alice' `\n--acl='{\\\"paths\\\":{\\\"\\/*\\/users\\/**\\\":{},\\\"\\/*\\/conversations\\/**\\\":{},\\\"\\/*\\/sessions\\/**\\\":{},\\\"\\/*\\/devices\\/**\\\":{},\\\"\\/*\\/push\\/**\\\":{},\\\"\\/*\\/knocking\\/**\\\":{},\\\"\\/*\\/legs\\/**\\\":{}}}'\n\n# Will produce a token\neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2wiOnsicGF0aHMiOnsiLyovcnRjLyoqIjp7fSwiLyovdXNlcnMvKioiOnt9LCIvKi9jb252ZXJzYXRpb25zLyoqIjp7fSwiLyovc2Vzc2lvbnMvKioiOnt9LCIvKi9kZXZpY2VzLyoqIjp7fSwiLyovcHVzaC8qKiI6e30sIi8qL2tub2NraW5nLyoqIjp7fSwiLyovbGVncy8qKiI6e319fSwiZXhwIjoxNzQxMTgyMzA3LCJzdWIiOiJBbGljZSIsImp0aSI6Ijg1MTViNzk2LTA1YjktNGFkMS04MTRkLTE1NWZjZTQzZWM1YiIsImlhdCI6MTc0MTE4MTQwNywiYXBwbGljYXRpb25faWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAifQ.BscMdDXZ1-nuLtKyPJvw9tE8E8ZjJvTPJPMT9y0TjPz4Q7qqNaqxcjglc5QPtYEjh2YpZH6btSKbUF4XTClI026Hl5_QOBlnayYo7jXwhba16fa5PeyzSf30QFGFrHbANwrQJFVCjd329SZUpwK4GxgB1gf230NhbfmkhegKezqicru2WTGCKm8kQncYliFwIEYUlcRAb2c8xcaVrn_6QNNahyeJRwGFfWpIkX0Oe-S4RDlPjoq47_gYWac9MmaetB4Dd3Yp531AuniGV5JiIShkaEwuY4Zyov4Hcmajm4Lm_UFY119la7vzHis0P7cT9pPUDe5cyPj7eT8-VhitfQ\n```\n\nCopy\n\n```\nREM A command with parameters\nvonage jwt create ^\n--app-id='00000000-0000-0000-0000-000000000000' ^\n--private-key=./private.key ^\n--sub='Alice' ^\n--acl=\"{\\\"paths\\\":{\\\"\\/*\\/users\\/**\\\":{},\\\"\\/*\\/conversations\\/**\\\":{},\\\"\\/*\\/sessions\\/**\\\":{},\\\"\\/*\\/devices\\/**\\\":{},\\\"\\/*\\/push\\/**\\\":{},\\\"\\/*\\/knocking\\/**\\\":{},\\\"\\/*\\/legs\\/**\\\":{}}}\"\n\nREM Will produce a token\neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2wiOnsicGF0aHMiOnsiLyovcnRjLyoqIjp7fSwiLyovdXNlcnMvKioiOnt9LCIvKi9jb252ZXJzYXRpb25zLyoqIjp7fSwiLyovc2Vzc2lvbnMvKioiOnt9LCIvKi9kZXZpY2VzLyoqIjp7fSwiLyovcHVzaC8qKiI6e30sIi8qL2tub2NraW5nLyoqIjp7fSwiLyovbGVncy8qKiI6e319fSwiZXhwIjoxNzQxMTgyMzA3LCJzdWIiOiJBbGljZSIsImp0aSI6Ijg1MTViNzk2LTA1YjktNGFkMS04MTRkLTE1NWZjZTQzZWM1YiIsImlhdCI6MTc0MTE4MTQwNywiYXBwbGljYXRpb25faWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAifQ.BscMdDXZ1-nuLtKyPJvw9tE8E8ZjJvTPJPMT9y0TjPz4Q7qqNaqxcjglc5QPtYEjh2YpZH6btSKbUF4XTClI026Hl5_QOBlnayYo7jXwhba16fa5PeyzSf30QFGFrHbANwrQJFVCjd329SZUpwK4GxgB1gf230NhbfmkhegKezqicru2WTGCKm8kQncYliFwIEYUlcRAb2c8xcaVrn_6QNNahyeJRwGFfWpIkX0Oe-S4RDlPjoq47_gYWac9MmaetB4Dd3Yp531AuniGV5JiIShkaEwuY4Zyov4Hcmajm4Lm_UFY119la7vzHis0P7cT9pPUDe5cyPj7eT8-VhitfQ\n```\n\n# A command with parameters\nvonage jwt create \\\n--app-id='00000000-0000-0000-0000-000000000000' \\\n--private-key=./private.key \\\n--sub='Alice' \\\n--acl='{\"paths\":{\"/\\*/rtc/\\*\\*\":{},\"/\\*/users/\\*\\*\":{},\"/\\*/conversations/\\*\\*\":{},\"/\\*/sessions/\\*\\*\":{},\"/\\*/devices/\\*\\*\":{},\"/\\*/push/\\*\\*\":{},\"/\\*/knocking/\\*\\*\":{},\"/\\*/legs/\\*\\*\":{}}}'\n\n# Will produce a token\neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2wiOnsicGF0aHMiOnsiLyovcnRjLyoqIjp7fSwiLyovdXNlcnMvKioiOnt9LCIvKi9jb252ZXJzYXRpb25zLyoqIjp7fSwiLyovc2Vzc2lvbnMvKioiOnt9LCIvKi9kZXZpY2VzLyoqIjp7fSwiLyovcHVzaC8qKiI6e30sIi8qL2tub2NraW5nLyoqIjp7fSwiLyovbGVncy8qKiI6e319fSwiZXhwIjoxNzQxMTgyMzA3LCJzdWIiOiJBbGljZSIsImp0aSI6Ijg1MTViNzk2LTA1YjktNGFkMS04MTRkLTE1NWZjZTQzZWM1YiIsImlhdCI6MTc0MTE4MTQwNywiYXBwbGljYXRpb25faWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAifQ.BscMdDXZ1-nuLtKyPJvw9tE8E8ZjJvTPJPMT9y0TjPz4Q7qqNaqxcjglc5QPtYEjh2YpZH6btSKbUF4XTClI026Hl5\\_QOBlnayYo7jXwhba16fa5PeyzSf30QFGFrHbANwrQJFVCjd329SZUpwK4GxgB1gf230NhbfmkhegKezqicru2WTGCKm8kQncYliFwIEYUlcRAb2c8xcaVrn\\_6QNNahyeJRwGFfWpIkX0Oe-S4RDlPjoq47\\_gYWac9MmaetB4Dd3Yp531AuniGV5JiIShkaEwuY4Zyov4Hcmajm4Lm\\_UFY119la7vzHis0P7cT9pPUDe5cyPj7eT8-VhitfQ\n\n#### Using the Server SDKs\n\nIt is expected that the accompanying server for your Vonage application will generate JWTs for the Client SDKs. Here are some examples using the Vonage Server SDKs:\n\nVersion 3 of the Vonage Node Server SDK includes a package for generating JWT tokens. It can also generate a JWT using the appropriate claims.\n\nCopy\n\n```\nconst { tokenGenerate } = require('@vonage/jwt');\n\nconst privateKey = readFileSync('path/to/private.key');\n\nconst aclPaths = {\n  \"paths\": {\n    ...\n  }\n}\n\nconst token = tokenGenerate(\"aaaaaaaa-bbbb-cccc-dddd-0123456789ab\", privateKey, {\n      //expire in 24 hours\n      exp: Math.round(new Date().getTime()/1000)+86400,\n      sub: \"Alice\",\n      acl: aclPaths,\n    });\n```\n\nThe Vonage JWT JDK library can be used to generate a signed JWT with claims.\n\nCopy\n\n```\nval token : String = Jwt.builder()\n    .applicationId(\"aaaaaaaa-bbbb-cccc-dddd-0123456789ab\")\n    .privateKeyPath(\"/path/to/private.key\")\n    .issuedAt(ZonedDateTime.now())\n    .subject(\"Alice\")\n    .addClaim(\"acl\", mapOf(\n        \"paths\" to mapOf(\n            ...\n        )\n    ))\n    .build()\n    .generate()\n```\n\nThe Vonage JWT JDK library can be used to generate a signed JWT with claims.\n\nCopy\n\n```\nString token = Jwt.builder()\n    .applicationId(\"aaaaaaaa-bbbb-cccc-dddd-0123456789ab\")\n    .privateKeyPath(Paths.get(\"/path/to/private.key\"))\n    .subject(\"Alice\")\n    .issuedAt(ZonedDateTime.now())\n    .expiresAt(ZonedDateTime.now().plusMinutes(20))\n    .addClaim(\"acl\", Map.of(\n        \"paths\", Map.of(\n            ...\n        )\n    ))\n    .build()\n    .generate();\n```\n\nThe Vonage .NET SDK can be used to generate a signed JWT with claims.\n\nAs an example, let's assume we want to add the following claims in the JWT:\n\nCopy\n\n```\nvar payload = new Dictionary<string, object>\n{\n    {\"sub\", \"Alice\"},\n    {\"exp\", DateTimeOffset.UtcNow.AddDays(1).ToUnixTimeSeconds().ToString()},\n    {\n        \"acl\", new Dictionary<string, object>\n        {\n            [\"paths\"] = new Dictionary<string, object>\n            {\n                ...\n            },\n        }\n    },\n};\n```\n\nThere are several ways to generate a JWT.\n\nYou can either use the static method `CreateToken` on the `Jwt` class:\n\nCopy\n\n```\nvar credentials = Credentials.FromAppIdAndPrivateKeyPath(VONAGE_APPLICATION_ID, VONAGE_APPLICATION_PRIVATE_KEY_PATH);\nvar token = Jwt.CreateToken(credentials.ApplicationId, credentials.ApplicationKey, payload);\n```\n\nOr use the method `GenerateToken` on a `Jwt` instance:\n\nCopy\n\n```\n// Using the credentials instance\nvar result = tokenGenerator.GenerateToken(credentials, payload);\n\n// Using ApplicationId and ApplicationKey values\nvar result = tokenGenerator.GenerateToken(credentials.ApplicationId, credentials.ApplicationKey, payload);\n```\n\nThe current version of the Vonage PHP Server SDK can also create a JWT including the appropriate claims when using the Keypair authentication.\n\nCopy\n\n```\n$keypair = new \\Vonage\\Client\\Credentials\\Keypair(\n    file_get_contents('/path/to/private.key'),\n    'aaaaaaaa-bbbb-cccc-dddd-0123456789ab'\n);\n$client = new \\Vonage\\Client($keypair);\n\n$claims = [\n    'acl' => [\n        'paths' => [\n            ...\n        ]\n    ]\n];\n$token = $client->generateJwt($claims);\n$tokenString = $token->toString();\n```\n\nThe Vonage Python JWT library can be used to generate a signed JWT with default or custom claims.\n\nCopy\n\n```\nfrom vonage_jwt import JwtClient\n\njwt_client = JwtClient(application_id, private_key)\n\n# The `claims` field is optional and can be omitted as defaults are set\n\npaths = { ... }\nclaims = {'sub': 'Alice', 'paths': paths}\nvonage_jwt = jwt_client.generate_application_jwt(claims)\n```\n\nThe Vonage JWT JDK library can be used to generate a signed JWT with claims.\n\nCopy\n\n```\n@builder = Vonage::JWTBuilder.new(application_id: YOUR_APPLICATION_ID, private_key: YOUR_PRIVATE_KEY)\n@token = @builder.jwt.generate\n```\n\n( `...` snippet is truncated)\n\nIf you are not using a Vonage library you should refer to RFC 7519 to implement JWT. JWT.io has a selection of libraries for generating JWTs in multiple languages.",
+   "retrieved_at": "2026-11-23T19:44:07+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/documentation",
+   "title": "Developer Documentation",
+   "snippet": "View all of the Vonage SDKs and tools available to help you build with our APIs. Vonage API Dashboard. Learn how to navigate and use ..."
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/home",
+   "title": "Vonage API Developer",
+   "snippet": "Get guides and code snippets, browse reference documentation, and more to develop connected applications with Vonage APIs and SDKs."
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "title": "Authentication - API Concepts | Vonage API Documentation",
+   "snippet": "API key and secret sent Base64 encoded in the `Authorization` header.\nFor these APIs, you send your API key and secret in the following way:\n```\nAuthorization: Basic base64(API_KEY:API_SECRET)\n```"
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/api/messages",
+   "title": "Vonage Messages API (v1.0) Reference | Vonage API Documentation",
+   "snippet": "The Messages API consolidates and normalises exchanges across all messaging channels. It allows you to use a single API to interact with our various channels such as SMS, MMS, RCS, WhatsApp, Viber and"
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/application/overview",
+   "title": "Vonage Application API Overview",
+   "snippet": "A Vonage API application contains data you need to connect to use the Vonage APIs. Learn more in Vonage's API documentation."
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/getting-started/concepts/glossary",
+   "title": "Glossary - API Concepts",
+   "snippet": "Explore a glossary of important definitions and concepts for Vonage APIs. Learn more in Vonage's API documentation."
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/voice/voice-api/webhook-reference",
+   "title": "Vonage Voice API Webhook Reference | Vonage API Documentation",
+   "snippet": "Vonage uses webhooks alongside its Voice API to enable your application to interact with the call. There are two required, and one optional, webhook endpoints:\n- Answer webhook is sent when a call is"
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/api",
+   "title": "API",
+   "snippet": "configure your applications and authentication.](/api/application.v2)\n[Conversation API\nCreate real-time communications channels for text, voice and video.](/api/conversation)\n[Reports API\nRetrieve"
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/voice/voice-api/concepts/dtmf",
+   "title": "DTMF Decoding & Generation | Vonage API Documentation",
+   "snippet": "\n## Collecting Input\nYou can collect input from your caller by using the `input` action within your NCCO. You can collect a specific number of digits, set a timeout value or wait until the user has"
+  },
+  {
+   "q": "Vonage API documentation site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/voice/voice-api/overview",
+   "title": "Vonage Voice API for Developers | Vonage API Documentation",
+   "snippet": "The Vonage Voice API allows you to connect people around the world and automate voice interactions that deliver a frictionless extension of your brand experience using AI technologies.\nSend smart"
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/home",
+   "title": "Vonage API Developer",
+   "snippet": "Get guides and code snippets, browse reference documentation, and more to develop connected applications with Vonage APIs and SDKs."
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/video/guides/authentication.md",
+   "title": "Authentication",
+   "snippet": "While Bearer Authentication is an extension of the OAuth 2.0 authentication scheme, Vonage uses the OAuth 2.0 generation non-interactive method for creating a Bearer Token using the JWT structure and"
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/concepts/guides/authentication",
+   "title": "Vonage API Developer",
+   "snippet": "API Status All Systems Operational Documentation Documentation Vonage Business Cloud Vonage Contact Center Technical References Documentation SDK & Tools Community Community Hub Team Careers Newsletter Support Knowledgebase Changelogs"
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+   "title": "Authentication - API Concepts | Vonage API Documentation",
+   "snippet": "When you create a Vonage account, an API key and secret will be created for you. These are located in your [account settings](https://dashboard.nexmo.com/settings) in the Vonage Dashboard. You should"
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+   "title": "Server Authentication | Vonage API Documentation",
+   "snippet": "(OIDC) is an identity layer built on top of the OAuth 2.0 protocol, which provides a way to verify a user's identity using the `JWT` token.\nPOST `https://api-eu.vonage.com/oauth2/bc-authorize`\n```"
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/vonage-business-cloud/getting-started/make-an-api-request",
+   "title": "Making an API Request",
+   "snippet": "Now that you've [created an access token](/vonage-business-cloud/getting-started/create-an-access-token) you are ready to make an API request."
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+   "title": "Authentication API Guide | Vonage API Documentation",
+   "snippet": "In Verify V1, authentication was handled by passing `api_key` and `api_secret` as query parameters or in the request body. This method is not supported in Verify V2."
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/vonage-cli/guides/authentication-security/auth",
+   "title": "Manage Authentication with the Vonage CLI | Vonage API ...",
+   "snippet": "Learn how to set, validate, and update your authentication credentials using the Vonage CLI"
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/dashboard/build/applications",
+   "title": "Vonage Applications | Vonage API Documentation",
+   "snippet": "3. The **API key** is pre-filled with your current account's API key. An application must be bound to a specific API key."
+  },
+  {
+   "q": "Vonage API authentication OAuth API key developer site:developer.vonage.com",
+   "url": "https://developer.vonage.com/vonage-cli/guides/authentication-security/auth",
+   "title": "Manage Authentication with the Vonage CLI | Vonage API Documentation",
+   "snippet": "\nThe CLI will load the configuration in the following order:\n1. Command line flags `--api-key`, `--api-secret`, `--private-key`, and `--app-id`.\n2. A local configuration file in the current working"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/api/pricing",
+   "title": "Vonage Pricing API Reference | Vonage API Documentation",
+   "snippet": "The API to retrieve pricing information. Please note the Pricing API is rate limited to one request per second.\n### Retrieve outbound pricing for a specific country.\nRetrieves the pricing"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/documentation",
+   "title": "Developer Documentation",
+   "snippet": "Manage your account and integrate Vonage products.\n### Account Management\n#### Application API\nCreate a record for your application and configure authentication, callbacks, and settings."
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/getting-started/overview",
+   "title": "Getting Started With Vonage APIs (New User Guide)",
+   "snippet": "balance**. Access to our APIs is charged on a per-request basis. We\u2019ll give you some free credit when you first open your account and you can [top"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/startups",
+   "title": "Vonage API Developer",
+   "snippet": "Vonage for Startups helps burgeoning brands with tailored support and up to $75,000 Vonage API credits."
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/account/technical-details",
+   "title": "Technical Details",
+   "snippet": "the secret is correct and bills the account identified by the API key.\n## Guides\n- [How to Migrate from Pricing API v1 to Pricing API v2](/en/account/guides/migrate-from-pricing-v1): How to Migrate"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/messages/getting-started",
+   "title": "Getting Started with Messages API | Vonage API Documentation",
+   "snippet": "your first successful call with Vonage APIs.\nWhen you create your Vonage account you are given \u20ac2 free test credit and your account is set in DEMO mode. You can use our products to send messages"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/account/guides/dashboard-management",
+   "title": "Vonage API Account Dashboard API Guide | Vonage API Documentation",
+   "snippet": "your first successful call with Vonage APIs.\nWhen you create your Vonage account you are given \u20ac2 free test credit and your account is set in DEMO mode. You can use our products to send messages"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/voice/voice-api/getting-started",
+   "title": "Getting Started with Voice API | Vonage API Documentation",
+   "snippet": "This will give you an API key and secret that you can use to access our APIs.\nYou can use the Voice API"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/vonage-business-cloud/getting-started/create-a-developer-account",
+   "title": "Create a Developer Account",
+   "snippet": "To use the Vonage Business Communications APIs, you must first request a developer account. You will use the developer account to:\n1. [Log in to the Business Communications Developer"
+  },
+  {
+   "q": "Vonage API access pricing plans developer account site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/vonage-business-cloud/overview",
+   "title": "Vonage Business Communication APIs Overview",
+   "snippet": "Create a Developer Account - Learn how to request a developer account; Logging In - Learn how to access the APIs for Vonage Business Communications Developer ..."
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/mcp-server/overview",
+   "title": "Vonage MCP Server Overview",
+   "snippet": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol."
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/mcp-server/technical-details",
+   "title": "Technical Details",
+   "snippet": "that defines how large language models (LLMs) discover, describe, and use external tools and APIs.\nBy implementing MCP, Vonage makes its communication capabilities (Voice, Messaging, Video, and"
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-documentation-mcp-server",
+   "title": "How to Install the Vonage Documentation MCP Server",
+   "snippet": "MCP Server](/mcp-server/conceptual-guides/introduction-to-vonage-mcp) lets you query official Vonage API documentation directly from your development environment or AI assistant. Whether you\u2019re"
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+   "title": "Introduction to Vonage MCP Servers",
+   "snippet": "answers, and a Server API Binding MCP server that expose Vonage APIs and developer tools in an AI-native format that can be used directly by MCP-compatible clients \u2014 such as Claude Desktop or VS"
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server",
+   "title": "Introducing the Vonage Documentation MCP Server",
+   "snippet": "Documentation MCP Server is live at [https://documentation-mcp.vonage.dev](https://documentation-mcp.vonage.dev/). We\u2019d love to hear how it fits into your workflow and what other resources you\u2019d"
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-tooling-mcp-server",
+   "title": "How to Install the Vonage Server API Bindings MCP Server",
+   "snippet": "The [Vonage Server API Bindings MCP Server](/mcp-server/conceptual-guides/introduction-to-vonage-mcp), also known as the Tooling MCP Server, lets you invoke various API actions directly through your"
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/blog/introducing-mcp-ai-meets-programmable-communications-with-vonage",
+   "title": "Introducing MCP: AI Meets Programmable Communications With Vonage",
+   "snippet": "MCP Server\nWe\u2019re kicking things off with our first officially supported server: the[ Documentation MCP Server](https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server)."
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-mcp-tooling-server",
+   "title": "Introducing the Vonage MCP Tooling Server",
+   "snippet": "point about the design: the server doesn\u2019t expose an HTTP endpoint. Instead, it runs as a local MCP server process: either inside your IDE, alongside a chatbot environment like Claude Desktop, or on"
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/blog/contribute-to-the-open-source-vonage-mcp-tooling-server",
+   "title": "Contribute to the Open Source Vonage MCP Tooling Server",
+   "snippet": "The [Vonage MCP Tooling Server](https://developer.vonage.com/en/blog/introducing-the-vonage-mcp-tooling-server) is fully open source and ready for your contributions. This guide walks you through how"
+  },
+  {
+   "q": "Vonage MCP server official site:developer.vonage.com",
+   "url": "https://developer.vonage.com/en/blog/telephony-mcp-server-for-agentic-ai-and-language-models",
+   "title": "Telephony MCP Server for Agentic AI and Language Models",
+   "snippet": "### Step 1: Clone the Repository\n```\ngit clone https://github.com/Vonage-Community/telephony-mcp-server\ncd telephony-mcp-server\n```"
+  }
+ ],
+ "official_domain_candidates": {
+  "vonage.com": 40
+ },
+ "override_hint": "developer.vonage.com",
+ "identity_flag": "hint_domain_from_original_list",
+ "selected_domain": "vonage.com",
+ "completed": "2026-11-23T19:44:07+05:30"
+}

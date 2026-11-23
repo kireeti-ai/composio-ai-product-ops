@@ -1,0 +1,14 @@
+{
+ "_note": "PARTIAL, probe-derived (headers of one tiny call). Unknown values are null so src/quota_plan.py still REFUSES this file; the Groq console must supply the rest. 'limit-requests' is the DAILY request limit; 'limit-tokens' is per MINUTE.",
+ "observed_at": "2026-11-23T18:48:07+0530",
+ "model": "openai/gpt-oss-120b",
+ "tier": null,
+ "rpm": null,
+ "rpd": 1000,
+ "tpm": 8000,
+ "tpd": null,
+ "used_requests_today": 37,
+ "used_tokens_today": null,
+ "reset_requests_in": "53m16.799s",
+ "source_probe": "probe_20261123_184815.json"
+}

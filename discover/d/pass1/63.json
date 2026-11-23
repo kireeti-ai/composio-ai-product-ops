@@ -1,0 +1,126 @@
+{
+ "id": 63,
+ "name": "Netlify",
+ "category": "Developer, Infra and Data platforms",
+ "model": "m1",
+ "pages_read": [
+  "https://docs.netlify.com/",
+  "https://docs.netlify.com/build/data-and-storage/netlify-database/api",
+  "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+  "https://developers.netlify.com/guides/deploy-zip-file-to-production-website",
+  "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+  "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+  "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+  "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli"
+ ],
+ "one_liner": "FAKE",
+ "auth_methods": [
+  "unknown"
+ ],
+ "access": "unknown",
+ "access_note": "",
+ "api_types": [
+  "unknown"
+ ],
+ "api_breadth": "unknown",
+ "existing_mcp": "unknown",
+ "buildability": "unknown",
+ "blocker": "",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "x",
+   "quote": "zz",
+   "quote_found": false,
+   "url_in_sources": false
+  }
+ ],
+ "meta": {
+  "run_id": "d",
+  "code_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+  "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+  "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+  "temperature": 0,
+  "key_id": "GEMINI_API_KEY",
+  "extracted_at": "2026-11-23T20:39:40+05:30",
+  "request_attempts": 1,
+  "excluded_pages": [],
+  "tier": "B_access_inferred_self_serve",
+  "uncertainty": {
+   "access_state": "inferred_self_serve",
+   "access_confirmed": false,
+   "rule": "NEVER report as confirmed self-serve; label 'inferred'; model output on `access` is a hypothesis"
+  },
+  "registry_provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "api_surface_state": {
+   "measured_operations_count": 9,
+   "state": "not_individually_assessed"
+  },
+  "retrieval_topup": [
+   {
+    "path": "runs/topup-v1-20261123/raw/63.json",
+    "raw_sha256": "c8b3e3fea524fc2eb5334df28df7f59bd2f0fcd90ac507b4be9fa3e4503ee9e1",
+    "tool": "composio:TINYFISH_FETCH_URLS",
+    "pages": [
+     {
+      "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+      "sha256": "d7954fff02cf79975682af17cef64d0b0bd60cbe7221f8ec2dbeaf97a8c5d588",
+      "fetched_at": "2026-11-23T17:33:15+05:30",
+      "chars": 13036,
+      "truncated_in_prompt": true
+     },
+     {
+      "url": "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+      "sha256": "9da084d14b822e0e5cac5c9093a6230b956fbd465bfe527cdb910ef9e61a58d8",
+      "fetched_at": "2026-11-23T17:33:34+05:30",
+      "chars": 18269,
+      "truncated_in_prompt": true
+     },
+     {
+      "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+      "sha256": "80b3305d3f613871a3835eda648b62ef781d50efb8e1e1b7a1d6e8b6ca9586d3",
+      "fetched_at": "2026-11-23T17:33:35+05:30",
+      "chars": 9089,
+      "truncated_in_prompt": true
+     },
+     {
+      "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+      "sha256": "1c79cab23f13ee84db5bb8e21b21583db21d758f3b4747ae24fcf0a575135b27",
+      "fetched_at": "2026-11-23T17:33:37+05:30",
+      "chars": 25087,
+      "truncated_in_prompt": true
+     }
+    ]
+   }
+  ],
+  "retrieval": {
+   "path": "baseline/p1_v1/raw/63.json",
+   "raw_sha256": "ef939261272ddd1c17ec4a289b9238d6646962e5af6db94ea406a3dc737896b0",
+   "fetched_at": "2026-11-23T16:55:59+05:30",
+   "tool": "composio:TINYFISH_FETCH_URLS",
+   "pages": [
+    {
+     "url": "https://docs.netlify.com/",
+     "chars": 4595
+    },
+    {
+     "url": "https://docs.netlify.com/build/data-and-storage/netlify-database/api",
+     "chars": 9000
+    },
+    {
+     "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+     "chars": 9000
+    },
+    {
+     "url": "https://developers.netlify.com/guides/deploy-zip-file-to-production-website",
+     "chars": 9000
+    }
+   ]
+  }
+ }
+}

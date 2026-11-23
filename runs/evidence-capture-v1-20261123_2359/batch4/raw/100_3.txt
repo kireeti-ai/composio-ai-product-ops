@@ -1,0 +1,193 @@
+
+Pricing | Grain
+-->
+Grain Homepage
+Product
+Grain AI
+Integrations
+Changelog
+Use Cases
+Sales
+Agencies & Consultants
+Product & User Research
+Customer Success
+Hiring & Recruiting
+Remote Teams
+Company
+About Us
+Careers
+Customers
+Resources
+Blog
+AI Workflows
+Help Center
+Self-guided Product Tour
+Contact Us
+Compare
+Gong
+Clari
+Jiminny
+Pricing
+Grain for Sales
+Sign In
+Get Grain for Free
+Book a Demo
+Get Grain Free
+Sign In
+Book a Demo
+Book my demo
+Get started free
+Pricing
+Free forever for individuals. Upgrade to Pro for longer meetings and full history, or to Business for shared workspace meeting memory in Claude, ChatGPT, and Grain. ‍
+For individuals
+For teams
+Free
+View your team's meetings and try AI notes
+$0
+per seat/month
+billed annually
+$19 per seat/month
+Get Started
+* All seats must be on Enterprise
+Everything in Starter
+20 meetings
+Popular
+Free
+View your team's meetings and try AI notes asd asdsadsadsad
+$0
+per seat/month
+billed annually
+$19 per seat/month
+Get Started
+* All seats must be on Enterprise
+Everything in Starter
+Team performance insights
+Grain never trains AI with your meeting data on any plan.
+Features
+Basic
+Popular
+‍
+Book a demo
+Conversation & Revenue Intelligence
+AI Notes
+AI Notes
+Features
+Compare Plans
+Grain has everything you need and nothing you don't, without required annual contracts.
+Meet our customers
+Grain powers thousands of customer-centric teams that build products you use every day.
+“Grain is a coaching tool. It allows me to listen to my closers. I need the ability to see what they’re doing right or wrong so that I can coach them.”
+Tucker Hutchinson
+VP of Revenue
+Visit site ->
+"Better product than Gong/Chorus, for a fraction of the price. No brainer."
+Cailen DSa
+COO
+Visit site ->
+“Grain un-complicates call recording and conversation intelligence.”
+Colby Morgan
+Head of Sales and Customer Success
+Visit site ->
+"Been using Grain for a couple of months now on Reforge customer and course research. Capturing all the emotions and nuances adds so much depth."
+Brian Balfour
+Founder and CEO of Reforge
+Visit site ->
+“Grain makes sure that everyone has access to what our customers are saying and not just customer-facing teams.”
+Shareil Nariman
+Head of Customer Success
+Read more ->
+“As much as I love to write down lots of notes during a call, my goal as a researcher is to be highly engaging and attentive. Grain allows me to do that.”
+Emily Arciprete
+Sr. UX researcher
+Read more ->
+Frequently Asked Questions
+What is a "Workspace"?
+A workspace is a shared environment where your organization's Grain members can access and collaborate on meeting recordings, notes, and insights. Every workspace has Paid seats and Free viewer seats, and can be organized into Teams for managing how meetings are recorded and shared. Workspaces are on Business and Enterprise.
+What are "Teams"?
+Teams help you organize how meetings are automatically recorded and shared within your workspace. Admins can configure each team's auto-record and auto-share settings, so the right meetings reach the right people without manual effort. Teams can be open (visible to the whole workspace) or private (restricted to added members). Learn more about Teams .
+Who are "Members" in my workspace?
+Workspace members are individuals from your organization with linked Grain accounts. They can join via email invitation, invite link, or domain authentication. Each member has either a Paid seat or a Free viewer seat. Members can also be upgraded to admins, who manage workspace settings, billing, and team configuration. Learn more about admin capabilities .
+What are the differences between Paid seats and Free viewer seats?
+Paid seats can record, upload, and import meetings and access all features on your plan — including unlimited recordings, custom AI prompts, transcript downloads, and more depending on your plan.
+Free viewer seats can view and collaborate on any meeting shared with them, access AI meeting notes, and use all non-recording features on your plan — but cannot record, upload, or import meetings.
+Which team members do I pay for in my Grain workspace?
+You only pay for users who need a Paid seat — those who record, upload, or import meetings. Everyone else can join with a Free viewer seat at no cost. New members default to Free viewer seats unless you assign them a Paid seat during invitation.
+Can I have a mix of Paid and Free viewer seats in my workspace?
+On Business and Enterprise plans, your workspace must have at least two Paid seats. However, you can have unlimited Free viewer seats. This means your whole team can access meeting notes and insights without needing a Paid seat for everyone.
+When will I get billed for my workspace?
+Your billing date is set when you first subscribe to any paid plan (Pro, Business, or Enterprise). If you upgrade seats or plans mid-cycle, you'll be charged a pro-rated amount immediately. Downgrades take effect at your next billing cycle.
+Can I move members from Paid seats to Free seats?
+Yes. When you move a member to a Free seat, their Paid seat stays available until the end of your billing period, and you can reassign it to any member on a Free seat. If the seat is still unassigned when your plan renews, it’s removed and you won’t be charged for it.
+What happens if I pay for a plan but it doesn't work for me?
+We offer a 30-day money back guarantee. If you're not satisfied with your plan within the first 30 days, contact our support team for a full refund.
+Can I cancel or switch my plans anytime?
+Yes! You can switch between plans at any time — no need to cancel first. If you want to cancel entirely, you're free to do so at the end of your contract period. You can choose to pay on a monthly or annual basis.
+How are my meetings shared with others?
+Meetings are shared in two ways:
+With participants: Recordings are automatically shared with other meeting participants who are members of your workspace.
+Through Teams: Admins configure team auto-share settings to control which meeting types (internal, external, or both) are automatically shared with team members.
+You can also manually share any recording from your meeting library or within an individual recording.
+Can I allow others outside my workspace to view or edit my meetings?
+You can share meetings with anyone — they'll be able to view the recording and its notes via invitation or link. However, only members of your workspace can edit meetings. Grain won't share recording links externally unless you explicitly share them or set up integrations.
+What meeting platforms does Grain support?
+Grain works with Zoom, Google Meet, Microsoft Teams, Webex, and Slack huddles. Because Grain works across all major meeting platforms, your notes, insights, and recordings live in one place — no matter which tool your team or customers use. No more siloed notes on a single platform.
+Does Grain provide calendar support for both Google Workspace and Microsoft O365?
+Yes, Grain works the same regardless of which calendar you connect. Once a calendar is connected, you can set up automatic recording rules for all meetings or just internal or external meetings depending on your preference.
+What AI features does Grain include?
+Every Grain plan includes AI meeting notes, next steps, and automatic meeting recaps — with no bot required. You can also ask Grain's AI anything about your recordings — like extracting key takeaways, identifying action items, or getting answers to specific questions — and turn AI-generated to-dos into real work directly from your calls. Higher plans unlock additional AI capabilities:
+Pro and above: Custom AI prompts and custom note templates
+Business and above: AI coaching, custom AI follow-up emails, and team interaction insights
+Admins can also configure company context to improve AI accuracy across the workspace.
+Is Grain secure?
+Grain holds SOC 2 Type II. All data is hosted on AWS infrastructure in the USA within a dedicated virtual private cloud (VPC). Grain conducts annual penetration testing by third-party firms (Prescient Security) and maintains an A+ Qualys/SSL Labs rating. User authentication uses Google, Microsoft, or SSO. We support SAML for enterprise clients. For more details, see https://grain.com/security .
+Should I be concerned about my privacy?
+It's your data so we put you in control. Prioritizing your privacy is a core value that has influenced everything we’ve made since day one. We strive to de-identify all data where we can and delete it when no longer necessary. Further, we are transparent about what data we collect, how it’s used, and why. Your personal information and calls are not for sale. Ever. Read our Privacy Policy to learn more about our practices in detail.
+Try Grain today. It’s free forever.
+Capture every meeting. Enrich your transcripts. Feed your AI.
+Transcribe and summarize meetings, no bots required.
+14-day free trial
+Free and paid seats
+Cancel anytime
+Get started free
+Book a demo
+Try for free
+Learn more
+Start a 14-day free Trial
+97% of teams stay on Grain after 12 months.
+hello@grain.com
+Follow Grain on LinkedIn
+Follow Grain on Twitter
+Follow Grain on YouTube
+Follow Grain on Facebook
+Product
+Integrations
+Security
+Privacy
+Interactive Demo
+Pricing
+Download
+Use Cases
+Sales
+Product & Research
+Customer Success
+Hiring & Recruiting
+Remote Teams
+Company
+About Us
+Customers
+Careers
+Contact Us
+Resources
+Blog
+Help Center
+AI Workflows
+Integrations
+Changelog
+Self-guided Product Tour
+FAQ
+Subscribe to our newsletter
+Get monthly email updates about the improvements and roadmaps we might change
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Grain Homepage
+© 2026 Grain Intelligence Inc. All rights reserved.

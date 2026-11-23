@@ -1,0 +1,81 @@
+title: Quickstart
+source_url: /developer-api/v1/getting-started
+summary: This guide will help you make your first Ramp API call in just a few minutes. You'll create an access token and call the Transactions API to retrieve transaction data.
+
+content:
+This guide will help you make your first Ramp API call in just a few minutes. You'll create an access token and call the Transactions API to retrieve transaction data.
+
+This guide assumes you are a Ramp customer with **admin** access to your dashboard. Need a test environment for development? [Request sandbox access](</developer-api/v1/sandbox-access>).
+
+- [Need a test environment for development?](</developer-api/v1/sandbox-access>): Request sandbox access
+
+## 1. Create your app and get credentials
+
+First, you'll need to create a developer app to get your API credentials.
+
+1. In your Ramp account, go to **Company → Developer** (you'll need admin access).
+
+2. Click **Create New App**.
+
+3. Name your app (e.g., "API Quickstart") and accept the Terms.
+
+4. Under **Grant types**, click **Add new grant type** → select **Client Credentials**.
+
+5. Under **Scopes**, click **Configure allowed scopes** and select `transactions:read`.
+
+6. Copy your **Client ID** and **Client Secret**. Store them securely – you'll need them in the next step.
+
+For more details on authorization, see the [Authorization Guide](</developer-api/v1/authorization>).
+
+## 2. Get an access token
+
+With your credentials, request an access token. Ramp authenticates this `/developer/v1/token` request with HTTP Basic Auth: base64-encode `client_id:client_secret` and send it in the `Authorization` header. The token authenticates your API requests.
+
+Replace `{environment-url}` with:
+
+- `https://demo-api.ramp.com` for Sandbox
+
+- `https://api.ramp.com` for Production
+
+## API URLs are different from the Ramp app URLs
+
+The API base URL is not the same as the URL for the Ramp customer app. Make sure you're pointing your API calls at the API host, not the frontend host.
+
+| Environment | API base URL | Ramp app URL |
+| --- | --- | --- |
+| Production | `https://api.ramp.com` | `https://app.ramp.com` |
+| Sandbox (demo) | `https://demo-api.ramp.com` | `https://demo.ramp.com` |
+
+```bash
+curl -X POST '{environment-url}/developer/v1/token' \
+  -H "Authorization: Basic $(echo -n "$CLIENT_ID:$CLIENT_SECRET" | base64)" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=client_credentials" \
+  -d "scope=transactions:read"
+```
+
+Response:
+
+```json
+{
+  "access_token": "ramp_business_tok_abc123...",
+  "token_type": "Bearer",
+  "expires_in": 864000,
+  "scope": "transactions:read"
+}
+```
+
+Store the `access_token` securely – you'll use it to make API calls. Run the token request in your backend or local development environment; do not expose the client secret in browser code. Use `expires_in` to determine how long the token is valid, in seconds. Client Credentials access tokens expire after 10 days. Client Credentials grants do not return a refresh token; request a new access token when the current token expires.
+
+The `scope` parameter is required for this example. If you omit it from a Client Credentials request, Ramp issues a token with no scopes, which cannot call the Transactions endpoint.
+
+## 3. Make your first API call
+
+With your access token, you can now call the Ramp API. Let's retrieve your transactions using the [GET /transactions](</developer-api/v1/api/transactions#get-developer-v1-transactions>) endpoint.
+
+Add the header `Authorization: Bearer <YOUR_TOKEN_HERE>` and make a GET request to `{environment-url}/developer/v1/transactions`.
+
+```bash
+curl -X GET '{environment-url}/developer/v1/transactions' \
+  -H "Authorization: Bearer $ACCESS_TOKEN"
+```

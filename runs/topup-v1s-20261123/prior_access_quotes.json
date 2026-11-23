@@ -1,0 +1,87 @@
+{
+ "provenance": "assistant reading of baseline pages, provisional; quotes verified by code",
+ "apps": {
+  "27": {
+   "quote": "messaging applications on our platform free of charge",
+   "url": "https://core.telegram.org/api/obtaining_api_id",
+   "verified": true,
+   "heuristic_direct_access_pages": 1,
+   "disagreement": false
+  },
+  "32": {
+   "quote": "To use the Marketing API in production, you must",
+   "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/using-the-api/faq.md",
+   "verified": true,
+   "heuristic_direct_access_pages": 1,
+   "disagreement": false
+  },
+  "33": {
+   "quote": "Vetted Product with development and standard tiers",
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+   "verified": true,
+   "heuristic_direct_access_pages": 1,
+   "disagreement": false
+  },
+  "34": {
+   "quote": "API access is available across HighLevel subscription plans.",
+   "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "verified": true,
+   "heuristic_direct_access_pages": 1,
+   "disagreement": false
+  },
+  "39": {
+   "quote": "each permission must first be approved through the App Review process",
+   "url": "https://developers.facebook.com/documentation/threads/get-started",
+   "verified": true,
+   "heuristic_direct_access_pages": 0,
+   "disagreement": true
+  },
+  "41": {
+   "quote": "Some APIs also require Shopify's approval or a specific Shopify plan.",
+   "url": "https://shopify.dev/docs/api",
+   "verified": true,
+   "heuristic_direct_access_pages": 2,
+   "disagreement": false
+  },
+  "43": {
+   "quote": "Sign up for a free BigCommerce trial store to test API calls",
+   "url": "https://developer.bigcommerce.com",
+   "verified": true,
+   "heuristic_direct_access_pages": 2,
+   "disagreement": false
+  },
+  "52": {
+   "quote": "Data API requests draw on your credit balance",
+   "url": "https://seranking.com/api/project/getting-started",
+   "verified": true,
+   "heuristic_direct_access_pages": 3,
+   "disagreement": false
+  },
+  "53": {
+   "quote": "Ahrefs API is available on eligible paid plans.",
+   "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+   "verified": true,
+   "heuristic_direct_access_pages": 3,
+   "disagreement": false
+  },
+  "56": {
+   "quote": "Create a free account for direct API access and higher limits",
+   "url": "https://docs.firecrawl.dev/introduction",
+   "verified": true,
+   "heuristic_direct_access_pages": 1,
+   "disagreement": false
+  },
+  "76": {
+   "quote": "The first step is to sign up and create a trial account.",
+   "url": "https://developer.monday.com/api-reference/docs/getting-started",
+   "verified": true,
+   "heuristic_direct_access_pages": 0,
+   "disagreement": true
+  }
+ },
+ "disagreements": [
+  39,
+  76
+ ],
+ "unverified": []
+}

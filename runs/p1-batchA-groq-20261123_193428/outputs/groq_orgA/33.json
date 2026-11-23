@@ -1,0 +1,142 @@
+{
+ "tag": "groq_orgA",
+ "app": 33,
+ "name": "LinkedIn Ads",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 1,
+ "latency_s": 2.3,
+ "tokens_in": 1647,
+ "tokens_out": 727,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+    "quote": "To learn more about OAuth flows, see authentication documentation.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+    "quote": "API calls succeed only when made with correct scopes/permissions assigned to the app after the vetting process.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+    "quote": "The Advertising API enables developers to manage LinkedIn's campaign management platform on behalf of clients through APIs.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_breadth",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+    "quote": "These APIs provide all features available in LinkedIn Campaign Manager, including creation and management of ad accounts, campaign groups, campaigns, creatives, ad types, and analytics.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://learn.microsoft.com/en-us/linkedin/",
+    "quote": "No mention of an existing Managed Cloud Partner (MCP) for LinkedIn Ads.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "access",
+    "item": "approval_or_review_required",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 2,
+   "unsupported": 1,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 5,
+  "evidence_valid": 4,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "LinkedIn Ads API lets developers programmatically manage campaigns, ad accounts, and analytics on LinkedIn.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "access": "approval_or_review_required",
+  "access_note": "App must pass LinkedIn's vetting process and be granted the required scopes/permissions.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "buildability": "yes_with_caveats",
+  "blocker": "Requires LinkedIn API partner vetting and approval before production use.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+    "quote": "To learn more about OAuth flows, see authentication documentation."
+   },
+   {
+    "field": "access",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+    "quote": "API calls succeed only when made with correct scopes/permissions assigned to the app after the vetting process."
+   },
+   {
+    "field": "api_types",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+    "quote": "The Advertising API enables developers to manage LinkedIn's campaign management platform on behalf of clients through APIs."
+   },
+   {
+    "field": "api_breadth",
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+    "quote": "These APIs provide all features available in LinkedIn Campaign Manager, including creation and management of ad accounts, campaign groups, campaigns, creatives, ad types, and analytics."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://learn.microsoft.com/en-us/linkedin/",
+    "quote": "No mention of an existing Managed Cloud Partner (MCP) for LinkedIn Ads."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "f8114f975e0c6eb99a481a7e4d52c91fccad2cfd7c43dd969b93d9ebb0f73aba",
+ "at": "2026-11-23T19:34:37+05:30"
+}

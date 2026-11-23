@@ -1,0 +1,125 @@
+{
+ "id": 38,
+ "name": "Pinterest",
+ "category": "Marketing, Ads, Email and Social",
+ "model": "m1",
+ "pages_read": [
+  "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+  "https://developers.pinterest.com/docs/api/v5/introduction/?",
+  "https://developers.pinterest.com/docs/getting-started/make-an-api-call.md",
+  "https://developers.pinterest.com/docs/",
+  "https://business.pinterest.com/getting-started",
+  "https://dev.pinterest.com/docs/getting-started",
+  "https://developers.pinterest.com/docs/getting-started/using-beta-and-restricted-features"
+ ],
+ "one_liner": "FAKE",
+ "auth_methods": [
+  "unknown"
+ ],
+ "access": "unknown",
+ "access_note": "",
+ "api_types": [
+  "unknown"
+ ],
+ "api_breadth": "unknown",
+ "existing_mcp": "unknown",
+ "buildability": "unknown",
+ "blocker": "",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "x",
+   "quote": "zz",
+   "quote_found": false,
+   "url_in_sources": false
+  }
+ ],
+ "meta": {
+  "run_id": "c",
+  "code_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+  "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+  "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+  "temperature": 0,
+  "key_id": "GEMINI_API_KEY",
+  "extracted_at": "2026-11-23T20:39:40+05:30",
+  "request_attempts": 1,
+  "excluded_pages": [],
+  "tier": "B2_topup_access_explicit_phase2",
+  "uncertainty": {
+   "access_state": "explicit",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "registry_provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "api_surface_state": {
+   "measured_operations_count": 1,
+   "state": "not_individually_assessed"
+  },
+  "retrieval_topup": [
+   {
+    "path": "runs/topup-v1-20261123/raw/38.json",
+    "raw_sha256": "7209cf2124652acedbda881f606a058422ce6552abf5710180a426c767d0096f",
+    "tool": "composio:TINYFISH_FETCH_URLS",
+    "pages": [
+     {
+      "url": "https://business.pinterest.com/getting-started",
+      "sha256": "397b47c4dc65c6c5548c19e09dd0a7548fb73dd83c885a50e82b1a2f597439ba",
+      "fetched_at": "2026-11-23T17:33:02+05:30",
+      "chars": 3703,
+      "truncated_in_prompt": false
+     }
+    ]
+   },
+   {
+    "path": "runs/topup-v1r-20261123/raw/38.json",
+    "raw_sha256": "8063a635698df06a590d39a2a3b038e80ea6c0141307a6cc98692434b5d14d6a",
+    "tool": "composio:TINYFISH_FETCH_URLS",
+    "pages": [
+     {
+      "url": "https://dev.pinterest.com/docs/getting-started",
+      "sha256": "8f4ce8441f7f650827e5f2e3be3063c23ceb6f33de8626387201681e1dd8d8d7",
+      "fetched_at": "2026-11-23T17:41:47+05:30",
+      "chars": 2575,
+      "truncated_in_prompt": false
+     },
+     {
+      "url": "https://developers.pinterest.com/docs/getting-started/using-beta-and-restricted-features",
+      "sha256": "f06a9890184bea15153ad11405cf58a703c877800c14099700b2904e6d37b4b4",
+      "fetched_at": "2026-11-23T17:41:50+05:30",
+      "chars": 1820,
+      "truncated_in_prompt": false
+     }
+    ]
+   }
+  ],
+  "retrieval": {
+   "path": "baseline/p1_v1/raw/38.json",
+   "raw_sha256": "90d6b2b38c54857490cf9a7266a3071106a73ec3ac9edf59787bbd8cf8209305",
+   "fetched_at": "2026-11-23T16:40:09+05:30",
+   "tool": "composio:TINYFISH_FETCH_URLS",
+   "pages": [
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+     "chars": 8899
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+     "chars": 1180
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/make-an-api-call.md",
+     "chars": 1243
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/",
+     "chars": 96
+    }
+   ]
+  }
+ }
+}

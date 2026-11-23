@@ -1,0 +1,286 @@
+{
+ "id": 99,
+ "name": "YouTube Transcript",
+ "started": "2026-11-23T19:42:16+05:30",
+ "searches": [
+  {
+   "q": "YouTube Transcript API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:42:17+05:30"
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:42:20+05:30"
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:42:22+05:30"
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:42:25+05:30"
+  }
+ ],
+ "fetched": [],
+ "candidate_hits": [
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://transcriptapi.com/docs/api",
+   "title": "YouTube Transcript API Reference",
+   "snippet": "Section titled \u201cAuthentication\u201d\nThe API uses Bearer token authentication. Include your API key in the `Authorization` header of every request:\n```\nAuthorization: Bearer YOUR_API_KEY\n```"
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://transcriptapi.com/docs/getting-started/curl",
+   "title": "YouTube Transcript API with cURL",
+   "snippet": "This page shows how to get a YouTube transcript from the command line with cURL and TranscriptAPI. It\u2019s the quickest way to test your API key and see the response before you write code."
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://youtube-transcript.io/api",
+   "title": "Youtube Transcript API",
+   "snippet": "ready for analysis, AI models, or automation.\n## Transcripts\nThis API allows you to fetch the transcripts of a set of YouTube video IDs.\nPOST /api/transcripts\n### Headers\nAuthorization"
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://transcriptapi.com/",
+   "title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+   "snippet": "TranscriptAPI is a hosted REST API, separate from the open-source YouTubeTranscriptApi Python package, which fetches transcripts from your own machine."
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://github.com/Youtube-Transcript-Dev/Youtube-Transcript-API",
+   "title": "GitHub - Youtube-Transcript-Dev/Youtube-Transcript-API: YouTube Transcript API",
+   "snippet": "**\u2192 [Full API Documentation & OpenAPI Spec](https://www.youtubetranscript.dev/api-docs)**"
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://learn.microsoft.com/en-us/connectors/youtubetranscript",
+   "title": "YouTube Transcript (Independent Publisher) - Connectors",
+   "snippet": "A custom service to retrieve transcripts from YouTube videos using the internal YouTube API."
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://supadata.ai/youtube-transcript-api",
+   "title": "YouTube Transcript API \u2014 Free Tier, No Quota",
+   "snippet": "Use a simple and performant API to turn YouTube videos into text \u2014 with timestamps, multi-language support, and AI-powered fallback transcription. videos into ..."
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://github.com/jdepoix/youtube-transcript-api",
+   "title": "jdepoix/youtube-transcript-api: This is a python ...",
+   "snippet": "This is a python API which allows you to get the transcript/subtitles for a given YouTube video. It also works for automatically generated subtitles"
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://dlthub.com/context/source/youtube-transcript-api",
+   "title": "YouTube Transcript API Python API Docs | dltHub",
+   "snippet": "programmatic access to extract and process transcripts from YouTube videos. The REST API base URL is `https://www.youtubetranscript.dev/api/v2` and all requests require a Bearer token via an API key."
+  },
+  {
+   "q": "YouTube Transcript API documentation",
+   "url": "https://github.com/jdepoix/youtube-transcript-api/blob/master/youtube_transcript_api/_transcripts.py",
+   "title": "jdepoix/youtube-transcript-api",
+   "snippet": "This is a python API which allows you to get the transcript/subtitles for a given YouTube video. It also works for automatically generated subtitles"
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide",
+   "title": "YouTube Transcript API: The Complete Developer Guide",
+   "snippet": "The YouTube Data API v3 requires a Google Cloud Console account, an API key, and an OAuth consent screen. Setup takes 30+ minutes."
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://www.downloadyoutubetranscripts.com/api-access",
+   "title": "YouTube Transcript API: Endpoints, Code & Pricing",
+   "snippet": "YouTube Transcript API, CLI & MCP. One API key works everywhere: call the REST API from your code, script it with the CLI, or give your AI agent transcripts ..."
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://www.youtube.com/watch?v=THfsxNoe5R4",
+   "title": "YouTube Transcript API: The Unofficial Tool Everyone Uses",
+   "snippet": "The youtube transcript api most developers actually use isn't an official Google product, it's a popular unofficial Python package with a\u00a0..."
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://github.com/ZeroPointRepo/transcriptapi-mcp",
+   "title": "GitHub - ZeroPointRepo/youtube-mcp: The fastest YouTube transcript + YouTube search MCP for AI agents. Try for free.",
+   "snippet": "every MCP client.\n1. Get your API key from your [dashboard](https://transcriptapi.com/dashboard/api-keys)\n2. Keys start with `sk_` prefix\n3. Add to config as a Bearer token:\n```\n\"headers\" : {"
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://github.com/felipefontoura/youtube-studio-mcp",
+   "title": "GitHub - felipefontoura/youtube-studio-mcp: MCP server for YouTube Data/Analytics/Reporting API \u2014 fork with transcript fix for youtube-transcript-api 1.x",
+   "snippet": "- A Google Cloud project with YouTube APIs enabled\n- OAuth 2.0 credentials\n\n| `YOUTUBE_API_KEY` | API key for public-only operations |"
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://gettranscript.app/blog/youtube-transcript-api-guide",
+   "title": "YouTube Transcript API: Complete Developer Guide (2026)",
+   "snippet": "- \u00d7OAuth-free access \u2014 you need to authenticate with a Google account"
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://github.com/zemse/yt/blob/main/RESEARCH.md",
+   "title": "yt/RESEARCH.md at main \u00b7 zemse/yt",
+   "snippet": "- [youtube-transcript-api](https://github.com/jdepoix/youtube-transcript-api) \u00b7 [yt-transcript-rs](https://crates.io/crates/yt-transcript-rs)"
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://github.com/Youtube-Transcript-Dev/youtube-transcript-mcp",
+   "title": "GitHub - Youtube-Transcript-Dev/youtube-transcript-mcp: MCP server for YouTubeTranscript.dev \u2014 extract transcripts, manage history, and power AI assistants with YouTube content.",
+   "snippet": "Run as a subprocess instead of HTTP. **Required:** set `YTSM_API_KEY` in env (API key is not passed per-request for stdio)."
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://github.com/JoeDupuis/youtube-transcript-remote-mcp",
+   "title": "GitHub - JoeDupuis/youtube-transcript-remote-mcp",
+   "snippet": "An MCP (Model Context Protocol) server that provides YouTube transcript fetching capabilities with Google OAuth 2.0 authentication. Only authorized users can access transcript data."
+  },
+  {
+   "q": "YouTube Transcript API authentication OAuth API key developer",
+   "url": "https://github.com/tubeagentkit/youtube-transcript-api",
+   "title": "GitHub - tubeagentkit/youtube-transcript-api: YouTube Transcript API: get YouTube video transcripts via REST API, no Google API key. Plus YouTube search, channel and playlist endpoints, OpenAPI spec and examples.",
+   "snippet": "## Authentication\nEvery request (except `/signup` and `/signup/verify`) needs an API key, sent as either:\n```\nAuthorization: Bearer sk_live_...\n```\nor:\n```\nx-api-key: sk_live_...\n```\nGet a key at"
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://transcriptapi.com/pricing",
+   "title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+   "snippet": "## One API. Full YouTube Access.\nTranscripts, search, channels, playlists \u2014 all in one place. Every feature works via API, MCP, and agent skills."
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://downloadyoutubetranscripts.com/api-access",
+   "title": "YouTube Transcript API: Endpoints, Code & Pricing",
+   "snippet": "## Start with 100 free credits\n1 credit = 1 video transcript. The monthly plan includes API access; top-ups add credits for 30 days."
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://youtube-transcript.ai/get-api-key",
+   "title": "Get a YouTube Transcript API Key",
+   "snippet": "One key per account (up to 3 on Ultra), one daily quota. Sign in, create a key, and send it with each request to `/transcript/{VIDEO_ID}.txt`."
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://youtubeapi.io/pricing",
+   "title": "YouTube Transcript & Data API Pricing \u2014 $1.00/1K Transcripts | YouTubeAPI.io",
+   "snippet": "### Pro\nMost Popular\n$69/ month \u00b7 0%-fee crypto (+5% bonus)\nOr $89 one-time PAYG\n1,200,000 Credits\n+40% Bonus Credits ($120 value)"
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://transcriptapi.com/blog/best-youtube-transcript-apis-compared",
+   "title": "Best YouTube Transcript APIs Compared for 2026",
+   "snippet": "TranscriptAPI is the strongest default choice \u2026 predictable pricing in one API. pricing at 1K, 10K, and 100K transcripts a month;"
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://transcript-yt.com/pricing",
+   "title": "The cheapest YouTube Transcript API",
+   "snippet": "- Free tool, no account needed\n- 100 API transcripts free"
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://www.youtube.com/watch?v=wF0MvTUG2dE",
+   "title": "I Created a YouTube Transcript Tool That Makes $2.5M",
+   "snippet": "In this video, I'll walk you through the entire process of building an AI-powered YouTube Transcript Generator using React.js and Oxylabs\u00a0..."
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://pypi.org/project/youtube-transcript-api/",
+   "title": "youtube-transcript-api",
+   "snippet": "This is a python API which allows you to get the transcripts/subtitles for a given YouTube video. It also works for automatically generated subtitles, ..."
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://github.com/jaypaun007/youtube-transcript-api",
+   "title": "jaypaun007/youtube-transcript-api",
+   "snippet": "A FastAPI service to fetch YouTube transcripts with automatic language detection and fallback support. Free - No cost for basic usage (rate-limited)"
+  },
+  {
+   "q": "YouTube Transcript API access pricing plans developer account",
+   "url": "https://apiserpent.com/youtube-transcript-api",
+   "title": "Cheapest YouTube Transcript API - from $0.016/1K calls",
+   "snippet": "Get the transcript of any YouTube video as timed lines and plain text, in any language it offers. From $0.016/1K calls. 10 free API calls."
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://youtube-transcript.ai/mcp",
+   "title": "YouTube Transcript MCP Server \u2014 Connect Claude & ChatGPT",
+   "snippet": "config.toml\n```\n[mcp_servers.youtube-transcript]\nurl = \"https://youtube-transcript.ai/mcp\"\nhttp_headers = { \"Authorization\" = \"Bearer YOUR_KEY\" }\n```"
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://youtube-transcript.ai/mcp.md",
+   "title": "youtube-transcript.ai/mcp.md",
+   "snippet": "{\n\"mcpServers\": {\n\"youtube-transcript\": {\n\"url\": \"https://youtube-transcript.ai/mcp\",\n\"headers\": { \"Authorization\": \"Bearer {API_KEY}\" }\n}\n}\n}"
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://mcp.ai/youtube_transcript/index.md",
+   "title": "mcp.ai/youtube_transcript/index.md",
+   "snippet": "**Remote MCP server URL:** `https://api.mcp.ai/p_youtube_transcript?ms=1791478800000`\n### Install prompt (paste into your agent)\n```text\nUse YouTube Transcript as a remote MCP server over"
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://github.com/youtube-transcript-dev/youtube-transcript-mcp",
+   "title": "GitHub - Youtube-Transcript-Dev/youtube-transcript-mcp: MCP server for YouTubeTranscript.dev \u2014 extract transcripts, manage history, and power AI assistants with YouTube content.",
+   "snippet": "```\n{\n\"mcpServers\": {\n\"youtubetranscript\": {\n\"command\": \"node\",\n\"args\": [\"dist/index.js\"],\n\"env\": { \"YTSM_API_KEY\": \"YOUR_API_KEY\" }\n}\n}\n}\n```"
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://medium.com/@didierlacroix/building-my-youtube-subscription-assistant-a-hands-on-guide-to-youtube-transcript-mcp-server-and-4d3b75391cdc",
+   "title": "A Hands-On Guide to YouTube Transcript MCP Server and Gradio ...",
+   "snippet": "MCP YouTube Transcript Server is a specialized application that enables access to programmatic video transcripts. It leverages the YouTube ..."
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://www.youtube.com/watch?v=Ocw_0nxqlFY",
+   "title": "Build a MCP Server to Automate Video Summaries Instantly!",
+   "snippet": "In this step-by-step tutorial, you'll learn how to build a powerful MCP server that automatically fetches YouTube video transcripts, summarizes\u00a0..."
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://github.com/LucFauvel/youtube-transcript-mcp",
+   "title": "GitHub - LucFauvel/youtube-transcript-mcp: A Model Context Protocol (MCP) server built with FastMCP that fetches YouTube video transcripts with pagination support for handling long videos.",
+   "snippet": "- `fastmcp`: FastMCP framework for building MCP servers\n- `youtube-transcript-api`: For fetching YouTube transcripts"
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://github.com/ergut/youtube-transcript-mcp",
+   "title": "GitHub - ergut/youtube-transcript-mcp: Zero-setup YouTube transcript extraction for Claude. Works on mobile, desktop, and web - no local installation required.",
+   "snippet": "**Ready to supercharge Claude with YouTube transcript extraction?** Add this server to your Claude Desktop configuration and start extracting transcripts from any YouTube video instantly! \ud83c\udf89"
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://www.pulsemcp.com/servers/kimtaeyoon83-youtube-transcripts",
+   "title": "YouTube Transcripts MCP Server by Kim Taeyoon",
+   "snippet": "Extract and analyze video captions and subtitles in multiple languages. A standardized, official file format that defines how to use this MCP server. View the ..."
+  },
+  {
+   "q": "YouTube Transcript MCP server official",
+   "url": "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript",
+   "title": "kimtaeyoon83/mcp-server-youtube-transcript: This is an ...",
+   "snippet": "A Model Context Protocol server that enables retrieval of transcripts from YouTube videos. This server provides direct access to video captions and subtitles ..."
+  }
+ ],
+ "official_domain_candidates": {
+  "youtube-transcript.io": 1,
+  "downloadyoutubetranscripts.com": 2,
+  "youtube-transcript.ai": 3
+ },
+ "identity_flag": "multiple_candidate_domains_review_identity",
+ "selected_domain": "youtube-transcript.ai",
+ "completed": "2026-11-23T19:42:25+05:30"
+}

@@ -1,0 +1,78 @@
+{
+ "tag": "groq_orgA",
+ "app": 32,
+ "name": "Meta Ads",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 2,
+ "latency_s": 1.71,
+ "tokens_in": 1809,
+ "tokens_out": 567,
+ "cost_usd": 0,
+ "validation": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": [],
+  "n_evidence": 4,
+  "quote_found": 3,
+  "url_ok": 3,
+  "quote_only_in_full": 0
+ },
+ "output": {
+  "one_liner": "Meta Ads Marketing API lets apps manage ad campaigns, assets and reporting via authenticated Graph API calls.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "access": "approval_or_review_required",
+  "access_note": "Production use of the Marketing API requires submitting the app for review and receiving approval.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "none_found",
+  "buildability": "yes_with_caveats",
+  "blocker": "App must pass Meta review before production access is granted.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md",
+    "quote": "Every Marketing API call requires an access token as a parameter.",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/using-the-api/faq.md",
+    "quote": "To use the Marketing API in production, you must submit your app for review and receive approval.",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md",
+    "quote": "Every Marketing API call requires an access token as a parameter.",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "unknown",
+    "quote": "unknown",
+    "quote_found": false,
+    "url_in_sources": false,
+    "quote_in_full_evidence": false
+   }
+  ]
+ },
+ "raw_text": null,
+ "unsupported_claim_fields": [
+  "existing_mcp"
+ ],
+ "prompt_sha256": "7d1c8f67351a1ea3ac7843870499ca0b7af78d56a9cf7ca737709534b3a8b8bf",
+ "at": "2026-11-23T19:13:24+05:30"
+}

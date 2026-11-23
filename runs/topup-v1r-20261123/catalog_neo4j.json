@@ -1,0 +1,220 @@
+{
+ "retrieved_at": "2026-11-23T17:42:55+05:30",
+ "note": "metadata only: COMPOSIO_SEARCH_TOOLS + COMPOSIO_GET_TOOL_SCHEMAS; no tool executed",
+ "queries": {
+  "run a Cypher query against a Neo4j graph database": {
+   "primary": [
+    "CLOUDFLARE_API_KEY_QUERY_GRAPHQL",
+    "CLOUDFLARE_API_KEY_EXECUTE_D1_QUERY",
+    "MISTRAL_AI_QUERY_WORKFLOW_EXECUTION"
+   ],
+   "related": [
+    "CLOUDFLARE_API_KEY_LIST_ZONES",
+    "CLOUDFLARE_API_KEY_LIST_ACCOUNTS",
+    "CLOUDFLARE_API_KEY_LIST_D1_DATABASES",
+    "CLOUDFLARE_API_KEY_GET_WORKER_SCRIPT_SETTINGS",
+    "MISTRAL_AI_GET_WORKFLOW_RUN"
+   ],
+   "toolkits": [
+    {
+     "toolkit": "cloudflare_api_key",
+     "description": "Cloudflare provides a suite of services to enhance the security, performance, and reliability of websites and applications.",
+     "has_active_connection": true,
+     "status": "Connected via the Composio instant account. Only the tools listed in this toolkit's instant_account.allowed_tool_slugs run on it; any other cloudflare_api_key tool needs your own account: call COMPOSI"
+    },
+    {
+     "toolkit": "mistral_ai",
+     "description": "Mistral AI is a research lab building state-of-the-art open-source language models and providing APIs for developers and enterprises to integrate these models into their applications.",
+     "has_active_connection": true,
+     "status": "Connected via the Composio instant account. Only the tools listed in this toolkit's instant_account.allowed_tool_slugs run on it; any other mistral_ai tool needs your own account: call COMPOSIO_MANAGE"
+    }
+   ],
+   "tool_slugs_in_schemas": [
+    "CLOUDFLARE_API_KEY_QUERY_GRAPHQL",
+    "CLOUDFLARE_API_KEY_EXECUTE_D1_QUERY",
+    "MISTRAL_AI_QUERY_WORKFLOW_EXECUTION",
+    "CLOUDFLARE_API_KEY_LIST_ZONES",
+    "CLOUDFLARE_API_KEY_LIST_ACCOUNTS",
+    "CLOUDFLARE_API_KEY_LIST_D1_DATABASES",
+    "CLOUDFLARE_API_KEY_GET_WORKER_SCRIPT_SETTINGS",
+    "MISTRAL_AI_GET_WORKFLOW_RUN"
+   ]
+  },
+  "manage Neo4j Aura database instances: create, pause, resume, delete": {
+   "primary": [
+    "NEO4J_PAUSE_INSTANCE_BETA",
+    "NEO4J_CREATE_INSTANCE_BETA",
+    "NEO4J_UPDATE_INSTANCE_BETA",
+    "NEO4J_LIST_INSTANCES_BETA"
+   ],
+   "related": [
+    "NEO4J_GET_INSTANCE_BETA",
+    "NEO4J_GET_PROJECT_BETA",
+    "NEO4J_LIST_PROJECTS",
+    "NEO4J_UPDATE_INSTANCE"
+   ],
+   "toolkits": [
+    {
+     "toolkit": "neo4j",
+     "description": "Graph database platform for connected data and real-time analytics",
+     "has_active_connection": false,
+     "status": "No Active connection for toolkit=neo4j. You MUST call COMPOSIO_MANAGE_CONNECTIONS (toolkit=\"neo4j\") to create a connection BEFORE executing any neo4j tools."
+    }
+   ],
+   "tool_slugs_in_schemas": [
+    "NEO4J_PAUSE_INSTANCE_BETA",
+    "NEO4J_CREATE_INSTANCE_BETA",
+    "NEO4J_UPDATE_INSTANCE_BETA",
+    "NEO4J_LIST_INSTANCES_BETA",
+    "NEO4J_GET_INSTANCE_BETA",
+    "NEO4J_GET_PROJECT_BETA",
+    "NEO4J_LIST_PROJECTS",
+    "NEO4J_UPDATE_INSTANCE"
+   ]
+  },
+  "Neo4j": {
+   "primary": [
+    "STRALE_DIFF_REVIEW",
+    "STRALE_CODE_REVIEW",
+    "CLAY_GET_WORKFLOW_RUNS_QUERY_REFERENCE"
+   ],
+   "related": [
+    "STRALE_TEST_CASE_GENERATE",
+    "STRALE_PR_DESCRIPTION_GENERATE",
+    "STRALE_DEPENDENCY_AUDIT",
+    "STRALE_COMMIT_MESSAGE_GENERATE",
+    "CLAY_QUERY_WORKFLOW_RUNS"
+   ],
+   "toolkits": [
+    {
+     "toolkit": "strale",
+     "description": "Strale provides API capabilities, reusable solutions, trust checks, and EUR wallet-backed execution through a single developer platform.",
+     "has_active_connection": true,
+     "status": "Connected via the Composio instant account. Only the tools listed in this toolkit's instant_account.allowed_tool_slugs run on it; any other strale tool needs your own account: call COMPOSIO_MANAGE_CON"
+    },
+    {
+     "toolkit": "clay",
+     "description": "Clay is a go-to-market data enrichment and workflow automation platform for searching people and companies, running routines, and querying workspace tables.",
+     "has_active_connection": true,
+     "status": "Connected via the Composio instant account. Only the tools listed in this toolkit's instant_account.allowed_tool_slugs run on it; any other clay tool needs your own account: call COMPOSIO_MANAGE_CONNE"
+    }
+   ],
+   "tool_slugs_in_schemas": [
+    "STRALE_DIFF_REVIEW",
+    "STRALE_CODE_REVIEW",
+    "CLAY_GET_WORKFLOW_RUNS_QUERY_REFERENCE",
+    "STRALE_TEST_CASE_GENERATE",
+    "STRALE_PR_DESCRIPTION_GENERATE",
+    "STRALE_DEPENDENCY_AUDIT",
+    "STRALE_COMMIT_MESSAGE_GENERATE",
+    "CLAY_QUERY_WORKFLOW_RUNS"
+   ]
+  }
+ },
+ "neo4j_tool_slugs_found": [
+  "NEO4J_CREATE_INSTANCE_BETA",
+  "NEO4J_GET_INSTANCE_BETA",
+  "NEO4J_GET_PROJECT_BETA",
+  "NEO4J_LIST_INSTANCES_BETA",
+  "NEO4J_LIST_PROJECTS",
+  "NEO4J_PAUSE_INSTANCE_BETA",
+  "NEO4J_UPDATE_INSTANCE",
+  "NEO4J_UPDATE_INSTANCE_BETA"
+ ],
+ "schemas": {
+  "NEO4J_CREATE_INSTANCE_BETA": {
+   "description": "Creates a new Neo4j Aura instance with the specified configuration. Use this action when you need to provision a new Neo4j Aura database instance. The operation is asynchronous - the API returns 202 Accepted while the instance is being created in the background. Use this action when you need to crea",
+   "required": [
+    "cloud_provider",
+    "memory",
+    "name",
+    "region",
+    "tenant_id",
+    "type",
+    "version"
+   ],
+   "props": [
+    "name",
+    "type",
+    "memory",
+    "region",
+    "storage",
+    "version",
+    "tenant_id",
+    "cloud_provider",
+    "vector_optimized",
+    "source_instance_id",
+    "source_snapshot_id",
+    "graph_analytics_plugin"
+   ]
+  },
+  "NEO4J_GET_INSTANCE_BETA": {
+   "description": "Retrieves details for a specific Neo4j Aura instance using its unique instance ID. Returns comprehensive information including instance name, status, cloud provider, region, memory allocation, connection URL, and other configuration details. Use this action when you need to check the status, configu",
+   "required": [
+    "instance_id"
+   ],
+   "props": [
+    "instance_id"
+   ]
+  },
+  "NEO4J_GET_PROJECT_BETA": {
+   "description": "Retrieve details of a specific Neo4j Aura project (tenant) using the v1beta5 API. Returns project information including its ID, name, and available instance configurations with regions, types, memory, storage options, and cloud providers. Use this action when you need to inspect project details or d",
+   "required": [
+    "tenant_id"
+   ],
+   "props": [
+    "tenant_id"
+   ]
+  },
+  "NEO4J_LIST_INSTANCES_BETA": {
+   "description": "Returns a list of Neo4j Aura instances. Use when you need to retrieve all available Neo4j Aura instances in your account, optionally filtered by tenant.",
+   "required": null,
+   "props": [
+    "tenant_id"
+   ]
+  },
+  "NEO4J_LIST_PROJECTS": {
+   "description": "List all Aura projects (tenants) available to the authenticated user. Returns a summary of each project including its unique ID and name. Use this action when you need to retrieve all Aura projects to identify which projects are accessible or to select a specific project for subsequent operations.",
+   "required": null,
+   "props": []
+  },
+  "NEO4J_PAUSE_INSTANCE_BETA": {
+   "description": "Pauses a Neo4j Aura instance. Use when you need to temporarily stop an instance to reduce costs or perform maintenance. The instance can be resumed later using the ResumeInstance action. This action is asynchronous - the instance will be in a 'pausing' state until the operation completes. Note: this",
+   "required": [
+    "instance_id"
+   ],
+   "props": [
+    "instance_id"
+   ]
+  },
+  "NEO4J_UPDATE_INSTANCE": {
+   "description": "Updates a Neo4j Aura instance configuration. Allows modifying instance properties such as name, memory allocation, storage size, vector optimization, and graph analytics plugin. Use this action when you need to modify an existing Aura instance's settings or resource allocation. Note: Some operations",
+   "required": [
+    "instance_id"
+   ],
+   "props": [
+    "name",
+    "memory",
+    "storage",
+    "instance_id",
+    "vector_optimized",
+    "graph_analytics_plugin"
+   ]
+  },
+  "NEO4J_UPDATE_INSTANCE_BETA": {
+   "description": "Edits the configuration of a Neo4j Aura instance. Allows updating the instance name, memory allocation, storage size, and plugin configurations. Use this action when you need to modify an existing Neo4j Aura instance's settings such as renaming the instance, adjusting memory/storage resources, or en",
+   "required": [
+    "instance_id"
+   ],
+   "props": [
+    "name",
+    "memory",
+    "storage",
+    "instance_id",
+    "vector_optimized",
+    "graph_analytics_plugin"
+   ]
+  }
+ },
+ "schemas_raw_error": null
+}

@@ -1,0 +1,136 @@
+{
+ "tag": "groq_orgA",
+ "app": 53,
+ "name": "Ahrefs",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 4,
+ "latency_s": 3.45,
+ "tokens_in": 1623,
+ "tokens_out": 928,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "access",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+    "quote": "You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API ... allows you to pull data ... endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.ahrefs.com/",
+    "quote": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_trial_or_paid_plan",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "unsupported"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 3,
+   "unsupported": 2
+  },
+  "evidence_total": 4,
+  "evidence_valid": 3,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 1,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Ahrefs provides a paid\u2011plan API (v3) that lets developers query SEO and marketing data such as site explorer, keyword metrics, rank tracking, and more via HTTP endpoints.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token"
+  ],
+  "access": "self_serve_trial_or_paid_plan",
+  "access_note": "API is available on eligible paid plans; other plans only get limited free test queries.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "buildability": "yes_with_caveats",
+  "blocker": "Requires a paid Ahrefs subscription for most endpoints and consumes API units.",
+  "evidence": [
+   {
+    "field": "access",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+    "quote": "You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`."
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API ... allows you to pull data ... endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.ahrefs.com/",
+    "quote": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "3e35588490a9025b97bb82eab29bff4bfd7b1596ff0b5313c7d2c269de0a138d",
+ "at": "2026-11-23T19:31:24+05:30"
+}

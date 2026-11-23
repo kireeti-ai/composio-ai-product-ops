@@ -1,0 +1,135 @@
+{
+ "tag": "groq_orgA",
+ "app": 34,
+ "name": "GoHighLevel",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 2,
+ "latency_s": 2.26,
+ "tokens_in": 2064,
+ "tokens_out": 773,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "Both OAuth 2.0 and Private Integration Tokens (PIT) are available across plans.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "OAuth 2.0 and Private Integration Tokens are available across all plans (Starter $97/month, Unlimited $297/month, Founder $497/month).",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://github.com/GoHighLevel/highlevel-api-sdk",
+    "quote": "The official TypeScript/JavaScript SDK for the HighLevel (GoHighLevel) API.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://marketplace.gohighlevel.com/docs/Authorization/DeveloperGlossary",
+    "quote": "Developer's Marketplace is a platform within HighLevel that allows developers to build and integrate their applications and tools using the HighLevel API.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_trial_or_paid_plan",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "unsupported"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 1,
+   "unsupported": 4
+  },
+  "evidence_total": 4,
+  "evidence_valid": 3,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "GoHighLevel offers a REST API with OAuth 2.0 and Private Integration Tokens for marketing automation across paid subscription tiers.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": "self_serve_trial_or_paid_plan",
+  "access_note": "OAuth 2.0 and Private Integration Tokens (PIT) are available across all paid plans (Starter $97/mo, Unlimited $297/mo, Founder $497/mo).",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "Both OAuth 2.0 and Private Integration Tokens (PIT) are available across plans."
+   },
+   {
+    "field": "access",
+    "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "OAuth 2.0 and Private Integration Tokens are available across all plans (Starter $97/month, Unlimited $297/month, Founder $497/month)."
+   },
+   {
+    "field": "api_types",
+    "url": "https://github.com/GoHighLevel/highlevel-api-sdk",
+    "quote": "The official TypeScript/JavaScript SDK for the HighLevel (GoHighLevel) API."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://marketplace.gohighlevel.com/docs/Authorization/DeveloperGlossary",
+    "quote": "Developer's Marketplace is a platform within HighLevel that allows developers to build and integrate their applications and tools using the HighLevel API."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "ef83e6c209bee848a8f1508d1bb9202f3a07983b956ce024eaa575a9f0af0e21",
+ "at": "2026-11-23T19:34:39+05:30"
+}

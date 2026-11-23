@@ -1,0 +1,6581 @@
+[
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "baseline",
+  "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "host": "help.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3163,
+  "sha256_12": "249737bde650",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Gladly Administrators can set API permissions on an Agent-by-Agent basis.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 13,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "baseline",
+  "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+  "host": "help.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "blocked_or_notfound",
+  "chars": 648,
+  "sha256_12": "bf241d08812b",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "These can be created within the Gladly UI, for users who have the `API User` role.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 3,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "baseline",
+  "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "host": "help.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5592,
+  "sha256_12": "919df20e0cd5",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Tokens can be accessed and created by users who at least have an API user role.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 18,
+    "gate_sentences": 4,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "baseline",
+  "url": "https://developer.gladly.com/",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 935,
+  "sha256_12": "92a38b015102",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "topup_v1_attempt1",
+  "url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+  "host": "gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:32:28+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "topup_v1_attempt1",
+  "url": "https://gladly.com/get-started-2",
+  "host": "gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 322,
+  "sha256_12": "04a8d3d153d0",
+  "fetched_at": "2026-11-23T17:33:03+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "topup_v1r_retry",
+  "url": "https://www.gladly.com/gladly-pricing-support-and-service-packages",
+  "host": "www.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:41:41+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "topup_v1r_retry",
+  "url": "https://www.gladly.com/get-started-2",
+  "host": "www.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 322,
+  "sha256_12": "04a8d3d153d0",
+  "fetched_at": "2026-11-23T17:41:42+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "topup_v1r_retry",
+  "url": "https://gladly.com/get-started-sidekick",
+  "host": "gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 836,
+  "sha256_12": "5a6f59ff30e7",
+  "fetched_at": "2026-11-23T17:41:43+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "topup_v1r_retry",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/app-platform-overview",
+  "host": "connect.gladly.com",
+  "official_domain": null,
+  "retrieval_usability": "skipped",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": null,
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "topup_v1r_retry",
+  "url": "https://gladly.com/get-started-2",
+  "host": "gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 322,
+  "sha256_12": "04a8d3d153d0",
+  "fetched_at": "2026-11-23T17:41:48+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "topup_v1r_retry",
+  "url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+  "host": "gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:41:50+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "source": "baseline",
+  "url": "https://pumble.com/integrations",
+  "host": "pumble.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2525,
+  "sha256_12": "1938e4273796",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Pumble provides integration with native Clockify and Plaky integrations, both of which are free and don\u2019t count towards your subscription plan limits.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 4,
+    "pricing_sentences": 1,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "source": "baseline",
+  "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/",
+  "host": "pumble.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5844,
+  "sha256_12": "7004bd7fe963",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "source": "baseline",
+  "url": "https://pumble.com/learn/pumble/ai-automation-guide",
+  "host": "pumble.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "5c3b92ee31ca",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "indirect",
+   "api_surface": "indirect",
+   "mcp_mentions": 10,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 18,
+    "gate_sentences": 0,
+    "pricing_sentences": 2,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "source": "baseline",
+  "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+  "host": "pumble.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2529,
+  "sha256_12": "d41c3c5ee2d5",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 17,
+    "gate_sentences": 0,
+    "pricing_sentences": 1,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "source": "topup_v1_attempt1",
+  "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+  "host": "pumble.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2911,
+  "sha256_12": "81cb630a406c",
+  "fetched_at": "2026-11-23T17:32:32+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 5,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "source": "topup_v1_attempt1",
+  "url": "https://pumble.com/pricing",
+  "host": "pumble.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 11346,
+  "sha256_12": "fe33b7c1aed5",
+  "fetched_at": "2026-11-23T17:32:35+05:30",
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "These integrations are free to use and do not affect your Pumble subscription plan limits.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 1,
+    "pricing_sentences": 3,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "source": "topup_v1_attempt1",
+  "url": "https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration",
+  "host": "pumble.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 2529,
+  "sha256_12": "d41c3c5ee2d5",
+  "fetched_at": "2026-11-23T17:32:39+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 17,
+    "gate_sentences": 0,
+    "pricing_sentences": 1,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 25,
+  "app": "Pumble",
+  "source": "topup_v1_attempt1",
+  "url": "https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins",
+  "host": "pumble.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5624,
+  "sha256_12": "bcc33840d111",
+  "fetched_at": "2026-11-23T17:32:48+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 1,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "baseline",
+  "url": "https://docs.discord.com/developers/intro",
+  "host": "docs.discord.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 306,
+  "sha256_12": "911ce359db4a",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "baseline",
+  "url": "https://docs.discord.com/developers/reference",
+  "host": "docs.discord.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "dcf57b43d1de",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 15,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "baseline",
+  "url": "https://docs.discord.com/developers/discord-social-sdk/how-to/use-with-discord-apis",
+  "host": "docs.discord.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3548,
+  "sha256_12": "52d0b12d3c36",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /api/v10/users"
+    ]
+   },
+   "counts": {
+    "auth_hits": 13,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 8
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "baseline",
+  "url": "https://docs.discord.com/developers/discord-social-sdk/development-guides/account-linking-with-discord",
+  "host": "docs.discord.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "d12c9ab5c851",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 34,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.discord.com/hc/en-us/articles/360017693772-Managing-Subscriptions-and-Billing-FAQ",
+  "host": "support.discord.com",
+  "official_domain": true,
+  "retrieval_usability": "off_target_url",
+  "chars": 10643,
+  "sha256_12": "8372465aa546",
+  "fetched_at": "2026-11-23T17:32:42+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Please note that the payment method used to pay for server and app subscriptions specifically will not show a Subscription tag within the Billing tab, and these subscriptions will charge from either t",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 1,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.discord.com/hc/en-us/articles/4407269525911-Localized-Pricing-on-Discord",
+  "host": "support.discord.com",
+  "official_domain": true,
+  "retrieval_usability": "off_target_url",
+  "chars": 9606,
+  "sha256_12": "1da8835ddf9a",
+  "fetched_at": "2026-11-23T17:32:44+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 32,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "topup_v1_attempt1",
+  "url": "https://discord.com/developers/home",
+  "host": "discord.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 179,
+  "sha256_12": "cc6a0c25426a",
+  "fetched_at": "2026-11-23T17:32:47+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "topup_v1_attempt1",
+  "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+  "host": "docs.discord.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4142,
+  "sha256_12": "8c3f2a4153df",
+  "fetched_at": "2026-11-23T17:32:49+05:30",
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 26,
+  "app": "Discord",
+  "source": "topup_v1r_retry",
+  "url": "https://www.discord.com/developers/home",
+  "host": "www.discord.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 179,
+  "sha256_12": "cc6a0c25426a",
+  "fetched_at": "2026-11-23T17:41:41+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 27,
+  "app": "Telegram",
+  "source": "baseline",
+  "url": "https://core.telegram.org/api/obtaining_api_id",
+  "host": "core.telegram.org",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1888,
+  "sha256_12": "76b1118ba2a0",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 27,
+  "app": "Telegram",
+  "source": "baseline",
+  "url": "https://core.telegram.org/api/srp",
+  "host": "core.telegram.org",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "c1ff3f55f7f2",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 3,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 27,
+  "app": "Telegram",
+  "source": "baseline",
+  "url": "https://core.telegram.org/api/qr-login",
+  "host": "core.telegram.org",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3059,
+  "sha256_12": "f8f68fe16dfe",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 27,
+  "app": "Telegram",
+  "source": "baseline",
+  "url": "https://core.telegram.org/widgets/login",
+  "host": "core.telegram.org",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "e4d63f5dd596",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /auth",
+     "POST /token"
+    ]
+   },
+   "counts": {
+    "auth_hits": 25,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 5
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "source": "baseline",
+  "url": "https://developer.aircall.io/docs/authentication",
+  "host": "developer.aircall.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2029,
+  "sha256_12": "acf47e3961da",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 17,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "source": "baseline",
+  "url": "https://developer.aircall.io/docs/basic-authentication",
+  "host": "developer.aircall.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2965,
+  "sha256_12": "4af84c8f1638",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 8,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "source": "baseline",
+  "url": "https://developer.aircall.io/docs/introduction",
+  "host": "developer.aircall.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2496,
+  "sha256_12": "d6e6d2db3d99",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 2,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "source": "baseline",
+  "url": "https://developers.aircall.io/tutorials/sending-sms-messages-with-aircall-api",
+  "host": "developers.aircall.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 7946,
+  "sha256_12": "2f668a49c3b8",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 15,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "source": "topup_v1_attempt1",
+  "url": "https://aircall.io/pricing",
+  "host": "aircall.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 7230,
+  "sha256_12": "5eabafe35c89",
+  "fetched_at": "2026-11-23T17:31:37+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 11,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.aircall.io/en-gb/articles/30599733509277",
+  "host": "support.aircall.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5810,
+  "sha256_12": "cbd6050c93a0",
+  "fetched_at": "2026-11-23T17:31:38+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "* Plan tiers: Essentials, Professional, and Custom each include different features such as AI transcripts, integrations, IVR, and advanced analytics.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 7,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "source": "topup_v1_attempt1",
+  "url": "https://developer.aircall.io/build",
+  "host": "developer.aircall.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2113,
+  "sha256_12": "8387e303e416",
+  "fetched_at": "2026-11-23T17:31:46+05:30",
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Meanwhile, we recommend starting to Plan your integration (See next steps below) while your application is under review \u2014 that way you're ready to move fast once approved.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 29,
+  "app": "Aircall",
+  "source": "topup_v1_attempt1",
+  "url": "https://developer.aircall.io/docs/webhooks-overview",
+  "host": "developer.aircall.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2514,
+  "sha256_12": "5363d3fa56b0",
+  "fetched_at": "2026-11-23T17:31:48+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "source": "baseline",
+  "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+  "host": "developers.facebook.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6296,
+  "sha256_12": "08af112934e0",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 37,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "source": "baseline",
+  "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/using-the-api/faq.md",
+  "host": "developers.facebook.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3264,
+  "sha256_12": "72693555bac9",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "> # Frequently Asked Questions ## General \\*\\*Can I use the API in a production environment without app review?\\*\\* To use the Marketing API in production, you must submit your app for review and rece",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 3,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "source": "baseline",
+  "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md",
+  "host": "developers.facebook.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 7784,
+  "sha256_12": "0cf0ec5e948c",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 37,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 32,
+  "app": "Meta Ads",
+  "source": "baseline",
+  "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started",
+  "host": "developers.facebook.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1840,
+  "sha256_12": "cde7745e0ab5",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "source": "baseline",
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10",
+  "host": "learn.microsoft.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 8807,
+  "sha256_12": "17d4515e53df",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "To map the ad account ID(s) to your developer application in the Development tier, refer to the following steps:",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 6,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "source": "baseline",
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+  "host": "learn.microsoft.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2537,
+  "sha256_12": "455492b288fe",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "source": "baseline",
+  "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+  "host": "learn.microsoft.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 5227,
+  "sha256_12": "10c20ffb1be4",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "| Advertising API | Vetted Product with development and standard tiers | Use the increasing access link to apply.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 33,
+  "app": "LinkedIn Ads",
+  "source": "baseline",
+  "url": "https://learn.microsoft.com/en-us/linkedin/",
+  "host": "learn.microsoft.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 325,
+  "sha256_12": "102dd2bebb25",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "source": "baseline",
+  "url": "https://github.com/GoHighLevel/highlevel-api-docs/blob/main/docs/oauth/Scopes.md",
+  "host": "github.com",
+  "official_domain": false,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "0adbc3083977",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "DELETE /businesses/:businessId",
+     "DELETE /calendars/:calendarId",
+     "DELETE /calendars/:calendarId/notifications/:notificationId",
+     "DELETE /calendars/appointments/:appointmentId/notes/:noteId"
+    ]
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "source": "baseline",
+  "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+  "host": "help.gohighlevel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 7291,
+  "sha256_12": "b6bb2890db49",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "API access is available across HighLevel subscription plans.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 11,
+    "gate_sentences": 17,
+    "pricing_sentences": 4,
+    "api_words": 30
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "source": "baseline",
+  "url": "https://marketplace.gohighlevel.com/docs/Authorization/DeveloperGlossary",
+  "host": "marketplace.gohighlevel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 8235,
+  "sha256_12": "f63a67283446",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 24,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 7
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 34,
+  "app": "GoHighLevel",
+  "source": "baseline",
+  "url": "https://github.com/GoHighLevel/highlevel-api-sdk",
+  "host": "github.com",
+  "official_domain": false,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "cc62ee9459c4",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 7,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "source": "baseline",
+  "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+  "host": "developers.klaviyo.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6299,
+  "sha256_12": "46201a977e56",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 24,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 12
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "source": "baseline",
+  "url": "https://developers.klaviyo.com/en/docs/get_started",
+  "host": "developers.klaviyo.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2065,
+  "sha256_12": "880d25bf554f",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "source": "baseline",
+  "url": "https://developers.klaviyo.com/en/docs/use_klaviyos_postman_collections",
+  "host": "developers.klaviyo.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "8bc366f3c521",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 17,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "source": "baseline",
+  "url": "https://developers.klaviyo.com/en/docs/migrate_to_oauth_from_private_key_authentication",
+  "host": "developers.klaviyo.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6716,
+  "sha256_12": "6af29edbe60e",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 41,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "source": "topup_v1_attempt1",
+  "url": "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+  "host": "klaviyo.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 7406,
+  "sha256_12": "b1fac206f9c1",
+  "fetched_at": "2026-11-23T17:31:33+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 6,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "source": "topup_v1_attempt1",
+  "url": "https://klaviyo.com/pricing",
+  "host": "klaviyo.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3190,
+  "sha256_12": "33299555d9bb",
+  "fetched_at": "2026-11-23T17:31:37+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 22,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "source": "topup_v1_attempt1",
+  "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+  "host": "help.klaviyo.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 7439,
+  "sha256_12": "df1ed640d2c7",
+  "fetched_at": "2026-11-23T17:31:43+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Owners, Admins, and Managers can create, clone, or delete private API keys.",
+    "api_ops": [
+     "GET /api/profiles",
+     "GET /api/profiles/{id}"
+    ]
+   },
+   "counts": {
+    "auth_hits": 29,
+    "gate_sentences": 1,
+    "pricing_sentences": 1,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 36,
+  "app": "Klaviyo",
+  "source": "topup_v1_attempt1",
+  "url": "https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key.",
+  "host": "developers.klaviyo.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6972,
+  "sha256_12": "b6dbd3a250cb",
+  "fetched_at": "2026-11-23T17:31:46+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 27,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 13
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "baseline",
+  "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+  "host": "developers.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 8899,
+  "sha256_12": "3af277ff588a",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "POST /v5/oauth/token"
+    ]
+   },
+   "counts": {
+    "auth_hits": 40,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "baseline",
+  "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+  "host": "developers.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1180,
+  "sha256_12": "65b07e8f5ebc",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "baseline",
+  "url": "https://developers.pinterest.com/docs/getting-started/make-an-api-call.md",
+  "host": "developers.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1243,
+  "sha256_12": "3d930d8ef8ea",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 2,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "baseline",
+  "url": "https://developers.pinterest.com/docs/",
+  "host": "developers.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "blocked_or_notfound",
+  "chars": 96,
+  "sha256_12": "46b1e93a8876",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "topup_v1_attempt1",
+  "url": "https://www.pinterest.com/ideas/pricing-plans-web-design/922997390254/",
+  "host": "www.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "off_target_url",
+  "chars": 235,
+  "sha256_12": "bb11f88d733a",
+  "fetched_at": "2026-11-23T17:32:54+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "topup_v1_attempt1",
+  "url": "https://www.pinterest.com/zoki84/pricing-plan/",
+  "host": "www.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "off_target_url",
+  "chars": 382,
+  "sha256_12": "e23491d3d182",
+  "fetched_at": "2026-11-23T17:32:56+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 1,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "topup_v1_attempt1",
+  "url": "https://developers.pinterest.com/apps/1558653/upgrade",
+  "host": "developers.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 128,
+  "sha256_12": "ed4eeda3009f",
+  "fetched_at": "2026-11-23T17:32:58+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "topup_v1_attempt1",
+  "url": "https://business.pinterest.com/getting-started",
+  "host": "business.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3703,
+  "sha256_12": "397b47c4dc65",
+  "fetched_at": "2026-11-23T17:33:02+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "topup_v1r_retry",
+  "url": "https://developers.pinterest.com/apps/1558653/upgrade.md",
+  "host": "developers.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 128,
+  "sha256_12": "ed4eeda3009f",
+  "fetched_at": "2026-11-23T17:41:42+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "topup_v1r_retry",
+  "url": "https://dev.pinterest.com/docs/getting-started",
+  "host": "dev.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2575,
+  "sha256_12": "8f4ce8441f7f",
+  "fetched_at": "2026-11-23T17:41:47+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If your app is approved for Trial access, you can log into your account and manage your app details on your My apps page.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 7,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "topup_v1r_retry",
+  "url": "https://developers.pinterest.com/docs/getting-started/using-beta-and-restricted-features",
+  "host": "developers.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1820,
+  "sha256_12": "f06a9890184b",
+  "fetched_at": "2026-11-23T17:41:50+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 38,
+  "app": "Pinterest",
+  "source": "topup_v1r_retry",
+  "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+  "host": "developers.pinterest.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 8899,
+  "sha256_12": "3af277ff588a",
+  "fetched_at": "2026-11-23T17:41:52+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "POST /v5/oauth/token"
+    ]
+   },
+   "counts": {
+    "auth_hits": 40,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "source": "baseline",
+  "url": "https://developers.facebook.com/documentation/threads",
+  "host": "developers.facebook.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 676,
+  "sha256_12": "1813f3e0cb98",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "source": "baseline",
+  "url": "https://developers.facebook.com/documentation/threads/overview",
+  "host": "developers.facebook.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 7083,
+  "sha256_12": "221685a97783",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /{threads-user-id}/threads_publishing_limit",
+     "POST /{threads-user-id}/threads_publish"
+    ]
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 10
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "source": "baseline",
+  "url": "https://developers.facebook.com/documentation/threads/get-started",
+  "host": "developers.facebook.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4912,
+  "sha256_12": "7898f629eae9",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /refresh_access_token"
+    ]
+   },
+   "counts": {
+    "auth_hits": 18,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 39,
+  "app": "Threads (Meta)",
+  "source": "baseline",
+  "url": "https://developers.facebook.com/docs/threads/get-started?locale=en_US",
+  "host": "developers.facebook.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 4912,
+  "sha256_12": "7898f629eae9",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /refresh_access_token"
+    ]
+   },
+   "counts": {
+    "auth_hits": 18,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "source": "baseline",
+  "url": "https://shopify.dev/docs/api",
+  "host": "shopify.dev",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6414,
+  "sha256_12": "37f97caaea92",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 1,
+   "basis": {
+    "access": "Reference documentation for Shopify's APIs, libraries, and developer tools, plus the concepts that apply across all of them.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "source": "baseline",
+  "url": "https://shopify.dev/docs/api/customer-authentication",
+  "host": "shopify.dev",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3222,
+  "sha256_12": "f83f941c7dff",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 2,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "source": "baseline",
+  "url": "https://shopify.dev/docs/api/usage/authentication",
+  "host": "shopify.dev",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3706,
+  "sha256_12": "53b05cf7c6a2",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "* Learn how access tokens work, including the token types, the GraphQL Admin API's OAuth grants and endpoints, and how tokens expire and refresh.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 13,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 41,
+  "app": "Shopify",
+  "source": "baseline",
+  "url": "https://shopify.dev/docs",
+  "host": "shopify.dev",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3750,
+  "sha256_12": "b4b7a56ec3c6",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 1,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "source": "baseline",
+  "url": "https://developer.bigcommerce.com/docs/rest-authentication/current-customer",
+  "host": "developer.bigcommerce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 744,
+  "sha256_12": "0e8f00448db8",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 4,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "source": "baseline",
+  "url": "https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts",
+  "host": "developer.bigcommerce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "c4549688c1d2",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If you need to revoke a store-level API account, plan accordingly.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 37,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 9
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "source": "baseline",
+  "url": "https://developer.bigcommerce.com",
+  "host": "developer.bigcommerce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6628,
+  "sha256_12": "f54315514336",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Sign up for a free BigCommerce trial store to test API",
+    "api_ops": [
+     "GET /stores/{{STORE_HASH}}/v3/catalog/products",
+     "POST /stores/{store_hash}/v3/storefront/api-token"
+    ]
+   },
+   "counts": {
+    "auth_hits": 3,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 9
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 43,
+  "app": "BigCommerce",
+  "source": "baseline",
+  "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+  "host": "docs.bigcommerce.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 9000,
+  "sha256_12": "c4549688c1d2",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If you need to revoke a store-level API account, plan accordingly.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 37,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 9
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "source": "baseline",
+  "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas-best-practices.html",
+  "host": "developer.salesforce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "3d8ab5a652e8",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "POST /oauth2/passwordless/login",
+     "POST /oauth2/passwordless/token",
+     "POST /shopper/auth/v1/organizations/{organizationId}/oauth2/login"
+    ]
+   },
+   "counts": {
+    "auth_hits": 19,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "source": "baseline",
+  "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+  "host": "developer.salesforce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 7125,
+  "sha256_12": "0c4259ed3591",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "B2B and D2C Commerce solutions focus on complex order and account management, advanced personalization, and enterprise integration.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "source": "baseline",
+  "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+  "host": "developer.salesforce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3140,
+  "sha256_12": "d5b6ebfd06c4",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 4,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 7
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "source": "baseline",
+  "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references",
+  "host": "developer.salesforce.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 266,
+  "sha256_12": "f94412aea5f4",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "source": "topup_v1_attempt1",
+  "url": "https://www.salesforce.com/commerce/pricing/",
+  "host": "www.salesforce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4079,
+  "sha256_12": "ee8d4776f513",
+  "fetched_at": "2026-11-23T17:32:53+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "source": "topup_v1_attempt1",
+  "url": "https://www.salesforce.com/au/commerce/pricing/",
+  "host": "www.salesforce.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 4077,
+  "sha256_12": "de493c7a14de",
+  "fetched_at": "2026-11-23T17:32:55+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "source": "topup_v1_attempt1",
+  "url": "https://developer.salesforce.com",
+  "host": "developer.salesforce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4214,
+  "sha256_12": "980d7e38304f",
+  "fetched_at": "2026-11-23T17:32:56+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 5,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "source": "topup_v1_attempt1",
+  "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+  "host": "developer.salesforce.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1187,
+  "sha256_12": "ed4bdb22b800",
+  "fetched_at": "2026-11-23T17:33:03+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "baseline",
+  "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "host": "developers.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3671,
+  "sha256_12": "1f3f43971167",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 21,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "baseline",
+  "url": "https://developers.squarespace.com/",
+  "host": "developers.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1780,
+  "sha256_12": "96deade1b660",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "baseline",
+  "url": "https://developers.squarespace.com/oauth",
+  "host": "developers.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "f56c045086ab",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /api/1/login/oauth/provider/authorize",
+     "GET /authorize",
+     "POST /api/1/login/oauth/provider/tokens",
+     "POST /tokens"
+    ]
+   },
+   "counts": {
+    "auth_hits": 33,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 7
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "baseline",
+  "url": "https://developers.squarespace.com/commerce-apis/oauth",
+  "host": "developers.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 9000,
+  "sha256_12": "234c6616a237",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /api/1/login/oauth/provider/authorize",
+     "GET /authorize",
+     "POST /api/1/login/oauth/provider/tokens",
+     "POST /tokens"
+    ]
+   },
+   "counts": {
+    "auth_hits": 34,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 7
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle",
+  "host": "support.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:31:43+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1_attempt1",
+  "url": "https://squarespace.com/pricing",
+  "host": "squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 23258,
+  "sha256_12": "bde03ae791e2",
+  "fetched_at": "2026-11-23T17:31:45+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "| Premium integrations and blocks Grow your website with integrations and apps that connect with your visitors, create leads, and build your customer database.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 19,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+  "host": "support.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:32:06+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+  "host": "support.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:32:22+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1r_retry",
+  "url": "https://support.squarespace.com/hc/en-us/articles/4404628246669-Create-pricing-plans-and-paywalls",
+  "host": "support.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:41:53+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1r_retry",
+  "url": "https://squarespace.com/pricing.txt",
+  "host": "squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5986,
+  "sha256_12": "acd1bbd1bf81",
+  "fetched_at": "2026-11-23T17:41:56+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Adds advanced site analytics, premium integrations, customer accounts, gift cards, point-of-sale, and the ability to sell unlimited products with a 3% transaction fee on commerce sales.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 38,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1r_retry",
+  "url": "https://support.squarespace.com/hc/en-us/articles/236297987",
+  "host": "support.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:42:06+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1r_retry",
+  "url": "https://support.squarespace.com/hc/en-us/articles/236297987/?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+  "host": "support.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:42:17+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1r_retry",
+  "url": "https://developers.squarespace.com/commerce-apis/discounts-overview",
+  "host": "developers.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6797,
+  "sha256_12": "5513a4ee271c",
+  "fetched_at": "2026-11-23T17:42:23+05:30",
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /v1/commerce/discounts",
+     "GET /v1/fulfillments/fulfillment-options"
+    ]
+   },
+   "counts": {
+    "auth_hits": 2,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1r_retry",
+  "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+  "host": "support.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:42:40+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 46,
+  "app": "Squarespace",
+  "source": "topup_v1r_retry",
+  "url": "https://developers.squarespace.com/commerce-apis/website-overview",
+  "host": "developers.squarespace.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3972,
+  "sha256_12": "28d5619b70f0",
+  "fetched_at": "2026-11-23T17:42:42+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 5,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "baseline",
+  "url": "https://api-docs.ecwid.com/reference/authentication-in-native-apps",
+  "host": "api-docs.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1967,
+  "sha256_12": "30fd545a9b1e",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "baseline",
+  "url": "https://api-docs.ecwid.com/reference/implement-sso",
+  "host": "api-docs.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 1967,
+  "sha256_12": "30fd545a9b1e",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "baseline",
+  "url": "https://docs.ecwid.com/get-started/api-glossary",
+  "host": "docs.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3007,
+  "sha256_12": "d4a27e99feb6",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Hidden page in Ecwid admin where developers can create new applications, check app settings, get access tokens, and request application updates.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 10,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "baseline",
+  "url": "https://docs.ecwid.com/api-reference/rest-api/customers/create-customer",
+  "host": "docs.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4647,
+  "sha256_12": "5d184abd2be2",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "POST /api/v3/1003/customers"
+    ]
+   },
+   "counts": {
+    "auth_hits": 3,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "topup_v1_attempt1",
+  "url": "https://www.ecwid.com/pricing",
+  "host": "www.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 14787,
+  "sha256_12": "902781519baa",
+  "fetched_at": "2026-11-23T17:33:05+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Sell on marketplaces (via third-party apps, additional fees may apply)",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 5,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "topup_v1_attempt1",
+  "url": "https://www.ecwid.com/pricing/business",
+  "host": "www.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6379,
+  "sha256_12": "c966bd053e62",
+  "fetched_at": "2026-11-23T17:33:07+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "topup_v1_attempt1",
+  "url": "http://developers.ecwid.com/register",
+  "host": "developers.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:33:10+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+  "host": "support.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1237,
+  "sha256_12": "636848d49588",
+  "fetched_at": "2026-11-23T17:33:13+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Your app can be free or paid.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "topup_v1r_retry",
+  "url": "http://developers.ecwid.com/register.md",
+  "host": "developers.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:41:53+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 47,
+  "app": "Ecwid",
+  "source": "topup_v1r_retry",
+  "url": "https://developers.ecwid.com/register",
+  "host": "developers.ecwid.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:41:54+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "source": "baseline",
+  "url": "https://seranking.com/api/project/getting-started",
+  "host": "seranking.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3705,
+  "sha256_12": "b54a49383af0",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "What you can call depends on your plan, not on the key.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 12,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "source": "baseline",
+  "url": "https://seranking.com/api/rate-limits/",
+  "host": "seranking.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3611,
+  "sha256_12": "ee6a9f3e53e9",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "During the trial period, the Data API has a default rate limit of **1 request per second (RPS)**.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 2,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "source": "baseline",
+  "url": "https://seranking.com/api/how-to-get-api",
+  "host": "seranking.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4880,
+  "sha256_12": "7d1337160fca",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "What you can call depends on your plan, not on the key.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 11,
+    "gate_sentences": 11,
+    "pricing_sentences": 5,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 52,
+  "app": "SE Ranking",
+  "source": "baseline",
+  "url": "https://seranking.com/api/se-visible/getting-started",
+  "host": "seranking.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6545,
+  "sha256_12": "4d830f93b797",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 9,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "source": "baseline",
+  "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+  "host": "docs.ahrefs.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4014,
+  "sha256_12": "2fca755e9a0b",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "* **Subscription information**: Your API limits and usage",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 6,
+    "gate_sentences": 4,
+    "pricing_sentences": 1,
+    "api_words": 9
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "source": "baseline",
+  "url": "https://docs.ahrefs.com/",
+  "host": "docs.ahrefs.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3410,
+  "sha256_12": "31f6b2ae887e",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 3,
+   "basis": {
+    "access": "Try API endpoints without an Enterprise plan",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 8,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 11
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "source": "baseline",
+  "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+  "host": "docs.ahrefs.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1035,
+  "sha256_12": "f925b0bf3d0e",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If your subscription plan allows pay-as-you-go charges, you can also limit the maximum number of API units that can be added on a pay-as-you-go basis or disable pay-as-you-go API units altogether in A",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 10,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 53,
+  "app": "Ahrefs",
+  "source": "baseline",
+  "url": "https://docs.ahrefs.com/en/api/reference/public",
+  "host": "docs.ahrefs.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 316,
+  "sha256_12": "7432c7263fd1",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Free endpoints that don't require an Ahrefs subscription, or require a free/public APIv3 key",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "source": "baseline",
+  "url": "https://docs.firecrawl.dev/introduction",
+  "host": "docs.firecrawl.dev",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "b4134a68721c",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 3,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 30,
+    "gate_sentences": 0,
+    "pricing_sentences": 2,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "source": "baseline",
+  "url": "https://docs.firecrawl.dev/oauth",
+  "host": "docs.firecrawl.dev",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "65dddfa6145c",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 1,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "POST /api/oauth/register",
+     "POST /api/oauth/revoke",
+     "POST /api/oauth/token",
+     "POST /v2/scrape"
+    ]
+   },
+   "counts": {
+    "auth_hits": 54,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 14
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "source": "baseline",
+  "url": "https://docs.firecrawl.dev/authentication",
+  "host": "docs.firecrawl.dev",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3938,
+  "sha256_12": "75cbb3c81f63",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 18,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 31,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 9
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 56,
+  "app": "Firecrawl",
+  "source": "baseline",
+  "url": "https://docs.firecrawl.dev/api-reference/introduction",
+  "host": "docs.firecrawl.dev",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3504,
+  "sha256_12": "fac4b05629bf",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "When you exceed your plan\u2019s rate or concurrency limits, the API returns a 429 response code.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 6,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "baseline",
+  "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+  "host": "docs.github.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "167bdca3a765",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 63,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 8
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "baseline",
+  "url": "https://docs.github.com/enterprise/11.10.340/developer/v3/auth",
+  "host": "docs.github.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2943,
+  "sha256_12": "22aaee2aed4e",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 21,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "baseline",
+  "url": "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+  "host": "docs.github.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1644,
+  "sha256_12": "6eeceae61607",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 30
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "baseline",
+  "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+  "host": "docs.github.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4178,
+  "sha256_12": "1bed8c89f4e2",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 4,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "topup_v1_attempt1",
+  "url": "https://github.com/pricing.md",
+  "host": "github.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:33:07+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "topup_v1_attempt1",
+  "url": "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+  "host": "docs.github.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3956,
+  "sha256_12": "029cbaf0840a",
+  "fetched_at": "2026-11-23T17:33:09+05:30",
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If the app you're listing on GitHub Marketplace has multiple plan options, you can set up corresponding pricing plans.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 6,
+    "pricing_sentences": 23,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "topup_v1_attempt1",
+  "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+  "host": "docs.github.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6928,
+  "sha256_12": "a819fbddd48d",
+  "fetched_at": "2026-11-23T17:33:10+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 14,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "topup_v1_attempt1",
+  "url": "https://docs.github.com/developers/apps/building-github-apps/creating-a-github-app",
+  "host": "docs.github.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 6928,
+  "sha256_12": "a819fbddd48d",
+  "fetched_at": "2026-11-23T17:33:11+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 14,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "topup_v1r_retry",
+  "url": "https://github.com/pricing",
+  "host": "github.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 19507,
+  "sha256_12": "cbe5349faeea",
+  "fetched_at": "2026-11-23T17:41:56+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 6,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "topup_v1r_retry",
+  "url": "https://www.github.com/pricing.md",
+  "host": "www.github.com",
+  "official_domain": null,
+  "retrieval_usability": "skipped",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": null,
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 61,
+  "app": "GitHub",
+  "source": "topup_v1r_retry",
+  "url": "https://github.com/features/copilot/plans",
+  "host": "github.com",
+  "official_domain": null,
+  "retrieval_usability": "skipped",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": null,
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "baseline",
+  "url": "https://vercel.com/docs",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6490,
+  "sha256_12": "82cd5a581b8a",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 6,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 8,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "baseline",
+  "url": "https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6243,
+  "sha256_12": "e492567ab239",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /v1/api-keys",
+     "POST /v1/api-keys"
+    ]
+   },
+   "counts": {
+    "auth_hits": 35,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "baseline",
+  "url": "https://vercel.com/docs/rest-api",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1293,
+  "sha256_12": "e5d093cc57b5",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 3,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "baseline",
+  "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "348343412daa",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 30,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 18
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "topup_v1_attempt1",
+  "url": "https://vercel.com/docs/pricing",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 8967,
+  "sha256_12": "6c4cc0a47204",
+  "fetched_at": "2026-11-23T17:33:08+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 44,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "topup_v1_attempt1",
+  "url": "https://vercel.com/pricing",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 13683,
+  "sha256_12": "9748058cd965",
+  "fetched_at": "2026-11-23T17:33:14+05:30",
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 0,
+    "pricing_sentences": 23,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "topup_v1_attempt1",
+  "url": "https://vercel.com/docs/accounts/access-tokens",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 10189,
+  "sha256_12": "5225c3f0e3ba",
+  "fetched_at": "2026-11-23T17:33:19+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /v5/user/tokens/{tokenId}",
+     "GET /v6/user/tokens",
+     "GET /v7/deployments"
+    ]
+   },
+   "counts": {
+    "auth_hits": 20,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 9
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "topup_v1_attempt1",
+  "url": "https://vercel.com/signup",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 254,
+  "sha256_12": "07f0f10a7b2b",
+  "fetched_at": "2026-11-23T17:33:20+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "topup_v1r_retry",
+  "url": "https://www.vercel.com/signup",
+  "host": "www.vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 241,
+  "sha256_12": "9477db2efc82",
+  "fetched_at": "2026-11-23T17:41:57+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "topup_v1r_retry",
+  "url": "https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 10189,
+  "sha256_12": "5225c3f0e3ba",
+  "fetched_at": "2026-11-23T17:41:58+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /v5/user/tokens/{tokenId}",
+     "GET /v6/user/tokens",
+     "GET /v7/deployments"
+    ]
+   },
+   "counts": {
+    "auth_hits": 20,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 9
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 62,
+  "app": "Vercel",
+  "source": "topup_v1r_retry",
+  "url": "https://vercel.com/docs/cli/signup",
+  "host": "vercel.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1398,
+  "sha256_12": "71b040d99300",
+  "fetched_at": "2026-11-23T17:42:00+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "source": "baseline",
+  "url": "https://docs.netlify.com/",
+  "host": "docs.netlify.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4595,
+  "sha256_12": "9ff9ae620eb2",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 6,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "source": "baseline",
+  "url": "https://docs.netlify.com/build/data-and-storage/netlify-database/api",
+  "host": "docs.netlify.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "b50483892b97",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "indirect",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /sites/{site",
+     "GET /sites/{site_id}/database",
+     "POST /sites/{site",
+     "POST /sites/{site_id}/database"
+    ]
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 0,
+    "pricing_sentences": 3,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "source": "baseline",
+  "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+  "host": "docs.netlify.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "4bf45db526c0",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "POST /api/v1/sites",
+     "POST /api/v1/sites/{site_id}/deploys",
+     "PUT /api/v1/deploys/{deploy_id}/files/index.html",
+     "PUT /api/v1/deploys/{deploy_id}/functions/hello-world"
+    ]
+   },
+   "counts": {
+    "auth_hits": 15,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "source": "baseline",
+  "url": "https://developers.netlify.com/guides/deploy-zip-file-to-production-website",
+  "host": "developers.netlify.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "2ac0191f74b9",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 9,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 8
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "source": "topup_v1_attempt1",
+  "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+  "host": "docs.netlify.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 13036,
+  "sha256_12": "d7954fff02cf",
+  "fetched_at": "2026-11-23T17:33:15+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 9,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "source": "topup_v1_attempt1",
+  "url": "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+  "host": "netlify.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 18269,
+  "sha256_12": "9da084d14b82",
+  "fetched_at": "2026-11-23T17:33:34+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 3,
+    "gate_sentences": 0,
+    "pricing_sentences": 17,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "source": "topup_v1_attempt1",
+  "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+  "host": "developers.netlify.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9089,
+  "sha256_12": "80b3305d3f61",
+  "fetched_at": "2026-11-23T17:33:35+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 50,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 5
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 63,
+  "app": "Netlify",
+  "source": "topup_v1_attempt1",
+  "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+  "host": "docs.netlify.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 25087,
+  "sha256_12": "1c79cab23f13",
+  "fetched_at": "2026-11-23T17:33:37+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 28,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "source": "baseline",
+  "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+  "host": "supabase.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "d2c479e3e38b",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 21,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "source": "baseline",
+  "url": "https://supabase.com/docs/guides/auth",
+  "host": "supabase.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3529,
+  "sha256_12": "6779ba0c1bd9",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 8,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "source": "baseline",
+  "url": "https://supabase.com/docs/guides/self-hosting/self-hosted-auth-keys",
+  "host": "supabase.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 8736,
+  "sha256_12": "b7a6ce97bd81",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "`/rest/v1/` is the Open API root and requires admin-level keys (`sb_secret_*` or legacy `SERVICE_ROLE_KEY`).",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 66,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "source": "baseline",
+  "url": "https://supabase.com/docs/guides/functions/auth-headers",
+  "host": "supabase.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3139,
+  "sha256_12": "87b43d1e131d",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 35,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "source": "topup_v1_attempt1",
+  "url": "https://supabase.com/docs/guides/platform/billing-faq",
+  "host": "supabase.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 17514,
+  "sha256_12": "0057f95459a7",
+  "fetched_at": "2026-11-23T17:31:55+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 12,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "source": "topup_v1_attempt1",
+  "url": "https://supabase.com/pricing",
+  "host": "supabase.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 20345,
+  "sha256_12": "63e08da82aba",
+  "fetched_at": "2026-11-23T17:31:59+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 10,
+    "gate_sentences": 0,
+    "pricing_sentences": 53,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "source": "topup_v1_attempt1",
+  "url": "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+  "host": "supabase.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 11419,
+  "sha256_12": "1798288e97e3",
+  "fetched_at": "2026-11-23T17:32:02+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 39,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 65,
+  "app": "Supabase",
+  "source": "topup_v1_attempt1",
+  "url": "https://supabase.com/docs/guides/api/api-keys.md",
+  "host": "supabase.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 20728,
+  "sha256_12": "05e201d2426c",
+  "fetched_at": "2026-11-23T17:32:04+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Publishable and secret keys aren't JWTs, which creates a few compatibility differences to plan for:",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 58,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "baseline",
+  "url": "https://neo4j.com/docs/operations-manual/current/authentication-authorization",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "84a8c8df8112",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "baseline",
+  "url": "https://neo4j.com/docs/http-api/current/authentication-authorization",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4055,
+  "sha256_12": "e74541f88aef",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 11,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "baseline",
+  "url": "https://neo4j.com/docs/developer-manual/current/http-api/authentication",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5456,
+  "sha256_12": "55913b189891",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 1,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "baseline",
+  "url": "https://neo4j.com/docs/aura/api/overview/",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3269,
+  "sha256_12": "77b0e024c00b",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /v1/instances"
+    ]
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "topup_v1_attempt1",
+  "url": "https://neo4j.com/pricing/",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:32:09+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "topup_v1_attempt1",
+  "url": "https://neo4j.com/docs/aura/billing/payment-options/",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9174,
+  "sha256_12": "cc66ea8a69dc",
+  "fetched_at": "2026-11-23T17:32:11+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 9,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "topup_v1_attempt1",
+  "url": "https://neo4j.com/docs/aura/getting-started/free-trial/",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4075,
+  "sha256_12": "7bfd0c188ea6",
+  "fetched_at": "2026-11-23T17:32:16+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 17,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "topup_v1r_retry",
+  "url": "https://www.neo4j.com/pricing/",
+  "host": "www.neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:42:08+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "topup_v1r_retry",
+  "url": "https://neo4j.com/docs/aura/billing/billing-dimensions/",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3997,
+  "sha256_12": "d48bee14d9b8",
+  "fetched_at": "2026-11-23T17:42:10+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 1,
+    "api_words": 5
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "topup_v1r_retry",
+  "url": "https://neo4j.com/docs/query-api/current",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2486,
+  "sha256_12": "1aa4dd3532bc",
+  "fetched_at": "2026-11-23T17:42:14+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "topup_v1r_retry",
+  "url": "https://neo4j.com/docs/http-api/current/authentication-authorization",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 4055,
+  "sha256_12": "e74541f88aef",
+  "fetched_at": "2026-11-23T17:42:16+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 11,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 66,
+  "app": "Neo4j",
+  "source": "topup_v1r_retry",
+  "url": "https://neo4j.com/docs/http-api/current",
+  "host": "neo4j.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2497,
+  "sha256_12": "01e8a9aabd53",
+  "fetched_at": "2026-11-23T17:42:17+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "source": "baseline",
+  "url": "https://docs.sentry.io/api/",
+  "host": "docs.sentry.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1238,
+  "sha256_12": "8b4a99d2f634",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "source": "baseline",
+  "url": "https://docs.sentry.io/api/permissions",
+  "host": "docs.sentry.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2303,
+  "sha256_12": "70f6b2f39c46",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "source": "baseline",
+  "url": "https://docs.sentry.io/api/auth",
+  "host": "docs.sentry.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "7e93a21a9c26",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "POST /oauth/device/code",
+     "POST /oauth/token"
+    ]
+   },
+   "counts": {
+    "auth_hits": 68,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 7
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "source": "baseline",
+  "url": "https://docs.sentry.io/api/events/list-an-issues-events.md",
+  "host": "docs.sentry.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3688,
+  "sha256_12": "a7f4b400b852",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "indirect",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /api/0/organizations/{organization"
+    ]
+   },
+   "counts": {
+    "auth_hits": 2,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "source": "topup_v1_attempt1",
+  "url": "https://sentry.io/pricing",
+  "host": "sentry.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6168,
+  "sha256_12": "1db69ec73e02",
+  "fetched_at": "2026-11-23T17:33:18+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 3,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 13,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "source": "topup_v1_attempt1",
+  "url": "https://docs.sentry.io/pricing",
+  "host": "docs.sentry.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 17640,
+  "sha256_12": "efc6298a7dc1",
+  "fetched_at": "2026-11-23T17:33:21+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Without a paid plan, you will be automatically assigned a free Developer plan at the end of your trial.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 5,
+    "pricing_sentences": 43,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 70,
+  "app": "Sentry",
+  "source": "topup_v1_attempt1",
+  "url": "https://docs.sentry.io/get-started",
+  "host": "docs.sentry.io",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5047,
+  "sha256_12": "fbc54fcf7a9b",
+  "fetched_at": "2026-11-23T17:33:23+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 1,
+   "basis": {
+    "access": "**Plans and Pricing** \u2192 Sentry offers a free Developer plan and three paid plans (Team, Business, and Enterprise).",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 2,
+    "pricing_sentences": 3,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "baseline",
+  "url": "https://developers.notion.com/guides/authorization/credential-security",
+  "host": "developers.notion.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3752,
+  "sha256_12": "d7c8d4d529b4",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 16,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "baseline",
+  "url": "https://developers.notion.com/workers/guides/api-client",
+  "host": "developers.notion.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4824,
+  "sha256_12": "423debbe4774",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 10,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "baseline",
+  "url": "https://developers.notion.com/guides/notion-api/quick-start",
+  "host": "developers.notion.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6557,
+  "sha256_12": "44960c6eab0f",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "**Don\u2019t see the option to create a token?**On Business and Enterprise plans, PAT creation is restricted by default.",
+    "api_ops": [
+     "POST /v1/pages"
+    ]
+   },
+   "counts": {
+    "auth_hits": 11,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 6
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "baseline",
+  "url": "https://developers.notion.com/guides/connections-and-tokens/overview",
+  "host": "developers.notion.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4520,
+  "sha256_12": "41b8356f504f",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 24,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "topup_v1_attempt1",
+  "url": "https://notion.com/pricing",
+  "host": "notion.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 20996,
+  "sha256_12": "14ad5f50aec9",
+  "fetched_at": "2026-11-23T17:32:09+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 14,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "topup_v1_attempt1",
+  "url": "https://notion.com/en-GB/pricing/us",
+  "host": "notion.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 2,
+  "sha256_12": "44136fa355b3",
+  "fetched_at": "2026-11-23T17:32:11+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "topup_v1_attempt1",
+  "url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+  "host": "developers.notion.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 3752,
+  "sha256_12": "d7c8d4d529b4",
+  "fetched_at": "2026-11-23T17:32:14+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 16,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "topup_v1_attempt1",
+  "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+  "host": "developers.notion.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6512,
+  "sha256_12": "2f456f310777",
+  "fetched_at": "2026-11-23T17:32:16+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If an admin changes the workspace policy so a member is no longer allowed to create PATs with Notion API access, that member\u2019s existing PATs stop working for Notion API requests.",
+    "api_ops": [
+     "GET /v1/users/me"
+    ]
+   },
+   "counts": {
+    "auth_hits": 9,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "topup_v1r_retry",
+  "url": "https://www.notion.com/en-GB/pricing/us",
+  "host": "www.notion.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 2,
+  "sha256_12": "44136fa355b3",
+  "fetched_at": "2026-11-23T17:42:03+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "topup_v1r_retry",
+  "url": "https://notion.com/help/category/plans-billing-and-payment",
+  "host": "notion.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 482,
+  "sha256_12": "28b0140a6f0d",
+  "fetched_at": "2026-11-23T17:42:04+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 2,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 71,
+  "app": "Notion",
+  "source": "topup_v1r_retry",
+  "url": "https://www.notion.com/pricing",
+  "host": "www.notion.com",
+  "official_domain": true,
+  "retrieval_usability": "duplicate_content",
+  "chars": 20996,
+  "sha256_12": "14ad5f50aec9",
+  "fetched_at": "2026-11-23T17:42:06+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 14,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "baseline",
+  "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+  "host": "airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3997,
+  "sha256_12": "4efdf523a730",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If you are an enterprise admin, you can also create a personal access token for a [service account](https://support.airtable.com/docs/service-accounts-overview) from the Admin Panel\u2014refer to this",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 15,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "baseline",
+  "url": "https://airtable.com/developers/web/api/introduction",
+  "host": "airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 632,
+  "sha256_12": "c1c7fae48fb8",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "baseline",
+  "url": "https://support.airtable.com/docs/en/creating-and-using-api-keys-and-access-tokens",
+  "host": "support.airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "c8d6c8eaac9e",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Tokens can be scoped to individual bases, to workspaces, to all of your workspaces, or, for enterprise admins, to an entire organization.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 27,
+    "gate_sentences": 4,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "baseline",
+  "url": "https://airtable.com/developers/web/api/authentication.md",
+  "host": "airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3408,
+  "sha256_12": "c93a3cbcf19e",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "When configuring resources/access for a personal access token, Enterprise users may see additional options:",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 28,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs",
+  "host": "support.airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:32:19+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "topup_v1_attempt1",
+  "url": "https://airtable.com/pricing",
+  "host": "airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3801,
+  "sha256_12": "700874cdacb6",
+  "fetched_at": "2026-11-23T17:32:20+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Our Free plan is available to teams for no charge and provides the key building blocks to help you build applications.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 2,
+    "pricing_sentences": 10,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "topup_v1_attempt1",
+  "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+  "host": "support.airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 13567,
+  "sha256_12": "079fea861d0f",
+  "fetched_at": "2026-11-23T17:32:22+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "Tokens can be scoped to individual bases, to workspaces, to all of your workspaces, or, for enterprise admins, to an entire organization.",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 39,
+    "gate_sentences": 5,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "topup_v1_attempt1",
+  "url": "https://airtable.com/developers/web/guides/personal-access-tokens",
+  "host": "airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3555,
+  "sha256_12": "bf55997f5140",
+  "fetched_at": "2026-11-23T17:32:23+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If you are an enterprise admin, you can also create a personal access token for a service account from the Admin Panel\u2014refer to this",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 14,
+    "gate_sentences": 1,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "topup_v1r_retry",
+  "url": "https://support.airtable.com/docs/airtable-billing-overview",
+  "host": "support.airtable.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 10780,
+  "sha256_12": "d7e90560769f",
+  "fetched_at": "2026-11-23T17:42:09+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 4,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "topup_v1r_retry",
+  "url": "https://support.airtable.com/articles/1636857517-how-airtable-collaborators-impact-billing",
+  "host": "support.airtable.com",
+  "official_domain": null,
+  "retrieval_usability": "skipped",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": null,
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 72,
+  "app": "Airtable",
+  "source": "topup_v1r_retry",
+  "url": "https://airtable.com/developers/web/api/billing-plans.md",
+  "host": "airtable.com",
+  "official_domain": null,
+  "retrieval_usability": "skipped",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": null,
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "baseline",
+  "url": "https://developers.asana.com/docs/personal-access-token",
+  "host": "developers.asana.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2972,
+  "sha256_12": "d557b6edd203",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 17,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "baseline",
+  "url": "https://developers.asana.com/docs/authentication",
+  "host": "developers.asana.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 4668,
+  "sha256_12": "69d83804e281",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 9,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 2
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "baseline",
+  "url": "https://developers.asana.com/docs/api-explorer",
+  "host": "developers.asana.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2473,
+  "sha256_12": "92ccb312469d",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "direct",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": [
+     "GET /api/1.0/users",
+     "GET /users"
+    ]
+   },
+   "counts": {
+    "auth_hits": 3,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 9
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "baseline",
+  "url": "https://developers.asana.com/docs/quick-start",
+  "host": "developers.asana.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 9000,
+  "sha256_12": "9c7cd5a552d7",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 9,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 10
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "topup_v1_attempt1",
+  "url": "https://asana.com/pricing",
+  "host": "asana.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:32:31+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "topup_v1_attempt1",
+  "url": "https://asana.com/pricing/client-management",
+  "host": "asana.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 22783,
+  "sha256_12": "2d153db3a22d",
+  "fetched_at": "2026-11-23T17:32:33+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "indirect",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 9,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "topup_v1_attempt1",
+  "url": "https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox)",
+  "host": "developers.asana.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:32:37+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "topup_v1_attempt1",
+  "url": "https://developers.asana.com/docs/personal-access-token.md",
+  "host": "developers.asana.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3313,
+  "sha256_12": "ee2b9fbdc7ee",
+  "fetched_at": "2026-11-23T17:32:38+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 19,
+    "gate_sentences": 0,
+    "pricing_sentences": 1,
+    "api_words": 1
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "topup_v1r_retry",
+  "url": "https://www.asana.com/pricing",
+  "host": "www.asana.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:42:23+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "topup_v1r_retry",
+  "url": "https://asana.com/pricing.md",
+  "host": "asana.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 24074,
+  "sha256_12": "b92d55a368f9",
+  "fetched_at": "2026-11-23T17:42:24+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "| Enterprise Key Management, subject to eligibility | | | | | Opt-in |",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 1,
+    "pricing_sentences": 18,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "topup_v1r_retry",
+  "url": "https://asana.com/pricing?via=",
+  "host": "asana.com",
+  "official_domain": null,
+  "retrieval_usability": "skipped",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": null,
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 75,
+  "app": "Asana",
+  "source": "topup_v1r_retry",
+  "url": "https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox).md",
+  "host": "developers.asana.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:42:25+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "source": "baseline",
+  "url": "https://developer.monday.com/api-reference/docs/getting-started",
+  "host": "developer.monday.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3997,
+  "sha256_12": "110617063420",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 8,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 5
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "source": "baseline",
+  "url": "https://developer.monday.com/apps/docs/integration-authorization",
+  "host": "developer.monday.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 3231,
+  "sha256_12": "d373b979817a",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 18,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "source": "baseline",
+  "url": "https://developer.monday.com/apps/docs/choosing-auth.md",
+  "host": "developer.monday.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5943,
+  "sha256_12": "9081602c68ba",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 32,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 4
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 76,
+  "app": "Monday.com",
+  "source": "baseline",
+  "url": "https://developer.monday.com/apps/docs/choosing-auth",
+  "host": "developer.monday.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 5565,
+  "sha256_12": "5f76107c44da",
+  "fetched_at": null,
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "indirect",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 30,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 3
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round1",
+  "url": "https://developer.gladly.com/rest",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:48:47+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round1",
+  "url": "https://developer.gladly.com/llms-full.txt",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:48:58+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round1",
+  "url": "https://developer.gladly.com/tutorials/docusign",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:48:59+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round1",
+  "url": "https://developer.gladly.com/chat",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 24515,
+  "sha256_12": "40851e4c8116",
+  "fetched_at": "2026-11-23T17:49:01+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 4,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round1",
+  "url": "https://developer.gladly.com/ios-sdk/Classes/Gladly.html",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 6797,
+  "sha256_12": "7a17869877dd",
+  "fetched_at": "2026-11-23T17:49:02+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round1",
+  "url": "https://developer.gladly.com/tutorials/csat",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "thin_or_js_shell",
+  "chars": 390,
+  "sha256_12": "4ac7e0ee9420",
+  "fetched_at": "2026-11-23T17:49:27+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round1",
+  "url": "https://developer.gladly.com/ios-sdk",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 579,
+  "sha256_12": "458c35493594",
+  "fetched_at": "2026-11-23T17:49:28+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round1",
+  "url": "https://developer.gladly.com/ios-sdk/Structs/GladlySettings.html",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 1511,
+  "sha256_12": "ae4e63600698",
+  "fetched_at": "2026-11-23T17:49:31+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://developer.gladly.com/rest/",
+  "host": "developer.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_error",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:50:10+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://connect.gladly.com/docs/implementation/article/environment-access",
+  "host": "connect.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:50:15+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://connect.gladly.com/docs/implementation/article/get-your-api-tokens",
+  "host": "connect.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:50:16+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://help.gladly.com/docs/migrating-to-new-auth",
+  "host": "help.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2658,
+  "sha256_12": "1b4d032d05fd",
+  "fetched_at": "2026-11-23T17:50:17+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 4,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://help.gladly.com/implementation/docs/difference-between-sandbox-and-production",
+  "host": "help.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 899,
+  "sha256_12": "6f79938bad9a",
+  "fetched_at": "2026-11-23T17:50:19+05:30",
+  "evidence_relevance": {
+   "auth": "none",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 0,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://help.gladly.com/docs/manage-app-integrations",
+  "host": "help.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 2868,
+  "sha256_12": "2f406668e829",
+  "fetched_at": "2026-11-23T17:50:20+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "direct",
+   "api_surface": "none",
+   "mcp_mentions": 0,
+   "basis": {
+    "access": "If the webhook continues to fail after the fourth try, the webhook will be deactivated, and all Gladly users assigned the API User role...",
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 4,
+    "gate_sentences": 2,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+  "host": "help.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "usable",
+  "chars": 10633,
+  "sha256_12": "b88885a6437b",
+  "fetched_at": "2026-11-23T17:50:25+05:30",
+  "evidence_relevance": {
+   "auth": "direct",
+   "access": "none",
+   "api_surface": "none",
+   "mcp_mentions": 37,
+   "basis": {
+    "access": null,
+    "api_ops": []
+   },
+   "counts": {
+    "auth_hits": 8,
+    "gate_sentences": 0,
+    "pricing_sentences": 0,
+    "api_words": 0
+   }
+  },
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://connect.gladly.com/docs2/other-resources/postman",
+  "host": "connect.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:50:28+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ },
+ {
+  "app_id": 20,
+  "app": "Gladly",
+  "source": "gladly_final_round2",
+  "url": "https://connect.gladly.com/docs2/answers-rest-api-tutorials/manage-public-answers",
+  "host": "connect.gladly.com",
+  "official_domain": true,
+  "retrieval_usability": "fetch_empty",
+  "chars": null,
+  "sha256_12": "",
+  "fetched_at": "2026-11-23T17:50:30+05:30",
+  "evidence_relevance": "n/a_no_content",
+  "method": "heuristic_v1_not_ground_truth"
+ }
+]

@@ -1,0 +1,167 @@
+{
+ "tag": "groq_orgA",
+ "app": 72,
+ "name": "Airtable",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 9,
+ "latency_s": 3.04,
+ "tokens_in": 3195,
+ "tokens_out": 1056,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "access",
+    "quote": "The personal access tokens panel can be accessed at [/create/tokens]. Here, you can create new tokens and manage your existing tokens.",
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "auth_methods",
+    "quote": "Personal access tokens should be passed with your API requests as a `Authorization: Bearer header`.",
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "quote": "If you are building an integration that allow other users to grant your integration access to Airtable, you should instead create an OAuth integration.",
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "quote": "curl https://api.airtable.com/v0/YOUR_BASE_ID/YOUR_TABLE_ID_OR_NAME -H \"Authorization: Bearer YOUR_TOKEN\"",
+    "url": "https://airtable.com/developers/web/api/authentication.md",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_breadth",
+    "quote": "Personal access tokens can be used to make requests to all public Airtable API endpoints, including endpoints that were previously limited in availability such as the Metadata API endpoints.",
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "quote": "unknown",
+    "url": "",
+    "issues": [
+     "placeholder_or_too_short",
+     "url_not_in_sources"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 1,
+   "unsupported": 3,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 6,
+  "evidence_valid": 2,
+  "issue_counts": {
+   "placeholder_or_too_short": 1,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 1,
+   "not_contiguous_in_cited_page": 3,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Airtable provides a REST API for managing bases, tables, and records, authenticated via personal access tokens or OAuth.",
+  "auth_methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can create personal access tokens themselves at https://airtable.com/create/tokens on any plan.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "buildability": "yes",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "access",
+    "quote": "The personal access tokens panel can be accessed at [/create/tokens]. Here, you can create new tokens and manage your existing tokens.",
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md"
+   },
+   {
+    "field": "auth_methods",
+    "quote": "Personal access tokens should be passed with your API requests as a `Authorization: Bearer header`.",
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md"
+   },
+   {
+    "field": "auth_methods",
+    "quote": "If you are building an integration that allow other users to grant your integration access to Airtable, you should instead create an OAuth integration.",
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md"
+   },
+   {
+    "field": "api_types",
+    "quote": "curl https://api.airtable.com/v0/YOUR_BASE_ID/YOUR_TABLE_ID_OR_NAME -H \"Authorization: Bearer YOUR_TOKEN\"",
+    "url": "https://airtable.com/developers/web/api/authentication.md"
+   },
+   {
+    "field": "api_breadth",
+    "quote": "Personal access tokens can be used to make requests to all public Airtable API endpoints, including endpoints that were previously limited in availability such as the Metadata API endpoints.",
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens.md"
+   },
+   {
+    "field": "existing_mcp",
+    "quote": "unknown",
+    "url": ""
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "0834ebf33bd0f1a8ea6b8687d18b12e0c4eece4890fbac9394f2ded174be628f",
+ "at": "2026-11-23T19:40:38+05:30"
+}

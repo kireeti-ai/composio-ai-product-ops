@@ -1,0 +1,31 @@
+{
+ "first_attempt_68": {
+  "usable_unique": 45,
+  "fetch_error": 5,
+  "thin_or_js_shell": 5,
+  "duplicate_content": 4,
+  "fetch_empty": 5,
+  "off_target_url": 4
+ },
+ "first_attempt_returned_content": 58,
+ "retry_attempts": 41,
+ "retry_outcomes": {
+  "fetch_empty": 5,
+  "thin_or_js_shell": 7,
+  "usable_unique": 13,
+  "skipped_after_alternative_succeeded": 6,
+  "duplicate_content": 4,
+  "fetch_error": 6
+ },
+ "original_url_final_status": {
+  "usable_first_attempt": 45,
+  "recovered_by_alternative": 7,
+  "unrecovered_after_retry": 8,
+  "not_retried_duplicate_content": 4,
+  "not_retried_off_target_url": 4
+ },
+ "usable_unique_pages_after_retry": 58,
+ "usable_unique_from_first_attempt": 45,
+ "usable_unique_from_retry": 13,
+ "reconciliation": "68 first attempts = 45 usable_unique + 4 duplicate_content + 4 off_target_url + 5 thin_or_js_shell + 5 fetch_error + 5 fetch_empty (exclusive, precedence: error>empty>off_target>thin>not_official>duplicate>usable). 58 returned content = 45+4+4+5. Earlier report of '49 usable' counted 4 duplicates; earlier 'thin 7/off-target 2' was a precedence artifact (2 Pinterest user pages counted as thin)"
+}

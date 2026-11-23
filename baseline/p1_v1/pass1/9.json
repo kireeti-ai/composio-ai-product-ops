@@ -1,0 +1,57 @@
+{
+ "id": 9,
+ "name": "Copper",
+ "category": "CRM and Sales",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developer.copper.com/introduction/oauth/index.html",
+  "https://developer.copper.com/introduction/authentication.html",
+  "https://developer.copper.com/introduction/requests.html",
+  "https://developer.copper.com/introduction/oauth/flow.html"
+ ],
+ "one_liner": "Copper provides a REST API for CRM user records and account management authenticated via API keys or OAuth 2.0.",
+ "auth_methods": [
+  "oauth2",
+  "api_key",
+  "bearer_token"
+ ],
+ "access": "self_serve_trial_or_paid_plan",
+ "access_note": "API keys can be generated directly by users/admins in Copper system settings. OAuth 2.0 app registration requires contacting Copper support.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.copper.com/introduction/authentication.html",
+   "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developer.copper.com/introduction/authentication.html",
+   "quote": "To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' button.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developer.copper.com/introduction/oauth/index.html",
+   "quote": "Although it's entirely feasible to implement the OAuth 2.0 flow through plain REST",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developer.copper.com/introduction/authentication.html",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ]
+}

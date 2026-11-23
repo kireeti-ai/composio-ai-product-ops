@@ -1,0 +1,247 @@
+{
+ "app_id": 46,
+ "app": "Squarespace",
+ "tool": "composio:TINYFISH_FETCH_URLS",
+ "session": "earn",
+ "attempts": [
+  {
+   "url": "https://support.squarespace.com/hc/en-us/articles/4404628246669-Create-pricing-plans-and-paywalls",
+   "requested_at": "2026-11-23T17:41:43+05:30",
+   "charge_usd": 0.0,
+   "status": "error",
+   "error": "KeyError: 'data'",
+   "completed_at": "2026-11-23T17:41:53+05:30",
+   "app_id": 46,
+   "kind": "stored_search_hit",
+   "parent_url": "https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle",
+   "reason": "alternative for fetch_error",
+   "outcome": "fetch_error",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://squarespace.com/pricing.txt",
+   "requested_at": "2026-11-23T17:41:53+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://www.squarespace.com/assets/pricing.txt",
+   "title": null,
+   "chars": 5986,
+   "sha256": "acd1bbd1bf8141d53e9fbf63607724589fb519592b6cf48d10d9ac7e73027632",
+   "text": "# Squarespace Pricing\n> Complete pricing for all Squarespace subscription plans across 27\n> supported currencies. Prices below show what the customer is billed; annual\n> plans display the per-month equivalent and the full annual total.\nSquarespace offers four plans: Basic, Core, Plus, and Advanced. Each plan\nsupports monthly or annual billing. Annual billing is discounted relative to\nmonthly. Prices include any applicable VAT/GST where required by region.\nCanonical pricing page: https://www.squarespace.com/pricing\n## Squarespace Basic\nEntry-level Squarespace website plan. Includes a custom domain (free for one year on annual billing), unlimited bandwidth, SSL security, mobile-optimized templates, SEO tools, and basic analytics. Suitable for personal sites, portfolios, and simple business pages.\n### Pricing\n| Currency | Region(s) | Monthly | Annual (per month) | Annual (total) |\n|----------|-----------|---------|--------------------|----------------|\n| AUD | AU | A$24 | A$17 | A$204 |\n| BRL | BR | R$56 | R$39 | R$468 |\n| CAD | CA | CA$30 | CA$21 | CA$252 |\n| CHF | CH | CHF\u00a021 | CHF\u00a015 | CHF\u00a0180 |\n| COP | CO | COP\u00a054,500 | COP\u00a039,000 | COP\u00a0468,000 |\n| DKK | DK | DKK\u00a0160 | DKK\u00a0110 | DKK\u00a01,320 |\n| EUR | AT, BE, DE, ES, FI, FR, IE, IT, LU, NL, PT | \u20ac17 | \u20ac12 | \u20ac144 |\n| GBP | GB | \u00a316 | \u00a312 | \u00a3144 |\n| HKD | HK | HK$179 | HK$129 | HK$1,548 |\n| IDR | ID | IDR\u00a0232,500 | IDR\u00a0166,000 | IDR\u00a01,992,000 |\n| INR | IN | \u20b9810 | \u20b9630 | \u20b97,560 |\n| JPY | JP | \u00a51,480 | \u00a51,180 | \u00a514,160 |\n| KRW | KR | \u20a924,500 | \u20a917,500 | \u20a9210,000 |\n| MXN | MX | MX$250 | MX$170 | MX$2,040 |\n| MYR | MY | MYR\u00a059 | MYR\u00a042 | MYR\u00a0504 |\n| NOK | NO | NOK\u00a0249 | NOK\u00a0179 | NOK\u00a02,148 |\n| NZD | NZ | NZ$26 | NZ$19 | NZ$228 |\n| PHP | PH | \u20b1850 | \u20b1590 | \u20b17,080 |\n| PLN | PL | PLN\u00a099 | PLN\u00a069 | PLN\u00a0828 |\n| SEK | SE | SEK\u00a0250 | SEK\u00a0175 | SEK\u00a02,100 |\n| SGD | SG | SGD\u00a030 | SGD\u00a022 | SGD\u00a0264 |\n| THB | TH | THB\u00a0500 | THB\u00a0350 | THB\u00a04,200 |\n| TRY | TR | TRY\u00a0600 | TRY\u00a0420 | TRY\u00a05,040 |\n| TWD | TW | NT$430 | NT$307 | NT$3,684 |\n| USD | US | $25 | $19 | $228 |\n| VND | VN | \u20ab368,802 | \u20ab263,430 | \u20ab3,161,160 |\n| ZAR | ZA | ZAR\u00a0430 | ZAR\u00a0300 | ZAR\u00a03,600 |\n## Squarespace Core\nSquarespace plan for growing businesses. Adds advanced site analytics, premium integrations, customer accounts, gift cards, point-of-sale, and the ability to sell unlimited products with a 3% transaction fee on commerce sales.\n### Pricing\n| Currency | Region(s) | Monthly | Annual (per month) | Annual (total) |\n|----------|-----------|---------|--------------------|----------------|\n| AUD | AU | A$39 | A$28 | A$336 |\n| BRL | BR | R$70 | R$49 | R$588 |\n| CAD | CA | CA$45 | CA$32 | CA$384 |\n| CHF | CH | CHF\u00a030 | CHF\u00a021 | CHF\u00a0252 |\n| COP | CO | COP\u00a077,800 | COP\u00a054,000 | COP\u00a0648,000 |\n| DKK | DK | DKK\u00a0230 | DKK\u00a0160 | DKK\u00a01,920 |\n| EUR | AT, BE, DE, ES, FI, FR, IE, IT, LU, NL, PT | \u20ac24 | \u20ac18 | \u20ac216 |\n| GBP | GB | \u00a324 | \u00a317 | \u00a3204 |\n| HKD | HK | HK$260 | HK$180 | HK$2,160 |\n| IDR | ID | IDR\u00a0332,100 | IDR\u00a0232,000 | IDR\u00a02,784,000 |\n| INR | IN | \u20b91,080 | \u20b9720 | \u20b98,640 |\n| JPY | JP | \u00a52,580 | \u00a52,080 | \u00a524,960 |\n| KRW | KR | \u20a936,500 | \u20a925,000 | \u20a9300,000 |\n| MXN | MX | MX$350 | MX$250 | MX$3,000 |\n| MYR | MY | MYR\u00a085 | MYR\u00a059 | MYR\u00a0708 |\n| NOK | NO | NOK\u00a0359 | NOK\u00a0249 | NOK\u00a02,988 |\n| NZD | NZ | NZ$44 | NZ$31 | NZ$372 |\n| PHP | PH | \u20b11,135 | \u20b1790 | \u20b19,480 |\n| PLN | PL | PLN\u00a0139 | PLN\u00a099 | PLN\u00a01,188 |\n| SEK | SE | SEK\u00a0360 | SEK\u00a0250 | SEK\u00a03,000 |\n| SGD | SG | SGD\u00a045 | SGD\u00a031 | SGD\u00a0372 |\n| THB | TH | THB\u00a0680 | THB\u00a0480 | THB\u00a05,760 |\n| TRY | TR | TRY\u00a0860 | TRY\u00a0600 | TRY\u00a07,200 |\n| TWD | TW | NT$614 | NT$430 | NT$5,160 |\n| USD | US | $39 | $29 | $348 |\n| VND | VN | \u20ab526,859 | \u20ab368,802 | \u20ab4,425,624 |\n| ZAR | ZA | ZAR\u00a0620 | ZAR\u00a0440 | ZAR\u00a05,280 |\n## Squarespace Plus\nSquarespace plan for established commerce businesses. Includes everything in Core plus zero Squarespace transaction fees, abandoned-cart recovery, advanced shipping and discount tools, subscriptions, and merchandising features.\n### Pricing\n| Currency | Region(s) | Monthly | Annual (per month) | Annual (total) |\n|----------|-----------|---------|--------------------|----------------|\n| AUD | AU | A$69 | A$49 | A$588 |\n| CAD | CA | CA$59 | CA$46 | CA$552 |\n| EUR | AT, BE, DE, ES, FI, FR, IE, IT, LU, NL, PT | \u20ac42 | \u20ac32 | \u20ac384 |\n| GBP | GB | \u00a336 | \u00a329 | \u00a3348 |\n| NZD | NZ | NZ$69 | NZ$49 | NZ$588 |\n| USD | US | $65 | $49 | $588 |\n## Squarespace Advanced\nSquarespace plan for high-volume commerce and enterprise needs. Includes everything in Plus along with advanced commerce APIs, custom code, and priority support.\n### Pricing\n| Currency | Region(s) | Monthly | Annual (per month) | Annual (total) |\n|----------|-----------|---------|--------------------|----------------|\n| AUD | AU | A$149 | A$109 | A$1,308 |\n| BRL | BR | R$100 | R$70 | R$840 |\n| CAD | CA | CA$139 | CA$109 | CA$1,308 |\n| CHF | CH | CHF\u00a039 | CHF\u00a027 | CHF\u00a0324 |\n| COP | CO | COP\u00a0124,500 | COP\u00a089,000 | COP\u00a01,068,000 |\n| DKK | DK | DKK\u00a0315 | DKK\u00a0220 | DKK\u00a02,640 |\n| EUR | AT, BE, DE, ES, FI, FR, IE, IT, LU, NL, PT | \u20ac79 | \u20ac69 | \u20ac828 |\n| GBP | GB | \u00a389 | \u00a379 | \u00a3948 |\n| HKD | HK | HK$380 | HK$260 | HK$3,120 |\n| IDR | ID | IDR\u00a0531,400 | IDR\u00a0382,000 | IDR\u00a04,584,000 |\n| INR | IN | \u20b91,530 | \u20b91,100 | \u20b913,200 |\n| JPY | JP | \u00a53,800 | \u00a53,040 | \u00a536,480 |\n| KRW | KR | \u20a964,000 | \u20a938,000 | \u20a9456,000 |\n| MXN | MX | MX$490 | MX$360 | MX$4,320 |\n| MYR | MY | MYR\u00a0135 | MYR\u00a097 | MYR\u00a01,164 |\n| NOK | NO | NOK\u00a0490 | NOK\u00a0340 | NOK\u00a04,080 |\n| NZD | NZ | NZ$149 | NZ$109 | NZ$1,308 |\n| PHP | PH | \u20b11,820 | \u20b11,300 | \u20b115,600 |\n| PLN | PL | PLN\u00a0179 | PLN\u00a0120 | PLN\u00a01,440 |\n| SEK | SE | SEK\u00a0460 | SEK\u00a0320 | SEK\u00a03,840 |\n| SGD | SG | SGD\u00a064 | SGD\u00a044 | SGD\u00a0528 |\n| THB | TH | THB\u00a01,100 | THB\u00a0790 | THB\u00a09,480 |\n| TRY | TR | TRY\u00a02,060 | TRY\u00a01,430 | TRY\u00a017,160 |\n| TWD | TW | NT$982 | NT$706 | NT$8,472 |\n| USD | US | $139 | $99 | $1,188 |\n| VND | VN | \u20ab842,975 | \u20ab605,888 | \u20ab7,270,656 |\n| ZAR | ZA | ZAR\u00a0850 | ZAR\u00a0590 | ZAR\u00a07,080 |\n## Source\n- Data sourced from the Squarespace billing API.\n- Last updated: 2026-10-05T06:22:56.716Z",
+   "completed_at": "2026-11-23T17:41:56+05:30",
+   "app_id": 46,
+   "kind": "stored_search_hit",
+   "parent_url": "https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle",
+   "reason": "alternative for fetch_error",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://support.squarespace.com/hc/en-us/articles/236297987",
+   "requested_at": "2026-11-23T17:41:56+05:30",
+   "charge_usd": 0.0,
+   "status": "error",
+   "error": "KeyError: 'data'",
+   "completed_at": "2026-11-23T17:42:06+05:30",
+   "app_id": 46,
+   "kind": "url_variant",
+   "parent_url": "https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+   "reason": "alternative for fetch_error",
+   "outcome": "fetch_error",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://support.squarespace.com/hc/en-us/articles/236297987/?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+   "requested_at": "2026-11-23T17:42:06+05:30",
+   "charge_usd": 0.0,
+   "status": "error",
+   "error": "KeyError: 'data'",
+   "completed_at": "2026-11-23T17:42:17+05:30",
+   "app_id": 46,
+   "kind": "url_variant",
+   "parent_url": "https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+   "reason": "alternative for fetch_error",
+   "outcome": "fetch_error",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/discounts-overview",
+   "requested_at": "2026-11-23T17:42:21+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://developers.squarespace.com/commerce-apis/discounts-overview",
+   "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+   "chars": 6797,
+   "sha256": "5513a4ee271c12bcccfb412920e640d16c0c5de405b3c1966af736acc2be8fc2",
+   "text": "# Discounts API overview\n\n**Current version: v1**  \n*For versioning details, read the Versioning guide.*\n\nUse the Discounts API to manage discounts for a Squarespace merchant site. The Discounts API provides create, read, update, delete and list (CRUDL) access to discount records.\n\n## API resources\n\n### Discounts\n\n`Discount` represents a discount configured for a merchant site.\n\nEvery discount also has three required, independently-configurable parts:\n\n* **`criteria`** - the conditions an order must meet for the discount to apply\n* **`template`** - the shape of the discount itself (fixed amount or percentage)\n* **`trigger`** - how the discount is activated (automatically or via a promo code)\n\nOptional `subscriptionOptions` and `paymentPlanOptions` control how the discount applies to subscription and payment-plan payments, respectively.\n\n### Criteria\n\n`Criteria` is a polymorphic field, discriminated by a `type` property:\n\n| Type | Fields | Description |\n| --- | --- | --- |\n| `ANY_ORDER` | *(none)* | Applies to any order with no additional conditions. |\n| `CART_TOTAL` | `minimumCartTotal` (monetary amount, required, greater than 0; `currency` optional, defaults to and must match the site's currency) | Applies when the cart total meets or exceeds a minimum. |\n| `PRODUCT` | `productId`, `productName` (display snapshot) | Applies when the cart contains a specific product. |\n| `BUY_X_GET_Y` | `requiredFullPriceQuantity`, `eligibleForDiscountQuantity` (both required, \u2265 1); `criteriaAppliesTo`/`criteriaProductIds` (buy side); `rewardAppliesTo`/`rewardProductIds` (reward side) | Applies when the cart contains a required quantity of qualifying items (buy side), granting a discount on a quantity of eligible items (reward side). Currently, both sides only support targeting by product (`PRODUCT`). |\n\n### Template\n\n`DiscountTemplate` is a polymorphic field, discriminated by a `type` property:\n\n| Type | Fields | Description |\n| --- | --- | --- |\n| `FIXED_AMOUNT` | `discountAmount` (monetary amount, required, greater than 0; `currency` optional, defaults to and must match the site's currency) | Reduces the order by a fixed monetary amount. |\n| `PERCENTAGE` | `percentage` (1\u2013100, required) | Reduces the order by a percentage. |\n| `BUY_X_GET_Y_FIXED_AMOUNT` | `discountAmount` (monetary amount, required, greater than 0; `currency` optional, defaults to and must match the site's currency); `maxApplicationsPerCart` (0 = unlimited) | Applies a fixed monetary amount off each reward item in a `BUY_X_GET_Y` discount. |\n| `BUY_X_GET_Y_PERCENTAGE` | `discountPercentage` ((0, 100], required); `maxApplicationsPerCart` (0 = unlimited) | Applies a percentage off each reward item in a `BUY_X_GET_Y` discount. |\n| `FREE_SHIPPING` | `appliesToFulfillmentOptionType` (`SHIPPING`, `PICKUP`, or `LOCAL_DELIVERY`); `selectedShippingOption` | Waives shipping cost for eligible carts. See Fulfillments API for how to look up shipping option and carrier service values. |\n\n### Trigger\n\n`Trigger` is a polymorphic field, discriminated by a `type` property:\n\n| Type | Fields | Description |\n| --- | --- | --- |\n| `AUTO` | *(none)* | Automatically applied - no promo code required. |\n| `CODE` | `promoCode` (required, 1\u201350 characters; letters, digits, underscore, hyphen) | Unlocked by a shopper-entered promo code. Codes that match the Squarespace gift card format (`GC` followed by 14 alphanumerics, with or without hyphens) are rejected, since promo codes and gift card codes share the same checkout input. |\n\n### Subscription and payment plan options\n\n`subscriptionOptions.type` controls how the discount applies to subscription payments: `EXCLUDED` (subscriptions don't receive the discount), `ALL_PAYMENTS` (every subscription payment), or `LIMITED_PAYMENTS` (only the first `maxPaymentsToApplyDiscount` payments, which is required when this type is used).\n\n`paymentPlanOptions.type` controls how the discount applies to Payment Plan payments: `NONE` or `ALL_PAYMENTS`.\n\n## Fulfillments API\n\n`GET /v1/fulfillments/fulfillment-options` lists a site's shipping options and their available shipping services. Use it to look up the `id` (shipping option ID) and carrier service names needed to target a specific shipping option when creating a `FREE_SHIPPING` discount.\n\n| Field | Description |\n| --- | --- |\n| `id` | Shipping option identifier. |\n| `name` | Display name for the shipping option. |\n| `type` | Fulfillment channel: `SHIPPING`, `PICKUP`, or `LOCAL_DELIVERY`. |\n| `availableServices` | Shipping services available on this option (`name`, `description`). Empty for options that aren't priced by a carrier (flat-rate, weight-based). |\n\n## Cross-API resource relationships\n\n| API | Field | Relationship |\n| --- | --- | --- |\n| **Products** | `criteria.productId` | A `PRODUCT` criteria discount targets a specific product by its Products API `id`. |\n\n## Listing and filtering discounts\n\n`GET /v1/commerce/discounts` supports the following query parameters:\n\n* **Sorting** - `sortBy` (`CREATED_ON`, `PROMO_CODE`, or `USES_COUNT`, default `CREATED_ON`) and `sortDirection` (`ASCENDING` or `DESCENDING`, default `DESCENDING`)\n* **Text search** - `search`, matched against discount name and promo code\n* **Status** - `status` (`ALL`, `ACTIVE`, `EXPIRED`, or `SCHEDULED`, default `ALL`)\n* **Type filters** - `criteria`, `template`, and `trigger` each accept a list of the type values described above\n* **`limitedUseOnly`** - restrict results to discounts with a redemption cap\n* **Pagination** - `offset` (default `0`) and `limit` (default `50`, maximum `1000`)\n\n## Common workflows\n\n**Create a promo-code discount for a specific product**  \nCreate a discount with a `PRODUCT` criteria referencing the target product's `id`, a `PERCENTAGE` or `FIXED_AMOUNT` template, and a `CODE` trigger with the desired promo code.\n\n**Run a site-wide automatic sale**  \nCreate a discount with an `ANY_ORDER` criteria, a `PERCENTAGE` template, and an `AUTO` trigger so it applies without requiring shoppers to enter a code. Set `validFrom` and `validTo` to bound the sale window.\n\n**Cap redemptions**  \nSet `isLimitedUses` to `true` with a `maxUsesAllowed` to run a limited-quantity promotion, or set `isOncePerCustomer` to `true` to restrict a discount to a single use per customer.\n\n## Not currently available\n\nThe following are not yet supported by the Discounts API:\n\n* **Category criteria** - targeting a discount by product category rather than by individual `productId`\n* **`CategoryId` criteria** - referencing a category by id (e.g., as a `BUY_X_GET_Y` buy-side or reward-side target)\n\n## Further reading\n\n* Become familiar with common commerce terms and how they're related to the API\n* Obtain an API key or use OAuth\n* Read the FAQ guide for answers to common questions\n\nDiscountsProducts",
+   "completed_at": "2026-11-23T17:42:23+05:30",
+   "app_id": 46,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+   "requested_at": "2026-11-23T17:42:23+05:30",
+   "charge_usd": 0.0,
+   "status": "error",
+   "error": "KeyError: 'data'",
+   "completed_at": "2026-11-23T17:42:40+05:30",
+   "app_id": 46,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "fetch_error",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/website-overview",
+   "requested_at": "2026-11-23T17:42:40+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://developers.squarespace.com/commerce-apis/website-overview",
+   "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+   "chars": 3972,
+   "sha256": "28d5619b70f0ded653ba1c891512428ac9705915e5fe27fa6464d415e18481da",
+   "text": "# Website API overview\n\n**Current version: 1.0**  \n*For versioning details, read the Versioning guide.*\n\nUse the Website API to retrieve fundamental details about a Squarespace merchant site, the active website member authenticated via OAuth, and organizational units such as the website store pages. This API is essential for apps that need to identify the merchant site they are interacting with and discover commerce-enabled pages to sync data like products and orders.\n\n## API resources\n\nThe Website API provides read-only access to several core resource objects:\n\n**Website**: Represents the Squarespace merchant site itself. It provides essential metadata such as the site's unique identifier, the primary domain, the site title, and locale/currency information.\n\n**Member**: Represents the Squarespace user authenticated via an OAuth token. It provides basic details about the user interacting with your application.\n\n**StorePage**: Represents a single commerce-enabled page (formerly known as a Products Page) on the merchant site. It provides basic metadata about that page, such as its name, URL slug, and unique ID.\n\nFor example, each Product on a merchant site belongs to a single `StorePage`. To successfully interact with the Products API or sync catalog data, you often need to retrieve the available `StorePage` IDs first.\n\n## Store pages and product visibility\n\nA Store Page is a commerce-enabled collection of products on a Squarespace merchant site. Every product details page is a child of a Store Page, and a product cannot belong to more than one Store Page.\n\nRead the How Squarespace organizes products knowledge base article for more context on how merchants organize and display products on their site.\n\n**Store Page and product settings directly impact whether a product is visible for purchase.** A product is unavailable for purchase if its Store Page is \"Disabled\" and/or if the product's status is \"Hidden\". How a merchant configures their site navigation (e.g., \"Not linking\" the Store Page, grouping products under a category) has no effect on product visibility for purchases.\n\n### Settings that affect visibility\n\n**Enabled or disabled page setting**  \n*Squarespace UI > Pages > any Store Page > gear icon > Store Settings editor > General*\n\nA newly added Store Page is enabled by default. Enabled Store Pages are immediately available on the merchant site and can be indexed by search engines. A disabled Store Page can't be accessed by site visitors \u2014 this applies to all products within the Store Page.\n\n**Visible or hidden product status**  \n*Squarespace UI > Pages > any Store Page > any product card > product editor*  \nOR  \n*Squarespace UI > Commerce > Inventory > any product row > product editor*\n\nEach product has a \"Visible\" or \"Hidden\" status. A \"Hidden\" product is unavailable to customers while browsing products on a Store Page or via its direct URL.\n\n## What information isn't available?\n\n* Configuration settings for non-commerce pages (like blogs or galleries).\n* Design, layout, or styling configurations of the website.\n* Billing or subscription details for the Squarespace merchant account.\n\n## Supported endpoints\n\nThe Website API supports the following requests to retrieve site and page information.\n\n* Retrieve basic details about the website\n* Retrieve basic details about the Squarespace member who owns the provided OAuth token\n* Get information on store pages\n\nWhen retrieving store pages, results are returned as a paginated list of up to 50 store pages per request. Use the `cursor` query parameter to retrieve subsequent pages of results. An empty array is returned if the site has no store pages.\n\n## Further reading\n\n* Learn how to manage products within Store Pages using the Products API\n* Become familiar with common commerce terms and how they're related to the API\n* Obtain an API key or use OAuth to authenticate your requests\n* Read the FAQ guide for answers to common questions\n\nWebsitesInventory",
+   "completed_at": "2026-11-23T17:42:42+05:30",
+   "app_id": 46,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  }
+ ],
+ "app_level_search_hits": [
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+   "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://support.squarespace.com/hc/en-us/articles/205815758-Developer-Tools",
+   "title": "Developer Tools",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://developers.squarespace.com/commerce-apis/changelog",
+   "title": "Squarespace Commerce APIs changelog",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://developers.squarespace.com/commerce-apis/v1/discounts",
+   "title": "Discounts",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://developers.squarespace.com/commerce-apis/discounts-overview",
+   "title": "Discounts API overview",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+   "title": "Squarespace API keys",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+   "title": "Authentication and permissions \u2014 Squarespace Developers",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://support.squarespace.com/hc/en-us/articles/206545717",
+   "title": "Squarespace Developer Platform FAQ",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://support.squarespace.com/hc/en-us/articles/41325887099533-Developer-Tools-APIs-at-Squarespace",
+   "title": "Developer Tools APIs at Squarespace",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developer API access commerce plan requirement",
+   "url": "https://support.squarespace.com/api/v2/help_center/en-us/articles/236297987.json",
+   "title": "support.squarespace.com/api/v2/help_center/en-us/articles/236297987.json",
+   "searched_at": "2026-11-23T17:42:19+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://developers.squarespace.com/commerce-apis/websites",
+   "title": "Websites",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://developers.squarespace.com/commerce-apis/website-overview",
+   "title": "Website API overview",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://developers.squarespace.com/commerce-apis/retrieve-basic-site-info",
+   "title": "Retrieve basic site information",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://developers.squarespace.com/commerce-apis/making-requests",
+   "title": "Make requests to Commerce APIs",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+   "title": "Announcing Self-Service OAuth Credential Management",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://developers.squarespace.com/commerce-apis/webhooksubscriptions",
+   "title": "WebhookSubscriptions",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://commerce-apis.squarespace.com/oauth",
+   "title": "Oauth \u2014 Squarespace Developers",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+   "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://support.squarespace.com/hc/en-us/articles/41325887099533-Developer-Tools-APIs-at-Squarespace",
+   "title": "Developer Tools APIs at Squarespace",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  },
+  {
+   "q": "Squarespace developers OAuth API key",
+   "url": "https://commerce-apis.squarespace.com/commerce-apis/faq",
+   "title": "Frequently asked questions \u2014 Squarespace Developers",
+   "searched_at": "2026-11-23T17:42:21+05:30"
+  }
+ ]
+}

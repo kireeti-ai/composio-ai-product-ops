@@ -1,0 +1,243 @@
+app_id,app,source,url,official_domain,retrieval_usability,chars,sha256_12,fetched_at,rel_auth,rel_access,rel_api_surface,mcp_mentions
+20,Gladly,baseline,https://help.gladly.com/developer-tutorials/docs/setup-and-testing,True,usable,3163,249737bde650,,direct,direct,none,0
+20,Gladly,baseline,https://help.gladly.com/implementation/docs/get-your-api-tokens,True,blocked_or_notfound,648,bf241d08812b,,direct,direct,none,0
+20,Gladly,baseline,https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks,True,usable,5592,919df20e0cd5,,direct,direct,none,0
+20,Gladly,baseline,https://developer.gladly.com/,True,usable,935,92a38b015102,,none,none,none,0
+20,Gladly,topup_v1_attempt1,https://gladly.com/gladly-pricing-support-and-service-packages,True,fetch_empty,,,2026-11-23T17:32:28+05:30,n/a,n/a,n/a,n/a
+20,Gladly,topup_v1_attempt1,https://gladly.com/get-started-2,True,thin_or_js_shell,322,04a8d3d153d0,2026-11-23T17:33:03+05:30,none,none,none,0
+20,Gladly,topup_v1r_retry,https://www.gladly.com/gladly-pricing-support-and-service-packages,True,fetch_empty,,,2026-11-23T17:41:41+05:30,n/a,n/a,n/a,n/a
+20,Gladly,topup_v1r_retry,https://www.gladly.com/get-started-2,True,thin_or_js_shell,322,04a8d3d153d0,2026-11-23T17:41:42+05:30,none,none,none,0
+20,Gladly,topup_v1r_retry,https://gladly.com/get-started-sidekick,True,usable,836,5a6f59ff30e7,2026-11-23T17:41:43+05:30,none,none,none,0
+20,Gladly,topup_v1r_retry,https://connect.gladly.com/docs/developer-tutorials/article/app-platform-overview,,skipped,,,,n/a,n/a,n/a,n/a
+20,Gladly,topup_v1r_retry,https://gladly.com/get-started-2,True,thin_or_js_shell,322,04a8d3d153d0,2026-11-23T17:41:48+05:30,none,none,none,0
+20,Gladly,topup_v1r_retry,https://gladly.com/gladly-pricing-support-and-service-packages,True,fetch_empty,,,2026-11-23T17:41:50+05:30,n/a,n/a,n/a,n/a
+25,Pumble,baseline,https://pumble.com/integrations,True,usable,2525,1938e4273796,,none,direct,none,0
+25,Pumble,baseline,https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/,True,usable,5844,7004bd7fe963,,none,none,none,0
+25,Pumble,baseline,https://pumble.com/learn/pumble/ai-automation-guide,True,usable,9000,5c3b92ee31ca,,direct,indirect,indirect,10
+25,Pumble,baseline,https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration,True,usable,2529,d41c3c5ee2d5,,direct,none,none,0
+25,Pumble,topup_v1_attempt1,https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features,True,usable,2911,81cb630a406c,2026-11-23T17:32:32+05:30,none,indirect,none,0
+25,Pumble,topup_v1_attempt1,https://pumble.com/pricing,True,usable,11346,fe33b7c1aed5,2026-11-23T17:32:35+05:30,indirect,direct,none,0
+25,Pumble,topup_v1_attempt1,https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration,True,duplicate_content,2529,d41c3c5ee2d5,2026-11-23T17:32:39+05:30,direct,none,none,0
+25,Pumble,topup_v1_attempt1,https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins,True,usable,5624,bcc33840d111,2026-11-23T17:32:48+05:30,none,none,none,0
+26,Discord,baseline,https://docs.discord.com/developers/intro,True,thin_or_js_shell,306,911ce359db4a,,none,none,none,0
+26,Discord,baseline,https://docs.discord.com/developers/reference,True,usable,9000,dcf57b43d1de,,direct,none,indirect,0
+26,Discord,baseline,https://docs.discord.com/developers/discord-social-sdk/how-to/use-with-discord-apis,True,usable,3548,52d0b12d3c36,,direct,none,direct,0
+26,Discord,baseline,https://docs.discord.com/developers/discord-social-sdk/development-guides/account-linking-with-discord,True,usable,9000,d12c9ab5c851,,direct,none,none,0
+26,Discord,topup_v1_attempt1,https://support.discord.com/hc/en-us/articles/360017693772-Managing-Subscriptions-and-Billing-FAQ,True,off_target_url,10643,8372465aa546,2026-11-23T17:32:42+05:30,none,direct,none,0
+26,Discord,topup_v1_attempt1,https://support.discord.com/hc/en-us/articles/4407269525911-Localized-Pricing-on-Discord,True,off_target_url,9606,1da8835ddf9a,2026-11-23T17:32:44+05:30,none,indirect,none,0
+26,Discord,topup_v1_attempt1,https://discord.com/developers/home,True,thin_or_js_shell,179,cc6a0c25426a,2026-11-23T17:32:47+05:30,none,none,none,0
+26,Discord,topup_v1_attempt1,https://docs.discord.com/developers/quick-start/overview-of-apps,True,usable,4142,8c3f2a4153df,2026-11-23T17:32:49+05:30,indirect,none,indirect,0
+26,Discord,topup_v1r_retry,https://www.discord.com/developers/home,True,thin_or_js_shell,179,cc6a0c25426a,2026-11-23T17:41:41+05:30,none,none,none,0
+27,Telegram,baseline,https://core.telegram.org/api/obtaining_api_id,True,usable,1888,76b1118ba2a0,,none,direct,none,0
+27,Telegram,baseline,https://core.telegram.org/api/srp,True,usable,9000,c1ff3f55f7f2,,direct,none,none,0
+27,Telegram,baseline,https://core.telegram.org/api/qr-login,True,usable,3059,f8f68fe16dfe,,none,none,none,0
+27,Telegram,baseline,https://core.telegram.org/widgets/login,True,usable,9000,e4d63f5dd596,,direct,none,direct,0
+29,Aircall,baseline,https://developer.aircall.io/docs/authentication,True,usable,2029,acf47e3961da,,direct,none,indirect,0
+29,Aircall,baseline,https://developer.aircall.io/docs/basic-authentication,True,usable,2965,4af84c8f1638,,direct,none,none,0
+29,Aircall,baseline,https://developer.aircall.io/docs/introduction,True,usable,2496,d6e6d2db3d99,,none,none,indirect,2
+29,Aircall,baseline,https://developers.aircall.io/tutorials/sending-sms-messages-with-aircall-api,True,usable,7946,2f668a49c3b8,,direct,none,indirect,0
+29,Aircall,topup_v1_attempt1,https://aircall.io/pricing,True,usable,7230,5eabafe35c89,2026-11-23T17:31:37+05:30,none,indirect,none,0
+29,Aircall,topup_v1_attempt1,https://support.aircall.io/en-gb/articles/30599733509277,True,usable,5810,cbd6050c93a0,2026-11-23T17:31:38+05:30,none,direct,none,0
+29,Aircall,topup_v1_attempt1,https://developer.aircall.io/build,True,usable,2113,8387e303e416,2026-11-23T17:31:46+05:30,indirect,direct,none,0
+29,Aircall,topup_v1_attempt1,https://developer.aircall.io/docs/webhooks-overview,True,usable,2514,5363d3fa56b0,2026-11-23T17:31:48+05:30,none,none,indirect,0
+32,Meta Ads,baseline,https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication,True,usable,6296,08af112934e0,,direct,none,none,0
+32,Meta Ads,baseline,https://developers.facebook.com/documentation/ads-commerce/marketing-api/using-the-api/faq.md,True,usable,3264,72693555bac9,,direct,direct,indirect,0
+32,Meta Ads,baseline,https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md,True,usable,7784,0cf0ec5e948c,,direct,none,none,0
+32,Meta Ads,baseline,https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started,True,usable,1840,cde7745e0ab5,,indirect,none,none,0
+33,LinkedIn Ads,baseline,https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10,True,usable,8807,17d4515e53df,,direct,direct,indirect,0
+33,LinkedIn Ads,baseline,https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11,True,usable,2537,455492b288fe,,none,none,none,0
+33,LinkedIn Ads,baseline,https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09,True,duplicate_content,5227,10c20ffb1be4,,indirect,direct,none,0
+33,LinkedIn Ads,baseline,https://learn.microsoft.com/en-us/linkedin/,True,thin_or_js_shell,325,102dd2bebb25,,none,none,none,0
+34,GoHighLevel,baseline,https://github.com/GoHighLevel/highlevel-api-docs/blob/main/docs/oauth/Scopes.md,False,usable,9000,0adbc3083977,,indirect,none,direct,0
+34,GoHighLevel,baseline,https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation,True,usable,7291,b6bb2890db49,,direct,direct,indirect,0
+34,GoHighLevel,baseline,https://marketplace.gohighlevel.com/docs/Authorization/DeveloperGlossary,True,usable,8235,f63a67283446,,direct,none,indirect,0
+34,GoHighLevel,baseline,https://github.com/GoHighLevel/highlevel-api-sdk,False,usable,9000,cc62ee9459c4,,direct,none,indirect,0
+36,Klaviyo,baseline,https://developers.klaviyo.com/en/docs/authenticate_,True,usable,6299,46201a977e56,,direct,none,indirect,0
+36,Klaviyo,baseline,https://developers.klaviyo.com/en/docs/get_started,True,usable,2065,880d25bf554f,,none,none,none,0
+36,Klaviyo,baseline,https://developers.klaviyo.com/en/docs/use_klaviyos_postman_collections,True,usable,9000,8bc366f3c521,,direct,none,indirect,0
+36,Klaviyo,baseline,https://developers.klaviyo.com/en/docs/migrate_to_oauth_from_private_key_authentication,True,usable,6716,6af29edbe60e,,direct,none,none,0
+36,Klaviyo,topup_v1_attempt1,https://klaviyo.com/platform/how-klaviyo-pricing-works,True,usable,7406,b1fac206f9c1,2026-11-23T17:31:33+05:30,none,indirect,none,0
+36,Klaviyo,topup_v1_attempt1,https://klaviyo.com/pricing,True,usable,3190,33299555d9bb,2026-11-23T17:31:37+05:30,none,indirect,none,0
+36,Klaviyo,topup_v1_attempt1,https://help.klaviyo.com/hc/en-us/articles/7423954176283,True,usable,7439,df1ed640d2c7,2026-11-23T17:31:43+05:30,direct,direct,direct,0
+36,Klaviyo,topup_v1_attempt1,https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key.,True,usable,6972,b6dbd3a250cb,2026-11-23T17:31:46+05:30,direct,none,indirect,0
+38,Pinterest,baseline,https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization,True,usable,8899,3af277ff588a,,direct,none,direct,0
+38,Pinterest,baseline,https://developers.pinterest.com/docs/api/v5/introduction/?,True,usable,1180,65b07e8f5ebc,,none,none,indirect,0
+38,Pinterest,baseline,https://developers.pinterest.com/docs/getting-started/make-an-api-call.md,True,usable,1243,3d930d8ef8ea,,indirect,none,none,0
+38,Pinterest,baseline,https://developers.pinterest.com/docs/,True,blocked_or_notfound,96,46b1e93a8876,,none,none,none,0
+38,Pinterest,topup_v1_attempt1,https://www.pinterest.com/ideas/pricing-plans-web-design/922997390254/,True,off_target_url,235,bb11f88d733a,2026-11-23T17:32:54+05:30,none,none,none,0
+38,Pinterest,topup_v1_attempt1,https://www.pinterest.com/zoki84/pricing-plan/,True,off_target_url,382,e23491d3d182,2026-11-23T17:32:56+05:30,none,none,none,0
+38,Pinterest,topup_v1_attempt1,https://developers.pinterest.com/apps/1558653/upgrade,True,thin_or_js_shell,128,ed4eeda3009f,2026-11-23T17:32:58+05:30,none,none,none,0
+38,Pinterest,topup_v1_attempt1,https://business.pinterest.com/getting-started,True,usable,3703,397b47c4dc65,2026-11-23T17:33:02+05:30,none,none,none,0
+38,Pinterest,topup_v1r_retry,https://developers.pinterest.com/apps/1558653/upgrade.md,True,thin_or_js_shell,128,ed4eeda3009f,2026-11-23T17:41:42+05:30,none,none,none,0
+38,Pinterest,topup_v1r_retry,https://dev.pinterest.com/docs/getting-started,True,usable,2575,8f4ce8441f7f,2026-11-23T17:41:47+05:30,direct,direct,none,0
+38,Pinterest,topup_v1r_retry,https://developers.pinterest.com/docs/getting-started/using-beta-and-restricted-features,True,usable,1820,f06a9890184b,2026-11-23T17:41:50+05:30,none,none,indirect,0
+38,Pinterest,topup_v1r_retry,https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization,True,duplicate_content,8899,3af277ff588a,2026-11-23T17:41:52+05:30,direct,none,direct,0
+39,Threads (Meta),baseline,https://developers.facebook.com/documentation/threads,True,usable,676,1813f3e0cb98,,none,none,none,0
+39,Threads (Meta),baseline,https://developers.facebook.com/documentation/threads/overview,True,usable,7083,221685a97783,,none,none,direct,0
+39,Threads (Meta),baseline,https://developers.facebook.com/documentation/threads/get-started,True,usable,4912,7898f629eae9,,direct,none,direct,0
+39,Threads (Meta),baseline,https://developers.facebook.com/docs/threads/get-started?locale=en_US,True,duplicate_content,4912,7898f629eae9,,direct,none,direct,0
+41,Shopify,baseline,https://shopify.dev/docs/api,True,usable,6414,37f97caaea92,,none,direct,indirect,1
+41,Shopify,baseline,https://shopify.dev/docs/api/customer-authentication,True,usable,3222,f83f941c7dff,,indirect,none,none,0
+41,Shopify,baseline,https://shopify.dev/docs/api/usage/authentication,True,usable,3706,53b05cf7c6a2,,direct,direct,indirect,0
+41,Shopify,baseline,https://shopify.dev/docs,True,usable,3750,b4b7a56ec3c6,,none,none,none,1
+43,BigCommerce,baseline,https://developer.bigcommerce.com/docs/rest-authentication/current-customer,True,usable,744,0e8f00448db8,,direct,none,indirect,0
+43,BigCommerce,baseline,https://developer.bigcommerce.com/docs/7d6e2f42cc496-guide-to-api-accounts,True,usable,9000,c4549688c1d2,,direct,direct,indirect,0
+43,BigCommerce,baseline,https://developer.bigcommerce.com,True,usable,6628,f54315514336,,direct,direct,direct,0
+43,BigCommerce,baseline,https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts,True,duplicate_content,9000,c4549688c1d2,,direct,direct,indirect,0
+44,Salesforce Commerce Cloud,baseline,https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas-best-practices.html,True,usable,9000,3d8ab5a652e8,,direct,none,direct,0
+44,Salesforce Commerce Cloud,baseline,https://developer.salesforce.com/developer-centers/commerce-cloud,True,usable,7125,0c4259ed3591,,none,direct,none,0
+44,Salesforce Commerce Cloud,baseline,https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html,True,usable,3140,d5b6ebfd06c4,,direct,none,indirect,0
+44,Salesforce Commerce Cloud,baseline,https://developer.salesforce.com/docs/commerce/commerce-api/references,True,thin_or_js_shell,266,f94412aea5f4,,none,none,indirect,0
+44,Salesforce Commerce Cloud,topup_v1_attempt1,https://www.salesforce.com/commerce/pricing/,True,usable,4079,ee8d4776f513,2026-11-23T17:32:53+05:30,none,none,none,0
+44,Salesforce Commerce Cloud,topup_v1_attempt1,https://www.salesforce.com/au/commerce/pricing/,True,duplicate_content,4077,de493c7a14de,2026-11-23T17:32:55+05:30,none,none,none,0
+44,Salesforce Commerce Cloud,topup_v1_attempt1,https://developer.salesforce.com,True,usable,4214,980d7e38304f,2026-11-23T17:32:56+05:30,none,none,none,5
+44,Salesforce Commerce Cloud,topup_v1_attempt1,https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html,True,usable,1187,ed4bdb22b800,2026-11-23T17:33:03+05:30,none,none,none,0
+46,Squarespace,baseline,https://developers.squarespace.com/commerce-apis/authentication-and-permissions,True,usable,3671,1f3f43971167,,direct,none,none,0
+46,Squarespace,baseline,https://developers.squarespace.com/,True,usable,1780,96deade1b660,,none,none,none,0
+46,Squarespace,baseline,https://developers.squarespace.com/oauth,True,usable,9000,f56c045086ab,,direct,none,direct,0
+46,Squarespace,baseline,https://developers.squarespace.com/commerce-apis/oauth,True,duplicate_content,9000,234c6616a237,,direct,none,direct,0
+46,Squarespace,topup_v1_attempt1,https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle,True,fetch_error,,,2026-11-23T17:31:43+05:30,n/a,n/a,n/a,n/a
+46,Squarespace,topup_v1_attempt1,https://squarespace.com/pricing,True,usable,23258,bde03ae791e2,2026-11-23T17:31:45+05:30,none,direct,none,0
+46,Squarespace,topup_v1_attempt1,https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys,True,fetch_error,,,2026-11-23T17:32:06+05:30,n/a,n/a,n/a,n/a
+46,Squarespace,topup_v1_attempt1,https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c,True,fetch_error,,,2026-11-23T17:32:22+05:30,n/a,n/a,n/a,n/a
+46,Squarespace,topup_v1r_retry,https://support.squarespace.com/hc/en-us/articles/4404628246669-Create-pricing-plans-and-paywalls,True,fetch_error,,,2026-11-23T17:41:53+05:30,n/a,n/a,n/a,n/a
+46,Squarespace,topup_v1r_retry,https://squarespace.com/pricing.txt,True,usable,5986,acd1bbd1bf81,2026-11-23T17:41:56+05:30,none,direct,none,0
+46,Squarespace,topup_v1r_retry,https://support.squarespace.com/hc/en-us/articles/236297987,True,fetch_error,,,2026-11-23T17:42:06+05:30,n/a,n/a,n/a,n/a
+46,Squarespace,topup_v1r_retry,https://support.squarespace.com/hc/en-us/articles/236297987/?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c,True,fetch_error,,,2026-11-23T17:42:17+05:30,n/a,n/a,n/a,n/a
+46,Squarespace,topup_v1r_retry,https://developers.squarespace.com/commerce-apis/discounts-overview,True,usable,6797,5513a4ee271c,2026-11-23T17:42:23+05:30,indirect,none,direct,0
+46,Squarespace,topup_v1r_retry,https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys,True,fetch_error,,,2026-11-23T17:42:40+05:30,n/a,n/a,n/a,n/a
+46,Squarespace,topup_v1r_retry,https://developers.squarespace.com/commerce-apis/website-overview,True,usable,3972,28d5619b70f0,2026-11-23T17:42:42+05:30,direct,none,none,0
+47,Ecwid,baseline,https://api-docs.ecwid.com/reference/authentication-in-native-apps,True,usable,1967,30fd545a9b1e,,none,none,none,0
+47,Ecwid,baseline,https://api-docs.ecwid.com/reference/implement-sso,True,duplicate_content,1967,30fd545a9b1e,,none,none,none,0
+47,Ecwid,baseline,https://docs.ecwid.com/get-started/api-glossary,True,usable,3007,d4a27e99feb6,,direct,direct,indirect,0
+47,Ecwid,baseline,https://docs.ecwid.com/api-reference/rest-api/customers/create-customer,True,usable,4647,5d184abd2be2,,direct,none,direct,0
+47,Ecwid,topup_v1_attempt1,https://www.ecwid.com/pricing,True,usable,14787,902781519baa,2026-11-23T17:33:05+05:30,none,direct,none,0
+47,Ecwid,topup_v1_attempt1,https://www.ecwid.com/pricing/business,True,usable,6379,c966bd053e62,2026-11-23T17:33:07+05:30,none,none,none,0
+47,Ecwid,topup_v1_attempt1,http://developers.ecwid.com/register,True,fetch_empty,,,2026-11-23T17:33:10+05:30,n/a,n/a,n/a,n/a
+47,Ecwid,topup_v1_attempt1,https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps,True,usable,1237,636848d49588,2026-11-23T17:33:13+05:30,none,direct,none,0
+47,Ecwid,topup_v1r_retry,http://developers.ecwid.com/register.md,True,fetch_empty,,,2026-11-23T17:41:53+05:30,n/a,n/a,n/a,n/a
+47,Ecwid,topup_v1r_retry,https://developers.ecwid.com/register,True,fetch_empty,,,2026-11-23T17:41:54+05:30,n/a,n/a,n/a,n/a
+52,SE Ranking,baseline,https://seranking.com/api/project/getting-started,True,usable,3705,b54a49383af0,,direct,direct,none,0
+52,SE Ranking,baseline,https://seranking.com/api/rate-limits/,True,usable,3611,ee6a9f3e53e9,,indirect,direct,none,0
+52,SE Ranking,baseline,https://seranking.com/api/how-to-get-api,True,usable,4880,7d1337160fca,,direct,direct,indirect,0
+52,SE Ranking,baseline,https://seranking.com/api/se-visible/getting-started,True,usable,6545,4d830f93b797,,direct,none,indirect,0
+53,Ahrefs,baseline,https://docs.ahrefs.com/en/api/docs/introduction,True,usable,4014,2fca755e9a0b,,direct,direct,indirect,0
+53,Ahrefs,baseline,https://docs.ahrefs.com/,True,usable,3410,31f6b2ae887e,,direct,direct,indirect,3
+53,Ahrefs,baseline,https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management,True,usable,1035,f925b0bf3d0e,,direct,direct,none,0
+53,Ahrefs,baseline,https://docs.ahrefs.com/en/api/reference/public,True,thin_or_js_shell,316,7432c7263fd1,,none,direct,indirect,0
+56,Firecrawl,baseline,https://docs.firecrawl.dev/introduction,True,usable,9000,b4134a68721c,,direct,indirect,none,3
+56,Firecrawl,baseline,https://docs.firecrawl.dev/oauth,True,usable,9000,65dddfa6145c,,direct,none,direct,1
+56,Firecrawl,baseline,https://docs.firecrawl.dev/authentication,True,usable,3938,75cbb3c81f63,,direct,none,indirect,18
+56,Firecrawl,baseline,https://docs.firecrawl.dev/api-reference/introduction,True,usable,3504,fac4b05629bf,,direct,direct,indirect,0
+61,GitHub,baseline,https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens,True,usable,9000,167bdca3a765,,direct,none,indirect,0
+61,GitHub,baseline,https://docs.github.com/enterprise/11.10.340/developer/v3/auth,True,usable,2943,22aaee2aed4e,,direct,none,none,0
+61,GitHub,baseline,https://docs.github.com/en/rest?apiVersion=2026-03-10,True,usable,1644,6eeceae61607,,none,none,indirect,0
+61,GitHub,baseline,https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication,True,usable,4178,1bed8c89f4e2,,direct,none,indirect,0
+61,GitHub,topup_v1_attempt1,https://github.com/pricing.md,True,fetch_empty,,,2026-11-23T17:33:07+05:30,n/a,n/a,n/a,n/a
+61,GitHub,topup_v1_attempt1,https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps,True,usable,3956,029cbaf0840a,2026-11-23T17:33:09+05:30,indirect,direct,none,0
+61,GitHub,topup_v1_attempt1,https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app,True,usable,6928,a819fbddd48d,2026-11-23T17:33:10+05:30,direct,none,none,0
+61,GitHub,topup_v1_attempt1,https://docs.github.com/developers/apps/building-github-apps/creating-a-github-app,True,duplicate_content,6928,a819fbddd48d,2026-11-23T17:33:11+05:30,direct,none,none,0
+61,GitHub,topup_v1r_retry,https://github.com/pricing,True,usable,19507,cbe5349faeea,2026-11-23T17:41:56+05:30,none,indirect,none,0
+61,GitHub,topup_v1r_retry,https://www.github.com/pricing.md,,skipped,,,,n/a,n/a,n/a,n/a
+61,GitHub,topup_v1r_retry,https://github.com/features/copilot/plans,,skipped,,,,n/a,n/a,n/a,n/a
+62,Vercel,baseline,https://vercel.com/docs,True,usable,6490,82cd5a581b8a,,direct,none,none,6
+62,Vercel,baseline,https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys,True,usable,6243,e492567ab239,,direct,none,direct,0
+62,Vercel,baseline,https://vercel.com/docs/rest-api,True,usable,1293,e5d093cc57b5,,direct,none,indirect,0
+62,Vercel,baseline,https://vercel.com/docs/sign-in-with-vercel/authorization-server-api,True,usable,9000,348343412daa,,direct,none,indirect,0
+62,Vercel,topup_v1_attempt1,https://vercel.com/docs/pricing,True,usable,8967,6c4cc0a47204,2026-11-23T17:33:08+05:30,none,indirect,none,0
+62,Vercel,topup_v1_attempt1,https://vercel.com/pricing,True,usable,13683,9748058cd965,2026-11-23T17:33:14+05:30,indirect,indirect,none,0
+62,Vercel,topup_v1_attempt1,https://vercel.com/docs/accounts/access-tokens,True,usable,10189,5225c3f0e3ba,2026-11-23T17:33:19+05:30,direct,none,direct,0
+62,Vercel,topup_v1_attempt1,https://vercel.com/signup,True,thin_or_js_shell,254,07f0f10a7b2b,2026-11-23T17:33:20+05:30,none,none,none,0
+62,Vercel,topup_v1r_retry,https://www.vercel.com/signup,True,thin_or_js_shell,241,9477db2efc82,2026-11-23T17:41:57+05:30,none,none,none,0
+62,Vercel,topup_v1r_retry,https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token,True,duplicate_content,10189,5225c3f0e3ba,2026-11-23T17:41:58+05:30,direct,none,direct,0
+62,Vercel,topup_v1r_retry,https://vercel.com/docs/cli/signup,True,usable,1398,71b040d99300,2026-11-23T17:42:00+05:30,none,none,none,0
+63,Netlify,baseline,https://docs.netlify.com/,True,usable,4595,9ff9ae620eb2,,indirect,none,none,6
+63,Netlify,baseline,https://docs.netlify.com/build/data-and-storage/netlify-database/api,True,usable,9000,b50483892b97,,indirect,indirect,direct,0
+63,Netlify,baseline,https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api,True,usable,9000,4bf45db526c0,,direct,none,direct,0
+63,Netlify,baseline,https://developers.netlify.com/guides/deploy-zip-file-to-production-website,True,usable,9000,2ac0191f74b9,,direct,none,indirect,0
+63,Netlify,topup_v1_attempt1,https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work,True,usable,13036,d7954fff02cf,2026-11-23T17:33:15+05:30,none,indirect,none,0
+63,Netlify,topup_v1_attempt1,https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5,True,usable,18269,9da084d14b82,2026-11-23T17:33:34+05:30,direct,indirect,none,0
+63,Netlify,topup_v1_attempt1,https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth,True,usable,9089,80b3305d3f61,2026-11-23T17:33:35+05:30,direct,none,indirect,0
+63,Netlify,topup_v1_attempt1,https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli,True,usable,25087,1c79cab23f13,2026-11-23T17:33:37+05:30,direct,none,none,0
+65,Supabase,baseline,https://supabase.com/docs/guides/getting-started/api-keys,True,usable,9000,d2c479e3e38b,,direct,none,none,0
+65,Supabase,baseline,https://supabase.com/docs/guides/auth,True,usable,3529,6779ba0c1bd9,,direct,none,none,0
+65,Supabase,baseline,https://supabase.com/docs/guides/self-hosting/self-hosted-auth-keys,True,usable,8736,b7a6ce97bd81,,direct,direct,indirect,0
+65,Supabase,baseline,https://supabase.com/docs/guides/functions/auth-headers,True,usable,3139,87b43d1e131d,,direct,none,none,0
+65,Supabase,topup_v1_attempt1,https://supabase.com/docs/guides/platform/billing-faq,True,usable,17514,0057f95459a7,2026-11-23T17:31:55+05:30,none,indirect,none,0
+65,Supabase,topup_v1_attempt1,https://supabase.com/pricing,True,usable,20345,63e08da82aba,2026-11-23T17:31:59+05:30,direct,indirect,none,0
+65,Supabase,topup_v1_attempt1,https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys,True,usable,11419,1798288e97e3,2026-11-23T17:32:02+05:30,direct,none,none,0
+65,Supabase,topup_v1_attempt1,https://supabase.com/docs/guides/api/api-keys.md,True,usable,20728,05e201d2426c,2026-11-23T17:32:04+05:30,direct,direct,none,0
+66,Neo4j,baseline,https://neo4j.com/docs/operations-manual/current/authentication-authorization,True,usable,9000,84a8c8df8112,,indirect,none,none,0
+66,Neo4j,baseline,https://neo4j.com/docs/http-api/current/authentication-authorization,True,usable,4055,e74541f88aef,,direct,none,none,0
+66,Neo4j,baseline,https://neo4j.com/docs/developer-manual/current/http-api/authentication,True,usable,5456,55913b189891,,indirect,none,none,0
+66,Neo4j,baseline,https://neo4j.com/docs/aura/api/overview/,True,usable,3269,77b0e024c00b,,none,none,direct,0
+66,Neo4j,topup_v1_attempt1,https://neo4j.com/pricing/,True,fetch_error,,,2026-11-23T17:32:09+05:30,n/a,n/a,n/a,n/a
+66,Neo4j,topup_v1_attempt1,https://neo4j.com/docs/aura/billing/payment-options/,True,usable,9174,cc66ea8a69dc,2026-11-23T17:32:11+05:30,none,indirect,none,0
+66,Neo4j,topup_v1_attempt1,https://neo4j.com/docs/aura/getting-started/free-trial/,True,usable,4075,7bfd0c188ea6,2026-11-23T17:32:16+05:30,none,indirect,none,0
+66,Neo4j,topup_v1r_retry,https://www.neo4j.com/pricing/,True,fetch_error,,,2026-11-23T17:42:08+05:30,n/a,n/a,n/a,n/a
+66,Neo4j,topup_v1r_retry,https://neo4j.com/docs/aura/billing/billing-dimensions/,True,usable,3997,d48bee14d9b8,2026-11-23T17:42:10+05:30,none,none,indirect,0
+66,Neo4j,topup_v1r_retry,https://neo4j.com/docs/query-api/current,True,usable,2486,1aa4dd3532bc,2026-11-23T17:42:14+05:30,none,none,none,0
+66,Neo4j,topup_v1r_retry,https://neo4j.com/docs/http-api/current/authentication-authorization,True,duplicate_content,4055,e74541f88aef,2026-11-23T17:42:16+05:30,direct,none,none,0
+66,Neo4j,topup_v1r_retry,https://neo4j.com/docs/http-api/current,True,usable,2497,01e8a9aabd53,2026-11-23T17:42:17+05:30,none,none,none,0
+70,Sentry,baseline,https://docs.sentry.io/api/,True,usable,1238,8b4a99d2f634,,none,none,indirect,0
+70,Sentry,baseline,https://docs.sentry.io/api/permissions,True,usable,2303,70f6b2f39c46,,none,none,indirect,0
+70,Sentry,baseline,https://docs.sentry.io/api/auth,True,usable,9000,7e93a21a9c26,,direct,none,direct,0
+70,Sentry,baseline,https://docs.sentry.io/api/events/list-an-issues-events.md,True,usable,3688,a7f4b400b852,,indirect,none,direct,0
+70,Sentry,topup_v1_attempt1,https://sentry.io/pricing,True,usable,6168,1db69ec73e02,2026-11-23T17:33:18+05:30,none,indirect,none,3
+70,Sentry,topup_v1_attempt1,https://docs.sentry.io/pricing,True,usable,17640,efc6298a7dc1,2026-11-23T17:33:21+05:30,none,direct,none,0
+70,Sentry,topup_v1_attempt1,https://docs.sentry.io/get-started,True,usable,5047,fbc54fcf7a9b,2026-11-23T17:33:23+05:30,none,direct,none,1
+71,Notion,baseline,https://developers.notion.com/guides/authorization/credential-security,True,usable,3752,d7c8d4d529b4,,direct,none,none,0
+71,Notion,baseline,https://developers.notion.com/workers/guides/api-client,True,usable,4824,423debbe4774,,direct,none,none,0
+71,Notion,baseline,https://developers.notion.com/guides/notion-api/quick-start,True,usable,6557,44960c6eab0f,,direct,direct,direct,0
+71,Notion,baseline,https://developers.notion.com/guides/connections-and-tokens/overview,True,usable,4520,41b8356f504f,,direct,none,none,0
+71,Notion,topup_v1_attempt1,https://notion.com/pricing,True,usable,20996,14ad5f50aec9,2026-11-23T17:32:09+05:30,none,indirect,none,0
+71,Notion,topup_v1_attempt1,https://notion.com/en-GB/pricing/us,True,thin_or_js_shell,2,44136fa355b3,2026-11-23T17:32:11+05:30,none,none,none,0
+71,Notion,topup_v1_attempt1,https://developers.notion.com/guides/get-started/handling-api-keys,True,duplicate_content,3752,d7c8d4d529b4,2026-11-23T17:32:14+05:30,direct,none,none,0
+71,Notion,topup_v1_attempt1,https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens,True,usable,6512,2f456f310777,2026-11-23T17:32:16+05:30,direct,direct,direct,0
+71,Notion,topup_v1r_retry,https://www.notion.com/en-GB/pricing/us,True,thin_or_js_shell,2,44136fa355b3,2026-11-23T17:42:03+05:30,none,none,none,0
+71,Notion,topup_v1r_retry,https://notion.com/help/category/plans-billing-and-payment,True,thin_or_js_shell,482,28b0140a6f0d,2026-11-23T17:42:04+05:30,none,indirect,none,0
+71,Notion,topup_v1r_retry,https://www.notion.com/pricing,True,duplicate_content,20996,14ad5f50aec9,2026-11-23T17:42:06+05:30,none,indirect,none,0
+72,Airtable,baseline,https://airtable.com/developers/web/guides/personal-access-tokens.md,True,usable,3997,4efdf523a730,,direct,direct,indirect,0
+72,Airtable,baseline,https://airtable.com/developers/web/api/introduction,True,usable,632,c1c7fae48fb8,,none,none,none,0
+72,Airtable,baseline,https://support.airtable.com/docs/en/creating-and-using-api-keys-and-access-tokens,True,usable,9000,c8d6c8eaac9e,,direct,direct,none,0
+72,Airtable,baseline,https://airtable.com/developers/web/api/authentication.md,True,usable,3408,c93a3cbcf19e,,direct,direct,none,0
+72,Airtable,topup_v1_attempt1,https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs,True,fetch_empty,,,2026-11-23T17:32:19+05:30,n/a,n/a,n/a,n/a
+72,Airtable,topup_v1_attempt1,https://airtable.com/pricing,True,usable,3801,700874cdacb6,2026-11-23T17:32:20+05:30,none,direct,none,0
+72,Airtable,topup_v1_attempt1,https://support.airtable.com/articles/9934989703-creating-personal-access-tokens,True,usable,13567,079fea861d0f,2026-11-23T17:32:22+05:30,direct,direct,indirect,0
+72,Airtable,topup_v1_attempt1,https://airtable.com/developers/web/guides/personal-access-tokens,True,usable,3555,bf55997f5140,2026-11-23T17:32:23+05:30,direct,direct,indirect,0
+72,Airtable,topup_v1r_retry,https://support.airtable.com/docs/airtable-billing-overview,True,usable,10780,d7e90560769f,2026-11-23T17:42:09+05:30,none,indirect,none,0
+72,Airtable,topup_v1r_retry,https://support.airtable.com/articles/1636857517-how-airtable-collaborators-impact-billing,,skipped,,,,n/a,n/a,n/a,n/a
+72,Airtable,topup_v1r_retry,https://airtable.com/developers/web/api/billing-plans.md,,skipped,,,,n/a,n/a,n/a,n/a
+75,Asana,baseline,https://developers.asana.com/docs/personal-access-token,True,usable,2972,d557b6edd203,,direct,none,none,0
+75,Asana,baseline,https://developers.asana.com/docs/authentication,True,usable,4668,69d83804e281,,direct,none,none,0
+75,Asana,baseline,https://developers.asana.com/docs/api-explorer,True,usable,2473,92ccb312469d,,direct,none,direct,0
+75,Asana,baseline,https://developers.asana.com/docs/quick-start,True,usable,9000,9c7cd5a552d7,,direct,none,indirect,0
+75,Asana,topup_v1_attempt1,https://asana.com/pricing,True,fetch_error,,,2026-11-23T17:32:31+05:30,n/a,n/a,n/a,n/a
+75,Asana,topup_v1_attempt1,https://asana.com/pricing/client-management,True,usable,22783,2d153db3a22d,2026-11-23T17:32:33+05:30,none,indirect,none,0
+75,Asana,topup_v1_attempt1,https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox),True,fetch_empty,,,2026-11-23T17:32:37+05:30,n/a,n/a,n/a,n/a
+75,Asana,topup_v1_attempt1,https://developers.asana.com/docs/personal-access-token.md,True,usable,3313,ee2b9fbdc7ee,2026-11-23T17:32:38+05:30,direct,none,none,0
+75,Asana,topup_v1r_retry,https://www.asana.com/pricing,True,fetch_error,,,2026-11-23T17:42:23+05:30,n/a,n/a,n/a,n/a
+75,Asana,topup_v1r_retry,https://asana.com/pricing.md,True,usable,24074,b92d55a368f9,2026-11-23T17:42:24+05:30,none,direct,none,0
+75,Asana,topup_v1r_retry,https://asana.com/pricing?via=,,skipped,,,,n/a,n/a,n/a,n/a
+75,Asana,topup_v1r_retry,https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox).md,True,fetch_empty,,,2026-11-23T17:42:25+05:30,n/a,n/a,n/a,n/a
+76,Monday.com,baseline,https://developer.monday.com/api-reference/docs/getting-started,True,usable,3997,110617063420,,direct,none,indirect,0
+76,Monday.com,baseline,https://developer.monday.com/apps/docs/integration-authorization,True,usable,3231,d373b979817a,,direct,none,indirect,0
+76,Monday.com,baseline,https://developer.monday.com/apps/docs/choosing-auth.md,True,usable,5943,9081602c68ba,,direct,none,indirect,0
+76,Monday.com,baseline,https://developer.monday.com/apps/docs/choosing-auth,True,usable,5565,5f76107c44da,,direct,none,indirect,0
+20,Gladly,gladly_final_round1,https://developer.gladly.com/rest,True,fetch_error,,,2026-11-23T17:48:47+05:30,n/a,n/a,n/a,n/a
+20,Gladly,gladly_final_round1,https://developer.gladly.com/llms-full.txt,True,fetch_error,,,2026-11-23T17:48:58+05:30,n/a,n/a,n/a,n/a
+20,Gladly,gladly_final_round1,https://developer.gladly.com/tutorials/docusign,True,fetch_empty,,,2026-11-23T17:48:59+05:30,n/a,n/a,n/a,n/a
+20,Gladly,gladly_final_round1,https://developer.gladly.com/chat,True,usable,24515,40851e4c8116,2026-11-23T17:49:01+05:30,direct,none,none,0
+20,Gladly,gladly_final_round1,https://developer.gladly.com/ios-sdk/Classes/Gladly.html,True,usable,6797,7a17869877dd,2026-11-23T17:49:02+05:30,none,none,none,0
+20,Gladly,gladly_final_round1,https://developer.gladly.com/tutorials/csat,True,thin_or_js_shell,390,4ac7e0ee9420,2026-11-23T17:49:27+05:30,none,none,none,0
+20,Gladly,gladly_final_round1,https://developer.gladly.com/ios-sdk,True,usable,579,458c35493594,2026-11-23T17:49:28+05:30,none,none,none,0
+20,Gladly,gladly_final_round1,https://developer.gladly.com/ios-sdk/Structs/GladlySettings.html,True,usable,1511,ae4e63600698,2026-11-23T17:49:31+05:30,none,none,none,0
+20,Gladly,gladly_final_round2,https://developer.gladly.com/rest/,True,fetch_error,,,2026-11-23T17:50:10+05:30,n/a,n/a,n/a,n/a
+20,Gladly,gladly_final_round2,https://connect.gladly.com/docs/implementation/article/environment-access,True,fetch_empty,,,2026-11-23T17:50:15+05:30,n/a,n/a,n/a,n/a
+20,Gladly,gladly_final_round2,https://connect.gladly.com/docs/implementation/article/get-your-api-tokens,True,fetch_empty,,,2026-11-23T17:50:16+05:30,n/a,n/a,n/a,n/a
+20,Gladly,gladly_final_round2,https://help.gladly.com/docs/migrating-to-new-auth,True,usable,2658,1b4d032d05fd,2026-11-23T17:50:17+05:30,direct,none,none,0
+20,Gladly,gladly_final_round2,https://help.gladly.com/implementation/docs/difference-between-sandbox-and-production,True,usable,899,6f79938bad9a,2026-11-23T17:50:19+05:30,none,none,none,0
+20,Gladly,gladly_final_round2,https://help.gladly.com/docs/manage-app-integrations,True,usable,2868,2f406668e829,2026-11-23T17:50:20+05:30,direct,direct,none,0
+20,Gladly,gladly_final_round2,https://help.gladly.com/docs/set-up-mcp-connections,True,usable,10633,b88885a6437b,2026-11-23T17:50:25+05:30,direct,none,none,37
+20,Gladly,gladly_final_round2,https://connect.gladly.com/docs2/other-resources/postman,True,fetch_empty,,,2026-11-23T17:50:28+05:30,n/a,n/a,n/a,n/a
+20,Gladly,gladly_final_round2,https://connect.gladly.com/docs2/answers-rest-api-tutorials/manage-public-answers,True,fetch_empty,,,2026-11-23T17:50:30+05:30,n/a,n/a,n/a,n/a

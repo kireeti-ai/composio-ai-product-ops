@@ -1,0 +1,101 @@
+registry_id,app,provenance_block,original_membership_verified,master_status,execution_group,gemini_call_ids,plan_ref,flags
+1,Salesforce,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",baseline_record_written_twice(final version verified)
+2,HubSpot,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",baseline_record_written_twice(final version verified)
+3,Pipedrive,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",baseline_record_written_twice(final version verified)
+4,Attio,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+5,Twenty,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",baseline_record_written_twice(final version verified)
+6,Podio,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+7,Zoho CRM,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+8,Close,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+9,Copper,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+10,DealCloud,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+11,Zendesk,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+12,Intercom,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+13,Freshdesk,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+14,Front,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",baseline_record_weak_sources(dev.frontapp.com never fetched)
+15,Pylon,ORIGINAL_1_50,True,UNPLANNED,C_expansion,G045,p1-expansion-v1 3B_partial_targeted_reretrieval,
+16,LiveAgent,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+17,Plain,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+18,Help Scout,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+19,Gorgias,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+20,Gladly,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G028,p1-v1f phase 2 (D_added_access_explicit_account_gated),
+21,Slack,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+22,Twilio,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+23,Zoho Cliq,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+24,Lark (Larksuite),ORIGINAL_1_50,True,UNPLANNED,C_expansion,G046,p1-expansion-v1 3B_partial_targeted_reretrieval,
+25,Pumble,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G025,p1-v1f phase 2 (C_access_partial),
+26,Discord,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G023,p1-v1f phase 2 (C_access_partial),
+27,Telegram,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G001,p1-v1f phase 1 (A_prior_access_evidence_sufficient),
+28,WhatsApp Business,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+29,Aircall,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G020,p1-v1f phase 2 (C_access_partial),
+30,Vonage,ORIGINAL_1_50,True,UNPLANNED,C_expansion,G031,p1-expansion-v1 3A_core_ready_access_topup,
+31,Google Ads,ORIGINAL_1_50,True,UNPLANNED,C_expansion,G047,p1-expansion-v1 3B_partial_targeted_reretrieval,
+32,Meta Ads,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G002,p1-v1f phase 1 (A_prior_access_evidence_sufficient),
+33,LinkedIn Ads,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G003,p1-v1f phase 1 (A_prior_access_evidence_sufficient),
+34,GoHighLevel,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G004,p1-v1f phase 1 (A_prior_access_evidence_sufficient),
+35,Mailchimp,ORIGINAL_1_50,True,UNPLANNED,C_expansion,G032,p1-expansion-v1 3A_core_ready_access_topup,
+36,Klaviyo,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G019,p1-v1f phase 2 (B_access_inferred_self_serve),
+37,systeme.io,ORIGINAL_1_50,True,UNPLANNED,C_expansion,G033,p1-expansion-v1 3A_core_ready_access_topup,
+38,Pinterest,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G016,p1-v1f phase 2 (B2_topup_access_explicit_phase2),
+39,Threads (Meta),ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G005,p1-v1f phase 1 (A_prior_access_evidence_sufficient),
+40,SendGrid,ORIGINAL_1_50,True,UNPLANNED,C_expansion,G034,p1-expansion-v1 3A_core_ready_access_topup,
+41,Shopify,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G006,p1-v1f phase 1 (A_prior_access_evidence_sufficient),
+42,WooCommerce,ORIGINAL_1_50,True,UNPLANNED,C_expansion,G035,p1-expansion-v1 3A_core_ready_access_topup,
+43,BigCommerce,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G007,p1-v1f phase 1 (A_prior_access_evidence_sufficient),
+44,Salesforce Commerce Cloud,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G022,p1-v1f phase 2 (C_access_partial),
+45,Magento (Adobe Commerce),ORIGINAL_1_50,True,UNPLANNED,C_expansion,G036,p1-expansion-v1 3A_core_ready_access_topup,
+46,Squarespace,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G027,p1-v1f phase 2 (C_access_partial),
+47,Ecwid,ORIGINAL_1_50,True,PLANNED_FROZEN_V1F,A_v1f_frozen,G021,p1-v1f phase 2 (C_access_partial),
+48,Gumroad,ORIGINAL_1_50,True,UNPLANNED,C_expansion,G037,p1-expansion-v1 3A_core_ready_access_topup,
+49,Amazon Selling Partner,ORIGINAL_1_50,True,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+50,fanbasis,ORIGINAL_1_50,True,EXCLUDED_IDENTITY_UNRESOLVED,D_identity_gated,G073,excluded pending authoritative identity resolution,
+51,DataForSEO,RECONSTRUCTED_51_100,False,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",reconstructed_list_membership_NOT_verified
+52,SE Ranking,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G008,p1-v1f phase 1 (A_prior_access_evidence_sufficient),reconstructed_list_membership_NOT_verified
+53,Ahrefs,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G009,p1-v1f phase 1 (A_prior_access_evidence_sufficient),reconstructed_list_membership_NOT_verified
+54,MrScraper,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G038,p1-expansion-v1 3A_core_ready_access_topup,reconstructed_list_membership_NOT_verified
+55,Apify,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G048,p1-expansion-v1 3B_partial_targeted_reretrieval,reconstructed_list_membership_NOT_verified
+56,Firecrawl,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G010,p1-v1f phase 1 (A_prior_access_evidence_sufficient),reconstructed_list_membership_NOT_verified
+57,Bright Data,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G039,p1-expansion-v1 3A_core_ready_access_topup,reconstructed_list_membership_NOT_verified
+58,Sherlock,RECONSTRUCTED_51_100,False,COMPLETED_BASELINE_QUARANTINED,E_baseline_record_exists_no_new_gemini_call,,baseline Pass 1 + Pass 2 exist,reconstructed_list_membership_NOT_verified;baseline_record_identity_contaminated_QUARANTINED
+59,Waterfall.io,RECONSTRUCTED_51_100,False,UNPLANNED,D_identity_gated,G074,p1-expansion-v1 3H_provisional_identity_hold,reconstructed_list_membership_NOT_verified;identity_PROVISIONAL_not_confirmed
+60,Clay,RECONSTRUCTED_51_100,False,UNPLANNED,D_identity_gated,G075,p1-expansion-v1 3H_provisional_identity_hold,reconstructed_list_membership_NOT_verified;identity_PROVISIONAL_not_confirmed
+61,GitHub,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G015,p1-v1f phase 1 (A_topup_access_explicit),reconstructed_list_membership_NOT_verified
+62,Vercel,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G017,p1-v1f phase 2 (B_access_inferred_self_serve),reconstructed_list_membership_NOT_verified
+63,Netlify,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G018,p1-v1f phase 2 (B_access_inferred_self_serve),reconstructed_list_membership_NOT_verified
+64,Cloudflare,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G040,p1-expansion-v1 3A_core_ready_access_topup,reconstructed_list_membership_NOT_verified
+65,Supabase,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G012,p1-v1f phase 1 (A_topup_access_explicit),reconstructed_list_membership_NOT_verified
+66,Neo4j,RECONSTRUCTED_51_100,False,HELD_NEO4J_OPTION_B_PREPARED,B_neo4j_optionB,G029;G030,"p1-neo4j-optionB (2 surface calls), outside the 28",reconstructed_list_membership_NOT_verified
+67,Snowflake,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G041,p1-expansion-v1 3A_core_ready_access_topup,reconstructed_list_membership_NOT_verified
+68,MongoDB Atlas,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G042,p1-expansion-v1 3A_core_ready_access_topup,reconstructed_list_membership_NOT_verified
+69,Datadog,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G049,p1-expansion-v1 3B_partial_targeted_reretrieval,reconstructed_list_membership_NOT_verified
+70,Sentry,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G024,p1-v1f phase 2 (C_access_partial),reconstructed_list_membership_NOT_verified
+71,Notion,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G014,p1-v1f phase 1 (A_topup_access_explicit),reconstructed_list_membership_NOT_verified
+72,Airtable,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G013,p1-v1f phase 1 (A_topup_access_explicit),reconstructed_list_membership_NOT_verified
+73,Linear,RECONSTRUCTED_51_100,False,HELD_IDENTITY_PROVISIONAL,D_identity_gated,G070,held pending identity confirmation (no authority for #51-100),reconstructed_list_membership_NOT_verified
+74,Jira,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G043,p1-expansion-v1 3A_core_ready_access_topup,reconstructed_list_membership_NOT_verified
+75,Asana,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G026,p1-v1f phase 2 (C_access_partial),reconstructed_list_membership_NOT_verified
+76,Monday.com,RECONSTRUCTED_51_100,False,PLANNED_FROZEN_V1F,A_v1f_frozen,G011,p1-v1f phase 1 (A_prior_access_evidence_sufficient),reconstructed_list_membership_NOT_verified
+77,ClickUp,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G044,p1-expansion-v1 3A_core_ready_access_topup,reconstructed_list_membership_NOT_verified
+78,Coda,RECONSTRUCTED_51_100,False,HELD_IDENTITY_PROVISIONAL,D_identity_gated,G071,held pending identity confirmation (no authority for #51-100),reconstructed_list_membership_NOT_verified
+79,Smartsheet,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G050,p1-expansion-v1 3B_partial_targeted_reretrieval,reconstructed_list_membership_NOT_verified
+80,Harvest,RECONSTRUCTED_51_100,False,EXCLUDED_IDENTITY_UNRESOLVED,D_identity_gated,G072,excluded pending authoritative identity resolution,reconstructed_list_membership_NOT_verified
+81,Stripe,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G051,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+82,Plaid,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G052,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+83,Binance,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G053,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+84,Paygent Connect,RECONSTRUCTED_51_100,False,COMPLETED_BASELINE,E_baseline_record_exists_no_new_gemini_call,,"baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",reconstructed_list_membership_NOT_verified
+85,iPayX,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G054,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+86,QuickBooks,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G055,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+87,Xero,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G056,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+88,Brex,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G057,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+89,Ramp,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G058,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+90,PitchBook,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G059,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+91,NotebookLM,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G060,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+92,Otter AI,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G061,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+93,Fathom,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G062,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+94,Consensus,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G063,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+95,Reducto,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G064,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+96,Devin,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G065,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+97,higgsfield,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G066,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+98,Mermaid CLI,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G067,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+99,YouTube Transcript,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G068,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified
+100,Grain,RECONSTRUCTED_51_100,False,UNPLANNED,C_expansion,G069,p1-expansion-v1 4_no_retrieval_full_discovery,reconstructed_list_membership_NOT_verified

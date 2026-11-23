@@ -1,0 +1,143 @@
+{
+ "tag": "groq_orgA",
+ "app": 20,
+ "name": "Gladly",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 13,
+ "latency_s": 2.34,
+ "tokens_in": 3163,
+ "tokens_out": 799,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "quote": "Gladly API uses token-based Basic Authentication.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "quote": "You must create an API token to access Gladly API resources.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access_note",
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+    "quote": "API tokens can be accessed and created by users who at least have an API user role.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.gladly.com/",
+    "quote": "calling Gladly's REST APIs",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+    "quote": "Connect Gladly AI to an external MCP server so it can call that server's tools during Customer conversations.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "basic",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "supported_lexical"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 3,
+   "unsupported": 1
+  },
+  "evidence_total": 5,
+  "evidence_valid": 3,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 2,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Gladly is a customer support platform offering REST APIs, webhooks, and an MCP integration layer for building custom helpdesk tools.",
+  "auth_methods": [
+   "basic"
+  ],
+  "access": "self_serve_free",
+  "access_note": "API tokens can be created in the Gladly UI by users with the API User role (admin or designated integration user).",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "buildability": "yes",
+  "blocker": "none",
+  "existing_mcp": "official",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "quote": "Gladly API uses token-based Basic Authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "quote": "You must create an API token to access Gladly API resources."
+   },
+   {
+    "field": "access_note",
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+    "quote": "API tokens can be accessed and created by users who at least have an API user role."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.gladly.com/",
+    "quote": "calling Gladly's REST APIs"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+    "quote": "Connect Gladly AI to an external MCP server so it can call that server's tools during Customer conversations."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "129f819205b0cf917e2812e5b1d2aac73ea366dccbcd5f94c416ca1aeda5589d",
+ "at": "2026-11-23T19:53:37+05:30"
+}

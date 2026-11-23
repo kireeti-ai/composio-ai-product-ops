@@ -1,0 +1,482 @@
+{
+ "29": {
+  "name": "Aircall",
+  "official_registrable_domains": [
+   "aircall.io"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 1,
+  "chosen": [
+   {
+    "url": "https://developer.aircall.io/docs/sms",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Overview"
+   },
+   {
+    "url": "https://www.aircall.io/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "36": {
+  "name": "Klaviyo",
+  "official_registrable_domains": [
+   "klaviyo.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 8,
+  "chosen": [
+   {
+    "url": "https://developers.klaviyo.com/en/v2023-01-24/docs/retrieve_api_credentials",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Obtain API credentials"
+   },
+   {
+    "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "How to create or clone a private API key | Klaviyo Help Center"
+   },
+   {
+    "url": "https://developers.klaviyo.com/en/v2025-01-15/reference/api_overview",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "API overview"
+   },
+   {
+    "url": "https://www.klaviyo.com/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "46": {
+  "name": "Squarespace",
+  "official_registrable_domains": [
+   "squarespace.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 4,
+  "chosen": [
+   {
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Squarespace API keys"
+   },
+   {
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Overview of Commerce APIs"
+   },
+   {
+    "url": "https://www.squarespace.com/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "65": {
+  "name": "Supabase",
+  "official_registrable_domains": [
+   "supabase.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 2,
+  "chosen": [
+   {
+    "url": "https://supabase.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing & Fees"
+   },
+   {
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Introduction | Management API Reference | Supabase Docs"
+   }
+  ]
+ },
+ "66": {
+  "name": "Neo4j",
+  "official_registrable_domains": [
+   "neo4j.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 3,
+  "chosen": [
+   {
+    "url": "https://neo4j.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "neo4j.com/pricing"
+   },
+   {
+    "url": "https://neo4j.com/labs/agent-memory/reference/authentication",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Authentication and API keys - Neo4j Agent Memory"
+   },
+   {
+    "url": "https://neo4j.com/docs/graphql/current/getting-started/graphql-aura",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "GraphQL and Aura Console - Neo4j GraphQL Library"
+   }
+  ]
+ },
+ "71": {
+  "name": "Notion",
+  "official_registrable_domains": [
+   "notion.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 7,
+  "chosen": [
+   {
+    "url": "https://www.notion.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Notion Pricing Plans: Free, Plus, Business, & Enterprise."
+   },
+   {
+    "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Personal access tokens"
+   },
+   {
+    "url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Secure API credentials"
+   },
+   {
+    "url": "https://developers.notion.com",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Quickstart"
+   }
+  ]
+ },
+ "72": {
+  "name": "Airtable",
+  "official_registrable_domains": [
+   "airtable.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 7,
+  "chosen": [
+   {
+    "url": "https://airtable.com/developers/web/api/billing-plans.md",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "airtable.com/developers/web/api/billing-plans.md"
+   },
+   {
+    "url": "https://airtable.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Airtable Pricing | Compare Plans, Features & Costs"
+   },
+   {
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Airtable Web API"
+   },
+   {
+    "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Creating personal access tokens"
+   }
+  ]
+ },
+ "75": {
+  "name": "Asana",
+  "official_registrable_domains": [
+   "asana.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 2,
+  "chosen": [
+   {
+    "url": "https://developers.asana.com/docs/personal-access-token.md",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "developers.asana.com/docs/personal-access-token.md"
+   },
+   {
+    "url": "https://developers.asana.com/docs/getting-started-with-asana-oauth",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "OAuth Code Samples / Libraries"
+   },
+   {
+    "url": "https://www.asana.com/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "20": {
+  "name": "Gladly",
+  "official_registrable_domains": [
+   "gladly.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 0,
+  "chosen": [
+   {
+    "url": "https://www.gladly.com/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "25": {
+  "name": "Pumble",
+  "official_registrable_domains": [
+   "pumble.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 2,
+  "chosen": [
+   {
+    "url": "https://pumble.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing - Pumble"
+   },
+   {
+    "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features/",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pumble Subscription Plans and Paid Features"
+   }
+  ]
+ },
+ "26": {
+  "name": "Discord",
+  "official_registrable_domains": [
+   "discord.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 3,
+  "chosen": [
+   {
+    "url": "https://docs.discord.com/developers/quick-start/getting-started",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Building your first Discord Bot"
+   },
+   {
+    "url": "https://www.discord.com/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "38": {
+  "name": "Pinterest",
+  "official_registrable_domains": [
+   "pinterest.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 4,
+  "chosen": [
+   {
+    "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization"
+   },
+   {
+    "url": "https://www.pinterest.com/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "44": {
+  "name": "Salesforce Commerce Cloud",
+  "official_registrable_domains": [
+   "salesforce.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 2,
+  "chosen": [
+   {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas-session-bridge-overview.html",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Session Bridge Overview | SCAPI | B2C Commerce API"
+   },
+   {
+    "url": "https://www.salesforce.com/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "47": {
+  "name": "Ecwid",
+  "official_registrable_domains": [
+   "ecwid.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 4,
+  "chosen": [
+   {
+    "url": "https://docs.ecwid.com/api-reference/partner-api/partner-api-calls",
+    "category": "review_partner",
+    "source": "stored_search_hit",
+    "title": "Partner API calls | REST API Reference | Ecwid Documentation"
+   },
+   {
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Make your first API request | Ecwid Documentation"
+   },
+   {
+    "url": "https://www.ecwid.com/pricing",
+    "category": "pricing",
+    "source": "pattern_guess_unverified",
+    "title": null
+   }
+  ]
+ },
+ "61": {
+  "name": "GitHub",
+  "official_registrable_domains": [
+   "github.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 7,
+  "chosen": [
+   {
+    "url": "https://github.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "GitHub plans and pricing"
+   },
+   {
+    "url": "https://github.com/topics/free-api-key",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "free-api-key"
+   },
+   {
+    "url": "https://docs.github.com/rest/using-the-rest-api/getting-started-with-the-rest-api",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Getting started with the REST API"
+   }
+  ]
+ },
+ "62": {
+  "name": "Vercel",
+  "official_registrable_domains": [
+   "vercel.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 6,
+  "chosen": [
+   {
+    "url": "https://vercel.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Vercel Pricing: Hobby, Pro, and Enterprise plans"
+   },
+   {
+    "url": "https://vercel.com/docs/ai-gateway/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "AI Gateway Pricing"
+   },
+   {
+    "url": "https://vercel.com/docs/integrations/create-integration/marketplace-api",
+    "category": "review_partner",
+    "source": "stored_search_hit",
+    "title": "Using the Integrations REST API"
+   },
+   {
+    "url": "https://vercel.com/docs/ai-gateway/token-pass/getting-started",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Getting Started with Token Pass"
+   }
+  ]
+ },
+ "63": {
+  "name": "Netlify",
+  "official_registrable_domains": [
+   "netlify.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 6,
+  "chosen": [
+   {
+    "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Credit-based pricing plans"
+   },
+   {
+    "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Generate personal access tokens with Netlify OAuth | Netlify Developers"
+   },
+   {
+    "url": "https://answers.netlify.com/t/api-keys-and-environment-variables-on-netlify/3865",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "API keys and environment variables on netlify - Support"
+   },
+   {
+    "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Get started with Netlify CLI"
+   }
+  ]
+ },
+ "70": {
+  "name": "Sentry",
+  "official_registrable_domains": [
+   "sentry.io"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 4,
+  "chosen": [
+   {
+    "url": "https://docs.sentry.io/accounts/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "docs.sentry.io/accounts/pricing"
+   },
+   {
+    "url": "https://docs.sentry.io/pricing.md",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "docs.sentry.io/pricing.md"
+   }
+  ]
+ }
+}

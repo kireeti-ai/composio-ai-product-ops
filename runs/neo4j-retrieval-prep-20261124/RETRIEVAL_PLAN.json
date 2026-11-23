@@ -1,0 +1,58 @@
+{
+ "run_id": "neo4j-retrieval-prep-20261124",
+ "status": "PREPARED - NOT EXECUTED. No external call without RETRIEVAL_APPROVED.json",
+ "purpose": "close the three evidence gaps recorded for Neo4j (Option B) before any model call",
+ "gaps": [
+  {
+   "gap_id": 1,
+   "name": "Aura API 'Authentication' page (credential mechanism)",
+   "candidate_urls": [
+    "https://neo4j.com/docs/aura/api/authentication"
+   ],
+   "url_source": "stored search hit (baseline), official neo4j.com docs",
+   "feeds_call": "aura_management_api"
+  },
+  {
+   "gap_id": 2,
+   "name": "Query API 'Authorize requests' page (auth for the database Query API)",
+   "candidate_urls": [
+    "https://neo4j.com/docs/query-api/current/query"
+   ],
+   "url_source": "best STORED candidate only; the exact 'Authorize requests' URL is NOT in stored data - see conditional_discovery",
+   "feeds_call": "database_query_api"
+  },
+  {
+   "gap_id": 3,
+   "name": "Aura availability / tiers of the Query API and Aura API",
+   "candidate_urls": [
+    "https://neo4j.com/docs/aura/connecting-applications/query-api"
+   ],
+   "url_source": "stored search hit (topup_v1r app-level search), official neo4j.com docs",
+   "feeds_call": "both"
+  }
+ ],
+ "conditional_discovery": [
+  {
+   "gap_id": 2,
+   "query": "Neo4j Query API authorize requests authentication site:neo4j.com/docs/query-api",
+   "url_must_match": "neo4j\\.com/docs/query-api",
+   "must_match_in_text": "authoriz|basic|bearer",
+   "note": "runs ONLY if gap 2 is still open after its candidate; fetches at most 1 discovered page"
+  }
+ ],
+ "excluded": [
+  "neo4j.com/blog/** (vendor blog, not documentation)",
+  "legacy HTTP API pages (separate deprecated surface)"
+ ],
+ "already_have": [
+  {
+   "url": "https://neo4j.com/docs/aura/api/overview/",
+   "note": "fetched in baseline"
+  }
+ ],
+ "max_external_calls": 5,
+ "max_external_calls_note": "3 fetches + 1 conditional search + 1 conditional fetch; all free ($0 asserted)",
+ "approval_file_needed": "runs/neo4j-retrieval-prep-20261124/RETRIEVAL_APPROVED.json",
+ "after_retrieval": "build a NEW versioned Neo4j plan (p1-neo4j-optionB-v2) adding the usable pages to the matching surface; p1-neo4j-optionB-20261124 stays unchanged",
+ "created": "2026-11-23T18:11:43+0530"
+}

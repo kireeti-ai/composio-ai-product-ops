@@ -1,0 +1,732 @@
+[
+ {
+  "row_id": 80,
+  "app_id": 13,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "partially_supported",
+  "reason": "Shows an HTTP PUT call to the Update ticket API, but REST is never named.",
+  "evidence_url": "https://support.freshdesk.com/support/solutions/articles/50000009511-automation-examples-using-webhooks",
+  "evidence_snippet": "Select **Request type as PUT**."
+ },
+ {
+  "row_id": 81,
+  "app_id": 14,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "partially_supported",
+  "reason": "Page says Front OAuth apps are used but does not state OAuth 2.0.",
+  "evidence_url": "https://integrations.sh/front.com",
+  "evidence_snippet": "authentication is via Front API tokens or Front OAuth apps depending on the surface."
+ },
+ {
+  "row_id": 82,
+  "app_id": 14,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page says the API token is used as a Bearer token.",
+  "evidence_url": "https://integrations.sh/front.com",
+  "evidence_snippet": "Use the token as a Bearer token in the"
+ },
+ {
+  "row_id": 83,
+  "app_id": 14,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Page documents Front API tokens created by an admin and used for auth.",
+  "evidence_url": "https://integrations.sh/front.com",
+  "evidence_snippet": "authentication is via Front API tokens or Front OAuth apps depending on the surface."
+ },
+ {
+  "row_id": 84,
+  "app_id": 14,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page states Front exposes a Core REST API.",
+  "evidence_url": "https://integrations.sh/front.com",
+  "evidence_snippet": "Front exposes a Core REST API"
+ },
+ {
+  "row_id": 85,
+  "app_id": 14,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "partially_supported",
+  "reason": "Page (third-party directory) says Front exposes a beta MCP server; official status not explicit and it is beta.",
+  "evidence_url": "https://integrations.sh/front.com",
+  "evidence_snippet": "a beta MCP server"
+ },
+ {
+  "row_id": 86,
+  "app_id": 16,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Docs say an API key must be generated in the admin panel.",
+  "evidence_url": "https://support.liveagent.com/docs/api/v3/",
+  "evidence_snippet": "To be able to make API requests you need to generate an API key in your admin panel first."
+ },
+ {
+  "row_id": 87,
+  "app_id": 16,
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "verdict": "unsupported",
+  "reason": "Quote only shows logging in and generating an API key; no trial, paid, or signup info.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 88,
+  "app_id": 16,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "unsupported",
+  "reason": "A Swagger descriptor reference does not establish that the API is REST.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 89,
+  "app_id": 17,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "partially_supported",
+  "reason": "Page documents an OAuth app but does not state OAuth 2.0.",
+  "evidence_url": "https://plain.com/docs/graphql/authentication",
+  "evidence_snippet": "To call the API as a user in your workspace, use an OAuth app."
+ },
+ {
+  "row_id": 90,
+  "app_id": 17,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Page documents machine-user API keys.",
+  "evidence_url": "https://plain.com/docs/graphql/authentication",
+  "evidence_snippet": "Each API key carries its own fine-grained permissions."
+ },
+ {
+  "row_id": 91,
+  "app_id": 17,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page shows API key passed as Bearer in Authorization header.",
+  "evidence_url": "https://plain.com/docs/graphql/authentication",
+  "evidence_snippet": "Authorization: Bearer plainApiKey_xxx"
+ },
+ {
+  "row_id": 92,
+  "app_id": 17,
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "verdict": "supported",
+  "reason": "Page states 7-day free trial with no credit card.",
+  "evidence_url": "https://www.plain.com/llms.txt",
+  "evidence_snippet": "7-day free trial, no credit card required."
+ },
+ {
+  "row_id": 93,
+  "app_id": 17,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page says GraphQL and REST APIs.",
+  "evidence_url": "https://www.plain.com/llms.txt",
+  "evidence_snippet": "GraphQL and REST APIs with full UI/API parity"
+ },
+ {
+  "row_id": 94,
+  "app_id": 17,
+  "field": "api_types",
+  "claim_value": "graphql",
+  "verdict": "supported",
+  "reason": "Page says GraphQL and REST APIs.",
+  "evidence_url": "https://www.plain.com/llms.txt",
+  "evidence_snippet": "GraphQL and REST APIs with full UI/API parity"
+ },
+ {
+  "row_id": 95,
+  "app_id": 17,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "supported",
+  "reason": "Plain vendor docs name its MCP server URL.",
+  "evidence_url": "https://plain.com/docs/getting-started",
+  "evidence_snippet": "Plain’s Model Context Protocol (MCP) server at `https://mcp.plain.com/mcp`"
+ },
+ {
+  "row_id": 96,
+  "app_id": 18,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states OAuth 2.0 with two flows.",
+  "evidence_url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+  "evidence_snippet": "it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows"
+ },
+ {
+  "row_id": 97,
+  "app_id": 18,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "partially_supported",
+  "reason": "API keys are documented only for the Docs API (v1), not the OAuth Mailbox API cited.",
+  "evidence_url": "https://developer.helpscout.com/docs-api",
+  "evidence_snippet": "Authentication is based on API keys."
+ },
+ {
+  "row_id": 98,
+  "app_id": 18,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "partially_supported",
+  "reason": "HTTP Basic with API key is documented only for the Docs API (v1), not the cited Mailbox API.",
+  "evidence_url": "https://developer.helpscout.com/docs-api",
+  "evidence_snippet": "The API key is passed via HTTP Basic Authentication"
+ },
+ {
+  "row_id": 99,
+  "app_id": 18,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Mailbox API page shows Authorization: Bearer header usage.",
+  "evidence_url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+  "evidence_snippet": "curl -H \"Authorization: Bearer"
+ },
+ {
+  "row_id": 100,
+  "app_id": 18,
+  "field": "auth_methods",
+  "claim_value": "jwt_or_signed",
+  "verdict": "partially_supported",
+  "reason": "Signed JWT appears only for restricted Docs site visitor authentication, not API auth.",
+  "evidence_url": "https://developer.helpscout.com/docs-api/restricted-docs",
+  "evidence_snippet": "The proof is a signed JSON Web Token (JWT)"
+ },
+ {
+  "row_id": 101,
+  "app_id": 18,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "partially_supported",
+  "reason": "Shows HTTPS JSON API endpoint, but REST is not named.",
+  "evidence_url": "https://developer.helpscout.com/docs-api",
+  "evidence_snippet": "All API requests are made to **https://docsapi.helpscout.net/** and all requests are served over HTTPS."
+ },
+ {
+  "row_id": 102,
+  "app_id": 19,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "partially_supported",
+  "reason": "OAuth2 is required only for approved public apps, not all integrations.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 103,
+  "app_id": 19,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "OAuth2 token responses show token_type Bearer.",
+  "evidence_url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+  "evidence_snippet": "\"token_type\":\"Bearer\""
+ },
+ {
+  "row_id": 104,
+  "app_id": 19,
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "verdict": "partially_supported",
+  "reason": "Says private apps need no approval; free access is not stated.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 105,
+  "app_id": 19,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page names an open REST API.",
+  "evidence_url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+  "evidence_snippet": "Gorgias has an open REST API"
+ },
+ {
+  "row_id": 106,
+  "app_id": 20,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "supported",
+  "reason": "Page states token-based Basic Authentication.",
+  "evidence_url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "evidence_snippet": "Gladly API uses token-based Basic Authentication."
+ },
+ {
+  "row_id": 107,
+  "app_id": 20,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Developer portal names Gladly REST API.",
+  "evidence_url": "https://developer.gladly.com/",
+  "evidence_snippet": "calling Gladly's REST APIs"
+ },
+ {
+  "row_id": 108,
+  "app_id": 20,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "unsupported",
+  "reason": "Quote shows Gladly AI acting as MCP client of an external server, not Gladly offering an MCP server.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 109,
+  "app_id": 21,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page describes OAuth 2.0 for Slack apps.",
+  "evidence_url": "https://api.slack.com/docs/oauth",
+  "evidence_snippet": "OAuth 2.0 is a protocol that lets your app request authorization"
+ },
+ {
+  "row_id": 110,
+  "app_id": 21,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Page says access tokens are bearer tokens in Authorization header.",
+  "evidence_url": "https://api.slack.com/docs/oauth",
+  "evidence_snippet": "also known as bearer tokens"
+ },
+ {
+  "row_id": 111,
+  "app_id": 21,
+  "field": "auth_methods",
+  "claim_value": "jwt_or_signed",
+  "verdict": "unsupported",
+  "reason": "No mention of JWT or signed tokens as an auth method on the page.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 112,
+  "app_id": 21,
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "verdict": "unsupported",
+  "reason": "Sandbox recommendation does not establish free self-serve access.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 113,
+  "app_id": 21,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "partially_supported",
+  "reason": "Web API over HTTP with GET is shown, but REST is not named.",
+  "evidence_url": "https://api.slack.com/docs/oauth",
+  "evidence_snippet": "The tokens awarded to your app can be used in requests to the Web API."
+ },
+ {
+  "row_id": 114,
+  "app_id": 21,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Page shows direct HTTP Web API requests with bearer tokens, contradicting SDK/CLI-only.",
+  "evidence_url": "https://api.slack.com/docs/oauth",
+  "evidence_snippet": "The tokens awarded to your app can be used in requests to the Web API."
+ },
+ {
+  "row_id": 115,
+  "app_id": 21,
+  "field": "api_types",
+  "claim_value": "websocket",
+  "verdict": "unsupported",
+  "reason": "Nothing about WebSocket in the cited quote or page context.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 116,
+  "app_id": 21,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "unsupported",
+  "reason": "A Slack MCP Plugin for development assistance does not establish an official Slack MCP server.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 117,
+  "app_id": 22,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "supported",
+  "reason": "Page states Basic auth with API key SID and secret.",
+  "evidence_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "evidence_snippet": "Use your API key SID as the username and your API key secret as the password."
+ },
+ {
+  "row_id": 118,
+  "app_id": 22,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "supported",
+  "reason": "Page states HTTP Basic authentication.",
+  "evidence_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "evidence_snippet": "use HTTP Basic authentication."
+ },
+ {
+  "row_id": 119,
+  "app_id": 22,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page states RESTful HTTP methods.",
+  "evidence_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "evidence_snippet": "Twilio APIs use standard RESTful HTTP methods"
+ },
+ {
+  "row_id": 120,
+  "app_id": 22,
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "verdict": "conflicting",
+  "reason": "Page documents RESTful HTTP APIs usable via curl, contradicting SDK/CLI-only.",
+  "evidence_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "evidence_snippet": "Twilio APIs use standard RESTful HTTP methods"
+ },
+ {
+  "row_id": 121,
+  "app_id": 23,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states OAuth 2.0.",
+  "evidence_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+  "evidence_snippet": "protocol for authentication."
+ },
+ {
+  "row_id": 122,
+  "app_id": 23,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "unsupported",
+  "reason": "Page states OAuth 2.0 only; API keys not mentioned.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 123,
+  "app_id": 23,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page states REST API.",
+  "evidence_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+  "evidence_snippet": "Zoho Cliq's REST API is designed based on RESTful architecture principles"
+ },
+ {
+  "row_id": 124,
+  "app_id": 25,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "supported",
+  "reason": "Vendor article states native MCP server.",
+  "evidence_url": "https://pumble.com/learn/pumble/ai-automation-guide",
+  "evidence_snippet": "Pumble maintains a native MCP (Model Context Protocol) server hosted directly at pumble.com"
+ },
+ {
+  "row_id": 125,
+  "app_id": 26,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page states HTTP API is a REST API (quote is on the cited page).",
+  "evidence_url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+  "evidence_snippet": "The **HTTP API** is a REST API"
+ },
+ {
+  "row_id": 126,
+  "app_id": 27,
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "verdict": "partially_supported",
+  "reason": "Free of charge applies to creating Telegram-like messaging apps; self-serve steps implied by API id process.",
+  "evidence_url": "https://core.telegram.org/api/obtaining_api_id",
+  "evidence_snippet": "free of charge"
+ },
+ {
+  "row_id": 127,
+  "app_id": 28,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "conflicting",
+  "reason": "Page explicitly says OAuth (not 2.0), contradicting oauth2.",
+  "evidence_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "evidence_snippet": "Authentication uses OAuth (not 2.0) access tokens"
+ },
+ {
+  "row_id": 128,
+  "app_id": 28,
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "verdict": "supported",
+  "reason": "Same page shows Authorization: Bearer access token in example.",
+  "evidence_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "evidence_snippet": "-H 'Authorization: Bearer EAAJB...'"
+ },
+ {
+  "row_id": 129,
+  "app_id": 28,
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "verdict": "partially_supported",
+  "reason": "Test accounts are auto-created without payment method; trial/paid plan not established.",
+  "evidence_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "evidence_snippet": "don’t require a payment method on file in order to send template messages"
+ },
+ {
+  "row_id": 130,
+  "app_id": 28,
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "verdict": "unsupported",
+  "reason": "Template approval requirement does not relate to trial or paid plan access.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 131,
+  "app_id": 28,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "partially_supported",
+  "reason": "Graph API over HTTP is stated; REST is not named.",
+  "evidence_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "evidence_snippet": "The WhatsApp Business Platform is built on Graph API and uses HTTP protocol."
+ },
+ {
+  "row_id": 132,
+  "app_id": 28,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "unsupported",
+  "reason": "Webhook payload description does not establish REST API type.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 133,
+  "app_id": 28,
+  "field": "api_types",
+  "claim_value": "websocket",
+  "verdict": "unsupported",
+  "reason": "Page states HTTP protocol; no WebSocket mentioned.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 134,
+  "app_id": 28,
+  "field": "api_types",
+  "claim_value": "websocket",
+  "verdict": "unsupported",
+  "reason": "Webhook JSON payloads do not establish WebSocket.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 135,
+  "app_id": 29,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "supported",
+  "reason": "Page lists Basic Authentication.",
+  "evidence_url": "https://developer.aircall.io/docs/authentication",
+  "evidence_snippet": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth."
+ },
+ {
+  "row_id": 136,
+  "app_id": 29,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "partially_supported",
+  "reason": "Page says OAuth but does not state OAuth 2.0 version.",
+  "evidence_url": "https://developer.aircall.io/docs/authentication",
+  "evidence_snippet": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth."
+ },
+ {
+  "row_id": 137,
+  "app_id": 29,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "supported",
+  "reason": "Page names REST API.",
+  "evidence_url": "https://developer.aircall.io/docs/introduction",
+  "evidence_snippet": "Connect Aircall to any business tool using our REST API and webhooks."
+ },
+ {
+  "row_id": 138,
+  "app_id": 29,
+  "field": "api_types",
+  "claim_value": "webhook",
+  "verdict": "supported",
+  "reason": "Page names webhooks.",
+  "evidence_url": "https://developer.aircall.io/docs/introduction",
+  "evidence_snippet": "Connect Aircall to any business tool using our REST API and webhooks."
+ },
+ {
+  "row_id": 139,
+  "app_id": 30,
+  "field": "auth_methods",
+  "claim_value": "jwt_or_signed",
+  "verdict": "supported",
+  "reason": "Page states Vonage APIs use JWTs.",
+  "evidence_url": "https://developer.vonage.com/en/dashboard/build/applications",
+  "evidence_snippet": "Vonage APIs (Voice, Messages, Conversation, etc) use JSON Web Tokens (JWTs) for authentication."
+ },
+ {
+  "row_id": 140,
+  "app_id": 30,
+  "field": "auth_methods",
+  "claim_value": "jwt_or_signed",
+  "verdict": "supported",
+  "reason": "Auth page lists JWT as a method.",
+  "evidence_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "evidence_snippet": "Vonage APIs support different authentication methods depending on which product you are using"
+ },
+ {
+  "row_id": 141,
+  "app_id": 30,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "partially_supported",
+  "reason": "Cited page says JWT; API key/secret is listed on the auth page header but per-API mapping is not legible.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 142,
+  "app_id": 30,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "partially_supported",
+  "reason": "Auth page names API Key and Secret header method, but per-API applicability is not shown in text.",
+  "evidence_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "evidence_snippet": "API Key and Secret (Header)"
+ },
+ {
+  "row_id": 143,
+  "app_id": 30,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "partially_supported",
+  "reason": "Basic auth is mentioned only for Messages API on a different page.",
+  "evidence_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "evidence_snippet": "Messages supports both JWT and Basic authentication"
+ },
+ {
+  "row_id": 144,
+  "app_id": 30,
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "verdict": "partially_supported",
+  "reason": "Basic is mentioned only for Messages API; table text lacks mapping.",
+  "evidence_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "evidence_snippet": "Messages supports both JWT and Basic authentication"
+ },
+ {
+  "row_id": 145,
+  "app_id": 30,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "unsupported",
+  "reason": "Documentation portal intro does not mention REST for Vonage APIs.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 146,
+  "app_id": 30,
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "verdict": "supported",
+  "reason": "Vonage docs describe Vonage MCP Server.",
+  "evidence_url": "https://developer.vonage.com/en/mcp-server/overview",
+  "evidence_snippet": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities"
+ },
+ {
+  "row_id": 147,
+  "app_id": 32,
+  "field": "access",
+  "claim_value": "approval_or_review_required",
+  "verdict": "supported",
+  "reason": "FAQ requires app review and approval for production.",
+  "evidence_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/using-the-api/faq.md",
+  "evidence_snippet": "To use the Marketing API in production, you must submit your app for review and receive approval."
+ },
+ {
+  "row_id": 148,
+  "app_id": 33,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "partially_supported",
+  "reason": "Page mentions OAuth flows but not OAuth 2.0.",
+  "evidence_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+  "evidence_snippet": "To learn more about OAuth flows, see authentication documentation."
+ },
+ {
+  "row_id": 149,
+  "app_id": 33,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "unsupported",
+  "reason": "Page says APIs but never REST.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ },
+ {
+  "row_id": 150,
+  "app_id": 34,
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "verdict": "supported",
+  "reason": "Page states OAuth 2.0 available.",
+  "evidence_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+  "evidence_snippet": "Both OAuth 2.0 and Private Integration Tokens (PIT) are available across plans."
+ },
+ {
+  "row_id": 151,
+  "app_id": 34,
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "verdict": "partially_supported",
+  "reason": "Private Integration Tokens are token-based; legacy API keys are being phased out.",
+  "evidence_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+  "evidence_snippet": "New legacy API key generation is being phased out."
+ },
+ {
+  "row_id": 152,
+  "app_id": 34,
+  "field": "api_types",
+  "claim_value": "rest",
+  "verdict": "unsupported",
+  "reason": "SDK description does not state REST API type.",
+  "evidence_url": null,
+  "evidence_snippet": null
+ }
+]

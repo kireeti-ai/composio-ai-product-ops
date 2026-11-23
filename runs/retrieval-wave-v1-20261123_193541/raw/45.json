@@ -1,0 +1,310 @@
+{
+ "id": 45,
+ "name": "Magento (Adobe Commerce)",
+ "started": "2026-11-23T19:36:21+05:30",
+ "searches": [
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:23+05:30"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:25+05:30"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:27+05:30"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:29+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html",
+   "requested_at": "2026-11-23T19:36:32+05:30",
+   "status": "ok",
+   "final_url": "https://developer.adobe.com/commerce/webapi/graphql/",
+   "title": "GraphQL overview",
+   "chars": 4543,
+   "sha256": "a5dfc6ccb82091b5f2548210e0b2e723f484f94727c151331b02474ecda41c45",
+   "text": "# GraphQL overview\n\nGraphQL is a data query language and runtime that revolutionizes how you build and consume APIs. Originally developed by Facebook in 2012 and open-sourced in 2015, GraphQL has become the preferred choice for modern applications that need efficient, flexible, and performant data fetching.\n\nAdobe Commerce provides two comprehensive GraphQL implementations that serve as the ideal foundation for building next-generation commerce experiences, including headless storefronts and sophisticated mobile applications.\n\n* Adobe Commerce on Cloud and on-premises (PaaS) projects can implement the GraphQL schemas that have long been available to Adobe Commerce and Magento Open Source projects. Separate schemas are available for core and B2B Commerce functionality and service-based features, including Catalog Service, Live Search, and Recommendations. These schemas do not natively interact, but can be integrated with API Mesh.\n* Adobe Commerce as a Cloud Service (SaaS) projects can connect to a supergraph that not only combines and streamlines the schemas available to PaaS projects, but provides instant access to the latest features added in the Storefront Compatability Package and other sources. Therefore, SaaS projects can take advantage of the latest GraphQL features without needing to wait for a new release.\n\n```\n```\ndata-variant=info\n```\n```\n\n```\n```\ndata-slots=text\n```\n```\n\n```\nproducts\n```\n\nand\n\n```\ncategories\n```\n\nqueries with their service-based equivalents, also named\n\n```\nproducts\n```\n\nand\n\n```\ncategories\n```\n\n. The service-based queries are not backward compatible with the core queries, so you must update your applications to use the new queries. For more information, see Migrate to Adobe Commerce as a Cloud Service for general guidelines.\n\n## Why use GraphQL?\n\n* Get exactly what you need. Unlike traditional REST APIs that return fixed data structures, GraphQL lets you request exactly the fields you need in a single query. This means faster load times, reduced bandwidth usage, and better user experiences.\n* Superior performance. GraphQL minimizes over-fetching and under-fetching of data, allowing you to optimize performance by fetching only the necessary information in a single request. In addition, minimized data transfer is ideal for mobile and low-bandwidth environments.\n* Enhanced developer experience. GraphQL's strongly typed schema and introspection capabilities provide powerful tools for developers. You can explore the API, get realtime feedback, and leverage auto-completion in modern IDEs, making development faster and more efficient.\n\n## Getting started with GraphQL\n\nReady to experience the power of Adobe Commerce GraphQL? Here's how to get started:\n\n1. Choose Your GraphQL client. Select a GraphQL IDE or browser extension to explore and test queries and mutations. Some popular options include:\n2. Access your GraphQL endpoint. Your Adobe Commerce GraphQL endpoint is available at:\n3. Explore the schema. Use the schema browser in your GraphQL IDE or extension to explore the available queries, mutations, and types. This will help you understand the structure of the API and how to construct your requests. You can also use introspection queries to discover the schema programmatically.\n\n   ```\n   query IntrospectionQuery { __schema { mutationType { name fields { name description } } queryType { name fields { name description } } } }\n   ```\n4. Run your first query. Try this simple product query to get started:\n\n```\n```\n{\n  storeConfig {\n   store_code\n   store_name\n   is_default_store\n   store_group_code\n   is_default_store_group\n   locale\n   base_currency_code\n   default_display_currency_code\n   timezone\n  }\n}\n```\n```\n\nThe response will provide you with basic information about your store configuration, such as the store code, name, locale, and currency settings.\n\n```\n```\n{\n  data {\n    storeConfig {\n      store_code: \"default\"\n      store_name: \"Default Store View\"\n      is_default_store: true\n      store_group_code: \"main_website_store\"\n      is_default_store_group: true\n      locale: \"en_US\"\n      base_currency_code: \"USD\"\n      default_display_currency_code: \"USD\"\n      timezone: \"America/Los_Angeles\"\n    }\n  }\n}\n```\n```\n\n## Commerce API playground\n\nThe Commerce API playground enables you to run selected queries against a live instance of Adobe Commerce with Luma sample data. The playground includes example core and Storefront Services queries. You can customize the output of the queries to help you understand the power of our GraphQL APIs.",
+   "retrieved_at": "2026-11-23T19:36:32+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://devdocs.magento.com/guides/v2.4/rest/bk-rest.html",
+   "requested_at": "2026-11-23T19:36:34+05:30",
+   "status": "ok",
+   "final_url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "title": "REST API Overview",
+   "chars": 4048,
+   "sha256": "79ceda432e2f2d2620f63a3886627cb1a622a6a772b18a4ceebf012f009b558c",
+   "text": "# REST API Overview\n\nThe REST API documentation describes the REST APIs that are available in Adobe Commerce (PaaS) and Adobe Commerce as a Cloud Service (SaaS).\n\nThe APIs can be used to perform a wide array of tasks. For example:\n\n* Create a shopping app. This can be a traditional app that a user downloads on a mobile device. You could also create an app that an employee uses on a showroom floor to help customers make purchases.\n* Integrate with CRM (Customer Relationship Management) or ERP (Enterprise Resource Planning) backend systems, such as Salesforce or Xero.\n* Integrate with a CMS (Content Management System). Currently, content tagging is not supported.\n\n## Adobe Commerce\n\n```\n```\ndata-src=/_includes/paas-only.md\n```\n```\n\nAdobe Commerce on Cloud, Adobe Commerce on-premises, and Magento Open Source all use the same REST API framework. The REST API documentation describes the REST APIs that are available in these versions of Adobe Commerce and Magento Open Source.\n\n### Endpoints\n\nAdobe Commerce provides a wide range of REST API endpoints that allow you to perform actions on behalf of Commerce administrators, customers, and guest shoppers. Integrations are also supported.\n\n### Authentication\n\nAdobe Commerce REST APIs support multiple authentication methods, including:\n\n* Third-party applications authenticate with OAuth 1.0a.\n* Mobile applications authenticate using tokens.\n* Administrators and customers are authenticated with login credentials.\n\n### URL structure\n\nThe URL for Adobe Commerce REST endpoints is structured as follows:\n\n```\nhttps://<host>/rest/<store-view-code>/<endpoint>\n```\n\n## Adobe Commerce as a Cloud Service\n\n```\n```\ndata-src=/_includes/saas-only.md\n```\n```\n\nThe Adobe Commerce as a Cloud Service REST API serves as a critical tool for extending and integrating commerce functionalities, but the endpoints available differ significantly from the REST APIs for Adobe Commerce on Cloud and on-premises deployments.\n\nThe following key differences are important to consider when planning your REST API integrations with Adobe Commerce as a Cloud Service:\n\n### Endpoints\n\nPrimarily the Cloud Service REST API differs in that it includes a smaller subset of endpoints. Specifically, the customer and guest REST APIs that are available in Adobe Commerce on Cloud and on-premises deployments are not available in Adobe Commerce as a Cloud Service. However, access to similar functionality remains available with the GraphQL APIs.\n\nThe API reference lists the available endpoints.\n\n### Authentication\n\nIn previous versions of Adobe Commerce, you would use authentication tokens to authorize your requests to the REST API. In Adobe Commerce as a Cloud Service, you must use Adobe Identity Management Service (IMS) to authenticate your requests.\n\nThe authentication system supports both interactive user-based workflows and automated server-to-server integrations, ensuring secure and appropriate access for different use cases. Both of these authentication methods require every request to be signed with an IMS Access Token.\n\n### URL structure\n\nIn Adobe Commerce as a Cloud Service, REST endpoint URLs do not include\n\n```\n/rest\n```\n\nor the store view code. The store scope is specified via the\n\n```\nStore\n```\n\nHTTP header.\n\n* Base format:\n\n  ```\n  https://<server>.api.commerce.adobe.com/<tenant-id>/<endpoint>\n  ```\n* Set the scope with the\n\n  ```\n  Store\n  ```\n\n  header:\n  + Predefined values:\n\n    - ```\n      Store: all\n      ```\n\n      \u2014 Execute in the global scope\n    - ```\n      Store: default\n      ```\n\n      \u2014 Target the default store view (or use your specific store view code)\n  + You can also pass any specific store view code:\n\n    ```\n    Store: <store_view_code>\n    ```\n\nThe following\n\n```\ncurl\n```\n\ncommand shows the request pattern:\n\n```\n```\ncurl --location 'https://<server>.api.commerce.adobe.com/<tenant-id>/<endpoint>' \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --header 'Store: <all | default | <store_view_code>>'\n  ....\n```\n```",
+   "retrieved_at": "2026-11-23T19:36:34+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/soap-web-api-calls",
+   "title": "Use SOAP Services",
+   "snippet": "may use different services and therefore use different WSDLs.\nThe Adobe Commerce and Magento Open Source web API uses WSDL 1.2, which complies with WS-I 2.0 Basic Profile.\nEach service"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/reference",
+   "title": "REST API reference",
+   "snippet": "reference provides detailed documentation for all available REST API endpoints in Adobe Commerce and Magento Open Source. Each endpoint includes complete parameter descriptions,"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started",
+   "title": "Getting Started with Adobe Commerce Web APIs",
+   "snippet": "> Add New Integration**. Be sure to restrict which resources the integration can access.\n3. Use a REST or SOAP client to configure authentication.\nSee the User Guide for more information."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html",
+   "title": "GraphQL overview",
+   "snippet": "enables you to run selected queries against a live instance of Adobe Commerce with Luma sample data. The playground includes example core and Storefront Services queries. You can customize the"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://devdocs.magento.com/guides/v2.4/rest/bk-rest.html",
+   "title": "REST API Overview",
+   "snippet": "Commerce provides a wide range of REST API endpoints that allow you to perform actions on behalf of Commerce administrators, customers, and guest shoppers. Integrations are also supported.\n###"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/gs-web-api-request",
+   "title": "Construct a Request",
+   "snippet": "Run the web API call through a [cURL command](/commerce/webapi/get-started/gs-curl) or a REST client."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://developer.adobe.com/commerce/docs/",
+   "title": "Adobe Commerce Developer Documentation",
+   "snippet": "Develop, customize, and test. Start building event-driven integrations and high-performance storefronts for Adobe Commerce using modern development tools."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://developer.adobe.com/commerce/webapi/rest",
+   "title": "REST API Overview",
+   "snippet": "Adobe Commerce on-premises, and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/attributes",
+   "title": "Retrieving detailed attributes",
+   "snippet": "APIs that search across multiple objects return detailed information about individual objects. Detailed information, such as `extensionAttributes`, `customAttributes`, and possibly other fields,"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation",
+   "url": "https://developer.adobe.com/commerce/webapi/",
+   "title": "Commerce Web API",
+   "snippet": "This documentation provides resources for working with Adobe Commerce web APIs. Discover. Use these sections to learn about how to use our web APIs to integrate ..."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+   "title": "OAuth-Based Authentication",
+   "snippet": "Commerce and Magento Open Source is based on [OAuth 1.0a](https://datatracker.ietf.org/doc/html/rfc5849), an open standard for secure API authentication. OAuth is a token-passing mechanism that"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://developer.adobe.com/commerce/php/module-reference/module-admin-adobe-ims",
+   "title": "AdminAdobeIms",
+   "snippet": "The Magento_Admin_Adobe_Ims module contains integration with Adobe IMS for backend authentication."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/create-integration",
+   "title": "Create an Integration",
+   "snippet": "exchange. We strongly recommend using `https://`. <br/> See [OAuth-based authentication](https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth) for details."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication",
+   "title": "Authentication",
+   "snippet": "a third-party system that supports OAuth 1.0a.\nAfter activating an integration (self activated), you can use the generated consumer key, consumer secret, access token, and access token secret to"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://developer.adobe.com/commerce/extensibility/webhooks/tutorial/best-practices",
+   "title": "Development best practices",
+   "snippet": "### Step 1: Generate OAuth credentials from Developer Console\nRetrieve the client secret, client ID, and organization ID from the Adobe Developer Console to authenticate the webhook calls from Adobe"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/soap-web-api-calls",
+   "title": "Use SOAP Services",
+   "snippet": "Protected SOAP resources can be accessed using bearer tokens (OAuth access tokens) over HTTP. Access tokens are strings representing an access authorization issued to the client. For more information,"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started",
+   "title": "Getting Started with Adobe Commerce Web APIs",
+   "snippet": "  - Third-party applications authenticate with [OAuth 1.0a](/commerce/webapi/get-started/authentication/gs-authentication-oauth/).\n- Mobile"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://apis.io/providers/adobe-commerce/",
+   "title": "Adobe Commerce \u2014 API Provider, Schemas",
+   "snippet": "Adobe Commerce publishes 2 APIs on the APIs.io network. Tagged areas include E-Commerce, Commerce, Magento, Adobe, and Online Store."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://developer.adobe.com/commerce/webapi/rest",
+   "title": "REST API Overview",
+   "snippet": "including:\n- Third-party applications authenticate with [OAuth"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer",
+   "url": "https://github.com/magento/magento2/issues/38192",
+   "title": "Magento 2 oauth developments document step by step \u00b7 Issue #38192",
+   "snippet": "We are from Webgility Inc., and We are currently in the process of implementing Magento API OAuth integration and are seeking official ..."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/create-integration",
+   "title": "Create an Integration",
+   "snippet": "An **integration** enables third-party services to call the Adobe Commerce and Magento Open Source web APIs. The APIs currently support external software, such as Accounting, Enterprise Resource"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication",
+   "title": "Authentication",
+   "snippet": "Adobe Commerce and Magento Open Source allow developers to define web API resources and their permissions in the `webapi.xml` configuration file. See [Services as Web"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+   "title": "OAuth-Based Authentication",
+   "snippet": "Authentication](https://developer.adobe.com/commerce/webapi/rest/authentication/) for details on authentication.\nOAuth authentication with Adobe Commerce and Magento Open Source is based on"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/modules/catalog/catalog-pricing",
+   "title": "Manage prices for multiple products",
+   "snippet": "Adobe Commerce provides REST endpoints that allow you to update multiple special prices, tier prices, base prices, or cost values with a single call.\nThe calls that update special and tier prices"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://developer.adobe.com/commerce/webapi/rest",
+   "title": "REST API Overview",
+   "snippet": "and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview) all use the same REST API framework. The REST API documentation describes the REST APIs"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/reference",
+   "title": "REST API reference",
+   "snippet": "endpoint includes complete parameter descriptions, request/response examples, authentication requirements, and error handling information to help developers integrate with the platform effectively."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://www.i95dev.com/magento-adobe-commerce-pricing-revealed-i95dev/",
+   "title": "Magento (Adobe Commerce) Pricing Plans Revealed",
+   "snippet": "In-house Developer: $60,000 \u2013 $120,000/year \u00b7 Dedicated Team of Magento Developers: US: ~$100/hour \u00b7 Costs include: Store and catalog setup; Theme ..."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://business.adobe.com/products/commerce/pricing.html",
+   "title": "Adobe Commerce Product Pricing",
+   "snippet": "**Extensibility.** API-first, event driven\nextensibility and integrations with App Builder, API Mesh, webhooks, and events."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys",
+   "title": "Get your authentication keys | Adobe Commerce",
+   "snippet": "access to those packages. The MAGEID is typically the Primary Contact on the Adobe Commerce account and may not always be the Project Owner of the Adobe Commerce on cloud infrastructure project."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account",
+   "url": "https://www.ironplane.com/blog/adobe-commerce-cloud-magento-open-source-pricing",
+   "title": "eCommerce Platform Pricing: Adobe Commerce Cloud & Magento",
+   "snippet": "Companies working with Adobe Commerce, and hosting it themselves will pay a licensing fee that starts around $2,000 per month. The Adobe hosted ..."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+   "title": "Commerce development MCPs and skills",
+   "snippet": "When migrating to Adobe Commerce as a Cloud Service, you can use the Commerce development MCPs and skills to convert existing Adobe Commerce PHP extensions to Adobe Developer App Builder applications."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://magento.watch/mcp",
+   "title": "Magento MCP Server: Version & EOL Data for AI Agents",
+   "snippet": "Magento and Adobe Commerce architecture, upgrades, performance and audits for merchants and agencies since 2015; community-run project."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://github.com/angeo-dev/module-mcp-server",
+   "title": "GitHub - angeo-dev/module-mcp-server: MCP server for Magento 2 & Adobe Commerce. Gives Claude, ChatGPT and Gemini agents live, rate-limited access to your catalog",
+   "snippet": "**Claude Desktop / Claude Code** (`.mcp.json`):\n```\n{\n\"mcpServers\": {\n\"my-store\": {\n\"type\": \"http\",\n\"url\": \"https://your-store.example/mcp\"\n}\n}\n}\n```"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://github.com/magento/magento2-phpstorm-plugin/wiki/MCP",
+   "title": "MCP",
+   "snippet": "## 1. Enable the IDE MCP server\nOpen `Settings | Tools | MCP Server`, enable `Enable MCP Server`, and confirm the warning dialog."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://github.com/magenable/magento-adobe-commerce-mcp-server",
+   "title": "GitHub - magenable/magento-adobe-commerce-mcp-server: Magento Open Source and Adobe Commerce MCP server",
+   "snippet": "# Magento Open Source / Adobe Commerce MCP Server\nThis is a Model Context Protocol (MCP) server that connects to a Magento Open Source or Adobe Commerce REST API making possible Claude, OpenAI Agent"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://mcpmarket.com/server/magento-adobe-commerce",
+   "title": "Magento/Adobe Commerce AI Agent API Connector | MCP Server",
+   "snippet": "Connects AI agents to Magento Open Source and Adobe Commerce REST APIs via a Model Context Protocol (MCP) server, enabling advanced e-commerce interactions."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://commercemarketplace.adobe.com/media/catalog/product/webdevs_ltd-module-mcp-1-0-1-ece/user_guides.pdf?1777642938=",
+   "title": "Wdevs mcp extenstion User Guide",
+   "snippet": "This extension implements a Model Context Protocol (MCP) server inside Adobe Commerce, allowing\nexternal AI assistants and developer tools to interact with store catalog data through a standardized, "
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://github.com/Codexpect/adobe-commerce-mcp",
+   "title": "GitHub - Codexpect/adobe-commerce-mcp",
+   "snippet": "features are implemented using the official Magento REST API, ensuring compatibility and security for both editions. No direct database or server access is required\u2014just API credentials from your"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://github.com/juan-cinto-infracommerce/mcp-magento-cloud",
+   "title": "GitHub - juan-cinto-infracommerce/mcp-magento-cloud",
+   "snippet": "MCP (Model Context Protocol) server for Adobe Commerce Cloud. Allows AI agents to interact with Magento Cloud projects \u2014 query databases, read logs, list environments, inspect activities, and more.\n"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official",
+   "url": "https://commercemarketplace.adobe.com/freento-module-mcp.html",
+   "title": "MCP Server",
+   "snippet": "### Current Version\n1.2.0\n### Adobe Commerce platform compatibility\n**Adobe Commerce (cloud):** 2.4 (current)\n**Adobe Commerce (on-prem):** 2.4 (current)\n**Magento Open Source:** 2.4 (current)"
+  }
+ ],
+ "official_domain_candidates": {
+  "magento.com": 2,
+  "magento.watch": 1
+ },
+ "identity_flag": "multiple_candidate_domains_review_identity",
+ "selected_domain": "magento.com",
+ "completed": "2026-11-23T19:36:34+05:30"
+}

@@ -1,0 +1,2090 @@
+{
+ "batch": "batch2",
+ "records": [
+  {
+   "app_id": 55,
+   "name": "Apify",
+   "identity_note": "Apify platform (docs.apify.com); the web-scraping/Actor platform.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "API token (Bearer) for REST API; hosted MCP uses OAuth, with Bearer-token fallback",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.apify.com/platform/integrations/api",
+       "title": "API integration | Platform | Apify Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "To access the Apify API in your integrations, you need to authenticate using your secret API token.",
+       "quote_sha256": "1f597f88f37d0181ddea111be510ed249169ebcc962a0fa81fa9442663c71aba",
+       "raw_file": "raw/55_1.txt",
+       "page_sha256": "b8721098381c23a7521b628571433c35a9aaea5ed0fdae8cb899d2f8fec1a63d"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+       "title": "<p align=\"center\">",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "`Authorization: Bearer <APIFY_TOKEN>` header",
+       "quote_sha256": "31cfebbcd9c7bb64a3beacfb64f89bc1305f5b6b72c1a482e64a02b891920c53",
+       "raw_file": "raw/55_4.txt",
+       "page_sha256": "6ea6eeaa76cb0d07161b000d0bc82651dca284294f64d65f2706fd72b787890e"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+       "title": "<p align=\"center\">",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "Connect to the hosted server with OAuth",
+       "quote_sha256": "6046ceba2128bfdb18ac878965e3660c2a09dcdcfe7d7b3165878dc510d68288",
+       "raw_file": "raw/55_4.txt",
+       "page_sha256": "6ea6eeaa76cb0d07161b000d0bc82651dca284294f64d65f2706fd72b787890e"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "self_serve: free plan, no credit card required to start",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://apify.com/pricing",
+       "title": "Apify pricing - flexible plan + pay as you go · Apify",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:31:49Z",
+       "quote": "Start for free",
+       "quote_sha256": "ffbda9db22069154bc6528bc8c9f8bc130bd4d65993f8aa95198d94aa8dbd1d0",
+       "raw_file": "raw/55_3.txt",
+       "page_sha256": "742c63d2f019f63abc5ff0e629bd2e3a728cb000d146dcdc51a6c5940dfc19e6"
+      },
+      {
+       "url": "https://apify.com/pricing",
+       "title": "Apify pricing - flexible plan + pay as you go · Apify",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:31:49Z",
+       "quote": "No credit card required.",
+       "quote_sha256": "020d69600973cd895c63bc3c825c9d657a47108ccab99e9671baecf6a82c2616",
+       "raw_file": "raw/55_3.txt",
+       "page_sha256": "742c63d2f019f63abc5ff0e629bd2e3a728cb000d146dcdc51a6c5940dfc19e6"
+      }
+     ],
+     "note": "Pricing page; free-plan quota/limits not quoted."
+    },
+    {
+     "field": "api_types",
+     "value": "rest, sdk (JS/Python/Go/PHP/Java clients), cli",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.apify.com/platform/integrations/api",
+       "title": "API integration | Platform | Apify Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "the REST API works with any HTTP client",
+       "quote_sha256": "927a7fdf50c8d05371ead82492c803e82214c860d13178f2019c99347aa712e2",
+       "raw_file": "raw/55_1.txt",
+       "page_sha256": "b8721098381c23a7521b628571433c35a9aaea5ed0fdae8cb899d2f8fec1a63d"
+      },
+      {
+       "url": "https://docs.apify.com/platform/integrations/api",
+       "title": "API integration | Platform | Apify Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "Client for Python",
+       "quote_sha256": "02b377c90230714a4294ef2d94d2cf5858dba848cd7e47b0bc71135c1778c335",
+       "raw_file": "raw/55_1.txt",
+       "page_sha256": "b8721098381c23a7521b628571433c35a9aaea5ed0fdae8cb899d2f8fec1a63d"
+      },
+      {
+       "url": "https://docs.apify.com/platform/integrations/api",
+       "title": "API integration | Platform | Apify Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "The Apify CLI doesn't need a copied token.",
+       "quote_sha256": "4740a495a387ea56a3bb95bd2c29e0b0a3f5f8f9f7617a0b9ac4f84cec64878a",
+       "raw_file": "raw/55_1.txt",
+       "page_sha256": "b8721098381c23a7521b628571433c35a9aaea5ed0fdae8cb899d2f8fec1a63d"
+      }
+     ],
+     "note": "Webhooks not quoted from reviewed pages."
+    },
+    {
+     "field": "rate_limits",
+     "value": "Hosted MCP server: 20 requests/second per account (REST API limits not captured)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+       "title": "<p align=\"center\">",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "The hosted server accepts up to 20 requests per second per account.",
+       "quote_sha256": "e9c848be6b73cbbf9caacbfd8cdcfcca3ee657809dff32575530a68facd8ff18",
+       "raw_file": "raw/55_4.txt",
+       "page_sha256": "6ea6eeaa76cb0d07161b000d0bc82651dca284294f64d65f2706fd72b787890e"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": "No sandbox/test-environment statement found in fetched pages."
+    },
+    {
+     "field": "mcp",
+     "value": "official: hosted https://mcp.apify.com plus open-source repo",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+       "title": "<p align=\"center\">",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "The official Apify Model Context Protocol (MCP) server gives AI agents web scraping",
+       "quote_sha256": "14d0c4746f161c66898fbdd15b2dfbb51eb6574bd3555e782b14ec1a1b2baf89",
+       "raw_file": "raw/55_4.txt",
+       "page_sha256": "6ea6eeaa76cb0d07161b000d0bc82651dca284294f64d65f2706fd72b787890e"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+       "title": "<p align=\"center\">",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "The hosted endpoint is `https://mcp.apify.com`.",
+       "quote_sha256": "6e20e6c13a270cb9fb04e79334832ee5528aff4b5d96d2742415b11b0c003718",
+       "raw_file": "raw/55_4.txt",
+       "page_sha256": "6ea6eeaa76cb0d07161b000d0bc82651dca284294f64d65f2706fd72b787890e"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "yes (no blocker found)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.apify.com/platform/integrations/api",
+       "title": "API integration | Platform | Apify Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "To access the Apify API in your integrations, you need to authenticate using your secret API token.",
+       "quote_sha256": "1f597f88f37d0181ddea111be510ed249169ebcc962a0fa81fa9442663c71aba",
+       "raw_file": "raw/55_1.txt",
+       "page_sha256": "b8721098381c23a7521b628571433c35a9aaea5ed0fdae8cb899d2f8fec1a63d"
+      }
+     ],
+     "note": "Judgement from auth + free access evidence."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "api_token_bearer",
+     "oauth2 (hosted MCP)"
+    ],
+    "access": "self_serve (free plan, no card)",
+    "api_types": [
+     "rest",
+     "sdk",
+     "cli"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified"
+   },
+   "prior_record_corrections": [
+    "Prior \"free-plan limits not confirmed\" still holds; prior MCP/auth/access claims now quote-backed."
+   ],
+   "open_questions": [
+    "Free plan compute/usage allowance not quoted.",
+    "Webhooks and sandbox not checked."
+   ]
+  },
+  {
+   "app_id": 57,
+   "name": "Bright Data",
+   "identity_note": "Bright Data (brightdata.com) proxies/scraping APIs, docs at docs.brightdata.com.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "API key sent as Bearer token (API Access) or proxy username/password (Native Access); MCP needs only API token",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.brightdata.com/api-reference/authentication",
+       "title": "Authentication - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:53Z",
+       "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access with proxy username and password.",
+       "quote_sha256": "52e1d5a8d2af4dfc568755397411653e7090143cc8db40271031fc33189395bb",
+       "raw_file": "raw/57_1.txt",
+       "page_sha256": "13ae0c6cfa810ee57744a86bf9f2ea889fc714d3cb24e3a4a06a6a27e8ca6450"
+      },
+      {
+       "url": "https://docs.brightdata.com/api-reference/authentication",
+       "title": "Authentication - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:53Z",
+       "quote": "Authorization: Bearer <token>",
+       "quote_sha256": "078298af268708b4996c5f47bb5242f98e58dff587417c2c5d531c73ea8ed999",
+       "raw_file": "raw/57_1.txt",
+       "page_sha256": "13ae0c6cfa810ee57744a86bf9f2ea889fc714d3cb24e3a4a06a6a27e8ca6450"
+      },
+      {
+       "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+       "title": "Bright Data MCP FAQs - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:54Z",
+       "quote": "No. The Bright Data MCP server only requires an API token, for both the remote (hosted) and local (self-hosted) setup.",
+       "quote_sha256": "121e596ad8dd168272adda8118e1b0e1f395a2874bfbcad8a807b41c1ccc204d",
+       "raw_file": "raw/57_3.txt",
+       "page_sha256": "200499b3425c3d06cab0de32e93b39ee378ed1651174a720fea2d1c08aa33042"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "self_serve: new accounts get 5,000 free MCP requests/month; pay-as-you-go afterwards",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.brightdata.com/products/mcp-server/overview",
+       "title": "MCP server overview - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:53Z",
+       "quote": "Every new account includes 5,000 free requests per month.",
+       "quote_sha256": "9788f017f7a343221863ffab42ee66cd848d2a230a2688d97a82026212280dc1",
+       "raw_file": "raw/57_2.txt",
+       "page_sha256": "c7e78466a579f2077ae374740a6d9ff28cb5a9d910a7ba3a0f1ad4c4515aa82f"
+      },
+      {
+       "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+       "title": "Bright Data MCP FAQs - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:54Z",
+       "quote": "new users get free credit for testing, and pay-as-you-go options are available after that.",
+       "quote_sha256": "29dc5e29461d4c3e0c65197f79771e4b1545393eba1f7b1fdd229377c9371b1e",
+       "raw_file": "raw/57_3.txt",
+       "page_sha256": "200499b3425c3d06cab0de32e93b39ee378ed1651174a720fea2d1c08aa33042"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "rest (API Access); native proxy protocol",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.brightdata.com/api-reference/authentication",
+       "title": "Authentication - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:53Z",
+       "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access with proxy username and password.",
+       "quote_sha256": "52e1d5a8d2af4dfc568755397411653e7090143cc8db40271031fc33189395bb",
+       "raw_file": "raw/57_1.txt",
+       "page_sha256": "13ae0c6cfa810ee57744a86bf9f2ea889fc714d3cb24e3a4a06a6a27e8ca6450"
+      }
+     ],
+     "note": "SDK/webhooks not checked."
+    },
+    {
+     "field": "rate_limits",
+     "value": "MCP free tier 5,000 credits/month; 1 credit per search or fetch request",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+       "title": "Bright Data MCP FAQs - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:54Z",
+       "quote": "of 5,000 credits per month. Web search (SERP API) and web page scraping (",
+       "quote_sha256": "6f4e0ec8f8a9d43540db3153c858e35ba6a796f650a6751fbd70638fd7e60d3f",
+       "raw_file": "raw/57_3.txt",
+       "page_sha256": "200499b3425c3d06cab0de32e93b39ee378ed1651174a720fea2d1c08aa33042"
+      }
+     ],
+     "note": "General API rate limits not captured."
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": "Not found in reviewed pages."
+    },
+    {
+     "field": "mcp",
+     "value": "official: remote hosted or local self-hosted server documented on docs.brightdata.com",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.brightdata.com/products/mcp-server/overview",
+       "title": "MCP server overview - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:53Z",
+       "quote": "Use the Bright Data MCP server to give AI agents real-time access to public web data with 5,000 free requests per month and zero infrastructure setup.",
+       "quote_sha256": "a8f31f38f5240006c51cacc3935a0fdafd53a6ccb51a6f300c8ed2cb1a4bf1a3",
+       "raw_file": "raw/57_2.txt",
+       "page_sha256": "c7e78466a579f2077ae374740a6d9ff28cb5a9d910a7ba3a0f1ad4c4515aa82f"
+      },
+      {
+       "url": "https://docs.brightdata.com/products/mcp-server/overview",
+       "title": "MCP server overview - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:53Z",
+       "quote": "You can run the server two ways: a fully managed remote server, or a self-hosted local instance.",
+       "quote_sha256": "bc83f39947028ef2f3ce6cf1d22b2df72eae684dd4178075ad0210b6a0b4527e",
+       "raw_file": "raw/57_2.txt",
+       "page_sha256": "c7e78466a579f2077ae374740a6d9ff28cb5a9d910a7ba3a0f1ad4c4515aa82f"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "yes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.brightdata.com/products/mcp-server/overview",
+       "title": "MCP server overview - Bright Data Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:53Z",
+       "quote": "Every new account includes 5,000 free requests per month.",
+       "quote_sha256": "9788f017f7a343221863ffab42ee66cd848d2a230a2688d97a82026212280dc1",
+       "raw_file": "raw/57_2.txt",
+       "page_sha256": "c7e78466a579f2077ae374740a6d9ff28cb5a9d910a7ba3a0f1ad4c4515aa82f"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "api_key_bearer",
+     "proxy_username_password"
+    ],
+    "access": "self_serve free tier then pay-as-you-go",
+    "api_types": [
+     "rest",
+     "proxy"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified"
+   },
+   "prior_record_corrections": [
+    "Prior blocker \"bearer header unconfirmed\" is resolved: docs show Authorization: Bearer <token>."
+   ],
+   "open_questions": [
+    "REST rate limits and sandbox not checked."
+   ]
+  },
+  {
+   "app_id": 64,
+   "name": "Cloudflare",
+   "identity_note": "Cloudflare REST API (developers.cloudflare.com/api).",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "API tokens (preferred); Global API key (legacy); managed MCP servers use OAuth or bearer token",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+       "title": "Get started · Cloudflare Fundamentals docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:09Z",
+       "quote": "that make them less secure than API tokens. Whenever possible, use API tokens to interact with the Cloudflare API.",
+       "quote_sha256": "eb4a6adbc1e7da02e3b4c6452a159b98d64a99fa4f6754a128094e03296ad5b0",
+       "raw_file": "raw/64_5.txt",
+       "page_sha256": "20f2215a44340389bca212293be3b26585d67c5fcc7c95975cefccfccbe49be8"
+      },
+      {
+       "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+       "title": "Get started · Cloudflare Fundamentals docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:09Z",
+       "quote": "Get Global API key (legacy)",
+       "quote_sha256": "d5fe835cfe80c27959f6da4722717f33b1052041a79e2db1380213d87fe3ac9b",
+       "raw_file": "raw/64_5.txt",
+       "page_sha256": "20f2215a44340389bca212293be3b26585d67c5fcc7c95975cefccfccbe49be8"
+      },
+      {
+       "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+       "title": "Cloudflare's own MCP servers · Cloudflare Agents docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:59Z",
+       "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like",
+       "quote_sha256": "77204496552cfac72f818f8988c1150da02b8e763e0752d88f0c038525906dc0",
+       "raw_file": "raw/64_3.txt",
+       "page_sha256": "cc5554dc9cccf7acbeb12fc369171bcc320911aff1f0b45393ecb068728fca2f"
+      },
+      {
+       "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+       "title": "Cloudflare's own MCP servers · Cloudflare Agents docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:59Z",
+       "quote": "with the permissions you need and pass it as a bearer token in the",
+       "quote_sha256": "81004b26207d74ed95137196177bc425a0ef870473ba441fbc0ed618fc15baeb",
+       "raw_file": "raw/64_3.txt",
+       "page_sha256": "cc5554dc9cccf7acbeb12fc369171bcc320911aff1f0b45393ecb068728fca2f"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": "No signup/pricing page fetched; docs only say tokens are created for the API."
+    },
+    {
+     "field": "api_types",
+     "value": "rest",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.cloudflare.com/fundamentals/api/",
+       "title": "Cloudflare's API · Cloudflare Fundamentals docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:59Z",
+       "quote": "Use the following resources to learn more about Cloudflare's REST API:",
+       "quote_sha256": "a0e2dbf707386122f9efebcdcca27b1dcfe76808c980b61c684e12cecc960183",
+       "raw_file": "raw/64_2.txt",
+       "page_sha256": "23d025f018302a2e6846e04cf4101c1f4f8989cddc5084b09c3fdf5fc03c05c5"
+      }
+     ],
+     "note": "SDK/terraform/webhooks not quoted."
+    },
+    {
+     "field": "rate_limits",
+     "value": "1,200 requests per 5 minutes per user",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.cloudflare.com/fundamentals/api/reference/limits/",
+       "title": "Rate limits · Cloudflare Fundamentals docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:59Z",
+       "quote": "The global rate limit for the Cloudflare API is 1,200 requests per five minute period per user",
+       "quote_sha256": "5cbeae12c922fd3c0c310c441f64fe17fa7fe225541439d09e5af78ad9568c5c",
+       "raw_file": "raw/64_4.txt",
+       "page_sha256": "b0f465ec400cc1f55c8612af94c02b60a625ff6278610734e793c03d962ddb6e"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: managed remote MCP servers at https://mcp.cloudflare.com/mcp (OAuth)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+       "title": "Cloudflare's own MCP servers · Cloudflare Agents docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:59Z",
+       "quote": "Cloudflare's own MCP servers",
+       "quote_sha256": "d5549affb1bd70440921a7386cabb9900f5ab29fb1d07b6e175a640b8723425c",
+       "raw_file": "raw/64_3.txt",
+       "page_sha256": "cc5554dc9cccf7acbeb12fc369171bcc320911aff1f0b45393ecb068728fca2f"
+      },
+      {
+       "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+       "title": "Cloudflare's own MCP servers · Cloudflare Agents docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:59Z",
+       "quote": "https://mcp.cloudflare.com/mcp",
+       "quote_sha256": "08594bff0255a18741f86daf885c08d46bba9e4d838bac5b636f25e68e96fbbe",
+       "raw_file": "raw/64_3.txt",
+       "page_sha256": "cc5554dc9cccf7acbeb12fc369171bcc320911aff1f0b45393ecb068728fca2f"
+      },
+      {
+       "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+       "title": "Cloudflare's own MCP servers · Cloudflare Agents docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:59Z",
+       "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like",
+       "quote_sha256": "77204496552cfac72f818f8988c1150da02b8e763e0752d88f0c038525906dc0",
+       "raw_file": "raw/64_3.txt",
+       "page_sha256": "cc5554dc9cccf7acbeb12fc369171bcc320911aff1f0b45393ecb068728fca2f"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "yes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+       "title": "Get started · Cloudflare Fundamentals docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:09Z",
+       "quote": "Create an API token",
+       "quote_sha256": "dffe5e32fe95e3aaeddbc2b9635c277b3b1592c34e1083f7337beb456086feaf",
+       "raw_file": "raw/64_5.txt",
+       "page_sha256": "20f2215a44340389bca212293be3b26585d67c5fcc7c95975cefccfccbe49be8"
+      }
+     ],
+     "note": "Judgement."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "api_token_bearer",
+     "global_api_key_legacy",
+     "oauth (MCP)"
+    ],
+    "access": "unknown (account needed; plan not verified)",
+    "api_types": [
+     "rest"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified"
+   },
+   "prior_record_corrections": [
+    "Prior said MCP unconfirmed on primary page: now confirmed on developers.cloudflare.com (mcp.cloudflare.com/mcp)."
+   ],
+   "open_questions": [
+    "Free-plan API access not quoted."
+   ]
+  },
+  {
+   "app_id": 66,
+   "name": "Neo4j",
+   "identity_note": "Two distinct surfaces: Aura Management API (api.neo4j.io, manage instances) and Database Query API (HTTPS Cypher against a database). Plus Neo4j MCP server.",
+   "claims": [
+    {
+     "field": "authentication: Aura Management API",
+     "value": "OAuth 2.0 client credentials; token endpoint uses HTTP Basic; then Bearer access token",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://neo4j.com/docs/aura/api/authentication/",
+       "title": "Authentication - Neo4j Aura",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "The Aura API uses OAuth 2.0 for API authentication.",
+       "quote_sha256": "f3a41049f738c2715bdc0a9d9baa150bdad245c5b571e0eba4315d63a2cefb78",
+       "raw_file": "raw/66_1.txt",
+       "page_sha256": "7a9a53d651cad59f6487a0f853922981cb4d3f93ca32114f85e11d3293ea386e"
+      },
+      {
+       "url": "https://neo4j.com/docs/aura/api/authentication/",
+       "title": "Authentication - Neo4j Aura",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "Authentication to the token endpoint uses HTTP Basic Authentication, where the client ID and client secret are provided as the username and password, respectively.",
+       "quote_sha256": "0a006eb3f8d73902796eb00a0e3da63f5284f9b81afb5b7330945ee0fd56f255",
+       "raw_file": "raw/66_1.txt",
+       "page_sha256": "7a9a53d651cad59f6487a0f853922981cb4d3f93ca32114f85e11d3293ea386e"
+      },
+      {
+       "url": "https://neo4j.com/docs/aura/api/authentication/",
+       "title": "Authentication - Neo4j Aura",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "Authorization: Bearer <access_token>",
+       "quote_sha256": "8b5008f73bbd6144639bf5ba0d9bb567bf4cef251ea787ce589c6bb7b6549a0e",
+       "raw_file": "raw/66_1.txt",
+       "page_sha256": "7a9a53d651cad59f6487a0f853922981cb4d3f93ca32114f85e11d3293ea386e"
+      },
+      {
+       "url": "https://neo4j.com/docs/aura/api/authentication/",
+       "title": "Authentication - Neo4j Aura",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "The API credentials never expire unless you delete them.",
+       "quote_sha256": "784400b6da5c37a3f30ebd841c6a512952c1517a39074c27d21a89e49f77c4a3",
+       "raw_file": "raw/66_1.txt",
+       "page_sha256": "7a9a53d651cad59f6487a0f853922981cb4d3f93ca32114f85e11d3293ea386e"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "authentication: Database Query API",
+     "value": "HTTP Authorization header; basic and bearer supported",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+       "title": "Authorize requests - Query API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:01Z",
+       "quote": "Authorization: Basic <base64(<username>:<password>)>",
+       "quote_sha256": "0bbb5436d60f119011afe201dbce837015f5418c9b671a87700ce355821e4a1d",
+       "raw_file": "raw/66_2.txt",
+       "page_sha256": "d629271fad516b73cd161248a65ca60af846b98b86bb0084dafac25bc6aae1ca"
+      },
+      {
+       "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+       "title": "Authorize requests - Query API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:01Z",
+       "quote": "Authorization: Bearer <token>",
+       "quote_sha256": "078298af268708b4996c5f47bb5242f98e58dff587417c2c5d531c73ea8ed999",
+       "raw_file": "raw/66_2.txt",
+       "page_sha256": "d629271fad516b73cd161248a65ca60af846b98b86bb0084dafac25bc6aae1ca"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "authentication: Neo4j MCP server",
+     "value": "HTTP mode supports two auth methods; bearer token (SSO/OAuth/OIDC) for Enterprise and Aura",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://neo4j.com/docs/mcp/current/authentication/",
+       "title": "HTTP Authentication - Neo4j MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:01Z",
+       "quote": "When using HTTP transport mode, the Neo4j MCP server supports two authentication methods to accommodate different deployment scenarios:",
+       "quote_sha256": "6212adf19220c9ef392b5cfec46d7634f8ab9daed4abf51f4e0065424ca9ea47",
+       "raw_file": "raw/66_3.txt",
+       "page_sha256": "76367496de3e50a6f075218625953f4751437ac76e361a13b4800e7dcc1e559e"
+      },
+      {
+       "url": "https://neo4j.com/docs/mcp/current/authentication/",
+       "title": "HTTP Authentication - Neo4j MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:01Z",
+       "quote": "Bearer token authentication enables seamless integration with",
+       "quote_sha256": "ff72d7d0f1fee0048601a2238f33ee8b5b1f116ce48ba71343cfed9cd05ce410",
+       "raw_file": "raw/66_3.txt",
+       "page_sha256": "76367496de3e50a6f075218625953f4751437ac76e361a13b4800e7dcc1e559e"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Aura API: all tiers can create API credentials (account required)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://neo4j.com/docs/aura/api/authentication/",
+       "title": "Authentication - Neo4j Aura",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "All tiers can create Aura API credentials.",
+       "quote_sha256": "06e48047a5fc09aa710d01a0081cbe8db6836a8f44d05daa621da1dd69546c45",
+       "raw_file": "raw/66_1.txt",
+       "page_sha256": "7a9a53d651cad59f6487a0f853922981cb4d3f93ca32114f85e11d3293ea386e"
+      }
+     ],
+     "note": "Whether free tier exists: 66_5 shows \"Get started free\" CTA only."
+    },
+    {
+     "field": "api_types",
+     "value": "rest (Aura API); HTTPS Cypher (Query API); MCP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://neo4j.com/docs/aura/api/overview/",
+       "title": "Overview - Neo4j Aura",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:02Z",
+       "quote": "Aura API",
+       "quote_sha256": "1f98b779d204b1214b5f0c2324aca341cab5a0aa216c5945a56afced4dc7ffa1",
+       "raw_file": "raw/66_4.txt",
+       "page_sha256": "43a1fcb7480eefe7eba72e6d930ea27473df66155ab1e185d86ce04934609fda"
+      },
+      {
+       "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+       "title": "Authorize requests - Query API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:01Z",
+       "quote": "Both ",
+       "quote_sha256": "0eea331d323e59cfdec66b89714a08c79461d04c3274fa67a9b3d5525339978b",
+       "raw_file": "raw/66_2.txt",
+       "page_sha256": "d629271fad516b73cd161248a65ca60af846b98b86bb0084dafac25bc6aae1ca"
+      }
+     ],
+     "note": "Weak quotes (nav/labels); see auth pages."
+    },
+    {
+     "field": "rate_limits",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": "Not quoted."
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "Neo4j MCP documented on neo4j.com/docs/mcp (vendor docs); no explicit word \"official\" captured",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://neo4j.com/docs/mcp/current/authentication/",
+       "title": "HTTP Authentication - Neo4j MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:01Z",
+       "quote": "HTTP Authentication - Neo4j MCP",
+       "quote_sha256": "ec754a79dc240b5f40ec6dbb6f5aed516e18f0d3fd7fe03f64d2f28d51b91fd0",
+       "raw_file": "raw/66_3.txt",
+       "page_sha256": "76367496de3e50a6f075218625953f4751437ac76e361a13b4800e7dcc1e559e"
+      },
+      {
+       "url": "https://neo4j.com/docs/mcp/current/authentication/",
+       "title": "HTTP Authentication - Neo4j MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:01Z",
+       "quote": "Neo4j MCP",
+       "quote_sha256": "6168852bef4ad980fd298497996d3fa70ecb30d3fb1d70b116d6c259ef186bb0",
+       "raw_file": "raw/66_3.txt",
+       "page_sha256": "76367496de3e50a6f075218625953f4751437ac76e361a13b4800e7dcc1e559e"
+      }
+     ],
+     "note": "Status official inferred from vendor-hosted docs domain only."
+    },
+    {
+     "field": "buildability",
+     "value": "conditional: two separate credential models must be handled",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://neo4j.com/docs/aura/api/authentication/",
+       "title": "Authentication - Neo4j Aura",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:00Z",
+       "quote": "API credentials are linked to the user account, inheriting its capabilities and roles.",
+       "quote_sha256": "a3681d175c2cb6445abcbf1929fbf5fca36ec5efb7da22575c85833ef95e4633",
+       "raw_file": "raw/66_1.txt",
+       "page_sha256": "7a9a53d651cad59f6487a0f853922981cb4d3f93ca32114f85e11d3293ea386e"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "aura: oauth2_client_credentials",
+     "query_api: basic",
+     "query_api: bearer",
+     "mcp: basic/bearer"
+    ],
+    "access": "account required; Aura API credentials on all tiers",
+    "api_types": [
+     "rest (Aura Mgmt API)",
+     "https_cypher (Query API)"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "two separate credential models (Aura Mgmt vs DB)"
+   },
+   "prior_record_corrections": [
+    "Prior claims about Aura API token endpoint HTTP Basic, never-expire credentials, Query API basic/bearer now quote-backed.",
+    "Prior \"official\" MCP: only vendor docs seen, no explicit \"official\" wording."
+   ],
+   "open_questions": [
+    "Aura MCP / Aura-credential use for MCP not described in reviewed pages.",
+    "Rate limits, free-tier terms not captured."
+   ]
+  },
+  {
+   "app_id": 67,
+   "name": "Snowflake",
+   "identity_note": "Snowflake REST APIs / SQL API / managed MCP server (docs.snowflake.com).",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "REST APIs: key pair (JWT), OAuth, programmatic access token (PAT); MCP: Snowflake OAuth default, External OAuth, PAT",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+       "title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "Using key pair authentication",
+       "quote_sha256": "27b0419d1e144fc2ffbc5b517cee218649da36c60e4fdc4ff0a0e4ad03b5ecf1",
+       "raw_file": "raw/67_1.txt",
+       "page_sha256": "038bf0c4b6586984af9c4be0671254f6db00faa136526cee15c73bb774c9b9e1"
+      },
+      {
+       "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+       "title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "Using OAuth",
+       "quote_sha256": "02a87264780b53a2cacd7f28a65bf3e22123601da79d0a13e1bba7da136caddb",
+       "raw_file": "raw/67_1.txt",
+       "page_sha256": "038bf0c4b6586984af9c4be0671254f6db00faa136526cee15c73bb774c9b9e1"
+      },
+      {
+       "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+       "title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "Using a programmatic access token (PAT)",
+       "quote_sha256": "27730c77befc21baf3e9489fc6422620947ebff1203e7282ad3f6dae0f3a534c",
+       "raw_file": "raw/67_1.txt",
+       "page_sha256": "038bf0c4b6586984af9c4be0671254f6db00faa136526cee15c73bb774c9b9e1"
+      },
+      {
+       "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+       "title": "Snowflake-managed MCP server | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "Snowflake OAuth by default, with optional External OAuth so MCP clients can authenticate against your organization’s identity provider.",
+       "quote_sha256": "f5f31ddbeb0375d36904cdb7e0ac585da053d29f50b24b03d0c8d578d7de1753",
+       "raw_file": "raw/67_2.txt",
+       "page_sha256": "b9cf75cdde350d7797a4615b1400b9a9a08d562f0474f775b017cf5b7d27cd1a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Account required; free trial account available (email only, no payment info)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+       "title": "Trial accounts | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:06Z",
+       "quote": "A Snowflake trial account lets you evaluate/test Snowflake’s full range of innovative and powerful features with no cost or contractual obligations.",
+       "quote_sha256": "2f99b730493487c12a51ebb6c7a1147019483f00d1761173d880bc462b84725f",
+       "raw_file": "raw/67_4.txt",
+       "page_sha256": "93de43e74987a32df2af5901ef7272ec0b1c176606b4d554c6778a7211e0def1"
+      },
+      {
+       "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+       "title": "Trial accounts | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:06Z",
+       "quote": "no payment information or other qualifying information is required.",
+       "quote_sha256": "78ad30baa6dc0555f8315e1087858a5d8bce9142ee1a4e3c2fda3d63772968cb",
+       "raw_file": "raw/67_4.txt",
+       "page_sha256": "93de43e74987a32df2af5901ef7272ec0b1c176606b4d554c6778a7211e0def1"
+      },
+      {
+       "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+       "title": "Trial accounts | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:06Z",
+       "quote": "AI features are disabled by default on self-service trial accounts until you",
+       "quote_sha256": "93747a59704a7835032fa64ea74e45758fc65220724b3588f157918adb74ede2",
+       "raw_file": "raw/67_4.txt",
+       "page_sha256": "93de43e74987a32df2af5901ef7272ec0b1c176606b4d554c6778a7211e0def1"
+      }
+     ],
+     "note": "Trial length not captured; AI/Cortex features (incl. possibly MCP tools) gated until card added."
+    },
+    {
+     "field": "api_types",
+     "value": "rest, sql_api",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+       "title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "Authenticating Snowflake REST APIs with Snowflake",
+       "quote_sha256": "54c7cdd054086548f86e2af02162bfb9fd632a73cdb32821d9b4cd01f6e3d255",
+       "raw_file": "raw/67_1.txt",
+       "page_sha256": "038bf0c4b6586984af9c4be0671254f6db00faa136526cee15c73bb774c9b9e1"
+      },
+      {
+       "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+       "title": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "SQL API",
+       "quote_sha256": "8c53666e076e7c4edf3550c66f2776bee611688f12c501c577c4ff940845e29e",
+       "raw_file": "raw/67_1.txt",
+       "page_sha256": "038bf0c4b6586984af9c4be0671254f6db00faa136526cee15c73bb774c9b9e1"
+      }
+     ],
+     "note": "SQL API quote is a nav label."
+    },
+    {
+     "field": "rate_limits",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "trial account serves as test environment",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+       "title": "Trial accounts | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:06Z",
+       "quote": "A Snowflake trial account lets you evaluate/test Snowflake’s full range of innovative and powerful features with no cost or contractual obligations.",
+       "quote_sha256": "2f99b730493487c12a51ebb6c7a1147019483f00d1761173d880bc462b84725f",
+       "raw_file": "raw/67_4.txt",
+       "page_sha256": "93de43e74987a32df2af5901ef7272ec0b1c176606b4d554c6778a7211e0def1"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: Snowflake-managed MCP server; GA status not confirmed",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+       "title": "Snowflake-managed MCP server | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without needing to deploy separate infrastructure.",
+       "quote_sha256": "89b70905ac34f96d112b2b56372e8c318695682cc3b56af03361d69c928c828a",
+       "raw_file": "raw/67_2.txt",
+       "page_sha256": "b9cf75cdde350d7797a4615b1400b9a9a08d562f0474f775b017cf5b7d27cd1a"
+      },
+      {
+       "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+       "title": "Snowflake-managed MCP server | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "Access to the MCP Server does not give access to the tools. Permission needs to be granted for each tool.",
+       "quote_sha256": "64e29f148fc1a30f84c1a4116f2e803661067e815f5bbf35c39557e5ad4a4bcf",
+       "raw_file": "raw/67_2.txt",
+       "page_sha256": "b9cf75cdde350d7797a4615b1400b9a9a08d562f0474f775b017cf5b7d27cd1a"
+      }
+     ],
+     "note": "No \"generally available\"/\"preview\" wording found on page."
+    },
+    {
+     "field": "buildability",
+     "value": "conditional: needs account + role/privilege setup",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+       "title": "Snowflake-managed MCP server | Snowflake Documentation",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "Access to the MCP Server does not give access to the tools. Permission needs to be granted for each tool.",
+       "quote_sha256": "64e29f148fc1a30f84c1a4116f2e803661067e815f5bbf35c39557e5ad4a4bcf",
+       "raw_file": "raw/67_2.txt",
+       "page_sha256": "b9cf75cdde350d7797a4615b1400b9a9a08d562f0474f775b017cf5b7d27cd1a"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "key_pair_jwt",
+     "oauth",
+     "programmatic_access_token"
+    ],
+    "access": "account required; free trial available",
+    "api_types": [
+     "rest",
+     "sql_api"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "account setup, role/RBAC grants; AI features gated on trial until card added"
+   },
+   "prior_record_corrections": [
+    "Prior \"paid_account_required\" is contradicted: docs describe a no-payment trial account (but AI features disabled until card added).",
+    "Prior \"MCP GA\": GA not found in page text."
+   ],
+   "open_questions": [
+    "Trial duration/credits.",
+    "Rate limits."
+   ]
+  },
+  {
+   "app_id": 69,
+   "name": "Datadog",
+   "identity_note": "Datadog API (docs.datadoghq.com/api) and Datadog MCP Server.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "API key + application key; also OAuth2 clients and Personal Access Tokens listed; MCP uses OAuth login, optional API/app keys",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+       "title": "API and Application Keys",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:03Z",
+       "quote": "in conjunction with your organization’s API key, give users access to Datadog’s programmatic API.",
+       "quote_sha256": "756547f1d46aa285bf6bac72edb026360d8a3bc731f467e1b57e699385104107",
+       "raw_file": "raw/69_1.txt",
+       "page_sha256": "e08a600d16ede1955d7c8d6b3b7faf7644228029bcbe9e56151628a3d33543ac"
+      },
+      {
+       "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+       "title": "API and Application Keys",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:03Z",
+       "quote": "Personal Access Tokens",
+       "quote_sha256": "958113fa425c81fe73af29c0f3c5785a9d56146472fad08b470e175b064a5bf7",
+       "raw_file": "raw/69_1.txt",
+       "page_sha256": "e08a600d16ede1955d7c8d6b3b7faf7644228029bcbe9e56151628a3d33543ac"
+      },
+      {
+       "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+       "title": "API and Application Keys",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:03Z",
+       "quote": "OAuth2 in Datadog",
+       "quote_sha256": "d397965ba5c28e63fa53143f9d94c2c87025ab8d160a64c33aca853a101f4c56",
+       "raw_file": "raw/69_1.txt",
+       "page_sha256": "e08a600d16ede1955d7c8d6b3b7faf7644228029bcbe9e56151628a3d33543ac"
+      },
+      {
+       "url": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+       "title": "Set Up the Datadog MCP Server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:04Z",
+       "quote": "Alternatively, set the MCP Server domain (and optionally Datadog API and application keys) as environment variables before starting Claude Code.",
+       "quote_sha256": "4ca1aad4dbbdd4d73944190df31cd6795bdae7c5582f7e39ba7b8146016eca85",
+       "raw_file": "raw/69_2.txt",
+       "page_sha256": "efb616b6f53ffbaddfc800ee27097ae8afffc6273bb858ea3f4f8599827cb492"
+      }
+     ],
+     "note": "PAT/OAuth quotes are nav headings only; phase-out of application keys not verified."
+    },
+    {
+     "field": "access",
+     "value": "free trial exists; plan requirement for API/MCP not verified",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+       "title": "API and Application Keys",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:33:03Z",
+       "quote": "FREE TRIAL",
+       "quote_sha256": "0b4ec93047481652622bbd07fc5f287ab88986e9546fb1e51d6c7cb3b3d8e2d5",
+       "raw_file": "raw/69_1.txt",
+       "page_sha256": "e08a600d16ede1955d7c8d6b3b7faf7644228029bcbe9e56151628a3d33543ac"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "rest with official client libraries",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.datadoghq.com/api/latest/",
+       "title": "Datadog API Reference",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:17Z",
+       "quote": "By default, the Datadog API Docs show examples in cURL. Select one of our official",
+       "quote_sha256": "8dbbce0f8fc2b858f2d82b23931f46fdfe1aad32a3646ad827f5aa25cfc53b47",
+       "raw_file": "raw/69_4.txt",
+       "page_sha256": "a612c9058b4c9e1bed736e710d79975763558f4e0abe6ec9e65437b5c9c1c428"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Many endpoints rate limited; 429 on exceed; per-endpoint buckets",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.datadoghq.com/api/latest/rate-limits/",
+       "title": "Rate Limits - Datadog API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:16Z",
+       "quote": "Many API endpoints are rate limited. Once you exceed a certain number of requests in a specific period, Datadog returns an error.",
+       "quote_sha256": "9ef0c733165156b2a50046d0f9279ca83e2a3e70c59cfe38beb3a7aa44ca98f6",
+       "raw_file": "raw/69_3.txt",
+       "page_sha256": "0b55e243b65aa400dbe1df853975037fbbd860da11dd43566754e7b3475c8c63"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official docs page for Datadog MCP Server; ChatGPT app in Preview; site support varies",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+       "title": "Set Up the Datadog MCP Server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:04Z",
+       "quote": "Learn how to set up and configure the Datadog MCP Server, which lets you retrieve telemetry insights and manage platform features directly from AI-powered clients.",
+       "quote_sha256": "e2866bce9deceab95efc168104b98858de944fc6c8607e09ef30e058a81a22df",
+       "raw_file": "raw/69_2.txt",
+       "page_sha256": "efb616b6f53ffbaddfc800ee27097ae8afffc6273bb858ea3f4f8599827cb492"
+      },
+      {
+       "url": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+       "title": "Set Up the Datadog MCP Server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:04Z",
+       "quote": "The Datadog ChatGPT app is in Preview. During the Preview, it is available for US1 customers only.",
+       "quote_sha256": "2d2947449e2743f5399387a096a788e8635676acbe067c8cd01ae35583199d08",
+       "raw_file": "raw/69_2.txt",
+       "page_sha256": "efb616b6f53ffbaddfc800ee27097ae8afffc6273bb858ea3f4f8599827cb492"
+      }
+     ],
+     "note": "Preview wording applies to ChatGPT app; MCP server allow-listing not found."
+    },
+    {
+     "field": "buildability",
+     "value": "conditional: org API+app keys; MCP not supported on all sites",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+       "title": "Set Up the Datadog MCP Server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:04Z",
+       "quote": "Datadog MCP Server is not supported for your selected site (",
+       "quote_sha256": "7b7a99e8d6604456b4003a149cd98cdb9dd3addfb915680123b1cd29274b09fa",
+       "raw_file": "raw/69_2.txt",
+       "page_sha256": "efb616b6f53ffbaddfc800ee27097ae8afffc6273bb858ea3f4f8599827cb492"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "api_key+application_key",
+     "oauth2",
+     "personal_access_token",
+     "mcp: oauth"
+    ],
+    "access": "unknown beyond free trial",
+    "api_types": [
+     "rest",
+     "sdk"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "site/region support for MCP; key management"
+   },
+   "prior_record_corrections": [
+    "Prior \"MCP preview allow-listing\" not found in page; only ChatGPT app is labeled Preview.",
+    "Prior \"application keys being phased out\" not verified from fetched pages."
+   ],
+   "open_questions": [
+    "Whether PAT/OAuth replace app keys.",
+    "Whether API access needs a paid plan."
+   ]
+  },
+  {
+   "app_id": 71,
+   "name": "Notion",
+   "identity_note": "Notion API and hosted MCP (developers.notion.com).",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "Personal access token, internal connection token (Bearer), OAuth 2.0 (public/OAuth integration); MCP uses OAuth 2.0 with MCP-only tokens",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.notion.com/guides/get-started/getting-started",
+       "title": "Notion connections and personal access tokens",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:36Z",
+       "quote": "Use a personal access token for scripts, tools, and Workers that run with your Notion permissions.",
+       "quote_sha256": "c8d768f90621853f279fe28cfe85b65a7e671435b19f6d5839e5ec97e7b30fab",
+       "raw_file": "raw/71_4.txt",
+       "page_sha256": "4f78b1f528c7df5d68bb2481ddf86424b9807131698bc9e723d195cc832699a2"
+      },
+      {
+       "url": "https://developers.notion.com/guides/get-started/authorization",
+       "title": "Notion API authorization",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:27Z",
+       "quote": "Bearer {INTEGRATION_TOKEN}",
+       "quote_sha256": "2157b4ff416eb6fc47e5fbac4bfae75ddfbaa23d669bcd2328312fa600c1d76b",
+       "raw_file": "raw/71_1.txt",
+       "page_sha256": "7bac3276d72ea0d669e2476b8e3579e13361e63da0138b2d7a67bfca53b17b4f"
+      },
+      {
+       "url": "https://developers.notion.com/guides/get-started/getting-started",
+       "title": "Notion connections and personal access tokens",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:36Z",
+       "quote": "Use a public integration so users in any workspace can authorize your app through OAuth.",
+       "quote_sha256": "e77102446eae64a27069449dca0938c7ac374641becc76c9993eb3f48c3d86e3",
+       "raw_file": "raw/71_4.txt",
+       "page_sha256": "4f78b1f528c7df5d68bb2481ddf86424b9807131698bc9e723d195cc832699a2"
+      },
+      {
+       "url": "https://developers.notion.com/guides/mcp/build-mcp-client",
+       "title": "Build an MCP client that connects to Notion",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "An MCP access token works only with Notion MCP.",
+       "quote_sha256": "a326769f78580d797a784ce4eed893f4e6c96edb32bb7e1a6a0683aa9553b35f",
+       "raw_file": "raw/71_2.txt",
+       "page_sha256": "b5ed0b746945f73277dbb75eb4bb7074fddf3c9a305c53efca1739e0385fa2d3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "self_serve in a workspace; creating an internal connection requires workspace owner",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.notion.com/guides/get-started/authorization",
+       "title": "Notion API authorization",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:27Z",
+       "quote": "You are required to be a workspace owner to create a connection.",
+       "quote_sha256": "aab494bfb39e7406b75b9a40027fa61bcbe6f4ad10d62147ca7c9c829cd75dd8",
+       "raw_file": "raw/71_1.txt",
+       "page_sha256": "7bac3276d72ea0d669e2476b8e3579e13361e63da0138b2d7a67bfca53b17b4f"
+      }
+     ],
+     "note": "Plan-level API availability not quoted."
+    },
+    {
+     "field": "api_types",
+     "value": "rest, sdk (JavaScript), webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.notion.com/guides/get-started/getting-started",
+       "title": "Notion connections and personal access tokens",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:36Z",
+       "quote": "Notion SDK for JavaScript",
+       "quote_sha256": "efcf9b49ca171ad17d459917f203f5d62e77ecb456c2425f31966929bf9512a6",
+       "raw_file": "raw/71_4.txt",
+       "page_sha256": "4f78b1f528c7df5d68bb2481ddf86424b9807131698bc9e723d195cc832699a2"
+      },
+      {
+       "url": "https://developers.notion.com/guides/get-started/getting-started",
+       "title": "Notion connections and personal access tokens",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:36Z",
+       "quote": "Webhooks",
+       "quote_sha256": "45808d75bf8911fa21637f9dd3f0dace1877748211976b5d61fcc5c15db594d0",
+       "raw_file": "raw/71_4.txt",
+       "page_sha256": "4f78b1f528c7df5d68bb2481ddf86424b9807131698bc9e723d195cc832699a2"
+      }
+     ],
+     "note": "Webhooks quote is nav label."
+    },
+    {
+     "field": "rate_limits",
+     "value": "per-connection ~3 req/s; per-workspace 600/min (Business/Enterprise) or 180/min (other plans)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.notion.com/reference/request-limits",
+       "title": "Request limits - Notion Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:34Z",
+       "quote": "The Notion API enforces two rate limits: a per-connection limit and a per-workspace limit.",
+       "quote_sha256": "58165de1bf733004d860a4a8f4b490a8f5e12ce5514c8a1d9406345f28adbc5a",
+       "raw_file": "raw/71_3.txt",
+       "page_sha256": "b2face6f74b4b8e5d23e41aae7d016e7c3081d1394da3c53c431a6e8813ccac3"
+      },
+      {
+       "url": "https://developers.notion.com/reference/request-limits",
+       "title": "Request limits - Notion Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:34Z",
+       "quote": "600 requests per minute (an average of 10 per second)",
+       "quote_sha256": "38a5af64ca262593901f3d846130ca446d779c0ad103a8a36cc6b17ac343216a",
+       "raw_file": "raw/71_3.txt",
+       "page_sha256": "b2face6f74b4b8e5d23e41aae7d016e7c3081d1394da3c53c431a6e8813ccac3"
+      },
+      {
+       "url": "https://developers.notion.com/reference/request-limits",
+       "title": "Request limits - Notion Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:34Z",
+       "quote": "180 requests per minute (an average of 3 per second)",
+       "quote_sha256": "b9193a4946c027500b8fb70e51d09784e45b591ad64b25942425f5985cbf8fe2",
+       "raw_file": "raw/71_3.txt",
+       "page_sha256": "b2face6f74b4b8e5d23e41aae7d016e7c3081d1394da3c53c431a6e8813ccac3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: hosted server at https://mcp.notion.com/mcp (Streamable HTTP)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.notion.com/guides/mcp/build-mcp-client",
+       "title": "Build an MCP client that connects to Notion",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "Notion provides a hosted",
+       "quote_sha256": "f8cdc92cd8305c9982e62a5cbf763557513813fdaf5f220d3cbf2d5901cd3a81",
+       "raw_file": "raw/71_2.txt",
+       "page_sha256": "b5ed0b746945f73277dbb75eb4bb7074fddf3c9a305c53efca1739e0385fa2d3"
+      },
+      {
+       "url": "https://developers.notion.com/guides/mcp/build-mcp-client",
+       "title": "Build an MCP client that connects to Notion",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "https://mcp.notion.com/mcp",
+       "quote_sha256": "1cbd18bf1818c780c9568384b0324fff99a5335bd4a17e102be74712b007e62c",
+       "raw_file": "raw/71_2.txt",
+       "page_sha256": "b5ed0b746945f73277dbb75eb4bb7074fddf3c9a305c53efca1739e0385fa2d3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "yes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.notion.com/guides/get-started/getting-started",
+       "title": "Notion connections and personal access tokens",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:36Z",
+       "quote": "Use a personal access token for scripts, tools, and Workers that run with your Notion permissions.",
+       "quote_sha256": "c8d768f90621853f279fe28cfe85b65a7e671435b19f6d5839e5ec97e7b30fab",
+       "raw_file": "raw/71_4.txt",
+       "page_sha256": "4f78b1f528c7df5d68bb2481ddf86424b9807131698bc9e723d195cc832699a2"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "personal_access_token",
+     "internal_connection_token",
+     "oauth2",
+     "mcp: oauth2 (MCP-only token)"
+    ],
+    "access": "self_serve; workspace owner for internal connections",
+    "api_types": [
+     "rest",
+     "sdk",
+     "webhooks"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "MCP tokens cannot call REST API"
+   },
+   "prior_record_corrections": [
+    "Prior omitted personal access tokens (now documented).",
+    "Prior \"open-source server no longer maintained\" not verified from fetched docs."
+   ],
+   "open_questions": [
+    "Plan restrictions for API/MCP."
+   ]
+  },
+  {
+   "app_id": 73,
+   "name": "Linear",
+   "identity_note": "Linear GraphQL API (linear.app/developers).",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "Personal API key, OAuth2, OAuth client credentials; MCP: OAuth 2.1 or bearer/API key",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://linear.app/developers/graphql",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:40Z",
+       "quote": "The Linear API supports personal API keys and OAuth2 authentication.",
+       "quote_sha256": "d265a1d35634315589b7a88d6d801b56faceb4657b5924ee87c786b2d14e0f39",
+       "raw_file": "raw/73_2.txt",
+       "page_sha256": "d9f30c5ab3c15d21884e5bdf346d0d77000fcc43261f82fb23eb4a49ddd6628b"
+      },
+      {
+       "url": "https://linear.app/developers/graphql",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:40Z",
+       "quote": "Authorization: <API_KEY>",
+       "quote_sha256": "777521a2528766bd91767be3aa1819c0b3227e237e832aa958957223e0d4ed85",
+       "raw_file": "raw/73_2.txt",
+       "page_sha256": "d9f30c5ab3c15d21884e5bdf346d0d77000fcc43261f82fb23eb4a49ddd6628b"
+      },
+      {
+       "url": "https://linear.app/developers/oauth-2-0-authentication",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:38Z",
+       "quote": "Linear supports OAuth2 authentication, which is recommended if you’re building applications to integrate with Linear.",
+       "quote_sha256": "880c663d29b6ae2af762fee5a40106dec6ac63f9b8d69da572d4c4e7c319f95d",
+       "raw_file": "raw/73_1.txt",
+       "page_sha256": "56553214576682a55e88d59fa9d2a77f6b6590051add7b539a7f6aa2f2d35ab3"
+      },
+      {
+       "url": "https://linear.app/developers/oauth-2-0-authentication",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:38Z",
+       "quote": "Client credentials token",
+       "quote_sha256": "e8dafa44e547e405a4480944ae962e47bb4a55937147f6edb71ce53248d4671e",
+       "raw_file": "raw/73_1.txt",
+       "page_sha256": "56553214576682a55e88d59fa9d2a77f6b6590051add7b539a7f6aa2f2d35ab3"
+      }
+     ],
+     "note": "Client credentials quote is a heading."
+    },
+    {
+     "field": "access",
+     "value": "Self-serve key creation in workspace Security & access settings; plan restrictions not checked",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://linear.app/developers/graphql",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:40Z",
+       "quote": "For personal scripts API keys are the easiest way to access the API.",
+       "quote_sha256": "ab5f577b0b90e0ee35bb88d6a296c4fc2da8c629c323d331ddf6d617e2da1697",
+       "raw_file": "raw/73_2.txt",
+       "page_sha256": "d9f30c5ab3c15d21884e5bdf346d0d77000fcc43261f82fb23eb4a49ddd6628b"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "graphql, sdk (TypeScript), webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://linear.app/developers/graphql",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:40Z",
+       "quote": "Linear’s public API is built using GraphQL.",
+       "quote_sha256": "790d9824c0754da3e2dba31ff9e72656a5da36d908a26aed6ff8edaa4d698f57",
+       "raw_file": "raw/73_2.txt",
+       "page_sha256": "d9f30c5ab3c15d21884e5bdf346d0d77000fcc43261f82fb23eb4a49ddd6628b"
+      },
+      {
+       "url": "https://linear.app/developers/oauth-2-0-authentication",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:38Z",
+       "quote": "TypeScript SDK",
+       "quote_sha256": "40e053213503776c48153ea296cfb191ecf3acae0be767b93a7e6455982c4a77",
+       "raw_file": "raw/73_1.txt",
+       "page_sha256": "56553214576682a55e88d59fa9d2a77f6b6590051add7b539a7f6aa2f2d35ab3"
+      },
+      {
+       "url": "https://linear.app/developers/oauth-2-0-authentication",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:38Z",
+       "quote": "Webhooks",
+       "quote_sha256": "45808d75bf8911fa21637f9dd3f0dace1877748211976b5d61fcc5c15db594d0",
+       "raw_file": "raw/73_1.txt",
+       "page_sha256": "56553214576682a55e88d59fa9d2a77f6b6590051add7b539a7f6aa2f2d35ab3"
+      }
+     ],
+     "note": "SDK/webhooks quotes are nav labels."
+    },
+    {
+     "field": "rate_limits",
+     "value": "2,500 requests/hour with API key; 600/hour unauthenticated",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://linear.app/developers/rate-limiting",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:41Z",
+       "quote": "2,500 requests per hour",
+       "quote_sha256": "8fad862c2b2676ca5befda90c2ab21fe34e8f60d16396c1f785ab0657ecd0a9d",
+       "raw_file": "raw/73_3.txt",
+       "page_sha256": "090363e84c420acb3d93862788f164400cb8b41de35d713444842be4ba316fe1"
+      },
+      {
+       "url": "https://linear.app/developers/rate-limiting",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:41Z",
+       "quote": "600 requests per hour",
+       "quote_sha256": "728be41c39dde408dd1eb5ab61945442da6b5de206b5f4b1ac5118de13adfcf7",
+       "raw_file": "raw/73_3.txt",
+       "page_sha256": "090363e84c420acb3d93862788f164400cb8b41de35d713444842be4ba316fe1"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: https://mcp.linear.app/mcp (Streamable HTTP, OAuth 2.1; also readonly endpoint)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://linear.app/docs/mcp",
+       "title": "MCP server – Linear Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:43Z",
+       "quote": "Our MCP server uses Streamable HTTP as the primary transport, accessible at the following address.",
+       "quote_sha256": "443875978ac9365c2e48450b36d7e647f36ecc4dc7f543c8d703a24fd5d3411a",
+       "raw_file": "raw/73_4.txt",
+       "page_sha256": "233506d5f479e2d8e73e94c1b26c2f9456c7d2b2d670e24c3509defeba92e6dc"
+      },
+      {
+       "url": "https://linear.app/docs/mcp",
+       "title": "MCP server – Linear Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:43Z",
+       "quote": "https://mcp.linear.app/mcp",
+       "quote_sha256": "fb39103c7d2edac291c92d23247e0a7d90470b1b349c07b146aba4ee2c81591f",
+       "raw_file": "raw/73_4.txt",
+       "page_sha256": "233506d5f479e2d8e73e94c1b26c2f9456c7d2b2d670e24c3509defeba92e6dc"
+      },
+      {
+       "url": "https://linear.app/docs/mcp",
+       "title": "MCP server – Linear Docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:43Z",
+       "quote": "The interactive setup flow uses OAuth 2.1 with dynamic client registration.",
+       "quote_sha256": "d29435b31f1cc0eedf9caec5b532cbaaa9c687ca8df9c0936418e95eb3041a40",
+       "raw_file": "raw/73_4.txt",
+       "page_sha256": "233506d5f479e2d8e73e94c1b26c2f9456c7d2b2d670e24c3509defeba92e6dc"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "yes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://linear.app/developers/graphql",
+       "title": "Skip to content →",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:40Z",
+       "quote": "For personal scripts API keys are the easiest way to access the API.",
+       "quote_sha256": "ab5f577b0b90e0ee35bb88d6a296c4fc2da8c629c323d331ddf6d617e2da1697",
+       "raw_file": "raw/73_2.txt",
+       "page_sha256": "d9f30c5ab3c15d21884e5bdf346d0d77000fcc43261f82fb23eb4a49ddd6628b"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "personal_api_key",
+     "oauth2",
+     "oauth_client_credentials"
+    ],
+    "access": "self_serve (keys in workspace settings)",
+    "api_types": [
+     "graphql",
+     "sdk",
+     "webhooks"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified"
+   },
+   "prior_record_corrections": [
+    "Prior mcp_status not_verified -> official (docs page on linear.app/docs/mcp)."
+   ],
+   "open_questions": [
+    "Signup/plan requirements not fetched."
+   ]
+  },
+  {
+   "app_id": 74,
+   "name": "Jira",
+   "identity_note": "Jira Cloud platform REST API and Atlassian Rovo MCP server.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "Basic auth with email + API token (personal scripts/bots); OAuth 2.0 3LO for apps; MCP OAuth 2.1 or API token",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+       "title": "Security for other integrations",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:44Z",
+       "quote": "Basic authentication uses an API token to authenticate the client. The token is generated from a user's Atlassian Account, encoded, then added to the header for requests to the API.",
+       "quote_sha256": "f1c1b52a095fe7232ae5b07c84026c19990e1871772bba95bef8eb5aefe6382c",
+       "raw_file": "raw/74_1.txt",
+       "page_sha256": "06d4a6af0bff1411e5c4abace05d1a531913b1d837edc70f068b05bc5e7bddaf"
+      },
+      {
+       "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+       "title": "Security for other integrations",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:44Z",
+       "quote": "OAuth 2.0 authorization code grants, also known as three-legged OAuth, is a token-based method for authentication and authorization.",
+       "quote_sha256": "47ee4b5734e4b00a82263a72ba452f16be3a36fc1461c44e667a640080c3f3e2",
+       "raw_file": "raw/74_1.txt",
+       "page_sha256": "06d4a6af0bff1411e5c4abace05d1a531913b1d837edc70f068b05bc5e7bddaf"
+      },
+      {
+       "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+       "title": "Atlassian Rovo MCP Overview",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:53Z",
+       "quote": "The server initiates a secure OAuth 2.1 authorization flow (or accepts an API token for headless authentication).",
+       "quote_sha256": "c9c7f2f55f8a631dfd719c15dd64c8d417bb8ec0a9996812b74d20252db0c863",
+       "raw_file": "raw/74_5.txt",
+       "page_sha256": "c7c1723365ee1f8ad010c5c889da5e45697e96e4fa529a6bb63016cc816d45a3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": "No signup/plan page fetched."
+    },
+    {
+     "field": "api_types",
+     "value": "rest (v3), webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+       "title": "The Jira Cloud platform REST API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:50Z",
+       "quote": "The Jira REST API enables you to interact with Jira programmatically.",
+       "quote_sha256": "d458e758f6641419288185964f31bb452e9a47fcedd269b1a00aa3daec3d9afe",
+       "raw_file": "raw/74_3.txt",
+       "page_sha256": "9b8e947f2d09649ad6620b0ff55d9b440a21c2fde704399cfd7d14b53be98551"
+      },
+      {
+       "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+       "title": "The Jira Cloud platform REST API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:50Z",
+       "quote": "Webhooks",
+       "quote_sha256": "45808d75bf8911fa21637f9dd3f0dace1877748211976b5d61fcc5c15db594d0",
+       "raw_file": "raw/74_3.txt",
+       "page_sha256": "9b8e947f2d09649ad6620b0ff55d9b440a21c2fde704399cfd7d14b53be98551"
+      }
+     ],
+     "note": "Webhooks quote is nav label."
+    },
+    {
+     "field": "rate_limits",
+     "value": "Points-based/tiered quota limits enforced from March 2, 2026 for Forge/Connect/OAuth 3LO apps; API-token traffic stays on burst limits",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+       "title": "Rate limiting",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:46Z",
+       "quote": "Enforcement of the new points-based API rate limits and tiered quota rate limits for Jira and Confluence Cloud apps will begin on March 2, 2026",
+       "quote_sha256": "64212ab9c6b0e66881acade8991232963f399e7c0768fae9ffe6b1b851093d0c",
+       "raw_file": "raw/74_2.txt",
+       "page_sha256": "3db3826ffa98051f704c925a53115bee353c55f5308b3b51d79826a23fcf0888"
+      },
+      {
+       "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+       "title": "Rate limiting",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:46Z",
+       "quote": "API token-based traffic is not affected by this change, and will continue to be governed by existing burst rate limits.",
+       "quote_sha256": "3038c3a98931f3f7c6fe10877423e3537e688a33d4202d76329027b54e5c54ef",
+       "raw_file": "raw/74_2.txt",
+       "page_sha256": "3db3826ffa98051f704c925a53115bee353c55f5308b3b51d79826a23fcf0888"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: Atlassian Rovo MCP server at https://mcp.atlassian.com/v2/mcp; v1 migration to v2",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+       "title": "Atlassian Rovo MCP Overview",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:53Z",
+       "quote": "server that connects AI-powered clients to your Atlassian Cloud apps.",
+       "quote_sha256": "3337983fe12ac5d6b8f0e8da4b975c360d1280967a746af372db6402ef73e151",
+       "raw_file": "raw/74_5.txt",
+       "page_sha256": "c7c1723365ee1f8ad010c5c889da5e45697e96e4fa529a6bb63016cc816d45a3"
+      },
+      {
+       "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+       "title": "Atlassian Rovo MCP Overview",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:53Z",
+       "quote": "https://mcp.atlassian.com/v2/mcp",
+       "quote_sha256": "159feb93f2e44410b71947185c48c1ed7219cb1c8926e144f73a92a6763e483f",
+       "raw_file": "raw/74_5.txt",
+       "page_sha256": "c7c1723365ee1f8ad010c5c889da5e45697e96e4fa529a6bb63016cc816d45a3"
+      },
+      {
+       "url": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+       "title": "Get started with the Atlassian MCP server | Atlassian AI Gateway | Atlassian Support",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:52Z",
+       "quote": "On March 1, 2027 any existing utilization of v1 will automatically start to expose and utilize v2 tools.",
+       "quote_sha256": "1dda5294a229a7af561ec071a00df99fbad8a0a25543ac9b11f7fcf66a6468fe",
+       "raw_file": "raw/74_4.txt",
+       "page_sha256": "ce4f8855051624e5e3c86048dc5695f7adc9e2c29997b58b8443ae57c3f838a0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "admin enablement of API-token MCP auth",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Prior said org admin must allow; \"admin\" not found on fetched MCP pages."
+    },
+    {
+     "field": "3LO tokens vs MCP",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Prior cited a community report; not checked in official pages."
+    },
+    {
+     "field": "buildability",
+     "value": "yes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+       "title": "Security for other integrations",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:44Z",
+       "quote": "Basic authentication",
+       "quote_sha256": "35e4efb0785852051910384ef368f584ac0590a833a633af100f0aeed5cabe24",
+       "raw_file": "raw/74_1.txt",
+       "page_sha256": "06d4a6af0bff1411e5c4abace05d1a531913b1d837edc70f068b05bc5e7bddaf"
+      }
+     ],
+     "note": "Judgement from API-token basic auth."
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "basic_email_api_token",
+     "oauth2_3lo",
+     "mcp: oauth2.1",
+     "mcp: api_token"
+    ],
+    "access": "unknown",
+    "api_types": [
+     "rest",
+     "webhooks"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "MCP v1->v2 endpoint migration; admin policy for token auth not verified"
+   },
+   "prior_record_corrections": [
+    "Prior \"admin must enable token auth for MCP\" and \"MCP does not accept 3LO tokens\" not verified in official pages."
+   ],
+   "open_questions": [
+    "Plan/free-tier access."
+   ]
+  },
+  {
+   "app_id": 77,
+   "name": "ClickUp",
+   "identity_note": "ClickUp public API v2/v3 (developer.clickup.com).",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "Personal API token (pk_..., never expire) or OAuth2 authorization code; MCP setup uses OAuth",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.clickup.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "Authenticate to the ClickUp API using a personal token or OAuth.",
+       "quote_sha256": "639a1195e7faeb0b72d7ec069321c2a6ac8347610848c2ae20ce2e47732292b7",
+       "raw_file": "raw/77_1.txt",
+       "page_sha256": "f40af1b18656cb909ac02ee3f600e7be11bdd170bbb999106a4e47a6c6a219c3"
+      },
+      {
+       "url": "https://developer.clickup.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "Personal tokens never expire.",
+       "quote_sha256": "32c3a82d440fb144cccf7309271fabaa683c08efac0aa1cf891ee7a5190943c9",
+       "raw_file": "raw/77_1.txt",
+       "page_sha256": "f40af1b18656cb909ac02ee3f600e7be11bdd170bbb999106a4e47a6c6a219c3"
+      },
+      {
+       "url": "https://developer.clickup.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources.",
+       "quote_sha256": "c29a45e18d6f1948f1868b04ed8e9532e150e646405eed9e34dfdf3552d2c4f2",
+       "raw_file": "raw/77_1.txt",
+       "page_sha256": "f40af1b18656cb909ac02ee3f600e7be11bdd170bbb999106a4e47a6c6a219c3"
+      },
+      {
+       "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1.md",
+       "title": "---",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:34:44Z",
+       "quote": "8. For Authentication, select **OAuth**.",
+       "quote_sha256": "ac64538b7a59cefbd8cea2d0f500ef8f86d304a316e905b56c26c915b8934b5e",
+       "raw_file": "raw/77_4.txt",
+       "page_sha256": "aa7f85d283ca30597aaf6c42eefd78ac56cae2a23fb460000b393dfd9557c2bd"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "self_serve: API available on all plans; need a ClickUp account to generate token",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.clickup.com/docs/apis-available-by-plan.md",
+       "title": "---",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:34:44Z",
+       "quote": "Our Public API is available on all [ClickUp Plans](https://clickup.com/pricing) . Some endpoints and parameters are limited by plan.",
+       "quote_sha256": "2ee2a5c5ba827497edc834a5d868f32358ffaad25fdd7b2303fde5c8230b9b5b",
+       "raw_file": "raw/77_5.txt",
+       "page_sha256": "073920baa869ea7faf06bed2ad5ad45189b42245260d665a839893e6b129bff9"
+      },
+      {
+       "url": "https://developer.clickup.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "You'll need to sign in to your ClickUp account in order to generate or regenerate a token.",
+       "quote_sha256": "720c1abb07844a1485a691ca3158acd3d21007420e1e2848c625f52cbd43461f",
+       "raw_file": "raw/77_1.txt",
+       "page_sha256": "f40af1b18656cb909ac02ee3f600e7be11bdd170bbb999106a4e47a6c6a219c3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "rest (v2/v3), webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.clickup.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "ClickUp API v2 and v3 Terminology",
+       "quote_sha256": "45ac3b2e5568c92f15f3b5451d1760300b8e3de2e252bc4aff3ec240c1d45b23",
+       "raw_file": "raw/77_1.txt",
+       "page_sha256": "f40af1b18656cb909ac02ee3f600e7be11bdd170bbb999106a4e47a6c6a219c3"
+      },
+      {
+       "url": "https://developer.clickup.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "Webhook signature",
+       "quote_sha256": "19cf0b88d765f85893b975c34018283e48de2dc866c9adf53110b46d864710dd",
+       "raw_file": "raw/77_1.txt",
+       "page_sha256": "f40af1b18656cb909ac02ee3f600e7be11bdd170bbb999106a4e47a6c6a219c3"
+      }
+     ],
+     "note": "Nav labels."
+    },
+    {
+     "field": "rate_limits",
+     "value": "Per token, by Workspace plan: 100/min (Free/Unlimited/Business) up to 10,000/min (Enterprise)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.clickup.com/docs/rate-limits",
+       "title": "Rate Limits",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "The ClickUp API applies rate limits per token. These limits apply to both personal and OAuth tokens and vary by",
+       "quote_sha256": "b63ab6de924c98eadb9701ef12d039ecae703691fa91d5b67545e990f7346c02",
+       "raw_file": "raw/77_2.txt",
+       "page_sha256": "4111f1c51419bd6e3d0ce99f19a5c22217b39e19ff93d2e5b277604131d6f3d2"
+      },
+      {
+       "url": "https://developer.clickup.com/docs/rate-limits",
+       "title": "Rate Limits",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "* requests per minute per token.",
+       "quote_sha256": "a38e747720e0fd744f7eeee4485310237f9abcf5932dc271b0af71ae828af99c",
+       "raw_file": "raw/77_2.txt",
+       "page_sha256": "4111f1c51419bd6e3d0ce99f19a5c22217b39e19ff93d2e5b277604131d6f3d2"
+      }
+     ],
+     "note": "Table numbers on separate lines; not quotable as one string."
+    },
+    {
+     "field": "sandbox",
+     "value": "",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: https://mcp.clickup.com/mcp, available on all plans",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+       "title": "ClickUp's MCP Server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:56Z",
+       "quote": "Our MCP server URL is",
+       "quote_sha256": "95d9cf4694804165644b4123c95399638ec81968a1f31c3bba20cb88ec6321e7",
+       "raw_file": "raw/77_3.txt",
+       "page_sha256": "81dcbd770ee5b846163b4c1879588e4cfac147dba8d70d859a8104e97454d2d9"
+      },
+      {
+       "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+       "title": "ClickUp's MCP Server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:56Z",
+       "quote": "https://mcp.clickup.com/mcp",
+       "quote_sha256": "5a383e71c3985e038846bc95cf8d3a7204e9380eb90b01a74c28cfbd79413ae5",
+       "raw_file": "raw/77_3.txt",
+       "page_sha256": "81dcbd770ee5b846163b4c1879588e4cfac147dba8d70d859a8104e97454d2d9"
+      },
+      {
+       "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+       "title": "ClickUp's MCP Server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:56Z",
+       "quote": "ClickUp's MCP Server is available on",
+       "quote_sha256": "4e440ce022a3e9687986fcdd34a4b64c2486fed622a35cd5f66613dfd410c01e",
+       "raw_file": "raw/77_3.txt",
+       "page_sha256": "81dcbd770ee5b846163b4c1879588e4cfac147dba8d70d859a8104e97454d2d9"
+      }
+     ],
+     "note": "\"all plans\" is on the following line."
+    },
+    {
+     "field": "MCP OAuth-only / daily caps",
+     "value": "",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Prior claimed OAuth-only MCP and daily caps without Everything AI add-on; only setup step \"select OAuth\" captured; caps not found."
+    },
+    {
+     "field": "buildability",
+     "value": "yes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.clickup.com/docs/authentication",
+       "title": "Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:55Z",
+       "quote": "Personal tokens never expire.",
+       "quote_sha256": "32c3a82d440fb144cccf7309271fabaa683c08efac0aa1cf891ee7a5190943c9",
+       "raw_file": "raw/77_1.txt",
+       "page_sha256": "f40af1b18656cb909ac02ee3f600e7be11bdd170bbb999106a4e47a6c6a219c3"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "personal_api_token",
+     "oauth2"
+    ],
+    "access": "self_serve; API on all plans",
+    "api_types": [
+     "rest",
+     "webhooks"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified"
+   },
+   "prior_record_corrections": [
+    "Prior MCP daily-cap blocker not verified; MCP available on all plans per docs."
+   ],
+   "open_questions": [
+    "MCP rate/daily limits."
+   ]
+  }
+ ]
+}

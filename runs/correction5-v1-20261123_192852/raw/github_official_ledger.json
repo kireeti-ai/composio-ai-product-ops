@@ -1,0 +1,51 @@
+[
+ {
+  "url": "https://github.com/github/github-mcp-server",
+  "requested_at": "2026-11-23T19:29:32+05:30",
+  "charge_usd": 0.0,
+  "status": "error",
+  "error": "KeyError: 'data'",
+  "completed_at": "2026-11-23T19:29:40+05:30"
+ },
+ {
+  "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "requested_at": "2026-11-23T19:29:01+05:30",
+  "charge_usd": 0.0,
+  "status": "ok",
+  "final_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "title": "Authenticating to the REST API - GitHub Docs",
+  "chars": 10245,
+  "sha256": "5815f55022caeb251aab479c7fa86fe8f9bede7e9353d17811bd5bf391cdb730",
+  "completed_at": "2026-11-23T19:29:03+05:30"
+ },
+ {
+  "url": "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+  "requested_at": "2026-11-23T19:29:05+05:30",
+  "charge_usd": 0.0,
+  "status": "ok",
+  "final_url": "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+  "title": "GitHub's plans - GitHub Docs",
+  "chars": 7688,
+  "sha256": "fe8e19a4129119f4a24e94b815163000787961eecd1c73c266b354c0050af2fa",
+  "completed_at": "2026-11-23T19:29:12+05:30"
+ },
+ {
+  "url": "https://docs.github.com/en/copilot/concepts/context/mcp",
+  "requested_at": "2026-11-23T19:29:14+05:30",
+  "charge_usd": 0.0,
+  "status": "ok",
+  "final_url": "https://docs.github.com/en/copilot/concepts/customizations/mcp",
+  "title": "Model Context Protocol (MCP) - GitHub Docs",
+  "chars": 14884,
+  "sha256": "e131341bcfecf13269f402dd653227ae9201223b3657ffdb87d1b62eb7e7e959",
+  "completed_at": "2026-11-23T19:29:16+05:30"
+ },
+ {
+  "url": "https://raw.githubusercontent.com/github/github-mcp-server/main/README.md",
+  "requested_at": "2026-11-23T19:29:42+05:30",
+  "charge_usd": 0.0,
+  "status": "error",
+  "error": "KeyError: 'data'",
+  "completed_at": "2026-11-23T19:29:43+05:30"
+ }
+]

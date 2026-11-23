@@ -1,0 +1,74 @@
+{
+ "id": 1,
+ "name": "Salesforce",
+ "pass1_sha": "852bfc94be965273",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts state Bulk API 2.0 supports all OAuth 2.0 flows.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Access token is described as a \u201cbearer token\u201d used for authentication.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Access is available through a Developer Edition org or development sandbox.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt says complete steps in Developer Edition org or sandbox",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "REST API and Bulk API 2.0 are described as requiring access tokens",
+    "needs_human": false
+   },
+   {
+    "item": "soap",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "SOAP API login() call is referenced for obtaining a session ID",
+    "needs_human": false
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "CLI is shown for convenience, but not stated as the only supported method",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt does not mention an official MCP for Salesforce.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

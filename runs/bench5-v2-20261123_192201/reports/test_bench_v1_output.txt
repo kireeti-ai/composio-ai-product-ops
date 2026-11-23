@@ -1,0 +1,30 @@
+test01_tpm_rolling_window (__main__.T) ... ok
+test02_rpm (__main__.T) ... ok
+test03_rpd_stops (__main__.T) ... ok
+test04_oversize_request_never_sent (__main__.T) ... ok
+test05_persistence (__main__.T) ... ok
+test06_retry_after_blocks (__main__.T) ... ok
+test07_cap_includes_retries_and_no_starvation (__main__.T) ... ok
+test08_model_mismatch_stops (__main__.T) ... ok
+test09_payment_stops_all (__main__.T) ... ok
+test10_daily_429_stops_provider_no_substitution (__main__.T) ... ok
+test11_nonzero_cost_stops_all (__main__.T) ... ok
+test12_completed_apps_not_rerun (__main__.T) ... ok
+test13_rate_limit_retry_after_respected (__main__.T) ... ok
+test14_ambiguous_429_no_retry (__main__.T) ... ok
+test15_failed_record_scrubs_secrets (__main__.T) ... ok
+test16_log_hash_chain_append_only (__main__.T) ... ok
+test17_pydantic_unknown_vs_not_found (__main__.T) ... ok
+test18_pydantic_enums_match_frozen_schema (__main__.T) ... ok
+test19_quote_validation_flags_fabricated (__main__.T) ... ok
+test20_openrouter_filter (__main__.T) ... ok
+test21_classify_error (__main__.T) ... ok
+test22_reduction_deterministic_and_identical_prompts (__main__.T) ... ok
+test23_groq_prompts_fit_tpm_budget (__main__.T) ... ok
+test24_full_evidence_preserved (__main__.T) ... ok
+test25_no_fallback_models_in_source (__main__.T) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.079s
+
+OK

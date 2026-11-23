@@ -1,0 +1,4 @@
+research_v1_RECONSTRUCTED_not_byte_verified.py: rebuilt in memory by reversing the V1->V2 patch hunks on the on-disk file. It is the best
+estimate of the code that produced the 26 Pass-1 records, NOT a byte-verified copy (no git history existed; the running process memory was not inspectable).
+research_v2_ONDISK_NOT_RUN.py: exact copy of src/research.py as of the snapshot (patched 17:02:26). It never executed; no record was produced by it.
+Other files in this directory are exact copies of src/*.py at snapshot time (verify.py is what generated Pass 2: its mtime 16:31:20 precedes the 16:32:15 process start).

@@ -1,0 +1,13 @@
+{
+ "tag": "groq_orgA",
+ "app": 71,
+ "name": "Notion",
+ "status": "failed",
+ "category": "client_error",
+ "http": 400,
+ "error": "{\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"{\\n  \\\"one_liner\\\": \\\"Notion is a productivity and project management platform that offers a REST API for creating and managing pages, databases, and other workspace content.\\\",\\n  \\\"auth_methods\\\": [\\n    \\\"bearer_token\\\",\\n    \\\"oauth2\\\"\\n  ],\\n  \\\"access\\\": \\\"self_serve_free\\\",\\n  \\\"access_note\\\": \\\"Developers can create personal access tokens (PATs) in the Notion Developer portal without a paid plan.\\\",\\n  \\\"api_types\\\": [\\n    \\\"rest\\\"\\n  ],\\n  \\\"api_breadth\\\": \\\"broad\\\",\\n  \\\"existing_mcp\\\": \\\"none_found\\\",\\n  \\\"buildability\\\": \\\"yes\\\",\\n  \\\"blocker\\\": \\\"none\\\",\\n  \\\"evidence\\\": [\\n    {\\n      \\\"field\\\": \\\"auth_methods\\\",\\n      \\\"url\\\": \\\"https://developers.notion.com/guides/connections-and-tokens/overview\\\",\\n      \\\"quote\\\": \\\"\\\\\\\"Authentication | A token you create for yourself\\\\\\\" (personal access token) and \\\\\\\"Access tokens obtained through OAuth\\\\\\\" (OAuth integration).\\\"\\n    },\\n    {\\n      \\\"field\\\": \\\"access\\\",\\n      \\\"url\\\": \\\"https://developers.notion.com/guides/no",
+ "model": "openai/gpt-oss-120b",
+ "attempt": 10,
+ "retry_after": null,
+ "at": "2026-11-23T19:41:37+05:30"
+}

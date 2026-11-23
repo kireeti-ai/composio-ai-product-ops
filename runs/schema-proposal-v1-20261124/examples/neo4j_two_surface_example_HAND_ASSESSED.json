@@ -1,0 +1,67 @@
+{
+ "id": 66,
+ "name": "Neo4j",
+ "one_liner": "Graph database vendor whose product exposes (a) a REST API to manage Aura cloud instances and (b) an HTTPS Query API that executes Cypher against a database.",
+ "schema_version": "nested-v1-PROPOSAL",
+ "PROVENANCE": "HAND-ASSESSED from stored official pages - NOT a model extraction; illustrative only; Neo4j stays HELD and is not in the 28-app plan",
+ "surfaces": [
+  {
+   "surface_id": "aura_management_api",
+   "surface_name": "Aura Management API",
+   "surface_description": "Manage Aura instances and projects",
+   "auth_methods": [
+    "unknown"
+   ],
+   "access": "unknown",
+   "access_note": "Needs an Aura account; free trial gives $150 credits; credential mechanism and tier availability not retrieved.",
+   "api_types": [
+    "rest"
+   ],
+   "api_breadth": "unknown",
+   "existing_mcp": "unknown",
+   "buildability": "unknown",
+   "blocker": "Authentication page not retrieved",
+   "evidence": [
+    {
+     "field": "api_types",
+     "url": "https://neo4j.com/docs/aura/api/overview/",
+     "quote": "The Aura API allows you to programmatically perform actions on your Aura instances without the need to log in to the Console.",
+     "quote_found": true,
+     "url_in_sources": true
+    }
+   ]
+  },
+  {
+   "surface_id": "database_query_api",
+   "surface_name": "Database Query API",
+   "surface_description": "Execute Cypher over HTTPS against a database",
+   "auth_methods": [
+    "unknown"
+   ],
+   "access": "unknown",
+   "access_note": "Requires a reachable database; no developer registration; Aura availability and the Query API authorize page not retrieved.",
+   "api_types": [
+    "rest"
+   ],
+   "api_breadth": "unknown",
+   "existing_mcp": "unknown",
+   "buildability": "unknown",
+   "blocker": "Auth page and Aura availability not retrieved",
+   "evidence": [
+    {
+     "field": "api_types",
+     "url": "https://neo4j.com/docs/query-api/current",
+     "quote": "The Query API allows to execute Cypher statements against a Neo4j server through HTTP requests.",
+     "quote_found": true,
+     "url_in_sources": true
+    }
+   ]
+  }
+ ],
+ "annotations_not_model_output": {
+  "composio_toolkit_coverage": {
+   "aura_management_api": "covered (8 neo4j tools)",
+   "database_query_api": "Cypher querying NOT demonstrated by the current Composio toolkit"
+  }
+ }
+}

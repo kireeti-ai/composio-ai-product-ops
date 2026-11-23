@@ -1,0 +1,345 @@
+{
+ "id": 87,
+ "name": "Xero",
+ "started": "2026-11-23T19:39:34+05:30",
+ "searches": [
+  {
+   "q": "Xero API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:36+05:30"
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:38+05:30"
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:40+05:30"
+  },
+  {
+   "q": "Xero MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:42+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+   "requested_at": "2026-11-23T19:39:43+05:30",
+   "status": "ok",
+   "final_url": "https://developer.xero.com/documentation/guides/remote-mcp/overview/",
+   "title": "Xero Developer Remote MCP \u2014 Xero Developer",
+   "chars": 6851,
+   "sha256": "ecca51ecba24b45851b0502ec9ac705ba7feff17a22543f9a7226f09a5c7eadf",
+   "text": "# Xero Developer Remote MCP\n\nConnect an AI agent or client to Xero data and actions through a hosted URL: `https://api.xero.com/mcp/v1`. Nothing to install, and you sign in with the same OAuth 2.0 flow you already use for the Xero API.\n\n## Overview\n\n### What is the Developer Remote MCP Server?\n\nThe Developer Remote MCP Server is a hosted Model Context Protocol (MCP) server run by Xero. An MCP client, such as Claude Desktop, Cursor or an agent you\u2019ve built, connects to it over a URL. Once connected, the AI agent or client can call Xero tools to read and write accounting data in organisations that have authorised your app.\n\nIt is recommended to use Xero\u2019s existing OAuth 2.0 flow with PKCE. You don\u2019t need separate credentials, and a PKCE app that works with the Xero API also works with the Remote MCP Server. Token type specifics remain the same.\n\n### Which clients does it work with?\n\nAny client that supports the MCP standard. This includes Claude Desktop, Claude Code, Cursor, VS Code and others.\n\n### Who can use it?\n\nRemote MCP access is included for your Commercial App if you are on the Core plan or above, so there\u2019s no extra charge for it. Data returned through the Remote MCP Server counts towards your plan\u2019s data egress volume, the same as Xero API calls. Rate limits, connection counts and egress metering use the existing API limits.\n\nCommercial Apps on the Starter plan can try out the Remote MCP Server with a demo organisation.\n\nSee Xero Developer Pricing and Policies.\n\n### Authorisation flows\n\nUse PKCE. It\u2019s the flow we recommend because it doesn\u2019t need a client secret, so there\u2019s no secret to leak into a prompt, a configuration file or an AI development tool.\n\nWeb app access tokens also work technically, we still don\u2019t recommend them. A web app\u2019s client ID and client secret are easy to paste into AI-enabled tools by accident, and we\u2019d rather you didn\u2019t have to manage that risk.\n\n### Certification\n\nCertification rules haven\u2019t changed. Apps on the Plus, Advanced and Enterprise plans must be certified, whether or not they use the Remote MCP Server.\n\n### Security assessment\n\nSecurity assessment rules haven\u2019t changed. Apps on the Advanced and Enterprise plans must still undergo initial and annual security assessments, whether or not they use the Remote MCP Server.\n\n## How it works\n\n1. Create an app in Xero. PKCE is the recommended auth type.\n2. Your agent connects to the Remote MCP Server URL.\n3. The agent starts the Xero OAuth 2.0 authorisation flow with PKCE.\n4. A user signs in to Xero, picks the organisations to share, and approves the scopes your app requests.\n5. The agent receives an access token and calls tools. Each call runs against one organisation.\n6. Tool calls return Xero data to the agent, or make changes in Xero on the user\u2019s behalf.\n\n### Working with more than one organisation\n\nA user can authorise several organisations for the same app. Ask the agent to list your connected organisations, then tell it which organisation to act on. Each organisation still goes through the standard OAuth consent step, and nothing about this is specific to MCP.\n\nMulti-organisation access shifts some work to your agent. It needs to track which organisation it\u2019s acting on and make that clear to the user before it writes anything.\n\n## Get started\n\n### Before you begin, you will need\n\n* A Xero Developer account\n* An app that uses PKCE and is on a plan that can access the Remote MCP Server. This is available for apps on the Core plan or above\n* A Xero organisation to test against. Use a demo organisation if you\u2019re on the Starter plan\n\n### Connect your agent\n\n1. Create or open your app in the Xero Developer portal. When you create a Commercial app, choose PKCE as the authorisation method. Set the redirect URL per the required configuration of your MCP client. This will vary per client, so check its documentation.\n2. Copy the Remote MCP Server URL: `https://api.xero.com/mcp/v1`\n3. Add the URL to your MCP client as a remote server. The exact setting depends on the client, so check its documentation.\n4. Start the agent and sign in when Xero prompts you.\n5. Ask the agent to call `get_connected_tenants`. If it returns your organisation, you\u2019re connected.\n\n### Scopes\n\nThe agent can only call tools your app has approved scopes for. See the required scopes for each tool in the Tools section.\n\n## Tools\n\nThese tools are available at GA. Tool names are shown exactly as the server exposes them.\n\n| Group | Tools | Scope |\n| --- | --- | --- |\n| **Invoices and related records** | `list_invoices`, `list_credit_notes`, `list_items`, `list_quotes` | `accounting.invoices.read` |\n| **Invoices and related records** | `create_invoice`, `update_invoice`, `authorise_invoice`, `void_invoice`, `create_credit_note`, `update_credit_note`, `create_item`, `update_item`, `create_quote`, `update_quote` | `accounting.invoices` |\n| **Invoices and related records** | `list_tracking_categories` | `accounting.settings.read` |\n| **Invoices and related records** | `create_tracking_category`, `update_tracking_category`, `create_tracking_options`, `update_tracking_options` | `accounting.settings` |\n| **Contacts** | `list_contacts` | `accounting.contacts.read` |\n| **Contacts** | `create_contact`, `update_contact` | `accounting.contacts` |\n| **Bank transactions** | `list_bank_transactions` | `accounting.banktransactions.read` |\n| **Bank transactions** | `create_bank_transaction`, `update_bank_transaction` | `accounting.banktransactions` |\n| **Payments** | `list_payments` | `accounting.payments.read` |\n| **Payments** | `create_payment` | `accounting.payments` |\n| **Manual journals** | `list_manual_journals` | `accounting.manualjournals.read` |\n| **Manual journals** | `create_manual_journal`, `update_manual_journal` | `accounting.manualjournals` |\n| **Reports** | `list_profit_and_loss` | `accounting.reports.profitandloss.read` |\n| **Reports** | `list_report_balance_sheet` | `accounting.reports.balancesheet.read` |\n| **Reports** | `list_trial_balance` | `accounting.reports.trialbalance.read` |\n| **Reports** | `list_aged_payables_by_contact`, `list_aged_receivables_by_contact` | `accounting.reports.aged.read` |\n| **Settings** | `list_accounts`, `list_tax_rates`, `list_organisation_details` | `accounting.settings.read` |\n| **Other** | `get_connected_tenants` | None required |\n\n### Tools that change data\n\nTools that start with `create_`, `update_`, `authorise_` or `void_` write to the organisation. `void_invoice` and `authorise_invoice` change the state of a financial record. Build a confirmation step into your agent before it calls them.\n\nWhen using the `authorise_invoice` and `void_invoice` tools via this MCP server, be aware that standard Xero business logic and invoice status transition rules still strictly apply.\n\n## On this page\n\n* Overview\n* How it works\n* Get started\n* Tools",
+   "retrieved_at": "2026-11-23T19:39:43+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.xero.com/faq/authentication",
+   "requested_at": "2026-11-23T19:39:52+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "requested_at": "2026-11-23T19:39:54+05:30",
+   "status": "ok",
+   "final_url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "title": "OAuth 2.0 \u2014 Xero Developer",
+   "chars": 4053,
+   "sha256": "6a73945fcbe3966804992b66c0f417dc624b92e5cb929aba4fb9e013cba682a5",
+   "text": "# OAuth 2.0\n\nOAuth 2.0 is a protocol that lets your app access a user\u2019s account without accessing their password. Your app requests specific permission scopes and is granted an access token upon a user\u2019s approval.\n\n* A user will connect your app to one or more tenants. Depending on the API you\u2019re using, a tenant can be a Xero organisation, a Xero HQ practice, or a Xero Practice Manager account.\n* Apps using the code or PKCE flow can connect to a maximum of 5 tenants. To connect to more than 5 tenants you need to upgrade to the Core Tier. Custom Connections can only ever connect to a single organisation.\n\n## Choose the right authorization flow for your app\n\nXero\u2019s API supports the authorization code grant type using the standard authorization code flow or the Proof Key for Code Exchange (PKCE) extension. We also have a premium integration option called Custom Connections which utilises the client credentials grant type.\n\n| **Description** | **Code flow** | **PKCE flow** | **Custom Connection** |\n| --- | --- | --- | --- |\n| Best for | Web server apps that can securely store a client secret. | Mobile and desktop apps that can\u2019t securely store a client secret. (SPAs not currently supported). | Back end, machine-to-machine integrations. |\n| Connection limit | 5 connections on the Starter Tier | 5 connections on the Starter Tier | One connection |\n| Eligible for Marketplace | Yes | Yes | No |\n| Offline Access | Yes | Yes | Yes |\n| Cost | Free (Starter Tier) | Free (Starter Tier) | Monthly fee on the Xero organisation - $10/m AUD inc GST - $10/m NZD ex GST - \u00a35/m GBP ex VAT - $5/m USD ex tax |\n| Regional availability | Global | Global | UK, AU, NZ and US Xero organisations only |\n\nThe standard flow is the most well known OAuth 2.0 flow and typically used by web server applications. It requires your app to securely use and store a client secret.\n\nThe PKCE flow requires your app to create a secret (called a code verifier) for each authorization request. It\u2019s slightly more complicated to implement but offers a secure way to connect to the API if your app can\u2019t be trusted to store a client secret. Native (desktop and mobile) apps are required to use PKCE if connecting directly to the API.\n\nXero\u2019s Custom Connections leverage the client\\_credentials grant type and are designed to make it easier to build bespoke integrations. Custom connections require less technical knowledge to build because Xero provides the authorisation flow. This means they\u2019re also quicker to integrate and are easier to manage over time.\n\n### OpenID Connect Discovery\n\nXero does share an OpenID Connect Discovery configuration file to simplify connecting with OAuth, and verifying access and ID tokens. Many OAuth 2.0 libraries implement this standard, check the documentation of your preferred library to use it.\n\nIt is available at `https://identity.xero.com/.well-known/openid-configuration`.\n\n## Sign Up with Xero\n\nSign Up with Xero is optional for app partners who are eligible to be listed on the Xero App Store. Eligibility requires your App to be on the Plus Tier or above.\n\nSign Up with Xero brings potential customers directly to your app \u2013 ensuring a seamless onboarding experience and helping customers see the unique value of your app sooner. Customers can swiftly provision an app trial or an account for your app that is pre-populated with their Xero data directly from your listing in the Xero App Store.\n\nLearn more in the Sign Up with Xero guide.\n\n## Sign In with Xero\n\nAllow users to sign in to your app with their Xero account by using Xero as an identity provider. It\u2019s simple and secure.\n\nSign In with Xero leverages security features including two step authentication, anomalous login detection, email address verification and more. It conforms to the OpenId Connect specification and will work with any certified client library.\n\nLearn more in the Sign In with Xero guide.\n\n## SDKs\n\nWe have a range of new SDKs and sample apps that integrate with OAuth 2.0. These are all generated from our collection of OpenAPI definitions.",
+   "retrieved_at": "2026-11-23T19:39:54+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/auth-flow/",
+   "requested_at": "2026-11-23T19:39:56+05:30",
+   "status": "ok",
+   "final_url": "https://developer.xero.com/documentation/guides/oauth2/auth-flow/",
+   "title": "The standard authorization code flow \u2014 Xero Developer",
+   "chars": 12947,
+   "sha256": "dd471347d07b9f058aadb9fbb66a7f8c86c7f8554b4570f6cfa739b130a4262e",
+   "text": "# The standard authorization code flow\n\nThe standard authorization code flow is suitable for web server applications that can securely store a client secret. If you\u2019re building a native app (desktop or mobile) then you should refer to the PKCE flow.\n\nTo get started, create an OAuth2 app and make sure you select the \u201cAuth Code\u201d grant type. Your app is assigned a unique Client ID and you can then generate a Client Secret. The Client Secret is private and should not be shared.\n\n## Xero tenants\n\nXero is a multi-tenanted platform with different types of tenants. Core Xero APIs (e.g. Accounting, Payroll, Files) operate within the context of an Organisation tenant but a tenant can also be a Practice Manager account or a XeroHQ practice. A user may have access to multiple tenants and will choose which ones to connect to your app. The type of tenant they can select will be determined by the scopes your app requests in the authorization step.\n\nAt the successful completion of an OAuth flow you will be granted an access token to act on behalf of the user. You will then use that access token to find out which tenants the user has connected to your app. From there, you can make API calls by providing both a valid access token and authorized tenant id with each request.\n\n## 1. Send a user to authorize your app\n\nYour app should direct users to the following url:\n\n```\nhttps://login.xero.com/identity/connect/authorize?response_type=code&client_id=YOURCLIENTID&redirect_uri=YOURREDIRECTURI&scope=openid profile email accounting.invoices&state=123\n```\n\nThe following values should be passed in as parameters:\n\n* **response\\_type=code**\n* **client\\_id** issued when you create your app\n* **scope** permissions to request (see below)\n* **redirect\\_uri** the URL on your server to redirect back to \u2013 This must be an https address, however for testing you can use http://localhost/ Please note that http://127.0.0.1 cannot be used\n* **state** a unique string to be passed back on completion (optional) (see below)\n\n### Scopes\n\nThe scope parameter is a space-separated list of OAuth scopes, indicating what data you\u2019d like your app to be able to access. You should request the minimum scopes required for whatever the user is doing at the time. The complete list of scopes can be found here.\n\n### State\n\nThe state parameter should be used to avoid forgery attacks. Pass in a value that\u2019s unique to the user you\u2019re sending through authorisation. It will be passed back after the user completes authorisation.\n\n## 2. Users are redirected back to you with a code\n\nIf the user authorizes your app, Xero will redirect back to your specified redirect\\_uri with:\n\n* **code** a temporary code that may only be exchanged once and expires 5 minutes after issuance.\n* **state** (if you provided one). If the states don\u2019t match, the request may have been created by a third party and you should abort the process.\n\nIf any errors occur or the user denies the request, we redirect back to your redirect\\_uri with an error parameter.\n\n## 3. Exchange the code\n\nYou can now exchange the verification code for an access token. You will also receive an identity token if you\u2019ve requested OpenID Connect scopes and a refresh token if you\u2019ve requested the offline\\_access scope.\n\nTo do this you will need to make a POST request to our token endpoint:\n\n```\nhttps://identity.xero.com/connect/token\n```\n\nThe request will require an authorization header containing your app\u2019s client\\_id and client\\_secret\n\n* **Authorization**: \"Basic \" + base64encode(client\\_id + \":\" + client\\_secret)\n\nThe request body will need to contain the grant type (authorization\\_code), code and redirect\\_uri\n\n* **grant\\_type**=authorization\\_code\n* **code**=The authorization code you received in the callback\n* **redirect\\_uri**=The same redirect URI that was used when requesting the code\n\n```\nPOST https://identity.xero.com/connect/token\nauthorization: \"Basic \" + base64encode(client_id + \":\" + client_secret)\nContent-Type: application/x-www-form-urlencoded\n\ngrant_type=authorization_code\n&code=xxxxxx\n&redirect_uri=https://myapp.com/redirect\n```\n\n## 4. Receive your tokens\n\nThe token endpoint will verify all the parameters in the request, ensuring the code hasn\u2019t expired and that the client ID and secret match. If everything checks out, it will generate your tokens and return them in the response.\n\nIt will contain the following parameters:\n\n* **access\\_token** The token used to call the API.\n* **id\\_token**The token containing user identity details (only returned if OpenID Connect scopes are requested).\n* **expires\\_in**The amount of seconds until the access token expires.\n* **token\\_type: Bearer**\n* **refresh\\_token**The token used to refresh the access token once it has expired (only returned if the offline\\_access scope is requested).\n\n### Token expiry\n\nAll tokens received have an associated expiry time. Access tokens and refresh tokens can be exchanged prior to expiry.\n\n**Token expiry times:**\n\n* id\\_token: 5 minutes\n* access\\_token: 30 minutes\n* refresh\\_token: 60 days\n\n### The access token\n\nThe access token is a JSON Web Token (JWT) which can be decoded to a JSON object containing information about the user and the authentication performed. One particularly useful value is the **authentication\\_event\\_id** which can be used in the next step to find out which tenant/s the user connected in the current auth flow.\n\n```\n{\n    \"nbf\": 1589363023,\n    \"exp\": 1589364823,\n    \"iss\": \"https://identity.xero.com\",\n    \"aud\": \"https://identity.xero.com/resources\",\n    \"client_id\": \"91E5715B1199038080D6D0296EBC1648\",\n    \"sub\": \"a3a4dbafh3495a808ed7a7b964388f53\",\n    \"auth_time\": 1589361892,\n    \"xero_userid\": \"1945393b-6eb7-4143-b083-7ab26cd7690b\",\n    \"global_session_id\": \"ac2202575e824af3a181c50fcaa65c3c\",\n    \"jti\": \"4e7747cec4ce54d6512b4b0775166c5f\",\n    \"authentication_event_id\": \"d0ddcf81-f942-4f4d-b3c7-f98045204db4\",\n    \"scope\": [\n      \"email\",\n      \"profile\",\n      \"openid\",\n      \"accounting.invoices\",\n      \"accounting.settings\",\n      \"offline_access\"\n    ]\n  }\n```\n\n## 5. Check the tenants you\u2019re authorized to access\n\nFind out which tenants the user has authorized by calling the connections endpoint. If the user has authorized your app previously, they may have existing tenant connections. All of the connected tenants can now be accessed with the most recent access token.\n\nIf you want to retrieve the connection/s that were newly authorized in the current auth flow you can filter by the authEventId query parameter (e.g. ...?authEventId=d0ddcf81-f942-4f4d-b3c7-f98045204db4). You do this using the authentication\\_event\\_id found on the decoded access token.\n\nEach connection will have a created date and an updated date. If they differ, that means the user has reconnected this tenant to your app (having previously connected and disconnected it).\n\n```\nGET https://api.xero.com/connections\nAuthorization: \"Bearer \" + access_token\nContent-Type: application/json\n\nResponse:\n[\n    {\n        \"id\": \"e1eede29-f875-4a5d-8470-17f6a29a88b1\",\n        \"authEventId\": \"d99ecdfe-391d-43d2-b834-17636ba90e8d\",\n        \"tenantId\": \"70784a63-d24b-46a9-a4db-0e70a274b056\",\n        \"tenantType\": \"ORGANISATION\",\n        \"tenantName\": \"Maple Florist\",\n        \"createdDateUtc\": \"2019-07-09T23:40:30.1833130\",\n        \"updatedDateUtc\": \"2020-05-15T01:35:13.8491980\"\n    },\n    {\n        \"id\": \"32587c85-a9b3-4306-ac30-b416e8f2c841\",\n        \"authEventId\": \"d0ddcf81-f942-4f4d-b3c7-f98045204db4\",\n        \"tenantId\": \"e0da6937-de07-4a14-adee-37abfac298ce\",\n        \"tenantType\": \"ORGANISATION\",\n        \"tenantName\": \"Adam Demo Company (NZ)\",\n        \"createdDateUtc\": \"2020-03-23T02:24:22.2328510\",\n        \"updatedDateUtc\": \"2020-05-13T09:43:40.7689720\"\n    },\n    {\n        \"id\": \"74305bf3-12e0-45e2-8dc8-e3ec73e3b1f9\",\n        \"authEventId\": \"d0ddcf81-f942-4f4d-b3c7-f98045204db4\",\n        \"tenantId\": \"c3d5e782-2153-4cda-bdb4-cec791ceb90d\",\n        \"tenantType\": \"PRACTICEMANAGER\",\n        \"tenantName\": null,\n        \"createdDateUtc\": \"2020-01-30T01:33:36.2717380\",\n        \"updatedDateUtc\": \"2020-02-02T19:21:08.5739590\"\n    }\n]\n```\n\n**Remember!** Starter Tier allows up to 5 connections. Once you\u2019ve got a few customers we recommend upgrading to the Core Tier. Then to get certified and become an app partner, you can upgrade to the Plus Tier.\n\n## 6. Call the API\n\nMake calls against the Xero APIs by simply adding the following headers to your request:\n\n* **Authorization**: \"Bearer \" + access\\_token\n* **xero-tenant-id**: tenantId\n\n```\nGET ../api.xro/2.0/Invoices\nAuthorization: \"Bearer \" + access_token\nAccept: application/json\nXero-tenant-id: 45e4708e-d862-4111-ab3a-dd8cd03913e1\n```\n\n## Refreshing access and refresh tokens\n\nAccess tokens expire after 30 minutes. Your app can refresh an access token without user interaction by using a refresh token. You get a refresh token by requesting the offline\\_access scope during the initial user authorization. Refresh tokens expire after 60 days.\n\nTo refresh your access token you need to POST to the token endpoint:\n\n```\nhttps://identity.xero.com/connect/token\n```\n\nThe request will require an authorization header containing your app\u2019s client\\_id and client\\_secret\n\n* **Authorization**: \"Basic \" + base64encode(client\\_id + \":\" + client\\_secret)\n\nThe request body will need to contain the grant type and refresh token\n\n* **grant\\_type**=refresh\\_token\n* **refresh\\_token**=Your refresh token\n\n```\nPOST https://identity.xero.com/connect/token\nauthorization: \"Basic \" + base64encode(client_id + \":\" + client_secret)\nContent-Type: application/x-www-form-urlencoded\n\ngrant_type=refresh_token\n&refresh_token=xxxxxx\n```\n\nThe response will contain a new access token and refresh token. You must save both tokens in order to maintain api access.\n\nIf, for whatever reason, your app doesn\u2019t receive the response, or fails to save the new token, you can retry using your existing refresh token for a grace period of 30 minutes. After 30 minutes your previous refresh token will expire and the user will need to re-authorise your api application in order to generate a new refresh token.\n\n## Removing connections\n\nIf you would like to remove an individual tenant connection from your app (e.g. a user wants to disconnect one of their orgs) you can make a DELETE request on the Connections endpoint:\n\n```\nDELETE https://api.xero.com/connections/{connectionId}\nAuthorization: \"Bearer \" + access_token\n```\n\n**Note:** If you no longer have the user's token, you can use the grant type Client Credentials to manage your connections.\n\nWe\u2019ve recently added a new feature in the developer portal to help with disconnecting tenants. With our new \u2018Connections management\u2019 page in the Xero developer portal, you can now see and disconnect Xero tenant connections in a couple of clicks.\n\n**How do you delete a connection via the Developer Portal?**\n\n1. Sign in to the Xero Developer Portal\n2. Select the app which you want to review connections for\n3. Go to the \u2018Connections management\u2019 page in the left-hand navigation for your app. You\u2019ll see a list of Xero tenants currently connected to your app.\n4. Find the tenant you want to disconnect. An example of the type of tenant you want to disconnect could be:\n   * A trial customer who never really used the integration\n   * A customer who\u2019s cancelled\n   * A test or demo organisation you no longer need\n5. Disconnect the tenant\n   * Select the three dots on the right hand side of the connection you want to delete\n   * Click \u201cDisconnect\u201d\n   * Confirm the deletion of the connection\n6. What happens after you disconnect\n   * Your app will no longer be authorised to access data for that tenant.\n   * The tenant will no longer appear as connected for that app in user\u2019s Xero organisation. In Xero click on the organisation name, select settings then click connected apps.\n   * If the customer wants to use your integration again, they\u2019ll need to reconnect via your \u201cConnect to Xero\u201d flow in your app.\n\nYou should still keep your own logs and internal records in sync so that your app\u2019s view of connected tenants matches what\u2019s shown in Xero.\n\n## Revoking tokens\n\nYou can revoke a user\u2019s refresh token and remove all their connections to your app by making a request to the revocation endpoint.\n\nTo revoke a refresh token you need to POST to the revocation endpoint:\n\n```\nhttps://identity.xero.com/connect/revocation\n```\n\nThe request will require an authorization header containing your app\u2019s client\\_id and client\\_secret\n\n* **Authorization**: \"Basic \" + base64encode(client\\_id + \":\" + client\\_secret)\n\nThe request body will contain the refresh token being revoked\n\n* **token**=Your refresh token\n\n```\nPOST https://identity.xero.com/connect/revocation\nauthorization: \"Basic \" + base64encode(client_id + \":\" + client_secret)\nContent-Type: application/x-www-form-urlencoded\n\ntoken=xxxxxx\n```\n\nA successful revocation request will return a 200 response with an empty body.",
+   "retrieved_at": "2026-11-23T19:39:56+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.xero.com/faq?:~:text=If%20you%20don't%20receiveREMOVEDnew%20access%20and%20refresh%20token.",
+   "requested_at": "2026-11-23T19:39:58+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.xero.com/documentation/auth-and-limits/partner-applications",
+   "requested_at": "2026-11-23T19:40:04+05:30",
+   "status": "ok",
+   "final_url": "https://developer.xero.com/documentation/guides/oauth1/partner-applications",
+   "title": null,
+   "chars": 23,
+   "sha256": "d91e440207e743fac1c7519687a120c0dc5bc12576ad013aa789dfd7a0fc7928",
+   "text": "```\nNot Authorized.\n```",
+   "retrieved_at": "2026-11-23T19:40:04+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/api/accounting/overview",
+   "title": "Accounting API Overview",
+   "snippet": "Learn about how the Xero API processes requests and responses. Familiarise yourself with the API limits; Discover how you can achieve efficient data retrieval ..."
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/api/Accounts",
+   "title": "Accounts - Accounting",
+   "snippet": "you to create individual accounts in a Xero organisation Allows you to retrieve the full chart of accounts Allows you to attach files to an account Allows you to archive an account Allows you to"
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/api/accounting/accounts",
+   "title": "Accounting API Accounts",
+   "snippet": "GET, PUT, POST, DELETE \u00b7 Allows you to create individual accounts in a Xero organisation. Allows you to retrieve the full chart of accounts. Allows you to attach ..."
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/api/accounting/items",
+   "title": "Accounting API Items",
+   "snippet": "Documentation. OAuth 2 \u00b7 API reference \u00b7 Webhooks. Community. GitHub \u00b7 Product Feedback \u00b7 Connect to the Community \u00b7 Weekly Office Hours \u00b7 Dev Day Discord ..."
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "http://developer.xero.com/documentation/getting-started/http-requests-and-responses",
+   "title": "Requests and Responses - Xero API Developer Center",
+   "snippet": "to the API.\n- A PUT method will create new data in Xero, whereas a POST will either create new data or update existing data in Xero.\n- The Content-Type should be set as"
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/api/Attachments",
+   "title": "Attachments - Accounting",
+   "snippet": "### PUT Attachments\nThe PUT method is identical to the POST method. If an attachment already exists on the specified document, then the attachment being uploaded will overwrite it."
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/api/accounting/requests-and-responses",
+   "title": "Accounting API HTTP Requests and Responses \u2014 Xero Developer",
+   "snippet": "The HTTP PUT and POST methods are used for sending information to the API. XML or JSON formatted requests are accepted. Supported Content-Types include: \u2013 ..."
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/api/accounting/invoices",
+   "title": "Accounting API Invoices \u2014 Xero Developer",
+   "snippet": "Overview, GET Invoices, Optional parameters for GET Invoices, High volume threshold limit, Paging invoices (recommended), Optimised use of the where filter, Range Operators in Where clauses, Optimised filtering on a list of values, Optimised ordering:, Retrieving a smaller lightweight response using"
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/getting-started-guide/",
+   "title": "Getting started guide",
+   "snippet": "Follow our simple list below to get up and running with the Xero API. 1. Get setup. Signup for a free Xero account; Enable the Xero demo company \u00b7 Add ..."
+  },
+  {
+   "q": "Xero API documentation",
+   "url": "https://developer.xero.com/documentation/api/Reports",
+   "title": "Reports - Accounting",
+   "snippet": "invoices and total these yourself. Endpoints Each report has its own endpoint e.g. https://api.xero.com/api.xro/2.0/Reports/[Report Name] and can be returned in either XML (default) or JSON format."
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://developer.xero.com/documentation/getting-started-guide/",
+   "title": "Getting started guide",
+   "snippet": "1. Get setup \u00b7 Signup for a free Xero account \u00b7 Enable the Xero demo company \u00b7 Add your OAuth 2.0 application (you'll be prompted to login to Xero first) ..."
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://developer.xero.com/faq/authentication",
+   "title": "Frequently Asked Questions",
+   "snippet": "\n### Can you give me an API key?\nThe Xero API does not support basic API Key authentication. Our API uses OAuth1.0a which means you need to [register your app](https://app.xero.com/Application) to"
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "title": "OAuth 2.0",
+   "snippet": "Xero's API supports the authorization code grant type using the standard authorization code flow or the Proof Key for Code Exchange (PKCE) extension. We ..."
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://developer.xero.com/documentation/guides/oauth2/auth-flow/",
+   "title": "The standard authorization code flow",
+   "snippet": "The standard authorization code flow \u00b7 1. Send a user to authorize your app \u00b7 2. Users are redirected back to you with a code \u00b7 3. Exchange the code \u00b7 4. Receive ..."
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://developer.xero.com/faq?:~:text=If%20you%20don't%20receiveREMOVEDnew%20access%20and%20refresh%20token.",
+   "title": "Xero Developer Frequently asked questions \u2014 Xero Developer",
+   "snippet": "### Can you give me an API key?\nThe Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to [register your app](https://developer.xero.com/app/manage/)"
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://developer.xero.com/documentation/auth-and-limits/partner-applications",
+   "title": "Partner Applications - OAuth 1.0a (Deprecated)",
+   "snippet": "URLs for authorising and using the Xero API Xero follows the OAuth v1.0a spec. The URL\u2019s to authorize your partner application are : | Get an Unauthorised Request Token: |"
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://developer.xero.com/",
+   "title": "Xero Developer Platform",
+   "snippet": "Sign up as a development partner. If you've got proven experience building custom integrations with the Xero API, then register to become a developer partner."
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://devblog.xero.com/xero-oauth-2-api-whats-new-node-example-94715fc8ff19",
+   "title": "Xero OAuth 2.0 API \u2014 What\u2019s new + Node example",
+   "snippet": "section at developer.xero.com. Once there, set your app name, redirect URL and generate a new client secret (this is only viewable once so store it in a safe place!).\n##"
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://github.com/xeroapi/xero-python",
+   "title": "GitHub - XeroAPI/xero-python: Official Xero OAuth 2.0 python SDK",
+   "snippet": "This SDK is one of a number of SDK\u2019s that the Xero Developer team builds and maintains. We are grateful for all the contributions that the community makes."
+  },
+  {
+   "q": "Xero API authentication OAuth API key developer",
+   "url": "https://github.com/XeroAPI/xero-postman-oauth2",
+   "title": "GitHub - XeroAPI/xero-postman-oauth2: A postman collection for use with Xero's API and OAuth 2.0",
+   "snippet": "A Postman collection for authenticating to the Xero API."
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://developer.xero.com/pricing",
+   "title": "Pricing \u2014 Xero Developer",
+   "snippet": "| Rate Limits | 1000 per day per org | 5000 per day per org | 5000 per day per org | 5000 per day per org | 5000 per day per org |"
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://developer.xero.com/faq",
+   "title": "Xero Developer Frequently asked questions \u2014 Xero Developer",
+   "snippet": "Beginning on 2 March, 2026, we will be moving to a commercial tiering model based on connections and Xero API usage. Xero will no longer be pricing based on a revenue-share model"
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://developer.xero.com/documentation/xero-app-store/app-partner-guides/xero-app-store-subscriptions-pricing/",
+   "title": "Xero Developer",
+   "snippet": "Effective March 2026, we'll shift to a tiered pricing model based on connections and API usage. All plans on Xero App Store Subscriptions require a Fixed price ..."
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+   "title": "Pricing and Policy Updates FAQs \u2014 Xero Developer",
+   "snippet": "Beginning on 2 March, 2026, we will be moving to a commercial tiering model based on connections and Xero API usage. Xero will no longer be pricing based on a revenue-share model"
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://developer.xero.com",
+   "title": "Xero Developer Platform",
+   "snippet": "- ### Start Building\nSign up for a free account to build on the Xero platform. Take a look at our getting started guide, SDKs and the other steps you need to complete for certification."
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://central.xero.com/0/article/How-Xero-Developer-changes-affect-your-practice",
+   "title": "How Xero Developer changes affect your practice",
+   "snippet": "From 2 March 2026, Xero Developer is changing from a revenue-share model to a tiered usage-based pricing model. Pricing will largely be based on the number of Xero customers connected to an app and"
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c",
+   "title": "Updates to Xero Developer pricing and Terms & Conditions",
+   "snippet": "\n**What this means for you:**\n- **Accessible entry point:** The starter tier starts at $0, making it accessible for new developers and early-stage apps\n- **Pay for what you use:** Your costs scale"
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://developer.xero.com/custom-development",
+   "title": "Xero Custom Development \u2014 Xero Developer",
+   "snippet": "**Price:** $10/m AUD (inc GST), $10/m NZD (ex GST), \u00a35/m GBP (ex VAT), $5/m USD (ex tax). Recurring monthly subscriber charge per Custom connection purchased."
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://kenomont.com/blog/xero-api-pricing-2026-integrations",
+   "title": "Developer Plans and Who Pays",
+   "snippet": "Up to 1,000 calls to Xero per day for each organisation.\n- **Core:** $35 AUD per month. Up to 50 connections, 10 GB of data out of Xero each month, 5,000 calls per day per organisation.\n-"
+  },
+  {
+   "q": "Xero API access pricing plans developer account",
+   "url": "https://truto.one/blog/xero-api-pricing-changes-2026-costs-tiers-and-how-to-minimize-egress",
+   "title": "truto.one/blog/xero-api-pricing-changes-2026-costs-tiers-and-how-to-minimize-egress",
+   "snippet": "- **Map your integration to a tier.** Count active connections and estimate monthly egress. If you're above 10 GB/month, you need Plus or higher."
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+   "title": "Xero Developer Remote MCP \u2014 Xero Developer",
+   "snippet": "The Developer Remote MCP Server is a hosted Model Context Protocol (MCP) server run by Xero. ... Copy the Remote MCP Server URL: https://api.xero.com/mcp/v1 ..."
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7",
+   "title": "The Xero Remote MCP (Model Context Protocol) now generally available",
+   "snippet": "Today that changes. **Remote MCP is now generally available.** It\u2019s the same Xero MCP server, hosted and maintained by Xero. Add the URL and sign in. That\u2019s the setup."
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://devblog.xero.com/xero-introduces-new-model-context-protocol-server-for-smarter-accounting-4d195ccaeda5",
+   "title": "Xero introduces new Model Context Protocol server for smarter accounting",
+   "snippet": "**Learn more about MCP** [**here**](https://modelcontextprotocol.io/introduction)**.**"
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://github.com/xeroapi/xero-mcp-server",
+   "title": "Xero MCP Server",
+   "snippet": "This is a Model Context Protocol (MCP) server implementation for Xero. It provides a bridge between the MCP protocol and Xero's API, allowing for standardized ..."
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://youtube.com/watch?v=kGyA9t4rvrY",
+   "title": "Setup the Xero MCP Server with Claude & Open AI Agents",
+   "snippet": "\ud83d\udc49 Get started building to our API: https://developer.xero.com/\n\ud83d\udc49 Our MCP Server: https://github.com/XeroAPI/xero-mcp-server\n\ud83d\udc49 Download Claude Desktop: https://claude.ai/download\n\ud83d\udc49 Read more about our"
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://www.pulsemcp.com/servers/xero-accounting",
+   "title": "Official Xero MCP Server",
+   "snippet": "MCP (Model Context Protocol) Server. Provides a bridge to the Xero accounting API, enabling financial data interactions and accounting operations"
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://eseospace.com/blog/xero-mcp-server",
+   "title": "Xero MCP Server: Tools, Setup and Security",
+   "snippet": "Does Xero have an official MCP server?\nYes. Xero's GitHub organization publishes an open-source MCP server, and Xero Limited also offers a hosted connector listed in Claude's directory."
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://usecarly.com/blog/xero-mcp",
+   "title": "Xero MCP: Official, but You Have to Self-Host It",
+   "snippet": "MCP server?** Yes. XeroAPI publishes [`XeroAPI/xero-mcp-server`](https://github.com/XeroAPI/xero-mcp-server), an official server that gives MCP-compatible AI tools read/write access to your Xero"
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://github.com/john-zhang-dev/xero-mcp",
+   "title": "GitHub - john-zhang-dev/xero-mcp: A Model Context Protocol server allows Clients to interact with Xero",
+   "snippet": "## Repository\n- Public, MIT License\n- Stars: 22 \u00b7 Watchers: 2 \u00b7 Forks: 15\n- Default branch: main \u00b7 Releases: 23 \u00b7 Tags: 24\n- Created: 2025-03-18"
+  },
+  {
+   "q": "Xero MCP server official",
+   "url": "https://github.com/cursor/plugins/tree/main/third_party/xero",
+   "title": "plugins/third_party/xero at main \u00b7 cursor/plugins",
+   "snippet": "- This is a local stdio server, so `npx` has to be available on the machine running Cursor. It downloads `@xeroapi/xero-mcp-server` on first run."
+  }
+ ],
+ "official_domain_candidates": {
+  "xero.com": 29
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "xero.com",
+ "completed": "2026-11-23T19:40:04+05:30"
+}

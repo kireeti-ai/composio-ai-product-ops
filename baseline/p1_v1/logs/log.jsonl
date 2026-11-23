@@ -1,0 +1,485 @@
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "{'successful': False, 'data': {'message': \"Managed Fetch requires public URLs: SSRF guard blocked request: DNS resolution failed for 'developers.attio", "t": "16:14:35"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:14:39"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "{'successful': False, 'data': {'message': \"Managed Fetch requires public URLs: SSRF guard blocked request: DNS resolution failed for 'developers.attio", "t": "16:14:40"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "{'successful': False, 'data': {'message': \"Managed Fetch requires public URLs: SSRF guard blocked request: DNS resolution failed for 'developers.attio", "t": "16:14:46"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:14:48"}
+{"ev": "done", "id": 4, "name": "Attio", "model": "gemini-2.5-flash", "t": "16:14:59"}
+{"ev": "done", "id": 49, "name": "Amazon Selling Partner", "model": "gemini-2.5-flash", "t": "16:15:02"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:15:14"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:15:14"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:15:20"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 503, "t": "16:15:22"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:15:27"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 503, "t": "16:15:29"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:15:35"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:15:46"}
+{"ev": "done", "id": 58, "name": "Sherlock", "model": "gemini-2.5-flash", "t": "16:15:49"}
+{"ev": "done", "id": 28, "name": "WhatsApp Business", "model": "gemini-3.5-flash", "t": "16:15:56"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:16:12"}
+{"ev": "done", "id": 84, "name": "Paygent Connect", "model": "gemini-2.5-flash", "t": "16:16:27"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "{'successful': False, 'data': {'message': \"Managed Fetch requires public URLs: SSRF guard blocked request: DNS resolution failed for 'developers.attio", "t": "16:16:55"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 503, "t": "16:17:23"}
+{"ev": "done", "id": 4, "name": "Attio", "model": "gemini-2.5-flash", "t": "16:17:26"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 503, "t": "16:17:32"}
+{"ev": "done", "id": 28, "name": "WhatsApp Business", "model": "gemini-2.5-flash", "t": "16:17:58"}
+{"ev": "done", "id": 49, "name": "Amazon Selling Partner", "model": "gemini-3.5-flash", "t": "16:18:09"}
+{"ev": "done", "id": 58, "name": "Sherlock", "model": "gemini-2.5-flash", "t": "16:18:15"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:18:45"}
+{"ev": "done", "id": 84, "name": "Paygent Connect", "model": "gemini-2.5-flash", "t": "16:19:03"}
+{"ev": "done", "id": 1, "name": "Salesforce", "model": "gemini-2.5-flash", "t": "16:19:45"}
+{"ev": "done", "id": 3, "name": "Pipedrive", "model": "gemini-2.5-flash", "t": "16:19:46"}
+{"ev": "done", "id": 2, "name": "HubSpot", "model": "gemini-2.5-flash", "t": "16:20:01"}
+{"ev": "done", "id": 1, "name": "Salesforce", "model": "gemini-2.5-flash", "t": "16:20:01"}
+{"ev": "done", "id": 2, "name": "HubSpot", "model": "gemini-2.5-flash", "t": "16:20:05"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:08"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 503, "t": "16:20:09"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:14"}
+{"ev": "done", "id": 5, "name": "Twenty", "model": "gemini-2.5-flash", "t": "16:20:15"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:15"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:15"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:21"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:23"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:24"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:29"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:30"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:37"}
+{"ev": "done", "id": 6, "name": "Podio", "model": "gemini-2.5-flash", "t": "16:20:44"}
+{"ev": "done", "id": 3, "name": "Pipedrive", "model": "gemini-3.5-flash", "t": "16:20:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:47"}
+{"ev": "done", "id": 5, "name": "Twenty", "model": "gemini-3.5-flash", "t": "16:20:48"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:49"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:54"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:20:55"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:21:06"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:21:12"}
+{"ev": "done", "id": 7, "name": "Zoho CRM", "model": "gemini-3.5-flash", "t": "16:21:15"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:21:30"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:21:36"}
+{"ev": "done", "id": 8, "name": "Close", "model": "gemini-3.5-flash", "t": "16:21:42"}
+{"ev": "done", "id": 9, "name": "Copper", "model": "gemini-3.5-flash", "t": "16:21:57"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:22:03"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:22:08"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:22:23"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:22:30"}
+{"ev": "done", "id": 10, "name": "DealCloud", "model": "gemini-3.5-flash", "t": "16:22:47"}
+{"ev": "done", "id": 11, "name": "Zendesk", "model": "gemini-3.5-flash", "t": "16:22:59"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:23:19"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:23:25"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:23:31"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:23:47"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:23:53"}
+{"ev": "done", "id": 13, "name": "Freshdesk", "model": "gemini-3.5-flash", "t": "16:24:38"}
+{"ev": "gemini_exc", "model": "gemini-3.5-flash", "err": "The read operation timed out", "t": "16:24:41"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:25:06"}
+{"ev": "done", "id": 14, "name": "Front", "model": "gemini-3.5-flash", "t": "16:25:11"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:25:16"}
+{"ev": "done", "id": 12, "name": "Intercom", "model": "gemini-3.5-flash", "t": "16:25:20"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:25:38"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:25:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:25:53"}
+{"ev": "done", "id": 16, "name": "LiveAgent", "model": "gemini-2.5-flash", "t": "16:25:58"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:25:59"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:26:21"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:26:29"}
+{"ev": "done", "id": 17, "name": "Plain", "model": "gemini-3.5-flash", "t": "16:26:30"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:26:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:26:53"}
+{"ev": "gemini_exc", "model": "gemini-3.5-flash", "err": "The read operation timed out", "t": "16:27:26"}
+{"ev": "done", "id": 19, "name": "Gorgias", "model": "gemini-3.5-flash", "t": "16:27:33"}
+{"ev": "done", "id": 18, "name": "Help Scout", "model": "gemini-3.5-flash", "t": "16:27:42"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:27:47"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:27:55"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:27:57"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:28:01"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:28:03"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:28:13"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:28:29"}
+{"ev": "done", "id": 21, "name": "Slack", "model": "gemini-3.5-flash", "t": "16:28:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:28:49"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:29:04"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:29:15"}
+{"ev": "done", "id": 22, "name": "Twilio", "model": "gemini-2.5-flash", "t": "16:29:20"}
+{"ev": "gemini_exc", "model": "gemini-3.5-flash", "err": "The read operation timed out", "t": "16:29:32"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:29:38"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:29:43"}
+{"ev": "FAILED", "id": 20, "err": "gemini failed", "t": "16:29:45"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:29:49"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:30:01"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:30:07"}
+{"ev": "FAILED", "id": 15, "err": "gemini failed", "t": "16:30:37"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:30:42"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:30:48"}
+{"ev": "done", "id": 23, "name": "Zoho Cliq", "model": "gemini-3.5-flash", "t": "16:30:59"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:30:59"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:31:04"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:31:10"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:31:14"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:31:18"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:31:21"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:31:29"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:31:35"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:31:35"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:31:38"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:31:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:32:01"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:32:01"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:32:01"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:32:22"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:32:26"}
+{"ev": "FAILED", "id": 24, "err": "gemini failed", "t": "16:32:31"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:32:48"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:32:48"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:32:53"}
+{"ev": "FAILED", "id": 25, "err": "gemini failed", "t": "16:32:56"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:33:04"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:33:14"}
+{"ev": "FAILED", "id": 26, "err": "gemini failed", "t": "16:33:18"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:33:20"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:33:20"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:33:31"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:33:36"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:33:40"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:33:42"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:33:52"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:34:06"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:34:09"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:34:30"}
+{"ev": "FAILED", "id": 27, "err": "gemini failed", "t": "16:34:36"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:34:48"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:34:53"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:34:56"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:35:05"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:35:21"}
+{"ev": "FAILED", "id": 30, "err": "gemini failed", "t": "16:35:26"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:35:41"}
+{"ev": "gemini_exc", "model": "gemini-3.5-flash", "err": "The read operation timed out", "t": "16:35:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:35:51"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:36:06"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:36:07"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:36:11"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:36:17"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:36:22"}
+{"ev": "FAILED", "id": 31, "err": "gemini failed", "t": "16:36:37"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:36:37"}
+{"ev": "FAILED", "id": 29, "err": "gemini failed", "t": "16:36:47"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:36:51"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:36:57"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:36:58"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:37:08"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:37:16"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:37:22"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:37:24"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:37:24"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:37:32"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:37:45"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:37:49"}
+{"ev": "FAILED", "id": 32, "err": "gemini failed", "t": "16:37:54"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:38:09"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:38:09"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:38:11"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:38:14"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:38:25"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:38:35"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:38:40"}
+{"ev": "FAILED", "id": 33, "err": "gemini failed", "t": "16:38:41"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:38:55"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:39:00"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:39:01"}
+{"ev": "FAILED", "id": 34, "err": "gemini failed", "t": "16:39:05"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:39:11"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:39:21"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:39:26"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:39:26"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:39:27"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:39:37"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:39:47"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:39:53"}
+{"ev": "FAILED", "id": 35, "err": "gemini failed", "t": "16:39:56"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:40:09"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:40:13"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:40:14"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:40:16"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:40:26"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:40:40"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:40:42"}
+{"ev": "FAILED", "id": 36, "err": "gemini failed", "t": "16:40:43"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:41:02"}
+{"ev": "FAILED", "id": 37, "err": "gemini failed", "t": "16:41:10"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:41:24"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:41:28"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:41:29"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:41:31"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:41:36"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:41:40"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:41:47"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:41:56"}
+{"ev": "FAILED", "id": 38, "err": "gemini failed", "t": "16:41:58"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:42:03"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:42:13"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:42:16"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:42:18"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:42:24"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:42:29"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:42:42"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:42:45"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:42:50"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:43:06"}
+{"ev": "FAILED", "id": 39, "err": "gemini failed", "t": "16:43:12"}
+{"ev": "FAILED", "id": 40, "err": "gemini failed", "t": "16:43:20"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:43:28"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:43:32"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:43:34"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:43:44"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:43:48"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:43:54"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:44:00"}
+{"ev": "FAILED", "id": 41, "err": "gemini failed", "t": "16:44:02"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:44:05"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:44:18"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:44:21"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:44:21"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:44:25"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:44:31"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:44:41"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:44:42"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:44:46"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:44:57"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:45:07"}
+{"ev": "FAILED", "id": 42, "err": "gemini failed", "t": "16:45:16"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:45:17"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:45:32"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:45:37"}
+{"ev": "FAILED", "id": 43, "err": "gemini failed", "t": "16:45:37"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:45:43"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:45:48"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:45:48"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:45:54"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:46:04"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:46:04"}
+{"ev": "FAILED", "id": 44, "err": "gemini failed", "t": "16:46:13"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:46:20"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:46:24"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:46:29"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:46:35"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:46:42"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:46:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:46:50"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:47:01"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:47:08"}
+{"ev": "FAILED", "id": 45, "err": "gemini failed", "t": "16:47:20"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:47:22"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:47:35"}
+{"ev": "FAILED", "id": 46, "err": "gemini failed", "t": "16:47:38"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:47:47"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:47:52"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:47:58"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:48:00"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:48:06"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:48:08"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:48:16"}
+{"ev": "FAILED", "id": 47, "err": "gemini failed", "t": "16:48:17"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:48:24"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:48:31"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:48:32"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:48:37"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:48:43"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:48:44"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:48:53"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:49:10"}
+{"ev": "done", "id": 51, "name": "DataForSEO", "model": "gemini-3.5-flash", "t": "16:49:11"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:49:18"}
+{"ev": "FAILED", "id": 48, "err": "gemini failed", "t": "16:49:40"}
+{"ev": "FAILED", "id": 50, "err": "gemini failed", "t": "16:49:48"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:49:51"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:49:56"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:49:59"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:49:59"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:50:04"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:50:05"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:50:07"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:50:15"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:50:15"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:50:22"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:50:30"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:50:31"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:50:43"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:50:51"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:50:51"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:51:09"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:51:17"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:51:17"}
+{"ev": "FAILED", "id": 53, "err": "gemini failed", "t": "16:51:39"}
+{"ev": "FAILED", "id": 52, "err": "gemini failed", "t": "16:51:47"}
+{"ev": "FAILED", "id": 54, "err": "gemini failed", "t": "16:51:47"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:51:54"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:51:59"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:52:00"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:52:06"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:52:07"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:52:10"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:52:13"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:52:16"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:52:24"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:52:25"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:52:32"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:52:39"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:52:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:52:52"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:53:00"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:53:12"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:53:18"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:53:25"}
+{"ev": "FAILED", "id": 55, "err": "gemini failed", "t": "16:53:42"}
+{"ev": "FAILED", "id": 57, "err": "gemini failed", "t": "16:53:48"}
+{"ev": "FAILED", "id": 56, "err": "gemini failed", "t": "16:53:55"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:53:57"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:54:00"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:54:02"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:54:05"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:54:09"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:54:13"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:54:14"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:54:16"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:54:19"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:54:28"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:54:30"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:54:31"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:54:45"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:54:49"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:54:52"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:55:06"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:55:15"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:55:17"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:55:32"}
+{"ev": "FAILED", "id": 59, "err": "gemini failed", "t": "16:55:45"}
+{"ev": "FAILED", "id": 60, "err": "gemini failed", "t": "16:55:47"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:55:59"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:56:01"}
+{"ev": "FAILED", "id": 61, "err": "gemini failed", "t": "16:56:02"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:56:05"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:56:06"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:56:16"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:56:17"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:56:22"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:56:32"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:56:33"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:56:47"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:56:52"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:56:52"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:56:53"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:57:03"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:57:18"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:57:18"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:57:19"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:57:40"}
+{"ev": "FAILED", "id": 63, "err": "gemini failed", "t": "16:57:48"}
+{"ev": "FAILED", "id": 62, "err": "gemini failed", "t": "16:57:49"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:58:04"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:58:04"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:58:06"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:58:10"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:58:20"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:58:35"}
+{"ev": "FAILED", "id": 64, "err": "gemini failed", "t": "16:58:36"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:58:37"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:58:47"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:58:51"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:58:53"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:58:58"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:59:04"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "16:59:07"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:59:12"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "16:59:18"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:59:20"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:59:23"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:59:29"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "16:59:40"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "16:59:44"}
+{"ev": "FAILED", "id": 65, "err": "gemini failed", "t": "16:59:53"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:00:04"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:00:06"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:00:13"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:00:19"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:00:29"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:00:30"}
+{"ev": "FAILED", "id": 66, "err": "gemini failed", "t": "17:00:36"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:00:45"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:00:54"}
+{"ev": "FAILED", "id": 67, "err": "gemini failed", "t": "17:01:00"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:01:00"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:01:05"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:01:11"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "{'successful': False, 'data': {'message': 'Invalid request data provided\\n- Value error, Every URL must use the http or https scheme.', 'status_code':", "t": "17:01:21"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:01:26"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:01:26"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:01:31"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:01:31"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:01:42"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:01:47"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:01:57"}
+{"ev": "FAILED", "id": 68, "err": "gemini failed", "t": "17:02:01"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:02:12"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:02:14"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:02:18"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:02:20"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:02:31"}
+{"ev": "FAILED", "id": 69, "err": "gemini failed", "t": "17:02:42"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:02:44"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:02:46"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:02:59"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:03:05"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:03:07"}
+{"ev": "FAILED", "id": 70, "err": "gemini failed", "t": "17:03:14"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:03:16"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:03:27"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:03:31"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:03:32"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:03:33"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:03:43"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:03:52"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:03:59"}
+{"ev": "FAILED", "id": 71, "err": "gemini failed", "t": "17:04:02"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:04:17"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:04:19"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "17:04:20"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:04:27"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:04:32"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:04:43"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:04:44"}
+{"ev": "FAILED", "id": 72, "err": "gemini failed", "t": "17:04:47"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:04:58"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:05:01"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:05:06"}
+{"ev": "FAILED", "id": 73, "err": "gemini failed", "t": "17:05:14"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:05:17"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:05:19"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:05:28"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:05:32"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:05:34"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:05:44"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:05:44"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:05:53"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:06:00"}
+{"ev": "FAILED", "id": 74, "err": "gemini failed", "t": "17:06:14"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:06:18"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:06:20"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:06:29"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:06:34"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:06:45"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:06:45"}
+{"ev": "FAILED", "id": 75, "err": "gemini failed", "t": "17:06:48"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:07:01"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "17:07:05"}
+{"ev": "FAILED", "id": 76, "err": "gemini failed", "t": "17:07:15"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:07:21"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:07:30"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:07:36"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:07:46"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:07:46"}
+{"ev": "gemini_err", "model": "gemini-3.5-flash", "code": 429, "t": "17:08:02"}
+{"ev": "FAILED", "id": 77, "err": "gemini failed", "t": "17:08:16"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash-lite", "code": 404, "t": "17:08:22"}
+{"ev": "tf_retry", "slug": "TINYFISH_FETCH_URLS", "err": "'data'", "t": "17:08:30"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:08:31"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:08:36"}
+{"ev": "gemini_err", "model": "gemini-2.5-flash", "code": 429, "t": "17:08:40"}

@@ -1,0 +1,56 @@
+---
+updatedAt: 2026-06-08T20:06:59.000Z
+agentTools:
+  projectIndex: https://developer.systeme.io/llms.txt
+---
+
+# MCP Server 
+
+> 🚧 Status notice
+>
+> The Systeme.io MCP server is in its initial release. We’re actively improving it by adding more capabilities and strengthening stability and reliability over time.
+
+# Introduction
+
+Welcome to the Systeme.io MCP Server overview. The Model Context Protocol (MCP) is an open standard designed to connect AI models with external data and tools. Our MCP server acts as a bridge between your Systeme.io account and AI-powered environments (such as ChatGPT, Claude Desktop, or other MCP-compatible clients).
+
+By leveraging the MCP server, you can grant AI agents the ability to perform contact (contacts, tags, and contact fields) and newsletter management actions within your account using natural language commands. This integration significantly enhances productivity by bringing your contact data (contacts, tags, and fields) into the AI’s context window.
+
+# Getting Started
+
+To begin using the Systeme.io MCP server, you must first obtain an MCP key. You can generate a new key by navigating to the profile settings within your Systeme.io dashboard under the <Anchor label="&#x22;MCP & API keys&#x22;" target="_blank" href="https://systeme.io/dashboard/profile/public-api-settings">"MCP & API keys"</Anchor> section. Once you have your key, you can configure your MCP-compatible client to connect to our server.
+
+> 🚧 Important security notice
+>
+> Keep your MCP keys secure. Otherwise, this may lead to significant risks.
+
+# Authentication
+
+Security is a priority for our integration. To authenticate with the MCP server, you must use your MCP key. The server supports two authentication methods to provide flexibility across different MCP clients:
+
+* **HTTP Header**: Attach your MCP key to the `X-MCP-Key` header.
+* **Query Parameter**: Include your MCP key as the `mcpKey` parameter in the request URL.
+
+This dual-method approach ensures that you can connect your AI tools even if the client has limitations on custom header configuration.
+
+# Supported operations
+
+The Systeme.io MCP server currently supports **contact and newsletter management**. The following operations are available:
+
+* **Contacts:** list, retrieve, create, update, delete
+* **Tags:** list, retrieve, create, update, delete
+* **Tag assignment:** assign or remove tags from contacts
+* **Contact fields:** list available contact fields (field slugs)
+* **Newsletters:** create, update, find and review existing ones
+
+At this stage, these are the only capabilities exposed by the MCP server. Other Systeme.io features are not yet supported. Additional functionality may be introduced as the MCP server evolves.
+
+# Rate-Limiting
+
+The MCP server adheres to the same rate-limiting policies as the Systeme.io Public API to maintain service quality and availability.
+
+* **Refill Rate**: Quotas are replenished at regular intervals. The `X-RateLimit-Refill` header provides details on the next replenishment.
+* **Limit Ceiling**: A maximum number of requests is allowed per time window, as indicated by the `X-RateLimit-Limit` header.
+* **Shared Quota**: All requests made across your MCP keys contribute to a shared quota. Use the `X-RateLimit-Remaining` header to monitor your current status.
+
+If the rate limit is reached, the server will return a `429 Too Many Requests` response. We advise configuring your AI tools to handle these limits gracefully to avoid interruptions in service.

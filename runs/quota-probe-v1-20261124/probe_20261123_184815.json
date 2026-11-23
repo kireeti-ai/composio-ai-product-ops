@@ -1,0 +1,77 @@
+{
+ "probed_at": "2026-11-23T18:48:07+0530",
+ "note": "metadata + 1-token probes only; no extraction; no approval file",
+ "gemini": {
+  "key1": {
+   "models_list_status": 200,
+   "candidate_models_listed": {
+    "gemini-2.5-flash": true,
+    "gemini-3.5-flash": true
+   },
+   "gemini-2.5-flash": {
+    "status": 200,
+    "ok": true,
+    "per_day_quota_exhausted": false,
+    "error_message": null,
+    "error_status": null
+   },
+   "gemini-3.5-flash": {
+    "status": 503,
+    "ok": false,
+    "per_day_quota_exhausted": false,
+    "error_message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "error_status": "UNAVAILABLE"
+   }
+  },
+  "key2_separate_account_NOT_for_execution": {
+   "models_list_status": 200,
+   "candidate_models_listed": {
+    "gemini-2.5-flash": true,
+    "gemini-3.5-flash": true
+   },
+   "gemini-2.5-flash": {
+    "status": 404,
+    "ok": false,
+    "per_day_quota_exhausted": false,
+    "error_message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://aistudio.google.com/docs/get-started).",
+    "error_status": "NOT_FOUND"
+   },
+   "gemini-3.5-flash": {
+    "status": 503,
+    "ok": false,
+    "per_day_quota_exhausted": false,
+    "error_message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "error_status": "UNAVAILABLE"
+   }
+  }
+ },
+ "groq": {
+  "models_list_status": 200,
+  "gpt_oss_120b_listed": true,
+  "chat_status": 200,
+  "ok": true,
+  "ratelimit_headers": {
+   "x-ratelimit-limit-requests": "1000",
+   "x-ratelimit-limit-tokens": "8000",
+   "x-ratelimit-remaining-requests": "963",
+   "x-ratelimit-remaining-tokens": "7925",
+   "x-ratelimit-reset-requests": "53m16.799s",
+   "x-ratelimit-reset-tokens": "562ms"
+  },
+  "error": null
+ },
+ "openrouter": {
+  "key_status": 200,
+  "is_free_tier": true,
+  "usage": 0,
+  "usage_daily": 0,
+  "limit": null,
+  "limit_remaining": null,
+  "credits_status": 200,
+  "credits": {
+   "total_credits": 0,
+   "total_usage": 0.036033592
+  },
+  "note": "metadata only; no generation call made; free-model daily limits depend on credits (not shown by the API)"
+ }
+}

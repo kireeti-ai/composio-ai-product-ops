@@ -1,0 +1,358 @@
+{
+ "id": 35,
+ "name": "Mailchimp",
+ "started": "2026-11-23T19:43:55+05:30",
+ "searches": [
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:43:57+05:30"
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:00+05:30"
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:05+05:30"
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:07+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp",
+   "requested_at": "2026-11-23T19:44:09+05:30",
+   "status": "ok",
+   "final_url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+   "title": "How to Use Mailchimp's Transactional Messaging MCP Guide | Mailchimp Developer",
+   "chars": 3680,
+   "sha256": "51cbb071ebe49ae56de9b926789b0255068b91dc76668b9a093679cbe899cc44",
+   "text": "Skip navigation\n\n### Mailchimp Transactional\n\n* Overview\n* Documentation\n* API Reference\n\n# How to Use Mailchimp's Transactional Messaging MCP\n\n## What is an MCP?\n\nAn MCP (Model Context Protocol) allows AI agents to interact with API, knowledge bases, or other content. Our MCP specifically allows you to interact with the Transactional Messaging API, give onboarding help regarding Transactional Messaging, and submit feedback.\n\n## What can the MCP do?\n\nOur MCP mirrors what our API can already do.\n\n| Tool | Description |\n| --- | --- |\n| account\\_status | Check account status |\n| build\\_template | Build/construct a template |\n| call\\_api | Call a Transactional Messaging API endpoint |\n| describe\\_api | Describe a specific API endpoint (parameters, schema) |\n| diagnose\\_failed\\_send | Diagnose why a send failed |\n| integrate\\_api | Help integrate with the API |\n| list\\_api | List available Transactional Messaging API endpoints |\n| onboarding | Onboarding assistance |\n| submit\\_feedback | Submit feedback |\n\n## Prerequisites\n\nIn order to complete some of the MCP actions, we recommend to have the following setup in advance:\n\n* Create an API key\n* Authenticate a sending domain\n* If you are using Transactional SMS, have an SMS number setup\n\n## How do I set up the MCP?\n\nThe MCP server URL is https://mandrillapp.com/mcp. Setup varies by client:\n\n**Claude Desktop**\nOpen Claude Desktop, go to Claude menu \u2192 Settings \u2192 Developer \u2192 Edit Config. This opens claude\\_desktop\\_config.json. Add the following under mcpServers:\n\n### Claude Desktop\n\nJSON\n\n```\n{\n  \"mcpServers\": {\n    \"mctx-mcp\": {\n      \"type\": \"http\",\n      \"url\": \"https://mandrillapp.com/mcp\",\n      \"headers\": { \"Authorization\": \"Bearer YOUR_API_KEY\" }\n    }\n  }\n}\n```\n\nSave the file and restart Claude Desktop. You should see an MCP indicator in the bottom-right of the chat input.\n\n**Claude Code (CLI)**\nRun this command once:\n\n### Claude Code (CLI)\n\nBash\n\n```\nclaude mcp add --transport http mctx-mcp https://mandrillapp.com/mcp \\\n  -H \"Authorization: Bearer YOUR_API_KEY\"\n```\n\n**Cursor**\nAdd to ~/.cursor/mcp.json (create it if it doesn't exist):\n\n### Cursor\n\nJSON\n\n```\n{\n  \"mcpServers\": {\n    \"mctx-mcp\": {\n      \"type\": \"http\",\n      \"url\": \"https://mandrillapp.com/mcp\",\n      \"headers\": { \"Authorization\": \"Bearer YOUR_API_KEY\" }\n    }\n  }\n}\n```\n\n**VS Code**\nAdd to .vscode/mcp.json in your project:\n\n### VS Code\n\nJSON\n\n```\n{\n  \"servers\": {\n    \"mctx-mcp\": {\n      \"type\": \"http\",\n      \"url\": \"https://mandrillapp.com/mcp\",\n      \"headers\": { \"Authorization\": \"Bearer YOUR_API_KEY\" }\n    }\n  }\n}\n```\n\n## Managing MCP Access\n\nIt is important that the API key used to authorize the MCP has the ability to complete the actions the MCP can do. If your API key is created with no restrictions, by default the MCP can be used.\n\nIf you want to only allow the API key to use certain API calls **and** be able to use the MCP, the API key permissions must have the \u201cAI Agents\u201d group enabled.\n\n## Troubleshooting\n\n* API key issues\n\n  + Does it exist? Is it enabled?\n  + Does it have the correct permissions?\n* Make sure you have your sending domain and/or SMS number setup before sending email and/or SMS messages\n* Review the mcp.json file in your AI client of choice:\n* For API error responses, refer to our API error code documentation\n\n## Example Prompts\n\n**Connection Check***\u201cVerify that my Mandrill MCP integration is active and confirm that you can access my account.\u201d*\n\n**Send Email Test***\u201cSend an email to sample@gmail.com with the message: \u2018Hey, my MCP sent this!\u2019\u201d*\n\n**Engagement Metrics Retrieval***\u201cRetrieve open and click metrics from my account, including data for the last three emails sent.\u201d*",
+   "retrieved_at": "2026-11-23T19:44:09+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+   "requested_at": "2026-11-23T19:44:10+05:30",
+   "status": "ok",
+   "final_url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+   "title": "Mailchimp Developer Documentation",
+   "chars": 2784,
+   "sha256": "2f50a2b88b4d1aa900e66b52dae7a8c540f7a39a5a6af06d2907505e962e730c",
+   "text": "Skip to navigation\n\n**This searches documentation, not your Mailchimp account.** The server\nanswers questions using this site\u2019s published content, so it works without a\nMailchimp credential. To let an agent act on your account, call the API\ndirectly or use Agent skills.\n\nModel Context Protocol (MCP) is an open\nstandard that lets an AI agent discover and call an external server\u2019s tools\nduring a conversation.\n\nThis documentation site is itself an MCP server. Connect an agent to it and\nthe agent can search these docs directly from your editor or terminal instead\nof you copying passages into the conversation by hand.\n\nAsk it what you\u2019d ask a person:\n\n> \u201cSearch the docs for how Mailchimp scopes OAuth 2 tokens to a single\n> account.\u201d\n\n> \u201cWhat does the Marketing API docs site say about pagination limits on the\n> Reports endpoints?\u201d\n\n> \u201cFind the docs page on batch operations and summarize the request size\n> limit.\u201d\n\n## Connect your agent\n\n**Claude Code**\n\n```\nclaude mcp add --transport http fern_mcp_mailchimp-docs \\\n\n\n\nhttps://mailchimp.com/developer/_mcp/server\n```\n\n**Cursor**\n\nAdd the URL to your MCP server configuration:\n\n```\nhttps://mailchimp.com/developer/_mcp/server\n```\n\n**Claude Desktop**\n\nOpen Claude menu \u2192 Settings \u2192 Developer \u2192 Edit Config, then add the server\nunder `mcpServers` in `claude_desktop_config.json`:\n\n```\n{\n\n\n\n\"mcpServers\": {\n\n\n\n\"mailchimp-docs\": {\n\n\n\n\"type\": \"http\",\n\n\n\n\"url\": \"https://mailchimp.com/developer/_mcp/server\"\n\n\n\n}\n\n\n\n}\n\n\n\n}\n```\n\n**VS Code**\n\nAdd the same server to `.vscode/mcp.json` in your project:\n\n```\n{\n\n\n\n\"servers\": {\n\n\n\n\"mailchimp-docs\": {\n\n\n\n\"type\": \"http\",\n\n\n\n\"url\": \"https://mailchimp.com/developer/_mcp/server\"\n\n\n\n}\n\n\n\n}\n\n\n\n}\n```\n\nRestart the client after saving. Each one surfaces a connection indicator\nonce the server responds.\n\n## Other ways agents can access these docs\n\nAn agent can also read this site directly. Every page has a Markdown\nversion at its own URL with `.md` appended, and an `llms.txt` index lists\nthose pages at every level of the docs, down to individual sections. This\nworks the same way on authenticated documentation sites and public ones like\nthis one.\n\n```\ncurl https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md\n```\n\nSearching and fetching solve different problems: the docs-search tool finds\nthe right page when an agent doesn\u2019t know where to look, and a direct `.md`\nfetch reads a page you\u2019ve already identified without spending tokens on\nHTML. Agents commonly use both in the same session. See\nllms.txt for the full index format and\nhow to scope one to just the section an agent needs.\n\n## Related\n\n* Agent skills package workflows\n  that call the Marketing API itself.\n* Authentication covers the API\n  key and OAuth 2 credentials for calling the Marketing API directly.",
+   "retrieved_at": "2026-11-23T19:44:10+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+   "requested_at": "2026-11-23T19:44:11+05:30",
+   "status": "ok",
+   "final_url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+   "title": null,
+   "chars": 3276,
+   "sha256": "c18e5b4e0008aa6c176768385831a17171049a172097a381292764ab42418fa4",
+   "text": "> This page is for Mailchimp Marketing API.\n> For clean Markdown of any page, append .md to the page URL.\n> For a complete documentation index, see https://mailchimp.com/developer/llms.txt.\n# MCP server\n> Query these docs from an AI agent through the Model Context Protocol.\n> \\*\\*Note\\*\\*\n>\n> \\*\\*This searches documentation, not your Mailchimp account.\\*\\* The server\n> answers questions using this site's published content, so it works without a\n> Mailchimp credential. To let an agent act on your account, call the API\n> directly or use [Agent skills](/developer/marketing/build/ai-tools/agent-skills).\n[Model Context Protocol](https://modelcontextprotocol.io/) (MCP) is an open\nstandard that lets an AI agent discover and call an external server's tools\nduring a conversation.\nThis documentation site is itself an MCP server. Connect an agent to it and\nthe agent can search these docs directly from your editor or terminal instead\nof you copying passages into the conversation by hand.\nAsk it what you'd ask a person:\n> \"Search the docs for how Mailchimp scopes OAuth 2 tokens to a single\n> account.\"\n> \"What does the Marketing API docs site say about pagination limits on the\n> Reports endpoints?\"\n> \"Find the docs page on batch operations and summarize the request size\n> limit.\"\n## Connect your agent\n\\*\\*Claude Code\\*\\*\n```bash\nclaude mcp add --transport http fern\\_mcp\\_mailchimp-docs \\\nhttps://mailchimp.com/developer/\\_mcp/server\n```\n\\*\\*Cursor\\*\\*\nAdd the URL to your MCP server configuration:\n```\nhttps://mailchimp.com/developer/\\_mcp/server\n```\n\\*\\*Claude Desktop\\*\\*\nOpen Claude menu \u2192 Settings \u2192 Developer \u2192 Edit Config, then add the server\nunder `mcpServers` in `claude\\_desktop\\_config.json`:\n```json\n{\n\"mcpServers\": {\n\"mailchimp-docs\": {\n\"type\": \"http\",\n\"url\": \"https://mailchimp.com/developer/\\_mcp/server\"\n}\n}\n}\n```\n\\*\\*VS Code\\*\\*\nAdd the same server to `.vscode/mcp.json` in your project:\n```json\n{\n\"servers\": {\n\"mailchimp-docs\": {\n\"type\": \"http\",\n\"url\": \"https://mailchimp.com/developer/\\_mcp/server\"\n}\n}\n}\n```\nRestart the client after saving. Each one surfaces a connection indicator\nonce the server responds.\n## Other ways agents can access these docs\nAn agent can also read this site directly. Every page has a Markdown\nversion at its own URL with `.md` appended, and an `llms.txt` index lists\nthose pages at every level of the docs, down to individual sections. This\nworks the same way on authenticated documentation sites and public ones like\nthis one.\n```bash\ncurl https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md\n```\nSearching and fetching solve different problems: the docs-search tool finds\nthe right page when an agent doesn't know where to look, and a direct `.md`\nfetch reads a page you've already identified without spending tokens on\nHTML. Agents commonly use both in the same session. See\n[llms.txt](/developer/marketing/build/ai-tools/llms-txt) for the full index format and\nhow to scope one to just the section an agent needs.\n## Related\n\\* [Agent skills](/developer/marketing/build/ai-tools/agent-skills) package workflows\nthat call the Marketing API itself.\n\\* [Authentication](/developer/marketing/api-concepts/authentication) covers the API\nkey and OAuth 2 credentials for calling the Marketing API directly.",
+   "retrieved_at": "2026-11-23T19:44:11+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+   "requested_at": "2026-11-23T19:44:12+05:30",
+   "status": "ok",
+   "final_url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+   "title": "Mailchimp Developer Documentation",
+   "chars": 729,
+   "sha256": "6c01a02b4d4d6dbff0cddd167ccaec0701b13bde4b9a949c2a661946151077e6",
+   "text": "Skip to navigation\n\nAn API key authenticates requests against your own Mailchimp account. Here\u2019s how\nto create one:\n\n1. Navigate to the API Keys section of your Mailchimp account.\n2. Click **Create New Key** and give it a descriptive name that tells you which application it\u2019s used for.\n3. Copy the generated key immediately and store it in a secure location. You won\u2019t be able to see or copy the key once you finish generating it.\n\n**Note**: An API key grants full access to your account. Keep it as secure as\nyou would a password, and don\u2019t use one in a browser or a mobile app; see\nAPI keys for why.\n\n## Next steps\n\n* Send your first API request\n* Set up an OAuth app, if your application needs to access other users\u2019 accounts",
+   "retrieved_at": "2026-11-23T19:44:12+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+   "requested_at": "2026-11-23T19:44:18+05:30",
+   "status": "ok",
+   "final_url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+   "title": "Mailchimp Developer Documentation",
+   "chars": 2582,
+   "sha256": "6e6d8ecc9366a602a4e59af1cb629615724f2bc38b97935f972711c0a2607b0b",
+   "text": "Skip to navigation\n\nEvery request to the Marketing API carries a credential. There are two kinds,\nand which one you need depends on whose account data you\u2019re reaching for.\n\n## Choose a credential\n\nAn **API key** authenticates\nagainst the account that created it. Use one when your code couples *your*\napplication\u2019s data to *your own* Mailchimp account. It requires no server to\nhandle a redirect, so it\u2019s the fastest way to make a first request.\n\n**OAuth 2** authenticates\nagainst an account belonging to someone else. Any integration a third party\ninstalls needs it.\n\nYou can start development against your own account with a key and move to\nOAuth 2 later; the request-signing mechanics below are identical for both.\n\n**Note**: We strongly discourage asking your users to paste their API key into\nyour application. It gives you full control of their account, it can\u2019t be\nrevoked for your application alone, and it makes you responsible for storing\nsomeone else\u2019s credential.\n\nIf you\u2019re using one of the official client libraries,\nthe library handles the signing details for you.\n\n## Authenticate with an API key or OAuth 2 token\n\nAPI keys and OAuth 2 access tokens are sent the same way. We\u2019ll refer to both\nas tokens.\n\nYou can use either HTTP Basic Authentication or Bearer Authentication.\n\nHTTP Basic Authentication passes the token as the password, with any string as\nthe username:\n\n```\ncurl --request GET \\\n\n\n\n--url 'https://api.mailchimp.com/3.0/' \\\n\n\n\n--user 'anystring:TOKEN'\n```\n\nBearer Authentication passes it in the `Authorization` header:\n\n```\ncurl --request GET \\\n\n\n\n--url 'https://api.mailchimp.com/3.0/' \\\n\n\n\n--header 'Authorization: Bearer TOKEN'\n```\n\n## User access and revocation\n\nAuthentication is tied to the user who created the API key or authorized the\nOAuth 2 app, not to the account. If that user is removed from the account, the\ntoken is revoked.\n\nAccess is also bounded by the user level (role)\nof that user, and a role can change over time. An API action the role doesn\u2019t\npermit returns a 403. You can\ncheck the role attached to a token with the API Root endpoint,\nand compare what each role allows in\nthis chart.\n\nWhen creating a key or authorizing an app, use an admin user where you can. If\nyou\u2019re building an integration, consider telling the user when their role is\ntoo limited for your application to work.\n\n**Note**: You are responsible for the security of your tokens; store them in a\nsecure location on your server. Because of the risks of exposing a token,\nMailchimp does not support client-side calls to the Marketing API using CORS\nrequests.",
+   "retrieved_at": "2026-11-23T19:44:18+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+   "requested_at": "2026-11-23T19:44:19+05:30",
+   "status": "ok",
+   "final_url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+   "title": "Mailchimp Developer Documentation",
+   "chars": 5777,
+   "sha256": "7fe0cd23ab2e4a1fbad02aeaf245ea6c0c1d99e1f1277dbdccc58355917c7cbb",
+   "text": "Skip to navigation\n\nThis page walks through implementing OAuth 2 so your application can access the\nMarketing API on behalf of other Mailchimp users. For how the flow works and why\nit has the steps it does, see\nOAuth 2.\n\n## What you\u2019ll need\n\n* A Mailchimp account\n* An API key,\n  if you want to test against your own account first\n* A **redirect URI** for your application, the URL Mailchimp sends users back\n  to after they authorize your application. It must be reachable by the user\u2019s\n  browser, but for local development `http://127.0.0.1:3000/...` is fine.\n\n## Register your application\n\nRegistering gives you the `client_id` and `client_secret` your server needs.\n\n1. Navigate to the **Registered Apps page** in your Mailchimp account\n2. Click **Register An App**\n3. Fill out the **Register An App** form\n4. Click **Create**\n\nYou\u2019ll see the `client_id` and `client_secret` at the bottom of the page.\n\nThis is the only time you\u2019ll be able to see `client_secret`, so you\u2019ll need to\ncopy it and store it securely.\n\n## Implement the flow on your server\n\nThe sample below handles the whole flow: authenticating the user, exchanging the\ncode for an access token, then making a first authenticated request on their\nbehalf. Pick your language.\n\n```\nconst express = require(\"express\");\n\n\n\nconst querystring = require(\"querystring\");\n\n\n\nconst bodyParser = require(\"body-parser\");\n\n\n\nconst fetch = require(\"node-fetch\");\n\n\n\nconst { URLSearchParams } = require(\"url\");\n\n\n\nconst { MailchimpClient } = require(\"@mailchimp/mailchimp-marketing\");\n\n\n\n// Basic express app setup\n\n\n\nconst app = express();\n\n\n\napp.use(bodyParser.json());\n\n\n\napp.use(\n\n\n\nbodyParser.urlencoded({\n\n\n\nextended: true\n\n\n\n})\n\n\n\n);\n\n\n\n// You should always store your client id and secret in environment variables for security \u2014 the exception: sample code.\n\n\n\nconst MAILCHIMP_CLIENT_ID = \"YOUR_CLIENT_ID\";\n\n\n\nconst MAILCHIMP_CLIENT_SECRET =\n\n\n\n\"YOUR_CLIENT_SECRET\";\n\n\n\nconst BASE_URL = \"http://127.0.0.1:3000\";\n\n\n\nconst OAUTH_CALLBACK = `${BASE_URL}/oauth/mailchimp/callback`;\n\n\n\n// 1. Navigate to http://127.0.0.1:3000 and click Login\n\n\n\napp.get(\"/\", function(req, res) {\n\n\n\nres.send(\n\n\n\n'<p>Welcome to the sample Mailchimp OAuth app! Click <a href=\"/auth/mailchimp\">here</a> to log in</p>'\n\n\n\n);\n\n\n\n});\n\n\n\n// 2. The login link above will direct the user here, which will redirect\n\n\n\n// to Mailchimp's OAuth login page.\n\n\n\napp.get(\"/auth/mailchimp\", (req, res) => {\n\n\n\nres.redirect(\n\n\n\n`https://login.mailchimp.com/oauth2/authorize?${querystring.stringify({\n\n\n\nresponse_type: \"code\",\n\n\n\nclient_id: MAILCHIMP_CLIENT_ID,\n\n\n\nredirect_uri: OAUTH_CALLBACK\n\n\n\n})}`\n\n\n\n);\n\n\n\n});\n\n\n\n// 3. Once // 3. Once the user authorizes your app, Mailchimp will redirect the user to\n\n\n\n// this endpoint, along with a code you can use to exchange for the user's\n\n\n\n// access token.\n\n\n\napp.get(\"/oauth/mailchimp/callback\", async (req, res) => {\n\n\n\nconst {\n\n\n\nquery: { code }\n\n\n\n} = req;\n\n\n\n// Here we're exchanging the temporary code for the user's access token.\n\n\n\nconst tokenResponse = await fetch(\n\n\n\n\"https://login.mailchimp.com/oauth2/token\",\n\n\n\n{\n\n\n\nmethod: \"POST\",\n\n\n\nbody: new URLSearchParams({\n\n\n\ngrant_type: \"authorization_code\",\n\n\n\nclient_id: MAILCHIMP_CLIENT_ID,\n\n\n\nclient_secret: MAILCHIMP_CLIENT_SECRET,\n\n\n\nredirect_uri: OAUTH_CALLBACK,\n\n\n\ncode\n\n\n\n})\n\n\n\n}\n\n\n\n);\n\n\n\nconst { access_token } = await tokenResponse.json();\n\n\n\nconsole.log(access_token);\n\n\n\n// Below, we're using the access token to make an authenticated request on\n\n\n\n// behalf of the user who just granted OAuth access. You wouldn't keep this\n\n\n\n// in your production code, but it's here to demonstrate how the call is\n\n\n\n// made.\n\n\n\nconst mailchimp = new MailchimpClient({\n\n\n\ntoken: access_token\n\n\n\n});\n\n\n\nconst response = await mailchimp.ping.list();\n\n\n\nconsole.log(response);\n\n\n\nres.send(`\n\n\n\n<p>This user's access token is ${access_token}.</p>\n\n\n\n<p>When pinging the Mailchimp Marketing API's ping endpoint, the server responded:<p>\n\n\n\n<code>${response}</code>\n\n\n\n`);\n\n\n\n// In reality, you'd want to store the access token somewhere in your\n\n\n\n// application.\n\n\n\n// fakeDB.getCurrentUser();\n\n\n\n// fakeDB.storeMailchimpCredsForUser(user, {\n\n\n\n//   access_token\n\n\n\n// });\n\n\n\n});\n\n\n\napp.listen(3000, \"127.0.0.1\", function() {\n\n\n\nconsole.log(\n\n\n\n\"Server running on port 3000; visit http://127.0.0.1:3000\"\n\n\n\n);\n\n\n\n});\n```\n\nThe code above completes the flow and produces an access token, then uses it to\ncall the Ping endpoint, a trivial request that confirms the\ntoken works. It doesn\u2019t persist anything; in a real application you\u2019d store the\naccess token against your own user record.\n\nThe two URLs involved, if you\u2019re implementing this without the sample:\n\n* Redirect the user to `https://login.mailchimp.com/oauth2/authorize?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI`\n* Exchange the returned `code` with a POST to `https://login.mailchimp.com/oauth2/token`\n\n## Rotate a client secret\n\nIf your `client_secret` is exposed, rotate it:\n\n1. Navigate to the **Registered Apps page** in your Mailchimp account.\n2. Click **Edit** for the registered app you need to update.\n3. In the **Client secret** field, click **Rotate**.\n4. On the pop-up modal, type **ROTATE** and click **Rotate Client Secret**.\n\nYou\u2019ll see a modal with the `client_id` and the updated `client_secret`. Update\nyour application with the new secret; once rotation completes, requests signed\nwith the old one fail with a `401`.\n\nThis is the only time you\u2019ll be able to see the updated `client_secret`, so\nyou\u2019ll need to copy it and store it securely.\n\n## Next steps\n\n* API structure \u2014 conventions you\u2019ll hit across the API\n* Batch operations \u2014 syncing contacts in bulk once you have a token\n* Webhooks \u2014 keeping your platform in step with changes made in Mailchimp",
+   "retrieved_at": "2026-11-23T19:44:19+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/batch-operations",
+   "title": "Batch operations",
+   "snippet": "1. When you create a signed batch webhook, Mailchimp generates a **signing secret** and returns it in the API response. Copy and store this value securely \u2014 it is shown exactly once and cannot be"
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/methods-and-parameters",
+   "title": "Methods and parameters",
+   "snippet": "and how to place calls to them, as well as how to design your calls to be as efficient as possible. For further details on the requirements of any particular endpoint, consult the full [API"
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+   "title": "API structure - Mailchimp Developer Documentation",
+   "snippet": "The Marketing API generally follows REST conventions, with some deviations. Resources are typically nouns like subscribers or campaigns ."
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer",
+   "title": "Mailchimp Developer",
+   "snippet": "Developing the integration using the Mailchimp API 3.0 was a good experience, documentation is easy to understand and very detailed with proper examples of all ..."
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api/segments/create-segment",
+   "title": "mailchimp.com/developer/marketing/api/segments/create-segment",
+   "snippet": "\nThis endpoint expects an object.\n- `definition` (SegmentDefinition, required) \u2014 A node in a segment definition. A node is a group or a condition. A group contains the `match`"
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api/lists/members/create-member",
+   "title": "Add member to list | Mailchimp | Developer",
+   "snippet": "Mailchimp can bring together your customer data, marketing channels, and audience insights in a single platform. Guides Documentation API Reference"
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/build/quickstarts/import-and-export-contacts",
+   "title": "mailchimp.com/developer/marketing/build/quickstarts/import-and-export-contacts",
+   "snippet": "We'll use the [Members endpoint](/developer/marketing/api/lists/create-member) to add and update contacts one at a time, and the [Batch"
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/transactional/api/allowlist/allowlists-add",
+   "title": "Add email to allowlist | Mailchimp | Developer",
+   "snippet": "Adds an email to your email rejection allowlist. If the address is currently on your denylist, that denylist entry will be removed automatically."
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api/lists/list",
+   "title": "Get lists info | Mailchimp | Developer",
+   "snippet": "Mailchimp can bring together your customer data, marketing channels, and audience insights in a single platform. Guides Documentation API Reference"
+  },
+  {
+   "q": "Mailchimp API documentation site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api/campaigns/create-action-schedule.md",
+   "title": "mailchimp.com/developer/marketing/api/campaigns/create-action-schedule.md",
+   "snippet": "```json\n{\n\"schedule_time\": \"2024-01-15T09:30:00Z\"\n}\n```"
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+   "title": "Generate your API key",
+   "snippet": "- [Set up an OAuth app](/developer/marketing/build/start-developing/set-up-an-oauth-app), if your application needs to access other users\u2019 accounts"
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+   "title": "Authentication",
+   "snippet": "Authentication is tied to the user who created the API key or authorized the OAuth 2 app, not to the account. If that user is removed from the account, the token is revoked."
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/guides/an-introduction-to-rest",
+   "title": "Fundamentals Documentation | Mailchimp Developer",
+   "snippet": "API keys and OAuth 2 tokens can be used to make authenticated requests the same way. We\u2019ll refer to both as tokens.\nYou can either use HTTP Basic Authentication or Bearer Authentication."
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+   "title": "Set up an OAuth app",
+   "snippet": "you\u2019ll need\n- A Mailchimp account\n- [An API key](/developer/marketing/build/get-started/generate-your-api-key), if you want to test against your own account first\n- A **redirect URI** for your"
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api/authorized-apps/get",
+   "title": "mailchimp.com/developer/marketing/api/authorized-apps/get",
+   "snippet": "\n- `Authorization` header (bearer token, required) \u2014 Authorization using a Mailchimp API key (a.k.a. Bearer token)\n- `Authorization` header (bearer token, required) \u2014 Authorization using OAuth"
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/oauth-2.md",
+   "title": "mailchimp.com/developer/marketing/api-concepts/authentication/oauth-2.md",
+   "snippet": "providers in small ways, so here's Mailchimp's:\n1. Your application redirects the user to Mailchimp's OAuth page, where they log\nin and authorize your application.\n2. Mailchimp redirects the"
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api/reports/locations/list-locations",
+   "title": "List top open activities",
+   "snippet": "The Mailchimp OAuth 2.0 provider, as described in our developer documentation at OAuth 2. This OAuth 2.0 provider requires PKCE . OR. AuthorizationBearer."
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api/connected-sites/get",
+   "title": "Get connected site",
+   "snippet": "The Mailchimp OAuth 2.0 provider, as described in our developer documentation at OAuth 2. This OAuth 2.0 provider requires PKCE . OR."
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/build/start-developing/send-your-first-api-request",
+   "title": "Send your first API request",
+   "snippet": "Make your first API call; Next steps. CLI \u00b7 Set up an OAuth app \u00b7 Build with AI tools \u00b7 Create an account \u00b7 Generate your API key \u00b7 Import and export contacts ..."
+  },
+  {
+   "q": "Mailchimp API authentication OAuth API key developer site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+   "title": "API structure",
+   "snippet": "API structure \u00b7 Authentication \u00b7 API keys \u00b7 OAuth 2 \u00b7 Methods and parameters \u00b7 Rate limits and timeouts \u00b7 Errors \u00b7 Webhooks \u00b7 Batch operations \u00b7 Alternative ..."
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api",
+   "title": "mailchimp.com/developer/marketing/api",
+   "snippet": "(enum, optional) \u2014 The type of pricing plan the account is on.\n- Allowed values: `monthly`, `pay_as_you_go`, `forever_free`\n- `pro_enabled` (boolean, optional) \u2014 Legacy - whether the account"
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/llms.txt",
+   "title": "mailchimp.com/developer/marketing/llms.txt",
+   "snippet": "- [Create an account](https://mailchimp.com/developer/marketing/build/get-started/create-an-account.md): Create a Mailchimp account and understand how your plan level affects API access."
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+   "title": "mailchimp.com/developer/marketing/build/get-started/create-an-account",
+   "snippet": "the Marketing API, you need a Mailchimp account. What you can do with the API depends on what [level of Mailchimp plan](https://us1.admin.mailchimp.com/account/billing-plan/) you have. Once you have"
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/api/root/list",
+   "title": "mailchimp.com/developer/marketing/api/root/list",
+   "snippet": "- `first_payment` (30GetResponsesContentApplicationJsonSchemaFirstPayment, optional) \u2014 Date of first payment for monthly plans."
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/guides/an-introduction-to-rest",
+   "title": "Fundamentals Documentation | Mailchimp Developer",
+   "snippet": "To use the Marketing API, you need a Mailchimp account. What you can do with the API depends on what [level of Mailchimp plan](https://us1.admin.mailchimp.com/account/billing-plan/) you have. Once you"
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/marketing/build",
+   "title": "Create an account",
+   "snippet": "audiences and campaigns, and more.\nTo use the Marketing API, you need a Mailchimp account. What you can do with the API depends on what [level of Mailchimp"
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/transactional/docs/fundamentals",
+   "title": "mailchimp.com/developer/transactional/docs/fundamentals",
+   "snippet": "demo](https://mailchimp.com/help/transactional-email-demo/) with any level account, but to use the full version you must have a [Standard or Premium"
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "http://mailchimp.com/developer/guides/transactional-api-quick-start",
+   "title": "Transactional API Quick Start Guide | Mailchimp Developer",
+   "snippet": "in order to get started using the API. If you have a Mailchimp Standard plan or higher, you can enable Mailchimp Transactional from the"
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/transactional",
+   "title": "Essential email and SMS messages, delivered every time | Mailchimp Developer",
+   "snippet": "## Transactional plans designed for developers\nCreating a new Mailchimp Transactional account is quick, easy, and a great way to get started."
+  },
+  {
+   "q": "Mailchimp API access pricing plans developer account site:mailchimp.com/developer",
+   "url": "https://mailchimp.com/developer/transactional/guides/quick-start",
+   "title": "Transactional API Quick Start",
+   "snippet": "## Create an account\nIf you don\u2019t have a Mailchimp Transactional account, you\u2019ll need to [create one](https://login.mailchimp.com/signup/?entrypoint=mandrill&locale=en) in order to get started using"
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/marketing/build/ai-tools",
+   "title": "Overview",
+   "snippet": "Searching and fetching solve different problems: use the MCP server when your agent doesn\u2019t know where to look, and llms.txt when it already knows which page it needs."
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://developer.mailchimp.com/documentation/mailchimp/guides/about-webhooks/:",
+   "title": "developer.mailchimp.com/documentation/mailchimp/guides/about-webhooks/:",
+   "snippet": "> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://mailchimp.com/developer/_mcp/server."
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/marketing/build/ai-tools/agent-skills",
+   "title": "Agent skills",
+   "snippet": "- [MCP server](https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server) connects an agent to this documentation so it can search these pages. Skills and the MCP server solve different"
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/integration-partner-program",
+   "title": "mailchimp.com/developer/integration-partner-program",
+   "snippet": "> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://mailchimp.com/developer/_mcp/server."
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/marketing/llms.txt",
+   "title": "mailchimp.com/developer/marketing/llms.txt",
+   "snippet": "> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://mailchimp.com/developer/_mcp/server."
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/marketing/build/ai-tools/llms-txt",
+   "title": "mailchimp.com/developer/marketing/build/ai-tools/llms-txt",
+   "snippet": "> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://mailchimp.com/developer/_mcp/server."
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp",
+   "title": "How to Use Mailchimp's Transactional Messaging MCP",
+   "snippet": "API, knowledge bases, or other content. Our MCP specifically allows you to interact with the Transactional Messaging API, give onboarding help regarding Transactional Messaging, and submit feedback."
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/marketing/guides/quick-start?:~:text=Generate%20your%20API%20key_-The%20simplest%20way&text=Here's%20how%20you%20can%20generate_it%20in%20a%20secure%20location.",
+   "title": "mailchimp.com/developer/marketing/guides/quick-start",
+   "snippet": "> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://mailchimp.com/developer/_mcp/server."
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+   "title": "MCP server",
+   "snippet": "\n[Model Context Protocol](https://modelcontextprotocol.io/) (MCP) is an open standard that lets an AI agent discover and call an external server\u2019s tools during a conversation.\nThis"
+  },
+  {
+   "q": "Mailchimp MCP server official site:mailchimp.com",
+   "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+   "title": "mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+   "snippet": "[Model Context Protocol](https://modelcontextprotocol.io/) (MCP) is an open\nstandard that lets an AI agent discover and call an external server's tools\nduring a conversation.\nThis documentation site"
+  }
+ ],
+ "official_domain_candidates": {
+  "mailchimp.com": 40
+ },
+ "override_hint": "mailchimp.com/developer",
+ "identity_flag": "hint_domain_from_original_list",
+ "selected_domain": "mailchimp.com",
+ "completed": "2026-11-23T19:44:19+05:30"
+}

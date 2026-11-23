@@ -1,0 +1,28 @@
+{
+ "app_id": 26,
+ "app": "Discord",
+ "tool": "composio:TINYFISH_FETCH_URLS",
+ "session": "feel",
+ "attempts": [
+  {
+   "url": "https://www.discord.com/developers/home",
+   "requested_at": "2026-11-23T17:41:40+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://discord.com/developers/home",
+   "title": "Discord for Developers",
+   "chars": 179,
+   "sha256": "cc6a0c25426aa54d8ca5965c3ddb41d4c648a33f8c41e88150c9a9758dbf6c0e",
+   "text": "Create\nDocs\nTeams\nWelcome to the Developer Portal\nNurture communities, level up games, and bring players together with a suite of tools built by Discord and powered by developers.",
+   "completed_at": "2026-11-23T17:41:41+05:30",
+   "app_id": 26,
+   "kind": "url_variant",
+   "parent_url": "https://discord.com/developers/home",
+   "reason": "alternative for thin_or_js_shell",
+   "outcome": "thin_or_js_shell",
+   "duplicate_of": null,
+   "attempt": 2
+  }
+ ],
+ "app_level_search_hits": []
+}

@@ -1,0 +1,208 @@
+{
+ "run_id": "p1-v1c-gemini-20261124",
+ "status": "PREPARED - AWAITING EXPLICIT APPROVAL (no Gemini calls made; no APPROVED.json)",
+ "supersedes": "p1-v1b-gemini-20261124",
+ "purpose": "Resume Pass 1 for apps without a baseline record; same prompt/schema/models as baseline V1; sources = baseline cached pages + verified official top-up pages",
+ "phases": {
+  "1": [
+   27,
+   32,
+   33,
+   34,
+   39,
+   41,
+   43,
+   52,
+   53,
+   56,
+   76,
+   65,
+   72,
+   71,
+   61
+  ],
+  "2": [
+   62,
+   63,
+   36,
+   29,
+   47,
+   44,
+   26,
+   70,
+   25,
+   75
+  ]
+ },
+ "tiers": {
+  "27": "A_prior_access_evidence_sufficient",
+  "32": "A_prior_access_evidence_sufficient",
+  "33": "A_prior_access_evidence_sufficient",
+  "34": "A_prior_access_evidence_sufficient",
+  "39": "A_prior_access_evidence_sufficient",
+  "41": "A_prior_access_evidence_sufficient",
+  "43": "A_prior_access_evidence_sufficient",
+  "52": "A_prior_access_evidence_sufficient",
+  "53": "A_prior_access_evidence_sufficient",
+  "56": "A_prior_access_evidence_sufficient",
+  "76": "A_prior_access_evidence_sufficient",
+  "65": "A_topup_access_explicit",
+  "72": "A_topup_access_explicit",
+  "71": "A_topup_access_explicit",
+  "61": "A_topup_access_explicit",
+  "62": "B_access_inferred_self_serve",
+  "63": "B_access_inferred_self_serve",
+  "36": "B_access_inferred_self_serve",
+  "29": "C_access_partial",
+  "47": "C_access_partial",
+  "44": "C_access_partial",
+  "26": "C_access_partial",
+  "70": "C_access_partial",
+  "25": "C_access_partial",
+  "75": "C_access_partial"
+ },
+ "extra_retrieval": {
+  "65": {
+   "raw": "runs/topup-v1-20261123/raw/65.json",
+   "use_urls": [
+    "https://supabase.com/docs/guides/platform/billing-faq",
+    "https://supabase.com/pricing",
+    "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+    "https://supabase.com/docs/guides/api/api-keys.md"
+   ]
+  },
+  "72": {
+   "raw": "runs/topup-v1-20261123/raw/72.json",
+   "use_urls": [
+    "https://airtable.com/pricing",
+    "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+    "https://airtable.com/developers/web/guides/personal-access-tokens"
+   ]
+  },
+  "71": {
+   "raw": "runs/topup-v1-20261123/raw/71.json",
+   "use_urls": [
+    "https://notion.com/pricing",
+    "https://developers.notion.com/guides/get-started/handling-api-keys",
+    "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens"
+   ]
+  },
+  "61": {
+   "raw": "runs/topup-v1-20261123/raw/61.json",
+   "use_urls": [
+    "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+    "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+    "https://docs.github.com/developers/apps/building-github-apps/creating-a-github-app"
+   ]
+  },
+  "62": {
+   "raw": "runs/topup-v1-20261123/raw/62.json",
+   "use_urls": [
+    "https://vercel.com/docs/pricing",
+    "https://vercel.com/pricing",
+    "https://vercel.com/docs/accounts/access-tokens"
+   ]
+  },
+  "63": {
+   "raw": "runs/topup-v1-20261123/raw/63.json",
+   "use_urls": [
+    "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+    "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+    "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+    "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli"
+   ]
+  },
+  "36": {
+   "raw": "runs/topup-v1-20261123/raw/36.json",
+   "use_urls": [
+    "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+    "https://klaviyo.com/pricing",
+    "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+    "https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key."
+   ]
+  },
+  "29": {
+   "raw": "runs/topup-v1-20261123/raw/29.json",
+   "use_urls": [
+    "https://aircall.io/pricing",
+    "https://support.aircall.io/en-gb/articles/30599733509277",
+    "https://developer.aircall.io/build",
+    "https://developer.aircall.io/docs/webhooks-overview"
+   ]
+  },
+  "47": {
+   "raw": "runs/topup-v1-20261123/raw/47.json",
+   "use_urls": [
+    "https://www.ecwid.com/pricing",
+    "https://www.ecwid.com/pricing/business",
+    "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps"
+   ]
+  },
+  "44": {
+   "raw": "runs/topup-v1-20261123/raw/44.json",
+   "use_urls": [
+    "https://www.salesforce.com/commerce/pricing/",
+    "https://www.salesforce.com/au/commerce/pricing/",
+    "https://developer.salesforce.com",
+    "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html"
+   ]
+  },
+  "26": {
+   "raw": "runs/topup-v1-20261123/raw/26.json",
+   "use_urls": [
+    "https://docs.discord.com/developers/quick-start/overview-of-apps"
+   ]
+  },
+  "70": {
+   "raw": "runs/topup-v1-20261123/raw/70.json",
+   "use_urls": [
+    "https://sentry.io/pricing",
+    "https://docs.sentry.io/pricing",
+    "https://docs.sentry.io/get-started"
+   ]
+  },
+  "25": {
+   "raw": "runs/topup-v1-20261123/raw/25.json",
+   "use_urls": [
+    "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+    "https://pumble.com/pricing",
+    "https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration",
+    "https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins"
+   ]
+  },
+  "75": {
+   "raw": "runs/topup-v1-20261123/raw/75.json",
+   "use_urls": [
+    "https://asana.com/pricing/client-management",
+    "https://developers.asana.com/docs/personal-access-token.md"
+   ]
+  }
+ },
+ "exclude_urls": {},
+ "not_eligible": {
+  "unresolved_evidence": [
+   46,
+   20,
+   38
+  ],
+  "identity_held": [
+   73,
+   78
+  ],
+  "scope_ambiguity_held": [
+   66
+  ],
+  "excluded_identity": [
+   58,
+   80,
+   50
+  ]
+ },
+ "candidate_models": [
+  "gemini-2.5-flash",
+  "gemini-3.5-flash"
+ ],
+ "key_policy": "GEMINI_API_KEY only; GEMINI_API_KEY_2 is never read",
+ "approval_file_needed": "runs/p1-v1c-gemini-20261124/APPROVED.json = {\"models\":[...],\"cap_per_model\":{model:N},\"phases\":[1]}  (written only after your explicit approval and the active-quota check)",
+ "created": "2026-11-23T17:37:06+0530"
+}

@@ -1,0 +1,759 @@
+
+Consensus
+tag -->
+Solutions
+Product
+Resources
+Pricing
+About
+Contact Us
+Search for Free
+Search for Free
+How Phylo powers drug discovery with Consensus
+→
+Peer-reviewed research, one API call away.
+Bring up-to-date, peer-reviewed citations into your workflows.
+Create API key
+Read the docs
+How Phylo powers drug discovery with Consensus
+→
+Peer-reviewed research, one API call away.
+Bring up-to-date, peer-reviewed citations into your workflows.
+Create API key
+Read the docs
+How Phylo powers drug discovery with Consensus
+→
+Peer-reviewed research, one API call away.
+Bring up-to-date, peer-reviewed citations into your workflows.
+Create API key
+Read the docs
+GET /v1/search
+sent
+200 Response
+{
+"results" : [
+{
+"title" : "Creatine and improvement in cognitive function …" ,
+"journal_name" : "EFSA Journal" ,
+"publisher_name" : "Wiley" ,
+"publish_year" : 2024 ,
+"sjr_best_quartile" : 1 ,
+"citation_count" : 5 ,
+"doi" : "10.2903/j.efsa.2024.9100" ,
+"takeaway" : " C r e a t i n e s u p p l e m e n t a t i o n h a s n o t b e e n
+e s t a b l i s h e d a s a c a u s e - a n d - e f f e c t r e l a t i o n s h i p … " ,
+"full_text_chunks" : [
+" S e c t i o n : W e i g h i n g o f t h e e v i d e n c e | … t h e a c u t e
+e f f e c t o f c r e a t i n e o n w o r k i n g m e m o r y … "
+]
+}
+]
+}
+GET /v1/search
+sent
+200 Response
+{
+"results" : [
+{
+"title" : "Creatine and improvement in cognitive function …" ,
+"journal_name" : "EFSA Journal" ,
+"publisher_name" : "Wiley" ,
+"publish_year" : 2024 ,
+"sjr_best_quartile" : 1 ,
+"citation_count" : 5 ,
+"doi" : "10.2903/j.efsa.2024.9100" ,
+"takeaway" : " C r e a t i n e s u p p l e m e n t a t i o n h a s n o t b e e n
+e s t a b l i s h e d a s a c a u s e - a n d - e f f e c t r e l a t i o n s h i p … " ,
+"full_text_chunks" : [
+" S e c t i o n : W e i g h i n g o f t h e e v i d e n c e | … t h e a c u t e
+e f f e c t o f c r e a t i n e o n w o r k i n g m e m o r y … "
+]
+}
+]
+}
+GET /v1/search
+sent
+200 Response
+{
+"results" : [
+{
+"title" : "Creatine and improvement in cognitive function …" ,
+"journal_name" : "EFSA Journal" ,
+"publisher_name" : "Wiley" ,
+"publish_year" : 2024 ,
+"sjr_best_quartile" : 1 ,
+"citation_count" : 5 ,
+"doi" : "10.2903/j.efsa.2024.9100" ,
+"takeaway" : " C r e a t i n e s u p p l e m e n t a t i o n h a s n o t b e e n
+e s t a b l i s h e d a s a c a u s e - a n d - e f f e c t r e l a t i o n s h i p … " ,
+"full_text_chunks" : [
+" S e c t i o n : W e i g h i n g o f t h e e v i d e n c e | … t h e a c u t e
+e f f e c t o f c r e a t i n e o n w o r k i n g m e m o r y … "
+]
+}
+]
+}
+Powering research workflows at the world's most innovative companies
+Customer stories
+Powering research workflows at the world's most innovative companies
+Customer stories
+Powering research workflows at the world's most innovative companies
+Customer stories
+Embed Consensus Search and Threads in your internal tools, workflows, and apps.
+From dashboards to automated R&D, deliver trusted references on demand.
+Embed Consensus Search and Threads in your internal tools, workflows, and apps.
+From dashboards to automated R&D, deliver trusted references on demand.
+Embed Consensus Search and Threads in your internal tools, workflows, and apps.
+From dashboards to automated R&D, deliver trusted references on demand.
+Evidence, built into your stack.
+01
+Automate
+02
+Embed
+03
+Analyze
+Automate your R&D team's research discovery
+Run automated searches through the API and save your team hours of manual discovery. Find the most relevant, reliable research fast.
+$
+✓ 12 new papers · added to Research feed
+Research feed · Creatine & cognition
+MONDAY 09:00
+Creatine and improvement in cognitive function
+EFSA Journal · 2024 · 5 citations
+Review Q1
+Effects of creatine supplementation on memory in healthy individuals
+Nutrition Reviews · 2022 · 64 citations
+Meta-analysis Q1
+Oral creatine monohydrate improves brain performance
+Proc. R. Soc. B · 2003 · 512 citations
+RCT
+Creatine supplementation and sleep-deprived cognition
+Scientific Reports · 2024 · 31 citations
+RCT Q1
+Embed Consensus results in your application
+Add Consensus results to your private ChatGPT, internal copilot, or agents so your AI always cites published research. Every result is enriched with study design, journal rank, and more.
+R&D Assistant POWERED BY CONSENSUS
+Searching Consensus…
+Evidence is mixed. A meta-analysis found memory benefits in healthy adults, strongest in older people [1] , while EFSA concluded a cause-and-effect link isn't established [2] .
+[ 1 ] 2024
+Creatine and improvement in cognitive function
+[ 2 ] 2022
+Effects of creatine supplementation on memory in healthy individuals
+[ 3 ] 2003
+Oral creatine monohydrate improves brain performance
+Get cited analysis your team can build on
+Threads brings the Consensus Research Agent to the API. Get a cited answer with the exact quote behind every citation, then ask follow-ups in the same thread.
+Thread · creatine & working memory Pro
+Plan
+Search
+Read full text
+Write
+Creatine modestly improves working memory
+68% OF STUDIES · YES
+Study
+Design
+N
+Finding
+Prokopidis 2022
+Meta-analysis
+1,014
+Memory ↑, older adults
+Avgerinos 2018
+Systematic review
+281
+Short-term memory ↑
+Rae 2003
+RCT
+45
+Working memory ↑
+Evidence, built into your stack.
+01
+Automate
+02
+Embed
+03
+Analyze
+Automate your R&D team's research discovery
+Run automated searches through the API and save your team hours of manual discovery. Find the most relevant, reliable research fast.
+$
+✓ 12 new papers · added to Research feed
+Research feed · Creatine & cognition
+MONDAY 09:00
+Creatine and improvement in cognitive function
+EFSA Journal · 2024 · 5 citations
+Review Q1
+Effects of creatine supplementation on memory in healthy individuals
+Nutrition Reviews · 2022 · 64 citations
+Meta-analysis Q1
+Oral creatine monohydrate improves brain performance
+Proc. R. Soc. B · 2003 · 512 citations
+RCT
+Creatine supplementation and sleep-deprived cognition
+Scientific Reports · 2024 · 31 citations
+RCT Q1
+Evidence, built into your stack.
+01
+Automate
+02
+Embed
+03
+Analyze
+Automate your R&D team's research discovery
+Run automated searches through the API and save your team hours of manual discovery. Find the most relevant, reliable research fast.
+$
+✓ 12 new papers · added to Research feed
+Research feed · Creatine & cognition
+MONDAY 09:00
+Creatine and improvement in cognitive function
+EFSA Journal · 2024 · 5 citations
+Review Q1
+Effects of creatine supplementation on memory in healthy individuals
+Nutrition Reviews · 2022 · 64 citations
+Meta-analysis Q1
+Oral creatine monohydrate improves brain performance
+Proc. R. Soc. B · 2003 · 512 citations
+RCT
+Creatine supplementation and sleep-deprived cognition
+Scientific Reports · 2024 · 31 citations
+RCT Q1
+Two ways to build.
+Search returns ranked papers in one call. Threads hands the whole research task to the Consensus agent.
+GET
+/v1/search
+index
+~1s
+1
+0.98
+2
+0.94
+3
+0.91
+GET
+/v1/search
+Search
+Ranked papers for your own pipeline.
+Returns
+Papers, metadata and full-text excerpts
+Steps
+One
+Timing
+Synchronous
+Follow-ups
+Each request stands alone
+Best for
+Lookups, screening and high-volume pipelines
+Search docs
+POST
+/v1/threads
+async · minutes
+plan
+search
+follow citations
+read full text
+write
+cited answer · grounding quotes · papers
+[1][2][3]
+POST
+/v1/threads
+Threads
+A cited answer from the research agent.
+Returns
+A written analysis with citations and grounding quotes
+Steps
+Many: search, citation crawls, reading full papers
+Timing
+Asynchronous, in minutes
+Follow-ups
+Build on earlier answers
+Best for
+Literature reviews and multi-step research
+Threads docs
+Two ways to build.
+Search returns ranked papers in one call. Threads hands the whole research task to the Consensus agent.
+GET
+/v1/search
+index
+~1s
+1
+0.98
+2
+0.94
+3
+0.91
+GET
+/v1/search
+Search
+Ranked papers for your own pipeline.
+Returns
+Papers, metadata and full-text excerpts
+Steps
+One
+Timing
+Synchronous
+Follow-ups
+Each request stands alone
+Best for
+Lookups, screening and high-volume pipelines
+Search docs
+POST
+/v1/threads
+async · minutes
+plan
+search
+follow citations
+read full text
+write
+cited answer · grounding quotes · papers
+[1][2][3]
+POST
+/v1/threads
+Threads
+A cited answer from the research agent.
+Returns
+A written analysis with citations and grounding quotes
+Steps
+Many: search, citation crawls, reading full papers
+Timing
+Asynchronous, in minutes
+Follow-ups
+Build on earlier answers
+Best for
+Literature reviews and multi-step research
+Threads docs
+Two ways to build.
+Search returns ranked papers in one call. Threads hands the whole research task to the Consensus agent.
+GET
+/v1/search
+index
+~1s
+1
+0.98
+2
+0.94
+3
+0.91
+GET
+/v1/search
+Search
+Ranked papers for your own pipeline.
+Returns
+Papers, metadata and full-text excerpts
+Steps
+One
+Timing
+Synchronous
+Follow-ups
+Each request stands alone
+Best for
+Lookups, screening and high-volume pipelines
+Search docs
+POST
+/v1/threads
+async · minutes
+plan
+search
+follow citations
+read full text
+write
+cited answer · grounding quotes · papers
+[1][2][3]
+POST
+/v1/threads
+Threads
+A cited answer from the research agent.
+Returns
+A written analysis with citations and grounding quotes
+Steps
+Many: search, citation crawls, reading full papers
+Timing
+Asynchronous, in minutes
+Follow-ups
+Build on earlier answers
+Best for
+Literature reviews and multi-step research
+Threads docs
+What's in the API.
+The same index, filters and research agent behind Consensus. Included on every paid plan, and Deep includes 5x the usage of Pro.
+Methods
+Results
+§ Methods · p. 4
+…an initial loading phase of 20 g/day for 5 days, followed by 5 g/day…
+§ Results · p. 7
+…the effect on working memory was not observed at lower creatine doses…
+full_text_chunks
+Full-text snippets
+Passages from inside the paper, each labeled with the section it came from.
+400M+
+articles · preprints · theses · books
+Coverage
+400M+ scholarly works
+One index of peer-reviewed papers, preprints, theses and books.
+study design · RCT
+sample size ≥ 100
+2018 – 2026
+Medical mode
+Filters
+Rigorous filters
+Narrow by study design, sample size, journal quartile, year or Medical mode.
+Pro
+Deep
+one search · the top papers parallel searches · up to 100 papers
+Modes
+Pro and Deep
+Pro answers fast. Deep runs parallel searches, reads more papers and writes a longer report.
+Q1
+Systematic review
+2024 · 5 citations
+journal_name
+"EFSA Journal"
+publish_year
+2024
+sjr_best_quartile
+"Q1"
+study_type
+"systematic review"
+citation_count
+5
+doi
+"10.2903/j.efsa…"
+Metadata
+Rich metadata
+Authors, journal, SJR quartile, citations, DOI, study type and a one-line takeaway.
+POST
+/v1/threads
+mode: deep
+Planning the research
+3 sub-questions
+Searching in parallel
+4 queries
+Following citations
+cites · cited by
+Reading full text
+48 papers
+Writing a cited answer
+streaming…
+Working-memory gains were reported at 20 g/day loading doses [1] , but not at 2.2–14 g/day [1] [2] .
+Threads
+Agentic harness
+The research agent plans, searches in parallel, follows citations, reads papers and writes a cited answer.
+citation search
+author search
+file / collection search
+cites · cited by
+by researcher
+Tools
+Research tools
+Follow citations, find an author's work, or search your own files and collections.
+thread
+Nutrients · 2023
+J Int Soc Sports Nutr · 2021
+Psychopharmacology · 2018
+Amino Acids · 2022
+EFSA Journal · 2024
++ just now
+Library / Creatine review
+4 papers 5 papers
+Library
+Reference management
+Read and write Library collections, so results land where your team works.
+What's in the API.
+The same index, filters and research agent behind Consensus. Included on every paid plan, and Deep includes 5x the usage of Pro.
+Methods
+Results
+§ Methods · p. 4
+…an initial loading phase of 20 g/day for 5 days, followed by 5 g/day…
+§ Results · p. 7
+…the effect on working memory was not observed at lower creatine doses…
+full_text_chunks
+Full-text snippets
+Passages from inside the paper, each labeled with the section it came from.
+400M+
+articles · preprints · theses · books
+Coverage
+400M+ scholarly works
+One index of peer-reviewed papers, preprints, theses and books.
+Q1
+Systematic review
+2024 · 5 citations
+journal_name
+"EFSA Journal"
+publish_year
+2024
+sjr_best_quartile
+"Q1"
+study_type
+"systematic review"
+citation_count
+5
+doi
+"10.2903/j.efsa…"
+Metadata
+Rich metadata
+Authors, journal, SJR quartile, citations, DOI, study type and a one-line takeaway.
+study design · RCT
+sample size ≥ 100
+2018 – 2026
+Medical mode
+Filters
+Rigorous filters
+Narrow by study design, sample size, journal quartile, year or Medical mode.
+Pro
+Deep
+one search · the top papers parallel searches · up to 100 papers
+Modes
+Pro and Deep
+Pro answers fast. Deep runs parallel searches, reads more papers and writes a longer report.
+POST
+/v1/threads
+mode: deep
+Planning the research
+3 sub-questions
+Searching in parallel
+4 queries
+Following citations
+cites · cited by
+Reading full text
+48 papers
+Writing a cited answer
+streaming…
+Working-memory gains were reported at 20 g/day loading doses [1] , but not at 2.2–14 g/day [1] [2] .
+Threads
+Agentic harness
+The research agent plans, searches in parallel, follows citations, reads papers and writes a cited answer.
+citation search
+author search
+file / collection search
+cites · cited by
+by researcher
+Tools
+Research tools
+Follow citations, find an author's work, or search your own files and collections.
+thread
+Nutrients · 2023
+J Int Soc Sports Nutr · 2021
+Psychopharmacology · 2018
+Amino Acids · 2022
+EFSA Journal · 2024
++ just now
+Library / Creatine review
+4 papers 5 papers
+Library
+Reference management
+Read and write Library collections, so results land where your team works.
+What's in the API.
+The same index, filters and research agent behind Consensus. Included on every paid plan, and Deep includes 5x the usage of Pro.
+Methods
+Results
+§ Methods · p. 4
+…an initial loading phase of 20 g/day for 5 days, followed by 5 g/day…
+§ Results · p. 7
+…the effect on working memory was not observed at lower creatine doses…
+full_text_chunks
+Full-text snippets
+Passages from inside the paper, each labeled with the section it came from.
+400M+
+articles · preprints · theses · books
+Coverage
+400M+ scholarly works
+One index of peer-reviewed papers, preprints, theses and books.
+study design · RCT
+sample size ≥ 100
+2018 – 2026
+Medical mode
+Filters
+Rigorous filters
+Narrow by study design, sample size, journal quartile, year or Medical mode.
+Pro
+Deep
+one search · the top papers parallel searches · up to 100 papers
+Modes
+Pro and Deep
+Pro answers fast. Deep runs parallel searches, reads more papers and writes a longer report.
+Q1
+Systematic review
+2024 · 5 citations
+journal_name
+"EFSA Journal"
+publish_year
+2024
+sjr_best_quartile
+"Q1"
+study_type
+"systematic review"
+citation_count
+5
+doi
+"10.2903/j.efsa…"
+Metadata
+Rich metadata
+Authors, journal, SJR quartile, citations, DOI, study type and a one-line takeaway.
+POST
+/v1/threads
+mode: deep
+Planning the research
+Searching in parallel
+Following citations
+Reading full text
+Writing a cited answer
+Working-memory gains were reported at 20 g/day loading doses [1] , but not at 2.2–14 g/day [1] [2] .
+Threads
+Agentic harness
+The research agent plans, searches in parallel, follows citations, reads papers and writes a cited answer.
+citation search
+author search
+file / collection search
+Tools
+Research tools
+Follow citations, find an author's work, or search your own files and collections.
+thread
+Nutrients · 2023
+J Int Soc Sports Nutr · 2021
+Psychopharmacology · 2018
+Amino Acids · 2022
+EFSA Journal · 2024
++ just now
+Library / Creatine review
+4 papers 5 papers
+Library
+Reference management
+Read and write Library collections, so results land where your team works.
+Bring Consensus into your AI assistant.
+Connect Claude, ChatGPT, Copilot and other MCP clients to the same search, with cited papers in every answer.
+Explore the MCP
+mcp.json
+{
+"mcpServers" : {
+"consensus" : {
+"url" : "https://mcp.consensus.app/mcp"
+}
+}
+}
+Bring Consensus into your AI assistant.
+Connect Claude, ChatGPT, Copilot and other MCP clients to the same search, with cited papers in every answer.
+Explore the MCP
+mcp.json
+{
+"mcpServers" : {
+"consensus" : {
+"url" : "https://mcp.consensus.app/mcp"
+}
+}
+}
+Bring Consensus into your AI assistant.
+Connect Claude, ChatGPT, Copilot and other MCP clients to the same search, with cited papers in every answer.
+Explore the MCP
+mcp.json
+{
+"mcpServers" : {
+"consensus" : {
+"url" : "https://mcp.consensus.app/mcp"
+}
+}
+}
+Ready to Build?
+Start building with peer-reviewed research today.
+Create API key
+GitHub repo
+Ready to Build?
+Start building with peer-reviewed research today.
+Create API key
+GitHub repo
+Ready to Build?
+Start building with peer-reviewed research today.
+Create API key
+GitHub repo
+Helping the world understand , create , and share good science.
+Stay Connected
+Get updates about new features, announcements and stories from the world of Consensus
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Use Cases
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Legal
+Privacy Policy
+Terms of Service
+© 2026 Consensus NLP, Inc. All rights reserved.
+Helping the world understand , create , and share good science.
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Use Cases
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Privacy
+Terms
+© 2026 Consensus NLP, Inc. All rights reserved.
+Helping the world understand , create , and share good science.
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Privacy Policy
+Terms of Service
+© 2026 Consensus NLP, Inc. All rights reserved.

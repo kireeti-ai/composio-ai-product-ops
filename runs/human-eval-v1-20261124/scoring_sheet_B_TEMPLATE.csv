@@ -1,0 +1,1 @@
+frame,registry_id,app,field,model_value,model_evidence_url_quote,quote_found_auto,pass2_verdicts(groq; flag not truth),pass2_needs_human,evidence_support_label(supports|partial|none),blocker_label(correct|partial|incorrect|none_applicable),error_category,adjudicator_id,adjudication_notes

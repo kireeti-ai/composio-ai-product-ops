@@ -1,0 +1,108 @@
+Custom Integration FAQs — Xero Developer
+Skip to main content
+Getting Started
+Grow with Xero
+Documentation
+Tools
+Support
+Sign upLog in
+Menu
+Frequently asked questions
+Answers to your most common questions.
+FAQs
+All
+AI Toolkit
+API Updates
+App Awards
+Custom Integration
+Getting started
+Granular Scopes
+Limits
+OAuth 2.0
+Permissions
+Pricing and Policy Updates
+Remote MCP
+Xero Ecosystem Security Requirements Update
+Xero Functionality
+Main content start
+Custom Integration
+01. What's changing with Custom Connections?
+From 1 December 2026, we are making changes to Custom Connections. From that date, you won't be able to:
+Create a new Custom Connection app
+Buy a new Custom Connection subscription
+02. What can I do before 1 December 2026?
+Until 1 December 2026, you can create Custom Connection apps, buy Custom Connection subscriptions, and add or cancel subscriptions for Custom Connections apps.
+03. What happens to my existing Custom Connection App after 1 December 2026?
+A Custom Connection app created before 1 December 2026 continues working the way it does today, maintaining the same API access and daily call limit it has now. 
+04. Will client credentials still be available for machine-to-machine integrations?
+Yes. Client credentials isn’t going away. We know it’s the right model for many machine-to-machine integrations, and we’re keeping it as part of the Xero Developer platform. We’ll share more about how client credentials will be offered in future updates on developer.xero.com from 1 December 2026.
+05. I have an existing Custom Connection subscription that isn’t connected to an app. What happens? 
+You have until 15 February 2027 to connect your unused subscription to an app or cancel it.
+Connect it: You can still connect unused subscriptions to an existing Custom Connection app until 15 February 2027. Steps to connect an unused subscription to an existing app can be found here. 
+Cancel it: You can cancel at any time before 16 February 2027. Steps to cancel unused subscriptions are found here. 
+Do nothing: On 16 February 2027, if you haven’t connected or canceled your unused subscriptions, we’ll cancel them for you, so you stop paying for something you’re not using.
+Once a subscription is cancelled, it can’t be bought again.
+06. How do I manage my Custom Connection subscriptions?
+You can manage this in Xero, by going to Settings > Connected apps > App Store subscriptions > Custom Connections. There you can manage your Custom Connection subscriptions or delete them, and update the payment method. Once a subscription is cancelled, it can’t be bought again. 
+07. What happens if I delete a Custom Connection?
+Until December 1 2026, you can delete a Custom Connection and create a new one. From 1 December 2026, a deleted Custom Connection can't be created again.
+08. Can a custom connection be connected to multiple organisations?
+No, it can only be connected to a single organisation.
+09. Can an organisation have multiple custom connections?
+Yes, organisations can purchase a Custom Connection for each app they’d like to connect. This won't affect the uncertified app limit. So an org can have 2 uncertified apps plus as many custom connection apps as needed.
+10. Can I access journals with a custom connection?
+It depends on when you created your connection. 
+Connections created before 29 April 2026: These have broad scopes and can continue to access journals using the accounting.journals.read scope. 
+Connections created from 29 April 2026: these use new granular scopes, which don't include journal access. 
+11. Can I make changes to a custom connection after it’s activated? Can I add more scopes or switch organisations?
+Yes. If you choose to make changes to your custom connection it will be deactivated until it is re-authorised. You'll now use granular scopes for custom connections. More information is available here. 
+However, if you remove a broad scope from an existing connection, you won't be able to re-add it. Any broad scope you remove will be permanently replaced by granular scopes. You can continue to use your existing broad scopes until September 2027, as long as they remain in your configuration. 
+12. Do access tokens expire?
+Yes access tokens expire after 30 minutes but a new access token can be requested (as above) without user interaction.
+13. Do I need to manage refresh tokens?
+No, refresh tokens are not required. An access token can be requested using only the client_id and client_secret.
+14. Do I need to specify the xero-tenant-id header when making API calls?
+No, the xero-tenant-id header is not required. Each custom connection can only make calls against one organisation so only the access token is required.
+15. Do I need to write code to handle the authorisation flow?
+No. When the developer creates a custom connection on developer.xero.com they will specify the email address of the authorising user (e.g. their client). That user will receive an email which guides them through the authorisation process.
+If the developer is building an integration to an organization they have access to (e.g. for their own company) they can also be the authorising user.
+16. How can I test a Custom Connection?
+Custom Connections can be tested using the demo company. There is no charge when using a demo company.
+17. How do I build a machine to machine integration?
+If the organisation you're connecting to is in Australia, New Zealand, the UK or the US then you have the option of utilising our premium integration option Custom Connections. 
+If your organisation isn't in one of those regions, or you don't want to pay for a Custom Connection, then you can still make use of Web or PKCE code flow for building machine to machine integrations but you'll need to request your tokens and handle authorisation outside off your application.
+18. Will a Custom Connection require the use of scopes?
+Yes. Scopes will be selected by the developer when a custom connection is created and displayed to the Xero user during authorisation. New custom connections will use the newly released granular scopes. More information is available here. 
+19. Will you support long lived access tokens?
+No, we've implemented short-lived tokens with long-lived authorizations as is best practice for OAuth 2.0. All Xero access tokens expire after 30 minutes. Refresh tokens allow your app to obtain new access tokens without involving a user again. 
+Alternatively, if you'd prefer not to have to manage a refresh token, you might be interested in the premium, Custom Connection option. It utilises the client credentials grant type and only requires your client id and client secret to request new access tokens.
+20. Will you support the client credentials grant type?
+Yes, using the Client Credentials grant type provides an alternative way to retrieve information about your connections and users' subscriptions, without requiring the user's access or refresh tokens. You will however need a ClientID and a Client Secret.
+AI toolkit
+RMCP Server
+Agents Toolkit
+Prompt Library
+Documentation
+OAuth 2
+API reference
+Webhooks
+Community
+GitHub
+Product Feedback
+Connect to the Community
+Dev Day Discord Server
+Find a developer
+Events
+News
+DevBlog
+API status
+Changelog
+Support
+Contact us
+FAQ
+© 2026 Xero Limited. All rights reserved. "Xero", "Beautiful business" and "Your business supercharged" are trademarks of Xero Limited.
+About Xero
+Developer Platform Terms and Conditions
+The Xero Developer Platform Commercial Terms
+Xero ecosystem principles
+Dev Council Terms and Conditions

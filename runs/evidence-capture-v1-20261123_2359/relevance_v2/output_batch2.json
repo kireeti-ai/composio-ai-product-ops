@@ -1,0 +1,743 @@
+[
+ {
+  "claim_id": "55:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API token for REST",
+   "hosted MCP OAuth",
+   "Bearer header (MCP)"
+  ],
+  "uncovered": [
+   "Bearer scheme for REST API",
+   "Bearer-token as fallback to OAuth"
+  ],
+  "reason": "Quote 'Authorization: Bearer <APIFY_TOKEN>' comes from the MCP README and 'secret API token' from the REST page, but nothing says Bearer is used for REST or that it is a fallback to OAuth."
+ },
+ {
+  "claim_id": "55:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "self_serve free plan",
+   "no credit card"
+  ],
+  "uncovered": [],
+  "reason": "'Start for free' and 'No credit card required.' together state both free plan and no-card components."
+ },
+ {
+  "claim_id": "55:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "rest",
+   "python client",
+   "cli"
+  ],
+  "uncovered": [
+   "JS/Go/PHP/Java clients"
+  ],
+  "reason": "Quotes show 'REST API', 'Client for Python' and 'The Apify CLI', but no quote names the JS, Go, PHP or Java clients."
+ },
+ {
+  "claim_id": "55:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "20 requests/second per account on hosted MCP"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'up to 20 requests per second per account' matches the hosted-MCP limit exactly; the REST-not-captured parenthetical is a disclaimer."
+ },
+ {
+  "claim_id": "55:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "official",
+   "hosted https://mcp.apify.com"
+  ],
+  "uncovered": [
+   "open-source repo"
+  ],
+  "reason": "'The official Apify ... MCP server' and 'hosted endpoint is https://mcp.apify.com' are stated, but no quote says the repo is open-source."
+ },
+ {
+  "claim_id": "55:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API token auth is the only requirement shown"
+  ],
+  "uncovered": [
+   "no-blocker absence",
+   "free access"
+  ],
+  "reason": "The single quote about authenticating with a 'secret API token' cannot prove 'no blocker found' (absence) and says nothing about free access."
+ },
+ {
+  "claim_id": "57:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API key Bearer",
+   "proxy username/password",
+   "MCP needs only API token"
+  ],
+  "uncovered": [],
+  "reason": "Quotes give 'API Access with an API key', 'Authorization: Bearer <token>', 'proxy username and password' and 'MCP server only requires an API token'."
+ },
+ {
+  "claim_id": "57:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "5,000 free MCP requests/month",
+   "pay-as-you-go after"
+  ],
+  "uncovered": [],
+  "reason": "'5,000 free requests per month' and 'pay-as-you-go options are available after that' cover both components."
+ },
+ {
+  "claim_id": "57:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "native proxy (username/password)",
+   "API Access with API key"
+  ],
+  "uncovered": [
+   "rest explicitly"
+  ],
+  "reason": "Quote names 'API Access with an API key' and 'Native Access with proxy username and password' but never says REST."
+ },
+ {
+  "claim_id": "57:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "5,000 credits/month"
+  ],
+  "uncovered": [
+   "1 credit per search or fetch"
+  ],
+  "reason": "Quote is cut at 'of 5,000 credits per month. Web search (SERP API) and web page scraping (' before any per-request credit cost."
+ },
+ {
+  "claim_id": "57:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official docs",
+   "remote hosted",
+   "self-hosted local"
+  ],
+  "uncovered": [],
+  "reason": "'a fully managed remote server, or a self-hosted local instance' on docs.brightdata.com covers both modes."
+ },
+ {
+  "claim_id": "57:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "free MCP requests"
+  ],
+  "uncovered": [
+   "REST/auth buildability",
+   "judgement"
+  ],
+  "reason": "'5,000 free requests per month' supports access but not that building against the API has no blocker."
+ },
+ {
+  "claim_id": "64:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API tokens preferred",
+   "Global API key legacy",
+   "MCP OAuth",
+   "MCP bearer token"
+  ],
+  "uncovered": [],
+  "reason": "Quotes give 'use API tokens', 'Global API key (legacy)', 'connect using OAuth' and 'pass it as a bearer token'."
+ },
+ {
+  "claim_id": "64:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "rest"
+  ],
+  "uncovered": [],
+  "reason": "'Cloudflare's REST API' states the rest component."
+ },
+ {
+  "claim_id": "64:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "1,200 requests per 5 minutes per user"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'is 1,200 requests per five minute period per user' matches exactly."
+ },
+ {
+  "claim_id": "64:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official",
+   "URL",
+   "OAuth"
+  ],
+  "uncovered": [],
+  "reason": "'Cloudflare's own MCP servers', 'https://mcp.cloudflare.com/mcp' and 'connect using OAuth' cover all parts."
+ },
+ {
+  "claim_id": "64:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API tokens can be created"
+  ],
+  "uncovered": [
+   "judgement of buildability"
+  ],
+  "reason": "'Create an API token' is a heading-level phrase that suggests access but does not state the build is unblocked."
+ },
+ {
+  "claim_id": "66:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "OAuth 2.0 client credentials",
+   "Basic at token endpoint",
+   "Bearer access token"
+  ],
+  "uncovered": [],
+  "reason": "Quotes state 'OAuth 2.0', 'HTTP Basic Authentication' at the token endpoint and 'Authorization: Bearer <access_token>'; client-credentials wording is implied by client ID/secret."
+ },
+ {
+  "claim_id": "66:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Authorization header",
+   "basic",
+   "bearer"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show 'Authorization: Basic ...' and 'Authorization: Bearer <token>'."
+ },
+ {
+  "claim_id": "66:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "HTTP mode two auth methods",
+   "bearer token auth"
+  ],
+  "uncovered": [
+   "SSO/OAuth/OIDC",
+   "Enterprise and Aura"
+  ],
+  "reason": "Quote is cut at 'Bearer token authentication enables seamless integration with', so SSO/OAuth/OIDC and Enterprise/Aura are not shown."
+ },
+ {
+  "claim_id": "66:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "all tiers can create Aura API credentials"
+  ],
+  "uncovered": [],
+  "reason": "'All tiers can create Aura API credentials.' states the claim; 'account required' is implied by credentials 'linked to the user account'."
+ },
+ {
+  "claim_id": "66:4",
+  "verdict": "none",
+  "contradicts": false,
+  "components_covered": [],
+  "uncovered": [
+   "rest Aura API",
+   "HTTPS Cypher Query API",
+   "MCP"
+  ],
+  "reason": "Quotes are only the label 'Aura API' and a fragment 'Both ', which state no API type."
+ },
+ {
+  "claim_id": "66:7",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Neo4j MCP has docs on neo4j.com/docs/mcp"
+  ],
+  "uncovered": [
+   "absence of 'official' wording"
+  ],
+  "reason": "Quotes are only page titles 'HTTP Authentication - Neo4j MCP' and 'Neo4j MCP'; they show vendor docs exist but cannot prove no 'official' wording appears."
+ },
+ {
+  "claim_id": "66:8",
+  "verdict": "none",
+  "contradicts": false,
+  "components_covered": [],
+  "uncovered": [
+   "two separate credential models"
+  ],
+  "reason": "The only quote, 'API credentials are linked to the user account', says nothing about a second credential model for Query API or MCP."
+ },
+ {
+  "claim_id": "67:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "REST key pair",
+   "REST OAuth",
+   "REST PAT",
+   "MCP Snowflake OAuth default",
+   "External OAuth"
+  ],
+  "uncovered": [
+   "MCP PAT",
+   "JWT"
+  ],
+  "reason": "Headings 'Using key pair authentication', 'Using OAuth', 'Using a programmatic access token (PAT)' and the MCP OAuth quote are present, but no quote gives PAT for MCP."
+ },
+ {
+  "claim_id": "67:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "free trial",
+   "no payment info",
+   "AI features gated"
+  ],
+  "uncovered": [
+   "email only"
+  ],
+  "reason": "'no payment information ... is required' and 'AI features are disabled by default' are stated, but 'email only' is not."
+ },
+ {
+  "claim_id": "67:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "rest"
+  ],
+  "uncovered": [
+   "sql_api beyond nav label"
+  ],
+  "reason": "'Authenticating Snowflake REST APIs' supports rest, while 'SQL API' alone is a label that does not state the API exists as an offering."
+ },
+ {
+  "claim_id": "67:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "trial account as test environment"
+  ],
+  "uncovered": [],
+  "reason": "'lets you evaluate/test Snowflake's full range of ... features' states the trial is a test environment."
+ },
+ {
+  "claim_id": "67:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "official Snowflake-managed MCP server"
+  ],
+  "uncovered": [
+   "GA status not confirmed (absence)"
+  ],
+  "reason": "'The Snowflake-managed MCP server lets AI agents ...' supports it, but a quote cannot prove GA wording is absent."
+ },
+ {
+  "claim_id": "67:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "privilege setup (permission per tool)"
+  ],
+  "uncovered": [
+   "account required"
+  ],
+  "reason": "'Permission needs to be granted for each tool' supports privilege setup but no quote says an account is required."
+ },
+ {
+  "claim_id": "69:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API key + app key",
+   "PAT listed",
+   "OAuth2 listed",
+   "MCP optional API/app keys"
+  ],
+  "uncovered": [
+   "MCP uses OAuth login"
+  ],
+  "reason": "Quote 'optionally Datadog API and application keys' and the 'Personal Access Tokens'/'OAuth2 in Datadog' headings are present, but no quote says MCP uses an OAuth login."
+ },
+ {
+  "claim_id": "69:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "free trial label"
+  ],
+  "uncovered": [
+   "plan requirement unverified (absence)"
+  ],
+  "reason": "'FREE TRIAL' is a marketing label on the keys page and cannot prove the plan-requirement absence."
+ },
+ {
+  "claim_id": "69:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "official client libraries (partial)"
+  ],
+  "uncovered": [
+   "rest stated explicitly"
+  ],
+  "reason": "Quote ends at 'Select one of our official' so 'client libraries' is cut off and REST is not named."
+ },
+ {
+  "claim_id": "69:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "many endpoints rate limited",
+   "error on exceed"
+  ],
+  "uncovered": [
+   "429 code",
+   "per-endpoint buckets"
+  ],
+  "reason": "Quote says 'Many API endpoints are rate limited' and Datadog 'returns an error' but names no 429 or per-endpoint buckets."
+ },
+ {
+  "claim_id": "69:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "official docs page",
+   "ChatGPT app in Preview"
+  ],
+  "uncovered": [
+   "site support varies for MCP server"
+  ],
+  "reason": "'ChatGPT app is in Preview ... US1 customers only' covers Preview and one site limit, but site variance for the MCP server itself is not stated."
+ },
+ {
+  "claim_id": "69:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "MCP not supported on all sites"
+  ],
+  "uncovered": [
+   "org API+app keys"
+  ],
+  "reason": "'not supported for your selected site' supports the site limit but no quote requires org API and application keys."
+ },
+ {
+  "claim_id": "71:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "personal access token",
+   "Bearer integration token",
+   "OAuth public integration",
+   "MCP-only token"
+  ],
+  "uncovered": [
+   "MCP uses OAuth 2.0"
+  ],
+  "reason": "Quote 'An MCP access token works only with Notion MCP' covers MCP-only tokens, but no quote states OAuth 2.0 for MCP."
+ },
+ {
+  "claim_id": "71:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "workspace owner required for connection"
+  ],
+  "uncovered": [
+   "self_serve"
+  ],
+  "reason": "'required to be a workspace owner to create a connection' covers the owner rule, but nothing states self-serve access."
+ },
+ {
+  "claim_id": "71:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "sdk JavaScript (label)",
+   "webhooks (label)"
+  ],
+  "uncovered": [
+   "rest"
+  ],
+  "reason": "'Notion SDK for JavaScript' and 'Webhooks' are labels and no quote mentions REST."
+ },
+ {
+  "claim_id": "71:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "two limits exist",
+   "600/min",
+   "180/min"
+  ],
+  "uncovered": [
+   "~3 req/s per-connection",
+   "plan mapping Business/Enterprise vs other"
+  ],
+  "reason": "Quotes give '600 requests per minute' and '180 requests per minute' but no figure for per-connection or which plans each applies to."
+ },
+ {
+  "claim_id": "71:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "hosted server",
+   "URL"
+  ],
+  "uncovered": [
+   "official",
+   "Streamable HTTP"
+  ],
+  "reason": "'Notion provides a hosted' (truncated) and the URL are quoted, but 'Streamable HTTP' appears in no quote."
+ },
+ {
+  "claim_id": "71:6",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "personal access token usable for scripts"
+  ],
+  "uncovered": [],
+  "reason": "'Use a personal access token for scripts, tools' supports a self-build path."
+ },
+ {
+  "claim_id": "73:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "personal API key",
+   "OAuth2",
+   "client credentials (heading)"
+  ],
+  "uncovered": [
+   "MCP OAuth 2.1 or bearer/API key"
+  ],
+  "reason": "'supports personal API keys and OAuth2' and 'Client credentials token' are quoted but no quote covers MCP auth."
+ },
+ {
+  "claim_id": "73:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "self-serve API key easiest"
+  ],
+  "uncovered": [
+   "Security & access settings location",
+   "plan restrictions unchecked"
+  ],
+  "reason": "'API keys are the easiest way' implies self-serve but the settings location is not quoted."
+ },
+ {
+  "claim_id": "73:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "graphql",
+   "sdk TypeScript (label)",
+   "webhooks (label)"
+  ],
+  "uncovered": [
+   "sdk/webhooks beyond nav labels"
+  ],
+  "reason": "'public API is built using GraphQL' is solid, while 'TypeScript SDK' and 'Webhooks' are bare labels."
+ },
+ {
+  "claim_id": "73:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "2,500/hour figure",
+   "600/hour figure"
+  ],
+  "uncovered": [
+   "attribution to API key vs unauthenticated"
+  ],
+  "reason": "Quotes '2,500 requests per hour' and '600 requests per hour' are bare numbers that do not say which applies to API keys or unauthenticated."
+ },
+ {
+  "claim_id": "73:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "URL",
+   "Streamable HTTP",
+   "OAuth 2.1"
+  ],
+  "uncovered": [
+   "official",
+   "readonly endpoint"
+  ],
+  "reason": "Quotes give the URL, 'Streamable HTTP' and 'OAuth 2.1' but nothing about a readonly endpoint."
+ },
+ {
+  "claim_id": "73:6",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API keys easy for scripts"
+  ],
+  "uncovered": [],
+  "reason": "'API keys are the easiest way to access the API' supports buildability."
+ },
+ {
+  "claim_id": "74:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Basic with API token",
+   "OAuth 2.0 3LO",
+   "MCP OAuth 2.1 or API token"
+  ],
+  "uncovered": [],
+  "reason": "Quotes state 'Basic authentication uses an API token', 'three-legged OAuth' and 'OAuth 2.1 ... (or accepts an API token'."
+ },
+ {
+  "claim_id": "74:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "rest"
+  ],
+  "uncovered": [
+   "v3",
+   "webhooks beyond label"
+  ],
+  "reason": "'Jira REST API' is quoted but 'Webhooks' is only a nav label and v3 appears only in the URL."
+ },
+ {
+  "claim_id": "74:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "points-based limits from March 2, 2026",
+   "API-token burst limits"
+  ],
+  "uncovered": [
+   "Forge/Connect/OAuth 3LO scope"
+  ],
+  "reason": "Quote says limits apply to 'Jira and Confluence Cloud apps' but does not name Forge, Connect or OAuth 3LO."
+ },
+ {
+  "claim_id": "74:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official Rovo MCP",
+   "v2 URL",
+   "v1 to v2 migration"
+  ],
+  "uncovered": [],
+  "reason": "Quotes give 'https://mcp.atlassian.com/v2/mcp' and 'any existing utilization of v1 will ... utilize v2 tools'."
+ },
+ {
+  "claim_id": "74:8",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "basic auth heading"
+  ],
+  "uncovered": [
+   "judgement of buildability"
+  ],
+  "reason": "Quote is just the heading 'Basic authentication', which does not state API-token access is available."
+ },
+ {
+  "claim_id": "77:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "personal token",
+   "never expire",
+   "OAuth2",
+   "MCP OAuth"
+  ],
+  "uncovered": [
+   "pk_ prefix",
+   "authorization code grant"
+  ],
+  "reason": "Quotes state 'Personal tokens never expire' and 'select OAuth' but not the 'pk_' prefix or an authorization-code flow."
+ },
+ {
+  "claim_id": "77:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API on all plans",
+   "account to generate token"
+  ],
+  "uncovered": [],
+  "reason": "'available on all ClickUp Plans' and 'sign in to your ClickUp account in order to generate' cover both."
+ },
+ {
+  "claim_id": "77:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "v2/v3 (label)",
+   "webhooks (label)"
+  ],
+  "uncovered": [
+   "rest stated",
+   "webhooks beyond label"
+  ],
+  "reason": "'ClickUp API v2 and v3 Terminology' and 'Webhook signature' are labels; REST is not named."
+ },
+ {
+  "claim_id": "77:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "per token limit",
+   "varies by plan"
+  ],
+  "uncovered": [
+   "100/min",
+   "10,000/min"
+  ],
+  "reason": "Quote says limits are 'per token' and vary but no number such as 100 or 10,000 appears."
+ },
+ {
+  "claim_id": "77:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "URL"
+  ],
+  "uncovered": [
+   "official",
+   "all plans"
+  ],
+  "reason": "'ClickUp's MCP Server is available on' is truncated before 'all plans'."
+ },
+ {
+  "claim_id": "77:7",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "personal tokens never expire"
+  ],
+  "uncovered": [],
+  "reason": "'Personal tokens never expire.' supports easy build via token."
+ }
+]

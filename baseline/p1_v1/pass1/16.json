@@ -1,0 +1,55 @@
+{
+ "id": 16,
+ "name": "LiveAgent",
+ "category": "Support and Helpdesk",
+ "model": "gemini-2.5-flash",
+ "pages_read": [
+  "https://support.liveagent.com/docs/api/v3/",
+  "https://support.liveagent.com/167733-Documentation",
+  "https://support.liveagent.com/911737-API-v3",
+  "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors"
+ ],
+ "one_liner": "LiveAgent provides a REST API (v3 being the current version) for managing agents, contacts, and tickets, authenticated via API keys.",
+ "auth_methods": [
+  "api_key"
+ ],
+ "access": "self_serve_trial_or_paid_plan",
+ "access_note": "API keys are generated within the LiveAgent account's admin panel, implying an existing subscription or trial.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://support.liveagent.com/docs/api/v3/",
+   "quote": "To be able to make API requests you need to generate an API key in your admin panel first.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+   "quote": "1. Log in to your LiveAgent account. 2. Navigate to Configuration > System > API. 3. Generate or manage your API v3 key here.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+   "quote": "If you are unsure which API version an endpoint belongs to, consult the Swagger API descriptor available in LiveAgent's documentation.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://support.liveagent.com/docs/api/v3/",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ]
+}

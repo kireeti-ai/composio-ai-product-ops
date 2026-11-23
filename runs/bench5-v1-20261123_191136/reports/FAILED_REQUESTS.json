@@ -1,0 +1,74 @@
+[
+ {
+  "tag": "gemini36_key2",
+  "app": 27,
+  "name": "Telegram",
+  "status": "failed",
+  "category": "network_error",
+  "http": null,
+  "error": "TimeoutError",
+  "model": "gemini-3.6-flash",
+  "attempt": 1,
+  "at": "2026-11-23T19:18:30+05:30"
+ },
+ {
+  "tag": "openrouter_particle",
+  "app": 27,
+  "name": "Telegram",
+  "status": "failed",
+  "category": "rate_limit",
+  "http": 429,
+  "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"particle-ai/particle-1:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Particle AI\",\"is_byok\":false,\"provider_error_code\":\"fleet_capacity_exhausted\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\",\"retry_after_seconds\":1,\"retry_after_seconds_raw\":1,\"headers\":{\"Retry-After\":\"1\"}}},\"user_id\":\"user_3DfzlaSJnQBALLWzLKLFOem4UJD\"}",
+  "model": "particle-ai/particle-1:free",
+  "attempt": 1,
+  "at": "2026-11-23T19:15:28+05:30"
+ },
+ {
+  "tag": "openrouter_particle",
+  "app": 32,
+  "name": "Meta Ads",
+  "status": "failed",
+  "category": "rate_limit",
+  "http": 429,
+  "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"particle-ai/particle-1:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Particle AI\",\"is_byok\":false,\"provider_error_code\":\"fleet_capacity_exhausted\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\",\"retry_after_seconds\":1,\"retry_after_seconds_raw\":1,\"headers\":{\"Retry-After\":\"1\"}}},\"user_id\":\"user_3DfzlaSJnQBALLWzLKLFOem4UJD\"}",
+  "model": "particle-ai/particle-1:free",
+  "attempt": 2,
+  "at": "2026-11-23T19:15:29+05:30"
+ },
+ {
+  "tag": "openrouter_particle",
+  "app": 41,
+  "name": "Shopify",
+  "status": "failed",
+  "category": "rate_limit",
+  "http": 429,
+  "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"particle-ai/particle-1:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Particle AI\",\"is_byok\":false,\"provider_error_code\":\"fleet_capacity_exhausted\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\",\"retry_after_seconds\":1,\"retry_after_seconds_raw\":1,\"headers\":{\"Retry-After\":\"1\"}}},\"user_id\":\"user_3DfzlaSJnQBALLWzLKLFOem4UJD\"}",
+  "model": "particle-ai/particle-1:free",
+  "attempt": 3,
+  "at": "2026-11-23T19:15:31+05:30"
+ },
+ {
+  "tag": "openrouter_particle",
+  "app": 53,
+  "name": "Ahrefs",
+  "status": "failed",
+  "category": "rate_limit",
+  "http": 429,
+  "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"particle-ai/particle-1:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Particle AI\",\"is_byok\":false,\"provider_error_code\":\"fleet_capacity_exhausted\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\",\"retry_after_seconds\":1,\"retry_after_seconds_raw\":1,\"headers\":{\"Retry-After\":\"1\"}}},\"user_id\":\"user_3DfzlaSJnQBALLWzLKLFOem4UJD\"}",
+  "model": "particle-ai/particle-1:free",
+  "attempt": 4,
+  "at": "2026-11-23T19:15:33+05:30"
+ },
+ {
+  "tag": "openrouter_particle",
+  "app": 61,
+  "name": "GitHub",
+  "status": "failed",
+  "category": "rate_limit",
+  "http": 429,
+  "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"particle-ai/particle-1:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Particle AI\",\"is_byok\":false,\"provider_error_code\":\"fleet_capacity_exhausted\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\",\"retry_after_seconds\":1,\"retry_after_seconds_raw\":1,\"headers\":{\"Retry-After\":\"1\"}}},\"user_id\":\"user_3DfzlaSJnQBALLWzLKLFOem4UJD\"}",
+  "model": "particle-ai/particle-1:free",
+  "attempt": 5,
+  "at": "2026-11-23T19:15:36+05:30"
+ }
+]

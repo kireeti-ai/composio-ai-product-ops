@@ -1,0 +1,1259 @@
+[
+ {
+  "claim_id": "55:0",
+  "app": "Apify",
+  "field": "authentication",
+  "claim_value": "API token (Bearer) for REST API; hosted MCP uses OAuth, with Bearer-token fallback",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.apify.com/platform/integrations/api",
+    "source_type": "official_docs",
+    "quote": "To access the Apify API in your integrations, you need to authenticate using your secret API token."
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+    "source_type": "official_docs",
+    "quote": "`Authorization: Bearer <APIFY_TOKEN>` header"
+   },
+   {
+    "i": 2,
+    "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+    "source_type": "official_docs",
+    "quote": "Connect to the hosted server with OAuth"
+   }
+  ]
+ },
+ {
+  "claim_id": "55:1",
+  "app": "Apify",
+  "field": "access",
+  "claim_value": "self_serve: free plan, no credit card required to start",
+  "claim_note": "Pricing page; free-plan quota/limits not quoted.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://apify.com/pricing",
+    "source_type": "official_marketing",
+    "quote": "Start for free"
+   },
+   {
+    "i": 1,
+    "url": "https://apify.com/pricing",
+    "source_type": "official_marketing",
+    "quote": "No credit card required."
+   }
+  ]
+ },
+ {
+  "claim_id": "55:2",
+  "app": "Apify",
+  "field": "api_types",
+  "claim_value": "rest, sdk (JS/Python/Go/PHP/Java clients), cli",
+  "claim_note": "Webhooks not quoted from reviewed pages.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.apify.com/platform/integrations/api",
+    "source_type": "official_docs",
+    "quote": "the REST API works with any HTTP client"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.apify.com/platform/integrations/api",
+    "source_type": "official_docs",
+    "quote": "Client for Python"
+   },
+   {
+    "i": 2,
+    "url": "https://docs.apify.com/platform/integrations/api",
+    "source_type": "official_docs",
+    "quote": "The Apify CLI doesn't need a copied token."
+   }
+  ]
+ },
+ {
+  "claim_id": "55:3",
+  "app": "Apify",
+  "field": "rate_limits",
+  "claim_value": "Hosted MCP server: 20 requests/second per account (REST API limits not captured)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+    "source_type": "official_repo",
+    "quote": "The hosted server accepts up to 20 requests per second per account."
+   }
+  ]
+ },
+ {
+  "claim_id": "55:5",
+  "app": "Apify",
+  "field": "mcp",
+  "claim_value": "official: hosted https://mcp.apify.com plus open-source repo",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+    "source_type": "official_repo",
+    "quote": "The official Apify Model Context Protocol (MCP) server gives AI agents web scraping"
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/apify/apify-mcp-server/master/README.md",
+    "source_type": "official_repo",
+    "quote": "The hosted endpoint is `https://mcp.apify.com`."
+   }
+  ]
+ },
+ {
+  "claim_id": "55:6",
+  "app": "Apify",
+  "field": "buildability",
+  "claim_value": "yes (no blocker found)",
+  "claim_note": "Judgement from auth + free access evidence.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.apify.com/platform/integrations/api",
+    "source_type": "official_docs",
+    "quote": "To access the Apify API in your integrations, you need to authenticate using your secret API token."
+   }
+  ]
+ },
+ {
+  "claim_id": "57:0",
+  "app": "Bright Data",
+  "field": "authentication",
+  "claim_value": "API key sent as Bearer token (API Access) or proxy username/password (Native Access); MCP needs only API token",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access with proxy username and password."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "Authorization: Bearer <token>"
+   },
+   {
+    "i": 2,
+    "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+    "source_type": "official_docs",
+    "quote": "No. The Bright Data MCP server only requires an API token, for both the remote (hosted) and local (self-hosted) setup."
+   }
+  ]
+ },
+ {
+  "claim_id": "57:1",
+  "app": "Bright Data",
+  "field": "access",
+  "claim_value": "self_serve: new accounts get 5,000 free MCP requests/month; pay-as-you-go afterwards",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "source_type": "official_docs",
+    "quote": "Every new account includes 5,000 free requests per month."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+    "source_type": "official_docs",
+    "quote": "new users get free credit for testing, and pay-as-you-go options are available after that."
+   }
+  ]
+ },
+ {
+  "claim_id": "57:2",
+  "app": "Bright Data",
+  "field": "api_types",
+  "claim_value": "rest (API Access); native proxy protocol",
+  "claim_note": "SDK/webhooks not checked.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "source_type": "official_docs",
+    "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access with proxy username and password."
+   }
+  ]
+ },
+ {
+  "claim_id": "57:3",
+  "app": "Bright Data",
+  "field": "rate_limits",
+  "claim_value": "MCP free tier 5,000 credits/month; 1 credit per search or fetch request",
+  "claim_note": "General API rate limits not captured.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+    "source_type": "official_docs",
+    "quote": "of 5,000 credits per month. Web search (SERP API) and web page scraping ("
+   }
+  ]
+ },
+ {
+  "claim_id": "57:5",
+  "app": "Bright Data",
+  "field": "mcp",
+  "claim_value": "official: remote hosted or local self-hosted server documented on docs.brightdata.com",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "source_type": "official_docs",
+    "quote": "Use the Bright Data MCP server to give AI agents real-time access to public web data with 5,000 free requests per month and zero infrastructure setup."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "source_type": "official_docs",
+    "quote": "You can run the server two ways: a fully managed remote server, or a self-hosted local instance."
+   }
+  ]
+ },
+ {
+  "claim_id": "57:6",
+  "app": "Bright Data",
+  "field": "buildability",
+  "claim_value": "yes",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "source_type": "official_docs",
+    "quote": "Every new account includes 5,000 free requests per month."
+   }
+  ]
+ },
+ {
+  "claim_id": "64:0",
+  "app": "Cloudflare",
+  "field": "authentication",
+  "claim_value": "API tokens (preferred); Global API key (legacy); managed MCP servers use OAuth or bearer token",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+    "source_type": "official_docs",
+    "quote": "that make them less secure than API tokens. Whenever possible, use API tokens to interact with the Cloudflare API."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+    "source_type": "official_docs",
+    "quote": "Get Global API key (legacy)"
+   },
+   {
+    "i": 2,
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+    "source_type": "official_docs",
+    "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like"
+   },
+   {
+    "i": 3,
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+    "source_type": "official_docs",
+    "quote": "with the permissions you need and pass it as a bearer token in the"
+   }
+  ]
+ },
+ {
+  "claim_id": "64:2",
+  "app": "Cloudflare",
+  "field": "api_types",
+  "claim_value": "rest",
+  "claim_note": "SDK/terraform/webhooks not quoted.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.cloudflare.com/fundamentals/api/",
+    "source_type": "official_docs",
+    "quote": "Use the following resources to learn more about Cloudflare's REST API:"
+   }
+  ]
+ },
+ {
+  "claim_id": "64:3",
+  "app": "Cloudflare",
+  "field": "rate_limits",
+  "claim_value": "1,200 requests per 5 minutes per user",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.cloudflare.com/fundamentals/api/reference/limits/",
+    "source_type": "official_docs",
+    "quote": "The global rate limit for the Cloudflare API is 1,200 requests per five minute period per user"
+   }
+  ]
+ },
+ {
+  "claim_id": "64:5",
+  "app": "Cloudflare",
+  "field": "mcp",
+  "claim_value": "official: managed remote MCP servers at https://mcp.cloudflare.com/mcp (OAuth)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+    "source_type": "official_docs",
+    "quote": "Cloudflare's own MCP servers"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+    "source_type": "official_docs",
+    "quote": "https://mcp.cloudflare.com/mcp"
+   },
+   {
+    "i": 2,
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+    "source_type": "official_docs",
+    "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like"
+   }
+  ]
+ },
+ {
+  "claim_id": "64:6",
+  "app": "Cloudflare",
+  "field": "buildability",
+  "claim_value": "yes",
+  "claim_note": "Judgement.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+    "source_type": "official_docs",
+    "quote": "Create an API token"
+   }
+  ]
+ },
+ {
+  "claim_id": "66:0",
+  "app": "Neo4j",
+  "field": "authentication: Aura Management API",
+  "claim_value": "OAuth 2.0 client credentials; token endpoint uses HTTP Basic; then Bearer access token",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "source_type": "official_docs",
+    "quote": "The Aura API uses OAuth 2.0 for API authentication."
+   },
+   {
+    "i": 1,
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "source_type": "official_docs",
+    "quote": "Authentication to the token endpoint uses HTTP Basic Authentication, where the client ID and client secret are provided as the username and password, respectively."
+   },
+   {
+    "i": 2,
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "source_type": "official_docs",
+    "quote": "Authorization: Bearer <access_token>"
+   },
+   {
+    "i": 3,
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "source_type": "official_docs",
+    "quote": "The API credentials never expire unless you delete them."
+   }
+  ]
+ },
+ {
+  "claim_id": "66:1",
+  "app": "Neo4j",
+  "field": "authentication: Database Query API",
+  "claim_value": "HTTP Authorization header; basic and bearer supported",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+    "source_type": "official_docs",
+    "quote": "Authorization: Basic <base64(<username>:<password>)>"
+   },
+   {
+    "i": 1,
+    "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+    "source_type": "official_docs",
+    "quote": "Authorization: Bearer <token>"
+   }
+  ]
+ },
+ {
+  "claim_id": "66:2",
+  "app": "Neo4j",
+  "field": "authentication: Neo4j MCP server",
+  "claim_value": "HTTP mode supports two auth methods; bearer token (SSO/OAuth/OIDC) for Enterprise and Aura",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://neo4j.com/docs/mcp/current/authentication/",
+    "source_type": "official_docs",
+    "quote": "When using HTTP transport mode, the Neo4j MCP server supports two authentication methods to accommodate different deployment scenarios:"
+   },
+   {
+    "i": 1,
+    "url": "https://neo4j.com/docs/mcp/current/authentication/",
+    "source_type": "official_docs",
+    "quote": "Bearer token authentication enables seamless integration with"
+   }
+  ]
+ },
+ {
+  "claim_id": "66:3",
+  "app": "Neo4j",
+  "field": "access",
+  "claim_value": "Aura API: all tiers can create API credentials (account required)",
+  "claim_note": "Whether free tier exists: 66_5 shows \"Get started free\" CTA only.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "source_type": "official_docs",
+    "quote": "All tiers can create Aura API credentials."
+   }
+  ]
+ },
+ {
+  "claim_id": "66:4",
+  "app": "Neo4j",
+  "field": "api_types",
+  "claim_value": "rest (Aura API); HTTPS Cypher (Query API); MCP",
+  "claim_note": "Weak quotes (nav/labels); see auth pages.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://neo4j.com/docs/aura/api/overview/",
+    "source_type": "official_docs",
+    "quote": "Aura API"
+   },
+   {
+    "i": 1,
+    "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+    "source_type": "official_docs",
+    "quote": "Both "
+   }
+  ]
+ },
+ {
+  "claim_id": "66:7",
+  "app": "Neo4j",
+  "field": "mcp",
+  "claim_value": "Neo4j MCP documented on neo4j.com/docs/mcp (vendor docs); no explicit word \"official\" captured",
+  "claim_note": "Status official inferred from vendor-hosted docs domain only.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://neo4j.com/docs/mcp/current/authentication/",
+    "source_type": "official_docs",
+    "quote": "HTTP Authentication - Neo4j MCP"
+   },
+   {
+    "i": 1,
+    "url": "https://neo4j.com/docs/mcp/current/authentication/",
+    "source_type": "official_docs",
+    "quote": "Neo4j MCP"
+   }
+  ]
+ },
+ {
+  "claim_id": "66:8",
+  "app": "Neo4j",
+  "field": "buildability",
+  "claim_value": "conditional: two separate credential models must be handled",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://neo4j.com/docs/aura/api/authentication/",
+    "source_type": "official_docs",
+    "quote": "API credentials are linked to the user account, inheriting its capabilities and roles."
+   }
+  ]
+ },
+ {
+  "claim_id": "67:0",
+  "app": "Snowflake",
+  "field": "authentication",
+  "claim_value": "REST APIs: key pair (JWT), OAuth, programmatic access token (PAT); MCP: Snowflake OAuth default, External OAuth, PAT",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "source_type": "official_docs",
+    "quote": "Using key pair authentication"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "source_type": "official_docs",
+    "quote": "Using OAuth"
+   },
+   {
+    "i": 2,
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "source_type": "official_docs",
+    "quote": "Using a programmatic access token (PAT)"
+   },
+   {
+    "i": 3,
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "source_type": "official_docs",
+    "quote": "Snowflake OAuth by default, with optional External OAuth so MCP clients can authenticate against your organization\u2019s identity provider."
+   }
+  ]
+ },
+ {
+  "claim_id": "67:1",
+  "app": "Snowflake",
+  "field": "access",
+  "claim_value": "Account required; free trial account available (email only, no payment info)",
+  "claim_note": "Trial length not captured; AI/Cortex features (incl. possibly MCP tools) gated until card added.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+    "source_type": "official_docs",
+    "quote": "A Snowflake trial account lets you evaluate/test Snowflake\u2019s full range of innovative and powerful features with no cost or contractual obligations."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+    "source_type": "official_docs",
+    "quote": "no payment information or other qualifying information is required."
+   },
+   {
+    "i": 2,
+    "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+    "source_type": "official_docs",
+    "quote": "AI features are disabled by default on self-service trial accounts until you"
+   }
+  ]
+ },
+ {
+  "claim_id": "67:2",
+  "app": "Snowflake",
+  "field": "api_types",
+  "claim_value": "rest, sql_api",
+  "claim_note": "SQL API quote is a nav label.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "source_type": "official_docs",
+    "quote": "Authenticating Snowflake REST APIs with Snowflake"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "source_type": "official_docs",
+    "quote": "SQL API"
+   }
+  ]
+ },
+ {
+  "claim_id": "67:4",
+  "app": "Snowflake",
+  "field": "sandbox",
+  "claim_value": "trial account serves as test environment",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+    "source_type": "official_docs",
+    "quote": "A Snowflake trial account lets you evaluate/test Snowflake\u2019s full range of innovative and powerful features with no cost or contractual obligations."
+   }
+  ]
+ },
+ {
+  "claim_id": "67:5",
+  "app": "Snowflake",
+  "field": "mcp",
+  "claim_value": "official: Snowflake-managed MCP server; GA status not confirmed",
+  "claim_note": "No \"generally available\"/\"preview\" wording found on page.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "source_type": "official_docs",
+    "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without needing to deploy separate infrastructure."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "source_type": "official_docs",
+    "quote": "Access to the MCP Server does not give access to the tools. Permission needs to be granted for each tool."
+   }
+  ]
+ },
+ {
+  "claim_id": "67:6",
+  "app": "Snowflake",
+  "field": "buildability",
+  "claim_value": "conditional: needs account + role/privilege setup",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "source_type": "official_docs",
+    "quote": "Access to the MCP Server does not give access to the tools. Permission needs to be granted for each tool."
+   }
+  ]
+ },
+ {
+  "claim_id": "69:0",
+  "app": "Datadog",
+  "field": "authentication",
+  "claim_value": "API key + application key; also OAuth2 clients and Personal Access Tokens listed; MCP uses OAuth login, optional API/app keys",
+  "claim_note": "PAT/OAuth quotes are nav headings only; phase-out of application keys not verified.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+    "source_type": "official_docs",
+    "quote": "in conjunction with your organization\u2019s API key, give users access to Datadog\u2019s programmatic API."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+    "source_type": "official_docs",
+    "quote": "Personal Access Tokens"
+   },
+   {
+    "i": 2,
+    "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+    "source_type": "official_docs",
+    "quote": "OAuth2 in Datadog"
+   },
+   {
+    "i": 3,
+    "url": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+    "source_type": "official_docs",
+    "quote": "Alternatively, set the MCP Server domain (and optionally Datadog API and application keys) as environment variables before starting Claude Code."
+   }
+  ]
+ },
+ {
+  "claim_id": "69:1",
+  "app": "Datadog",
+  "field": "access",
+  "claim_value": "free trial exists; plan requirement for API/MCP not verified",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+    "source_type": "official_marketing",
+    "quote": "FREE TRIAL"
+   }
+  ]
+ },
+ {
+  "claim_id": "69:2",
+  "app": "Datadog",
+  "field": "api_types",
+  "claim_value": "rest with official client libraries",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.datadoghq.com/api/latest/",
+    "source_type": "official_docs",
+    "quote": "By default, the Datadog API Docs show examples in cURL. Select one of our official"
+   }
+  ]
+ },
+ {
+  "claim_id": "69:3",
+  "app": "Datadog",
+  "field": "rate_limits",
+  "claim_value": "Many endpoints rate limited; 429 on exceed; per-endpoint buckets",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.datadoghq.com/api/latest/rate-limits/",
+    "source_type": "official_docs",
+    "quote": "Many API endpoints are rate limited. Once you exceed a certain number of requests in a specific period, Datadog returns an error."
+   }
+  ]
+ },
+ {
+  "claim_id": "69:5",
+  "app": "Datadog",
+  "field": "mcp",
+  "claim_value": "official docs page for Datadog MCP Server; ChatGPT app in Preview; site support varies",
+  "claim_note": "Preview wording applies to ChatGPT app; MCP server allow-listing not found.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+    "source_type": "official_docs",
+    "quote": "Learn how to set up and configure the Datadog MCP Server, which lets you retrieve telemetry insights and manage platform features directly from AI-powered clients."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+    "source_type": "official_docs",
+    "quote": "The Datadog ChatGPT app is in Preview. During the Preview, it is available for US1 customers only."
+   }
+  ]
+ },
+ {
+  "claim_id": "69:6",
+  "app": "Datadog",
+  "field": "buildability",
+  "claim_value": "conditional: org API+app keys; MCP not supported on all sites",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+    "source_type": "official_docs",
+    "quote": "Datadog MCP Server is not supported for your selected site ("
+   }
+  ]
+ },
+ {
+  "claim_id": "71:0",
+  "app": "Notion",
+  "field": "authentication",
+  "claim_value": "Personal access token, internal connection token (Bearer), OAuth 2.0 (public/OAuth integration); MCP uses OAuth 2.0 with MCP-only tokens",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.notion.com/guides/get-started/getting-started",
+    "source_type": "official_docs",
+    "quote": "Use a personal access token for scripts, tools, and Workers that run with your Notion permissions."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.notion.com/guides/get-started/authorization",
+    "source_type": "official_docs",
+    "quote": "Bearer {INTEGRATION_TOKEN}"
+   },
+   {
+    "i": 2,
+    "url": "https://developers.notion.com/guides/get-started/getting-started",
+    "source_type": "official_docs",
+    "quote": "Use a public integration so users in any workspace can authorize your app through OAuth."
+   },
+   {
+    "i": 3,
+    "url": "https://developers.notion.com/guides/mcp/build-mcp-client",
+    "source_type": "official_docs",
+    "quote": "An MCP access token works only with Notion MCP."
+   }
+  ]
+ },
+ {
+  "claim_id": "71:1",
+  "app": "Notion",
+  "field": "access",
+  "claim_value": "self_serve in a workspace; creating an internal connection requires workspace owner",
+  "claim_note": "Plan-level API availability not quoted.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.notion.com/guides/get-started/authorization",
+    "source_type": "official_docs",
+    "quote": "You are required to be a workspace owner to create a connection."
+   }
+  ]
+ },
+ {
+  "claim_id": "71:2",
+  "app": "Notion",
+  "field": "api_types",
+  "claim_value": "rest, sdk (JavaScript), webhooks",
+  "claim_note": "Webhooks quote is nav label.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.notion.com/guides/get-started/getting-started",
+    "source_type": "official_docs",
+    "quote": "Notion SDK for JavaScript"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.notion.com/guides/get-started/getting-started",
+    "source_type": "official_docs",
+    "quote": "Webhooks"
+   }
+  ]
+ },
+ {
+  "claim_id": "71:3",
+  "app": "Notion",
+  "field": "rate_limits",
+  "claim_value": "per-connection ~3 req/s; per-workspace 600/min (Business/Enterprise) or 180/min (other plans)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.notion.com/reference/request-limits",
+    "source_type": "official_docs",
+    "quote": "The Notion API enforces two rate limits: a per-connection limit and a per-workspace limit."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.notion.com/reference/request-limits",
+    "source_type": "official_docs",
+    "quote": "600 requests per minute (an average of 10 per second)"
+   },
+   {
+    "i": 2,
+    "url": "https://developers.notion.com/reference/request-limits",
+    "source_type": "official_docs",
+    "quote": "180 requests per minute (an average of 3 per second)"
+   }
+  ]
+ },
+ {
+  "claim_id": "71:5",
+  "app": "Notion",
+  "field": "mcp",
+  "claim_value": "official: hosted server at https://mcp.notion.com/mcp (Streamable HTTP)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.notion.com/guides/mcp/build-mcp-client",
+    "source_type": "official_docs",
+    "quote": "Notion provides a hosted"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.notion.com/guides/mcp/build-mcp-client",
+    "source_type": "official_docs",
+    "quote": "https://mcp.notion.com/mcp"
+   }
+  ]
+ },
+ {
+  "claim_id": "71:6",
+  "app": "Notion",
+  "field": "buildability",
+  "claim_value": "yes",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.notion.com/guides/get-started/getting-started",
+    "source_type": "official_docs",
+    "quote": "Use a personal access token for scripts, tools, and Workers that run with your Notion permissions."
+   }
+  ]
+ },
+ {
+  "claim_id": "73:0",
+  "app": "Linear",
+  "field": "authentication",
+  "claim_value": "Personal API key, OAuth2, OAuth client credentials; MCP: OAuth 2.1 or bearer/API key",
+  "claim_note": "Client credentials quote is a heading.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://linear.app/developers/graphql",
+    "source_type": "official_docs",
+    "quote": "The Linear API supports personal API keys and OAuth2 authentication."
+   },
+   {
+    "i": 1,
+    "url": "https://linear.app/developers/graphql",
+    "source_type": "official_docs",
+    "quote": "Authorization: <API_KEY>"
+   },
+   {
+    "i": 2,
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "source_type": "official_docs",
+    "quote": "Linear supports OAuth2 authentication, which is recommended if you\u2019re building applications to integrate with Linear."
+   },
+   {
+    "i": 3,
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "source_type": "official_docs",
+    "quote": "Client credentials token"
+   }
+  ]
+ },
+ {
+  "claim_id": "73:1",
+  "app": "Linear",
+  "field": "access",
+  "claim_value": "Self-serve key creation in workspace Security & access settings; plan restrictions not checked",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://linear.app/developers/graphql",
+    "source_type": "official_docs",
+    "quote": "For personal scripts API keys are the easiest way to access the API."
+   }
+  ]
+ },
+ {
+  "claim_id": "73:2",
+  "app": "Linear",
+  "field": "api_types",
+  "claim_value": "graphql, sdk (TypeScript), webhooks",
+  "claim_note": "SDK/webhooks quotes are nav labels.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://linear.app/developers/graphql",
+    "source_type": "official_docs",
+    "quote": "Linear\u2019s public API is built using GraphQL."
+   },
+   {
+    "i": 1,
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "source_type": "official_docs",
+    "quote": "TypeScript SDK"
+   },
+   {
+    "i": 2,
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "source_type": "official_docs",
+    "quote": "Webhooks"
+   }
+  ]
+ },
+ {
+  "claim_id": "73:3",
+  "app": "Linear",
+  "field": "rate_limits",
+  "claim_value": "2,500 requests/hour with API key; 600/hour unauthenticated",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://linear.app/developers/rate-limiting",
+    "source_type": "official_docs",
+    "quote": "2,500 requests per hour"
+   },
+   {
+    "i": 1,
+    "url": "https://linear.app/developers/rate-limiting",
+    "source_type": "official_docs",
+    "quote": "600 requests per hour"
+   }
+  ]
+ },
+ {
+  "claim_id": "73:5",
+  "app": "Linear",
+  "field": "mcp",
+  "claim_value": "official: https://mcp.linear.app/mcp (Streamable HTTP, OAuth 2.1; also readonly endpoint)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://linear.app/docs/mcp",
+    "source_type": "official_docs",
+    "quote": "Our MCP server uses Streamable HTTP as the primary transport, accessible at the following address."
+   },
+   {
+    "i": 1,
+    "url": "https://linear.app/docs/mcp",
+    "source_type": "official_docs",
+    "quote": "https://mcp.linear.app/mcp"
+   },
+   {
+    "i": 2,
+    "url": "https://linear.app/docs/mcp",
+    "source_type": "official_docs",
+    "quote": "The interactive setup flow uses OAuth 2.1 with dynamic client registration."
+   }
+  ]
+ },
+ {
+  "claim_id": "73:6",
+  "app": "Linear",
+  "field": "buildability",
+  "claim_value": "yes",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://linear.app/developers/graphql",
+    "source_type": "official_docs",
+    "quote": "For personal scripts API keys are the easiest way to access the API."
+   }
+  ]
+ },
+ {
+  "claim_id": "74:0",
+  "app": "Jira",
+  "field": "authentication",
+  "claim_value": "Basic auth with email + API token (personal scripts/bots); OAuth 2.0 3LO for apps; MCP OAuth 2.1 or API token",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+    "source_type": "official_docs",
+    "quote": "Basic authentication uses an API token to authenticate the client. The token is generated from a user's Atlassian Account, encoded, then added to the header for requests to the API."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+    "source_type": "official_docs",
+    "quote": "OAuth 2.0 authorization code grants, also known as three-legged OAuth, is a token-based method for authentication and authorization."
+   },
+   {
+    "i": 2,
+    "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+    "source_type": "official_docs",
+    "quote": "The server initiates a secure OAuth 2.1 authorization flow (or accepts an API token for headless authentication)."
+   }
+  ]
+ },
+ {
+  "claim_id": "74:2",
+  "app": "Jira",
+  "field": "api_types",
+  "claim_value": "rest (v3), webhooks",
+  "claim_note": "Webhooks quote is nav label.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "source_type": "official_docs",
+    "quote": "The Jira REST API enables you to interact with Jira programmatically."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "source_type": "official_docs",
+    "quote": "Webhooks"
+   }
+  ]
+ },
+ {
+  "claim_id": "74:3",
+  "app": "Jira",
+  "field": "rate_limits",
+  "claim_value": "Points-based/tiered quota limits enforced from March 2, 2026 for Forge/Connect/OAuth 3LO apps; API-token traffic stays on burst limits",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+    "source_type": "official_docs",
+    "quote": "Enforcement of the new points-based API rate limits and tiered quota rate limits for Jira and Confluence Cloud apps will begin on March 2, 2026"
+   },
+   {
+    "i": 1,
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+    "source_type": "official_docs",
+    "quote": "API token-based traffic is not affected by this change, and will continue to be governed by existing burst rate limits."
+   }
+  ]
+ },
+ {
+  "claim_id": "74:5",
+  "app": "Jira",
+  "field": "mcp",
+  "claim_value": "official: Atlassian Rovo MCP server at https://mcp.atlassian.com/v2/mcp; v1 migration to v2",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+    "source_type": "official_docs",
+    "quote": "server that connects AI-powered clients to your Atlassian Cloud apps."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+    "source_type": "official_docs",
+    "quote": "https://mcp.atlassian.com/v2/mcp"
+   },
+   {
+    "i": 2,
+    "url": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/getting-started-with-the-atlassian-remote-mcp-server/",
+    "source_type": "official_docs",
+    "quote": "On March 1, 2027 any existing utilization of v1 will automatically start to expose and utilize v2 tools."
+   }
+  ]
+ },
+ {
+  "claim_id": "74:8",
+  "app": "Jira",
+  "field": "buildability",
+  "claim_value": "yes",
+  "claim_note": "Judgement from API-token basic auth.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+    "source_type": "official_docs",
+    "quote": "Basic authentication"
+   }
+  ]
+ },
+ {
+  "claim_id": "77:0",
+  "app": "ClickUp",
+  "field": "authentication",
+  "claim_value": "Personal API token (pk_..., never expire) or OAuth2 authorization code; MCP setup uses OAuth",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.clickup.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Authenticate to the ClickUp API using a personal token or OAuth."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.clickup.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Personal tokens never expire."
+   },
+   {
+    "i": 2,
+    "url": "https://developer.clickup.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources."
+   },
+   {
+    "i": 3,
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1.md",
+    "source_type": "official_docs",
+    "quote": "8. For Authentication, select **OAuth**."
+   }
+  ]
+ },
+ {
+  "claim_id": "77:1",
+  "app": "ClickUp",
+  "field": "access",
+  "claim_value": "self_serve: API available on all plans; need a ClickUp account to generate token",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.clickup.com/docs/apis-available-by-plan.md",
+    "source_type": "official_docs",
+    "quote": "Our Public API is available on all [ClickUp Plans](https://clickup.com/pricing) . Some endpoints and parameters are limited by plan."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.clickup.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "You'll need to sign in to your ClickUp account in order to generate or regenerate a token."
+   }
+  ]
+ },
+ {
+  "claim_id": "77:2",
+  "app": "ClickUp",
+  "field": "api_types",
+  "claim_value": "rest (v2/v3), webhooks",
+  "claim_note": "Nav labels.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.clickup.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "ClickUp API v2 and v3 Terminology"
+   },
+   {
+    "i": 1,
+    "url": "https://developer.clickup.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Webhook signature"
+   }
+  ]
+ },
+ {
+  "claim_id": "77:3",
+  "app": "ClickUp",
+  "field": "rate_limits",
+  "claim_value": "Per token, by Workspace plan: 100/min (Free/Unlimited/Business) up to 10,000/min (Enterprise)",
+  "claim_note": "Table numbers on separate lines; not quotable as one string.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.clickup.com/docs/rate-limits",
+    "source_type": "official_docs",
+    "quote": "The ClickUp API applies rate limits per token. These limits apply to both personal and OAuth tokens and vary by"
+   },
+   {
+    "i": 1,
+    "url": "https://developer.clickup.com/docs/rate-limits",
+    "source_type": "official_docs",
+    "quote": "* requests per minute per token."
+   }
+  ]
+ },
+ {
+  "claim_id": "77:5",
+  "app": "ClickUp",
+  "field": "mcp",
+  "claim_value": "official: https://mcp.clickup.com/mcp, available on all plans",
+  "claim_note": "\"all plans\" is on the following line.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "source_type": "official_docs",
+    "quote": "Our MCP server URL is"
+   },
+   {
+    "i": 1,
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "source_type": "official_docs",
+    "quote": "https://mcp.clickup.com/mcp"
+   },
+   {
+    "i": 2,
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "source_type": "official_docs",
+    "quote": "ClickUp's MCP Server is available on"
+   }
+  ]
+ },
+ {
+  "claim_id": "77:7",
+  "app": "ClickUp",
+  "field": "buildability",
+  "claim_value": "yes",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.clickup.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Personal tokens never expire."
+   }
+  ]
+ }
+]

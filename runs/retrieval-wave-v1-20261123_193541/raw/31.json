@@ -1,0 +1,281 @@
+{
+ "id": 31,
+ "name": "Google Ads",
+ "started": "2026-11-23T19:37:56+05:30",
+ "searches": [
+  {
+   "q": "Google Ads API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:58+05:30"
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:00+05:30"
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:02+05:30"
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:05+05:30"
+  }
+ ],
+ "fetched": [],
+ "candidate_hits": [
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://developers.google.com/google-ads/api/docs/concepts/api-structure",
+   "title": "API structure",
+   "snippet": "identified by an ID, and resources also have a unique `resource_name` string.\n- Services allow you to modify objects using mutate requests, retrieve objects and performance statistics with"
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+   "title": "Introduction to the Google Ads API",
+   "snippet": "Create and link accounts, manage account hierarchies, and automate user access.\n- **[Custom"
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://developers.google.com/google-ads/api/docs/concepts/call-structure",
+   "title": "API call structure",
+   "snippet": "- Google Ads API calls can be made using either gRPC (preferred) or REST.\n- Resource names identify most objects in the API and also serve as URLs for the REST interface.\n- Composite IDs are used for"
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://developers.google.com/google-ads/api/docs/conversions/upload-offline/upgrade",
+   "title": "Conversion management",
+   "snippet": "- The Google Ads API allows for programmatic management of the entire conversion management workflow."
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://developers.google.com/google-ads/api/docs/campaigns/overview",
+   "title": "Campaigns",
+   "snippet": "When creating a [`Campaign`](https://developers.google.com/google-ads/api/reference/rpc/v26/Campaign), you must specify key fields such as `name`, `status` (`ENABLED` or `PAUSED`),"
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://developers.google.com/google-ads/api/rest/examples",
+   "title": "Examples",
+   "snippet": "You can send many operations of different types to chain together a sequence of operations that should be carried out as a group. The set of operations succeeds if no operation fails or all fail"
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://business.google.com/us/ad-tools/google-ads-api",
+   "title": "Seamless Account Management with Google Ads API - Google Ads",
+   "snippet": "### Visit the developer center\n[Here](https://developers.google.com/google-ads/api/docs/start) you\u2019ll find more information on how to get started."
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://developers.google.com/google-ads/api/docs/query",
+   "title": "Google Ads Query Language",
+   "snippet": "have examples of using the Google Ads Query Language in `GoogleAdsService`. The **basic operations** folder has examples such as `GetCampaigns`, `GetKeywords`, and `SearchForGoogleAdsFields`."
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://support.google.com/google-ads/answer/15235?hl=en",
+   "title": "Google Ads API",
+   "snippet": "Google Cloud project and configure appropriate OAuth 2.0 credentials. Navigate to the [Google Ads API Overview page](https://console.cloud.google.com/googleads/overview) and apply for API Access."
+  },
+  {
+   "q": "Google Ads API documentation",
+   "url": "https://developers.google.com/google-ads/api/rest/common/search",
+   "title": "Search & SearchStream",
+   "snippet": "To use the `SearchStream` method, which returns all results in a single streamed response, change the service method in the URL to `searchStream` (`pageToken` is not required by `SearchStream`):"
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/docs/oauth/cloud-project",
+   "title": "Set up a Google API Console project",
+   "snippet": "enabling the Google Ads API for your app.\nThese credentials authenticate and authorize your app or Google Ads users on Google servers and let you generate OAuth tokens to be used in calls to the API."
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+   "title": "Use OAuth 2.0 to access Google Ads API",
+   "snippet": "- In addition to OAuth 2.0 credentials, a developer token is also required to make Google Ads API calls."
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/docs/reach-forecasting/authentication",
+   "title": "Authentication | Google Ads API",
+   "snippet": "Per-client accounts: Generate OAuth credentials using the single-user authentication flow for a user with access to your manager account. Create ..."
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/docs/oauth/single-user-authentication",
+   "title": "Single-user authentication workflow",
+   "snippet": "scope. See [Setting up your OAuth consent screen](//support.google.com/cloud/answer/10311615) for details.\n2. Create a client ID and client secret by following the"
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/docs/oauth/service-accounts?hl=en",
+   "title": "Service account workflow",
+   "snippet": "- To set up access, create a service account, download its key, and add the service account email as a user in your Google Ads account with the appropriate access level."
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/rest/auth",
+   "title": "Authorization and HTTP Headers",
+   "snippet": "- When calling the Google Ads API, you need both OAuth 2.0 application credentials and a developer token.\n\n- A developer token is required in the `developer-token` HTTP header for every API call."
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/shopping/full-automation/articles/t11",
+   "title": "Set up Google Ads API access",
+   "snippet": "the project, then click **CREATE**.\n4. In the sidebar, click **OAuth consent screen**, then enter the required information, and click **SAVE AND CONTINUE**. See the [OAuth"
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+   "title": "Developer token - Ads API",
+   "snippet": "The developer token is a 22-character long alphanumeric string that was used to connect your app to the Google Ads API."
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/docs/client-libs/java/authentication",
+   "title": "Authentication and authorization",
+   "snippet": "For the Google Ads API, make sure your Application Default Credentials can access the `https://www.googleapis.com/auth/adwords` OAuth 2.0 scope."
+  },
+  {
+   "q": "Google Ads API authentication OAuth API key developer",
+   "url": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call",
+   "title": "Quick start",
+   "snippet": "Next, fetch an OAuth 2.0 access token for the Google Ads API.\n```\ngcloud auth \\\nprint-access-token \\\n--scopes='https://www.googleapis.com/auth/adwords'\n```"
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://developers.google.com/google-ads/api/docs/oauth/cloud-project",
+   "title": "Set up a Google API Console project",
+   "snippet": "- While a single developer token can be used across multiple projects, each project can only use one developer token."
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://developers.google.com/google-ads/api/docs/api-policy/rate-sheet",
+   "title": "Rate sheet",
+   "snippet": "the Google Ads API API is assigned an [API access level](https://developers.google.com/google-ads/api/docs/api-policy/access-levels) that determines whether you can affect production accounts"
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://developers.google.com/google-ads/api/docs/get-started/onboarding",
+   "title": "Google Ads API comprehensive onboarding guide",
+   "snippet": "The developer token uniquely identifies your application to the Google Ads API and controls your call volume access tier."
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://developers.google.com/google-ads/api/docs/productionize/access-levels",
+   "title": "Access levels and RMF",
+   "snippet": "The Google Ads API is free to use; there are no charges for using the Google Ads API at Explorer access, Basic access, or Standard access levels. However, if you are subject to [Required Minimum"
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://support.google.com/google-ads/answer/15235?hl=en",
+   "title": "Google Ads API",
+   "snippet": "The Google Ads API lets developers create and use applications that interact directly with their account details on the Google Ads server."
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://business.google.com/us/ad-tools/google-ads-api/",
+   "title": "Google Ads",
+   "snippet": "The Google Ads API tool helps you and your developers create applications that can automatically download reports and make changes to your accounts at scale."
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels.md.txt",
+   "title": "developers.google.com/google-ads/api/docs/api-policy/access-levels.md.txt",
+   "snippet": "real, live Google ads---test accounts don't serve\nads.\nThe Basic access level allows your Google Cloud project to execute up to 15,000\noperations per day. This is sufficient for most developers."
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token.md.txt",
+   "title": "developers.google.com/google-ads/api/docs/api-policy/developer-token.md.txt",
+   "snippet": "the API grants [Test\n> access](https://developers.google.com/google-ads/api/docs/api-policy/access-levels#test-account-access) (15,000 operations per day on test accounts), and you can"
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://developers.google.com/ads/blog/posts/2026/02/an-update-on-google-ads-api-developer",
+   "title": "An update on Google Ads API developer token access applications | Google for Developers",
+   "snippet": "**If you have [Explorer Access](https://developers.google.com/google-ads/api/docs/api-policy/access-levels#explorer-access)**, continue to use it if it meets your needs, as it provides the same"
+  },
+  {
+   "q": "Google Ads API access pricing plans developer account",
+   "url": "https://www.youtube.com/watch?v=EGXilq5i42M",
+   "title": "Google Ads API Auth Series - Introduction",
+   "snippet": "An introduction to authentication & authorization in the Google Ads API. Resources: Create a developer token: https://developers.goo."
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "http://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+   "title": "Google Ads MCP server: Developer integration guide",
+   "snippet": "reporting:\n- **`list_accessible_customers`**: Returns the list of Google Ads customer IDs and account names accessible to the authenticated user.\n- **`search`**: Executes"
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://goo.gle/adc-ads-mcp",
+   "title": "Google Ads MCP server: Developer integration guide",
+   "snippet": "Follow these steps to configure and run the Google Ads MCP server locally. To deploy a shared remote service instead, see Deployment on Google Cloud."
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://developers.google.com/ads/blog/posts/2025/10/open-source-google-ads-api-mcp-server",
+   "title": "Open Source Google Ads API MCP Server | Google for Developers",
+   "snippet": "thrilled to announce the open source release of the **Google Ads API Model Context Protocol (MCP) Server**, available [here](https://github.com/googleads/google-ads-mcp). This project marks a"
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://ads-developers.googleblog.com/2025/10/open-source-google-ads-api-mcp-server.html",
+   "title": "Open Source Google Ads API MCP Server | Google for Developers",
+   "snippet": "API MCP Server\nTuesday, October 7, 2025\nWe're thrilled to announce the open source release of the **Google Ads API Model Context Protocol (MCP) Server**, available"
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://github.com/googleads/google-ads-mcp",
+   "title": "googleads/google-ads-mcp",
+   "snippet": "The Google Ads MCP Server exposes MCP Tools and MCP Resources backed by the Google Ads API. It supports: Read & reporting workflows: GAQL queries, ..."
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://github.com/googleads/google-ads-mcp/tree/main",
+   "title": "GitHub - googleads/google-ads-mcp",
+   "snippet": "Setup involves the following steps:\n1. Configure Python.\n2. Configure Developer Token.\n3. Enable APIs in your project\n4. Configure Credentials.\n5. Configure your MCP client."
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://github.com/google-marketing-solutions/google_ads_mcp_server",
+   "title": "GitHub - google-marketing-solutions/google_ads_mcp_server: This repo has been archived in favor of: https://github.com/googleads/google-ads-mcp",
+   "snippet": "# Google Ads MCP\nThis is the Google Ads Model Context Protocol (MCP) server designed to provide a standardized way to integrate an LLM with Google Ads."
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://github.com/TheMattBerman/google-ads-copilot/blob/main/data/mcp-config.md",
+   "title": "google-ads-copilot/data/mcp-config.md at main \u00b7 TheMattBerman/google-ads-copilot",
+   "snippet": "Google Ads Copilot uses the **official `googleads/google-ads-mcp`** server for live account data. This is Google's own MCP implementation \u2014 read-only, maintained by the Google Ads team, and built on"
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://github.com/googleads/google-ads-mcp/blob/main/README.md",
+   "title": "google-ads-mcp/README.md at main \u00b7 googleads/google-ads-mcp",
+   "snippet": "Point your MCP client at the Cloud Run `/mcp` endpoint:\n```\n{\n\"mcpServers\": {\n\"google-ads-mcp\": {\n\"serverUrl\": \"https://your-cloud-run-url.a.run.app/mcp\"\n}\n}\n}\n```"
+  },
+  {
+   "q": "Google Ads MCP server official",
+   "url": "https://www.youtube.com/watch?v=mheZMLVnenY",
+   "title": "How to Use Google Ads MCP in Claude (Full Tutorial)",
+   "snippet": "In this tutorial, I review the official Google Ads MCP, show what the setup requires, and walk through the main limitations you should know\u00a0..."
+  }
+ ],
+ "official_domain_candidates": {},
+ "identity_flag": "no_domain_matched_name",
+ "completed": "2026-11-23T19:38:05+05:30"
+}

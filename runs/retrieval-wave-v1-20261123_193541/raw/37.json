@@ -1,0 +1,281 @@
+{
+ "id": 37,
+ "name": "systeme.io",
+ "started": "2026-11-23T19:35:44+05:30",
+ "searches": [
+  {
+   "q": "systeme.io API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:35:46+05:30"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:35:49+05:30"
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:35:51+05:30"
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:35:52+05:30"
+  }
+ ],
+ "fetched": [],
+ "candidate_hits": [
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://developer.systeme.io/llms.txt",
+   "title": "developer.systeme.io/llms.txt",
+   "snippet": "to use them](https://developer.systeme.io/docs/api-recipes-and-how-to-use-them.md): Learn how to use our API through recipes\n- [Webhooks](https://developer.systeme.io/docs/webhooks.md)\n-"
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://developer.systeme.io/docs/api-recipes-and-how-to-use-them.md",
+   "title": "developer.systeme.io/docs/api-recipes-and-how-to-use-them.md",
+   "snippet": "Recipes are a simple way to walk developers through a code sample step by step to help them get started with API.\nHere is an example recipe to help you learn and use our API successfully."
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://developer.systeme.io/reference/api",
+   "title": "Public API",
+   "snippet": "roadmap to the Systeme.io Public API. It details the endpoints available, their respective URLs, the expected formats for requests and responses, and outlines the basic constraints to be aware of."
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://developer.systeme.io/reference/api_page-editorpages_idsave_put.md",
+   "title": "developer.systeme.io/reference/api_page-editorpages_idsave_put.md",
+   "snippet": "experience, allowing you to manage contacts, tags, and a variety of other operations integral to our platform. Adhering to RESTful conventions, our API ensures an intuitive and consistent"
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://developer.systeme.io/reference/api_funnel-steps_id_get.md",
+   "title": "developer.systeme.io/reference/api_funnel-steps_id_get.md",
+   "snippet": "\"# Introduction\\nWelcome to the comprehensive guide for the Systeme.io Public API. Our API serves as a bridge, enabling developers to interact with Systeme's core functionalities programmatically."
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://help.systeme.io/",
+   "title": "systeme.io Help Center",
+   "snippet": "Help center and documentation for systeme.io. How to create and sell a physical product with systeme.io. How to connect your domain to systeme.io"
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://developer.systeme.io/reference/api.md",
+   "title": "developer.systeme.io/reference/api.md",
+   "snippet": "# []()Introduction\nWelcome to this comprehensive guide for the Systeme.io Public API. Our API serves as a bridge, enabling developers to interact with Systeme's core functionalities programmatically."
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "title": "How to use the systeme.io public API (Application Programming Interface)",
+   "snippet": "Learn more: [API documentation](https://developer.systeme.io/reference/api)."
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://developer.systeme.io/reference/api_funnels_post.md",
+   "title": "developer.systeme.io/reference/api_funnels_post.md",
+   "snippet": "API\",\n\"description\": \"# Introduction\\nWelcome to the comprehensive guide for the Systeme.io Public API. Our API serves as a bridge, enabling developers to interact with Systeme's core"
+  },
+  {
+   "q": "systeme.io API documentation",
+   "url": "https://developer.systeme.io/reference/newsletter_schedule_put.md",
+   "title": "developer.systeme.io/reference/newsletter_schedule_put.md",
+   "snippet": "   \"description\": \"# Introduction\\nWelcome to the comprehensive guide for the Systeme.io Public API. Our API serves as a bridge, enabling developers to interact with Systeme's core functionalities"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://developer.systeme.io/reference/api_mailingcampaigns_get_collection.md",
+   "title": "developer.systeme.io/reference/api_mailingcampaigns_get_collection.md",
+   "snippet": "authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the `X-API-Key` header of each request.\\nLet us know what authentication methods you would"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://developer.systeme.io/reference/api.md",
+   "title": "developer.systeme.io/reference/api.md",
+   "snippet": "To begin using the Systeme.io Public API, you must first obtain an authentication key. This key is your ticket to unlocking the API's capabilities. Simply navigate to the profile settings within your"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://developer.systeme.io/reference/api_schoolenrollments_get_collection-1.md",
+   "title": "developer.systeme.io/reference/api_schoolenrollments_get_collection-1.md",
+   "snippet": "authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the `X-API-Key` header of each request.\\nLet us know what authentication methods you would"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://developer.systeme.io/reference/api",
+   "title": "Public API",
+   "snippet": "To begin using the Systeme.io Public API, you must first obtain an authentication key. This key is your ticket to unlocking the API's capabilities. Simply navigate to the profile settings within your"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://developer.systeme.io/reference/newsletter_schedule_put.md",
+   "title": "developer.systeme.io/reference/newsletter_schedule_put.md",
+   "snippet": "authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the `X-API-Key` header of each request.\\nLet us know what authentication methods you would"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://developer.systeme.io/reference/api_funnels_get_collection.md",
+   "title": "developer.systeme.io/reference/api_funnels_get_collection.md",
+   "snippet": "\"securitySchemes\": {\n\"Api_Key\": {\n\"type\": \"apiKey\",\n\"description\": \"Value for the X-API-Key header parameter.\",\n\"name\": \"X-API-Key\",\n\"in\": \"header\"\n}"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://developer.systeme.io/reference/course_activate.md",
+   "title": "developer.systeme.io/reference/course_activate.md",
+   "snippet": "\"securitySchemes\": {\n\"Api_Key\": {\n\"type\": \"apiKey\",\n\"description\": \"Value for the X-API-Key header parameter.\",\n\"name\": \"X-API-Key\",\n\"in\": \"header\"\n}\n}"
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "title": "How to use the systeme.io public API (Application Programming Interface)",
+   "snippet": "Give your key a name, set an expiration date, and click **Save** (4)."
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+   "title": "How to use the systeme.io public API (Application Programming Interface)",
+   "snippet": "In this article, you will learn how to configure and use the systeme.io public API, including how to generate API keys and what actions you can ..."
+  },
+  {
+   "q": "systeme.io API authentication OAuth API key developer",
+   "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+   "title": "How to use the systeme.io MCP server (Model Context Protocol)",
+   "snippet": "To connect an AI tool, you first need to generate a secure MCP key. Click Settings (1), then select MCP & API keys (2) under Connections in the ..."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://systeme.io/pricing",
+   "title": "Systeme.io Pricing \u2014 Free, Startup, Webinar, Unlimited Plans",
+   "snippet": "Unlimited ($97/month): unlimited contacts, funnels, courses and automation rules. All plans include unlimited email sends, unlimited sub-accounts, 0% ..."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+   "title": "How to use the systeme.io public API (Application Programming Interface)",
+   "snippet": "Price plans and coupon management: Create, edit, and delete: Generate new price plans and coupons, or partially update and delete existing ones."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://systeme.io/circle-alternative",
+   "title": "Free all-in-one Circle alternative",
+   "snippet": "Circle charges $99/mo just for a community. Get a complete business suite community, sales funnels, and unlimited emails completely free with systeme.io."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://softwarefinder.com/lms/systeme-io",
+   "title": "Systeme.io: Reviews, Demo & Pricing",
+   "snippet": "The pricing for Systeme.io starts at $17/month. This plan, known as Startup, includes up to 10 funnels, 10 automation rules, 3 custom domains, and 5,000 ..."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://thatmarketingbuddy.com/software/systeme-io",
+   "title": "Systeme.io Review: Affordable Funnels and Automation",
+   "snippet": "Startup costs $17/month, Webinar $47 and Unlimited $97, while annual billing gives two months free. The value is strongest when simplicity and consolidation ..."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://systeme.io/pricing-olddd",
+   "title": "Pricing",
+   "snippet": "Free. $0/month \u00b7 2,000 ; Startup. $27/month \u00b7 5,000 ; Webinar. $47/month \u00b7 10,000 ; Unlimited. $97/month \u00b7 Unlimited."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://www.youtube.com/watch?v=izGrrrGA8X0&vl=en",
+   "title": "Systeme.io Pricing 2026  What You Actually Pay",
+   "snippet": "0:00 Systeme.io Pricing 0:40 Compare Plans 0:53 Free Plan 1:42 Startup Plan 2:00 Webinar Plan 2:30 Unlimited Plan 3:01 Annual Billing\u00a0..."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://lumail.io/compare/systeme-io",
+   "title": "Systeme.io Pricing 2026: Free Plan & Costs vs Lumail",
+   "snippet": "Permanent free plan with 2,000 contacts and unlimited emails \u00b7 Flat pricing at $17, $47, or $97 a month with unlimited sends \u00b7 Funnels, courses, checkout, ..."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://www.facebook.com/groups/251145835476950/posts/1504265863498268/",
+   "title": "Systeme.io introduces webhook management API",
+   "snippet": "# For our developer friends, we now have a Webhook Management API! \ud83d\ude80\n\nThis powerful new tool empowers you to programmatically manage your s[ysteme.io](http:/ ..."
+  },
+  {
+   "q": "systeme.io API access pricing plans developer account",
+   "url": "https://www.capterra.com/p/198994/Systeme/pricing/",
+   "title": "Systeme.io Pricing 2026",
+   "snippet": "How much does Systeme.io cost? Systeme.io has 4 different plans. The pricing starts at $17 flat rate per month with a free plan available."
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://developer.systeme.io/docs/mcp-server",
+   "title": "MCP Server",
+   "snippet": "dashboard under the [\"MCP & API keys\"](https://systeme.io/dashboard/profile/public-api-settings) section. Once you have your key, you can configure your MCP-compatible client to connect to our server."
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://systeme.io/mcp",
+   "title": "Run your business with AI",
+   "snippet": "Connect your favorite AI tool in a few clicks\nGenerate a secure MCP key from your account settings, then use it to connect your favorite AI tool like ChatGPT or Claude"
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://help.systeme.io/article/11407-how-to-manage-your-newsletters-and-email-campaigns-with-the-systemeio-mcp-server",
+   "title": "How to manage your newsletters and email campaigns with the systeme.io MCP server",
+   "snippet": "The MCP server also allows you to build and manage your email campaigns and the individual emails (campaign steps) inside them directly from the chat."
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://help.systeme.io/article/11414-how-to-manage-your-automation-rules-with-the-systeme-io-mcp-server",
+   "title": "How to manage your automation rules and work flows with the systeme.io MCP server",
+   "snippet": "The MCP server allows you to perform basic actions on your automation rules directly from the chat. You just need to specify the trigger and the action you want the rule to execute."
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server",
+   "title": "How to manage your contacts with the systeme.io MCP server",
+   "snippet": "The MCP server allows you to perform basic actions on your contacts directly from the chat. Provide the required details (such as an email address) and specify the action you want to perform."
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://help.systeme.io/article/11408-how-to-manage-your-funnels-with-the-systeme-io-mcp-server",
+   "title": "How to manage your funnels with the systeme.io MCP server",
+   "snippet": "to manage your [systeme.io](http://systeme.io) funnels using natural language through our native MCP server. By connecting an AI tool like ChatGPT or Claude, you can easily create and retrieve funnels"
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://help.systeme.io/category/11216-model-context-protocol-mcp",
+   "title": "systeme.io Help Center",
+   "snippet": "- [How to use the systeme.io MCP server (Model Context Protocol)](/article/9489-how-to-use-systeme-ios-mcp)"
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+   "title": "How to use the systeme.io MCP server (Model Context Protocol)",
+   "snippet": "The new MCP server feature gives users, partners, and developers a powerful new way to interact with [systeme.io](http://systeme.io) using AI tools."
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://help.systeme.io/article/11425-how-to-manage-your-digital-products-with-the-systeme-io-mcp-server",
+   "title": "How to manage your digital products with the systeme.io MCP server",
+   "snippet": "this article, you will learn how to manage your systeme.io digital products using natural language through our native MCP server. By connecting an AI tool like ChatGPT or Claude, you can easily"
+  },
+  {
+   "q": "systeme.io MCP server official",
+   "url": "https://help.systeme.io/article/11229-how-to-connect-your-systemeio-account-with-chatgpt-using-mcp-keys",
+   "title": "How to connect your systeme.io account to ChatGPT using MCP keys",
+   "snippet": "In this article, you will learn how to integrate the systeme.io MCP server with ChatGPT so you can interact with your account data using AI."
+  }
+ ],
+ "official_domain_candidates": {},
+ "identity_flag": "no_domain_matched_name",
+ "completed": "2026-11-23T19:35:52+05:30"
+}

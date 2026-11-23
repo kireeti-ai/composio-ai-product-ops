@@ -1,0 +1,107 @@
+{
+ "note": "Pre-registered sample. Labels are produced by humans only; none exist yet.",
+ "frame_A": {
+  "frame": "A_baseline_26_existing_pass1",
+  "seed": 20261124,
+  "attempt": 0,
+  "ids": [
+   1,
+   3,
+   9,
+   13,
+   14,
+   16,
+   21,
+   22,
+   28,
+   49,
+   51,
+   84
+  ],
+  "quota_by_registry_category": {
+   "1": 3,
+   "2": 3,
+   "3": 3,
+   "5": 1,
+   "6": 1,
+   "9": 1
+  },
+  "excluded": [
+   {
+    "id": 58,
+    "reason": "identity-contaminated record (Sherlock)"
+   }
+  ],
+  "balance": {
+   "categories": [
+    "CRM and Sales",
+    "Communications and Messaging",
+    "Data, SEO and Scraping",
+    "Ecommerce",
+    "Finance and Fintech",
+    "Support and Helpdesk"
+   ],
+   "models": {
+    "gemini-2.5-flash": 5,
+    "gemini-3.5-flash": 7
+   },
+   "with_verifier_flags": 6,
+   "without": 6,
+   "provenance": {
+    "notion": 10,
+    "reconstructed": 2
+   }
+  }
+ },
+ "frame_B": {
+  "frame": "B_frozen_v1f_28_targets",
+  "seed": 20262124,
+  "attempt": 0,
+  "ids": [
+   20,
+   25,
+   26,
+   27,
+   38,
+   39,
+   44,
+   53,
+   61,
+   62,
+   63,
+   65
+  ],
+  "quota_by_tier": {
+   "A_prior_access_evidence_sufficient": 3,
+   "A_topup_access_explicit": 2,
+   "B2_topup_access_explicit_phase2": 1,
+   "B_access_inferred_self_serve": 2,
+   "C_access_partial": 3,
+   "D_added_access_explicit_account_gated": 1
+  },
+  "preregistered": "selected from plan metadata only, before any v1f model output exists",
+  "balance": {
+   "categories": [
+    "Communications and Messaging",
+    "Data, SEO and Scraping",
+    "Developer, Infra and Data platforms",
+    "Ecommerce",
+    "Marketing, Ads, Email and Social",
+    "Support and Helpdesk"
+   ],
+   "tiers": {
+    "D_added_access_explicit_account_gated": 1,
+    "C_access_partial": 3,
+    "A_prior_access_evidence_sufficient": 3,
+    "B2_topup_access_explicit_phase2": 1,
+    "A_topup_access_explicit": 2,
+    "B_access_inferred_self_serve": 2
+   },
+   "provenance": {
+    "notion": 7,
+    "reconstructed": 5
+   }
+  }
+ },
+ "neo4j": "Neo4j (#66) is evaluated separately per surface after its Option B run; not in these frames"
+}

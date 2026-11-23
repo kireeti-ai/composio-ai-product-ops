@@ -1,0 +1,227 @@
+{
+ "app_id": 20,
+ "app": "Gladly",
+ "tool": "composio:TINYFISH_FETCH_URLS",
+ "session": "want",
+ "attempts": [
+  {
+   "url": "https://www.gladly.com/gladly-pricing-support-and-service-packages",
+   "requested_at": "2026-11-23T17:41:39+05:30",
+   "charge_usd": 0.0,
+   "status": "empty",
+   "error": "[{'candidate_selectors': None, 'error': 'page_not_found', 'status': 404, 'unmatched_selectors': None, 'url': 'https://www.gladly.com/gladly-pricing-support-and-service-packages'}]",
+   "completed_at": "2026-11-23T17:41:41+05:30",
+   "app_id": 20,
+   "kind": "url_variant",
+   "parent_url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+   "reason": "alternative for fetch_empty",
+   "outcome": "fetch_empty",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://www.gladly.com/get-started-2",
+   "requested_at": "2026-11-23T17:41:41+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://www.gladly.ai/get-started-2/",
+   "title": "Request a demo | AI customer experience without compromise | Gladly",
+   "chars": 322,
+   "sha256": "04a8d3d153d0c460bd6aa76874e356295a04b9127d7202dd20d99040686af356",
+   "text": "Book in under a minute. No sales pressure.\n\n#### Your customers want answers, not ticket numbers.\n\nGladly helps brands resolve more conversations with AI while keeping every interaction personal and on-brand.\n\nRothy\u2019s, for example, now resolves 31% of conversations automatically.\n\n##### Book a personalized 30-minute demo",
+   "completed_at": "2026-11-23T17:41:42+05:30",
+   "app_id": 20,
+   "kind": "url_variant",
+   "parent_url": "https://gladly.com/get-started-2",
+   "reason": "alternative for thin_or_js_shell",
+   "outcome": "thin_or_js_shell",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://gladly.com/get-started-sidekick",
+   "requested_at": "2026-11-23T17:41:42+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://www.gladly.ai/get-started/",
+   "title": "Request a demo | AI customer experience without compromise | Gladly",
+   "chars": 836,
+   "sha256": "5a6f59ff30e7450a414af42185a15e67a26b0435884cb1d2dac2d87832abe362",
+   "text": "Book a Demo\n\n# The store associate your site never had.\n\nGladly answers on the spot, builds the cart, checks shoppers out in the conversation, and remembers them next time. See it on your catalog in 30 minutes.\n\nEmail\n\nDetails\n\nTime\n\nRetal\u00e9 Outdoors \u00b7 Gladly\n\nLive Preview \u00b7 Hover to Pause\n\nYour 30 Minutes\n\n#### Built around your shoppers.\n\n* 0:00\n\n  Your goals, your stack, and where shoppers get stuck\n* 0:05\n\n  Gladly live on conversations like yours\n* 0:20\n\n  Impact estimate and what rollout looks like\n\n+120%\n\nK\u00dcHL team members generate 120% more revenue per call.\n\nRead the Story \u2192\n\n2x\n\nMaryRuth's doubled order volume, with team efficiency up 35%.\n\nRead the Story \u2192\n\n## Up within hours. Smarter every day.\n\nMost AI rollouts take six months to ship and plateau six weeks later. Gladly inverts both. See for yourself.\n\nGet a Demo",
+   "completed_at": "2026-11-23T17:41:43+05:30",
+   "app_id": 20,
+   "kind": "stored_search_hit",
+   "parent_url": "https://gladly.com/get-started-2",
+   "reason": "alternative for thin_or_js_shell",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "app_id": 20,
+   "url": "https://connect.gladly.com/docs/developer-tutorials/article/app-platform-overview",
+   "kind": "stored_search_hit",
+   "parent_url": "https://gladly.com/get-started-2",
+   "reason": "alternative for thin_or_js_shell",
+   "status": "not_attempted",
+   "outcome": "skipped_after_alternative_succeeded",
+   "attempt": 2
+  },
+  {
+   "url": "https://gladly.com/get-started-2",
+   "requested_at": "2026-11-23T17:41:46+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://www.gladly.ai/get-started-2/",
+   "title": "Request a demo | AI customer experience without compromise | Gladly",
+   "chars": 322,
+   "sha256": "04a8d3d153d0c460bd6aa76874e356295a04b9127d7202dd20d99040686af356",
+   "text": "Book in under a minute. No sales pressure.\n\n#### Your customers want answers, not ticket numbers.\n\nGladly helps brands resolve more conversations with AI while keeping every interaction personal and on-brand.\n\nRothy\u2019s, for example, now resolves 31% of conversations automatically.\n\n##### Book a personalized 30-minute demo",
+   "completed_at": "2026-11-23T17:41:48+05:30",
+   "app_id": 20,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "thin_or_js_shell",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+   "requested_at": "2026-11-23T17:41:48+05:30",
+   "charge_usd": 0.0,
+   "status": "empty",
+   "error": "[{'candidate_selectors': None, 'error': 'page_not_found', 'status': 404, 'unmatched_selectors': None, 'url': 'https://gladly.com/gladly-pricing-support-and-service-packages'}]",
+   "completed_at": "2026-11-23T17:41:50+05:30",
+   "app_id": 20,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "fetch_empty",
+   "duplicate_of": null,
+   "attempt": 2
+  }
+ ],
+ "app_level_search_hits": [
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+   "title": "Get Your API tokens",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://developer.gladly.com/rest",
+   "title": "Gladly API",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/developer/docs/postman",
+   "title": "Test the REST API With Postman",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+   "title": "Setup and Testing",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+   "title": "help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/developer-tutorials/docs/appcfg-apps-install",
+   "title": "Install an App",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/docs/glossary-and-key-concepts",
+   "title": "Glossary and Key Concepts - Gladly Help and Product Docs",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/docs/redo-app-platform-installation",
+   "title": "help.gladly.com/docs/redo-app-platform-installation",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/developer-tutorials/docs/app-building-how-to",
+   "title": "App Building How-To - Gladly Help and Product Docs",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly API access developer tokens",
+   "url": "https://help.gladly.com/product-docs/docs/api-export-tool",
+   "title": "API Export Tool (Beta Feature)",
+   "searched_at": "2026-11-23T17:41:45+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://gladly.com/get-started-2",
+   "title": "Get Started | Gladly",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+   "title": "Gladly Pricing: Support & Service Packages",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://www.gladly.com/gladly-vs-kustomer/",
+   "title": "Gladly vs Kustomer | Comparing CX platforms",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://gladly.com/get-started-sidekick",
+   "title": "Get Started with Gladly Sidekick: Customer-Facing AI & Automation",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://www.gladly.com/gladly-vs-salesforce/?via=neal",
+   "title": "Gladly vs Salesforce | Comparing CX platforms",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://gladly.com/blog/comparing-gorgias-and-gladly",
+   "title": "Comparing Gorgias Customer Service and Gladly",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://gladly.com/product",
+   "title": "Customer experience AI that drives devotion | Gladly",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://gladly.com/shopify-get-started",
+   "title": "Get Started | Shopify + Gladly",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://gladly.com/blog/salesforce-service-cloud-and-gladly",
+   "title": "Comparing Salesforce Service Cloud and Gladly",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  },
+  {
+   "q": "Gladly pricing",
+   "url": "https://help.gladly.com/docs/voice-and-sms-phone-number-pricing",
+   "title": "Voice and SMS Phone Number Pricing",
+   "searched_at": "2026-11-23T17:41:46+05:30"
+  }
+ ]
+}

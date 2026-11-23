@@ -1,0 +1,64 @@
+{
+ "id": 28,
+ "name": "WhatsApp Business",
+ "pass1_sha": "fa3ac82a8f9a9968",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "contradicted",
+    "evidence_quote": "Authentication uses OAuth (not 2.0)",
+    "suggested_value": "",
+    "reason": "Excerpt explicitly says OAuth 2.0 is not used",
+    "needs_human": true
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Bearer token appears in Authorization header",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_trial_or_paid_plan :: Developers can get a free test WhatsApp account and phone number for testing, but full functionality and template messages often require approval and are subject to pricing.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Free test account confirmed; approval required confirmed; pricing not mentioned.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "reason": "Graph API uses HTTP protocol, indicating a RESTful API.",
+    "needs_human": false
+   },
+   {
+    "item": "websocket",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpts do not mention websockets.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts list APIs but do not state whether an MCP exists or not.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

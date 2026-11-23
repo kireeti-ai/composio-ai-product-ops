@@ -1,0 +1,14 @@
+PASS two calls made, run completed
+PASS each call is labelled with its own surface name in the frozen prompt
+PASS no cross-surface source pages
+PASS legacy HTTP API and generic auth pages are in neither call
+PASS frozen prompt+schema hashes recorded and equal to the baseline manifest
+PASS per-page provenance (url, sha256, fetched_at, raw hash) recorded: 4 + 1 pages
+PASS reconstructed-list provenance flag carried (membership NOT verified)
+PASS ONE combined app record (registry id 66) with two surfaces
+PASS combined record carries the Composio annotation (Aura covered; Cypher querying not demonstrated)
+PASS records are read-only; lock removed: True
+PASS daily quota on call 2: stops, keeps call 1, NO combined record yet
+PASS resume: call 1 not regenerated or overwritten; call 2 done; combined record written
+PASS no baseline Pass-1 record for id 66 (nothing regenerated)
+NEO4J TESTS PASSED

@@ -1,0 +1,74 @@
+
+ GitHub - twilio-labs/mcp: Monorepo providing 1) OpenAPI to MCP Tool generator 2) Exposing all of Twilio's API as MCP Tools · GitHub 
+ Skip to content 
+ Navigation Menu Sign in Products Platform GitHub Repository hosting, code review, and collaboration Copilot AI coding agent for tasks, projects, and automated work Build & Ship Actions CI/CD and automation Code Quality Quality analysis, fixes, and enforcement Codespaces Cloud development environments Secure Code Security Vulnerability detection and remediation Secret Protection Secret scanning and leak prevention All Features Developers Learn Documentation Training Certifications Build Build with Copilot Customize Copilot Integrations Explore Trending repos GitHub Sponsors Developer articles Changelog Changelog Your source for the latest features, improvements, and fixes across GitHub products, all in one place. Businesses By Stage Enterprises Team Startups Nonprofits By Industry Healthcare Financial services Manufacturing Government See all industries Evaluate GitHub Why GitHub Customer Stories Business insights Trust Center Add-ons GitHub Advanced Security Enterprise-grade code security Copilot for business Enterprise-grade AI features Premium Support Enterprise-grade 24/7 support Resources Learn & Connect Documentation Resource center Blog Events & webinars Community Forum Customer Stories Integrations Support Customer support Training GitHub Status Company About Partners Changelog GitHub Universe GitHub Universe The event for developers, by developers — talks, workshops, and what’s next for GitHub. Pricing Search / Sign in Sign up Appearance settings 
+ You signed in with another tab or window. Reload to refresh your session. 
+ You signed out in another tab or window. Reload to refresh your session. 
+ You switched accounts on another tab or window. Reload to refresh your session. 
+ Dismiss alert 
+ {{ message }} 
+ twilio-labs mcp Repository navigation Code Issues 13 ( 13 ) Pull requests 12 ( 12 ) Discussions Actions Security and quality Insights More items 
+ mcp Public Notifications You must be signed in to change notification settings Fork 41 ( 41 ) Star 114 ( 114 ) You must be signed in to star a repository About Monorepo providing 1) OpenAPI to MCP Tool generator 2) Exposing all of Twilio's API as MCP Tools twilioalpha.com/mcp Topics ai mcp openapi openapi-generator openapi3 twilio-api twilio-mcp Resources Readme MIT license Code of conduct Code of conduct Contributing Contributing Activity Custom properties Stars 114 stars Watchers 3 watching Forks 41 forks Report repository main Branches Tags Go to file Code Open more actions menu Latest commit History 101 Commits 101 Commits Folders and files Name Name Last commit message Last commit date .changeset .changeset .github/ workflows .github/ workflows docs docs packages packages .eslintrc.json .eslintrc.json .gitignore .gitignore .prettierrc .prettierrc LICENSE LICENSE README.md README.md package-lock.json package-lock.json package.json package.json tsconfig.json tsconfig.json vite.config.ts vite.config.ts View all files Repository files navigation README Code of conduct Contributing MIT license More items 
+ Twilio MCP Monorepo 
+ This is a monorepo for the Model Context Protocol server that exposes all of Twilio APIs. 
+ What is MCP? 
+ The Model Context Protocol (MCP) is a protocol for exchanging model context information between AI tools and services. This implementation allows you to expose Twilio's APIs to AI assistants and other tools that support the MCP protocol. 
+ Packages 
+ This monorepo contains two main packages: 
+ mcp - MCP Server for all of Twilio's Public API 
+ openapi-mcp-server - An MCP server that serves the given OpenAPI spec 
+ Each package has its own comprehensive README with detailed documentation: 
+ MCP Package Documentation 
+ OpenAPI MCP Server Documentation 
+ Quick Start 
+ The easiest way to get started is by using npx: 
+ {
+ "mcpServers" : {
+ "twilio" : {
+ "command" : " npx " ,
+ "args" : [
+ " -y " ,
+ " @twilio-alpha/mcp " ,
+ " YOUR_ACCOUNT_SID/YOUR_API_KEY:YOUR_API_SECRET " 
+ ]
+ }
+ }
+} 
+ Visit Twilio API Keys docs for information on how to find/create your API Key and Secret. 
+ Security Recommendations 
+ To guard against injection attacks that may allow untrusted systems access to your Twilio data, the ETI team advises users of Twilio MCP servers to avoid installing or running any community MCP servers alongside our official ones. Doing so helps ensure that only trusted MCP servers have access to tools interacting with your Twilio account, reducing the risk of unauthorized data access. 
+ Basic Configuration Options 
+ Both packages accept configuration parameters. Here's a brief overview: 
+ MCP Server : Use --services and --tags to filter which APIs to expose 
+ OpenAPI MCP Server : Use --apiPath to specify OpenAPI spec files location 
+ For complete configuration details, refer to the package-specific documentation linked above. 
+ Development 
+ # Run tests 
+npm test 
+ # Run linting 
+npm run lint
+ # Fix linting issues 
+npm run lint:fix 
+ Troubleshooting Common Issues 
+ Context Size Limitations : Due to LLM context limits, load specific APIs using --services or --tags 
+ Authentication Issues : Verify your Twilio API credentials format and permissions 
+ API Versioning : Check you're using the correct API version (v1, v2, v3) for your needs 
+ For detailed troubleshooting guidance, see the package-specific documentation. 
+ Contributing 
+ Contributions are welcome! Please feel free to submit a Pull Request. 
+ License 
+ This project is licensed under the ISC License - see the LICENSE file for details. 
+ About Monorepo providing 1) OpenAPI to MCP Tool generator 2) Exposing all of Twilio's API as MCP Tools twilioalpha.com/mcp Topics ai mcp openapi openapi-generator openapi3 twilio-api twilio-mcp Resources Readme MIT license Code of conduct Code of conduct Contributing Contributing Activity Custom properties Stars 114 stars Watchers 3 watching Forks 41 forks Report repository Releases Packages Used by Contributors Languages 
+ Footer 
+ © 2026 GitHub, Inc.
+ Footer navigation 
+ Terms 
+ Privacy 
+ Security 
+ Status 
+ Community 
+ Docs 
+ Contact 
+ Manage cookies
+ Do not share my personal information
+ You can’t perform that action at this time.

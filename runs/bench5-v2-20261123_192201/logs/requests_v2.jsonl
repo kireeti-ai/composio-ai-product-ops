@@ -1,0 +1,4 @@
+{"t": "2026-11-23T19:23:32+05:30", "prev": "0000000000000000000000000000000000000000000000000000000000000000", "ev": "gemini_stage_refused", "tag": "gemini25_key1", "reason": "before daily reset 2026-11-24 08:00 UTC (13:30 IST)"}
+{"t": "2026-11-23T19:25:39+05:30", "prev": "0000000000000000000000000000000000000000000000000000000000000000", "ev": "capability_skipped", "tag": "openrouter_particle", "gate": "wait"}
+{"t": "2026-11-23T19:26:00+05:30", "prev": "66e8405a6dbc319281d0c8c4a9852de7e966f54f882c76031c416c981e1ff7ff", "ev": "capability_start", "tag": "openrouter_particle", "model": "particle-ai/particle-1:free"}
+{"t": "2026-11-23T19:26:01+05:30", "prev": "77ed66c2fbdfb038dca92b788558c744a2226410e83b979debf38f26ec6a56a6", "ev": "capability_end", "tag": "openrouter_particle", "model": "particle-ai/particle-1:free", "model_returned": null, "http": 429, "category": "rate_limit", "ok": false, "latency": 1.02}

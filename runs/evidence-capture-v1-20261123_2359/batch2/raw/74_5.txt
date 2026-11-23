@@ -1,0 +1,126 @@
+
+Atlassian Rovo MCP Overview
+Developer
+Documentation
+Resources
+News and Updates
+Get Support
+Sign in
+Developer
+Get Support
+Sign in
+DOCUMENTATION
+Cloud
+Data Center
+Resources
+News and Updates
+Get support
+Sign in
+Developer
+Sign in
+DOCUMENTATION
+Cloud
+Data Center
+Resources
+News and Updates
+Get support
+Sign in
+Atlassian Rovo MCP
+Guides
+Changelog
+Atlassian Rovo MCP
+Guides
+Changelog
+Atlassian Rovo MCP Overview
+Guides
+Getting started
+Authentication and authorization
+Supported tools
+Configuring OAuth 2.1
+Configuring authentication via API token
+Last updated Sep 2, 2026
+About the Atlassian Rovo MCP Server
+The Atlassian Rovo MCP Server is a cloud-hosted 
+Model Context Protocol (MCP)
+ server that connects AI-powered clients to your Atlassian Cloud apps. It provides a standardized interface for AI assistants, IDEs, and automation tools to read, create, and update work across Jira, Confluence, Jira Service Management, Bitbucket, Loom, and the wider Atlassian platform - all secured by OAuth 2.1 authorization and your existing Atlassian permissions.
+What you can do
+With the Atlassian Rovo MCP Server, AI clients can:
+Search and summarize
+ Jira work items, Confluence pages, Bitbucket pull requests, and other Atlassian content without context switching.
+Retrieve Loom recordings
+, including transcripts, comments, AI briefs, and extracted meeting action items.
+Create and update
+ work items, pages, and other content using natural language commands.
+Automate repetitive work
+, such as generating Jira work items from meeting notes or creating Confluence documentation from specs.
+Query across apps
+ using Teamwork Graph, such as finding the pull requests, deployments, and documents connected to a work item.
+How it works
+The MCP Server acts as a bridge between MCP-compatible clients and Atlassian Cloud APIs:
+An AI client connects to the server endpoint at 
+https://mcp.atlassian.com/v2/mcp
+.
+The server initiates a secure OAuth 2.1 authorization flow (or accepts an API token for headless authentication).
+Once authorized, the client can invoke tools to interact with Atlassian apps.
+All actions respect the authenticated user's existing permissions - the server never grants access beyond what the user already has.
+Rather than sending every tool definition at connection time, the server advertises a small set of 
+primary
+ tools and lets clients discover the rest of the catalog on demand through the 
+discover
+ tool. This preserves context window and lets Atlassian add tools without requiring you to reconnect. See 
+Supported tools
+ for details.
+Supported apps
+App
+Capabilities
+Jira
+Search, create, edit, transition, and comment on work items; query spaces, boards, sprints, versions, and metadata
+Confluence
+Read, create, and update pages, live docs, whiteboards, and databases; search with CQL; manage comments, attachments, permissions, and spaces
+Jira Service Management
+Query and update ops alerts, on-call schedules, and team information
+Bitbucket Cloud
+Browse and act on repositories, pull requests, pipelines, deployments, and environments
+Loom
+Read and manage videos, transcripts, comments, meeting action items, and folders
+Goals, Projects, Focus areas, Teams, Talent
+Search, read, create, and update Atlassian platform work-tracking entities
+Teamwork Graph
+Retrieve connected context and relationships for any Atlassian entity
+Rovo Search
+Semantic search across Jira, Confluence, and connected apps using natural language
+Code search
+Search and read source code across connected code providers
+Rovo credit usage
+Some tools consume Rovo credits. Consumption depends on:
+Context volume
+ - retrieving larger amounts of data costs more credits.
+Reasoning depth
+ - complex queries consume more credits than simple lookups.
+Usage caps
+ - per-call limits help manage cost. The vast majority of enriched TWG API and tool calls are 1-10 Rovo credits per call.
+Supported clients
+The server works with any MCP-compatible client, including:
+OpenAI ChatGPT
+Claude Desktop and Claude Code
+Docker
+GitHub Copilot CLI
+Google Gemini
+Amazon Quick Suite
+IDEs such as VS Code, Cursor, and Windsurf
+Rate this page:
+Unusable
+Poor
+Okay
+Good
+Excellent
+Changelog
+System status
+Privacy
+Notice at Collection
+Developer Terms
+Trademark
+Cookie preferences
+© 
+2026
+ Atlassian

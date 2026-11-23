@@ -1,0 +1,55 @@
+{
+ "id": 58,
+ "name": "Sherlock",
+ "category": "Data, SEO and Scraping",
+ "model": "gemini-2.5-flash",
+ "pages_read": [
+  "https://app.sherlock.sh/reference",
+  "http://sherlock.gnoss.com/v1/en/help",
+  "https://sher-lock.readthedocs.org/en/latest/api_documentation.html",
+  "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md"
+ ],
+ "one_liner": "An open-source CLI tool for finding usernames across over 400 social networks and websites.",
+ "auth_methods": [
+  "unknown"
+ ],
+ "access": "self_serve_free",
+ "access_note": "The core CLI tool is free. Some third-party services built around Sherlock are freemium or paid.",
+ "api_types": [
+  "sdk_or_cli_only"
+ ],
+ "api_breadth": "narrow",
+ "existing_mcp": "community",
+ "buildability": "yes_with_caveats",
+ "blocker": "Requires CLI execution or Python library integration, not a direct HTTP API.",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+   "quote": "no account/API keys needed \u2013 Sherlock uses direct web requests and does not require creating any account or API key to use.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+   "quote": "The core Sherlock CLI tool remains free and community-driven and using it locally keeps the search entirely under the user\u2019s control.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+   "quote": "Sherlock is primarily a CLI tool, so some familiarity with the command line is required to install and run it.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+   "quote": "There is also an official Docker image available (sherlock/sherlock on Docker Hub) for containerized use, as well as community packages (e.g. in Homebrew for macOS, APT in Kali Linux, DNF in Fedora, and BlackArch).",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

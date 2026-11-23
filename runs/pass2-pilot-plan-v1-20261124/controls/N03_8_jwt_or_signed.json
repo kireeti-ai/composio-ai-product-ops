@@ -1,0 +1,70 @@
+{
+ "id": 8,
+ "name": "Close",
+ "category": "CRM and Sales",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developer.close.com/api/resources/activities/notes",
+  "https://developer.close.com/",
+  "https://developer.close.com/api/overview/api-key-authentication",
+  "https://developer.close.com/api/overview/oauth-authentication"
+ ],
+ "one_liner": "Close provides a REST API, webhooks, and an official MCP server for managing sales CRM data, leads, contacts, activities, and outreach workflows.",
+ "auth_methods": [
+  "oauth2",
+  "api_key",
+  "basic",
+  "bearer_token",
+  "jwt_or_signed"
+ ],
+ "access": "self_serve_trial_or_paid_plan",
+ "access_note": "API keys and OAuth apps can be managed directly in a Close account under Settings \u2192 Developer.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.close.com/api/overview/oauth-authentication",
+   "quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developer.close.com/api/overview/api-key-authentication",
+   "quote": "API keys can be created and managed in your Close account under Settings \u2192 Developer \u2192 API Keys.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developer.close.com/",
+   "quote": "Push leads, contacts, activities, and custom data into Close from your website or other systems via the REST API.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developer.close.com/",
+   "quote": "Give Claude, ChatGPT, Cursor, and other tools direct access to Close data via the MCP server \u2014 no code required.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ],
+ "planted_control": {
+  "field": "auth_methods",
+  "planted_item": "jwt_or_signed",
+  "original_value": [
+   "oauth2",
+   "api_key",
+   "basic",
+   "bearer_token"
+  ],
+  "proof": "regex found no support in any stored source page: \\bjwt\\b|json web token|hmac|signature|signed"
+ }
+}

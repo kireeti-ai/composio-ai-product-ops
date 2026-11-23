@@ -1,0 +1,129 @@
+{
+ "created": "2026-11-23T19:18:35+05:30",
+ "buckets": {
+  "groq:orgA:openai/gpt-oss-120b": {
+   "requests_last_24h": 5,
+   "tokens_last_60s": 0,
+   "blocked_until": null,
+   "blocked_reason": null,
+   "observations": [
+    {
+     "t": "2026-11-23T19:13:23+05:30",
+     "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "976",
+      "x-ratelimit-remaining-tokens": "5839",
+      "x-ratelimit-reset-requests": "34m33.6s",
+      "x-ratelimit-reset-tokens": "16.207s"
+     },
+     "app": 27
+    },
+    {
+     "t": "2026-11-23T19:13:24+05:30",
+     "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "975",
+      "x-ratelimit-remaining-tokens": "3637",
+      "x-ratelimit-reset-requests": "36m0s",
+      "x-ratelimit-reset-tokens": "32.722s"
+     },
+     "app": 32
+    },
+    {
+     "t": "2026-11-23T19:14:23+05:30",
+     "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "974",
+      "x-ratelimit-remaining-tokens": "5369",
+      "x-ratelimit-reset-requests": "37m26.4s",
+      "x-ratelimit-reset-tokens": "19.732s"
+     },
+     "app": 41
+    },
+    {
+     "t": "2026-11-23T19:14:26+05:30",
+     "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "973",
+      "x-ratelimit-remaining-tokens": "3397",
+      "x-ratelimit-reset-requests": "38m52.8s",
+      "x-ratelimit-reset-tokens": "34.522s"
+     },
+     "app": 53
+    },
+    {
+     "t": "2026-11-23T19:15:26+05:30",
+     "headers": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "8000",
+      "x-ratelimit-remaining-requests": "972",
+      "x-ratelimit-remaining-tokens": "3882",
+      "x-ratelimit-reset-requests": "40m19.2s",
+      "x-ratelimit-reset-tokens": "30.885s"
+     },
+     "app": 61
+    }
+   ]
+  },
+  "openrouter:main:particle-ai/particle-1:free": {
+   "requests_last_24h": 5,
+   "tokens_last_60s": 0,
+   "blocked_until": null,
+   "blocked_reason": null,
+   "observations": [
+    {
+     "t": "2026-11-23T19:15:28+05:30",
+     "headers": {
+      "Retry-After": "1"
+     },
+     "app": 27
+    },
+    {
+     "t": "2026-11-23T19:15:29+05:30",
+     "headers": {
+      "Retry-After": "1"
+     },
+     "app": 32
+    },
+    {
+     "t": "2026-11-23T19:15:31+05:30",
+     "headers": {
+      "Retry-After": "1"
+     },
+     "app": 41
+    },
+    {
+     "t": "2026-11-23T19:15:33+05:30",
+     "headers": {
+      "Retry-After": "1"
+     },
+     "app": 53
+    },
+    {
+     "t": "2026-11-23T19:15:36+05:30",
+     "headers": {
+      "Retry-After": "1"
+     },
+     "app": 61
+    }
+   ]
+  },
+  "gemini:key2:gemini-3.6-flash": {
+   "requests_last_24h": 1,
+   "tokens_last_60s": 0,
+   "blocked_until": null,
+   "blocked_reason": null,
+   "observations": []
+  }
+ },
+ "caps": {
+  "groq_orgA": 5,
+  "openrouter_particle": 5,
+  "gemini25_key1": 5,
+  "gemini36_key2": 1
+ }
+}

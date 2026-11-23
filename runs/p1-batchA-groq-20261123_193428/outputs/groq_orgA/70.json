@@ -1,0 +1,166 @@
+{
+ "tag": "groq_orgA",
+ "app": 70,
+ "name": "Sentry",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 9,
+ "latency_s": 2.91,
+ "tokens_in": 3113,
+ "tokens_out": 906,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "For third\u2011party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (**User settings > Personal Tokens**) and assigned specific scopes.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (**User settings > Personal Tokens**) and assigned specific scopes.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.sentry.io/api/",
+    "quote": "The Sentry web API is used to access the Sentry platform programmatically.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://sentry.io/pricing",
+    "quote": "* MCP access",
+    "issues": [
+     "placeholder_or_too_short"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "unsupported"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 6
+  },
+  "evidence_total": 6,
+  "evidence_valid": 4,
+  "issue_counts": {
+   "placeholder_or_too_short": 1,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Sentry is an error monitoring and performance platform offering APIs for managing organizations, projects, and events.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token",
+   "api_key"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can create personal tokens in User Settings on the free Developer plan.",
+  "api_breadth": "broad",
+  "api_types": [
+   "rest"
+  ],
+  "buildability": "yes",
+  "blocker": "none",
+  "existing_mcp": "official",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "For third\u2011party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (**User settings > Personal Tokens**) and assigned specific scopes."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.sentry.io/api/auth",
+    "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (**User settings > Personal Tokens**) and assigned specific scopes."
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.sentry.io/api/",
+    "quote": "The Sentry web API is used to access the Sentry platform programmatically."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://sentry.io/pricing",
+    "quote": "* MCP access"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "d99f8f3efc4d86d972b8f28ba7060149601878b4a603ee5465c02925c63cfe8f",
+ "at": "2026-11-23T19:49:38+05:30"
+}

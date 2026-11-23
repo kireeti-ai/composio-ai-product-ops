@@ -1,0 +1,193 @@
+{
+ "groq:orgA:openai/gpt-oss-120b": {
+  "req": [
+   1795441401.161809,
+   1795441403.159578,
+   1795441461.167397,
+   1795441463.800388,
+   1795441523.806797
+  ],
+  "tok": [
+   [
+    1795441401.161809,
+    2413
+   ],
+   [
+    1795441403.1595788,
+    2376
+   ],
+   [
+    1795441461.1674,
+    2879
+   ],
+   [
+    1795441463.800389,
+    2277
+   ],
+   [
+    1795441523.8068008,
+    3954
+   ]
+  ],
+  "blocked_until": 0,
+  "blocked_reason": null,
+  "observations": [
+   {
+    "t": "2026-11-23T19:13:23+05:30",
+    "headers": {
+     "x-ratelimit-limit-requests": "1000",
+     "x-ratelimit-limit-tokens": "8000",
+     "x-ratelimit-remaining-requests": "976",
+     "x-ratelimit-remaining-tokens": "5839",
+     "x-ratelimit-reset-requests": "34m33.6s",
+     "x-ratelimit-reset-tokens": "16.207s"
+    },
+    "app": 27
+   },
+   {
+    "t": "2026-11-23T19:13:24+05:30",
+    "headers": {
+     "x-ratelimit-limit-requests": "1000",
+     "x-ratelimit-limit-tokens": "8000",
+     "x-ratelimit-remaining-requests": "975",
+     "x-ratelimit-remaining-tokens": "3637",
+     "x-ratelimit-reset-requests": "36m0s",
+     "x-ratelimit-reset-tokens": "32.722s"
+    },
+    "app": 32
+   },
+   {
+    "t": "2026-11-23T19:14:23+05:30",
+    "headers": {
+     "x-ratelimit-limit-requests": "1000",
+     "x-ratelimit-limit-tokens": "8000",
+     "x-ratelimit-remaining-requests": "974",
+     "x-ratelimit-remaining-tokens": "5369",
+     "x-ratelimit-reset-requests": "37m26.4s",
+     "x-ratelimit-reset-tokens": "19.732s"
+    },
+    "app": 41
+   },
+   {
+    "t": "2026-11-23T19:14:26+05:30",
+    "headers": {
+     "x-ratelimit-limit-requests": "1000",
+     "x-ratelimit-limit-tokens": "8000",
+     "x-ratelimit-remaining-requests": "973",
+     "x-ratelimit-remaining-tokens": "3397",
+     "x-ratelimit-reset-requests": "38m52.8s",
+     "x-ratelimit-reset-tokens": "34.522s"
+    },
+    "app": 53
+   },
+   {
+    "t": "2026-11-23T19:15:26+05:30",
+    "headers": {
+     "x-ratelimit-limit-requests": "1000",
+     "x-ratelimit-limit-tokens": "8000",
+     "x-ratelimit-remaining-requests": "972",
+     "x-ratelimit-remaining-tokens": "3882",
+     "x-ratelimit-reset-requests": "40m19.2s",
+     "x-ratelimit-reset-tokens": "30.885s"
+    },
+    "app": 61
+   }
+  ]
+ },
+ "openrouter:main:particle-ai/particle-1:free": {
+  "req": [
+   1795441527.081218,
+   1795441529.112763,
+   1795441530.9557388,
+   1795441533.0040781,
+   1795441534.698279
+  ],
+  "tok": [
+   [
+    1795441527.081218,
+    4264
+   ],
+   [
+    1795441529.1127648,
+    4607
+   ],
+   [
+    1795441530.955742,
+    4901
+   ],
+   [
+    1795441533.00408,
+    3956
+   ],
+   [
+    1795441534.698282,
+    6703
+   ]
+  ],
+  "blocked_until": 1795441537.4009879,
+  "blocked_reason": "rate",
+  "observations": [
+   {
+    "t": "2026-11-23T19:15:27+05:30",
+    "key_info": {
+     "is_free_tier": true,
+     "usage_usd": 0,
+     "free_model_daily_requests": {
+      "used": 5,
+      "limit": 50,
+      "remaining": 45
+     }
+    }
+   },
+   {
+    "t": "2026-11-23T19:15:28+05:30",
+    "headers": {
+     "Retry-After": "1"
+    },
+    "app": 27
+   },
+   {
+    "t": "2026-11-23T19:15:29+05:30",
+    "headers": {
+     "Retry-After": "1"
+    },
+    "app": 32
+   },
+   {
+    "t": "2026-11-23T19:15:31+05:30",
+    "headers": {
+     "Retry-After": "1"
+    },
+    "app": 41
+   },
+   {
+    "t": "2026-11-23T19:15:33+05:30",
+    "headers": {
+     "Retry-After": "1"
+    },
+    "app": 53
+   },
+   {
+    "t": "2026-11-23T19:15:36+05:30",
+    "headers": {
+     "Retry-After": "1"
+    },
+    "app": 61
+   }
+  ]
+ },
+ "gemini:key2:gemini-3.6-flash": {
+  "req": [
+   1795441560.278925
+  ],
+  "tok": [
+   [
+    1795441560.278925,
+    9956
+   ]
+  ],
+  "blocked_until": 0,
+  "blocked_reason": null,
+  "observations": []
+ }
+}

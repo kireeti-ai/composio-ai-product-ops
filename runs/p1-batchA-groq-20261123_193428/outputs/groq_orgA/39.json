@@ -1,0 +1,131 @@
+{
+ "tag": "groq_orgA",
+ "app": 39,
+ "name": "Threads (Meta)",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 3,
+ "latency_s": 2.94,
+ "tokens_in": 1671,
+ "tokens_out": 686,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "`threads_basic` \u2014 Required for all Threads endpoints.\n`threads_content_publish` \u2014 Required for Threads publishing endpoints only.\n`threads_manage_replies` \u2014 Required for making POST calls to reply endpoints.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.facebook.com/documentation/threads/overview",
+    "quote": "The Threads API can be accessed by either `graph.threads.com` or `graph.threads.net`.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "",
+    "quote": "unknown",
+    "issues": [
+     "placeholder_or_too_short",
+     "url_not_in_sources"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "access",
+    "item": "approval_or_review_required",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 1,
+   "unsupported": 2,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 4,
+  "evidence_valid": 3,
+  "issue_counts": {
+   "placeholder_or_too_short": 1,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 1,
+   "not_contiguous_in_cited_page": 0,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Threads API lets apps publish posts, read profiles, manage replies and fetch insights for Meta Threads accounts.",
+  "auth_methods": [
+   "oauth2"
+  ],
+  "access": "approval_or_review_required",
+  "access_note": "Requires app review for permissions like threads_content_publish, threads_manage_replies, etc.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "medium",
+  "existing_mcp": "none_found",
+  "buildability": "yes_with_caveats",
+  "blocker": "Rate limits (250 posts per 24\u2011hour rolling window) and required permission review",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.facebook.com/documentation/threads/get-started",
+    "quote": "`threads_basic` \u2014 Required for all Threads endpoints.\n`threads_content_publish` \u2014 Required for Threads publishing endpoints only.\n`threads_manage_replies` \u2014 Required for making POST calls to reply endpoints."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.facebook.com/documentation/threads/overview",
+    "quote": "The Threads API can be accessed by either `graph.threads.com` or `graph.threads.net`."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "",
+    "quote": "unknown"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "c62bc2996feaa6efb71e376166a2d7cb61879557d27f97c82807623138e24983",
+ "at": "2026-11-23T19:35:38+05:30"
+}

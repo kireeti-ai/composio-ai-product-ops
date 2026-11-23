@@ -1,0 +1,406 @@
+
+YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI
+TranscriptAPI.com
+Docs Pricing Blog Contact Login Get API Key
+YouTube Transcript API That Just Works
+Stop fighting YouTube blocks. Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP — at scale.
+Get Started Free View Pricing
+Works everywhere
+Powering 15M+ transcripts every month
+Your browser does not support the video tag.
+Trusted in production
+500K+ Transcripts Processed Daily
+49ms median response time. 15M+ transcripts served last month.
+youtubetotranscript.com
+Verified Production User
+~11M
+transcripts per month
+Active
+recapio.com
+Verified Production User
+~2.8M
+transcripts per month
+Active
+Everything you need from YouTube
+One API. Full YouTube Access.
+Transcripts, search, channels, playlists — all in one place. Every feature works via API, MCP, and agent skills.
+Get Transcripts
+1 credit
+Extract transcripts from any YouTube video — with or without timestamps. Drop the output straight into summarizers, search indexes, or AI pipelines.
+Summarize videos Study notes Search indexes Content repurposing
+Request
+Copy
+curl " https://transcriptapi.com/api/v2/youtube/transcript?video_url=dQw4w9WgXcQ&format=json " \
+-H " Authorization: Bearer API_KEY "
+Response
+{
+" language ": " en ",
+" length_seconds ": 1164 ,
+" lengthText ": " 19:24 ",
+" metadata ": {
+" title ": " Do schools kill creativity? "
+},
+" transcript ": [
+{
+" text ": " Good morning. How are you? ",
+" start ": 0.0 ,
+" duration ": 3.2
+},
+{
+" text ": " It's been great, hasn't it? ",
+" start ": 3.2 ,
+" duration ": 2.9
+}
+]
+}
+AI Agent
+Copy
+Pull the transcript from this TED talk and give me a bullet-point summary with key quotes
+get_transcript(video_url="dQw4w9WgXcQ")
+Here's the summary of "Do schools kill creativity?" by Sir Ken Robinson:
+• Schools prioritize conformity over creative thinking
+• Children are educated out of creativity as they age
+• Key quote: "If you're not prepared to be wrong, you'll never come up with anything original"
+Want me to extract all the timestamps where he references specific examples?
+API Reference · MCP Tool
+Search YouTube
+1 credit
+Search YouTube for videos, channels, or playlists. Filter by type and limit results — perfect for discovery, research, and building content pipelines.
+Content research Competitor analysis Topic discovery Trend monitoring
+Request
+Copy
+curl " https://transcriptapi.com/api/v2/youtube/search?q=climate+change&type=video&limit=5 " \
+-H " Authorization: Bearer API_KEY "
+Response
+{
+" results ": [
+{
+" type ": " video ",
+" videoId ": " G9t__9Tmli0 ",
+" title ": " Climate Change 101 ",
+" channelTitle ": " National Geographic ",
+" lengthText ": " 4:00 ",
+" viewCountText ": " 12M views ",
+" publishedTimeText ": " 6 years ago ",
+" hasCaptions ": true
+},
+{
+" type ": " video ",
+" videoId ": " SDr2gaSrOCk ",
+" title ": " Before the Flood ",
+" channelTitle ": " National Geographic ",
+" lengthText ": " 1:30:08 ",
+" viewCountText ": " 8.5M views ",
+" publishedTimeText ": " 7 years ago ",
+" hasCaptions ": true
+}
+],
+" result_count ": 5 ,
+" has_more ": true
+}
+AI Agent
+Copy
+Find the most-watched climate change explainers on YouTube and compare their key arguments
+search_youtube(q="climate change", limit=5)
+Found 5 top climate change videos:
+1. "Climate Change 101" (12M views) — broad overview by National Geographic
+2. "Before the Flood" (8.5M views) — Leonardo DiCaprio documentary
+3. "Causes and Effects of Climate Change" (5.1M views) — National Geographic explainer
+4. "Climate Change" (3.8M views) — Kurzgesagt animated breakdown
+5. "Is It Too Late To Stop Climate Change?" (2.9M views) — science-focused deep dive
+Should I pull the transcripts and compare how each one frames the core science?
+API Reference · MCP Tool
+Search Inside a Channel
+1 credit
+Search within a specific channel to find videos on any topic. Great for researching a creator's content or finding niche topics in large channels.
+Research a creator Find specific topics Competitive intelligence
+Request
+Copy
+curl " https://transcriptapi.com/api/v2/youtube/channel/search?channel=@TED&q=AI&limit=10 " \
+-H " Authorization: Bearer API_KEY "
+Response
+{
+" results ": [
+{
+" type ": " video ",
+" videoId ": " UyyjU8fzEYU ",
+" title ": " The wonderful implications of computers that can learn ",
+" channelTitle ": " TED ",
+" lengthText ": " 16:22 ",
+" viewCountText ": " 2.3M views ",
+" publishedTimeText ": " 10 years ago ",
+" hasCaptions ": true
+},
+{
+" type ": " video ",
+" videoId ": " hJP5GqnTrNo ",
+" title ": " Can AI fix education? ",
+" channelTitle ": " TED ",
+" lengthText ": " 10:39 ",
+" viewCountText ": " 180K views ",
+" publishedTimeText ": " 1 year ago ",
+" hasCaptions ": true
+}
+],
+" result_count ": 6 ,
+" has_more ": true
+}
+AI Agent
+Copy
+What has TED published about AI in education? I need the top talks to prep for a presentation
+search_channel(channel="@TED", q="AI education")
+Found 6 TED talks on AI in education:
+1. "Can AI fix education?" — most recent (Aug 2024)
+2. "The wonderful implications of computers that can learn" — 2.3M views, great for framing
+3. "How AI could save education" — practical classroom applications
+4. "What AI means for the future of learning" — policy perspective
+5. "Teaching in the age of AI" — teacher's firsthand experience
+6. "The AI revolution in education" — broad overview with demos
+I can fetch the transcripts and pull out the strongest talking points. Want me to do that?
+API Reference · MCP Tool
+Browse Channel Videos
+1 credit
+List all videos from any YouTube channel. Ideal for building databases, bulk transcript extraction, or auditing a channel's full content library.
+Content auditing Video databases Bulk transcripts Channel analysis
+Request
+Copy
+curl " https://transcriptapi.com/api/v2/youtube/channel/videos?channel=@TED " \
+-H " Authorization: Bearer API_KEY "
+Response
+{
+" results ": [
+{
+" videoId ": " iG9CE55wbtY ",
+" title ": " Do schools kill creativity? ",
+" channelTitle ": " TED ",
+" lengthText ": " 19:24 ",
+" viewCountText ": " 82M views ",
+" index ": 1
+},
+{
+" videoId ": " arj7oStGLkU ",
+" title ": " Inside the mind of a master procrastinator ",
+" channelTitle ": " TED ",
+" lengthText ": " 14:04 ",
+" viewCountText ": " 65M views ",
+" index ": 2
+}
+],
+" playlist_info ": {
+" title ": " Uploads from TED ",
+" numVideos ": " 5,736 videos "
+},
+" has_more ": true
+}
+AI Agent
+Copy
+Audit TED's full video catalog — how many videos do they have and what are the all-time top performers?
+get_channel_videos(channel="@TED")
+TED has 5,200 videos total. Here are the top 3 by views:
+1. "Do schools kill creativity?" — 82M views
+2. "Inside the mind of a master procrastinator" — 65M views
+3. "Your body language may shape who you are" — 61M views
+Want me to break this down by topic or year, or fetch transcripts for the top 10?
+API Reference · MCP Tool
+Track New Uploads
+Free
+Check for the latest uploads from any channel — no credits required. Perfect for monitoring, daily recaps, or triggering downstream pipelines.
+Daily channel recap New content alerts Pipeline triggers Competitor tracking
+Request
+Copy
+curl " https://transcriptapi.com/api/v2/youtube/channel/latest?channel=@TED " \
+-H " Authorization: Bearer API_KEY "
+Response
+{
+" channel ": " @TED ",
+" results ": [
+{
+" videoId ": " xL2EKQ3Rkos ",
+" title ": " A bold plan for sustainable energy ",
+" author ": " TED ",
+" published ": " 2026-07-24T06:00:00+00:00 ",
+" viewCount ": " 48K ",
+" link ": " https://www.youtube.com/watch?v=xL2EKQ3Rkos "
+},
+{
+" videoId ": " k9Rm_SZjKs4 ",
+" title ": " How AI is transforming medicine ",
+" author ": " TED ",
+" published ": " 2026-07-23T14:30:00+00:00 ",
+" viewCount ": " 112K ",
+" link ": " https://www.youtube.com/watch?v=k9Rm_SZjKs4 "
+}
+],
+" result_count ": 15
+}
+AI Agent
+Copy
+Check if TED posted anything new this week — if it's about AI, summarize it for me
+get_latest_videos(channel="@TED")
+TED posted 2 new videos this week. One matches your interest:
+• "How AI is transforming medicine" (yesterday) — directly relevant
+• "A bold plan for sustainable energy" (2h ago) — energy/climate topic
+Fetching the transcript for the AI one now. I'll have a summary for you in a moment.
+API Reference · MCP Tool
+Extract Playlist Videos
+1 credit
+Get every video from a YouTube playlist. Process entire courses, lecture series, or curated collections in a single call.
+Online courses Lecture series Curated collections Batch processing
+Request
+Copy
+curl " https://transcriptapi.com/api/v2/youtube/playlist/videos?playlist=PLrAXtmErZgOe... " \
+-H " Authorization: Bearer API_KEY "
+Response
+{
+" results ": [
+{
+" videoId ": " UF8uR6Z6KLc ",
+" title ": " Lecture 1: Introduction ",
+" channelTitle ": " Stanford Online ",
+" lengthText ": " 52:10 ",
+" viewCountText ": " 1.2M views ",
+" index ": 1
+},
+{
+" videoId ": " 2pWv7GOvuf0 ",
+" title ": " Lecture 2: Neural Networks ",
+" channelTitle ": " Stanford Online ",
+" lengthText ": " 48:35 ",
+" viewCountText ": " 890K views ",
+" index ": 2
+}
+],
+" playlist_info ": {
+" title ": " Stanford CS229: Machine Learning ",
+" numVideos ": " 24 videos "
+},
+" has_more ": true
+}
+AI Agent
+Copy
+I'm taking this Stanford ML course — get all the lectures and create study notes for each one
+get_playlist_videos(playlist="PLrAXtmErZgOe...")
+Found 24 lectures in this playlist (total ~19 hours). I'll process them in order.
+Starting with Lecture 1: Introduction (52 min) — covers supervised learning, linear regression, and gradient descent.
+I'll create structured study notes for each lecture. Ready to begin?
+API Reference · MCP Tool
+Three ways to connect
+API. MCP. Agent Skills.
+Pick the integration that fits your workflow.
+REST API
+For developers building apps, workflows, automations
+Add YouTube data to any application. Use with n8n, Make, Zapier, or your own code.
+1
+Get a free API key at transcriptapi.com/signup
+2
+Make your first API call:
+curl " https://transcriptapi.com/api/v2/youtube/transcript?video_url=VIDEO_URL " \
+-H " Authorization: Bearer sk_your_key "
+3
+Get transcripts, search results, channel data — done. Pick a language with &language=de,en,asr (or list them free via /info ).
+Get API Key Read Docs
+YouTube MCP
+For ChatGPT, Claude, Cursor, VS Code, and 20+ clients
+Give your AI assistant YouTube access. Transcribe videos, search, browse channels, and read transcripts — right inside your conversation.
+Claude Code
+claude mcp add --transport http transcript-api https://transcriptapi.com/mcp
+Install in Cursor Install in VS Code
+Universal JSON config
+{
+" url ": " https://transcriptapi.com/mcp "
+}
+Try asking
+Summarize the key points from this video: [paste URL]
+Find videos about machine learning and summarize the top 3
+Setup Guide for Claude · Setup Guide for ChatGPT
+Agent Skills
+For OpenClaw, Claude Code, Cursor, Windsurf, and more
+Give your AI agent full YouTube access — never blocked, no manual setup. Install the skill and start using it.
+OpenClaw
+npx clawhub@latest install youtube-full
+Claude Code / Cursor / Windsurf
+npx skills add ZeroPointRepo/youtube-skills --skill youtube-full
+Try asking
+Summarize this video: https://youtube.com/watch?v=...
+What new videos did TED upload this week?
+Get transcripts for every video in this playlist: [URL]
+How it works: Your agent creates a TranscriptAPI account and gets an API key on first use — no manual setup needed. You get 100 free credits to start.
+Works with
+View on GitHub · Install on ClawHub
+Pricing
+One Plan. Every Feature Included.
+Transcripts, search, channels, playlists — all endpoints, one credit each. Pick your billing cycle and start building.
+100 free credits to try the API — no card required.
+Get started free
+Monthly
+$5.00 /month
+Includes:
+1,000 credits per month
+Top-ups at $2.50 per 1K
+1 Credit = 1 Successful Request
+MCP Access
+API Access
+200 RPM Rate Limit
+Human support on paid plan
+Start Monthly
+Secure checkout by Stripe
+BEST VALUE
+Annual
+$4.50 /month
+Billed $54.00/year Save 10%
+Includes:
+1,000 credits per month
+Top-ups at $1.50 per 1K (40% cheaper)
+1 Credit = 1 Successful Request
+MCP Access
+API Access
+300 RPM Rate Limit (more on request)
+Human support on paid plan
+Get Annual
+Secure checkout by Stripe
+Credit costs per endpoint
+Get transcript 1 credit
+Search YouTube 1 credit / page
+Search inside a channel 1 credit / page
+List channel videos 1 credit / page
+Playlist videos 1 credit / page
+Track new uploads (RSS) Free
+Resolve channel handle Free
+Top-up credit expiry
+Top-up credits last at least 30 days from purchase, or until your current subscription period ends — whichever is later.
+You'll need an active subscription to use them. If your subscription ends, your unused credits stay on your account but pause until you renew.
+Have custom requirements? Contact us for a custom plan.
+Estimate your bill
+Pricing Calculator
+Pick a plan and move the slider to see your total and effective cost per 1K.
+Pricing Calculator
+Select Plan
+Monthly
+Annual
+Monthly Transcript Volume
+10,000
+0 25k 50k 75k 100k
+Monthly Cost Breakdown
+Plan cost $4.50/mo
+Top-ups (9K @ $1.5/1K) $13.50
+Total Monthly Cost
+$18.00
+Effective cost per 1K transcripts
+$1.80
+Buy Annual Plan
+FAQ
+Frequently Asked Questions
+Short answers before you sign up.
+Is TranscriptAPI free?
+You can start for free: new accounts get 100 free credits, no card required, and one transcript costs one credit. After that, the paid plan is $5 a month for 1,000 credits per month, or $54 a year billed annually.
+Is TranscriptAPI the same as youtubetranscriptapi?
+No. TranscriptAPI is a hosted REST API, separate from the open-source YouTubeTranscriptApi Python package, which fetches transcripts from your own machine. TranscriptAPI is managed and also adds YouTube search, channel browsing and playlist extraction.
+Can I use it from Python or JavaScript?
+Yes. TranscriptAPI is a REST API, so any language that can send an HTTPS request with a Bearer API key can call it, including Python and JavaScript with Node.js. The API reference includes complete code examples in cURL, Python and JavaScript.
+Quickstarts: Python , JavaScript , cURL
+Does it use my YouTube Data API quota?
+No. You sign in with your own TranscriptAPI credentials: an API key, or OAuth for some MCP clients. You do not need a Google or YouTube Data API key, so no YouTube Data API quota of yours is used. Usage is counted in TranscriptAPI credits instead.
+Does it work with AI agents (MCP)?
+Yes. TranscriptAPI runs an MCP server at https://transcriptapi.com/mcp. The MCP docs have setup guides for Claude and ChatGPT, which connect with OAuth, and OpenAI Agent Builder, which uses an API key. It works with any MCP-compatible client, and MCP calls use the same credits as the REST API.
+TranscriptAPI.com © 2026
+Terms Privacy Refund Workflows What to build Docs Contact

@@ -1,0 +1,91 @@
+{
+ "app_id": 20,
+ "name": "Gladly",
+ "identity": "resolved by original Notion hint gladly.com (apps 1-50)",
+ "final_search": "1 targeted search (4 official domains x 4 queries = 16 searches, 159 hits, free) + 2 fetch rounds from the SAME hits (8 + 9 pages); no new queries; all attempts preserved in gladly/attempts*.json",
+ "retrieval": {
+  "attempts_by_source_and_usability": {
+   "baseline|usable": 3,
+   "baseline|blocked_or_notfound": 1,
+   "topup_v1_attempt1|fetch_empty": 1,
+   "topup_v1_attempt1|thin_or_js_shell": 1,
+   "topup_v1r_retry|fetch_empty": 2,
+   "topup_v1r_retry|thin_or_js_shell": 2,
+   "topup_v1r_retry|usable": 1,
+   "topup_v1r_retry|skipped": 1,
+   "gladly_final_round1|fetch_error": 2,
+   "gladly_final_round1|fetch_empty": 1,
+   "gladly_final_round1|usable": 4,
+   "gladly_final_round1|thin_or_js_shell": 1,
+   "gladly_final_round2|fetch_error": 1,
+   "gladly_final_round2|fetch_empty": 4,
+   "gladly_final_round2|usable": 4
+  },
+  "still_failing": [
+   "gladly.com pricing (empty on 3 attempts)",
+   "developer.gladly.com/rest and /rest/ (REST reference: error on 2 attempts)",
+   "connect.gladly.com API-token / environment-access / postman / answers-rest pages (empty)"
+  ]
+ },
+ "evidence": {
+  "access": {
+   "state": "explicit_account_gated",
+   "reading": "API credentials exist only inside a customer's Gladly instance: tokens are created in the Gladly UI by users holding the API User role set up by Administrators; sandbox is bought via CSM or included in an implementation package. No public self-serve registration or pricing page retrieved (absence not proof).",
+   "quotes": [
+    {
+     "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+     "quote": "These can be created within the Gladly UI, for users who have the `API User` role.",
+     "verified": true
+    },
+    {
+     "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+     "quote": "Gladly Administrators can set API permissions on an Agent-by-Agent basis.",
+     "verified": true
+    },
+    {
+     "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+     "quote": "If you do not have a sandbox environment and are interested in purchasing one, please contact your Gladly CSM or Gladly Support team.",
+     "verified": true
+    },
+    {
+     "url": "https://help.gladly.com/implementation/docs/difference-between-sandbox-and-production",
+     "quote": "Some implementation packages include a Sandbox environment.",
+     "verified": true
+    }
+   ]
+  },
+  "auth": {
+   "state": "api_token (per user account; created in UI)",
+   "quotes": [
+    {
+     "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+     "quote": "API tokens are tied to a single user account",
+     "verified": true
+    }
+   ]
+  },
+  "api_surface": {
+   "state": "partial",
+   "reading": "REST API, Lookup API, App Platform, Chat SDK, Help Center API and webhooks are NAMED; 0 operations itemized because the REST reference never fetched",
+   "quotes": [
+    {
+     "url": "https://developer.gladly.com/",
+     "quote": "calling Gladly's REST APIs, or implementing the Lookup API to provide data from your own services",
+     "verified": true
+    }
+   ]
+  },
+  "mcp": {
+   "state": "not an MCP server: Gladly AI is an MCP CLIENT that connects to external MCP servers",
+   "quotes": [
+    {
+     "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+     "quote": "Connect Gladly AI to an external MCP server so it can call that server's tools during Customer conversations.",
+     "verified": true
+    }
+   ]
+  }
+ },
+ "decision": "Evidence now sufficient for auth and access; API surface partial; pricing never retrieved. NOT added to the 27-app plan (plan preserved). Offered as pending-approval candidate #28 (phase 2, access explicit_account_gated, api_surface partial).",
+ "correction": "The earlier 'insufficient' access rating for Gladly came from keyword snippets; the baseline pages already contained the gating statements. Other 'insufficient' access ratings made the same way may understate evidence (see limitations)."
+}

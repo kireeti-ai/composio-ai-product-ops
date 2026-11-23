@@ -1,0 +1,47 @@
+[
+ {
+  "id": 27,
+  "name": "Telegram",
+  "mcp_full": 0,
+  "mcp_v1": 0,
+  "mcp_v2": 0,
+  "chars_v1": 4575,
+  "chars_v2": 4575
+ },
+ {
+  "id": 32,
+  "name": "Meta Ads",
+  "mcp_full": 0,
+  "mcp_v1": 0,
+  "mcp_v2": 0,
+  "chars_v1": 5421,
+  "chars_v2": 5421
+ },
+ {
+  "id": 41,
+  "name": "Shopify",
+  "mcp_full": 2,
+  "mcp_v1": 2,
+  "mcp_v2": 3,
+  "chars_v1": 6641,
+  "chars_v2": 7346
+ },
+ {
+  "id": 53,
+  "name": "Ahrefs",
+  "mcp_full": 3,
+  "mcp_v1": 0,
+  "mcp_v2": 3,
+  "chars_v1": 3580,
+  "chars_v2": 4651
+ },
+ {
+  "id": 61,
+  "name": "GitHub",
+  "mcp_full": 0,
+  "mcp_v1": 0,
+  "mcp_v2": 0,
+  "chars_v1": 11925,
+  "chars_v2": 11925
+ }
+]

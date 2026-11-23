@@ -1,0 +1,1434 @@
+[
+ {
+  "row_id": 80,
+  "app_id": 13,
+  "app_name": "Freshdesk",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://support.freshdesk.com/support/solutions/articles/50000009511-automation-examples-using-webhooks",
+  "quote": "Under URL, use Freshdesk\u2019s Update ticket API call.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/13.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST/update ticket",
+    "disposition": "partially_supported",
+    "reason": "The quote identifies an Update ticket API call; API type is not explicitly stated in the quote."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 81,
+  "app_id": 14,
+  "app_name": "Front",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://integrations.sh/front.com",
+  "quote": "authentication is via Front API tokens or Front OAuth apps depending on the surface.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/14.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API tokens/OAuth by surface",
+    "disposition": "quote_validation_failed",
+    "reason": "The submitted quote did not pass saved quote validation. Retain as unsupported by submitted citation pending recapture."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 82,
+  "app_id": 14,
+  "app_name": "Front",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://integrations.sh/front.com",
+  "quote": "authentication is via Front API tokens or Front OAuth apps depending on the surface.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/14.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API tokens/OAuth by surface",
+    "disposition": "quote_validation_failed",
+    "reason": "The submitted quote did not pass saved quote validation. Retain as unsupported by submitted citation pending recapture."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 83,
+  "app_id": 14,
+  "app_name": "Front",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://integrations.sh/front.com",
+  "quote": "authentication is via Front API tokens or Front OAuth apps depending on the surface.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/14.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API tokens/OAuth by surface",
+    "disposition": "quote_validation_failed",
+    "reason": "The submitted quote did not pass saved quote validation. Retain as unsupported by submitted citation pending recapture."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 84,
+  "app_id": 14,
+  "app_name": "Front",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://integrations.sh/front.com",
+  "quote": "Front exposes a Core REST API, a separate Application Channel HTTP API, and a beta MCP server",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/14.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Core REST, Channel HTTP API, beta MCP",
+    "disposition": "support_pending_quote_validation",
+    "reason": "The quote groups multiple surfaces, but the evidence status was invalid; revalidate the page and scope before accepting."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 85,
+  "app_id": 14,
+  "app_name": "Front",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://integrations.sh/front.com",
+  "quote": "Front exposes a Core REST API, a separate Application Channel HTTP API, and a beta MCP server",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/14.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "support_pending_quote_validation",
+    "reason": "The quote asserts a beta MCP server, but exact source identity/quote validation must pass before acceptance."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 86,
+  "app_id": 16,
+  "app_name": "LiveAgent",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://support.liveagent.com/docs/api/v3/",
+  "quote": "To be able to make API requests you need to generate an API key in your admin panel first.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/16.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API key",
+    "disposition": "supported",
+    "reason": "Official docs say an API key must be generated in the admin panel before API requests."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 87,
+  "app_id": 16,
+  "app_name": "LiveAgent",
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "source_url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+  "quote": "1. Log in to your LiveAgent account. 2. Navigate to Configuration > System > API. 3. Generate or manage your API v3 key here.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/16.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "trial_or_paid",
+    "disposition": "partially_supported",
+    "reason": "The quote shows an existing account and admin-panel key creation; it does not substantiate trial or pricing."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 88,
+  "app_id": 16,
+  "app_name": "LiveAgent",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://faq.liveagent.com/535002-LiveAgent-API-v1-vs-v3-Authentication-Differences-API-Key-Management-and-Resolving-403-Errors",
+  "quote": "If you are unsure which API version an endpoint belongs to, consult the Swagger API descriptor available in LiveAgent's documentation.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/16.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Swagger-described API",
+    "disposition": "partially_supported",
+    "reason": "The quote points to an API descriptor but does not specify the interface type or operations."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 89,
+  "app_id": 17,
+  "app_name": "Plain",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://plain.com/docs/graphql/authentication",
+  "quote": "To call the API as a user in your workspace, use an OAuth app.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/17.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth app",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth app is documented for acting as a user in a workspace; the quote does not enumerate all auth modes."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 90,
+  "app_id": 17,
+  "app_name": "Plain",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://plain.com/docs/graphql/authentication",
+  "quote": "To call the API as a user in your workspace, use an OAuth app.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/17.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth app",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth app is documented for acting as a user in a workspace; the quote does not enumerate all auth modes."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 91,
+  "app_id": 17,
+  "app_name": "Plain",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://plain.com/docs/graphql/authentication",
+  "quote": "To call the API as a user in your workspace, use an OAuth app.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/17.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth app",
+    "disposition": "supported_with_scope_limit",
+    "reason": "OAuth app is documented for acting as a user in a workspace; the quote does not enumerate all auth modes."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 92,
+  "app_id": 17,
+  "app_name": "Plain",
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "source_url": "https://www.plain.com/llms.txt",
+  "quote": "7-day free trial, no credit card required.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/17.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "7-day free trial",
+    "disposition": "supported",
+    "reason": "The official quote states the trial duration and no credit-card requirement."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 93,
+  "app_id": 17,
+  "app_name": "Plain",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://www.plain.com/llms.txt",
+  "quote": "GraphQL and REST APIs with full UI/API parity and no restrictive rate limits.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/17.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "GraphQL and REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly identify both APIs and state UI/API parity."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 94,
+  "app_id": 17,
+  "app_name": "Plain",
+  "field": "api_types",
+  "claim_value": "graphql",
+  "source_url": "https://www.plain.com/llms.txt",
+  "quote": "GraphQL and REST APIs with full UI/API parity and no restrictive rate limits.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/17.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "GraphQL and REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly identify both APIs and state UI/API parity."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 95,
+  "app_id": 17,
+  "app_name": "Plain",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://plain.com/docs/getting-started",
+  "quote": "You do the setup through Plain\u2019s Model Context Protocol (MCP) server at https://mcp.plain.com/mcp, which signs in as that person with OAuth.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/17.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "supported_by_vendor_docs",
+    "reason": "The quote names Plain\u2019s MCP server URL and OAuth setup."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 96,
+  "app_id": 18,
+  "app_name": "Help Scout",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+  "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/18.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 authorization code/client credentials",
+    "disposition": "supported",
+    "reason": "The cited official text explicitly names OAuth 2.0 and both flows."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 97,
+  "app_id": 18,
+  "app_name": "Help Scout",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+  "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/18.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 authorization code/client credentials",
+    "disposition": "supported",
+    "reason": "The cited official text explicitly names OAuth 2.0 and both flows."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 98,
+  "app_id": 18,
+  "app_name": "Help Scout",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+  "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/18.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 authorization code/client credentials",
+    "disposition": "supported",
+    "reason": "The cited official text explicitly names OAuth 2.0 and both flows."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 99,
+  "app_id": 18,
+  "app_name": "Help Scout",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+  "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/18.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 authorization code/client credentials",
+    "disposition": "supported",
+    "reason": "The cited official text explicitly names OAuth 2.0 and both flows."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 100,
+  "app_id": 18,
+  "app_name": "Help Scout",
+  "field": "auth_methods",
+  "claim_value": "jwt_or_signed",
+  "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+  "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/18.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 authorization code/client credentials",
+    "disposition": "supported",
+    "reason": "The cited official text explicitly names OAuth 2.0 and both flows."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 101,
+  "app_id": 18,
+  "app_name": "Help Scout",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.helpscout.com/docs-api",
+  "quote": "All API requests are made to https://docsapi.helpscout.net/ and all requests are served over HTTPS. The current version is v1.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/18.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "HTTPS API",
+    "disposition": "partial",
+    "reason": "The quote supports HTTPS transport and API host but does not itself name REST or enumerate operations."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 102,
+  "app_id": 19,
+  "app_name": "Gorgias",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+  "quote": "In order to be able to have an approved public app with Gorgias, it is required that the app is using OAuth2 for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/19.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2 for approved public apps",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The quoted requirement applies to approved public apps, not every private integration."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 103,
+  "app_id": 19,
+  "app_name": "Gorgias",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+  "quote": "In order to be able to have an approved public app with Gorgias, it is required that the app is using OAuth2 for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/19.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2 for approved public apps",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The quoted requirement applies to approved public apps, not every private integration."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 104,
+  "app_id": 19,
+  "app_name": "Gorgias",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://developers.gorgias.com/",
+  "quote": "For Private apps there is no need for approval. Go ahead and use it!",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/19.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "private apps without approval",
+    "disposition": "supported_with_scope_limit",
+    "reason": "The quote supports no approval for private apps; it does not establish free access or all app types."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 105,
+  "app_id": 19,
+  "app_name": "Gorgias",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+  "quote": "Gorgias has an open REST API - go to Settings \u2192 You \u2192 REST API to access your unique credentials.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/19.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official source explicitly names an open REST API and credentials location."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 106,
+  "app_id": 20,
+  "app_name": "Gladly",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "quote": "Gladly API uses token-based Basic Authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/20.json",
+  "prior_codex_review": [
+   {
+    "claim": "token-based Basic Authentication",
+    "disposition": "supported",
+    "reason": "Official Gladly developer tutorial explicitly describes token-based Basic authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 107,
+  "app_id": 20,
+  "app_name": "Gladly",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.gladly.com/",
+  "quote": "calling Gladly's REST APIs",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/20.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official developer portal names Gladly REST APIs."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 108,
+  "app_id": 20,
+  "app_name": "Gladly",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://help.gladly.com/docs/set-up-mcp-connections",
+  "quote": "Connect Gladly AI to an external MCP server so it can call that server's tools during Customer conversations.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/20.json",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "contradicted_by_quote_semantics",
+    "reason": "The quote says Gladly AI connects to an external MCP server. That shows MCP client capability, not a Gladly-provided server."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 109,
+  "app_id": 21,
+  "app_name": "Slack",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://api.slack.com/docs/oauth",
+  "quote": "OAuth 2.0 is a protocol that lets your app request authorization to private details in a user's Slack account without getting their password.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/21.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2",
+    "disposition": "supported",
+    "reason": "Official Slack docs explicitly describe OAuth 2.0 as the authorization protocol."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 110,
+  "app_id": 21,
+  "app_name": "Slack",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://api.slack.com/docs/oauth",
+  "quote": "OAuth 2.0 is a protocol that lets your app request authorization to private details in a user's Slack account without getting their password.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/21.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2",
+    "disposition": "supported",
+    "reason": "Official Slack docs explicitly describe OAuth 2.0 as the authorization protocol."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 111,
+  "app_id": 21,
+  "app_name": "Slack",
+  "field": "auth_methods",
+  "claim_value": "jwt_or_signed",
+  "source_url": "https://api.slack.com/docs/oauth",
+  "quote": "OAuth 2.0 is a protocol that lets your app request authorization to private details in a user's Slack account without getting their password.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/21.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2",
+    "disposition": "supported",
+    "reason": "Official Slack docs explicitly describe OAuth 2.0 as the authorization protocol."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 112,
+  "app_id": 21,
+  "app_name": "Slack",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://api.slack.com/authentication/basics",
+  "quote": "If you don't have a Slack workspace already, we recommend also setting up a developer sandbox.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/21.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_free",
+    "disposition": "not_established",
+    "reason": "A recommendation to create a developer sandbox does not establish free access or API entitlement."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 113,
+  "app_id": 21,
+  "app_name": "Slack",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://api.slack.com/docs/oauth",
+  "quote": "The tokens awarded to your app can be used in requests to the Web API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/21.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Web API",
+    "disposition": "supported",
+    "reason": "The quote identifies app tokens used for requests to the Slack Web API."
+   },
+   {
+    "claim": "REST / SDK / CLI / WebSocket",
+    "disposition": "partially_supported",
+    "reason": "The cited quotes establish the Web API, but the evidence listed here does not support the complete multi-interface classification."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 114,
+  "app_id": 21,
+  "app_name": "Slack",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://api.slack.com/docs/oauth",
+  "quote": "The tokens awarded to your app can be used in requests to the Web API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/21.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Web API",
+    "disposition": "supported",
+    "reason": "The quote identifies app tokens used for requests to the Slack Web API."
+   },
+   {
+    "claim": "REST / SDK / CLI / WebSocket",
+    "disposition": "partially_supported",
+    "reason": "The cited quotes establish the Web API, but the evidence listed here does not support the complete multi-interface classification."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 115,
+  "app_id": 21,
+  "app_name": "Slack",
+  "field": "api_types",
+  "claim_value": "websocket",
+  "source_url": "https://api.slack.com/docs/oauth",
+  "quote": "The tokens awarded to your app can be used in requests to the Web API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/21.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Web API",
+    "disposition": "supported",
+    "reason": "The quote identifies app tokens used for requests to the Slack Web API."
+   },
+   {
+    "claim": "REST / SDK / CLI / WebSocket",
+    "disposition": "partially_supported",
+    "reason": "The cited quotes establish the Web API, but the evidence listed here does not support the complete multi-interface classification."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 116,
+  "app_id": 21,
+  "app_name": "Slack",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://api.slack.com/authentication/basics",
+  "quote": "Try using the Slack MCP Plugin to aid in agent-assisted development.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/21.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "irrelevant_or_ambiguous",
+    "reason": "A Slack MCP Plugin for agent-assisted development is not evidence by itself of a Slack product MCP server or connector. Classify MCP integration type as unverified."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 117,
+  "app_id": 22,
+  "app_name": "Twilio",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "quote": "To authenticate requests to the Twilio APIs, use HTTP Basic authentication. Use your API key SID as the username and your API key secret as the password.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/22.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API key SID and secret via HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official docs explicitly describe Basic authentication using API key SID and secret."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 118,
+  "app_id": 22,
+  "app_name": "Twilio",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "quote": "To authenticate requests to the Twilio APIs, use HTTP Basic authentication. Use your API key SID as the username and your API key secret as the password.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/22.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "API key SID and secret via HTTP Basic",
+    "disposition": "supported",
+    "reason": "Official docs explicitly describe Basic authentication using API key SID and secret."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 119,
+  "app_id": 22,
+  "app_name": "Twilio",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "quote": "Twilio APIs use standard RESTful HTTP methods to perform actions on resources.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/22.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly say Twilio APIs use standard RESTful methods."
+   },
+   {
+    "claim": "SDK / CLI",
+    "disposition": "supported_as_tools_not_exclusive_surface",
+    "reason": "The quote supports SDK and CLI availability, but not an SDK/CLI-only surface."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 120,
+  "app_id": 22,
+  "app_name": "Twilio",
+  "field": "api_types",
+  "claim_value": "sdk_or_cli_only",
+  "source_url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+  "quote": "Twilio APIs use standard RESTful HTTP methods to perform actions on resources.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/22.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly say Twilio APIs use standard RESTful methods."
+   },
+   {
+    "claim": "SDK / CLI",
+    "disposition": "supported_as_tools_not_exclusive_surface",
+    "reason": "The quote supports SDK and CLI availability, but not an SDK/CLI-only surface."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 121,
+  "app_id": 23,
+  "app_name": "Zoho Cliq",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+  "quote": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/23.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official Cliq REST API documentation explicitly states OAuth 2.0 authentication."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 122,
+  "app_id": 23,
+  "app_name": "Zoho Cliq",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+  "quote": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/23.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0",
+    "disposition": "supported",
+    "reason": "Official Cliq REST API documentation explicitly states OAuth 2.0 authentication."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 123,
+  "app_id": 23,
+  "app_name": "Zoho Cliq",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+  "quote": "Zoho Cliq's REST API is designed based on RESTful architecture principles, enabling seamless communication between your applications and Zoho Cliq.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/23.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly identify a REST API built on RESTful principles."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 124,
+  "app_id": 25,
+  "app_name": "Pumble",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://pumble.com/learn/pumble/ai-automation-guide",
+  "quote": "Pumble maintains a native MCP (Model Context Protocol) server hosted directly at pumble.com, helping you connect your workspace to your AI agent of choice.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/25.json",
+  "prior_codex_review": [
+   {
+    "claim": "official native MCP",
+    "disposition": "supported_by_vendor_claim_pending_page_validation",
+    "reason": "Vendor-hosted article directly claims Pumble maintains a native MCP server. Retain as official-vendor evidence, but the article wording needs exact capture and tool-surface review."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 125,
+  "app_id": 26,
+  "app_name": "Discord",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+  "quote": "The HTTP API is a REST API that lets you interact and modify core Discord resources like channels, servers (or guilds), users, and messages.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/26.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "supported",
+    "reason": "Official docs explicitly describe the HTTP API as a REST API and name channels, guilds, users and messages."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 126,
+  "app_id": 27,
+  "app_name": "Telegram",
+  "field": "access",
+  "claim_value": "self_serve_free",
+  "source_url": "https://core.telegram.org/api/obtaining_api_id",
+  "quote": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/27.json",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_free",
+    "disposition": "partially_supported_scope_limit",
+    "reason": "The source says developers may use Telegram API/source code to create Telegram-like messaging applications free of charge. This is scoped to that stated use and does not substantiate the whole access classification or API ID provisioning."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 127,
+  "app_id": 28,
+  "app_name": "WhatsApp Business",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "quote": "Authentication uses OAuth (not 2.0) access tokens, while permissions restrict access to specific resources.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/28.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth/access tokens",
+    "disposition": "partially_supported_semantics_review_needed",
+    "reason": "The official source says OAuth access tokens and provides a Bearer example. The label \u201cOAuth (not 2.0)\u201d is not safely established by this quote and should be normalized only after checking the auth guide."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 128,
+  "app_id": 28,
+  "app_name": "WhatsApp Business",
+  "field": "auth_methods",
+  "claim_value": "bearer_token",
+  "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "quote": "Authentication uses OAuth (not 2.0) access tokens, while permissions restrict access to specific resources.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/28.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth/access tokens",
+    "disposition": "partially_supported_semantics_review_needed",
+    "reason": "The official source says OAuth access tokens and provides a Bearer example. The label \u201cOAuth (not 2.0)\u201d is not safely established by this quote and should be normalized only after checking the auth guide."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 129,
+  "app_id": 28,
+  "app_name": "WhatsApp Business",
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "quote": "When you get started with Cloud API, a test WhatsApp account, test Messaging account, and test business phone number are automatically created for you.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/28.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_trial_or_paid",
+    "disposition": "partially_supported",
+    "reason": "A test account/phone is automatically created, and templates may require approval; this does not establish the product-wide commercial access tier."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 130,
+  "app_id": 28,
+  "app_name": "WhatsApp Business",
+  "field": "access",
+  "claim_value": "self_serve_trial_or_paid_plan",
+  "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "quote": "Templates are customizable messages that you can construct in advance of sending them. Template messages generally require approval before you can send them.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/28.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "self_serve_trial_or_paid",
+    "disposition": "partially_supported",
+    "reason": "A test account/phone is automatically created, and templates may require approval; this does not establish the product-wide commercial access tier."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 131,
+  "app_id": 28,
+  "app_name": "WhatsApp Business",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "quote": "The WhatsApp Business Platform is built on Graph API and uses HTTP protocol. API requests include path, body, and header parameters.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/28.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Graph API over HTTP",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state the platform is built on Graph API and uses HTTP."
+   },
+   {
+    "claim": "webhooks",
+    "disposition": "supported",
+    "reason": "Official docs describe webhook payloads for message status, inbound messages and errors."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 132,
+  "app_id": 28,
+  "app_name": "WhatsApp Business",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "quote": "Webhooks deliver JSON payloads to your server for message status updates, incoming messages, asynchronous error handling, and many other notification utilities.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/28.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Graph API over HTTP",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state the platform is built on Graph API and uses HTTP."
+   },
+   {
+    "claim": "webhooks",
+    "disposition": "supported",
+    "reason": "Official docs describe webhook payloads for message status, inbound messages and errors."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 133,
+  "app_id": 28,
+  "app_name": "WhatsApp Business",
+  "field": "api_types",
+  "claim_value": "websocket",
+  "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "quote": "The WhatsApp Business Platform is built on Graph API and uses HTTP protocol. API requests include path, body, and header parameters.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/28.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Graph API over HTTP",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state the platform is built on Graph API and uses HTTP."
+   },
+   {
+    "claim": "webhooks",
+    "disposition": "supported",
+    "reason": "Official docs describe webhook payloads for message status, inbound messages and errors."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 134,
+  "app_id": 28,
+  "app_name": "WhatsApp Business",
+  "field": "api_types",
+  "claim_value": "websocket",
+  "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "quote": "Webhooks deliver JSON payloads to your server for message status updates, incoming messages, asynchronous error handling, and many other notification utilities.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "baseline/p1_v1/raw/28.json (no per-page timestamps recorded in baseline raw)",
+  "prior_codex_review": [
+   {
+    "claim": "Graph API over HTTP",
+    "disposition": "supported",
+    "reason": "Official docs explicitly state the platform is built on Graph API and uses HTTP."
+   },
+   {
+    "claim": "webhooks",
+    "disposition": "supported",
+    "reason": "Official docs describe webhook payloads for message status, inbound messages and errors."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 135,
+  "app_id": 29,
+  "app_name": "Aircall",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://developer.aircall.io/docs/authentication",
+  "quote": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/29.json",
+  "prior_codex_review": [
+   {
+    "claim": "Basic and OAuth",
+    "disposition": "supported",
+    "reason": "Official auth docs explicitly list both methods for the REST API."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 136,
+  "app_id": 29,
+  "app_name": "Aircall",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://developer.aircall.io/docs/authentication",
+  "quote": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/29.json",
+  "prior_codex_review": [
+   {
+    "claim": "Basic and OAuth",
+    "disposition": "supported",
+    "reason": "Official auth docs explicitly list both methods for the REST API."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 137,
+  "app_id": 29,
+  "app_name": "Aircall",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.aircall.io/docs/introduction",
+  "quote": "Connect Aircall to any business tool using our REST API and webhooks.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/29.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST and webhooks",
+    "disposition": "supported",
+    "reason": "Official intro explicitly says REST API and webhooks."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 138,
+  "app_id": 29,
+  "app_name": "Aircall",
+  "field": "api_types",
+  "claim_value": "webhook",
+  "source_url": "https://developer.aircall.io/docs/introduction",
+  "quote": "Connect Aircall to any business tool using our REST API and webhooks.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/29.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST and webhooks",
+    "disposition": "supported",
+    "reason": "Official intro explicitly says REST API and webhooks."
+   }
+  ],
+  "claim_state_before": "needs_human"
+ },
+ {
+  "row_id": 139,
+  "app_id": 30,
+  "app_name": "Vonage",
+  "field": "auth_methods",
+  "claim_value": "jwt_or_signed",
+  "source_url": "https://developer.vonage.com/en/dashboard/build/applications",
+  "quote": "Vonage APIs (Voice, Messages, Conversation, etc) use JSON Web Tokens (JWTs) for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/30.json",
+  "prior_codex_review": [
+   {
+    "claim": "JWT, API key and secret",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official docs identify JWT and API Key/Secret header methods; applicability varies by product API."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 140,
+  "app_id": 30,
+  "app_name": "Vonage",
+  "field": "auth_methods",
+  "claim_value": "jwt_or_signed",
+  "source_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "quote": "API Key and Secret (Header) | JSON Web Token (JWT)",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/30.json",
+  "prior_codex_review": [
+   {
+    "claim": "JWT, API key and secret",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official docs identify JWT and API Key/Secret header methods; applicability varies by product API."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 141,
+  "app_id": 30,
+  "app_name": "Vonage",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developer.vonage.com/en/dashboard/build/applications",
+  "quote": "Vonage APIs (Voice, Messages, Conversation, etc) use JSON Web Tokens (JWTs) for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/30.json",
+  "prior_codex_review": [
+   {
+    "claim": "JWT, API key and secret",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official docs identify JWT and API Key/Secret header methods; applicability varies by product API."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 142,
+  "app_id": 30,
+  "app_name": "Vonage",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "quote": "API Key and Secret (Header) | JSON Web Token (JWT)",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/30.json",
+  "prior_codex_review": [
+   {
+    "claim": "JWT, API key and secret",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official docs identify JWT and API Key/Secret header methods; applicability varies by product API."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 143,
+  "app_id": 30,
+  "app_name": "Vonage",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://developer.vonage.com/en/dashboard/build/applications",
+  "quote": "Vonage APIs (Voice, Messages, Conversation, etc) use JSON Web Tokens (JWTs) for authentication.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/30.json",
+  "prior_codex_review": [
+   {
+    "claim": "JWT, API key and secret",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official docs identify JWT and API Key/Secret header methods; applicability varies by product API."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 144,
+  "app_id": 30,
+  "app_name": "Vonage",
+  "field": "auth_methods",
+  "claim_value": "basic",
+  "source_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "quote": "API Key and Secret (Header) | JSON Web Token (JWT)",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/30.json",
+  "prior_codex_review": [
+   {
+    "claim": "JWT, API key and secret",
+    "disposition": "supported_with_scope_limit",
+    "reason": "Official docs identify JWT and API Key/Secret header methods; applicability varies by product API."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 145,
+  "app_id": 30,
+  "app_name": "Vonage",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://developer.vonage.com/en/documentation",
+  "quote": "Explore our comprehensive guides, API references, and tools to build powerful communication and security experiences.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/30.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "not_established_by_cited_quote",
+    "reason": "The cited documentation portal does not establish REST. Obtain an API reference quote per product surface."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 146,
+  "app_id": 30,
+  "app_name": "Vonage",
+  "field": "existing_mcp",
+  "claim_value": "official",
+  "source_url": "https://developer.vonage.com/en/mcp-server/overview",
+  "quote": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchB-groq-20261123_195002/bundles_full/30.json",
+  "prior_codex_review": [
+   {
+    "claim": "official",
+    "disposition": "supported_by_vendor_docs",
+    "reason": "Official developer docs describe the Vonage MCP Server and its purpose."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 147,
+  "app_id": 32,
+  "app_name": "Meta Ads",
+  "field": "access",
+  "claim_value": "approval_or_review_required",
+  "source_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/using-the-api/faq.md",
+  "quote": "To use the Marketing API in production, you must submit your app for review and receive approval.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/correction5-v1-20261123_192852/bundles_full/32.json",
+  "prior_codex_review": [
+   {
+    "claim": "production app review/approval",
+    "disposition": "supported",
+    "reason": "The official FAQ directly requires review and approval for production Marketing API use."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 148,
+  "app_id": 33,
+  "app_name": "LinkedIn Ads",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+  "quote": "To learn more about OAuth flows, see authentication documentation.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/33.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth2",
+    "disposition": "not_established_by_quote",
+    "reason": "The quote only points readers to OAuth documentation; it does not identify OAuth2 or provide the flow."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 149,
+  "app_id": 33,
+  "app_name": "LinkedIn Ads",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+  "quote": "The Advertising API enables developers to manage LinkedIn's campaign management platform on behalf of clients through APIs.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/33.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "not_established_by_quote",
+    "reason": "The cited text says Advertising API and APIs; it does not establish REST."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 150,
+  "app_id": 34,
+  "app_name": "GoHighLevel",
+  "field": "auth_methods",
+  "claim_value": "oauth2",
+  "source_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+  "quote": "Both OAuth 2.0 and Private Integration Tokens (PIT) are available across plans.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/34.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and Private Integration Tokens",
+    "disposition": "supported",
+    "reason": "Official support article explicitly names both across plans."
+   }
+  ],
+  "claim_state_before": "supported_lexical"
+ },
+ {
+  "row_id": 151,
+  "app_id": 34,
+  "app_name": "GoHighLevel",
+  "field": "auth_methods",
+  "claim_value": "api_key",
+  "source_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+  "quote": "Both OAuth 2.0 and Private Integration Tokens (PIT) are available across plans.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/34.json",
+  "prior_codex_review": [
+   {
+    "claim": "OAuth 2.0 and Private Integration Tokens",
+    "disposition": "supported",
+    "reason": "Official support article explicitly names both across plans."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ },
+ {
+  "row_id": 152,
+  "app_id": 34,
+  "app_name": "GoHighLevel",
+  "field": "api_types",
+  "claim_value": "rest",
+  "source_url": "https://github.com/GoHighLevel/highlevel-api-sdk",
+  "quote": "The official TypeScript/JavaScript SDK for the HighLevel (GoHighLevel) API.",
+  "quote_lexical_valid": true,
+  "page_text_ref": "runs/p1-batchA-groq-20261123_193428/bundles_full/34.json",
+  "prior_codex_review": [
+   {
+    "claim": "REST",
+    "disposition": "not_established_by_evidence",
+    "reason": "The evidence only names the official TypeScript/JavaScript SDK; it does not prove REST API type."
+   }
+  ],
+  "claim_state_before": "unsupported"
+ }
+]

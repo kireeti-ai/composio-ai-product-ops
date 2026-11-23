@@ -1,0 +1,82 @@
+id,name,has_pass1,verdict,pages,usable,official_usable,auth,access,api,mcp_text,mcp_hits,gaps
+1,Salesforce,True,READY,4,3,3,True,True,True,False,10,
+2,HubSpot,True,READY,4,4,4,True,True,True,True,10,
+3,Pipedrive,True,READY,4,4,4,True,True,True,False,10,truncated_pages
+4,Attio,True,READY,4,4,4,True,True,True,True,10,
+5,Twenty,True,READY,4,4,4,True,True,True,True,8,truncated_pages;identity_check_needed
+6,Podio,True,READY,4,4,4,True,True,True,False,10,identity_check_needed
+7,Zoho CRM,True,READY,4,3,3,True,False,True,True,10,no_access_or_pricing_evidence
+8,Close,True,READY,4,4,4,True,False,True,True,9,no_access_or_pricing_evidence;identity_check_needed
+9,Copper,True,READY,4,4,4,True,True,True,False,10,identity_check_needed
+10,DealCloud,True,READY,4,4,4,True,True,True,True,8,
+11,Zendesk,True,READY,4,4,4,True,True,True,False,10,
+12,Intercom,True,READY,4,4,4,True,False,True,True,10,no_access_or_pricing_evidence;truncated_pages
+13,Freshdesk,True,PARTIAL,4,3,3,True,False,False,False,10,no_access_or_pricing_evidence;no_api_surface_evidence;truncated_pages
+14,Front,True,PARTIAL,4,4,3,True,False,True,True,10,no_access_or_pricing_evidence;identity_check_needed
+15,Pylon,False,PARTIAL,4,4,4,True,False,False,False,9,no_access_or_pricing_evidence;no_api_surface_evidence;identity_check_needed
+16,LiveAgent,True,READY,4,2,2,True,False,True,False,9,no_access_or_pricing_evidence
+17,Plain,True,READY,4,4,4,True,True,True,True,10,truncated_pages;identity_check_needed
+18,Help Scout,True,READY,4,4,4,True,False,True,False,8,no_access_or_pricing_evidence
+19,Gorgias,True,READY,4,3,3,True,True,True,False,10,
+20,Gladly,False,READY,4,3,3,True,True,True,False,10,identity_check_needed
+21,Slack,True,READY,4,4,4,True,True,True,True,10,truncated_pages
+22,Twilio,True,READY,4,4,4,True,True,True,False,9,truncated_pages
+23,Zoho Cliq,True,READY,4,4,4,True,True,True,False,10,
+24,Lark (Larksuite),False,READY,4,4,4,True,True,True,False,10,truncated_pages;identity_check_needed
+25,Pumble,False,READY,4,4,4,True,True,True,True,6,truncated_pages
+26,Discord,False,READY,4,3,3,True,True,True,False,10,truncated_pages
+27,Telegram,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+28,WhatsApp Business,True,READY,4,4,4,True,True,True,False,10,truncated_pages
+29,Aircall,False,READY,4,4,4,True,True,True,True,9,
+30,Vonage,False,READY,4,4,4,True,False,True,True,10,no_access_or_pricing_evidence;truncated_pages
+31,Google Ads,False,PARTIAL,4,4,4,True,False,False,True,10,no_access_or_pricing_evidence;no_api_surface_evidence;truncated_pages
+32,Meta Ads,False,READY,4,4,4,True,True,True,False,10,
+33,LinkedIn Ads,False,READY,4,3,3,True,True,True,False,10,
+34,GoHighLevel,False,READY,4,4,2,True,True,True,False,10,truncated_pages
+35,Mailchimp,False,READY,4,4,4,True,False,True,False,10,no_access_or_pricing_evidence
+36,Klaviyo,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+37,systeme.io,False,READY,4,4,3,True,False,True,True,10,no_access_or_pricing_evidence
+38,Pinterest,False,READY,4,3,3,True,True,True,False,10,
+39,Threads (Meta),False,READY,4,4,4,True,True,True,False,10,identity_check_needed
+40,SendGrid,False,READY,4,4,4,True,True,True,False,10,
+41,Shopify,False,READY,4,4,4,True,True,True,True,10,
+42,WooCommerce,False,READY,4,4,4,True,False,True,False,10,no_access_or_pricing_evidence;truncated_pages
+43,BigCommerce,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+44,Salesforce Commerce Cloud,False,READY,4,3,3,True,True,True,False,10,truncated_pages
+45,Magento (Adobe Commerce),False,READY,4,4,4,True,False,True,False,9,no_access_or_pricing_evidence;truncated_pages
+46,Squarespace,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+47,Ecwid,False,READY,4,4,4,True,True,True,False,10,
+48,Gumroad,False,READY,4,4,4,True,False,True,False,10,no_access_or_pricing_evidence
+49,Amazon Selling Partner,True,READY,4,4,4,True,True,True,False,10,
+50,fanbasis,False,PARTIAL,4,3,2,True,False,True,False,8,no_access_or_pricing_evidence;truncated_pages;identity_check_needed
+51,DataForSEO,True,READY,4,4,4,True,True,True,False,10,truncated_pages
+52,SE Ranking,False,READY,4,4,4,True,True,True,False,9,
+53,Ahrefs,False,READY,4,3,3,True,True,True,True,9,
+54,MrScraper,False,READY,4,4,4,True,False,True,True,8,no_access_or_pricing_evidence;truncated_pages
+55,Apify,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+56,Firecrawl,False,READY,4,4,4,True,True,True,True,8,truncated_pages
+57,Bright Data,False,READY,4,4,4,True,False,True,True,9,no_access_or_pricing_evidence;truncated_pages
+58,Sherlock,True,PARTIAL,4,4,2,True,True,False,False,10,no_api_surface_evidence;truncated_pages;identity_check_needed
+59,Waterfall.io,False,READY,4,4,4,True,False,True,False,9,no_access_or_pricing_evidence;truncated_pages;identity_check_needed
+60,Clay,False,READY,4,4,4,True,False,True,False,9,no_access_or_pricing_evidence;identity_check_needed
+61,GitHub,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+62,Vercel,False,READY,4,4,4,True,True,True,True,10,truncated_pages
+63,Netlify,False,READY,4,4,4,True,True,True,True,10,truncated_pages
+64,Cloudflare,False,READY,4,2,2,True,False,True,False,10,no_access_or_pricing_evidence
+65,Supabase,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+66,Neo4j,False,READY,4,4,4,True,True,True,False,9,truncated_pages
+67,Snowflake,False,READY,4,4,4,True,False,True,False,7,no_access_or_pricing_evidence;truncated_pages
+68,MongoDB Atlas,False,READY,4,3,3,True,False,True,False,9,no_access_or_pricing_evidence
+69,Datadog,False,READY,4,4,4,True,True,True,True,10,truncated_pages
+70,Sentry,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+71,Notion,False,READY,4,4,4,True,True,True,False,10,
+72,Airtable,False,READY,4,4,4,True,True,True,False,10,truncated_pages
+73,Linear,False,READY,4,2,2,True,True,True,False,9,truncated_pages;identity_check_needed
+74,Jira,False,READY,4,4,3,True,False,True,False,10,no_access_or_pricing_evidence;truncated_pages
+75,Asana,False,READY,4,4,4,True,True,True,False,9,truncated_pages
+76,Monday.com,False,READY,4,4,4,True,True,True,False,10,
+77,ClickUp,False,READY,4,3,3,True,False,True,False,10,no_access_or_pricing_evidence
+78,Coda,False,READY,4,4,4,True,True,True,False,8,truncated_pages;identity_check_needed
+79,Smartsheet,False,READY,4,3,3,True,False,True,True,10,no_access_or_pricing_evidence
+80,Harvest,False,PARTIAL,4,3,2,True,False,False,False,10,no_access_or_pricing_evidence;no_api_surface_evidence;identity_check_needed
+84,Paygent Connect,True,READY,4,4,4,True,False,True,False,8,no_access_or_pricing_evidence;truncated_pages;identity_check_needed

@@ -1,0 +1,804 @@
+{
+ "totals": {
+  "requested": 68,
+  "fetched_ok": 58,
+  "usable_evidence": 49,
+  "kept": 49,
+  "fetch_error": 5,
+  "thin_or_js_shell(<500 chars)": 7,
+  "fetch_empty": 5,
+  "off_target_not_official_api_page": 2
+ },
+ "charge_usd_max": 0.0,
+ "note": "first fetch ran with an exclusion-regex escaping bug: 2 Pinterest user pages and 2 Discord Nitro/subscription pages were fetched although off-target; they are excluded from evidence",
+ "apps": {
+  "29": {
+   "name": "Aircall",
+   "pages": [
+    {
+     "url": "https://aircall.io/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 7230,
+     "sha256": "5eabafe35c89c422f87b322e2f8c0fd7492889e16131c5c2445429f7d33a8f21",
+     "fetched_at": "2026-11-23T17:31:37+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://support.aircall.io/en-gb/articles/30599733509277",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 5810,
+     "sha256": "cbd6050c93a041ccc98bf0daa7c84bf5a43d299a2baeef5d02506700ed3adf65",
+     "fetched_at": "2026-11-23T17:31:38+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://developer.aircall.io/build",
+     "category": "review_partner",
+     "status": "ok",
+     "chars": 2113,
+     "sha256": "8387e303e41620d6811f7a47ac59d68b8f436021923cbab4d0e12e354547aff4",
+     "fetched_at": "2026-11-23T17:31:46+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://developer.aircall.io/docs/webhooks-overview",
+     "category": "onboarding",
+     "status": "ok",
+     "chars": 2514,
+     "sha256": "5363d3fa56b00d77f5397833e2ce85962ed59cd9a9252e9385967a96f5131a6b",
+     "fetched_at": "2026-11-23T17:31:48+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 4
+  },
+  "36": {
+   "name": "Klaviyo",
+   "pages": [
+    {
+     "url": "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 7406,
+     "sha256": "b1fac206f9c16fda1fa115cc8646d704b0768fc0bec130af164605fff5c8189f",
+     "fetched_at": "2026-11-23T17:31:33+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://klaviyo.com/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 3190,
+     "sha256": "33299555d9bb90a52c64ccef7d2f85611d2a1fa72154c20f5e098b8bf67aa781",
+     "fetched_at": "2026-11-23T17:31:37+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+     "category": "registration",
+     "status": "ok",
+     "chars": 7439,
+     "sha256": "df1ed640d2c7817b1205c8fb496e7d6f21ced8fbb77d989909cf852fb2d5ce9f",
+     "fetched_at": "2026-11-23T17:31:43+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key.",
+     "category": "registration",
+     "status": "ok",
+     "chars": 6972,
+     "sha256": "b6dbd3a250cb34d6ccf39262ef6c616a5010662c2505c918bca389eba40010b1",
+     "fetched_at": "2026-11-23T17:31:46+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 4
+  },
+  "46": {
+   "name": "Squarespace",
+   "pages": [
+    {
+     "url": "https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle",
+     "category": "pricing",
+     "status": "error",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:31:43+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_error"
+    },
+    {
+     "url": "https://squarespace.com/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 23258,
+     "sha256": "bde03ae791e2b54280498b5bf3dc287ebcd43b452e225624f3d8d6673b026d60",
+     "fetched_at": "2026-11-23T17:31:45+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+     "category": "registration",
+     "status": "error",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:32:06+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_error"
+    },
+    {
+     "url": "https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+     "category": "registration",
+     "status": "error",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:32:22+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_error"
+    }
+   ],
+   "usable_evidence_pages": 1
+  },
+  "65": {
+   "name": "Supabase",
+   "pages": [
+    {
+     "url": "https://supabase.com/docs/guides/platform/billing-faq",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 17514,
+     "sha256": "0057f95459a76dc9ed51b70167e9072548a6a8d052e798d233478d2e956c7f8f",
+     "fetched_at": "2026-11-23T17:31:55+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://supabase.com/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 20345,
+     "sha256": "63e08da82aba7449ea3f4b6c1081530867bba87aec8b42cd59a0ece6efb26de2",
+     "fetched_at": "2026-11-23T17:31:59+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+     "category": "registration",
+     "status": "ok",
+     "chars": 11419,
+     "sha256": "1798288e97e3b29a5eaeaddd8bcc4224bef30ac93fdcd8d281548b927f320fc3",
+     "fetched_at": "2026-11-23T17:32:02+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://supabase.com/docs/guides/api/api-keys.md",
+     "category": "registration",
+     "status": "ok",
+     "chars": 20728,
+     "sha256": "05e201d2426c40f9076a5daf8949a0d0468963f09bcbba45313e5ac45986724e",
+     "fetched_at": "2026-11-23T17:32:04+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 4
+  },
+  "66": {
+   "name": "Neo4j",
+   "pages": [
+    {
+     "url": "https://neo4j.com/pricing/",
+     "category": "pricing",
+     "status": "error",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:32:09+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_error"
+    },
+    {
+     "url": "https://neo4j.com/docs/aura/billing/payment-options/",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 9174,
+     "sha256": "cc66ea8a69dc95ac4b3b75144e79195512dfe1ee686c14044c8e401d66714701",
+     "fetched_at": "2026-11-23T17:32:11+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://neo4j.com/docs/aura/getting-started/free-trial/",
+     "category": "onboarding",
+     "status": "ok",
+     "chars": 4075,
+     "sha256": "7bfd0c188ea6fcb69d9b6df62241c7d2260de0fc9373b7d89e8d21895f9bc468",
+     "fetched_at": "2026-11-23T17:32:16+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 2
+  },
+  "71": {
+   "name": "Notion",
+   "pages": [
+    {
+     "url": "https://notion.com/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 20996,
+     "sha256": "14ad5f50aec9f652fee15541d8fee75fdbdff5ae38fbc72b485306b6b9d09f3b",
+     "fetched_at": "2026-11-23T17:32:09+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://notion.com/en-GB/pricing/us",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 2,
+     "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+     "fetched_at": "2026-11-23T17:32:11+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "thin_or_js_shell(<500 chars)"
+    },
+    {
+     "url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+     "category": "registration",
+     "status": "ok",
+     "chars": 3752,
+     "sha256": "d7c8d4d529b429b611d56e8460333450d10667fcf3d67db3f9560c5d9afa2871",
+     "fetched_at": "2026-11-23T17:32:14+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+     "category": "registration",
+     "status": "ok",
+     "chars": 6512,
+     "sha256": "2f456f3107778b1cffee895660edc66eeb9179e644c6672cb5f05eac5999eeae",
+     "fetched_at": "2026-11-23T17:32:16+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 3
+  },
+  "72": {
+   "name": "Airtable",
+   "pages": [
+    {
+     "url": "https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs",
+     "category": "pricing",
+     "status": "empty",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:32:19+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_empty"
+    },
+    {
+     "url": "https://airtable.com/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 3801,
+     "sha256": "700874cdacb61d523bb46dab405888706454b2ec3be2feef3a5b7413f6de7c04",
+     "fetched_at": "2026-11-23T17:32:20+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+     "category": "registration",
+     "status": "ok",
+     "chars": 13567,
+     "sha256": "079fea861d0f49f8f106debd5417338ee45da5050e2c572fdd0fc1fc787121a7",
+     "fetched_at": "2026-11-23T17:32:22+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://airtable.com/developers/web/guides/personal-access-tokens",
+     "category": "registration",
+     "status": "ok",
+     "chars": 3555,
+     "sha256": "bf55997f5140a13a4f586afc820a836d55409fc56051de549c271c37f7bb28fa",
+     "fetched_at": "2026-11-23T17:32:23+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 3
+  },
+  "75": {
+   "name": "Asana",
+   "pages": [
+    {
+     "url": "https://asana.com/pricing",
+     "category": "pricing",
+     "status": "error",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:32:31+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_error"
+    },
+    {
+     "url": "https://asana.com/pricing/client-management",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 22783,
+     "sha256": "2d153db3a22d6c7c4557fd36f4c9c9c056df4f3ad197d5d2978ffa109519873b",
+     "fetched_at": "2026-11-23T17:32:33+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox)",
+     "category": "registration",
+     "status": "empty",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:32:37+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_empty"
+    },
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token.md",
+     "category": "registration",
+     "status": "ok",
+     "chars": 3313,
+     "sha256": "ee2b9fbdc7ee3186d482bf44b6574e48967157345073dc44edbae3044ddb7a86",
+     "fetched_at": "2026-11-23T17:32:38+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 2
+  },
+  "20": {
+   "name": "Gladly",
+   "pages": [
+    {
+     "url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+     "category": "pricing",
+     "status": "empty",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:32:28+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_empty"
+    },
+    {
+     "url": "https://gladly.com/get-started-2",
+     "category": "onboarding",
+     "status": "ok",
+     "chars": 322,
+     "sha256": "04a8d3d153d0c460bd6aa76874e356295a04b9127d7202dd20d99040686af356",
+     "fetched_at": "2026-11-23T17:33:03+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "thin_or_js_shell(<500 chars)"
+    }
+   ],
+   "usable_evidence_pages": 0
+  },
+  "25": {
+   "name": "Pumble",
+   "pages": [
+    {
+     "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 2911,
+     "sha256": "81cb630a406c2cada7be4514da1778d952587841a749e36cb769c6574fdc3baf",
+     "fetched_at": "2026-11-23T17:32:32+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://pumble.com/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 11346,
+     "sha256": "fe33b7c1aed5bc33ffe33b2f16ffeb35056647c49e0f46afc96775c3b5e7a142",
+     "fetched_at": "2026-11-23T17:32:35+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration",
+     "category": "registration",
+     "status": "ok",
+     "chars": 2529,
+     "sha256": "d41c3c5ee2d57675a8301c9dff9390fe46add9fc5bd05acbf3dd4862b29dc2af",
+     "fetched_at": "2026-11-23T17:32:39+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins",
+     "category": "onboarding",
+     "status": "ok",
+     "chars": 5624,
+     "sha256": "bcc33840d111b4c30a82a83b30e88945de032948acf9dfab31b9a2c8934466f2",
+     "fetched_at": "2026-11-23T17:32:48+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 4
+  },
+  "26": {
+   "name": "Discord",
+   "pages": [
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/360017693772-Managing-Subscriptions-and-Billing-FAQ",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 10643,
+     "sha256": "8372465aa546c4a12dba6ddcea403e1ce3e32bb20df3b3a95f01e7afbcc62314",
+     "fetched_at": "2026-11-23T17:32:42+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "off_target_not_official_api_page"
+    },
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/4407269525911-Localized-Pricing-on-Discord",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 9606,
+     "sha256": "1da8835ddf9a6e87b136978e79404fdad338568a9672abe35346afdf418ca0c0",
+     "fetched_at": "2026-11-23T17:32:44+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "off_target_not_official_api_page"
+    },
+    {
+     "url": "https://discord.com/developers/home",
+     "category": "registration",
+     "status": "ok",
+     "chars": 179,
+     "sha256": "cc6a0c25426aa54d8ca5965c3ddb41d4c648a33f8c41e88150c9a9758dbf6c0e",
+     "fetched_at": "2026-11-23T17:32:47+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "thin_or_js_shell(<500 chars)"
+    },
+    {
+     "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+     "category": "onboarding",
+     "status": "ok",
+     "chars": 4142,
+     "sha256": "8c3f2a4153dfa66bc31f670007b465ad4bd07c9c4bdea4ae4755d39156b3134e",
+     "fetched_at": "2026-11-23T17:32:49+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 1
+  },
+  "38": {
+   "name": "Pinterest",
+   "pages": [
+    {
+     "url": "https://www.pinterest.com/ideas/pricing-plans-web-design/922997390254/",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 235,
+     "sha256": "bb11f88d733a5e2975714fcbc1421c9e5918faba94473d5c94a5027de00f9fca",
+     "fetched_at": "2026-11-23T17:32:54+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "thin_or_js_shell(<500 chars)"
+    },
+    {
+     "url": "https://www.pinterest.com/zoki84/pricing-plan/",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 382,
+     "sha256": "e23491d3d1820683311d378f9694848aca50997a27aae9dc5dd387adfd05f58e",
+     "fetched_at": "2026-11-23T17:32:56+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "thin_or_js_shell(<500 chars)"
+    },
+    {
+     "url": "https://developers.pinterest.com/apps/1558653/upgrade",
+     "category": "registration",
+     "status": "ok",
+     "chars": 128,
+     "sha256": "ed4eeda3009fc7370ecd36eb5c6a70c51c4db17cdbc1c4fb4009666779de5fac",
+     "fetched_at": "2026-11-23T17:32:58+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "thin_or_js_shell(<500 chars)"
+    },
+    {
+     "url": "https://business.pinterest.com/getting-started",
+     "category": "onboarding",
+     "status": "ok",
+     "chars": 3703,
+     "sha256": "397b47c4dc65c6c5548c19e09dd0a7548fb73dd83c885a50e82b1a2f597439ba",
+     "fetched_at": "2026-11-23T17:33:02+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 1
+  },
+  "44": {
+   "name": "Salesforce Commerce Cloud",
+   "pages": [
+    {
+     "url": "https://www.salesforce.com/commerce/pricing/",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 4079,
+     "sha256": "ee8d4776f5135ef0866f20fa8c8b1fc437dce76a59164754a19c7c5229e5389b",
+     "fetched_at": "2026-11-23T17:32:53+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://www.salesforce.com/au/commerce/pricing/",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 4077,
+     "sha256": "de493c7a14de7fd7c540ac3aa2bd050f248aa3176a5f363a94413d823c9d4e21",
+     "fetched_at": "2026-11-23T17:32:55+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://developer.salesforce.com",
+     "category": "registration",
+     "status": "ok",
+     "chars": 4214,
+     "sha256": "980d7e38304fb71821a5db3cd35c352cbe75939a2173d9444a71d993c8fb0c3a",
+     "fetched_at": "2026-11-23T17:32:56+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+     "category": "review_partner",
+     "status": "ok",
+     "chars": 1187,
+     "sha256": "ed4bdb22b800c7f96170578c9bc4c89329b1dd8d5df051991958c408d5fee610",
+     "fetched_at": "2026-11-23T17:33:03+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 4
+  },
+  "47": {
+   "name": "Ecwid",
+   "pages": [
+    {
+     "url": "https://www.ecwid.com/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 14787,
+     "sha256": "902781519baa1c13ece142228a27be794244e671d7c62a2425eedd79d321fc82",
+     "fetched_at": "2026-11-23T17:33:05+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://www.ecwid.com/pricing/business",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 6379,
+     "sha256": "c966bd053e6251e6ec7835f41a87b249bdaabee2c35a14c04bacb8b383e85b0b",
+     "fetched_at": "2026-11-23T17:33:07+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "http://developers.ecwid.com/register",
+     "category": "registration",
+     "status": "empty",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:33:10+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_empty"
+    },
+    {
+     "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+     "category": "registration",
+     "status": "ok",
+     "chars": 1237,
+     "sha256": "636848d495884b5ef5fdcb5ef5ddf69ab3cf9a138e99f312dfefe884c7bb92dd",
+     "fetched_at": "2026-11-23T17:33:13+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 3
+  },
+  "61": {
+   "name": "GitHub",
+   "pages": [
+    {
+     "url": "https://github.com/pricing.md",
+     "category": "pricing",
+     "status": "empty",
+     "chars": null,
+     "sha256": null,
+     "fetched_at": "2026-11-23T17:33:07+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "fetch_empty"
+    },
+    {
+     "url": "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 3956,
+     "sha256": "029cbaf0840a5eff972f3664d3c98fb55c269225345bde4b6b13d4ac05de0cdb",
+     "fetched_at": "2026-11-23T17:33:09+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "category": "registration",
+     "status": "ok",
+     "chars": 6928,
+     "sha256": "a819fbddd48d8e8f86979d9b255c92b9aa3623d7bb1966fe5a7f06dc575fb961",
+     "fetched_at": "2026-11-23T17:33:10+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://docs.github.com/developers/apps/building-github-apps/creating-a-github-app",
+     "category": "registration",
+     "status": "ok",
+     "chars": 6928,
+     "sha256": "a819fbddd48d8e8f86979d9b255c92b9aa3623d7bb1966fe5a7f06dc575fb961",
+     "fetched_at": "2026-11-23T17:33:11+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 3
+  },
+  "62": {
+   "name": "Vercel",
+   "pages": [
+    {
+     "url": "https://vercel.com/docs/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 8967,
+     "sha256": "6c4cc0a472049240fcd036c11032b5c246185fef0f651047db51583cbda88c70",
+     "fetched_at": "2026-11-23T17:33:08+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://vercel.com/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 13683,
+     "sha256": "9748058cd96598030bdc0e7f9f5e0def795896d392769a94a86097cc517646f0",
+     "fetched_at": "2026-11-23T17:33:14+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://vercel.com/docs/accounts/access-tokens",
+     "category": "registration",
+     "status": "ok",
+     "chars": 10189,
+     "sha256": "5225c3f0e3ba0246e76745422e16ac0539ee5e1869eaeacb4737d955497af890",
+     "fetched_at": "2026-11-23T17:33:19+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://vercel.com/signup",
+     "category": "registration",
+     "status": "ok",
+     "chars": 254,
+     "sha256": "07f0f10a7b2b654918184d2dca23ae852d428b902bf676878b5d78b1343cb949",
+     "fetched_at": "2026-11-23T17:33:20+05:30",
+     "used_as_evidence": false,
+     "excluded_reason": "thin_or_js_shell(<500 chars)"
+    }
+   ],
+   "usable_evidence_pages": 3
+  },
+  "63": {
+   "name": "Netlify",
+   "pages": [
+    {
+     "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 13036,
+     "sha256": "d7954fff02cf79975682af17cef64d0b0bd60cbe7221f8ec2dbeaf97a8c5d588",
+     "fetched_at": "2026-11-23T17:33:15+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 18269,
+     "sha256": "9da084d14b822e0e5cac5c9093a6230b956fbd465bfe527cdb910ef9e61a58d8",
+     "fetched_at": "2026-11-23T17:33:34+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+     "category": "registration",
+     "status": "ok",
+     "chars": 9089,
+     "sha256": "80b3305d3f613871a3835eda648b62ef781d50efb8e1e1b7a1d6e8b6ca9586d3",
+     "fetched_at": "2026-11-23T17:33:35+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+     "category": "onboarding",
+     "status": "ok",
+     "chars": 25087,
+     "sha256": "1c79cab23f13ee84db5bb8e21b21583db21d758f3b4747ae24fcf0a575135b27",
+     "fetched_at": "2026-11-23T17:33:37+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 4
+  },
+  "70": {
+   "name": "Sentry",
+   "pages": [
+    {
+     "url": "https://sentry.io/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 6168,
+     "sha256": "1db69ec73e02210b762d1f29f66750a6d525324b08aee3a43600f311b35446ae",
+     "fetched_at": "2026-11-23T17:33:18+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://docs.sentry.io/pricing",
+     "category": "pricing",
+     "status": "ok",
+     "chars": 17640,
+     "sha256": "efc6298a7dc1204d4c5b5d4e5cdde22676bf3dbc196fa3b3b0189cee569a4fae",
+     "fetched_at": "2026-11-23T17:33:21+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    },
+    {
+     "url": "https://docs.sentry.io/get-started",
+     "category": "onboarding",
+     "status": "ok",
+     "chars": 5047,
+     "sha256": "fbc54fcf7a9baaa522dfd7a97c3383e642312f9b29e523754fb138f316246ec7",
+     "fetched_at": "2026-11-23T17:33:23+05:30",
+     "used_as_evidence": true,
+     "excluded_reason": null
+    }
+   ],
+   "usable_evidence_pages": 3
+  }
+ }
+}

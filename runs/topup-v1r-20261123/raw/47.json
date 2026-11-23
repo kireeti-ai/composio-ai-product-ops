@@ -1,0 +1,39 @@
+{
+ "app_id": 47,
+ "app": "Ecwid",
+ "tool": "composio:TINYFISH_FETCH_URLS",
+ "session": "deep",
+ "attempts": [
+  {
+   "url": "http://developers.ecwid.com/register.md",
+   "requested_at": "2026-11-23T17:41:52+05:30",
+   "charge_usd": 0.0,
+   "status": "empty",
+   "error": "[{'candidate_selectors': None, 'error': 'page_not_found', 'status': 404, 'unmatched_selectors': None, 'url': 'http://developers.ecwid.com/register.md'}]",
+   "completed_at": "2026-11-23T17:41:53+05:30",
+   "app_id": 47,
+   "kind": "url_variant",
+   "parent_url": "http://developers.ecwid.com/register",
+   "reason": "alternative for fetch_empty",
+   "outcome": "fetch_empty",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://developers.ecwid.com/register",
+   "requested_at": "2026-11-23T17:41:53+05:30",
+   "charge_usd": 0.0,
+   "status": "empty",
+   "error": "[{'candidate_selectors': None, 'error': 'bot_blocked', 'status': None, 'unmatched_selectors': None, 'url': 'https://developers.ecwid.com/register'}]",
+   "completed_at": "2026-11-23T17:41:54+05:30",
+   "app_id": 47,
+   "kind": "url_variant",
+   "parent_url": "http://developers.ecwid.com/register",
+   "reason": "alternative for fetch_empty",
+   "outcome": "fetch_empty",
+   "duplicate_of": null,
+   "attempt": 2
+  }
+ ],
+ "app_level_search_hits": []
+}

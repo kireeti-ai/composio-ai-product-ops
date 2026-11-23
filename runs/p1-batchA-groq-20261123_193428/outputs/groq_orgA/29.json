@@ -1,0 +1,64 @@
+{
+ "tag": "groq_orgA",
+ "app": 29,
+ "name": "Aircall",
+ "status": "invalid",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 5,
+ "latency_s": 2.46,
+ "tokens_in": 3440,
+ "tokens_out": 625,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": false,
+  "errors": [
+   "api_types.1: literal_error"
+  ]
+ },
+ "validation_v2": null,
+ "output": {
+  "one_liner": "Aircall offers a REST API, webhooks, and an SDK to build voice, messaging, and AI\u2011driven integrations.",
+  "auth_methods": [
+   "basic",
+   "oauth2"
+  ],
+  "access": "self_serve_free",
+  "access_note": "API keys (API ID and token) can be generated from the Aircall Dashboard by any user, without an approval flow.",
+  "api_breadth": "broad",
+  "api_types": [
+   "rest",
+   "webhook"
+  ],
+  "buildability": "yes",
+  "blocker": "none",
+  "existing_mcp": "official",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.aircall.io/docs/authentication",
+    "quote": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.aircall.io/docs/basic-authentication",
+    "quote": "Open your Aircall Dashboard > Integrations > API keys\u2026 Aircall will generate two strings: an `API ID` and an `API token`."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.aircall.io/docs/introduction",
+    "quote": "Connect Aircall to any business tool using our REST API and webhooks."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developer.aircall.io/docs/introduction",
+    "quote": "Build MCP\u2011compliant integrations for Aircall's AI Virtual Agent."
+   }
+  ]
+ },
+ "raw_text": "{\n  \"one_liner\": \"Aircall offers a REST API, webhooks, and an SDK to build voice, messaging, and AI\u2011driven integrations.\",\n  \"auth_methods\": [\n    \"basic\",\n    \"oauth2\"\n  ],\n  \"access\": \"self_serve_free\",\n  \"access_note\": \"API keys (API ID and token) can be generated from the Aircall Dashboard by any user, without an approval flow.\",\n  \"api_breadth\": \"broad\",\n  \"api_types\": [\n    \"rest\",\n    \"webhook\"\n  ],\n  \"buildability\": \"yes\",\n  \"blocker\": \"none\",\n  \"existing_mcp\": \"official\",\n  \"evidence\": [\n    {\n      \"field\": \"auth_methods\",\n      \"url\": \"https://developer.aircall.io/docs/authentication\",\n      \"quote\": \"Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth.\"\n    },\n    {\n      \"field\": \"access\",\n      \"url\": \"https://developer.aircall.io/docs/basic-authentication\",\n      \"quote\": \"Open your Aircall Dashboard > Integrations > API keys\u2026 Aircall will generate two strings: an `API ID` and an `API token`.\"\n    },\n    {\n      \"field\": \"api_types\",\n      \"url\": \"https://developer.aircall.io/docs/introduction\",\n      \"quote\": \"Connect Aircall to any business tool using our REST API and webhooks.\"\n    },\n    {\n      \"field\": \"existing_mcp\",\n      \"url\": \"https://developer.aircall.io/docs/introduction\",\n      \"quote\": \"Build MCP\u2011compliant integrations for Aircall's AI Virtual Agent.\"\n    }\n  ]\n}",
+ "prompt_sha256": "64325e796925672eefc0d08892ee6f83a8e4e78417c8ee715702999b5010caf8",
+ "at": "2026-11-23T19:46:37+05:30"
+}

@@ -1,0 +1,82 @@
+{
+ "id": 18,
+ "name": "Help Scout",
+ "pass1_sha": "452cc117fdb93275",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "OAuth 2.0 flows (Authorization Code, Client Credentials) are described.",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt does not mention API key authentication.",
+    "needs_human": false
+   },
+   {
+    "item": "basic",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No reference to Basic authentication in the excerpt.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Requests authenticated via Authorization header with Bearer token.",
+    "needs_human": false
+   },
+   {
+    "item": "jwt_or_signed",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "JWT or signed token authentication not referenced.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_trial_or_paid_plan :: Developers can self-serve OAuth2 apps and API keys from their user profile. Some features like Restricted Docs require Plus or Pro plans.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms self\u2011serve OAuth2 apps, but says nothing about trial/paid plans or Restricted Docs.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts describe HTTPS JSON API with endpoints, indicating a RESTful API",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention MCP presence or absence",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

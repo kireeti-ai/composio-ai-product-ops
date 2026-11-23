@@ -1,0 +1,1250 @@
+[
+ {
+  "claim_id": "15:0",
+  "app": "Pylon",
+  "field": "authentication",
+  "claim_value": "Bearer API token for REST API",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "source_type": "official_docs",
+    "quote": "The Pylon API uses Bearer authentication."
+   }
+  ]
+ },
+ {
+  "claim_id": "15:1",
+  "app": "Pylon",
+  "field": "access",
+  "claim_value": "Only Admins can create API tokens (self-serve within an existing Pylon workspace); no trial/pricing gate found on API page",
+  "claim_note": "Whether a paid plan is required to have a workspace/API was not on reviewed pages.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "source_type": "official_docs",
+    "quote": "Only Admins can create and manage API tokens."
+   }
+  ]
+ },
+ {
+  "claim_id": "15:2",
+  "app": "Pylon",
+  "field": "scopes",
+  "claim_value": "No scopes; access by role only; tokens do not expire",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "source_type": "official_docs",
+    "quote": "Tokens don't expire, and their access is controlled only by the role. There are no separate scopes."
+   }
+  ]
+ },
+ {
+  "claim_id": "15:3",
+  "app": "Pylon",
+  "field": "rate_limits",
+  "claim_value": "Per-org per-endpoint limits of 30, 120 or 300 requests/minute",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/rate-limits",
+    "source_type": "official_docs",
+    "quote": "Every endpoint uses one of three limits: 30, 120, or 300 requests per minute"
+   }
+  ]
+ },
+ {
+  "claim_id": "15:4",
+  "app": "Pylon",
+  "field": "api_types",
+  "claim_value": "REST API plus SDKs (TypeScript, Python, Go), experimental CLI, and webhooks",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "source_type": "official_docs",
+    "quote": "To call the API from TypeScript, Python, or Go, use our SDKs"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "source_type": "official_docs",
+    "quote": "Try our experimental Pylon CLI"
+   },
+   {
+    "i": 2,
+    "url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+    "source_type": "official_docs",
+    "quote": "Receive webhooks for various events happening in Pylon."
+   }
+  ]
+ },
+ {
+  "claim_id": "15:6",
+  "app": "Pylon",
+  "field": "mcp",
+  "claim_value": "official: hosted MCP server",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "source_type": "official_docs",
+    "quote": "The Pylon MCP Server exposes Pylon data to AI tools that support the Model Context Protocol"
+   }
+  ]
+ },
+ {
+  "claim_id": "15:7",
+  "app": "Pylon",
+  "field": "mcp_auth",
+  "claim_value": "CONFLICT: MCP docs page says OAuth 2.0 or API token; support article says OAuth only",
+  "claim_note": "Both are official Pylon pages; support article states \"Last updated 25 days ago\" at fetch; docs page date not shown. Not resolved.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "source_type": "official_docs",
+    "quote": "Auth: OAuth 2.0 or an API token."
+   },
+   {
+    "i": 1,
+    "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+    "source_type": "official_help",
+    "quote": "The Pylon MCP server only supports OAuth authentication. API key authentication is not currently available"
+   }
+  ]
+ },
+ {
+  "claim_id": "15:8",
+  "app": "Pylon",
+  "field": "buildability",
+  "claim_value": "Yes: REST with admin-created bearer token, region-specific base URLs",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "source_type": "official_docs",
+    "quote": "US region: https://api.usepylon.com EU region: https://api.eu.usepylon.com"
+   }
+  ]
+ },
+ {
+  "claim_id": "24:0",
+  "app": "Lark (Larksuite)",
+  "field": "authentication",
+  "claim_value": "Custom (self-built) app exchanges app_id and app_secret for tenant_access_token (max 2h validity)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+    "source_type": "official_docs",
+    "quote": "\u81ea\u5efa\u5e94\u7528\u901a\u8fc7\u6b64\u63a5\u53e3\u83b7\u53d6 `tenant_access_token`\u3002"
+   },
+   {
+    "i": 1,
+    "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+    "source_type": "official_docs",
+    "quote": "`tenant_access_token` \u7684\u6700\u5927\u6709\u6548\u671f\u662f 2 \u5c0f\u65f6\u3002"
+   },
+   {
+    "i": 2,
+    "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+    "source_type": "official_docs",
+    "quote": "app_secret | string | \u662f | \u5e94\u7528\u79d8\u94a5\uff0c\u521b\u5efa\u5e94\u7528\u540e\u83b7\u5f97\u3002"
+   }
+  ]
+ },
+ {
+  "claim_id": "24:1",
+  "app": "Lark (Larksuite)",
+  "field": "access",
+  "claim_value": "Custom-app API permissions must be approved by the tenant admin; some scopes are no-review, sensitive ones need review",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+    "source_type": "official_docs",
+    "quote": "**\u4f01\u4e1a\u81ea\u5efa\u5e94\u7528**\uff1a\u5e94\u7528\u5f00\u53d1\u8005\u7533\u8bf7\u7684\u6743\u9650\u9700\u8981\u901a\u8fc7 **\u79df\u6237\u7ba1\u7406\u5458** \u7684\u5ba1\u6838\u3002"
+   },
+   {
+    "i": 1,
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+    "source_type": "official_docs",
+    "quote": "\u514d\u5ba1\u6743\u9650 | \u79df\u6237\u7ba1\u7406\u5458\u53ef\u4ee5\u6839\u636e\u672c\u79df\u6237\u5b9e\u9645\u6570\u636e\u7ba1\u63a7\u8bc9\u6c42\uff0c\u914d\u7f6e\u514d\u5ba1\u6743\u9650\u6765\u51cf\u8f7b\u5ba1\u6838\u8d1f\u62c5\u3002"
+   }
+  ]
+ },
+ {
+  "claim_id": "24:2",
+  "app": "Lark (Larksuite)",
+  "field": "scopes",
+  "claim_value": "Permission (scope) levels: no-review and needs-review for custom apps",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+    "source_type": "official_docs",
+    "quote": "\u9700\u5ba1\u6838\u6743\u9650 | \u5bf9\u4e8e\u6d89\u53ca\u654f\u611f\u6570\u636e\u7684\u6743\u9650\uff0c\u8bf7\u7eb3\u5165\u9700\u5ba1\u6838\u6743\u9650\u5217\u8868\u3002"
+   }
+  ]
+ },
+ {
+  "claim_id": "24:3",
+  "app": "Lark (Larksuite)",
+  "field": "api_types",
+  "claim_value": "REST server APIs; official OpenAPI MCP tool wraps them",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://github.com/larksuite/lark-openapi-mcp",
+    "source_type": "official_repo",
+    "quote": "The tool encapsulates Feishu/Lark Open Platform API interfaces as MCP tools"
+   }
+  ]
+ },
+ {
+  "claim_id": "24:6",
+  "app": "Lark (Larksuite)",
+  "field": "mcp",
+  "claim_value": "official (Beta) lark-openapi-mcp repo under larksuite org",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://github.com/larksuite/lark-openapi-mcp",
+    "source_type": "official_repo",
+    "quote": "This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool"
+   },
+   {
+    "i": 1,
+    "url": "https://github.com/larksuite/lark-openapi-mcp",
+    "source_type": "official_repo",
+    "quote": "This tool is currently in Beta stage."
+   }
+  ]
+ },
+ {
+  "claim_id": "24:7",
+  "app": "Lark (Larksuite)",
+  "field": "mcp_auth",
+  "claim_value": "MCP uses App ID/App Secret; user-identity calls need OAuth login",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://github.com/larksuite/lark-openapi-mcp",
+    "source_type": "official_repo",
+    "quote": "Obtain the App ID and App Secret, which will be used for API authentication"
+   }
+  ]
+ },
+ {
+  "claim_id": "24:8",
+  "app": "Lark (Larksuite)",
+  "field": "buildability",
+  "claim_value": "Yes, conditional on tenant-admin approval of requested scopes",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+    "source_type": "official_docs",
+    "quote": "**\u4f01\u4e1a\u81ea\u5efa\u5e94\u7528**\uff1a\u5e94\u7528\u5f00\u53d1\u8005\u7533\u8bf7\u7684\u6743\u9650\u9700\u8981\u901a\u8fc7 **\u79df\u6237\u7ba1\u7406\u5458** \u7684\u5ba1\u6838\u3002"
+   }
+  ]
+ },
+ {
+  "claim_id": "31:0",
+  "app": "Google Ads",
+  "field": "authentication",
+  "claim_value": "OAuth 2.0 (user credentials/ADC or service account); developer token sunset",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "source_type": "official_docs",
+    "quote": "Authentication: Application Default Credentials (OAuth 2.0 user\ncredentials or service account) for local stdio"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "source_type": "official_docs",
+    "quote": "Google\nsunset developer tokens ( GOOGLE_ADS_DEVELOPER_TOKEN ) on\nSeptember 9, 2026."
+   }
+  ]
+ },
+ {
+  "claim_id": "31:1",
+  "app": "Google Ads",
+  "field": "access",
+  "claim_value": "API access level is tied to the Google Cloud project: Test, Explorer, Basic, Standard (application required for production)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+    "source_type": "official_docs",
+    "quote": "There are four different API access levels listed in order in the\ntable."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "source_type": "official_docs",
+    "quote": "Otherwise, production calls fail with an\n AuthorizationError.CLOUD_PROJECT_NOT_APPROVED_FOR_PRODUCTION error."
+   }
+  ]
+ },
+ {
+  "claim_id": "31:2",
+  "app": "Google Ads",
+  "field": "rate_limits",
+  "claim_value": "Daily operation limits: Test 15,000; Explorer 2,880 production ops/day; Basic 15,000; Standard unlimited",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+    "source_type": "official_docs",
+    "quote": "Explorer \n Test and production accounts \n 2,880 operations / day for production accounts"
+   },
+   {
+    "i": 1,
+    "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+    "source_type": "official_docs",
+    "quote": "Standard \n Test and production accounts \n Unlimited operations / day for both test and production accounts"
+   }
+  ]
+ },
+ {
+  "claim_id": "31:3",
+  "app": "Google Ads",
+  "field": "api_types",
+  "claim_value": "API reachable via gRPC (MCP telemetry header is a gRPC request header); REST not confirmed here",
+  "claim_note": "Prior record claimed rest/grpc/sdk; only gRPC use is quoted. REST/SDK not verified from fetched pages.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "source_type": "official_docs",
+    "quote": "Appends google-ads-mcp/VERSION to the x-goog-api-client \ngRPC request header"
+   }
+  ]
+ },
+ {
+  "claim_id": "31:4",
+  "app": "Google Ads",
+  "field": "sandbox",
+  "claim_value": "Test access level for test accounts (15,000 ops/day)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+    "source_type": "official_docs",
+    "quote": "Test \n Test accounts \n 15,000 operations / day"
+   }
+  ]
+ },
+ {
+  "claim_id": "31:5",
+  "app": "Google Ads",
+  "field": "mcp",
+  "claim_value": "official: Google Ads MCP server (docs + googleads/google-ads-mcp repo)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/googleads/google-ads-mcp/main/README.md",
+    "source_type": "official_repo",
+    "quote": "server that enables LLMs and AI agents to query and manage"
+   }
+  ]
+ },
+ {
+  "claim_id": "31:6",
+  "app": "Google Ads",
+  "field": "mcp_auth",
+  "claim_value": "Local stdio uses ADC; remote Streamable HTTP uses OAuth 2.0 web credentials",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "source_type": "official_docs",
+    "quote": "or OAuth 2.0 Web\napplication credentials for remote HTTP"
+   }
+  ]
+ },
+ {
+  "claim_id": "31:7",
+  "app": "Google Ads",
+  "field": "buildability",
+  "claim_value": "Conditional: production use requires Explorer/Basic/Standard approval of the Cloud project",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+    "source_type": "official_docs",
+    "quote": "Explorer access (automated review and approval in\nmost cases, for up to 2,880 operations per day against production accounts)"
+   }
+  ]
+ },
+ {
+  "claim_id": "37:0",
+  "app": "systeme.io",
+  "field": "authentication",
+  "claim_value": "API key in X-API-Key header (only option)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.systeme.io/reference/api",
+    "source_type": "official_docs",
+    "quote": "your only option right now is to attach your API key to the X-API-Key header of each request"
+   }
+  ]
+ },
+ {
+  "claim_id": "37:1",
+  "app": "systeme.io",
+  "field": "access",
+  "claim_value": "Self-serve: key created in profile settings under Public API keys (account required)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "source_type": "official_help",
+    "quote": "Click on your profile picture and select Settings (1). In the left menu, click MCP & API keys (2)."
+   }
+  ]
+ },
+ {
+  "claim_id": "37:2",
+  "app": "systeme.io",
+  "field": "key_limits",
+  "claim_value": "Key expiration is user-set or indefinite; key-count cap not found on reviewed pages",
+  "claim_note": "Prior said max 2-3 keys; not found in fetched text.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "source_type": "official_help",
+    "quote": "Note: To keep your API key active indefinitely, leave the 'Expiration' field empty."
+   }
+  ]
+ },
+ {
+  "claim_id": "37:3",
+  "app": "systeme.io",
+  "field": "rate_limits",
+  "claim_value": "Rate limited with 429; headers X-RateLimit-Limit/Remaining/Refill; quota shared across keys (numeric limit not given)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.systeme.io/reference/api",
+    "source_type": "official_docs",
+    "quote": "Shared Quota : The request limit is collectively applied across all your API keys and tokens."
+   }
+  ]
+ },
+ {
+  "claim_id": "37:4",
+  "app": "systeme.io",
+  "field": "api_types",
+  "claim_value": "REST and webhooks",
+  "claim_note": "Webhooks documented in developer.systeme.io llms.txt index (not saved as raw); not quoted.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.systeme.io/reference/api",
+    "source_type": "official_docs",
+    "quote": "Systeme.io Public API"
+   },
+   {
+    "i": 1,
+    "url": "https://developer.systeme.io/docs/mcp-server.md",
+    "source_type": "official_docs",
+    "quote": "Welcome to the Systeme.io MCP Server overview."
+   }
+  ]
+ },
+ {
+  "claim_id": "37:7",
+  "app": "systeme.io",
+  "field": "mcp",
+  "claim_value": "official: systeme.io MCP Server (initial release)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.systeme.io/docs/mcp-server.md",
+    "source_type": "official_docs",
+    "quote": "The Systeme.io MCP server is in its initial release."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.systeme.io/docs/mcp-server.md",
+    "source_type": "official_docs",
+    "quote": "To authenticate with the MCP server, you must use your MCP key."
+   }
+  ]
+ },
+ {
+  "claim_id": "37:8",
+  "app": "systeme.io",
+  "field": "mcp_scope",
+  "claim_value": "MCP currently covers contacts, tags, contact fields, newsletters",
+  "claim_note": "Help-center category lists further guides (funnels, products, automation) that were not opened; docs page says other features not yet supported - possible staleness, not resolved.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.systeme.io/docs/mcp-server.md",
+    "source_type": "official_docs",
+    "quote": "The Systeme.io MCP server currently supports **contact and newsletter management**."
+   }
+  ]
+ },
+ {
+  "claim_id": "37:9",
+  "app": "systeme.io",
+  "field": "pricing_gate",
+  "claim_value": "Free plan exists; whether API/MCP is available on free plan not verified",
+  "claim_note": "Quote only shows plans exist, not API entitlement.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://systeme.io/pricing",
+    "source_type": "official_docs",
+    "quote": "Systeme.io Pricing \u2014 Free, Startup, Webinar, Unlimited Plans"
+   }
+  ]
+ },
+ {
+  "claim_id": "37:10",
+  "app": "systeme.io",
+  "field": "buildability",
+  "claim_value": "Yes with an account and API key",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.systeme.io/reference/api",
+    "source_type": "official_docs",
+    "quote": "your only option right now is to attach your API key to the X-API-Key header of each request"
+   }
+  ]
+ },
+ {
+  "claim_id": "40:0",
+  "app": "SendGrid",
+  "field": "authentication",
+  "claim_value": "API key sent as Bearer token",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+    "source_type": "official_docs",
+    "quote": "include an Authorization header with the value Bearer <YOUR_API_KEY_HERE>"
+   }
+  ]
+ },
+ {
+  "claim_id": "40:1",
+  "app": "SendGrid",
+  "field": "access",
+  "claim_value": "Self-serve: Settings > API Keys > Create API Key (account needed)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+    "source_type": "official_docs",
+    "quote": "Click Create API Key ."
+   }
+  ]
+ },
+ {
+  "claim_id": "40:2",
+  "app": "SendGrid",
+  "field": "scopes",
+  "claim_value": "Key permission levels: Full Access, Custom Access, Billing Access, etc.",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+    "source_type": "official_docs",
+    "quote": "Full Access Grants all API endpoints full access to your account."
+   },
+   {
+    "i": 1,
+    "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+    "source_type": "official_docs",
+    "quote": "Custom Access Choose both which API endpoints and which access levels each have to your account."
+   }
+  ]
+ },
+ {
+  "claim_id": "40:3",
+  "app": "SendGrid",
+  "field": "rate_limits",
+  "claim_value": "Fixed per-endpoint request limits per refresh period; 429 on exceed (no numeric global limit)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits",
+    "source_type": "official_docs",
+    "quote": "Each endpoint permits a fixed number of requests per refresh period."
+   }
+  ]
+ },
+ {
+  "claim_id": "40:4",
+  "app": "SendGrid",
+  "field": "api_types",
+  "claim_value": "REST v3 API with SDKs in seven languages",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "source_type": "official_docs",
+    "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale"
+   },
+   {
+    "i": 1,
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits",
+    "source_type": "official_docs",
+    "quote": "The Twilio SendGrid Web REST API v3 provides SDKs for seven different languages."
+   }
+  ]
+ },
+ {
+  "claim_id": "40:5",
+  "app": "SendGrid",
+  "field": "free_tier",
+  "claim_value": "Pricing page says free trial, no credit card; plan details not quoted",
+  "claim_note": "Free-plan limits unverified.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://sendgrid.com/en-us/pricing",
+    "source_type": "official_marketing",
+    "quote": "Sign up for a free trial\u2014no credit card required."
+   }
+  ]
+ },
+ {
+  "claim_id": "40:7",
+  "app": "SendGrid",
+  "field": "mcp",
+  "claim_value": "third_party community tutorial; Twilio-labs generic MCP repo exists but SendGrid coverage not verified",
+  "claim_note": "Blog says opinions are contributor-owned. Twilio MCP repo is twilio-labs (alpha); whether SendGrid v3 is exposed was not verified. No dedicated official SendGrid MCP seen in reviewed pages.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+    "source_type": "third_party",
+    "quote": "Build a SendGrid MCP Server for AI Email Workflows"
+   },
+   {
+    "i": 1,
+    "url": "https://github.com/twilio-labs/mcp",
+    "source_type": "official_repo",
+    "quote": "This is a monorepo for the Model Context Protocol server that exposes all of Twilio APIs."
+   }
+  ]
+ },
+ {
+  "claim_id": "40:8",
+  "app": "SendGrid",
+  "field": "buildability",
+  "claim_value": "Yes",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+    "source_type": "official_docs",
+    "quote": "include an Authorization header with the value Bearer <YOUR_API_KEY_HERE>"
+   }
+  ]
+ },
+ {
+  "claim_id": "42:0",
+  "app": "WooCommerce",
+  "field": "authentication",
+  "claim_value": "HTTP Basic Auth with consumer key/secret over HTTPS; OAuth 1.0a over HTTP",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+    "source_type": "official_docs",
+    "quote": "You may use HTTP Basic Auth by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+    "source_type": "official_docs",
+    "quote": "You must use OAuth 1.0a \"one-legged\" authentication"
+   }
+  ]
+ },
+ {
+  "claim_id": "42:1",
+  "app": "WooCommerce",
+  "field": "access",
+  "claim_value": "Per-store: keys generated by the store admin in WooCommerce > Settings > Advanced > REST API",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+    "source_type": "official_docs",
+    "quote": "go to WooCommerce > Settings > Advanced > REST API."
+   }
+  ]
+ },
+ {
+  "claim_id": "42:2",
+  "app": "WooCommerce",
+  "field": "scopes",
+  "claim_value": "Keys are read/write permission per key, tied to a chosen user",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "source_type": "official_docs",
+    "quote": "choose a user with access to orders etc, and give the key read/write permissions"
+   }
+  ]
+ },
+ {
+  "claim_id": "42:3",
+  "app": "WooCommerce",
+  "field": "api_types",
+  "claim_value": "REST API (v3 current), webhooks",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "source_type": "official_docs",
+    "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "source_type": "official_docs",
+    "quote": "Hookbin - Another tool to test webhooks."
+   }
+  ]
+ },
+ {
+  "claim_id": "42:6",
+  "app": "WooCommerce",
+  "field": "mcp",
+  "claim_value": "official (developer preview): WooCommerce abilities exposed via WordPress MCP Adapter",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.woocommerce.com/docs/features/mcp/",
+    "source_type": "official_docs",
+    "quote": "WooCommerce registers product and order abilities in WordPress."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.woocommerce.com/docs/features/mcp/",
+    "source_type": "official_docs",
+    "quote": "The MCP implementation in WooCommerce is currently in developer preview."
+   }
+  ]
+ },
+ {
+  "claim_id": "42:7",
+  "app": "WooCommerce",
+  "field": "mcp_auth",
+  "claim_value": "Remote HTTP uses WordPress username + Application Password, not REST API keys",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.woocommerce.com/docs/features/mcp/",
+    "source_type": "official_docs",
+    "quote": "Remote HTTP connections authenticate using a WordPress username and an Application Password ."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.woocommerce.com/docs/features/mcp/",
+    "source_type": "official_docs",
+    "quote": "Do not use your account password or a WooCommerce REST API key."
+   }
+  ]
+ },
+ {
+  "claim_id": "42:8",
+  "app": "WooCommerce",
+  "field": "buildability",
+  "claim_value": "Yes, but credentials are per merchant store; no central tenant",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+    "source_type": "official_docs",
+    "quote": "go to WooCommerce > Settings > Advanced > REST API."
+   }
+  ]
+ },
+ {
+  "claim_id": "45:0",
+  "app": "Magento (Adobe Commerce)",
+  "field": "authentication",
+  "claim_value": "Self-hosted: OAuth 1.0a for third-party apps, tokens for mobile, login credentials for admins/customers",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+    "source_type": "official_docs",
+    "quote": "Third-party applications authenticate with OAuth 1.0a ."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+    "source_type": "official_docs",
+    "quote": "Mobile applications authenticate using tokens ."
+   }
+  ]
+ },
+ {
+  "claim_id": "45:1",
+  "app": "Magento (Adobe Commerce)",
+  "field": "authentication_saas",
+  "claim_value": "SaaS: Adobe IMS OAuth 2; traditional admin/integration token methods not supported",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+    "source_type": "official_docs",
+    "quote": "The traditional admin and integration token generation methods is not supported in SaaS environments."
+   }
+  ]
+ },
+ {
+  "claim_id": "45:2",
+  "app": "Magento (Adobe Commerce)",
+  "field": "access",
+  "claim_value": "SaaS server-to-server needs Adobe Developer Console access and an Adobe Organization Admin account",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server/",
+    "source_type": "official_docs",
+    "quote": "Access to Adobe Developer Console \n An Adobe Organization Admin account"
+   }
+  ]
+ },
+ {
+  "claim_id": "45:3",
+  "app": "Magento (Adobe Commerce)",
+  "field": "api_types",
+  "claim_value": "REST, GraphQL, SOAP",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+    "source_type": "official_docs",
+    "quote": "Support for GraphQL , REST (Representational State Transfer) and SOAP (Simple Object Access Protocol)."
+   }
+  ]
+ },
+ {
+  "claim_id": "45:4",
+  "app": "Magento (Adobe Commerce)",
+  "field": "webhooks",
+  "claim_value": "Getting-started page says webhooks not supported (possible stale text)",
+  "claim_note": "This page statement may be outdated relative to Adobe Commerce extensibility features; not cross-checked.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+    "source_type": "official_docs",
+    "quote": "The system does not currently support webhooks."
+   }
+  ]
+ },
+ {
+  "claim_id": "45:5",
+  "app": "Magento (Adobe Commerce)",
+  "field": "scopes",
+  "claim_value": "Permissions defined per resource in webapi.xml/ACL; each administrator or integration user has configurable permissions",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+    "source_type": "official_docs",
+    "quote": "Each administrator or integration user can have a unique set of permissions which is configured in the Admin."
+   }
+  ]
+ },
+ {
+  "claim_id": "45:9",
+  "app": "Magento (Adobe Commerce)",
+  "field": "buildability",
+  "claim_value": "Conditional on deployment model (different auth in self-hosted vs SaaS)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+    "source_type": "official_docs",
+    "quote": "The traditional admin and integration token generation methods is not supported in SaaS environments."
+   }
+  ]
+ },
+ {
+  "claim_id": "48:0",
+  "app": "Gumroad",
+  "field": "authentication",
+  "claim_value": "OAuth-based REST API; access token generated on the application page",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Introduction.tsx",
+    "source_type": "official_repo",
+    "quote": "The Gumroad OAuth API is based around REST."
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Authentication.tsx",
+    "source_type": "official_repo",
+    "quote": "to get the token you will use with the API."
+   }
+  ]
+ },
+ {
+  "claim_id": "48:1",
+  "app": "Gumroad",
+  "field": "access",
+  "claim_value": "Self-serve: register an OAuth application in settings; license verify endpoint needs no app",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Introduction.tsx",
+    "source_type": "official_repo",
+    "quote": "To start using the API, you'll need to"
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Introduction.tsx",
+    "source_type": "official_repo",
+    "quote": "does not require an OAuth application."
+   }
+  ]
+ },
+ {
+  "claim_id": "48:2",
+  "app": "Gumroad",
+  "field": "scopes",
+  "claim_value": "Scopes include account, view_profile, edit_products, view_sales, view_payouts, etc.",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Scopes.tsx",
+    "source_type": "official_repo",
+    "quote": "name: \"view_sales\","
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Scopes.tsx",
+    "source_type": "official_repo",
+    "quote": "name: \"edit_products\","
+   }
+  ]
+ },
+ {
+  "claim_id": "48:3",
+  "app": "Gumroad",
+  "field": "api_types",
+  "claim_value": "REST JSON API; resource subscriptions (webhooks-like) endpoints documented",
+  "claim_note": "Resource subscription component file fetched (48_13) but not quoted.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Introduction.tsx",
+    "source_type": "official_repo",
+    "quote": "We return JSON for every request"
+   }
+  ]
+ },
+ {
+  "claim_id": "48:6",
+  "app": "Gumroad",
+  "field": "mcp",
+  "claim_value": "official: Gumroad MCP connector (gumroad.com/chatgpt/v1/mcp, OAuth)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/views/mcp_connectors/index.html.erb",
+    "source_type": "official_repo",
+    "quote": "Connect your Gumroad store to the AI assistant you already use."
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/docs/mcp-review-walkthrough.md",
+    "source_type": "official_repo",
+    "quote": "URL `https://gumroad.com/chatgpt/v1/mcp`, and OAuth."
+   }
+  ]
+ },
+ {
+  "claim_id": "48:7",
+  "app": "Gumroad",
+  "field": "mcp_scope",
+  "claim_value": "MCP tools: get_account, list_products, get_product, create_draft_product, publish/unpublish, list_sales, list_payouts",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/docs/mcp-review-walkthrough.md",
+    "source_type": "official_repo",
+    "quote": "`get_account`, `list_products`, `get_product`,\n  `create_draft_product`, `publish_product`, `unpublish_product`, `list_sales`,\n  and `list_payouts`."
+   }
+  ]
+ },
+ {
+  "claim_id": "48:8",
+  "app": "Gumroad",
+  "field": "buildability",
+  "claim_value": "Yes (self-serve account + OAuth app)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/views/mcp_connectors/index.html.erb",
+    "source_type": "official_repo",
+    "quote": "You\u2019ll need a Gumroad account and an assistant that supports MCP."
+   }
+  ]
+ },
+ {
+  "claim_id": "50:0",
+  "app": "fanbasis",
+  "field": "identity",
+  "claim_value": "fanbasis.com is now Commas, operated by FanBasis, Inc.",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://commas.com/fanbasis-is-now-commas",
+    "source_type": "official_marketing",
+    "quote": "On July 14, 2026, FanBasis became Commas ."
+   },
+   {
+    "i": 1,
+    "url": "https://commas.com/fanbasis-is-now-commas",
+    "source_type": "official_marketing",
+    "quote": "Commas is operated by FanBasis, Inc."
+   }
+  ]
+ },
+ {
+  "claim_id": "50:1",
+  "app": "fanbasis",
+  "field": "api_types",
+  "claim_value": "Marketing claims APIs and SDKs for enterprise (no developer docs reached)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://commas.com/",
+    "source_type": "official_marketing",
+    "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs."
+   }
+  ]
+ },
+ {
+  "claim_id": "50:2",
+  "app": "fanbasis",
+  "field": "mcp",
+  "claim_value": "Marketing page lists \"MCP beta\"; no developer/MCP docs fetched",
+  "claim_note": "Only a marketing claim; no docs verified; status kept to not_verified in summary.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://commas.com/",
+    "source_type": "official_marketing",
+    "quote": "MCP beta Run Commas from your AI assistant."
+   }
+  ]
+ },
+ {
+  "claim_id": "50:4",
+  "app": "fanbasis",
+  "field": "access",
+  "claim_value": "No developer docs found; enterprise page suggests contact/sales",
+  "claim_note": "Quote does not establish access terms.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://commas.com/enterprises",
+    "source_type": "official_marketing",
+    "quote": "Enterprise sellers make more money here."
+   }
+  ]
+ },
+ {
+  "claim_id": "54:0",
+  "app": "MrScraper",
+  "field": "authentication",
+  "claim_value": "REST: API token in x-api-token header; Marketplace endpoints use Authorization: Bearer",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "source_type": "official_docs",
+    "quote": "Include your API token in the x-api-token HTTP header on every request:"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "source_type": "official_docs",
+    "quote": "For Marketplace endpoints , authenticate using the standard RFC 6750 Authorization header with a Bearer token:"
+   }
+  ]
+ },
+ {
+  "claim_id": "54:1",
+  "app": "MrScraper",
+  "field": "access",
+  "claim_value": "Self-serve: create token in dashboard (account required); free start offered, paid Essential plan $99/month",
+  "claim_note": "Free-tier limits not quoted.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "source_type": "official_docs",
+    "quote": "API tokens are managed directly from your MrScraper dashboard."
+   },
+   {
+    "i": 1,
+    "url": "https://mrscraper.com/pricing",
+    "source_type": "official_marketing",
+    "quote": "Essential $99 \n/month"
+   }
+  ]
+ },
+ {
+  "claim_id": "54:2",
+  "app": "MrScraper",
+  "field": "api_types",
+  "claim_value": "HTTP API under api.app.mrscraper.com/api/v1 (REST-style; no explicit REST wording quoted)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "source_type": "official_docs",
+    "quote": "curl -X GET \"https://api.app.mrscraper.com/api/v1/subscription-accounts\""
+   }
+  ]
+ },
+ {
+  "claim_id": "54:3",
+  "app": "MrScraper",
+  "field": "rate_limits",
+  "claim_value": "Pricing lists concurrent requests: 20 (Essential), 200 (Enterprise)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://mrscraper.com/pricing",
+    "source_type": "official_marketing",
+    "quote": "Concurrent requests 20 200"
+   }
+  ]
+ },
+ {
+  "claim_id": "54:5",
+  "app": "MrScraper",
+  "field": "mcp",
+  "claim_value": "official: hosted MCP at https://mcp.mrscraper.com/mcp",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "source_type": "official_docs",
+    "quote": "\"url\" : \"https://mcp.mrscraper.com/mcp\""
+   }
+  ]
+ },
+ {
+  "claim_id": "54:6",
+  "app": "MrScraper",
+  "field": "mcp_auth",
+  "claim_value": "MCP: OAuth 2.1 browser sign-in primary; API key as Bearer fallback (resolves prior conflict)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "source_type": "official_docs",
+    "quote": "An API key only when the client cannot use\nOAuth 2.1 or when running the server locally"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "source_type": "official_docs",
+    "quote": "sent as Authorization: Bearer <key>."
+   }
+  ]
+ },
+ {
+  "claim_id": "54:7",
+  "app": "MrScraper",
+  "field": "buildability",
+  "claim_value": "Yes",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "source_type": "official_docs",
+    "quote": "Include your API token in the x-api-token HTTP header on every request:"
+   }
+  ]
+ }
+]

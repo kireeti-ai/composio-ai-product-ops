@@ -1,0 +1,154 @@
+{
+ "tag": "groq_orgA",
+ "app": 56,
+ "name": "Firecrawl",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 6,
+ "latency_s": 1.92,
+ "tokens_in": 3168,
+ "tokens_out": 603,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.firecrawl.dev/oauth",
+    "quote": "Firecrawl runs an OAuth 2.1 authorization server... Your app gets an access token it can use on the Firecrawl REST API in place of an API key.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.firecrawl.dev/authentication",
+    "quote": "Your own code calling the REST API for your team \u2013 API key \u2013 Authorization: Bearer fc-\u2026",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://docs.firecrawl.dev/introduction",
+    "quote": "Create a free account for direct API access and higher limits",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "quote": "For authentication, include an `Authorization` header on every request\u2026",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.firecrawl.dev/introduction",
+    "quote": "MCP Server: Connect Firecrawl to any AI tool via the Model Context Protocol.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "supported_lexical"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 3,
+   "supported_lexical": 2
+  },
+  "evidence_total": 5,
+  "evidence_valid": 2,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 3,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 3,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Firecrawl provides a web scraping API that returns clean markdown, HTML, JSON, screenshots, and more, with optional OAuth and API\u2011key authentication.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Create a free account to get an API key for higher limits; no key is needed for limited key\u2011less usage.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "buildability": "yes",
+  "blocker": "none",
+  "existing_mcp": "official",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.firecrawl.dev/oauth",
+    "quote": "Firecrawl runs an OAuth 2.1 authorization server... Your app gets an access token it can use on the Firecrawl REST API in place of an API key."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.firecrawl.dev/authentication",
+    "quote": "Your own code calling the REST API for your team \u2013 API key \u2013 Authorization: Bearer fc-\u2026"
+   },
+   {
+    "field": "access",
+    "url": "https://docs.firecrawl.dev/introduction",
+    "quote": "Create a free account for direct API access and higher limits"
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "quote": "For authentication, include an `Authorization` header on every request\u2026"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.firecrawl.dev/introduction",
+    "quote": "MCP Server: Connect Firecrawl to any AI tool via the Model Context Protocol."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "9710f59685bcaf21a3fd520c4d05a4e324a8c215203e9d3f9756c0b646ec9580",
+ "at": "2026-11-23T19:37:37+05:30"
+}

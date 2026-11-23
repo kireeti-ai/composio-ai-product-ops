@@ -1,0 +1,72 @@
+{
+ "created": "2026-11-23T18:33:59+0530",
+ "key": "a call = (record, surface, field); identical = byte-identical prompt",
+ "ledger_reported_ceiling": 403,
+ "baseline_reverify_planned_ceiling": 103,
+ "baseline_reverify_ACTUAL_calls": 99,
+ "baseline_planned_but_no_call": 4,
+ "new_records_estimate_75x4": 300,
+ "ledger_corrected_total_actual_baseline_plus_new_estimate": 399,
+ "pilot_v1_calls_actual": 75,
+ "pilot_by_stage": {
+  "S1a": 4,
+  "S1b": 12,
+  "S1c": 12,
+  "S2": 47
+ },
+ "classification_of_the_76": {
+  "IDENTICAL_to_ledger_call": 56,
+  "NEW_distinct_prompt (planted control)": 12,
+  "DUPLICATE_inside_pilot (identical to an earlier pilot call AND to a ledger call)": 7
+ },
+ "per_stage": {
+  "S1a": {
+   "IDENTICAL_to_ledger_call": 4
+  },
+  "S1b": {
+   "NEW_distinct_prompt (planted control)": 12
+  },
+  "S1c": {
+   "IDENTICAL_to_ledger_call": 11,
+   "DUPLICATE_inside_pilot (identical to an earlier pilot call AND to a ledger call)": 1
+  },
+  "S2": {
+   "IDENTICAL_to_ledger_call": 41,
+   "DUPLICATE_inside_pilot (identical to an earlier pilot call AND to a ledger call)": 6
+  }
+ },
+ "identical_to_ledger_calls": 63,
+ "distinct_ledger_calls_covered_by_pilot": 56,
+ "pilot_internal_duplicates": 7,
+ "new_calls_not_in_ledger": 12,
+ "arithmetic": "75 pilot calls = 12 NEW (S1b planted) + 63 identical to ledger calls; of those 63 only 56 are DISTINCT ledger calls (7 are repeats of the same call inside the pilot)",
+ "scenarios": {
+  "0_as_reported_before (ceilings: 403 ledger + 28)": {
+   "minimum_planned_calls": 431,
+   "expected_attempts": 738,
+   "worst_case_attempts": 2155
+  },
+  "A_actual_calls, S2 reused, S1a/S1c run separately": {
+   "minimum_planned_calls": 427,
+   "expected_attempts": 731,
+   "worst_case_attempts": 2135
+  },
+  "B_actual_calls, no reuse at all": {
+   "minimum_planned_calls": 474,
+   "expected_attempts": 811,
+   "worst_case_attempts": 2370
+  },
+  "C_RECOMMENDED pilot v2 (every distinct call once)": {
+   "minimum_planned_calls": 411,
+   "expected_attempts": 703,
+   "worst_case_attempts": 2055
+  }
+ },
+ "assumptions": [
+  "retry ratio 1.71 is OBSERVED in the baseline Groq log",
+  "worst case = 5 attempts per call (verify_v2 limit)",
+  "new-record verification = 4 calls per record is an ESTIMATE; deterministic shortcuts can only lower it",
+  "baseline calls are captured from the real records: only calls whose retriever returns a passage are counted (the 103 in the ledger was a ceiling)",
+  "the 300 new-record calls remain an estimate (ceiling): deterministic shortcuts can only lower it"
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "app": "Ahrefs",
+ "id": 53,
+ "provenance": "reconstructed candidate list (apps 51-100; secondary source; membership/category/order NOT confirmed against the original Notion source)",
+ "provenance_class": "reconstructed_unverified",
+ "reduction": {
+  "rule": "reduction-v1",
+  "budget_chars": 12000,
+  "max_block_chars": 1200,
+  "max_blocks_per_page": 5,
+  "keyword_regex": "\\b(api|oauth|token|api[- ]?key|authenticat|authoriz|access|mcp|model context|rest|graphql|webhook|sdk|bot|rate limit|pricing|free|plan|approv|review|partner|developer|credential|scope|endpoint|self[- ]serve|sign up|register)\\w*",
+  "deterministic": true
+ },
+ "pages": [
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+   "text": "With Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations. Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists:\n\n* **Site Explorer**: Overview stats and historical charts, Backlinks, Organic and paid traffic reports\n* **Keywords Explorer**: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports\n* **Site Audit**: Projects' Health Scores, full issue reports and content of crawled pages\n* **SERP Overview**: Top 100 SERP results\n* **Rank Tracker**: Project overview, Competitor reports and Rank Tracker SERPs\n* **Batch Analysis**: Metrics for up to 100 targets per request\n* **Brand Radar**: Brand overview stats, historical performance charts, and real prompts with citations across multiple AI agents\n* **Social Media Management**: Channels, posts, activity history and metrics for connected social media accounts\n* **Content Helper**: The core topics covered by the pages ranking for a keyword, with per-page coverage scores\n* **Management**: Endpoints to manage your Rank Tracker projects and Keywords Explorer lists\n* **Subscription information**: Your API limits and usage\n* **Public endpoints**: Our crawler's IP addresses and ranges\n\nAhrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.\n\nAll requests besides free test queries and the *Rank Tracker*, *Management*, *Public* and *some other* endpoints consume **API units**. The cost depends on the number of rows in a response and the fields requested. The minimum cost for any request is **50 units**. If an endpoint is free, you'll see a note about that on its documentation page; otherwise, it consumes units.\n\nTo send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys. This can be done in Account settings / API keys."
+  },
+  {
+   "url": "https://docs.ahrefs.com/",
+   "text": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.\n\nOverview, authentication, and rate limits\n\nTry API endpoints without an Enterprise plan\n\nOverview, authentication, and rate limits\n\nTry API endpoints without an Enterprise plan"
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "text": "You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`.\n\nCreate and manage existing API keys in Account settings / API keys. Note that only workspace owners and admins have access to this section.\n\nYou can create up to 1,000 API keys. Each key has a lifetime of 1 year, after which it will expire and become inactive. You can see the expiration date for each key and who created it on this page.\n\nTo control the monthly usage of API units in your workspace, limit the usage of particular API keys in Account settings / API keys.\n\nIf your subscription plan allows pay-as-you-go charges, you can also limit the maximum number of API units that can be added on a pay-as-you-go basis or disable pay-as-you-go API units altogether in Account settings / Limits & usage."
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/reference/public",
+   "text": "Free endpoints that don't require an Ahrefs subscription, or require a free/public APIv3 key\n\n```\nhttps://api.ahrefs.com/v3/public\n```\n\nFree endpoints that don't require an Ahrefs subscription, or require a free/public APIv3 key\n\n```\nhttps://api.ahrefs.com/v3/public\n```"
+  }
+ ],
+ "per_page_stats": [
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+   "original_chars": 4014,
+   "kept_chars": 2147
+  },
+  {
+   "url": "https://docs.ahrefs.com/",
+   "original_chars": 3410,
+   "kept_chars": 298
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "original_chars": 1035,
+   "kept_chars": 865
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/reference/public",
+   "original_chars": 316,
+   "kept_chars": 270
+  }
+ ],
+ "prompt": "You research apps for an agent-toolkit builder. App: Ahrefs (category: Data, SEO and Scraping; hint: none).\nUsing ONLY the SOURCES below, fill the schema. Rules:\n- access: can a developer get credentials themselves for free (self_serve_free), only on a paid plan/trial, only after app review/approval, or only via partnership/contact sales?\n- buildability: could this be an agent toolkit today (yes / yes_with_caveats / no); blocker = main obstacle, else \"none\".\n- existing_mcp only if SOURCES show it; otherwise none_found (or unknown if sources are silent).\n- evidence: for each of auth_methods, access, api_types, existing_mcp give a url from SOURCES and a SHORT VERBATIM quote (<=200 chars) copied exactly from that source's text. No quote available -> say unknown, do not invent.\n- If sources are insufficient, use \"unknown\". Never guess from memory.\nSOURCES:\n### https://docs.ahrefs.com/en/api/docs/introduction\nWith Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations. Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists:\n\n* **Site Explorer**: Overview stats and historical charts, Backlinks, Organic and paid traffic reports\n* **Keywords Explorer**: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports\n* **Site Audit**: Projects' Health Scores, full issue reports and content of crawled pages\n* **SERP Overview**: Top 100 SERP results\n* **Rank Tracker**: Project overview, Competitor reports and Rank Tracker SERPs\n* **Batch Analysis**: Metrics for up to 100 targets per request\n* **Brand Radar**: Brand overview stats, historical performance charts, and real prompts with citations across multiple AI agents\n* **Social Media Management**: Channels, posts, activity history and metrics for connected social media accounts\n* **Content Helper**: The core topics covered by the pages ranking for a keyword, with per-page coverage scores\n* **Management**: Endpoints to manage your Rank Tracker projects and Keywords Explorer lists\n* **Subscription information**: Your API limits and usage\n* **Public endpoints**: Our crawler's IP addresses and ranges\n\nAhrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.\n\nAll requests besides free test queries and the *Rank Tracker*, *Management*, *Public* and *some other* endpoints consume **API units**. The cost depends on the number of rows in a response and the fields requested. The minimum cost for any request is **50 units**. If an endpoint is free, you'll see a note about that on its documentation page; otherwise, it consumes units.\n\nTo send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys. This can be done in Account settings / API keys.\n\n### https://docs.ahrefs.com/\nAccess Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.\n\nOverview, authentication, and rate limits\n\nTry API endpoints without an Enterprise plan\n\nOverview, authentication, and rate limits\n\nTry API endpoints without an Enterprise plan\n\n### https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management\nYou'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`.\n\nCreate and manage existing API keys in Account settings / API keys. Note that only workspace owners and admins have access to this section.\n\nYou can create up to 1,000 API keys. Each key has a lifetime of 1 year, after which it will expire and become inactive. You can see the expiration date for each key and who created it on this page.\n\nTo control the monthly usage of API units in your workspace, limit the usage of particular API keys in Account settings / API keys.\n\nIf your subscription plan allows pay-as-you-go charges, you can also limit the maximum number of API units that can be added on a pay-as-you-go basis or disable pay-as-you-go API units altogether in Account settings / Limits & usage.\n\n### https://docs.ahrefs.com/en/api/reference/public\nFree endpoints that don't require an Ahrefs subscription, or require a free/public APIv3 key\n\n```\nhttps://api.ahrefs.com/v3/public\n```\n\nFree endpoints that don't require an Ahrefs subscription, or require a free/public APIv3 key\n\n```\nhttps://api.ahrefs.com/v3/public\n```",
+ "prompt_sha256": "58d9b9eb2b9cbd4d997837baab7dc8ce55bb4dda7714235e99b09addcd42d058",
+ "prompt_chars": 4658,
+ "est_tokens": 1456,
+ "full_prompt_est_tokens": 3080
+}

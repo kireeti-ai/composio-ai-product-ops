@@ -1,0 +1,104 @@
+[
+ {
+  "id": 58,
+  "app": "Sherlock",
+  "status": "EXCLUDED - pending authoritative identity resolution",
+  "note": "4 unrelated products retrieved; baseline Pass-1 record #58 is identity-contaminated and must not be used"
+ },
+ {
+  "id": 80,
+  "app": "Harvest",
+  "status": "EXCLUDED - pending authoritative identity resolution",
+  "note": "getharvest.com (time tracking) vs harvestapi.io vs Greenhouse Harvest API"
+ },
+ {
+  "id": 50,
+  "app": "fanbasis",
+  "status": "EXCLUDED until fanbasis.io is confirmed",
+  "note": "openstage.live EXCLUDED from official evidence; dev-docs.fanbasis.com is password-gated"
+ },
+ {
+  "id": 73,
+  "app": "Linear",
+  "status": "PROVISIONAL identity (not confirmed) - held from extraction",
+  "note": "category 8 + linear.app; no authoritative hint for #51-100"
+ },
+ {
+  "id": 78,
+  "app": "Coda",
+  "status": "PROVISIONAL identity (not confirmed) - held from extraction",
+  "note": "category 8 + coda.io; superhuman.com hits suggest docs may be migrating"
+ },
+ {
+  "id": 60,
+  "app": "Clay",
+  "status": "PROVISIONAL identity (not confirmed)",
+  "note": "not in the extraction plan (access evidence incomplete: READY_CORE)"
+ },
+ {
+  "id": 59,
+  "app": "Waterfall.io",
+  "status": "PROVISIONAL identity (not confirmed)",
+  "note": "not in the extraction plan (READY_CORE)"
+ },
+ {
+  "id": 15,
+  "app": "Pylon",
+  "status": "Resolved (original Notion hint)",
+  "note": "not in plan (PARTIAL retrieval)"
+ },
+ {
+  "id": 20,
+  "app": "Gladly",
+  "status": "Resolved (original Notion hint)",
+  "note": "in plan tier D: evidence unresolved"
+ },
+ {
+  "id": 24,
+  "app": "Lark",
+  "status": "Resolved (original Notion hint)",
+  "note": "not in plan"
+ },
+ {
+  "id": 39,
+  "app": "Threads (Meta)",
+  "status": "Resolved (original Notion hint)",
+  "note": "phase 1"
+ },
+ {
+  "id": 69,
+  "app": "Datadog",
+  "status": "Domain conflict = FALSE ALARM (alias docs host)",
+  "note": "not in plan"
+ },
+ {
+  "id": 79,
+  "app": "Smartsheet",
+  "status": "Domain conflict = FALSE ALARM (deprecated redoc.ly docs host)",
+  "note": "not in plan"
+ },
+ {
+  "id": 55,
+  "app": "Apify",
+  "status": "use-apify.com excluded (third-party)",
+  "note": "not in plan"
+ },
+ {
+  "id": 66,
+  "app": "Neo4j",
+  "status": "NEW: product-scope ambiguity (Aura management API vs database HTTP/Query API) - held",
+  "note": "needs your decision on which API the toolkit targets"
+ },
+ {
+  "id": 14,
+  "app": "Front",
+  "status": "retrieval defect (dev.frontapp.com never fetched); baseline record preserved",
+  "note": "correct in a later run after confirming frontapp.com"
+ },
+ {
+  "id": 31,
+  "app": "Google Ads",
+  "status": "held: needs developer-token / access-level page",
+  "note": "not in the 18-app top-up"
+ }
+]

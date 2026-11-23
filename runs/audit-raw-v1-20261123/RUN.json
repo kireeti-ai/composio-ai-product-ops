@@ -1,0 +1,10 @@
+{
+ "run_id": "audit-raw-v1-20261123",
+ "code": "src/audit_raw.py",
+ "code_sha256": "3446badf4eceea74cae373dee6ad623d218b57d183b52edd5ce79a9f14aa0397",
+ "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+ "created": "2026-11-23T17:13:02+0530",
+ "network": false,
+ "llm": null,
+ "caveat": "heuristic keyword/URL checks; measure sufficiency of retrieval, not truth of claims"
+}

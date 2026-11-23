@@ -1,0 +1,288 @@
+
+How to Access Higgsfield via CLI and Skills
+Higgsfield
+Explore
+Image
+Video
+Audio
+MCP
+API
+Cinema Studio
+Genjutsu Top
+Short Drama New
+Miracle Soon
+Contests
+Shorts New
+Ads Studio New
+GPU New
+Playable
+Supercomputer
+Community
+Academy
+Plugins
+Canvas
+Higgsfield
+New drops Drops New drops Drops
+Home
+Image Video Audio MCP Agentic Studios Community Contests Learn
+More
+Creator Hub
+Back
+Help center / Integrations / How do I access Higgsfield via CLI?
+Aug 1, 2026
+How do I access Higgsfield via CLI?
+Higgsfield
+3 min
+Copy page
+CLI and Skills is how Higgsfield integrates with coding agents. The difference from MCP: MCP is a full connection for chat agents that exposes all tools with free parameter selection, while CLI and Skills is optimized for coding agents, where each skill has a defined structure that reduces token overhead and produces consistent output. Accessing Higgsfield through the CLI falls under the Developer Terms in the Terms of Use : keep your session secure, and you're responsible for what a coding agent generates through your account. Both use the same Higgsfield account and plan credits with no API key (API keys belong to the Higgsfield API, a separate developer product), and Unlimited models and free generations don't apply to either. See the setup guide and full skill list on the Skills landing page .
+When should I use CLI instead of MCP?
+When should I use CLI instead of MCP?
+Criteria
+CLI + Skills
+MCP
+Best for
+Coding agents (Claude Code, Cursor, Codex)
+Chat agents (Claude web, Cowork)
+Token overhead
+Minimal
+Full schema per call
+Output format
+Structured through skills
+Agent picks parameters freely
+Credits
+Same account, same rates
+Same account, same rates
+Unlimited models
+No
+No
+API key required
+No
+No
+How do I set up CLI + Skills?
+Install skills: run npx skills add higgsfield-ai/skills . This pulls three skills: generate, soul, and product-photoshoot.
+Sign in: run higgsfield auth login . No API key needed.
+Generate: in your coding agent, call /higgsfield:generate or say "Generate an image with Higgsfield." The agent picks the skill and runs it.
+Compatible with Claude Code, Cursor, Codex, and other agents that support Skills or MCP.
+What are the three Skills?
+generate , image and video generation from any Higgsfield model (Soul, Nano Banana Pro for images; Seedance, Kling, Veo for video), up to 4K. The agent selects a model automatically, or you can specify one.
+soul , train a Soul character from photos. The skill handles upload, training, and naming. See How do I create and use a Soul ID character?
+product-photoshoot , turn a product link or images into studio-quality product shots and video ads. Works for physical products and apps.
+Image presets:
+What are the three Skills?
+Preset
+What it generates
+product_shot
+Product on a neutral, studio, or catalog background
+lifestyle_scene
+Product in a real-world environment
+closeup_product_with_person
+Tight crop with hands or partial face and product
+pinterest_pin
+Vertical 2:3 Pinterest-native format
+hero_banner
+Wide-format banner for website, email, or campaign
+social_carousel
+3 to 10 connected slides for Instagram or LinkedIn
+ad_creative_pack
+Coordinated set of static ad variations
+virtual_model_tryout
+Product worn or used by an AI-rendered model
+conceptual_product
+Surreal, CGI-style, or levitating product
+restyle
+Transform an existing image's aesthetic
+Video presets: UGC, Tutorial, Unboxing, Hyper Motion, Product Review, TV Spot, Wild Card, UGC Virtual Try On, Pro Virtual Try On.
+Got any questions left?
+What is the difference between CLI Skills and the Skills inside Supercomputer?
+Two separate systems with the same name. CLI Skills are installed via npx skills add higgsfield-ai/skills for coding agents. Supercomputer Skills are built-in functions called with "/" inside the Supercomputer chat. They are not interchangeable.
+Do I need both CLI and MCP?
+No. Use MCP for chat agents like Claude web, and CLI for coding agents like Claude Code or Cursor.
+Which models are available through CLI?
+All Higgsfield models. The agent selects automatically unless you specify one.
+My reference images aren't being passed to the generation. What do I do?
+Update to the latest CLI version by re-running npx skills add higgsfield-ai/skills . Earlier versions had an issue with passing references; current versions pass all references, including images, correctly.
+Do I need to reinstall the skills after updates?
+Run npx skills add higgsfield-ai/skills again to pull the latest version.
+Where do CLI generations appear?
+In your Assets on higgsfield.ai , the same as web and MCP generations.
+Share Feedback
+Was this article helpful?
+Yes
+No
+Related articles
+What is Higgsfield MCP, and how is it different from the web? See how Higgsfield MCP works, and why it always deducts credits unlike the website.
+How do I connect Higgsfield to Claude, ChatGPT, or another AI agent? Connect Higgsfield to Claude, ChatGPT, Cursor, or another AI agent in minutes.
+How do I use Supercomputer? Run multi-step creative tasks from one chat with Supercomputer's agentic workspace.
+by Higgsfield
+What external integrations does Higgsfield support? What is the Higgsfield API, and how do I get started?
+Contents
+When should I use CLI instead of MCP?
+How do I set up CLI + Skills?
+What are the three Skills?
+AI-native creative suite
+Create
+AI Video
+AI Video Effects
+AI Image to Video
+AI Text to Video
+AI Video Editor
+Shorts Studio
+Faceless Studio
+AI Explainer
+AI Image
+Edit Image
+Inpaint
+Upscale
+AI Video Upscaler
+Mixed Media
+AI Face Swap
+AI Influencer
+Apps
+Video Models
+Seedance 2.5
+Seedance 2.0
+Kling 3.0
+Kling 4.0
+Veo 3.1 Introduction
+WAN 2.6
+Grok Imagine 1.5
+Gemini Omni Flash
+MiniMax H3
+Image Models
+Nano Banana
+Flux 2
+Seedream 5
+GPT Image 2.6
+GPT Image 2
+Ideogram 4.5
+Studios
+Cinema Studio
+Short Drama
+Ads Studio
+Marketing Studio
+Lipsync Studio
+Higgsfield Popcorn
+Higgsfield Canvas
+Higgsfield Mangaka
+Soul
+Soul 2.0
+Soul ID Character
+Soul Cinema
+Platform
+Supercomputer
+AI Motion Designer
+MCP/CLI
+API
+Collab
+Games
+Reference Extension
+Resources
+Blog
+Help Center
+Academy
+Prompt Guide
+Company
+About
+Trust
+Report a vulnerability
+Enterprise
+Team
+Pricing
+Careers
+Contact
+Community
+Community
+Contests
+Creative Partners
+X / Twitter
+Youtube
+LinkedIn
+Tiktok
+Discord
+Create
+AI Video
+AI Video Effects
+AI Image to Video
+AI Text to Video
+AI Video Editor
+Shorts Studio
+Faceless Studio
+AI Explainer
+AI Image
+Edit Image
+Inpaint
+Upscale
+AI Video Upscaler
+Mixed Media
+AI Face Swap
+AI Influencer
+Apps
+Video Models
+Seedance 2.5
+Seedance 2.0
+Kling 3.0
+Kling 4.0
+Veo 3.1 Introduction
+WAN 2.6
+Grok Imagine 1.5
+Gemini Omni Flash
+MiniMax H3
+Image Models
+Nano Banana
+Flux 2
+Seedream 5
+GPT Image 2.6
+GPT Image 2
+Ideogram 4.5
+Studios
+Cinema Studio
+Short Drama
+Ads Studio
+Marketing Studio
+Lipsync Studio
+Higgsfield Popcorn
+Higgsfield Canvas
+Higgsfield Mangaka
+Soul
+Soul 2.0
+Soul ID Character
+Soul Cinema
+Platform
+Supercomputer
+AI Motion Designer
+MCP/CLI
+API
+Collab
+Games
+Reference Extension
+Resources
+Blog
+Help Center
+Academy
+Prompt Guide
+Company
+About
+Trust
+Report a vulnerability
+Enterprise
+Team
+Pricing
+Careers
+Contact
+Community
+Community
+Contests
+Creative Partners
+550 Montgomery St, 3rd Floor, San Francisco, CA 94111
+X / Twitter
+Youtube
+LinkedIn
+Tiktok
+Discord
+© 2026 Higgsfield, Inc. All rights reserved.
+Help center
+Cookie Notice
+Terms
+Privacy
+Affiliate Terms
+Report a vulnerability

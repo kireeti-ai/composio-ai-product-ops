@@ -1,0 +1,335 @@
+{
+ "id": 83,
+ "name": "Binance",
+ "started": "2026-11-23T19:39:14+05:30",
+ "searches": [
+  {
+   "q": "Binance API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:16+05:30"
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:17+05:30"
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:19+05:30"
+  },
+  {
+   "q": "Binance MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:20+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic",
+   "requested_at": "2026-11-23T19:39:25+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.binance.com/en/docs/agent-native/mcp-server",
+   "requested_at": "2026-11-23T19:39:28+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.binance.com/en/landingpage/oauth",
+   "requested_at": "2026-11-23T19:40:00+05:30",
+   "status": "ok",
+   "final_url": "https://developers.binance.com/en/landingpage/oauth",
+   "title": "Developer Center",
+   "chars": 624,
+   "sha256": "8bd7f60b8e0f32f83cde7653af9ed2023e155ba3b1598ed76c7041cf568778df",
+   "text": "Binance OAuth\n\nDeliver Your Business To The Crypto World\n\nOverview\n\n## Why Binance OAuth\n\nStreamlined Login Experience\n\nBinance OAuth simplifies the login process for users, eliminating the need for users to create new login credentials for each third-party application\n\nEnhanced Security\n\nBinance OAuth allows users to share specific data with third-party applications while keeping their API keys, login credentials, and other information private\n\nIntegration Ready\n\nThe Binance API allows developers to use the OAuth 2.0 protocol, a widely adopted industry standard, to simplify integration with other web or app services",
+   "retrieved_at": "2026-11-23T19:40:00+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.binance.com/en/docs/introduction",
+   "requested_at": "2026-11-23T19:40:08+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.binance.com/en",
+   "requested_at": "2026-11-23T19:40:10+05:30",
+   "status": "ok",
+   "final_url": "https://developers.binance.com/en",
+   "title": "Developer Center",
+   "chars": 1523,
+   "sha256": "e09c2464c1f83f943aa43f2321383fc7388bb24ba2e4430b80fd43f8a8fac128",
+   "text": "Binance Developer Center\n\n# One place to build on Binance\n\nThis is the account side of building on Binance \u2014 where you get verified, get your credentials, and get your integration through review. Pick where you want to start.\n\nWhat you can do here\n\nProducts\n\n## Developer products & tools\n\nStart building with the Binance developer products. Enroll once and manage everything from your console.\n\nGet started\n\n## From zero to live in three steps\n\nA straightforward path from enrollment to a published integration.\n\n01\n\nEnroll\n\nCreate your developer account and complete business verification once to unlock every product.\n\n02\n\nBuild\n\nPick a product, follow the documentation, and integrate with our REST and WebSocket APIs.\n\nRead the documentation\n\n03\n\nGo live\n\nSubmit for review, publish, and manage everything from your Developer Center console.\n\n### What step 2 looks like\n\nSign in with Binance, end to end. The client ID and secret in it are exactly what registering an OAuth application here issues you \u2014 so the credentials and the code come from the same place.\n\n```\n# Send the user to Binance for consentGET https://accounts.binance.com/en/oauth/authorize  ?response_type=code  &client_id=YOUR_CLIENT_ID  &redirect_uri=YOUR_REDIRECT_URI  &state=CSRF_TOKEN  &scope=user:openId,create:apikey\n```\n\nA consent screen, then a redirect back with a code.\n\nRead the OAuth guide\n\nResources\n\n## Documentation & community\n\nExplore the full API documentation, follow updates, and connect with other developers building on Binance.",
+   "retrieved_at": "2026-11-23T19:40:10+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.binance.com/en/docs/catalog",
+   "requested_at": "2026-11-23T19:40:19+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/en/docs/introduction",
+   "title": "Binance Developer Documentation",
+   "snippet": "onboarding content, environment information, and operational guidance.\n- **API Reference**\nEndpoint definitions, request parameters, payload schemas, and API-specific details.\n- **SDKs &"
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/en",
+   "title": "Binance Developer center",
+   "snippet": "Explore the full API documentation, follow updates, and connect with other developers building on Binance. Documentation Full API reference, guides, and change ..."
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/en/docs/catalog",
+   "title": "API Reference | Binance Developer Docs",
+   "snippet": "## API Reference\nExplore REST, WebSocket, and market-stream APIs across every Binance product \u2014 38 products, 1107 endpoints.\n### Core Trading\nAccess market data, manage accounts, and trade Binance"
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "title": "General REST API Information",
+   "snippet": "You may mix parameters between both the `query string` and `request body` if you wish to do so.\n- Parameters may be sent in any order.\n- If a parameter sent in both the `query string` and"
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/en/docs",
+   "title": "Binance Developer Docs",
+   "snippet": "Binance.\n`import requests # Public endpoint \u2014 no API key needed resp = requests.get( \"https://api.binance.com/api/v3/ticker/price\", params={\"symbol\": \"BTCUSDT\"}, ) print(resp.json()) # \u2192 {\"symbol\":"
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/en/docs/products/spot/CHANGELOG",
+   "title": "CHANGELOG for Binance's API",
+   "snippet": "Binance's API. Added documentation in REST, and WebSocket APIs stating: The documentation has been updated to reflect this change. documentation for REST API ..."
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://docs.binance.us/",
+   "title": "Binance.US API Documentation",
+   "snippet": "Welcome to the Binance.US API Documentation! Our REST APIs offer access to: Exchange data Market trade and price data. Keys, and Credit Line API Keys."
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/en/docs/products/caas/integration-guide",
+   "title": "Crypto-As-A-Service \u2014 Integration Guideline | Binance Developer Docs",
+   "snippet": "| Per-user API credentials | An API key scoped to a single sub-account, with configurable permissions and IP controls."
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/docs/algo/general-info",
+   "title": "General Info",
+   "snippet": "  - **[https://api-gcp.binance.com](https://api-gcp.binance.com)**\n- **[https://api1.binance.com](https://api1.binance.com)**\n-"
+  },
+  {
+   "q": "Binance API documentation",
+   "url": "https://developers.binance.com/en/docs/products/derivatives-trading-usds-futures/general-info",
+   "title": "General Info | Binance Developer Docs",
+   "snippet": "General Info. General API Information. Some endpoints will require an API Key. Please refer to this page; The base endpoint is: https://fapi.binance.com ..."
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/en/docs/",
+   "title": "Binance Developer Docs",
+   "snippet": "Official Binance API documentation for spot, derivatives, margin, wallet, and more. Includes REST API, WebSocket API, SDKs, and code examples."
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/en/docs/products/oms/Fast-API/base-urls",
+   "title": "Environments and API base URLs",
+   "snippet": "generation. Additionally, Link clients should be able to decrypt the API key package, and store it safely.\n6. When Link client request to generate a user's API key, it should state clearly if this"
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/en/landingpage/oauth",
+   "title": "Binance OAuth",
+   "snippet": "The Binance API allows developers to use the OAuth 2.0 protocol, a widely adopted industry standard, to simplify integration with other web or app services"
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/docs/binance-spot-api-docs/faqs/api_key_types",
+   "title": "API Key Types",
+   "snippet": "Binance APIs require an API key to access authenticated endpoints for trading, account history, etc.\nWe support several types of API keys:\n- Ed25519 (recommended)\n- HMAC\n- RSA"
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/en/docs/products/login/introduction",
+   "title": "Binance Login (OAuth2)",
+   "snippet": "The Binance API allows developers to use the OAuth2 protocol to allow a Binance user to grant a 3rd party application full or partial access to his/her account."
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.info/en/docs/products/link-and-trade/Fast-API/Introduction",
+   "title": "Introduction | Binance Developer Docs",
+   "snippet": "client need to provide a public key for encrypting User\u2019s API key, when requesting the API generation. Additionally, Link clients should be able to decrypt the API key package, and store it safely."
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/en/docs/products/login/web-integration",
+   "title": "Integrate Binance Login with your web application",
+   "snippet": "and from there, navigate to your console to create an OAuth application and get your own client ID and client secret. For now, Binance Login (Oauth2.0), is exclusively offered to close ecosystem"
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/en/docs/sdks-tools/connectors/javascript",
+   "title": "JavaScript | Binance Developer Docs",
+   "snippet": "- Built-in request signing for authenticated endpoints\n\n- Store API keys securely using environment variables or a secrets manager"
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/en/docs/products/oms/integration-guide",
+   "title": "OMS Toolkit \u2014 Integration Guideline",
+   "snippet": "| [Fast API](https://developers.binance.com/en/docs/products/oms/integration-guide#9-fast-api) | Create an API key for a user through OAuth, without them leaving your app. |"
+  },
+  {
+   "q": "Binance API authentication OAuth API key developer",
+   "url": "https://developers.binance.com/en",
+   "title": "Developer Center",
+   "snippet": "come from the same place.\n```\n# Send the user to Binance for consentGET https://accounts.binance.com/en/oauth/authorize  ?response_type=code  &client_id=YOUR_CLIENT_ID "
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://developers.binance.com/en/docs/introduction",
+   "title": "Binance Developer Documentation",
+   "snippet": "Binance. It covers the main programmatic interfaces available across Binance products, from market data access and account operations to advanced trading, streaming, and lower-latency integrations."
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://developers.binance.com/en/docs/products/sub-account/general-info",
+   "title": "General Info",
+   "snippet": "endpoints are available:\n- **[https://api.binance.com](https://api.binance.com)**\n- **[https://api-gcp.binance.com](https://api-gcp.binance.com)**\n-"
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://developers.binance.com/en/docs/",
+   "title": "Binance Developer Docs",
+   "snippet": "Official Binance API documentation for spot, derivatives, margin, wallet, and more. Includes REST API, WebSocket API, SDKs, and code examples."
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://developers.binance.com/en",
+   "title": "Developer Center",
+   "snippet": "01\nEnroll\nCreate your developer account and complete business verification once to unlock every product.\n02\nBuild\nPick a product, follow the documentation, and integrate with our REST and"
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://developers.binance.com/docs/c2c",
+   "title": "Quick Start",
+   "snippet": "## API Key Setup\n- Some endpoints will require an API Key. Please refer to [this page](https://www.binance.com/en/support/articles/360002502072) regarding API key creation.\n- Once API key is created,"
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://developers.binance.com/en/docs/products/caas/integration-guide",
+   "title": "Crypto-As-A-Service \u2014 Integration Guideline | Binance Developer Docs",
+   "snippet": "| Capability | What you get |\n|---|---|\n| Sub-account management | One Binance account per end user, created and controlled through your master account. |\n| Per-user API credentials | An API key"
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://www.binance.com/en/square/post/324741685577521",
+   "title": "6 Best Crypto APIs",
+   "snippet": "Recommended: Standard plan ($299/month) for professional traders and small teams. Ideal For. Algorithmic trading bot developers. AI agents ..."
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://docs.binance.us",
+   "title": "Binance.US API Documentation",
+   "snippet": "- New endpoint `GET /api/v3/account/commission` returns current account commission rates (standard and tax commission, plus discount information). Weight: 20; `symbol` required."
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+   "title": "General REST API Information",
+   "snippet": "your setup:\n- **[https://api.binance.com](https://api.binance.com)**\n- **[https://api-gcp.binance.com](https://api-gcp.binance.com)**\n-"
+  },
+  {
+   "q": "Binance API access pricing plans developer account",
+   "url": "https://binance.com/en/binance-api",
+   "title": "Buy/Sell Bitcoin, Ether and Altcoins | Cryptocurrency Exchange | Binance",
+   "snippet": "Facing a problem in development? Find help from the developer community. We would like to hear from you! Share your thoughts with us."
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic",
+   "title": "Binance MCP Server",
+   "snippet": "read market data, check balances, trade Spot / Margin / Convert / USD\u24c8-M / COIN-M Futures, and move funds between wallets inside a dedicated Agentic sub-account \u2014 no local install, no API keys on"
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://developers.binance.com/en/docs/agent-native/mcp-server",
+   "title": "MCP Server",
+   "snippet": "[Model Context Protocol](https://modelcontextprotocol.io/) (MCP) is an open standard that lets AI agents and coding assistants connect to external tools and data sources over a single, well-defined"
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://developers.binance.info/en/docs/agent-native/mcp-server/agentic",
+   "title": "Binance MCP Server",
+   "snippet": "read market data, check balances, trade Spot / Margin / Convert / USD\u24c8-M / COIN-M Futures, and move funds between wallets inside a dedicated Agentic sub-account \u2014 no local install, no API keys on"
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://www.binance.com/en/square/post/24190251764505",
+   "title": "MCP + AI Agent",
+   "snippet": "API 1.0 update launched a dedicated MCP server, which includes plug-and-play intelligent agent-specific MCP servers designed for developers and ..."
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://www.binance.com/en-ZA/agent-os",
+   "title": "MCP Server for Crypto AI Agents",
+   "snippet": "Connect your AI agents to Binance through MCP and ready-made skills for analyzing market data, trading, agentic payments, and other on-chain actions."
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://binance.com/en/blog/ecosystem/5991233187660196794",
+   "title": "Built for AI Agent Integration | Binance Blog",
+   "snippet": "server.** Open your terminal, then copy and paste the following command:\n*claude mcp add binance-mcp-server --transport http https://agent.binance.com/mcp/agentic*\n2. **Open your agent"
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://binance.com/en/support/faq/detail/7a6e676e36fb455d96478932cb12d9f3",
+   "title": "What Is the Binance MCP Server? | Binance Support",
+   "snippet": "#### **What is the Binance MCP Server?**\nThe Binance MCP Server is an MCP (Model Context Protocol) endpoint that lets MCP-compatible AI agents connect to Binance using a single URL and an"
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://binance.com/en/support/announcement/detail/07d45cdd3831498f8a4ff339031a8480",
+   "title": "Introducing Binance Agent OS | ,binance news,binance announcement",
+   "snippet": "**Step 1: Connect an AI agent via MCP**: Add the **MCP endpoint** [https://agent.binance.com/mcp/agentic](https://agent.binance.com/mcp/agentic) to any compatible AI agent supported by Binance MCP."
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://github.com/TermiX-official/binance-mcp",
+   "title": "GitHub - TermiX-official/binance-mcp: binance-mcp",
+   "snippet": "## License\nThis project is open-source under the MIT License.\nFor contributions, bug reports, or feature requests, submit an issue on [GitHub](https://github.com/your-repo/binance-mcp-server)."
+  },
+  {
+   "q": "Binance MCP server official",
+   "url": "https://raw.githubusercontent.com/xhrissboost/agent-os-desk/main/CONNECT.md",
+   "title": "raw.githubusercontent.com/xhrissboost/agent-os-desk/main/CONNECT.md",
+   "snippet": "/ Binance MCP Server**. Campaign name: **Agent OS**.\n| | |\n|---|---|\n| Endpoint | `https://agent.binance.com/mcp/agentic` |\n| Transport | Streamable HTTP |\n| Auth | OAuth (browser). **No API keys**"
+  }
+ ],
+ "official_domain_candidates": {
+  "binance.com": 34,
+  "binance.us": 2,
+  "binance.info": 2
+ },
+ "identity_flag": "multiple_candidate_domains_review_identity",
+ "selected_domain": "binance.com",
+ "completed": "2026-11-23T19:40:19+05:30"
+}

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en" data-view="articles"  data-layout="api2">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Authentication – Harvest API V2 Documentation</title>
+    <meta name="description" content="Introduction">
+
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+
+    <header class="page-header forecast-header pds-pt-md">
+      <div class="pds-container-lg">
+        <div class="pds-flex-list pds-flex-wrap pds-justify-between">
+          <a class="logo" href="/api-v2">
+            <img src="/images/harvest-logo.svg" alt="Harvest">
+            <span>API V2 Documentation</span>
+          </a>
+          <div class="pds-flex-list pds-flex-wrap">
+            <a class="pds-button" href="https://www.getharvest.com/contact?from=helpcenter" target="_blank">Contact Us</a>
+            <a class="pds-button pds-button-primary" href="https://www.getharvest.com/contact?from=helpcenter&topic=api" target="_blank">
+              <img src="/images/icon-email-rebrand.svg" alt="email" class="pds-mr-sm">
+              Request new API
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <div id="search">
+        <div class="pds-container-md">
+          <h1 class="pds-mb-md">Welcome to the Harvest API v2 Help Center</h1>
+          <input type="text" class="st-default-search-input" placeholder="Search the API Documentation" autofocus>
+        </div>
+      </div>
+
+      
+      <div class="breadcrumbs-wrapper">
+        <div class="pds-container-lg pds-py-sm">
+          <ol class="breadcrumbs">
+            <li title="Harvest API V2 Documentation">
+              <a href="/api-v2/">Harvest API V2 Documentation</a>
+            </li>
+            
+            
+            
+            
+            
+              
+                <li title="
+            
+            Authentication
+            
+            API
+            
+            ">
+                  <a href="/api-v2/authentication-api">
+            
+            Authentication
+            
+            API
+            
+            </a>
+                </li>
+              
+              <li title="Authentication">
+                <a href="/api-v2/authentication-api/authentication/authentication/">Authentication</a>
+              </li>
+            
+          </ol>
+        </div>
+      </div>
+      
+
+      <div class=" pds-container-lg  pds-py-sm pds-mb-lg">
+        <div role="alert" class="pds-card pds-card-notice pds-p-sm">This is the <a href="https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2/">current</a> API V2 documentation. You can still view the <a href="/api-v1/">legacy API V1 documentation</a>.</div>
+      </div>
+
+      <div class="pds-container-lg">
+  <div class="pds-row">
+    <div class="pds-column-9">
+      <button type="button" class="pds-button pds-button-sm button-show-sidebar js-show-sidebar js-toggle-sidebar">
+  <img src="/images/icon-menu.svg" class="pds-mr-xs" alt="" aria-hidden="true">
+  Help Topics
+</button>
+
+
+      <article class="post" data-swiftype-index="true">
+        <h1 class="post-title" data-swiftype-name="title" data-swiftype-type="string">
+          Authentication
+        </h1>
+
+        <div class="post-content" data-swiftype-name="body" data-swiftype-type="text">
+          <h2 id="introduction">Introduction</h2>
+
+<p>The V2 API requires an access token to authenticate requests. There are two options available to you:</p>
+
+<ul>
+  <li>A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API.</li>
+  <li>Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations.</li>
+</ul>
+
+<h2 id="personal-access-tokens">Personal access tokens</h2>
+
+<p>The API can be accessed by creating a Personal Access Token from the <a href="https://id.getharvest.com/developers"><strong>Developers</strong></a>
+section of Harvest ID. After creating it you’ll be provided with a random token and a list of your account IDs.</p>
+
+<p>Personal Access Tokens are the preferred method when you want to write your own scripts that consume our API. Typical use cases
+for Personal Access Tokens are scripts that build custom reports, sync data between different accounts, or automate tasks that
+would otherwise take a long time when done manually.</p>
+
+<p>Personal Access Tokens replace the Basic Authentication method that was used in our v1 API, as this is more secure. Within the <a href="https://id.getharvest.com/developers"><strong>Developers</strong></a> section you’ll see a list of all your Personal Access Tokens, when they were last used, and you’ll be able to easily revoke them if necessary.</p>
+
+<p>Once generated, a Personal Access Token can be used to access the API by either providing the token in the Authorization header or including it in the query string. Each request will require your account ID as well, since you can use this Personal Access Token to access any of your Harvest or Forecast accounts.</p>
+
+<h3 id="header-authentication-example">Header authentication example</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-H</span> <span class="s2">"Authorization: Bearer </span><span class="nv">$ACCESS_TOKEN</span><span class="s2">"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"Harvest-Account-Id: </span><span class="nv">$ACCOUNT_ID</span><span class="s2">"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"User-Agent: MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f46504a4d515e525a7f5a475e524f535a115c5052">[email&#160;protected]</a>)"</span> <span class="se">\</span>
+     https://api.harvestapp.com/v2/users/me</code></pre></figure>
+
+<h3 id="query-string-authentication-example">Query string authentication example</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-H</span> <span class="s2">"User-Agent: MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="21584e54534f404c44614459404c514d440f424e4c">[email&#160;protected]</a>)"</span> <span class="se">\</span>
+     <span class="s2">"https://api.harvestapp.com/v2/users/me?access_token=</span><span class="nv">$ACCESS_TOKEN</span><span class="s2">&amp;account_id=</span><span class="nv">$ACCOUNT_ID</span><span class="s2">"</span></code></pre></figure>
+
+<h2 id="oauth2-application">OAuth2 application</h2>
+
+<p>If you are interested in building integrations that other users can use, you will need to register an OAuth2 Application, also
+known as an OAuth2 Client. The application can be created from the <a href="https://id.getharvest.com/developers"><strong>Developers</strong></a> section
+of Harvest ID, and you will be required to provide some information:</p>
+
+<ul>
+  <li><strong>Name</strong>–name of your application.</li>
+  <li><strong>Redirect URL</strong>–the URL in your integration; successful authentications will be redirected to by default.</li>
+  <li><strong>Multi Account</strong>–does your integration support multiple user account access or work with only one authenticated account.</li>
+  <li><strong>Products</strong>–scope of access requested; can be either Harvest, Forecast or both. It is advised to pick the minimal scope
+required for the integration to work.</li>
+</ul>
+
+<h2 id="oauth2-authorization-flow">OAuth2 authorization flow</h2>
+
+<h3 id="for-server-side-applications">For server-side applications</h3>
+
+<p>We use the <a href="https://tools.ietf.org/html/rfc6749#section-4.1">Authorization Code flow</a> for
+server-side authorization. To start the authorization flow, you need to redirect the user to the following URL:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://id.getharvest.com/oauth2/authorize?client_id={CLIENT_ID}&amp;response_type=code
+</code></pre></div></div>
+
+<p>This URL allows the user to authenticate on Harvest ID and lets them authorize access to their account(s) depending on your OAuth2 Application settings and their choice.</p>
+
+<p>This endpoint accepts other parameters:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">state</code>–(optional) used to pass any value that will get sent back to you when redirecting back to your application.</li>
+  <li><code class="language-plaintext highlighter-rouge">redirect_uri</code>–(optional) the default Redirect URL can be further customized here if needed, but needs to start with the Redirect
+URL registered with your Application.</li>
+</ul>
+
+<p>After a successful authorization, the user will be redirected back to the Redirect URL you specified when registering your OAuth2
+application, or the <code class="language-plaintext highlighter-rouge">redirect_uri</code> you provided. These parameters will be attached:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code>–an authorization code that you will have to exchange for a set of Refresh and Access Tokens. You will be able to use this
+Access Token to access the user’s account on their behalf.</li>
+  <li><code class="language-plaintext highlighter-rouge">state</code>–(optional) contains the original value for the <code class="language-plaintext highlighter-rouge">state</code> parameter that was passed at the beginning of the authorization.</li>
+  <li><code class="language-plaintext highlighter-rouge">scope</code>–contains a list of space-separated strings describing the granted access scope. See the <a href="/api-v2/authentication-api/authentication/authentication/#scopes-and-account-access"><strong>Scopes</strong></a> section for further
+explanation.</li>
+</ul>
+
+<p>Once you have the Authorization Code, you can exchange it for a set of Access and Refresh Tokens:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-X</span> POST <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"User-Agent: MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b42544e49555a565e7b5e435a564b575e15585456">[email&#160;protected]</a>)"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"code=</span><span class="nv">$AUTHORIZATION_CODE</span><span class="s2">"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"client_id=</span><span class="nv">$CLIENT_ID</span><span class="s2">"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"client_secret=</span><span class="nv">$CLIENT_SECRET</span><span class="s2">"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"grant_type=authorization_code"</span> <span class="se">\</span>
+  <span class="s1">'https://id.getharvest.com/api/v2/oauth2/token'</span></code></pre></figure>
+
+<p>Response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="nl">"access_token"</span><span class="p">:</span><span class="w">  </span><span class="s2">"{ACCESS_TOKEN}"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"refresh_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{REFRESH_TOKEN}"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"token_type"</span><span class="p">:</span><span class="w">    </span><span class="s2">"bearer"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"expires_in"</span><span class="p">:</span><span class="w">    </span><span class="mi">1209600</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>When your Access Token is about to expire, you can use the Refresh Token to get a new Access Token:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-X</span> POST <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"User-Agent: MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="720b1d07001c131f1732170a131f021e175c111d1f">[email&#160;protected]</a>)"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Accept: application/json"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"refresh_token=</span><span class="nv">$REFRESH_TOKEN</span><span class="s2">"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"client_id=</span><span class="nv">$CLIENT_ID</span><span class="s2">"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"client_secret=</span><span class="nv">$CLIENT_SECRET</span><span class="s2">"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"grant_type=refresh_token"</span> <span class="se">\</span>
+  <span class="s1">'https://id.getharvest.com/api/v2/oauth2/token'</span></code></pre></figure>
+
+<p>Response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="nl">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{NEW_ACCESS_TOKEN}"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"refresh_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{REFRESH_TOKEN}"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"token_type"</span><span class="p">:</span><span class="w">    </span><span class="s2">"bearer"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"expires_in"</span><span class="p">:</span><span class="w">    </span><span class="mi">1209600</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h3 id="for-client-side-applications">For client-side applications</h3>
+
+<p>We use the <a href="https://tools.ietf.org/html/rfc6749#section-4.2">Implicit Grant flow</a> for client-side authorization. These
+are typically applications that run entirely on the browser and issue Cross-Origin requests to our API. The difference is that you’ll get a single Access Token back that you can use immediately.</p>
+
+<p>If a backend server is available, we recommend the <a href="https://tools.ietf.org/html/rfc6749#section-4.1">Authorization Code flow</a>, because it’s more secure and the access token is never
+visible by a browser.</p>
+
+<p>To start the authorization flow, redirect the user to the following URL:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://id.getharvest.com/oauth2/authorize?client_id={CLIENT_ID}&amp;response_type=token
+</code></pre></div></div>
+
+<p>This URL allows the user to authenticate on Harvest ID and lets them authorize access to their account(s) depending on your OAuth2
+Application settings and their choice.</p>
+
+<p>This endpoint accepts other parameters:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">state</code>–(optional) used to pass any value that will get sent back to you when redirecting back to your application.</li>
+  <li><code class="language-plaintext highlighter-rouge">redirect_uri</code>–(optional) the default Redirect URL can be further customized here if needed, but needs to start with the Redirect
+URL registered with your Application.</li>
+</ul>
+
+<p>After a successful authorization, the user will be redirected back to the Redirect URL you specified when registering your OAuth2
+application, or the <code class="language-plaintext highlighter-rouge">redirect_uri</code> you provided. These parameters will be attached:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">access_token</code>–the Access Token token that can be used to authenticate the requests on the user’s behalf.</li>
+  <li><code class="language-plaintext highlighter-rouge">token_type</code>–will always be <code class="language-plaintext highlighter-rouge">bearer</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">expires_in</code>–time in seconds until the token expires.</li>
+  <li><code class="language-plaintext highlighter-rouge">state</code>–(optional) contains the original value for the <code class="language-plaintext highlighter-rouge">state</code> parameter that was passed at the beginning of the authorization.</li>
+  <li><code class="language-plaintext highlighter-rouge">scope</code>–contains a list of space-separated strings describing the granted access scope. See the <a href="/api-v2/authentication-api/authentication/authentication/#scopes-and-account-access"><strong>Scopes</strong></a> section for further
+explanation.</li>
+</ul>
+
+<h2 id="scopes-and-account-access">Scopes and account access</h2>
+
+<p>Personal Access Tokens have the <code class="language-plaintext highlighter-rouge">all</code> scope by default, so you have full access to all of your accounts. For OAuth2 Applications,
+it can vary depending on the options you selected and the authorization the user might give you.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">scope</code> can contain one or more of these values:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">harvest:{ACCOUNT_ID}</code>–a Harvest account ID that the user granted access to.</li>
+  <li><code class="language-plaintext highlighter-rouge">forecast:{ACCOUNT_ID}</code>–a Forecast account ID that the user granted access to.</li>
+  <li><code class="language-plaintext highlighter-rouge">harvest:all</code>–the user granted access to all of their Harvest accounts.</li>
+  <li><code class="language-plaintext highlighter-rouge">forecast:all</code>–the user granted access to all of their Forecast accounts.</li>
+  <li><code class="language-plaintext highlighter-rouge">all</code>–the user granted access to all of their accounts.</li>
+</ul>
+
+<p>If you registered your app as needing access to just one account, the user will choose which account to authorize, and you’ll only
+get one scope back, either <code class="language-plaintext highlighter-rouge">harvest:{ACCOUNT_ID}</code> or <code class="language-plaintext highlighter-rouge">forecast:{ACCOUNT_ID}</code>, depending on which products you chose to work with.</p>
+
+<p>If your app can work with multiple accounts, you can get any combination of those scopes depending on what the user chose to
+authorize. Use that list or consume Harvest ID’s <code class="language-plaintext highlighter-rouge">accounts</code> endpoint to figure out which accounts you can access:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://id.getharvest.com/api/v2/accounts
+</code></pre></div></div>
+
+<p>Example Request (note that the account ID is not necessary):</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="s2">"https://id.getharvest.com/api/v2/accounts"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: Bearer </span><span class="nv">$ACCESS_TOKEN</span><span class="s2">"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"User-Agent: MyApp (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="84fdebf1f6eae5e9e1c4e1fce5e9f4e8e1aae7ebe9">[email&#160;protected]</a>)"</span></code></pre></figure>
+
+<p>Example Response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="nl">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Albert"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Llop"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="42232e2027303602273a232f322e276c212d2f">[email&#160;protected]</a>"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"accounts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10254</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sterling Cooper Advertising Agency"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"product"</span><span class="p">:</span><span class="w"> </span><span class="s2">"harvest"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">88888</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Iridesco"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"product"</span><span class="p">:</span><span class="w"> </span><span class="s2">"forecast"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">88903</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sterling Cooper Advertising Agency"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"product"</span><span class="p">:</span><span class="w"> </span><span class="s2">"forecast"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+
+        </div>
+      </article>
+
+      <div class="pds-card pds-card-secondary pds-p-md pds-mt-xl">
+  <div class="pds-flex-list pds-justify-between">
+    <h4>Still have questions? We’re happy to help!</h4>
+    <a href="https://www.getharvest.com/contact?from=helpcenter" class="pds-button pds-button-primary" target="_blank">Contact Us</a>
+  </div>
+</div>
+
+
+      <button type="button" class="pds-button pds-button-sm button-show-sidebar js-show-sidebar js-toggle-sidebar">
+  <img src="/images/icon-menu.svg" class="pds-mr-xs" alt="" aria-hidden="true">
+  Help Topics
+</button>
+
+    </div>
+
+    <aside class="pds-column-3 post-nav">
+      <button type="button" class="pds-button pds-button-sm button-hide-sidebar js-toggle-sidebar">
+        <img src="/images/icon-close.svg" class="pds-mr-xs" alt="" aria-hidden="">
+        Close Topics
+      </button>
+
+      
+      
+      
+
+<h4 class="pds-mb-md">Authentication</h4>
+<nav>
+  <ul>
+    
+      
+      
+        
+        
+          
+            <li class="pds-mt-sm">
+  <a href="/api-v2/authentication-api/authentication/authentication/" class="sidenav-item is-active-post">Authentication</a>
+</li>
+
+          
+        
+      
+    
+  </ul>
+</nav>
+
+    </aside>
+  </div>
+</div>
+
+
+      
+    </main>
+
+    <footer class="page-footer">
+  <div class="pds-container-lg pds-py-lg">
+    <div class="footer-box">
+      Just need to add time tracking to your app?
+      <a href="https://www.getharvest.com/add-time-tracking" class="pds-color-inherit" target="_blank">Check out the
+        easy-to-use Harvest Button & Widget</a>.
+    </div>
+
+    <div class="pds-row">
+      <div class="pds-column-6">
+        <a href="https://www.getharvest.com" class="footer-box footer-hf" target="_blank">
+          <div class="pds-h3 pds-mb-xs">Harvest</div>
+          Modern time tracking trusted by 70,000+ businesses. Learn more
+        </a>
+      </div>
+
+      <div class="pds-column-6">
+        <a href="https://www.getharvest.com/forecast" class="footer-box footer-hf" target="_blank">
+          <div class="pds-h3 pds-mb-xs">Harvest Forecast</div>
+          The fast and simple way to schedule your team across projects. Learn more
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="https://www.getharvest.com/about">© 2006–2026 Harvest | <a
+          href="https://www.harveststatus.com/">Status</a></a>
+    </div>
+  </div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="/javascript/helpcenter.js"></script>
+    <script type="text/javascript" src="/javascript/api.js"></script>
+    <script type="text/javascript">
+      (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+      (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+      e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+      })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+      _st('install','chnWDsKrQ3LfUecds3z4','2.0.0');
+    </script>
+  </body>
+</html>

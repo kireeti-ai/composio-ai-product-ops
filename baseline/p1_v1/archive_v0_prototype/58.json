@@ -1,0 +1,30 @@
+{
+ "id": 58,
+ "name": "Sherlock",
+ "checks": [
+  {
+   "field": "auth_methods",
+   "claim": "Sherlock API supports these auth methods: unknown",
+   "verdict": "contradicted",
+   "reason": "Excerpt states Sherlock requires no API keys or login credentials, so claiming it supports unknown auth methods is contradicted."
+  },
+  {
+   "field": "access",
+   "claim": "Developer access for Sherlock is 'self_serve_free' (The core CLI tool is free. Some third-party services built around Sherlock are freemium or paid.)",
+   "verdict": "supported",
+   "reason": "Excerpt confirms core CLI tool is free; third\u2011party services are freemium or paid, matching the claim."
+  },
+  {
+   "field": "api_types",
+   "claim": "Sherlock offers these API types: sdk_or_cli_only",
+   "verdict": "supported",
+   "reason": "Excerpt confirms Sherlock is a CLI\u2011only tool, matching the sdk_or_cli_only classification."
+  },
+  {
+   "field": "existing_mcp",
+   "claim": "MCP server status for Sherlock: community",
+   "verdict": "not_enough_info",
+   "reason": "Excerpt lacks any mention of MCP server status or community context for Sherlock."
+  }
+ ]
+}

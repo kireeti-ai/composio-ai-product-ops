@@ -1,0 +1,56 @@
+{
+ "id": 49,
+ "name": "Amazon Selling Partner",
+ "category": "Ecommerce",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications?ld=NSGoogle&pageName=US:SPDS:SPAPI-vendor",
+  "https://developer-docs.amazon.com/sp-api/docs/tutorial-test-selling-partner-api-endpoints",
+  "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api-using-a-generated-java-sdk",
+  "https://developer-docs.amazon.com/sp-api/docs/using-postman-for-selling-partner-api-models"
+ ],
+ "one_liner": "Amazon Selling Partner API (SP-API) provides REST APIs for developers to build applications managing Amazon seller and vendor business data.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token"
+ ],
+ "access": "approval_or_review_required",
+ "access_note": "Developers must register an application and submit a developer profile for review, although sandbox testing endpoints can be accessed while the profile is under review.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes_with_caveats",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications?ld=NSGoogle&pageName=US:SPDS:SPAPI-vendor",
+   "quote": "Authorization method: OAuth 2.0 through Login with Amazon (LWA).",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developer-docs.amazon.com/sp-api/docs/tutorial-test-selling-partner-api-endpoints",
+   "quote": "Use the Solution Provider Portal to register a sandbox application, with which you can call sandbox endpoints without seller authorization and while your developer profile is under review.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developer-docs.amazon.com/sp-api/docs/tutorial-test-selling-partner-api-endpoints",
+   "quote": "Make a GET Call to /orders/v0/orders.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications?ld=NSGoogle&pageName=US:SPDS:SPAPI-vendor",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ]
+}

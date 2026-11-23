@@ -1,0 +1,78 @@
+{
+ "tag": "groq_orgA",
+ "app": 41,
+ "name": "Shopify",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 3,
+ "latency_s": 2.62,
+ "tokens_in": 1964,
+ "tokens_out": 915,
+ "cost_usd": 0,
+ "validation": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": [],
+  "n_evidence": 4,
+  "quote_found": 4,
+  "url_ok": 4,
+  "quote_only_in_full": 0
+ },
+ "output": {
+  "one_liner": "Shopify provides a comprehensive suite of REST and GraphQL APIs for ecommerce merchants, enabling app developers to manage products, orders, customers, and more.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can create and manage apps, set up dev stores, and obtain API credentials directly in the Dev Dashboard without a paid plan.",
+  "api_breadth": "broad",
+  "api_types": [
+   "rest",
+   "graphql"
+  ],
+  "existing_mcp": "official",
+  "buildability": "yes_with_caveats",
+  "blocker": "Requires OAuth app installation and merchant approval for access scopes.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "GraphQL Admin API | Your app, on behalf of a merchant | OAuth, usually token exchange",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "access",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "The Dev Dashboard is where you create and manage apps, set up dev stores, and see how your app performs for merchants.",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin.",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://shopify.dev/docs/api",
+    "quote": "Shopify MCP lets merchants and partners set up and manage a store through the AI agent of their choice.",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   }
+  ]
+ },
+ "raw_text": null,
+ "unsupported_claim_fields": [],
+ "prompt_sha256": "5cfb24dc81cc82e1124bead5c2084da91c6a3930d4cb6faa3c71cc4f1ee74832",
+ "at": "2026-11-23T19:14:23+05:30"
+}

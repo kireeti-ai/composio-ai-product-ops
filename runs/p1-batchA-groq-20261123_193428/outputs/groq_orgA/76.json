@@ -1,0 +1,145 @@
+{
+ "tag": "groq_orgA",
+ "app": 76,
+ "name": "Monday.com",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 7,
+ "latency_s": 2.93,
+ "tokens_in": 2270,
+ "tokens_out": 748,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.monday.com/apps/docs/choosing-auth",
+    "quote": "The monday API uses token-based authentication. * Seamless Authentication using monday SDK * Seamless Authentication using shortTermToken * Using an OAuth Access Token * Using a user\u2019s global API token",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://developer.monday.com/api-reference/docs/getting-started",
+    "quote": "After setting up your monday.com account, you must authenticate with an Access Token.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.monday.com/api-reference/docs/getting-started",
+    "quote": "GraphQL APIs use a single endpoint for all operations (unlike REST APIs). Our API endpoint is: `https://api.monday.com/v2`",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "unknown",
+    "quote": "unknown",
+    "issues": [
+     "placeholder_or_too_short",
+     "url_not_in_sources"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "graphql",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 4,
+   "supported_lexical": 1,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 4,
+  "evidence_valid": 2,
+  "issue_counts": {
+   "placeholder_or_too_short": 1,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 1,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Monday.com provides a GraphQL API secured via token\u2011based authentication (OAuth, SDK, or user API tokens) that developers can obtain from their own account.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can generate an access token from their own Monday.com account (Avatar\u202f\u2192\u202fDevelopers) without needing a paid plan or approval.",
+  "api_breadth": "narrow",
+  "api_types": [
+   "graphql"
+  ],
+  "existing_mcp": "none_found",
+  "buildability": "yes_with_caveats",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.monday.com/apps/docs/choosing-auth",
+    "quote": "The monday API uses token-based authentication. * Seamless Authentication using monday SDK * Seamless Authentication using shortTermToken * Using an OAuth Access Token * Using a user\u2019s global API token"
+   },
+   {
+    "field": "access",
+    "url": "https://developer.monday.com/api-reference/docs/getting-started",
+    "quote": "After setting up your monday.com account, you must authenticate with an Access Token."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.monday.com/api-reference/docs/getting-started",
+    "quote": "GraphQL APIs use a single endpoint for all operations (unlike REST APIs). Our API endpoint is: `https://api.monday.com/v2`"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "unknown",
+    "quote": "unknown"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "c0ad3b3a791f9cc185b35562f64ddf79c343e6a5324a8a6b452a47de332e15ee",
+ "at": "2026-11-23T19:38:38+05:30"
+}

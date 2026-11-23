@@ -1,0 +1,225 @@
+{
+ "created": "2026-11-23T18:23:11+0530",
+ "seed": 20261124,
+ "note": "REAL model calls on REAL stored sources after approval. Controls are sensitivity checks, not accuracy.",
+ "S1a_replays": [
+  {
+   "registry_id": 14,
+   "field": "existing_mcp",
+   "old_problem": "'beta' MCP read as contradicting 'official'",
+   "model_calls": 1
+  },
+  {
+   "registry_id": 49,
+   "field": "existing_mcp",
+   "old_problem": "OAuth/LWA quote used to contradict 'none_found'",
+   "model_calls": 1
+  },
+  {
+   "registry_id": 28,
+   "field": "auth_methods",
+   "old_problem": "'OAuth (not 2.0)' wording vs oauth2",
+   "model_calls": 1
+  },
+  {
+   "registry_id": 5,
+   "field": "access",
+   "old_problem": "adversarial survivor: unrelated 'no static API reference' quote",
+   "model_calls": 1
+  }
+ ],
+ "S1a_deterministic_no_model_call": [
+  {
+   "registry_id": 2,
+   "field": "api_types"
+  },
+  {
+   "registry_id": 4,
+   "field": "api_types"
+  },
+  {
+   "registry_id": 22,
+   "field": "api_types"
+  },
+  {
+   "registry_id": 84,
+   "field": "api_types"
+  },
+  {
+   "registry_id": 58,
+   "field": "auth_methods"
+  }
+ ],
+ "S1b_negative_controls": [
+  {
+   "control_id": "N01_23_soap",
+   "registry_id": 23,
+   "field": "api_types",
+   "planted_item": "soap",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N02_19_websocket",
+   "registry_id": 19,
+   "field": "api_types",
+   "planted_item": "websocket",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N03_8_jwt_or_signed",
+   "registry_id": 8,
+   "field": "auth_methods",
+   "planted_item": "jwt_or_signed",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N04_3_official",
+   "registry_id": 3,
+   "field": "existing_mcp",
+   "planted_item": "official",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N05_12_soap",
+   "registry_id": 12,
+   "field": "api_types",
+   "planted_item": "soap",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N06_18_websocket",
+   "registry_id": 18,
+   "field": "api_types",
+   "planted_item": "websocket",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N07_11_jwt_or_signed",
+   "registry_id": 11,
+   "field": "auth_methods",
+   "planted_item": "jwt_or_signed",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N08_14_soap",
+   "registry_id": 14,
+   "field": "api_types",
+   "planted_item": "soap",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N09_9_official",
+   "registry_id": 9,
+   "field": "existing_mcp",
+   "planted_item": "official",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N10_51_websocket",
+   "registry_id": 51,
+   "field": "api_types",
+   "planted_item": "websocket",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N11_49_jwt_or_signed",
+   "registry_id": 49,
+   "field": "auth_methods",
+   "planted_item": "jwt_or_signed",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  },
+  {
+   "control_id": "N12_13_official",
+   "registry_id": 13,
+   "field": "existing_mcp",
+   "planted_item": "official",
+   "expected": "NOT supported (insufficient_evidence expected; contradicted only with an explicit negating quote)"
+  }
+ ],
+ "S1c_positive_controls": [
+  {
+   "control_id": "P01_11_access",
+   "registry_id": 11,
+   "field": "access",
+   "item": "self_serve_trial_or_paid_plan :: Developers can sign up for a free 14-day trial account to test the Sunshine platform and APIs.",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P02_84_auth_methods",
+   "registry_id": 84,
+   "field": "auth_methods",
+   "item": "bearer_token",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P03_4_auth_methods",
+   "registry_id": 4,
+   "field": "auth_methods",
+   "item": "api_key",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P04_28_auth_methods",
+   "registry_id": 28,
+   "field": "auth_methods",
+   "item": "bearer_token",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P05_9_access",
+   "registry_id": 9,
+   "field": "access",
+   "item": "self_serve_trial_or_paid_plan :: API keys can be generated directly by users/admins in Copper system settings. OAuth 2.0 app registration requires contacting Copper support.",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P06_8_access",
+   "registry_id": 8,
+   "field": "access",
+   "item": "self_serve_trial_or_paid_plan :: API keys and OAuth apps can be managed directly in a Close account under Settings \u2192 Developer.",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P07_18_auth_methods",
+   "registry_id": 18,
+   "field": "auth_methods",
+   "item": "oauth2",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P08_14_api_types",
+   "registry_id": 14,
+   "field": "api_types",
+   "item": "rest",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P09_19_access",
+   "registry_id": 19,
+   "field": "access",
+   "item": "self_serve_free :: Private apps do not require approval and can be built directly using REST API credentials, whereas public apps require joining the Developer Portal and app review.",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P10_23_api_types",
+   "registry_id": 23,
+   "field": "api_types",
+   "item": "rest",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P11_5_api_types",
+   "registry_id": 5,
+   "field": "api_types",
+   "item": "rest",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  },
+  {
+   "control_id": "P12_17_api_types",
+   "registry_id": 17,
+   "field": "api_types",
+   "item": "graphql",
+   "expected": "supported (Pass-1 quote is verbatim in the sources and names the item)"
+  }
+ ]
+}

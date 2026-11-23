@@ -1,0 +1,238 @@
+{
+  "captured_at_utc": "2026-11-23T15:47:42Z",
+  "capture_method": "Official first-party pages opened through web research tool; source quotations retained as excerpts. Full page bytes were not available from the tool, so only quote_sha256 is provided; this is not a page-content hash.",
+  "records_are_accepted_extractions": false,
+  "model_calls": 0,
+  "paid_calls": 0,
+  "records": [
+    {
+      "id": 83,
+      "name": "Binance",
+      "research_state": "partial_primary_evidence",
+      "failed_hint_attempt": {
+        "url": "https://binance-docs.github.io/",
+        "outcome": "HTTP 404",
+        "preserved_in": "ATTEMPTS.json"
+      },
+      "claims": [
+        {
+          "field": "api_documentation",
+          "claim": "An official Binance API documentation portal exists and directs users to product-family-specific developer documentation.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://developers.binance.com/en/docs/introduction",
+          "quote": "This portal is the central reference for developers building applications, services, and trading systems that integrate with Binance.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official developer documentation",
+          "quote_sha256": "377e164389d373fb55008f6ba828c2d830ecebf4b837c2d1c702b176b4c57eaf"
+        },
+        {
+          "field": "authentication",
+          "claim": "Spot API supports HMAC, RSA and Ed25519 key types; secure endpoints require API-key authentication and signing.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+          "quote": "We support HMAC, RSA, and Ed25519 keys.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official API reference",
+          "quote_sha256": "0a771e07bfe3011f0b65f65faf22f64dca08c948eb836a65b8e1b65b3b38915a"
+        }
+      ],
+      "unknowns": [
+        "API access gating and account requirements not established in this targeted excerpt set.",
+        "MCP and Composio coverage not checked here.",
+        "Need product-family-specific read/write and rate-limit audit."
+      ]
+    },
+    {
+      "id": 86,
+      "name": "QuickBooks",
+      "research_state": "partial_primary_evidence",
+      "claims": [
+        {
+          "field": "api_types",
+          "claim": "QuickBooks Online Accounting API uses REST and GraphQL.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+          "quote": "The QuickBooks Online Accounting API utilizes the REST architecture and GraphQL",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official developer documentation",
+          "quote_sha256": "3a6e07936d6b9047e57e53971f32b433aa1f6bc05413f5bb739e7c29ffdb920c"
+        },
+        {
+          "field": "authentication_and_access",
+          "claim": "Creating an app requires signing in to the Intuit Developer Portal; OAuth 2.0 is the documented user authorization flow.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+          "quote": "Start by signing in to your developer account and creating an app on the Intuit Developer Portal.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official authentication guide",
+          "quote_sha256": "820225bf2353300537db32deee16a3f52e4c2f7f70767ef849eb05fd1a9517f2"
+        },
+        {
+          "field": "access_restriction",
+          "claim": "Some premium APIs are restricted to partner tiers.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/premium-apis.html",
+          "quote": "Premium APIs are part of the Intuit App Partner Program and are available to Silver, Gold, and Platinum partners only.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official access documentation",
+          "quote_sha256": "7f3997de54d63dce1cfbb20bdc85c95fe83f4e3ed86d840bd747e3810b22a750"
+        }
+      ],
+      "unknowns": [
+        "MCP described by Intuit is a developer-onboarding assistant; do not classify it as a user-facing QuickBooks MCP connector without further evidence.",
+        "Composio tool coverage not checked in this top-up."
+      ]
+    },
+    {
+      "id": 91,
+      "name": "NotebookLM",
+      "research_state": "partial_primary_evidence_identity_scope_clarified",
+      "identity_note": "The supplied assignment hint says Enterprise API. The matching official page is Gemini Notebook Enterprise / NotebookLM Enterprise; do not generalize this API to the consumer NotebookLM product.",
+      "claims": [
+        {
+          "field": "api_surface",
+          "claim": "Gemini Notebook Enterprise exposes a REST API for notebook management, including create, retrieve, list, delete and share operations.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "quote": "The projects.locations.notebooks REST API methods on this page require an authenticated user account with an active Gemini Notebook Enterprise license.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official Google Cloud API documentation",
+          "quote_sha256": "717533656349c5d09f63468bee56e0a54f6ec5c631b264b4df06df3b8a699dea"
+        }
+      ],
+      "unknowns": [
+        "Consumer NotebookLM API availability not established.",
+        "MCP and Composio coverage not checked here.",
+        "Specific limits and API scopes need review.",
+        "Required IAM role is visible on the same official page but is not quoted in this excerpt record; review before final acceptance."
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "research_state": "partial_primary_evidence",
+      "claims": [
+        {
+          "field": "access_and_authentication",
+          "claim": "Public API is Enterprise-workspace gated and API requests use Bearer tokens.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+          "quote": "This content is available for the Otter Enterprise plan and may require admin permissions.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official help center API documentation",
+          "quote_sha256": "ced98a74acc6b3c24b3a0975f888041070ccb41b9550ea093db0e9bb0d92cdce"
+        },
+        {
+          "field": "mcp",
+          "claim": "Otter documents a vendor-provided MCP server, but setup availability is support-gated and broad release is not established.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+          "quote": "Contact our Otter Support Team for help setting up Otter MCP with your AI application.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official help center MCP documentation",
+          "quote_sha256": "aa9c4229917a034925aa08c9cc2cdd6bc48f1b0b935a47ed66b3207d25276a37"
+        }
+      ],
+      "unknowns": [
+        "Actual Composio toolkit coverage not checked in this top-up.",
+        "Bearer authentication and exact API resource coverage require claim-level evidence capture before acceptance."
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "research_state": "partial_primary_evidence",
+      "claims": [
+        {
+          "field": "api_surface",
+          "claim": "Fathom describes its notetaker API and webhooks as providing structured meeting data.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://www.fathom.ai/features/api",
+          "quote": "Fathom’s notetaker API and webhooks hand you structured meeting data",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official product/API page",
+          "quote_sha256": "235310f57b72944f96d80fc25d300c9c323363db6acd5bc1e90236b60219874a"
+        },
+        {
+          "field": "authentication_and_access",
+          "claim": "The official quickstart documents generating a personal API key in user settings.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://developers.fathom.ai/quickstart",
+          "quote": "Head to the API Access section of your User Settings and generate an API key.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official developer quickstart",
+          "quote_sha256": "2c9640b55f2d7c7af663e2a9fa3f20bc107c9f8deba89e9b3b8b40b0b7491519"
+        }
+      ],
+      "unknowns": [
+        "API rate limits and detailed permissions were not reviewed.",
+        "Actual Composio toolkit coverage not checked here.",
+        "No vendor MCP claim retained in this excerpt set; confirm via dedicated official MCP documentation."
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Mermaid CLI",
+      "research_state": "partial_primary_evidence",
+      "claims": [
+        {
+          "field": "product_and_interface",
+          "claim": "The specified GitHub project is an open-source command-line tool that renders Mermaid definitions to SVG, PNG or PDF; it also documents a Node.js API with a semver caveat.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://github.com/mermaid-js/mermaid-cli",
+          "quote": "This is a command-line interface (CLI) for the Mermaid library.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official project repository",
+          "quote_sha256": "8b62105d656d8cb576b9bdad1c87930d578de524c4890aa4de8b4bd19f947ce9"
+        }
+      ],
+      "unknowns": [
+        "No hosted API/authentication is implied by the CLI project.",
+        "MCP and Composio support not checked here.",
+        "Need inspect exact license and Node API stability in project docs before final buildability verdict."
+      ]
+    },
+    {
+      "id": 99,
+      "name": "YouTube Transcript",
+      "research_state": "partial_primary_evidence",
+      "identity_note": "The supplied assignment hint points to TranscriptAPI.com, not a YouTube-owned API.",
+      "claims": [
+        {
+          "field": "api_and_authentication",
+          "claim": "TranscriptAPI documents a REST API using a Bearer API key.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://transcriptapi.com/docs/api/",
+          "quote": "Auth: send Authorization: Bearer YOUR_API_KEY.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official vendor API reference",
+          "quote_sha256": "87097ee220c1c519a7d7d89eead9c4e4ea6737a44b3c9e21cc7bce8b8c25c540"
+        },
+        {
+          "field": "commercial_access",
+          "claim": "The API reference documents a 402 response message for the no-active-paid-plan state; this is not evidence that every user must pay.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://transcriptapi.com/docs/api/",
+          "quote": "You don't have an active paid plan yet.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official vendor API reference",
+          "quote_sha256": "79a4ecd77b78a16e3eab1696cd2f783faf346bad0f4183c12bfbc737280bb264"
+        },
+        {
+          "field": "mcp",
+          "claim": "TranscriptAPI documents a hosted MCP server that uses the same account, keys and credits as REST API access.",
+          "state": "directly_supported_quote_semantics_pending",
+          "source_url": "https://transcriptapi.com/docs/mcp/",
+          "quote": "TranscriptAPI runs a hosted (remote) MCP server at `https://transcriptapi.com/mcp`.",
+          "retrieved_at_utc": "2026-11-23T15:47:42Z",
+          "source_type": "official vendor MCP documentation",
+          "quote_sha256": "e5056b1101547923f6255223fc7ffcb6343cb3f8bcdd5e610f1ae98b9fbe8c81"
+        }
+      ],
+      "unknowns": [
+        "Free account capacity and eligibility need verification before describing this as free self-serve.",
+        "Actual Composio toolkit coverage not checked here."
+      ]
+    }
+  ]
+}

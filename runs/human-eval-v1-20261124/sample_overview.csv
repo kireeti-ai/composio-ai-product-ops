@@ -1,0 +1,25 @@
+frame,registry_id,app,registry_category(reconstructed-list for >50),provenance,stratum
+A,1,Salesforce,CRM and Sales,notion,category 1; model gemini-2.5-flash; verifier-flags 0
+A,3,Pipedrive,CRM and Sales,notion,category 1; model gemini-3.5-flash; verifier-flags 0
+A,9,Copper,CRM and Sales,notion,category 1; model gemini-3.5-flash; verifier-flags 0
+A,13,Freshdesk,Support and Helpdesk,notion,category 2; model gemini-3.5-flash; verifier-flags 0
+A,14,Front,Support and Helpdesk,notion,category 2; model gemini-3.5-flash; verifier-flags 2
+A,16,LiveAgent,Support and Helpdesk,notion,category 2; model gemini-2.5-flash; verifier-flags 0
+A,21,Slack,Communications and Messaging,notion,category 3; model gemini-3.5-flash; verifier-flags 1
+A,22,Twilio,Communications and Messaging,notion,category 3; model gemini-2.5-flash; verifier-flags 1
+A,28,WhatsApp Business,Communications and Messaging,notion,category 3; model gemini-2.5-flash; verifier-flags 1
+A,49,Amazon Selling Partner,Ecommerce,notion,category 5; model gemini-3.5-flash; verifier-flags 1
+A,51,DataForSEO,"Data, SEO and Scraping",reconstructed,category 6; model gemini-3.5-flash; verifier-flags 0
+A,84,Paygent Connect,Finance and Fintech,reconstructed,category 9; model gemini-2.5-flash; verifier-flags 1
+B,20,Gladly,Support and Helpdesk,notion,D_added_access_explicit_account_gated
+B,25,Pumble,Communications and Messaging,notion,C_access_partial
+B,26,Discord,Communications and Messaging,notion,C_access_partial
+B,27,Telegram,Communications and Messaging,notion,A_prior_access_evidence_sufficient
+B,38,Pinterest,"Marketing, Ads, Email and Social",notion,B2_topup_access_explicit_phase2
+B,39,Threads (Meta),"Marketing, Ads, Email and Social",notion,A_prior_access_evidence_sufficient
+B,44,Salesforce Commerce Cloud,Ecommerce,notion,C_access_partial
+B,53,Ahrefs,"Data, SEO and Scraping",reconstructed,A_prior_access_evidence_sufficient
+B,61,GitHub,"Developer, Infra and Data platforms",reconstructed,A_topup_access_explicit
+B,62,Vercel,"Developer, Infra and Data platforms",reconstructed,B_access_inferred_self_serve
+B,63,Netlify,"Developer, Infra and Data platforms",reconstructed,B_access_inferred_self_serve
+B,65,Supabase,"Developer, Infra and Data platforms",reconstructed,A_topup_access_explicit

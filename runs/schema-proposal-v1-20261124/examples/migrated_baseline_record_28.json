@@ -1,0 +1,90 @@
+{
+ "id": 28,
+ "name": "WhatsApp Business",
+ "category": "Communications and Messaging",
+ "model": "gemini-2.5-flash",
+ "pages_read": [
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/reference/whatsapp-business-account/whatsapp-business-account-api",
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/two-step-verification",
+  "https://developers.facebook.com/docs/whatsapp/business-management-api/authentication-templates/autofill-button-authentication-templates"
+ ],
+ "one_liner": "The WhatsApp Business Platform enables businesses to communicate with customers at scale through messaging, calling, and group functionalities.",
+ "schema_version": "nested-v1-PROPOSAL",
+ "surfaces": [
+  {
+   "surface_id": "default",
+   "surface_name": "WhatsApp Business",
+   "auth_methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "access": "self_serve_trial_or_paid_plan",
+   "access_note": "Developers can get a free test WhatsApp account and phone number for testing, but full functionality and template messages often require approval and are subject to pricing.",
+   "api_types": [
+    "rest",
+    "websocket"
+   ],
+   "api_breadth": "broad",
+   "existing_mcp": "none_found",
+   "buildability": "yes",
+   "blocker": "none",
+   "evidence": [
+    {
+     "field": "auth_methods",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+     "quote": "Authentication uses OAuth (not 2.0) access tokens, while permissions restrict access to specific resources.",
+     "quote_found": true,
+     "url_in_sources": true
+    },
+    {
+     "field": "auth_methods",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+     "quote": "  -H 'Authorization: Bearer EAAJB...'",
+     "quote_found": true,
+     "url_in_sources": true
+    },
+    {
+     "field": "access",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+     "quote": "When you get started with Cloud API, a test WhatsApp account, test Messaging account, and test business phone number are automatically created for you.",
+     "quote_found": true,
+     "url_in_sources": true
+    },
+    {
+     "field": "access",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+     "quote": "Templates are customizable messages that you can construct in advance of sending them. Template messages generally require approval before you can send them.",
+     "quote_found": true,
+     "url_in_sources": true
+    },
+    {
+     "field": "api_types",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+     "quote": "The WhatsApp Business Platform is built on Graph API and uses HTTP protocol. API requests include path, body, and header parameters.",
+     "quote_found": true,
+     "url_in_sources": true
+    },
+    {
+     "field": "api_types",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+     "quote": "Webhooks deliver JSON payloads to your server for message status updates, incoming messages, asynchronous error handling, and many other notification utilities.",
+     "quote_found": true,
+     "url_in_sources": true
+    },
+    {
+     "field": "existing_mcp",
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+     "quote": "unknown",
+     "quote_found": false,
+     "url_in_sources": true
+    }
+   ]
+  }
+ ],
+ "migration": {
+  "from": "frozen-single-surface",
+  "from_schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "reversible": true
+ }
+}

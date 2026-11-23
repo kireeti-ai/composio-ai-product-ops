@@ -1,0 +1,406 @@
+
+Consensus
+tag -->
+Solutions
+Product
+Resources
+Pricing
+About
+Contact Us
+Search for Free
+Search for Free
+Loading…
+→
+Give your AI assistant 400M scholarly sources
+Search, synthesize, and build research outputs with cited papers, right inside the AI assistant you already use.
+Get started with:
+Claude
+ChatGPT
+Perplexity
+Microsoft 365 Copilot
+Gemini
+MCP Clients
+Building your own tool? View the API docs
+Loading…
+→
+Give your AI assistant 400M scholarly sources
+Search, synthesize, and build research outputs with cited papers, right inside the AI assistant you already use.
+Get started with:
+Claude
+ChatGPT
+Perplexity
+Microsoft 365 Copilot
+Gemini
+MCP Clients
+Building your own tool? View the API docs
+Loading…
+→
+Give your AI assistant 400M scholarly sources
+Search, synthesize, and build research outputs with cited papers, right inside the AI assistant you already use.
+Get started with:
+Claude
+ChatGPT
+Perplexity
+Microsoft 365 Copilot
+Gemini
+MCP Clients
+Building your own tool? View the API docs
++
+Creatine and working memory ⌄ Share
+Consensus · search Searching 400M+ papers…
+QUERY what dose of creatine improves working memory
+1 Creatine and improvement in cognitive function: Evaluation of… EFSA Journal · 2024 Opinion
+2 Effects of creatine supplementation on cognitive function of… Exp. Gerontology · 2018 Review
+3 Oral creatine monohydrate supplementation improves brain… Proc. R. Soc. B · 2003 RCT
+[ 1 ] EFSA Journal · 2024
+Creatine and improvement in cognitive function
+consensus.app
+[ 2 ] Experimental Gerontology · 2018
+Effects of creatine supplementation on cognitive…
+consensus.app
+[ 3 ] Proc. Royal Society B · 2003
+Oral creatine monohydrate supplementation…
+consensus.app
+Reply to Claude…
+Consensus Opus
++
+Creatine and working memory ⌄ Share
+Consensus · search Searching 400M+ papers…
+QUERY what dose of creatine improves working memory
+1 Creatine and improvement in cognitive function: Evaluation of… EFSA Journal · 2024 Opinion
+2 Effects of creatine supplementation on cognitive function of… Exp. Gerontology · 2018 Review
+3 Oral creatine monohydrate supplementation improves brain… Proc. R. Soc. B · 2003 RCT
+[ 1 ] EFSA Journal · 2024
+Creatine and improvement in cognitive function
+consensus.app
+[ 2 ] Experimental Gerontology · 2018
+Effects of creatine supplementation on cognitive…
+consensus.app
+[ 3 ] Proc. Royal Society B · 2003
+Oral creatine monohydrate supplementation…
+consensus.app
+Reply to Claude…
+Consensus Opus
+Simple setup
+Pick your assistant. Follow the steps.
+Simple setup
+Pick your assistant. Follow the steps.
+Simple setup
+Pick your assistant. Follow the steps.
+ChatGPT
+Claude
+Copilot
+Perplexity
+Gemini
+MCP Clients
+Getting started with ChatGPT
+Add the Consensus connector, then ask research questions with cited papers in any chat.
+Connect Consensus to ChatGPT
+1
+Connect to Consensus
+Plugins
+→
+Search
+→
+Consensus
+In ChatGPT, open Plugins from the sidebar or composer. Search for Consensus, open the listing, then click Connect and verify your account.
+2
+Add Consensus to a prompt
+Click "+"
+→
+More
+→
+Consensus
+Mention @Consensus in a chat, or click + and search for Consensus. Then use any prompt or the workflows below.
+ChatGPT
+Claude
+Copilot
+Perplexity
+Gemini
+MCP Clients
+Getting started with ChatGPT
+Add the Consensus connector, then ask research questions with cited papers in any chat.
+Connect Consensus to ChatGPT
+1
+Connect to Consensus
+Plugins
+→
+Search
+→
+Consensus
+In ChatGPT, open Plugins from the sidebar or composer. Search for Consensus, open the listing, then click Connect and verify your account.
+2
+Add Consensus to a prompt
+Click "+"
+→
+More
+→
+Consensus
+Mention @Consensus in a chat, or click + and search for Consensus. Then use any prompt or the workflows below.
+ChatGPT
+Claude
+Copilot
+Perplexity
+Gemini
+MCP Clients
+Getting started with ChatGPT
+Add the Consensus connector, then ask research questions with cited papers in any chat.
+Connect Consensus to ChatGPT
+1
+Connect to Consensus
+Plugins
+→
+Search
+→
+Consensus
+In ChatGPT, open Plugins from the sidebar or composer. Search for Consensus, open the listing, then click Connect and verify your account.
+2
+Add Consensus to a prompt
+Click "+"
+→
+More
+→
+Consensus
+Mention @Consensus in a chat, or click + and search for Consensus. Then use any prompt or the workflows below.
+Agreements with leading publishers, including 7 of the 10 largest, let Consensus read the full text of their paywalled papers, so your assistant’s answers rest on the methods and results, not just the abstract.
+Agreements with leading publishers, including 7 of the 10 largest, let Consensus read the full text of their paywalled papers, so your assistant’s answers rest on the methods and results, not just the abstract.
+Agreements with leading publishers, including 7 of the 10 largest, let Consensus read the full text of their paywalled papers, so your assistant’s answers rest on the methods and results, not just the abstract.
+What your AI assistant can do with Consensus.
+Everything it can do once connected.
+What your AI assistant can do with Consensus.
+Everything it can do once connected.
+What your AI assistant can do with Consensus.
+Everything it can do once connected.
+Peer-reviewed answers, inside your assistant.
+Ask Claude, ChatGPT, or Copilot and get cited papers you can open, not answers from memory.
+Peer-reviewed answers, inside your assistant.
+Ask Claude, ChatGPT, or Copilot and get cited papers you can open, not answers from memory.
+Peer-reviewed answers, inside your assistant.
+Ask Claude, ChatGPT, or Copilot and get cited papers you can open, not answers from memory.
+Search peer-reviewed papers
+Pull from 400M scholarly works, including peer-reviewed papers and preprints.
+Build search strategies
+Plan multi-step research with Boolean terms and PICO, and run searches in parallel.
+Generate structured outputs
+Reading lists, lit reviews, and grant briefs, formatted and ready.
+Run pre-built skills
+One-click workflows for grant searches, lit reviews, curriculum development, and more.
+Search peer-reviewed papers
+Pull from 400M scholarly works, including peer-reviewed papers and preprints.
+Build search strategies
+Plan multi-step research with Boolean terms and PICO, and run searches in parallel.
+Generate structured outputs
+Reading lists, lit reviews, and grant briefs, formatted and ready.
+Run pre-built skills
+One-click workflows for grant searches, lit reviews, curriculum development, and more.
+Search peer-reviewed papers
+Pull from 400M scholarly works, including peer-reviewed papers and preprints.
+Build search strategies
+Plan multi-step research with Boolean terms and PICO, and run searches in parallel.
+Generate structured outputs
+Reading lists, lit reviews, and grant briefs, formatted and ready.
+Run pre-built skills
+One-click workflows for grant searches, lit reviews, curriculum development, and more.
+Full-text snippets
+Quote passages from inside papers, labeled by section, not just the abstract.
+Filters that matter
+Narrow by study design, sample size, journal quartile, year, or Medical mode.
+Pro or Deep
+Get a quick cited answer, or hand it to the research agent for a full report.
+Your Library, connected
+Read from and add to your Consensus Library collections, right from the chat.
+Full-text snippets
+Quote passages from inside papers, labeled by section, not just the abstract.
+Filters that matter
+Narrow by study design, sample size, journal quartile, year, or Medical mode.
+Pro or Deep
+Get a quick cited answer, or hand it to the research agent for a full report.
+Your Library, connected
+Read from and add to your Consensus Library collections, right from the chat.
+Full-text snippets
+Quote passages from inside papers, labeled by section, not just the abstract.
+Filters that matter
+Narrow by study design, sample size, journal quartile, year, or Medical mode.
+Pro or Deep
+Get a quick cited answer, or hand it to the research agent for a full report.
+Your Library, connected
+Read from and add to your Consensus Library collections, right from the chat.
+Three research workflows, one prompt away.
+Each skill is a pre-built prompt that guides your AI assistant through a full research task.
+Prompt
+Build me a recommended reading list from this syllabus: [attach syllabus or paste topics] Use the Consensus search tool to find recent, peer-reviewed papers for each topic.
+Try it in
+Curriculum development
+Upload a course outline and get a reading list of recent, peer-reviewed papers mapped to your learning objectives.
+Literature review helper
+Grant research
+Three research workflows, one prompt away.
+Each skill is a pre-built prompt that guides your AI assistant through a full research task.
+Prompt
+Build me a recommended reading list from this syllabus: [attach syllabus or paste topics] Use the Consensus search tool to find recent, peer-reviewed papers for each topic.
+Try it in
+Curriculum development
+Upload a course outline and get a reading list of recent, peer-reviewed papers mapped to your learning objectives.
+Literature review helper
+Grant research
+Three research workflows, one prompt away.
+Each skill is a pre-built prompt that guides your AI assistant through a full research task.
+Prompt
+Build me a recommended reading list from this syllabus: [attach syllabus or paste topics] Use the Consensus search tool to find recent, peer-reviewed papers for each topic.
+Try it in
+Curriculum development
+Upload a course outline and get a reading list of recent, peer-reviewed papers mapped to your learning objectives.
+Literature review helper
+Grant research
+Questions, answered.
+What is an MCP?
+What information does the Consensus MCP return about each paper?
+How is the Consensus MCP better than other research MCPs?
+Do I need a Consensus account to use the MCP?
+When should I use Consensus directly versus the Consensus MCP?
+What are Skills and how do I customize them?
+Questions, answered.
+What is an MCP?
+What information does the Consensus MCP return about each paper?
+How is the Consensus MCP better than other research MCPs?
+Do I need a Consensus account to use the MCP?
+When should I use Consensus directly versus the Consensus MCP?
+What are Skills and how do I customize them?
+Questions, answered.
+What is an MCP?
+What information does the Consensus MCP return about each paper?
+How is the Consensus MCP better than other research MCPs?
+Do I need a Consensus account to use the MCP?
+When should I use Consensus directly versus the Consensus MCP?
+What are Skills and how do I customize them?
+Build on the same search.
+Search and Threads endpoints, full-text snippets and 400M+ papers, from one API key.
+Explore the API
+GET /v1/search
+curl -G "https://api.consensus.app/v1/search" \
+-H "x-api-key: $CONSENSUS_API_KEY" \
+--data-urlencode "query=does creatine improve memory" \
+--data-urlencode "include_full_text_chunks=true"
+Build on the same search.
+Search and Threads endpoints, full-text snippets and 400M+ papers, from one API key.
+Explore the API
+GET /v1/search
+curl -G "https://api.consensus.app/v1/search" \
+-H "x-api-key: $CONSENSUS_API_KEY" \
+--data-urlencode "query=does creatine improve memory" \
+--data-urlencode "include_full_text_chunks=true"
+Build on the same search.
+Search and Threads endpoints, full-text snippets and 400M+ papers, from one API key.
+Explore the API
+GET /v1/search
+curl -G "https://api.consensus.app/v1/search" \
+-H "x-api-key: $CONSENSUS_API_KEY" \
+--data-urlencode "query=does creatine improve memory" \
+--data-urlencode "include_full_text_chunks=true"
+Bring Consensus into your AI tools.
+Connect Claude, ChatGPT, Copilot, Perplexity or any MCP client to 400M+ scholarly works, so every answer cites real research.
+Read the setup guide
+GitHub repo
+Bring Consensus into your AI tools.
+Connect Claude, ChatGPT, Copilot, Perplexity or any MCP client to 400M+ scholarly works, so every answer cites real research.
+Read the setup guide
+GitHub repo
+Bring Consensus into your AI tools.
+Connect Claude, ChatGPT, Copilot, Perplexity or any MCP client to 400M+ scholarly works, so every answer cites real research.
+Read the setup guide
+GitHub repo
+Helping the world understand , create , and share good science.
+Stay Connected
+Get updates about new features, announcements and stories from the world of Consensus
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Use Cases
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Legal
+Privacy Policy
+Terms of Service
+© 2026 Consensus NLP, Inc. All rights reserved.
+Helping the world understand , create , and share good science.
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Use Cases
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Privacy
+Terms
+© 2026 Consensus NLP, Inc. All rights reserved.
+Helping the world understand , create , and share good science.
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Privacy Policy
+Terms of Service
+© 2026 Consensus NLP, Inc. All rights reserved.

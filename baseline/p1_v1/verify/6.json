@@ -1,0 +1,62 @@
+{
+ "id": 6,
+ "name": "Podio",
+ "pass1_sha": "b2ccdf86a97406c9",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "error",
+    "reason": "groq failed",
+    "evidence_quote": "",
+    "needs_human": true
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "error",
+    "reason": "groq failed",
+    "evidence_quote": "",
+    "needs_human": true
+   },
+   {
+    "item": "other",
+    "verdict": "error",
+    "reason": "groq failed",
+    "evidence_quote": "",
+    "needs_human": true
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers must register an application to obtain a Client ID and Client Secret for authentication.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states registration provides Client ID and Secret required for authentication.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpts discuss authentication flow but do not specify API type such as REST.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "community",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention a 'community' MCP for Podio.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

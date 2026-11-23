@@ -1,0 +1,169 @@
+{
+ "tag": "groq_orgA",
+ "app": 35,
+ "name": "Mailchimp",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 1,
+ "latency_s": 2.64,
+ "tokens_in": 4304,
+ "tokens_out": 789,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys.md",
+    "quote": "An API key authenticates requests against the account it was created in.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/oauth-2.md",
+    "quote": "OAuth 2 lets your application access Marketing API data on behalf of another Mailchimp user.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+    "quote": "An API key authenticates requests against your own Mailchimp account. Here\u2019s how to create one.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+    "quote": "The root url for the API is `https://api.mailchimp.com/3.0/`. All API endpoints for your account are available relative to this URL.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp",
+    "quote": "An MCP (Model Context Protocol) allows AI agents to interact with the Transactional Messaging API...",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "buildability",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys.md",
+    "quote": "A key in front-end code is readable by anyone who loads the page. ... Keep keys on a server you own.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "unsupported"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 4,
+   "supported_lexical": 1
+  },
+  "evidence_total": 6,
+  "evidence_valid": 1,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 2,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 5,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Mailchimp provides a RESTful Marketing API for managing email campaigns, audiences, and related marketing data.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can generate an API key in their own Mailchimp account for free, or set up an OAuth app to access other users' accounts.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "unknown",
+  "existing_mcp": "official",
+  "buildability": "yes_with_caveats",
+  "blocker": "API keys are not usable in browsers or mobile apps; integration must run on a server you control.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys.md",
+    "quote": "An API key authenticates requests against the account it was created in."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/oauth-2.md",
+    "quote": "OAuth 2 lets your application access Marketing API data on behalf of another Mailchimp user."
+   },
+   {
+    "field": "access",
+    "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+    "quote": "An API key authenticates requests against your own Mailchimp account. Here\u2019s how to create one."
+   },
+   {
+    "field": "api_types",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+    "quote": "The root url for the API is `https://api.mailchimp.com/3.0/`. All API endpoints for your account are available relative to this URL."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp",
+    "quote": "An MCP (Model Context Protocol) allows AI agents to interact with the Transactional Messaging API..."
+   },
+   {
+    "field": "buildability",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys.md",
+    "quote": "A key in front-end code is readable by anyone who loads the page. ... Keep keys on a server you own."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "a8ddb08cafd27a5fdafc74a89a40fef9d94bb9a9641786a6d9830d19ab76bbdd",
+ "at": "2026-11-23T20:04:40+05:30"
+}

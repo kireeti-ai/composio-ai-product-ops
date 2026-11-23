@@ -1,0 +1,650 @@
+Errors - Rate Limit Exceeded errors | Plaid Docs
+Docs
+ALL DOCS
+Errors
+Overview
+Item errors
+Institution errors
+Transactions errors
+Transfer errors
+Signal errors
+Income errors
+Sandbox errors
+API errors
+Assets errors
+Payment errors (Europe)
+Virtual Accounts errors (Europe)
+Plaid Check errors
+Check Report webhook errors
+CRA Monitoring errors
+User errors
+Invalid Request errors
+Invalid Input errors
+Invalid Result errors
+Rate Limit Exceeded errors
+# Rate limit table
+# ACCOUNTS_LIMIT
+# ACCOUNTS_BALANCE_GET_LIMIT
+# AUTH_LIMIT
+# BALANCE_LIMIT
+# CREDITS_EXHAUSTED
+# IDENTITY_LIMIT
+# INSTITUTIONS_GET_LIMIT
+# INSTITUTIONS_GET_BY_ID_LIMIT
+# INSTITUTION_RATE_LIMIT
+# INVESTMENTS_HOLDINGS_GET_LIMIT
+# INVESTMENTS_LIMIT
+# ITEM_GET_LIMIT
+# RATE_LIMIT
+# TRANSACTIONS_LIMIT
+# TRANSACTIONS_REFRESH_LIMIT
+# TRANSACTIONS_SYNC_LIMIT
+# TRIAL_CONNECTION_LIMIT
+Recaptcha errors
+OAuth errors
+Microdeposits errors
+Partner errors
+Docs
+Search or Ask a Question
+Markdown
+Plaid.com
+Log in
+Get API Keys
+Open nav
+Close search modal
+Search the docsAsk Bill!
+Ask a question...
+Hi! I'm Bill! You can ask me all about the Plaid API. Try asking questions like:Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server.
+Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fun. You should treat his answers with the same healthy skepticism you might treat any other answer on the internet. This chat may be logged for quality and training purposes. Please don't send Bill any PII -- he's scared of intimacy. All chats with Bill are subject to Plaid's Privacy Policy.
+Rate limit exceeded errors
+Guide to troubleshooting rate limit exceeded errors
+Rate limit table
+Errors of type RATE_LIMIT_EXCEEDED will occur when the rate limit for a
+particular endpoint has been exceeded. Rate limits are based on fixed windows, not rolling periods. Default rate limit thresholds for some of
+the most commonly rate-limited endpoints are shown below. Note that this table
+is not an exhaustive listing of all Plaid rate limits or rate-limited
+endpoints, that some customers may experience different rate limit thresholds from
+those shown, and that rate limits are subject to change at any time. 
+In general, Plaid default rate limits are set such that using the API as
+designed should typically not cause a rate limit to be encountered. If your use
+case requires a higher rate limit, contact your account manager or file a
+Support request.
+Search endpoints by path
+​
+​Search endpoints by path
+ProductionSandboxRate limits (Production)
+Endpoint
+Toggle Sort Endpoint column, currently unsortedMax requests per Item
+Toggle Sort Max requests per Item column, currently unsortedMax requests per client
+Toggle Sort Max requests per client column, currently unsorted
+/accounts/balance/get5 per minute, 30 per hour1,200 per minute
+/accounts/get15 per minute15,000 per minute
+/asset_report/audit_copy/createN/A30 per minute
+/asset_report/audit_copy/removeN/A30 per minute
+/asset_report/create5 per minute (per asset report)50 per minute
+/asset_report/filterN/A30 per minute
+/asset_report/get15 per minute (per asset report)1,000 per minute
+/asset_report/pdf/get5 per minute (per asset report)50 per minute
+/asset_report/refresh5 per minute (per asset report)50 per minute
+/asset_report/remove15 per minute (per asset report)30 per minute
+/auth/get15 per minute12,000 per minute
+/auth/verifyN/A250 per minute
+/bank_transfer/event/listN/A100 per minute
+/bank_transfer/event/syncN/A100 per minute
+/consent/events/getN/A5,000 per minute
+/cra/check_report/base_report/getN/A100 per minute (100 per user)
+/cra/check_report/cashflow_insights/getN/A100 per minute (100 per user)
+/cra/check_report/createN/A100 per second, 100 per minute
+/cra/check_report/income_insights/getN/A100 per minute (100 per user)
+/cra/check_report/lend_score/getN/A100 per minute (100 per user)
+/cra/check_report/network_insights/getN/A100 per minute (100 per user)
+/cra/check_report/partner_insights/getN/A100 per minute (100 per user)
+/cra/check_report/pdf/getN/A100 per minute (100 per user)
+/cra/check_report/verification/getN/A100 per minute
+/cra/check_report/verification/pdf/getN/A100 per minute
+/cra/report/createN/A100 per second, 100 per minute
+/cra/report/getN/A500 per minute (500 per user)
+/cra/servicing/subscription/createN/A100 per minute
+/cra/servicing/subscription/deleteN/A100 per minute
+/cra/servicing/subscription/getN/A100 per minute
+/cra/servicing/subscription/listN/A100 per minute
+/cra/servicing/subscription/updateN/A100 per minute
+/credit/bank_income/getN/A1,000 per minute
+/credit/bank_income/pdf/getN/A1,000 per minute
+/credit/bank_statements/uploads/getN/A1,000 per minute
+/credit/employment/getN/A1,000 per minute
+/credit/payroll_income/getN/A1,000 per minute
+/credit/payroll_income/parsing_config/updateN/A20 per minute
+/credit/payroll_income/refreshN/A1,000 per minute
+/credit/payroll_income/risk_signals/getN/A1,000 per minute
+/credit/relay/createN/A15 per minute
+/credit/relay/getN/A1,000 per minute
+/credit/relay/refreshN/A30 per minute
+/credit/relay/removeN/A15 per minute
+/credit/sessions/getN/A1,000 per minute
+/dashboard_user/getN/A2,000 per minute
+/dashboard_user/listN/A2,000 per minute
+/identity/documents/uploads/getN/A2,000 per minute
+/identity/get15 per minute2,000 per minute
+/identity/match15 per minute2,000 per minute
+/identity/match/listN/A30 per minute
+/identity_verification/createN/A120 per minute
+/identity_verification/getN/A420 per minute
+/identity_verification/listN/A300 per minute
+/identity_verification/retryN/A120 per minute
+/institutions/getN/A50 per minute
+/institutions/get_by_idN/A400 per minute
+/institutions/searchN/A1,000 per minute
+/investments/auth/get15 per minute500 per minute
+/investments/holdings/get15 per minute2,000 per minute
+/investments/refresh1 per minute, 10 per hour, 20 per day100 per minute, 6,000 per hour, 144,000 per day
+/investments/transactions/get30 per minute20,000 per minute
+/item/access_token/invalidateN/A20 per minute, 20 per minute
+/item/get15 per minute5,000 per minute
+/item/public_token/exchangeN/A12,000 per minute
+/item/remove20 per minute2,000 per minute
+/item/webhook/update15 per minute5,000 per minute
+/liabilities/get30 per minute10,000 per minute
+/link/token/createN/A20,000 per minute
+/link/token/getN/A30,000 per minute
+/oauth/introspectN/A20,000 per minute
+/oauth/revokeN/A20,000 per minute
+/oauth/tokenN/A20,000 per minute
+/partner/customer/createN/A10 per minute
+/partner/customer/enableN/A10 per minute
+/partner/customer/getN/A60 per minute
+/partner/customer/oauth_institutions/getN/A100 per minute
+/partner/customer/removeN/A10 per minute
+/payment_initiation/consent/createN/A100 per minute
+/payment_initiation/consent/getN/A240 per minute
+/payment_initiation/consent/payment/executeN/A240 per minute (5 per consent)
+/payment_initiation/consent/revokeN/A100 per minute
+/payment_initiation/payment/createN/A240 per minute
+/payment_initiation/payment/getN/A240 per minute
+/payment_initiation/payment/listN/A240 per minute
+/payment_initiation/payment/reverseN/A240 per minute
+/payment_initiation/recipient/createN/A240 per minute
+/payment_initiation/recipient/getN/A240 per minute
+/payment_initiation/recipient/listN/A240 per minute
+/processor/account/get15 per minute15,000 per minute
+/processor/auth/get15 per minute12,000 per minute
+/processor/balance/get5 per minute, 30 per hour1,200 per minute
+/processor/identity/get20 per minute2,000 per minute
+/processor/identity/match15 per minute10,000 per minute
+/processor/investments/holdings/getN/A10,000 per minute, 10,000 per minute
+/processor/investments/transactions/getN/A10,000 per minute, 10,000 per minute
+/processor/liabilities/getN/A10,000 per minute
+/processor/signal/decision/reportN/A4,000 per minute
+/processor/signal/evaluateN/A1,200 per minute
+/processor/signal/prepareN/A2,000 per minute
+/processor/signal/return/reportN/A4,000 per minute
+/processor/stripe/bank_account_token/createN/A100 per minute
+/processor/token/createN/A500 per minute
+/processor/token/permissions/getN/A20 per minute
+/processor/token/permissions/setN/A500 per minute
+/processor/token/webhook/updateN/A5,000 per minute
+/processor/transactions/get20 per minute, 20 per minute20,000 per minute
+/processor/transactions/recurring/get15 per minute1,000 per minute
+/processor/transactions/refresh15 per minute500 per minute
+/processor/transactions/sync50 per minute2,500 per minute
+/sandbox/cra/cashflow_updates/updateN/A30 per minute
+/sandbox/cra/servicing/simulateN/A100 per minute
+/sandbox/income/fire_webhookN/A20 per minute
+/sandbox/item/fire_webhook100 per minute500 per minute
+/sandbox/item/reset_login30 per minute500 per minute
+/sandbox/item/set_verification_status30 per minute1,000 per minute
+/sandbox/payment/simulateN/A100 per minute
+/sandbox/processor_token/createN/A30 per minute
+/sandbox/public_token/createN/A30 per minute
+/sandbox/transactions/create2 per minute50 per minute
+/sandbox/transfer/fire_webhookN/A100 per minute
+/sandbox/transfer/ledger/deposit/simulateN/A10,000 per minute
+/sandbox/transfer/ledger/simulate_availableN/A10,000 per minute
+/sandbox/transfer/ledger/withdraw/simulateN/A10,000 per minute
+/sandbox/transfer/refund/simulateN/A20 per minute
+/sandbox/transfer/simulateN/A100 per minute
+/sandbox/transfer/test_clock/advanceN/A30 per minute
+/sandbox/transfer/test_clock/createN/A30 per minute
+/sandbox/transfer/test_clock/getN/A30 per minute
+/sandbox/transfer/test_clock/listN/A30 per minute
+/sandbox/user/fire_webhookN/A500 per minute (100 per user)
+/sandbox/user/reset_loginN/A500 per minute (30 per user)
+/session/token/createN/A20,000 per minute
+/signal/decision/reportN/A4,000 per minute
+/signal/evaluate70 per hour, 10 per transaction per hour20 per second
+/signal/prepareN/A2,000 per minute
+/signal/return/reportN/A4,000 per minute
+/statements/downloadN/A50 per minute
+/statements/listN/A100 per minute
+/statements/refreshN/A50 per minute
+/transactions/enrichN/A100 per minute
+/transactions/get30 per minute20,000 per minute
+/transactions/recurring/get20 per minute1,000 per minute
+/transactions/refresh2 per minute, 120 per hour, 2,880 per day100 per minute, 18,000 per hour, 432,000 per day
+/transactions/sync50 per minute2,500 per minute (500 per empty cursor request)
+/transfer/authorization/cancelN/A2,500 per minute
+/transfer/authorization/create100 per hour2,500 per minute
+/transfer/cancelN/A250 per minute
+/transfer/capabilities/getN/A10,000 per minute
+/transfer/configuration/getN/A100 per minute
+/transfer/create1,000,000 per day2,500 per minute
+/transfer/event/listN/A100 per minute
+/transfer/event/syncN/A5,000 per minute
+/transfer/getN/A5,000 per minute
+/transfer/intent/createN/A5,000 per minute
+/transfer/intent/getN/A100 per minute
+/transfer/ledger/depositN/A10,000 per minute
+/transfer/ledger/distributeN/A20 per minute
+/transfer/ledger/event/listN/A100 per minute
+/transfer/ledger/getN/A10,000 per minute
+/transfer/ledger/withdrawN/A10,000 per minute
+/transfer/listN/A100 per minute
+/transfer/metrics/getN/A100 per minute
+/transfer/migrate_accountN/A1,000 per minute
+/transfer/originator/funding_account/createN/A10,000 per minute
+/transfer/originator/getN/A100 per minute
+/transfer/originator/listN/A100 per minute
+/transfer/platform/originator/createN/A5 per minute
+/transfer/platform/person/createN/A50 per minute
+/transfer/platform/requirement/submitN/A25 per minute
+/transfer/recurring/cancelN/A250 per minute
+/transfer/recurring/createN/A5,000 per minute
+/transfer/recurring/getN/A100 per minute
+/transfer/recurring/listN/A100 per minute
+/transfer/refund/cancelN/A250 per minute
+/transfer/refund/createN/A5,000 per minute
+/transfer/refund/getN/A100 per minute
+/transfer/sweep/getN/A100 per minute
+/transfer/sweep/listN/A100 per minute
+/user/createN/A60 per second, 1,200 per minute
+/user/getN/A1,200 per minute
+/user/items/associateN/A2,400 per minute
+/user/items/getN/A5,000 per minute
+/user/items/removeN/A1,200 per minute
+/user/products/terminateN/A1,200 per minute
+/user/updateN/A30 per minute
+/user_account/session/getN/A1,000 per minute
+/wallet/createN/A100 per minute
+/wallet/getN/A100 per minute
+/wallet/listN/A100 per minute
+/wallet/transaction/executeN/A100 per minute
+/wallet/transaction/getN/A240 per minute
+/wallet/transaction/listN/A100 per minute
+/watchlist_screening/entity/createN/A1,600 per minute
+/watchlist_screening/entity/getN/A60 per minute
+/watchlist_screening/entity/history/listN/A60 per minute
+/watchlist_screening/entity/hit/listN/A60 per minute
+/watchlist_screening/entity/listN/A1,800 per minute
+/watchlist_screening/entity/program/getN/A60 per minute
+/watchlist_screening/entity/program/listN/A60 per minute
+/watchlist_screening/entity/review/createN/A60 per minute
+/watchlist_screening/entity/review/listN/A60 per minute
+/watchlist_screening/entity/updateN/A1,800 per minute
+/watchlist_screening/individual/createN/A1,800 per minute
+/watchlist_screening/individual/getN/A300 per minute
+/watchlist_screening/individual/history/listN/A60 per minute
+/watchlist_screening/individual/hit/listN/A300 per minute
+/watchlist_screening/individual/listN/A1,800 per minute
+/watchlist_screening/individual/program/getN/A60 per minute
+/watchlist_screening/individual/program/listN/A60 per minute
+/watchlist_screening/individual/review/createN/A60 per minute
+/watchlist_screening/individual/review/listN/A60 per minute
+/watchlist_screening/individual/updateN/A700 per minute
+/webhook_verification_key/getN/A500 per minute
+You're already on the first page.
+You're already on the first page.
+Page 1
+You're already on the last page.
+You're already on the last page.
+ACCOUNTS_LIMIT
+Too many requests were made to the /accounts/get endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /accounts/get are rate limited to 15 per minute (per Item) and 15,000 per minute (per client). In the Sandbox, they are rate limited to 100 per minute (per Item) and 5,000 per minute (per client).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/accounts/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "ACCOUNTS_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+ACCOUNTS_BALANCE_GET_LIMIT
+Too many requests were made to the /accounts/balance/get endpoint (per-client limit).
+Common causes
+Too many requests were made in a short period of time by a single client. In Production, requests to /accounts/balance/get are rate limited to 1,200 per minute (per client). In the Sandbox, they are rate limited to 1,200 per minute (per client).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/accounts/balance/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "ACCOUNTS_BALANCE_GET_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+AUTH_LIMIT
+Too many requests were made to the /auth/get endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /auth/get are rate limited to 15 per minute (per Item). In the Sandbox, they are rate limited to 100 per minute (per Item).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/auth/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "AUTH_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+BALANCE_LIMIT
+Too many requests were made to the /accounts/balance/get endpoint (per-Item limit).
+Common causes
+Too many requests were made for a single Item in a short period of time. In Production, requests to /accounts/balance/get are rate limited to 5 per minute, 30 per hour (per Item). In the Sandbox, they are rate limited to 25 per minute, 1,500 per hour (per Item).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/accounts/balance/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "BALANCE_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+CREDITS_EXHAUSTED
+You have used up your free API usage allocation in Limited Production
+Common causes
+You ran out of free API calls for a given product in Limited Production.
+You do not yet have Production access and hit the Item creation cap in Limited Production.Troubleshooting steps
+Request full Production access from the
+Dashboard.
+If you need more Limited Production API calls in order to test your use case, contact your account manager or file a ticket with
+Plaid support
+to request additional usage.
+Test in a different environment, such as Sandbox.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "CREDITS_EXHAUSTED",
+ "error_message": "Free usage exhausted, please request full Production access to continue using this product",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+IDENTITY_LIMIT
+Too many requests were made to the /identity/get endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /identity/get are rate limited to 15 per minute (per Item). In the Sandbox, they are rate limited to 100 per minute (per Item).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/identity/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "IDENTITY_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+INSTITUTIONS_GET_LIMIT
+Too many requests were made to the /institutions/get endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /institutions/get are rate limited to 50 per minute (per client). In the Sandbox, they are rate limited to 10 per minute (per client).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/institutions/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "INSTITUTIONS_GET_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access \"institutions get by id\". please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+INSTITUTIONS_GET_BY_ID_LIMIT
+Too many requests were made to the /institutions/get_by_id endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /institutions/get_by_id are rate limited to 400 per minute (per client). In the Sandbox, they are rate limited to 400 per minute (per client).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/institutions/get_by_id.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "INSTITUTIONS_GET_BY_ID_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access \"institutions get by id\". please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+INSTITUTION_RATE_LIMIT
+Too many requests were made to a given institution.
+Common causes
+Too many requests were made by Plaid in a short period of time to a given institution. Because each institution has unique rate limiting behavior, Plaid cannot provide exact details of how many requests are necessary to trigger this behavior.
+This error will only trigger when calling API endpoints that request real-time data from the institution, such as /accounts/balance/get or /transactions/refresh.
+This institution-level limit is distinct from per-Item or per-client limits and is not applied to user-present traffic (e.g., within Link).
+In some cases, the cause of the rate limit may be another client and may not be your client application's behavior.Troubleshooting steps
+If your client made a very large number of requests in a short time to a real-time endpoint such as /accounts/balance/get at a single institution, consider adding logic to spread these requests over a longer time window.
+Use an exponential backoff retry algorithm to try your request again later.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "INSTITUTION_RATE_LIMIT",
+ "error_message": "The institution is currently receiving too many requests. Please try again later.",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+INVESTMENTS_HOLDINGS_GET_LIMIT
+Too many requests were made to the /investments/holdings/get endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /investments/holdings/get are rate limited to 15 per minute (per Item) and 2,000 per minute (per client). In the Sandbox, they are rate limited to 100 per minute (per Item) and 1,000 per minute (per client).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/investments/holdings/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "INVESTMENTS_HOLDINGS_GET_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+INVESTMENTS_LIMIT
+Too many requests were made to the /investments/transactions/get endpoint (per-Item limit).
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /investments/transactions/get are rate limited to 30 per minute (per Item). In the Sandbox, they are rate limited to 100 per minute (per Item).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/investments/transactions/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "INVESTMENTS_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+ITEM_GET_LIMIT
+Too many requests were made to the /item/get endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /item/get are rate limited to 15 per minute (per Item) and 5,000 per minute (per client). In the Sandbox, they are rate limited to 40 per minute (per Item) and 5,000 per minute (per client).Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/item/get.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "ITEM_GET_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+RATE_LIMIT
+Too many requests were made.
+Common causes
+Too many requests were made in a short period of time.
+Sandbox test credentials were used to attempt to log in to Production.
+Because using these credentials in a live environment is a common
+misconfiguration, they are frequently subject to rate limiting.
+A Link attempt was detected as potential attempted abuse. For example, this
+may occur if a user enters their credentials incorrectly too many times in a
+row.Troubleshooting steps
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to a Plaid
+endpoint.
+Verify that you are not using Sandbox credentials in Production.
+Have your user wait 1-2 days and attempt to log in again later.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "RATE_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+TRANSACTIONS_LIMIT
+Too many requests were made to a transactions endpoint such as /transactions/get or /transactions/refresh.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /transactions/get are rate limited to 30 per minute (per Item) and 20,000 per minute (per client). In the Sandbox, they are rate limited to 30 per minute (per Item) and 1,000 per minute (per client).Troubleshooting steps
+Use the count request parameter in the /transactions/get call to increase the number of transactions retrieved per request. By default, transactions endpoints will retrieve 100 transactions at a time, but you can retrieve up to 500 at a time by setting count to the desired number. The more transactions you retrieve per API call, the fewer total API calls you will need to make.
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to a transactions endpoint.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "TRANSACTIONS_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+TRANSACTIONS_REFRESH_LIMIT
+Too many requests were made to the /transactions/refresh endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /transactions/refresh are rate limited to 100 per minute, 18,000 per hour, 432,000 per day (per client). In the Sandbox, they are rate limited to 100 per minute, 6,000 per hour, 144,000 per day (per client).Troubleshooting steps
+If you are sending /transactions/refresh requests based on end user behavior (such as a "refresh" button in your UI), limit the frequency at which you will send these requests or the end user can initiate them. Since /transactions/refresh is billed on a per API call basis, unneeded API calls to this endpoint can lead to excess billing.
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/transactions/refresh.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "TRANSACTIONS_REFRESH_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+TRANSACTIONS_SYNC_LIMIT
+Too many requests were made to the /transactions/sync endpoint.
+Common causes
+Too many requests were made in a short period of time. In Production, requests to /transactions/sync are rate limited to 50 per minute (per Item) and 2,500 per minute (500 per empty cursor request) (per client). In the Sandbox, they are rate limited to 50 per minute (per Item) and 1,000 per minute (250 per empty cursor request) (per client).Troubleshooting steps
+Use the count request parameter in the /transactions/sync call to increase the number of transactions retrieved per request. By default, transactions endpoints will retrieve 100 transactions at a time, but you can retrieve up to 500 at a time by setting count to the desired number. The more transactions you retrieve per API call, the fewer total API calls you will need to make.
+Check the activity log in the
+Dashboard to view a history of all requests made with your API keys and verify
+that you are not accidentally sending an excessive number of requests to
+/transactions/sync. If you are not already doing so, you may be able to reduce your
+number of requests to /transactions/sync by specifying 500 for the count
+request field.
+If your use case requires a higher rate limit, contact your account manager or
+file a
+Support request.
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "TRANSACTIONS_SYNC_LIMIT",
+ "error_message": "rate limit exceeded for attempts to access this item. please try again later",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+TRIAL_CONNECTION_LIMIT
+The Plaid Trial plan connection limit has been reached.
+Sample user-facing error message Trial Connection Limit Exceeded: Plaid trial plan connection limit reached. The app developer must upgrade to full production access to continue adding bank connections.
+Common causes
+Your application is on a Plaid Trial plan and has exceeded the maximum number of allowed bank connections (Items).Troubleshooting steps
+Upgrade to a paid plan from the
+Plans page in the Dashboard to
+continue adding Items.
+API error responseLink error preview
+API error response
+http code 429
+{
+ "error_type": "RATE_LIMIT_EXCEEDED",
+ "error_code": "TRIAL_CONNECTION_LIMIT",
+ "error_message": "Trial connection limit exceeded. Upgrade to Production access to continue adding bank connections.",
+ "display_message": null,
+ "request_id": "HNTDNrA8F1shFEW"
+}
+Developer community
+GitHub
+YouTube
+Discord

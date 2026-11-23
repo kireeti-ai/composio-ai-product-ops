@@ -1,0 +1,26 @@
+{
+ "_instructions": "Fill from the AI Studio rate-limit page for the project that owns GEMINI_API_KEY. Integers only. Leave NOTHING blank: src/quota_plan.py refuses blanks. Do not paste keys here.",
+ "observed_at": null,
+ "observed_by": null,
+ "project_number": null,
+ "tier": null,
+ "dashboard_source": "https://aistudio.google.com/rate-limit (also ai.dev/rate-limit)",
+ "next_reset_ist": null,
+ "models": {
+  "gemini-2.5-flash": {
+   "available_to_project": null,
+   "rpm": null,
+   "tpm": null,
+   "rpd": null,
+   "used_today": null
+  },
+  "gemini-3.5-flash": {
+   "available_to_project": null,
+   "rpm": null,
+   "tpm": null,
+   "rpd": null,
+   "used_today": null
+  }
+ },
+ "screenshot_sha256": null
+}

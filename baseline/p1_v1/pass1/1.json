@@ -1,0 +1,79 @@
+{
+ "id": 1,
+ "name": "Salesforce",
+ "category": "CRM and Sales",
+ "model": "gemini-2.5-flash",
+ "pages_read": [
+  "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+  "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+  "https://developer.salesforce.com/docs/apis"
+ ],
+ "one_liner": "Salesforce offers REST and Bulk APIs, primarily using OAuth 2.0 and bearer tokens for authentication, accessible via Developer Edition orgs.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Access is available through a Developer Edition org or development sandbox.",
+ "api_types": [
+  "rest",
+  "soap",
+  "sdk_or_cli_only"
+ ],
+ "api_breadth": "unknown",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "quote": "REST API requires an access token obtained by authentication. Use the access token (also known as a \u201cbearer token\u201d) that you get from Salesforce CLI to authenticate cURL requests.",
+   "quote_found": false,
+   "url_in_sources": true
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+   "quote": "Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs. Bulk API 2.0 requires an access token (also known as a \u201cbearer token\u201d) for authentication.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "quote": "Complete these steps in your Developer Edition org or development sandbox.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "quote": "To successfully send requests, REST API requires an access token obtained by authentication.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+   "quote": "Bulk API uses a session ID obtained with an X-SFDC-Session header fetched with SOAP API\u2019s login() call.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "quote": "Salesforce CLI is a connected app that you can authenticate, and it requires no work to configure.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "quote": "Salesforce CLI is a connected app that you can authenticate, and it requires no work to configure.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

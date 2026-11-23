@@ -1,0 +1,288 @@
+
+ API keys | Stripe Documentation
+Skip to content
+API keys
+Create account or Sign in
+Search/Ask AI
+Create accountSign in
+Get started 
+Payments 
+Revenue 
+Risk 
+Data 
+Money management 
+Stablecoins 
+Embedded Finance 
+Developer resources 
+More
+APIs & SDKsHelp
+Overview
+Versioning
+Changelog
+Upgrade your integrationHow API versioning works
+Essentials
+SDKs
+API
+API v2
+Rate limits
+Authentication
+API keys
+Best practice for API keys
+Restricted API keys
+Managed API keys
+Organisation API keys
+Service principals
+Workload Identity Federation
+Specify request context
+Domains and IP addresses
+Make requests
+Expand responses
+Pagination
+Search objects
+Localise content
+Testing and data
+Metadata
+Test your application
+Error handling
+Handle errors
+Error codes
+Events
+Testing
+Stripe CLI
+Tools
+Stripe Dashboard
+Stripe Projects
+Provisioning
+Workbench
+Developers Dashboard
+Stripe for Visual Studio Code
+Terraform
+Stripe Discord server
+Features
+Workflows
+Batch Jobs
+Stripe health alertsFile uploads
+AI toolsAgent pluginsModel Context ProtocolAgent skills
+Stripe Directory
+Extend Stripe
+Overview
+Build Stripe apps
+Use apps from Stripe
+Build extensions
+Custom objects
+Security and privacy
+Security
+Activity logsStripebot web crawler
+Privacy
+Partners
+Partner ecosystem
+Partner certification
+India
+English (United Kingdom)
+Home/
+Developer resources/
+API
+API keys
+Use API keys to authenticate API requests.
+Ask about this pageCopy for LLM
+View as Markdown
+Set up agent
+Stripe uses API keys to authenticate requests from your integration and determine which Stripe resources it can access. Choose the key type that matches where your code runs and grant server-side keys only the permissions your integration needs.
+Use the API keys page in the Dashboard to create, reveal, expire and rotate keys for the account or sandbox you’re viewing. This guide covers keys used with the Stripe API. To learn about API v2 endpoints, behaviour and testing, see the API v2 overview.
+If a request doesn’t include a valid key, Stripe returns an invalid request error. If a request includes an expired key, Stripe returns an authentication error. Use Workbench request logs to inspect API requests and troubleshoot errors.
+If you're new to Stripe
+Keep your business safe: Read our best practices for managing keys.
+Build and test: Create or select a sandbox and use its test keys. For new integrations, use a separate general sandbox so settings and data remain isolated from live mode. Sandbox keys start with pk_test_ for publishable keys, rk_test_ for restricted keys, and sk_test_ for secret keys.
+When you’re ready to accept real payments: Switch to your live mode keys, which start with pk_live_, rk_live_, and sk_live_.
+If you need to find a webhook signing secret: Webhook secrets are separate from API keys. Find them in the Webhooks section of the Dashboard under each webhook endpoint.
+Key types
+Stripe supports the following API key types:
+TypeSafe to exposeDescription
+Publishable API key pk_...YesAPI key for Stripe.js, Elements and mobile SDKs. It can identify your account and create tokens or PaymentMethods from payment details, but it can’t perform sensitive operations such as creating charges or reading account data. You can include it in front-end code or applications you distribute.
+Restricted API key (RAK) rk_...NoAPI key with permissions you control. Limit the damage to your business that a fraudulent actor could cause if they obtained your key. Create as many RAKs as you want and assign them to different parts of your application. Stripe Apps can also use RAK authentication to generate a permissioned key when a user installs an app. This guide explains how to configure and use RAKs.
+Secret API key sk_...NoAPI key that has unrestricted permissions on all Stripe APIs. Because you can’t limit their permissions, we don’t recommend using secret keys for new use cases, and for existing integrations, we recommend migrating secret key usage to RAKs.
+Organisation API key sk_org_...NoAPI key that works at the organisation level. Same as account-level restricted or secret keys, but operates at the organisation level to manage multiple Stripe accounts at once. This guide explains how to configure and use organisation API keys.
+We also support managed API keys issued by certain hosting platforms. Managed keys are secret API keys that a hosting platform delivers directly to your hosted applications. You don’t need to handle managed keys directly; your hosting provider issues and rotates them for you.
+Webhook signing secrets
+Webhook signing secrets aren’t API keys – they’re per-webhook secrets that your webhook receiver uses to authenticate that webhooks actually came from Stripe. You can find the signing secret for each webhook endpoint in the Webhooks section of the Dashboard.
+You’re responsible for managing your API keys safely. Read our guide to best practice for protecting API keys.
+Sandbox versus live mode
+All Stripe API requests occur in either a ‘‘sandbox’’ or ‘‘live mode’’. You can use a sandbox to test your integration and access test data, and live mode to access actual account data. Each mode has its own set of API keys, and objects in one mode aren’t accessible to the other. For example, a sandbox product object can’t be part of a live mode payment.
+TypeWhen to useObjectsHow to useConsiderations
+SandboxesUse a sandbox, and its associated test API keys, as you build your integration. In a sandbox, card networks and payment providers don’t process payments.API calls return simulated objects. For example, you can retrieve and use test Customer, PaymentIntent, Refund and Subscription objects.Use test credit cards and accounts. You can’t accept real payment methods or work with real accounts.Identity doesn’t perform any verification checks. Also, Connect account objects don’t return sensitive fields.
+Live modeUse live mode, and its associated live API keys, when you’re ready to launch your integration and accept real money. In live mode, card networks and payment providers do process payments.API calls return real objects. For example, you can retrieve and use real Customer, PaymentIntent, Refund and Subscription objects.Accept real credit cards and work with customer accounts. You can accept actual payment authorisations, charges, and captures for credit cards and accounts.Disputes have a more nuanced flow and a simpler testing process. Also, some payment methods have a more nuanced flow and require more steps.
+API keys for autonomous agents
+When you create a restricted API key, you can tag it as belonging to an autonomous agent, an AI system that operates independently to complete tasks such as processing refunds or managing subscriptions. To tag a key as an agent key, select Authorising agent access to your account when Stripe prompts you for the key’s intended use during creation.
+Agent-tagged keys work the same as other restricted API keys for authentication and permissions.
+The difference is in governance: agent-tagged keys are automatically subject to approval rules, which require a designated reviewer to approve sensitive actions before they take effect. Stripe provides a set of default rules when you create your first agent-tagged key. These rules cover high-risk actions such as payouts, refunds and account configuration changes.
+This is the recommended way to give autonomous agents access to your Stripe account. The approval rules act as a safeguard against agent mistakes, unexpected behaviour and hallucinations – giving you visibility and control without blocking agents from doing their jobs.
+Protect your keys
+Only publishable keys are safe to expose outside your application’s back end. You’re responsible for protecting other Stripe API keys, including restricted API keys. To protect your keys:
+Store sensitive keys in a secrets vault provided by your hosting platform. This blog post offers an example. If you can’t use a secrets vault, use environment variables to provide keys to your back end applications.
+Don’t put keys in source code or configuration files checked into version control.
+Configure access policies so keys can only be used from your known servers.
+Rotate keys when team members with access to the keys leave your organisation.
+Don’t share keys over email, chat or other unencrypted channels.
+For a comprehensive guide, see best practice for managing secret API keys. We also maintain a library of skills to help AI agents follow these best practices.
+Manage your API keys
+The following sections describe how to create and manage keys on the API keys page.
+Create a restricted API key
+Use restricted API keys (RAKs) for most use cases. You can use a RAK to assign the exact permissions your integration needs, which can help reduce the damage a fraudulent actor could cause to your business if they obtained your key.
+Follow the instructions on Restricted API Keys to create a RAK, configure its permissions, and migrate from secret keys.
+Create a secret API key
+Create an unrestricted secret API key only when your integration requires access to all Stripe APIs and resources without restriction. If a fraudulent actor obtains your secret key, they can harm your business. We recommend using RAKs instead.
+On the API keys page, click Create secret key.
+In the dialog, enter the verification code that we send you by email or text message. If the dialog doesn’t continue automatically, click Continue.
+Enter a name in the Key name field, then click Create.
+Click the key value to copy it.
+Save the key value. In live mode, you can’t retrieve it later.
+In the Add a note field, enter the location where you saved the key, then click Done.
+Reveal an API key
+When you create a secret key in live mode, Stripe displays it one time before you save it. Copy the key before you save it because you can’t reveal it later. We can’t recover keys that you’ve forgotten or lost access to. If you lose a key, rotate or delete it and create another. In live mode, you can reveal only API keys that Stripe creates for you, such as a default secret key or a key generated by a scheduled rotation. In sandbox mode, you can always see all of your API keys, including restricted and secret keys. Publishable API keys aren’t sensitive, so we show them by default and you don’t need to do anything to reveal them.
+Security tip
+Store sensitive keys in a place where you won’t lose them, such as a secrets vault provided by your platform. Don’t put keys in your application’s code.
+Reveal a RAK in live mode
+You can reveal only live-mode RAKs that we created for you. If you create a RAK yourself, you can’t reveal it after you’ve seen it once.
+On the API keys page in live mode, in the Restricted keys list, click Reveal live key for the key you want to reveal.
+Click the key value to copy it.
+Save the key value in your platform’s secrets vault. If your platform doesn’t provide one, use an environment variable.
+Click Hide live key.
+Reveal a secret API key in live mode
+You can reveal only live-mode secret keys that we created for you. If you create a secret key yourself, you can’t reveal it after you’ve seen it once.
+On the API keys page in live mode, in the Standard keys list, click Reveal live key for the key you want to reveal.
+Click the key value to copy it.
+Save the key value in your platform’s secrets vault. If your platform doesn’t provide one, use an environment variable.
+Click Hide live key.
+Click the overflow menu (), then select Edit key for the key you want to add a note to.
+In the Note field, enter the location where you saved the key, then click Save.
+Limit an API key to certain IP addresses
+Access policies have replaced IP address restrictions. Use policies, not restrictions.
+Change an API key’s name or note
+On the API keys page, click the overflow menu () for the key you want to change.
+Select Edit key.
+Do the following:
+To change the name, enter a new name in the Key name field.
+To change the note text, enter the new note text in the Note field.
+Click Save.
+Expire an API key
+If you expire a secret API key or a restricted API key, you must create a new one and update any code that uses the expired key. Code that uses the expired key can no longer make API calls.
+Note
+You can’t expire a publishable key.
+On the API keys page, in the Restricted keys or Standard keys list, click the overflow menu () for the key you want to expire.
+Select Expire key.
+In the dialog, click Expire key. If you no longer want to expire the key, click Cancel.
+Rotate an API key
+Rotating an API key revokes it and generates a replacement key that’s ready to use immediately. You can also schedule an API key to rotate after a certain time. The replacement key is named as follows:
+The replacement publishable key name is always Publishable key.
+The replacement secret key name is always Secret key.
+The replacement restricted key name is the same as the rotated key.
+You can rename a secret or restricted API key by editing the key.
+Rotate an API key in scenarios such as:
+If you lose a secret or restricted API key in live mode and you can’t recover it from the Dashboard.
+If a secret or restricted API key is compromised and you need to revoke it to block any potentially malicious API requests that might use the key.
+If a team member with access to the key leaves your organisation or changes roles.
+If your policy requires rotating keys at certain intervals.
+Rotate safely to avoid downtime
+To avoid downtime during key rotation:
+Use the grace period: When you rotate a key in the Dashboard, both the old and new keys work for up to 7 days. This lets you migrate gradually without downtime. If you need more than 7 days, create a new key manually, migrate to it, then expire the old one when you’re done.
+Roll out gradually: If possible, use the new key from a small subset of your servers or services first, and watch your server logs for errors before deploying further.
+Monitor before revoking: Before the old key expires, check its request logs, and expire it only after its request volume has been at zero for a few hours or days.
+Rotate an API key in the Dashboard
+On the API keys page, click the overflow menu () for the key you want to rotate.
+Select Rotate key.
+Select an expiry date from the Expiry dropdown. If you choose Now, the old key is deleted. If you specify a time, the remaining time until the key expires displays below the key name.
+Click Rotate API key.
+Click the key value to copy it.
+Save the key value. In live mode, you can’t retrieve it later.
+In the Add a note field, enter the location where you saved the key, then click Save or Done.
+Restore an API key’s access
+An API key might have its access limited if it hasn’t been used to create transfers, payouts or update payout destinations for over 180 days. You can’t use a limited access key to create payouts and transfers or to create payout destinations. You can restore access to use the key normally or to perform a blocked action.
+Restore access for an API key
+On the API keys page, click the overflow menu () for the key you want to restore.
+Select Restore access.
+Click Restore.
+View API request logs for a key
+To open the API request logs, click the overflow menu () for any key, then select View request logs. Opening the logs redirects you to Workbench in the Stripe Dashboard.
+Switch to live mode
+When you’re ready to accept real payments, use live mode API keys instead of sandbox keys. On the API keys page, toggle from sandbox mode to live mode. The page now shows your live mode API keys.
+Complete go-live checklist
+Switching API keys is only one step. Review the full go-live checklist to make sure your integration is production ready.
+Publishable keys (client-side)
+Copy your live mode publishable key (starts with pk_live_) and replace the pk_test_ key in your client-side code. It’s safe to embed this key in your code or apps.
+Restricted or secret API keys (server-side)
+Server-side API keys are sensitive, so review our best practice for managing secret API keys. We recommend generating restricted API keys for your server-side code to limit the damage to your business if your keys are ever exposed or compromised.
+Before you start using a live mode key in your back-end application, remove any hardcoded API keys from your code. Instead, use a secrets vault to supply the sandbox key, and confirm that your application still works. If your platform doesn’t provide a secrets vault, you can use an environment variable.
+Reveal and copy your live mode keys (which start with rk_live_ or sk_live_). Store the key value securely in your server environment.
+Configure your server environment to supply live mode keys instead of sandbox keys to your application.
+Webhook signing keys (server-side)
+If you use webhooks, update each webhook endpoint’s URL and copy the new signing secret from the Webhooks section of the Dashboard.
+Access policies
+You can restrict access to a key by attaching an access policy to it. If someone attempts a request using a key they can’t access, Stripe blocks the request and notifies you.
+Stripe recommends configuring access policies on all live mode keys. That notifies you of any unauthorised access, so you can rotate the keys accordingly.
+You can manage access by assigning different policies to different keys. For example, you can distinguish between staging and production environments by assigning different policies to their respective keys.
+Access policy types
+Stripe supports the following types of access policies:
+IP addresses: Restrict access to one or more specific IPv4 addresses or CIDR ranges. Use this approach if your servers have fixed IP addresses.
+Advanced: Restrict access by Autonomous System Number (ASN), country and common threat categories. If you’re dynamically scaling, you can provide access to your cloud provider using the ASN and country.
+An advanced access policy can use any combination of the following rules:
+ASNs to allow: Requests from specified ASNs are allowed; all others are blocked.
+Countries: Requests from specified countries are allowed; all others are blocked.
+Sources: Requests from selected sources are blocked. You can select the following sources:
+Anonymous VPNs: Third-party VPN services sold for privacy and anonymity (not including corporate VPNs). Consider blocking these if you don’t use VPNs to access the Stripe API.
+Public proxies: Open proxy servers from public lists. Consider blocking these if you don’t use public proxies to access the Stripe API.
+Residential proxies: Proxies associated with residential ISPs. Consider blocking these if you don’t use residential ISPs to access the Stripe API.
+Tor exit nodes: Traffic from the Tor network. Consider blocking these if you don’t access the Stripe API over Tor.
+Selecting multiple rules combines them using AND logic. For example, if you allow ASN 16509 (Amazon), allow the United States, and block Tor exit nodes, then the policy only allows requests from AWS IPs in the US that are not known to be Tor exit nodes. It blocks all other requests.
+Create an access policy
+To create an access policy, go to the Access policies page in your Dashboard and follow these steps:
+Click + Create policy.
+Enter a name (for example, “Production servers”) and an optional description.
+Select IP addresses or Advanced.
+Depending on the selected type, configure the policy:
+IP addresses: Enter one or more valid public IPv4 addresses or CIDR ranges. For example, 192.0.2.0/24 covers the range 192.0.2.0–192.0.2.255.
+Advanced: Specify any combination of ASNs to allow, countries to allow and sources to block, as described in Access policy types.
+Click Next.
+Review the policy details, then click Create policy.
+If prompted to authenticate, follow the on-screen instructions.
+If the creation succeeded, the new policy appears in the list.
+Apply or remove an access policy
+To apply an access policy to an API key, go to the API keys page in your Dashboard and follow these steps:
+In the Standard keys or Restricted keys list, find the key you want to update and open its overflow menu ().
+Select Manage access policy.
+In the Access policy dropdown, select the policy you want.
+Review the details of the selected policy, then click Save.
+If prompted to authenticate, follow the on-screen instructions.
+To remove an access policy from a key, go to the API keys page in your Dashboard and follow these steps:
+In the Standard keys or Restricted keys list, find the key you want to update and open its overflow menu ().
+Select Manage access policy.
+In the Access policy dropdown, select None.
+Click Save.
+Update an access policy
+To make changes to an access policy, go to the Access policies page in your Dashboard and follow these steps:
+Find the policy you want to change, and open its overflow menu ().
+Select Edit policy.
+Update the policy options as described in Create an access policy, then click Next.
+Review the policy details, then click Save.
+If prompted to authenticate, follow the on-screen instructions.
+When you update an access policy, the changes apply immediately to all API keys it’s assigned to.
+Delete an access policy
+To delete an access policy, go to the Access policies page in your Dashboard and follow these steps:
+Find the policy you want to delete and open its overflow menu ().
+Select Delete policy.
+Review the confirmation dialogue to understand the impact, then click Delete policy.
+Deleting an access policy immediately removes it from all API keys it was applied to. Those keys allow requests from any source until you apply another policy to them.
+See also
+Best practices for managing secret API keys
+Protecting against compromised API keys
+Why does my API key have limited access
+Test your integration
+Was this page helpful?
+YesNo
+Need help? Contact Support.
+Chat with Stripe developers on Discord.
+Check out our changelog.
+Questions? Contact Sales.
+LLM? Read llms.txt.
+Powered by Markdoc
+On this page
+ 

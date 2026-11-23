@@ -1,0 +1,31 @@
+test01_sequential_gap (__main__.T) ... ok
+test02_retries_paced_and_backoff (__main__.T) ... ok
+test03_concurrent_cannot_bypass (__main__.T) ... ok
+test03b_lock_blocks_second_writer (__main__.T) ... ok
+test04_eighth_allowed_ninth_refused_and_05_retries_share_budget (__main__.T) ... ok
+test06_restart_preserves_count (__main__.T) ... ok
+test07_restart_preserves_pacing (__main__.T) ... ok
+test07b_clock_backwards_waits_full_gap (__main__.T) ... ok
+test08_daily_429_stops_immediately (__main__.T) ... ok
+test09_rate_limit_bounded_backoff (__main__.T) ... ok
+test10_ambiguous_429_stops (__main__.T) ... ok
+test11_two_5xx_different_apps_stop (__main__.T) ... ok
+test12_single_5xx_continues (__main__.T) ... ok
+test12b_5xx_reset_by_success (__main__.T) ... ok
+test13_unexpected_model_stops (__main__.T) ... ok
+test14_missing_identity_reported (__main__.T) ... ok
+test14b_schema_violation_stops_not_repaired (__main__.T) ... ok
+test16_corrupt_checkpoint_refused (__main__.T) ... ok
+test16b_corrupt_state_refused (__main__.T) ... ok
+test17_log_append_only_tamper_detected (__main__.T) ... ok
+test18_no_fallback_possible (__main__.T) ... ok
+test19_dry_run_makes_no_call (__main__.T) ... ok
+test20_refuses_without_authorization (__main__.T) ... ok
+test21_unreviewed_stop_blocks_restart (__main__.T) ... ok
+test22_inflight_after_crash_requires_review (__main__.T) ... ok
+test23_classify_429 (__main__.T) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.284s
+
+OK

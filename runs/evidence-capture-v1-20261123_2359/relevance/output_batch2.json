@@ -1,0 +1,728 @@
+[
+ {
+  "row_id": "55:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Covers API token only; Bearer scheme and MCP OAuth/fallback not stated."
+ },
+ {
+  "row_id": "55:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Shows Bearer header but not which surface or the OAuth part."
+ },
+ {
+  "row_id": "55:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Covers hosted MCP OAuth only."
+ },
+ {
+  "row_id": "55:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Implies a free plan via CTA; no-credit-card not stated."
+ },
+ {
+  "row_id": "55:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "States no credit card but not that a free plan exists."
+ },
+ {
+  "row_id": "55:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Covers REST only."
+ },
+ {
+  "row_id": "55:2:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Shows only a Python client, not the other SDKs."
+ },
+ {
+  "row_id": "55:2:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Implies a CLI exists; does not state it as an API type."
+ },
+ {
+  "row_id": "55:3:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "States the 20 req/s per account hosted-server limit."
+ },
+ {
+  "row_id": "55:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Says official MCP server but gives no hosted URL."
+ },
+ {
+  "row_id": "55:5:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Gives hosted URL but not 'official' or the open-source repo."
+ },
+ {
+  "row_id": "55:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Supports auth by token only; buildability is a judgement."
+ },
+ {
+  "row_id": "57:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Names both methods but not Bearer or MCP token-only."
+ },
+ {
+  "row_id": "57:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Shows Bearer header only."
+ },
+ {
+  "row_id": "57:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Covers only the MCP API-token part."
+ },
+ {
+  "row_id": "57:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "States 5,000 free requests; pay-as-you-go not stated."
+ },
+ {
+  "row_id": "57:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "States pay-as-you-go and free credit, not the 5,000 figure."
+ },
+ {
+  "row_id": "57:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Supports API/key and native proxy auth, implying REST/proxy; not explicit."
+ },
+ {
+  "row_id": "57:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Truncated; 5,000 credits/month but 1 credit per request not shown."
+ },
+ {
+  "row_id": "57:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Describes the MCP server but not official/hosted/local."
+ },
+ {
+  "row_id": "57:5:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "States remote managed or self-hosted local options."
+ },
+ {
+  "row_id": "57:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Free requests only suggest buildability."
+ },
+ {
+  "row_id": "64:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Supports API tokens preferred; not Global key or MCP auth."
+ },
+ {
+  "row_id": "64:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Label only for legacy Global API key."
+ },
+ {
+  "row_id": "64:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Covers MCP OAuth only."
+ },
+ {
+  "row_id": "64:0:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Fragment on bearer token; context for MCP unclear."
+ },
+ {
+  "row_id": "64:2:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Refers to Cloudflare's REST API."
+ },
+ {
+  "row_id": "64:3:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "States the 1,200 per five minutes per user limit."
+ },
+ {
+  "row_id": "64:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Mentions Cloudflare's own MCP servers; no URL or OAuth."
+ },
+ {
+  "row_id": "64:5:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "URL only; no official or OAuth statement."
+ },
+ {
+  "row_id": "64:5:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Managed remote MCP with OAuth; URL not given."
+ },
+ {
+  "row_id": "64:6:0",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Heading-like label only."
+ },
+ {
+  "row_id": "66:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "OAuth 2.0 stated; client credentials not named."
+ },
+ {
+  "row_id": "66:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Covers Basic auth at token endpoint only."
+ },
+ {
+  "row_id": "66:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Shows Bearer header only."
+ },
+ {
+  "row_id": "66:0:3",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Credential expiry is unrelated to the claim."
+ },
+ {
+  "row_id": "66:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Shows Basic only."
+ },
+ {
+  "row_id": "66:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Shows Bearer only."
+ },
+ {
+  "row_id": "66:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Two methods stated but not named."
+ },
+ {
+  "row_id": "66:2:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Bearer auth mentioned; SSO/OAuth/OIDC and editions truncated."
+ },
+ {
+  "row_id": "66:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "All tiers can create credentials; account requirement not stated."
+ },
+ {
+  "row_id": "66:4:0",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "66:4:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Fragment 'Both' with no content."
+ },
+ {
+  "row_id": "66:7:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Page heading shows MCP docs on neo4j.com; no status stated."
+ },
+ {
+  "row_id": "66:7:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "66:8:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Credentials tied to account; two credential models not stated."
+ },
+ {
+  "row_id": "67:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Heading names key pair auth; JWT not stated."
+ },
+ {
+  "row_id": "67:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Heading names OAuth only."
+ },
+ {
+  "row_id": "67:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Heading names PAT only."
+ },
+ {
+  "row_id": "67:0:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "MCP Snowflake OAuth and External OAuth; PAT not stated."
+ },
+ {
+  "row_id": "67:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Trial exists; account required and email-only not stated."
+ },
+ {
+  "row_id": "67:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "No payment info needed; trial not named in fragment."
+ },
+ {
+  "row_id": "67:1:2",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "About AI feature gating, not the claimed access terms."
+ },
+ {
+  "row_id": "67:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Heading shows REST API auth only."
+ },
+ {
+  "row_id": "67:2:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Nav label only."
+ },
+ {
+  "row_id": "67:4:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Trial for evaluation/testing implies test environment."
+ },
+ {
+  "row_id": "67:5:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "Describes Snowflake-managed MCP server."
+ },
+ {
+  "row_id": "67:5:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Tool permissions unrelated to official/GA status."
+ },
+ {
+  "row_id": "67:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Privilege setup only; account requirement not stated."
+ },
+ {
+  "row_id": "69:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Application keys alongside API key only."
+ },
+ {
+  "row_id": "69:0:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "69:0:2",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "69:0:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "MCP optional API/app keys only; OAuth login not stated."
+ },
+ {
+  "row_id": "69:1:0",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "69:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Official client libraries; REST not explicit."
+ },
+ {
+  "row_id": "69:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Rate limiting stated; 429 and per-endpoint buckets not."
+ },
+ {
+  "row_id": "69:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Official docs page describes MCP server; Preview/site not covered."
+ },
+ {
+  "row_id": "69:5:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "States ChatGPT app in Preview, US1 only."
+ },
+ {
+  "row_id": "69:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Site unsupported warning only; keys not stated."
+ },
+ {
+  "row_id": "71:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "PAT only."
+ },
+ {
+  "row_id": "71:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Integration token Bearer only."
+ },
+ {
+  "row_id": "71:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Public OAuth integration only."
+ },
+ {
+  "row_id": "71:0:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "MCP-only token stated; OAuth 2.0 not stated."
+ },
+ {
+  "row_id": "71:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Workspace owner requirement only; self_serve not stated."
+ },
+ {
+  "row_id": "71:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "JS SDK only."
+ },
+ {
+  "row_id": "71:2:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Nav label only."
+ },
+ {
+  "row_id": "71:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Two limits named; values not given."
+ },
+ {
+  "row_id": "71:3:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "600/min stated; plan attribution missing."
+ },
+ {
+  "row_id": "71:3:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "180/min stated; plan attribution missing."
+ },
+ {
+  "row_id": "71:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Truncated; hosted server mentioned, no URL."
+ },
+ {
+  "row_id": "71:5:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "URL only; no official or transport."
+ },
+ {
+  "row_id": "71:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "PAT availability only suggests buildability."
+ },
+ {
+  "row_id": "73:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "API keys and OAuth2; client credentials and MCP not covered."
+ },
+ {
+  "row_id": "73:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Header format for API key only."
+ },
+ {
+  "row_id": "73:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "OAuth2 only."
+ },
+ {
+  "row_id": "73:0:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Heading names client credentials only."
+ },
+ {
+  "row_id": "73:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Easiest for scripts; settings location not stated."
+ },
+ {
+  "row_id": "73:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "GraphQL only."
+ },
+ {
+  "row_id": "73:2:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "73:2:2",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "73:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Number only; not tied to API key."
+ },
+ {
+  "row_id": "73:3:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Number only; not tied to unauthenticated."
+ },
+ {
+  "row_id": "73:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Streamable HTTP; URL cut off."
+ },
+ {
+  "row_id": "73:5:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "URL only."
+ },
+ {
+  "row_id": "73:5:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "OAuth 2.1 only."
+ },
+ {
+  "row_id": "73:6:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "API keys easy; buildability judgement."
+ },
+ {
+  "row_id": "74:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "API token basic auth; email not stated."
+ },
+ {
+  "row_id": "74:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "3LO OAuth only."
+ },
+ {
+  "row_id": "74:0:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "reason": "States OAuth 2.1 or API token for MCP."
+ },
+ {
+  "row_id": "74:2:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "REST API only; v3 not in quote."
+ },
+ {
+  "row_id": "74:2:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Nav label only."
+ },
+ {
+  "row_id": "74:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Enforcement date only; app types not named."
+ },
+ {
+  "row_id": "74:3:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "API token burst limits only."
+ },
+ {
+  "row_id": "74:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Server for Atlassian apps; URL and official not stated."
+ },
+ {
+  "row_id": "74:5:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "URL only."
+ },
+ {
+  "row_id": "74:5:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "v1 to v2 change only; URL not covered."
+ },
+ {
+  "row_id": "74:8:0",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Heading-only label."
+ },
+ {
+  "row_id": "77:0:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Token or OAuth; pk_ and MCP not covered."
+ },
+ {
+  "row_id": "77:0:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Expiry only."
+ },
+ {
+  "row_id": "77:0:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "OAuth2 flow; authorization code not named."
+ },
+ {
+  "row_id": "77:0:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "MCP OAuth only."
+ },
+ {
+  "row_id": "77:1:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "All plans; self_serve and account not covered."
+ },
+ {
+  "row_id": "77:1:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Account sign-in only."
+ },
+ {
+  "row_id": "77:2:0",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "77:2:1",
+  "verdict": "none",
+  "contradicts": false,
+  "reason": "Label only."
+ },
+ {
+  "row_id": "77:3:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Per-token limits vary; values missing."
+ },
+ {
+  "row_id": "77:3:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Per minute per token; no numbers."
+ },
+ {
+  "row_id": "77:5:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Truncated URL intro."
+ },
+ {
+  "row_id": "77:5:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "URL only."
+ },
+ {
+  "row_id": "77:5:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Truncated; 'all plans' missing."
+ },
+ {
+  "row_id": "77:7:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "reason": "Tokens never expire; buildability inferred."
+ }
+]

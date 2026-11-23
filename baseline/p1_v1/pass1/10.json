@@ -1,0 +1,56 @@
+{
+ "id": 10,
+ "name": "DealCloud",
+ "category": "CRM and Sales",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://api.docs.dealcloud.com/docs",
+  "https://api.docs.dealcloud.com/mcp/authentication",
+  "https://api.docs.dealcloud.com/docs/token",
+  "https://api.docs.dealcloud.com/sdk/csharp/authentication"
+ ],
+ "one_liner": "DealCloud offers REST APIs and an official MCP integration for managing CRM data, schemas, users, backups, and real-time publications.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token"
+ ],
+ "access": "unknown",
+ "access_note": "The provided documentation does not specify developer registration terms, pricing tiers, or how to obtain site credentials.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://api.docs.dealcloud.com/docs/token",
+   "quote": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token, which is then used in the HTTP Authentication header for API requests.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://api.docs.dealcloud.com/docs",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://api.docs.dealcloud.com/docs",
+   "quote": "This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://api.docs.dealcloud.com/mcp/authentication",
+   "quote": "DealCloud MCP uses OAuth to authenticate, letting AI assistants connect on behalf of an individual user.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

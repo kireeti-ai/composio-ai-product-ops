@@ -1,0 +1,145 @@
+{
+ "tag": "groq_orgA",
+ "app": 61,
+ "name": "GitHub",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 5,
+ "latency_s": 2.22,
+ "tokens_in": 4011,
+ "tokens_out": 803,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+    "quote": "create a GitHub App and generate an installation access token within your workflow.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+    "quote": "You can authenticate to the REST API to access more endpoints and have a higher rate limit.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.github.com/en/copilot/concepts/context/mcp",
+    "quote": "The Model Context Protocol (MCP) is an open standard that defines how applications share context with large language models (LLMs).",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "supported_lexical"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 3,
+   "supported_lexical": 2
+  },
+  "evidence_total": 5,
+  "evidence_valid": 5,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 0,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "GitHub is a code hosting and collaboration platform that offers extensive REST APIs for repositories, issues, pull requests, and more.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can generate personal access tokens or fine\u2011grained tokens directly in their GitHub account settings without contacting sales.",
+  "api_breadth": "broad",
+  "api_types": [
+   "rest"
+  ],
+  "buildability": "yes",
+  "blocker": "none",
+  "existing_mcp": "official",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "If you want to use the GitHub REST API for personal use, you can create a personal access token."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+    "quote": "create a GitHub App and generate an installation access token within your workflow."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "If you want to use the GitHub REST API for personal use, you can create a personal access token."
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+    "quote": "You can authenticate to the REST API to access more endpoints and have a higher rate limit."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.github.com/en/copilot/concepts/context/mcp",
+    "quote": "The Model Context Protocol (MCP) is an open standard that defines how applications share context with large language models (LLMs)."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "9d7212a4e95c8b7c72d783231341b58d7cd901ac751e97a527693cf08e7450f4",
+ "at": "2026-11-23T19:32:23+05:30"
+}

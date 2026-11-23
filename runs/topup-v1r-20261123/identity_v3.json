@@ -1,0 +1,119 @@
+[
+ {
+  "id": 58,
+  "app": "Sherlock",
+  "status": "EXCLUDED",
+  "basis": "4 unrelated products retrieved; baseline Pass-1 record #58 identity-contaminated"
+ },
+ {
+  "id": 80,
+  "app": "Harvest",
+  "status": "EXCLUDED",
+  "basis": "3 different products"
+ },
+ {
+  "id": 50,
+  "app": "fanbasis",
+  "status": "EXCLUDED until fanbasis.io confirmed",
+  "basis": "openstage.live excluded from official evidence; dev-docs.fanbasis.com password-gated"
+ },
+ {
+  "id": 73,
+  "app": "Linear",
+  "status": "PROVISIONAL (not confirmed) - held",
+  "basis": "name+domain consistency only (linear.app GraphQL docs). Category membership comes from the reconstructed secondary list and is NOT used as evidence"
+ },
+ {
+  "id": 78,
+  "app": "Coda",
+  "status": "PROVISIONAL (not confirmed) - held",
+  "basis": "name+domain consistency only; superhuman.com hits suggest docs migration. Reconstructed-list category not used as evidence"
+ },
+ {
+  "id": 60,
+  "app": "Clay",
+  "status": "PROVISIONAL (not confirmed) - not planned",
+  "basis": "as above"
+ },
+ {
+  "id": 59,
+  "app": "Waterfall.io",
+  "status": "PROVISIONAL (not confirmed) - not planned",
+  "basis": "name is a domain; reconstructed-list category not used"
+ },
+ {
+  "id": 66,
+  "app": "Neo4j",
+  "status": "HELD - scope decision",
+  "basis": "two API surfaces; see neo4j_scope.json"
+ },
+ {
+  "ids": [
+   15,
+   20,
+   24,
+   38,
+   39
+  ],
+  "app": "Pylon, Gladly, Lark, Pinterest, Threads (Meta)",
+  "status": "Resolved by ORIGINAL Notion hint (apps 1-50 only)",
+  "basis": "authoritative source"
+ },
+ {
+  "ids": [
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   82,
+   83,
+   84,
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99,
+   100
+  ],
+  "app": "all apps 51-100",
+  "status": "identity authority = NONE (reconstructed secondary list; no hints)",
+  "basis": "names/order only; confirm each against the original Notion table before final analysis"
+ }
+]

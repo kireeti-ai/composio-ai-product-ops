@@ -1,0 +1,461 @@
+[
+ {
+  "id": 30,
+  "name": "Vonage",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "vonage.com"
+  ],
+  "pages_usable": 6,
+  "why": "official hint domain from original list: developer.vonage.com",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 35,
+  "name": "Mailchimp",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "mailchimp.com"
+  ],
+  "pages_usable": 6,
+  "why": "official hint domain from original list: mailchimp.com/developer",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 37,
+  "name": "systeme.io",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "systeme.io"
+  ],
+  "pages_usable": 6,
+  "why": "official hint domain from original list: systeme.io (funnel builder)",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 40,
+  "name": "SendGrid",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "sendgrid.com"
+  ],
+  "pages_usable": 6,
+  "why": "official hint domain from original list: sendgrid.com",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 42,
+  "name": "WooCommerce",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "woocommerce.com"
+  ],
+  "pages_usable": 5,
+  "why": "official hint domain from original list: woocommerce.com/document/woocommerce-rest-api",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 45,
+  "name": "Magento (Adobe Commerce)",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "adobe.com"
+  ],
+  "pages_usable": 4,
+  "why": "official hint domain from original list: developer.adobe.com/commerce",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 48,
+  "name": "Gumroad",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "gumroad.com"
+  ],
+  "pages_usable": 5,
+  "why": "official hint domain from original list: gumroad.com/api",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 54,
+  "name": "MrScraper",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "mrscraper.com"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 57,
+  "name": "Bright Data",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "brightdata.com"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 64,
+  "name": "Cloudflare",
+  "tier": "B_name_resolved_candidate_dominant_tld",
+  "accepted_domains": [
+   "cloudflare.com"
+  ],
+  "pages_usable": 5,
+  "why": "same label on several TLDs; cloudflare.com has 38 search hits vs 1 for the next (only the dominant domain accepted; flagged for review)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 67,
+  "name": "Snowflake",
+  "tier": "B_name_resolved_candidate_dominant_tld",
+  "accepted_domains": [
+   "snowflake.com"
+  ],
+  "pages_usable": 4,
+  "why": "same label on several TLDs; snowflake.com has 29 search hits vs 1 for the next (only the dominant domain accepted; flagged for review)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 68,
+  "name": "MongoDB Atlas",
+  "tier": "C_identity_review",
+  "accepted_domains": [],
+  "pages_usable": 0,
+  "why": "no candidate domain whose label equals the app name",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 74,
+  "name": "Jira",
+  "tier": "C_identity_review",
+  "accepted_domains": [],
+  "pages_usable": 0,
+  "why": "no candidate domain whose label equals the app name",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 77,
+  "name": "ClickUp",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "clickup.com"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 15,
+  "name": "Pylon",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "usepylon.com"
+  ],
+  "pages_usable": 4,
+  "why": "official hint domain from original list: usepylon.com",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 24,
+  "name": "Lark (Larksuite)",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "larksuite.com"
+  ],
+  "pages_usable": 6,
+  "why": "official hint domain from original list: open.larksuite.com",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 31,
+  "name": "Google Ads",
+  "tier": "A_hint_resolved_original_list",
+  "accepted_domains": [
+   "google.com"
+  ],
+  "pages_usable": 4,
+  "why": "official hint domain from original list: developers.google.com/google-ads",
+  "source_run": "runs/retrieval-wave-v2-hints-20261123_194329",
+  "provenance": "original_notion"
+ },
+ {
+  "id": 55,
+  "name": "Apify",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "apify.com"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 69,
+  "name": "Datadog",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "datadoghq.com"
+  ],
+  "pages_usable": 4,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 79,
+  "name": "Smartsheet",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "smartsheet.com"
+  ],
+  "pages_usable": 5,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 81,
+  "name": "Stripe",
+  "tier": "B_name_resolved_candidate_dominant_tld",
+  "accepted_domains": [
+   "stripe.com"
+  ],
+  "pages_usable": 5,
+  "why": "same label on several TLDs; stripe.com has 32 search hits vs 2 for the next (only the dominant domain accepted; flagged for review)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 82,
+  "name": "Plaid",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "plaid.com"
+  ],
+  "pages_usable": 4,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 83,
+  "name": "Binance",
+  "tier": "D_retrieval_gap",
+  "accepted_domains": [
+   "binance.com"
+  ],
+  "pages_usable": 2,
+  "why": "same label on several TLDs; binance.com has 34 search hits vs 2 for the next (only the dominant domain accepted; flagged for review)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 85,
+  "name": "iPayX",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "ipayx.ai"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 86,
+  "name": "QuickBooks",
+  "tier": "C_identity_review",
+  "accepted_domains": [],
+  "pages_usable": 0,
+  "why": "no candidate domain whose label equals the app name",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 87,
+  "name": "Xero",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "xero.com"
+  ],
+  "pages_usable": 3,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 88,
+  "name": "Brex",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "brex.com"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 89,
+  "name": "Ramp",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "ramp.com"
+  ],
+  "pages_usable": 5,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 90,
+  "name": "PitchBook",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "pitchbook.com"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 91,
+  "name": "NotebookLM",
+  "tier": "C_identity_review",
+  "accepted_domains": [],
+  "pages_usable": 0,
+  "why": "no candidate domain whose label equals the app name",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 92,
+  "name": "Otter AI",
+  "tier": "C_identity_review",
+  "accepted_domains": [],
+  "pages_usable": 0,
+  "why": "no candidate domain whose label equals the app name",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 93,
+  "name": "Fathom",
+  "tier": "C_identity_review",
+  "accepted_domains": [
+   "fathom.ai",
+   "fathom.global",
+   "fathom.video",
+   "fathomhq.com"
+  ],
+  "pages_usable": 6,
+  "why": "several differently-labelled domains match; identity ambiguous",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 94,
+  "name": "Consensus",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "consensus.app"
+  ],
+  "pages_usable": 5,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 95,
+  "name": "Reducto",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "reducto.ai"
+  ],
+  "pages_usable": 5,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 96,
+  "name": "Devin",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "devin.ai"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 97,
+  "name": "higgsfield",
+  "tier": "B_name_resolved_candidate_dominant_tld",
+  "accepted_domains": [
+   "higgsfield.ai"
+  ],
+  "pages_usable": 5,
+  "why": "same label on several TLDs; higgsfield.ai has 32 search hits vs 1 for the next (only the dominant domain accepted; flagged for review)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 98,
+  "name": "Mermaid CLI",
+  "tier": "C_identity_review",
+  "accepted_domains": [],
+  "pages_usable": 0,
+  "why": "no candidate domain whose label equals the app name",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 99,
+  "name": "YouTube Transcript",
+  "tier": "D_retrieval_gap",
+  "accepted_domains": [
+   "youtube-transcript.ai"
+  ],
+  "pages_usable": 0,
+  "why": "same label on several TLDs; youtube-transcript.ai has 3 search hits vs 1 for the next (only the dominant domain accepted; flagged for review)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ },
+ {
+  "id": 100,
+  "name": "Grain",
+  "tier": "B_name_resolved_candidate_dominant_tld",
+  "accepted_domains": [
+   "grain.com"
+  ],
+  "pages_usable": 6,
+  "why": "same label on several TLDs; grain.com has 24 search hits vs 1 for the next (only the dominant domain accepted; flagged for review)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ }
+]

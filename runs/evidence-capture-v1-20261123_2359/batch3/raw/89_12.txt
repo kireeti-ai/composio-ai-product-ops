@@ -1,0 +1,82 @@
+title: Welcome
+source_url: /developer-api/v1/introduction
+summary: Use Ramp at your company, or build for others.
+
+content:
+## Get started
+
+Use Ramp at your company, or build for others.
+
+- [For customers](</developer-api/v1/getting-started>): Have a Ramp account? Create credentials and make your first API call.
+
+- [For partners](</developer-api/v1/build-with-ramp>): Building an integration for other businesses? Start with the partner program.
+
+- [Get sandbox access](</developer-api/v1/sandbox-access>): Don't have a Ramp account? Request a sandbox to start building right away.
+
+## Use cases
+
+End-to-end build journeys that span multiple Ramp products.
+
+- [AI Agents](</developer-api/v1/ramp-mcp>): Connect agents to Ramp via MCP or the CLI. Read data, process approvals, make purchases.
+
+- [AI Usage Tracking](</developer-api/v1/ai-usage>): Let customers connect Ramp, then broadcast their AI usage events into Ramp spend analytics.
+
+- [Applications](</developer-api/v1/applications>): Partner-led customer onboarding. Pre-fill a Ramp application, optionally request OAuth consent, track status via webhooks.
+
+- [Bill Payments](</developer-api/v1/bill-payments>): Create approved bills via API and pay vendors end-to-end. Pick a payment method, attach docs, run 3-way match.
+
+- [Customized Approvers](</developer-api/v1/customized-approvers>): Route approvals based on accounting dimensions via matrix tables.
+
+- [ERP Integrations](</developer-api/v1/erp-integrations>): Two-way sync between Ramp and your customer ERP — chart of accounts in, transactions and bills out.
+
+- [Procurement Integrations with the Blank Canvas API](</developer-api/v1/procurement-intake>): Receive Ramp intake requests in your tool and return approval decisions via Blank Canvas.
+
+- [Spend programs](</developer-api/v1/spend-programs>): The recurring-budget pattern. Mint funds from a template so policy stays consistent.
+
+- [User lifecycle](</developer-api/v1/user-lifecycle>): Onboard, update, deactivate, reactivate, and stage draft users via the API.
+
+- [Agent Payments](</developer-api/v1/agent-payments>): Choose Agent Cards, Stripe MPP, or x402 for an agent purchase.
+
+## Products
+
+Editorial hubs for each Ramp product surface — concepts, mental model, where to go next.
+
+- [AI Index](</developer-api/v1/ai-index>): Business AI adoption by vendor, industry sector, and company size.
+
+- [Bill Pay](</developer-api/v1/bill-pay>): Bills, draft bills, payments, vendors, 3-way match.
+
+- [Cards](</developer-api/v1/cards-and-funds>): Virtual, physical, and agent cards. Every card draws against a fund.
+
+- [Custom Records](</developer-api/v1/custom-records>): Define your own data model in Ramp.
+
+- [Procurement](</developer-api/v1/procurement>): Intake requests, purchase orders, vendor onboarding.
+
+- [Ramp Rate](</developer-api/v1/ramp-rate>): Software adoption and growth benchmarks across categories and vendors.
+
+- [Reimbursements](</developer-api/v1/reimbursements>): Out-of-pocket employee expenses — manual, OCR-drafted receipts, mileage.
+
+- [Spend Controls](</developer-api/v1/spend-controls>): Funds, spend programs, and approvals — the policy layer behind every dollar.
+
+- [Users](</developer-api/v1/users>): The people on a Ramp account. Status, identity, async creation.
+
+## Conventions
+
+API rules and cross-cutting patterns. Reference while building.
+
+- [Data relationships](</developer-api/v1/data-relationships>): How Ramp resources connect to each other.
+
+- [Deferred tasks](</developer-api/v1/deferred-tasks>): Async work, polling, lifecycle.
+
+- [Errors](</developer-api/v1/error-handling>): Status codes, error shapes, debugging.
+
+- [Monetary values](</developer-api/v1/monetary-values>): Currency, precision, ISO codes.
+
+- [Pagination](</developer-api/v1/pagination>): Cursor-based, page sizes, sort order.
+
+- [Rate limits and timeouts](</developer-api/v1/rate-limiting>): Quotas, backoff, headers to read.
+
+- [Support](</developer-api/v1/debugging>): Grab the x-trace-id, follow the trace, file a developer support ticket.
+
+- [Webhooks](</developer-api/v1/webhooks>): Subscribe, verify signatures, retry.
+
+Canonical OpenAPI schema for the Developer API: [/openapi/developer-api.json](</openapi/developer-api.json>).

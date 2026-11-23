@@ -1,0 +1,74 @@
+{
+ "id": 8,
+ "name": "Close",
+ "pass1_sha": "3edd3eeaba22c193",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt describes OAuth 2.0 flow with client ID and secret.",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No mention of API key authentication in excerpts.",
+    "needs_human": false
+   },
+   {
+    "item": "basic",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Basic authentication not referenced in provided excerpts.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "terminology_difference",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "OAuth 2.0 access tokens are bearer tokens; different wording.",
+    "needs_human": true
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_trial_or_paid_plan :: API keys and OAuth apps can be managed directly in a Close account under Settings \u2192 Developer.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms API keys management, but does not state OAuth apps are managed there.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt explicitly mentions using the REST API for data operations.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states Close provides an MCP server for AI agents.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

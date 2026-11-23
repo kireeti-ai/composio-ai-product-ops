@@ -1,0 +1,78 @@
+{
+ "tag": "groq_orgA",
+ "app": 53,
+ "name": "Ahrefs",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 4,
+ "latency_s": 2.59,
+ "tokens_in": 1404,
+ "tokens_out": 873,
+ "cost_usd": 0,
+ "validation": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": [],
+  "n_evidence": 4,
+  "quote_found": 3,
+  "url_ok": 4,
+  "quote_only_in_full": 0
+ },
+ "output": {
+  "one_liner": "Ahrefs offers a RESTful API (v3) providing extensive SEO data across Site Explorer, Keywords Explorer, SERP, Rank Tracker, Site Audit, and more.",
+  "auth_methods": [
+   "bearer_token"
+  ],
+  "access": "self_serve_trial_or_paid_plan",
+  "access_note": "Full API access requires an eligible paid plan; other plans get only limited free test queries.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "buildability": "yes_with_caveats",
+  "blocker": "Requires a paid Ahrefs subscription for most endpoints; only limited free test queries are available otherwise.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+    "quote": "Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`.",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "access",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.ahrefs.com/en/api/reference/public",
+    "quote": "https://api.ahrefs.com/v3/public",
+    "quote_found": true,
+    "url_in_sources": true,
+    "quote_in_full_evidence": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.ahrefs.com/",
+    "quote": "unknown",
+    "quote_found": false,
+    "url_in_sources": true,
+    "quote_in_full_evidence": false
+   }
+  ]
+ },
+ "raw_text": null,
+ "unsupported_claim_fields": [
+  "existing_mcp"
+ ],
+ "prompt_sha256": "58d9b9eb2b9cbd4d997837baab7dc8ce55bb4dda7714235e99b09addcd42d058",
+ "at": "2026-11-23T19:14:26+05:30"
+}

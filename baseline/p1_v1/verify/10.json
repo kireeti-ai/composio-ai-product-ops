@@ -1,0 +1,58 @@
+{
+ "id": 10,
+ "name": "DealCloud",
+ "pass1_sha": "48d73cd754771eb0",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states DealCloud uses OAuth2 Client Credentials flow.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt describes generating and using a bearer token for API requests.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "unknown :: The provided documentation does not specify developer registration terms, pricing tiers, or how to obtain site credentials.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Doc excerpt contains no information on registration, pricing, or credential acquisition.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Docs explicitly describe DealCloud as offering REST APIs",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention official status of DealCloud MCP",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

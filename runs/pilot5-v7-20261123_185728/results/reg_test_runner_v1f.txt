@@ -1,0 +1,36 @@
+PASS cap stop: 3 records then stop
+PASS daily quota: ONE request to m1 then fallback, no retry loop
+PASS resume: no overwrite, baseline id skipped
+PASS lock: second writer refused
+PASS #46: no duplicate URLs in sources (8 pages)
+PASS #46: every top-up URL is in pages_read; sources used: ['topup-v1-20261123', 'topup-v1r-20261123']
+PASS #46: per-page sha256 in meta matches stored text
+PASS #46: no off-target pages
+PASS #38: no duplicate URLs in sources (7 pages)
+PASS #38: every top-up URL is in pages_read; sources used: ['topup-v1-20261123', 'topup-v1r-20261123']
+PASS #38: per-page sha256 in meta matches stored text
+PASS #38: no off-target pages
+PASS #71: no duplicate URLs in sources (6 pages)
+PASS #71: every top-up URL is in pages_read; sources used: ['topup-v1-20261123']
+PASS #71: per-page sha256 in meta matches stored text
+PASS #71: no off-target pages
+PASS #46: two top-up sources (first attempt + retry) merged
+PASS #46: uncertainty partial / not confirmed in meta
+PASS inferred_self_serve apps (62,63,36) carry 'never report as confirmed' and access_confirmed=false
+PASS explicit apps (38,65) access_confirmed=true (still subject to verification)
+PASS LinkedIn Ads (33) and Notion (71) carry api_surface_state=partial
+PASS prompt+schema hashes equal the frozen baseline manifest
+ALL SELFTESTS PASSED
+PASS #52 (reconstructed list): notion membership NOT verified, carried into the record
+PASS #27 (original Notion): verified
+PASS 28 targets; the 27 of v1e have identical uncertainty/tiers/sources
+PASS excluded/held apps (Sherlock, Harvest, fanbasis, Linear, Coda, Neo4j) and registry ID 28 (WhatsApp Business) are NOT in the plan; Gladly IS (registry ID 20)
+PASS record keeps registry ID 20 / name Gladly
+PASS Gladly inputs = 4 baseline + 3 curated round-2 pages (7, no duplicates)
+PASS SDK / Ordergroove-auth / sidekick pages are NOT in Gladly inputs
+PASS MCP-client and sandbox pages ARE in Gladly inputs
+PASS Gladly uncertainty: access explicit_account_gated, pricing unknown, MCP client-only
+PASS Gladly api_surface partial; provenance verified (#<=50); tier D
+PASS top-up source = round-2 attempts file referenced directly with default tool
+PASS MCP page text is in the prompt sent to the (fake) model
+GLADLY TESTS DONE

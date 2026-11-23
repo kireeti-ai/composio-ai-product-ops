@@ -1,0 +1,357 @@
+{
+ "id": 90,
+ "name": "PitchBook",
+ "started": "2026-11-23T19:40:10+05:30",
+ "searches": [
+  {
+   "q": "PitchBook API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:12+05:30"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:14+05:30"
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:15+05:30"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:17+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://mcp-proxy-external.pitchbook.com",
+   "requested_at": "2026-11-23T19:40:18+05:30",
+   "status": "ok",
+   "final_url": "https://mcp-proxy-external.pitchbook.com",
+   "title": "MCP Proxy - Model Context Protocol Server",
+   "chars": 315,
+   "sha256": "4fce297ee2a511f152cc723b158db2e23a3471453191736c32a7dfb2fb3141a9",
+   "text": "## PitchBook MCP Gateway Production Environment\n\nSecure Access to PitchBook's MCP Servers\n\n### Developer Platform Features\n\nTechnical capabilities for secure MCP server integration and management\n\n#### sf-sandboxer\n\nSF Sandboxer\n\n### Platform Access Points\n\nDirect access to key system endpoints and developer tools",
+   "retrieved_at": "2026-11-23T19:40:18+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://mcp-proxy-external.pitchbook.com/toolsets",
+   "requested_at": "2026-11-23T19:40:20+05:30",
+   "status": "ok",
+   "final_url": "https://mcp-proxy-external.pitchbook.com/toolsets",
+   "title": "Manage Toolsets - PitchBook MCP External Gateway",
+   "chars": 1033,
+   "sha256": "493f1c3a22c8720e8572c78f6b1dff969d106b2624c742c838f2dfe94d55ab7b",
+   "text": "### My Toolsets\n\n### Create New Toolset\n\n#### Toolset Details\n\nUse lowercase with hyphens (kebab-case). This will be your endpoint name.\n\nUser-friendly name shown in client interfaces\n\nCreate custom tool collections as persistent MCP endpoints or export as JSONC files for VS Code Copilot Chat.\n\nToolsets let you group related MCP tools together. You have two options:\n\n```\n/toolsets/{name}/mcp\n```\n\n. Connect any MCP client (VS Code, IDEs).\n\n```\n#toolset-name\n```\n\nin Copilot Chat. Learn more \u2192\n\nLoading...\n\nUse lowercase with hyphens (kebab-case). This will be your endpoint name.\n\nUser-friendly name shown in client interfaces\n\nAn error occurred\n\nCopy the configuration below to connect your MCP client (VS Code, etc.) to this toolset:\n\n```\nbackstage__get_catalog\n```\n\n)\n\nYour toolset has been generated as a JSONC file for VS Code Copilot Chat. Copy the configuration below or download it.\n\n```\n#toolset-name\n```\n\nin Copilot Chat\n\nAre you sure you want to delete \"\"? This action cannot be undone and will remove the MCP endpoint.",
+   "retrieved_at": "2026-11-23T19:40:20+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://pitchbook.com/help/pitchbook-api",
+   "requested_at": "2026-11-23T19:40:21+05:30",
+   "status": "ok",
+   "final_url": "https://pitchbook.com/help/PitchBook-api",
+   "title": "Help: PitchBook API - PitchBook",
+   "chars": 2350,
+   "sha256": "2a3581f8e6d2f90306f6b25df17344af5a636ca27b5b0abd7908ab107c156e23",
+   "text": "## Overview\n\nPitchBook\u2019s API solution allows you to call specific PitchBook data into your internal business systems on demand. This flexible solution means you have access to PitchBook\u2019s expansive database. It\u2019s the ideal integration for CRM enrichment, allowing you to extract data on an ad-hoc basis that meets the needs of your organization.\n\nYou can explore a specific entity and retrieve valuable data, and the API solution enables you to apply specific criteria, such as location and industry, to drill down into the businesses you discover.\n\n## Use cases\n\nThe API is a good solution if:\n\n* Your scope and data points are subject to change frequently.\n* You require a near-instant population of data.\n* You perform ad-hoc research.\n* You want to see past and present financial data.\n* RESTful API is a system requirement.\n\n## How the API works\n\n**Accessing the API**\n\nThe PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com\n\n**Available data points**\n\nThe API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data.\u202fSee the full list from our API Endpoints Overview document.\n\n**Create your API connection**\n\nTo start your API connection, you will need to send a request directly to our Direct Data team through this link.\n\nOr if you\u2019re a PitchBook client, you can also head to the Plugins & Apps section from the My PitchBook section of the left-hand sidebar on the PitchBook Platform and choose PitchBook API.\n\nFrom this section on the platform, you can test specific endpoints. This section on PitchBook also allows you to reach out to our Direct Data team to request access to the API.\n\n## \n\n## Next steps\n\nOur team will work with you to understand the insights and data you\u2019re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.\n\n### Experience the PitchBook Platform firsthand\n\nDiscover how PitchBook\u2019s leading tools and capabilities can strengthen your due diligence workflows.\n\n* PitchBook API and Data Feed\n* Overview",
+   "retrieved_at": "2026-11-23T19:40:21+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "requested_at": "2026-11-23T19:40:31+05:30",
+   "status": "ok",
+   "final_url": "https://pitchbook.com/help/PitchBook-api",
+   "title": "Help: PitchBook API - PitchBook",
+   "chars": 2350,
+   "sha256": "2a3581f8e6d2f90306f6b25df17344af5a636ca27b5b0abd7908ab107c156e23",
+   "text": "## Overview\n\nPitchBook\u2019s API solution allows you to call specific PitchBook data into your internal business systems on demand. This flexible solution means you have access to PitchBook\u2019s expansive database. It\u2019s the ideal integration for CRM enrichment, allowing you to extract data on an ad-hoc basis that meets the needs of your organization.\n\nYou can explore a specific entity and retrieve valuable data, and the API solution enables you to apply specific criteria, such as location and industry, to drill down into the businesses you discover.\n\n## Use cases\n\nThe API is a good solution if:\n\n* Your scope and data points are subject to change frequently.\n* You require a near-instant population of data.\n* You perform ad-hoc research.\n* You want to see past and present financial data.\n* RESTful API is a system requirement.\n\n## How the API works\n\n**Accessing the API**\n\nThe PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com\n\n**Available data points**\n\nThe API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data.\u202fSee the full list from our API Endpoints Overview document.\n\n**Create your API connection**\n\nTo start your API connection, you will need to send a request directly to our Direct Data team through this link.\n\nOr if you\u2019re a PitchBook client, you can also head to the Plugins & Apps section from the My PitchBook section of the left-hand sidebar on the PitchBook Platform and choose PitchBook API.\n\nFrom this section on the platform, you can test specific endpoints. This section on PitchBook also allows you to reach out to our Direct Data team to request access to the API.\n\n## \n\n## Next steps\n\nOur team will work with you to understand the insights and data you\u2019re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.\n\n### Experience the PitchBook Platform firsthand\n\nDiscover how PitchBook\u2019s leading tools and capabilities can strengthen your due diligence workflows.\n\n* PitchBook API and Data Feed\n* Overview",
+   "retrieved_at": "2026-11-23T19:40:31+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://pitchbook.com/products/direct-access-data/api",
+   "requested_at": "2026-11-23T19:40:32+05:30",
+   "status": "ok",
+   "final_url": "https://pitchbook.com/products/direct-access-data/api",
+   "title": "API: Flexibly call down data on demand - PitchBook",
+   "chars": 1191,
+   "sha256": "6861edd09ef9b9386445624c5a0bdc5c0e715e1c7c4de43bd6eceb73f5427d9e",
+   "text": "# Bring trusted market data into the systems you already use\n\n## Get the data you need, when you need it\n\nCall down the specific data points you need for a dashboard, project, report or transaction using our API. Programatically track critical inflection points such as funding rounds, executive changes or liquidity events to stay on top of market activity.\n\nCall data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.\n\n## Customized solutions for the way you work\n\nOur team of experts will work with you to ensure your organization can bridge any gap of understanding to place insights and data where they can make the biggest business impact. Available data for each entity type is conveniently packaged across several endpoints so you can get all the data you need\u2014and none that you don\u2019t.\n\n## Streamline your operations\n\nOur RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry\u2019s best data directly into your workflow. Provide your team with the right data to more easily analyze trends and build predictive models\u2014right in your existing systems.",
+   "retrieved_at": "2026-11-23T19:40:32+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://pitchbook.com/pricing",
+   "requested_at": "2026-11-23T19:40:34+05:30",
+   "status": "ok",
+   "final_url": "https://pitchbook.com/pricing",
+   "title": "PitchBook Pricing: Plans, Cost, and Subscriptions - PitchBook",
+   "chars": 3560,
+   "sha256": "1ab92a9731d9258edf88198a1400d56c0fb23680f2bd61eefb4e7f7ad29d9ea6",
+   "text": "# PitchBook\u2019s pricing\n\nGet the most comprehensive view of the private capital market landscape. Request built-in pricing and discover how our data\u2019s unmatched breadth and depth power work across the asset classes, markets, and workflows that matter most to you.\n\n## Get Pricing\n\n86%\n\nof surveyed PitchBook customers saw  \nROI within their first year\n\nSource: PitchBook customer survey, 3,005 users, June 2026\n\n## Request Pricing\n\n### Execute your strategy with PitchBook\u2019s unparalleled global data and support\n\n* ### Always-on customer support and tools at your fingertips\n\n  Transform workflows with a customer success team that understands your business and the challenges you face. Connect with our support team through live chat or access our self-service help center at any time.\n* ### Power decisions with timely, relevant insights\n\n  Drive decision-making with data and insights in the format that works for you. Surface the latest market activity with the support of specialized data operations experts and fine-tuned processes.\n* ### Get unmatched breadth and depth\n\n  Execute your core workflows with meticulously gathered, expert-refined data exclusively available through PitchBook.\n\n### FAQs about PitchBook\n\nIs PitchBook worth it?\n\nOur full-featured platform and interconnected datasets mean your dollar goes further with us. Discover private market analysis and emerging technology research\u2014including direct access to our analyst team for consultation. Plus, enjoy complimentary access to our desktop offering, PitchBook Mobile app, and Excel and PowerPoint plugins, as well as our Chrome extension.\n\n\n\nHow much does PitchBook cost?\n\nWhile PitchBook is geared toward investment professionals, anyone can find value in our platform\u2019s extensive capital market data, research, and insights. Pricing options vary depending on how many seats you need and your firm type. Another primary consideration is whether you\u2019re interested in additional premium offerings, such as Direct Data or CRM Integration. Find out what the cost for you might look like by getting in touch with a representative today.\n\n\n\n**Can individuals use PitchBook?**\n\nPitchBook is geared towards sophisticated investment professionals, but almost anyone could find value in our premium, hard-to-find data covering the private, public, and credit market landscape. If you operate in any of these spaces, PitchBook might be right for you.\n\nDatasets include:\n\n* Private Equity Deals and Manager Data\n* Venture Capital Deals and Manager Data\n* Strategic Merger & Acquisition Deals and Acquirers Data\n* Limited Partner (LP) Data\n* Public Company Fundamental Data\n* Service Provider Data\n* People Data\n* Patents Data\n* Hedge Fund Data\n* Leveraged Loan News\n* Analytics\n* Index Data.\n\nGet in touch with a representative today to see how PitchBook can help you.\n\n\n\nDoes PitchBook offer a free trial?\n\nInterested in joining today? Fill out a form and we\u2019ll see if a free trial might be right for you.\n\n## Learn why PitchBook surpasses the competition\n\nCurious to see how PitchBook compares to other data providers?\n\n> ### \u201cPitchBook is the gold standard for data on privately backed companies and the VC and PE ecosystem. Over the years, they have expanded their coverage to provide excellent data on public companies and M&A as well, and have vastly increased the coverage on international companies. The platform is intuitive and easy\u2013to-use, and customer service is top-notch.\u201d\n\nSteven Medley, Senior Market Intelligence Manager, Sidley Austin LLP\n\n## Access PitchBook. Act confidently.",
+   "retrieved_at": "2026-11-23T19:40:34+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://pitchbook.com/help/pitchbook-api",
+   "title": "PitchBook API - PitchBook",
+   "snippet": "PitchBook\u2019s API solution allows you to call specific PitchBook data into your internal business systems on demand. This flexible solution means you have access to PitchBook\u2019s expansive database. It\u2019s"
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "title": "Help: PitchBook API - PitchBook",
+   "snippet": "the API**\nThe PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL:"
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://pitchbook.com/products/direct-access-data/api",
+   "title": "Company Data API: On-Demand Market Data - PitchBook",
+   "snippet": "## Get the data you need, when you need it\nCall down the specific data points you need for a dashboard, project, report or transaction using our API. Programatically track critical inflection points"
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://dlthub.com/context/source/pitchbook-api",
+   "title": "PitchBook Python API Docs | dltHub",
+   "snippet": "and public market data such as companies, deals, investors, and funds. The REST API base URL is `https://api.pitchbook.com` and all requests require an Authorization header with a custom token format."
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://github.com/api-evangelist/pitchbook/blob/main/apis.yml",
+   "title": "pitchbook/apis.yml at main \u00b7 api-evangelist/pitchbook",
+   "snippet": "- type: Documentation\nurl: https://pitchbook.com/developers\nmethod: none"
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://pitchbook.com/products/direct-access-data",
+   "title": "Power financial workflows with PitchBook Direct Data - PitchBook",
+   "snippet": "## API\nAccess trusted data on demand with the PitchBook API. Call and retrieve specific data points from our comprehensive universe of market intelligence, paying for what you need, when you need it."
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://dev.writer.com/connectors/pitchbook",
+   "title": "PitchBook connector",
+   "snippet": "for API access\n3. Generate a new API key\n4. Copy the API key for use in Control Center\nFor detailed instructions, see [PitchBook\u2019s API documentation](https://pitchbook.com/help/PitchBook-api)."
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://apitracker.io/a/pitchbook",
+   "title": "PitchBook API - Documentation & ...",
+   "snippet": "PitchBook offers a REST API for retrieving private-market data into internal systems. API access requires a separate contract from the PitchBook Platform."
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://raw.githubusercontent.com/api-evangelist/pitchbook/refs/heads/main/openapi/pitchbook-general-api-openapi.yml",
+   "title": "raw.githubusercontent.com/api-evangelist/pitchbook/refs/heads/main/openapi/pitchbook-general-api-openapi.yml",
+   "snippet": "get:\ntags:\n- General\nsummary: General Search\ndescription: Retrieves business entities matching the specified criteria\noperationId: generalSearch\nparameters:\n-"
+  },
+  {
+   "q": "PitchBook API documentation",
+   "url": "https://raw.githubusercontent.com/api-evangelist/pitchbook/refs/heads/main/openapi/pitchbook-deals-api-openapi.yml",
+   "title": "raw.githubusercontent.com/api-evangelist/pitchbook/refs/heads/main/openapi/pitchbook-deals-api-openapi.yml",
+   "snippet": "    get:\ntags:\n- Deals\nsummary: Deal Search\ndescription: Retrieves deals along with the companies associated with the deal\noperationId: dealSearch\n"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "title": "Help: PitchBook API - PitchBook",
+   "snippet": "the insights and data you\u2019re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://dlthub.com/context/source/pitchbook-api",
+   "title": "PitchBook Python API Docs | dltHub",
+   "snippet": "\"client\": {\n\"base_url\": \"https://api.pitchbook.com\",\n\"auth\": {\"type\": \"api_key\", \"api_key\": api_key, \"name\": \"Authorization\", \"location\": \"header\"},\n},"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://pitchbook.com/products/direct-access-data/api",
+   "title": "Company Data API: On-Demand Market Data - PitchBook",
+   "snippet": "## Get the data you need, when you need it\nCall down the specific data points you need for a dashboard, project, report or transaction using our API. Programatically track critical inflection points"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://apis.io/providers/pitchbook/",
+   "title": "PitchBook API \u2014 Docs, Endpoints & OpenAPI",
+   "snippet": "PitchBook's developer surface includes authentication, documentation ... Authentication, authorization, and security posture."
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc",
+   "title": "PitchBook API Documentation",
+   "snippet": "**Authentication Example**\n> [https://api.pitchbook.com/{route}](https://api-v2.pitchbook.com/%7Broute%7D)\n> Authorization: PB-Token LzUU9xgNjn7avDw5Bd96xNVS0t5dlGuD"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://dev.writer.com/connectors/pitchbook",
+   "title": "PitchBook connector",
+   "snippet": "account\n2. Navigate to API settings or contact PitchBook support for API access\n3. Generate a new API key\n4. Copy the API key for use in AI Studio\nFor detailed instructions, see [PitchBook\u2019s"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://docs.quilrai.dev/mcp-gateway/provider-setup/pitchbook",
+   "title": "PitchBook | QuilrAI Docs",
+   "snippet": "| Auth | OAuth 2.1, browser sign-in with PitchBook-issued client credentials |"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://raw.githubusercontent.com/api-evangelist/pitchbook/refs/heads/main/authentication/pitchbook-authentication.yml",
+   "title": "raw.githubusercontent.com/api-evangelist/pitchbook/refs/heads/main/authentication/pitchbook-authentication.yml",
+   "snippet": "summary:\ntypes:\n- apiKey\napi_key_in:\n- header\nschemes:\n- name: pbToken\ntype: apiKey\nin: header\nparameter: Authorization\nsources:\n- openapi/pitchbook-openapi.json"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://scrapegraphai.com/blog/pitchbook-api",
+   "title": "PitchBook API Documentation and Python Guide (2026)",
+   "snippet": "a documented request. PitchBook says its Direct Data team works with customers to provision an API key or authentication token and map purchased data into the customer's structure. The public help"
+  },
+  {
+   "q": "PitchBook API authentication OAuth API key developer",
+   "url": "https://apitracker.io/a/pitchbook",
+   "title": "PitchBook API - Documentation & Integration",
+   "snippet": "PitchBook offers a REST API for retrieving private-market data into internal systems. API access requires a separate contract from the PitchBook Platform."
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://pitchbook.com/pricing",
+   "title": "PitchBook Pricing: Plans, Cost, and Subscriptions - PitchBook",
+   "snippet": "PowerPoint plugins, as well as our Chrome extension.\nWhile PitchBook is geared toward investment professionals, anyone can find value in our platform\u2019s extensive capital market data, research, and"
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://pitchbook.com/products/direct-access-data/api",
+   "title": "Company Data API: On-Demand Market Data - PitchBook",
+   "snippet": "when you need it\nCall down the specific data points you need for a dashboard, project, report or transaction using our API. Programatically track critical inflection points such as funding rounds,"
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "title": "Help: PitchBook API - PitchBook",
+   "snippet": "## Overview\nPitchBook\u2019s API solution allows you to call specific PitchBook data into your internal business systems on demand. This flexible solution means you have access to PitchBook\u2019s expansive..."
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://pitchbook.com/products/direct-access-data",
+   "title": "Power financial workflows with PitchBook Direct Data - PitchBook",
+   "snippet": "## API\nAccess trusted data on demand with the PitchBook API. Call and retrieve specific data points from our comprehensive universe of market intelligence, paying for what you need, when you need it."
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://pitchbook.com/data",
+   "title": "Explore PitchBook Data | Companies, Investors, Deals & Funds - PitchBook",
+   "snippet": "Direct Feed and API\nIntegrate our data into your systems with the PitchBook API and Data Feed. Feed internal tools, dashboards, and models with live private market intelligence instead of a static"
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://dlthub.com/context/source/pitchbook-api",
+   "title": "PitchBook Python API Docs | dltHub",
+   "snippet": "**1. Get your credentials**\nAccess to the PitchBook API is a paid, contract-gated add-on and is not available via a self-serve dashboard. To obtain credentials: 1. Contact your PitchBook account"
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://developers.frontegg.com/agen-for-work/connectors/marketplace/pitchbook",
+   "title": "PitchBook integration",
+   "snippet": "PitchBook API keys are provisioned as part of a paid API add-on rather than generated self-serve. Contact your PitchBook account manager (or your organization's PitchBook administrator) to enable API"
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://easyvc.ai/vs/pitchbook-pricing/",
+   "title": "PitchBook Pricing 2026: $12K-$70K/Year (Full Breakdown)",
+   "snippet": "PitchBook pricing ranges from $12,000 to $70,000+ per year depending on team size and features. Solo users typically pay $12,000-$20,000/year, API access ( ..."
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://pipeline.zoominfo.com/sales/pitchbook-api-review",
+   "title": "PitchBook API Review: Can You Build on It? [2026]",
+   "snippet": "| **Pricing / access** | Enterprise add-on requiring a [separate contract](https://pitchbook.com/help/PitchBook-api) on top of a PitchBook platform subscription; quote-only |"
+  },
+  {
+   "q": "PitchBook API access pricing plans developer account",
+   "url": "https://investordatarooms.com/pitchbook-api",
+   "title": "PitchBook API: Access, Pricing, and What You Get",
+   "snippet": "& Apps \u2192 PitchBook API* inside the platform. That routes a request to the Direct Data team.\n- **New customers** contact the Direct Data team directly. API access then gets negotiated alongside a"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://pitchbook.com/media/press-releases/pitchbook-announces-new-essential-mcp-integration-with-perplexity-expanding-access-to-ai-powered-verifiable-market-intelligence",
+   "title": "PitchBook Announces New Essential MCP Integration with Perplexity, Expanding Access to AI-Powered, Verifiable Market Intelligence | PitchBook",
+   "snippet": "AI-answer engine. Through Perplexity\u2019s new PitchBook Essential MCP server, users can now access PitchBook\u2019s trusted firmographic intelligence directly within Perplexity\u2019s conversational interface."
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+   "title": "Getting started with PitchBook Premium Connector - PitchBook",
+   "snippet": "- **Setup** \u2013 AI partners connect securely to PitchBook\u2019s Premium Connector (built on MCP server technology) directly through the partner\u2019s site. There\u2019s no need for local installation or custom"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://mcp-proxy-external.pitchbook.com",
+   "title": "MCP Proxy - Model Context Protocol Server",
+   "snippet": "Secure Access to PitchBook's MCP Servers\nTechnical capabilities for secure MCP server integration and management"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://martechdb.com/vendors/pitchbook.md",
+   "title": "martechdb.com/vendors/pitchbook.md",
+   "snippet": "Yes. PitchBook publishes an official MCP server at https://mcp.pitchbook.com/mcp. It's hosted and lets you sign in with your PitchBook account. We last checked it on 7 Oct 2026. MartechDB lists only"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+   "title": "AI Workflow Automation for Private Markets - PitchBook",
+   "snippet": "Direct Feed, API, and PitchBook Data MCP\nIntegrate our data into your systems with the Direct Feed, API, and PitchBook Data MCP. Feed internal tools, dashboards, and models with live private market"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://mcp.so/servers/pitchbook",
+   "title": "PitchBook MCP Server: Tools, Setup & Config",
+   "snippet": "## About PitchBook MCP Server\nPitchBook provides data on private and public capital markets, covering companies, investors, deals, and funds. Its Premium remote MCP server brings that intelligence"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://mcpservers.org/remote-mcp-servers/pitchbook",
+   "title": "PitchBook Official Remote MCP Server \u2014 Setup Guide",
+   "snippet": "\nThe PitchBook remote MCP server is a hosted Model Context Protocol endpoint at https://premium.mcp.pitchbook.com/mcp, so AI assistants can connect to it without installing or running anything"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+   "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors' Rapidly Evolving Workflow Needs | PitchBook",
+   "snippet": "The PitchBook Data MCP is currently live and available to customers upon request."
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://mcp-proxy-external.pitchbook.com/toolsets",
+   "title": "Manage Toolsets - PitchBook MCP External Gateway",
+   "snippet": "MCP tools together. You have two options:\n- **\ud83d\udd17 Create MCP Endpoint:** Creates a persistent toolset accessible as a dedicated MCP server at `/toolsets/{name}/mcp`. Connect any MCP client (VS Code,"
+  },
+  {
+   "q": "PitchBook MCP server official",
+   "url": "https://apigene.ai/mcp/official/pitchbook",
+   "title": "PitchBook MCP Server - Official Setup Guide",
+   "snippet": "Installation Instructions\nAdd PitchBook to your MCP-compatible client\n`https://premium.mcp.pitchbook.com/mcp`"
+  }
+ ],
+ "official_domain_candidates": {
+  "pitchbook.com": 17
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "pitchbook.com",
+ "completed": "2026-11-23T19:40:34+05:30"
+}

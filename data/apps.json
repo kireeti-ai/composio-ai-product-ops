@@ -1,0 +1,1016 @@
+{
+ "provenance": {
+  "source": "authoritative supplied Notion export HTML",
+  "archive_name": "1a4e2f2d-ee13-4234-80be-ef2ec6af30b0_ExportBlock-f24b1f34-8e4e-4e7f-a056-ba241f715ea7.zip",
+  "archive_sha256": "936c083b10dbcc36c3bad3863ce5cdb96a14dad2b680f910e018a4433e21930c",
+  "html_member": "AI Product Ops Intern -The take-home assignment 2ed8a3054592833990dc8178b0652c1c.html",
+  "apps_1_50": "Names, IDs, categories, and hints matched the supplied original Notion export.",
+  "apps_51_100": "Names, IDs, categories, and hints matched the supplied original Notion export; prior reconstructed-candidate provenance is retained in historical run artifacts.",
+  "validation": "all 100 IDs are unique, contiguous, and source-ordered; 100 unique names; all names/categories match; website/hint values copied verbatim from the source table."
+ },
+ "categories": [
+  "CRM and Sales",
+  "Support and Helpdesk",
+  "Communications and Messaging",
+  "Marketing, Ads, Email and Social",
+  "Ecommerce",
+  "Data, SEO and Scraping",
+  "Developer, Infra and Data platforms",
+  "Productivity and Project Management",
+  "Finance and Fintech",
+  "AI, Research and Media-native"
+ ],
+ "apps": [
+  [
+   1,
+   1,
+   "Salesforce",
+   "salesforce.com",
+   "notion_export"
+  ],
+  [
+   2,
+   1,
+   "HubSpot",
+   "hubspot.com",
+   "notion_export"
+  ],
+  [
+   3,
+   1,
+   "Pipedrive",
+   "pipedrive.com",
+   "notion_export"
+  ],
+  [
+   4,
+   1,
+   "Attio",
+   "attio.com",
+   "notion_export"
+  ],
+  [
+   5,
+   1,
+   "Twenty",
+   "twenty.com (open-source CRM)",
+   "notion_export"
+  ],
+  [
+   6,
+   1,
+   "Podio",
+   "podio.com",
+   "notion_export"
+  ],
+  [
+   7,
+   1,
+   "Zoho CRM",
+   "zoho.com/crm",
+   "notion_export"
+  ],
+  [
+   8,
+   1,
+   "Close",
+   "close.com",
+   "notion_export"
+  ],
+  [
+   9,
+   1,
+   "Copper",
+   "copper.com",
+   "notion_export"
+  ],
+  [
+   10,
+   1,
+   "DealCloud",
+   "api.docs.dealcloud.com",
+   "notion_export"
+  ],
+  [
+   11,
+   2,
+   "Zendesk",
+   "zendesk.com",
+   "notion_export"
+  ],
+  [
+   12,
+   2,
+   "Intercom",
+   "intercom.com",
+   "notion_export"
+  ],
+  [
+   13,
+   2,
+   "Freshdesk",
+   "freshdesk.com",
+   "notion_export"
+  ],
+  [
+   14,
+   2,
+   "Front",
+   "front.com",
+   "notion_export"
+  ],
+  [
+   15,
+   2,
+   "Pylon",
+   "usepylon.com",
+   "notion_export"
+  ],
+  [
+   16,
+   2,
+   "LiveAgent",
+   "liveagent.com",
+   "notion_export"
+  ],
+  [
+   17,
+   2,
+   "Plain",
+   "plain.com",
+   "notion_export"
+  ],
+  [
+   18,
+   2,
+   "Help Scout",
+   "helpscout.com",
+   "notion_export"
+  ],
+  [
+   19,
+   2,
+   "Gorgias",
+   "gorgias.com",
+   "notion_export"
+  ],
+  [
+   20,
+   2,
+   "Gladly",
+   "gladly.com",
+   "notion_export"
+  ],
+  [
+   21,
+   3,
+   "Slack",
+   "slack.com",
+   "notion_export"
+  ],
+  [
+   22,
+   3,
+   "Twilio",
+   "twilio.com",
+   "notion_export"
+  ],
+  [
+   23,
+   3,
+   "Zoho Cliq",
+   "zoho.com/cliq",
+   "notion_export"
+  ],
+  [
+   24,
+   3,
+   "Lark (Larksuite)",
+   "open.larksuite.com",
+   "notion_export"
+  ],
+  [
+   25,
+   3,
+   "Pumble",
+   "pumble.com",
+   "notion_export"
+  ],
+  [
+   26,
+   3,
+   "Discord",
+   "discord.com",
+   "notion_export"
+  ],
+  [
+   27,
+   3,
+   "Telegram",
+   "core.telegram.org",
+   "notion_export"
+  ],
+  [
+   28,
+   3,
+   "WhatsApp Business",
+   "developers.facebook.com/docs/whatsapp",
+   "notion_export"
+  ],
+  [
+   29,
+   3,
+   "Aircall",
+   "aircall.io",
+   "notion_export"
+  ],
+  [
+   30,
+   3,
+   "Vonage",
+   "developer.vonage.com",
+   "notion_export"
+  ],
+  [
+   31,
+   4,
+   "Google Ads",
+   "developers.google.com/google-ads",
+   "notion_export"
+  ],
+  [
+   32,
+   4,
+   "Meta Ads",
+   "developers.facebook.com/docs/marketing-apis",
+   "notion_export"
+  ],
+  [
+   33,
+   4,
+   "LinkedIn Ads",
+   "learn.microsoft.com/linkedin/marketing",
+   "notion_export"
+  ],
+  [
+   34,
+   4,
+   "GoHighLevel",
+   "highlevel.stoplight.io",
+   "notion_export"
+  ],
+  [
+   35,
+   4,
+   "Mailchimp",
+   "mailchimp.com/developer",
+   "notion_export"
+  ],
+  [
+   36,
+   4,
+   "Klaviyo",
+   "developers.klaviyo.com",
+   "notion_export"
+  ],
+  [
+   37,
+   4,
+   "systeme.io",
+   "systeme.io (funnel builder)",
+   "notion_export"
+  ],
+  [
+   38,
+   4,
+   "Pinterest",
+   "developers.pinterest.com",
+   "notion_export"
+  ],
+  [
+   39,
+   4,
+   "Threads (Meta)",
+   "developers.facebook.com/docs/threads",
+   "notion_export"
+  ],
+  [
+   40,
+   4,
+   "SendGrid",
+   "sendgrid.com",
+   "notion_export"
+  ],
+  [
+   41,
+   5,
+   "Shopify",
+   "shopify.dev",
+   "notion_export"
+  ],
+  [
+   42,
+   5,
+   "WooCommerce",
+   "woocommerce.com/document/woocommerce-rest-api",
+   "notion_export"
+  ],
+  [
+   43,
+   5,
+   "BigCommerce",
+   "developer.bigcommerce.com",
+   "notion_export"
+  ],
+  [
+   44,
+   5,
+   "Salesforce Commerce Cloud",
+   "developer.salesforce.com/docs/commerce",
+   "notion_export"
+  ],
+  [
+   45,
+   5,
+   "Magento (Adobe Commerce)",
+   "developer.adobe.com/commerce",
+   "notion_export"
+  ],
+  [
+   46,
+   5,
+   "Squarespace",
+   "developers.squarespace.com",
+   "notion_export"
+  ],
+  [
+   47,
+   5,
+   "Ecwid",
+   "api-docs.ecwid.com",
+   "notion_export"
+  ],
+  [
+   48,
+   5,
+   "Gumroad",
+   "gumroad.com/api",
+   "notion_export"
+  ],
+  [
+   49,
+   5,
+   "Amazon Selling Partner",
+   "developer-docs.amazon.com/sp-api",
+   "notion_export"
+  ],
+  [
+   50,
+   5,
+   "fanbasis",
+   "fanbasis.com",
+   "notion_export"
+  ],
+  [
+   51,
+   6,
+   "DataForSEO",
+   "docs.dataforseo.com",
+   "notion_export"
+  ],
+  [
+   52,
+   6,
+   "SE Ranking",
+   "seranking.com/api",
+   "notion_export"
+  ],
+  [
+   53,
+   6,
+   "Ahrefs",
+   "ahrefs.com/api",
+   "notion_export"
+  ],
+  [
+   54,
+   6,
+   "MrScraper",
+   "docs.mrscraper.com",
+   "notion_export"
+  ],
+  [
+   55,
+   6,
+   "Apify",
+   "docs.apify.com",
+   "notion_export"
+  ],
+  [
+   56,
+   6,
+   "Firecrawl",
+   "firecrawl.dev",
+   "notion_export"
+  ],
+  [
+   57,
+   6,
+   "Bright Data",
+   "brightdata.com",
+   "notion_export"
+  ],
+  [
+   58,
+   6,
+   "Sherlock",
+   "github.com/sherlock-project/sherlock",
+   "notion_export"
+  ],
+  [
+   59,
+   6,
+   "Waterfall.io",
+   "waterfall.io (contact/company intel)",
+   "notion_export"
+  ],
+  [
+   60,
+   6,
+   "Clay",
+   "clay.com",
+   "notion_export"
+  ],
+  [
+   61,
+   7,
+   "GitHub",
+   "docs.github.com/rest",
+   "notion_export"
+  ],
+  [
+   62,
+   7,
+   "Vercel",
+   "vercel.com/docs/rest-api",
+   "notion_export"
+  ],
+  [
+   63,
+   7,
+   "Netlify",
+   "docs.netlify.com/api",
+   "notion_export"
+  ],
+  [
+   64,
+   7,
+   "Cloudflare",
+   "developers.cloudflare.com/api",
+   "notion_export"
+  ],
+  [
+   65,
+   7,
+   "Supabase",
+   "supabase.com/docs",
+   "notion_export"
+  ],
+  [
+   66,
+   7,
+   "Neo4j",
+   "neo4j.com/docs/api",
+   "notion_export"
+  ],
+  [
+   67,
+   7,
+   "Snowflake",
+   "docs.snowflake.com",
+   "notion_export"
+  ],
+  [
+   68,
+   7,
+   "MongoDB Atlas",
+   "mongodb.com/docs/atlas/api",
+   "notion_export"
+  ],
+  [
+   69,
+   7,
+   "Datadog",
+   "docs.datadoghq.com/api",
+   "notion_export"
+  ],
+  [
+   70,
+   7,
+   "Sentry",
+   "docs.sentry.io/api",
+   "notion_export"
+  ],
+  [
+   71,
+   8,
+   "Notion",
+   "developers.notion.com",
+   "notion_export"
+  ],
+  [
+   72,
+   8,
+   "Airtable",
+   "airtable.com/developers",
+   "notion_export"
+  ],
+  [
+   73,
+   8,
+   "Linear",
+   "developers.linear.app",
+   "notion_export"
+  ],
+  [
+   74,
+   8,
+   "Jira",
+   "developer.atlassian.com",
+   "notion_export"
+  ],
+  [
+   75,
+   8,
+   "Asana",
+   "developers.asana.com",
+   "notion_export"
+  ],
+  [
+   76,
+   8,
+   "Monday.com",
+   "developer.monday.com",
+   "notion_export"
+  ],
+  [
+   77,
+   8,
+   "ClickUp",
+   "clickup.com/api",
+   "notion_export"
+  ],
+  [
+   78,
+   8,
+   "Coda",
+   "coda.io/developers",
+   "notion_export"
+  ],
+  [
+   79,
+   8,
+   "Smartsheet",
+   "smartsheet.com/developers",
+   "notion_export"
+  ],
+  [
+   80,
+   8,
+   "Harvest",
+   "harvestapp.com (help.getharvest.com/api-v2)",
+   "notion_export"
+  ],
+  [
+   81,
+   9,
+   "Stripe",
+   "stripe.com/docs/api",
+   "notion_export"
+  ],
+  [
+   82,
+   9,
+   "Plaid",
+   "plaid.com/docs",
+   "notion_export"
+  ],
+  [
+   83,
+   9,
+   "Binance",
+   "binance-docs.github.io",
+   "notion_export"
+  ],
+  [
+   84,
+   9,
+   "Paygent Connect",
+   "paygent (NMI-powered)",
+   "notion_export"
+  ],
+  [
+   85,
+   9,
+   "iPayX",
+   "ipayx.ai/docs",
+   "notion_export"
+  ],
+  [
+   86,
+   9,
+   "QuickBooks",
+   "developer.intuit.com",
+   "notion_export"
+  ],
+  [
+   87,
+   9,
+   "Xero",
+   "developer.xero.com",
+   "notion_export"
+  ],
+  [
+   88,
+   9,
+   "Brex",
+   "developer.brex.com",
+   "notion_export"
+  ],
+  [
+   89,
+   9,
+   "Ramp",
+   "docs.ramp.com",
+   "notion_export"
+  ],
+  [
+   90,
+   9,
+   "PitchBook",
+   "pitchbook.com (research API)",
+   "notion_export"
+  ],
+  [
+   91,
+   10,
+   "NotebookLM",
+   "cloud.google.com/gemini (Enterprise API)",
+   "notion_export"
+  ],
+  [
+   92,
+   10,
+   "Otter AI",
+   "help.otter.ai (MCP server)",
+   "notion_export"
+  ],
+  [
+   93,
+   10,
+   "Fathom",
+   "fathom.video",
+   "notion_export"
+  ],
+  [
+   94,
+   10,
+   "Consensus",
+   "consensus.app (OAuth requested)",
+   "notion_export"
+  ],
+  [
+   95,
+   10,
+   "Reducto",
+   "reducto.ai (document parsing)",
+   "notion_export"
+  ],
+  [
+   96,
+   10,
+   "Devin",
+   "docs.devin.ai (MCP)",
+   "notion_export"
+  ],
+  [
+   97,
+   10,
+   "higgsfield",
+   "higgsfield.ai/cli (content suite)",
+   "notion_export"
+  ],
+  [
+   98,
+   10,
+   "Mermaid CLI",
+   "github.com/mermaid-js/mermaid-cli",
+   "notion_export"
+  ],
+  [
+   99,
+   10,
+   "YouTube Transcript",
+   "transcriptapi.com",
+   "notion_export"
+  ],
+  [
+   100,
+   10,
+   "Grain",
+   "grain.com (meeting notes)",
+   "notion_export"
+  ]
+ ],
+ "website_hint_links": {
+  "1": [
+   "http://salesforce.com/"
+  ],
+  "2": [
+   "http://hubspot.com/"
+  ],
+  "3": [
+   "http://pipedrive.com/"
+  ],
+  "4": [
+   "http://attio.com/"
+  ],
+  "5": [
+   "http://twenty.com/"
+  ],
+  "6": [
+   "http://podio.com/"
+  ],
+  "7": [
+   "http://zoho.com/crm"
+  ],
+  "8": [
+   "http://close.com/"
+  ],
+  "9": [
+   "http://copper.com/"
+  ],
+  "10": [
+   "http://api.docs.dealcloud.com/"
+  ],
+  "11": [
+   "http://zendesk.com/"
+  ],
+  "12": [
+   "http://intercom.com/"
+  ],
+  "13": [
+   "http://freshdesk.com/"
+  ],
+  "14": [
+   "http://front.com/"
+  ],
+  "15": [
+   "http://usepylon.com/"
+  ],
+  "16": [
+   "http://liveagent.com/"
+  ],
+  "17": [
+   "http://plain.com/"
+  ],
+  "18": [
+   "http://helpscout.com/"
+  ],
+  "19": [
+   "http://gorgias.com/"
+  ],
+  "20": [
+   "http://gladly.com/"
+  ],
+  "21": [
+   "http://slack.com/"
+  ],
+  "22": [
+   "http://twilio.com/"
+  ],
+  "23": [
+   "http://zoho.com/cliq"
+  ],
+  "24": [
+   "http://open.larksuite.com/"
+  ],
+  "25": [
+   "http://pumble.com/"
+  ],
+  "26": [
+   "http://discord.com/"
+  ],
+  "27": [
+   "http://core.telegram.org/"
+  ],
+  "28": [
+   "http://developers.facebook.com/docs/whatsapp"
+  ],
+  "29": [
+   "http://aircall.io/"
+  ],
+  "30": [
+   "http://developer.vonage.com/"
+  ],
+  "31": [
+   "http://developers.google.com/google-ads"
+  ],
+  "32": [
+   "http://developers.facebook.com/docs/marketing-apis"
+  ],
+  "33": [
+   "http://learn.microsoft.com/linkedin/marketing"
+  ],
+  "34": [
+   "http://highlevel.stoplight.io/"
+  ],
+  "35": [
+   "http://mailchimp.com/developer"
+  ],
+  "36": [
+   "http://developers.klaviyo.com/"
+  ],
+  "37": [
+   "http://systeme.io/"
+  ],
+  "38": [
+   "http://developers.pinterest.com/"
+  ],
+  "39": [
+   "http://developers.facebook.com/docs/threads"
+  ],
+  "40": [
+   "http://sendgrid.com/"
+  ],
+  "41": [],
+  "42": [
+   "http://woocommerce.com/document/woocommerce-rest-api"
+  ],
+  "43": [
+   "http://developer.bigcommerce.com/"
+  ],
+  "44": [
+   "http://developer.salesforce.com/docs/commerce"
+  ],
+  "45": [
+   "http://developer.adobe.com/commerce"
+  ],
+  "46": [
+   "http://developers.squarespace.com/"
+  ],
+  "47": [
+   "http://api-docs.ecwid.com/"
+  ],
+  "48": [
+   "http://gumroad.com/api"
+  ],
+  "49": [
+   "http://developer-docs.amazon.com/sp-api"
+  ],
+  "50": [
+   "http://fanbasis.com/"
+  ],
+  "51": [
+   "http://docs.dataforseo.com/"
+  ],
+  "52": [
+   "http://seranking.com/api"
+  ],
+  "53": [
+   "http://ahrefs.com/api"
+  ],
+  "54": [
+   "http://docs.mrscraper.com/"
+  ],
+  "55": [
+   "http://docs.apify.com/"
+  ],
+  "56": [],
+  "57": [
+   "http://brightdata.com/"
+  ],
+  "58": [
+   "http://github.com/sherlock-project/sherlock"
+  ],
+  "59": [
+   "http://waterfall.io/"
+  ],
+  "60": [
+   "http://clay.com/"
+  ],
+  "61": [
+   "http://docs.github.com/rest"
+  ],
+  "62": [
+   "http://vercel.com/docs/rest-api"
+  ],
+  "63": [
+   "http://docs.netlify.com/api"
+  ],
+  "64": [
+   "http://developers.cloudflare.com/api"
+  ],
+  "65": [
+   "http://supabase.com/docs"
+  ],
+  "66": [
+   "http://neo4j.com/docs/api"
+  ],
+  "67": [
+   "http://docs.snowflake.com/"
+  ],
+  "68": [
+   "http://mongodb.com/docs/atlas/api"
+  ],
+  "69": [
+   "http://docs.datadoghq.com/api"
+  ],
+  "70": [
+   "http://docs.sentry.io/api"
+  ],
+  "71": [
+   "http://developers.notion.com/"
+  ],
+  "72": [
+   "http://airtable.com/developers"
+  ],
+  "73": [],
+  "74": [
+   "http://developer.atlassian.com/"
+  ],
+  "75": [
+   "http://developers.asana.com/"
+  ],
+  "76": [
+   "http://developer.monday.com/"
+  ],
+  "77": [
+   "http://clickup.com/api"
+  ],
+  "78": [
+   "http://coda.io/developers"
+  ],
+  "79": [
+   "http://smartsheet.com/developers"
+  ],
+  "80": [
+   "http://harvestapp.com/",
+   "http://help.getharvest.com/api-v2"
+  ],
+  "81": [
+   "http://stripe.com/docs/api"
+  ],
+  "82": [
+   "http://plaid.com/docs"
+  ],
+  "83": [
+   "http://binance-docs.github.io/"
+  ],
+  "84": [],
+  "85": [
+   "http://ipayx.ai/docs"
+  ],
+  "86": [
+   "http://developer.intuit.com/"
+  ],
+  "87": [
+   "http://developer.xero.com/"
+  ],
+  "88": [
+   "http://developer.brex.com/"
+  ],
+  "89": [
+   "http://docs.ramp.com/"
+  ],
+  "90": [
+   "http://pitchbook.com/"
+  ],
+  "91": [
+   "http://cloud.google.com/gemini"
+  ],
+  "92": [
+   "http://help.otter.ai/"
+  ],
+  "93": [],
+  "94": [],
+  "95": [
+   "http://reducto.ai/"
+  ],
+  "96": [
+   "http://docs.devin.ai/"
+  ],
+  "97": [
+   "http://higgsfield.ai/cli"
+  ],
+  "98": [
+   "http://github.com/mermaid-js/mermaid-cli"
+  ],
+  "99": [
+   "http://transcriptapi.com/"
+  ],
+  "100": [
+   "http://grain.com/"
+  ]
+ }
+}

@@ -1,0 +1,77 @@
+
+ Ramp Help Center
+Ramp Help Center
+Integrations
+Set up Workflow & Productivity Integrations
+Integrations
+Set up Accounting Integrations
+Set up HR & Identity Integrations
+Set up Workflow & Productivity Integrations
+Troubleshoot Integrations
+On this page
+Overview
+Setup guide and feature support
+Sandbox environment
+Requesting sandbox access
+Sandbox vs. production
+Publish an app for other Ramp businesses
+How to submit a developer API support ticket
+Developer assist
+Ramp Developer API overview
+Overview
+Ramp’s Developer API allows teams to programmatically access Ramp data and build automations or integrations tailored to their workflows. It provides secure, scoped access to objects like transactions, cards, users, and more. This help article explains what the API is, how to get started within the Ramp app, and where to find full technical documentation and real-time assistance. Complete reference guides, endpoint schemas, and end-to-end examples live in the Ramp Developer API documentation.
+Setup guide and feature support
+To begin using the Ramp Developer API, you must first create a developer app to obtain your API credentials. Admin access is required.
+Use these steps to call the API for your own Ramp business, or to get sandbox credentials for testing an app you're building for other Ramp businesses. To publish that app to other Ramp businesses in production, use the Developer console instead. See Publish an app for other Ramp businesses.
+Open Developer apps in Ramp.
+For your first app, click Start building. If you already have an app, click Create new app.
+Name your app (e.g., “API Quickstart”) and accept the Terms.
+Under Grant types, confirm Client credentials is turned on.
+Under Scopes, click Configure allowed scopes and select the scopes available to your business that your use case needs, such as transactions:read. If a required scope is unavailable, submit a Developer API support ticket to ask about access.
+Copy your Client ID and Client Secret. Store these securely—you’ll need them to generate your access token.
+Video walkthrough: Generate Ramp Developer API credentials from the Ramp dashboard. Best when you're creating your first app and need client credentials and scopes. Watch the video.
+Once credentials are created, follow the this guide on how to generate an access token.
+Sandbox environment
+Ramp provides a sandbox environment where you can build and test your API integration before connecting to production. The sandbox is a separate environment with its own base URL and credentials — it is not a mode within the production API.
+Sandbox API base URL: https://demo-api.ramp.com
+Production API base URL: https://api.ramp.com
+The sandbox uses a separate API base URL and app credentials from production. It cannot process real money and includes demo-only simulation actions.
+Requesting sandbox access
+Request access using the sandbox access form. Your sandbox should be ready in about one minute. Check your inbox for an account access email. Ramp provisions a sandbox business pre-populated with sample data (such as transactions, cards, users, departments, and reimbursements) so you can test against realistic data without affecting your production account.
+You will need to create a separate developer app in the sandbox environment to obtain sandbox-specific OAuth2 credentials (Client ID and Client Secret). Follow the same setup steps described in Setup Guide and Feature Support above, but within your sandbox account.
+Sandbox vs. production
+Use the API for your own Ramp business: Create a separate developer app in your production Ramp account and send production requests to https://api.ramp.com.
+Build for other Ramp businesses: Test your integration in sandbox. When you are ready, publish your app from the Developer console.
+Publish an app for other Ramp businesses
+Publishing an app for other Ramp businesses takes two approvals: a partner application, which gives you access to a Developer console, and a production access application for your app, which you submit from the Developer console. Create and publish the app from the Developer console, not from Developer apps settings.
+Get access to a Developer console:
+First-time partners: If no one at your company has submitted a partner application, submit the one described in the partner integration guide. After Ramp approves it, we email an invite to the Work email on your application. Accept the invite.
+Application already submitted: Don't submit another application. If Ramp approves it, we email an invite to the Work email on the application. Other teammates can then ask that person to invite them. For questions about your application's status, including whether it was rejected, see How to contact Ramp's Support team.
+Already have access: Skip this step.
+Need access to your company's existing Developer console, including when your invite expired: Ask the person who received your company's invite, or another admin on that console, to invite you. Don't submit another application. If no one can invite you, see How to contact Ramp's Support team.
+Sign in with your Developer console account and open the Developer console.
+Open your app. To use an existing app, select its row in the app list. To create one, click Start building for your first app, or New app if you already have one. Enter an App name, accept the Developer Terms of Service, and click Create app.
+On your app's Production access tab, click Apply, then complete the application. If you already started an application, the tab shows its status:
+Complete your application: Click Complete application to finish it.
+Application requires attention: Check your email for Ramp's feedback, then click Edit application to update it. If you haven't received an email, contact partnerships@ramp.com.
+Application submitted: awaiting review: No action is needed. Ramp emails you with updates.
+After Ramp approves your production access application, onboard production customers through OAuth.
+Advisor Console partners: If Ramp gave you a separate embedded partnership application link, submit that application in step 1 instead. After Ramp approves it, the invite adds you to Advisor Console instead of a Developer console. Use the Advisor Console developer settings for steps 2–4 instead of the Developer console link. Only Console admins can open these settings. To give a teammate access, invite them as a Console admin, or, if they're already a member, select them on the People tab and change their role to Console admin. Console admins can also invite people, access all client accounts, and change others' roles, so review Advisor Console roles and permissions before granting it.
+Apply appears only when no role in your Developer console business can sign in with a password. If the tab says SSO or SAML login must be enabled, click Configure and turn off Password for each role in sign-in controls, then return to the tab to click Apply.
+Important: Before you turn off Password for a role, confirm that everyone with that role can sign in with SSO or SAML. Otherwise, they can't sign in.
+If you still can't open the Developer console with your Developer console account, see How to contact Ramp's Support team.
+How to submit a developer API support ticket
+Open Developer apps:
+Click Developer API Support.
+In Ask Ramp, describe your issue and ask to connect with the Developer Support team:
+Review the pre-filled Description, enter a Subject, and add any other missing details:
+Click Submit Ticket to send your request to the team:
+Developer assist
+Developer Assist is an AI-powered helper built directly into the Ramp API documentation. It can answer questions about endpoints, parameters, errors, and implementation steps in real time.
+To use it:
+Navigate to the Ramp Developer API docs.
+Click the chat icon in the bottom-right corner of the page.
+Type your question into the chat window to get instant guidance.
+Video walkthrough: Test Ramp Developer API calls and manage scopes for your integration. Best when validating your setup or refining permissions for an existing integration. Watch the video.
+For bug investigations or issues with API performance or unexpected behavior, submit a Developer API support ticket.
+Need help? Contact Ramp Support

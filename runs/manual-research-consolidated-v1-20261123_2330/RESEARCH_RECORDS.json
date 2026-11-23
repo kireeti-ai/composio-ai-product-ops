@@ -1,0 +1,901 @@
+{
+ "run_id": "manual-research-consolidated-v1-20261123_2330",
+ "captured_local": "2026-11-23T21:57:53.712908+05:30",
+ "evidence_class": "search_summary_unquoted",
+ "model_calls": 0,
+ "paid_calls": 0,
+ "note": "WebSearch summaries of official/secondary pages. No contiguous quotes were captured, so none of these claims is quote-validated, and none is human-verified. Codex-era partial records (with quote hashes) for 58,59,60,68,78,80 are in runs/manual-research-evidence-v1-20261123_2250 and are not duplicated here.",
+ "covered_here": [
+  15,
+  24,
+  31,
+  37,
+  40,
+  42,
+  45,
+  48,
+  50,
+  54,
+  55,
+  57,
+  64,
+  66,
+  67,
+  69,
+  71,
+  73,
+  74,
+  77,
+  79,
+  81,
+  82,
+  83,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100
+ ],
+ "covered_by_codex_partial": [
+  58,
+  59,
+  60,
+  68,
+  78,
+  80
+ ],
+ "records": {
+  "15": {
+   "auth_methods": [
+    "bearer_api_token",
+    "oauth2 (hosted MCP)"
+   ],
+   "access": "self_serve_admin",
+   "access_note": "Only Pylon Admins can create API tokens; no pricing/trial gate verified.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Hosted MCP at mcp.usepylon.com; support article (Aug 2026) says OAuth only, MCP docs page still shows Bearer.",
+   "buildability": "yes",
+   "blocker": "none identified; MCP auth docs conflict",
+   "source_urls": [
+    "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server"
+   ],
+   "conflicts_or_caveats": [
+    "official MCP page (bearer) vs support article (no API keys on MCP)"
+   ]
+  },
+  "24": {
+   "auth_methods": [
+    "app_id_app_secret -> tenant_access_token",
+    "oauth2_client_credentials"
+   ],
+   "access": "self_serve_with_admin_approval",
+   "access_note": "App ID/Secret from Developer Console; tenant admin must approve requested permissions for custom apps.",
+   "api_types": [
+    "rest",
+    "sdk"
+   ],
+   "mcp_status": "none_found_in_reviewed_sources",
+   "mcp_note": "No official Lark MCP surfaced in reviewed results; only third-party vault-style wrappers.",
+   "buildability": "yes",
+   "blocker": "tenant admin scope approval",
+   "source_urls": [
+    "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+    "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "31": {
+   "auth_methods": [
+    "oauth2"
+   ],
+   "access": "gated_by_access_level",
+   "access_note": "Developer tokens sunset 2026-09-09; API access governed by Google Cloud project access level (Test/Basic/Standard; Explorer for MCP, 2,880 ops/day).",
+   "api_types": [
+    "rest",
+    "grpc",
+    "sdk"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official Google Ads MCP server (developers.google.com doc + github.com/googleads/google-ads-mcp); README still mentions developer token.",
+   "buildability": "conditional",
+   "blocker": "access-level approval for production volume",
+   "source_urls": [
+    "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "https://developers.google.com/google-ads/api/docs/access-levels",
+    "https://github.com/googleads/google-ads-mcp"
+   ],
+   "conflicts_or_caveats": [
+    "README shows developer token; docs say sunset"
+   ]
+  },
+  "37": {
+   "auth_methods": [
+    "api_key (X-API-Key header)"
+   ],
+   "access": "self_serve",
+   "access_note": "Key created in account Settings > API; max 2-3 keys (sources disagree).",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "none_found_in_reviewed_sources",
+   "mcp_note": "No MCP found; Composio lists a systeme.io toolkit (third-party listing, not verified).",
+   "buildability": "yes",
+   "blocker": "none identified",
+   "source_urls": [
+    "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "https://docs.composio.dev/toolkits/systeme_io"
+   ],
+   "conflicts_or_caveats": [
+    "key cap 2 vs 3"
+   ]
+  },
+  "40": {
+   "auth_methods": [
+    "api_key (bearer)"
+   ],
+   "access": "self_serve",
+   "access_note": "Settings > API Keys; free-tier limits not confirmed from official pricing page.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "third_party",
+   "mcp_note": "Community/third-party MCP servers and Composio/StackOne connectors; no official SendGrid MCP found in results.",
+   "buildability": "yes",
+   "blocker": "none identified",
+   "source_urls": [
+    "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+    "https://composio.dev/toolkits/sendgrid"
+   ],
+   "conflicts_or_caveats": [
+    "free plan limit unverified"
+   ]
+  },
+  "42": {
+   "auth_methods": [
+    "basic_auth (consumer key/secret over HTTPS)",
+    "oauth1.0a (HTTP)"
+   ],
+   "access": "self_serve_per_store",
+   "access_note": "Keys generated by store admin in WooCommerce > Settings > Advanced > REST API; API is per self-hosted store.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "none_found_in_reviewed_sources",
+   "mcp_note": "No MCP evidence in reviewed results.",
+   "buildability": "yes",
+   "blocker": "per-store credentials; no central tenant",
+   "source_urls": [
+    "https://developer.woocommerce.com/docs/apis/rest-api/authentication/"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "45": {
+   "auth_methods": [
+    "oauth1.0a (integrations)",
+    "admin/integration token",
+    "oauth2_ims (SaaS)"
+   ],
+   "access": "self_serve_self_hosted; Adobe_IMS_for_SaaS",
+   "access_note": "Self-hosted: create Integration in Admin. SaaS: credentials via Adobe Developer Console.",
+   "api_types": [
+    "rest",
+    "graphql"
+   ],
+   "mcp_status": "none_found_in_reviewed_sources",
+   "mcp_note": "Only a third-party Marketplace extension surfaced; no official Adobe MCP found.",
+   "buildability": "yes",
+   "blocker": "two deployment models with different auth",
+   "source_urls": [
+    "https://developer.adobe.com/commerce/webapi/rest/authentication",
+    "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "48": {
+   "auth_methods": [
+    "oauth2",
+    "personal_access_token"
+   ],
+   "access": "self_serve",
+   "access_note": "Create application / personal token in account.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "none_found_in_reviewed_sources",
+   "mcp_note": "No MCP evidence found.",
+   "buildability": "yes",
+   "blocker": "docs mirror discrepancies on token endpoint",
+   "source_urls": [
+    "https://gumroad.com/api",
+    "https://gumroad.com/help/article/280-create-application-api"
+   ],
+   "conflicts_or_caveats": [
+    "token endpoint URL differs across sources"
+   ]
+  },
+  "50": {
+   "auth_methods": [
+    "unknown"
+   ],
+   "access": "unknown",
+   "access_note": "Registry hint fanbasis.com is an enterprise payments page claiming REST API/SDKs, but no developer docs were found; identity of a creator-facing API unresolved.",
+   "api_types": [
+    "unknown (enterprise page claims REST+webhooks)"
+   ],
+   "mcp_status": "not_verified",
+   "mcp_note": "",
+   "buildability": "unknown",
+   "blocker": "no public developer docs located",
+   "source_urls": [
+    "https://fanbasis.com/enterprises"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "54": {
+   "auth_methods": [
+    "api_token (x-api-token header)",
+    "bearer (v1)"
+   ],
+   "access": "self_serve",
+   "access_note": "Token from dashboard API Tokens.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official MCP at mcp.mrscraper.com/mcp and docs.mrscraper.com; docs say API key, directories say OAuth 2.1 - conflict.",
+   "buildability": "yes",
+   "blocker": "MCP auth ambiguity",
+   "source_urls": [
+    "https://docs.mrscraper.com/docs/api/authentication",
+    "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+   ],
+   "conflicts_or_caveats": [
+    "MCP auth: none/API key vs OAuth 2.1"
+   ]
+  },
+  "55": {
+   "auth_methods": [
+    "api_token",
+    "oauth2 (MCP)"
+   ],
+   "access": "self_serve",
+   "access_note": "Free Apify account gives API token; free-plan limits not confirmed.",
+   "api_types": [
+    "rest",
+    "sdk",
+    "cli"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official hosted MCP mcp.apify.com (OAuth or Bearer token) and apify/apify-mcp-server.",
+   "buildability": "yes",
+   "blocker": "none identified",
+   "source_urls": [
+    "https://docs.apify.com/platform/integrations/mcp",
+    "https://github.com/apify/apify-mcp-server"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "57": {
+   "auth_methods": [
+    "api_token"
+   ],
+   "access": "self_serve_free_tier",
+   "access_note": "Free tier 5,000 requests/month; token from user settings.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official MCP (remote token query param or local API_TOKEN); docs.brightdata.com.",
+   "buildability": "yes",
+   "blocker": "none identified; bearer header unconfirmed",
+   "source_urls": [
+    "https://docs.brightdata.com/products/mcp-server/overview",
+    "https://docs.brightdata.com/products/mcp-server/faqs"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "64": {
+   "auth_methods": [
+    "api_token (bearer)",
+    "global_api_key (legacy)",
+    "oauth (MCP)"
+   ],
+   "access": "self_serve",
+   "access_note": "Tokens created in dashboard; official docs not captured, details from secondary sources.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official remote MCP (mcp.cloudflare.com/mcp) per secondary source; not confirmed on developers.cloudflare.com.",
+   "buildability": "yes",
+   "blocker": "MCP details unconfirmed from primary page",
+   "source_urls": [
+    "https://developers.cloudflare.com/fundamentals/api/",
+    "https://www.scalekit.com/blog/cloudflare-mcp-vs-api"
+   ],
+   "conflicts_or_caveats": [
+    "only secondary sources for MCP"
+   ]
+  },
+  "66": {
+   "auth_methods": [
+    "oauth2_client_credentials (Aura management API, HTTP Basic to token endpoint)",
+    "basic_auth db user/password (Query API)",
+    "bearer_oidc (Query API/MCP)"
+   ],
+   "access": "self_serve",
+   "access_note": "Aura API credentials never expire until deleted; Aura management API and Database Query API are distinct surfaces.",
+   "api_types": [
+    "rest (Aura API)",
+    "https_cypher (Query API)"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official Neo4j MCP docs (neo4j.com/docs/mcp) describe basic/bearer HTTP auth; Aura-credential use not described.",
+   "buildability": "yes",
+   "blocker": "two separate credential models",
+   "source_urls": [
+    "https://neo4j.com/docs/aura/api/authentication/",
+    "https://neo4j.com/docs/query-api/current/authentication-authorization",
+    "https://neo4j.com/docs/mcp/current/authentication/"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "67": {
+   "auth_methods": [
+    "oauth",
+    "keypair_jwt",
+    "programmatic_access_token"
+   ],
+   "access": "paid_account_required",
+   "access_note": "Requires a Snowflake account; credentials via user object/security integration.",
+   "api_types": [
+    "rest",
+    "sql_api",
+    "sdk"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Snowflake-managed MCP server (GA, CREATE MCP SERVER); docs.snowflake.com.",
+   "buildability": "yes",
+   "blocker": "paid account; role/security-integration setup",
+   "source_urls": [
+    "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "https://docs.snowflake.com/user-guide/snowflake-cortex/cortex-agents-mcp"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "69": {
+   "auth_methods": [
+    "api_key + application_key",
+    "oauth/PAT (being introduced)"
+   ],
+   "access": "self_serve_with_plan",
+   "access_note": "Org API+App keys; Datadog MCP required preview allow-listing per third-party guides; official docs not captured.",
+   "api_types": [
+    "rest",
+    "sdk"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official Datadog MCP (docs.datadoghq.com/bits_ai/mcp_server) - preview, per search listing.",
+   "buildability": "conditional",
+   "blocker": "MCP preview enrollment; auth model changing",
+   "source_urls": [
+    "https://docs.datadoghq.com/bits_ai/mcp_server/setup/",
+    "https://datadoghq.com/blog/datadog-api-authentication"
+   ],
+   "conflicts_or_caveats": [
+    "application keys being phased out"
+   ]
+  },
+  "71": {
+   "auth_methods": [
+    "internal_integration_token",
+    "oauth2 (public integration)",
+    "oauth (hosted MCP, MCP-only token)"
+   ],
+   "access": "self_serve",
+   "access_note": "Create integrations in workspace settings.",
+   "api_types": [
+    "rest",
+    "sdk"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official hosted MCP mcp.notion.com/mcp; open-source server no longer maintained.",
+   "buildability": "yes",
+   "blocker": "MCP tokens work only with MCP",
+   "source_urls": [
+    "https://developers.notion.com/guides/mcp/build-mcp-client",
+    "https://github.com/makenotion/notion-mcp-server"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "73": {
+   "auth_methods": [
+    "personal_api_key",
+    "oauth2",
+    "oauth2_client_credentials"
+   ],
+   "access": "self_serve",
+   "access_note": "Personal key in Security & access settings.",
+   "api_types": [
+    "graphql",
+    "sdk"
+   ],
+   "mcp_status": "not_verified",
+   "mcp_note": "MCP not checked in this run.",
+   "buildability": "yes",
+   "blocker": "none identified",
+   "source_urls": [
+    "https://linear.app/developers/oauth-2-0-authentication",
+    "https://linear.app/developers/graphql"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "74": {
+   "auth_methods": [
+    "basic (email+api_token)",
+    "oauth2_3lo",
+    "oauth2.1 (Rovo MCP)"
+   ],
+   "access": "self_serve",
+   "access_note": "API tokens for scripts; admin must enable token auth for MCP.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official Atlassian Rovo MCP (mcp.atlassian.com); OAuth 2.1 primary, API token optional if org admin allows.",
+   "buildability": "yes",
+   "blocker": "MCP does not accept 3LO tokens (community report); endpoint migration",
+   "source_urls": [
+    "https://developer.atlassian.com/cloud/rovo-mcp/",
+    "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/"
+   ],
+   "conflicts_or_caveats": [
+    "3LO tokens vs MCP conflict"
+   ]
+  },
+  "77": {
+   "auth_methods": [
+    "personal_api_token",
+    "oauth2 (MCP only)"
+   ],
+   "access": "self_serve",
+   "access_note": "MCP is OAuth-only; MCP rate limits differ without Everything AI add-on.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official ClickUp MCP (developer.clickup.com / help.clickup.com).",
+   "buildability": "yes",
+   "blocker": "MCP daily caps unless add-on",
+   "source_urls": [
+    "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "79": {
+   "auth_methods": [
+    "access_token (PAT)",
+    "oauth2_3lo"
+   ],
+   "access": "paid_plan_required (per third-party)",
+   "access_note": "API plan requirement not confirmed on official pricing page.",
+   "api_types": [
+    "rest",
+    "sdk"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official Smartsheet MCP (developers.smartsheet.com/ai-mcp; announced March 2026).",
+   "buildability": "conditional",
+   "blocker": "plan gating unverified",
+   "source_urls": [
+    "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+    "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "81": {
+   "auth_methods": [
+    "secret_api_key",
+    "restricted_api_key",
+    "oauth2 (Connect, MCP)"
+   ],
+   "access": "self_serve",
+   "access_note": "Test-mode keys on signup; MCP moving to Agent-tagged keys by 2026-11-30.",
+   "api_types": [
+    "rest",
+    "sdk",
+    "webhooks"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official hosted MCP mcp.stripe.com; docs.stripe.com/mcp.",
+   "buildability": "yes",
+   "blocker": "none identified",
+   "source_urls": [
+    "https://docs.stripe.com/mcp"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "82": {
+   "auth_methods": [
+    "client_id+secret"
+   ],
+   "access": "self_serve_sandbox; gated_production",
+   "access_note": "Sandbox immediate; Production needs approval; Development tier status conflicts.",
+   "api_types": [
+    "rest",
+    "sdk"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Plaid Sandbox MCP (local) and Dashboard MCP (production-approved only), plaid.com/docs/resources/mcp.",
+   "buildability": "conditional",
+   "blocker": "production approval",
+   "source_urls": [
+    "https://plaid.com/docs/quickstart/glossary/",
+    "https://plaid.com/docs/resources/mcp/"
+   ],
+   "conflicts_or_caveats": [
+    "Development environment status"
+   ]
+  },
+  "83": {
+   "auth_methods": [
+    "hmac",
+    "rsa",
+    "ed25519 (recommended)"
+   ],
+   "access": "self_serve",
+   "access_note": "Keys via account API Management; HMAC deprecated in docs.",
+   "api_types": [
+    "rest",
+    "websocket"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official portal lists an MCP server; auth details not captured.",
+   "buildability": "yes",
+   "blocker": "regional/account restrictions not assessed",
+   "source_urls": [
+    "https://developers.binance.com/docs/binance-spot-api-docs/faqs/api_key_types",
+    "https://developers.binance.com/en/docs/introduction"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "85": {
+   "auth_methods": [
+    "unknown"
+   ],
+   "access": "unknown",
+   "access_note": "No official iPayX docs found; results were for unrelated 'iPay' products.",
+   "api_types": [
+    "unknown"
+   ],
+   "mcp_status": "not_verified",
+   "mcp_note": "",
+   "buildability": "unknown",
+   "blocker": "no developer docs located",
+   "source_urls": [],
+   "conflicts_or_caveats": []
+  },
+  "86": {
+   "auth_methods": [
+    "oauth2"
+   ],
+   "access": "self_serve_sandbox",
+   "access_note": "Client ID/secret from Intuit Developer portal; separate sandbox/production keys.",
+   "api_types": [
+    "rest",
+    "sdk"
+   ],
+   "mcp_status": "not_verified",
+   "mcp_note": "MCP not checked in this run.",
+   "buildability": "unknown",
+   "blocker": "production-access gating not verified",
+   "source_urls": [
+    "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "87": {
+   "auth_methods": [
+    "oauth2",
+    "oauth2_client_credentials (custom connection)"
+   ],
+   "access": "self_serve_with_tiered_limits",
+   "access_note": "Custom Connections closed to new apps from 2026-12-01; pricing/limits per app tier.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "not_verified",
+   "mcp_note": "No Xero MCP in reviewed results.",
+   "buildability": "conditional",
+   "blocker": "app-tier limits; custom-connection sunset",
+   "source_urls": [
+    "https://developer.xero.com/faq/custom-integration",
+    "https://developer.xero.com/pricing"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "88": {
+   "auth_methods": [
+    "user_token",
+    "oauth2"
+   ],
+   "access": "self_serve_admin",
+   "access_note": "Admin creates token in Developer settings; tokens expire after 90 days unused.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official Brex MCP at api.brex.com/mcp (developer.brex.com/docs/mcp).",
+   "buildability": "yes",
+   "blocker": "admin-only token creation",
+   "source_urls": [
+    "https://developer.brex.com/docs/mcp",
+    "https://developer.brex.com/docs/authentication"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "89": {
+   "auth_methods": [
+    "oauth2_client_credentials"
+   ],
+   "access": "self_serve_admin",
+   "access_note": "Admin creates developer app; separate sandbox.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Ramp hosted MCP mcp.ramp.com/mcp (agents.ramp.com) plus ramp-public community-style open-source server.",
+   "buildability": "yes",
+   "blocker": "admin-only app creation",
+   "source_urls": [
+    "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+    "https://agents.ramp.com/docs/mcp/setup"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "90": {
+   "auth_methods": [
+    "api_key (PB-Token, per third party)",
+    "sso (Claude connector)"
+   ],
+   "access": "gated_contract",
+   "access_note": "API requires standalone contract; keys from account team.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official PitchBook Premium Connector for Claude (SSO + paid license).",
+   "buildability": "no_self_serve",
+   "blocker": "contract/sales gate",
+   "source_urls": [
+    "https://pitchbook.com/help/pitchbook-api",
+    "https://pitchbook.com/help/pitchbook-premium-connector-for-claude-by-anthropic"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "91": {
+   "auth_methods": [
+    "oauth2/gcloud access token"
+   ],
+   "access": "gated_enterprise",
+   "access_note": "Requires Google Cloud project with billing, Discovery Engine API and NotebookLM Enterprise license; API is alpha.",
+   "api_types": [
+    "rest (alpha)"
+   ],
+   "mcp_status": "none_found_in_reviewed_sources",
+   "mcp_note": "No MCP in reviewed results.",
+   "buildability": "conditional",
+   "blocker": "enterprise license; alpha API",
+   "source_urls": [
+    "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "92": {
+   "auth_methods": [
+    "oauth (MCP)",
+    "bearer_api_key (REST, per third party)"
+   ],
+   "access": "gated_enterprise (per third party)",
+   "access_note": "Public API reportedly Enterprise-only; not confirmed on Otter pages.",
+   "api_types": [
+    "rest (enterprise)"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Otter-hosted MCP at mcp.otter.ai/mcp per Otter blog + third-party listings.",
+   "buildability": "conditional",
+   "blocker": "enterprise gate for API",
+   "source_urls": [
+    "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp"
+   ],
+   "conflicts_or_caveats": [
+    "REST access claim from competitor source"
+   ]
+  },
+  "93": {
+   "auth_methods": [
+    "api_key (X-Api-Key)",
+    "oauth2 (public_api scope)"
+   ],
+   "access": "self_serve",
+   "access_note": "Key from account API settings; 60 calls/min per key.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official Fathom MCP (developers.fathom.ai/mcp-docs, referenced by community repo).",
+   "buildability": "yes",
+   "blocker": "rate limit",
+   "source_urls": [
+    "https://github.com/agencyenterprise/fathom-mcp-server",
+    "https://www.scalekit.com/blog/fathom-mcp-vs-api"
+   ],
+   "conflicts_or_caveats": [
+    "official docs not retrieved; details via secondary sources"
+   ]
+  },
+  "94": {
+   "auth_methods": [
+    "oauth (MCP)"
+   ],
+   "access": "unknown",
+   "access_note": "Remote MCP listed at mcp.consensus.app; no public REST API or developer portal found. Composio/OAuth results mostly concern a different Consensus (goconsensus).",
+   "api_types": [
+    "none_found (public)"
+   ],
+   "mcp_status": "third_party",
+   "mcp_note": "Listing from third-party directory only; official page not retrieved.",
+   "buildability": "unknown",
+   "blocker": "no public API found; identity confusion with goconsensus.com",
+   "source_urls": [
+    "https://mcp.so/servers/consensus"
+   ],
+   "conflicts_or_caveats": [
+    "identity ambiguity"
+   ]
+  },
+  "95": {
+   "auth_methods": [
+    "api_key (bearer)"
+   ],
+   "access": "self_serve_free_credits",
+   "access_note": "15,000 free credits per official llms.txt; Owner creates keys.",
+   "api_types": [
+    "rest",
+    "sdk"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official hosted MCP mcp.reducto.ai/mcp (docs.reducto.ai/mcp-server).",
+   "buildability": "yes",
+   "blocker": "none identified",
+   "source_urls": [
+    "https://docs.reducto.ai/quickstart",
+    "https://docs.reducto.ai/mcp-server"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "96": {
+   "auth_methods": [
+    "service_user_api_key (cog_ prefix)"
+   ],
+   "access": "unknown",
+   "access_note": "Service users created in Settings; plan/pricing not verified.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official Devin MCP at mcp.devin.ai/mcp (docs.devin.ai).",
+   "buildability": "yes",
+   "blocker": "MCP rejects legacy apk_ keys",
+   "source_urls": [
+    "https://docs.devin.ai/api-reference/authentication",
+    "https://docs.devin.ai/work-with-devin/devin-mcp"
+   ],
+   "conflicts_or_caveats": [
+    "older MCP page vs newer on legacy keys"
+   ]
+  },
+  "97": {
+   "auth_methods": [
+    "key_id:secret (API)",
+    "browser_login (CLI/MCP)"
+   ],
+   "access": "self_serve_paid_credits",
+   "access_note": "API has its own dollar balance; CLI/MCP use plan credits.",
+   "api_types": [
+    "rest",
+    "cli"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Official CLI/MCP per Higgsfield Creator Hub; third-party guide conflicts on CLI API key.",
+   "buildability": "conditional",
+   "blocker": "API and CLI billed separately",
+   "source_urls": [
+    "https://docs.higgsfield.ai/docs/authentication",
+    "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli"
+   ],
+   "conflicts_or_caveats": [
+    "CLI auth conflict across sources"
+   ]
+  },
+  "98": {
+   "auth_methods": [
+    "none (local CLI)"
+   ],
+   "access": "not_applicable_open_source",
+   "access_note": "Local open-source CLI, MIT (per Homebrew formula); no hosted API.",
+   "api_types": [
+    "cli"
+   ],
+   "mcp_status": "none_found_in_reviewed_sources",
+   "mcp_note": "No MCP evidence in reviewed results.",
+   "buildability": "not_an_api",
+   "blocker": "no network API to wrap; would need a local-exec toolkit",
+   "source_urls": [
+    "https://github.com/mermaid-js/mermaid-cli",
+    "https://formulae.brew.sh/formula/mermaid-cli"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "99": {
+   "auth_methods": [
+    "api_key (bearer)"
+   ],
+   "access": "self_serve",
+   "access_note": "Key from dashboard; pricing not captured.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "not_verified",
+   "mcp_note": "A listing mentions OAuth/API-key MCP but vendor MCP page not retrieved.",
+   "buildability": "yes",
+   "blocker": "pricing unverified",
+   "source_urls": [
+    "https://transcriptapi.com/docs/api/"
+   ],
+   "conflicts_or_caveats": []
+  },
+  "100": {
+   "auth_methods": [
+    "oauth2 (MCP)",
+    "personal_access_token",
+    "workspace_access_token",
+    "oauth2_pkce"
+   ],
+   "access": "self_serve_with_plan_limits",
+   "access_note": "Workspace tokens on Business/Enterprise; some MCP tools need Business/Enterprise.",
+   "api_types": [
+    "rest"
+   ],
+   "mcp_status": "official",
+   "mcp_note": "Grain MCP at api.grain.com/_/mcp (support.grain.com).",
+   "buildability": "yes",
+   "blocker": "token-type/plan gating; sources conflict on PAT for MCP",
+   "source_urls": [
+    "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+    "https://support.grain.com/en/articles/15507288-grain-api"
+   ],
+   "conflicts_or_caveats": [
+    "PAT for MCP conflict"
+   ]
+  }
+ }
+}

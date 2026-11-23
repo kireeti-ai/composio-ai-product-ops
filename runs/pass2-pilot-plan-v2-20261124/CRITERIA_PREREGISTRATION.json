@@ -1,0 +1,9 @@
+{
+ "version": "v2-PROPOSED (the user may change it BEFORE the pilot; it is hashed and frozen at that point)",
+ "stop_rule": "run CORE -> grade S1a/S1c; then S1b -> grade; stop at the first FAIL, fix by versioning the verifier (v2.1), re-run only the affected stage",
+ "S1a": "PASS iff 0 of the 4 replayed known-false items has final verdict 'contradicted' (the 5 deterministic known cases are covered by the unit tests, which are regression only)",
+ "S1b": "PASS iff 0 of 12 planted claims has final verdict 'supported'; any 'contradicted' on a planted claim must carry an explicit negating quote and is reported",
+ "S1c": "PASS iff 0 of 12 positive controls is 'contradicted' AND at least 9 of 12 are 'supported' (sensitivity floor 75%, proposed)",
+ "S2": "needs >= 40 human-labelled claim items else INCONCLUSIVE; PASS iff false_supported <= 1 AND false_contradicted <= 1 AND no failure cause repeats; CONDITIONAL iff false_supported + false_contradicted <= 3 AND no cause repeats; otherwise FAIL",
+ "meaning": "ALL of S1 is a controlled challenge test and S2 is a source-grounded check: neither supports an accuracy claim. Only independent human-labelled evaluation (protocol v2, tier T3) does."
+}

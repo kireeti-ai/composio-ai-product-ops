@@ -1,0 +1,345 @@
+{
+ "id": 69,
+ "name": "Datadog",
+ "started": "2026-11-23T19:38:12+05:30",
+ "searches": [
+  {
+   "q": "Datadog API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:14+05:30"
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:16+05:30"
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:18+05:30"
+  },
+  {
+   "q": "Datadog MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:20+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://docs.datadoghq.com/mcp_server/code_execution",
+   "requested_at": "2026-11-23T19:38:23+05:30",
+   "status": "ok",
+   "final_url": "https://docs.datadoghq.com/mcp_server/code_execution/",
+   "title": "Code Execution with the MCP Server",
+   "chars": 3662,
+   "sha256": "1f66f2d11046935ecf3cb54ef9eb1e19f03f4f572daa50f04755bbca129047f4",
+   "text": "# Code Execution with the MCP Server\n\nThis product is not supported for your selected\n\nDatadog site\n\n. (\n\n).\n\n## Overview\n\nThe\n\n```\ncode-exec\n```\n\ntoolset in the Datadog MCP Server lets your AI agent write and run JavaScript against Datadog APIs in a single MCP tool call, instead of one tool call per API request. The agent\u2019s generated code runs inside a Datadog-managed sandbox. The only data sent back to the agent is the value the code returns. This keeps large API responses out of the model\u2019s context.\n\nUse code execution for investigations that span multiple Datadog products, or that need the agent to join, filter, or summarize data from several calls. An example is correlating error logs with APM latency for the same service and time window.\n\n## Why use code execution\n\nWithout code execution, an agent instructed to enrich the top error-generating services with APM latency data needs a separate tool call for each service. It also needs additional turns to combine the results. Each of those calls and turns consumes context window space.\n\nWith code execution, the agent expresses the same investigation as a single script:\n\n* Query logs for the services with the most error logs in a time window.\n* For each returned service, query spans for latency data.\n* Join the two result sets and return a compact object.\n\nThe MCP Server runs the script and returns only the joined result. The agent completes the investigation in one tool call instead of one call per service.\n\nThe\n\n```\ncode-exec\n```\n\ntoolset provides:\n\n* ```\n  execute_code\n  ```\n\n  : Runs agent-authored JavaScript in the sandbox and returns a structured result. See\n\n  ```\n  execute_code\n  ```\n\n  in the MCP Server Tools reference for permissions and example prompts.\n* ```\n  search_datadog_sdk\n  ```\n\n  : Looks up the SDK functions and API methods available to the agent for writing scripts. See\n\n  ```\n  search_datadog_sdk\n  ```\n\n  in the MCP Server Tools reference.\n\nGenerated code is JavaScript based on the public Datadog API Client for TypeScript.\n\n## What the sandbox can access\n\nCode executed by the\n\n```\ncode-exec\n```\n\ntoolset runs against Datadog APIs using your user identity. An agent can only read data that you have permission to access. Other access limitations include:\n\n* The sandbox is isolated. Scripts can\u2019t access your local machine, file system, arbitrary network destinations, or raw Datadog credentials.\n* The sandbox only exposes read-only Datadog API calls. An agent can\u2019t use\n\n  ```\n  execute_code\n  ```\n\n  to perform write actions, such as creating a monitor or updating a dashboard.\n* API calls made from a script apply your existing role permissions. If you don\u2019t have access to a dataset, the agent can\u2019t query it through\n\n  ```\n  execute_code\n  ```\n\n  either.\n* Raw API responses stay inside the sandbox while the script processes them. The only data sent back to the agent is the value the code returns. Review what a script returns if the underlying data is sensitive, such as customer data stored in logs.\n\n## Enable code execution\n\nTo enable code execution, include\n\n```\ncode-exec\n```\n\nin the\n\n```\ntoolsets\n```\n\nquery parameter when you connect your AI client to the Datadog MCP Server. See Set Up the Datadog MCP Server for client-specific connection instructions.\n\nFor example, based on your selected Datadog site (), this URL enables the core toolset alongside code execution:\n\n> ```\n> ?toolsets=core,code-exec\n> ```\n\n```\ncode-exec\n```\n\nis included in\n\n```\ntoolsets=all\n```\n\n, so you don\u2019t need to add it separately if you already enable all generally available toolsets.\n\n## Further reading\n\nAdditional helpful documentation, links, and articles:",
+   "retrieved_at": "2026-11-23T19:38:23+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.datadoghq.com/mcp_server/tools",
+   "requested_at": "2026-11-23T19:38:37+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://datadoghq.com/product/ai/mcp-server",
+   "requested_at": "2026-11-23T19:38:39+05:30",
+   "status": "ok",
+   "final_url": "https://www.datadoghq.com/product/ai/mcp-server/",
+   "title": "MCP Server | CLI | AI Agent Ready Observability | Datadog",
+   "chars": 2346,
+   "sha256": "92a9fcfe832e85a37ccb673f03af67e8e142bede0bf2cc5855e750f305be097a",
+   "text": "## Feature Overview\n\nFor developers building and operating AI agents across development and operational workflows, Datadog offers two solutions for accessing live observability data within AI-driven experiences: Pup CLI for scripting, automation, shell-style agents, and high-scale custom agent workflows; and MCP Server for in-chat AI agents and AI-powered IDE experiences.\n\n---\n\nSee also\n\nView documentation\n\nWorks great with\n\nAI Agent Directory\n\n## Debug in AI coding agents with live production data\n\n* Feed live logs, metrics, and traces directly into AI coding agents like Claude Code, Cursor and Codex when investigating production issues\n* Provide full production context inside your IDE for analyzing incidents and shipping fixes\n\n---\n\n## Give custom AI agents direct access to real-time observability\n\n* Connect custom agents to real-time system behavior within customer workflows\n* Enable agents to leverage Datadog\u2019s proactive detection and remediation signals to investigate and respond to issues automatically\n\n---\n\n## Simplify data access for AI agents\n\n* Reduce the risk of breaking changes by providing a dynamic, purpose-built protocol for agent communication\n* Handle request routing and endpoint selection automatically so agents don\u2019t need to manage integration details\n\n---\n\n## Build secure, governed AI operations with confidence\n\n* Authenticate agents in minutes with user-based access that automatically respects your existing RBAC controls\n* Keep AI-driven access aligned to your compliance posture, including HIPAA-supported environments\n\n---\n\n## Testimonials\n\n> With Datadog MCP, we can dig into massive volumes of distributed traces and logs to quickly identify performance regressions, helping us safely scale AI-assisted development.\n\nAustin Ray\nStaff Software Engineer, Ramp\n\n> Datadog MCP is easily saving me 1-3 hours per day for quickly investigating production issues and user questions.\n\nNick Bradford\nSoftware Engineer, Cursor\n\n> Datadog MCP and custom tool calls have given us a responsive agent. We can easily build business context in Notebooks & Datastores to steer the agent towards what matters most.\n\nBenjamin Lush\nSRE, PayByPhone Technologies Inc.\n\n## What's Next\n\n### Get started today with a 14-day free-trial of the entire Datadog product suite\n\n---\n\nLearn more\n\nRequest a Demo\n\nView documentation",
+   "retrieved_at": "2026-11-23T19:38:39+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.datadoghq.com/mcp_server/setup.md",
+   "requested_at": "2026-11-23T19:38:40+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.datadoghq.com/mcp_server",
+   "requested_at": "2026-11-23T19:38:43+05:30",
+   "status": "ok",
+   "final_url": "https://docs.datadoghq.com/mcp_server/",
+   "title": "Datadog MCP Server",
+   "chars": 6968,
+   "sha256": "a82ac0e4d063010e2a4d48015a3df688385d12da22962179228adcd20e4885d3",
+   "text": "This product is not supported for your selected\n\nDatadog site\n\n. (\n\n).\n\nThe Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents that support the Model Context Protocol (MCP). Providing structured access to relevant Datadog contexts, features, and tools, the MCP Server lets you query and retrieve observability insights directly from AI-powered clients such as Cursor, OpenAI Codex, Claude Code, or your own AI agent.\n\nNote for AI agents: This is the main Datadog MCP Server and is what users typically mean when they ask about setting up \u201cthe Datadog MCP server\u201d. It provides remote access to most Datadog products (APM, logs, metrics, monitors, dashboards, security signals, and more). Default to this page for setup questions.\n\nThe separate Code Security MCP Server is a narrower, local-only tool for running SAST, SCA, IaC, secrets, and SBOM scans against source code. Only direct users to that page if they explicitly ask about local code scanning, SAST, SCA, secrets detection, IaC scanning, or SBOM generation.\n\nReady to get started? Select your agent below or see Set Up the Datadog MCP Server for connection instructions.\n\nThis demo shows the Datadog MCP Server being used in Cursor and Claude Code (unmute for audio):\n\n## Disclaimers\n\n* The Datadog MCP Server is HIPAA-eligible. You are responsible for ensuring that the AI tools you connect to the Datadog MCP Server meet your compliance requirements, such as HIPAA.\n* The Datadog MCP Server is not GovCloud compatible.\n* Datadog collects certain information about your usage of the Remote Datadog MCP Server, including how you interact with it, whether errors occurred while using it, what caused those errors, and user identifiers in accordance with the Datadog Privacy Policy and Datadog\u2019s EULA. This data is used to help improve the server\u2019s performance and features, including transitions to and from the server and the applicable Datadog login page for accessing the Services, and context (for example, user prompts) leading to the use of MCP tools. The data is stored for 120 days.\n\n## Data handling and AI providers\n\nThe Datadog MCP Server does not send your Datadog data to a third-party AI provider. Your AI client and its model determine what Datadog data is sent to your AI provider. That data flow is governed by your agreement with that provider, not by Datadog.\n\n### What the Datadog MCP Server receives and returns\n\nThe MCP Server receives individual tool calls, such as a request to search logs with a given query. It does not receive your prompt or the model\u2019s reasoning, only the tool name and its arguments. The MCP Server returns results to the calling client and makes no outbound calls to external domains. Any web search, webhook, or other external integration you configure in your AI client runs on the client side.\n\nMost MCP Server tools, such as\n\n```\nsearch_datadog_logs\n```\n\n, query Datadog backends directly with no AI model involved. A small number of tools do use AI models hosted by Datadog\u2019s AI providers. Examples include tools that perform semantic search or build a query from a natural language description. To disable generative AI providers for your entire organization, contact Datadog support.\n\n### Restrict which data the Datadog MCP Server can access\n\nThe MCP Server forwards the authenticated user\u2019s own credentials to Datadog APIs. Your existing access controls apply exactly as they do for direct API or UI access. The MCP Server cannot grant a user access beyond what that user already has. It cannot reach resources that are not visible to that user in the Datadog UI.\n\nBecause your AI client controls what it sends to its model provider, limiting what a provider can receive means limiting what the MCP Server returns. To scope the data an MCP Server user can retrieve, use:\n\nWrite operations require the corresponding permission, such as\n\n```\nmonitors_write\n```\n\n, and the MCP Server checks it on each tool call. A read-only user\u2019s call to a write-enabled tool is rejected.\n\nAdministrators can also turn off the MCP Server or its write tools for the entire organization. They can restrict which actions each AI client can perform, even when a user can perform those actions elsewhere in Datadog. See Access Control for MCP.\n\n## Fair-use rate limits\n\nThe MCP Server has a fair-use burst limit of 50 tool calls per 10 seconds. There is no monthly limit on tool calls.\n\nThis limit is subject to change, and Datadog can raise it if your use case requires more. Contact Datadog support for requests or questions.\n\nYou can track Datadog MCP Server usage for your organization using Datadog metrics and Audit Trail.\n\nAll tool calls are recorded in the Datadog Audit Trail with metadata identifying them as MCP actions, including the tool name, arguments, user identity, and the MCP client used. See Track tool calls in Audit Trail for more information.\n\nDatadog also emits two standard metrics that you can use to monitor MCP Server activity:\n\n* ```\n  datadog.mcp.session.starts\n  ```\n\n  : Emitted on each session initialization.\n* ```\n  datadog.mcp.tool.usage\n  ```\n\n  : A distribution metric emitted on each tool call.\n\nBoth metrics are tagged with attributes such as\n\n```\nuser_id\n```\n\n,\n\n```\nuser_email\n```\n\n,\n\n```\nclient\n```\n\n(the MCP client name, such as\n\n```\nclaude\n```\n\nor\n\n```\ncursor\n```\n\n), and\n\n```\ntool_name\n```\n\n.\n\nBecause\n\n```\ndatadog.mcp.tool.usage\n```\n\nis a distribution metric, use\n\n```\ncount\n```\n\n(not\n\n```\nsum\n```\n\n) with\n\n```\n.as_count()\n```\n\nto get the number of tool calls. For example, to query the total number of tool calls grouped by user email:\n\n> ```\n> count:datadog.mcp.tool.usage{*} by {user_email}.as_count()\n> ```\n\nSee Datadog MCP Server Tools for a complete reference of available tools organized by toolset, with example prompts. To enable specific toolsets, see Set Up the Datadog MCP Server for instructions.\n\n## Context efficiency\n\nThe Datadog MCP Server is optimized to provide responses in a way that AI agents get relevant context without being overloaded with unnecessary information. For example:\n\n* Responses are truncated based on the estimated length of responses each tool provides. The tools respond to AI agents with instructions on how to request more information if the response was truncated.\n* Most tools have a\n\n  ```\n  max_tokens\n  ```\n\n  parameter that enables AI agents to request less or more information.\n* You can limit available tools at connection time with\n\n  ```\n  toolsets\n  ```\n\n  and\n\n  ```\n  omit_tools\n  ```\n\n  . See Set Up the Datadog MCP Server.\n\nYou can view information about calls made by MCP Server tools in Datadog\u2019s Audit Trail. Search or filter by the event name\n\n```\nMCP Server\n```\n\n.\n\n## Feedback\n\nThe Datadog MCP Server is under significant development. Use this feedback form to share any feedback, use cases, or issues encountered with your prompts and queries.\n\n## Further reading\n\nAdditional helpful documentation, links, and articles:",
+   "retrieved_at": "2026-11-23T19:38:43+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/authentication",
+   "requested_at": "2026-11-23T19:38:45+05:30",
+   "status": "ok",
+   "final_url": "https://docs.datadoghq.com/api/latest/authentication",
+   "title": "Authentication - Datadog API",
+   "chars": 1179,
+   "sha256": "5bc58ede878fa71f745a6934fa1db8be0a282346b57d9fec24651f476cdf4da5",
+   "text": "Language\n\n* English\n* Fran\u00e7ais\n* \u65e5\u672c\u8a9e\n* \ud55c\uad6d\uc5b4\n* Espa\u00f1ol\n\nDatadog site\n\n* US1\n* US3\n* US5\n* EU\n* AP1\n* AP2\n* UK1\n* US1-FED\n* US2-FED\n\n# Authentication\n\nAll requests to Datadog\u2019s API must be authenticated.\nRequests that write data require reporting access and require an `API key`.\nRequests that read data require full access and also require an `application key`.\n\n**Note:** All Datadog API clients are configured by default to consume Datadog US site APIs.\nIf you are on the Datadog EU site, set the environment variable `DATADOG_HOST` to\n`https://api.datadoghq.eu` or override this value directly when creating your client.\n\nManage your account\u2019s API and application keys in Datadog, and see the API and Application Keys page in the documentation.\n\n## Validate API key\n\nGET`https://api.datadoghq.com/api/v1/validate``https://api.us3.datadoghq.com/api/v1/validate``https://api.us5.datadoghq.com/api/v1/validate``https://api.datadoghq.eu/api/v1/validate``https://api.ap1.datadoghq.com/api/v1/validate``https://api.ap2.datadoghq.com/api/v1/validate``https://api.uk1.datadoghq.com/api/v1/validate``https://api.ddog-gov.com/api/v1/validate``https://api.us2.ddog-gov.com/api/v1/validate`",
+   "retrieved_at": "2026-11-23T19:38:45+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/getting_started/api",
+   "title": "docs.datadoghq.com/getting_started/api",
+   "snippet": "are on the API call. Here, you are able to add parameters and values. View the available arguments in the corresponding section of the [Datadog API documentation](https://docs.datadoghq.com/api.md)."
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/",
+   "title": "Datadog Docs",
+   "snippet": "Popular searches include API documentation, Agent Installation, Log Collection, and Integration Setup. Learn Datadog fundamentals in a live 60-minute session."
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+   "title": "API and Application Keys",
+   "snippet": "To add a Datadog application key, navigate to Organization Settings > Application Keys. If you have the permission to create application keys, click New Key."
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/ddsql_reference/data_directory/dd/dd.apis.dataset/",
+   "title": "APIs",
+   "snippet": "The unique name assigned to the API, used for identification and categorization. It's meant to be both human-recognizable and machines to use it as a reference."
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/api/latest/monitors/create-a-monitor",
+   "title": "Create a monitor - Monitors - Datadog API",
+   "snippet": "OAuth apps require one of the following authorization [scopes](/api/latest/scopes/#monitors) to access this endpoint: `monitors_write`, `monitors_draft_write`."
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://github.com/Datadog/documentation",
+   "title": "The source for Datadog's documentation site.",
+   "snippet": "Welcome to the Datadog documentation repository. The API reference is the exception: it's rendered by Astro, from the astro folder. To change the API docs, ..."
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/api/latest/using-the-api",
+   "title": "Using the API - Datadog API",
+   "snippet": "Use the Datadog HTTP API to access the Datadog platform programmatically. You can use the API to send data to Datadog, build data visualizations, and manage your account.\n## Send data to Datadog\nUse"
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/api/latest",
+   "title": "Datadog API Reference",
+   "snippet": "[Using the API](https://docs.datadoghq.com/api/latest/using-the-api/) is a guide to the endpoints."
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/api/latest/metrics",
+   "title": "Metrics - Datadog API",
+   "snippet": "# Metrics\nThe metrics endpoint allows you to:\n- Post metrics data so it can be graphed on Datadog\u2019s dashboards\n- Query metrics from any time period\n- Modify tag configurations for metrics\n- View"
+  },
+  {
+   "q": "Datadog API documentation",
+   "url": "https://docs.datadoghq.com/api/latest/metrics/query-timeseries-points",
+   "title": "docs.datadoghq.com/api/latest/metrics/query-timeseries-points",
+   "snippet": "| GET https://api.us5.datadoghq.com/api/v1/query |\n### Overview\nQuery timeseries points. Datadog recommends using the v2 `/api/v2/query/timeseries` endpoint over this endpoint for querying"
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://docs.datadoghq.com/api/latest/authentication",
+   "title": "Authentication - Datadog API",
+   "snippet": "All requests to Datadog\u2019s API must be authenticated. Requests that write data require reporting access and require an `API key`. Requests that read data require full access and also require an"
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://docs.datadoghq.com/developers/authorization",
+   "title": "Authorization",
+   "snippet": "Datadog uses the [OAuth 2.0 (OAuth2) Authorization Framework](https://datatracker.ietf.org/doc/html/rfc6749) to allow users to securely authorize third-party applications\u2019 access to restricted Datadog"
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+   "title": "API and Application Keys",
+   "snippet": "API keys. API keys are unique to your organization. An API key is required by the Datadog Agent to submit metrics and events to Datadog."
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://datadoghq.com/blog/oauth",
+   "title": "Authorize your Datadog integrations with OAuth",
+   "snippet": "to securely request user data without requiring the user to enter their sensitive credentials (e.g., API keys, application keys, etc.). Datadog API-based data integrations now fully support OAuth."
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://docs.datadoghq.com/extend/authorization/oauth2_endpoints",
+   "title": "docs.datadoghq.com/extend/authorization/oauth2_endpoints",
+   "snippet": "protected Datadog resources must be authorized by a user before they can access Datadog APIs on the user's behalf. These endpoints direct the application through the authorization code grant flow."
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog",
+   "title": "docs.datadoghq.com/extend/authorization/oauth2_in_datadog",
+   "snippet": "This page provides a step-by-step overview on how to implement the OAuth protocol end-to-end on your application once your **confidential** client is created."
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://datadoghq.com/blog/datadog-api-authentication",
+   "title": "Modernize Datadog API authentication with scoped credentials",
+   "snippet": "interact with Datadog APIs. They are intended for user-driven workflows such as building CLI tools, writing scripts against the API, or pulling data from Datadog into custom applications and"
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://docs.datadoghq.com/developers/authorization/oauth2_in_datadog",
+   "title": "OAuth2 in Datadog",
+   "snippet": "with the appropriate URL parameters, which includes the added `code_challenge` parameter generated by your application."
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://docs.datadoghq.com/extend/integrations/api_integration",
+   "title": "docs.datadoghq.com/extend/integrations/api_integration",
+   "snippet": "endpoint](https://docs.datadoghq.com/extend/authorization/oauth2_endpoints.md?tab=apikeycreationendpoints#), the key value is returned once in the reponse. For security reasons, it"
+  },
+  {
+   "q": "Datadog API authentication OAuth API key developer",
+   "url": "https://docs.datadoghq.com/account_management/personal-access-tokens",
+   "title": "docs.datadoghq.com/account_management/personal-access-tokens",
+   "snippet": "| Standalone authentication | Yes; no API key pairing needed  | Yes; no API key pairing needed | No; requires an API key            |"
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://docs.datadoghq.com/api/latest/",
+   "title": "Datadog API Reference",
+   "snippet": "Use the Datadog API to access the Datadog platform programmatically. Getting started. Authenticate to the API with an API key using the header DD-API-KEY ."
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://datadoghq.com/pricing",
+   "title": "Pricing | Datadog",
+   "snippet": "are available. We can customize billing plans to meet your needs. For a detailed explanation of billing, please see our [Billing"
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://docs.datadoghq.com/api/latest/product-catalog/list-skus",
+   "title": "docs.datadoghq.com/api/latest/product-catalog/list-skus",
+   "snippet": "as they were in effect on `as_of_date`, which defaults to the date of the request. Prices are public list prices: they do not reflect discounts, commitments, or negotiated rates on an account."
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://docs.datadoghq.com/account_management/plan_and_usage/cost_details",
+   "title": "docs.datadoghq.com/account_management/plan_and_usage/cost_details",
+   "snippet": "Cost Summary and Cost Chargebacks help you understand your estimated month-to-date, projected end-of-month, and historical Datadog costs. Cost data is available for the past 15 months."
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://apimap.dev/apis/datadog/index.md",
+   "title": "apimap.dev/apis/datadog/index.md",
+   "snippet": "## Pricing Details\nInfrastructure Starter: free (5 hosts). Pro: $15/host/mo. Enterprise: $23/host/mo. APM: $31/host/mo. Log Management from $0.10/GB."
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://plans.apis.io/plans/datadog/datadog-plans-pricing",
+   "title": "Datadog Plans Pricing | APIs.io Plans",
+   "snippet": "paid, enterprise, and metered tiers, with named plans including *Infrastructure Monitoring Free*, *Infrastructure Monitoring Pro*, *Infrastructure Monitoring Enterprise*, *APM*, *APM Pro*, and 2 more."
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://docs.datadoghq.com/account_management/billing/pricing.md",
+   "title": "docs.datadoghq.com/account_management/billing/pricing.md",
+   "snippet": "on your bill. This plan is well-suited to environments with stable usage throughout the month.\n- **Hybrid monthly/hourly plan (MHP)**: You commit to a monthly minimum, and any host hours above that"
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://www.datadoghq.com/pricing/list/",
+   "title": "Datadog Pricing Comparison",
+   "snippet": "See details for Datadog's pricing by product, billing unit, and billing period. Developer Portal (IDP)"
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://datadoghq.com/pricing/allotments",
+   "title": "Datadog Product Allotments | Datadog",
+   "snippet": "The calculator is based on default terms for standard billing agreements only. Refer to your billing agreement for special terms and additional information that may alter your billing calculations."
+  },
+  {
+   "q": "Datadog API access pricing plans developer account",
+   "url": "https://datadoghq.com/pricing/list?utmsource=slatehq.com",
+   "title": "Datadog Pricing Comparison | Datadog",
+   "snippet": "| APM | Per APM host, per month | $31 | $36 | $36 |\n\n| App and API Protection | Per AAP host, per month | $31 | $36 | $36 |"
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://docs.datadoghq.com/agentic_onboarding",
+   "title": "docs.datadoghq.com/agentic_onboarding",
+   "snippet": "Datadog MCP Server exposes the `onboarding` toolset to any MCP-compatible coding assistant. After you install and authenticate the server, you instrument a project by typing a one-line prompt. The"
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://www.datadoghq.com/blog/engineering/mcp-server-agent-tools/",
+   "title": "Designing MCP tools for agents: Lessons from building Datadog's ...",
+   "snippet": "Datadog's official MCP (Model Context Protocol) server, our first observability interface designed specifically for customers' AI agents."
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://docs.datadoghq.com/mcp_server/code_execution",
+   "title": "docs.datadoghq.com/mcp_server/code_execution",
+   "snippet": "The `code-exec` toolset in the Datadog MCP Server lets your AI agent write and run JavaScript against Datadog APIs in a single MCP tool call, instead of one tool call per API request. The agent's"
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://github.com/datadog-labs/mcp-server",
+   "title": "GitHub - datadog-labs/mcp-server: Official Datadog MCP Server",
+   "snippet": "# Datadog MCP Server\nDatadog's managed [MCP server](https://docs.datadoghq.com/bits_ai/mcp_server/) connects your AI agents to Datadog's observability tools and data. Query logs, metrics, traces,"
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://docs.datadoghq.com/mcp_server/tools",
+   "title": "docs.datadoghq.com/mcp_server/tools",
+   "snippet": "The default toolset for logs, metrics, traces, dashboards, monitors, incidents, hosts, services, events, and notebooks."
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://datadoghq.com/product/ai/mcp-server",
+   "title": "MCP Server | CLI | AI Agent Ready Observability | Datadog",
+   "snippet": "data within AI-driven experiences: Pup CLI for scripting, automation, shell-style agents, and high-scale custom agent workflows; and MCP Server for in-chat AI agents and AI-powered IDE experiences."
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://docs.datadoghq.com/mcp_server/setup.md",
+   "title": "docs.datadoghq.com/mcp_server/setup.md",
+   "snippet": "Learn how to set up and configure the Datadog MCP Server, which lets you retrieve telemetry insights and manage platform features directly from AI-powered clients. Select your client:"
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://datadoghq.com/blog/observability-pipelines-mcp-server-ai-agents",
+   "title": "Build and troubleshoot Observability Pipelines with AI agents",
+   "snippet": "tools are now generally available in the [Datadog MCP Server](https://www.datadoghq.com/product/ai/mcp-server/). Observability Pipelines lets you"
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://docs.datadoghq.com/mcp_server",
+   "title": "docs.datadoghq.com/mcp_server",
+   "snippet": "**Ready to get started?** Select your agent below or see [Set Up the Datadog MCP Server](https://docs.datadoghq.com/mcp_server/setup.md) for connection instructions."
+  },
+  {
+   "q": "Datadog MCP server official",
+   "url": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-launches-mcp-server/",
+   "title": "Datadog Launches MCP Server to Provide AI Agents with Secure, Real- ...",
+   "snippet": "Datadog MCP Server is a purpose-built interface designed for agentic systems, extending Datadog's unified observability platform directly into AI workflows so ..."
+  }
+ ],
+ "official_domain_candidates": {
+  "datadoghq.com": 36
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "datadoghq.com",
+ "completed": "2026-11-23T19:38:45+05:30"
+}

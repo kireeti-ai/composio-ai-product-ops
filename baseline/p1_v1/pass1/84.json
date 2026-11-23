@@ -1,0 +1,71 @@
+{
+ "id": 84,
+ "name": "Paygent Connect",
+ "category": "Finance and Fintech",
+ "model": "gemini-2.5-flash",
+ "pages_read": [
+  "https://docs.paygent.to/getting-started/assign-users-to-plans",
+  "https://docs.withpaygent.com/cli/commands/authentication",
+  "https://www.gopaygent.com/developers/docs",
+  "https://docs.withpaygent.com/documentation/getting-started/quick-start"
+ ],
+ "one_liner": "Paygent Connect provides an API and SDKs for managing user plans, tracking AI usage, and handling billing for AI agents.",
+ "auth_methods": [
+  "bearer_token",
+  "api_key"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers can sign up and get an API key from the dashboard immediately.",
+ "api_types": [
+  "rest",
+  "sdk_or_cli_only"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.paygent.to/getting-started/assign-users-to-plans",
+   "quote": "curl -X POST https://api.paygent.to/api/v1/users \\\n  -H \"Authorization: Bearer pg_live_...\"",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+   "quote": "paygent_sdk.init(api_key=\"your-paygent-api-key\")",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+   "quote": "Sign up at withpaygent.com and get your API key from the dashboard.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://docs.paygent.to/getting-started/assign-users-to-plans",
+   "quote": "These are plain REST calls (curl and Python httpx shown).",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+   "quote": "Install the SDK",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://docs.withpaygent.com/documentation/getting-started/quick-start",
+   "quote": "Choose your SDK and start tracking AI usage immediately.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

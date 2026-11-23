@@ -1,0 +1,120 @@
+{
+ "created": "2026-11-23T19:13:12+05:30",
+ "benchmark": "bench5-v1",
+ "purpose": "pipeline/model evaluation on 5 apps; NOT an accuracy claim",
+ "authorized_by": "user instruction (five-app benchmark on free tiers only); no APPROVED.json involved; no paid access",
+ "apps": [
+  {
+   "id": 27,
+   "name": "Telegram",
+   "provenance": "original user-supplied list (apps 1-50, read from the original Notion page data; membership verified)",
+   "provenance_class": "original_notion",
+   "reduced_prompt_sha256": "2c92ebd406c33612f97729624dd5124c7d824307f42726051fb6936ed9b41244",
+   "reduced_est_tokens": 1764,
+   "full_est_tokens": 7505
+  },
+  {
+   "id": 32,
+   "name": "Meta Ads",
+   "provenance": "original user-supplied list (apps 1-50, read from the original Notion page data; membership verified)",
+   "provenance_class": "original_notion",
+   "reduced_prompt_sha256": "7d1c8f67351a1ea3ac7843870499ca0b7af78d56a9cf7ca737709534b3a8b8bf",
+   "reduced_est_tokens": 2107,
+   "full_est_tokens": 6408
+  },
+  {
+   "id": 41,
+   "name": "Shopify",
+   "provenance": "original user-supplied list (apps 1-50, read from the original Notion page data; membership verified)",
+   "provenance_class": "original_notion",
+   "reduced_prompt_sha256": "5cfb24dc81cc82e1124bead5c2084da91c6a3930d4cb6faa3c71cc4f1ee74832",
+   "reduced_est_tokens": 2401,
+   "full_est_tokens": 5666
+  },
+  {
+   "id": 53,
+   "name": "Ahrefs",
+   "provenance": "reconstructed candidate list (apps 51-100; secondary source; membership/category/order NOT confirmed against the original Notion source)",
+   "provenance_class": "reconstructed_unverified",
+   "reduced_prompt_sha256": "58d9b9eb2b9cbd4d997837baab7dc8ce55bb4dda7714235e99b09addcd42d058",
+   "reduced_est_tokens": 1456,
+   "full_est_tokens": 3080
+  },
+  {
+   "id": 61,
+   "name": "GitHub",
+   "provenance": "reconstructed candidate list (apps 51-100; secondary source; membership/category/order NOT confirmed against the original Notion source)",
+   "provenance_class": "reconstructed_unverified",
+   "reduced_prompt_sha256": "cb0b5346f3019c1b869c452e125475738572c27f9bcf2bfaf90ac00009310bac",
+   "reduced_est_tokens": 4203,
+   "full_est_tokens": 12242
+  }
+ ],
+ "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+ "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+ "prompt_schema_source": "frozen v1f prompt/schema via runner v6 frozen(); UNCHANGED",
+ "schema_delivery": "Gemini: responseSchema (frozen, native). Groq/OpenRouter: response_format json_schema derived mechanically from the frozen schema (json_schema_from_gemini, additionalProperties=false). Prompt text identical for all providers.",
+ "evidence": "reduction-v1 applied to ALL five apps and ALL providers (same bytes); full evidence kept in bundles_full/",
+ "providers": {
+  "groq_orgA": {
+   "adapter": "groq",
+   "model": "openai/gpt-oss-120b",
+   "bucket": "groq:orgA:openai/gpt-oss-120b",
+   "limits": {
+    "rpm": 10,
+    "tpm": 8000,
+    "rpd": 1000
+   },
+   "cap": 5,
+   "max_out": 2000,
+   "note": "existing key + P1 share this one bucket; P2-P4 are NOT used in this benchmark",
+   "key_env_name": "GROQ_API_KEY"
+  },
+  "openrouter_particle": {
+   "adapter": "openrouter",
+   "model": "particle-ai/particle-1:free",
+   "bucket": "openrouter:main:particle-ai/particle-1:free",
+   "limits": {
+    "rpm": 6,
+    "tpm": null,
+    "rpd": 50
+   },
+   "cap": 5,
+   "max_out": 2500,
+   "note": "free-tier 50 req/day (observed via /key); also counts other free-model use today",
+   "key_env_name": "OPENROUTER_API_KEY"
+  },
+  "gemini25_key1": {
+   "adapter": "gemini",
+   "model": "gemini-2.5-flash",
+   "bucket": "gemini:key1:gemini-2.5-flash",
+   "limits": {
+    "rpm": 5,
+    "tpm": 250000,
+    "rpd": 20
+   },
+   "cap": 5,
+   "max_out": 8192,
+   "note": "deferred until daily reset evidence; frozen model of the original plan",
+   "key_env_name": "GEMINI_API_KEY"
+  },
+  "gemini36_key2": {
+   "adapter": "gemini",
+   "model": "gemini-3.6-flash",
+   "bucket": "gemini:key2:gemini-3.6-flash",
+   "limits": {
+    "rpm": 5,
+    "tpm": 250000,
+    "rpd": 20
+   },
+   "cap": 1,
+   "max_out": 8192,
+   "note": "1 optional capability test only; NOT adoptable without evaluation",
+   "key_env_name": "GEMINI_API_KEY_2"
+  }
+ },
+ "budget_rule": "hard cap per provider incl. retries; a retry only if it cannot starve apps not yet attempted; no model/provider substitution",
+ "bench_py_sha256": "b0ace179f799fd7813495fb52638142101f9220bc9d7b48abc25fb478efdce2b",
+ "runner_v6_untouched": true,
+ "frozen_v1f_untouched": true
+}

@@ -1,0 +1,110 @@
+attempt,app_id,app,url,kind,parent_url,reason,raw_status,chars,outcome,duplicate_of,sha256,requested_at
+1,29,Aircall,https://aircall.io/pricing,first_attempt,,,ok,7230,usable_unique,,5eabafe35c89,2026-11-23T17:31:33+05:30
+1,29,Aircall,https://support.aircall.io/en-gb/articles/30599733509277,first_attempt,,,ok,5810,usable_unique,,cbd6050c93a0,2026-11-23T17:31:37+05:30
+1,29,Aircall,https://developer.aircall.io/build,first_attempt,,,ok,2113,usable_unique,,8387e303e416,2026-11-23T17:31:38+05:30
+1,29,Aircall,https://developer.aircall.io/docs/webhooks-overview,first_attempt,,,ok,2514,usable_unique,,5363d3fa56b0,2026-11-23T17:31:46+05:30
+1,36,Klaviyo,https://klaviyo.com/platform/how-klaviyo-pricing-works,first_attempt,,,ok,7406,usable_unique,,b1fac206f9c1,2026-11-23T17:31:31+05:30
+1,36,Klaviyo,https://klaviyo.com/pricing,first_attempt,,,ok,3190,usable_unique,,33299555d9bb,2026-11-23T17:31:33+05:30
+1,36,Klaviyo,https://help.klaviyo.com/hc/en-us/articles/7423954176283,first_attempt,,,ok,7439,usable_unique,,df1ed640d2c7,2026-11-23T17:31:37+05:30
+1,36,Klaviyo,https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key.,first_attempt,,,ok,6972,usable_unique,,b6dbd3a250cb,2026-11-23T17:31:43+05:30
+1,46,Squarespace,https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle,first_attempt,,,error,,fetch_error,,,2026-11-23T17:31:30+05:30
+1,46,Squarespace,https://squarespace.com/pricing,first_attempt,,,ok,23258,usable_unique,,bde03ae791e2,2026-11-23T17:31:43+05:30
+1,46,Squarespace,https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys,first_attempt,,,error,,fetch_error,,,2026-11-23T17:31:45+05:30
+1,46,Squarespace,https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c,first_attempt,,,error,,fetch_error,,,2026-11-23T17:32:06+05:30
+1,65,Supabase,https://supabase.com/docs/guides/platform/billing-faq,first_attempt,,,ok,17514,usable_unique,,0057f95459a7,2026-11-23T17:31:51+05:30
+1,65,Supabase,https://supabase.com/pricing,first_attempt,,,ok,20345,usable_unique,,63e08da82aba,2026-11-23T17:31:55+05:30
+1,65,Supabase,https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys,first_attempt,,,ok,11419,usable_unique,,1798288e97e3,2026-11-23T17:31:59+05:30
+1,65,Supabase,https://supabase.com/docs/guides/api/api-keys.md,first_attempt,,,ok,20728,usable_unique,,05e201d2426c,2026-11-23T17:32:02+05:30
+1,66,Neo4j,https://neo4j.com/pricing/,first_attempt,,,error,,fetch_error,,,2026-11-23T17:31:56+05:30
+1,66,Neo4j,https://neo4j.com/docs/aura/billing/payment-options/,first_attempt,,,ok,9174,usable_unique,,cc66ea8a69dc,2026-11-23T17:32:09+05:30
+1,66,Neo4j,https://neo4j.com/docs/aura/getting-started/free-trial/,first_attempt,,,ok,4075,usable_unique,,7bfd0c188ea6,2026-11-23T17:32:11+05:30
+1,71,Notion,https://notion.com/pricing,first_attempt,,,ok,20996,usable_unique,,14ad5f50aec9,2026-11-23T17:32:07+05:30
+1,71,Notion,https://notion.com/en-GB/pricing/us,first_attempt,,,ok,2,thin_or_js_shell,,44136fa355b3,2026-11-23T17:32:09+05:30
+1,71,Notion,https://developers.notion.com/guides/get-started/handling-api-keys,first_attempt,,,ok,3752,duplicate_content,baseline_page,d7c8d4d529b4,2026-11-23T17:32:11+05:30
+1,71,Notion,https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens,first_attempt,,,ok,6512,usable_unique,,2f456f310777,2026-11-23T17:32:14+05:30
+1,72,Airtable,https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs,first_attempt,,,empty,,fetch_empty,,,2026-11-23T17:32:17+05:30
+1,72,Airtable,https://airtable.com/pricing,first_attempt,,,ok,3801,usable_unique,,700874cdacb6,2026-11-23T17:32:19+05:30
+1,72,Airtable,https://support.airtable.com/articles/9934989703-creating-personal-access-tokens,first_attempt,,,ok,13567,usable_unique,,079fea861d0f,2026-11-23T17:32:20+05:30
+1,72,Airtable,https://airtable.com/developers/web/guides/personal-access-tokens,first_attempt,,,ok,3555,usable_unique,,bf55997f5140,2026-11-23T17:32:22+05:30
+1,75,Asana,https://asana.com/pricing,first_attempt,,,error,,fetch_error,,,2026-11-23T17:32:18+05:30
+1,75,Asana,https://asana.com/pricing/client-management,first_attempt,,,ok,22783,usable_unique,,2d153db3a22d,2026-11-23T17:32:31+05:30
+1,75,Asana,https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox),first_attempt,,,empty,,fetch_empty,,,2026-11-23T17:32:33+05:30
+1,75,Asana,https://developers.asana.com/docs/personal-access-token.md,first_attempt,,,ok,3313,usable_unique,,ee2b9fbdc7ee,2026-11-23T17:32:37+05:30
+1,20,Gladly,https://gladly.com/gladly-pricing-support-and-service-packages,first_attempt,,,empty,,fetch_empty,,,2026-11-23T17:32:25+05:30
+1,20,Gladly,https://gladly.com/get-started-2,first_attempt,,,ok,322,thin_or_js_shell,,04a8d3d153d0,2026-11-23T17:32:28+05:30
+1,25,Pumble,https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features,first_attempt,,,ok,2911,usable_unique,,81cb630a406c,2026-11-23T17:32:26+05:30
+1,25,Pumble,https://pumble.com/pricing,first_attempt,,,ok,11346,usable_unique,,fe33b7c1aed5,2026-11-23T17:32:32+05:30
+1,25,Pumble,https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration,first_attempt,,,ok,2529,duplicate_content,baseline_page,d41c3c5ee2d5,2026-11-23T17:32:35+05:30
+1,25,Pumble,https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins,first_attempt,,,ok,5624,usable_unique,,bcc33840d111,2026-11-23T17:32:39+05:30
+1,26,Discord,https://support.discord.com/hc/en-us/articles/360017693772-Managing-Subscriptions-and-Billing-FAQ,first_attempt,,,ok,10643,off_target_url,,8372465aa546,2026-11-23T17:32:41+05:30
+1,26,Discord,https://support.discord.com/hc/en-us/articles/4407269525911-Localized-Pricing-on-Discord,first_attempt,,,ok,9606,off_target_url,,1da8835ddf9a,2026-11-23T17:32:42+05:30
+1,26,Discord,https://discord.com/developers/home,first_attempt,,,ok,179,thin_or_js_shell,,cc6a0c25426a,2026-11-23T17:32:44+05:30
+1,26,Discord,https://docs.discord.com/developers/quick-start/overview-of-apps,first_attempt,,,ok,4142,usable_unique,,8c3f2a4153df,2026-11-23T17:32:47+05:30
+1,38,Pinterest,https://www.pinterest.com/ideas/pricing-plans-web-design/922997390254/,first_attempt,,,ok,235,off_target_url,,bb11f88d733a,2026-11-23T17:32:50+05:30
+1,38,Pinterest,https://www.pinterest.com/zoki84/pricing-plan/,first_attempt,,,ok,382,off_target_url,,e23491d3d182,2026-11-23T17:32:54+05:30
+1,38,Pinterest,https://developers.pinterest.com/apps/1558653/upgrade,first_attempt,,,ok,128,thin_or_js_shell,,ed4eeda3009f,2026-11-23T17:32:56+05:30
+1,38,Pinterest,https://business.pinterest.com/getting-started,first_attempt,,,ok,3703,usable_unique,,397b47c4dc65,2026-11-23T17:32:58+05:30
+1,44,Salesforce Commerce Cloud,https://www.salesforce.com/commerce/pricing/,first_attempt,,,ok,4079,usable_unique,,ee8d4776f513,2026-11-23T17:32:50+05:30
+1,44,Salesforce Commerce Cloud,https://www.salesforce.com/au/commerce/pricing/,first_attempt,,,ok,4077,duplicate_content,https://www.salesforce.com/commerce/pricing/,de493c7a14de,2026-11-23T17:32:53+05:30
+1,44,Salesforce Commerce Cloud,https://developer.salesforce.com,first_attempt,,,ok,4214,usable_unique,,980d7e38304f,2026-11-23T17:32:55+05:30
+1,44,Salesforce Commerce Cloud,https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html,first_attempt,,,ok,1187,usable_unique,,ed4bdb22b800,2026-11-23T17:32:56+05:30
+1,47,Ecwid,https://www.ecwid.com/pricing,first_attempt,,,ok,14787,usable_unique,,902781519baa,2026-11-23T17:33:04+05:30
+1,47,Ecwid,https://www.ecwid.com/pricing/business,first_attempt,,,ok,6379,usable_unique,,c966bd053e62,2026-11-23T17:33:05+05:30
+1,47,Ecwid,http://developers.ecwid.com/register,first_attempt,,,empty,,fetch_empty,,,2026-11-23T17:33:07+05:30
+1,47,Ecwid,https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps,first_attempt,,,ok,1237,usable_unique,,636848d49588,2026-11-23T17:33:10+05:30
+1,61,GitHub,https://github.com/pricing.md,first_attempt,,,empty,,fetch_empty,,,2026-11-23T17:33:06+05:30
+1,61,GitHub,https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps,first_attempt,,,ok,3956,usable_unique,,029cbaf0840a,2026-11-23T17:33:07+05:30
+1,61,GitHub,https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app,first_attempt,,,ok,6928,usable_unique,,a819fbddd48d,2026-11-23T17:33:09+05:30
+1,61,GitHub,https://docs.github.com/developers/apps/building-github-apps/creating-a-github-app,first_attempt,,,ok,6928,duplicate_content,https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app,a819fbddd48d,2026-11-23T17:33:10+05:30
+1,62,Vercel,https://vercel.com/docs/pricing,first_attempt,,,ok,8967,usable_unique,,6c4cc0a47204,2026-11-23T17:33:07+05:30
+1,62,Vercel,https://vercel.com/pricing,first_attempt,,,ok,13683,usable_unique,,9748058cd965,2026-11-23T17:33:08+05:30
+1,62,Vercel,https://vercel.com/docs/accounts/access-tokens,first_attempt,,,ok,10189,usable_unique,,5225c3f0e3ba,2026-11-23T17:33:14+05:30
+1,62,Vercel,https://vercel.com/signup,first_attempt,,,ok,254,thin_or_js_shell,,07f0f10a7b2b,2026-11-23T17:33:19+05:30
+1,63,Netlify,https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work,first_attempt,,,ok,13036,usable_unique,,d7954fff02cf,2026-11-23T17:33:13+05:30
+1,63,Netlify,https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5,first_attempt,,,ok,18269,usable_unique,,9da084d14b82,2026-11-23T17:33:15+05:30
+1,63,Netlify,https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth,first_attempt,,,ok,9089,usable_unique,,80b3305d3f61,2026-11-23T17:33:34+05:30
+1,63,Netlify,https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli,first_attempt,,,ok,25087,usable_unique,,1c79cab23f13,2026-11-23T17:33:35+05:30
+1,70,Sentry,https://sentry.io/pricing,first_attempt,,,ok,6168,usable_unique,,1db69ec73e02,2026-11-23T17:33:15+05:30
+1,70,Sentry,https://docs.sentry.io/pricing,first_attempt,,,ok,17640,usable_unique,,efc6298a7dc1,2026-11-23T17:33:18+05:30
+1,70,Sentry,https://docs.sentry.io/get-started,first_attempt,,,ok,5047,usable_unique,,fbc54fcf7a9b,2026-11-23T17:33:21+05:30
+2,20,Gladly,https://www.gladly.com/gladly-pricing-support-and-service-packages,url_variant,https://gladly.com/gladly-pricing-support-and-service-packages,alternative for fetch_empty,empty,,fetch_empty,,,2026-11-23T17:41:39+05:30
+2,20,Gladly,https://www.gladly.com/get-started-2,url_variant,https://gladly.com/get-started-2,alternative for thin_or_js_shell,ok,322,thin_or_js_shell,,04a8d3d153d0,2026-11-23T17:41:41+05:30
+2,20,Gladly,https://gladly.com/get-started-sidekick,stored_search_hit,https://gladly.com/get-started-2,alternative for thin_or_js_shell,ok,836,usable_unique,,5a6f59ff30e7,2026-11-23T17:41:42+05:30
+2,20,Gladly,https://connect.gladly.com/docs/developer-tutorials/article/app-platform-overview,stored_search_hit,https://gladly.com/get-started-2,alternative for thin_or_js_shell,not_attempted,,skipped_after_alternative_succeeded,,,
+2,20,Gladly,https://gladly.com/get-started-2,app_level_search,,discovery for unresolved app / scope assessment,ok,322,thin_or_js_shell,,04a8d3d153d0,2026-11-23T17:41:46+05:30
+2,20,Gladly,https://gladly.com/gladly-pricing-support-and-service-packages,app_level_search,,discovery for unresolved app / scope assessment,empty,,fetch_empty,,,2026-11-23T17:41:48+05:30
+2,26,Discord,https://www.discord.com/developers/home,url_variant,https://discord.com/developers/home,alternative for thin_or_js_shell,ok,179,thin_or_js_shell,,cc6a0c25426a,2026-11-23T17:41:40+05:30
+2,38,Pinterest,https://developers.pinterest.com/apps/1558653/upgrade.md,url_variant,https://developers.pinterest.com/apps/1558653/upgrade,alternative for thin_or_js_shell,ok,128,thin_or_js_shell,,ed4eeda3009f,2026-11-23T17:41:39+05:30
+2,38,Pinterest,https://dev.pinterest.com/docs/getting-started,app_level_search,,discovery for unresolved app / scope assessment,ok,2575,usable_unique,,8f4ce8441f7f,2026-11-23T17:41:46+05:30
+2,38,Pinterest,https://developers.pinterest.com/docs/getting-started/using-beta-and-restricted-features,app_level_search,,discovery for unresolved app / scope assessment,ok,1820,usable_unique,,f06a9890184b,2026-11-23T17:41:47+05:30
+2,38,Pinterest,https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization,app_level_search,,discovery for unresolved app / scope assessment,ok,8899,duplicate_content,baseline_page,3af277ff588a,2026-11-23T17:41:50+05:30
+2,46,Squarespace,https://support.squarespace.com/hc/en-us/articles/4404628246669-Create-pricing-plans-and-paywalls,stored_search_hit,https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle,alternative for fetch_error,error,,fetch_error,,,2026-11-23T17:41:43+05:30
+2,46,Squarespace,https://squarespace.com/pricing.txt,stored_search_hit,https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle,alternative for fetch_error,ok,5986,usable_unique,,acd1bbd1bf81,2026-11-23T17:41:53+05:30
+2,46,Squarespace,https://support.squarespace.com/hc/en-us/articles/236297987,url_variant,https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c,alternative for fetch_error,error,,fetch_error,,,2026-11-23T17:41:56+05:30
+2,46,Squarespace,https://support.squarespace.com/hc/en-us/articles/236297987/?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c,url_variant,https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c,alternative for fetch_error,error,,fetch_error,,,2026-11-23T17:42:06+05:30
+2,46,Squarespace,https://developers.squarespace.com/commerce-apis/discounts-overview,app_level_search,,discovery for unresolved app / scope assessment,ok,6797,usable_unique,,5513a4ee271c,2026-11-23T17:42:21+05:30
+2,46,Squarespace,https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys,app_level_search,,discovery for unresolved app / scope assessment,error,,fetch_error,,,2026-11-23T17:42:23+05:30
+2,46,Squarespace,https://developers.squarespace.com/commerce-apis/website-overview,app_level_search,,discovery for unresolved app / scope assessment,ok,3972,usable_unique,,28d5619b70f0,2026-11-23T17:42:40+05:30
+2,47,Ecwid,http://developers.ecwid.com/register.md,url_variant,http://developers.ecwid.com/register,alternative for fetch_empty,empty,,fetch_empty,,,2026-11-23T17:41:52+05:30
+2,47,Ecwid,https://developers.ecwid.com/register,url_variant,http://developers.ecwid.com/register,alternative for fetch_empty,empty,,fetch_empty,,,2026-11-23T17:41:53+05:30
+2,61,GitHub,https://github.com/pricing,url_variant,https://github.com/pricing.md,alternative for fetch_empty,ok,19507,usable_unique,,cbe5349faeea,2026-11-23T17:41:54+05:30
+2,61,GitHub,https://www.github.com/pricing.md,url_variant,https://github.com/pricing.md,alternative for fetch_empty,not_attempted,,skipped_after_alternative_succeeded,,,
+2,61,GitHub,https://github.com/features/copilot/plans,stored_search_hit,https://github.com/pricing.md,alternative for fetch_empty,not_attempted,,skipped_after_alternative_succeeded,,,
+2,62,Vercel,https://www.vercel.com/signup,url_variant,https://vercel.com/signup,alternative for thin_or_js_shell,ok,241,thin_or_js_shell,,9477db2efc82,2026-11-23T17:41:56+05:30
+2,62,Vercel,https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token,stored_search_hit,https://vercel.com/signup,alternative for thin_or_js_shell,ok,10189,duplicate_content,https://vercel.com/docs/accounts/access-tokens,5225c3f0e3ba,2026-11-23T17:41:57+05:30
+2,62,Vercel,https://vercel.com/docs/cli/signup,stored_search_hit,https://vercel.com/signup,alternative for thin_or_js_shell,ok,1398,usable_unique,,71b040d99300,2026-11-23T17:41:58+05:30
+2,66,Neo4j,https://www.neo4j.com/pricing/,url_variant,https://neo4j.com/pricing/,alternative for fetch_error,error,,fetch_error,,,2026-11-23T17:41:57+05:30
+2,66,Neo4j,https://neo4j.com/docs/aura/billing/billing-dimensions/,stored_search_hit,https://neo4j.com/pricing/,alternative for fetch_error,ok,3997,usable_unique,,d48bee14d9b8,2026-11-23T17:42:08+05:30
+2,66,Neo4j,https://neo4j.com/docs/query-api/current,app_level_search,,discovery for unresolved app / scope assessment,ok,2486,usable_unique,,1aa4dd3532bc,2026-11-23T17:42:13+05:30
+2,66,Neo4j,https://neo4j.com/docs/http-api/current/authentication-authorization,app_level_search,,discovery for unresolved app / scope assessment,ok,4055,duplicate_content,baseline_page,e74541f88aef,2026-11-23T17:42:14+05:30
+2,66,Neo4j,https://neo4j.com/docs/http-api/current,app_level_search,,discovery for unresolved app / scope assessment,ok,2497,usable_unique,,01e8a9aabd53,2026-11-23T17:42:16+05:30
+2,71,Notion,https://www.notion.com/en-GB/pricing/us,url_variant,https://notion.com/en-GB/pricing/us,alternative for thin_or_js_shell,ok,2,thin_or_js_shell,,44136fa355b3,2026-11-23T17:42:02+05:30
+2,71,Notion,https://notion.com/help/category/plans-billing-and-payment,stored_search_hit,https://notion.com/en-GB/pricing/us,alternative for thin_or_js_shell,ok,482,thin_or_js_shell,,28b0140a6f0d,2026-11-23T17:42:03+05:30
+2,71,Notion,https://www.notion.com/pricing,stored_search_hit,https://notion.com/en-GB/pricing/us,alternative for thin_or_js_shell,ok,20996,duplicate_content,https://notion.com/pricing,14ad5f50aec9,2026-11-23T17:42:04+05:30
+2,72,Airtable,https://support.airtable.com/docs/airtable-billing-overview,stored_search_hit,https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs,alternative for fetch_empty,ok,10780,usable_unique,,d7e90560769f,2026-11-23T17:42:07+05:30
+2,72,Airtable,https://support.airtable.com/articles/1636857517-how-airtable-collaborators-impact-billing,stored_search_hit,https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs,alternative for fetch_empty,not_attempted,,skipped_after_alternative_succeeded,,,
+2,72,Airtable,https://airtable.com/developers/web/api/billing-plans.md,stored_search_hit,https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs,alternative for fetch_empty,not_attempted,,skipped_after_alternative_succeeded,,,
+2,75,Asana,https://www.asana.com/pricing,url_variant,https://asana.com/pricing,alternative for fetch_error,error,,fetch_error,,,2026-11-23T17:42:10+05:30
+2,75,Asana,https://asana.com/pricing.md,stored_search_hit,https://asana.com/pricing,alternative for fetch_error,ok,24074,usable_unique,,b92d55a368f9,2026-11-23T17:42:23+05:30
+2,75,Asana,https://asana.com/pricing?via=,stored_search_hit,https://asana.com/pricing,alternative for fetch_error,not_attempted,,skipped_after_alternative_succeeded,,,
+2,75,Asana,https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox).md,url_variant,https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox),alternative for fetch_empty,empty,,fetch_empty,,,2026-11-23T17:42:24+05:30

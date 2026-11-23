@@ -1,0 +1,26 @@
+{
+ "measured_on": "the 28 frozen v1f prompts + 2 Neo4j surface prompts + 26 baseline verifier prompts (offline, no model call)",
+ "gemini_v1f": {
+  "calls": 28,
+  "avg_input_tokens": 8492,
+  "max_input_tokens": 17444,
+  "total_input_tokens_approx": 237776,
+  "largest_apps": [
+   "63 Netlify (69,776 chars)",
+   "65 Supabase (62,586)",
+   "62 Vercel (53,571)"
+  ],
+  "note": "tokens ~ chars/4; output assumed ~1,000 tokens"
+ },
+ "gemini_neo4j": {
+  "aura_management_api_tokens_approx": 5609,
+  "database_query_api_tokens_approx": 1145
+ },
+ "groq_verifier": {
+  "avg_prompt_chars": 3327,
+  "tokens_per_call_approx": 982,
+  "planned_calls_for_ledger": 403,
+  "plus_pilot_stage1_calls": 28,
+  "observed_retry_ratio": 1.71
+ }
+}

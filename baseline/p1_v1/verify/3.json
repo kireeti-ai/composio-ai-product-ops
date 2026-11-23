@@ -1,0 +1,57 @@
+{
+ "id": 3,
+ "name": "Pipedrive",
+ "pass1_sha": "8be534d9a3d77a47",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "API accepts access_token via OAuth\u202f2.0",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "API validates calls using an API token",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can sign up for a free Sandbox Account to experiment and build integrations in a risk-free environment.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt explicitly invites signing up for a free Sandbox account for experimentation.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states Pipedrive provides a RESTful API",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpts do not mention any MCP for Pipedrive.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

@@ -1,0 +1,175 @@
+{
+ "tag": "groq_orgA",
+ "app": 62,
+ "name": "Vercel",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 2,
+ "latency_s": 4.78,
+ "tokens_in": 3405,
+ "tokens_out": 969,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://vercel.com/docs",
+    "quote": "Create an API key and export the key it prints",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://vercel.com/docs/accounts/access-tokens",
+    "quote": "Vercel access tokens authenticate requests to the Vercel REST API",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+    "quote": "The Authorization Server API exposes a set of endpoints which are used by your application for obtaining, refreshing, revoking, and introspecting tokens",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "access",
+    "url": "https://vercel.com/docs",
+    "quote": "Create an API key and export the key it prints",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL `https://api.vercel.com` and follow the REST architecture.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_breadth",
+    "url": "https://vercel.com/docs",
+    "quote": "Let your agent manage projects, deployments, and logs",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://vercel.com/docs",
+    "quote": "npx -y add-mcp https://mcp.vercel.com -g",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "supported_lexical"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 5,
+   "unsupported": 1
+  },
+  "evidence_total": 7,
+  "evidence_valid": 7,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 0,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Vercel is a cloud platform for deploying front\u2011end sites, serverless functions, and managing projects, deployments, and logs.",
+  "auth_methods": [
+   "api_key",
+   "bearer_token",
+   "oauth2"
+  ],
+  "access": "self_serve_free",
+  "access_note": "API keys and access tokens can be created by any team member via the CLI or dashboard without contacting sales.",
+  "api_breadth": "broad",
+  "api_types": [
+   "rest"
+  ],
+  "existing_mcp": "official",
+  "buildability": "yes",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://vercel.com/docs",
+    "quote": "Create an API key and export the key it prints"
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://vercel.com/docs/accounts/access-tokens",
+    "quote": "Vercel access tokens authenticate requests to the Vercel REST API"
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+    "quote": "The Authorization Server API exposes a set of endpoints which are used by your application for obtaining, refreshing, revoking, and introspecting tokens"
+   },
+   {
+    "field": "access",
+    "url": "https://vercel.com/docs",
+    "quote": "Create an API key and export the key it prints"
+   },
+   {
+    "field": "api_types",
+    "url": "https://vercel.com/docs/rest-api",
+    "quote": "The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL `https://api.vercel.com` and follow the REST architecture."
+   },
+   {
+    "field": "api_breadth",
+    "url": "https://vercel.com/docs",
+    "quote": "Let your agent manage projects, deployments, and logs"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://vercel.com/docs",
+    "quote": "npx -y add-mcp https://mcp.vercel.com -g"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "68f77620230c10c62c58b1330884804955bd80d60477839b7280994a9fe34cdb",
+ "at": "2026-11-23T19:43:40+05:30"
+}

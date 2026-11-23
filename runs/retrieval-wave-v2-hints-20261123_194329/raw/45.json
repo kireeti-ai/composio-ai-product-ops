@@ -1,0 +1,346 @@
+{
+ "id": 45,
+ "name": "Magento (Adobe Commerce)",
+ "started": "2026-11-23T19:44:30+05:30",
+ "searches": [
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:32+05:30"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:34+05:30"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:35+05:30"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:44:37+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://developer.adobe.com/internals/mcp-registry-web-app?type=mcp",
+   "requested_at": "2026-11-23T19:44:47+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.adobe.com/internals/mcp-registry-web-app/mcp/commerce-extensibility-tools",
+   "requested_at": "2026-11-23T19:44:52+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+   "requested_at": "2026-11-23T19:44:53+05:30",
+   "status": "ok",
+   "final_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+   "title": "OAuth-Based Authentication",
+   "chars": 18954,
+   "sha256": "69bc63fe867fdd6497b7252fcb9c5cea1445634f943253d9cdc27d116d3b6529",
+   "text": "```\n```\ndata-src=/_includes/paas-only.md\n```\n```\n\n# OAuth-based authentication\n\n```\n```\ndata-variant=info\n```\n```\n\n```\n```\ndata-slots=text\n```\n```\n\nOAuth authentication with Adobe Commerce and Magento Open Source is based on OAuth 1.0a, an open standard for secure API authentication. OAuth is a token-passing mechanism that allows a system to control which third-party applications have access to internal data without revealing or storing any user IDs or passwords.\n\nIn Commerce, a third-party application that uses OAuth for authentication is called an integration. An integration defines which resources the application can access. The application can be granted access to all resources or a customized subset of resources.\n\nAs the process of registering the integration proceeds, Commerce creates the tokens that the application needs for authentication. It first creates a request token. This token is short-lived and must be exchanged for an access token. Access tokens are long-lived and will not expire unless the merchant revokes access from the application.\n\n## OAuth overview\n\nThe following diagram shows the OAuth authentication process. Each step is described further.\n\n* Create an integration. The merchant creates an integration from Admin. Commerce generates a consumer key and a consumer secret.\n* Activate the integration. The OAuth process begins when the merchant activates the integration. Magento sends the OAuth consumer key and secret, an OAuth verifier, and the store URL to the external application via HTTPS post to the page defined in the Callback Link field in Admin. See Activate an integration for more information.\n* Process activation information. The integrator must store the activation information received in step 2. These parameters will be used to ask for tokens.\n* Call the application's login page. Commerce calls the page defined in the Identity Link field in Admin.\n* Merchant logs in to the external application. If the login is successful, the application returns to the location specified in the call. The login page is dismissed.\n* Ask for a request token. The application uses the\n\n  ```\n  POST /oauth/token/request\n  ```\n\n  REST API to ask for a request token. The\n\n  ```\n  Authorization\n  ```\n\n  header includes the consumer key and other information. See Get a request token for details about this token request.\n* Send the request token. Commerce returns a request token and request token secret.\n* Ask for an access token. The application uses the\n\n  ```\n  POST /oauth/token/access\n  ```\n\n  REST API to ask for an access token. The\n\n  ```\n  Authorization\n  ```\n\n  header includes the request token and other information. See Get an access token for details about this token request.\n* Commerce sends the access token. If this request is successful, Magento returns an access token and access token secret.\n* The application can access Magento resources. All requests sent to Commerce must use the full set of request parameters in\n\n  ```\n  Authorization\n  ```\n\n  header. See Access the web APIs for more information.\n\n## Activate an integration\n\nThe integration must be configured from the Admin (System > Extensions > Integrations). The configuration includes a callback URL and an identity link URL. The callback URL specifies where OAuth credentials can be sent when using OAuth for token exchange. The identity link points to the login page of the third-party application that is integrating with Commerce.\n\nA merchant can choose to select Save and Activate when the integration is created. Alternatively, the merchant can click on Activate against a previously saved integration from the Integration grid.\n\nWhen the integration is created, Commerce generates a consumer key and a consumer secret.\n\nActivating the integration submits the credentials to the endpoint specified when creating the Integration. An HTTP POST from Commerce to the Integration endpoint will contain these attributes:\n\n* ```\n  store_base_url\n  ```\n\n  For example,\n\n  ```\n  http://my-store.com/\n  ```\n\n  .\n* ```\n  oauth_verifier\n  ```\n* ```\n  oauth_consumer_key\n  ```\n* ```\n  oauth_consumer_secret\n  ```\n\nIntegrations use the\n\n```\noauth_consumer_key\n```\n\nkey to get a request token and the\n\n```\noauth_verifier\n```\n\nto get an access token.\n\n## OAuth handshake details\n\nThe process of completing the OAuth handshake requires that you\n\nThis process is known as a 2-legged OAuth handshake.\n\n### Get a request token\n\nA request token is a temporary token that the user exchanges for an access token. Use the following API to get a request token from Commerce:\n\n```\nPOST /oauth/token/request\n```\n\nYou must include these request parameters in the\n\n```\nAuthorization\n```\n\nheader in the call:\n\n```\noauth_consumer_key\n```\n\n```\noauth_signature_method\n```\n\n```\nHMAC-SHA256\n```\n\n.\n\n```\noauth_signature\n```\n\n```\noauth_nonce\n```\n\n```\noauth_timestamp\n```\n\n```\noauth_version\n```\n\nThe response contains these fields:\n\n* ```\n  oauth_token\n  ```\n\n  . The token to be used when requesting an access token.\n* ```\n  oauth_token_secret\n  ```\n\n  . A secret value that establishes ownership of the token.\n\nA valid response looks like this:\n\n```\noauth_token=4cqw0r7vo0s5goyyqnjb72sqj3vxwr0h&oauth_token_secret=rig3x3j5a9z5j6d4ubjwyf9f1l21itrr\n```\n\n### Get an access token\n\nThe request token must be exchanged for an access token. Use the following API to get an access token from Commerce:\n\n```\nPOST /oauth/token/access\n```\n\nYou must include these request parameters in the\n\n```\nAuthorization\n```\n\nheader in the call:\n\n```\noauth_consumer_key\n```\n\n```\noauth_nonce\n```\n\n```\noauth_signature\n```\n\n```\noauth_signature_method\n```\n\n```\nHMAC-SHA256\n```\n\n.\n\n```\noauth_timestamp\n```\n\n```\noauth_version\n```\n\n```\noauth_token\n```\n\n```\noauth_token\n```\n\nvalue, or request token, obtained in Get a request token.\n\n```\noauth_verifier\n```\n\nA valid response looks like this:\n\n```\noauth_token=0lnuajnuzeei2o8xcddii5us77xnb6v0&oauth_token_secret=1c6d2hycnir5ygf39fycs6zhtaagx8pd\n```\n\nThe response contains these fields:\n\n* ```\n  oauth_token\n  ```\n\n  . The access token that provides access to protected resources.\n* ```\n  oauth_token_secret\n  ```\n\n  . The secret that is associated with the access token.\n\n## Access the web APIs\n\nAfter the integration is authorized to make API calls, third-party applications (registered as integrations) can invoke web APIs by using the access token.\n\nTo use the access token to make web API calls:\n\n```\nGET /rest/V1/products/1234\n```\n\nYou must include these request parameters in the\n\n```\nAuthorization\n```\n\nrequest header in the call:\n\n* ```\n  oauth_consumer_key\n  ```\n\n  . The customer key-value provided after the registration of the application.\n* ```\n  oauth_nonce\n  ```\n\n  . A random value, uniquely generated by the application.\n* ```\n  oauth_signature_method\n  ```\n\n  . The name of the signature method used to sign the request. Valid values are:\n\n  ```\n  HMAC-SHA256\n  ```\n\n  .\n* ```\n  oauth_signature\n  ```\n\n  . A generated value (signature).\n* ```\n  oauth_timestamp\n  ```\n\n  . A positive integer, expressed in the number of seconds since January 1, 1970 00:00:00 GMT.\n* ```\n  oauth_token\n  ```\n\n  . The\n\n  ```\n  oauth_token\n  ```\n\n  , or access token, value obtained in Get an access token.\n\n## The OAuth signature\n\nAll OAuth handshake requests and Web API requests include the signature as part of Authorization header. Its generated as follows:\n\nYou concatenate a set of URL-encoded attributes and parameters to construct the signature base string.\n\nUse the ampersand (\n\n```\n&\n```\n\n) character to concatenate these attributes and parameters:\n\n1. HTTP method\n2. URL\n3. ```\n   oauth_nonce\n   ```\n4. ```\n   oauth_signature_method\n   ```\n5. ```\n   oauth_timestamp\n   ```\n6. ```\n   oauth_version\n   ```\n7. ```\n   oauth_consumer_key\n   ```\n8. ```\n   oauth_token\n   ```\n\nTo generate the signature, you must use the HMAC-SHA256 signature method. The signing key is the concatenated values of the consumer secret and token secret separated by the ampersand (\n\n```\n&\n```\n\n) character (ASCII code 38), even if empty. You must use parameter encoding to encode each value.\n\n## OAuth token exchange example\n\nThe scripts provided in this document simulate the Commerce OAuth 1.0a token exchange flow. You can drop these scripts under the document root directory of your installation so that they can be exposed as endpoints that your system can interact with to mimic the token exchange.\n\nThe OAuth client is extended from and attributed to PHPoAuthLib, which is the same lib used in the OAuth client.\n\nTo simulate the OAuth 1.0a token exchange flow:\n\n1. Login to your Admin and navigate to System > Extensions > Integrations\n2. Click on Add New Integration.\n3. Complete all details in the Integration Info tab:\n\n   * Name : SomeUniqueIntegrationName\n   * Callback URL : http://your\\_app\\_host/endpoint.php\n   * Identity link URL : http://your\\_app\\_host/login.php\n   * Add permissions as desired on the API tab\n4. Select the Save and Activate option from the drop down menu.\n5. A pop-up window displays, confirming API permissions. Click Allow. (Make sure your browser allows pop-up windows.) The credentials are posted to\n\n   ```\n   endpoint.php\n   ```\n\n   . You should also see another pop-up for the identity linking step that opens the script from\n\n   ```\n   login.php\n   ```\n\n   .\n6. Click Login. (There is no actual login check since this is a simulation.). The\n\n   ```\n   checklogin.php\n   ```\n\n   script is called. It uses the posted credentials to complete the token exchange.\n7. When the token exchange completes successfully, the user is redirected back to the Integrations grid. The newly-created integration should be in the Active state.\n8. Click on the edit icon of the integration and check the Integration Details on the Integration Info tab. It should show all the credentials that can be used to make an authenticated API request using OAuth 1.0.\n\n```\n```\ndata-slots=content\n```\n```\n\n```\n```\ndata-summary=checklogin.php\n```\n```\n\n```\n```\n<\\?php\nrequire './vendor/autoload.php';\n\n$consumerKey = $_REQUEST['oauth_consumer_key'];\n$callback = $_REQUEST['callback_url'];\n\nsession_id('test');\nsession_start();\n\n/** Use $consumerKey to retrieve the following data in case it was stored in DB when received at \"endpoint.php\" */\nif ($consumerKey !== $_SESSION['oauth_consumer_key']) {\n    throw new \\Exception(\"Consumer keys received on different requests do not match.\");\n}\n\n$consumerSecret = $_SESSION['oauth_consumer_secret'];\n$magentoBaseUrl = rtrim($_SESSION['store_base_url'], '/');\n$oauthVerifier = $_SESSION['oauth_verifier'];\n\ndefine('TESTS_BASE_URL', $magentoBaseUrl);\n\n$credentials = new \\OAuth\\Common\\Consumer\\Credentials($consumerKey, $consumerSecret, $magentoBaseUrl);\n$oAuthClient = new OauthClient($credentials);\n$requestToken = $oAuthClient->requestRequestToken();\n$accessToken = $oAuthClient->requestAccessToken(\n    $requestToken->getRequestToken(),\n    $oauthVerifier,\n    $requestToken->getRequestTokenSecret()\n);\n\nheader(\"location: $callback\");\n```\n```\n\n```\n```\ndata-slots=content\n```\n```\n\n```\n```\ndata-summary=endpoint.php\n```\n```\n\n```\n```\n<?php\nsession_id('test');\nsession_start();\n\n// If this data is stored in the DB, oauth_consumer_key can be used as ID to retrieve this data later in \"checklogin.php\"\n// For simplicity of this sample, it is stored in session\n$_SESSION['oauth_consumer_key'] = $_POST['oauth_consumer_key'];\n\n$_SESSION['oauth_consumer_secret'] = $_POST['oauth_consumer_secret'];\n$_SESSION['store_base_url'] = $_POST['store_base_url'];\n$_SESSION['oauth_verifier'] = $_POST['oauth_verifier'];\n\nsession_write_close();\n\nheader(\"HTTP/1.0 200 OK\");\necho \"Response\";\n```\n```\n\n```\n```\ndata-slots=content\n```\n```\n\n```\n```\ndata-summary=login.php\n```\n```\n\n```\n```\n<?php\n$consumerKey = $_REQUEST['oauth_consumer_key'];\n$callbackUrl = urlencode(urldecode($_REQUEST['success_call_back']));\n\necho <<<HTML\n<table width=\"300\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"1\" bgcolor=\"#CCCCCC\">\n    <tr>\n        <form name=\"form1\" method=\"post\" action=\"checklogin.php?oauth_consumer_key={$consumerKey}&callback_url={$callbackUrl}\">\n            <td>\n                <table width=\"100%\" border=\"0\" cellpadding=\"3\" cellspacing=\"1\" bgcolor=\"#FFFFFF\">\n                    <tr>\n                        <td colspan=\"3\"><strong>Integrations Login</strong></td>\n                    </tr>\n                    <tr>\n                        <td width=\"78\">Username</td>\n                        <td width=\"6\">:</td>\n                        <td width=\"294\"><input name=\"myusername\" type=\"text\" id=\"myusername\"></td>\n                    </tr>\n                    <tr>\n                        <td>Password</td>\n                        <td>:</td>\n                        <td><input name=\"mypassword\" type=\"text\" id=\"mypassword\"></td>\n                    </tr>\n                    <tr>\n                        <td>&nbsp;</td>\n                        <td>&nbsp;</td>\n                        <td><input type=\"submit\" name=\"Submit\" value=\"Login\"></td>\n                    </tr>\n                </table>\n            </td>\n        </form>\n    </tr>\n</table>\nHTML;\n```\n```\n\n```\n```\ndata-slots=heading, content\n```\n```\n\n```\n```\ndata-summary=OauthClient.php\n```\n```\n\n```\nhttp://my.host\n```\n\nin this example to a valid base URL.\n\n```\n```\n<?php\n\nuse OAuth\\Common\\Consumer\\Credentials;\nuse OAuth\\Common\\Http\\Client\\ClientInterface;\nuse OAuth\\Common\\Http\\Exception\\TokenResponseException;\nuse OAuth\\Common\\Http\\Uri\\Uri;\nuse OAuth\\Common\\Http\\Uri\\UriInterface;\nuse OAuth\\Common\\Storage\\TokenStorageInterface;\nuse OAuth\\OAuth1\\Service\\AbstractService;\nuse OAuth\\OAuth1\\Signature\\SignatureInterface;\nuse OAuth\\OAuth1\\Token\\StdOAuth1Token;\nuse OAuth\\OAuth1\\Token\\TokenInterface;\n\nclass OauthClient extends AbstractService\n{\n    /** @var string|null */\n    protected $_oauthVerifier = null;\n\n    public function __construct(\n        Credentials $credentials,\n        ClientInterface $httpClient = null,\n        TokenStorageInterface $storage = null,\n        SignatureInterface $signature = null,\n        UriInterface $baseApiUri = null\n    ) {\n        if (!isset($httpClient)) {\n            $httpClient = new \\OAuth\\Common\\Http\\Client\\StreamClient();\n        }\n        if (!isset($storage)) {\n            $storage = new \\OAuth\\Common\\Storage\\Session();\n        }\n        if (!isset($signature)) {\n            $signature = new \\OAuth\\OAuth1\\Signature\\Signature($credentials);\n        }\n        parent::__construct($credentials, $httpClient, $storage, $signature, $baseApiUri);\n    }\n\n    /**\n     * @return UriInterface\n     */\n    public function getRequestTokenEndpoint()\n    {\n        return new Uri('http://my.host/oauth/token/request');\n    }\n\n    /**\n     * Returns the authorization API endpoint.\n     *\n     * @throws \\OAuth\\Common\\Exception\\Exception\n     */\n    public function getAuthorizationEndpoint()\n    {\n        throw new \\OAuth\\Common\\Exception\\Exception(\n            'The REST API is 2-legged. Current operation is not available.'\n        );\n    }\n\n    /**\n     * Returns the access token API endpoint.\n     *\n     * @return UriInterface\n     */\n    public function getAccessTokenEndpoint()\n    {\n        return new Uri('http://magento.host/oauth/token/access');\n    }\n\n    /**\n     * Parses the access token response and returns a TokenInterface.\n     *\n     * @param string $responseBody\n     * @return TokenInterface\n     */\n    protected function parseAccessTokenResponse($responseBody)\n    {\n        return $this->_parseToken($responseBody);\n    }\n\n    /**\n     * Parses the request token response and returns a TokenInterface.\n     *\n     * @param string $responseBody\n     * @return TokenInterface\n     * @throws TokenResponseException\n     */\n    protected function parseRequestTokenResponse($responseBody)\n    {\n        $data = $this->_parseResponseBody($responseBody);\n        if (isset($data['oauth_verifier'])) {\n            $this->_oauthVerifier = $data['oauth_verifier'];\n        }\n        return $this->_parseToken($responseBody);\n    }\n\n    /**\n     * Parse response body and create oAuth token object based on parameters provided.\n     *\n     * @param string $responseBody\n     * @return StdOAuth1Token\n     * @throws TokenResponseException\n     */\n    protected function _parseToken($responseBody)\n    {\n        $data = $this->_parseResponseBody($responseBody);\n        $token = new StdOAuth1Token();\n        $token->setRequestToken($data['oauth_token']);\n        $token->setRequestTokenSecret($data['oauth_token_secret']);\n        $token->setAccessToken($data['oauth_token']);\n        $token->setAccessTokenSecret($data['oauth_token_secret']);\n        $token->setEndOfLife(StdOAuth1Token::EOL_NEVER_EXPIRES);\n        unset($data['oauth_token'], $data['oauth_token_secret']);\n        $token->setExtraParams($data);\n        return $token;\n    }\n\n    /**\n     * Parse response body and return data in array.\n     *\n     * @param string $responseBody\n     * @return array\n     * @throws \\OAuth\\Common\\Http\\Exception\\TokenResponseException\n     */\n    protected function _parseResponseBody($responseBody)\n    {\n        if (!is_string($responseBody)) {\n            throw new TokenResponseException(\"Response body is expected to be a string.\");\n        }\n        parse_str($responseBody, $data);\n        if (null === $data || !is_array($data)) {\n            throw new TokenResponseException('Unable to parse response.');\n        } elseif (isset($data['error'])) {\n            throw new TokenResponseException(\"Error occurred: '{$data['error']}'\");\n        }\n        return $data;\n    }\n\n    /**\n     * @override to fix since parent implementation from lib not sending the oauth_verifier when requesting access token\n     * Builds the authorization header for an authenticated API request\n     *\n     * @param string $method\n     * @param UriInterface $uri the uri the request is headed\n     * @param \\OAuth\\OAuth1\\Token\\TokenInterface $token\n     * @param $bodyParams array\n     * @return string\n     */\n    protected function buildAuthorizationHeaderForAPIRequest(\n        $method,\n        UriInterface $uri,\n        TokenInterface $token,\n        $bodyParams = null\n    ) {\n        $this->signature->setTokenSecret($token->getAccessTokenSecret());\n        $parameters = $this->getBasicAuthorizationHeaderInfo();\n        if (isset($parameters['oauth_callback'])) {\n            unset($parameters['oauth_callback']);\n        }\n\n        $parameters = array_merge($parameters, ['oauth_token' => $token->getAccessToken()]);\n        $parameters = array_merge($parameters, $bodyParams);\n        $parameters['oauth_signature'] = $this->signature->getSignature($uri, $parameters, $method);\n\n        $authorizationHeader = 'OAuth ';\n        $delimiter = '';\n\n        foreach ($parameters as $key => $value) {\n            $authorizationHeader .= $delimiter . rawurlencode($key) . '=\"' . rawurlencode($value) . '\"';\n            $delimiter = ', ';\n        }\n\n        return $authorizationHeader;\n    }\n}\n```\n```",
+   "retrieved_at": "2026-11-23T19:44:53+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication",
+   "requested_at": "2026-11-23T19:44:54+05:30",
+   "status": "ok",
+   "final_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "title": "Authentication",
+   "chars": 8460,
+   "sha256": "f067256567328b677e94858ac4b998d2c65366306488cfbb46201c55134cb1e6",
+   "text": "```\n```\ndata-src=../../includes/paas-only.md\n```\n```\n\n# Authentication\n\n```\n```\ndata-variant=info\n```\n```\n\n```\n```\ndata-slots=text\n```\n```\n\nFor practical implementation guides for Adobe Commerce as a Cloud Service (SaaS), see:\n\n* Create server-to-server integration - Complete guide for automated system integration\n* Generate the IMS access token - User authentication guide\n\nAdobe Commerce and Magento Open Source allow developers to define web API resources and their permissions in the\n\n```\nwebapi.xml\n```\n\nconfiguration file. See Services as Web APIs.\n\nBefore you can make web API calls, you must authenticate your identity and have necessary permissions (authorization) to access the API resource. Authentication allows the application to identify the caller's user type. A user's (administrator, integration, customer, or guest) access rights determine an API call's resource accessibility.\n\n## Accessible resources\n\nThe list of resources that you can access depends on your user type. All customers have the same permissions, and as a result the same resources accessible. The preceding statement is true for guest users as well. Each administrator or integration user can have a unique set of permissions which is configured in the Admin. Permissions required to access particular resource are configured in the\n\n```\nwebapi.xml\n```\n\nfile. This table lists the resources that each user type can access:\n\n```\nMagento_Customer::group\n```\n\nresource, they can make a\n\n```\nGET /V1/customerGroups/:id\n```\n\ncall.\n\n```\nanonymous\n```\n\nor\n\n```\nself\n```\n\npermission\n\n```\nanonymous\n```\n\npermission\n\n## Relationship between acl.xml and webapi.xml\n\nThe\n\n```\nacl.xml\n```\n\nfile defines the access control list (ACL) for a given module. It defines the available set of permissions to access resources.\n\nAll\n\n```\nacl.xml\n```\n\nfiles across all modules are consolidated to build an ACL tree, which is used to select allowed Admin role resources or third-party integration access (System > Extension > Integration > Add New Integration > Available APIs).\n\n### Sample customer acl.xml\n\nFor example, account management, customer configuration, and customer group resource permissions are defined in the Customer module's\n\n```\nacl.xml\n```\n\n.\n\nWhen a developer creates the Web API configuration file (\n\n```\nwebapi.xml\n```\n\n), the permissions defined in acl.xml are referenced to create access rights for each API resource.\n\n### Sample (truncated) customer webapi.xml\n\n```\n```\n<routes xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n        xsi:noNamespaceSchemaLocation=\"urn:magento:module:Magento_Webapi:etc/webapi.xsd\">\n    <!-- Customer Group -->\n    <route url=\"/V1/customerGroups/:id\" method=\"GET\">\n        <service class=\"Magento\\Customer\\Api\\GroupRepositoryInterface\" method=\"getById\"/>\n        <resources>\n            <resource ref=\"Magento_Customer::group\"/>\n        </resources>\n    </route>\n............\n.......\n.....\n    <!-- Customer Account -->\n    <route url=\"/V1/customers/:customerId\" method=\"GET\">\n        <service class=\"Magento\\Customer\\Api\\CustomerRepositoryInterface\" method=\"getById\"/>\n        <resources>\n            <resource ref=\"Magento_Customer::customer\"/>\n        </resources>\n    </route>\n    <route url=\"/V1/customers\" method=\"POST\">\n        <service class=\"Magento\\Customer\\Api\\AccountManagementInterface\" method=\"createAccount\"/>\n        <resources>\n            <resource ref=\"anonymous\"/>\n        </resources>\n    </route>\n    <route url=\"/V1/customers/:customerId\" method=\"PUT\">\n        <service class=\"Magento\\Customer\\Api\\CustomerRepositoryInterface\" method=\"save\"/>\n        <resources>\n            <resource ref=\"Magento_Customer::manage\"/>\n        </resources>\n    </route>\n    <route url=\"/V1/customers/me\" method=\"PUT\">\n        <service class=\"Magento\\Customer\\Api\\CustomerRepositoryInterface\" method=\"save\"/>\n        <resources>\n            <resource ref=\"self\"/>\n        </resources>\n        <data>\n            <parameter name=\"customer.id\" force=\"true\">%customer_id%</parameter>\n        </data>\n    </route>\n..........\n.....\n...\n```\n```\n\nFor example, in the preceding\n\n```\nwebapi.xml\n```\n\nfor the customerGroups resource, only a user with\n\n```\nMagento_Customer::group\n```\n\nauthorization can\n\n```\nGET /V1/customerGroups/:id\n```\n\n. On the other hand, you can create a customer using\n\n```\nPOST /V1/customers\n```\n\nanonymously (or by a guest).\n\nAuthorization is granted to either an administrator (or an integration) defined in the Admin with the customer group selected as one of the resources in the ACL tree.\n\n```\n```\ndata-variant=info\n```\n```\n\n```\n```\ndata-slots=text1, text2\n```\n```\n\n```\nacl.xml\n```\n\n(and will not show up in the permissions tree in the Admin). It just indicates that the current resource in\n\n```\nwebapi.xml\n```\n\ncan be accessed without the need for authentication.\n\n```\nGET /V1/customers/me\n```\n\nfetches the logged-in customer's details. This is typically useful for JavaScript-based widgets.\n\n## Web API clients and authentication methods\n\nYou must use a client, such as a mobile application or an external batch job, to access services using web APIs.\n\nEach type of client has a preferred authentication method. To authenticate, use the authentication method for your preferred client:\n\n### Mobile application authentication\n\nRegistered users use token-based authentication to make web API calls using a mobile application. The token acts like an electronic key that provides access to the API(s).\n\n1. As a registered account user, you request a token from the Magento token service at the endpoint that is defined for your user type.\n2. The token service returns a unique authentication token in exchange for a username and password for an admin or customer account.\n3. To prove your identity, specify this token in the\n\n   ```\n   Authorization\n   ```\n\n   request header on web API calls.\n\n### Third-party application authentication\n\nThird-party applications use OAuth-based authentication to access the web APIs.\n\n1. The third-party Integration registers with Adobe Commerce.\n2. Merchants authorize extensions and applications to access or update store data.\n\n### JavaScript widget authentication (storefront or Admin)\n\nRegistered users use session-based authentication to log in to the storefront or Admin.\n\nA session is identified by a cookie and time out after a period of inactivity. Additionally, you can have a session as a guest user without logging in.\n\n1. As a customer, you log in to the storefront with your customer credentials. As an administrator, you log in to the Admin with your administrator credentials.\n2. The web API framework identifies you and controls access to the requested resource.\n\n## Authentication types\n\nThe following sections describe tips about which type of authentication method you should use depending on your use case.\n\n### Token based (Bearer Authentication)\n\nThis method is a good choice for authenticating customers and Admin users in third-party applications that need to make authorized API calls to the store.\n\n* Customer Token\u2014Use this token in applications to authorize specific customer and query data related to that customer (for example, customer details, cart, and orders).\n* Admin Token\u2014Use this token in applications to authorize an Admin user and access Admin-related APIs.\n\nRequest a token and then include it in future requests.\n\n```\n```\ndata-variant=info\n```\n```\n\n```\n```\ndata-slots=text\n```\n```\n\n### Integration (Oauth)\n\nThis method is a good choice for integrating with a third-party system that supports OAuth 1.0a.\n\nAfter activating an integration (self activated), you can use the generated consumer key, consumer secret, access token, and access token secret to provide third-party systems access to Commerce Store resources. You do not need to make calls to the\n\n```\n/oauth/token/request\n```\n\nor\n\n```\n/oauth/token/access\n```\n\nendpoints to exchange tokens.\n\nIf a third-party system provides endpoints, you can use them to activate an integration and link your account. After completing the activation process, a third-party service can use the consumer key, consumer secret, access token, and access token secret provided by Commerce during activation to make API calls.\n\n#### Related topics\n\nProceed to the authentication method for your preferred client:\n\n* Mobile application. Token-based authentication.\n* Third-party application. OAuth-based authentication.\n* JavaScript widget on the Admin or storefront. Session-based authentication.",
+   "retrieved_at": "2026-11-23T19:44:54+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+   "requested_at": "2026-11-23T19:44:55+05:30",
+   "status": "ok",
+   "final_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+   "title": "Token-Based Authentication",
+   "chars": 11386,
+   "sha256": "fbc62c1661d415447653cbdc65d62dbe5c308ce9bdb0deef59a4484adef6edc2",
+   "text": "```\n```\ndata-src=/_includes/paas-only.md\n```\n```\n\n# Token-based authentication\n\n```\n```\ndata-variant=info\n```\n```\n\n```\n```\ndata-slots=text\n```\n```\n\nTo make a web API call from a client such as a mobile application, you must supply an access token on the call. The token acts like an electronic key that lets you access the API.\n\nAdobe Commerce and Magento Open Source issue the following types of access tokens:\n\n```\nanonymous\n```\n\nor\n\n```\nself\n```\n\npermission. Merchants cannot edit these settings.\n\n## Integration tokens\n\nWhen a merchant creates and activates an integration, Commerce generates a consumer key, consumer secret, access token, and access token secret. All of these entities are used for OAuth-based authentication.\n\nIn previous versions of Commerce, the access token could be used on its own for token-based authentication. This behavior has been disabled by default due to the security implications of a never-expiring access token. Namely, if the access token is compromised it provides undetected persistent access to a store.\n\nHowever, while it is not recommended, this behavior can be restored in the Admin by setting the Stores > Configuration > Services > OAuth > Consumer Settings > Allow OAuth Access Tokens to be used as standalone Bearer tokens option to Yes. You can also enable this setting from the CLI by running the following command:\n\n```\n```\nbin/magento config:set oauth/consumer/enable_integration_as_bearer 1\n```\n```\n\nIf you are trying to upgrade from a previous version and need to update your integration implementation to properly utilize the OAuth workflow, review OAuth-based Authentication. Otherwise, you can partially update your integration to simply store and utilize all four credentials to sign your requests.\n\nThere is a comprehensive guide for this on the OAuth-based authentication page, but can also be done in isolation without supporting the entire OAuth workflow. For example, in the following script the four credentials are used to create a new CMS page without using external libraries or implementing the full OAuth handshake.\n\n```\n```\ndata-slots=content\n```\n```\n\n```\n```\ndata-summary=standalone-oauth.php\n```\n```\n\n```\n```\n<?php\nconst CONSUMER_KEY = '<placeholder>';\nconst CONSUMER_SECRET = '<placeholder>';\nconst ACCESS_TOKEN = '<placeholder>';\nconst ACCESS_TOKEN_SECRET = '<placeholder>';\n\nclass RequestDTO {\n    public function __construct(\n        public string $url,\n        public string $method = 'GET',\n        public ?string $body = null,\n        public array $headers = [],\n    ) {}\n}\nclass OAuthCredentialsDTO {\n    public function __construct(\n        public string $consumerKey,\n        public string $consumerSecret,\n        public string $accessToken,\n        public string $accessTokenSecret\n    ) {}\n}\n\nclass OAuthRequestSigner\n{\n    public function sign(\n        RequestDTO $request,\n        OAuthCredentialsDTO $credentials\n    ): string {\n        $urlParts = parse_url($request->url);\n        // Normalize the OAuth params for the base string\n        $normalizedHeaders = $request->headers;\n        sort($normalizedHeaders);\n        $oauthParams = [\n            'oauth_consumer_key' => $credentials->consumerKey,\n            'oauth_nonce' => base64_encode(random_bytes(32)),\n            'oauth_signature_method' => 'HMAC-SHA256',\n            'oauth_timestamp' => time(),\n            'oauth_token' => $credentials->accessToken\n        ];\n        // Create the base string\n        $signingUrl = $urlParts['scheme'] . '://' . $urlParts['host'] . $urlParts['path'];\n        $paramString = $this->createParamString($urlParts['query'] ?? null, $oauthParams);\n        $baseString = strtoupper($request->method) . '&' . rawurlencode($signingUrl) . '&' . rawurlencode($paramString);\n        // Create the signature\n        $signatureKey = $credentials->consumerSecret . '&' . $credentials->accessTokenSecret;\n        $signature = base64_encode(hash_hmac('sha256', $baseString, $signatureKey, true));\n        return $this->createOAuthHeader($oauthParams, $signature);\n    }\n    private function createParamString(?string $query, array $oauthParams): string\n    {\n        // Create the params string\n        $params = array_merge([], $oauthParams);\n        if (!empty($query)) {\n            foreach (explode('&', $query) as $paramToValue) {\n                $paramData = explode('=', $paramToValue);\n                if (count($paramData) === 2) {\n                    $params[rawurldecode($paramData[0])] = rawurldecode($paramData[1]);\n                }\n            }\n        }\n        ksort($params);\n        $paramString = '';\n        foreach ($params as $param => $value) {\n            $paramString .= rawurlencode($param) . '=' . rawurlencode($value) . '&';\n        }\n        return rtrim($paramString, '&');\n    }\n    private function createOAuthHeader(array $oauthParams, string $signature): string\n    {\n        // Create the OAuth header\n        $oauthHeader = \"Authorization: Oauth \";\n        foreach ($oauthParams as $param => $value) {\n            $oauthHeader .= \"$param=\\\"$value\\\",\";\n        }\n        return $oauthHeader . \"oauth_signature=\\\"$signature\\\"\";\n    }\n}\n\nfunction send(RequestDTO $request): string\n{\n    $ch = curl_init();\n    curl_setopt($ch, CURLOPT_URL, $request->url);\n    curl_setopt($ch, CURLOPT_HEADER, false);\n    curl_setopt($ch, CURLOPT_HTTPHEADER, $request->headers);\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\n    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $request->method);\n    curl_setopt($ch, CURLOPT_POSTFIELDS, $request->body ?? '');\n    return (string)curl_exec($ch);\n}\n\n$oauthSigner = new OAuthRequestSigner();\n$request = new RequestDTO(\n    'https://example.com/rest/V1/cmsPage',\n    'POST',\n    '{\n          \"page\": {\n            \"identifier\": \"test-page\",\n            \"title\": \"my-page\",\n            \"content\": \"<h1>hello</h1>\",\n            \"active\": true\n          }\n        }',\n    ['Content-Type: application/json']\n);\n$request->headers[] = $oauthSigner->sign(\n    $request,\n    new OAuthCredentialsDTO(\n        CONSUMER_KEY,\n        CONSUMER_SECRET,\n        ACCESS_TOKEN,\n        ACCESS_TOKEN_SECRET\n    )\n);\necho send($request);\n```\n```\n\n## Admin and customer access tokens\n\nCommerce provides a separate token service for administrators and customers. When you request a token from one of these services, the service returns a unique access token in exchange for an account's username and password.\n\nThe web API framework allows guest users to access resources that are configured with the permission level of anonymous. Guest users are users who the framework cannot authenticate through existing authentication mechanisms. As a guest user, you do not need to, but you can, specify a token in a web API call for a resource with anonymous permission. Restricting access to anonymous web APIs contains a list of APIs that do not require a token.\n\nThe following table lists endpoints and services that can be used to get an authentication token. Admin accounts must be authenticated with a two factor authentication provider. Some providers may require multiple calls.\n\n```\nPOST /V1/tfa/provider/google/authenticate\n```\n\n```\ntwoFactorAuthGoogleAuthenticateV1\n```\n\n```\nPOST /V1/tfa/provider/duo-security/authenticate\n```\n\n```\ntwoFactorAuthDuoAuthenticateV1\n```\n\n```\nPOST /V1/tfa/provider/authy/authenticate\n```\n\n```\ntwoFactorAuthAuthyAuthenticateV1\n```\n\n```\nPOST /V1/tfa/provider/u2fkey/verify\n```\n\n```\ntwoFactorAuthU2fKeyAuthenticateV1\n```\n\n```\nPOST /V1/integration/customer/token\n```\n\n```\nintegrationCustomerTokenServiceV1\n```\n\nFor most web API calls, you supply this token in the\n\n```\nAuthorization\n```\n\nrequest header with the\n\n```\nBearer\n```\n\nHTTP authorization scheme to prove your identity. By default, an admin token is valid for 4 hours, while a customer token is valid for 1 hour. You can change these values from Admin by selecting Stores > Settings > Configuration > Services > OAuth > Access Token Expiration.\n\nA cron job that runs hourly removes all expired tokens.\n\n## IMS access tokens for web API calls\n\nWeb API services and events need access tokens to provide authentication credentials to protected resources once the Commerce Admin is integrated with the IMS authentication workflow.\n\n### IMS access tokens and the admin\\_adobe\\_ims\\_webapi table\n\nEach IMS access token is defined by an\n\n```\naccess_token_hash\n```\n\nentry in the\n\n```\nadmin_adobe_ims_webapi\n```\n\ntable. This table keeps a record of all validated access tokens. When a token is validated or invalidated, a record of its status is preserved here.\n\n### Access token expiration\n\nNo dependency exists between IMS access token lifetime and Commerce session lifetime. Access token life is set by the Adobe IMS service and has a default value of 24 hours. Each access token's expiration time is saved in an\n\n```\nexpires_in\n```\n\nvalue in the\n\n```\nadmin_adobe_ims_webapi\n```\n\ntable.\n\n## Request a token\n\nA access token request contains three basic elements:\n\n```\nresource\n```\n\nagainst which the request is being made.<br/><br/>For example, in the\n\n```\nPOST <host>/rest/<store_code>/V1/integration/customer/token\n```\n\nendpoint:<br/>The server is\n\n```\nmagento.host/index.php/\n```\n\n,<br/> the web service is\n\n```\nrest\n```\n\n.<br/> and the resource is\n\n```\n/V1/integration/customer/token\n```\n\n.\n\n```\n\"Content-Type:application/json\"\n```\n\nor\n\n```\n\"Content-Type:application/xml\"\n```\n\n.\n\n```\n{\"username\":\"<USER-NAME>\", \"password\":\"<PASSWORD>\"}\n```\n\n<br/><br/>To specify these credentials in XML, include code similar to the following in the call:<br/><br/>\n\n```\n<login><username>customer1</username><password>customer1pw</password></login>\n```\n\n### Examples\n\nThe following image shows a token request for the admin account using a REST client:\n\nThe following example uses the\n\n```\ncurl\n```\n\ncommand to request a token for a customer account:\n\n```\n```\ncurl -X POST \"https://<host>/rest/default/V1/integration/customer/token\" \\\n     -H \"Content-Type:application/json\" \\\n     -d '{\"username\":\"customer@example.com\", \"password\":\"customer_password\"}'\n```\n```\n\nThe following example makes the same request with XML for a customer account token:\n\n```\n```\ncurl -X POST \"http://<host>/rest/default/V1/integration/customer/token\" \\\n     -H \"Content-Type:application/xml\"  \\\n     -d \"<login><username>customer1</username><password>customer1pw</password></login>\"\n```\n```\n\nFor more information about the\n\n```\ncurl\n```\n\ncommand, see Use cURL to run the request\n\n## Authentication token response\n\nA successful request returns a response body with the token, as follows:\n\n```\nasdf3hjklp5iuytre\n```\n\n## Use the token in a Web API request\n\nAny web API call that accesses a resource that requires a permission level higher than anonymous must contain the authentication token in the header To do this, specify a HTTP header in the following format:\n\n```\nAuthorization: Bearer <authentication token>\n```\n\n### Admin access\n\nAdmins can access any resources for which they are authorized.\n\nFor example, to make a web API call with an admin token:\n\n```\ncurl -X GET \"http://<host>/rest/default/V1/customers/2\" -H \"Authorization: Bearer vbnf3hjklp5iuytre\"\n```\n\n### Customer access\n\nCustomers can access only resources with\n\n```\nself\n```\n\npermissions.\n\nFor example, to make a web API call with a customer token:\n\n```\ncurl -X GET \"http://<host>/rest/default/V1/customers/me\" -H \"Authorization: Bearer asdf3hjklp5iuytre\"\n```",
+   "retrieved_at": "2026-11-23T19:44:55+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "requested_at": "2026-11-23T19:44:57+05:30",
+   "status": "ok",
+   "final_url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "title": "REST API Overview",
+   "chars": 4048,
+   "sha256": "79ceda432e2f2d2620f63a3886627cb1a622a6a772b18a4ceebf012f009b558c",
+   "text": "# REST API Overview\n\nThe REST API documentation describes the REST APIs that are available in Adobe Commerce (PaaS) and Adobe Commerce as a Cloud Service (SaaS).\n\nThe APIs can be used to perform a wide array of tasks. For example:\n\n* Create a shopping app. This can be a traditional app that a user downloads on a mobile device. You could also create an app that an employee uses on a showroom floor to help customers make purchases.\n* Integrate with CRM (Customer Relationship Management) or ERP (Enterprise Resource Planning) backend systems, such as Salesforce or Xero.\n* Integrate with a CMS (Content Management System). Currently, content tagging is not supported.\n\n## Adobe Commerce\n\n```\n```\ndata-src=/_includes/paas-only.md\n```\n```\n\nAdobe Commerce on Cloud, Adobe Commerce on-premises, and Magento Open Source all use the same REST API framework. The REST API documentation describes the REST APIs that are available in these versions of Adobe Commerce and Magento Open Source.\n\n### Endpoints\n\nAdobe Commerce provides a wide range of REST API endpoints that allow you to perform actions on behalf of Commerce administrators, customers, and guest shoppers. Integrations are also supported.\n\n### Authentication\n\nAdobe Commerce REST APIs support multiple authentication methods, including:\n\n* Third-party applications authenticate with OAuth 1.0a.\n* Mobile applications authenticate using tokens.\n* Administrators and customers are authenticated with login credentials.\n\n### URL structure\n\nThe URL for Adobe Commerce REST endpoints is structured as follows:\n\n```\nhttps://<host>/rest/<store-view-code>/<endpoint>\n```\n\n## Adobe Commerce as a Cloud Service\n\n```\n```\ndata-src=/_includes/saas-only.md\n```\n```\n\nThe Adobe Commerce as a Cloud Service REST API serves as a critical tool for extending and integrating commerce functionalities, but the endpoints available differ significantly from the REST APIs for Adobe Commerce on Cloud and on-premises deployments.\n\nThe following key differences are important to consider when planning your REST API integrations with Adobe Commerce as a Cloud Service:\n\n### Endpoints\n\nPrimarily the Cloud Service REST API differs in that it includes a smaller subset of endpoints. Specifically, the customer and guest REST APIs that are available in Adobe Commerce on Cloud and on-premises deployments are not available in Adobe Commerce as a Cloud Service. However, access to similar functionality remains available with the GraphQL APIs.\n\nThe API reference lists the available endpoints.\n\n### Authentication\n\nIn previous versions of Adobe Commerce, you would use authentication tokens to authorize your requests to the REST API. In Adobe Commerce as a Cloud Service, you must use Adobe Identity Management Service (IMS) to authenticate your requests.\n\nThe authentication system supports both interactive user-based workflows and automated server-to-server integrations, ensuring secure and appropriate access for different use cases. Both of these authentication methods require every request to be signed with an IMS Access Token.\n\n### URL structure\n\nIn Adobe Commerce as a Cloud Service, REST endpoint URLs do not include\n\n```\n/rest\n```\n\nor the store view code. The store scope is specified via the\n\n```\nStore\n```\n\nHTTP header.\n\n* Base format:\n\n  ```\n  https://<server>.api.commerce.adobe.com/<tenant-id>/<endpoint>\n  ```\n* Set the scope with the\n\n  ```\n  Store\n  ```\n\n  header:\n  + Predefined values:\n\n    - ```\n      Store: all\n      ```\n\n      \u2014 Execute in the global scope\n    - ```\n      Store: default\n      ```\n\n      \u2014 Target the default store view (or use your specific store view code)\n  + You can also pass any specific store view code:\n\n    ```\n    Store: <store_view_code>\n    ```\n\nThe following\n\n```\ncurl\n```\n\ncommand shows the request pattern:\n\n```\n```\ncurl --location 'https://<server>.api.commerce.adobe.com/<tenant-id>/<endpoint>' \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --header 'Store: <all | default | <store_view_code>>'\n  ....\n```\n```",
+   "retrieved_at": "2026-11-23T19:44:57+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "title": "REST API Overview",
+   "snippet": "The REST API documentation describes the REST APIs that are available in Adobe Commerce (PaaS) and Adobe Commerce as a Cloud Service (SaaS)."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/",
+   "title": "Commerce Web API",
+   "snippet": "This documentation provides resources for working with Adobe Commerce web APIs. Discover. Use these sections to learn about how to use our web APIs to integrate ..."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+   "title": "Products Commerce Get Started",
+   "snippet": "The Adobe Commerce and Magento Open Source web API framework provides integrators and developers the means to use web services that communicate ..."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/reference/rest/paas",
+   "title": "Commerce Admin REST endpoints",
+   "snippet": "This allows you to see API documentation for your specific Adobe Commerce modules, third-party modules, and extension attributes."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/reference/rest/saas",
+   "title": "ReDoc documentation",
+   "snippet": "Review comprehensive reference documentation for the Adobe Commerce as a Cloud Service REST API schema. URLs is: https://.api.commerce.adobe.com//"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/docs/",
+   "title": "PHP Developer Documentation",
+   "snippet": "Develop, customize, and test. Start building event-driven integrations and high-performance storefronts for Adobe Commerce using modern development tools."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+   "title": "GraphQL API reference",
+   "snippet": "Review comprehensive reference documentation for the Adobe Commerce and Magento Open Source GraphQL API schema."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+   "title": "REST API reference",
+   "snippet": "This comprehensive reference provides detailed documentation for all available REST API endpoints in Adobe Commerce and Magento Open Source."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/modules/catalog/catalog-pricing",
+   "title": "Manage prices for multiple products",
+   "snippet": "Adobe Commerce provides REST endpoints that allow you to update multiple special prices, tier prices, base prices, or cost values with a single call."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API documentation site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/attributes",
+   "title": "Retrieving detailed attributes",
+   "snippet": "Learn how to get detailed information about PHP and REST API endpoints on Adobe Commerce and Magento Open Source projects."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/php/module-reference/module-integration",
+   "title": "Integration",
+   "snippet": "- `\\Magento\\Integration\\Api\\OauthServiceInterface`:\n- create a new consumer account\n- create access token for provided consumer\n- retrieve access token assigned to the consumer\n- load consumer"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/contributor/guides/install/clone-repository",
+   "title": "Clone the Git Repository | Commerce Contributor",
+   "snippet": "must have an authentication key to access the Adobe Commerce Composer package on `repo.magento.com` and to"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/php/module-reference/module-admin-adobe-ims",
+   "title": "AdminAdobeIms",
+   "snippet": "The Magento_Admin_Adobe_Ims module contains integration with Adobe IMS for backend authentication."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/reference/rest/paas",
+   "title": "REST endpoints for Adobe Commerce",
+   "snippet": "Review comprehensive reference documentation for the Adobe Commerce and Magento Open Source REST API schema."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/create-integration",
+   "title": "Create an Integration",
+   "snippet": "exchange. We strongly recommend using `https://`. <br/> See [OAuth-based authentication](https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth) for details."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+   "title": "OAuth-Based Authentication",
+   "snippet": "Commerce and Magento Open Source is based on [OAuth 1.0a](https://datatracker.ietf.org/doc/html/rfc5849), an open standard for secure API authentication. OAuth is a token-passing mechanism that"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication",
+   "title": "Authentication",
+   "snippet": "a third-party system that supports OAuth 1.0a.\nAfter activating an integration (self activated), you can use the generated consumer key, consumer secret, access token, and access token secret to"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+   "title": "Token-Based Authentication",
+   "snippet": "To make a web API call from a client such as a mobile application, you must supply an *access token* on the call. The token acts like an electronic key that lets you access the API."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started",
+   "title": "Getting Started with Adobe Commerce Web APIs",
+   "snippet": "  - Third-party applications authenticate with [OAuth 1.0a](/commerce/webapi/get-started/authentication/gs-authentication-oauth/).\n- Mobile"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API authentication OAuth API key developer site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/soap-web-api-calls",
+   "title": "Use SOAP Services",
+   "snippet": "Protected SOAP resources can be accessed using bearer tokens (OAuth access tokens) over HTTP. Access tokens are strings representing an access authorization issued to the client. For more information,"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/create-integration",
+   "title": "Create an Integration",
+   "snippet": "An **integration** enables third-party services to call the Adobe Commerce and Magento Open Source web APIs. The APIs currently support external software, such as Accounting, Enterprise Resource"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication",
+   "title": "Authentication",
+   "snippet": "Adobe Commerce and Magento Open Source allow developers to define web API resources and their permissions in the `webapi.xml` configuration file. See [Services as Web"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/attributes",
+   "title": "Retrieving detailed attributes",
+   "snippet": "Learn how to get detailed information about PHP and REST API endpoints on Adobe Commerce and Magento Open Source projects."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules",
+   "title": "Catalog Price Rules",
+   "snippet": "\n## Authentication\n---\nThese endpoints require an [IMS access token](/commerce/webapi/rest/authentication/). To access them, you must have the `Magento_CatalogRule::promo_catalog` permission."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+   "title": "Token-Based Authentication",
+   "snippet": "from a client such as a mobile application, you must supply an *access token* on the call. The token acts like an electronic key that lets you access the API.\nAdobe Commerce and Magento Open Source"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/gs-web-api-request",
+   "title": "Construct a Request",
+   "snippet": "To configure a web API, developers define some of the elements of each API call in the `<module root dir>/vendor/<vendor-name>/<module-name>/etc/webapi.xml` file, where `<vendor-name>` is your vendor"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/b2b/company-object",
+   "title": "Manage company objects",
+   "snippet": "Describes REST endpoints used to manage company objects."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/get-started",
+   "title": "Getting Started with Adobe Commerce Web APIs",
+   "snippet": "- All accounts and integrations are assigned resources that they have access to. The API framework checks that any call has the authorization to perform the request."
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest/modules/catalog/catalog-pricing",
+   "title": "Manage prices for multiple products",
+   "snippet": "Adobe Commerce provides REST endpoints that allow you to update multiple special prices, tier prices, base prices, or cost values with a single call.\nThe calls that update special and tier prices"
+  },
+  {
+   "q": "Magento (Adobe Commerce) API access pricing plans developer account site:developer.adobe.com/commerce",
+   "url": "https://developer.adobe.com/commerce/webapi/rest",
+   "title": "REST API Overview",
+   "snippet": "and [Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview) all use the same REST API framework. The REST API documentation describes the REST APIs"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices",
+   "title": "Best practices for Commerce development MCPs and skills",
+   "snippet": "```\nThe tooling defaults to MCP tools, but in certain circumstances it can use CLI commands instead. To ensure MCP tool usage, explicitly request them in your prompt.\nIf you see CLI commands"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/tools-overview",
+   "title": "AI developer tools for Commerce extensibility",
+   "snippet": "Adobe Commerce App Builder MCP server\nIDE integration for Commerce development tasks, documentation-aware assistance, and tooling aligned with App Builder application development patterns."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/internals/mcp-registry-web-app?type=mcp",
+   "title": "MCP Servers - AI registry",
+   "snippet": "The Adobe Commerce App Builder MCP enables AI-powered workflows for App Builder by integrating coding tools that convert natural language into Adobe App ..."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+   "title": "Commerce development MCPs and skills",
+   "snippet": "When migrating to Adobe Commerce as a Cloud Service, you can use the Commerce development MCPs and skills to convert existing Adobe Commerce PHP extensions to Adobe Developer App Builder applications."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/apis",
+   "title": "Explore the APIs offered by products and view documentation",
+   "snippet": "Explore and adopt Adobe MCP servers, connectors and skills across products to scale productivity and transform digital workflows. Magento Open Source."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/internals/mcp-registry-web-app/mcp/commerce-extensibility-tools",
+   "title": "AI registry",
+   "snippet": "MCP supports both migration and new development workflows for Adobe Commerce App Builder. It enables partners and customers to leverage their own LLMs"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases",
+   "title": "Use cases for Commerce development MCPs and skills",
+   "snippet": "with the [AEM Boilerplate Commerce starter kit](/commerce/extensibility/developer-agent/dropins-mcp-server), the AI tools use Dropins AI Tools to look up real slot names, event payloads, and API"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts",
+   "title": "Skills, prompts, and commands for Commerce development MCPs",
+   "snippet": "tooling. For installation and IDE setup, see [Commerce development MCPs and skills](/commerce/extensibility/developer-agent/coding-tools). For workflow guidance, see [Best"
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/commerce/",
+   "title": "Meet the newest Adobe Commerce offerings",
+   "snippet": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C ..."
+  },
+  {
+   "q": "Magento (Adobe Commerce) MCP server official site:developer.adobe.com",
+   "url": "https://developer.adobe.com/commerce/extensibility/_includes/commerce-context",
+   "title": "https://developer.adobe.com/commerce/extensibility/_includes/ ...",
+   "snippet": "AI coding tooling. Overview \u00b7 Commerce development MCPs and skills \u00b7 Dropins MCP server \u00b7 Skills, prompts, and commands \u00b7 Use cases \u00b7 Best practices \u00b7 Overview ..."
+  }
+ ],
+ "official_domain_candidates": {
+  "adobe.com": 38
+ },
+ "override_hint": "developer.adobe.com/commerce",
+ "identity_flag": "hint_domain_from_original_list",
+ "selected_domain": "adobe.com",
+ "completed": "2026-11-23T19:44:57+05:30"
+}

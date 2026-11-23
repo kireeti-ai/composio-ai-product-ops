@@ -1,0 +1,66 @@
+{
+ "id": 14,
+ "name": "Front",
+ "category": "Support and Helpdesk",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://help.front.com/en/articles/2482",
+  "https://help.front.com/en/articles/213824",
+  "https://integrations.sh/front.com",
+  "https://academy.front.com/app/courses/85ae7d9f-bd34-4fa1-8769-b709d2f7275e"
+ ],
+ "one_liner": "Front is a customer operations and shared inbox platform providing REST APIs, channel integrations, and custom sidebar plugins.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token",
+  "api_key"
+ ],
+ "access": "unknown",
+ "access_note": "Sources document self-serve API token generation and OAuth app creation in developer settings, but do not specify whether credentials are available on a free tier or require a paid plan.",
+ "api_types": [
+  "rest",
+  "soap"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://integrations.sh/front.com",
+   "quote": "authentication is via Front API tokens or Front OAuth apps depending on the surface.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://integrations.sh/front.com",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://integrations.sh/front.com",
+   "quote": "Front exposes a Core REST API, a separate Application Channel HTTP API, and a beta MCP server",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://integrations.sh/front.com",
+   "quote": "Front exposes a Core REST API, a separate Application Channel HTTP API, and a beta MCP server",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ],
+ "planted_control": {
+  "field": "api_types",
+  "planted_item": "soap",
+  "original_value": [
+   "rest"
+  ],
+  "proof": "regex found no support in any stored source page: soap|wsdl"
+ }
+}

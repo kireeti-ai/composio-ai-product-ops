@@ -1,0 +1,30 @@
+{
+ "id": 49,
+ "name": "Amazon Selling Partner",
+ "checks": [
+  {
+   "field": "auth_methods",
+   "claim": "Amazon Selling Partner API supports these auth methods: oauth2, bearer_token",
+   "verdict": "not_enough_info",
+   "reason": "Excerpt only mentions OAuth 2.0; does not specify bearer token support."
+  },
+  {
+   "field": "access",
+   "claim": "Developer access for Amazon Selling Partner is 'approval_or_review_required' (Developers must register an application and submit a developer profile for review, although sandbox testing endpoints can be accessed while the profile is under review.)",
+   "verdict": "supported",
+   "reason": "Excerpt states developers must register and submit a profile for review, but sandbox endpoints are usable while the profile is under review."
+  },
+  {
+   "field": "api_types",
+   "claim": "Amazon Selling Partner offers these API types: rest",
+   "verdict": "not_enough_info",
+   "reason": "Excerpt mentions SP-API endpoints and sandbox but does not specify API type (REST)"
+  },
+  {
+   "field": "existing_mcp",
+   "claim": "MCP server status for Amazon Selling Partner: none_found",
+   "verdict": "not_enough_info",
+   "reason": "Excerpt lacks any information about MCP server status for Amazon Selling Partner."
+  }
+ ]
+}

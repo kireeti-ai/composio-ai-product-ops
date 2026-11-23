@@ -1,0 +1,1489 @@
+{
+ "29": {
+  "name": "Aircall",
+  "pages": [
+   {
+    "url": "https://aircall.io/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 7230,
+    "sha256": "5eabafe35c89c422f87b322e2f8c0fd7492889e16131c5c2445429f7d33a8f21",
+    "fetched_at": "2026-11-23T17:31:37+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://support.aircall.io/en-gb/articles/30599733509277",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 5810,
+    "sha256": "cbd6050c93a041ccc98bf0daa7c84bf5a43d299a2baeef5d02506700ed3adf65",
+    "fetched_at": "2026-11-23T17:31:38+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://developer.aircall.io/build",
+    "category": "review_partner",
+    "status": "ok",
+    "chars": 2113,
+    "sha256": "8387e303e41620d6811f7a47ac59d68b8f436021923cbab4d0e12e354547aff4",
+    "fetched_at": "2026-11-23T17:31:46+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://developer.aircall.io/docs/webhooks-overview",
+    "category": "onboarding",
+    "status": "ok",
+    "chars": 2514,
+    "sha256": "5363d3fa56b00d77f5397833e2ce85962ed59cd9a9252e9385967a96f5131a6b",
+    "fetched_at": "2026-11-23T17:31:48+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 4,
+  "bucket_counts": {
+   "pricing_info": 18,
+   "generic_approval_unclassified": 4,
+   "dev_access_gate:review_gate": 2,
+   "dev_access_gate:free_signup": 2
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://aircall.io/pricing",
+     "sentence": "* 50 min AI Voice Agents per month"
+    },
+    {
+     "url": "https://aircall.io/pricing",
+     "sentence": "$0.15\u2013$0.35 per conversationRates decrease as usage increases."
+    },
+    {
+     "url": "https://aircall.io/pricing",
+     "sentence": "$0.03 per reputation check"
+    }
+   ],
+   "generic_approval_unclassified": [
+    {
+     "url": "https://developer.aircall.io/build",
+     "sentence": "Before you start building a public app, you need to be approved as an Aircall Technology Partner."
+    },
+    {
+     "url": "https://developer.aircall.io/build",
+     "sentence": "> Meeting these requirements doesn't guarantee approval."
+    },
+    {
+     "url": "https://developer.aircall.io/build",
+     "sentence": "If you are approved, you'll receive instructions to move on to the Build & Launch phase, where we'll set up your developer account, OAuth credentials, and everything else you need to start building."
+    }
+   ],
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://developer.aircall.io/build",
+     "sentence": "You can learn more about the full program on the Technology Partner Program page."
+    },
+    {
+     "url": "https://developer.aircall.io/build",
+     "sentence": "To be eligible for the Technology Partner program, your product must meet the following criteria"
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://developer.aircall.io/docs/webhooks-overview",
+     "sentence": "There are two ways to create webhooks on an Aircall account."
+    },
+    {
+     "url": "https://developer.aircall.io/docs/webhooks-overview",
+     "sentence": "Register a webhook programmatically on a user's account without any manual steps \u2014 the recommended approach for technology partners building integrations."
+    }
+   ]
+  }
+ },
+ "36": {
+  "name": "Klaviyo",
+  "pages": [
+   {
+    "url": "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 7406,
+    "sha256": "b1fac206f9c16fda1fa115cc8646d704b0768fc0bec130af164605fff5c8189f",
+    "fetched_at": "2026-11-23T17:31:33+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://klaviyo.com/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 3190,
+    "sha256": "33299555d9bb90a52c64ccef7d2f85611d2a1fa72154c20f5e098b8bf67aa781",
+    "fetched_at": "2026-11-23T17:31:37+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+    "category": "registration",
+    "status": "ok",
+    "chars": 7439,
+    "sha256": "df1ed640d2c7817b1205c8fb496e7d6f21ced8fbb77d989909cf852fb2d5ce9f",
+    "fetched_at": "2026-11-23T17:31:43+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key.",
+    "category": "registration",
+    "status": "ok",
+    "chars": 6972,
+    "sha256": "b6dbd3a250cb34d6ccf39262ef6c616a5010662c2505c918bca389eba40010b1",
+    "fetched_at": "2026-11-23T17:31:46+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 4,
+  "bucket_counts": {
+   "pricing_info": 29,
+   "dev_access_gate:review_gate": 4,
+   "dev_access_gate:free_signup": 1
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+     "sentence": "# How Klaviyo pricing works: active profiles, sends, and flexible options"
+    },
+    {
+     "url": "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+     "sentence": "Pricing Based on Reachable Customers"
+    },
+    {
+     "url": "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+     "sentence": "For more information about pricing tiers, check out our pricing page."
+    }
+   ],
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+     "sentence": "When you create a private API key, choose an access level for each API scope."
+    },
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+     "sentence": "These access levels determine whether a third party can:"
+    },
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+     "sentence": "Under **Select Access Level**, choose the access your integration needs:"
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key.",
+     "sentence": "For example, if your private key or Klaviyo app needs to create lists, your app needs the `lists:write` scope as shown in the following API reference documentation for the Create List endpoint:"
+    }
+   ]
+  }
+ },
+ "46": {
+  "name": "Squarespace",
+  "pages": [
+   {
+    "url": "https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle",
+    "category": "pricing",
+    "status": "error",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:31:43+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_error"
+   },
+   {
+    "url": "https://squarespace.com/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 23258,
+    "sha256": "bde03ae791e2b54280498b5bf3dc287ebcd43b452e225624f3d8d6673b026d60",
+    "fetched_at": "2026-11-23T17:31:45+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "category": "registration",
+    "status": "error",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:32:06+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_error"
+   },
+   {
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+    "category": "registration",
+    "status": "error",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:32:22+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_error"
+   }
+  ],
+  "evidence_pages": 1,
+  "bucket_counts": {
+   "pricing_info": 21,
+   "dev_access_gate:free_signup": 3,
+   "dev_access_gate:review_gate": 2
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://squarespace.com/pricing",
+     "sentence": "All Squarespace website plans purchased for an annual term include one (1) year of free domain registration on available domains on our cheapest pricing tier."
+    },
+    {
+     "url": "https://squarespace.com/pricing",
+     "sentence": "* Card rates from **2.9% + $0.30**"
+    },
+    {
+     "url": "https://squarespace.com/pricing",
+     "sentence": "All Squarespace website plans purchased for an annual term include one (1) year of free domain registration on available domains on our cheapest pricing tier."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://squarespace.com/pricing",
+     "sentence": "| SSL security Squarespace automatically creates and configures free SSL certificates with industry recommended 2048-bit keys and SHA-2 signatures for all of our websites, including ones with custom domains."
+    },
+    {
+     "url": "https://squarespace.com/pricing",
+     "sentence": "| Offer discounts Create discounts that apply to qualifying orders in checkout, with options like 'Buy X, Get Y,' automatic application, and free shipping."
+    },
+    {
+     "url": "https://squarespace.com/pricing",
+     "sentence": "| Customer accounts Your customers can create accounts and sign in for faster checkout, helping you increase sales and build ongoing relationships."
+    }
+   ],
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://squarespace.com/pricing",
+     "sentence": "| OpenTable block Encourage visitors to book reservations or sign up for waitlists through OpenTable."
+    },
+    {
+     "url": "https://squarespace.com/pricing",
+     "sentence": "| Advanced merchandising features Tools designed to help you increase sales: display related products, offer product waitlists, drive urgency with quantity limits and low stock alerts, and more."
+    }
+   ]
+  }
+ },
+ "65": {
+  "name": "Supabase",
+  "pages": [
+   {
+    "url": "https://supabase.com/docs/guides/platform/billing-faq",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 17514,
+    "sha256": "0057f95459a76dc9ed51b70167e9072548a6a8d052e798d233478d2e956c7f8f",
+    "fetched_at": "2026-11-23T17:31:55+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://supabase.com/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 20345,
+    "sha256": "63e08da82aba7449ea3f4b6c1081530867bba87aec8b42cd59a0ece6efb26de2",
+    "fetched_at": "2026-11-23T17:31:59+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+    "category": "registration",
+    "status": "ok",
+    "chars": 11419,
+    "sha256": "1798288e97e3b29a5eaeaddd8bcc4224bef30ac93fdcd8d281548b927f320fc3",
+    "fetched_at": "2026-11-23T17:32:02+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://supabase.com/docs/guides/api/api-keys.md",
+    "category": "registration",
+    "status": "ok",
+    "chars": 20728,
+    "sha256": "05e201d2426c40f9076a5daf8949a0d0468963f09bcbba45313e5ac45986724e",
+    "fetched_at": "2026-11-23T17:32:04+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 4,
+  "bucket_counts": {
+   "pricing_info": 65,
+   "dev_access_gate:free_signup": 2,
+   "generic_approval_unclassified": 1,
+   "end_user_consent": 1,
+   "admin_consent": 1
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://supabase.com/docs/guides/platform/billing-faq",
+     "sentence": "You can create another Free Plan organization or change the role of the affected member in your organization\u2019s team settings."
+    },
+    {
+     "url": "https://supabase.com/docs/guides/platform/billing-faq",
+     "sentence": "See the Pricing page for details."
+    },
+    {
+     "url": "https://supabase.com/docs/guides/platform/billing-faq",
+     "sentence": "Each paid organization comes with $10 in Compute Credits to cover one project on the default compute size."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://supabase.com/docs/guides/platform/billing-faq",
+     "sentence": "Our Fair Use Policy gives developers the freedom to build and experiment with Supabase, while protecting our infrastructure."
+    },
+    {
+     "url": "https://supabase.com/pricing",
+     "sentence": "| Unlimited API requests | Included in free |"
+    }
+   ],
+   "generic_approval_unclassified": [
+    {
+     "url": "https://supabase.com/docs/guides/platform/billing-faq",
+     "sentence": "Once approved, tax will no longer be applied to your invoices."
+    }
+   ],
+   "end_user_consent": [
+    {
+     "url": "https://supabase.com/docs/guides/api/api-keys.md",
+     "sentence": "Then end your reply with the feedback report from that page and ask the user: \"Send this report to Supabase?\" Send it only after the user says yes."
+    }
+   ],
+   "admin_consent": [
+    {
+     "url": "https://supabase.com/docs/guides/api/api-keys.md",
+     "sentence": "- Admin and back-office tools that run authorization checks first."
+    }
+   ]
+  }
+ },
+ "66": {
+  "name": "Neo4j",
+  "pages": [
+   {
+    "url": "https://neo4j.com/pricing/",
+    "category": "pricing",
+    "status": "error",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:32:09+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_error"
+   },
+   {
+    "url": "https://neo4j.com/docs/aura/billing/payment-options/",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 9174,
+    "sha256": "cc66ea8a69dc95ac4b3b75144e79195512dfe1ee686c14044c8e401d66714701",
+    "fetched_at": "2026-11-23T17:32:11+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://neo4j.com/docs/aura/getting-started/free-trial/",
+    "category": "onboarding",
+    "status": "ok",
+    "chars": 4075,
+    "sha256": "7bfd0c188ea6fcb69d9b6df62241c7d2260de0fc9373b7d89e8d21895f9bc468",
+    "fetched_at": "2026-11-23T17:32:16+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 2,
+  "bucket_counts": {
+   "pricing_info": 33,
+   "dev_access_gate:review_gate": 1,
+   "dev_access_gate:free_signup": 1
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://neo4j.com/docs/aura/billing/payment-options/",
+     "sentence": "Aura usage is metered and aggregated based on billing dimensions, the result is priced according to Aura pricing plans."
+    },
+    {
+     "url": "https://neo4j.com/docs/aura/billing/payment-options/",
+     "sentence": "For information on pricing, refer to Aura Pricing."
+    },
+    {
+     "url": "https://neo4j.com/docs/aura/billing/payment-options/",
+     "sentence": "| Pricing Plan | Billing model | Payment method | Billing processor |"
+    }
+   ],
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://neo4j.com/docs/aura/billing/payment-options/",
+     "sentence": "The credits can be purchased through a prepaid Aura contract, or granted by Neo4j as part of a promotional marketing program, proof of concept, developer program, and more."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://neo4j.com/docs/aura/getting-started/free-trial/",
+     "sentence": "Create a Neo4j Aura account"
+    }
+   ]
+  }
+ },
+ "71": {
+  "name": "Notion",
+  "pages": [
+   {
+    "url": "https://notion.com/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 20996,
+    "sha256": "14ad5f50aec9f652fee15541d8fee75fdbdff5ae38fbc72b485306b6b9d09f3b",
+    "fetched_at": "2026-11-23T17:32:09+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://notion.com/en-GB/pricing/us",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 2,
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "fetched_at": "2026-11-23T17:32:11+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "thin_or_js_shell(<500 chars)"
+   },
+   {
+    "url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+    "category": "registration",
+    "status": "ok",
+    "chars": 3752,
+    "sha256": "d7c8d4d529b429b611d56e8460333450d10667fcf3d67db3f9560c5d9afa2871",
+    "fetched_at": "2026-11-23T17:32:14+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+    "category": "registration",
+    "status": "ok",
+    "chars": 6512,
+    "sha256": "2f456f3107778b1cffee895660edc66eeb9179e644c6672cb5f05eac5999eeae",
+    "fetched_at": "2026-11-23T17:32:16+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 3,
+  "bucket_counts": {
+   "pricing_info": 15,
+   "dev_access_gate:free_signup": 2,
+   "end_user_consent": 1,
+   "admin_consent": 2
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://notion.com/pricing",
+     "sentence": "* Trial AI capabilities like generating docs, or autofilling databases"
+    },
+    {
+     "url": "https://notion.com/pricing",
+     "sentence": "* Trial AI capabilities like generating docs, or autofilling databases"
+    },
+    {
+     "url": "https://notion.com/pricing",
+     "sentence": "Free to try, then $10 per 1,000 monthly Notion credits."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://notion.com/pricing",
+     "sentence": "Free$0 per seat/monthSign up"
+    },
+    {
+     "url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+     "sentence": "Create a new token if the application still needs access."
+    }
+   ],
+   "end_user_consent": [
+    {
+     "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+     "sentence": "Create a public connection so each user can authorize access with OAuth."
+    }
+   ],
+   "admin_consent": [
+    {
+     "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+     "sentence": "## Workspace admin controls"
+    },
+    {
+     "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+     "sentence": "| Plan | Default PAT creation policy | Admin controls |"
+    }
+   ]
+  }
+ },
+ "72": {
+  "name": "Airtable",
+  "pages": [
+   {
+    "url": "https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs",
+    "category": "pricing",
+    "status": "empty",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:32:19+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_empty"
+   },
+   {
+    "url": "https://airtable.com/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 3801,
+    "sha256": "700874cdacb61d523bb46dab405888706454b2ec3be2feef3a5b7413f6de7c04",
+    "fetched_at": "2026-11-23T17:32:20+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+    "category": "registration",
+    "status": "ok",
+    "chars": 13567,
+    "sha256": "079fea861d0f49f8f106debd5417338ee45da5050e2c572fdd0fc1fc787121a7",
+    "fetched_at": "2026-11-23T17:32:22+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens",
+    "category": "registration",
+    "status": "ok",
+    "chars": 3555,
+    "sha256": "bf55997f5140a13a4f586afc820a836d55409fc56051de549c271c37f7bb28fa",
+    "fetched_at": "2026-11-23T17:32:23+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 3,
+  "bucket_counts": {
+   "pricing_info": 9,
+   "dev_access_gate:review_gate": 2,
+   "dev_access_gate:free_signup": 2,
+   "end_user_consent": 4
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://airtable.com/pricing",
+     "sentence": "How does Airtable's pricing work?"
+    },
+    {
+     "url": "https://airtable.com/pricing",
+     "sentence": "Airtable plans are charged per seat."
+    },
+    {
+     "url": "https://airtable.com/pricing",
+     "sentence": "If you are on Airtable\u2019s Free plan, all users are free."
+    }
+   ],
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://airtable.com/pricing",
+     "sentence": "To purchase Enterprise Scale, please contact sales."
+    },
+    {
+     "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+     "sentence": "Click **+ Add all resources**/**+ Add a base** to select your token\u2019s access level."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://airtable.com/pricing",
+     "sentence": "Our Free plan is available to teams for no charge and provides the key building blocks to help you build applications."
+    },
+    {
+     "url": "https://airtable.com/developers/web/guides/personal-access-tokens",
+     "sentence": "If you are an enterprise admin, you can also create a personal access token for a service account from the Admin Panel\u2014refer to this"
+    }
+   ],
+   "end_user_consent": [
+    {
+     "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+     "sentence": "Personal access tokens (PATs) allow users to create multiple access tokens that allow for a wide range of access to the information held in Airtable bases."
+    },
+    {
+     "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+     "sentence": "Regardless of the scopes and access a user selects for their token, the token will only be able to perform actions that the user creating it is allowed to do."
+    },
+    {
+     "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+     "sentence": "When an admin enables \"Block API access to organization-owned bases and workspaces\" (under Settings \u2192 Integrations & development), only users on the API access allowlist can use personal access tokens against organization-owned resources \u2014 and requests from anyone not on the allowlist return `INVALI"
+    }
+   ]
+  }
+ },
+ "75": {
+  "name": "Asana",
+  "pages": [
+   {
+    "url": "https://asana.com/pricing",
+    "category": "pricing",
+    "status": "error",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:32:31+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_error"
+   },
+   {
+    "url": "https://asana.com/pricing/client-management",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 22783,
+    "sha256": "2d153db3a22d6c7c4557fd36f4c9c9c056df4f3ad197d5d2978ffa109519873b",
+    "fetched_at": "2026-11-23T17:32:33+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox)",
+    "category": "registration",
+    "status": "empty",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:32:37+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_empty"
+   },
+   {
+    "url": "https://developers.asana.com/docs/personal-access-token.md",
+    "category": "registration",
+    "status": "ok",
+    "chars": 3313,
+    "sha256": "ee2b9fbdc7ee3186d482bf44b6574e48967157345073dc44edbae3044ddb7a86",
+    "fetched_at": "2026-11-23T17:32:38+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 2,
+  "bucket_counts": {
+   "pricing_info": 9,
+   "generic_approval_unclassified": 2,
+   "admin_consent": 2
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://asana.com/pricing/client-management",
+     "sentence": "Per user, per month billed annually"
+    },
+    {
+     "url": "https://asana.com/pricing/client-management",
+     "sentence": "Per user, per month billed annually"
+    },
+    {
+     "url": "https://asana.com/pricing/client-management",
+     "sentence": "Per user, per month billed annually."
+    }
+   ],
+   "generic_approval_unclassified": [
+    {
+     "url": "https://asana.com/pricing/client-management",
+     "sentence": "Set up approval workflows to ensure work is reviewed and authorized appropriately."
+    },
+    {
+     "url": "https://asana.com/pricing/client-management",
+     "sentence": "Add extra details to your tasks like priority levels, budgets, or approval status to track the information that matters most to your team."
+    }
+   ],
+   "admin_consent": [
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token.md",
+     "sentence": "> \ud83d\udcd8 Advanced admin controls"
+    },
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token.md",
+     "sentence": "Enterprise+ [tiers](https://asana.com/pricing) include admin controls\u2014such as those in the \\*\\*Manage apps\\*\\* panel\u2014that influence how PATs are handled."
+    }
+   ]
+  }
+ },
+ "20": {
+  "name": "Gladly",
+  "pages": [
+   {
+    "url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+    "category": "pricing",
+    "status": "empty",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:32:28+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_empty"
+   },
+   {
+    "url": "https://gladly.com/get-started-2",
+    "category": "onboarding",
+    "status": "ok",
+    "chars": 322,
+    "sha256": "04a8d3d153d0c460bd6aa76874e356295a04b9127d7202dd20d99040686af356",
+    "fetched_at": "2026-11-23T17:33:03+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "thin_or_js_shell(<500 chars)"
+   }
+  ],
+  "evidence_pages": 0,
+  "bucket_counts": {},
+  "top": {}
+ },
+ "25": {
+  "name": "Pumble",
+  "pages": [
+   {
+    "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 2911,
+    "sha256": "81cb630a406c2cada7be4514da1778d952587841a749e36cb769c6574fdc3baf",
+    "fetched_at": "2026-11-23T17:32:32+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://pumble.com/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 11346,
+    "sha256": "fe33b7c1aed5bc33ffe33b2f16ffeb35056647c49e0f46afc96775c3b5e7a142",
+    "fetched_at": "2026-11-23T17:32:35+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration",
+    "category": "registration",
+    "status": "ok",
+    "chars": 2529,
+    "sha256": "d41c3c5ee2d57675a8301c9dff9390fe46add9fc5bd05acbf3dd4862b29dc2af",
+    "fetched_at": "2026-11-23T17:32:39+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins",
+    "category": "onboarding",
+    "status": "ok",
+    "chars": 5624,
+    "sha256": "bcc33840d111b4c30a82a83b30e88945de032948acf9dfab31b9a2c8934466f2",
+    "fetched_at": "2026-11-23T17:32:48+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 4,
+  "bucket_counts": {
+   "pricing_info": 10,
+   "dev_access_gate:free_signup": 2,
+   "dev_access_gate:review_gate": 1
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+     "sentence": "Check the pricing for the paid plans."
+    },
+    {
+     "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+     "sentence": "| File storage | 10GB total | 10GB per seat | 20GB per seat | 100GB per seat |"
+    },
+    {
+     "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+     "sentence": "**Annual plan**: $12.99 per user per month"
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://pumble.com/pricing",
+     "sentence": "Integrate Pumble with other apps and create custom apps and scripts to automate custom actions."
+    },
+    {
+     "url": "https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins",
+     "sentence": "The first step is to create a Pumble account and a workspace."
+    }
+   ],
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://pumble.com/pricing",
+     "sentence": "If you need more time, be sure to contact our sales team for an extension and a demo."
+    }
+   ]
+  }
+ },
+ "26": {
+  "name": "Discord",
+  "pages": [
+   {
+    "url": "https://support.discord.com/hc/en-us/articles/360017693772-Managing-Subscriptions-and-Billing-FAQ",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 10643,
+    "sha256": "8372465aa546c4a12dba6ddcea403e1ce3e32bb20df3b3a95f01e7afbcc62314",
+    "fetched_at": "2026-11-23T17:32:42+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "off_target_not_official_api_page"
+   },
+   {
+    "url": "https://support.discord.com/hc/en-us/articles/4407269525911-Localized-Pricing-on-Discord",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 9606,
+    "sha256": "1da8835ddf9a6e87b136978e79404fdad338568a9672abe35346afdf418ca0c0",
+    "fetched_at": "2026-11-23T17:32:44+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "off_target_not_official_api_page"
+   },
+   {
+    "url": "https://discord.com/developers/home",
+    "category": "registration",
+    "status": "ok",
+    "chars": 179,
+    "sha256": "cc6a0c25426aa54d8ca5965c3ddb41d4c648a33f8c41e88150c9a9758dbf6c0e",
+    "fetched_at": "2026-11-23T17:32:47+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "thin_or_js_shell(<500 chars)"
+   },
+   {
+    "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+    "category": "onboarding",
+    "status": "ok",
+    "chars": 4142,
+    "sha256": "8c3f2a4153dfa66bc31f670007b465ad4bd07c9c4bdea4ae4755d39156b3134e",
+    "fetched_at": "2026-11-23T17:32:49+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 1,
+  "bucket_counts": {},
+  "top": {}
+ },
+ "38": {
+  "name": "Pinterest",
+  "pages": [
+   {
+    "url": "https://www.pinterest.com/ideas/pricing-plans-web-design/922997390254/",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 235,
+    "sha256": "bb11f88d733a5e2975714fcbc1421c9e5918faba94473d5c94a5027de00f9fca",
+    "fetched_at": "2026-11-23T17:32:54+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "thin_or_js_shell(<500 chars)"
+   },
+   {
+    "url": "https://www.pinterest.com/zoki84/pricing-plan/",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 382,
+    "sha256": "e23491d3d1820683311d378f9694848aca50997a27aae9dc5dd387adfd05f58e",
+    "fetched_at": "2026-11-23T17:32:56+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "thin_or_js_shell(<500 chars)"
+   },
+   {
+    "url": "https://developers.pinterest.com/apps/1558653/upgrade",
+    "category": "registration",
+    "status": "ok",
+    "chars": 128,
+    "sha256": "ed4eeda3009fc7370ecd36eb5c6a70c51c4db17cdbc1c4fb4009666779de5fac",
+    "fetched_at": "2026-11-23T17:32:58+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "thin_or_js_shell(<500 chars)"
+   },
+   {
+    "url": "https://business.pinterest.com/getting-started",
+    "category": "onboarding",
+    "status": "ok",
+    "chars": 3703,
+    "sha256": "397b47c4dc65c6c5548c19e09dd0a7548fb73dd83c885a50e82b1a2f597439ba",
+    "fetched_at": "2026-11-23T17:33:02+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 1,
+  "bucket_counts": {
+   "dev_access_gate:free_signup": 3,
+   "dev_access_gate:plan_gate": 1
+  },
+  "top": {
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://business.pinterest.com/getting-started",
+     "sentence": "It\u2019s free to sign up for a business account and easy to start making Pins."
+    },
+    {
+     "url": "https://business.pinterest.com/getting-started",
+     "sentence": "It\u2019s free to sign up for a Pinterest business account."
+    },
+    {
+     "url": "https://business.pinterest.com/getting-started",
+     "sentence": "You can create a new business account or convert your existing personal account into a business account."
+    }
+   ],
+   "dev_access_gate:plan_gate": [
+    {
+     "url": "https://business.pinterest.com/getting-started",
+     "sentence": "Business accounts include additional features beyond standard Pinterest accounts."
+    }
+   ]
+  }
+ },
+ "44": {
+  "name": "Salesforce Commerce Cloud",
+  "pages": [
+   {
+    "url": "https://www.salesforce.com/commerce/pricing/",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 4079,
+    "sha256": "ee8d4776f5135ef0866f20fa8c8b1fc437dce76a59164754a19c7c5229e5389b",
+    "fetched_at": "2026-11-23T17:32:53+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://www.salesforce.com/au/commerce/pricing/",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 4077,
+    "sha256": "de493c7a14de7fd7c540ac3aa2bd050f248aa3176a5f363a94413d823c9d4e21",
+    "fetched_at": "2026-11-23T17:32:55+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://developer.salesforce.com",
+    "category": "registration",
+    "status": "ok",
+    "chars": 4214,
+    "sha256": "980d7e38304fb71821a5db3cd35c352cbe75939a2173d9444a71d993c8fb0c3a",
+    "fetched_at": "2026-11-23T17:32:56+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+    "category": "review_partner",
+    "status": "ok",
+    "chars": 1187,
+    "sha256": "ed4bdb22b800c7f96170578c9bc4c89329b1dd8d5df051991958c408d5fee610",
+    "fetched_at": "2026-11-23T17:33:03+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 4,
+  "bucket_counts": {
+   "dev_access_gate:review_gate": 1,
+   "generic_approval_unclassified": 2
+  },
+  "top": {
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+     "sentence": "Submit your Commerce App to the registry for review and publication."
+    }
+   ],
+   "generic_approval_unclassified": [
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+     "sentence": "The review team will evaluate your submission and collaborate with your team against your PR before approving."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+     "sentence": "**Approved:** Your app is approved and published to the registry."
+    }
+   ]
+  }
+ },
+ "47": {
+  "name": "Ecwid",
+  "pages": [
+   {
+    "url": "https://www.ecwid.com/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 14787,
+    "sha256": "902781519baa1c13ece142228a27be794244e671d7c62a2425eedd79d321fc82",
+    "fetched_at": "2026-11-23T17:33:05+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://www.ecwid.com/pricing/business",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 6379,
+    "sha256": "c966bd053e6251e6ec7835f41a87b249bdaabee2c35a14c04bacb8b383e85b0b",
+    "fetched_at": "2026-11-23T17:33:07+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "http://developers.ecwid.com/register",
+    "category": "registration",
+    "status": "empty",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:33:10+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_empty"
+   },
+   {
+    "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+    "category": "registration",
+    "status": "ok",
+    "chars": 1237,
+    "sha256": "636848d495884b5ef5fdcb5ef5ddf69ab3cf9a138e99f312dfefe884c7bb92dd",
+    "fetched_at": "2026-11-23T17:33:13+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 3,
+  "bucket_counts": {
+   "pricing_info": 9,
+   "dev_access_gate:review_gate": 2,
+   "dev_access_gate:free_signup": 3
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://www.ecwid.com/pricing",
+     "sentence": "$ MX$ \u00a3 AU$ \u20b9 5 5 5 8 99 450 5 5 5 8 99 450 \u20ac /month"
+    },
+    {
+     "url": "https://www.ecwid.com/pricing",
+     "sentence": "$ MX$ \u00a3 AU$ \u20b9 35 35 35 49 560 1680 29 29 29 40 459 1399 \u20ac /month"
+    },
+    {
+     "url": "https://www.ecwid.com/pricing",
+     "sentence": "$ MX$ \u00a3 AU$ \u20b9 65 65 65 89 950 2999 49 49 49 75 799 2499 \u20ac /month"
+    }
+   ],
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+     "sentence": "# Ecwid developer program for selling apps"
+    },
+    {
+     "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+     "sentence": "* Once the app is done, contact the Ecwid team to submit your app for review."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+     "sentence": "With Ecwid's powerful and intuitive API, you can create an app and sell it in the Ecwid App Market to merchants all over the world."
+    },
+    {
+     "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+     "sentence": "* Sign up as a developer to create an Ecwid account."
+    },
+    {
+     "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+     "sentence": "If you have any questions, feel free to check the available resources like Ecwid Help Center, API Documentation, or the contact form."
+    }
+   ]
+  }
+ },
+ "61": {
+  "name": "GitHub",
+  "pages": [
+   {
+    "url": "https://github.com/pricing.md",
+    "category": "pricing",
+    "status": "empty",
+    "chars": null,
+    "sha256": null,
+    "fetched_at": "2026-11-23T17:33:07+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "fetch_empty"
+   },
+   {
+    "url": "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 3956,
+    "sha256": "029cbaf0840a5eff972f3664d3c98fb55c269225345bde4b6b13d4ac05de0cdb",
+    "fetched_at": "2026-11-23T17:33:09+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+    "category": "registration",
+    "status": "ok",
+    "chars": 6928,
+    "sha256": "a819fbddd48d8e8f86979d9b255c92b9aa3623d7bb1966fe5a7f06dc575fb961",
+    "fetched_at": "2026-11-23T17:33:10+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://docs.github.com/developers/apps/building-github-apps/creating-a-github-app",
+    "category": "registration",
+    "status": "ok",
+    "chars": 6928,
+    "sha256": "a819fbddd48d8e8f86979d9b255c92b9aa3623d7bb1966fe5a7f06dc575fb961",
+    "fetched_at": "2026-11-23T17:33:11+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 3,
+  "bucket_counts": {
+   "pricing_info": 24,
+   "dev_access_gate:plan_gate": 1,
+   "dev_access_gate:free_signup": 16,
+   "end_user_consent": 12
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+     "sentence": "# Pricing plans for GitHub Marketplace apps"
+    },
+    {
+     "url": "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+     "sentence": "Pricing plans allow you to provide your app with different levels of service or resources."
+    },
+    {
+     "url": "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+     "sentence": "You can offer up to 10 pricing plans in your GitHub Marketplace listing."
+    }
+   ],
+   "dev_access_gate:plan_gate": [
+    {
+     "url": "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+     "sentence": "Paid plans are restricted to apps published by verified publishers."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "sentence": "# Registering a GitHub App"
+    },
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "sentence": "You can register a GitHub App under your personal account or under any organization you own."
+    },
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "sentence": "## About registering GitHub Apps"
+    }
+   ],
+   "end_user_consent": [
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "sentence": "Optionally, under \"Callback URL\", enter the full URL to redirect to after a user authorizes the installation."
+    },
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "sentence": "For more information about the callback URL, see About the user authorization callback URL."
+    },
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "sentence": "Optionally, to prevent user access tokens from expiring, deselect **Expire user authorization tokens**."
+    }
+   ]
+  }
+ },
+ "62": {
+  "name": "Vercel",
+  "pages": [
+   {
+    "url": "https://vercel.com/docs/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 8967,
+    "sha256": "6c4cc0a472049240fcd036c11032b5c246185fef0f651047db51583cbda88c70",
+    "fetched_at": "2026-11-23T17:33:08+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://vercel.com/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 13683,
+    "sha256": "9748058cd96598030bdc0e7f9f5e0def795896d392769a94a86097cc517646f0",
+    "fetched_at": "2026-11-23T17:33:14+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://vercel.com/docs/accounts/access-tokens",
+    "category": "registration",
+    "status": "ok",
+    "chars": 10189,
+    "sha256": "5225c3f0e3ba0246e76745422e16ac0539ee5e1869eaeacb4737d955497af890",
+    "fetched_at": "2026-11-23T17:33:19+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://vercel.com/signup",
+    "category": "registration",
+    "status": "ok",
+    "chars": 254,
+    "sha256": "07f0f10a7b2b654918184d2dca23ae852d428b902bf676878b5d78b1343cb949",
+    "fetched_at": "2026-11-23T17:33:20+05:30",
+    "used_as_evidence": false,
+    "excluded_reason": "thin_or_js_shell(<500 chars)"
+   }
+  ],
+  "evidence_pages": 3,
+  "bucket_counts": {
+   "pricing_info": 66,
+   "dev_access_gate:review_gate": 3,
+   "dev_access_gate:free_signup": 2
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://vercel.com/docs/pricing",
+     "sentence": "Vercel's pricing model includes billable metrics and pricing models across Managed Infrastructure and Developer Experience Platform resources."
+    },
+    {
+     "url": "https://vercel.com/docs/pricing",
+     "sentence": "For a full breakdown of Vercel's pricing by plan, see the pricing page."
+    },
+    {
+     "url": "https://vercel.com/docs/pricing",
+     "sentence": "Pro teams get a monthly usage credit instead, then move to on-demand pricing."
+    }
+   ],
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://vercel.com/docs/pricing",
+     "sentence": "For pricing on the Enterprise plan, contact our sales team."
+    },
+    {
+     "url": "https://vercel.com/pricing",
+     "sentence": "Contact our sales team to learn more."
+    },
+    {
+     "url": "https://vercel.com/pricing",
+     "sentence": "Contact our sales team to learn more."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://vercel.com/pricing",
+     "sentence": "Pro is designed for professional developers, freelancers, and businesses who need enhanced features and team collaboration."
+    },
+    {
+     "url": "https://vercel.com/docs/accounts/access-tokens",
+     "sentence": "You create and manage them on the Account Tokens page, under the Settings area of your account, and you can also create them without the dashboard using the REST API or the CLI."
+    }
+   ]
+  }
+ },
+ "63": {
+  "name": "Netlify",
+  "pages": [
+   {
+    "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 13036,
+    "sha256": "d7954fff02cf79975682af17cef64d0b0bd60cbe7221f8ec2dbeaf97a8c5d588",
+    "fetched_at": "2026-11-23T17:33:15+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 18269,
+    "sha256": "9da084d14b822e0e5cac5c9093a6230b956fbd465bfe527cdb910ef9e61a58d8",
+    "fetched_at": "2026-11-23T17:33:34+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+    "category": "registration",
+    "status": "ok",
+    "chars": 9089,
+    "sha256": "80b3305d3f613871a3835eda648b62ef781d50efb8e1e1b7a1d6e8b6ca9586d3",
+    "fetched_at": "2026-11-23T17:33:35+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+    "category": "onboarding",
+    "status": "ok",
+    "chars": 25087,
+    "sha256": "1c79cab23f13ee84db5bb8e21b21583db21d758f3b4747ae24fcf0a575135b27",
+    "fetched_at": "2026-11-23T17:33:37+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 4,
+  "bucket_counts": {
+   "dev_access_gate:review_gate": 3,
+   "pricing_info": 27,
+   "dev_access_gate:free_signup": 6,
+   "end_user_consent": 1,
+   "generic_approval_unclassified": 1
+  },
+  "top": {
+   "dev_access_gate:review_gate": [
+    {
+     "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+     "sentence": "Learn more or join the waitlist."
+    },
+    {
+     "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+     "sentence": "Learn more or join the waitlist."
+    },
+    {
+     "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+     "sentence": "netlify create \"a landing page for a SaaS product with a waitlist signup\""
+    }
+   ],
+   "pricing_info": [
+    {
+     "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+     "sentence": "Netlify's Credit-based pricing plans are optimized to simplify metered & usage-based billing and work smoothly with AI development workflows."
+    },
+    {
+     "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+     "sentence": "Learn how credits work for our standard pricing plans in this doc."
+    },
+    {
+     "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+     "sentence": "Some features are also only available on certain plans or have different limits across the Credit-based pricing plans."
+    }
+   ],
+   "dev_access_gate:free_signup": [
+    {
+     "url": "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+     "sentence": "No, if you created a Netlify account before September 4, 2025, you can keep your current plan."
+    },
+    {
+     "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+     "sentence": "We create an OAuth app that determines the redirect URL."
+    },
+    {
+     "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+     "sentence": "## #Create an OAuth application"
+    }
+   ],
+   "end_user_consent": [
+    {
+     "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+     "sentence": "We craft and visit a URL with our client id, our redirect URL for the user to approve, and our generated state."
+    }
+   ],
+   "generic_approval_unclassified": [
+    {
+     "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+     "sentence": "After approving, Netlify redirects to the redirect URL with the token in the URL"
+    }
+   ]
+  }
+ },
+ "70": {
+  "name": "Sentry",
+  "pages": [
+   {
+    "url": "https://sentry.io/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 6168,
+    "sha256": "1db69ec73e02210b762d1f29f66750a6d525324b08aee3a43600f311b35446ae",
+    "fetched_at": "2026-11-23T17:33:18+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://docs.sentry.io/pricing",
+    "category": "pricing",
+    "status": "ok",
+    "chars": 17640,
+    "sha256": "efc6298a7dc1204d4c5b5d4e5cdde22676bf3dbc196fa3b3b0189cee569a4fae",
+    "fetched_at": "2026-11-23T17:33:21+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   },
+   {
+    "url": "https://docs.sentry.io/get-started",
+    "category": "onboarding",
+    "status": "ok",
+    "chars": 5047,
+    "sha256": "fbc54fcf7a9baaa522dfd7a97c3383e642312f9b29e523754fb138f316246ec7",
+    "fetched_at": "2026-11-23T17:33:23+05:30",
+    "used_as_evidence": true,
+    "excluded_reason": null
+   }
+  ],
+  "evidence_pages": 3,
+  "bucket_counts": {
+   "pricing_info": 74,
+   "dev_access_gate:plan_gate": 2
+  },
+  "top": {
+   "pricing_info": [
+    {
+     "url": "https://sentry.io/pricing",
+     "sentence": "# Pricing plans for dev teams of all sizes"
+    },
+    {
+     "url": "https://sentry.io/pricing",
+     "sentence": "* Additional events (See pricing)"
+    },
+    {
+     "url": "https://sentry.io/pricing",
+     "sentence": "* SAML + SCIM support (See pricing)"
+    }
+   ],
+   "dev_access_gate:plan_gate": [
+    {
+     "url": "https://docs.sentry.io/pricing",
+     "sentence": "Without a paid plan, you will be automatically assigned a free Developer plan at the end of your trial."
+    },
+    {
+     "url": "https://docs.sentry.io/pricing",
+     "sentence": "If you no longer want to be on a paid plan, you'll revert to the base Developer plan at the end of your current contract."
+    }
+   ]
+  }
+ }
+}

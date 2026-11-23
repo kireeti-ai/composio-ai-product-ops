@@ -1,0 +1,281 @@
+{
+ "id": 92,
+ "name": "Otter AI",
+ "started": "2026-11-23T19:40:32+05:30",
+ "searches": [
+  {
+   "q": "Otter AI API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:34+05:30"
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:35+05:30"
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:37+05:30"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:39+05:30"
+  }
+ ],
+ "fetched": [],
+ "candidate_hits": [
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://help.otter.ai/hc/en-us/search?query=API",
+   "title": "Search results \u2013 Help Center",
+   "snippet": "- Admin *APIs* article for more info on available *APIs*. *API* Resources To learn more about developing with the Otter *API*, see:"
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://help.otter.ai/api/v2/help_center/en-us/articles/36130822688279.json",
+   "title": "help.otter.ai/api/v2/help_center/en-us/articles/36130822688279.json",
+   "snippet": "class=\\\"panel\\\">\\n<p>All API requests require authentication using Bearer token authentication. Follow the steps below to create your <strong>API key."
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://otter.ai/integrations",
+   "title": "Integrate with Your Favorite Tools!",
+   "snippet": "Connect your notes, meetings, & conversations to the apps you already use, automatically sends transcripts, summaries, and meeting metadata to Airtable. ..."
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://help.otter.ai/hc/en-us/articles/35634832371735-Workspace-Webhooks",
+   "title": "Workspace Webhooks",
+   "snippet": "## Is a full API available?\n[Otter.ai's Public API](/hc/en-us/articles/36130822688279) is available for all Enterprise workspaces. If you do not see this feature for your workspace, contact your"
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "title": "Otter.ai Public API",
+   "snippet": "Otter.ai\u2019s Public API provides programmatic access to retrieve channels, conversations, transcripts, audio, action items, insights, outlines, and workspace details from your Otter account."
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://integrations.sh/otter.ai",
+   "title": "otter.ai \u2014 integrations",
+   "snippet": "Otter.ai exposes an authenticated Enterprise REST API at https://api.otter.ai/v1 using bearer API keys, plus an OAuth-protected MCP server at https://mcp.otter.ai/mcp over streamable HTTP."
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+   "title": "Does Otter offer an open API?",
+   "snippet": "Yes, Otter offers a public API for Enterprise customers. To get started, contact your Otter account manager to enable access."
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://help.otter.ai/hc/en-us/articles/39661865499799-Super-Admin-APIs",
+   "title": "Super Admin APIs",
+   "snippet": "/workspace/{id}/conversations` Return all conversations in a workspace\nUse this endpoint to list all conversations in a workspace. Results are returned in reverse chronological order (most recent"
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://otter.ai/",
+   "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+   "snippet": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items."
+  },
+  {
+   "q": "Otter AI API documentation",
+   "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "title": "Otter MCP Server",
+   "snippet": "### JSON Configuration file\n```json\n{\n\"mcpServers\": {\n\"otter\": {\n\"url\": \"https://mcp.otter.ai/mcp\"\n}\n}\n}\n```"
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://help.otter.ai/api/v2/help_center/en-us/articles/36130822688279.json",
+   "title": "help.otter.ai/api/v2/help_center/en-us/articles/36130822688279.json",
+   "snippet": "class=\\\"panel\\\">\\n<p>All API requests require authentication using Bearer token authentication. Follow the steps below to create your <strong>API key."
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://integrations.sh/otter.ai",
+   "title": "otter.ai \u2014 integrations",
+   "snippet": "Otter.ai exposes an authenticated Enterprise REST API at https://api.otter.ai/v1 using bearer API keys, plus an OAuth-protected MCP server at https://mcp.otter.ai/mcp over streamable HTTP."
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://help.otter.ai/hc/en-us/articles/36130822688279",
+   "title": "Otter.ai Public API",
+   "snippet": "**Using your API key:**\nInclude your API key in the Authorization header for every request:\n```none\nAuthorization: Bearer YOUR_API_KEY\n```"
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+   "title": "Does Otter offer an open API?",
+   "snippet": "Yes, Otter offers a public API for Enterprise customers. To get started, contact your Otter account manager to enable access."
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://help.otter.ai/hc/en-us/search?query=API",
+   "title": "Search results \u2013 Help Center",
+   "snippet": "- The *API* key can now be used. Follow steps 1-4 to create another *API* key. Note : There is a limit of 2 *API* keys per\n- Request: curl -X GET \"https://*api*.otter.ai/v1/workspace\" \\ -H"
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "title": "Otter MCP Server",
+   "snippet": "\ud83d\udd12 **Security:** All access is OAuth-authenticated with granular permissions.\nYour AI assistant can only access meetings you explicitly authorize."
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "title": "Otter.ai Public API \u2013 Help Center",
+   "snippet": "Go to Integrations \u2192 Developer. \u00b7 Click Create key. \u00b7 Click Copy and store the API key in a safe place. Note: This is only visible once. Make ..."
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://raw.githubusercontent.com/JarvusInnovations/otter-axi/develop/specs/api/mcp-server.md",
+   "title": "raw.githubusercontent.com/JarvusInnovations/otter-axi/develop/specs/api/mcp-server.md",
+   "snippet": "metadata** (`https://otter.ai/.well-known/oauth-authorization-server`):\n(confirmed)\n- `issuer`: `https://otter.ai`\n- `authorization_endpoint`: `https://otter.ai/oauth2/authorize`\n-"
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://github.com/bcharleson/otter-cli/blob/main/README.md",
+   "title": "otter-cli/README.md at main \u00b7 bcharleson/otter-cli",
+   "snippet": "| Variable | Description |\n|---|---|\n| `OTTER_ACCESS_TOKEN` | Otter.ai OAuth access token |\n| `OTTER_API_URL` | Override base URL for enterprise instances |"
+  },
+  {
+   "q": "Otter AI API authentication OAuth API key developer",
+   "url": "https://github.com/api-evangelist/otter-ai/blob/main/README.md",
+   "title": "otter-ai/README.md at main - api-evangelist",
+   "snippet": "Otter.ai is an AI-powered meeting transcription and conversational intelligence platform that automatically records, transcribes, and summarizes meetings across ..."
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://otter.ai/pricing",
+   "title": "Pricing",
+   "snippet": "Otter has pricing plans for individuals, teams, organizations, and enterprises. Monthly Annual save 51% Prices in USD Basic \u30fb small teams $8 .33 /user/month. ..."
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://otter.ai/pricing.md",
+   "title": "otter.ai/pricing.md",
+   "snippet": "- Workspace sizes are maximums: Basic up to 5 members, Pro up to 5 billed users, Business up to 25 billed users, Enterprise unlimited."
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://otter.ai/pricing-new",
+   "title": "Pricing | Otter.ai",
+   "snippet": "Business\nBest Value\nFor medium-sized teams\n$30\n$24\n/user/month\n20% off for 3 months+\n\nHIPAA compliance (add-on)\nOtter API & Webhooks\nVideo replay for Zoom and Google Meet"
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "title": "Otter.ai Public API",
+   "snippet": "## Rate Limits\nEnterprise plan users are currently limited to 10 requests / second. If you exceed your rate limit, you'll receive a `429 Too Many Requests` response."
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/plans/otter-ai-plans-pricing.yml",
+   "title": "raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/plans/otter-ai-plans-pricing.yml",
+   "snippet": "zero data retention policies, and custom contracts. Enterprise API\naccess must be enabled through an Otter account manager.\nprice: custom\ncurrency: USD\nbilling_period: annual\n"
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://tldv.io/blog/otter-pricing",
+   "title": "Otter Pricing in 2026: What Each Plan Really Costs and When It's Worth Paying",
+   "snippet": "- **Security:** SSO and SCIM (100-user minimum license), domain capture and custom data retention.\n- **Developer Access:** the Otter API and webhooks."
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/rate-limits/otter-ai-rate-limits.yml",
+   "title": "raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/rate-limits/otter-ai-rate-limits.yml",
+   "snippet": "public API is available to Enterprise\nplan customers only and requires enablement through an Otter account manager.\nRate limits are enforced per API key and vary by subscription tier. Exceeding"
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://krater.ai/pricing/otter",
+   "title": "Otter.ai Pricing 2026",
+   "snippet": "Yes, Otter has a free Basic tier with 300 minutes a month. Pro is ~$17/month (or ~$8 on annual billing); Business is $30/seat. What is the cheapest ..."
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/finops/otter-ai-finops.yml",
+   "title": "raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/finops/otter-ai-finops.yml",
+   "snippet": "a per-seat subscription model with four tiers (Basic, Pro,\nBusiness, Enterprise). API access is exclusive to Enterprise customers.\nUsage is metered in transcription minutes for file"
+  },
+  {
+   "q": "Otter AI API access pricing plans developer account",
+   "url": "https://www.reddit.com/r/n8n/comments/1rknboh/otterai_charges_16month_for_meeting_transcription/",
+   "title": "r/n8n",
+   "snippet": "Join otter.ai charges $16/month for meeting transcription. it was close to $200. bot API, self-hosted) Tired of Otter.ai's pricing and privacy ..."
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://otter.ai/integration/claude",
+   "title": "Claude + Otter.ai Integration",
+   "snippet": "and for detailed setup instructions visit the [Otter.ai Help Center.](https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server)"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+   "title": "Otter MCP Server",
+   "snippet": "```json\n{\n\"mcpServers\": {\n\"otter\": {\n\"url\": \"https://mcp.otter.ai/mcp\"\n}\n}\n}\n```"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://otter.ai/blog/otter-mcp-your-meetings-now-power-every-tool-you-use",
+   "title": "Otter + MCP: Your Meetings Now Power Every Tool You Use",
+   "snippet": "Or start from Otter AI Chat and reach out. Otter's own AI Chat connects outward to your enterprise apps via MCP: Notion, Jira, Salesforce, Google Docs, Gmail, Slack, and more. Ask Otter a question,"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://obot.ai/mcp-catalog/otter-ai",
+   "title": "Otter.ai",
+   "snippet": "### Remote runtime\nFixed U R L`https://mcp.otter.ai/mcp`"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp",
+   "title": "Otter for Enterprise: Connect AI-to-AI with Otter\u2019s MCP",
+   "snippet": "**Otter's MCP Server** connects your meeting data directly to AI tools like Claude and ChatGPT, bringing your meeting intelligence into your everyday AI workflows .\n## What Is MCP?\nModel Context"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://otter.diy/docs/mcp",
+   "title": "MCP server \u00b7 Docs \u00b7 Otter",
+   "snippet": "automations from Claude, ChatGPT, Cursor and other AI tools through the Model Context Protocol. Otter hosts the server, so there is nothing to install: add one URL and a workspace API key.\n##"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://x.com/otter_ai/status/1980674067633180861",
+   "title": "Otter.ai",
+   "snippet": "Introducing AI-to-AI connectivity with Otter's Model Context Protocol (MCP) Server The new Model Context Protocol (MCP) Server seamlessly ..."
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://lunar.dev/mcp-server-directory/otter-ai",
+   "title": "Otter.ai",
+   "snippet": "## Server details\nCategory**Collaboration**\nAuth**OAuth**\nConnection**Streamable HTTP**\nTools**3 available**"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://github.com/cursor/plugins/blob/main/third_party/otter/mcp.json",
+   "title": "plugins/third_party/otter/mcp.json at main \u00b7 cursor/plugins",
+   "snippet": "\"mcpServers\": {\n\"otter\": {\n\"type\": \"http\",\n\"url\": \"https://mcp.otter.ai/mcp\"\n}\n}"
+  },
+  {
+   "q": "Otter AI MCP server official",
+   "url": "https://github.com/cursor/plugins/tree/main/third_party/otter",
+   "title": "plugins/third_party/otter at main \u00b7 cursor/plugins",
+   "snippet": "```\n{\n\"mcpServers\": {\n\"otter\": {\n\"type\": \"http\",\n\"url\": \"https://mcp.otter.ai/mcp\"\n}\n}\n}\n```"
+  }
+ ],
+ "official_domain_candidates": {},
+ "identity_flag": "no_domain_matched_name",
+ "completed": "2026-11-23T19:40:39+05:30"
+}

@@ -1,0 +1,74 @@
+{
+ "id": 17,
+ "name": "Plain",
+ "pass1_sha": "9b0d9ecdc741b238",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "terminology_difference",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt mentions using an OAuth app, implying OAuth2 support despite different wording.",
+    "needs_human": true
+   },
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states machine users can have API keys with permissions.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No mention of bearer tokens in the provided excerpts.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_trial_or_paid_plan :: Plain offers a 7-day free trial with no credit card required, followed by per-seat paid plans.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms 7-day free trial, no credit card, and per-seat pricing.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states Plain offers REST APIs",
+    "needs_human": false
+   },
+   {
+    "item": "graphql",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states Plain offers GraphQL APIs",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms Plain provides an official MCP server for setup",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

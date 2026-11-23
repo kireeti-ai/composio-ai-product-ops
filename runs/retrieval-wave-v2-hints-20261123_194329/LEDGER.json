@@ -1,0 +1,112 @@
+[
+ {
+  "id": 15,
+  "name": "Pylon",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "usepylon.com": 40
+  },
+  "selected": "usepylon.com",
+  "pages_ok": 4,
+  "pages_failed": 2
+ },
+ {
+  "id": 24,
+  "name": "Lark (Larksuite)",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "larksuite.com": 40
+  },
+  "selected": "larksuite.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 30,
+  "name": "Vonage",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "vonage.com": 40
+  },
+  "selected": "vonage.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 31,
+  "name": "Google Ads",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "google.com": 39
+  },
+  "selected": "google.com",
+  "pages_ok": 4,
+  "pages_failed": 2
+ },
+ {
+  "id": 35,
+  "name": "Mailchimp",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "mailchimp.com": 40
+  },
+  "selected": "mailchimp.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 37,
+  "name": "systeme.io",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "systeme.io": 40
+  },
+  "selected": "systeme.io",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 40,
+  "name": "SendGrid",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "sendgrid.com": 40
+  },
+  "selected": "sendgrid.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 42,
+  "name": "WooCommerce",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "woocommerce.com": 6
+  },
+  "selected": "woocommerce.com",
+  "pages_ok": 5,
+  "pages_failed": 1
+ },
+ {
+  "id": 45,
+  "name": "Magento (Adobe Commerce)",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "adobe.com": 38
+  },
+  "selected": "adobe.com",
+  "pages_ok": 4,
+  "pages_failed": 2
+ },
+ {
+  "id": 48,
+  "name": "Gumroad",
+  "identity_flag": "hint_domain_from_original_list",
+  "domains": {
+   "gumroad.com": 18
+  },
+  "selected": "gumroad.com",
+  "pages_ok": 5,
+  "pages_failed": 1
+ }
+]

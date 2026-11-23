@@ -1,0 +1,74 @@
+{
+ "created": "2026-11-23T18:53:29+0530",
+ "status": "EVIDENCE ONLY - no plan/prompt/schema/model config modified; no APPROVED.json",
+ "source": "two user-supplied AI Studio dashboard screenshots (transcribed by hand; screenshots not stored) + probe_20261123_184815.json + one models.list (metadata) call on key 1 at 2026-11-23T18:53:29+0530",
+ "screenshot_mapping_assumed": {
+  "two-model screenshot": "Key 1 project",
+  "single-model screenshot": "Key 2 project (EXCLUDED, recorded for reference only)"
+ },
+ "dashboard_observations": {
+  "key1": {
+   "gemini-2.5-flash": {
+    "rpm": "6/5",
+    "tpm": "27.41K/250K",
+    "rpd": "25/20"
+   },
+   "gemini-3.6-flash": {
+    "rpm": "3/5",
+    "tpm": "21.07K/250K",
+    "rpd": "25/20"
+   }
+  },
+  "key2_excluded": {
+   "gemini-3.6-flash": {
+    "rpm": "1/5",
+    "tpm": "3/250K",
+    "rpd": "3/20"
+   }
+  }
+ },
+ "free_tier_limits_per_model_per_project": {
+  "rpm": 5,
+  "tpm": 250000,
+  "rpd": 20
+ },
+ "peak_metric_meaning": "The panel is titled 'Peak usage per model compared to its limit over the last 28 days'. Each figure is the MAXIMUM seen in any single window during those 28 days (highest requests in one minute for RPM; highest requests in one day for RPD; highest input tokens in one minute for TPM). '25/20' therefore means: on at least one day in the last 28, 25 requests were counted against a 20/day limit. It does NOT say which day, whether that day was today, how many requests are used today, or how many remain. It is not a remaining-quota figure and today's remaining quota must not be inferred from it. Unknown from the dashboard: whether rejected (429) requests are counted in the 25. Same reading for 6/5 RPM. For the Key 2 panel, 3/20 is likewise a peak, not proof of 17 remaining.",
+ "today_remaining_quota": "UNKNOWN (not observable via API; the only live evidence is that one 1-token gemini-2.5-flash call was accepted at 18:48 IST)",
+ "model_id_verification": {
+  "method": "models.list (metadata, no generation) on key 1",
+  "generateContent_models_listed": [
+   "models/gemini-2.5-flash",
+   "models/gemini-3.5-flash",
+   "models/gemini-3.6-flash",
+   "models/gemini-3.7-flash",
+   "models/gemini-3.8-flash"
+  ],
+  "gemini-3.6-flash_exact_id": "models/gemini-3.6-flash (listed; generation availability NOT tested; no call made)",
+  "note": "3.7 and 3.8 also listed. None adopted."
+ },
+ "model_status": {
+  "gemini-2.5-flash": "ONLY demonstrated working research model (1 accepted call, 18:48 IST). Plan for <=20 requests/day.",
+  "gemini-3.5-flash": "KEPT in frozen plan; TEMPORARILY UNAVAILABLE (HTTP 503 UNAVAILABLE 'high demand' observed on 18:48 IST probe; capacity, not quota)",
+  "gemini-3.6-flash": "NOT INTRODUCED. Replacement needs a separate change proposal + evaluation."
+ },
+ "key_policy": {
+  "key1": "only permitted Gemini project",
+  "key2": "EXCLUDED",
+  "openrouter": "EXCLUDED"
+ },
+ "groq": {
+  "seen": {
+   "rpd": 1000,
+   "tpm": 8000,
+   "remaining_requests_at_probe": 963
+  },
+  "missing_required_before_pilot_approval": [
+   "rpm",
+   "tpd"
+  ]
+ },
+ "conservative_planning": {
+  "gemini_requests_per_day_max": 20,
+  "basis": "20 RPD on the only working model; 25/20 peak indicates the cap has been reached before"
+ }
+}

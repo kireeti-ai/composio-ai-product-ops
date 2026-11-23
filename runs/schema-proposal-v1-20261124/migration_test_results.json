@@ -1,0 +1,15 @@
+{
+ "frozen_schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+ "prompt_sha256_unchanged": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+ "records_tested": 26,
+ "valid_against_frozen": 26,
+ "valid_against_nested_after_migration": 26,
+ "lossless_roundtrip": 26,
+ "failures": [],
+ "negative_test_errors_detected": [
+  "$.surfaces[0].blocker: required field missing",
+  "$.surfaces[0].access: 'totally_free_lunch' not in enum"
+ ],
+ "neo4j_example_valid_against_nested": true,
+ "neo4j_example_errors": []
+}

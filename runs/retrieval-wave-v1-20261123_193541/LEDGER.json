@@ -1,0 +1,447 @@
+[
+ {
+  "id": 30,
+  "name": "Vonage",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "vonage.com": 37
+  },
+  "selected": "vonage.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 35,
+  "name": "Mailchimp",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "mailchimp.com": 29
+  },
+  "selected": "mailchimp.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 37,
+  "name": "systeme.io",
+  "identity_flag": "no_domain_matched_name",
+  "domains": {},
+  "selected": null,
+  "pages_ok": 0,
+  "pages_failed": 0
+ },
+ {
+  "id": 40,
+  "name": "SendGrid",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "sendgrid.com": 18
+  },
+  "selected": "sendgrid.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 42,
+  "name": "WooCommerce",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "woocommerce.com": 24,
+   "mcpforwoocommerce.com": 1
+  },
+  "selected": "woocommerce.com",
+  "pages_ok": 5,
+  "pages_failed": 1
+ },
+ {
+  "id": 45,
+  "name": "Magento (Adobe Commerce)",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "magento.com": 2,
+   "magento.watch": 1
+  },
+  "selected": "magento.com",
+  "pages_ok": 2,
+  "pages_failed": 0
+ },
+ {
+  "id": 48,
+  "name": "Gumroad",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "gumroad.com": 17
+  },
+  "selected": "gumroad.com",
+  "pages_ok": 3,
+  "pages_failed": 3
+ },
+ {
+  "id": 54,
+  "name": "MrScraper",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "mrscraper.com": 30
+  },
+  "selected": "mrscraper.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 57,
+  "name": "Bright Data",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "brightdata.com": 40
+  },
+  "selected": "brightdata.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 64,
+  "name": "Cloudflare",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "cloudflare.com": 38,
+   "cloudflare.dev": 1
+  },
+  "selected": "cloudflare.com",
+  "pages_ok": 5,
+  "pages_failed": 1
+ },
+ {
+  "id": 67,
+  "name": "Snowflake",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "snowflake.com": 29,
+   "snowflake.net": 1
+  },
+  "selected": "snowflake.com",
+  "pages_ok": 4,
+  "pages_failed": 2
+ },
+ {
+  "id": 68,
+  "name": "MongoDB Atlas",
+  "identity_flag": "no_domain_matched_name",
+  "domains": {},
+  "selected": null,
+  "pages_ok": 0,
+  "pages_failed": 0
+ },
+ {
+  "id": 74,
+  "name": "Jira",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "jirapricing.com": 2
+  },
+  "selected": "jirapricing.com",
+  "pages_ok": 2,
+  "pages_failed": 0
+ },
+ {
+  "id": 77,
+  "name": "ClickUp",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "clickup.com": 29,
+   "clickup-cli.com": 1
+  },
+  "selected": "clickup.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 15,
+  "name": "Pylon",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "usepylon.com": 17,
+   "getpylon.com": 3,
+   "pylon.bot": 1,
+   "pylonsync.com": 6,
+   "pylonapi.com": 1
+  },
+  "selected": "usepylon.com",
+  "pages_ok": 4,
+  "pages_failed": 2
+ },
+ {
+  "id": 24,
+  "name": "Lark (Larksuite)",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "larksuite.com": 30
+  },
+  "selected": "larksuite.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 31,
+  "name": "Google Ads",
+  "identity_flag": "no_domain_matched_name",
+  "domains": {},
+  "selected": null,
+  "pages_ok": 0,
+  "pages_failed": 0
+ },
+ {
+  "id": 55,
+  "name": "Apify",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "apify.com": 37,
+   "use-apify.com": 2
+  },
+  "selected": "apify.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 69,
+  "name": "Datadog",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "datadoghq.com": 36
+  },
+  "selected": "datadoghq.com",
+  "pages_ok": 4,
+  "pages_failed": 2
+ },
+ {
+  "id": 79,
+  "name": "Smartsheet",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "smartsheet.com": 36
+  },
+  "selected": "smartsheet.com",
+  "pages_ok": 5,
+  "pages_failed": 1
+ },
+ {
+  "id": 81,
+  "name": "Stripe",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "stripe.com": 32,
+   "stripe.dev": 2
+  },
+  "selected": "stripe.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 82,
+  "name": "Plaid",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "plaid.com": 35
+  },
+  "selected": "plaid.com",
+  "pages_ok": 4,
+  "pages_failed": 2
+ },
+ {
+  "id": 83,
+  "name": "Binance",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "binance.com": 34,
+   "binance.us": 2,
+   "binance.info": 2
+  },
+  "selected": "binance.com",
+  "pages_ok": 2,
+  "pages_failed": 4
+ },
+ {
+  "id": 85,
+  "name": "iPayX",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "ipayx.ai": 34
+  },
+  "selected": "ipayx.ai",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 86,
+  "name": "QuickBooks",
+  "identity_flag": "no_domain_matched_name",
+  "domains": {},
+  "selected": null,
+  "pages_ok": 0,
+  "pages_failed": 0
+ },
+ {
+  "id": 87,
+  "name": "Xero",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "xero.com": 29
+  },
+  "selected": "xero.com",
+  "pages_ok": 4,
+  "pages_failed": 2
+ },
+ {
+  "id": 88,
+  "name": "Brex",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "brex.com": 36
+  },
+  "selected": "brex.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 89,
+  "name": "Ramp",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "ramp.com": 38
+  },
+  "selected": "ramp.com",
+  "pages_ok": 5,
+  "pages_failed": 1
+ },
+ {
+  "id": 90,
+  "name": "PitchBook",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "pitchbook.com": 17
+  },
+  "selected": "pitchbook.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 91,
+  "name": "NotebookLM",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "kortex-notebooklm.com": 1
+  },
+  "selected": "kortex-notebooklm.com",
+  "pages_ok": 0,
+  "pages_failed": 0
+ },
+ {
+  "id": 92,
+  "name": "Otter AI",
+  "identity_flag": "no_domain_matched_name",
+  "domains": {},
+  "selected": null,
+  "pages_ok": 0,
+  "pages_failed": 0
+ },
+ {
+  "id": 93,
+  "name": "Fathom",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "fathom.ai": 25,
+   "fathom.global": 3,
+   "fathom.video": 3,
+   "usefathom.com": 1,
+   "fathom-mcp-server.com": 1,
+   "fathomhq.com": 1
+  },
+  "selected": "fathom.ai",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 94,
+  "name": "Consensus",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "consensus.app": 37,
+   "theconsensus.dev": 2
+  },
+  "selected": "consensus.app",
+  "pages_ok": 5,
+  "pages_failed": 1
+ },
+ {
+  "id": 95,
+  "name": "Reducto",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "reducto.ai": 39
+  },
+  "selected": "reducto.ai",
+  "pages_ok": 5,
+  "pages_failed": 1
+ },
+ {
+  "id": 96,
+  "name": "Devin",
+  "identity_flag": "single_domain_name_match",
+  "domains": {
+   "devin.ai": 38
+  },
+  "selected": "devin.ai",
+  "pages_ok": 6,
+  "pages_failed": 0
+ },
+ {
+  "id": 97,
+  "name": "higgsfield",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "higgsfield.ai": 32,
+   "higgsfieldmcp.com": 1,
+   "higgsfield.app": 1
+  },
+  "selected": "higgsfield.ai",
+  "pages_ok": 5,
+  "pages_failed": 1
+ },
+ {
+  "id": 98,
+  "name": "Mermaid CLI",
+  "identity_flag": "no_domain_matched_name",
+  "domains": {},
+  "selected": null,
+  "pages_ok": 0,
+  "pages_failed": 0
+ },
+ {
+  "id": 99,
+  "name": "YouTube Transcript",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "youtube-transcript.io": 1,
+   "downloadyoutubetranscripts.com": 2,
+   "youtube-transcript.ai": 3
+  },
+  "selected": "youtube-transcript.ai",
+  "pages_ok": 0,
+  "pages_failed": 0
+ },
+ {
+  "id": 100,
+  "name": "Grain",
+  "identity_flag": "multiple_candidate_domains_review_identity",
+  "domains": {
+   "grain.inc": 1,
+   "grain.com": 24,
+   "grainql.com": 6,
+   "grainledger.com": 2,
+   "grain.sh": 1,
+   "grain.tools": 1
+  },
+  "selected": "grain.com",
+  "pages_ok": 6,
+  "pages_failed": 0
+ }
+]

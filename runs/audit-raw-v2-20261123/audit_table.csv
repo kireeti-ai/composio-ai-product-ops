@@ -1,0 +1,82 @@
+id,name,has_pass1,verdict,pages,usable,official_usable,auth,access,api,mcp_text,mcp_hits_app,mcp_hits_official,alt_domains,gaps
+1,Salesforce,True,READY_FULL,4,3,3,True,True,True,False,10,10,,
+2,HubSpot,True,READY_FULL,4,4,4,True,True,True,True,10,9,,
+3,Pipedrive,True,READY_FULL,4,4,4,True,True,True,False,10,4,,truncated_pages
+4,Attio,True,READY_FULL,4,4,4,True,True,True,True,9,7,apis.io,
+5,Twenty,True,READY_FULL,4,4,4,True,True,True,True,4,0,github.com;raw.githubusercontent.com,truncated_pages;identity_check_needed
+6,Podio,True,READY_FULL,4,4,4,True,True,True,False,9,1,apis.io,identity_check_needed
+7,Zoho CRM,True,READY_CORE,4,3,3,True,False,True,True,10,8,,no_access_or_pricing_evidence
+8,Close,True,READY_CORE,4,4,4,True,False,True,True,9,3,apitracker.io,no_access_or_pricing_evidence;identity_check_needed
+9,Copper,True,READY_FULL,4,4,4,True,True,True,False,10,3,apis.io;developers.apideck.com;nango.dev,identity_check_needed
+10,DealCloud,True,READY_FULL,4,4,4,True,True,True,True,6,5,developers.anduintransact.com;docs.asteragents.com,
+11,Zendesk,True,READY_FULL,4,4,4,True,True,True,False,9,2,,
+12,Intercom,True,READY_CORE,4,4,4,True,False,True,True,9,3,apis.io;rollout.com,no_access_or_pricing_evidence;truncated_pages
+13,Freshdesk,True,PARTIAL,4,3,3,True,False,False,False,10,4,,no_access_or_pricing_evidence;no_api_surface_evidence;truncated_pages
+14,Front,True,PARTIAL,4,4,3,True,False,True,True,9,6,,no_access_or_pricing_evidence;identity_check_needed
+15,Pylon,False,PARTIAL,4,4,4,True,False,False,False,8,3,docs.arcade.dev,no_access_or_pricing_evidence;no_api_surface_evidence;identity_check_needed
+16,LiveAgent,True,READY_CORE,4,2,2,True,False,True,False,7,6,,no_access_or_pricing_evidence
+17,Plain,True,READY_FULL,4,4,3,True,True,True,True,7,3,,truncated_pages;identity_check_needed
+18,Help Scout,True,READY_CORE,4,4,4,True,False,True,False,8,2,docs.popmcp.com;www.stitchflow.com,no_access_or_pricing_evidence
+19,Gorgias,True,READY_FULL,4,3,3,True,True,True,False,9,3,,
+20,Gladly,False,READY_FULL,4,3,3,True,True,True,False,9,4,,identity_check_needed
+21,Slack,True,READY_FULL,4,4,4,True,True,True,True,9,8,,truncated_pages
+22,Twilio,True,READY_FULL,4,4,3,True,True,True,False,8,4,,truncated_pages
+23,Zoho Cliq,True,READY_FULL,4,4,3,True,True,True,False,9,7,,
+24,Lark (Larksuite),False,PARTIAL,4,4,3,True,True,False,False,10,4,,no_api_surface_evidence;truncated_pages;identity_check_needed
+25,Pumble,False,READY_FULL,4,4,4,True,True,True,True,4,3,github.com,truncated_pages
+26,Discord,False,READY_FULL,4,3,3,True,True,True,False,9,0,,truncated_pages
+27,Telegram,False,READY_FULL,4,4,4,True,True,True,False,10,0,communalytic.org,truncated_pages
+28,WhatsApp Business,True,READY_FULL,4,4,4,True,True,True,False,10,2,,truncated_pages
+29,Aircall,False,READY_FULL,4,4,4,True,True,True,True,9,2,,
+30,Vonage,False,READY_CORE,4,4,4,True,False,True,True,10,10,,no_access_or_pricing_evidence;truncated_pages
+31,Google Ads,False,PARTIAL,4,4,4,True,False,False,True,10,2,,no_access_or_pricing_evidence;no_api_surface_evidence;truncated_pages
+32,Meta Ads,False,READY_FULL,4,4,4,True,True,True,False,9,4,,
+33,LinkedIn Ads,False,READY_FULL,4,3,2,True,True,True,False,10,0,,
+34,GoHighLevel,False,READY_FULL,4,4,2,True,True,True,False,10,6,github.com,truncated_pages
+35,Mailchimp,False,READY_CORE,4,4,4,True,False,True,False,10,2,,no_access_or_pricing_evidence
+36,Klaviyo,False,READY_FULL,4,4,4,True,True,True,False,8,8,,truncated_pages
+37,systeme.io,False,READY_CORE,4,4,3,True,False,True,True,10,9,mindcloud.co,no_access_or_pricing_evidence
+38,Pinterest,False,READY_FULL,4,3,3,True,True,True,False,9,2,breakreach.com,
+39,Threads (Meta),False,READY_FULL,4,4,3,True,True,True,False,10,0,breakreach.com,identity_check_needed
+40,SendGrid,False,READY_CORE,4,4,2,True,False,True,False,9,0,apis.io,no_access_or_pricing_evidence
+41,Shopify,False,READY_FULL,4,4,4,True,True,True,True,8,5,,
+42,WooCommerce,False,READY_CORE,4,4,4,True,False,True,False,10,5,,no_access_or_pricing_evidence;truncated_pages
+43,BigCommerce,False,READY_FULL,4,4,3,True,True,True,False,9,6,,truncated_pages
+44,Salesforce Commerce Cloud,False,READY_FULL,4,3,3,True,True,True,False,9,5,,truncated_pages
+45,Magento (Adobe Commerce),False,READY_CORE,4,4,4,True,False,True,False,9,2,apis.io,no_access_or_pricing_evidence;truncated_pages
+46,Squarespace,False,READY_FULL,4,4,3,True,True,True,False,9,2,docs.micropim.net;docs.popmcp.com,truncated_pages
+47,Ecwid,False,READY_FULL,4,4,3,True,True,True,False,7,0,litextension.com;apis.io,
+48,Gumroad,False,READY_CORE,4,4,4,True,False,True,False,10,3,docs.n8n.io;api.sh;github.com,no_access_or_pricing_evidence
+49,Amazon Selling Partner,True,READY_FULL,4,4,4,True,True,True,False,10,0,,
+50,fanbasis,False,PARTIAL,4,3,2,True,False,True,False,1,0,raw.githubusercontent.com;fanbase-io.gitbook.io;docs.aura-app.ai,identity_conflict_multiple_domains;no_access_or_pricing_evidence;truncated_pages;identity_check_needed
+51,DataForSEO,True,READY_FULL,4,4,4,True,True,True,False,9,8,github.com,truncated_pages
+52,SE Ranking,False,READY_FULL,4,4,4,True,True,True,False,7,3,docs.nexla.com,
+53,Ahrefs,False,READY_FULL,4,3,3,True,True,True,True,9,8,docs.popmcp.com,
+54,MrScraper,False,READY_CORE,4,4,4,True,False,True,True,8,4,,no_access_or_pricing_evidence;truncated_pages
+55,Apify,False,PARTIAL,4,4,4,True,True,True,False,7,6,onegtmlab.dev,identity_conflict_multiple_domains;truncated_pages
+56,Firecrawl,False,READY_FULL,4,4,4,True,True,True,True,8,5,,truncated_pages
+57,Bright Data,False,READY_CORE,4,4,4,True,False,True,True,9,8,,no_access_or_pricing_evidence;truncated_pages
+58,Sherlock,True,PARTIAL,4,4,2,True,True,False,False,8,0,docs.cloudferro.com;docs.mx.com;sher-lock.readthedocs.org,identity_conflict_multiple_domains;no_api_surface_evidence;truncated_pages;identity_check_needed
+59,Waterfall.io,False,READY_CORE,4,4,4,True,False,True,False,6,1,,no_access_or_pricing_evidence;truncated_pages;identity_check_needed
+60,Clay,False,READY_CORE,4,4,4,True,False,True,False,9,1,,no_access_or_pricing_evidence;identity_check_needed
+61,GitHub,False,READY_FULL,4,4,4,True,True,True,False,9,8,,truncated_pages
+62,Vercel,False,READY_FULL,4,4,4,True,True,True,True,10,9,,truncated_pages
+63,Netlify,False,READY_FULL,4,4,4,True,True,True,True,7,5,,truncated_pages
+64,Cloudflare,False,READY_CORE,4,2,2,True,False,True,False,9,8,fusionauth.io;docs.certifytheweb.com;raw.githubusercontent.com,no_access_or_pricing_evidence
+65,Supabase,False,READY_FULL,4,4,4,True,True,True,False,9,9,,truncated_pages
+66,Neo4j,False,READY_FULL,4,4,4,True,True,True,False,8,4,,truncated_pages
+67,Snowflake,False,READY_CORE,4,4,4,True,False,True,False,7,6,,no_access_or_pricing_evidence;truncated_pages
+68,MongoDB Atlas,False,READY_CORE,4,3,3,True,False,True,False,9,7,,no_access_or_pricing_evidence
+69,Datadog,False,PARTIAL,4,4,4,True,True,True,True,9,8,registry.terraform.io,identity_conflict_multiple_domains;truncated_pages
+70,Sentry,False,READY_FULL,4,4,4,True,True,True,False,10,10,github.com,truncated_pages
+71,Notion,False,READY_FULL,4,4,4,True,True,True,False,10,5,,
+72,Airtable,False,READY_FULL,4,4,4,True,True,True,False,10,6,,truncated_pages
+73,Linear,False,READY_FULL,4,2,2,True,True,True,False,9,1,developer.transmitsecurity.com;developers.frontegg.com;apitracker.io,truncated_pages;identity_check_needed
+74,Jira,False,READY_CORE,4,4,3,True,False,True,False,10,3,toolstackpm.com,no_access_or_pricing_evidence;truncated_pages
+75,Asana,False,READY_FULL,4,4,4,True,True,True,False,8,5,,truncated_pages
+76,Monday.com,False,READY_FULL,4,4,4,True,True,True,False,10,10,,
+77,ClickUp,False,READY_CORE,4,3,3,True,False,True,False,10,9,rollout.com;apis.io,no_access_or_pricing_evidence
+78,Coda,False,READY_FULL,4,4,4,True,True,True,False,8,1,apis.io;docs.superhuman.com,truncated_pages;identity_check_needed
+79,Smartsheet,False,PARTIAL,4,3,3,True,False,True,True,10,9,,identity_conflict_multiple_domains;no_access_or_pricing_evidence
+80,Harvest,False,PARTIAL,4,3,2,True,False,False,False,10,1,docs.greenhouse.io;apis.io,no_access_or_pricing_evidence;no_api_surface_evidence;identity_check_needed
+84,Paygent Connect,True,READY_CORE,4,4,4,True,False,True,False,3,0,,no_access_or_pricing_evidence;truncated_pages;identity_check_needed

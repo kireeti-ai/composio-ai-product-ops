@@ -1,0 +1,1115 @@
+[
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://developer.gladly.com/rest",
+  "title": "Gladly API",
+  "snippet": "Like the REST API, the Lookup API is specified using REST semantics, and exchanges JSON requests and responses authenticated and signed with secure keys.",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://developer.gladly.com/llms-full.txt",
+  "title": "developer.gladly.com/llms-full.txt",
+  "snippet": "Like the REST API, the Lookup API is specified using REST semantics, and exchanges JSON requests and responses authenticated and signed with secure keys.",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://developer.gladly.com/tutorials/docusign",
+  "title": "Gladly Developer Developer",
+  "snippet": "**Authenticate:** At this point, you will be asked to authenticate with your Gladly account. This is where you need your Gladly username and API token. If you need help generating an API token, check",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://help.gladly.com/docs/configure-data-retention-settings-and-data-deletion-options",
+  "title": "help.gladly.com/docs/configure-data-retention-settings-and-data-deletion-options",
+  "snippet": "you can use the Gladly API to retrieve a JSON file containing their entire user history.\n1. [Generate](https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks#create-api-tokens) an",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://help.gladly.com/docs/api-export-tool",
+  "title": "help.gladly.com/docs/api-export-tool",
+  "snippet": "address you use to access Gladly.\n- **API Token \u2013** Log into Gladly Team and generate the API Token by going to Setting > API Tokens > Create Token. The token will remain visible for you to",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/configurations",
+  "title": "Apps Configurations",
+  "snippet": "}, \"secrets\": { \"apiToken\": \"my-super-secret-token\" } } }\n```\nFor example, an API that expects the shared secret to be specified in a X-API-Key header would have a corresponding `X-API-Key.gtpl`",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://help.gladly.com/docs/delighted-integration-toolkit",
+  "title": "Delighted Integration Toolkit",
+  "snippet": "tab in your Delighted dashboard. To get started, collect the following data:\n- **API token -** Token is [generated](https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks) in",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/sidekick-app-platform-tutorial",
+  "title": "help.gladly.com/developer-tutorials/docs/sidekick-app-platform-tutorial",
+  "snippet": "In addition, authentication-wise, your OMS just needs the following static header to be supplied across all requests:\n- `apiToken`",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://developer.gladly.com/chat",
+  "title": "Gladly - Documentation",
+  "snippet": "user can be identified by *only one* of: an email address, a phone number or by a User Identity JWT token.\n##### Examples\n```\nGladly.setUser({ name: \"John Smith\", email: \"john.smith@example.com\"",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Classes/Gladly.html",
+  "title": "Gladly Class Reference",
+  "snippet": "- Sets the current user that will be user when communicating with Gladly. If this is set the user does not have to provide email and name. If a user has previously been set, an Error will be thrown",
+  "searched_at": "2026-11-23T17:47:56+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/rest",
+  "title": "Gladly API",
+  "snippet": "An **Agent** represents the user profile of a person who helps customers in Gladly. The API allows you to lookup Agents who participated in conversations with customers.",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/chat",
+  "title": "Gladly - Documentation",
+  "snippet": "#### Initiator_Type\nThe different initiator types that exist:\n- AGENT: represents a Gladly agent\n- API: represents a [Gladly API call](https://developer.gladly.com/rest/)",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/tutorials/csat",
+  "title": "Gladly Developer Developer",
+  "snippet": "To create a webhook in Gladly, you can either use the Webhooks Admin UI in the app, or use the REST API if you wish to do so programmatically.",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com",
+  "title": "Main Home - Gladly Developer",
+  "snippet": "### REST API\nIntegrate seamlessly with Gladly by enabling a connector, calling Gladly's REST APIs, or implementing the Lookup API to provide data from your own services.\n- [Learn",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Classes/Gladly.html",
+  "title": "Gladly Class Reference",
+  "snippet": "Gladly is an API that allow an app to embedd Gladly chat and control it\u2019s behaviour.\nThis class acts as a singleton for the Gladly instance. No more then one instance can be created at any time.",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/llms-full.txt",
+  "title": "developer.gladly.com/llms-full.txt",
+  "snippet": "An **Endpoint** represents an inbound address that customers use to reach your organization \u2014 for example an email address, a phone number, or a chat channel. Each endpoint has a `channel`",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk",
+  "title": "GladlySidekick Reference",
+  "snippet": "Documentation\nThe Chat iOS SDK makes it quick and easy to build a messaging experience in your iOS app. We provide powerful and customizable UI screens and elements that can be used out-of-the-box",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Structs/GladlySettings.html",
+  "title": "GladlySettings Structure Reference",
+  "snippet": "- Initializes the GladlySettings with a specified appId. This also initializes the uiConfiguration with default values.",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Structs/UIConfiguration.html",
+  "title": "UIConfiguration Structure Reference",
+  "snippet": "# UIConfiguration\n```\npublic struct UIConfiguration\n```\nThe UI values that can be configured\n- The font used within the Chat header. Default is the system font of size 18. Chat messages will use",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "REST API reference site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Protocols/GladlyUnreadCountDelegate.html",
+  "title": "GladlyUnreadCountDelegate Protocol Reference",
+  "snippet": ": AnyObject\n```\nDelegate protocol for events related to the number of unread messages.\n- Notifies the delegate when the number of unread messages changes.\n#### Declaration\nSwift\n```",
+  "searched_at": "2026-11-23T17:47:57+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/rest",
+  "title": "Gladly API",
+  "snippet": "API tokens are associated with designated Gladly users. To create and use an API token, your user must have the API User permission. An API token can be used to perform any API request",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/android-sdk/10-com.gladly.androidchatsdk/-gladly/index.html",
+  "title": "Gladly Developer",
+  "snippet": "Gladly is a singleton instance which exposes an API which will allow an app to embed Gladly chat and configure it's behaviour.",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/llms-full.txt",
+  "title": "developer.gladly.com/llms-full.txt",
+  "snippet": "Users with API User permissions can configure webhooks by navigating to Integrations > Webhooks.",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com",
+  "title": "Main Home - Gladly Developer",
+  "snippet": "### REST API\nIntegrate seamlessly with Gladly by enabling a connector, calling Gladly's REST APIs, or implementing the Lookup API to provide data from your own services.",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/android-sdk/10-com.gladly.androidchatsdk/index.html",
+  "title": "androidchatsdk / Chat Android SDK",
+  "snippet": "Gladly is a singleton instance which exposes an API which will allow an app to embed Gladly chat and configure it's behaviour.",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/chat/Gladly.html",
+  "title": "Gladly - Documentation",
+  "snippet": "The Gladly Chat API enables you to have programmatic control of the Gladly Chat.",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/chat/",
+  "title": "Gladly - Documentation",
+  "snippet": "The Gladly Chat API enables you to have programmatic control of the Gladly Chat. A user can be identified by only one of: an email address, a phone number or ...",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/android-sdk/",
+  "title": "Here's how to integrate Gladly's Android Chat SDK",
+  "snippet": "The Gladly Android Chat SDK is compatible with devices running Q (API 29) and above. In your main application's onCreate(..) , setup Gladly and pass in ...",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Classes/Gladly.html",
+  "title": "Gladly Class Reference",
+  "snippet": "- Sets the current user that will be user when communicating with Gladly. If this is set the user does not have to provide email and name. If a user has previously been set, an Error will be thrown",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Chat%20iOS%20SDK.html",
+  "title": "Chat iOS SDK Reference",
+  "snippet": "- Gladly is an API that allow an app to embedd Gladly chat and control it\u2019s behaviour.\nThis class acts as a singleton for the Gladly instance. No more then one instance can be created at any time.",
+  "searched_at": "2026-11-23T17:47:59+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/rest",
+  "title": "Gladly API",
+  "snippet": "your user must have the API User permission. An API token can be used to perform any API request without restriction.\n| user name | password |\n|---|---|\n| agent email | API token |\nThe",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Classes/Gladly.html",
+  "title": "Gladly Class Reference",
+  "snippet": "Gladly is an API that allow an app to embedd Gladly chat and control it\u2019s behaviour.\nThis class acts as a singleton for the Gladly instance. No more then one instance can be created at any time.",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com",
+  "title": "Main Home - Gladly Developer",
+  "snippet": "seamlessly with Gladly by enabling a connector, calling Gladly's REST APIs, or implementing the Lookup API to provide data from your own services.\n- [Learn more](https://developer.gladly.com/rest/)",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/llms-full.txt",
+  "title": "developer.gladly.com/llms-full.txt",
+  "snippet": "any API request without restriction.\n| user name   | password  |\n| ----------- | --------- |\n| agent email | API token |\nThe credentials must be passed via an `Authorization` HTTP header. All",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Structs/GladlySettings.html",
+  "title": "GladlySettings Structure Reference",
+  "snippet": "be passed when initializing Gladly.\n- The environment specifies where Gladly should connect. Possible values are:\n- \u201cPROD\u201d - Gladly Production cluster\n- \u201cSTAGING\u201d - Gladly integration test cluster",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/chat/Gladly.html",
+  "title": "Gladly - Documentation",
+  "snippet": "wss://ws.us-uat.gladly.chat https://gladly-staging.sinter-collect.com https://js.verygoodvault.com https://js2.verygoodvault.com;\nframe-src https://js.verygoodvault.com",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/tutorials/lookup",
+  "title": "Gladly Developer Developer",
+  "snippet": "(consider [ngrok](https://ngrok.com/))\n- User account with an administrator role in a Gladly sandbox or use [Postman](https://www.postman.com/) (if you just want to get the responses formatted",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Structs/UIConfiguration.html",
+  "title": "UIConfiguration Structure Reference",
+  "snippet": "# UIConfiguration\n```\npublic struct UIConfiguration\n```\nThe UI values that can be configured",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Structs/UIHeaderConfiguration.html",
+  "title": "UIHeaderConfiguration Structure Reference",
+  "snippet": "# UIHeaderConfiguration",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:developer.gladly.com",
+  "url": "https://developer.gladly.com/ios-sdk/Enums/GladlySettingsError.html",
+  "title": "GladlySettingsError Enumeration Reference",
+  "snippet": "\n```\npublic enum GladlySettingsError : Error\n```\nGladlySettings errors that can be thrown.\n- appId is missing or empty.\n#### Declaration\nSwift\n```\ncase missingAppId\n```\n- environment value",
+  "searched_at": "2026-11-23T17:48:01+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/setup-and-testing",
+  "title": "Testing and Iteration - Gladly Connect",
+  "snippet": "API tokens are associated with designated Gladly users. To create and use an API token, your user must have the API User permission. An API token can be used to perform any API request",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/implementation/article/get-your-api-tokens",
+  "title": "Get Your API Tokens",
+  "snippet": "the top left, then click** Settings**.\n3. Under **App Developer Tools**, click on** API Token**.\n4. Click **Create Token**. A new token is immediately generated within the page.\n5. Add a meaningful",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-thankful-integration",
+  "title": "Set Up Thankful Integration",
+  "snippet": "**Add Gladly Token to Gladly Sidekick Dashboard**\nThe Gladly user and API token you generated above need to be added to Gladly Sidekick Dashboard. This can be done under the API tokens tab of",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-hioperator-integration",
+  "title": "Set Up HiOperator Integration",
+  "snippet": "address of the Gladly user you created for the HiOperator integration.\n- The API token is generated using the Gladly user account you created.\n- The name of the Inbox you created for HiOperator.\n-",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help/article/generate-api-tokens-and-create-webhooks",
+  "title": "Generate API tokens and Create Webhooks",
+  "snippet": "Under the **App Developer Tools** category, click **API tokens**. The API tokens page will show you a list of currently available API tokens.\n4. Click **Create Token**.\n5. A new token is immediately",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-netomi-integration",
+  "title": "Set Up Netomi Integration - Gladly Connect",
+  "snippet": "user is created, log in as the newly created user and [create the API token](https://connect.gladly.com/docs/help-documentation/article/generate-api-tokens-and-create-webhooks/#h-create-api-tokens).",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-fivetran-integration",
+  "title": "Set Up Fivetran Integration - Gladly Connect",
+  "snippet": "to create an API token associated with the user just created in step 1.\n- **Note \u2013** Remember to save the token as",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs2/other-resources/postman",
+  "title": "Test the REST API With Postman - Gladly Connect",
+  "snippet": "email) and Password (the Gladly API token you just generated).\n6. Select your HTTP request method (e.g., for [GET Organziations](https://developer.gladly.com/rest/#operation/getOrganization) this is",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-simplesat-integration",
+  "title": "Set Up Simplesat Integration - Gladly Connect",
+  "snippet": "- This is a two-part configuration process that must be done in sequential order:\n- **Link Simplesat to Gladly \u2013** Create the API Token in Gladly to authenticate with Simplesat",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/app-platform-tutorial",
+  "title": "App Platform Tutorial - Gladly Connect",
+  "snippet": "```javascript\nappcfg run data-pull -s '{\"apiToken\": \"token\"}'\n```",
+  "searched_at": "2026-11-23T17:48:03+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/analyze-freeform-topics-attributes",
+  "title": "Analyze Freeform Topics Attributes - Gladly Connect",
+  "snippet": "\nAccess Freeform Topics applied to Conversations via the [getConversation ](https://developer.gladly.com/rest/#section/Conversation-Items)API. The response from the API will include the attributes",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs2/answers-rest-api-tutorials/manage-public-answers",
+  "title": "Manage Public Answers - Gladly Connect",
+  "snippet": "*English \u2013 United Kingdom* as an Answer Language.\n3. Get the Audience\u2019s identifier for \u201cRetale UK\u201d through the [GET List Audiences](https://developer.gladly.com/rest/#operation/getAudiences) API.\n4.",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/app-actions-for-app-platform",
+  "title": "App Actions For App Platform - Gladly Connect",
+  "snippet": "### High-Level Approach #\n- Identify the inputs and outputs of the REST API for the Action that you would like to make available to the Gladly platform.\n- Create the request URL, header and/or body",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://developer.gladly.com/rest",
+  "title": "Gladly API",
+  "snippet": "An **Agent** represents the user profile of a person who helps customers in Gladly. The API allows you to lookup Agents who participated in conversations with customers.",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs2/designing-your-integration/technical-planning",
+  "title": "Technical Planning - Gladly Connect",
+  "snippet": "via HTTPS at your organization\u2019s Gladly domain, such as\nYour sandbox environment will be accessible at\n**Text**\n```",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/app-actions",
+  "title": "App Actions - Gladly Connect",
+  "snippet": "To configure Actions, your Customer lookup service should respond to the Detailed Lookup request by returning an array of actions per Profile and Transaction.",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs2/other-resources/postman",
+  "title": "Test the REST API With Postman - Gladly Connect",
+  "snippet": "A quick way to test and get familiar with the Gladly REST API is to utilize [Postman](https://www.postman.com/), an API debugging tool.",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs2/lookup-adaptor/request-signing",
+  "title": "Request Signing - Gladly Connect",
+  "snippet": "With an example lookup to:\n**Text**\n```\nhttps://example.organization.com/api/v2/customer/lookup\n```\nWith signing key:\n**Text**\n```\ntest-apikey-1\n```",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/lookup-adapter-requests",
+  "title": "Auto-Linking, Basic Search and Detailed Lookup - Gladly Connect",
+  "snippet": "     ],\n\"phones\": [\n{\n\"original\": \"+11234567890\",\n\"type\": \"MOBILE\"\n}\n]\n}\n]\n}\n```\n- Each response is an Object, with a single key called",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "REST API reference site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/netomi-integration-toolkit",
+  "title": "Netomi Integration Toolkit",
+  "snippet": "| 1. Update status to mark Conversation CLOSED. 2. Update assignee or Inbox id for the conversation. | PATCH \u2013 /api/v1/conversations/{conversationId} |\n| Get Conversation Item Details | Get",
+  "searched_at": "2026-11-23T17:48:06+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/setup-and-testing",
+  "title": "Testing and Iteration - Gladly Connect",
+  "snippet": "API tokens are associated with designated Gladly users. To create and use an API token, your user must have the API User permission. An API token can be used to perform any API request",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-spree-integration",
+  "title": "Set Up Spree Integration",
+  "snippet": "You must first create a Gladly user account with at least an API User role. This account will own the API token you need to set up the Spree extension.\n1. See [Generate API",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/implementation/article/get-your-api-tokens",
+  "title": "Get Your API Tokens",
+  "snippet": "to use the Gladly APIs for security and authentication purposes. These can be created within the Gladly UI, for users who have the `API User`role.\n## Goals #\nHave at least one technical",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help/article/generate-api-tokens-and-create-webhooks",
+  "title": "Generate API tokens and Create Webhooks",
+  "snippet": "to use explicitly to create and attach webhooks or tokens.\n- Be sure to add the user with at least an API User role + Agent and/or Administrator. If this user needs access to reports, they\u2019ll need",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-delighted-integration",
+  "title": "Set Up Delighted Integration",
+  "snippet": "| **REQUIRED USER ROLE** Administrator and API User |\n|---|",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-formspree-integration",
+  "title": "Set Up Formspree Integration",
+  "snippet": "account.\n- Assign this user the *Administrator*, *Agent*, and *API User* roles.\n- Use an email address you can access to set the password for the user",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-playvox-integration",
+  "title": "Set Up Playvox Integration",
+  "snippet": "To learn how to create users with the API User permission, [click",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-qualtrics-integration",
+  "title": "Set Up Qualtrics Integration",
+  "snippet": "with API Access that is only used for this Qualtrics integration (i.e., [[email protected]](/cdn-cgi/l/email-protection))\n2. [Generate an API",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-fivetran-integration",
+  "title": "Set Up Fivetran Integration - Gladly Connect",
+  "snippet": "integration user.\n1. Add Email Address\n2. Add Full Name\n3. Select Roles: API User role, Agent, and Administrator\n4. Click** Add User** to save the user.\n2. Follow the Create API tokens",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/set-up-netomi-integration",
+  "title": "Set Up Netomi Integration - Gladly Connect",
+  "snippet": "- You\u2019ll need to have Gladly Administrator access to create users and assign Inboxes in Gladly.",
+  "searched_at": "2026-11-23T17:48:07+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs2/designing-your-integration/technical-planning",
+  "title": "Technical Planning - Gladly Connect",
+  "snippet": "API](https://developer.gladly.com/rest/#section/Overview/REST-API) via HTTPS at your organization\u2019s Gladly domain, such as\nYour sandbox environment will be accessible at\n**Text**\n```",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/implementation/article/environment-access",
+  "title": "Environment Access",
+  "snippet": "API access on Gladly. For customers who have both sandbox and production, we will grant access to both environments. We recommend keeping to the project team only until you are ready for agent",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs2/technical-requirements/network-requirements",
+  "title": "Network Requirements",
+  "snippet": "(added in 2021)\n34.226.104.158 (added in 2021)\n52.44.26.29 (added in 2021)\n**Sandbox (if you have access to one)**\n34.226.187.43 (added in 2021)\n34.227.54.194 (added in 2021)\n",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://developer.gladly.com/rest",
+  "title": "Gladly API",
+  "snippet": "your user must have the API User permission. An API token can be used to perform any API request without restriction.\n| user name | password |\n|---|---|\n| agent email | API token |\nThe",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help/article/generate-api-tokens-and-create-webhooks",
+  "title": "Generate API tokens and Create Webhooks",
+  "snippet": "tokens or webhooks.\n- API tokens are tied to a single user account and a particular environment. For example, an API token attached to Gladly user *[[email protected]](/cdn-cgi/l/email-protection)* in",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/setup-and-testing",
+  "title": "Testing and Iteration - Gladly Connect",
+  "snippet": "\n1. Log in to your **Gladly instance**.\n2. Open the **menu** on the top left-hand corner of the page.\n3. Navigate to **Settings > Users**.\n4. Search and click the **user profile** that should have",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/best-practices",
+  "title": "Best Practices - Gladly Connect",
+  "snippet": "signing\u200b\n- **Consider Only Allowing Gladly IP Addresses to Access Your Lookup Adaptor:** Gladly makes requests to your Lookup Adaptor using a set of [static IP",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/october-releases-23",
+  "title": "October Releases - Gladly Connect",
+  "snippet": "**Sandbox/UAT**\n- Add: `connect-src [<https://api.us-uat.gladly.chat>](<https://api.us-uat.gladly.chat/>) wss://ws.us-uat.gladly.chat`\n- Add: `connect-src",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/help-documentation/article/november-releases",
+  "title": "November Releases - Gladly Connect",
+  "snippet": "**Sandbox/UAT**\n```\n<strong>Add:</strong> connect-src https://api.us-uat.gladly.chat wss://ws.us-uat.gladly.chat https://chat-assets.cdn.gladly.qa https://chat-sdk.cdn.gladly.qa\n<strong>Add:</strong>",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:connect.gladly.com",
+  "url": "https://connect.gladly.com/docs/developer-tutorials/article/app-platform-tutorial",
+  "title": "App Platform Tutorial - Gladly Connect",
+  "snippet": "```javascript\nappcfg run data-pull -s '{\"apiToken\": \"token\"}'\n```",
+  "searched_at": "2026-11-23T17:48:09+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/advanced-integrations",
+  "title": "help.gladly.com/implementation/docs/advanced-integrations",
+  "snippet": "API tokens are required to use the Gladly APIs for security and authentication purposes. These can be created within the Gladly UI, for users who have the API User role. Goals Have at least...",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+  "title": "Get Your API tokens",
+  "snippet": "API tokens are required to use the Gladly APIs for security and authentication purposes. These can be created within the Gladly UI, for users who have the `API User` role.\n## Goals\nHave at least one",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/manage-app-integrations",
+  "title": "Manage App Integrations - Gladly Help and Product Docs",
+  "snippet": "API tokens are required to use Gladly APIs for security and authentication purposes. Tokens can be accessed and created by users who at least have an API user ...",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "title": "help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "snippet": "the **App Developer Tools** category, click **API tokens**. The API tokens page will show you a list of currently available API tokens.\n4. Click **Create Token**.\n5. A new token is immediately",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/appcfg-apps-install",
+  "title": "Install an App",
+  "snippet": "\n`-u, --user` \u2013 The email of the Gladly user that created the API token\n`-t, --token` \u2013 The API token used for authentication, which can be created via Admin \u2192 App Developer Tools \u2192 API Tokens\n",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-channelreply",
+  "title": "help.gladly.com/docs/set-up-channelreply",
+  "snippet": "open the main menu from the top-left corner and click Settings.\n1. Under App Developer Tools, click API Tokens.\n2. Create a new API token.\n3. Copy the token and set it aside. You'll paste it",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "title": "Setup and Testing",
+  "snippet": "2. Click **API tokens** then **Add Token** button on the upper right-hand corner of the page.\n3. A token will be generated and named **New Token** by default.\n- If you have **existing tokens**, it",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/developer/docs/postman",
+  "title": "Test the REST API With Postman",
+  "snippet": "Gladly API Token\nNext, login to Gladly as a user with API User permission and [generate an API token](https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks?#create-api-tokens) for",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-simplesat-integration",
+  "title": "Set Up Simplesat Integration",
+  "snippet": "- **Link Simplesat to Gladly \u2013** Create the API token in Gladly to authenticate with Simplesat",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/loop-subscriptions-installation",
+  "title": "Loop Subscriptions Installation",
+  "snippet": "email of a Gladly user with Administrator or API User permissions\n- Gladly API Token: A personal API token for the user above\nTo generate your token, follow [Gladly\u2019s API Token",
+  "searched_at": "2026-11-23T17:48:11+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/developer/docs/technical-planning",
+  "title": "Technical Planning",
+  "snippet": "You can access the [REST API](https://developer.gladly.com/rest/#section/Overview/REST-API) via HTTPS at your organization's Gladly domain, such as\n```\nhttps://{organization}.gladly.com\n```\n",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/add-and-configure-quick-reply-buttons",
+  "title": "help.gladly.com/docs/add-and-configure-quick-reply-buttons",
+  "snippet": "\nUse *conversationItemId* using the [GET Item API](https://developer.gladly.com/rest/#operation/getItem) where content.type will be *CHAT_MESSAGE,* and the content.messageType",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/november-2025-releases",
+  "title": "November Releases - Gladly Help and Product Docs",
+  "snippet": "Send Emails Outside of a Conversation via API. You can now send emails to Customers outside of an active Conversation using the Gladly REST API.",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/2025-releases",
+  "title": "2025 Release Notes - Gladly Help and Product Docs",
+  "snippet": "November 19, 2025 Send Emails Outside of a Conversation via API You can now send emails to Customers outside of an active Conversation using the Gladly REST API ...",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/ingest-conversation-contents",
+  "title": "help.gladly.com/developer-tutorials/docs/ingest-conversation-contents",
+  "snippet": "export\nUse the below data as a reference.\n**URL:** [GET File API](https://developer.gladly.com/rest/#operation/getFile) **Filters:** N/A **Cadence:** 24 hours **Available For:** 14 days",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/delete-customer-profiles",
+  "title": "Delete Customer Profiles",
+  "snippet": "Delete Customer Profiles individually or in bulk using the [Delete Customer API](https://developer.gladly.com/rest/#operation/deleteCustomer), removing all Customer records and all associated",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/",
+  "title": "Gladly Help and Product Docs",
+  "snippet": "How can we help you? ; Developer. REST APIs, SDKs, and more. Visit Developer ; Academy. Certification and courses for CX practitioners, enthusiasts, and ...",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/siena-ai-integration-toolkit",
+  "title": "help.gladly.com/docs/siena-ai-integration-toolkit",
+  "snippet": "API.\n- Add Topic to a Conversation using the [Add Topic to Conversation](https://developer.gladly.com/rest/#operation/addTopicToConversation) API.",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/app-building-how-to",
+  "title": "help.gladly.com/developer-tutorials/docs/app-building-how-to",
+  "snippet": "App platform apps utilize REST based APIs exposed by external systems in order to retrieve data as well as take actions in those systems. An App Platform App defines go text templates for",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "REST API reference site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/api-export-tool",
+  "title": "help.gladly.com/docs/api-export-tool",
+  "snippet": "Tool Portal is a web-based application that provides a user-friendly GUI wrapper around Gladly's REST APIs. It enables customers and support teams to perform common API operations without",
+  "searched_at": "2026-11-23T17:48:12+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "title": "help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "snippet": "API tokens are required to use Gladly APIs for security and authentication purposes. Tokens can be accessed and created by users who at least have an API user",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "title": "Setup and Testing",
+  "snippet": "designated Gladly users. Your user must have the API user permission to create and use an API token. An API token can be used to perform any API request without restriction.\nThe credentials must be",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/advanced-integrations",
+  "title": "help.gladly.com/implementation/docs/advanced-integrations",
+  "snippet": "API tokens are required to use the Gladly APIs for security and authentication purposes. These can be created within the Gladly UI, for users who have the API User role. Goals Have at least...",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+  "title": "Get Your API tokens",
+  "snippet": "API tokens are required to use the Gladly APIs for security and authentication purposes. These can be created within the Gladly UI, for users who have the `API User` role.",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks?highlight=webhook",
+  "title": "Generate API Tokens and Create Webhooks",
+  "snippet": "security and authentication purposes. Tokens can be accessed and created by users who at least have an API user [role](https://help.gladly.com/docs/managing-users-and-roles).\n## Before you start\n-",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-playvox-integration",
+  "title": "help.gladly.com/docs/set-up-playvox-integration",
+  "snippet": "To learn how to create users with the API User permission, [click",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-emplifi-integration",
+  "title": "Set Up Emplifi Integration",
+  "snippet": "Agent,* and *API User* roles.\n- Use an email address you can access to set the password for the user account.\n2. Once the user account is created, log into Gladly to [create an API",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-idiomatic-integration",
+  "title": "Set Up Idiomatic Integration",
+  "snippet": "integration. Follow the steps below to create a new user and generate an API token.\n1. [Create a user](https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks) account and assign the",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-hioperator-integration",
+  "title": "Set Up HiOperator Integration",
+  "snippet": "The email address of the Gladly user you created for the HiOperator integration.\n- The API token is generated using the Gladly user account you created.\n- The name of the Inbox you created for",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-spree-integration",
+  "title": "Set Up Spree Integration",
+  "snippet": "- You must use an \"HTTPS\" protocol.\n- **Username \u2013** Enter the email address of the account you created in Gladly.\n- **Password \u2013** Enter the API token you generated in Gladly.",
+  "searched_at": "2026-11-23T17:48:15+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/april-2025-releases",
+  "title": "April Releases - Gladly Help and Product Docs",
+  "snippet": "Announcement of upcoming features and product news for Sandbox users. [Early Access] Effortless Translation for Agents Across Channels.",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/october-2025-releases",
+  "title": "October Releases - Gladly Help and Product Docs - Gladly AI",
+  "snippet": "... API key authentication method. This week, the new actions and API key authentication are available exclusively in Sandbox/UAT environments. Customers with ...",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/technical-planning",
+  "title": "Technical Planning",
+  "snippet": "can access the [REST API](https://developer.gladly.com/rest/#section/Overview/REST-API) via HTTPS at your organization's Gladly domain, such as\nYour sandbox environment will be accessible via the URL",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/app-platform-overview",
+  "title": "help.gladly.com/developer-tutorials/docs/app-platform-overview",
+  "snippet": "Thanks to `appcfg`, you can develop apps, even without a Gladly Sandbox environment. When you are ready to test your app, contact Gladly Support or whenever you have questions or need guidance while",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/environment-access",
+  "title": "Environment Access",
+  "snippet": "team will set them up as administrators with API access on Gladly. For customers who have both sandbox and production, we will grant access to both environments. We recommend keeping to the",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/network-requirements",
+  "title": "help.gladly.com/docs/network-requirements",
+  "snippet": "application | Gladly won't work without this. |\n| *.gladly.qa | 443/TCP | https | Yes | DigiCert SHA2 Secure Server CA | Gladly sandbox | Gladly QA won't work without this. |\n| app.getsentry.com |",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "title": "Setup and Testing",
+  "snippet": "\n1. Log in to your **Gladly instance**.\n2. Open the **menu** on the top left-hand corner of the page.\n3. Navigate to **Settings > Users**.\n4. Search and click the **user profile** that should have",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "title": "help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "snippet": "the screen.\n2. Click **Settings**.\n3. Under the **App Developer Tools** category, click **API tokens**. The API tokens page will show you a list of currently available API tokens.\n4. Click **Create",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/appcfg-apps-install",
+  "title": "Install an App",
+  "snippet": "\n`-u, --user` \u2013 The email of the Gladly user that created the API token\n`-t, --token` \u2013 The API token used for authentication, which can be created via Admin \u2192 App Developer Tools \u2192 API Tokens\n",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:help.gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/difference-between-sandbox-and-production",
+  "title": "Difference Between Sandbox and Production",
+  "snippet": "Some implementation packages include a Sandbox environment. If it does, you'll have access to an environment with an address like acme.gladly.qa ...",
+  "searched_at": "2026-11-23T17:48:16+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+  "title": "Get Your API tokens - Gladly Help and Product Docs",
+  "snippet": "API tokens are required to use the Gladly APIs for security and authentication purposes. These can be created within the Gladly UI.",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://developer.gladly.com/rest/",
+  "title": "REST API - Gladly Developer",
+  "snippet": "Gladly API uses token-based Basic Authentication. API tokens are associated with designated Gladly users. To create and use an API token, your user must have ...",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "title": "Generate API Tokens and Create Webhooks",
+  "snippet": "API tokens are required to use Gladly APIs for security and authentication purposes. Learn how to create API tokens and webhooks in Gladly.",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "title": "Setup and Testing - Gladly Help and Product Docs",
+  "snippet": "Gladly API uses token-based Basic Authentication. API tokens are associated with designated Gladly users. Your user must have the API user ...",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/advanced-integrations",
+  "title": "Advanced Integrations - Gladly Help and Product Docs - Gladly AI",
+  "snippet": "Background API tokens are required to use the Gladly APIs for security and authentication purposes. These can be created within the Gladly UI, for users who ...",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://help.gladly.com/docs/migrating-to-new-auth",
+  "title": "Migrating to API Keys - Gladly Help and Product Docs - Gladly AI",
+  "snippet": "The guide below outlines how to migrate your existing Ordergroove App to the new authentication method. The process is quick \u2014 it typically takes no more than ...",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://help.gladly.com/docs/rydership-app-platform-installation",
+  "title": "RyderShip App Platform Installation - Gladly Help and Product Docs",
+  "snippet": "Refresh Token: RyderShip authenticates using OAuth2, so unlike a static API key, this requires a one-time manual authorization step to generate.",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://help.gladly.com/docs/manage-app-integrations",
+  "title": "Manage App Integrations - Gladly Help and Product Docs",
+  "snippet": "API tokens are required to use Gladly APIs for security and authentication purposes. Tokens can be accessed and created by users who at least have an API user ...",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "API authentication API tokens site:gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+  "title": "Set up MCP connections - Gladly Help and Product Docs",
+  "snippet": "The type of authentication the server uses: none, bearer token, API key, or OAuth (authorization code or client credentials). The credentials ...",
+  "searched_at": "2026-11-23T17:48:18+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/technical-planning",
+  "title": "Technical Planning",
+  "snippet": "## Gladly REST API\nYou can access the [REST API](https://developer.gladly.com/rest/#section/Overview/REST-API) via HTTPS at your organization's Gladly domain, such as\nYour sandbox environment will",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://developer.gladly.com/rest",
+  "title": "Gladly API",
+  "snippet": "An **Agent** represents the user profile of a person who helps customers in Gladly. The API allows you to lookup Agents who participated in conversations with customers.",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/ingest-conversation-contents",
+  "title": "help.gladly.com/developer-tutorials/docs/ingest-conversation-contents",
+  "snippet": "export\nUse the below data as a reference.\n**URL:** [GET File API](https://developer.gladly.com/rest/#operation/getFile) **Filters:** N/A **Cadence:** 24 hours **Available For:** 14 days",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/app-building-how-to",
+  "title": "help.gladly.com/developer-tutorials/docs/app-building-how-to",
+  "snippet": "App platform apps utilize REST based APIs exposed by external systems in order to retrieve data as well as take actions in those systems. An App Platform App defines go text templates for",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://help.gladly.com/docs/add-and-configure-quick-reply-buttons",
+  "title": "help.gladly.com/docs/add-and-configure-quick-reply-buttons",
+  "snippet": "\nUse *conversationItemId* using the [GET Item API](https://developer.gladly.com/rest/#operation/getItem) where content.type will be *CHAT_MESSAGE,* and the content.messageType",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://help.gladly.com/docs/2025-releases",
+  "title": "2025 Release Notes - Gladly Help and Product Docs",
+  "snippet": "November 19, 2025 Send Emails Outside of a Conversation via API You can now send emails to Customers outside of an active Conversation using the Gladly REST API ...",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://help.gladly.com/",
+  "title": "Gladly Help and Product Docs",
+  "snippet": "How can we help you? ; Developer. REST APIs, SDKs, and more. Visit Developer ; Academy. Certification and courses for CX practitioners, enthusiasts, and ...",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://developer.gladly.com",
+  "title": "Main Home - Gladly Developer",
+  "snippet": "### REST API\nIntegrate seamlessly with Gladly by enabling a connector, calling Gladly's REST APIs, or implementing the Lookup API to provide data from your own services.\n- [Learn",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://developer.gladly.com/tutorials/csat",
+  "title": "Gladly Developer Developer",
+  "snippet": "To create a webhook in Gladly, you can either use the Webhooks Admin UI in the app, or use the REST API if you wish to do so programmatically.",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "REST API reference site:gladly.com",
+  "url": "https://help.gladly.com/docs/api-export-tool",
+  "title": "help.gladly.com/docs/api-export-tool",
+  "snippet": "Tool Portal is a web-based application that provides a user-friendly GUI wrapper around Gladly's REST APIs. It enables customers and support teams to perform common API operations without",
+  "searched_at": "2026-11-23T17:48:20+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://developer.gladly.com/rest/",
+  "title": "REST API - Gladly Developer",
+  "snippet": "Gladly Administrators can set API permissions on an agent-by-agent basis. We'll discuss how this maps to API access in the section on authentication below. To ...",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+  "title": "Get Your API tokens - Gladly Help and Product Docs",
+  "snippet": "API tokens are required to use the Gladly APIs for security and authentication purposes. These can be created within the Gladly UI.",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "title": "Generate API Tokens and Create Webhooks",
+  "snippet": "Be sure to add the user with at least an API User role + Agent and/or Administrator. If this user needs access to reports, they'll need ...",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "title": "Setup and Testing - Gladly Help and Product Docs",
+  "snippet": "To allow a user to create API tokens and access the API: \u00b7 We recommend creating a dedicated user to make API calls whose account won't be used ...",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-playvox-integration",
+  "title": "Set Up Playvox Integration - Gladly Help and Product Docs",
+  "snippet": "Start by making sure you have a Gladly user account that has access to create API tokens. To learn how to create users with the API User ...",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-simplesat-integration",
+  "title": "Set Up Simplesat Integration - Gladly Help and Product Docs",
+  "snippet": "Assign this user the Administrator, Agent, and API User roles. Use an email address you can access to set the password for the user account.",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-idiomatic-integration",
+  "title": "Set Up Idiomatic Integration - Gladly Help and Product Docs",
+  "snippet": "Create a user account and assign the API User, Agent, and Administrator roles. Create API tokens instructions to create an API token associated ...",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-emplifi-integration",
+  "title": "Set Up Emplifi Integration - Gladly Help and Product Docs",
+  "snippet": "You must first create a Gladly user account and generate an API token to begin the integration process. ... Use an email address you can access to ...",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-spree-integration",
+  "title": "Set Up Spree Integration - Gladly Help and Product Docs",
+  "snippet": "You must first create a Gladly user account with at least an API User role. This account will own the API token you need to set up the Spree ...",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "API access requirements who can create API users site:gladly.com",
+  "url": "https://help.gladly.com/docs/set-up-hioperator-integration",
+  "title": "Set Up HiOperator Integration",
+  "snippet": "You must first create a Gladly user account and generate an API token to begin the integration process. Let's start by creating a new user. Create a user.",
+  "searched_at": "2026-11-23T17:48:21+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://help.gladly.com/docs/october-2025-releases",
+  "title": "October Releases - Gladly Help and Product Docs - Gladly AI",
+  "snippet": "... API key authentication method. This week, the new actions and API key authentication are available exclusively in Sandbox/UAT environments. Customers with ...",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://help.gladly.com/docs/april-2025-releases",
+  "title": "April Releases - Gladly Help and Product Docs",
+  "snippet": "Announcement of upcoming features and product news for Sandbox users. [Early Access] Effortless Translation for Agents Across Channels.",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/technical-planning",
+  "title": "Technical Planning",
+  "snippet": "can access the [REST API](https://developer.gladly.com/rest/#section/Overview/REST-API) via HTTPS at your organization's Gladly domain, such as\nYour sandbox environment will be accessible via the URL",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://developer.gladly.com/rest",
+  "title": "Gladly API",
+  "snippet": "your user must have the API User permission. An API token can be used to perform any API request without restriction.\n| user name | password |\n|---|---|\n| agent email | API token |\nThe",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://developer.gladly.com/chat",
+  "title": "Gladly - Documentation",
+  "snippet": "### Working with Sandbox / Staging Environment\nYou can use our sandbox environment to test upcoming Chat-SDK releases or new configuration on your staging site. To launch the Gladly Chat on your",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "title": "Setup and Testing",
+  "snippet": "\n1. Log in to your **Gladly instance**.\n2. Open the **menu** on the top left-hand corner of the page.\n3. Navigate to **Settings > Users**.\n4. Search and click the **user profile** that should have",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://developer.gladly.com/llms-full.txt",
+  "title": "developer.gladly.com/llms-full.txt",
+  "snippet": "any API request without restriction.\n| user name   | password  |\n| ----------- | --------- |\n| agent email | API token |\nThe credentials must be passed via an `Authorization` HTTP header. All",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "title": "help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "snippet": "the screen.\n2. Click **Settings**.\n3. Under the **App Developer Tools** category, click **API tokens**. The API tokens page will show you a list of currently available API tokens.\n4. Click **Create",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://help.gladly.com/developer-tutorials/docs/appcfg-apps-install",
+  "title": "Install an App",
+  "snippet": "\n`-u, --user` \u2013 The email of the Gladly user that created the API token\n`-t, --token` \u2013 The API token used for authentication, which can be created via Admin \u2192 App Developer Tools \u2192 API Tokens\n",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ },
+ {
+  "q": "developer sandbox access API site:gladly.com",
+  "url": "https://help.gladly.com/docs/redo-app-platform-installation",
+  "title": "help.gladly.com/docs/redo-app-platform-installation",
+  "snippet": "Developer.\n- In Redo, open **Settings > Developer** and create a dedicated API token for Gladly with **Create API token**. Scope it to **Returns > Read** and **Orders > Read** for the Card, order",
+  "searched_at": "2026-11-23T17:48:26+05:30"
+ }
+]

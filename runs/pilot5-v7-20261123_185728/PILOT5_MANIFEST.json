@@ -1,0 +1,94 @@
+{
+ "created": "2026-11-23T18:59:20+0530",
+ "pilot": "five-app extraction-only pipeline SMOKE TEST (not a representative accuracy evaluation)",
+ "execution_authorized": false,
+ "execution_authorization_mechanism": "live run requires <run_dir>/APPROVED.json containing this manifest's sha256 (+model, max_requests=8); this manifest is never edited to authorize",
+ "provider": "google_gemini",
+ "model": "gemini-2.5-flash",
+ "key_alias": "GEMINI_API_KEY",
+ "key_project": "Key 1 only",
+ "excluded": [
+  "GEMINI_API_KEY_2",
+  "OpenRouter",
+  "gemini-3.5-flash (kept in frozen plan; temporarily unavailable; not a fallback)",
+  "gemini-3.6-flash (not introduced)"
+ ],
+ "verification_included": false,
+ "groq_used": false,
+ "apps": [
+  {
+   "id": 27,
+   "name": "Telegram",
+   "category": "Communications and Messaging",
+   "provenance": "original user-supplied list (apps 1-50, read from the original Notion page data; membership verified)",
+   "provenance_class": "original_notion"
+  },
+  {
+   "id": 32,
+   "name": "Meta Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "provenance": "original user-supplied list (apps 1-50, read from the original Notion page data; membership verified)",
+   "provenance_class": "original_notion"
+  },
+  {
+   "id": 41,
+   "name": "Shopify",
+   "category": "Ecommerce",
+   "provenance": "original user-supplied list (apps 1-50, read from the original Notion page data; membership verified)",
+   "provenance_class": "original_notion"
+  },
+  {
+   "id": 53,
+   "name": "Ahrefs",
+   "category": "Data, SEO and Scraping",
+   "provenance": "reconstructed candidate list (apps 51-100; secondary source; membership/category/order NOT confirmed against the original Notion source)",
+   "provenance_class": "reconstructed_unverified"
+  },
+  {
+   "id": 61,
+   "name": "GitHub",
+   "category": "Developer, Infra and Data platforms",
+   "provenance": "reconstructed candidate list (apps 51-100; secondary source; membership/category/order NOT confirmed against the original Notion source)",
+   "provenance_class": "reconstructed_unverified"
+  }
+ ],
+ "source_frozen_plan": "runs/p1-v1f-gemini-20261124/PLAN.json (not modified; sha below)",
+ "source_frozen_plan_sha256": "ea4cc11984948ed19ced66e3a4d3a0d8965011aade16396b2a7ed493c5bac274",
+ "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+ "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+ "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+ "runner_version": "v7",
+ "runner_v7_path": "runs/pilot5-v7-20261123_185728/run_pilot5_v7.py",
+ "runner_v7_sha256": "d87e52a64fe72ed081b707443899f44fc251b4ddf3312c9a957b2bf3ba02cd92",
+ "v6_runner_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+ "v6_runner_recovery_copy_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+ "max_generation_requests": 8,
+ "min_seconds_between_requests": 13.0,
+ "pacing": "min 13 s between any two requests incl. retries; monotonic in-process, wall-clock across restarts (resume never resets it)",
+ "retry_policy": {
+  "rate_limit_429": "max 2 retries per app, back-off 30 s then 60 s (pacing still enforced); each retry consumes the global budget",
+  "server_5xx": "no retry on same app; app left un-checkpointed",
+  "network_or_other_error": "stop for human review",
+  "model_fallback": "none",
+  "key_fallback": "none"
+ },
+ "stop_policy": [
+  "confirmed daily-quota 429 (quotaId/metric/message contains 'per day') -> stop",
+  "ambiguous 429 -> stop for review",
+  "rate-limit 429 retries exhausted -> stop",
+  "two consecutive 5xx on different apps -> stop",
+  "budget (8) exhausted -> refuse next request",
+  "returned modelVersion != gemini-2.5-flash -> stop",
+  "no modelVersion in response -> checkpoint written, model_identity_verified=false, stop for review",
+  "schema violation -> stop, raw output kept in stops/rejected_<id>.json, not repaired",
+  "app 1 evidence quote/url failure -> checkpoint written, stop for review",
+  "client error (400/401/403/404), network error, malformed response -> stop",
+  "corrupted/partial checkpoint, state or log -> refuse to start",
+  "any stop needing review blocks restart until STOP_REVIEWED.json (matching stop sha256) exists"
+ ],
+ "output_dir": "runs/pilot5-v7-20261123_185728/output",
+ "checkpoints": "output/pass1/<id>.json (atomic, read-only)",
+ "logs": "output/logs/activity.jsonl (hash-chained, append-only)",
+ "state": "output/state.json (atomic)",
+ "stop_records": "output/stops/stop_NNN.json (never overwritten) + output/STOPPED.json (latest)"
+}

@@ -1,0 +1,579 @@
+{
+  "run_id": "manual-research-evidence-v1-20261123_2250",
+  "captured_at_utc": "2026-11-23T16:18:25Z",
+  "source_mode": "web search official vendor pages; full source bodies not retained, only short contiguous excerpts and quote hashes",
+  "model_calls": 0,
+  "paid_calls": 0,
+  "records": [
+    {
+      "app_id": 58,
+      "name": "Sherlock",
+      "identity_status": "resolved_to_exact_registry_hint",
+      "registry_hint": "github.com/sherlock-project/sherlock",
+      "records": [
+        {
+          "field": "product/interface",
+          "claim": "The assigned Sherlock project is an open-source command-line username search tool.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://github.com/sherlock-project/sherlock",
+              "quote": "Hunt down social media accounts by username across social networks",
+              "source_type": "official GitHub repository",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "e4aaf5e588f3edd7c0a55bb8f414a82c98d4eafb8b8b8459ce69c885a528c9e0",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "execution/access",
+          "claim": "The documented usage is local CLI/package or container execution; repository instructions include pipx and Docker.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": "This does not establish a hosted SaaS API or free commercial support.",
+          "evidence": [
+            {
+              "url": "https://github.com/sherlock-project/sherlock",
+              "quote": "pipx install sherlock-project",
+              "source_type": "official GitHub repository",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "98120116c9163fcbbd418b74995c8e32743bd5b96e537ef6c203cc2bda670b77",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "api_surface",
+          "claim": "The assignment-hinted repository is not documented as a hosted API in the retrieved README; a separate sibling repository advertises a locally run Django REST API.",
+          "status": "separate_project_requires_scope_review",
+          "scope_limit": "Do not substitute the sibling API repository for the exact assignment project.",
+          "evidence": [
+            {
+              "url": "https://github.com/sherlock-project/api",
+              "quote": "This REST API is built on top of Django REST Framework",
+              "source_type": "separate repository in same GitHub organization",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "6cdf228c84e7cd55a2b6cf5c1ccea163f86946c9d14fcc7da37389c1f7387589",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "mcp",
+          "claim": "MCP availability is not established in the reviewed repository pages.",
+          "status": "unknown_not_searched_for_mcp",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://github.com/sherlock-project/sherlock",
+              "quote": "Hunt down social media accounts by username across social networks",
+              "source_type": "official GitHub repository",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "e4aaf5e588f3edd7c0a55bb8f414a82c98d4eafb8b8b8459ce69c885a528c9e0",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        }
+      ],
+      "unknown_fields": [
+        "authentication for the local CLI is not applicable as an external app credential; any hosted API auth for the sibling repo needs separate review",
+        "pricing/support",
+        "Composio toolkit coverage",
+        "official MCP server",
+        "current build/runtime requirements need source capture"
+      ],
+      "buildability": "feasible_as_local CLI wrapper; app API not established",
+      "confidence": "medium for product identity/interface; low for API/connectors"
+    },
+    {
+      "app_id": 59,
+      "name": "Waterfall.io",
+      "identity_status": "resolved_to_registry_hint_product",
+      "registry_hint": "waterfall.io (contact/company intel)",
+      "records": [
+        {
+          "field": "product_identity",
+          "claim": "Waterfall.io markets a B2B contact enrichment API and prospecting product.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.waterfall.io/product/contact-enrich",
+              "quote": "Waterfall Contact Enrichment API",
+              "source_type": "official product/API page",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "e9cb5ec7b98caf88a339281aa47579aa98fbe66ff61599c366481ba11d28cbfb",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "authentication",
+          "claim": "The documented sample sends an API key in the x-api-key header.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.waterfall.io/product/contact-enrich",
+              "quote": "--header 'x-api-key: YOUR_API_KEY'",
+              "source_type": "official product/API page",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "e2e877cbfa41ba6e157919122398fed1edfb77299487ea60022739027f258b30",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "api_surface",
+          "claim": "The product page demonstrates POST enrichment requests and GET job polling; it describes a single API with synchronous and asynchronous modes.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.waterfall.io/product/contact-enrich",
+              "quote": "Sync & Async solution",
+              "source_type": "official product/API page",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "951dad93956f87f6be97d80878b3930762d51a1a45b2ce52c5c2b03fb8d1fff3",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "api_capabilities",
+          "claim": "Contact enrichment can accept a name/domain, LinkedIn URL, or email and return profile fields.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.waterfall.io/product/contact-enrich",
+              "quote": "Find real-time verified emails or match emails to complete business profiles",
+              "source_type": "official product/API page",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "8a54c040f357024e3514bd7ab717c3cb8909519db25300a5e6af144a32ceb1df",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "pricing_access",
+          "claim": "The official product page describes outcome-based pricing and says rates depend on committed volume and are quoted to the customer.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": "No public rate card/self-serve tier is established.",
+          "evidence": [
+            {
+              "url": "https://www.waterfall.io/product/contact-enrich",
+              "quote": "Rates depend on committed volume and are quoted against your own data",
+              "source_type": "official product/API page",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "bad998d9911fb793b3a94bf84e84a488e3d51293c47ceb8e5e015fc40ac2eb60",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "onboarding",
+          "claim": "The official site describes dedicated onboarding and direct engineering support.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": "Access and contract requirements remain unknown.",
+          "evidence": [
+            {
+              "url": "https://www.waterfall.io/",
+              "quote": "Dedicated onboarding",
+              "source_type": "official vendor website",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "dfeff8c0464d912cbfce62d6e49fb935e571afbaf3c911bf8ceea2b4022abe03",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        }
+      ],
+      "unknown_fields": [
+        "exact auth lifecycle/scopes",
+        "API operation catalogue and rate limits",
+        "MCP provenance",
+        "Composio toolkit/tool schemas",
+        "whether account/API key can be self-served",
+        "buildability beyond sample endpoints"
+      ],
+      "buildability": "feasible with limitations; commercial access and quotas need vendor confirmation",
+      "confidence": "medium; pages are product marketing/docs, no full API reference body retained"
+    },
+    {
+      "app_id": 60,
+      "name": "Clay",
+      "identity_status": "resolved_to_registry_hint_product",
+      "registry_hint": "clay.com",
+      "records": [
+        {
+          "field": "authentication",
+          "claim": "Clay API keys are required for Clay-native integrations; user creates the key from the Clay account UI or CLI.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+              "quote": "A Clay API key is required for all Clay-native integrations.",
+              "source_type": "official Clay developer documentation",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "73220a773f0ccae5ac056a94804ba7e5c15704345c0b9c01f223514de55dbb69",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "api_capabilities",
+          "claim": "The cited key guide describes row lookups in another table.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": "This is a narrow documented API capability, not a full API inventory.",
+          "evidence": [
+            {
+              "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+              "quote": "Look up a single row in another table",
+              "source_type": "official Clay developer documentation",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "835991834fbf26147550516118187e3927bddb86c9a16c4d9550850ce7943302",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "mcp",
+          "claim": "Clay documents a vendor MCP server for find-and-enrich tools and custom functions on behalf of a signed-in user.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+              "quote": "Clay exposes a Model Context Protocol (MCP) server",
+              "source_type": "official Clay developer documentation",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "622fa000a2f217380a79ed8f6731ecc6fec925b03a5dadf85aef3a4b4e50bacf",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "mcp_access",
+          "claim": "Dynamic Client Registration is described as a self-service path to connect a platform.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": "This refers to client registration, not necessarily free Clay account/API access.",
+          "evidence": [
+            {
+              "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+              "quote": "Dynamic Client Registration (DCR) is the self-service path",
+              "source_type": "official Clay developer documentation",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "8e1c4935d30628f386c136e6afd382c82d0c84a768c9e32bd2263a176f057402",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "access_restrictions",
+          "claim": "IP access restrictions are an Enterprise-plan feature controlled by workspace admins.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://university.clay.com/docs/ip-access-restrictions",
+              "quote": "IP access restrictions are available on the Enterprise plan. Only workspace admins can view and change them.",
+              "source_type": "official Clay developer documentation",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "8eb3be0cd7fc9b7daf350ee9819a8e0d2818c45dbe76fccb9236aebe17412c3b",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "pricing",
+          "claim": "Clay’s settings documentation describes a 14-day trial with 1,000 data credits.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": "Trial terms may change; this excerpt does not establish production API entitlements.",
+          "evidence": [
+            {
+              "url": "https://university.clay.com/docs/workspace-administration-documentation",
+              "quote": "Clay offers a 14-day free trial with 1,000 data credits",
+              "source_type": "official Clay documentation",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "5589f2b6a580f573fa47b4ee18db7e2815844520fe503e9625bb5ea076cb94aa",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        }
+      ],
+      "unknown_fields": [
+        "full API operation and resource coverage",
+        "OAuth scopes/role model",
+        "rate limits",
+        "Composio toolkit coverage",
+        "MCP operation schemas and mutation safety",
+        "commercial gating beyond cited trial and Enterprise IP controls"
+      ],
+      "buildability": "feasible with limitations; requires user-authorized Clay account and access review",
+      "confidence": "medium-high on MCP and key setup; partial overall"
+    },
+    {
+      "app_id": 68,
+      "name": "MongoDB Atlas",
+      "identity_status": "resolved_to_registry_hint_product",
+      "registry_hint": "mongodb.com/docs/atlas/api",
+      "records": [
+        {
+          "field": "api_surface",
+          "claim": "Atlas Administration API follows REST architectural principles.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+              "quote": "The Atlas Administration API follows the principles of the REST architectural style",
+              "source_type": "official MongoDB API reference",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "1caf10e7f5a3c2fc8b803bf8a99cc3d7119348ed9000bd9ee1df54e16aa00179",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "authentication",
+          "claim": "Atlas Administration API accepts service account OAuth 2.0 access tokens or API keys using HTTP Digest Authentication.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+              "quote": "The Atlas Administration API accepts the following authentication methods: service account access tokens (OAuth 2.0) and API keys (HTTP Digest Authentication).",
+              "source_type": "official MongoDB authentication docs",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "16a4b99959fb1c809654337f84045676feaab03db5e9f57f522e344f1abe4e25",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "access_control",
+          "claim": "Creating organization-level API credentials requires Organization Owner access.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+              "quote": "To create a service account or API keys for an organization, you must have `Organization Owner` access",
+              "source_type": "official MongoDB onboarding docs",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "912742bd7544ccdc381ef4880a5c899ebb538153c94de2b6e67524e3a553f3e0",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "api_scope",
+          "claim": "Atlas Administration API manages Atlas administrative resources but does not query application data stored in clusters.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+              "quote": "The Atlas Administration API doesn’t provide access to the data stored in your clusters.",
+              "source_type": "official MongoDB API reference",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "0dc445ba9088cf6c1f0d4e4e05e79d274126d1ceb2110d14c56a1dfce7588c17",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "database_surface",
+          "claim": "Database reads/writes use database-user credentials and roles; this is a separate surface from Atlas administration.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+              "quote": "To read or write data in a database, you must authenticate to your cluster using the credentials for a database user",
+              "source_type": "official MongoDB API reference",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "a4df8a1b7f4b70549e8c4c5f9d4088557ec0ea4e1d7e5f509856687934e9ef5c",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "network_and_cost",
+          "claim": "Atlas Admin API use is subject to Atlas billing and may use an API access list.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+              "quote": "changes made through the Atlas Administration API are subject to Atlas billing",
+              "source_type": "official MongoDB API reference",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "41442e0fa8aa55354a545e4c8df31fbc796cae8a050aae7465835be577b626e9",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        }
+      ],
+      "unknown_fields": [
+        "Database Query API interface/tool coverage and exact driver auth methods need separate review",
+        "MCP server presence and Composio toolkit/tool coverage",
+        "resource-by-resource operations and API rate limits",
+        "free-tier entitlements"
+      ],
+      "buildability": "feasible with limitations for management; billing, organization roles and IP access controls are concrete gates; database querying is separate",
+      "confidence": "medium-high for admin API; query surface incomplete"
+    },
+    {
+      "app_id": 73,
+      "name": "Linear",
+      "identity_status": "resolved_to_registry_hint_product",
+      "registry_hint": "developers.linear.app",
+      "records": [],
+      "unknown_fields": [
+        "official API documentation pages were not returned in the targeted search; do not accept prior candidate evidence until captured and validated",
+        "authentication",
+        "access/pricing",
+        "API types and operations",
+        "MCP",
+        "Composio coverage",
+        "buildability"
+      ],
+      "buildability": "unknown; evidence packet remains empty",
+      "confidence": "not established"
+    },
+    {
+      "app_id": 78,
+      "name": "Coda",
+      "identity_status": "resolved_to_registry_hint_product",
+      "registry_hint": "coda.io/developers",
+      "records": [
+        {
+          "field": "api_surface",
+          "claim": "The Coda/Superhuman Docs API is RESTful and supports programmatic reads and writes to tables.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda)",
+              "source_type": "official API reference",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "53f16e045c3b9976d9f51c837aa9dcf31ecd331b45194f5c3b45958f15e63fe2",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "api_capabilities",
+          "claim": "Examples include reading/writing table data and synchronizing documents.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "quote": "Read data from tables and write back to them",
+              "source_type": "official API reference",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "07f9318b50791cd963f43d02fd478db3901f7398e08b2137f2443f361511720d",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        }
+      ],
+      "unknown_fields": [
+        "current product naming/access transition implications",
+        "authentication types/scopes",
+        "pricing/plan restrictions",
+        "rate limits",
+        "MCP",
+        "Composio toolkit coverage",
+        "operation coverage beyond cited examples"
+      ],
+      "buildability": "feasible with limitations; API exists but auth, gates and coverage need research",
+      "confidence": "medium for API existence and operations; partial overall"
+    },
+    {
+      "app_id": 80,
+      "name": "Harvest",
+      "identity_status": "resolved_to_registry_hint_product",
+      "registry_hint": "harvestapp.com (help.getharvest.com/api-v2)",
+      "records": [
+        {
+          "field": "api_surface",
+          "claim": "Harvest API v2 is REST and supports programmatic account operations.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+              "quote": "The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically.",
+              "source_type": "official API docs",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "97ed139c8dff87d1fcc77c4b9688f71f4b2637b5119f1941923ec61762a82a15",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "authentication",
+          "claim": "API v2 supports personal access tokens and OAuth 2.0.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+              "quote": "There are two options available to you: A Personal Access Token ... Implementing a full OAuth2 Authentication flow",
+              "source_type": "official authentication docs",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "18dd8b80074ba7bdb6f9c1dc9e8648d7c7dde2e259f61382fb65bcf31c6f6e72",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "access",
+          "claim": "Creating a Personal Access Token happens in the Developers section of Harvest ID; apps for other users require OAuth2 app registration.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": "Account and pricing entitlement are not established.",
+          "evidence": [
+            {
+              "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+              "quote": "The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID.",
+              "source_type": "official authentication docs",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "45bdde9704f737a4c040e85c377bb3cc7fbbc775d8c798e9edcde4cbe20ce27f",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        },
+        {
+          "field": "permissions",
+          "claim": "OAuth scopes can be limited to Harvest, Forecast, or both, and account choices determine access.",
+          "status": "supported_by_official_source_excerpt",
+          "scope_limit": null,
+          "evidence": [
+            {
+              "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+              "quote": "Products–scope of access requested; can be either Harvest, Forecast or both.",
+              "source_type": "official authentication docs",
+              "retrieved_at_utc": "2026-11-23T16:18:25Z",
+              "quote_sha256": "e13bc21c3d6ca164ec64f1c313d3063228731b968edf02ccb9e656c0a41052c6",
+              "page_body_hash": "not_available_from_web_search_excerpt"
+            }
+          ]
+        }
+      ],
+      "unknown_fields": [
+        "pricing and account eligibility",
+        "rate limits and webhooks",
+        "MCP and Composio toolkit coverage",
+        "complete resource/operation breadth"
+      ],
+      "buildability": "feasible with limitations; OAuth registration and per-account scopes are required for distributable integrations",
+      "confidence": "high for API/auth; partial overall"
+    }
+  ]
+}

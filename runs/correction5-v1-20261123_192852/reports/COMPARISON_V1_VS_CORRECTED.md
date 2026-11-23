@@ -1,0 +1,11 @@
+# Five-app correction: v1 vs corrected (Groq gpt-oss-120b, reduction-v2, corrected GitHub evidence)
+
+Lexical validation is not proof of correctness; no accuracy claim. Both versions preserved.
+
+| app | changed fields (v1 -> corrected) | valid evidence | note |
+|---|---|---|---|
+| 27 Telegram | none | 2/5 | UNCHANGED outputs; stitched ellipsis quotes persist (gpt-oss-120b does not reliably copy verbatim). existing_mcp none_found = not found in provided evidence (not absence). |
+| 32 Meta Ads | none | 1/4 | UNCHANGED outputs. Two cited quotes are exact sentences from the full page but NOT in the evidence shown to the model (possible recall from memory, violating 'sources only'); flagged. |
+| 41 Shopify | auth_methods: ['oauth2', 'api_key'] -> ['oauth2', 'api_key', 'bearer_token'] | 6/7 | auth_methods gained bearer_token (new, unvalidated). existing_mcp official kept with a valid verbatim quote from shopify.dev. |
+| 53 Ahrefs | auth_methods: ['bearer_token'] -> ['api_key', 'bearer_token']; existing_mcp: none_found -> official | 3/4 | FIXED: v1 existing_mcp=none_found was an evidence-reduction defect (MCP nav block dropped). Corrected bundle restores all 3 mentions; model now returns official with a verbatim quote from docs.ahrefs.com ('Connect your Ahrefs data to AI assistants and agents...'). Whether 'official' (vs third-party/client) is right is a semantic judgement still awaiting human labelling. |
+| 61 GitHub | auth_methods: ['oauth2', 'api_key', 'basic', 'bearer_token'] -> ['api_key', 'oauth2']; existing_mcp: none_found -> official | 5/5 | PARTLY FIXED: v1 none_found was an evidence gap (no MCP page). Official docs retrieved (docs.github.com Copilot MCP page, which states 'The GitHub MCP server is built in...'); model now returns official, BUT the quote it cites is only the generic MCP definition sentence, not the sentence naming the GitHub MCP server. Lexically valid, semantically weak: the claim is plausible and supported by another sentence on the same page, yet the citation does not prove it. Stale GHES v11.10.340 page excluded; auth list shrank from 4 to 2 (basic/bearer no longer asserted). Retrieval failures: github.com/github/github-mcp-server and the raw README fetch both returned errors (recorded, not retried). |

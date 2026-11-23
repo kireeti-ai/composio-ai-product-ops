@@ -1,0 +1,101 @@
+id,name,category,provenance,status,primary_version,auth_methods,access,api_types,api_breadth,existing_mcp,buildability,blocker,claims_supported_lexical,claims_unsupported,claims_unknown,claims_not_found,model
+1,Salesforce,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token,self_serve_free,rest;soap;sdk_or_cli_only,unknown,official,yes,none,5,2,,,gemini-2.5-flash
+2,HubSpot,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;api_key;bearer_token,self_serve_free,rest;sdk_or_cli_only,broad,official,yes,none,4,3,,,gemini-2.5-flash
+3,Pipedrive,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;api_key,self_serve_free,rest,broad,none_found,yes,none,3,1,,1,gemini-3.5-flash
+4,Attio,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;api_key;bearer_token;basic,self_serve_free,rest;sdk_or_cli_only,broad,official,yes,none,7,1,,,gemini-2.5-flash
+5,Twenty,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,api_key;bearer_token;oauth2,self_serve_free,rest;graphql,broad,official,yes,none,3,4,,,gemini-3.5-flash
+6,Podio,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token;other,self_serve_free,rest,medium,community,yes,none,3,2,,,gemini-2.5-flash
+7,Zoho CRM,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2,self_serve_free,rest;graphql,broad,official,yes,none,3,2,,,gemini-3.5-flash
+8,Close,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;api_key;basic;bearer_token,self_serve_trial_or_paid_plan,rest,broad,official,yes,none,3,4,,,gemini-3.5-flash
+9,Copper,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;api_key;bearer_token,self_serve_trial_or_paid_plan,rest,broad,none_found,yes,none,3,2,,1,gemini-3.5-flash
+10,DealCloud,CRM and Sales,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token,unknown,rest,broad,official,yes,none,4,,1,,gemini-3.5-flash
+11,Zendesk,Support and Helpdesk,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token;basic;api_key,self_serve_trial_or_paid_plan,rest,broad,none_found,yes,none,4,2,,1,gemini-3.5-flash
+12,Intercom,Support and Helpdesk,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token,self_serve_free,rest,broad,official,yes,none,4,1,,,gemini-3.5-flash
+13,Freshdesk,Support and Helpdesk,original_notion,COMPLETED_BASELINE,baseline_p1_v1,api_key;jwt_or_signed,self_serve_free,rest,broad,none_found,yes,none,,4,,1,gemini-3.5-flash
+14,Front,Support and Helpdesk,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token;api_key,unknown,rest,broad,official,yes,none,4,1,1,,gemini-3.5-flash
+15,Pylon,Support and Helpdesk,original_notion,UNPLANNED,,,,,,,,,,,,,
+16,LiveAgent,Support and Helpdesk,original_notion,COMPLETED_BASELINE,baseline_p1_v1,api_key,self_serve_trial_or_paid_plan,rest,broad,none_found,yes,none,1,2,,1,gemini-2.5-flash
+17,Plain,Support and Helpdesk,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;api_key;bearer_token,self_serve_trial_or_paid_plan,rest;graphql,broad,official,yes,none,5,2,,,gemini-3.5-flash
+18,Help Scout,Support and Helpdesk,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;api_key;basic;bearer_token;jwt_or_signed,self_serve_trial_or_paid_plan,rest,broad,none_found,yes,none,2,5,,1,gemini-3.5-flash
+19,Gorgias,Support and Helpdesk,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token,self_serve_free,rest,medium,none_found,yes,none,2,2,,1,gemini-3.5-flash
+20,Gladly,Support and Helpdesk,original_notion,EXTRACTED_batchA,batchA,basic,self_serve_free,rest,broad,official,yes,none,3,1,,,openai/gpt-oss-120b
+21,Slack,Communications and Messaging,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token;jwt_or_signed,self_serve_free,rest;sdk_or_cli_only;websocket,broad,official,yes,none,2,6,,,gemini-3.5-flash
+22,Twilio,Communications and Messaging,original_notion,COMPLETED_BASELINE,baseline_p1_v1,api_key;basic,self_serve_free,rest;sdk_or_cli_only,broad,official,yes,none,4,2,,,gemini-2.5-flash
+23,Zoho Cliq,Communications and Messaging,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;api_key,self_serve_free,rest,broad,none_found,yes,none,3,1,,1,gemini-3.5-flash
+24,Lark (Larksuite),Communications and Messaging,original_notion,UNPLANNED,,,,,,,,,,,,,
+25,Pumble,Communications and Messaging,original_notion,EXTRACTED_batchA,batchA,api_key,self_serve_free,rest,broad,official,yes,none,1,3,,,openai/gpt-oss-120b
+26,Discord,Communications and Messaging,original_notion,EXTRACTED_batchA,batchA,oauth2;api_key;basic,self_serve_free,rest,broad,official,yes,none,1,5,,,openai/gpt-oss-120b
+27,Telegram,Communications and Messaging,original_notion,EXTRACTED_corrected5,corrected5,oauth2;api_key,self_serve_free,rest,broad,none_found,yes_with_caveats,Complex MTProto protocol and requirement for an official API ID for production use.,1,3,,1,openai/gpt-oss-120b
+28,WhatsApp Business,Communications and Messaging,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token,self_serve_trial_or_paid_plan,rest;websocket,broad,none_found,yes,none,2,3,,1,gemini-2.5-flash
+29,Aircall,Communications and Messaging,original_notion,EXTRACTED_batchA,batchA,basic;oauth2,self_serve_free,rest;webhook,broad,official,yes,none,3,2,,,openai/gpt-oss-120b
+30,Vonage,Communications and Messaging,original_notion,EXTRACTED_batchB,batchB,jwt_or_signed;api_key;basic,self_serve_free,rest,broad,official,yes,none,3,3,,,openai/gpt-oss-120b
+31,Google Ads,"Marketing, Ads, Email and Social",original_notion,UNPLANNED,,,,,,,,,,,,,
+32,Meta Ads,"Marketing, Ads, Email and Social",original_notion,EXTRACTED_corrected5,corrected5,oauth2,approval_or_review_required,rest,unknown,none_found,yes_with_caveats,Requires app review and approval before production use.,1,2,,1,openai/gpt-oss-120b
+33,LinkedIn Ads,"Marketing, Ads, Email and Social",original_notion,EXTRACTED_batchA,batchA,oauth2,approval_or_review_required,rest,broad,none_found,yes_with_caveats,Requires LinkedIn API partner vetting and approval before production use.,2,1,,1,openai/gpt-oss-120b
+34,GoHighLevel,"Marketing, Ads, Email and Social",original_notion,EXTRACTED_batchA,batchA,oauth2;api_key,self_serve_trial_or_paid_plan,rest,broad,official,yes_with_caveats,none,1,4,,,openai/gpt-oss-120b
+35,Mailchimp,"Marketing, Ads, Email and Social",original_notion,EXTRACTED_batchB,batchB,api_key;oauth2,self_serve_free,rest,unknown,official,yes_with_caveats,API keys are not usable in browsers or mobile apps; integration must run on a server you control.,1,4,,,openai/gpt-oss-120b
+36,Klaviyo,"Marketing, Ads, Email and Social",original_notion,EXTRACTED_batchA,batchA,oauth2;api_key;bearer_token,self_serve_free,rest,broad,none_found,yes,none,,5,,1,openai/gpt-oss-120b
+37,systeme.io,"Marketing, Ads, Email and Social",original_notion,PAUSED_PROVIDER_QUOTA,,,,,,,,,,,,,
+38,Pinterest,"Marketing, Ads, Email and Social",original_notion,EXTRACTED_batchA,batchA,oauth2;bearer_token,approval_or_review_required,rest,broad,none_found,yes_with_caveats,requires app review and approval before any API calls can be made,,4,,1,openai/gpt-oss-120b
+39,Threads (Meta),"Marketing, Ads, Email and Social",original_notion,EXTRACTED_batchA,batchA,oauth2,approval_or_review_required,rest,medium,none_found,yes_with_caveats,Rate limits (250 posts per 24‑hour rolling window) and required permission review,1,2,,1,openai/gpt-oss-120b
+40,SendGrid,"Marketing, Ads, Email and Social",original_notion,UNPLANNED,,,,,,,,,,,,,
+41,Shopify,Ecommerce,original_notion,EXTRACTED_corrected5,corrected5,oauth2;api_key;bearer_token,self_serve_free,rest;graphql,broad,official,yes_with_caveats,none,3,4,,,openai/gpt-oss-120b
+42,WooCommerce,Ecommerce,original_notion,UNPLANNED,,,,,,,,,,,,,
+43,BigCommerce,Ecommerce,original_notion,EXTRACTED_batchA,batchA,oauth2,self_serve_free,rest;graphql,broad,none_found,yes_with_caveats,none,1,3,,1,openai/gpt-oss-120b
+44,Salesforce Commerce Cloud,Ecommerce,original_notion,EXTRACTED_batchA,batchA,oauth2;basic,partner_or_contact_sales,rest,broad,none_found,yes_with_caveats,"Requires Salesforce Commerce Cloud account and credentials, which are not self‑serve.",,4,,1,openai/gpt-oss-120b
+45,Magento (Adobe Commerce),Ecommerce,original_notion,UNPLANNED,,,,,,,,,,,,,
+46,Squarespace,Ecommerce,original_notion,EXTRACTED_batchA,batchA,oauth2;api_key,self_serve_free,rest,narrow,none_found,yes,none,3,1,,1,openai/gpt-oss-120b
+47,Ecwid,Ecommerce,original_notion,EXTRACTED_batchA,batchA,bearer_token,self_serve_free,rest,medium,official,yes_with_caveats,none,1,3,,,openai/gpt-oss-120b
+48,Gumroad,Ecommerce,original_notion,UNPLANNED,,,,,,,,,,,,,
+49,Amazon Selling Partner,Ecommerce,original_notion,COMPLETED_BASELINE,baseline_p1_v1,oauth2;bearer_token,approval_or_review_required,rest,broad,none_found,yes_with_caveats,none,2,2,,1,gemini-3.5-flash
+50,fanbasis,Ecommerce,original_notion,EXCLUDED_IDENTITY_UNRESOLVED,,,,,,,,,,,,,
+51,DataForSEO,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,COMPLETED_BASELINE,baseline_p1_v1,basic,self_serve_free,rest,broad,none_found,yes,none,3,,,1,gemini-3.5-flash
+52,SE Ranking,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,api_key,self_serve_trial_or_paid_plan,rest,broad,none_found,yes,none,2,1,,1,openai/gpt-oss-120b
+53,Ahrefs,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_corrected5,corrected5,api_key;bearer_token,self_serve_trial_or_paid_plan,rest,broad,official,yes_with_caveats,Requires a paid Ahrefs subscription for most endpoints and consumes API units.,3,2,,,openai/gpt-oss-120b
+54,MrScraper,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+55,Apify,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+56,Firecrawl,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,api_key;oauth2,self_serve_free,rest,narrow,official,yes,none,2,3,,,openai/gpt-oss-120b
+57,Bright Data,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+58,Sherlock,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,COMPLETED_BASELINE_QUARANTINED,,,,,,,,,,,,,
+59,Waterfall.io,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+60,Clay,"Data, SEO and Scraping",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+61,GitHub,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_corrected5,corrected5,api_key;oauth2,self_serve_free,rest,broad,official,yes,none,2,3,,,openai/gpt-oss-120b
+62,Vercel,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,api_key;bearer_token;oauth2,self_serve_free,rest,broad,official,yes,none,5,1,,,openai/gpt-oss-120b
+63,Netlify,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,oauth2;api_key;bearer_token,self_serve_free,rest,broad,none_found,yes_with_caveats,none,1,4,,1,openai/gpt-oss-120b
+64,Cloudflare,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+65,Supabase,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,api_key;bearer_token,self_serve_free,rest,broad,none_found,yes,none,2,2,,1,openai/gpt-oss-120b
+66,Neo4j,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,HELD_NEO4J_OPTION_B_PREPARED,,,,,,,,,,,,,
+67,Snowflake,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+68,MongoDB Atlas,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,BLOCKED_C_identity_review,,,,,,,,,,,,,
+69,Datadog,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+70,Sentry,"Developer, Infra and Data platforms",reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,oauth2;bearer_token;api_key,self_serve_free,rest,broad,official,yes,none,,6,,,openai/gpt-oss-120b
+71,Notion,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,EXTRACTION_FAILED_INVALID_JSON,,,,,,,,,,,,,
+72,Airtable,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,bearer_token;oauth2,self_serve_free,rest,broad,none_found,yes,none,1,3,,1,openai/gpt-oss-120b
+73,Linear,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,HELD_IDENTITY_PROVISIONAL,,,,,,,,,,,,,
+74,Jira,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,BLOCKED_C_identity_review,,,,,,,,,,,,,
+75,Asana,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,api_key;oauth2,self_serve_free,rest,broad,none_found,yes,none,1,3,,1,openai/gpt-oss-120b
+76,Monday.com,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,EXTRACTED_batchA,batchA,oauth2;api_key;bearer_token,self_serve_free,graphql,narrow,none_found,yes_with_caveats,none,1,4,,1,openai/gpt-oss-120b
+77,ClickUp,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+78,Coda,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,HELD_IDENTITY_PROVISIONAL,,,,,,,,,,,,,
+79,Smartsheet,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+80,Harvest,Productivity and Project Management,reconstructed_candidate_UNVERIFIED_membership,EXCLUDED_IDENTITY_UNRESOLVED,,,,,,,,,,,,,
+81,Stripe,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+82,Plaid,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+83,Binance,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,BLOCKED_D_retrieval_gap,,,,,,,,,,,,,
+84,Paygent Connect,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,COMPLETED_BASELINE,baseline_p1_v1,bearer_token;api_key,self_serve_free,rest;sdk_or_cli_only,broad,none_found,yes,none,2,3,,1,gemini-2.5-flash
+85,iPayX,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+86,QuickBooks,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,BLOCKED_C_identity_review,,,,,,,,,,,,,
+87,Xero,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+88,Brex,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+89,Ramp,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+90,PitchBook,Finance and Fintech,reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+91,NotebookLM,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,BLOCKED_C_identity_review,,,,,,,,,,,,,
+92,Otter AI,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,BLOCKED_C_identity_review,,,,,,,,,,,,,
+93,Fathom,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,BLOCKED_C_identity_review,,,,,,,,,,,,,
+94,Consensus,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+95,Reducto,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+96,Devin,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+97,higgsfield,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,
+98,Mermaid CLI,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,BLOCKED_C_identity_review,,,,,,,,,,,,,
+99,YouTube Transcript,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,BLOCKED_D_retrieval_gap,,,,,,,,,,,,,
+100,Grain,"AI, Research and Media-native",reconstructed_candidate_UNVERIFIED_membership,UNPLANNED,,,,,,,,,,,,,

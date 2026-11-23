@@ -1,0 +1,762 @@
+[
+ {
+  "app": "79",
+  "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+  "title": "OAuth",
+  "code": "200",
+  "raw_file": "raw/79_1.txt",
+  "page_sha256": "1717dcc650236a57823ea3ed33eb85ca91a0300d790068008c98a2b658d7b3dd",
+  "len": 13199,
+  "retrieved_at_utc": "2026-11-23T16:32:00Z"
+ },
+ {
+  "app": "79",
+  "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+  "title": "Manually configure the MCP server",
+  "code": "200",
+  "raw_file": "raw/79_2.txt",
+  "page_sha256": "fd482643ddc094a429b76d6430e33cdc5794663cc9f9f07a4311587cbcedae03",
+  "len": 4355,
+  "retrieved_at_utc": "2026-11-23T16:32:02Z"
+ },
+ {
+  "app": "79",
+  "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+  "title": "Authentication",
+  "code": "200",
+  "raw_file": "raw/79_3.txt",
+  "page_sha256": "470cf98f5a6809d72510ec4da4c7bc9ad7b3326a90556671c0c85dd753e77e1c",
+  "len": 5185,
+  "retrieved_at_utc": "2026-11-23T16:32:04Z"
+ },
+ {
+  "app": "79",
+  "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/rate-limiting",
+  "title": "",
+  "code": "404",
+  "raw_file": "raw/79_4.txt",
+  "page_sha256": "6c005572332404d0781386081da267a131aa9bf96fa3ab17f037af5c17af6cfe",
+  "len": 595,
+  "retrieved_at_utc": "2026-11-23T16:32:06Z"
+ },
+ {
+  "app": "79",
+  "url": "https://www.smartsheet.com/pricing",
+  "title": "Smartsheet Pricing | Smartsheet",
+  "code": "200",
+  "raw_file": "raw/79_5.txt",
+  "page_sha256": "2728195a8dd092a91838a24034d7c2bfaa9ae1c69f6237ad52fd5eaa7c2117fe",
+  "len": 18239,
+  "retrieved_at_utc": "2026-11-23T16:32:07Z"
+ },
+ {
+  "app": "81",
+  "url": "https://docs.stripe.com/mcp",
+  "title": "Model Context Protocol (MCP) | Stripe DocumentationThe Stripe Docs logo",
+  "code": "200",
+  "raw_file": "raw/81_1.txt",
+  "page_sha256": "9e10f597e6bf2b63e49d7e300f466745b424540e7dfd8b248031b67467909070",
+  "len": 10886,
+  "retrieved_at_utc": "2026-11-23T16:32:10Z"
+ },
+ {
+  "app": "81",
+  "url": "https://docs.stripe.com/keys",
+  "title": "API keys | Stripe DocumentationThe Stripe Docs logo",
+  "code": "200",
+  "raw_file": "raw/81_2.txt",
+  "page_sha256": "17513c4ff882c8b9401f874538dc8005b35ec909c9009e520517ada49cc62cc0",
+  "len": 21862,
+  "retrieved_at_utc": "2026-11-23T16:32:13Z"
+ },
+ {
+  "app": "81",
+  "url": "https://docs.stripe.com/api/authentication",
+  "title": "Authentication | Stripe API Reference",
+  "code": "200",
+  "raw_file": "raw/81_3.txt",
+  "page_sha256": "9908204a3046977b580524eae604e1cc5463eb35698c97f08211f62f609186bf",
+  "len": 8331,
+  "retrieved_at_utc": "2026-11-23T16:32:18Z"
+ },
+ {
+  "app": "81",
+  "url": "https://docs.stripe.com/sandboxes",
+  "title": "Sandboxes | Stripe DocumentationThe Stripe Docs logo",
+  "code": "200",
+  "raw_file": "raw/81_4.txt",
+  "page_sha256": "ab7715269a80f30a8bded43d939edfb0f268256c176bd4abd32a769b799ab198",
+  "len": 4139,
+  "retrieved_at_utc": "2026-11-23T16:32:23Z"
+ },
+ {
+  "app": "81",
+  "url": "https://docs.stripe.com/webhooks",
+  "title": "Receive Stripe events in your webhook endpoint | Stripe DocumentationThe Stripe Docs logo",
+  "code": "200",
+  "raw_file": "raw/81_5.txt",
+  "page_sha256": "0241b117daa42531f96925380bfdd13b0720c8da72fd5ef4e538c06a1ac48ebd",
+  "len": 24203,
+  "retrieved_at_utc": "2026-11-23T16:32:26Z"
+ },
+ {
+  "app": "81",
+  "url": "https://docs.stripe.com/rate-limits",
+  "title": "Rate limits | Stripe DocumentationThe Stripe Docs logo",
+  "code": "200",
+  "raw_file": "raw/81_6.txt",
+  "page_sha256": "f616cae6a63f2ca4b6560f1d003b973afa1002f2a47d948b3d362ab63b2b901c",
+  "len": 12195,
+  "retrieved_at_utc": "2026-11-23T16:32:29Z"
+ },
+ {
+  "app": "82",
+  "url": "https://plaid.com/docs/resources/mcp/",
+  "title": "Resources - MCP Server | Plaid Docs",
+  "code": "200",
+  "raw_file": "raw/82_1.txt",
+  "page_sha256": "25ff1dcf957e62441f0b1565f2c03e6c7b033fd3d4f19ede28c038828a3c601b",
+  "len": 8664,
+  "retrieved_at_utc": "2026-11-23T16:32:31Z"
+ },
+ {
+  "app": "82",
+  "url": "https://plaid.com/docs/quickstart/glossary/",
+  "title": "Quickstart - Glossary | Plaid Docs",
+  "code": "200",
+  "raw_file": "raw/82_2.txt",
+  "page_sha256": "51bce3e44d21fd198c13626192a1fe08393ae03aff675ab7e16665e07a76fa01",
+  "len": 14485,
+  "retrieved_at_utc": "2026-11-23T16:32:33Z"
+ },
+ {
+  "app": "82",
+  "url": "https://plaid.com/docs/api/",
+  "title": "API - Overview | Plaid Docs",
+  "code": "200",
+  "raw_file": "raw/82_3.txt",
+  "page_sha256": "06a3a85a5b79c681d60b8d29ee3a39f7c1a8d1a0d067a1ba5ae9c44e5bcc5f72",
+  "len": 6280,
+  "retrieved_at_utc": "2026-11-23T16:32:34Z"
+ },
+ {
+  "app": "82",
+  "url": "https://plaid.com/docs/sandbox/",
+  "title": "Sandbox - Overview | Plaid Docs",
+  "code": "200",
+  "raw_file": "raw/82_4.txt",
+  "page_sha256": "05850cd295672ecc1f1b4f110b4a8c76f17a74d5793d1f13b22a2ace13d1e38e",
+  "len": 14223,
+  "retrieved_at_utc": "2026-11-23T16:32:36Z"
+ },
+ {
+  "app": "82",
+  "url": "https://plaid.com/docs/quickstart/",
+  "title": "Quickstart | Plaid Docs",
+  "code": "200",
+  "raw_file": "raw/82_5.txt",
+  "page_sha256": "c2e8c8d5a5890736e4f24d374261a6fcbb0c716dc6d8082542f7d5c15efc5cbf",
+  "len": 13216,
+  "retrieved_at_utc": "2026-11-23T16:32:38Z"
+ },
+ {
+  "app": "82",
+  "url": "https://plaid.com/docs/errors/rate-limit-exceeded/",
+  "title": "Errors - Rate Limit Exceeded errors | Plaid Docs",
+  "code": "200",
+  "raw_file": "raw/82_6.txt",
+  "page_sha256": "502a5d9f4e1eceb55b6ef221f499156b026bf09f67e380c858588b21f1247156",
+  "len": 31610,
+  "retrieved_at_utc": "2026-11-23T16:32:40Z"
+ },
+ {
+  "app": "83",
+  "url": "https://developers.binance.com/docs/binance-spot-api-docs/faqs/api_key_types",
+  "title": "",
+  "code": "000",
+  "raw_file": "raw/83_1.txt",
+  "page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "len": 0,
+  "retrieved_at_utc": "2026-11-23T16:33:16Z"
+ },
+ {
+  "app": "83",
+  "url": "https://developers.binance.com/en/docs/introduction",
+  "title": "",
+  "code": "000",
+  "raw_file": "raw/83_2.txt",
+  "page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "len": 0,
+  "retrieved_at_utc": "2026-11-23T16:33:46Z"
+ },
+ {
+  "app": "83",
+  "url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/general-api-information",
+  "title": "",
+  "code": "000",
+  "raw_file": "raw/83_3.txt",
+  "page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "len": 0,
+  "retrieved_at_utc": "2026-11-23T16:34:16Z"
+ },
+ {
+  "app": "83",
+  "url": "https://developers.binance.com/docs/binance-spot-api-docs/testnet/rest-api",
+  "title": "",
+  "code": "000",
+  "raw_file": "raw/83_4.txt",
+  "page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "len": 0,
+  "retrieved_at_utc": "2026-11-23T16:34:46Z"
+ },
+ {
+  "app": "83",
+  "url": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/limits",
+  "title": "",
+  "code": "000",
+  "raw_file": "raw/83_5.txt",
+  "page_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "len": 0,
+  "retrieved_at_utc": "2026-11-23T16:35:16Z"
+ },
+ {
+  "app": "85",
+  "url": "https://ipayx.ai/docs",
+  "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+  "code": "200",
+  "raw_file": "raw/85_1.txt",
+  "page_sha256": "526f7d7dc4fb231c109c7bd55a2f627c584b6d9f5a05281daa280a3c2975bf76",
+  "len": 62,
+  "retrieved_at_utc": "2026-11-23T16:35:19Z"
+ },
+ {
+  "app": "85",
+  "url": "https://ipayx.ai",
+  "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+  "code": "200",
+  "raw_file": "raw/85_2.txt",
+  "page_sha256": "526f7d7dc4fb231c109c7bd55a2f627c584b6d9f5a05281daa280a3c2975bf76",
+  "len": 62,
+  "retrieved_at_utc": "2026-11-23T16:35:19Z"
+ },
+ {
+  "app": "85",
+  "url": "https://ipayx.ai/docs/mcp",
+  "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+  "code": "200",
+  "raw_file": "raw/85_3.txt",
+  "page_sha256": "526f7d7dc4fb231c109c7bd55a2f627c584b6d9f5a05281daa280a3c2975bf76",
+  "len": 62,
+  "retrieved_at_utc": "2026-11-23T16:35:20Z"
+ },
+ {
+  "app": "86",
+  "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+  "title": "Intuit Developer",
+  "code": "200",
+  "raw_file": "raw/86_1.txt",
+  "page_sha256": "c72952d19c6e5772494c4cf452d160cfd6d64f17f96cfb2c8dfaa247a0dfebc2",
+  "len": 63,
+  "retrieved_at_utc": "2026-11-23T16:35:47Z"
+ },
+ {
+  "app": "86",
+  "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/sandboxes",
+  "title": "Intuit Developer",
+  "code": "200",
+  "raw_file": "raw/86_2.txt",
+  "page_sha256": "9af5a46b8d194049c97e735ff101a5b9e91172791afcd344830751dd6db5d869",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:36:17Z"
+ },
+ {
+  "app": "86",
+  "url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features",
+  "title": "Intuit Developer",
+  "code": "200",
+  "raw_file": "raw/86_3.txt",
+  "page_sha256": "9af5a46b8d194049c97e735ff101a5b9e91172791afcd344830751dd6db5d869",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:36:47Z"
+ },
+ {
+  "app": "86",
+  "url": "https://developer.intuit.com/app/developer/qbo/docs/develop",
+  "title": "Intuit Developer",
+  "code": "200",
+  "raw_file": "raw/86_4.txt",
+  "page_sha256": "9af5a46b8d194049c97e735ff101a5b9e91172791afcd344830751dd6db5d869",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:37:17Z"
+ },
+ {
+  "app": "86",
+  "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/webhooks",
+  "title": "Intuit Developer",
+  "code": "200",
+  "raw_file": "raw/86_5.txt",
+  "page_sha256": "9af5a46b8d194049c97e735ff101a5b9e91172791afcd344830751dd6db5d869",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:37:47Z"
+ },
+ {
+  "app": "87",
+  "url": "https://developer.xero.com/faq/custom-integration",
+  "title": "Custom Integration FAQs \u2014 Xero Developer",
+  "code": "200",
+  "raw_file": "raw/87_1.txt",
+  "page_sha256": "cdcf968f2153aa9b273199aace650be49502e5a82d6c44ea7c36672991bf7358",
+  "len": 7528,
+  "retrieved_at_utc": "2026-11-23T16:37:49Z"
+ },
+ {
+  "app": "87",
+  "url": "https://developer.xero.com/pricing",
+  "title": "Pricing \u2014 Xero Developer",
+  "code": "200",
+  "raw_file": "raw/87_2.txt",
+  "page_sha256": "d15159096c953a0f034fbc5a69a5e519e87ff3a75fea7c2ba42d826df911c512",
+  "len": 7566,
+  "retrieved_at_utc": "2026-11-23T16:37:51Z"
+ },
+ {
+  "app": "87",
+  "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+  "title": "OAuth 2.0 \u2014 Xero Developer",
+  "code": "200",
+  "raw_file": "raw/87_3.txt",
+  "page_sha256": "7ded82bfb0a39ff4badcb96cc4fd0e6608ccae1b7b9d6abcbc5d49e33e65d34d",
+  "len": 27,
+  "retrieved_at_utc": "2026-11-23T16:37:52Z"
+ },
+ {
+  "app": "87",
+  "url": "https://developer.xero.com/documentation/getting-started-guide",
+  "title": "Getting started guide \u2014 Xero Developer",
+  "code": "200",
+  "raw_file": "raw/87_4.txt",
+  "page_sha256": "9e9bcd3c2a466a235ea9fa1dceb2695006ec2c76e435e352735895243a9a8804",
+  "len": 39,
+  "retrieved_at_utc": "2026-11-23T16:37:53Z"
+ },
+ {
+  "app": "87",
+  "url": "https://developer.xero.com/documentation/guides/oauth2/limits",
+  "title": "OAuth 2.0 API limits \u2014 Xero Developer",
+  "code": "200",
+  "raw_file": "raw/87_5.txt",
+  "page_sha256": "fed264aff04d82ecb9e9d9919a4247564e275e1c6280e0ecf9e0f2a848f333da",
+  "len": 38,
+  "retrieved_at_utc": "2026-11-23T16:37:54Z"
+ },
+ {
+  "app": "87",
+  "url": "https://developer.xero.com/documentation/guides/webhooks/overview",
+  "title": "Xero API webhooks \u2014 Xero Developer",
+  "code": "200",
+  "raw_file": "raw/87_6.txt",
+  "page_sha256": "3ed76732ae2b6a3c4cd9e478aaa94aed8f896fe222e6c53eeb18b0b130a6616c",
+  "len": 35,
+  "retrieved_at_utc": "2026-11-23T16:37:55Z"
+ },
+ {
+  "app": "88",
+  "url": "https://developer.brex.com/docs/mcp",
+  "title": "Brex MCP",
+  "code": "200",
+  "raw_file": "raw/88_1.txt",
+  "page_sha256": "f27fc0815a9584fd490af7ac5dc638c75c291d5744f1aec752a3f6f91dd8fc1d",
+  "len": 10631,
+  "retrieved_at_utc": "2026-11-23T16:37:58Z"
+ },
+ {
+  "app": "88",
+  "url": "https://developer.brex.com/docs/authentication",
+  "title": "Authentication",
+  "code": "200",
+  "raw_file": "raw/88_2.txt",
+  "page_sha256": "87759061932e3bd75abb0093bf5270a6079806d2dfd2b8d0bdb1d2b5eff9298a",
+  "len": 2885,
+  "retrieved_at_utc": "2026-11-23T16:38:01Z"
+ },
+ {
+  "app": "88",
+  "url": "https://developer.brex.com/docs/rate_limits",
+  "title": "",
+  "code": "404",
+  "raw_file": "raw/88_3.txt",
+  "page_sha256": "2afa8befee8673c822cf038499db18c2c39d4a00cc08b5553469417f821a75b3",
+  "len": 376,
+  "retrieved_at_utc": "2026-11-23T16:38:02Z"
+ },
+ {
+  "app": "88",
+  "url": "https://developer.brex.com/docs/webhooks",
+  "title": "",
+  "code": "404",
+  "raw_file": "raw/88_4.txt",
+  "page_sha256": "be943fb8ebc39709a38426be95d277f337f72ee36fc4bcbbf4b0da907eddf229",
+  "len": 372,
+  "retrieved_at_utc": "2026-11-23T16:38:05Z"
+ },
+ {
+  "app": "88",
+  "url": "https://developer.brex.com/docs/getting-started",
+  "title": "",
+  "code": "404",
+  "raw_file": "raw/88_5.txt",
+  "page_sha256": "2afa8befee8673c822cf038499db18c2c39d4a00cc08b5553469417f821a75b3",
+  "len": 376,
+  "retrieved_at_utc": "2026-11-23T16:38:05Z"
+ },
+ {
+  "app": "89",
+  "url": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+  "title": "Ramp Help Center",
+  "code": "200",
+  "raw_file": "raw/89_1.txt",
+  "page_sha256": "d8aafad862752960efd5f82ac0e37775e63bc8fd926346ae4b8a2eaafa7ad3e3",
+  "len": 8258,
+  "retrieved_at_utc": "2026-11-23T16:38:06Z"
+ },
+ {
+  "app": "89",
+  "url": "https://agents.ramp.com/docs/mcp/setup",
+  "title": "Connecting \u00b7 Docs \u00b7 agents.ramp.com",
+  "code": "200",
+  "raw_file": "raw/89_2.txt",
+  "page_sha256": "773c8b650098f1def3d147534abf62573456a923dfff922660e96bef751236e7",
+  "len": 5339,
+  "retrieved_at_utc": "2026-11-23T16:38:08Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com",
+  "title": "Ramp API Documentation",
+  "code": "200",
+  "raw_file": "raw/89_3.txt",
+  "page_sha256": "cd755757d0eaba6f8d452afdc2526212da0f869768f2c0f034db99f7ad08b802",
+  "len": 883,
+  "retrieved_at_utc": "2026-11-23T16:38:08Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/developer-api/v1/authorization",
+  "title": "Ramp API Documentation",
+  "code": "200",
+  "raw_file": "raw/89_4.txt",
+  "page_sha256": "cd755757d0eaba6f8d452afdc2526212da0f869768f2c0f034db99f7ad08b802",
+  "len": 883,
+  "retrieved_at_utc": "2026-11-23T16:38:09Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/developer-api/v1/guides/getting-started",
+  "title": "Ramp API Documentation",
+  "code": "200",
+  "raw_file": "raw/89_5.txt",
+  "page_sha256": "cd755757d0eaba6f8d452afdc2526212da0f869768f2c0f034db99f7ad08b802",
+  "len": 883,
+  "retrieved_at_utc": "2026-11-23T16:38:09Z"
+ },
+ {
+  "app": "90",
+  "url": "https://pitchbook.com/help/pitchbook-api",
+  "title": "Just a moment...",
+  "code": "403",
+  "raw_file": "raw/90_1.txt",
+  "page_sha256": "d44c878b16cb238c3c267f979438cd2a940ab62532af72961dde5e9cda9b23a4",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:38:09Z"
+ },
+ {
+  "app": "90",
+  "url": "https://pitchbook.com/help/pitchbook-premium-connector-for-claude-by-anthropic",
+  "title": "Just a moment...",
+  "code": "403",
+  "raw_file": "raw/90_2.txt",
+  "page_sha256": "d44c878b16cb238c3c267f979438cd2a940ab62532af72961dde5e9cda9b23a4",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:38:09Z"
+ },
+ {
+  "app": "90",
+  "url": "https://pitchbook.com/products/pitchbook-api",
+  "title": "Just a moment...",
+  "code": "403",
+  "raw_file": "raw/90_3.txt",
+  "page_sha256": "d44c878b16cb238c3c267f979438cd2a940ab62532af72961dde5e9cda9b23a4",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:38:09Z"
+ },
+ {
+  "app": "90",
+  "url": "https://pitchbook.com/help/pitchbook-data-api-faq",
+  "title": "Just a moment...",
+  "code": "403",
+  "raw_file": "raw/90_4.txt",
+  "page_sha256": "d44c878b16cb238c3c267f979438cd2a940ab62532af72961dde5e9cda9b23a4",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:38:10Z"
+ },
+ {
+  "app": "83",
+  "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/83_6.txt",
+  "page_sha256": "f1500faf7ede9e1b24087e31e3d2517eb56db28f1d936fdfde845ce418ae3ca8",
+  "len": 211689,
+  "retrieved_at_utc": "2026-11-23T16:38:34Z"
+ },
+ {
+  "app": "83",
+  "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/83_7.txt",
+  "page_sha256": "7897f8ea48e8700b67de598833fb10756d2de7985c7a1d11f6c72d9c2d20ff12",
+  "len": 3189,
+  "retrieved_at_utc": "2026-11-23T16:38:35Z"
+ },
+ {
+  "app": "83",
+  "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/83_8.txt",
+  "page_sha256": "85d18214a27bb248d15722ed4e8221a28789bcc0aaa3632785a614a2e2fed0f2",
+  "len": 7387,
+  "retrieved_at_utc": "2026-11-23T16:38:35Z"
+ },
+ {
+  "app": "85",
+  "url": "https://ipayx.ai/llms.txt",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/85_4.txt",
+  "page_sha256": "967deeb0c3efef097891f62156d2d28a1960a5f688fe33174f7e6a17dfbcd74a",
+  "len": 3799,
+  "retrieved_at_utc": "2026-11-23T16:38:37Z"
+ },
+ {
+  "app": "85",
+  "url": "https://www.ipayx.ai/pricing",
+  "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+  "code": "200",
+  "raw_file": "raw/85_5.txt",
+  "page_sha256": "526f7d7dc4fb231c109c7bd55a2f627c584b6d9f5a05281daa280a3c2975bf76",
+  "len": 62,
+  "retrieved_at_utc": "2026-11-23T16:38:37Z"
+ },
+ {
+  "app": "85",
+  "url": "https://github.com/IpayX-org/ipayx",
+  "title": "GitHub - IpayX-org/ipayx: https://ipayx.vercel.app/ \u00b7 GitHub",
+  "code": "200",
+  "raw_file": "raw/85_6.txt",
+  "page_sha256": "cf29d53d3bba31316921c04c1817628ae81f03f427c2b715560971877bc8538c",
+  "len": 8787,
+  "retrieved_at_utc": "2026-11-23T16:38:39Z"
+ },
+ {
+  "app": "86",
+  "url": "https://raw.githubusercontent.com/IntuitDeveloper/OAuth2.0-Sample-Node/master/README.md",
+  "title": "",
+  "code": "404",
+  "raw_file": "raw/86_6.txt",
+  "page_sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+  "len": 14,
+  "retrieved_at_utc": "2026-11-23T16:38:39Z"
+ },
+ {
+  "app": "86",
+  "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. \u00b7 GitHub",
+  "code": "200",
+  "raw_file": "raw/86_7.txt",
+  "page_sha256": "c4868b56b7a5bfbf5c714c5b789c092fe10f34e6aeafacda723b16154d13c712",
+  "len": 18479,
+  "retrieved_at_utc": "2026-11-23T16:38:40Z"
+ },
+ {
+  "app": "87",
+  "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/87_7.txt",
+  "page_sha256": "40a3be8915579ad801cf684092b90c05f8de08586801d754e9acb5e92774a134",
+  "len": 9351,
+  "retrieved_at_utc": "2026-11-23T16:38:41Z"
+ },
+ {
+  "app": "87",
+  "url": "https://raw.githubusercontent.com/XeroAPI/Xero-OpenAPI/master/README.md",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/87_8.txt",
+  "page_sha256": "544db853760a7ee6dc7c2fea6b151b1f8befabf62e0819f73005a0a8142bb893",
+  "len": 5350,
+  "retrieved_at_utc": "2026-11-23T16:38:41Z"
+ },
+ {
+  "app": "90",
+  "url": "https://www.pitchbook.com/help/pitchbook-api",
+  "title": "Just a moment...",
+  "code": "403",
+  "raw_file": "raw/90_5.txt",
+  "page_sha256": "d44c878b16cb238c3c267f979438cd2a940ab62532af72961dde5e9cda9b23a4",
+  "len": 17,
+  "retrieved_at_utc": "2026-11-23T16:38:42Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/89_6.txt",
+  "page_sha256": "c1d1dbfea0b14fb17b774e7c342914d75a40c21a218ac429016f0ed39c82d58a",
+  "len": 15734,
+  "retrieved_at_utc": "2026-11-23T16:38:48Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/89_7.txt",
+  "page_sha256": "75350efb61655f7e59ad597bdfb93846164c390d92dd13645f076b5158a189c0",
+  "len": 3728,
+  "retrieved_at_utc": "2026-11-23T16:38:48Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/89_8.txt",
+  "page_sha256": "a4eb62e75b3cf031a488c40f48175ebe65f43da0d4942472099077c3accc4488",
+  "len": 1972,
+  "retrieved_at_utc": "2026-11-23T16:38:49Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/llms-guides/mcp.txt",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/89_9.txt",
+  "page_sha256": "b86c7e9688985717980c437289e7ca26349b043c848ed7b70dd0d87497b74a0e",
+  "len": 992,
+  "retrieved_at_utc": "2026-11-23T16:38:49Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/llms-guides/rate-limiting.txt",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/89_10.txt",
+  "page_sha256": "d203d9a59baf77c27da306397c8dcb9247a8a00632bb50bc7125ddd8159fa0b1",
+  "len": 5010,
+  "retrieved_at_utc": "2026-11-23T16:38:50Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/llms-guides/webhooks.txt",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/89_11.txt",
+  "page_sha256": "fb6ef27424ce859943784d883eefef8b84ab4aa0810b3a919ce07fb04e2014bb",
+  "len": 20902,
+  "retrieved_at_utc": "2026-11-23T16:38:50Z"
+ },
+ {
+  "app": "89",
+  "url": "https://docs.ramp.com/llms-guides/introduction.txt",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/89_12.txt",
+  "page_sha256": "e630fe653119b6f94782f6fdc2cb4e1b541c731401f6d54e3ce1fa18d76b44a1",
+  "len": 4225,
+  "retrieved_at_utc": "2026-11-23T16:38:50Z"
+ },
+ {
+  "app": "83",
+  "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/sbe_faq.md",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/83_9.txt",
+  "page_sha256": "0fe507e534f3895d540ed2015895915ed730430f87f253f4e8b40fa6d491cd61",
+  "len": 10972,
+  "retrieved_at_utc": "2026-11-23T16:38:51Z"
+ },
+ {
+  "app": "83",
+  "url": "https://github.com/binance/binance-mcp",
+  "title": "Page not found \u00b7 GitHub \u00b7 GitHub",
+  "code": "404",
+  "raw_file": "raw/83_10.txt",
+  "page_sha256": "1e8286b5591b91a0b40746fbc540ac12a2af704eb786e19abd604eebe8e9a351",
+  "len": 2772,
+  "retrieved_at_utc": "2026-11-23T16:38:52Z"
+ },
+ {
+  "app": "85",
+  "url": "https://www.ipayx.ai/.well-known/mcp.json",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/85_7.txt",
+  "page_sha256": "859231d50f5da4d4975d8bf10e51aa06788a28f3d71ac66ab69f4ef72b36c5f4",
+  "len": 6906,
+  "retrieved_at_utc": "2026-11-23T16:39:00Z"
+ },
+ {
+  "app": "85",
+  "url": "https://www.ipayx.ai/.well-known/openapi.json",
+  "title": "",
+  "code": "200",
+  "raw_file": "raw/85_8.txt",
+  "page_sha256": "fc3e29ad0f4dd43a43f9a508f5b6680c836257df1af16171cbaf7ed3084dd8f5",
+  "len": 11185,
+  "retrieved_at_utc": "2026-11-23T16:39:02Z"
+ },
+ {
+  "app": "86",
+  "url": "https://github.com/IntuitDeveloper",
+  "title": "Intuit Developer Group \u00b7 GitHub",
+  "code": "200",
+  "raw_file": "raw/86_8.txt",
+  "page_sha256": "7aaf0e82d754ad11ccffa01bd34ab5da71dd9356a794a98932d1caf05078f986",
+  "len": 5057,
+  "retrieved_at_utc": "2026-11-23T16:39:04Z"
+ },
+ {
+  "app": "88",
+  "url": "https://developer.brex.com/docs/rate-limits",
+  "title": "",
+  "code": "404",
+  "raw_file": "raw/88_6.txt",
+  "page_sha256": "be943fb8ebc39709a38426be95d277f337f72ee36fc4bcbbf4b0da907eddf229",
+  "len": 372,
+  "retrieved_at_utc": "2026-11-23T16:39:53Z"
+ },
+ {
+  "app": "88",
+  "url": "https://developer.brex.com/docs/webhooks-1",
+  "title": "",
+  "code": "404",
+  "raw_file": "raw/88_7.txt",
+  "page_sha256": "be943fb8ebc39709a38426be95d277f337f72ee36fc4bcbbf4b0da907eddf229",
+  "len": 372,
+  "retrieved_at_utc": "2026-11-23T16:39:56Z"
+ },
+ {
+  "app": "88",
+  "url": "https://developer.brex.com/docs/quickstart",
+  "title": "",
+  "code": "404",
+  "raw_file": "raw/88_8.txt",
+  "page_sha256": "2afa8befee8673c822cf038499db18c2c39d4a00cc08b5553469417f821a75b3",
+  "len": 376,
+  "retrieved_at_utc": "2026-11-23T16:39:58Z"
+ }
+]

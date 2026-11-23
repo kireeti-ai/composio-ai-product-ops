@@ -1,0 +1,50 @@
+
+Rate Limits — Grain Developers
+/
+API Docs
+MCP Docs ↗
+grain.com ↗
+Overview
+Authentication
+Versions
+Rate Limits
+Endpoints
+Uploads
+Hooks
+2025-10-31 Endpoints
+Rate Limits
+Overview
+Grain rate limits requests with a token bucket algorithm per auth token.
+Requests beyond the bucket's current balance return a 429 Too Many Requests .
+Limits
+Bucket capacity
+30 requests
+Refill rate
+2 req/sec
+In Practice
+Sustained traffic
+120 req/min
+Burst from full bucket
+30 requests
+Time to refill empty bucket
+15 seconds
+NOTE: Rate limits for sunsetting versions are gradually reduced. See Versions .
+Headers
+Grain also returns the following headers with every request:
+Header
+x-ratelimit-limit
+Bucket capacity.
+x-ratelimit-remaining
+Tokens remaining in the bucket.
+Retry-After
+* only on 429
+Number of seconds you must wait before the bucket has a token available again.
+←
+Previous
+Versions
+Next
+Endpoints
+→
+On this page
+Overview
+Headers

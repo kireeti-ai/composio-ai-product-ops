@@ -1,0 +1,309 @@
+{
+ "id": 74,
+ "name": "Jira",
+ "started": "2026-11-23T19:37:13+05:30",
+ "searches": [
+  {
+   "q": "Jira API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:14+05:30"
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:16+05:30"
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:18+05:30"
+  },
+  {
+   "q": "Jira MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:37:20+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://jirapricing.com/guides/jira-create-issue-api-a-step-by-step-guide-for-developers/",
+   "requested_at": "2026-11-23T19:37:22+05:30",
+   "status": "ok",
+   "final_url": "https://jirapricing.com/guides/jira-create-issue-api-a-step-by-step-guide-for-developers/",
+   "title": "Jira Create Issue API: A Step-by-Step Guide for Developers | Jira Pricing Tracker",
+   "chars": 13457,
+   "sha256": "ac8ecd3a76b677d61261caa2787c128215a286535ba2571d4aa8e9405e023b4f",
+   "text": "# Jira Create Issue API: A Step-by-Step Guide for Developers\n\nNeed to create Jira tickets faster? Follow this jira create issue api guide to set up requests, authentication, and fields. Read now.\n\nCreating Jira issues by hand works until your team needs to file dozens of tickets or connect Jira to another service. Then repetitive clicks slow development, and small mistakes can send issues to the wrong project or leave required fields blank.\n\nThe Jira Create Issue API lets you create a ticket with an HTTP request. But here's the truth: a successful request depends on more than the endpoint. Authentication, project permissions, issue type, and field formats all need to match your Jira configuration.\n\nThis guide walks you through a working Jira Cloud example, explains how to handle common errors, and shows how to verify the new issue. You\u2019ll also see what changes for Jira Data Center and how to keep API credentials safe. By the end, you can create a ticket from a script or service and understand what to check when the request fails.\n\n## Create a Jira issue with the REST API\n\nFor Jira Cloud, send a\n\n```\nPOST\n```\n\nrequest to\n\n```\n/rest/api/3/issue\n```\n\nwith authentication and a JSON body. Include the project, issue type, and summary; add any other fields your Jira configuration requires.\n\n### 1. Confirm your Jira project and issue type\n\nFind the project key, such as\n\n```\nENG\n```\n\n, and choose an issue type available in that project, such as\n\n```\nTask\n```\n\nor\n\n```\nBug\n```\n\n. Jira administrators can make fields mandatory or restrict issue types, so the required values can differ across projects.\n\nCheck that the account making the request has permission to create issues in the target project. A valid token alone does not grant project access.\n\n### 2. Create an API token and prepare authentication\n\nFor Jira Cloud basic authentication, use the account\u2019s email address and an Atlassian API token. Do not use your normal account password. Store the token in a secret manager or environment variable, and avoid printing it in logs.\n\nThe example below expects\n\n```\nJIRA_BASE_URL\n```\n\n,\n\n```\nJIRA_EMAIL\n```\n\n, and\n\n```\nJIRA_API_TOKEN\n```\n\nto be set in your shell. Replace\n\n```\nyour-domain.atlassian.net\n```\n\nwith your Jira site address.\n\n### 3. Send the create request\n\nThis minimal request creates a task with a summary. Add a description or other fields when your project requires them.\n\n> ```\n> curl --request POST \\\n>   --url \"https://your-domain.atlassian.net/rest/api/3/issue\" \\\n>   --user \"$JIRA_EMAIL:$JIRA_API_TOKEN\" \\\n>   --header \"Accept: application/json\" \\\n>   --header \"Content-Type: application/json\" \\\n>   --data '{\n>     \"fields\": {\n>       \"project\": {\n>         \"key\": \"ENG\"\n>       },\n>       \"issuetype\": {\n>         \"name\": \"Task\"\n>       },\n>       \"summary\": \"Add retry handling to the payment service\"\n>     }\n>   }'\n> ```\n\nThe project key, issue type, and summary are examples. Use values that exist in your Jira site and match the project\u2019s configuration.\n\n### 4. Add a description when needed\n\nJira Cloud REST API v3 uses Atlassian Document Format (ADF) for descriptions. A plain text string may be rejected when sent as the description field. Use a structured value like this:\n\n> ```\n> \"description\": {\n>   \"type\": \"doc\",\n>   \"version\": 1,\n>   \"content\": [\n>     {\n>       \"type\": \"paragraph\",\n>       \"content\": [\n>         {\n>           \"type\": \"text\",\n>           \"text\": \"Add retry handling and test the payment timeout path.\"\n>         }\n>       ]\n>     }\n>   ]\n> }\n> ```\n\nPlace that object inside\n\n```\nfields\n```\n\n, alongside\n\n```\nproject\n```\n\n,\n\n```\nissuetype\n```\n\n, and\n\n```\nsummary\n```\n\n. If your project requires additional fields, include them in the same object using the field names or IDs Jira expects.\n\n### 5. Check the response\n\nA successful create request usually returns HTTP\n\n```\n201 Created\n```\n\n. The response includes the new issue\u2019s ID and key, such as\n\n```\nENG-42\n```\n\n. Save the key if another step needs to link to or update the issue.\n\nIf you receive an error, inspect the status code and response body. Jira often identifies a missing field or invalid value in its error details.\n\n## Choose the right endpoint and request format\n\nThe API version depends on where Jira runs. Jira Cloud uses REST API v3 for this request. Jira Data Center commonly uses REST API v2, though the exact version and authentication method depend on the installed release and configuration.\n\nFor a Data Center instance, the endpoint commonly follows this pattern:\n\n```\nhttps://jira.example.com/rest/api/2/issue\n```\n\n. Check your administrator\u2019s configuration before copying Cloud authentication examples, because authentication options can differ.\n\nRequest formatting matters, too. Cloud v3 expects ADF for rich-text fields such as descriptions. A simple summary remains a string, while fields such as labels or components have their own expected formats. Treat each field as a specific type rather than assuming every value is plain text.\n\n## Build a valid issue payload\n\nStart with the smallest request that works in your project. Add fields one at a time, testing after each change; this makes validation errors easier to pinpoint.\n\n| Field | Typical value | What to check |\n| --- | --- | --- |\n| ``` project ``` | ``` {\"key\":\"ENG\"} ``` | The project exists and the account can create issues there. |\n| ``` issuetype ``` | ``` {\"name\":\"Task\"} ``` | The type is enabled for the chosen project. |\n| ``` summary ``` | A short string | The value is present and clearly describes the work. |\n| ``` description ``` | An ADF object in Cloud v3 | The structure matches the REST API version. |\n| Custom fields | Field-specific values | Required fields, IDs, allowed options, and value types. |\n\nFor example, if a project requires a priority, setting only the summary may return a validation error. Add the priority in the format accepted by that Jira field, then retry with a fresh request.\n\n## Handle errors and verify the new ticket\n\nHere\u2019s why: an HTTP status code often narrows the problem quickly. A\n\n```\n400\n```\n\nresponse usually points to invalid or missing fields. A\n\n```\n401\n```\n\nsuggests an authentication problem, while\n\n```\n403\n```\n\noften means the account lacks permission.\n\nA\n\n```\n404\n```\n\ncan indicate an incorrect site URL, endpoint, or project reference. If Jira returns\n\n```\n429\n```\n\n, slow down and respect any retry guidance in the response. Use backoff rather than sending requests in a tight loop.\n\nAfter a\n\n```\n201\n```\n\nresponse, confirm the returned issue key and open it in Jira. Check that the project, issue type, summary, description, and any custom fields appear as intended. This simple verification can catch formatting mistakes before a larger integration repeats them.\n\nBe careful when retrying a request after a network timeout. The issue may have been created even if your client never received the response. Search for the intended issue or use a reliable correlation method before repeating the POST, or you may create duplicates.\n\n## Keep the integration reliable and secure\n\nUse a dedicated account with only the project permissions the integration needs. Keep tokens out of browser code, public repositories, and diagnostic output. Rotate credentials when team access changes or a secret may have been exposed.\n\nValidate required values before making the API call. For example, reject a request that lacks a project key or summary rather than sending it to Jira and generating avoidable errors.\n\nFor bulk workflows, control request rates and record the response status and issue key without logging credentials. If several tickets are created from an event, include a clear marker in a suitable custom field or summary convention so your team can identify related issues.\n\n## Project and knowledge workflows with ONES.com\n\nONES.com combines project management and knowledge management in one platform, powered by ONES Assistant. ONES Project supports Jira-compatible workflows, while ONES Wiki provides a knowledge base; the products are sold separately.\n\nIt may suit teams that want to manage work and team knowledge with deployment choices that include Cloud, On-Premise, Private Cloud, and Air-gapped environments. The free plan supports up to 30 seats.\n\n### Core capabilities\n\n* Disconnected project and knowledge workflows: ONES.com brings project work and knowledge management into a unified platform, helping teams keep related work and guidance closer together.\n* Jira migration or workflow continuity: ONES Project supports Jira-compatible workflows, helping teams preserve familiar ways of tracking work while moving to another platform.\n* Plugin-heavy configurations: Built-in reporting, automation, sprint management, custom workflows, and custom fields can reduce reliance on extra plugins for common needs.\n* Restricted hosting requirements: On-Premise, Private Cloud, and Air-gapped deployment options support teams with specific hosting constraints.\n* Cloud and self-hosted feature needs: Full feature parity between Cloud and self-hosted versions helps teams choose a deployment without giving up core capabilities.\n* Separate project and knowledge needs: ONES Project and ONES Wiki are sold separately, so teams can select the product that fits their immediate workflow.\n* AI-supported work: ONES Assistant adds AI support within the platform for teams that want assistance alongside project and knowledge workflows.\n* Small-team evaluation: The free plan for up to 30 seats gives a team room to evaluate the platform with a group-sized setup.\n\n### Application scenarios\n\nA software team replacing Jira could map its issue types, sprint process, custom fields, and reporting needs to ONES Project. It can assess whether built-in functionality covers workflows that previously depended on plugins.\n\nA company with restricted networks could evaluate an Air-gapped or self-hosted deployment. A team that needs a knowledge base alongside project tracking could consider ONES Wiki separately from ONES Project.\n\n## Common challenges when creating Jira issues\n\n* Missing mandatory fields: Jira rejects the request with a validation error. Check the project\u2019s required fields and issue type, then add each required value in the format that field expects.\n* Invalid description formatting: Cloud v3 may reject a plain string for a rich-text description. Send a valid ADF object and confirm its structure before adding more content.\n* Authentication works, but creation is denied: The account may lack permission in the project. Ask an administrator to review project permissions and grant only the access the integration needs.\n* Duplicate issues after a timeout: The server may have completed the request before the client lost its connection. Verify whether the issue exists before retrying the POST.\n\n## Frequently asked questions\n\n### What endpoint creates an issue in Jira Cloud?\n\nUse\n\n```\nPOST /rest/api/3/issue\n```\n\non your Jira Cloud site. Include authentication and a JSON body with the required issue fields. A successful request normally returns\n\n```\n201 Created\n```\n\nand an issue key. Your project\u2019s configuration determines which fields are mandatory, so a minimal example may need extra values to work on your site.\n\n### Which fields are required to create a Jira issue?\n\nThe project, issue type, and summary are common essential fields, but Jira administrators can configure more as mandatory. Required fields may vary by project and issue type. If a request fails with a validation error, read the response details and add the missing field using the correct value format.\n\n### How do I add a description with the Jira Cloud API?\n\nFor Jira REST API v3, send the description as Atlassian Document Format rather than a plain text string. An ADF description includes a document type, version, and content structure. Start with a paragraph containing text, then expand the structure if you need formatting or richer content.\n\n### Can I create Jira issues without an API token?\n\nJira Cloud basic authentication uses an account email address and API token. Other authentication approaches may be available for integrations, depending on how they are configured. Jira Data Center can use different authentication methods. Choose a method approved by your Jira administrator, and keep its credentials out of public or client-side code.\n\n### How can I prevent duplicate issues when a request times out?\n\nA timeout does not prove Jira failed to create the issue. Before retrying, check Jira for a matching issue using a reliable identifier, such as a unique integration marker or a suitable custom field. Log response details when available, and use controlled retry logic so temporary network problems do not create repeated tickets.\n\n## Conclusion\n\nThe Jira Create Issue API creates a ticket through a JSON POST request, but the details matter: use the right endpoint, authenticate securely, and match every field to your Jira configuration.\n\nStart with a minimal request, add required fields carefully, and verify the returned issue key. If a request fails, use its status code and error details to find the cause instead of guessing.\n\nThat approach turns repetitive ticket creation into a manageable integration while reducing permission mistakes, malformed descriptions, and accidental duplicates. When your team\u2019s wider project and knowledge workflows need attention, compare those needs with platforms such as ONES.com alongside your API requirements.",
+   "retrieved_at": "2026-11-23T19:37:22+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://jirapricing.com/guides/jira-api-pricing-2026-costs-plans-limits-and-usage-fees",
+   "requested_at": "2026-11-23T19:37:23+05:30",
+   "status": "ok",
+   "final_url": "https://jirapricing.com/guides/jira-api-pricing-2026-costs-plans-limits-and-usage-fees",
+   "title": "Jira API Pricing: 2026 Costs, Plans, Limits, and Usage Fees | Jira Pricing Tracker",
+   "chars": 22631,
+   "sha256": "e533d03d9c8c259543c343f20fce0ffc16f2d1d9abf9c07059abbc0c7d3ac16a",
+   "text": "# Jira API Pricing: 2026 Costs, Plans, Limits, and Usage Fees\n\nWondering how Jira API pricing works? Explore 2026 costs, plans, limits, and usage fees to budget integrations confidently. Click to discover.\n\nJira API pricing can look deceptively simple. You may expect a separate charge for every request, then discover that costs depend on your Jira plan, user count, deployment model, apps, and automation volume.\n\nThat uncertainty becomes expensive when a small integration grows into a company-wide workflow. A connector that works comfortably during testing can encounter rate limits, higher subscription tiers, marketplace fees, or infrastructure costs later.\n\nHere\u2019s the practical answer: Jira Cloud generally includes REST API access within your Jira subscription. You usually do not pay a separate per-request fee. Your total cost comes from the Jira plan, connected products, third-party apps, implementation work, and any extra infrastructure around the integration.\n\n## Jira API Pricing at a Glance\n\nJira API pricing usually means the cost of the Jira subscription that grants API access, plus related app, infrastructure, and implementation expenses. Jira Cloud generally does not charge a separate fee for every REST API request.\n\nFor a realistic budget, separate your costs into four layers:\n\n* Jira subscription: Free, Standard, Premium, or Enterprise pricing.\n* API usage: Usually included, subject to authentication rules and rate limits.\n* Connected products and apps: Confluence, Jira Service Management, marketplace apps, and automation services may add fees.\n* Integration operations: Hosting, monitoring, engineering time, security reviews, and maintenance.\n\nHere\u2019s why: the API itself is rarely the largest expense. A paid Jira plan, an automation platform, or the engineering effort needed to maintain a production integration usually has a greater effect on your total budget.\n\n| Cost area | What you may pay for | What usually affects the amount |\n| --- | --- | --- |\n| Jira plan | Access to Jira and its API | Users, plan level, billing term, region, and deployment type |\n| API requests | REST calls and integration traffic | Rate limits, request patterns, and connected services |\n| Marketplace apps | Specialized integrations, reporting, time tracking, or automation | App pricing model and licensed user count |\n| Infrastructure | Hosting, queues, logs, monitoring, and security controls | Integration volume, uptime requirements, and architecture |\n| Implementation | Development, testing, maintenance, and support | Workflow complexity and number of systems involved |\n\n## How Jira API Costs Work\n\nThe simplest way to estimate your budget is to calculate the Jira subscription first, then add the costs created by your integration architecture.\n\n* Choose the Jira deployment. Decide whether you need Jira Cloud, Data Center, or another supported Atlassian deployment. API behavior, administration, and licensing differ between environments.\n* Estimate licensed users. Count people who need Jira access, including agents, developers, service staff, contractors, and administrators.\n* Select the required plan. Compare Free, Standard, Premium, and Enterprise features. Consider permissions, audit controls, uptime expectations, administration, and scale.\n* Map every integration. List systems that will send or receive Jira information. Include CRM platforms, chat tools, reporting systems, CI/CD services, identity platforms, and internal applications.\n* Estimate API traffic. Count scheduled synchronizations, webhook events, issue updates, searches, comments, attachments, and retry requests.\n* Check rate-limit behavior. Design for bursts, pagination, retries, and backoff. A large request count can create operational work even when it creates no separate invoice.\n* Add app and infrastructure fees. Include marketplace subscriptions, cloud hosting, queues, observability tools, and security services.\n* Calculate maintenance effort. Budget for token rotation, API version changes, workflow changes, testing, and incident handling.\n\nFor example, imagine a team synchronizing Jira issues with an internal planning portal every five minutes. The Jira subscription is one cost. Hosting the synchronization service, storing logs, handling failures, and supporting the connection are separate costs.\n\nThe best part? A small traffic estimate can reveal architectural problems early. If your integration performs one request per issue every few minutes, replacing that pattern with webhooks and targeted queries may reduce traffic considerably.\n\n## Jira Plans and What They Mean for API Access\n\nJira plans determine the environment in which your API integration operates. API availability alone should not decide your plan. Your choice also affects administration, security, automation, reporting, support, and scale.\n\n### Free plan\n\nThe Free plan can suit a small team testing a simple integration. It is useful for prototypes, internal experiments, and low-risk workflows with modest collaboration needs.\n\nBefore relying on it for a production connection, check the current user cap, automation allowance, storage limits, permission controls, and support options. Free-plan restrictions can affect your workflow even when API calls remain available.\n\n### Standard plan\n\nStandard is often the practical starting point for production teams. It generally provides more users, administration, collaboration features, and operational headroom than Free.\n\nFor API projects, review permission management, audit capabilities, automation allowances, and administrative controls. A connector may work technically on Free while still requiring Standard for governance.\n\n### Premium plan\n\nPremium is designed for organizations that need greater scale, advanced administration, stronger service expectations, or more sophisticated workflow operations.\n\nIt can make sense when integrations support multiple departments, when automation volume is high, or when downtime has a material business impact. Premium pricing should be checked using Atlassian\u2019s current calculator because the amount can vary by user count and billing arrangement.\n\n### Enterprise plan\n\nEnterprise typically targets large organizations with complex governance, security, support, procurement, and administrative requirements.\n\nYou may need a negotiated quote rather than a public per-user price. Ask about API governance, support coverage, identity management, data residency, audit requirements, and deployment expectations during procurement.\n\n### Cloud versus Data Center\n\nJira Cloud usually offers the simplest path for a new API integration. Atlassian operates the environment, and your team connects through cloud endpoints using supported authentication methods.\n\nData Center can suit organizations that require greater control over hosting and administration. Its economics differ because licensing, infrastructure, upgrades, high availability, and operational staffing all become important.\n\n## API Limits, Rate Limits, and Usage Fees\n\nJira API calls are generally included with the relevant Jira subscription. That does not mean you can send unlimited traffic at any speed.\n\nAtlassian can apply rate limits to protect service stability. Limits may depend on the product, endpoint, authentication method, tenant behavior, request pattern, and current platform policies.\n\n### What rate limiting looks like\n\nYour application may receive an HTTP 429 response when it sends requests too quickly. The response can include guidance about when to retry.\n\nA reliable integration should pause, respect retry timing, and avoid sending the same request repeatedly. Immediate retries can turn a temporary limit into a longer disruption.\n\n### What consumes API capacity\n\nCommon traffic sources include issue searches, individual issue retrieval, comments, transitions, worklog updates, user lookups, project metadata, changelog requests, and attachment operations.\n\nA poorly designed synchronization can generate unnecessary volume. For example, polling 20,000 issues every minute creates far more traffic than receiving webhook events and requesting only changed records.\n\n### Does Jira charge per API request?\n\nJira Cloud generally does not use a simple pay-per-request model for standard REST API access. Your commercial agreement may still include product-specific terms, app charges, or enterprise arrangements.\n\nAlways confirm the current terms for the specific Jira product, deployment, and endpoint you plan to use. Pricing pages and technical limits can change independently.\n\n### How to reduce traffic\n\n* Use webhooks for event-driven updates where practical.\n* Request only the fields your integration needs.\n* Use pagination instead of retrieving oversized responses.\n* Cache stable project, user, and workflow metadata.\n* Batch compatible operations when the endpoint supports them.\n* Use exponential backoff after rate-limit responses.\n* Track request volume by endpoint and integration.\n\n## Hidden Costs Around a Jira Integration\n\nThe subscription price is easy to see. Operational costs are easier to overlook, especially during a proof of concept.\n\n| Hidden cost | Example | Budget question |\n| --- | --- | --- |\n| Engineering | Building OAuth, webhooks, field mapping, and retries | Who will build and maintain the connection? |\n| Hosting | Running a worker, API service, or scheduled process | What availability and scaling level is required? |\n| Monitoring | Logs, alerts, dashboards, and request tracing | How quickly must failures be detected? |\n| Security | Secret storage, access reviews, and token rotation | Which controls does your organization require? |\n| Data transformation | Mapping custom fields between applications | How many workflows and field types must stay aligned? |\n| Support | Investigating failed syncs or permission errors | Who handles incidents outside development hours? |\n\nLet me explain with a common example. A sales team connects Jira with a CRM and estimates only the Jira subscription. Six months later, the team also needs historical synchronization, custom field mapping, duplicate detection, monitoring, and audit trails.\n\nThe API access may still cost nothing beyond the Jira plan. The integration itself now requires a more capable architecture and ongoing support.\n\n## How to Estimate API Usage Before Launch\n\nYou can create a useful estimate without knowing the exact future traffic. Start with events, then calculate the requests created by each event.\n\n### Example calculation\n\nSuppose your integration handles 2,000 issue updates each day. Each update triggers one webhook, one issue lookup, one field transformation, and one write to another service.\n\nThat creates roughly 4,000 major operations daily before retries, scheduled reconciliation, metadata checks, and error recovery. If each operation requires multiple API calls, your actual request count will be higher.\n\nUse this simple planning formula:\n\n```\nEstimated daily requests = events \u00d7 calls per event + scheduled calls + retry allowance\n```\n\nFor a monthly estimate, multiply the daily figure by your working days or calendar days. Then add a safety margin for launches, bulk changes, imports, and unexpected retries.\n\n### Questions that improve the estimate\n\n* How many issues change during a normal day?\n* How many projects participate in the integration?\n* Does one event trigger one request or several?\n* Will the integration perform full reconciliation?\n* How often do scheduled jobs run?\n* What happens after a timeout or failed request?\n* Will users trigger bulk actions?\n\nYou might be wondering: do you need an expensive Jira plan for high API traffic? Usually, traffic alone does not determine the plan. Governance, users, product features, and operational requirements matter too.\n\n## Authentication, Apps, and Integration Architecture\n\nAuthentication affects security and maintenance more than direct API pricing. Jira Cloud integrations commonly use OAuth 2.0, API tokens, or app-based authentication, depending on the design.\n\nChoose credentials according to the integration\u2019s purpose. A personal token tied to one employee can create an outage when that person leaves or changes roles. A controlled app identity can provide clearer ownership and easier rotation.\n\n### Marketplace apps\n\nA marketplace app may reduce development effort by providing a ready-made connector, reporting layer, synchronization engine, or automation feature.\n\nThat convenience creates a separate subscription. App pricing may depend on the Jira tier, licensed users, installation type, or contract terms. Compare the app fee with the engineering and maintenance cost of building the connection yourself.\n\n### Custom integration\n\nA custom integration gives you control over field mapping, error handling, security, and business rules. It also leaves your team responsible for upgrades, testing, monitoring, and support.\n\nFor example, a custom service can ignore irrelevant issue changes and synchronize only approved transitions. A generic connector may be quicker to launch, though it may generate more traffic or require workarounds.\n\n### Webhooks and polling\n\nPolling repeatedly asks whether anything changed. Webhooks notify your service when a relevant event occurs.\n\nWebhooks often reduce unnecessary requests, though you still need scheduled reconciliation. A daily reconciliation job can catch missed events without forcing your integration to inspect every issue continuously.\n\n## Jira API Pricing Compared With Total Cost of Ownership\n\nTwo integrations can use the same Jira plan and have very different total costs. The difference comes from architecture, reliability expectations, and ongoing change.\n\n| Approach | Initial effort | Ongoing considerations |\n| --- | --- | --- |\n| Simple custom script | Low for a narrow workflow | Fragile credentials, limited monitoring, and manual recovery |\n| Managed connector | Moderate setup | Recurring app fees and vendor-specific limitations |\n| Custom integration service | Higher engineering effort | Greater control with continuing maintenance responsibility |\n| Enterprise integration platform | Lower coding effort for complex flows | Platform subscription, usage tiers, and governance work |\n\nHere\u2019s a useful comparison. A small team may spend less with a connector subscription than with several months of custom development. A large team with unusual workflows may eventually save money by owning a focused integration service.\n\nCalculate three figures before deciding:\n\n* The first-year subscription and setup cost.\n* The yearly operating and support cost.\n* The cost of downtime, failed synchronization, and manual correction.\n\n## Practical Ways to Control Integration Costs\n\nCost control starts with design decisions. You do not need to reduce every request. You need to remove waste and make failures predictable.\n\n### Design around business events\n\nSynchronize meaningful events, such as issue creation, approval, assignment, or completion. Avoid copying every minor change unless the receiving system truly needs it.\n\n### Keep mappings deliberate\n\nEvery synchronized field adds testing and maintenance work. Start with status, owner, priority, key dates, and links. Add custom fields only when they support a defined process.\n\n### Separate real-time and periodic work\n\nUse event-driven updates for urgent changes. Use scheduled jobs for cleanup, reconciliation, and low-priority enrichment.\n\n### Measure before scaling\n\nTrack requests by endpoint, response code, latency, and workflow. A dashboard can show that one faulty job creates most of your traffic.\n\n### Plan for plan changes\n\nReview the Jira plan whenever your user count, automation volume, compliance obligations, or integration scope changes. A plan that fits a 15-person team may become restrictive at 150 people.\n\n## Jira API Integration Solution: ONES.com\n\n### Value Proposition\n\nONES.com combines project management and knowledge management in one platform, powered by AI through ONES Assistant. ONES Project is a Jira alternative for teams that want project workflows, reporting, and deployment flexibility.\n\nONES Project and ONES Wiki are sold separately, allowing you to choose the project or knowledge product your team needs.\n\n### Core Capabilities\n\n* Scattered project information \u2192 Unified project workspace \u2192 Teams can manage planning, execution, and reporting in one project environment.\n* Complex Jira migration concerns \u2192 Jira-compatible workflows \u2192 Teams can preserve familiar issue-based processes while evaluating a different platform.\n* Plugin-heavy reporting \u2192 Built-in reporting \u2192 Project leaders can review progress with native reporting instead of assembling every view through separate extensions.\n* Rigid process rules \u2192 Custom workflows and fields \u2192 Teams can reflect approval paths, service processes, and department-specific requirements.\n* Manual sprint administration \u2192 Sprint management \u2192 Agile teams can plan, monitor, and review sprint work in the same environment.\n* Repetitive project actions \u2192 Automation \u2192 Teams can reduce routine transitions, notifications, and assignment tasks.\n* Cloud-only constraints \u2192 Four deployment choices \u2192 Organizations can choose Cloud, On-Premise, Private Cloud, or Air-gapped deployment.\n* Different capabilities across hosting models \u2192 Native feature parity \u2192 Self-hosted teams can access the same core feature level as cloud teams.\n* High entry cost during evaluation \u2192 Free plan for 30 seats \u2192 A small team can test core project workflows before committing to a broader rollout.\n\n### Application Scenarios\n\nRestricted-network engineering: A security-sensitive team can evaluate an air-gapped deployment for project planning and issue tracking. This approach supports restricted environments where public cloud access is unsuitable.\n\nApproval-heavy product development: A product organization can configure custom workflows for requirements, reviews, development, testing, and release approval. Built-in reporting gives managers a consolidated progress view.\n\nSelf-hosted project operations: An organization with on-premise requirements can operate project management within its own environment. This can reduce dependence on multiple plugins while preserving familiar Jira-compatible workflows.\n\n## Common Challenges With Jira API Costs\n\n### Challenge: Pricing pages do not show your final bill\n\nSolution: Separate the Jira subscription from app fees, hosting, engineering, support, and security work. Request a quote when your organization needs Enterprise terms or a large deployment.\n\n### Challenge: Rate limits appear during busy periods\n\nSolution: Use webhooks, pagination, caching, request queues, and exponential backoff. Monitor HTTP 429 responses and identify which workflow creates traffic spikes.\n\n### Challenge: A personal credential becomes a dependency\n\nSolution: Use an appropriately managed integration identity. Store credentials securely, rotate them on a schedule, and document ownership before launch.\n\n### Challenge: Custom fields increase maintenance\n\nSolution: Define a controlled mapping catalogue. Record field types, allowed values, update direction, fallback behavior, and the team responsible for each field.\n\n### Challenge: A prototype becomes a critical service\n\nSolution: Add monitoring, retry handling, reconciliation, alerting, and recovery procedures before business teams depend on the integration.\n\n## FAQs\n\n### Is Jira API access included in the subscription?\n\nFor Jira Cloud, standard REST API access is generally included with the Jira subscription. You typically do not pay a separate fee for each request. However, your integration still operates within authentication rules, rate limits, product terms, and plan restrictions. Connected apps, infrastructure, and implementation work can create additional costs.\n\n### Does Jira charge for every API request?\n\nJira Cloud generally does not use a straightforward per-request billing model for standard API calls. Rate limits can still restrict traffic, especially when an integration sends large bursts or repeats unnecessary requests. Check the current technical and commercial terms for your Jira product, deployment, endpoint, and contract before launch.\n\n### Which Jira plan is best for an API integration?\n\nThe right plan depends on more than API traffic. Review user count, permissions, automation, audit needs, support expectations, uptime requirements, and deployment preferences. A small internal prototype may fit Free, while a production integration may require Standard, Premium, or Enterprise controls.\n\n### How can I avoid Jira API rate limits?\n\nUse webhooks for relevant events, request only necessary fields, paginate large responses, cache stable information, and queue outbound work. Add exponential backoff after HTTP 429 responses. A scheduled reconciliation process can improve reliability without constant polling.\n\n### Are Jira marketplace apps included in Jira pricing?\n\nUsually, marketplace apps have their own subscription or licensing terms. The amount may depend on licensed users, the Jira plan, deployment model, or contract arrangement. Compare the recurring app cost with the engineering effort, maintenance responsibility, and operational risk of building a custom integration.\n\n### Can ONES.com replace Jira for API-driven project workflows?\n\nONES Project is a Jira alternative with Jira-compatible workflows, custom fields, sprint management, automation, and built-in reporting. It supports Cloud, On-Premise, Private Cloud, and Air-gapped deployments, with feature parity between cloud and self-hosted versions. Evaluate workflow fit, migration effort, API requirements, and deployment needs before choosing a platform.\n\n## Conclusion\n\nJira API pricing is usually tied to your Jira subscription rather than a separate charge for each REST request. Your real budget also includes apps, hosting, engineering, monitoring, security, and long-term maintenance.\n\nStart with the plan, users, deployment model, and required governance. Then estimate event volume, design around webhooks, handle rate limits, and include operational costs.\n\nBut here\u2019s the truth: the cheapest API plan can become expensive when the integration is fragile. A clear architecture protects your budget by reducing unnecessary traffic and manual recovery.\n\nIf you are comparing project platforms, ONES.com offers ONES Project as a Jira alternative with native workflow capabilities, multiple deployment options, and a free plan for up to 30 seats. The right choice depends on the workflows, controls, and operating model your team needs.",
+   "retrieved_at": "2026-11-23T19:37:23+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Jira API documentation",
+   "url": "https://jira.readthedocs.io/api.html",
+   "title": "6. API Documentation - jira 0.1.dev50 documentation",
+   "snippet": "by this library. Users will construct a JIRA object as described below. Full API documentation can be found at: [https://jira.readthedocs.io/en/latest/](https://jira.readthedocs.io/en/latest/)."
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-project-versions/",
+   "title": "REST API v3: Project versions",
+   "snippet": "Developer. Documentation. Resources. News and Updates \u00b7 Get Support \u00b7 Sign in \u00b7 Developer ... Jira Cloud platform. Guides. Reference. REST APIDocument FormatJira ..."
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://docs.atlassian.com/software/jira/docs/api/REST/7.6.1",
+   "title": "JIRA 7.6.1",
+   "snippet": "add-ons for JIRA, develop integrations between JIRA and other applications, or script interactions with JIRA. This page documents the REST resources available in JIRA Server platform, along with"
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://github.com/anhkhoa289/ai-agent/blob/main/docs/JIRA_API.md",
+   "title": "ai-agent/docs/JIRA_API.md at main \u00b7 anhkhoa289/ai-agent",
+   "snippet": "## Overview\nThe Jira REST API allows you to interact with Jira programmatically to manage projects, issues, sprints, and other agile resources. This documentation covers the most relevant endpoints"
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://github.com/anthropics/claude-tag-plugins/blob/b00916e6ce3620caa92ac14e2b89e21b997f0104/jira/skills/jira-api/references/api.md",
+   "title": "claude-tag-plugins/jira/skills/jira-api/references/api.md at b00916e6ce3620caa92ac14e2b89e21b997f0104 \u00b7 anthropics/claude-tag-plugins",
+   "snippet": "`expand` is a comma-delimited *string*, not an array. `fields` defaults to `id` only \u2014"
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://docs.atlassian.com/software/jira/docs/api/REST/6.4",
+   "title": "JIRA 6.4 REST API documentation",
+   "snippet": "#### GET\n###### /rest/api/2/issue/{issueIdOrKey}/remotelink?globalId\nA REST sub-resource representing the remote issue links on the issue."
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://developer.atlassian.com/server/jira/platform/rest/v10005/api-group-project/",
+   "title": "The Jira Data Center REST API",
+   "snippet": "Returns all the project types defined on the Jira instance, not taking into account whether the license to use those project types is valid or not."
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://developer.atlassian.com/cloud/jira/software/rest",
+   "title": "The Jira Software Cloud REST API",
+   "snippet": "- [Introduction](https://developer.atlassian.com/cloud/jira/software/rest/intro/#introduction)"
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://docs.atlassian.com/software/jira/docs/api/REST/4.4.5-m1",
+   "title": "JIRA REST API documentation",
+   "snippet": "who want to script interactions with the JIRA server.\nJIRA's REST APIs provide access to resources (data entities) via URI paths. To use a REST API, your application will make an HTTP"
+  },
+  {
+   "q": "Jira API documentation",
+   "url": "https://atlassian-python-api.readthedocs.io/jira.html",
+   "title": "Jira module \u2014 Atlassian Python API 5.0.5 documentation",
+   "snippet": "Jira Server 8.13 and compatible Data Center releases expose transition-rule configuration through the v2 REST route. Use the explicit Server client; the Cloud ..."
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://developer.atlassian.com/server/jira/platform/oauth",
+   "title": "OAuth",
+   "snippet": "[OAuth](https://en.wikipedia.org/wiki/OAuth) (version 1.0a). We\u2019ll explain how OAuth works with Jira and walk you through an example of how to use OAuth to authenticate a Java application against"
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://support.atlassian.com/jira/kb/how-to-use-oauth20-in-postman-client-for-jira-cloud-apis",
+   "title": "Use OAuth 2.0 in Postman for Jira Cloud APIs | Jira and Jira Service Management | Atlassian Support",
+   "snippet": "  - **Access Token URL**: https://auth.atlassian.com/oauth/token\n- **Client ID**: Client id from Developer console from Step 1\n- **Client secret**: Secret"
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://developer.atlassian.com/cloud/jira/software/oauth-2-3lo-apps",
+   "title": "OAuth 2.0 (3LO) apps",
+   "snippet": "Make the API call passing the access token as a bearer token in the header of the request. This will authorize the request on the user's behalf."
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+   "title": "Basic auth for REST APIs - Jira Cloud platform",
+   "snippet": "This page shows you how REST clients can authenticate themselves using basic authentication with an Atlassian account email address and API token ."
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://developer.atlassian.com/cloud/jira/software/basic-auth-for-rest-apis",
+   "title": "Basic auth for REST APIs",
+   "snippet": "\n## Get an API token\nBasic auth requires API tokens. You generate an API token for your Atlassian account and use it to authenticate anywhere where you would have used a password. This"
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://developer.atlassian.com/server/jira/platform/jira-rest-api-example-oauth-authentication-6291692",
+   "title": "JIRA REST API Example OAuth Authentication 6291692",
+   "snippet": "go to the incoming authentication configuration screen and select OAuth. Enter in this the public key and the consumer key which your client will use when making requests to JIRA. After you have"
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://community.developer.atlassian.com/t/creating-jira-issues-oauth-access-token-vs-api-key/75151",
+   "title": "Creating Jira Issues: OAuth Access Token VS API Key",
+   "snippet": "`https://api.atlassian.com/oauth/token/accessible-resources` to request the `cloudId` and use the bearer token on `https://api.atlassian.com/ex/jira/<cloudId>/rest/api/3/issue` to make the request."
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://developer.atlassian.com/cloud/jira/software/jira-rest-api-oauth-authentication",
+   "title": "OAuth 1.0a for REST APIs (Deprecated)",
+   "snippet": "OAuth (3LO)**, which means that the user is involved in the authentication process by authorizing access to their data on the resource (instead of 2-legged OAuth, where the user is not involved)."
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://community.atlassian.com/forums/Jira-questions/Authenticating-JIRA-Rest-API-via-Office-365-Oauth/qaq-p/1532811",
+   "title": "Authenticating JIRA Rest API via Office 365 Oauth",
+   "snippet": "you can either use [basic authentication](https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/) with an [Atlassian"
+  },
+  {
+   "q": "Jira API authentication OAuth API key developer",
+   "url": "https://confluence.atlassian.com/spaces/JIRACORE/pages/1108486402/EAP+documentation+Jira+OAuth+2.0+provider+API",
+   "title": "EAP documentation: Jira OAuth 2.0 provider API",
+   "snippet": "\n## Supported OAuth 2.0 flows\nWe support the following OAuth 2.0 flows:\n- Authorization code with [Proof Key for Code Exchange (PKCE)](https://datatracker.ietf.org/doc/html/rfc7636)\n- Authorization"
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-plans/",
+   "title": "plans",
+   "snippet": "The Jira Cloud platform REST API Developer Documentation Resources News and Updates Get Support Sign in. Authentication and authorization Permissions Expansion ..."
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://dev.to/zuplo/jira-api-the-ultimate-project-management-powerhouse-52m3",
+   "title": "Jira API: The Ultimate Project Management Powerhouse",
+   "snippet": "For Jira Cloud users, API access is included in all plans, from Free to Enterprise, but with different rate limits. Free and Standard plans have ..."
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://jirapricing.com/guides/jira-create-issue-api-a-step-by-step-guide-for-developers/",
+   "title": "Jira Create Issue API: A Step-by-Step Guide for Developers",
+   "snippet": "Need to create Jira tickets faster? Follow this jira create issue api guide to set up requests, authentication, and fields. Read now."
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://jirapricing.com/guides/jira-api-pricing-2026-costs-plans-limits-and-usage-fees",
+   "title": "Jira API Pricing: 2026 Costs, Plans, Limits, and Usage Fees | Jira Pricing Tracker",
+   "snippet": "Jira API calls are generally included with the relevant Jira subscription. That does not mean you can send unlimited traffic at any speed."
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://raw.githubusercontent.com/api-evangelist/jira/refs/heads/main/plans/jira-plans-pricing.yml",
+   "title": "raw.githubusercontent.com/api-evangelist/jira/refs/heads/main/plans/jira-plans-pricing.yml",
+   "snippet": "    name: Standard\ntype: paid\ndescription: $7.91-$9.05/user/month (varies by tier; 1-100 users).\nentries:\n- label: Per user (avg)\nname: seat\ntype:"
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://atlassian.com/en/software/jira/pricing",
+   "title": "Jira pricing: Free, Standard, Premium, Enterprise | Atlassian",
+   "snippet": "### Includes:\n2 GB of storage\nUp to 10 users\n### Everything from Free plus:\n250 GB of storage\nUp to 100,000 users per site\nRecommended\n### Everything from Standard plus:\nUnlimited storage\n"
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://community.developer.atlassian.com/t/jira-all-apis-are-free-or-paid-if-paid-what-are-the-paiment-plans/87575",
+   "title": "Jira all APIs are free or paid? if paid what are the paiment plans?",
+   "snippet": "Access to the REST APIs is free for all Jira plans."
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://apis.io/plans/jira/jira-plans-pricing",
+   "title": "Jira Plans Pricing | APIs.io Plans",
+   "snippet": "- Customizable workflows\n- 2 GB storage\nStandard paid\n$7.91-$9.05/user/month (varies by tier; 1-100 users).\nPer user (avg) (user \u00b7 month) 9.05 USD\n- Permissions\n- Project roles\n- Audit logs\n-"
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://www.atlassian.com/software/jira/pricing",
+   "title": "Jira pricing: Free, Standard, Premium, Enterprise",
+   "snippet": "Compare Jira plans and pricing. Every paid plan includes AI agents that plan, track, and move work forward, built in and ready to scale with your team."
+  },
+  {
+   "q": "Jira API access pricing plans developer account",
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v2/api-group-plans/",
+   "title": "The Jira Cloud platform REST API",
+   "snippet": "The Jira Cloud platform REST API Developer Documentation. Permission schemes Permissions Plans GETGet plans paginated POSTCreate plan GETGet plan PUTUpdate ..."
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/supported-tools",
+   "title": "Supported tools",
+   "snippet": "### read_jira\n**Available using:** OAuth 2.1 and API token authentication"
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://community.atlassian.com/forums/discussion/3241874/jira-mcp-explained-what-it-does-what-it-doesn-t-and-how-to-use-it",
+   "title": "Jira MCP Explained: What It Does, What It Doesn\u2019t, and How to Use It",
+   "snippet": "- The official server is Cloud-only. Data Center customers need community alternatives or in-house setups."
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://atlassian.com/blog/how-we-build/jira-depth-on-demand",
+   "title": "Jira\u2019s depth, on demand: designing an MCP server around jobs, not endpoints",
+   "snippet": "In this blog we\u2019re going to walk you through our Jira MCP tool design journey, a critical part of Atlassian\u2019s MCP AI capability, supporting more than 15M calls every weekday."
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://community.atlassian.com/forums/discussion/3280851/how-to-work-with-the-jira-mcp-server-day-to-day-setup-capabilities-prompts-and-fixes",
+   "title": "How to Work with the Jira MCP Server Day-to-Day: Setup, Capabilities, Prompts, and Fixes",
+   "snippet": "Yes, there is an official Jira MCP server provided by Atlassian. It's called the Atlassian Rovo MCP Server, and it covers more than Jira: it also connects your AI assistants to Confluence, Compass,"
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://github.com/atlassian/atlassian-mcp-server",
+   "title": "atlassian/atlassian-mcp-server: Official remote MCP server for Atlassian. Securely connect Jira, Confluence, Jira Service Management, Bitbucket, and Compass to Claude, ChatGPT, Cursor, VS Code, and other AI tools using OAuth 2.1 or API tokens. \u00b7 GitHub",
+   "snippet": "Loom, and Atlassian platform data (Projects, Goals, Teams, Focus, Talent, and the Teamwork Graph)** in real time. Authentication uses **OAuth 2.1** or **API tokens**, so every action respects the"
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/use-atlassian-mcp-server",
+   "title": "Use Atlassian MCP Server | Atlassian AI Gateway | Atlassian Support",
+   "snippet": "Atlassian MCP Server is a cloud-hosted Model Context Protocol (MCP) server that gives your AI tools secure, real-time access to your data across Jira, Confluence, Bitbucket, and other Atlassian apps.\n"
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://mcpservers.org/servers/edrich13/mcp-jira-server",
+   "title": "Jira MCP Server",
+   "snippet": "MCP server for connecting AI assistants to your own Jira instance Browse Jira MCP Server for Claude, Cursor, VS Code, and other AI agents."
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://support.atlassian.com/security-and-access-policies/docs/understand-atlassian-mcp-server",
+   "title": "Understand Atlassian MCP server",
+   "snippet": "with your Atlassian data. By connecting Atlassian\u2019s MCP server, you can bring the context of your Jira issues, Confluence pages, and Teamwork Graph directly into your preferred AI development tools"
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://developer.atlassian.com/cloud/rovo-mcp/changelog",
+   "title": "Atlassian Rovo MCP",
+   "snippet": "and `write_jira_align`. These tools enable AI agents and workflows to interact directly with Jira Align data for portfolio reporting, planning rollups, terminology discovery, and backlog"
+  },
+  {
+   "q": "Jira MCP server official",
+   "url": "https://developer.atlassian.com/cloud/rovo-mcp",
+   "title": "Atlassian Rovo MCP Overview",
+   "snippet": "| **Jira** | Search, create, edit, transition, and comment on work items; query spaces, boards, sprints, versions, and metadata |"
+  }
+ ],
+ "official_domain_candidates": {
+  "jirapricing.com": 2
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "jirapricing.com",
+ "completed": "2026-11-23T19:37:23+05:30"
+}

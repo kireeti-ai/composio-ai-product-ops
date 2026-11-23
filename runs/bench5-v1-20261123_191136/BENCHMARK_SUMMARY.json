@@ -1,0 +1,30 @@
+{
+ "created": "2026-11-23T19:18:35+05:30",
+ "caveat": "STRUCTURAL/automatic measures only (schema, verbatim quotes, unknown rates, latency). NO accuracy claim: there is no independent human-labelled ground truth. Use review_aid_side_by_side.csv for labelling.",
+ "metrics": {
+  "groq_orgA": {
+   "apps_returned": 5,
+   "schema_valid": 5,
+   "evidence_items": 24,
+   "quote_verbatim_in_shown_evidence": 18,
+   "url_in_sources": 22,
+   "claim_fields_without_verified_quote": 5,
+   "unknown_fields_total": 1,
+   "mean_latency_s": 2.3,
+   "tokens_in": 10147,
+   "tokens_out": 3752,
+   "cost_usd": 0.0
+  }
+ },
+ "agreement_between_providers": {},
+ "failed_requests": 6,
+ "ranking_by_structural_measures": [
+  "groq_orgA"
+ ],
+ "ranking_rule": "schema-valid apps (desc), claim fields lacking a verified quote (asc), verbatim-quote rate (desc), latency (asc)",
+ "not_run": [
+  "openrouter_particle",
+  "gemini25_key1",
+  "gemini36_key2"
+ ]
+}

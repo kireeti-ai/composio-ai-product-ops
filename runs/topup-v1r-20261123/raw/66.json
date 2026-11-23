@@ -1,0 +1,221 @@
+{
+ "app_id": 66,
+ "app": "Neo4j",
+ "tool": "composio:TINYFISH_FETCH_URLS",
+ "session": "left",
+ "attempts": [
+  {
+   "url": "https://www.neo4j.com/pricing/",
+   "requested_at": "2026-11-23T17:41:57+05:30",
+   "charge_usd": 0.0,
+   "status": "error",
+   "error": "KeyError: 'data'",
+   "completed_at": "2026-11-23T17:42:08+05:30",
+   "app_id": 66,
+   "kind": "url_variant",
+   "parent_url": "https://neo4j.com/pricing/",
+   "reason": "alternative for fetch_error",
+   "outcome": "fetch_error",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/billing/billing-dimensions/",
+   "requested_at": "2026-11-23T17:42:08+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://neo4j.com/docs/aura/billing/billing-dimensions/",
+   "title": "Billing dimensions - Neo4j Aura",
+   "chars": 3997,
+   "sha256": "d48bee14d9b82774582031ce7f890dc21fe6c08bd61dffee9be27da9d890bbb0",
+   "text": "# Billing dimensions\n\nAura has a **usage-based billing model** (also known as consumption-based billing or metered billing).\nUsers pay for the actual amount of a product or service consumed, rather than a fixed fee.\nFor more information about pricing for different tiers, refer to Aura Pricing.\n\n## AuraDB\n\nFor AuraDB, **compute** and **storage** are tracked.\n\n1. **Compute**: measured in GB-hours, based on RAM capacity.\n   For example, if your AuraDB instance has 4GB of RAM, and runs for 1 hour, you are charged for 4 GB-hours of compute usage.\n\n   * Compute is billed both in a running state and a paused state.\n   * Compute is billed for the primary database and for any secondary databases.\n     For secondary databases, the total running capacity is the number of secondaries multiplied by the primary DB capacity.\n2. **Storage**: each AuraDB instance has a free storage quota of twice the RAM capacity.\n   You can purchase additional storage beyond the quota, which is billed the same as compute in GB-hours.\n\n   * Each secondary DB benefits from the same free storage quota as the primary DB.\n\n### AuraDB examples\n\nPrimary database only\n\nYou have set up an 8GB AuraDB Business Critical instance.\nEvery hour the primary database is charged for **8 GB-hours** of usage, at the Business Critical hourly price.\n\nPrimary and secondary databases\n\nYou have set up a 4GB AuraDB Business Critical instance, with 2 secondaries.\nEvery hour the primary DB and its secondaries are running, you consume:\n\n* 4 GB-hours of primary db compute\n* 2 secondaries x 4 GB = 8 GB-hours of secondary db compute\n* You are charged for a **total** of **4 GB-hours** of primary database compute and **8 GB-hours** of secondary database compute.\n\nPrimary database and additional storage\n\nYou have set up a 4GB AuraDB Business Critical instance, and requested a total of 32 GB of storage.\nThis includes a free storage quota of twice the RAM size, so 2 x 4 GB = 8 GB. This means, every hour you consume:\n\n* 4 GB-hours of primary database compute\n* 32 GB - 8 GB = 24 GB-hours of storage\n* You are charged for a **total** of **4 GB-hours** of primary database compute and **24 GB-hours** of storage.\n\n## AuraDS\n\nFor AuraDS, only **compute** is tracked:\n\n* Measured in GB-hours, based on RAM capacity.\n* Billed both in a running state and in a paused state\n* AuraDS includes a free quota of twice the RAM capacity for storage, without the possibility to purchase more storage.\n* Secondaries are not available for AuraDS\n\n## Aura Graph Analytics\n\nAura Graph Analytics does not require a persistent instance run at all times.\n\nYou can start Graph Analytics sessions that execute graph algorithms in-memory.\nYou specify the allocated memory size when the session is launched.\n\nThe billing dimension for Graph Analytics sessions is compute and it is measured in GB-minutes.\nThe duration of a session is calculated in minutes and multiplied by the RAM capacity used by the session.\n\nThe **minimum billed duration** of a session is **ten minutes**.\n\n### Graph Analytics example\n\nYou launch a session with a size of 4GB of RAM, and it runs for 25 minutes.\nYou are then billed 25 minutes x 4GB = 100 GB-minutes of usage.\n\nNote: The minimum billed duration of a session is 10 minutes.\nIn the example, if the session ran for 8 minutes and had a 4GB size, you are billed for 10 minutes x 4GB = 40 GB-minutes.\n\n## GraphQL API\n\nData APIs like GraphQL run on top of an existing AuraDB instance but consume additional memory.\nYou are billed for compute, measured in MB-hours, based on the RAM capacity of the GraphQL additional memory.\n\n### GraphQL example:\n\nYou set up a GraphQL API with 256MB of RAM, every hour the database is running triggers a usage record of 256 MB-hours.\n\n## Query log forwarding\n\nWith log forwarding, you can stream logs directly to a cloud project owned by your organization.\nFor query log forwarding, you are billed for **data egress**.\nEgress is measured in GB, and is added to the customer usage periodically.",
+   "completed_at": "2026-11-23T17:42:10+05:30",
+   "app_id": 66,
+   "kind": "stored_search_hit",
+   "parent_url": "https://neo4j.com/pricing/",
+   "reason": "alternative for fetch_error",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://neo4j.com/docs/query-api/current",
+   "requested_at": "2026-11-23T17:42:13+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://neo4j.com/docs/query-api/current/",
+   "title": "Introduction - Query API",
+   "chars": 2486,
+   "sha256": "1aa4dd3532bc40c9d4b7cd079e4429355c70567c72def56180782e26b787688f",
+   "text": "# Introduction Introduced in 5.19\n\n|  |  |\n| --- | --- |\n|  | The Query API is enabled by default. It was however disabled by default on self-managed instances versions < 5.25. To enable it on those deployments, add `QUERY_API_ENDPOINTS` to the configuration setting `server.http_enabled_modules`. |\n\nThe Query API allows to execute Cypher statements against a Neo4j server through HTTP requests.\nThis API supersedes the deprecated HTTP API.\n\nThe main use case of the API is for developing client applications in languages for which there is no supported library.\nIf there exists an official library (driver) for the language you are using, consider using that instead\u2009\u2014\u2009see Create applications.\n\n**On self-managed instances**, the API uses port 7474 for HTTP and port 7473 for HTTPS by default. Ports can be altered via the configuration settings `server.http.listen_address` and `server.https.listen_address`.  \n**Aura instances** support only HTTPS through port 443.\n\nThis guide assumes that you have:\n\n* A running instance of Neo4j\u2009\u2014\u2009If you don\u2019t have one, install Neo4j locally or sign up for an Aura cloud instance.\n* Some familiarity with Cypher\u2009\u2014\u2009If you are new to it, check out Getting started \u2192 Cypher.\n\n|  |  |\n| --- | --- |\n|  | The Query API supports HTTP/2 as well as HTTP/1.1, unless either is explicitly disabled in the server configuration setting `server.http_enabled_transports`. It\u2019s up to the client to initiate a connection with the preferred protocol. |\n\n## Glossary\n\n**Aura**:   Aura is Neo4j\u2019s fully managed cloud service.\n    It comes with both free and paid plans.\n**Cypher**:   Cypher is Neo4j\u2019s graph query language that lets you retrieve data from the database.\n    It is like SQL, but for graphs.\n**ACID**:   Atomicity, Consistency, Isolation, Durability (ACID) are properties guaranteeing that database transactions are processed reliably.\n    An ACID-compliant DBMS ensures that the data in the database remains accurate and consistent despite failures.\n**causal consistency**:   A database is causally consistent if read and write queries are seen by every member of the cluster in the same order.\n    This is stronger than eventual consistency.\n**transaction**:   A transaction is a unit of work that is either *committed* in its entirety or *rolled back* on failure.\n    An example is a bank transfer: it involves multiple steps, but they must *all* succeed or be reverted, to avoid money being subtracted from one account but not added to the other.",
+   "completed_at": "2026-11-23T17:42:14+05:30",
+   "app_id": 66,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  },
+  {
+   "url": "https://neo4j.com/docs/http-api/current/authentication-authorization",
+   "requested_at": "2026-11-23T17:42:14+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://neo4j.com/docs/http-api/2026.10/authentication-authorization/",
+   "title": "Authorize requests - HTTP API",
+   "chars": 4055,
+   "sha256": "e74541f88aefba14b03ce8b005235d6e4bcc23a89d565d7899f59d0493d740b6",
+   "text": "# Authorize requests Not available on AuraDeprecated in 5.26\n\n|  |  |\n| --- | --- |\n|  | The process for authorizing requests to the Neo4j HTTP API is not deprecated and will continue working. However, all the examples are deprecated as of Neo4j 5.26. Use the same principles to authorize requests to the HTTP Query API instead, as described in Query API \u2192 Authorize requests. |\n\nUnless authentication is disabled on the server, all requests must be authorized using the login credentials of a valid user.\n\nRequest are authorized through an `Authorization` header.\nBoth *basic* and *bearer* authentication are supported.\n\n|  |  |\n| --- | --- |\n|  | If authentication is disabled on the server, requests can be sent without an `Authorization` header. |\n\n## Basic authentication\n\nThe header format for basic authentication follows the standard format (RFC 7617):\n\n```\nAuthorization: Basic <base64(username:password)>\n```\n\nExample 1. Basic authentication\n\nTo authenticate as user `neo4j` with password `verysecret`, first join them with a colon:\n\n```\nneo4j:verysecret\n```\n\nand then base64-encode that value:\n\n```\nbmVvNGo6dmVyeXNlY3JldA==\n```\n\nHow to base64-encode a string\n\nTo base64-encode a string on a Linux or Mac machine, use the built-in `base64` command:\n\n```\necho -n \"neo4j:verysecret\" | base64\n```\n\nTo obtain the final header, prepend `Basic` to the base64-encoding of the credentials:\n\n```\nAuthorization: Basic bmVvNGo6dmVyeXNlY3JldA==\n```\n\n## Bearer authentication\n\nThe header format to authenticate with a bearer token is:\n\n```\nAuthorization: Bearer <base64(token)>\n```\n\nExample 2. Bearer authentication\n\nTo authenticate with the token `xbhkjnlvianztghqwawxqfe`, first base64-encode it:\n\n```\neGJoa2pubHZpYW56dGdocXdhd3hxZmUK\n```\n\nHow to base64-encode a string\n\nTo base64-encode a string on a Linux or Mac machine, use the built-in `base64` command:\n\n```\necho -n \"xbhkjnlvianztghqwawxqfe\" | base64\n```\n\nTo obtain the final header, prepend `Bearer` to the base64-encoding of the credential:\n\n```\nAuthorization: Bearer eGJoa2pubHZpYW56dGdocXdhd3hxZmUK\n```\n\n|  |  |\n| --- | --- |\n|  | It is up to your application to generate bearer tokens via your SSO provider. The Neo4j server should also be set up to work with SSO. For more information, see Configuring Neo4j Single Sign-On (SSO). |\n\n## Errors\n\n### Missing authorization\n\nIf an `Authorization` header is not supplied (and authentication is not disabled), the server replies with status `401 Forbidden` and an error.\n\n### Example request\n\n```\nPOST http://localhost:7474/db/neo4j/tx/commit\nAccept: application/json;charset=UTF-8\nContent-Type: application/json\n```\n\n### Example response\n\n```\n401: Unauthorized\nContent-Type: application/json;charset=utf-8\n```\n\n```\n{\n  \"errors\" : [ {\n    \"code\" : \"Neo.ClientError.Security.Unauthorized\",\n    \"message\" : \"No authentication header supplied.\"\n  } ]\n}\n```\n\n### Incorrect authentication\n\nIf an incorrect username or password is provided, or if they fail to be properly base64-encoded, the server replies with status `401 Forbidden` and an error.\n\n### Example request\n\n```\nPOST http://localhost:7474/db/neo4j/tx/commit\nAccept: application/json;charset=UTF-8\nAuthorization: Basic bmVvNGo6aW5jb3JyZWN0\nContent-Type: application/json\n```\n\n### Example response\n\n```\n401: Unauthorized\nContent-Type: application/json;charset=utf-8\n```\n\n```\n{\n  \"errors\" : [ {\n    \"code\" : \"Neo.ClientError.Security.Unauthorized\",\n    \"message\" : \"Invalid username or password.\"\n  } ]\n}\n```\n\n### Invalid authentication\n\nIf the content of the `Authorization` header fails to be properly base64-encoded, the server replies with status `401 Forbidden` and an error.\n\n### Example request\n\n```\nPOST http://localhost:7474/db/neo4j/tx/commit\nAccept: application/json;charset=UTF-8\nAuthorization: Basic not-proper-base64\nContent-Type: application/json\n```\n\n### Example response\n\n```\n401: Unauthorized\nContent-Type: application/json;charset=utf-8\n```\n\n```\n{\n  \"errors\" : [ {\n    \"code\": \"Neo.ClientError.Request.InvalidFormat\",\n    \"message\": \"Invalid authentication header.\"\n  } ]\n}\n```",
+   "completed_at": "2026-11-23T17:42:16+05:30",
+   "app_id": 66,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "duplicate_content",
+   "duplicate_of": "baseline_page",
+   "attempt": 2
+  },
+  {
+   "url": "https://neo4j.com/docs/http-api/current",
+   "requested_at": "2026-11-23T17:42:16+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://neo4j.com/docs/http-api/current/",
+   "title": "Introduction - HTTP API",
+   "chars": 2497,
+   "sha256": "01e8a9aabd53d93a78751019c8a7ae9c9d8a3d99c6128069f3c12e74b670b6c9",
+   "text": "# Introduction Not available on AuraDeprecated in 5.26\n\n|  |  |\n| --- | --- |\n|  | The transactional HTTP API is deprecated and replaced by the Query API. See the Neo4j Query API documentation for more information. |\n\nThe Neo4j HTTP API allows to execute a series of Cypher statements against a Neo4j server through HTTP requests.\n\nThe main use case of the HTTP API is for developing client applications in languages for which there is no supported library.\nIf there exists an official library (driver) for the language you are using, consider using that instead\u2009\u2014\u2009see Create applications.\n\nBy default, the API uses port 7474 for HTTP and port 7473 for HTTPS.\n\nThis guide assumes that you have:\n\n* A running instance of Neo4j\u2009\u2014\u2009If you don\u2019t have one, install Neo4j locally or sign up for an Aura cloud instance.\n* Some familiarity with Cypher\u2009\u2014\u2009If you are new to it, check out Getting started \u2192 Cypher.\n\nTo execute queries through the HTTP API, you may use either:\n\n* Implicit transactions\u2009\u2014\u2009you just submit queries, the API takes care of the transaction handling for you\n* Explicit transactions\u2009\u2014\u2009you control the lifecycle of the transaction (open, commit, rollback), within which you can execute queries.\n\n|  |  |\n| --- | --- |\n|  | As of Neo4j 5.17, the HTTP API supports HTTP/2 as well as HTTP/1.1, unless either is explicitly disabled in the server configuration setting `server.http_enabled_transports`. It\u2019s up to the client to initiate a connection with the preferred protocol. |\n\n## Glossary\n\n**Aura**:   Aura is Neo4j\u2019s fully managed cloud service.\n    It comes with both free and paid plans.\n**Cypher**:   Cypher is Neo4j\u2019s graph query language that lets you retrieve data from the database.\n    It is like SQL, but for graphs.\n**ACID**:   Atomicity, Consistency, Isolation, Durability (ACID) are properties guaranteeing that database transactions are processed reliably.\n    An ACID-compliant DBMS ensures that the data in the database remains accurate and consistent despite failures.\n**causal consistency**:   A database is causally consistent if read and write queries are seen by every member of the cluster in the same order.\n    This is stronger than eventual consistency.\n**transaction**:   A transaction is a unit of work that is either *committed* in its entirety or *rolled back* on failure.\n    An example is a bank transfer: it involves multiple steps, but they must *all* succeed or be reverted, to avoid money being subtracted from one account but not added to the other.",
+   "completed_at": "2026-11-23T17:42:17+05:30",
+   "app_id": 66,
+   "kind": "app_level_search",
+   "parent_url": null,
+   "reason": "discovery for unresolved app / scope assessment",
+   "outcome": "usable_unique",
+   "duplicate_of": null,
+   "attempt": 2
+  }
+ ],
+ "app_level_search_hits": [
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/docs/query-api/current",
+   "title": "Introduction - Query API",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/docs/http-api/current/authentication-authorization",
+   "title": "Authorize requests - HTTP API",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/docs/http-api/current",
+   "title": "Introduction - HTTP API",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/docs/aura/connecting-applications/query-api",
+   "title": "Using the Query API with Aura - Neo4j Aura",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/blog/developer/micropython-and-neo4j",
+   "title": "MicroPython and Neo4j",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/docs/query-api/current/query",
+   "title": "Query the database - Query API",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/docs/http-api/current/endpoints",
+   "title": "Endpoints - HTTP API",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/blog/developer/neo4j-query-api-with-r-on-aura",
+   "title": "Use Neo4j Query API with R on Aura",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/docs/operations-manual/current/kubernetes/connectivity-architecture-overview",
+   "title": "Connectivity architecture patterns - Operations Manual",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Query API HTTPS endpoint",
+   "url": "https://neo4j.com/blog/developer/query-api-neo4j-aura-https",
+   "title": "neo4j.com/blog/developer/query-api-neo4j-aura-https",
+   "searched_at": "2026-11-23T17:42:11+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/docs/aura/api/overview/",
+   "title": "Overview - Neo4j Aura",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/docs/aura/security/single-sign-on",
+   "title": "Single Sign-On (SSO) - Neo4j Aura",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/docs/aura/api/authentication",
+   "title": "Authentication - Neo4j Aura",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/docs/aura/getting-started/connect-instance/",
+   "title": "Connect to an instance - Neo4j Aura",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/docs/aura/aura-agent",
+   "title": "Aura Agent - Neo4j Aura",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/blog/genai/introducing-mcp-for-aura/",
+   "title": "Introducing MCP for Aura: Hosted MCP, built into every Aura instance",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/docs/graphql/current/aura-graphql/aura-cli-configuration",
+   "title": "Configuring the Aura CLI - Neo4j GraphQL Library",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/labs/aura-cli/1.0/quickstart",
+   "title": "Installation - Aura CLI",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/blog/developer/neo4j-integration-tests-github-actions-aura-cli",
+   "title": "neo4j.com/blog/developer/neo4j-integration-tests-github-actions-aura-cli",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  },
+  {
+   "q": "Neo4j Aura API authentication client credentials",
+   "url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+   "title": "Authorize requests - HTTP API",
+   "searched_at": "2026-11-23T17:42:13+05:30"
+  }
+ ]
+}

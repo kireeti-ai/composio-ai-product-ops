@@ -1,0 +1,4 @@
+python3 -I src/assemble_dataset.py runs/dataset-live-v3-20261123_2020/DATASET.json bench5v1=runs/bench5-v1-20261123_191136 corrected5=runs/correction5-v1-20261123_192852 batchA=runs/p1-batchA-groq-20261123_193428 batchB=runs/p1-batchB-groq-20261123_195002 gate=runs/p1-batchB-groq-20261123_195002/IDENTITY_GATE.json
+python3 -I src/build_report.py runs/dataset-live-v3-20261123_2020/DATASET.json report/index.html
+
+Inputs are read-only preserved runs. Report generation is offline.

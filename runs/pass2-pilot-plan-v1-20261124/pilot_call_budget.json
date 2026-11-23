@@ -1,0 +1,11 @@
+{
+ "S1a": 4,
+ "S1b": 12,
+ "S1c": 12,
+ "S1_total_min": 28,
+ "S2_planned_max": 48,
+ "S2_claim_items_to_label": 68,
+ "retry_ratio_observed": 1.71,
+ "S1_attempts_expected": 48,
+ "S2_attempts_expected": 82
+}

@@ -1,0 +1,104 @@
+{
+ "app_id": 66,
+ "name": "Neo4j",
+ "record_type": "single app record with two API surfaces",
+ "identity": "resolved by original Notion? NO - #66 is in the reconstructed list (apps 51-100); identity authority none; brand/domain unambiguous but unverified against original Notion",
+ "surfaces": [
+  {
+   "surface": "aura_management_api",
+   "description": "REST API to manage Aura instances and projects",
+   "evidence": [
+    {
+     "url": "https://neo4j.com/docs/aura/api/overview/",
+     "quote": "The Aura API allows you to programmatically perform actions on your Aura instances without the need to log in to the Console.",
+     "verified": true
+    },
+    {
+     "url": "https://neo4j.com/docs/aura/api/overview/",
+     "quote": "Before using the API, you must follow the steps outlined in Authentication to create",
+     "verified": true
+    }
+   ],
+   "measured_operations": [
+    "GET /v1/instances"
+   ],
+   "auth": "credentials created per the Aura Authentication page (not retrieved): mechanism unconfirmed",
+   "access": {
+    "state": "partial",
+    "reading": "needs an Aura account; free trial = $150 credits on Professional/Business Critical; whether the API is available on every tier is not stated in retrieved pages"
+   },
+   "surface_evidence": "partial (1 operation measured)",
+   "composio": {
+    "covered": true,
+    "tools": [
+     "NEO4J_CREATE_INSTANCE_BETA",
+     "NEO4J_GET_INSTANCE_BETA",
+     "NEO4J_GET_PROJECT_BETA",
+     "NEO4J_LIST_INSTANCES_BETA",
+     "NEO4J_LIST_PROJECTS",
+     "NEO4J_PAUSE_INSTANCE_BETA",
+     "NEO4J_UPDATE_INSTANCE",
+     "NEO4J_UPDATE_INSTANCE_BETA"
+    ]
+   }
+  },
+  {
+   "surface": "database_query_api",
+   "description": "HTTPS endpoint that executes Cypher statements against a Neo4j database (supersedes the deprecated HTTP API); distinct from Bolt drivers",
+   "evidence": [
+    {
+     "url": "https://neo4j.com/docs/query-api/current",
+     "quote": "The Query API allows to execute Cypher statements against a Neo4j server through HTTP requests.",
+     "verified": true
+    },
+    {
+     "url": "https://neo4j.com/docs/query-api/current",
+     "quote": "This API supersedes the deprecated HTTP API.",
+     "verified": true
+    },
+    {
+     "url": "https://neo4j.com/docs/http-api/current/authentication-authorization",
+     "quote": "Not available on Aura",
+     "verified": true
+    }
+   ],
+   "measured_operations": [],
+   "auth": "database user credentials, basic or bearer (stated on the legacy HTTP API page; the Query API's own 'Authorize requests' page was not retrieved)",
+   "access": {
+    "state": "unresolved",
+    "reading": "no developer registration; needs a reachable database (self-managed, or Aura if the Query API is offered there - not stated in retrieved text); disabled by default on self-managed < 5.25"
+   },
+   "surface_evidence": "partial (surface documented; 0 operations; auth page missing)",
+   "composio": {
+    "covered": false,
+    "reading": "Cypher querying is NOT demonstrated by the current Composio toolkit"
+   }
+  }
+ ],
+ "composio_toolkit": {
+  "toolkit": "neo4j",
+  "tools": [
+   "NEO4J_CREATE_INSTANCE_BETA",
+   "NEO4J_GET_INSTANCE_BETA",
+   "NEO4J_GET_PROJECT_BETA",
+   "NEO4J_LIST_INSTANCES_BETA",
+   "NEO4J_LIST_PROJECTS",
+   "NEO4J_PAUSE_INSTANCE_BETA",
+   "NEO4J_UPDATE_INSTANCE",
+   "NEO4J_UPDATE_INSTANCE_BETA"
+  ],
+  "statement": "The current Composio `neo4j` toolkit covers the Aura MANAGEMENT API (instance and project tools; several are beta endpoints). It does not demonstrate Cypher querying; no Cypher/Query-API tool was returned by the catalog search.",
+  "limitation": "metadata-only catalog search (3 queries): absence is not proof; no tool was executed",
+  "retrieved_at": "2026-11-23T17:42:55+05:30"
+ },
+ "eligibility": {
+  "eligible": false,
+  "status": "HELD",
+  "reason": "the frozen extraction schema has single auth_methods/api_types fields and would conflate the two surfaces; options needing approval: (a) per-surface extraction runs with surface-labelled inputs, or (b) a schema change"
+ },
+ "follow_up_retrievals_not_executed": [
+  "Aura API 'Authentication' page (credential mechanism)",
+  "Query API 'Authorize requests' page",
+  "Aura tier availability of the Query API and Aura API"
+ ]
+}

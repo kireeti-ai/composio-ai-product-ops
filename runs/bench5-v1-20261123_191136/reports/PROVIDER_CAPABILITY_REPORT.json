@@ -1,0 +1,154 @@
+{
+ "created": "2026-11-23T19:18:36+05:30",
+ "basis": "probe v2 (live 1-request generation tests, 2026-11-23) + live public OpenRouter /models list; nothing here is inferred from models.list alone",
+ "gemini": {
+  "gemini_key1": {
+   "gemini-2.5-flash": {
+    "generate_status": 429,
+    "ok": false,
+    "latency_s": 0.46,
+    "returned_modelVersion": null,
+    "error": "{ \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-",
+    "limits": {
+     "inputTokenLimit": 1048576,
+     "outputTokenLimit": 65536
+    },
+    "daily_quota_429": true
+   },
+   "gemini-3.6-flash": {
+    "generate_status": null,
+    "ok": false,
+    "latency_s": 90.12,
+    "returned_modelVersion": null,
+    "error": "TimeoutError",
+    "limits": {
+     "inputTokenLimit": 1048576,
+     "outputTokenLimit": 65536
+    },
+    "daily_quota_429": null
+   }
+  },
+  "gemini_key2": {
+   "gemini-3.6-flash": {
+    "generate_status": null,
+    "ok": false,
+    "latency_s": 90.21,
+    "returned_modelVersion": null,
+    "error": "TimeoutError",
+    "limits": {
+     "inputTokenLimit": 1048576,
+     "outputTokenLimit": 65536
+    },
+    "daily_quota_429": null
+   }
+  }
+ },
+ "groq": {
+  "GROQ_API_KEY": {
+   "ok": true,
+   "context_window": 131072,
+   "ratelimit": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "973",
+    "x-ratelimit-remaining-tokens": "7909",
+    "x-ratelimit-reset-requests": "38m52.8s",
+    "x-ratelimit-reset-tokens": "682ms"
+   }
+  },
+  "P1": {
+   "ok": true,
+   "context_window": 131072,
+   "ratelimit": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "972",
+    "x-ratelimit-remaining-tokens": "7909",
+    "x-ratelimit-reset-requests": "40m19.2s",
+    "x-ratelimit-reset-tokens": "682ms"
+   }
+  },
+  "P2": {
+   "ok": true,
+   "context_window": 131072,
+   "ratelimit": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-remaining-tokens": "7909",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-reset-tokens": "682ms"
+   }
+  },
+  "P3": {
+   "ok": true,
+   "context_window": 131072,
+   "ratelimit": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-remaining-tokens": "7909",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-reset-tokens": "682ms"
+   }
+  },
+  "P4": {
+   "ok": true,
+   "context_window": 131072,
+   "ratelimit": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-remaining-tokens": "7909",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-reset-tokens": "682ms"
+   }
+  }
+ },
+ "groq_buckets": "existing key + P1 share one counter (972 vs 973 remaining); P2, P3, P4 each showed a fresh counter (999) => observed separate; ownership/terms for P2-P4 must be confirmed by the user",
+ "openrouter": {
+  "free_text_models_total": 13,
+  "free_text_models_ctx_ge_32k": 13,
+  "selected": "particle-ai/particle-1:free (generation verified)",
+  "excluded_examples": [
+   "google/lyria-3-pro-preview",
+   "google/lyria-3-clip-preview"
+  ],
+  "key_free_limit": {
+   "used": 4,
+   "limit": 50,
+   "remaining": 46
+  },
+  "generation_tests": {
+   "inclusionai/ling-3.2-flash:free": {
+    "generate_status": 429,
+    "ok": false,
+    "latency_s": 0.54,
+    "context": 1048576,
+    "error": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"inclusionai/ling-3.2-flash:free is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"Ant Digital\",\"is_byok\":false,\"provider_error_code\":\"rpm_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_po",
+    "ratelimit_headers": {}
+   },
+   "particle-ai/particle-1:free": {
+    "generate_status": 200,
+    "ok": true,
+    "latency_s": 0.81,
+    "context": 1048576,
+    "error": null,
+    "ratelimit_headers": {}
+   },
+   "google/lyria-3-pro-preview": {
+    "generate_status": 200,
+    "ok": true,
+    "latency_s": 2.18,
+    "context": 1048576,
+    "error": null,
+    "ratelimit_headers": {}
+   }
+  }
+ },
+ "known_unknowns": [
+  "Groq daily TOKEN limit not exposed by headers",
+  "Groq/OpenRouter RPM not observed (conservative assumptions used)",
+  "Gemini remaining daily quota unknown; Key1 2.5 returned 429; 3.6 timed out on both keys"
+ ]
+}

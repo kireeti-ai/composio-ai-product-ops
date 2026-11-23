@@ -1,0 +1,920 @@
+[
+ {
+  "claim_id": "79:0",
+  "app": "Smartsheet",
+  "field": "authentication",
+  "claim_value": "Personal access token (Bearer) and OAuth 2.0 3-legged",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "source_type": "official_docs",
+    "quote": "The API authenticates using access tokens (API keys). You can generate access tokens in the Smartsheet UI."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+    "source_type": "official_docs",
+    "quote": "Your app must implement an OAuth flow to retrieve an access token it can use to access Smartsheet data on behalf of an end user."
+   }
+  ]
+ },
+ {
+  "claim_id": "79:1",
+  "app": "Smartsheet",
+  "field": "access",
+  "claim_value": "OAuth apps require registering a user account for Developer Tools (account registration, agreement acceptance); tokens generated in UI by a user",
+  "claim_note": "Plan-level gating of API access not shown on pages fetched.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+    "source_type": "official_docs",
+    "quote": "Developer Tools is a Smartsheet user interface for registering client applications that use OAuth to access Smartsheet user resources with the user's consent."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+    "source_type": "official_docs",
+    "quote": "In the Developer Tools Registration page, enter the email address of a user account to associate with your apps."
+   }
+  ]
+ },
+ {
+  "claim_id": "79:2",
+  "app": "Smartsheet",
+  "field": "scopes",
+  "claim_value": "Access scopes (e.g. WRITE_SHEETS) requested in authorization request",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+    "source_type": "official_docs",
+    "quote": "Access scopes specify the types of resources your app needs to access and the types of actions to perform on those resources."
+   }
+  ]
+ },
+ {
+  "claim_id": "79:3",
+  "app": "Smartsheet",
+  "field": "mcp",
+  "claim_value": "official",
+  "claim_note": "Hosted on developers.smartsheet.com / smartsheet.com domains.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+    "source_type": "official_docs",
+    "quote": "API tokens are unnecessary if your AI assistant supports Smartsheet's OAuth, such as ChatGPT (web or mobile), Claude AI, Claude Desktop, Gemini Enterprise Plus, or Microsoft 365 Copilot."
+   },
+   {
+    "i": 1,
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+    "source_type": "official_docs",
+    "quote": "\"httpUrl\": \"https://mcp.smartsheet.com\","
+   }
+  ]
+ },
+ {
+  "claim_id": "81:0",
+  "app": "Stripe",
+  "field": "authentication",
+  "claim_value": "API keys (secret/restricted/publishable) via HTTP Basic or Bearer; OAuth for MCP; agent API keys for MCP",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.stripe.com/api/authentication",
+    "source_type": "official_docs",
+    "quote": "The Stripe API authenticates requests using HTTP Basic Auth. Provide your API key as the basic auth username value. You don\u2019t need to provide a password."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.stripe.com/keys",
+    "source_type": "official_docs",
+    "quote": "Restricted API key (RAK) rk_...NoAPI key with permissions you control."
+   },
+   {
+    "i": 2,
+    "url": "https://docs.stripe.com/mcp",
+    "source_type": "official_docs",
+    "quote": "OAuth: Use OAuth when a client accesses Stripe on behalf of your Stripe user account."
+   },
+   {
+    "i": 3,
+    "url": "https://docs.stripe.com/mcp",
+    "source_type": "official_docs",
+    "quote": "Agent API keys: Use an agent API key when an AI application needs independent, persistent access to Stripe."
+   }
+  ]
+ },
+ {
+  "claim_id": "81:1",
+  "app": "Stripe",
+  "field": "access",
+  "claim_value": "Keys created in Dashboard; sandbox keys available; no sales/partner approval quoted",
+  "claim_note": "Account signup requirement implied by Dashboard; not separately quoted.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.stripe.com/keys",
+    "source_type": "official_docs",
+    "quote": "Use the API keys page in the Dashboard to create, reveal, expire and rotate keys for the account or sandbox you\u2019re viewing."
+   }
+  ]
+ },
+ {
+  "claim_id": "81:2",
+  "app": "Stripe",
+  "field": "sandbox",
+  "claim_value": "Sandboxes with test keys",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.stripe.com/keys",
+    "source_type": "official_docs",
+    "quote": "Sandbox keys start with pk_test_ for publishable keys, rk_test_ for restricted keys, and sk_test_ for secret keys."
+   }
+  ]
+ },
+ {
+  "claim_id": "81:3",
+  "app": "Stripe",
+  "field": "rate_limits",
+  "claim_value": "Live 100 rps; sandbox 25 rps",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.stripe.com/rate-limits",
+    "source_type": "official_docs",
+    "quote": "Live mode: 100 requests per second"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.stripe.com/rate-limits",
+    "source_type": "official_docs",
+    "quote": "Sandbox: 25 requests per second"
+   }
+  ]
+ },
+ {
+  "claim_id": "81:4",
+  "app": "Stripe",
+  "field": "api_types",
+  "claim_value": "rest + webhooks",
+  "claim_note": "Webhooks quoted; REST implied by api reference auth page. SDK not quoted.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.stripe.com/webhooks",
+    "source_type": "official_docs",
+    "quote": "Stripe requires the raw body of the request to perform signature verification."
+   }
+  ]
+ },
+ {
+  "claim_id": "81:5",
+  "app": "Stripe",
+  "field": "mcp",
+  "claim_value": "official",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.stripe.com/mcp",
+    "source_type": "official_docs",
+    "quote": "The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use to interact with the Stripe API and search the Stripe knowledge base, including documentation and support articles."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.stripe.com/mcp",
+    "source_type": "official_docs",
+    "quote": "\"url\": \"https://mcp.stripe.com\""
+   }
+  ]
+ },
+ {
+  "claim_id": "82:0",
+  "app": "Plaid",
+  "field": "authentication",
+  "claim_value": "client_id + secret",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://plaid.com/docs/api/",
+    "source_type": "official_docs",
+    "quote": "Almost all Plaid API endpoints require a client_id and secret. These may be sent either in the request body or in the headers PLAID-CLIENT-ID and PLAID-SECRET."
+   }
+  ]
+ },
+ {
+  "claim_id": "82:1",
+  "app": "Plaid",
+  "field": "access",
+  "claim_value": "Create a Dashboard account for client_id/secret; Production requires approval",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://plaid.com/docs/api/",
+    "source_type": "official_docs",
+    "quote": "To gain access to the Plaid API, create an account on the Plaid Dashboard. Once you've completed the signup process and acknowledged our terms, we'll provide a live client_id and secret via the Dashboard."
+   },
+   {
+    "i": 1,
+    "url": "https://plaid.com/docs/resources/mcp/",
+    "source_type": "official_docs",
+    "quote": "Your team must be approved for Production access with at least one Plaid product to use the MCP server."
+   }
+  ]
+ },
+ {
+  "claim_id": "82:2",
+  "app": "Plaid",
+  "field": "sandbox",
+  "claim_value": "Free Sandbox environment",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://plaid.com/docs/quickstart/glossary/",
+    "source_type": "official_docs",
+    "quote": "Sandbox is a free test environment that uses test data rather than real financial accounts."
+   }
+  ]
+ },
+ {
+  "claim_id": "82:3",
+  "app": "Plaid",
+  "field": "development_environment",
+  "claim_value": "Development environment retired; conflicts with prior note resolved by glossary text",
+  "claim_note": "Prior record flagged Development status as conflicting; official glossary says it was replaced.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://plaid.com/docs/quickstart/glossary/",
+    "source_type": "official_docs",
+    "quote": "Development (https://development.plaid.com) was a Plaid environment on which you could run your code, along with Sandbox and Production."
+   },
+   {
+    "i": 1,
+    "url": "https://plaid.com/docs/quickstart/glossary/",
+    "source_type": "official_docs",
+    "quote": "For Plaid teams created on or after April 15, 2026, Limited Production is no longer offered and has been replaced by Trial plans."
+   }
+  ]
+ },
+ {
+  "claim_id": "82:4",
+  "app": "Plaid",
+  "field": "api_types",
+  "claim_value": "REST (JSON over HTTP)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://plaid.com/docs/api/",
+    "source_type": "official_docs",
+    "quote": "The Plaid API is JSON over HTTP."
+   }
+  ]
+ },
+ {
+  "claim_id": "82:5",
+  "app": "Plaid",
+  "field": "mcp",
+  "claim_value": "official: local Sandbox/dev MCP and remote Dashboard MCP",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://plaid.com/docs/resources/mcp/",
+    "source_type": "official_docs",
+    "quote": "The Plaid AI coding toolkit includes a local MCP server for development."
+   },
+   {
+    "i": 1,
+    "url": "https://plaid.com/docs/resources/mcp/",
+    "source_type": "official_docs",
+    "quote": "The Dashboard MCP server is a remote MCP server hosted by Plaid."
+   },
+   {
+    "i": 2,
+    "url": "https://plaid.com/docs/resources/mcp/",
+    "source_type": "official_docs",
+    "quote": "The Dashboard MCP server works with Production data only."
+   }
+  ]
+ },
+ {
+  "claim_id": "82:6",
+  "app": "Plaid",
+  "field": "rate_limits",
+  "claim_value": "Per-Item/per-client limits table exists; numbers not quoted",
+  "claim_note": "Only existence of rate limits quoted; values not captured.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://plaid.com/docs/errors/rate-limit-exceeded/",
+    "source_type": "official_docs",
+    "quote": "Errors of type RATE_LIMIT_EXCEEDED will occur when the rate limit for a"
+   }
+  ]
+ },
+ {
+  "claim_id": "83:0",
+  "app": "Binance",
+  "field": "authentication",
+  "claim_value": "HMAC, RSA, Ed25519 API keys; Ed25519 recommended; SIGNED endpoints need signature",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+    "source_type": "official_repo",
+    "quote": "- Ed25519 (recommended)"
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+    "source_type": "official_repo",
+    "quote": "Binance APIs require an API key to access authenticated endpoints for trading, account history, etc."
+   },
+   {
+    "i": 2,
+    "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+    "source_type": "official_repo",
+    "quote": "- We support HMAC, RSA, and Ed25519 keys."
+   }
+  ]
+ },
+ {
+  "claim_id": "83:1",
+  "app": "Binance",
+  "field": "access",
+  "claim_value": "API key required for authenticated endpoints; creation/account steps not quoted",
+  "claim_note": "Account/KYC/regional restrictions not documented in fetched files.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/faqs/api_key_types.md",
+    "source_type": "official_repo",
+    "quote": "Binance APIs require an API key to access authenticated endpoints for trading, account history, etc."
+   }
+  ]
+ },
+ {
+  "claim_id": "83:2",
+  "app": "Binance",
+  "field": "api_types",
+  "claim_value": "REST, WebSocket API, WebSocket streams, user data stream",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+    "source_type": "official_repo",
+    "quote": "[web-socket-api.md](./web-socket-api.md)          | Spot WebSocket API"
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+    "source_type": "official_repo",
+    "quote": "[web-socket-streams.md](./web-socket-streams.md)  | Spot Market Data WebSocket streams"
+   }
+  ]
+ },
+ {
+  "claim_id": "83:3",
+  "app": "Binance",
+  "field": "rate_limits",
+  "claim_value": "Limits based on IP, not API keys; RAW_REQUESTS/REQUEST_WEIGHT/ORDERS",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/rest-api.md",
+    "source_type": "official_repo",
+    "quote": "- **The limits on the API are based on the IPs, not the API keys.**"
+   }
+  ]
+ },
+ {
+  "claim_id": "83:4",
+  "app": "Binance",
+  "field": "sandbox",
+  "claim_value": "SPOT Testnet exists",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/binance/binance-spot-api-docs/master/README.md",
+    "source_type": "official_repo",
+    "quote": "[testnet](./testnet/)           | API docs for features available only on SPOT Testnet"
+   }
+  ]
+ },
+ {
+  "claim_id": "85:0",
+  "app": "iPayX",
+  "field": "mcp",
+  "claim_value": "official (vendor-published MCP server)",
+  "claim_note": "Vendor self-published llms.txt; not independently verified.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://ipayx.ai/llms.txt",
+    "source_type": "official_marketing",
+    "quote": "- Endpoint: https://mcp.ipayx.ai/mcp"
+   },
+   {
+    "i": 1,
+    "url": "https://ipayx.ai/llms.txt",
+    "source_type": "official_marketing",
+    "quote": "- Transport: Streamable HTTP (MCP spec)"
+   }
+  ]
+ },
+ {
+  "claim_id": "85:1",
+  "app": "iPayX",
+  "field": "authentication",
+  "claim_value": "Bearer API key for full_forensic_fx_report; other tools public rate-limited per IP",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.ipayx.ai/.well-known/mcp.json",
+    "source_type": "official_marketing",
+    "quote": "Authorization: Bearer <ipx_live_...>"
+   },
+   {
+    "i": 1,
+    "url": "https://www.ipayx.ai/.well-known/openapi.json",
+    "source_type": "official_marketing",
+    "quote": "\"description\": \"Supabase JWT or iPayX API key (ipx_live_...)\""
+   }
+  ]
+ },
+ {
+  "claim_id": "85:2",
+  "app": "iPayX",
+  "field": "access",
+  "claim_value": "Free allowance for some tools; API plans paid",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://ipayx.ai/llms.txt",
+    "source_type": "official_marketing",
+    "quote": "- [Pricing](/pricing) \u2014 Forensic Pack from $297, API plans from $99/mo."
+   },
+   {
+    "i": 1,
+    "url": "https://ipayx.ai/llms.txt",
+    "source_type": "official_marketing",
+    "quote": "No API key required; shares the free allowance of 3 audits per IP per month."
+   }
+  ]
+ },
+ {
+  "claim_id": "85:3",
+  "app": "iPayX",
+  "field": "api_types",
+  "claim_value": "REST (OpenAPI 3.1) + MCP",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://ipayx.ai/llms.txt",
+    "source_type": "official_marketing",
+    "quote": "- OpenAPI 3.1: https://www.ipayx.ai/.well-known/openapi.json"
+   }
+  ]
+ },
+ {
+  "claim_id": "85:4",
+  "app": "iPayX",
+  "field": "rate_limits",
+  "claim_value": "Anonymous 10 req/min + 100/day; authenticated 30 req/min (on one endpoint)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://www.ipayx.ai/.well-known/openapi.json",
+    "source_type": "official_marketing",
+    "quote": "Hybrid auth: anonymous = 10 req/min + 100/day; authenticated = 30 req/min."
+   }
+  ]
+ },
+ {
+  "claim_id": "86:0",
+  "app": "QuickBooks",
+  "field": "authentication",
+  "claim_value": "OAuth 2.0 via Intuit Developer Portal app",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "source_type": "official_repo",
+    "quote": "QuickBooks Online integration is gated by Intuit's OAuth app setup. You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake."
+   },
+   {
+    "i": 1,
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "source_type": "official_repo",
+    "quote": "OAuth 2.0 Authentication - Secure token-based authentication"
+   }
+  ]
+ },
+ {
+  "claim_id": "86:1",
+  "app": "QuickBooks",
+  "field": "access",
+  "claim_value": "Register app on Intuit Developer Portal (account registration)",
+  "claim_note": "Production-access gating not verified.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "source_type": "official_repo",
+    "quote": "You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake."
+   }
+  ]
+ },
+ {
+  "claim_id": "86:2",
+  "app": "QuickBooks",
+  "field": "sandbox",
+  "claim_value": "Sandbox environment supported",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "source_type": "official_repo",
+    "quote": "QUICKBOOKS_ENVIRONMENT=sandbox"
+   }
+  ]
+ },
+ {
+  "claim_id": "86:3",
+  "app": "QuickBooks",
+  "field": "mcp",
+  "claim_value": "official (local stdio server in intuit GitHub org)",
+  "claim_note": "Ownership inferred from github.com/intuit org; not stated in README.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "source_type": "official_repo",
+    "quote": "Note: this is a local MCP server. It runs as a stdio subprocess on the developer's or partner's machine and authenticates to a QuickBooks Online company."
+   }
+  ]
+ },
+ {
+  "claim_id": "87:0",
+  "app": "Xero",
+  "field": "authentication",
+  "claim_value": "OAuth 2.0 (custom connections or bearer token via MCP)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+    "source_type": "official_repo",
+    "quote": "- Xero OAuth2 authentication with custom connections"
+   },
+   {
+    "i": 1,
+    "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+    "source_type": "official_repo",
+    "quote": "There are 2 modes of authentication supported in the Xero MCP server:"
+   }
+  ]
+ },
+ {
+  "claim_id": "87:1",
+  "app": "Xero",
+  "field": "access",
+  "claim_value": "Developer account; app tiers (Starter no charge) with connection limits",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.xero.com/pricing",
+    "source_type": "official_docs",
+    "quote": "Monthly Tier FeeNo charge$35 AUD$245 AUD$1445 AUDPrice on Application"
+   },
+   {
+    "i": 1,
+    "url": "https://developer.xero.com/pricing",
+    "source_type": "official_docs",
+    "quote": "Connections (maximum)550100010,000No limit"
+   }
+  ]
+ },
+ {
+  "claim_id": "87:2",
+  "app": "Xero",
+  "field": "rate_limits",
+  "claim_value": "Per-tier daily limits",
+  "claim_note": "Table column mapping partly flattened; Starter appears 1000/day/org.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.xero.com/pricing",
+    "source_type": "official_docs",
+    "quote": "Rate Limits1000 per day per org5000 per day per org5000 per day per org5000 per day per org5000 per day per org"
+   }
+  ]
+ },
+ {
+  "claim_id": "87:3",
+  "app": "Xero",
+  "field": "custom_connection_sunset",
+  "claim_value": "No new Custom Connection apps from 1 Dec 2026",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.xero.com/faq/custom-integration",
+    "source_type": "official_docs",
+    "quote": "From 1 December 2026, we are making changes to Custom Connections. From that date, you won't be able to:"
+   },
+   {
+    "i": 1,
+    "url": "https://developer.xero.com/faq/custom-integration",
+    "source_type": "official_docs",
+    "quote": "Create a new Custom Connection app"
+   }
+  ]
+ },
+ {
+  "claim_id": "87:4",
+  "app": "Xero",
+  "field": "mcp",
+  "claim_value": "official (XeroAPI org repo)",
+  "claim_note": "Ownership inferred from raw.githubusercontent.com/XeroAPI path.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+    "source_type": "official_repo",
+    "quote": "This is a Model Context Protocol (MCP) server implementation for Xero."
+   }
+  ]
+ },
+ {
+  "claim_id": "87:5",
+  "app": "Xero",
+  "field": "sandbox",
+  "claim_value": "Demo Company",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/main/README.md",
+    "source_type": "official_repo",
+    "quote": "We recommend using a Demo Company to start with because it comes with some pre-loaded sample data."
+   }
+  ]
+ },
+ {
+  "claim_id": "88:0",
+  "app": "Brex",
+  "field": "authentication",
+  "claim_value": "User token (Bearer) created by admin; OAuth for MCP",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.brex.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.brex.com/docs/mcp",
+    "source_type": "official_docs",
+    "quote": "If your client supports OAuth with Dynamic Client Registration, authentication is handled automatically."
+   }
+  ]
+ },
+ {
+  "claim_id": "88:1",
+  "app": "Brex",
+  "field": "access",
+  "claim_value": "Account admin or card admin creates token; developer API agreement must be accepted",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.brex.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Sign in to dashboard.brex.com as an account admin or card admin."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.brex.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "If your company has not accepted the developer API agreement, please review the terms and conditions."
+   }
+  ]
+ },
+ {
+  "claim_id": "88:2",
+  "app": "Brex",
+  "field": "token_expiry",
+  "claim_value": "90 days unused",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.brex.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "User tokens will expire if they are not used to make an API call for 90 days"
+   }
+  ]
+ },
+ {
+  "claim_id": "88:3",
+  "app": "Brex",
+  "field": "sandbox",
+  "claim_value": "No sandbox server offered",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.brex.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Brex currently only offers a production API server at https://api.brex.com."
+   }
+  ]
+ },
+ {
+  "claim_id": "88:4",
+  "app": "Brex",
+  "field": "mcp",
+  "claim_value": "official (beta)",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.brex.com/docs/mcp",
+    "source_type": "official_docs",
+    "quote": "The server is hosted at https://api.brex.com/mcp and supports any MCP-compatible client."
+   },
+   {
+    "i": 1,
+    "url": "https://developer.brex.com/docs/mcp",
+    "source_type": "official_docs",
+    "quote": "Enable the beta. Go to Settings \u2192 Beta features in the Brex Dashboard and select Brex in AI assistants."
+   }
+  ]
+ },
+ {
+  "claim_id": "88:5",
+  "app": "Brex",
+  "field": "scopes",
+  "claim_value": "Token scopes chosen at creation",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://developer.brex.com/docs/authentication",
+    "source_type": "official_docs",
+    "quote": "Choose what level of data access you need for your application; these are the scopes your token will have."
+   }
+  ]
+ },
+ {
+  "claim_id": "89:0",
+  "app": "Ramp",
+  "field": "authentication",
+  "claim_value": "OAuth 2.0; client credentials for server-to-server",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+    "source_type": "official_docs",
+    "quote": "Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth), and scopes control what the token can access."
+   },
+   {
+    "i": 1,
+    "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+    "source_type": "official_docs",
+    "quote": "| **Client Credentials** | Internal integrations, server-to-server | None required |"
+   }
+  ]
+ },
+ {
+  "claim_id": "89:1",
+  "app": "Ramp",
+  "field": "access",
+  "claim_value": "Admin access required to create developer app",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+    "source_type": "official_docs",
+    "quote": "To begin using the Ramp Developer API, you must first create a developer app to obtain your API credentials. Admin access is required."
+   }
+  ]
+ },
+ {
+  "claim_id": "89:2",
+  "app": "Ramp",
+  "field": "scopes",
+  "claim_value": "resource:permission pattern",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+    "source_type": "official_docs",
+    "quote": "Scopes follow the pattern `resource:permission`, where the permission is usually `read` or `write`, such as `transactions:read`."
+   }
+  ]
+ },
+ {
+  "claim_id": "89:3",
+  "app": "Ramp",
+  "field": "rate_limits",
+  "claim_value": "200 req/10s per source IP",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.ramp.com/llms-guides/rate-limiting.txt",
+    "source_type": "official_docs",
+    "quote": "The standard Developer API limit is **200 requests per 10 seconds per source IP address**."
+   }
+  ]
+ },
+ {
+  "claim_id": "89:4",
+  "app": "Ramp",
+  "field": "sandbox",
+  "claim_value": "Separate sandbox (demo-api.ramp.com) via access request form",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+    "source_type": "official_docs",
+    "quote": "Sandbox API base URL: https://demo-api.ramp.com"
+   },
+   {
+    "i": 1,
+    "url": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+    "source_type": "official_docs",
+    "quote": "Request access using the sandbox access form."
+   }
+  ]
+ },
+ {
+  "claim_id": "89:5",
+  "app": "Ramp",
+  "field": "api_types",
+  "claim_value": "REST + webhooks",
+  "claim_note": "",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.ramp.com/llms-guides/webhooks.txt",
+    "source_type": "official_docs",
+    "quote": "summary: Webhooks allow your application to receive real-time notifications about events that occur in your Ramp account."
+   }
+  ]
+ },
+ {
+  "claim_id": "89:6",
+  "app": "Ramp",
+  "field": "mcp",
+  "claim_value": "official (hosted)",
+  "claim_note": "Custom clients need redirect URI allowlisting.",
+  "quotes": [
+   {
+    "i": 0,
+    "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+    "source_type": "official_docs",
+    "quote": "claude mcp add --transport http ramp https://mcp.ramp.com/mcp"
+   },
+   {
+    "i": 1,
+    "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+    "source_type": "official_docs",
+    "quote": "**\"The app you are using is not currently supported\"** means your client's redirect URI isn't allowlisted."
+   }
+  ]
+ }
+]

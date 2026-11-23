@@ -1,0 +1,162 @@
+{
+ "provenance": "identity/conflict/exception/access judgments are the assistant's reading of stored pages (offline, no LLM API); provisional",
+ "identity": [
+  {
+   "id": 15,
+   "name": "Pylon",
+   "resolved_by": "original Notion hint usepylon.com",
+   "pages": "docs.usepylon.com",
+   "other_same_name": "pylonapi.com, getpylon.com (different products, in search results only)",
+   "status": "RESOLVED (authoritative hint)",
+   "in_ready_full": false
+  },
+  {
+   "id": 20,
+   "name": "Gladly",
+   "resolved_by": "original Notion hint gladly.com",
+   "pages": "developer.gladly.com, help.gladly.com",
+   "other_same_name": "gladly.ai (1 search hit)",
+   "status": "RESOLVED (authoritative hint)",
+   "in_ready_full": true
+  },
+  {
+   "id": 24,
+   "name": "Lark (Larksuite)",
+   "resolved_by": "original Notion hint open.larksuite.com",
+   "pages": "open.larksuite.com",
+   "other_same_name": "none",
+   "status": "RESOLVED (authoritative hint)",
+   "in_ready_full": false
+  },
+  {
+   "id": 39,
+   "name": "Threads (Meta)",
+   "resolved_by": "original Notion hint developers.facebook.com/docs/threads",
+   "pages": "developers.facebook.com",
+   "other_same_name": "none",
+   "status": "RESOLVED (authoritative hint)",
+   "in_ready_full": true
+  },
+  {
+   "id": 50,
+   "name": "fanbasis",
+   "resolved_by": "original Notion hint fanbasis.com resolves the brand, but pages come from 3 domains (see conflicts)",
+   "pages": "dev-docs.fanbasis.com (password-gated), demo.embedded.fanbasis.io, fanbaseapi.openstage.live",
+   "other_same_name": "'Fanbase API' on openstage.live looks like a different product (spelling Fanbase vs Fanbasis)",
+   "status": "NEEDS CONFIRMATION (domain conflict)",
+   "in_ready_full": false
+  },
+  {
+   "id": 59,
+   "name": "Waterfall.io",
+   "resolved_by": "name contains domain waterfall.io; pages only on docs.waterfall.io/api.waterfall.io (no hint available for apps 51-100)",
+   "pages": "docs.waterfall.io",
+   "other_same_name": "none seen",
+   "status": "PROPOSED RESOLVED (high confidence); confirm",
+   "in_ready_full": false
+  },
+  {
+   "id": 60,
+   "name": "Clay",
+   "resolved_by": "category 6 + developers.clay.com (data enrichment); no hint available",
+   "pages": "developers.clay.com",
+   "other_same_name": "none seen in doc hits",
+   "status": "PROPOSED RESOLVED (high confidence); confirm",
+   "in_ready_full": false
+  },
+  {
+   "id": 73,
+   "name": "Linear",
+   "resolved_by": "category 8 (project mgmt) + linear.app GraphQL docs; no hint available",
+   "pages": "linear.app",
+   "other_same_name": "none (stray third-party hits only)",
+   "status": "PROPOSED RESOLVED (high confidence); HOLD until confirmed",
+   "in_ready_full": true
+  },
+  {
+   "id": 78,
+   "name": "Coda",
+   "resolved_by": "category 8 + coda.io Packs/API docs; no hint available",
+   "pages": "coda.io, community.coda.io",
+   "other_same_name": "superhuman.com (Coda was acquired; docs may be migrating) - confirm which docs are canonical",
+   "status": "PROPOSED RESOLVED (high confidence); HOLD until confirmed",
+   "in_ready_full": true
+  },
+  {
+   "id": 80,
+   "name": "Harvest",
+   "resolved_by": "category 8 suggests time tracking (getharvest.com) but pages mix THREE products; no hint available",
+   "pages": "help.getharvest.com (time tracking, V1 API deprecated), docs.harvestapi.io (different product), github.com",
+   "other_same_name": "greenhouse.io 'Harvest API' (recruiting) in search hits",
+   "status": "UNRESOLVED - needs explicit confirmation",
+   "in_ready_full": false
+  },
+  {
+   "id": 58,
+   "name": "Sherlock (already has a Pass-1 record)",
+   "resolved_by": "none possible: 4 unrelated products retrieved; no hint available",
+   "pages": "app.sherlock.sh (Sherlock Interview API), sherlock.gnoss.com (GNOSS semantic annotation), sher-lock.readthedocs.org (Python locking library), github.com/bellingcat (username-search tool)",
+   "other_same_name": "Pass-1 record #58 describes 'an open-source CLI for finding usernames' while citing all four sources -> record is identity-contaminated",
+   "status": "UNRESOLVED - EXPLICIT CONFIRMATION REQUIRED; existing record must not be used",
+   "in_ready_full": false
+  }
+ ],
+ "domain_conflicts": [
+  {
+   "id": 69,
+   "app": "Datadog",
+   "domains": "docs.datadoghq.com, docs.datadog.com",
+   "classification": "SAME PRODUCT - alias/legacy docs host (FALSE ALARM)",
+   "evidence": "docs.datadoghq.com pages self-reference 'https://docs.datadoghq.com/...'; docs.datadog.com page shows the official datadog-api-client (groupId com.datadoghq)",
+   "action": "keep both; canonical = docs.datadoghq.com"
+  },
+  {
+   "id": 79,
+   "app": "Smartsheet",
+   "domains": "developers.smartsheet.com, smartsheet.redoc.ly",
+   "classification": "SAME PRODUCT - vendor-operated DOCUMENTATION-HOSTING domain, deprecated (FALSE ALARM)",
+   "evidence": "redoc.ly page text: '(DEPRECATED site) ... The new Smartsheet API reference documentation site is located at https://developers.smartsheet.com/'",
+   "action": "drop the deprecated redoc page from evidence; canonical = developers.smartsheet.com"
+  },
+  {
+   "id": 55,
+   "app": "Apify",
+   "domains": "docs.apify.com, use-apify.com",
+   "classification": "docs.apify.com = genuine product docs; use-apify.com = THIRD-PARTY tutorial site",
+   "evidence": "use-apify.com page is a 'Quick answer' how-to blog, not on an apify.com domain",
+   "action": "exclude use-apify.com page; 3 official pages remain"
+  },
+  {
+   "id": 50,
+   "app": "fanbasis",
+   "domains": "dev-docs.fanbasis.com, demo.embedded.fanbasis.io, fanbaseapi.openstage.live",
+   "classification": "fanbasis.com = genuine (original hint); fanbasis.io = PROBABLE same vendor (unconfirmed registrable-domain link); openstage.live = LIKELY DIFFERENT product ('Fanbase API', third-party host)",
+   "evidence": "dev-docs.fanbasis.com page text: 'Sign in to access API Docs / Password / Login' (docs themselves gated); embedded.fanbasis.io page titled 'Fanbasis Payment SDK'",
+   "action": "needs your confirmation of fanbasis.io; exclude openstage.live; note docs-gated finding"
+  },
+  {
+   "id": 58,
+   "app": "Sherlock",
+   "domains": "app.sherlock.sh, sherlock.gnoss.com, sher-lock.readthedocs.org, github.com/bellingcat",
+   "classification": "FOUR DIFFERENT PRODUCTS (genuine identity ambiguity, not a hosting issue)",
+   "evidence": "Interview API | semantic text annotation | Python lock library | username-search OSINT tool",
+   "action": "EXPLICIT identity confirmation required"
+  }
+ ],
+ "rubric_exceptions": [
+  {
+   "id": 14,
+   "app": "Front (has Pass-1 record)",
+   "type": "RETRIEVAL-SELECTION DEFECT (not a rubric problem)",
+   "finding": "12 stored search hits point to dev.frontapp.com (reference/introduction, core-api-overview, create-and-manage-apps) but none were fetched: V1 picked help.front.com/academy/integrations.sh pages because it prefers the hint domain (front.com). Existing Pass-1 record #14 therefore rests on help-center articles plus a third-party page.",
+   "action": "do not re-extract in this run; baseline record stays; fetch dev.frontapp.com in a later run after you confirm it is Front's developer domain"
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "type": "RUBRIC FALSE-NEGATIVE (API surface) + GENUINE ACCESS GAP",
+   "finding": "4 pages are all official (developers.google.com/google-ads); OAuth page present; 'rest' appears twice and no endpoint-style patterns, so the keyword API check failed; no page covers developer-token / access-level requirements (access evidence 0).",
+   "action": "hold: free top-up fetch of the developer-token / access-levels page before extraction"
+  }
+ ]
+}

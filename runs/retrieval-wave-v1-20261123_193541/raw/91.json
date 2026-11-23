@@ -1,0 +1,284 @@
+{
+ "id": 91,
+ "name": "NotebookLM",
+ "started": "2026-11-23T19:40:21+05:30",
+ "searches": [
+  {
+   "q": "NotebookLM API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:23+05:30"
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:27+05:30"
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:29+05:30"
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:40:31+05:30"
+  }
+ ],
+ "fetched": [],
+ "candidate_hits": [
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://github.com/gnh1201/notebooklm-rest-api",
+   "title": "gnh1201/notebooklm-rest-api",
+   "snippet": "A REST API wrapper for Google NotebookLM. It allows you to manage Notebooks, add sources, perform Q&A, generate artifacts, and download outputs via HTTP."
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/c99be5be77b3d4bb9a5ebd9efbe918810c97609e/docs/python-api.md",
+   "title": "notebooklm-py/docs/python-api.md at c99be5be77b3d4bb9a5ebd9efbe918810c97609e \u00b7 teng-lin/notebooklm-py",
+   "snippet": "List all notebooks |\n| `create(title)` | `title: str` | `Notebook` | Create a notebook |\n| `get(notebook_id)` | `notebook_id: str` | `Notebook` | Get notebook details |\n| `delete(notebook_id)` |"
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/82bf77b56172e72018d3d4bba250194561ddddc5/docs/python-api.md",
+   "title": "notebooklm-py/docs/python-api.md at 82bf77b56172e72018d3d4bba250194561ddddc5 \u00b7 teng-lin/notebooklm-py",
+   "snippet": "operations\nsources: SourcesAPI        # Source management\nartifacts: ArtifactsAPI    # AI-generated content\nchat: ChatAPI              # Conversations\nresearch: ResearchAPI      #"
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/503bc0dbd10796f7187e3e1e05bc5eea7c3151c6/docs/python-api.md",
+   "title": "notebooklm-py/docs/python-api.md at 503bc0dbd10796f7187e3e1e05bc5eea7c3151c6 \u00b7 teng-lin/notebooklm-py",
+   "snippet": "    research: ResearchAPI      # Web/Drive research\nnotes: NotesAPI            # User notes\nmind_maps: MindMapsAPI     # Note-backed and interactive mind maps\nsettings:"
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://www.youtube.com/watch?v=tXZlegQhV6Q",
+   "title": "Google NotebookLM API | Enterprise-Only Access & How It Works",
+   "snippet": "Google just released the NotebookLM API, but it's only available in the Enterprise edition. In this walkthrough, I show you exactly how to use\u00a0..."
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://colab.research.google.com/drive/104mZ7leV_STnu14ywODIm727pT121Q5M?usp=sharing",
+   "title": "NotebookLM with API",
+   "snippet": "Get your API Key and User id here - https://play.ai/developers. Docs - https://docs.play.ai/playnote-api-reference/endpoints/v1/playnotes/post."
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "title": "Create and manage notebooks (API)",
+   "snippet": "\nTo create a new notebook, use the [`notebooks.create`](https://docs.cloud.google.com/gemini/enterprise/docs/reference/rest/v1alpha/projects.locations.notebooks/create) method.\n### REST\n```\ncurl"
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://medium.com/@kombib/public-notebooklm-api-why-we-need-it-now-7244a5371f57",
+   "title": "Public NotebookLM API: Why We ...",
+   "snippet": "Without an API, NotebookLM is primarily static. With an API, it becomes dynamic and adaptive \u2014 key to dominating the future of AI tools."
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://github.com/roomi-fields/notebooklm-mcp/blob/ee030b7177f1d22a0990799df89724f22b9ab376/deployment/docs/03-API.md",
+   "title": "notebooklm-mcp/deployment/docs/03-API.md at ee030b7177f1d22a0990799df89724f22b9ab376 \u00b7 roomi-fields/notebooklm-mcp",
+   "snippet": "### `GET /notebooks/:id`\nGet details of a specific notebook.\n**Request:**\n```\ncurl http://localhost:3000/notebooks/parents-numerique\n```"
+  },
+  {
+   "q": "NotebookLM API documentation",
+   "url": "https://discuss.ai.google.dev/t/how-to-access-notebooklm-via-api/5084",
+   "title": "How to Access NotebookLM Via API? - Google AI Developers Forum",
+   "snippet": "There is currently not a public API for NotebookLM. no Public API for notebookLM currently. is a public api expected to be released anytime ..."
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://github.com/yuki123lab/notebooklm/blob/main/docs/auth-cookie-lifecycle.md",
+   "title": "notebooklm/docs/auth-cookie-lifecycle.md at main \u00b7 yuki123lab/notebooklm",
+   "snippet": "NotebookLM has no public OAuth surface. The library authenticates by carrying Google session cookies (`SID`, `__Secure-1PSID`, `__Secure-1PSIDTS`, `OSID`, and friends) extracted from a real browser"
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://javatechonline.com/how-to-use-notebooklm-as-a-developer/",
+   "title": "How To Use NotebookLM As A Developer? - A Comprehensive Guide",
+   "snippet": "NotebookLM acts as an observer of your API design principles, ensuring consistency and helping you quickly draft specifications."
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/v0.8.6/docs/auth-cookie-lifecycle.md",
+   "title": "notebooklm-py/docs/auth-cookie-lifecycle.md at v0.8.6 \u00b7 teng-lin/notebooklm-py",
+   "snippet": "NotebookLM does not offer this project a public OAuth or service-account API. The Web backend therefore uses Google browser-session cookies. Treat a `storage_state.json` export as a full-account"
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/101416a381fc53c335a0aa3ed635bc18b81fe8dc/src/notebooklm/mcp/_oauth.py",
+   "title": "notebooklm-py/src/notebooklm/mcp/_oauth.py at 101416a381fc53c335a0aa3ed635bc18b81fe8dc \u00b7 teng-lin/notebooklm-py",
+   "snippet": "(#1765).\"\"\"\nreturn SelfHostedOAuthProvider(\npassword=config.password,\nbase_url=config.base_url,\nstate_path=config.state_path,\ntrust_proxy=config.trust_proxy,\n)"
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://www.youtube.com/watch?v=tXZlegQhV6Q",
+   "title": "Google NotebookLM API | Enterprise-Only Access & How It Works",
+   "snippet": "Google just released the NotebookLM API, but it's only available in the Enterprise edition. In this walkthrough, I show you exactly how to use\u00a0..."
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://discuss.ai.google.dev/t/how-to-access-notebooklm-via-api/5084?page=2",
+   "title": "How to Access NotebookLM Via API? - Page 2 - Gemini API",
+   "snippet": "The NotebookLM API requires Google Cloud's NotebookLM Enterprise product which requires identity/auth setup and buying a subscription which ..."
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/32611c9fc7de45e42f946a9d341f0f42543c497f/src/notebooklm/_auth/master_token.py",
+   "title": "notebooklm-py/src/notebooklm/_auth/master_token.py at 32611c9fc7de45e42f946a9d341f0f42543c497f \u00b7 teng-lin/notebooklm-py",
+   "snippet": " --exchange_token-->  aas_et/ master token   (durable; persisted 0600)\n--perform_oauth-->   ya29 OAuthLogin token\n--OAuthLogin?issueuberauth=1-->  uberauth\n--MergeSession-->   "
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://github.com/brock-run/notebooklm-mcp",
+   "title": "GitHub - brock-run/notebooklm-mcp",
+   "snippet": "- \u2705 **OAuth2 Authentication**: Secure authentication with auto-refresh\n\n- Google Drive API enabled\n- OAuth2 credentials (client ID and secret)"
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/main/SKILL.md",
+   "title": "notebooklm-py/SKILL.md at main \u00b7 teng-lin/notebooklm-py",
+   "snippet": "a copied cookie snapshot. Install `pip install \"notebooklm-py[headless]\"`; the one-time automatic OAuth capture also needs `[browser]`. On a trusted workstation run `notebooklm login --master-token"
+  },
+  {
+   "q": "NotebookLM API authentication OAuth API key developer",
+   "url": "https://medium.com/@kombib/public-notebooklm-api-why-we-need-it-now-7244a5371f57",
+   "title": "Public NotebookLM API: Why We Need It Now | by Mihailo Zoin",
+   "snippet": "Without an API, NotebookLM is primarily static. With an API, it becomes dynamic and adaptive \u2014 key to dominating the future of AI tools."
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://github.com/useapi/notebooklm-api",
+   "title": "useapi/notebooklm-api: NotebookLM API (Gemini Notebook API) examples by useapi.net: turn web pages, PDFs and YouTube videos into podcasts, video overviews and Deep Research reports. Node.js, Python, bash, a Colab notebook, n8n workflows, an agent skill and a hosted MCP server (57 tools). \u00b7 GitHub",
+   "snippet": "Google offers no NotebookLM API for regular Google accounts. This API is third-party and uses the NotebookLM plan you already have."
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "title": "Create and manage notebooks (API)",
+   "snippet": "and assign a license to your user account.\n- [Grant the Cloud NotebookLM User"
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://note.com/ai_next_level/n/n44c5ef1d91a0?hl=en",
+   "title": "What can you do with the free API? A comparison of Gemini Notebook (formerly NotebookLM) MCP and PDF addition limits",
+   "snippet": "limits and quotas](https://developers.google.com/notebook/docs/rate-limits), checked on: 2026-11-21).\n**\u25a0 Free**\n- **Notebook limit**: 100\n- **Source limit per notebook**: 50\n- **Source addition"
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/main/docs/quota-limits.md",
+   "title": "notebooklm-py/docs/quota-limits.md at main \u00b7 teng-lin/notebooklm-py",
+   "snippet": "A human-reference table of NotebookLM's **static, published plan limits** per tier \u2014 how many notebooks, sources, chats, and studio artifacts each subscription level allows."
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://notebooklm.roomi-fields.com/blog/does-notebooklm-have-an-api",
+   "title": "Does NotebookLM have an API? The 2026 answer",
+   "snippet": "The access path is the part people miss. It needs a Google Cloud project and a Gemini Enterprise or Education Premium licence, set up by an administrator. It is not a key you sign up for on a"
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://dev.to/useapi/notebooklm-api-options-in-2026-google-enterprise-api-free-libraries-or-a-hosted-api-3cch",
+   "title": "NotebookLM API Options in 2026: Google Enterprise API, Free Libraries or a Hosted API",
+   "snippet": "1. **Google's Enterprise API**, if your organisation buys Enterprise licenses.\n\n| Price | $15/month, every useapi.net API | Free | Free | Enterprise licenses |"
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://discuss.ai.google.dev/t/notebooklm-api/55950",
+   "title": "NotebookLM API? - Gemini API - Google AI Developers Forum",
+   "snippet": "Hello, I am very new to this and just created my account a moment ago but I was just wondering if there is any plan to release an API for ..."
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://kortex-notebooklm.com/blog/gemini-notebook-api",
+   "title": "Gemini Notebook (formerly NotebookLM) API: Key and Pricing",
+   "snippet": "2026). Free, Plus, Pro and Ultra accounts have nothing official to call. As a result, every consumer integration you\u2019ll find works around the app,"
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://discuss.ai.google.dev/t/how-to-access-notebooklm-via-api/5084?page=2",
+   "title": "How to Access NotebookLM Via API?",
+   "snippet": "What I am finding (I have an Ultra subscription to Gemini Pro), is that replicating"
+  },
+  {
+   "q": "NotebookLM API access pricing plans developer account",
+   "url": "https://medium.com/@mubashirburfat4/notebooklm-free-vs-plus-vs-pro-vs-ultra-which-plan-is-actually-worth-it-in-2026-4b4c4adfe829",
+   "title": "NotebookLM Free vs Plus vs Pro vs Ultra: Which Plan Is Actually Worth It ...",
+   "snippet": "The higher Ultra tier runs $200 a month with 30TB of storage and higher limits across the board. Both tiers come bundled with the full Google AI ..."
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://mcp.so/servers/notebooklm-mcp",
+   "title": "Notebooklm - Servers",
+   "snippet": "Notebooklm is a REST API and MCP server that automates Google NotebookLM at scale. It provides 33 HTTP REST endpoints for tools like n8n, Zapier, Make, and ..."
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://github.com/MatiNovelli/notebooklm-mcp",
+   "title": "GitHub - MatiNovelli/notebooklm-mcp: MCP server for Gemini Notebook (formerly NotebookLM)",
+   "snippet": "`notebooklm.google.com` host still works). There is no official API, so it drives a real Chrome via Patchright (stealth + persistent fingerprint) so an agent can chat against a notebook, ingest"
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://composio.dev/toolkits/notebook_lm",
+   "title": "NotebookLM MCP Server",
+   "snippet": "NotebookLM is Google's source-grounded AI notebook service for organizing sources and notes. It helps teams work from trusted material, keeping research clear, ..."
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://github.com/google/mcp/issues/19",
+   "title": "Official NotebookLM MCP Server \u00b7 Issue #19 \u00b7 google/mcp",
+   "snippet": "official Model Context Protocol (MCP) server for NotebookLM. an official version from Google would provide the stability and security required ..."
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://github.com/teng-lin/notebooklm-py/blob/3db333dad1f33a962db6c9ad6484c288b8b3482d/docs/mcp-guide.md",
+   "title": "notebooklm-py/docs/mcp-guide.md at 3db333dad1f33a962db6c9ad6484c288b8b3482d \u00b7 teng-lin/notebooklm-py",
+   "snippet": "| **Server** | `server_info` \u2014 version + local auth health |"
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://medium.com/the-context-layer/superpower-notebooklm-with-an-mcp-server-fe4d6038c3db",
+   "title": "Supercharge NotebookLM With an MCP Server!",
+   "snippet": "The NotebookLM MCP server by jacob-bd cuts the app switching between the NotebookLM Browser window and your working environment. It exposes ..."
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://github.com/PavelGuzenfeld/notebooklm-mcp",
+   "title": "GitHub - PavelGuzenfeld/notebooklm-mcp: MCP server for Google NotebookLM \u2014 31 tools for notebooks, sources, chat, artifacts, research",
+   "snippet": "# NotebookLM MCP Server\nMCP server that exposes Google NotebookLM as tools for any MCP-compatible client.\nBuilt on [notebooklm-py](https://github.com/teng-lin/notebooklm-py) (unofficial SDK)."
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://github.com/PleasePrompto/notebooklm-mcp",
+   "title": "MCP server for NotebookLM - Let your AI agents (Claude Code, Codex) ...",
+   "snippet": "MCP server for Google NotebookLM. It drives a real Chrome via Patchright (stealth + persistent fingerprint) so an agent can chat against a ..."
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://raw.githubusercontent.com/Morfeu333/notebooklm-mcp/main/README.md",
+   "title": "raw.githubusercontent.com/Morfeu333/notebooklm-mcp/main/README.md",
+   "snippet": "An MCP server for **NotebookLM** (notebooklm.google.com)."
+  },
+  {
+   "q": "NotebookLM MCP server official",
+   "url": "https://github.com/PleasePrompto/notebooklm-mcp/tree/50b3e7f67f8535d9899c5e2b1b68f37d17b72aef",
+   "title": "GitHub - PleasePrompto/notebooklm-mcp at 50b3e7f67f8535d9899c5e2b1b68f37d17b72aef",
+   "snippet": "MCP server for Google NotebookLM. It drives a real Chrome via Patchright (stealth + persistent fingerprint) so an agent can chat against a notebook, ingest sources, generate audio overviews, and read"
+  }
+ ],
+ "official_domain_candidates": {
+  "kortex-notebooklm.com": 1
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "kortex-notebooklm.com",
+ "completed": "2026-11-23T19:40:31+05:30"
+}

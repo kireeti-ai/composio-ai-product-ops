@@ -1,0 +1,299 @@
+{
+ "46": {
+  "app": "Squarespace",
+  "targets": [
+   {
+    "parent_url": "https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle",
+    "parent_outcome": "fetch_error",
+    "category": "pricing",
+    "alternatives": [
+     {
+      "url": "https://support.squarespace.com/hc/en-us/articles/4404628246669-Create-pricing-plans-and-paywalls",
+      "kind": "stored_search_hit"
+     },
+     {
+      "url": "https://squarespace.com/pricing.txt",
+      "kind": "stored_search_hit"
+     }
+    ]
+   },
+   {
+    "parent_url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "parent_outcome": "fetch_error",
+    "category": "registration",
+    "alternatives": []
+   },
+   {
+    "parent_url": "https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+    "parent_outcome": "fetch_error",
+    "category": "registration",
+    "alternatives": [
+     {
+      "url": "https://support.squarespace.com/hc/en-us/articles/236297987",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://support.squarespace.com/hc/en-us/articles/236297987/?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+      "kind": "url_variant"
+     }
+    ]
+   }
+  ]
+ },
+ "66": {
+  "app": "Neo4j",
+  "targets": [
+   {
+    "parent_url": "https://neo4j.com/pricing/",
+    "parent_outcome": "fetch_error",
+    "category": "pricing",
+    "alternatives": [
+     {
+      "url": "https://www.neo4j.com/pricing/",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://neo4j.com/docs/aura/billing/billing-dimensions/",
+      "kind": "stored_search_hit"
+     }
+    ]
+   }
+  ]
+ },
+ "71": {
+  "app": "Notion",
+  "targets": [
+   {
+    "parent_url": "https://notion.com/en-GB/pricing/us",
+    "parent_outcome": "thin_or_js_shell",
+    "category": "pricing",
+    "alternatives": [
+     {
+      "url": "https://www.notion.com/en-GB/pricing/us",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://notion.com/help/category/plans-billing-and-payment",
+      "kind": "stored_search_hit"
+     },
+     {
+      "url": "https://www.notion.com/pricing",
+      "kind": "stored_search_hit"
+     }
+    ]
+   }
+  ]
+ },
+ "72": {
+  "app": "Airtable",
+  "targets": [
+   {
+    "parent_url": "https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs",
+    "parent_outcome": "fetch_empty",
+    "category": "pricing",
+    "alternatives": [
+     {
+      "url": "https://support.airtable.com/docs/airtable-billing-overview",
+      "kind": "stored_search_hit"
+     },
+     {
+      "url": "https://support.airtable.com/articles/1636857517-how-airtable-collaborators-impact-billing",
+      "kind": "stored_search_hit"
+     },
+     {
+      "url": "https://airtable.com/developers/web/api/billing-plans.md",
+      "kind": "stored_search_hit"
+     }
+    ]
+   }
+  ]
+ },
+ "75": {
+  "app": "Asana",
+  "targets": [
+   {
+    "parent_url": "https://asana.com/pricing",
+    "parent_outcome": "fetch_error",
+    "category": "pricing",
+    "alternatives": [
+     {
+      "url": "https://www.asana.com/pricing",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://asana.com/pricing.md",
+      "kind": "stored_search_hit"
+     },
+     {
+      "url": "https://asana.com/pricing?via=",
+      "kind": "stored_search_hit"
+     }
+    ]
+   },
+   {
+    "parent_url": "https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox)",
+    "parent_outcome": "fetch_empty",
+    "category": "registration",
+    "alternatives": [
+     {
+      "url": "https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox).md",
+      "kind": "url_variant"
+     }
+    ]
+   }
+  ]
+ },
+ "20": {
+  "app": "Gladly",
+  "targets": [
+   {
+    "parent_url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+    "parent_outcome": "fetch_empty",
+    "category": "pricing",
+    "alternatives": [
+     {
+      "url": "https://www.gladly.com/gladly-pricing-support-and-service-packages",
+      "kind": "url_variant"
+     }
+    ]
+   },
+   {
+    "parent_url": "https://gladly.com/get-started-2",
+    "parent_outcome": "thin_or_js_shell",
+    "category": "onboarding",
+    "alternatives": [
+     {
+      "url": "https://www.gladly.com/get-started-2",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://gladly.com/get-started-sidekick",
+      "kind": "stored_search_hit"
+     },
+     {
+      "url": "https://connect.gladly.com/docs/developer-tutorials/article/app-platform-overview",
+      "kind": "stored_search_hit"
+     }
+    ]
+   }
+  ]
+ },
+ "26": {
+  "app": "Discord",
+  "targets": [
+   {
+    "parent_url": "https://discord.com/developers/home",
+    "parent_outcome": "thin_or_js_shell",
+    "category": "registration",
+    "alternatives": [
+     {
+      "url": "https://www.discord.com/developers/home",
+      "kind": "url_variant"
+     }
+    ]
+   }
+  ]
+ },
+ "38": {
+  "app": "Pinterest",
+  "targets": [
+   {
+    "parent_url": "https://developers.pinterest.com/apps/1558653/upgrade",
+    "parent_outcome": "thin_or_js_shell",
+    "category": "registration",
+    "alternatives": [
+     {
+      "url": "https://developers.pinterest.com/apps/1558653/upgrade.md",
+      "kind": "url_variant"
+     }
+    ]
+   }
+  ]
+ },
+ "47": {
+  "app": "Ecwid",
+  "targets": [
+   {
+    "parent_url": "http://developers.ecwid.com/register",
+    "parent_outcome": "fetch_empty",
+    "category": "registration",
+    "alternatives": [
+     {
+      "url": "http://developers.ecwid.com/register.md",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://developers.ecwid.com/register",
+      "kind": "url_variant"
+     }
+    ]
+   }
+  ]
+ },
+ "61": {
+  "app": "GitHub",
+  "targets": [
+   {
+    "parent_url": "https://github.com/pricing.md",
+    "parent_outcome": "fetch_empty",
+    "category": "pricing",
+    "alternatives": [
+     {
+      "url": "https://github.com/pricing",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://www.github.com/pricing.md",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://github.com/features/copilot/plans",
+      "kind": "stored_search_hit"
+     }
+    ]
+   }
+  ]
+ },
+ "62": {
+  "app": "Vercel",
+  "targets": [
+   {
+    "parent_url": "https://vercel.com/signup",
+    "parent_outcome": "thin_or_js_shell",
+    "category": "registration",
+    "alternatives": [
+     {
+      "url": "https://www.vercel.com/signup",
+      "kind": "url_variant"
+     },
+     {
+      "url": "https://vercel.com/kb/guide/how-do-i-use-a-vercel-api-access-token",
+      "kind": "stored_search_hit"
+     },
+     {
+      "url": "https://vercel.com/docs/cli/signup",
+      "kind": "stored_search_hit"
+     }
+    ]
+   }
+  ]
+ },
+ "_app_level_searches": {
+  "46": [
+   "Squarespace developer API access commerce plan requirement",
+   "Squarespace developers OAuth API key"
+  ],
+  "20": [
+   "Gladly API access developer tokens",
+   "Gladly pricing"
+  ],
+  "38": [
+   "Pinterest API access trial standard access developers",
+   "Pinterest developers get started app review"
+  ],
+  "66": [
+   "Neo4j Query API HTTPS endpoint",
+   "Neo4j Aura API authentication client credentials"
+  ]
+ }
+}

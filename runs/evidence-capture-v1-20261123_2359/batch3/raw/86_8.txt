@@ -1,0 +1,275 @@
+
+ Intuit Developer Group · GitHub
+ Skip to content
+Navigation Menu
+Sign in
+IntuitDeveloper
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign inSign up
+Appearance settings
+ You signed in with another tab or window. Reload to refresh your session.
+ You signed out in another tab or window. Reload to refresh your session.
+ You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+{{ message }}
+ Intuit Developer Group
+ 194
+ followers
+ MTV
+ https://developer.intuit.com/
+ Overview
+ Repositories
+ Projects
+ Packages
+ People
+ More
+ Overview
+ Repositories
+ Projects
+ Packages
+ People
+ Pinned
+ Loading
+ Prompt-Library Prompt-Library Public
+ Collection of prompts for developers to use with AI tools
+ JavaScript
+ 14
+ 5
+ intuit-3p-ai-pilot intuit-3p-ai-pilot Public
+ 3
+ 1
+ Repositories
+ Loading
+ Type
+ Select type
+ All
+ Public
+ Sources
+ Forks
+ Archived
+ Mirrors
+ Templates
+ Language
+ Select language
+ All
+ Apex
+ C
+ C#
+ Go
+ HTML
+ Java
+ JavaScript
+ PHP
+ Python
+ Ruby
+ Visual Basic
+ Sort
+ Select order
+ Last updated
+ Name
+ Stars
+ Showing 10 of 74 repositories
+ Transactional-Node-Samples
+ Public
+ Learn how to use Mailchimp's Transactional API with our sample code.
+ IntuitDeveloper/Transactional-Node-Samples's past year of commit activity
+ JavaScript
+ 1
+ Apache-2.0
+ 0
+ 0
+ 0
+ Updated Sep 24, 2026
+ SampleApp-Project-Ruby
+ Public
+ This is a sample app to test the Project API using Ruby.
+ IntuitDeveloper/SampleApp-Project-Ruby's past year of commit activity
+ Ruby
+ 0
+ Apache-2.0
+ 0
+ 0
+ 0
+ Updated Sep 18, 2026
+ intuitdeveloper.github.io
+ Public
+ Page to view all public github repos
+ IntuitDeveloper/intuitdeveloper.github.io's past year of commit activity
+ HTML
+ 2
+ Apache-2.0
+ 2
+ 0
+ 0
+ Updated Sep 17, 2026
+ PHPPaymentSample
+ Public
+ IntuitDeveloper/PHPPaymentSample's past year of commit activity
+ PHP
+ 4
+ Apache-2.0
+ 5
+ 1
+ 0
+ Updated Sep 17, 2026
+ SampleApp-CRUD_.Net_Oauth2
+ Public
+ SampleApp-CRUD_.Net_Oauth2
+ IntuitDeveloper/SampleApp-CRUD_.Net_Oauth2's past year of commit activity
+ C#
+ 11
+ Apache-2.0
+ 8
+ 1
+ 1
+ Updated Sep 17, 2026
+ SampleApp-QuickBooksV3API-Python
+ Public
+ Python3 sample app demonstrates how to use Quickbooks API using Flask
+ IntuitDeveloper/SampleApp-QuickBooksV3API-Python's past year of commit activity
+ Python
+ 53
+ Apache-2.0
+ 31
+ 0
+ 0
+ Updated Sep 17, 2026
+ SampleApp-WebhookNotifications-nodejs
+ Public
+ A sample NodeJs application to demonstrate Webhooks and capture the notifications into a (csv) format file. This demo includes OAuth2.0
+ IntuitDeveloper/SampleApp-WebhookNotifications-nodejs's past year of commit activity
+ JavaScript
+ 28
+ Apache-2.0
+ 21
+ 4
+ 1
+ Updated Sep 17, 2026
+ QBXML_SDK_Samples
+ Public
+ QBXML_SDK13_Samples
+ IntuitDeveloper/QBXML_SDK_Samples's past year of commit activity
+ C
+ 78
+ Apache-2.0
+ 92
+ 10
+ 2
+ Updated Sep 17, 2026
+ SampleApp-Webhooks-Java
+ Public
+ Java Sample to demonstrate how to integrate your app using webhooks
+ IntuitDeveloper/SampleApp-Webhooks-Java's past year of commit activity
+ Java
+ 57
+ Apache-2.0
+ 49
+ 1
+ 0
+ Updated Sep 17, 2026
+ SampleApp-EmployeeCompensation-DotNet
+ Public
+ A .NET Core Web API Project for creating Projects within Quickbooks Online using Intuit .NET SDK and GraphQL
+ IntuitDeveloper/SampleApp-EmployeeCompensation-DotNet's past year of commit activity
+ JavaScript
+ 0
+ Apache-2.0
+ 1
+ 0
+ 0
+ Updated Sep 17, 2026
+ View all repositories
+People
+Top languages
+ Java
+ Python
+ PHP
+ JavaScript
+ HTML
+Most used topics
+ oauth2
+ quickbooks
+ java
+ quickbooks-api
+ dotnet
+Footer
+ © 2026 GitHub, Inc.
+Footer navigation
+ Terms
+ Privacy
+ Security
+ Status
+ Community
+ Docs
+ Contact
+ Manage cookies
+ Do not share my personal information
+ You can’t perform that action at this time.

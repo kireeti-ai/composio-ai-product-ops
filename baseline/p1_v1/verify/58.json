@@ -1,0 +1,49 @@
+{
+ "id": 58,
+ "name": "Sherlock",
+ "pass1_sha": "310af691284a7a6f",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "unknown",
+    "verdict": "contradicted",
+    "evidence_quote": "does not require API keys or login credentials for the sites it checks",
+    "suggested_value": "",
+    "reason": "Excerpts state no API keys or credentials needed, so auth methods are known (none)",
+    "needs_human": true
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: The core CLI tool is free. Some third-party services built around Sherlock are freemium or paid.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states the core CLI tool remains free and mentions freemium/paid third\u2011party services.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "sdk_or_cli_only",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states Sherlock is primarily a CLI tool with no mention of other API types",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "community",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpt does not mention community support or lack thereof.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

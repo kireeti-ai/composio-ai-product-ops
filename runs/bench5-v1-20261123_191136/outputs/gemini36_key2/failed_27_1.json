@@ -1,0 +1,12 @@
+{
+ "tag": "gemini36_key2",
+ "app": 27,
+ "name": "Telegram",
+ "status": "failed",
+ "category": "network_error",
+ "http": null,
+ "error": "TimeoutError",
+ "model": "gemini-3.6-flash",
+ "attempt": 1,
+ "at": "2026-11-23T19:18:30+05:30"
+}

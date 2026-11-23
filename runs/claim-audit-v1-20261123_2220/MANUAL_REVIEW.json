@@ -1,0 +1,2326 @@
+{
+  "audit_id": "claim-audit-v1-20261123_2220",
+  "scope": "Manual semantic review of the stored Salesforce (#1) extraction against its cited source quotations and saved page text. No external requests or model calls.",
+  "reviewed_at_local": "2026-11-23T21:36:55+0530",
+  "source_record": "baseline/p1_v1/pass1/1.json",
+  "retrieval_record": "baseline/p1_v1/raw/1.json",
+  "claims": [
+    {
+      "field": "auth_methods",
+      "item": "oauth2",
+      "submitted_state": "supported_lexical",
+      "review_disposition": "supported_by_cited_text_with_scope_limit",
+      "reason": "The Bulk API 2.0 quotation explicitly says it supports OAuth 2.0 flows. The evidence supports OAuth 2.0 for the documented Bulk API context, not necessarily every Salesforce API or every access configuration.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html"
+      ]
+    },
+    {
+      "field": "auth_methods",
+      "item": "bearer_token",
+      "submitted_state": "supported_lexical",
+      "review_disposition": "supported_by_cited_text_with_scope_limit",
+      "reason": "The same cited Bulk API 2.0 passage explicitly identifies the required access token as a bearer token. Scope is limited to that documented API context.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html"
+      ]
+    },
+    {
+      "field": "access",
+      "item": "self_serve_free",
+      "submitted_state": "unsupported",
+      "review_disposition": "unsupported_by_cited_evidence",
+      "reason": "The quote says to complete steps in a Developer Edition org or development sandbox. It does not establish free access terms, self-serve provisioning, or general API entitlement. Underlying access may exist; this citation does not prove it.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+      ]
+    },
+    {
+      "field": "api_types",
+      "item": "rest",
+      "submitted_state": "supported_lexical",
+      "review_disposition": "supported_by_cited_text",
+      "reason": "The cited page explicitly names REST API and states it requires an access token.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+      ]
+    },
+    {
+      "field": "api_types",
+      "item": "soap",
+      "submitted_state": "supported_lexical",
+      "review_disposition": "supported_by_cited_text",
+      "reason": "The cited Bulk API documentation explicitly refers to SOAP API login().",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html"
+      ]
+    },
+    {
+      "field": "api_types",
+      "item": "sdk_or_cli_only",
+      "submitted_state": "supported_lexical",
+      "review_disposition": "unsupported_by_cited_evidence",
+      "reason": "The quotation describes Salesforce CLI as a connected app. It does not establish an SDK/CLI-only API surface; the enum is also semantically mismatched with the separately evidenced REST and SOAP interfaces.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+      ]
+    },
+    {
+      "field": "existing_mcp",
+      "item": "official",
+      "submitted_state": "unsupported",
+      "review_disposition": "irrelevant_quotation_and_claim_unverified",
+      "reason": "The cited quotation concerns Salesforce CLI, not the Model Context Protocol or an MCP server. This record therefore provides no evidence for the official MCP claim. It does not establish that Salesforce lacks an MCP server.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+      ]
+    },
+    {
+      "field": "buildability",
+      "item": "yes",
+      "submitted_state": "not_in_claim_validator",
+      "review_disposition": "unsupported_by_recorded_evidence",
+      "reason": "The record gives no directly cited resource/operation coverage, permission review, or gating analysis sufficient to substantiate a positive buildability verdict.",
+      "evidence_urls": []
+    },
+    {
+      "field": "blocker",
+      "item": "none",
+      "submitted_state": "not_in_claim_validator",
+      "review_disposition": "unsupported_by_recorded_evidence",
+      "reason": "No evidence establishes that no technical or commercial blocker exists.",
+      "evidence_urls": []
+    }
+  ],
+  "limitations": [
+    "This is a source-quote semantic audit of one historical record, not independent product-wide fact verification.",
+    "The first Salesforce OAuth quote is non-contiguous in the saved page and remains an invalid citation; the separate Bulk API quote supports the scoped OAuth/bearer claims.",
+    "No human-label accuracy metric is derived."
+  ],
+  "additional_app_reviews": [
+    {
+      "app_id": 2,
+      "app_name": "HubSpot",
+      "reviewed_at_local": "2026-11-23T21:38:01+0530",
+      "source_basis": "historical extracted quotes and saved pages; source retrieval timestamps absent in baseline for these URLs",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "service key bearer",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The source explicitly says a service key can be sent as a Bearer token; scope is this service-key mechanism."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "OAuth/static access token",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The official overview distinguishes OAuth for multiple accounts from static access tokens for a single account."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "developer API key",
+          "disposition": "unsupported_by_submitted_quote",
+          "reason": "The submitted quote contains an ellipsis and failed quote validation; do not retain this mechanism from that quote."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Direct REST usage and public beta do not establish that access is free or generally self-serve."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official source explicitly identifies service keys querying HubSpot REST APIs."
+        },
+        {
+          "field": "api_types",
+          "claim": "sdk_or_cli_only",
+          "disposition": "unsupported_by_submitted_evidence",
+          "reason": "CLI install/authentication steps do not establish an API surface category."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "The cited HubSpot CLI installation quote contains no MCP evidence; MCP availability remains unknown in this record."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "unsupported_by_recorded_evidence",
+          "reason": "Evidence does not sufficiently establish resource breadth, scopes, access restrictions and blocker absence."
+        }
+      ]
+    },
+    {
+      "app_id": 3,
+      "app_name": "Pipedrive",
+      "reviewed_at_local": "2026-11-23T21:38:01+0530",
+      "source_basis": "historical extracted quotes and saved pages; source retrieval timestamps absent in baseline for these URLs",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API token or OAuth access token",
+          "disposition": "supported",
+          "reason": "Cited official API reference explicitly says requests are validated against an API token or OAuth access_token."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "partially_supported_not_generalized",
+          "reason": "The quote supports sign-up for a sandbox in a risk-free environment, not unrestricted or free production API access."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST and webhooks",
+          "disposition": "supported",
+          "reason": "Official product/API page explicitly identifies RESTful API and webhooks."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The submitted quote is the placeholder “unknown”; this is not evidence of absence. Mark MCP status not verified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "inferred_not_verified",
+          "reason": "REST and webhook availability support feasibility in principle, but access, scopes and resource coverage are not documented in the record."
+        }
+      ]
+    },
+    {
+      "app_id": 4,
+      "app_name": "Attio",
+      "reviewed_at_local": "2026-11-23T21:38:01+0530",
+      "source_basis": "historical extracted quotes and saved pages; source retrieval timestamps absent in baseline for these URLs",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth 2.0 and API key",
+          "disposition": "supported",
+          "reason": "Official authentication page explicitly lists OAuth 2.0 and workspace API key generation."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "Bearer token and HTTP Basic",
+          "disposition": "supported",
+          "reason": "Official page explicitly documents the Authorization Bearer header and HTTP Basic Authentication."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Developer-settings API key generation supports user-controlled setup, but the cited quote does not establish free API access or plan availability."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Attio docs explicitly call it a public REST API."
+        },
+        {
+          "field": "api_types",
+          "claim": "SDK",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The citation explicitly describes an App SDK; it is not an SDK/CLI-only API classification because the REST API is separately documented."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_by_official_docs",
+          "reason": "Official Attio docs state that MCP can manage Attio and connect AI tools to search/update workspace; provenance is vendor documentation."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "An API and SDK are shown, but the record lacks verified scopes, resource operation coverage, plan/access restrictions and blocker review."
+        }
+      ]
+    },
+    {
+      "app_id": 5,
+      "app_name": "Twenty",
+      "reviewed_at_local": "2026-11-23T21:38:01+0530",
+      "source_basis": "historical extracted quotes and saved pages; source retrieval timestamps absent in baseline for these URLs",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key / bearer",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The API docs show bearer authorization using an API key."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Creating a key in workspace settings supports self-service key creation for an existing workspace; it does not establish free workspace access or API entitlements."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST and GraphQL",
+          "disposition": "supported",
+          "reason": "The official docs explicitly state both are available."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "quote_validation_failed_claim_semantics_supported",
+          "reason": "The extraction quote failed exact quote matching, but the official Twenty API host page names the Twenty MCP server. Preserve original quote failure; semantic claim needs an exact captured quotation before acceptance."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "inferred_not_verified",
+          "reason": "REST/GraphQL and an API key are documented, but scopes, resource coverage, plan restrictions and technical blockers are not fully evaluated."
+        }
+      ]
+    },
+    {
+      "app_id": 6,
+      "app_name": "Podio",
+      "reviewed_at_local": "2026-11-23T21:38:38+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved retrieval pages; historical source timestamps not captured consistently",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2",
+          "disposition": "supported",
+          "reason": "The official Podio authentication guide explicitly says the API uses OAuth2."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "bearer token / password flow",
+          "disposition": "citation_failed",
+          "reason": "Both submitted quotes fail lexical validation in the saved source; keep these mechanisms unaccepted until exact source quotations are recovered."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "overstated",
+          "reason": "The quote requires application registration before API use. This proves registration is required, not that access is free or unconditionally self-serve."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "The documented endpoint uses HTTP POST to the Podio OAuth API; supports HTTP/REST-style API usage in this context."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "app/item and partial user/space operations",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The quoted client documentation explicitly states app/item APIs are supported in entirety and some user/space functions are available."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "community",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "The quote says Citrix does not maintain libraries; it does not mention MCP. MCP status remains unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "API breadth is described, but application registration is required and no access entitlement, scopes, rate limits or full blocker analysis is recorded."
+        }
+      ]
+    },
+    {
+      "app_id": 7,
+      "app_name": "Zoho CRM",
+      "reviewed_at_local": "2026-11-23T21:38:38+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved retrieval pages; historical source timestamps not captured consistently",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "consumer key from connected app",
+          "disposition": "partial_only",
+          "reason": "The quote establishes a consumer key generated from a connected app but does not by itself establish the complete OAuth flow or all auth methods."
+        },
+        {
+          "field": "access",
+          "claim": "free self-serve",
+          "disposition": "partially_supported_scope_limited",
+          "reason": "The quoted page establishes a free Developer Edition learning environment, not free production API entitlement."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs explicitly describe flexible RESTful endpoints and CRUD operations."
+        },
+        {
+          "field": "api_types",
+          "claim": "GraphQL",
+          "disposition": "unsupported_by_recorded_evidence",
+          "reason": "No supplied citation supports GraphQL."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "unsupported_generic_mcp_reference",
+          "reason": "The quote refers to a generic MCP server for Zoho and third-party services, without establishing a Zoho CRM-specific vendor-maintained server or its tool coverage."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "REST CRUD is supported, but MCP specificity, plan restrictions, scopes, rate limits and concrete resource breadth remain incomplete."
+        }
+      ]
+    },
+    {
+      "app_id": 8,
+      "app_name": "Close",
+      "reviewed_at_local": "2026-11-23T21:38:38+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved retrieval pages; historical source timestamps not captured consistently",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth 2.0",
+          "disposition": "supported",
+          "reason": "Official docs require creating an OAuth app and provide client ID/secret."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "API key",
+          "disposition": "supported",
+          "reason": "Official docs describe managing API keys in a Close account."
+        },
+        {
+          "field": "access",
+          "claim": "trial_or_paid_plan",
+          "disposition": "not_established",
+          "reason": "Account API-key settings do not prove paid-plan requirements or public self-serve access; classify exact access tier as unknown pending pricing/plan evidence."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official source explicitly names a REST API and representative lead/contact/activity/custom-data operations."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_by_vendor_docs",
+          "reason": "Official developer documentation explicitly offers access to Close data via “the MCP server”."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "API and MCP are documented; plan gating, scopes, rate limits and complete operation coverage are absent from this record."
+        }
+      ]
+    },
+    {
+      "app_id": 9,
+      "app_name": "Copper",
+      "reviewed_at_local": "2026-11-23T21:38:38+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved retrieval pages; historical source timestamps not captured consistently",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key and OAuth 2.0",
+          "disposition": "supported",
+          "reason": "Official documentation explicitly lists both methods."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_trial_or_paid_plan",
+          "disposition": "partially_supported",
+          "reason": "The source describes generating an API token in the Copper app settings. It supports key creation for an existing account, not the trial/paid access classification."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "The official OAuth documentation explicitly describes implementing OAuth through plain REST."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The submitted citation is the placeholder “unknown”; this cannot establish absence. Mark MCP not verified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Authentication and REST are evidenced but resource/operation breadth, plan restrictions and other blockers were not audited."
+        }
+      ]
+    },
+    {
+      "app_id": 10,
+      "app_name": "DealCloud",
+      "reviewed_at_local": "2026-11-23T21:38:38+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved retrieval pages; historical source timestamps not captured consistently",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2 client credentials and bearer token",
+          "disposition": "supported",
+          "reason": "Official API docs explicitly state the Client Credentials flow generates a bearer token for HTTP authorization."
+        },
+        {
+          "field": "access",
+          "claim": "unknown",
+          "disposition": "appropriately_unknown",
+          "reason": "The extraction states unknown and the cited docs record contains no valid access claim; retain unknown."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official API documentation portal explicitly identifies REST APIs and capabilities."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_by_vendor_docs",
+          "reason": "Official DealCloud MCP authentication docs explicitly describe DealCloud MCP and OAuth for individual users."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "REST and MCP are shown, but commercial gating, scopes, API resources/operations, limits and blocker absence are not verified."
+        }
+      ]
+    },
+    {
+      "app_id": 11,
+      "app_name": "Zendesk",
+      "reviewed_at_local": "2026-11-23T21:39:21+0530",
+      "source_basis": "historical quoted evidence and stored retrievals; historical source timestamp not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth access tokens",
+          "disposition": "supported",
+          "reason": "Official docs explicitly state OAuth access tokens authenticate API requests."
+        },
+        {
+          "field": "access",
+          "claim": "trial_or_paid",
+          "disposition": "partially_supported",
+          "reason": "Evidence establishes a free 14-day Sunshine Platform trial, not access conditions for all Zendesk APIs."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs explicitly describe Zendesk APIs as organized around REST principles."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Submitted evidence is “unknown”; it cannot establish absence. MCP remains unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "API documentation exists, but product-family scope, plan restrictions, scopes, resource coverage and blockers are not fully recorded."
+        }
+      ]
+    },
+    {
+      "app_id": 12,
+      "app_name": "Intercom",
+      "reviewed_at_local": "2026-11-23T21:39:21+0530",
+      "source_basis": "historical quoted evidence and stored retrievals; historical source timestamp not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The quote applies to third-party integrations connecting other Intercom workspaces."
+        },
+        {
+          "field": "access",
+          "claim": "free developer workspace",
+          "disposition": "supported_with_scope_limit",
+          "reason": "Official docs explicitly state free developer workspaces are for development only; this does not establish free production use."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "The page explicitly identifies a versioned REST API."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "verify_provenance_before_acceptance",
+          "reason": "A source says to install an MCP server on Cursor, but the retained evidence lacks the page URL/title in this summary; exact vendor ownership must be verified before classifying official."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "API availability is shown; production access, permissions, rate limits and MCP server provenance need further review."
+        }
+      ]
+    },
+    {
+      "app_id": 13,
+      "app_name": "Freshdesk",
+      "reviewed_at_local": "2026-11-23T21:39:21+0530",
+      "source_basis": "historical quoted evidence and stored retrievals; historical source timestamp not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "credentials",
+          "disposition": "underspecified",
+          "reason": "“Copy-paste this as required to authenticate” is too vague to identify the credential type."
+        },
+        {
+          "field": "access",
+          "claim": "free",
+          "disposition": "underspecified",
+          "reason": "“Signup for free” supports free signup generally, but not Freshdesk API entitlement or plan limits."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST/update ticket",
+          "disposition": "partially_supported",
+          "reason": "The quote identifies an Update ticket API call; API type is not explicitly stated in the quote."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Submitted value is a placeholder, not a search result. MCP remains unknown."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "unsupported_by_recorded_evidence",
+          "reason": "The evidence does not establish auth mechanism, resource breadth, scopes, API entitlement or blocker absence."
+        }
+      ]
+    },
+    {
+      "app_id": 14,
+      "app_name": "Front",
+      "reviewed_at_local": "2026-11-23T21:39:21+0530",
+      "source_basis": "historical quoted evidence and stored retrievals; historical source timestamp not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API tokens/OAuth by surface",
+          "disposition": "quote_validation_failed",
+          "reason": "The submitted quote did not pass saved quote validation. Retain as unsupported by submitted citation pending recapture."
+        },
+        {
+          "field": "access",
+          "claim": "unknown",
+          "disposition": "appropriately_unknown",
+          "reason": "No supported access classification is present."
+        },
+        {
+          "field": "api_types",
+          "claim": "Core REST, Channel HTTP API, beta MCP",
+          "disposition": "support_pending_quote_validation",
+          "reason": "The quote groups multiple surfaces, but the evidence status was invalid; revalidate the page and scope before accepting."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "support_pending_quote_validation",
+          "reason": "The quote asserts a beta MCP server, but exact source identity/quote validation must pass before acceptance."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Beta MCP and multiple API surfaces require access, scope, stability and operations review."
+        }
+      ]
+    },
+    {
+      "app_id": 16,
+      "app_name": "LiveAgent",
+      "reviewed_at_local": "2026-11-23T21:39:21+0530",
+      "source_basis": "historical quoted evidence and stored retrievals; historical source timestamp not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key",
+          "disposition": "supported",
+          "reason": "Official docs say an API key must be generated in the admin panel before API requests."
+        },
+        {
+          "field": "access",
+          "claim": "trial_or_paid",
+          "disposition": "partially_supported",
+          "reason": "The quote shows an existing account and admin-panel key creation; it does not substantiate trial or pricing."
+        },
+        {
+          "field": "api_types",
+          "claim": "Swagger-described API",
+          "disposition": "partially_supported",
+          "reason": "The quote points to an API descriptor but does not specify the interface type or operations."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The evidence is placeholder “unknown”; do not treat as proof of nonexistence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "API key is admin-controlled within an account; interface and resource breadth and plan gates are unknown."
+        }
+      ]
+    },
+    {
+      "app_id": 17,
+      "app_name": "Plain",
+      "reviewed_at_local": "2026-11-23T21:39:21+0530",
+      "source_basis": "historical quoted evidence and stored retrievals; historical source timestamp not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth app",
+          "disposition": "supported_with_scope_limit",
+          "reason": "OAuth app is documented for acting as a user in a workspace; the quote does not enumerate all auth modes."
+        },
+        {
+          "field": "access",
+          "claim": "7-day free trial",
+          "disposition": "supported",
+          "reason": "The official quote states the trial duration and no credit-card requirement."
+        },
+        {
+          "field": "api_types",
+          "claim": "GraphQL and REST",
+          "disposition": "supported",
+          "reason": "Official docs explicitly identify both APIs and state UI/API parity."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_by_vendor_docs",
+          "reason": "The quote names Plain’s MCP server URL and OAuth setup."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "APIs/MCP are documented, but plan limits, scopes, resource-level operations and technical blockers need review."
+        }
+      ]
+    },
+    {
+      "app_id": 18,
+      "app_name": "Help Scout",
+      "reviewed_at_local": "2026-11-23T21:39:21+0530",
+      "source_basis": "historical quoted evidence and stored retrievals; historical source timestamp not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth 2.0 authorization code/client credentials",
+          "disposition": "supported",
+          "reason": "The cited official text explicitly names OAuth 2.0 and both flows."
+        },
+        {
+          "field": "access",
+          "claim": "trial_or_paid",
+          "disposition": "not_established",
+          "reason": "Creating an app in profile settings does not establish pricing or production access requirements."
+        },
+        {
+          "field": "api_types",
+          "claim": "HTTPS API",
+          "disposition": "partial",
+          "reason": "The quote supports HTTPS transport and API host but does not itself name REST or enumerate operations."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Placeholder “unknown” is not evidence of absence. MCP remains unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "OAuth and API docs are present; scopes, API operations, commercial gates, rate limits and blockers are not established."
+        }
+      ]
+    },
+    {
+      "app_id": 19,
+      "app_name": "Gorgias",
+      "reviewed_at_local": "2026-11-23T21:39:21+0530",
+      "source_basis": "historical quoted evidence and stored retrievals; historical source timestamp not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2 for approved public apps",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The quoted requirement applies to approved public apps, not every private integration."
+        },
+        {
+          "field": "access",
+          "claim": "private apps without approval",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The quote supports no approval for private apps; it does not establish free access or all app types."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official source explicitly names an open REST API and credentials location."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Placeholder “unknown” does not demonstrate absence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Private/public app distinctions and OAuth approval requirements are material; scopes, rate limits and resource breadth remain unknown."
+        }
+      ]
+    },
+    {
+      "app_id": 21,
+      "app_name": "Slack",
+      "reviewed_at_local": "2026-11-23T21:39:59+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved official-source excerpts; historical retrieval timestamps not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2",
+          "disposition": "supported",
+          "reason": "Official Slack docs explicitly describe OAuth 2.0 as the authorization protocol."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "A recommendation to create a developer sandbox does not establish free access or API entitlement."
+        },
+        {
+          "field": "api_types",
+          "claim": "Web API",
+          "disposition": "supported",
+          "reason": "The quote identifies app tokens used for requests to the Slack Web API."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST / SDK / CLI / WebSocket",
+          "disposition": "partially_supported",
+          "reason": "The cited quotes establish the Web API, but the evidence listed here does not support the complete multi-interface classification."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "irrelevant_or_ambiguous",
+          "reason": "A Slack MCP Plugin for agent-assisted development is not evidence by itself of a Slack product MCP server or connector. Classify MCP integration type as unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Need supported scopes, resource/operation coverage, plan constraints and rate limits."
+        }
+      ]
+    },
+    {
+      "app_id": 22,
+      "app_name": "Twilio",
+      "reviewed_at_local": "2026-11-23T21:39:59+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved official-source excerpts; historical retrieval timestamps not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key SID and secret via HTTP Basic",
+          "disposition": "supported",
+          "reason": "Official docs explicitly describe Basic authentication using API key SID and secret."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Creating a key in Console/API shows credential setup, not free API access or pricing."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs explicitly say Twilio APIs use standard RESTful methods."
+        },
+        {
+          "field": "api_types",
+          "claim": "SDK / CLI",
+          "disposition": "supported_as_tools_not_exclusive_surface",
+          "reason": "The quote supports SDK and CLI availability, but not an SDK/CLI-only surface."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "The cited SDK/CLI guidance does not mention MCP."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "API breadth, account/product entitlements, scopes, rate limits and concrete blockers need review."
+        }
+      ]
+    },
+    {
+      "app_id": 23,
+      "app_name": "Zoho Cliq",
+      "reviewed_at_local": "2026-11-23T21:39:59+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved official-source excerpts; historical retrieval timestamps not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth 2.0",
+          "disposition": "supported",
+          "reason": "Official Cliq REST API documentation explicitly states OAuth 2.0 authentication."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Developer Console client registration proves an app registration flow, not free or unrestricted API access."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs explicitly identify a REST API built on RESTful principles."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The submitted source has placeholder “unknown”; MCP status remains unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "No resource coverage, scopes, rate limits or actual access plan evidence is included."
+        }
+      ]
+    },
+    {
+      "app_id": 28,
+      "app_name": "WhatsApp Business",
+      "reviewed_at_local": "2026-11-23T21:39:59+0530",
+      "source_basis": "baseline/p1_v1/pass1 and saved official-source excerpts; historical retrieval timestamps not consistently recorded",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth/access tokens",
+          "disposition": "partially_supported_semantics_review_needed",
+          "reason": "The official source says OAuth access tokens and provides a Bearer example. The label “OAuth (not 2.0)” is not safely established by this quote and should be normalized only after checking the auth guide."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_trial_or_paid",
+          "disposition": "partially_supported",
+          "reason": "A test account/phone is automatically created, and templates may require approval; this does not establish the product-wide commercial access tier."
+        },
+        {
+          "field": "api_types",
+          "claim": "Graph API over HTTP",
+          "disposition": "supported",
+          "reason": "Official docs explicitly state the platform is built on Graph API and uses HTTP."
+        },
+        {
+          "field": "api_types",
+          "claim": "webhooks",
+          "disposition": "supported",
+          "reason": "Official docs describe webhook payloads for message status, inbound messages and errors."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The submitted quote is “unknown” and fails; it is not evidence of MCP absence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Template approval is a concrete operational gate; scopes, messaging limits, business verification, pricing and operation coverage are not fully reviewed."
+        }
+      ]
+    },
+    {
+      "app_id": 27,
+      "app_name": "Telegram",
+      "reviewed_at_local": "2026-11-23T21:41:16+0530",
+      "source_basis": "corrected-five Groq output plus saved official evidence; these are semantic review dispositions, not independent human-labelled accuracy scores",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2 and API key",
+          "disposition": "unsupported_by_cited_evidence",
+          "reason": "Both submitted quotations contain ellipses and concern login integration/API ID registration; they do not directly establish OAuth2 or API-key authentication for the Telegram API."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "partially_supported_scope_limit",
+          "reason": "The source says developers may use Telegram API/source code to create Telegram-like messaging applications free of charge. This is scoped to that stated use and does not substantiate the whole access classification or API ID provisioning."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "unsupported_by_cited_evidence",
+          "reason": "The supplied quote concerns Telegram login, not the Bot API or REST semantics. Do not infer REST."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The evidence is placeholder “unknown”; MCP status remains unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats / MTProto blocker",
+          "disposition": "inferred_not_cited",
+          "reason": "The output names MTProto and API ID constraints, but those details lack valid citations here. Keep the verdict provisional pending direct official source evidence."
+        }
+      ]
+    },
+    {
+      "app_id": 32,
+      "app_name": "Meta Ads",
+      "reviewed_at_local": "2026-11-23T21:41:16+0530",
+      "source_basis": "corrected-five Groq output plus saved official evidence; these are semantic review dispositions, not independent human-labelled accuracy scores",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2",
+          "disposition": "not_established",
+          "reason": "The citation says each call needs an access token but does not identify the OAuth flow. OAuth2 is not established by this quote."
+        },
+        {
+          "field": "access",
+          "claim": "production app review/approval",
+          "disposition": "supported",
+          "reason": "The official FAQ directly requires review and approval for production Marketing API use."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "unsupported_by_cited_evidence",
+          "reason": "The submitted quote only requires an access-token parameter; it does not establish REST or API architecture."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The submitted evidence is placeholder “unknown”; MCP status remains unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "partially_supported_inference",
+          "reason": "Production review is a verified gate, so caveat is warranted. Resource breadth and technical feasibility remain unknown; avoid a definitive yes."
+        }
+      ]
+    },
+    {
+      "app_id": 41,
+      "app_name": "Shopify",
+      "reviewed_at_local": "2026-11-23T21:41:16+0530",
+      "source_basis": "corrected-five Groq output plus saved official evidence; these are semantic review dispositions, not independent human-labelled accuracy scores",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The evidence describes OAuth token exchange / Buyer OAuth 2.0 with PKCE for a specific surface."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "API key",
+          "disposition": "not_established",
+          "reason": "The quote “Create public or private tokens” does not establish API keys as an auth mechanism."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "bearer token",
+          "disposition": "not_established",
+          "reason": "No cited quote explicitly supports bearer-token use."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "A Dev Dashboard for creating apps and development stores does not prove free production API access or no paid-plan requirement."
+        },
+        {
+          "field": "api_types",
+          "claim": "GraphQL",
+          "disposition": "supported",
+          "reason": "The quote describes GraphQL Admin API read/write resources."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "not_established_by_submitted_quotes",
+          "reason": "The cited API overview excerpts do not establish REST API availability; separate current API-version docs are needed."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_by_vendor_docs",
+          "reason": "Shopify Dev docs explicitly say Shopify MCP lets merchants/partners manage a store through an AI agent; vendor source."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Auth and GraphQL operations are evidenced, but app distribution requirements, scopes, rate limits and product access gates are not documented in this record."
+        }
+      ]
+    },
+    {
+      "app_id": 53,
+      "app_name": "Ahrefs",
+      "reviewed_at_local": "2026-11-23T21:41:16+0530",
+      "source_basis": "corrected-five Groq output plus saved official evidence; these are semantic review dispositions, not independent human-labelled accuracy scores",
+      "claims": [
+        {
+          "field": "access",
+          "claim": "eligible paid plans; limited free queries otherwise",
+          "disposition": "supported",
+          "reason": "Official API introduction explicitly states eligible paid plan access and limited free test queries for other plans."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "API key in bearer header",
+          "disposition": "supported",
+          "reason": "Official key management docs directly show API key in Authorization Bearer header."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "not_established_by_submitted_quote",
+          "reason": "The quote describes endpoints and product functions but does not name REST. Retain type as unknown until direct evidence."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "insufficient_specificity",
+          "reason": "The quote about connecting Ahrefs data to AI assistants does not identify a specific MCP server or protocol; it cannot support official MCP classification."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "partially_supported_inference",
+          "reason": "Paid access/API units are concrete commercial blockers; actual operation coverage and MCP remain unresolved."
+        }
+      ]
+    },
+    {
+      "app_id": 61,
+      "app_name": "GitHub",
+      "reviewed_at_local": "2026-11-23T21:41:16+0530",
+      "source_basis": "corrected-five Groq output plus saved official evidence; these are semantic review dispositions, not independent human-labelled accuracy scores",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "personal access token",
+          "disposition": "supported",
+          "reason": "Official docs explicitly allow creating a personal access token for personal REST API use."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "GitHub App installation access token",
+          "disposition": "supported_with_scope_limit",
+          "reason": "Official Actions documentation names installation token generation in a workflow; context-specific."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established_by_quote",
+          "reason": "Token creation is documented, but the cited quote does not establish account pricing or all API access requirements."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported_by_source_page_but_quote_weak",
+          "reason": "The source is an official REST API authentication page and the quote mentions REST API and rate limits; preserve exact quote but improve it to a direct sentence describing the REST API before treating as valid claim evidence."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "The cited sentence defines MCP generically; it does not show a GitHub server or connector. MCP status remains unverified from this evidence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "REST exists, but operation coverage, scopes, rate limits, plan constraints and relevant MCP tooling are not captured sufficiently."
+        }
+      ]
+    },
+    {
+      "app_id": 25,
+      "app_name": "Pumble",
+      "reviewed_at_local": "2026-11-23T21:41:43+0530",
+      "source_basis": "saved official evidence quotes and corrected/batch extraction output; not a human-labelled accuracy sample",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key",
+          "disposition": "quote_invalid",
+          "reason": "Submitted quote uses ellipsis and fails contiguous-source validation; mechanism remains plausible but unsupported by this citation."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Publicly viewable API docs do not establish that API add-on or production API access is free."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST/HTTP operations",
+          "disposition": "partially_supported",
+          "reason": "The incoming webhook quote demonstrates an HTTP POST endpoint; broader REST API surface is not established by this quote."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official native MCP",
+          "disposition": "supported_by_vendor_claim_pending_page_validation",
+          "reason": "Vendor-hosted article directly claims Pumble maintains a native MCP server. Retain as official-vendor evidence, but the article wording needs exact capture and tool-surface review."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / broad / blocker none",
+          "disposition": "unsupported_overstatement",
+          "reason": "No reviewed source establishes broad resource coverage or absence of commercial/technical blockers."
+        }
+      ]
+    },
+    {
+      "app_id": 26,
+      "app_name": "Discord",
+      "reviewed_at_local": "2026-11-23T21:41:43+0530",
+      "source_basis": "saved official evidence quotes and corrected/batch extraction output; not a human-labelled accuracy sample",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "bot token, OAuth2, basic",
+          "disposition": "citation_invalid_and_overbroad",
+          "reason": "The submitted quotation is ellipsis-stitched. It conflates bot tokens, OAuth bearer tokens and Basic auth; each flow requires separate evidence and scope."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Creating an application in the Developer Portal does not establish free API access or production permissions."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs explicitly describe the HTTP API as a REST API and name channels, guilds, users and messages."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "The cited Social SDK setup text does not evidence an MCP server."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / broad / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "REST resources are shown but gateway limits, intents, permission scopes, approval rules and MCP status need review."
+        }
+      ]
+    },
+    {
+      "app_id": 29,
+      "app_name": "Aircall",
+      "reviewed_at_local": "2026-11-23T21:41:43+0530",
+      "source_basis": "saved official evidence quotes and corrected/batch extraction output; not a human-labelled accuracy sample",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "Basic and OAuth",
+          "disposition": "supported",
+          "reason": "Official auth docs explicitly list both methods for the REST API."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Dashboard API-key generation supports an existing-account workflow but says nothing about free access."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST and webhooks",
+          "disposition": "supported",
+          "reason": "Official intro explicitly says REST API and webhooks."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "unsupported_by_cited_evidence",
+          "reason": "The quote says developers can build MCP-compliant integrations for Aircall’s AI Virtual Agent; that is not evidence Aircall provides an MCP server."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "API interfaces exist, but plan entitlement, scopes, rate limits and practical resource coverage are not evidenced."
+        }
+      ]
+    },
+    {
+      "app_id": 30,
+      "app_name": "Vonage",
+      "reviewed_at_local": "2026-11-23T21:41:43+0530",
+      "source_basis": "saved official evidence quotes and corrected/batch extraction output; not a human-labelled accuracy sample",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "JWT, API key and secret",
+          "disposition": "supported_with_scope_limit",
+          "reason": "Official docs identify JWT and API Key/Secret header methods; applicability varies by product API."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "self_service_setup_only",
+          "reason": "The dashboard lets an account create an application and pre-fills its API key. This supports self-service setup, not free usage or absent account gates."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "not_established_by_cited_quote",
+          "reason": "The cited documentation portal does not establish REST. Obtain an API reference quote per product surface."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_by_vendor_docs",
+          "reason": "Official developer docs describe the Vonage MCP Server and its purpose."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / broad / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Vonage spans distinct products; pricing, API-specific auth, scopes, limits and resource operations need per-surface evidence."
+        }
+      ]
+    },
+    {
+      "app_id": 33,
+      "app_name": "LinkedIn Ads",
+      "reviewed_at_local": "2026-11-23T21:42:25+0530",
+      "source_basis": "historical/batch output and retained official evidence excerpts; review verdicts are not human accuracy labels",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2",
+          "disposition": "not_established_by_quote",
+          "reason": "The quote only points readers to OAuth documentation; it does not identify OAuth2 or provide the flow."
+        },
+        {
+          "field": "access",
+          "claim": "vetting/scopes required",
+          "disposition": "supported",
+          "reason": "The official API overview explicitly says calls require correct scopes/permissions assigned after app vetting."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "not_established_by_quote",
+          "reason": "The cited text says Advertising API and APIs; it does not establish REST."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "ad accounts, campaigns, creatives, analytics",
+          "disposition": "supported",
+          "reason": "The quote enumerates these resource families and create/manage operations."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_verified_due_ambiguous_abbreviation",
+          "reason": "The quoted “MCP” means Managed Cloud Partner, not Model Context Protocol. It provides no evidence about an AI-assistant MCP server."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "supported_as_gated_inference",
+          "reason": "Partner vetting/scopes are concrete blockers; API resource coverage supports technical feasibility but production access is gated."
+        }
+      ]
+    },
+    {
+      "app_id": 34,
+      "app_name": "GoHighLevel",
+      "reviewed_at_local": "2026-11-23T21:42:25+0530",
+      "source_basis": "historical/batch output and retained official evidence excerpts; review verdicts are not human accuracy labels",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth 2.0 and Private Integration Tokens",
+          "disposition": "supported",
+          "reason": "Official support article explicitly names both across plans."
+        },
+        {
+          "field": "access",
+          "claim": "paid plan tiers",
+          "disposition": "supported_with_date_limit",
+          "reason": "The cited article lists plan tiers and prices; preserve the retrieved date because prices can change."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "not_established_by_evidence",
+          "reason": "The evidence only names the official TypeScript/JavaScript SDK; it does not prove REST API type."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "Developer Marketplace integration wording does not mention MCP."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "unsupported_overstatement",
+          "reason": "No resource/operation inventory in submitted evidence supports broad classification."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats / blocker none",
+          "disposition": "unsupported_inconsistency",
+          "reason": "Paid plan is a material commercial gate but blocker is recorded as none; reconcile before acceptance."
+        }
+      ]
+    },
+    {
+      "app_id": 35,
+      "app_name": "Mailchimp",
+      "reviewed_at_local": "2026-11-23T21:42:25+0530",
+      "source_basis": "historical/batch output and retained official evidence excerpts; review verdicts are not human accuracy labels",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key and OAuth 2",
+          "disposition": "supported",
+          "reason": "Official docs separately describe account API keys and OAuth access on behalf of another user."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "The ability to create an API key for an account does not establish free API access or the account plan required."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs identify the v3.0 API endpoint and account endpoints."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_with_surface_limit",
+          "reason": "Official Mailchimp guide describes an MCP integration for its Transactional Messaging API. Do not generalize this to all Marketing API capabilities."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "supported_with_scope_limit",
+          "reason": "The source explicitly says keys must stay server-side; this is a concrete implementation constraint."
+        }
+      ]
+    },
+    {
+      "app_id": 36,
+      "app_name": "Klaviyo",
+      "reviewed_at_local": "2026-11-23T21:42:25+0530",
+      "source_basis": "historical/batch output and retained official evidence excerpts; review verdicts are not human accuracy labels",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "private/public keys and OAuth",
+          "disposition": "quote_invalid_and_incomplete",
+          "reason": "The submitted quote is ellipsis-shortened; authentication mechanisms need separate contiguous official quotations."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "“Log in, grab credentials” does not establish free API access or plan availability."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "not_established_by_submitted_quote",
+          "reason": "The quote says /api endpoints use private keys; it does not establish REST architecture."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "The source is a partner-resource invitation, not a scoped MCP search result."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none / broad",
+          "disposition": "unsupported_overstatement",
+          "reason": "Authentication, API surface, operation coverage and access constraints are insufficiently evidenced."
+        }
+      ]
+    },
+    {
+      "app_id": 38,
+      "app_name": "Pinterest",
+      "reviewed_at_local": "2026-11-23T21:42:25+0530",
+      "source_basis": "historical/batch output and retained official evidence excerpts; review verdicts are not human accuracy labels",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2/bearer token",
+          "disposition": "partial",
+          "reason": "A token is required, but the cited quote does not identify OAuth2 or bearer semantics."
+        },
+        {
+          "field": "access",
+          "claim": "app review",
+          "disposition": "supported_with_scope_limit",
+          "reason": "Official docs state application requests are reviewed; whether approval is required before all calls needs exact access language."
+        },
+        {
+          "field": "api_types",
+          "claim": "Pinterest API",
+          "disposition": "API existence supported; type not established",
+          "reason": "A reference with endpoints confirms API docs, but not REST unless the cited page says so directly."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "unsupported_overstatement",
+          "reason": "“All endpoints available in this reference” is not an operation inventory or breadth assessment."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Placeholder “unknown” is not evidence of absence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "inferred_gated",
+          "reason": "Review gate is a concrete limitation; technical operation coverage and auth scopes remain unknown."
+        }
+      ]
+    },
+    {
+      "app_id": 39,
+      "app_name": "Threads (Meta)",
+      "reviewed_at_local": "2026-11-23T21:42:25+0530",
+      "source_basis": "historical/batch output and retained official evidence excerpts; review verdicts are not human accuracy labels",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth 2.0 user access token",
+          "disposition": "supported",
+          "reason": "Official docs explicitly state Threads user access tokens conform to OAuth 2.0."
+        },
+        {
+          "field": "access",
+          "claim": "approval_or_review_required",
+          "disposition": "not_established_by_submitted_quote",
+          "reason": "The quote lists endpoint permissions/scopes, not a review or approval requirement."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "not_established_by_submitted_quote",
+          "reason": "The quote identifies Graph.threads hosts but does not establish REST transport/semantics."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "medium",
+          "disposition": "not independently substantiated",
+          "reason": "The supplied extract does not include a meaningful resource/operation inventory."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Placeholder “unknown” is not evidence of absence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "partially_supported_inference",
+          "reason": "Required permission scopes are explicit; cited buildability blocker about publishing rate limits must be matched to a source quote before acceptance."
+        }
+      ]
+    },
+    {
+      "app_id": 20,
+      "app_name": "Gladly",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "token-based Basic Authentication",
+          "disposition": "supported",
+          "reason": "Official Gladly developer tutorial explicitly describes token-based Basic authentication."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "unsupported_overclaim",
+          "reason": "A token is required and users need at least an API User role. This is account/role gated; nothing in the cited evidence establishes free access."
+        },
+        {
+          "field": "access_note",
+          "claim": "API User role required",
+          "disposition": "supported_with_role_gate",
+          "reason": "Official implementation docs say users need at least an API User role to access/create API tokens; admin assignment is a human intervention point."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official developer portal names Gladly REST APIs."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "unsupported_overstatement",
+          "reason": "The evidence set does not show an operations/resource inventory sufficient to call the surface broad; retain partial."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "contradicted_by_quote_semantics",
+          "reason": "The quote says Gladly AI connects to an external MCP server. That shows MCP client capability, not a Gladly-provided server."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "partially_supported_with_gates",
+          "reason": "REST and Basic auth exist, but role-gated access and partial operation coverage remain concrete limitations; pricing is unknown."
+        }
+      ]
+    },
+    {
+      "app_id": 43,
+      "app_name": "BigCommerce",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2",
+          "disposition": "partially_supported",
+          "reason": "The quote describes OAuth-based API account types; one access-token/JWT statement is clipped with an ellipsis, so do not use it to support exact mechanics."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "overstated",
+          "reason": "The evidence supports a free trial store for testing, not free production API use."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST and GraphQL",
+          "disposition": "supported",
+          "reason": "The source enumerates GraphQL Admin API and REST Store Management/Storefront/Current Customer APIs."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "not_established",
+          "reason": "The interface list is useful but does not include enough resource/operation coverage to substantiate broad."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Placeholder “unknown” is not evidence of absence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "inferred",
+          "reason": "Trial testing is supported; production access and OAuth account type/approval requirements require further evidence."
+        }
+      ]
+    },
+    {
+      "app_id": 44,
+      "app_name": "Salesforce Commerce Cloud",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2 and Basic",
+          "disposition": "partially_supported_scope_limited",
+          "reason": "The quotes describe Account Manager OAuth2 bearer for Custom APIs and Basic auth for a specific SLAS login endpoint; do not generalize both to all SFCC API surfaces."
+        },
+        {
+          "field": "access",
+          "claim": "partner_or_contact_sales",
+          "disposition": "partially_supported",
+          "reason": "A Commerce App registry submission review is documented, but this does not alone prove partner/sales gating for all API access."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST/headless Commerce API",
+          "disposition": "partially_supported",
+          "reason": "The quote mentions headless API and SCAPI; exact REST type is not explicit in retained quote."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "unsupported_overstatement",
+          "reason": "No resource/operation inventory supports broad."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "unverified",
+          "reason": "MCP evidence from Salesforce Developer Edition/Hosted MCP is not Salesforce Commerce Cloud-specific. Do not transfer across products."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "gated_inference",
+          "reason": "Commerce account/credentials and registry review are relevant gates; precise production requirements need official source detail."
+        }
+      ]
+    },
+    {
+      "app_id": 46,
+      "app_name": "Squarespace",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key and OAuth access token",
+          "disposition": "supported",
+          "reason": "Official docs explicitly name both credential methods."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Creating an API key or registering an OAuth client does not establish free API access or plan eligibility."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "not_established_by_quote",
+          "reason": "The quote only discusses authentication setup, not API architecture."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "OAuth extension requirements do not address MCP; MCP status remains unknown."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "OAuth requires an extension, and plan constraints/resource operations are not covered."
+        }
+      ]
+    },
+    {
+      "app_id": 47,
+      "app_name": "Ecwid",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "bearer token",
+          "disposition": "supported",
+          "reason": "Official API quote shows Authorization: Bearer secret_token."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Developer sign-up/account creation does not establish free access or production entitlements."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Evidence includes a POST endpoint on the Ecwid API host."
+        },
+        {
+          "field": "api_types",
+          "claim": "JavaScript API",
+          "disposition": "supported_as_additional_surface",
+          "reason": "The page documents JS API calls, a separate interface from the REST endpoint."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "The quote is about selling an app in Ecwid App Market, not MCP."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "not_fully_established",
+          "reason": "Developer account/access rules and API operation coverage need further audit."
+        }
+      ]
+    },
+    {
+      "app_id": 52,
+      "app_name": "SE Ranking",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key in token parameter/header",
+          "disposition": "supported",
+          "reason": "Official docs explicitly describe the API key placement."
+        },
+        {
+          "field": "access",
+          "claim": "subscription required",
+          "disposition": "supported_with_scope_limit",
+          "reason": "Project API availability is stated across listed subscription plans; this supports plan gating, not necessarily free access."
+        },
+        {
+          "field": "api_types",
+          "claim": "HTTP methods / REST-like",
+          "disposition": "supported_with_scope_limit",
+          "reason": "Official docs list GET/POST/PUT/DELETE requests to an API URL."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The quote is placeholder “unknown”."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none / broad",
+          "disposition": "not_fully_established",
+          "reason": "Subscription is a commercial gate; no API resources/operations or limits are summarized."
+        }
+      ]
+    },
+    {
+      "app_id": 56,
+      "app_name": "Firecrawl",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth 2.1 and API key",
+          "disposition": "quote_validation_needed",
+          "reason": "Both submitted auth quotations contain ellipses or shorthand; preserve mechanisms as provisional until contiguous exact quotes are captured."
+        },
+        {
+          "field": "access",
+          "claim": "free account/direct API",
+          "disposition": "partially_supported",
+          "reason": "Official docs state a free account enables direct API access/higher limits, but this does not show included request limits or current price terms."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs explicitly name Firecrawl REST API."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_by_vendor_docs",
+          "reason": "Official docs name an MCP Server and describe connecting Firecrawl to AI tools."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "inferred_not_complete",
+          "reason": "API and MCP are evidenced; rate limits, extraction operations, plan restrictions and data-policy considerations need review."
+        }
+      ]
+    },
+    {
+      "app_id": 62,
+      "app_name": "Vercel",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key, access token, OAuth",
+          "disposition": "supported",
+          "reason": "Official docs identify API keys, tokens for REST API access, and an Authorization Server API for token lifecycle."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Key generation documentation does not establish free access or account plan entitlements."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official reference explicitly describes the API as REST architecture."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "projects, deployments, logs",
+          "disposition": "partially_supported",
+          "reason": "Official docs identify these agent-manageable resource groups; operation-level read/write coverage still needs review."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "supported_by_vendor_docs",
+          "reason": "Vercel docs provide a command that installs the Vercel MCP endpoint; official provenance should be preserved."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Permission scopes, team roles, plan limits and complete tool operations are not captured."
+        }
+      ]
+    },
+    {
+      "app_id": 63,
+      "app_name": "Netlify",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "PAT and OAuth2",
+          "disposition": "partially_supported",
+          "reason": "OAuth2 requirement for public integrations is directly quoted; PAT quote is ellipsis-stitched and therefore unsupported by submitted citation."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Personal access token creation in the UI shows self-service credential creation, not free API access."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs name the Netlify REST API and example resource areas."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "not_established",
+          "reason": "The quote names databases, branches and snapshots, not enough to label the entire API broad."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "ambiguous_not_verified",
+          "reason": "One-command install of MCP/CLI/skills does not identify server ownership or tool coverage; do not infer none or official from generic line."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "partially_supported",
+          "reason": "OAuth requirement for public integrations is established; limits, scopes and detailed operations remain incomplete."
+        }
+      ]
+    },
+    {
+      "app_id": 65,
+      "app_name": "Supabase",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "API key / bearer",
+          "disposition": "supported_with_context",
+          "reason": "Official docs describe API keys and SDK bearer handling for publishable keys; distinguish API key from end-user JWT."
+        },
+        {
+          "field": "access",
+          "claim": "free API requests",
+          "disposition": "partially_supported",
+          "reason": "Pricing page says unlimited API requests included in free; does not mean all services/features or production project access are free."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs identify the automatically generated REST API."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "not_established",
+          "reason": "Evidence concerns Auth, not a broad inventory of resources and read/write operations."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "Citation lists client SDKs and API endpoints but no MCP. MCP status remains unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Security policies/RLS, keys, project setup and endpoint operations need explicit review."
+        }
+      ]
+    },
+    {
+      "app_id": 70,
+      "app_name": "Sentry",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth2, bearer token, personal tokens",
+          "disposition": "supported_with_scope_limit",
+          "reason": "OAuth2 and scoped personal tokens are directly documented; generic auth-header quote does not identify a precise bearer scheme on its own."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Personal token creation is documented, but a free Developer plan is not supported by the cited source."
+        },
+        {
+          "field": "api_types",
+          "claim": "API",
+          "disposition": "partially_supported",
+          "reason": "Docs identify a web API but the retained quote does not name REST."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "not_established",
+          "reason": "No resource/operation inventory in evidence supports broad."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "official",
+          "disposition": "unsupported_by_cited_evidence",
+          "reason": "A pricing bullet “MCP access” does not establish an official Sentry MCP server or functionality."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Token scopes are explicit, but API type, operations, plan and MCP availability are not verified."
+        }
+      ]
+    },
+    {
+      "app_id": 72,
+      "app_name": "Airtable",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "PAT bearer and OAuth",
+          "disposition": "supported",
+          "reason": "Official docs explicitly show bearer PATs and recommend OAuth for integrations serving other users."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Token panel availability does not establish free access or plan/API limit entitlements."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official API URL and curl example show an HTTP API request; specific REST architecture should be quoted directly if required."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "all public endpoints",
+          "disposition": "overbroad_without_inventory",
+          "reason": "The statement describes token scope against public endpoints, not a validated set of resources/operations."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Placeholder unknown is not evidence of absence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Token scopes, rate limits, plan restrictions and table/base operation coverage require review."
+        }
+      ]
+    },
+    {
+      "app_id": 75,
+      "app_name": "Asana",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "PAT, service accounts, OAuth",
+          "disposition": "partially_supported",
+          "reason": "PAT and OAuth are explicitly named; exact service-account support needs a dedicated citation."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "Developer console PAT generation shows credential self-service, not free API entitlement."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official quickstart explicitly describes the Asana API as RESTful."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "not_established",
+          "reason": "No resource/operation inventory in submitted evidence supports broad."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "irrelevant_quote_and_unverified",
+          "reason": "The quote advises OAuth for apps acting on behalf of users; it is not MCP evidence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Auth and API type are established; scopes, resource coverage, rate limits and plan gates need review."
+        }
+      ]
+    },
+    {
+      "app_id": 76,
+      "app_name": "Monday.com",
+      "reviewed_at_local": "2026-11-23T21:43:49+0530",
+      "source_basis": "historical extraction evidence and cached official source excerpts; no human accuracy claim",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "token-based, OAuth/global API token",
+          "disposition": "supported_with_scope_limit",
+          "reason": "Official docs list token-based methods, OAuth access tokens and user global API tokens; distinguish SDK short-term token."
+        },
+        {
+          "field": "access",
+          "claim": "self_serve_free",
+          "disposition": "not_established",
+          "reason": "A monday.com account and access token are prerequisites; no pricing/entitlement evidence establishes free access."
+        },
+        {
+          "field": "api_types",
+          "claim": "GraphQL",
+          "disposition": "supported",
+          "reason": "Official API reference states the API uses a single GraphQL endpoint."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "narrow",
+          "disposition": "not_evaluated",
+          "reason": "Single endpoint count does not imply narrow breadth; resource/operation coverage must be reviewed."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Placeholder unknown is not evidence of absence."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats",
+          "disposition": "partially_supported",
+          "reason": "GraphQL and token setup are documented; scopes, rate limits, plan gates and object operations are missing."
+        }
+      ]
+    },
+    {
+      "app_id": 49,
+      "app_name": "Amazon Selling Partner API",
+      "reviewed_at_local": "2026-11-23T21:44:16+0530",
+      "source_basis": "baseline extraction and associated saved official pages; no additional network/model calls",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "OAuth 2.0 via LWA",
+          "disposition": "supported",
+          "reason": "Official docs explicitly state OAuth 2.0 through Login with Amazon."
+        },
+        {
+          "field": "auth_methods",
+          "claim": "bearer_token",
+          "disposition": "not_established",
+          "reason": "No submitted quotation supports bearer-token semantics."
+        },
+        {
+          "field": "access",
+          "claim": "developer profile/app review and sandbox",
+          "disposition": "partially_supported",
+          "reason": "Evidence says sandbox endpoints can be called without seller authorization while developer profile is under review; it does not fully establish production review requirements stated in the summary."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "partially_supported",
+          "reason": "A GET request to an SP-API resource supports HTTP endpoint usage but the citation does not explicitly say REST."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Submitted quote is placeholder “unknown”; MCP status remains unverified."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes_with_caveats / broad / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Sandbox supports testing; developer onboarding and API resource/operation coverage need review. “Broad” and “no blocker” are not supported here."
+        }
+      ]
+    },
+    {
+      "app_id": 51,
+      "app_name": "DataForSEO",
+      "reviewed_at_local": "2026-11-23T21:44:16+0530",
+      "source_basis": "baseline extraction and associated saved official pages; no additional network/model calls",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "HTTP Basic",
+          "disposition": "supported",
+          "reason": "Official docs explicitly state Basic Authentication."
+        },
+        {
+          "field": "access",
+          "claim": "free account / API credentials",
+          "disposition": "supported_with_scope_limit",
+          "reason": "Official auth docs say to create a free account and retrieve API login/password from dashboard."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported",
+          "reason": "Official docs explicitly state the API uses REST technology."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "The submitted quote “unknown” cannot prove no MCP exists."
+        },
+        {
+          "field": "api_breadth",
+          "claim": "broad",
+          "disposition": "not_evaluated",
+          "reason": "The record has category-level hints but no API resource/operation inventory supporting broad."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / blocker none",
+          "disposition": "not_fully_established",
+          "reason": "Auth/account/API type are supported; API costs, usage quotas, resource coverage and rate limits are not evaluated."
+        }
+      ]
+    },
+    {
+      "app_id": 84,
+      "app_name": "Paygent Connect",
+      "reviewed_at_local": "2026-11-23T21:44:16+0530",
+      "source_basis": "baseline extraction and associated saved official pages; no additional network/model calls",
+      "claims": [
+        {
+          "field": "auth_methods",
+          "claim": "Bearer token / API key",
+          "disposition": "unsupported_by_submitted_citations",
+          "reason": "Bearer example is stitched with ellipsis and API-key SDK quote is placeholder-short; do not accept auth modes until exact contiguous docs are captured."
+        },
+        {
+          "field": "access",
+          "claim": "self-serve signup/key",
+          "disposition": "partially_supported_identity_uncertain",
+          "reason": "A quote from withpaygent.com says sign up and get an API key. The assigned hint identity and registry must be matched to this vendor/domain; free access is not stated."
+        },
+        {
+          "field": "api_types",
+          "claim": "REST",
+          "disposition": "supported_by_quote_identity_pending",
+          "reason": "The quote says plain REST calls; preserve the claim only provisionally until product identity/domain is resolved."
+        },
+        {
+          "field": "api_types",
+          "claim": "SDK",
+          "disposition": "not_established",
+          "reason": "“Install the SDK” is too short to support a distinct SDK interface claim."
+        },
+        {
+          "field": "existing_mcp",
+          "claim": "none_found",
+          "disposition": "not_found_in_reviewed_evidence",
+          "reason": "Evidence is unrelated SDK wording, not an MCP search outcome."
+        },
+        {
+          "field": "buildability",
+          "claim": "yes / broad / blocker none",
+          "disposition": "unsupported_overstatement",
+          "reason": "No resource coverage, auth confirmation, rate limits or identity confirmation; classify unresolved pending domain reconciliation."
+        }
+      ]
+    }
+  ]
+}

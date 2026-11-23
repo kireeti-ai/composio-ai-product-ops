@@ -1,0 +1,590 @@
+{
+ "29": {
+  "name": "Aircall",
+  "official_registrable_domains": [
+   "aircall.io"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 10,
+  "chosen": [
+   {
+    "url": "https://aircall.io/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "aircall.io/pricing"
+   },
+   {
+    "url": "https://support.aircall.io/en-gb/articles/30599733509277",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Aircall plans: pricing and flexibility"
+   },
+   {
+    "url": "https://developer.aircall.io/build",
+    "category": "review_partner",
+    "source": "stored_search_hit",
+    "title": "How to publish apps at Aircall"
+   },
+   {
+    "url": "https://developer.aircall.io/docs/webhooks-overview",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Webhooks Overview"
+   }
+  ]
+ },
+ "36": {
+  "name": "Klaviyo",
+  "official_registrable_domains": [
+   "klaviyo.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 19,
+  "chosen": [
+   {
+    "url": "https://klaviyo.com/platform/how-klaviyo-pricing-works",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "How Klaviyo Pricing Works: Active Profiles and Send Capacity - Klaviyo"
+   },
+   {
+    "url": "https://klaviyo.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Klaviyo Pricing | Start Free with Email & SMS"
+   },
+   {
+    "url": "https://help.klaviyo.com/hc/en-us/articles/7423954176283",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "How to create or clone a private API key | Klaviyo Help Center"
+   },
+   {
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_?:~:text=To%20create%20a%20private%20key_select%20Create%20Private%20API%20Key.",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Use API Keys to Authenticate Endpoint Requests | Klaviyo Developers"
+   }
+  ]
+ },
+ "46": {
+  "name": "Squarespace",
+  "official_registrable_domains": [
+   "squarespace.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 10,
+  "chosen": [
+   {
+    "url": "https://support.squarespace.com/hc/en-us/articles/205826008-Change-your-site-s-billing-plan-and-cycle",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Change your site\u2019s billing plan and cycle"
+   },
+   {
+    "url": "https://squarespace.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Squarespace Pricing Plans & Features"
+   },
+   {
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Squarespace API keys"
+   },
+   {
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987?platform=v6&websiteId=5f45b6f91dc07d67fcb6905c",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Squarespace API keys"
+   }
+  ]
+ },
+ "65": {
+  "name": "Supabase",
+  "official_registrable_domains": [
+   "supabase.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 11,
+  "chosen": [
+   {
+    "url": "https://supabase.com/docs/guides/platform/billing-faq",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Billing FAQ"
+   },
+   {
+    "url": "https://supabase.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing & Fees | Supabase"
+   },
+   {
+    "url": "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Migrating to publishable and secret API keys"
+   },
+   {
+    "url": "https://supabase.com/docs/guides/api/api-keys.md",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "supabase.com/docs/guides/api/api-keys.md"
+   }
+  ]
+ },
+ "66": {
+  "name": "Neo4j",
+  "official_registrable_domains": [
+   "neo4j.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 8,
+  "chosen": [
+   {
+    "url": "https://neo4j.com/pricing/",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Cloud & self-hosted graph database platform pricing"
+   },
+   {
+    "url": "https://neo4j.com/docs/aura/billing/payment-options/",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Payment options - Neo4j Aura"
+   },
+   {
+    "url": "https://neo4j.com/docs/aura/getting-started/free-trial/",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Free trial - Neo4j Aura"
+   }
+  ]
+ },
+ "71": {
+  "name": "Notion",
+  "official_registrable_domains": [
+   "notion.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 14,
+  "chosen": [
+   {
+    "url": "https://notion.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Notion Pricing Plans: Free, Plus, Business, & Enterprise."
+   },
+   {
+    "url": "https://notion.com/en-GB/pricing/us",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Notion Pricing Plans: Free, Plus, Business and Enterprise."
+   },
+   {
+    "url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Secure API credentials"
+   },
+   {
+    "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Personal access tokens"
+   }
+  ]
+ },
+ "72": {
+  "name": "Airtable",
+  "official_registrable_domains": [
+   "airtable.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 12,
+  "chosen": [
+   {
+    "url": "https://support.airtable.com/hc/en-us/articles/221490307-Billing-overview-and-FAQs",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Billing overview and FAQs"
+   },
+   {
+    "url": "https://airtable.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Airtable Pricing | Compare Plans, Features & Costs"
+   },
+   {
+    "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Creating personal access tokens"
+   },
+   {
+    "url": "https://airtable.com/developers/web/guides/personal-access-tokens",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Airtable Web API"
+   }
+  ]
+ },
+ "75": {
+  "name": "Asana",
+  "official_registrable_domains": [
+   "asana.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 14,
+  "chosen": [
+   {
+    "url": "https://asana.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Asana Pricing | Personal, Starter, Advanced, & Enterprise plans"
+   },
+   {
+    "url": "https://asana.com/pricing/client-management",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Asana Client Management Pricing | Compare Plans and Features \u2022 Asana"
+   },
+   {
+    "url": "https://developers.asana.com/docs/personal-access-token/(/docs/(/docs/developer-sandbox)",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Asana"
+   },
+   {
+    "url": "https://developers.asana.com/docs/personal-access-token.md",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "developers.asana.com/docs/personal-access-token.md"
+   }
+  ]
+ },
+ "20": {
+  "name": "Gladly",
+  "official_registrable_domains": [
+   "gladly.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 4,
+  "chosen": [
+   {
+    "url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Gladly Pricing: Support & Service Packages"
+   },
+   {
+    "url": "https://gladly.com/get-started-2",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Get Started | Gladly"
+   }
+  ]
+ },
+ "25": {
+  "name": "Pumble",
+  "official_registrable_domains": [
+   "pumble.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 8,
+  "chosen": [
+   {
+    "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pumble Subscription Plans and Paid Features"
+   },
+   {
+    "url": "https://pumble.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing - Pumble"
+   },
+   {
+    "url": "https://pumble.com/help/integrations/add-pumble-apps/api-keys-integration",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Pumble API Overview"
+   },
+   {
+    "url": "https://pumble.com/help/getting-started/onboarding-for-new-users/onboarding-guide-for-workspace-creators-and-admins",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Onboarding Guide for Workspace Creators and Admins"
+   }
+  ]
+ },
+ "26": {
+  "name": "Discord",
+  "official_registrable_domains": [
+   "discord.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 8,
+  "chosen": [
+   {
+    "url": "https://support.discord.com/hc/en-us/articles/360017693772-Managing-Subscriptions-and-Billing-FAQ",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Managing Subscriptions and Billing FAQ"
+   },
+   {
+    "url": "https://support.discord.com/hc/en-us/articles/4407269525911-Localized-Pricing-on-Discord",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Localized Pricing on Discord"
+   },
+   {
+    "url": "https://discord.com/developers/home",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Home | Discord Developer Portal"
+   },
+   {
+    "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Overview of Discord Apps"
+   }
+  ]
+ },
+ "38": {
+  "name": "Pinterest",
+  "official_registrable_domains": [
+   "pinterest.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 18,
+  "chosen": [
+   {
+    "url": "https://www.pinterest.com/ideas/pricing-plans-web-design/922997390254/",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing Plans Web Design"
+   },
+   {
+    "url": "https://www.pinterest.com/zoki84/pricing-plan/",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "54 Pricing PLAN ideas"
+   },
+   {
+    "url": "https://developers.pinterest.com/apps/1558653/upgrade",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Create your new developer account"
+   },
+   {
+    "url": "https://business.pinterest.com/getting-started",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Get Started With a Pinterest Business Account"
+   }
+  ]
+ },
+ "44": {
+  "name": "Salesforce Commerce Cloud",
+  "official_registrable_domains": [
+   "salesforce.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 8,
+  "chosen": [
+   {
+    "url": "https://www.salesforce.com/commerce/pricing/",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Commerce Cloud Pricing"
+   },
+   {
+    "url": "https://www.salesforce.com/au/commerce/pricing/",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Commerce Cloud Pricing"
+   },
+   {
+    "url": "https://developer.salesforce.com",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Developer Portal | Salesforce Developers"
+   },
+   {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+    "category": "review_partner",
+    "source": "stored_search_hit",
+    "title": "Publish to the App Registry"
+   }
+  ]
+ },
+ "47": {
+  "name": "Ecwid",
+  "official_registrable_domains": [
+   "ecwid.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 13,
+  "chosen": [
+   {
+    "url": "https://www.ecwid.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Ecwid Pricing - Choose the right Ecwid plan for your business!"
+   },
+   {
+    "url": "https://www.ecwid.com/pricing/business",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Ecwid Business Plan"
+   },
+   {
+    "url": "http://developers.ecwid.com/register",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Create your app"
+   },
+   {
+    "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Ecwid developer program for selling apps"
+   }
+  ]
+ },
+ "61": {
+  "name": "GitHub",
+  "official_registrable_domains": [
+   "github.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 23,
+  "chosen": [
+   {
+    "url": "https://github.com/pricing.md",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "GitHub \u00b7 Plans & pricing for every developer and team"
+   },
+   {
+    "url": "https://docs.github.com/en/apps/github-marketplace/selling-your-app-on-github-marketplace/pricing-plans-for-github-marketplace-apps",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing plans allow you to provide ..."
+   },
+   {
+    "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Registering a GitHub App"
+   },
+   {
+    "url": "https://docs.github.com/developers/apps/building-github-apps/creating-a-github-app",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Registering a GitHub App - GitHub Docs"
+   }
+  ]
+ },
+ "62": {
+  "name": "Vercel",
+  "official_registrable_domains": [
+   "vercel.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 13,
+  "chosen": [
+   {
+    "url": "https://vercel.com/docs/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing on Vercel"
+   },
+   {
+    "url": "https://vercel.com/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Vercel Pricing: Hobby, Pro, and Enterprise plans"
+   },
+   {
+    "url": "https://vercel.com/docs/accounts/access-tokens",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Access tokens"
+   },
+   {
+    "url": "https://vercel.com/signup",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Dashboard"
+   }
+  ]
+ },
+ "63": {
+  "name": "Netlify",
+  "official_registrable_domains": [
+   "netlify.com"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 11,
+  "chosen": [
+   {
+    "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "How credits work"
+   },
+   {
+    "url": "https://netlify.com/pricing?sid=f8594d0f-2b25-4b2c-a002-ec155e0610c5",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing and Plans | Netlify"
+   },
+   {
+    "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth",
+    "category": "registration",
+    "source": "stored_search_hit",
+    "title": "Generate personal access tokens with Netlify OAuth | Netlify Developers"
+   },
+   {
+    "url": "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "Get started with Netlify CLI"
+   }
+  ]
+ },
+ "70": {
+  "name": "Sentry",
+  "official_registrable_domains": [
+   "sentry.io"
+  ],
+  "already_fetched_pages": 4,
+  "candidates_total": 9,
+  "chosen": [
+   {
+    "url": "https://sentry.io/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "Pricing: Free Developer Plan, Pay as You Grow"
+   },
+   {
+    "url": "https://docs.sentry.io/pricing",
+    "category": "pricing",
+    "source": "stored_search_hit",
+    "title": "docs.sentry.io/pricing"
+   },
+   {
+    "url": "https://docs.sentry.io/get-started",
+    "category": "onboarding",
+    "source": "stored_search_hit",
+    "title": "docs.sentry.io/get-started"
+   }
+  ]
+ }
+}

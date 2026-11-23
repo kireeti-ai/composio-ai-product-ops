@@ -1,0 +1,58 @@
+{
+ "id": 49,
+ "name": "Amazon Selling Partner",
+ "pass1_sha": "532d702c9ee8e975",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "OAuth 2.0 via Login with Amazon is listed as public app method",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt does not mention bearer token authentication",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "approval_or_review_required :: Developers must register an application and submit a developer profile for review, although sandbox testing endpoints can be accessed while the profile is under review.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms registration, profile review, and sandbox access during review.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts describe endpoints and calls but never state the API is REST.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "contradicted",
+    "evidence_quote": "* **Authorization method:** OAuth 2.0 through Login with Amazon (LWA).",
+    "suggested_value": "OAuth 2.0 (Login with Amazon)",
+    "reason": "Excerpt lists an OAuth 2.0 method, so 'none found' is false.",
+    "needs_human": true
+   }
+  ]
+ },
+ "complete": true
+}

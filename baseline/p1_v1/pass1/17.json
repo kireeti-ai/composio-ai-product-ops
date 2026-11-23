@@ -1,0 +1,58 @@
+{
+ "id": 17,
+ "name": "Plain",
+ "category": "Support and Helpdesk",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://plain.com/docs/graphql/authentication",
+  "https://plain.com/docs/api-reference/graphql/authentication",
+  "https://plain.com/docs/getting-started",
+  "https://www.plain.com/llms.txt"
+ ],
+ "one_liner": "API-first customer support platform offering GraphQL and REST APIs alongside native agentic infrastructure and MCP support.",
+ "auth_methods": [
+  "oauth2",
+  "api_key",
+  "bearer_token"
+ ],
+ "access": "self_serve_trial_or_paid_plan",
+ "access_note": "Plain offers a 7-day free trial with no credit card required, followed by per-seat paid plans.",
+ "api_types": [
+  "rest",
+  "graphql"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://plain.com/docs/graphql/authentication",
+   "quote": "To call the API as a user in your workspace, use an OAuth app.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://www.plain.com/llms.txt",
+   "quote": "7-day free trial, no credit card required.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://www.plain.com/llms.txt",
+   "quote": "GraphQL and REST APIs with full UI/API parity and no restrictive rate limits.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://plain.com/docs/getting-started",
+   "quote": "You do the setup through Plain\u2019s Model Context Protocol (MCP) server at https://mcp.plain.com/mcp, which signs in as that person with OAuth.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

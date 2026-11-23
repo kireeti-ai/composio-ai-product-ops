@@ -1,0 +1,153 @@
+{
+ "tag": "groq_orgA",
+ "app": 44,
+ "name": "Salesforce Commerce Cloud",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 7,
+ "latency_s": 3.13,
+ "tokens_in": 2170,
+ "tokens_out": 815,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas-best-practices.html",
+    "quote": "Leaked Credentials Detection applies to `POST .../oauth2/login` because SLAS submits shopper credentials as HTTP Basic in the `Authorization` header.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+    "quote": "The Custom APIs DX endpoint uses an Account Manager OAuth 2.0 bearer token for authentication.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+    "quote": "Use a headless API to build custom apps. B2C Commerce API is also known as Salesforce Commerce API (SCAPI).",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developer.salesforce.com",
+    "quote": "Salesforce Developer Edition now includes ... Hosted MCP Servers \u2013 all free.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+    "quote": "Submit your Commerce App to the registry for review and publication.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "basic",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "partner_or_contact_sales",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 4,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 5,
+  "evidence_valid": 2,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 2,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 3,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Salesforce Commerce Cloud provides a headless B2C Commerce API (SCAPI) for accessing product, shopper, basket, and order data.",
+  "auth_methods": [
+   "oauth2",
+   "basic"
+  ],
+  "access": "partner_or_contact_sales",
+  "access_note": "Credentials require a Salesforce Commerce Cloud account, typically obtained via partnership or sales contact.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "buildability": "yes_with_caveats",
+  "blocker": "Requires Salesforce Commerce Cloud account and credentials, which are not self\u2011serve.",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas-best-practices.html",
+    "quote": "Leaked Credentials Detection applies to `POST .../oauth2/login` because SLAS submits shopper credentials as HTTP Basic in the `Authorization` header."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+    "quote": "The Custom APIs DX endpoint uses an Account Manager OAuth 2.0 bearer token for authentication."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+    "quote": "Use a headless API to build custom apps. B2C Commerce API is also known as Salesforce Commerce API (SCAPI)."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developer.salesforce.com",
+    "quote": "Salesforce Developer Edition now includes ... Hosted MCP Servers \u2013 all free."
+   },
+   {
+    "field": "access",
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-vibes/guide/submission-review.html",
+    "quote": "Submit your Commerce App to the registry for review and publication."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "823749af82bfbfc292ccbe310fa6cfb4a8235f81ae4d6027728b699f0ccac302",
+ "at": "2026-11-23T19:47:40+05:30"
+}

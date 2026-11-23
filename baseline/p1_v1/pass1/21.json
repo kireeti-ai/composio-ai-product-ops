@@ -1,0 +1,59 @@
+{
+ "id": 21,
+ "name": "Slack",
+ "category": "Communications and Messaging",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://api.slack.com/docs/oauth",
+  "https://api.slack.com/authentication/basics",
+  "https://api.slack.com/authentication/token-types",
+  "https://api.slack.com/authentication/verifying-requests-from-slack"
+ ],
+ "one_liner": "Slack provides Web APIs, Bolt SDKs, CLI tooling, and event capabilities to build custom bots, integrations, and agents.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token",
+  "jwt_or_signed"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers can create Slack apps for free and optionally set up a developer sandbox workspace.",
+ "api_types": [
+  "rest",
+  "sdk_or_cli_only",
+  "websocket"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://api.slack.com/docs/oauth",
+   "quote": "OAuth 2.0 is a protocol that lets your app request authorization to private details in a user's Slack account without getting their password.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://api.slack.com/authentication/basics",
+   "quote": "If you don't have a Slack workspace already, we recommend also setting up a developer sandbox.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://api.slack.com/docs/oauth",
+   "quote": "The tokens awarded to your app can be used in requests to the Web API.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://api.slack.com/authentication/basics",
+   "quote": "Try using the Slack MCP Plugin to aid in agent-assisted development.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

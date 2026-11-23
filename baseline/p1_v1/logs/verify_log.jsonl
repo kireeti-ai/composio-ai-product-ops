@@ -1,0 +1,101 @@
+{"ev": "groq_retry", "id": 1, "code": 429, "attempt": 1, "t": "16:32:20"}
+{"ev": "verified", "id": 2, "name": "HubSpot", "t": "16:32:24"}
+{"ev": "groq_retry", "id": 3, "code": 429, "attempt": 1, "t": "16:32:24"}
+{"ev": "verified", "id": 1, "name": "Salesforce", "t": "16:32:32"}
+{"ev": "groq_retry", "id": 4, "code": 429, "attempt": 1, "t": "16:32:33"}
+{"ev": "groq_retry", "id": 3, "code": 429, "attempt": 2, "t": "16:32:35"}
+{"ev": "groq_retry", "id": 4, "code": 429, "attempt": 1, "t": "16:32:45"}
+{"ev": "groq_retry", "id": 4, "code": 429, "attempt": 2, "t": "16:32:55"}
+{"ev": "groq_retry", "id": 3, "code": 429, "attempt": 1, "t": "16:32:56"}
+{"ev": "verified", "id": 3, "name": "Pipedrive", "t": "16:33:12"}
+{"ev": "groq_retry", "id": 5, "code": 429, "attempt": 1, "t": "16:33:14"}
+{"ev": "groq_retry", "id": 4, "code": 429, "attempt": 3, "t": "16:33:17"}
+{"ev": "groq_retry", "id": 5, "code": 429, "attempt": 1, "t": "16:33:27"}
+{"ev": "groq_retry", "id": 5, "code": 429, "attempt": 1, "t": "16:33:43"}
+{"ev": "groq_retry", "id": 4, "code": 429, "attempt": 1, "t": "16:33:50"}
+{"ev": "groq_retry", "id": 5, "code": 429, "attempt": 2, "t": "16:33:53"}
+{"ev": "verified", "id": 4, "name": "Attio", "t": "16:34:04"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 1, "t": "16:34:05"}
+{"ev": "verified", "id": 5, "name": "Twenty", "t": "16:34:14"}
+{"ev": "groq_retry", "id": 7, "code": 429, "attempt": 1, "t": "16:34:15"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 2, "t": "16:34:15"}
+{"ev": "groq_retry", "id": 7, "code": 429, "attempt": 1, "t": "16:34:29"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 3, "t": "16:34:35"}
+{"ev": "verified", "id": 7, "name": "Zoho CRM", "t": "16:34:42"}
+{"ev": "groq_retry", "id": 8, "code": 429, "attempt": 1, "t": "16:34:42"}
+{"ev": "groq_retry", "id": 8, "code": 429, "attempt": 1, "t": "16:35:01"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 4, "t": "16:35:05"}
+{"ev": "verified", "id": 8, "name": "Close", "t": "16:35:12"}
+{"ev": "groq_retry", "id": 9, "code": 429, "attempt": 1, "t": "16:35:15"}
+{"ev": "groq_retry", "id": 9, "code": 429, "attempt": 1, "t": "16:35:28"}
+{"ev": "verified", "id": 9, "name": "Copper", "t": "16:35:40"}
+{"ev": "groq_retry", "id": 10, "code": 429, "attempt": 1, "t": "16:35:45"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 5, "t": "16:35:45"}
+{"ev": "verified", "id": 10, "name": "DealCloud", "t": "16:35:56"}
+{"ev": "groq_retry", "id": 11, "code": 429, "attempt": 1, "t": "16:35:57"}
+{"ev": "groq_retry", "id": 11, "code": 429, "attempt": 1, "t": "16:36:13"}
+{"ev": "verified", "id": 11, "name": "Zendesk", "t": "16:36:24"}
+{"ev": "groq_retry", "id": 12, "code": 429, "attempt": 1, "t": "16:36:24"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 6, "t": "16:36:35"}
+{"ev": "groq_retry", "id": 12, "code": 429, "attempt": 1, "t": "16:36:39"}
+{"ev": "verified", "id": 12, "name": "Intercom", "t": "16:36:51"}
+{"ev": "groq_retry", "id": 13, "code": 429, "attempt": 1, "t": "16:36:51"}
+{"ev": "groq_retry", "id": 13, "code": 429, "attempt": 1, "t": "16:37:06"}
+{"ev": "verified", "id": 13, "name": "Freshdesk", "t": "16:37:20"}
+{"ev": "groq_retry", "id": 14, "code": 429, "attempt": 1, "t": "16:37:20"}
+{"ev": "groq_gave_up", "id": 6, "t": "16:37:35"}
+{"ev": "groq_retry", "id": 14, "code": 429, "attempt": 1, "t": "16:37:36"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 1, "t": "16:37:38"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 2, "t": "16:37:49"}
+{"ev": "verified", "id": 14, "name": "Front", "t": "16:37:50"}
+{"ev": "groq_retry", "id": 16, "code": 429, "attempt": 1, "t": "16:37:50"}
+{"ev": "groq_retry", "id": 16, "code": 429, "attempt": 1, "t": "16:38:05"}
+{"ev": "groq_retry", "id": 6, "code": 429, "attempt": 1, "t": "16:38:11"}
+{"ev": "groq_retry", "id": 16, "code": 429, "attempt": 1, "t": "16:38:17"}
+{"ev": "verified", "id": 6, "name": "Podio", "t": "16:38:24"}
+{"ev": "groq_retry", "id": 17, "code": 429, "attempt": 1, "t": "16:38:24"}
+{"ev": "verified", "id": 16, "name": "LiveAgent", "t": "16:38:28"}
+{"ev": "groq_retry", "id": 18, "code": 429, "attempt": 1, "t": "16:38:28"}
+{"ev": "groq_retry", "id": 17, "code": 429, "attempt": 1, "t": "16:38:35"}
+{"ev": "groq_retry", "id": 18, "code": 429, "attempt": 1, "t": "16:38:42"}
+{"ev": "groq_retry", "id": 17, "code": 429, "attempt": 2, "t": "16:38:46"}
+{"ev": "groq_retry", "id": 18, "code": 429, "attempt": 1, "t": "16:39:00"}
+{"ev": "groq_retry", "id": 17, "code": 429, "attempt": 1, "t": "16:39:08"}
+{"ev": "verified", "id": 18, "name": "Help Scout", "t": "16:39:12"}
+{"ev": "groq_retry", "id": 19, "code": 429, "attempt": 1, "t": "16:39:12"}
+{"ev": "groq_retry", "id": 17, "code": 429, "attempt": 2, "t": "16:39:18"}
+{"ev": "groq_retry", "id": 19, "code": 429, "attempt": 1, "t": "16:39:25"}
+{"ev": "groq_retry", "id": 17, "code": 429, "attempt": 3, "t": "16:39:38"}
+{"ev": "verified", "id": 19, "name": "Gorgias", "t": "16:39:38"}
+{"ev": "groq_retry", "id": 21, "code": 429, "attempt": 1, "t": "16:39:42"}
+{"ev": "groq_retry", "id": 21, "code": 429, "attempt": 1, "t": "16:39:56"}
+{"ev": "groq_retry", "id": 17, "code": 429, "attempt": 4, "t": "16:40:08"}
+{"ev": "verified", "id": 21, "name": "Slack", "t": "16:40:09"}
+{"ev": "groq_retry", "id": 22, "code": 429, "attempt": 1, "t": "16:40:11"}
+{"ev": "groq_retry", "id": 22, "code": 429, "attempt": 1, "t": "16:40:26"}
+{"ev": "verified", "id": 22, "name": "Twilio", "t": "16:40:37"}
+{"ev": "groq_retry", "id": 23, "code": 429, "attempt": 1, "t": "16:40:41"}
+{"ev": "groq_retry", "id": 17, "code": 429, "attempt": 1, "t": "16:40:50"}
+{"ev": "groq_retry", "id": 23, "code": 429, "attempt": 2, "t": "16:40:51"}
+{"ev": "verified", "id": 17, "name": "Plain", "t": "16:41:01"}
+{"ev": "groq_retry", "id": 28, "code": 429, "attempt": 1, "t": "16:41:01"}
+{"ev": "groq_retry", "id": 23, "code": 429, "attempt": 1, "t": "16:41:12"}
+{"ev": "groq_retry", "id": 28, "code": 429, "attempt": 1, "t": "16:41:13"}
+{"ev": "groq_retry", "id": 28, "code": 429, "attempt": 2, "t": "16:41:24"}
+{"ev": "verified", "id": 23, "name": "Zoho Cliq", "t": "16:41:24"}
+{"ev": "groq_retry", "id": 49, "code": 429, "attempt": 1, "t": "16:41:26"}
+{"ev": "groq_retry", "id": 49, "code": 429, "attempt": 1, "t": "16:41:39"}
+{"ev": "groq_retry", "id": 28, "code": 429, "attempt": 3, "t": "16:41:44"}
+{"ev": "verified", "id": 49, "name": "Amazon Selling Partner", "t": "16:41:51"}
+{"ev": "groq_retry", "id": 58, "code": 429, "attempt": 1, "t": "16:41:53"}
+{"ev": "groq_retry", "id": 58, "code": 429, "attempt": 1, "t": "16:42:07"}
+{"ev": "groq_retry", "id": 28, "code": 429, "attempt": 1, "t": "16:42:16"}
+{"ev": "groq_retry", "id": 58, "code": 429, "attempt": 2, "t": "16:42:17"}
+{"ev": "groq_retry", "id": 28, "code": 429, "attempt": 1, "t": "16:42:29"}
+{"ev": "verified", "id": 58, "name": "Sherlock", "t": "16:42:38"}
+{"ev": "groq_retry", "id": 84, "code": 429, "attempt": 1, "t": "16:42:38"}
+{"ev": "verified", "id": 28, "name": "WhatsApp Business", "t": "16:42:42"}
+{"ev": "groq_retry", "id": 84, "code": 429, "attempt": 1, "t": "16:42:50"}
+{"ev": "groq_retry", "id": 84, "code": 429, "attempt": 1, "t": "16:43:06"}
+{"ev": "verified", "id": 84, "name": "Paygent Connect", "t": "16:43:18"}
+{"ev": "verified", "id": 51, "name": "DataForSEO", "t": "16:49:25"}

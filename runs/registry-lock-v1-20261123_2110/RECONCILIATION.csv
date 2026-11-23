@@ -1,0 +1,101 @@
+id,category_heading,name,hint,links,id_match,category_match,name_match,hint_match,hint_restored
+1,1. CRM and Sales,Salesforce,salesforce.com,http://salesforce.com/,True,True,True,True,False
+2,1. CRM and Sales,HubSpot,hubspot.com,http://hubspot.com/,True,True,True,True,False
+3,1. CRM and Sales,Pipedrive,pipedrive.com,http://pipedrive.com/,True,True,True,True,False
+4,1. CRM and Sales,Attio,attio.com,http://attio.com/,True,True,True,True,False
+5,1. CRM and Sales,Twenty,twenty.com (open-source CRM),http://twenty.com/,True,True,True,True,False
+6,1. CRM and Sales,Podio,podio.com,http://podio.com/,True,True,True,True,False
+7,1. CRM and Sales,Zoho CRM,zoho.com/crm,http://zoho.com/crm,True,True,True,True,False
+8,1. CRM and Sales,Close,close.com,http://close.com/,True,True,True,True,False
+9,1. CRM and Sales,Copper,copper.com,http://copper.com/,True,True,True,True,False
+10,1. CRM and Sales,DealCloud,api.docs.dealcloud.com,http://api.docs.dealcloud.com/,True,True,True,True,False
+11,2. Support and Helpdesk,Zendesk,zendesk.com,http://zendesk.com/,True,True,True,True,False
+12,2. Support and Helpdesk,Intercom,intercom.com,http://intercom.com/,True,True,True,True,False
+13,2. Support and Helpdesk,Freshdesk,freshdesk.com,http://freshdesk.com/,True,True,True,True,False
+14,2. Support and Helpdesk,Front,front.com,http://front.com/,True,True,True,True,False
+15,2. Support and Helpdesk,Pylon,usepylon.com,http://usepylon.com/,True,True,True,True,False
+16,2. Support and Helpdesk,LiveAgent,liveagent.com,http://liveagent.com/,True,True,True,True,False
+17,2. Support and Helpdesk,Plain,plain.com,http://plain.com/,True,True,True,True,False
+18,2. Support and Helpdesk,Help Scout,helpscout.com,http://helpscout.com/,True,True,True,True,False
+19,2. Support and Helpdesk,Gorgias,gorgias.com,http://gorgias.com/,True,True,True,True,False
+20,2. Support and Helpdesk,Gladly,gladly.com,http://gladly.com/,True,True,True,True,False
+21,3. Communications and Messaging,Slack,slack.com,http://slack.com/,True,True,True,True,False
+22,3. Communications and Messaging,Twilio,twilio.com,http://twilio.com/,True,True,True,True,False
+23,3. Communications and Messaging,Zoho Cliq,zoho.com/cliq,http://zoho.com/cliq,True,True,True,True,False
+24,3. Communications and Messaging,Lark (Larksuite),open.larksuite.com,http://open.larksuite.com/,True,True,True,True,False
+25,3. Communications and Messaging,Pumble,pumble.com,http://pumble.com/,True,True,True,True,False
+26,3. Communications and Messaging,Discord,discord.com,http://discord.com/,True,True,True,True,False
+27,3. Communications and Messaging,Telegram,core.telegram.org,http://core.telegram.org/,True,True,True,True,False
+28,3. Communications and Messaging,WhatsApp Business,developers.facebook.com/docs/whatsapp,http://developers.facebook.com/docs/whatsapp,True,True,True,True,False
+29,3. Communications and Messaging,Aircall,aircall.io,http://aircall.io/,True,True,True,True,False
+30,3. Communications and Messaging,Vonage,developer.vonage.com,http://developer.vonage.com/,True,True,True,True,False
+31,"4. Marketing, Ads, Email and Social",Google Ads,developers.google.com/google-ads,http://developers.google.com/google-ads,True,True,True,True,False
+32,"4. Marketing, Ads, Email and Social",Meta Ads,developers.facebook.com/docs/marketing-apis,http://developers.facebook.com/docs/marketing-apis,True,True,True,True,False
+33,"4. Marketing, Ads, Email and Social",LinkedIn Ads,learn.microsoft.com/linkedin/marketing,http://learn.microsoft.com/linkedin/marketing,True,True,True,True,False
+34,"4. Marketing, Ads, Email and Social",GoHighLevel,highlevel.stoplight.io,http://highlevel.stoplight.io/,True,True,True,True,False
+35,"4. Marketing, Ads, Email and Social",Mailchimp,mailchimp.com/developer,http://mailchimp.com/developer,True,True,True,True,False
+36,"4. Marketing, Ads, Email and Social",Klaviyo,developers.klaviyo.com,http://developers.klaviyo.com/,True,True,True,True,False
+37,"4. Marketing, Ads, Email and Social",systeme.io,systeme.io (funnel builder),http://systeme.io/,True,True,True,True,False
+38,"4. Marketing, Ads, Email and Social",Pinterest,developers.pinterest.com,http://developers.pinterest.com/,True,True,True,True,False
+39,"4. Marketing, Ads, Email and Social",Threads (Meta),developers.facebook.com/docs/threads,http://developers.facebook.com/docs/threads,True,True,True,True,False
+40,"4. Marketing, Ads, Email and Social",SendGrid,sendgrid.com,http://sendgrid.com/,True,True,True,True,False
+41,5. Ecommerce,Shopify,shopify.dev,,True,True,True,True,False
+42,5. Ecommerce,WooCommerce,woocommerce.com/document/woocommerce-rest-api,http://woocommerce.com/document/woocommerce-rest-api,True,True,True,True,False
+43,5. Ecommerce,BigCommerce,developer.bigcommerce.com,http://developer.bigcommerce.com/,True,True,True,True,False
+44,5. Ecommerce,Salesforce Commerce Cloud,developer.salesforce.com/docs/commerce,http://developer.salesforce.com/docs/commerce,True,True,True,True,False
+45,5. Ecommerce,Magento (Adobe Commerce),developer.adobe.com/commerce,http://developer.adobe.com/commerce,True,True,True,True,False
+46,5. Ecommerce,Squarespace,developers.squarespace.com,http://developers.squarespace.com/,True,True,True,True,False
+47,5. Ecommerce,Ecwid,api-docs.ecwid.com,http://api-docs.ecwid.com/,True,True,True,True,False
+48,5. Ecommerce,Gumroad,gumroad.com/api,http://gumroad.com/api,True,True,True,True,False
+49,5. Ecommerce,Amazon Selling Partner,developer-docs.amazon.com/sp-api,http://developer-docs.amazon.com/sp-api,True,True,True,True,False
+50,5. Ecommerce,fanbasis,fanbasis.com,http://fanbasis.com/,True,True,True,True,False
+51,"6. Data, SEO and Scraping",DataForSEO,docs.dataforseo.com,http://docs.dataforseo.com/,True,True,True,False,True
+52,"6. Data, SEO and Scraping",SE Ranking,seranking.com/api,http://seranking.com/api,True,True,True,False,True
+53,"6. Data, SEO and Scraping",Ahrefs,ahrefs.com/api,http://ahrefs.com/api,True,True,True,False,True
+54,"6. Data, SEO and Scraping",MrScraper,docs.mrscraper.com,http://docs.mrscraper.com/,True,True,True,False,True
+55,"6. Data, SEO and Scraping",Apify,docs.apify.com,http://docs.apify.com/,True,True,True,False,True
+56,"6. Data, SEO and Scraping",Firecrawl,firecrawl.dev,,True,True,True,False,True
+57,"6. Data, SEO and Scraping",Bright Data,brightdata.com,http://brightdata.com/,True,True,True,False,True
+58,"6. Data, SEO and Scraping",Sherlock,github.com/sherlock-project/sherlock,http://github.com/sherlock-project/sherlock,True,True,True,False,True
+59,"6. Data, SEO and Scraping",Waterfall.io,waterfall.io (contact/company intel),http://waterfall.io/,True,True,True,False,True
+60,"6. Data, SEO and Scraping",Clay,clay.com,http://clay.com/,True,True,True,False,True
+61,"7. Developer, Infra and Data platforms",GitHub,docs.github.com/rest,http://docs.github.com/rest,True,True,True,False,True
+62,"7. Developer, Infra and Data platforms",Vercel,vercel.com/docs/rest-api,http://vercel.com/docs/rest-api,True,True,True,False,True
+63,"7. Developer, Infra and Data platforms",Netlify,docs.netlify.com/api,http://docs.netlify.com/api,True,True,True,False,True
+64,"7. Developer, Infra and Data platforms",Cloudflare,developers.cloudflare.com/api,http://developers.cloudflare.com/api,True,True,True,False,True
+65,"7. Developer, Infra and Data platforms",Supabase,supabase.com/docs,http://supabase.com/docs,True,True,True,False,True
+66,"7. Developer, Infra and Data platforms",Neo4j,neo4j.com/docs/api,http://neo4j.com/docs/api,True,True,True,False,True
+67,"7. Developer, Infra and Data platforms",Snowflake,docs.snowflake.com,http://docs.snowflake.com/,True,True,True,False,True
+68,"7. Developer, Infra and Data platforms",MongoDB Atlas,mongodb.com/docs/atlas/api,http://mongodb.com/docs/atlas/api,True,True,True,False,True
+69,"7. Developer, Infra and Data platforms",Datadog,docs.datadoghq.com/api,http://docs.datadoghq.com/api,True,True,True,False,True
+70,"7. Developer, Infra and Data platforms",Sentry,docs.sentry.io/api,http://docs.sentry.io/api,True,True,True,False,True
+71,8. Productivity and Project Management,Notion,developers.notion.com,http://developers.notion.com/,True,True,True,False,True
+72,8. Productivity and Project Management,Airtable,airtable.com/developers,http://airtable.com/developers,True,True,True,False,True
+73,8. Productivity and Project Management,Linear,developers.linear.app,,True,True,True,False,True
+74,8. Productivity and Project Management,Jira,developer.atlassian.com,http://developer.atlassian.com/,True,True,True,False,True
+75,8. Productivity and Project Management,Asana,developers.asana.com,http://developers.asana.com/,True,True,True,False,True
+76,8. Productivity and Project Management,Monday.com,developer.monday.com,http://developer.monday.com/,True,True,True,False,True
+77,8. Productivity and Project Management,ClickUp,clickup.com/api,http://clickup.com/api,True,True,True,False,True
+78,8. Productivity and Project Management,Coda,coda.io/developers,http://coda.io/developers,True,True,True,False,True
+79,8. Productivity and Project Management,Smartsheet,smartsheet.com/developers,http://smartsheet.com/developers,True,True,True,False,True
+80,8. Productivity and Project Management,Harvest,harvestapp.com (help.getharvest.com/api-v2),http://harvestapp.com/ | http://help.getharvest.com/api-v2,True,True,True,False,True
+81,9. Finance and Fintech,Stripe,stripe.com/docs/api,http://stripe.com/docs/api,True,True,True,False,True
+82,9. Finance and Fintech,Plaid,plaid.com/docs,http://plaid.com/docs,True,True,True,False,True
+83,9. Finance and Fintech,Binance,binance-docs.github.io,http://binance-docs.github.io/,True,True,True,False,True
+84,9. Finance and Fintech,Paygent Connect,paygent (NMI-powered),,True,True,True,False,True
+85,9. Finance and Fintech,iPayX,ipayx.ai/docs,http://ipayx.ai/docs,True,True,True,False,True
+86,9. Finance and Fintech,QuickBooks,developer.intuit.com,http://developer.intuit.com/,True,True,True,False,True
+87,9. Finance and Fintech,Xero,developer.xero.com,http://developer.xero.com/,True,True,True,False,True
+88,9. Finance and Fintech,Brex,developer.brex.com,http://developer.brex.com/,True,True,True,False,True
+89,9. Finance and Fintech,Ramp,docs.ramp.com,http://docs.ramp.com/,True,True,True,False,True
+90,9. Finance and Fintech,PitchBook,pitchbook.com (research API),http://pitchbook.com/,True,True,True,False,True
+91,"10. AI, Research and Media-native",NotebookLM,cloud.google.com/gemini (Enterprise API),http://cloud.google.com/gemini,True,True,True,False,True
+92,"10. AI, Research and Media-native",Otter AI,help.otter.ai (MCP server),http://help.otter.ai/,True,True,True,False,True
+93,"10. AI, Research and Media-native",Fathom,fathom.video,,True,True,True,False,True
+94,"10. AI, Research and Media-native",Consensus,consensus.app (OAuth requested),,True,True,True,False,True
+95,"10. AI, Research and Media-native",Reducto,reducto.ai (document parsing),http://reducto.ai/,True,True,True,False,True
+96,"10. AI, Research and Media-native",Devin,docs.devin.ai (MCP),http://docs.devin.ai/,True,True,True,False,True
+97,"10. AI, Research and Media-native",higgsfield,higgsfield.ai/cli (content suite),http://higgsfield.ai/cli,True,True,True,False,True
+98,"10. AI, Research and Media-native",Mermaid CLI,github.com/mermaid-js/mermaid-cli,http://github.com/mermaid-js/mermaid-cli,True,True,True,False,True
+99,"10. AI, Research and Media-native",YouTube Transcript,transcriptapi.com,http://transcriptapi.com/,True,True,True,False,True
+100,"10. AI, Research and Media-native",Grain,grain.com (meeting notes),http://grain.com/,True,True,True,False,True

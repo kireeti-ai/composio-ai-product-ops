@@ -1,0 +1,654 @@
+
+ Smartsheet Pricing | Smartsheet
+ Skip to main content
+ Smartsheet
+ Open navigation
+ Close navigation
+ Product
+ Product Overview
+ Manage projects, automate workflows, and build solutions at scale with Smartsheet.
+ Learn more 
+ Features
+ AI
+ Automation
+ Team collaboration
+ Dashboards and reporting
+ Account administration
+ Integrations
+ Digital asset management
+ Resource planning
+ Portfolio management
+ Secure request management
+ Intelligent workflows
+ No code work apps
+ See all features
+ Discover our latest product updates and enhancements
+ Advanced Work Management
+ Scale, connect, and empower your business for the future.
+ Explore our offering 
+ Professional services
+ Information about Smartsheet consulting, training, and implementation support.
+ Available services 
+ Trust and security
+ A complete summary of Smartsheet security and reliability.
+ Trust Center 
+ Watch a demo
+ Start a trial
+ Solutions
+ Featured 
+ Projects and Portfolios
+ Explore 
+ Operations Management
+ Explore 
+ Digital and IT Portfolio Management
+ Explore 
+ Client and Partner Delivery 
+ Explore 
+ By use case
+ Project management
+ IT Portfolio management
+ Business PMO
+ Enterprise PMO
+ Marketing management
+ Creative operations
+ Services delivery 
+ By Industry 
+ Government
+ Construction
+ Life sciences
+ Higher education
+ Healthcare
+ Enterprise
+ Small and medium business
+ View all solutions
+ Template gallery
+ Streamline your work with the perfect template for your team.
+ See all templates 
+ Customer stories
+ Behind the scenes with organizations around the world using Smartsheet to do incredible things.
+ See all stories 
+ Experience the future of productivity with Smartsheet AI
+ A 4x Leader in the 2026 Gartner® Magic Quadrant™ for CWM
+ Watch a demo
+ Start a trial
+ Resources
+ Content Center
+ Articles and guides about project management, collaboration, automation, and other topics to help you make the most of the Smartsheet platform.
+ Explore the Content Center 
+ Managing work
+ Product updates and insights
+ Inside Smartsheet
+ Help and Learning
+ A comprehensive knowledge base, including articles, tutorials, videos, and other resources that cover a range of topics related to using Smartsheet.
+ Get started 
+ Smartsheet University
+ Knowledge base
+ Training options
+ Support
+ Professional services
+ Partners
+ An overview of the Smartsheet Partner Program, including program details and a directory of global partners offering expertise and solutions.
+ Learn more 
+ Find a partner
+ Become a partner
+ Partner solutions
+ ENGAGE 
+ Join customers, experts, and partners to explore success stories, swap insights, and learn how Smartsheet turns ideas into action.
+ Learn more 
+ Smartsheet events
+ Your hub for Smartsheet events, webinars, Q&As, and user groups.
+ Community
+ Explore user-generated content and stay updated on our product features.
+ Watch a demo
+ Start a trial
+ Pricing
+ Contact
+ Select language
+ Select your language
+ EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+ Log in
+ Start a trial
+ Watch a demo
+ Watch a demo
+ Try Smartsheet for free
+ Select language
+ Select your language
+ EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+ Open search
+ Search
+ Log in
+Flexible plans for any team
+Choose the plan that works best for you and manage your projects, programs, and processes — all in one place.
+Try for free
+Pricing by plan type
+ Currency
+ AUD (Australian Dollar)
+ CAD (Canadian Dollar)
+ CHF (Swiss Franc)
+ DKK (Danish Krone)
+ EUR (Euro)
+ GBP (British Pound)
+ JPY (Japanese Yen)
+ NOK (Norwegian Krone)
+ NZD (New Zealand Dollar)
+ SEK (Swedish Krona)
+ SGD (Singapore Dollar)
+ USD (US Dollar)
+ ZAR (South African Rand)
+ Payment
+ Monthly pricing
+ Yearly pricing
+Pro
+ $129 per Member/month 
+ $1713 AUD per Member/month 
+ $1612 CAD per Member/month 
+ 118 CHF per Member/month 
+ 8362 DKK per Member/month 
+ 118€ per Member/month 
+ £107 per Member/month 
+ ¥1,6001,200 per Member/month 
+ 13098 NOK per Member/month 
+ $2015 NZD per Member/month 
+ 13097 SEK per Member/month 
+ $1612 SGD per Member/month 
+ 230170 ZAR per Member/month 
+Total /month
+Billed monthly
+1-10 Members, unlimited Contributors 
+Billed yearly
+1-10 Members, unlimited Contributors 
+ Start now
+For people and teams wanting to track, share, and manage projects.
+Includes:
+Unlimited free Contributors
+Gantt, table, board, and calendar view.
+Rich formulas
+Conversational AI features New
+Unlimited sheets, forms, and reports
+250 automations per month
+ Most popular
+Business
+ $2419 per Member/month 
+ $3527 AUD per Member/month 
+ $3326 CAD per Member/month 
+ 2217 CHF per Member/month 
+ 170132 DKK per Member/month 
+ 2217€ per Member/month 
+ £1915 per Member/month 
+ ¥3,2002,500 per Member/month 
+ 260207 NOK per Member/month 
+ $4032 NZD per Member/month 
+ 260205 SEK per Member/month 
+ $3325 SGD per Member/month 
+ 450359 ZAR per Member/month 
+Total /month
+Billed monthly
+3+ Members, unlimited Guests and Contributors 
+Billed yearly
+3+ Members, unlimited Guests and Contributors 
+ Start now
+For businesses looking to align people, projects, and programs.
+Includes Pro plan, plus:
+Unlimited free Guests
+Timeline view
+Workload tracking
+Admin capabilities
+Unlimited automations
+Connect to external AI tools New
+1 TB attachment storage
+Enterprise
+Total /month
+Custom pricing
+10+ Members 
+Custom pricing
+10+ Members 
+ Contact us
+For organizations needing to build complex solutions and company-wide security and controls.
+Includes Business plan, plus:
+Portfolios
+Scenario Planning
+SAML-based SSO
+Enterprise Plan Manager
+Unlimited attachment storage
+Directory integrations
+ Best value
+Advanced Work Management
+Total /month
+Custom pricing
+Solutions for your needs 
+Custom pricing
+Solutions for your needs 
+ Contact us
+For organizations aiming to manage large scale portfolios of work and connect across their systems.
+Includes Enterprise plan, plus:
+Advanced Portfolios NEW
+Dynamic View
+Data Shuttle
+Connectors
+DataMesh
+Calendar App
+Pivot App
+Premium Support
+ Compare plans
+Features by plan typeComparison table detailing features across the four Smartsheet plan types: Pro, Business, Enterprise and Advanced Work Management.
+Essential features
+Pro
+Start now
+Business
+Start now
+Enterprise
+Contact us
+Advanced Work Management
+Contact us
+Essential features
+SheetsUnlimitedUnlimitedUnlimitedUnlimited
+Grid viewxxxx
+Gantt viewxxxx
+Calendar viewxxxx
+Table viewxxxx
+Board viewxxxx
+Timeline view-xxx
+DashboardsUnlimitedUnlimitedUnlimitedUnlimited
+ReportsUnlimitedUnlimitedUnlimitedUnlimited
+FormsUnlimitedUnlimitedUnlimitedUnlimited
+Conditional form logic-xxx
+Templatesxxxx
+Widgets per dashboard10UnlimitedUnlimitedUnlimited
+Sheets per report1UnlimitedUnlimitedUnlimited
+Mobile app (Android & iOS)xxxx
+Private sheets and reportsxxxx
+Export sheetxxxx
+File libraryxxxx
+Workload tracking-xxx
+Portfolios--xx
+Formulas and functions
+Column typesxxxx
+Cell formulasxxxx
+Column formulasxxxx
+Cross-sheet formulasxxxx
+Dependenciesxxxx
+Filtersxxxx
+Conditional formattingxxxx
+Cell historyxxxx
+Cell linkingxxxx
+Column linksxxxx
+Lock or unlock rows and columnsxxxx
+Baselines-xxx
+Report grouping and summary-xxx
+Activity log-xxx
+Document builder-xxx
+API calls-xxx
+Custom colors & logos-xxx
+Work Insights: Instantly analyze your data--xx
+Custom welcome and help screens--xx
+Team collaboration
+MembersMax 10Min 3CustomCustom
+Provisional Membersxxxx
+Contributorsxxxx
+Guests-xxx
+File/Attachment storage20 GB1 TBUnlimitedUnlimited
+Maximum attachment size30 MB250 MB250 MB250 MB
+Assign peoplexxxx
+Conversationsxxxx
+Commentsxxxx
+Proofing (image and video)-xxx
+Publish sheets, reports, and dashboards-xxx
+Collections --xx
+Scenario Planning --xx
+AI tools
+Smart Assistxxxx
+Smart Columnsxxxx
+AI dashboard builderxxxx
+Intelligent form fillxxxx
+Generate formulasxxxx
+Analyze dataxxxx
+Automated workflows
+Automated triggers250/monthUnlimitedUnlimitedUnlimited
+Alerts and notificationsxxxx
+Remindersxxxx
+Assign people actionxxxx
+Update requestsxxxx
+Approval requestsxxxx
+Record a datexxxx
+Move or copy rowxxxx
+Clear cellxxxx
+Send alert to Slackxxxx
+Send alert to Microsoft Teamsxxxx
+Integrations
+Microsoft Office 365 (Teams, Outlook, OneDrive, etc.) xxxx
+Google Workspace (Gmail, Hangouts, Drive, etc.)xxxx
+Slackxxxx
+Adobe Creative Cloud Extension-xxx
+Power BI-xxx
+Tableau-xxx
+Anthropic's Claude-xxx
+Google Gemini Enterprise-xxx
+Microsoft Copilot-xxx
+OpenAI's ChatGPT-xxx
+Workday NEW--xx
+ServiceNowNEW--xx
+Microsoft Dynamics 365NEW--xx
+HubSpotNEW--xx
+E-signature with Docusign--xx
+Nearly 100 morexxxx
+Security
+Single sign-on (SSO)xxxx
+Admin Centerxxxx
+User Managementxxxx
+Plan Insights-xxx
+Group management-xxx
+Account discovery-xxx
+Schedule backups-xxx
+Domain validation-xxx
+SAML-based SSO--xx
+Directory integrations--xx
+User merge--xx
+Enterprise Plan Manager--xx
+Enterprise access controls--xx
+Custom email domains--xx
+User account provisioning--xx
+Safe Sharing--xx
+Chargeback reports--xx
+System admin fallback--xx
+Data retention policies--Add-onAdd-on
+Data egress--Add-onAdd-on
+Event reporting--Add-onAdd-on
+Customer Managed Encryption Key (CMEK)--Add-onAdd-on
+Premium features
+WorkApps: No-code workapps--xx
+Brandfolder by SmartsheetAdd-onAdd-onAdd-onAdd-on
+Resource Management-Add-onAdd-onAdd-on
+Dynamic View: Secure request management-Starting at 
+ $125125/month 
+ $200200 AUD/month 
+ $180180 CAD/month 
+ 115115 CHF/month 
+ 900900 DKK/month 
+ 120120€/month 
+ £100100/month 
+ ¥19,58019,580/month 
+ 1,4151,415 NOK/month 
+ $225225 NZD/month 
+ 1,3851,385 SEK/month 
+ $170170 SGD/month 
+ 2,3452,345 ZAR/month 
+Starting at 
+ $125125/month 
+ $200200 AUD/month 
+ $180180 CAD/month 
+ 115115 CHF/month 
+ 900900 DKK/month 
+ 120120€/month 
+ £100100/month 
+ ¥19,58019,580/month 
+ 1,4151,415 NOK/month 
+ $225225 NZD/month 
+ 1,3851,385 SEK/month 
+ $170170 SGD/month 
+ 2,3452,345 ZAR/month 
+x
+Data Shuttle-Starting at 
+ $100100/month 
+ $150150 AUD/month 
+ $137137 CAD/month 
+ 8989 CHF/month 
+ 696696 DKK/month 
+ 9292€/month 
+ £7979/month 
+ ¥15,63015,630/month 
+ 1,0621,062 NOK/month 
+ $163163 NZD/month 
+ 1,0461,046 SEK/month 
+ $135135 SGD/month 
+ 1,8371,837 ZAR/month 
+ Starting at 
+ $100100/month 
+ $150150 AUD/month 
+ $137137 CAD/month 
+ 8989 CHF/month 
+ 696696 DKK/month 
+ 9292€/month 
+ £7979/month 
+ ¥15,63015,630/month 
+ 1,0621,062 NOK/month 
+ $163163 NZD/month 
+ 1,0461,046 SEK/month 
+ $135135 SGD/month 
+ 1,8371,837 ZAR/month 
+ x
+Calendar App-Add-onAdd-onx
+DataMesh-Add-onAdd-onx
+Pivot App-Add-onAdd-onx
+Connectors-Add-onAdd-onx
+Advanced Portfolios NEW--Add-onx
+Bridge--Add-onx
+DataTable---x
+Support and services
+Help & Learning contentxxxx
+Smartsheet Communityxxxx
+Web-based ticketingxxxx
+Standard Support Package-Add-onxx
+Premium Support Package-Add-onAdd-onx
+Smartsheet UniversityAdd-onAdd-onAdd-onx
+Smartsheet Professional Services-Add-onAdd-onAdd-on
+Technical Account Managers-Add-onAdd-onAdd-on
++Feature availability varies: For details see Capabilities available in Smartsheet | Regions and Capabilities in Smartsheet | Gov
+The Pro plan is only available to new customers.
+Premium features
+Unlock features available as add-ons — or go all in with the Advanced Work Management plan.
+Contact us
+Digital asset management
+Brandfolder
+ Eligible:
+ All plans
+Bring marketing, creative, and content together in one place. Brandfolder empowers your team to centralize, manage, and track all of your digital assets in one place.
+Centralized digital asset management.
+Collaborate and track with ease.
+Empower your creative teams with autonomy across workflows.
+ Get started
+Resource Planning
+Resource Management
+ Eligible:
+ Business
+ Enterprise
+Match people to the right work, balance workloads, and forecast demand to improve project delivery with Resource Management.
+Reduce burnout and under-utilization.
+Centralize workload scheduling for maximum transparency.
+Improve project estimates with time and expense tracking. 
+ Request a demo
+Secure process management
+Dynamic View
+ Eligible:
+ Business
+ Enterprise
+Share only relevant information to the right people at the right time, ensuring confidentiality without sacrificing collaboration.
+From 
+ $125125/month 
+ $200200 AUD/month 
+ $180180 CAD/month 
+ 115115 CHF/month 
+ 900900 DKK/month 
+ 120120€/month 
+ £100100/month 
+ ¥19,58019,580/month 
+ 1,4151,415 NOK/month 
+ $225225 NZD/month 
+ 1,3851,385 SEK/month 
+ $170170 SGD/month 
+ 2,3452,345 ZAR/month 
+Surface relevant data from a sheet or report for viewing and editing. 
+Create custom views with guidance and guardrails.
+ Try it
+Data management
+Data Shuttle
+ Eligible:
+ Business
+ Enterprise
+Automate the import and export of data between Smartsheet and external systems to keep your information aligned and accurate.
+From 
+ $100100/month 
+ $150150 AUD/month 
+ $137137 CAD/month 
+ 8989 CHF/month 
+ 696696 DKK/month 
+ 9292€/month 
+ £7979/month 
+ ¥15,63015,630/month 
+ 1,0621,062 NOK/month 
+ $163163 NZD/month 
+ 1,0461,046 SEK/month 
+ $135135 SGD/month 
+ 1,8371,837 ZAR/month 
+Make data-driven decisions by centralizing your business information.
+Automate your routine business processes with scheduled data transfers.
+ Try it
+Project and portfolio management
+Advanced Portfolios
+ Eligible:
+ Enterprise
+Deliver standardized execution and visibility at scale with automated project creation, custom portfolio reporting, and comprehensive change management for portfolio-wide updates.
+Maintain standardization and governance across projects and processes.
+Gain real-time visibility across every project in your portfolio. 
+Manage work directly in Smartsheet, with AI built in with portfolio context.
+Dynamic calendar
+Calendar App
+ Eligible:
+ Business
+ Enterprise
+A powerful, interactive and flexible calendar view that allows you to build and share calendars with custom details.
+Multiple calendar views to match how you work.
+Customize categories with color coding.
+Automatic, real-time updates.
+Data summarization
+Pivot App
+ Eligible:
+ Business
+ Enterprise
+Summarize and analyze large data stored in sheets or reports and create meaningful comparisons, and identify patterns, and trends.
+Dynamically refreshed summary sheet.
+Group and organize large data sets.
+Spend less time adding and editing formulas.
+Data connections
+Connectors
+ Eligible:
+ Business
+ Enterprise
+Sync data between Smartsheet and 3rd party systems like Jira.
+Create flexible connections between Smartsheet and other business systems.
+Get more from the tools you use today with data connectivity across your systems.
+Data syncing
+DataMesh
+ Eligible:
+ Business
+ Enterprise
+Eliminate manual work and keep your sheets and reports in sync — without manual copying and pasting or creating complex formulas.
+Drive information across multiple sheets from a single source of truth.
+Create relationships between data from multiple sheets, all without formulas.
+Automated workflows
+Bridge
+ Eligible:
+ Enterprise
+Create flexible workflows that work for your business with a low-code interface that lets you create simple, powerful process automations.
+Flexible workflows that can be customized by end users.
+Scale your work with process automation.
+Empower users to create workflows without advanced technical assistance.
+ Show previous slide
+ Show next slide
+Can't decide? Start now for free
+30 days free, no credit card required 
+Try for free
+Trusted by your favorite brands and over 85% of Fortune 500 companies
+Frequently Asked Questions
+ Can I change my plan?
+You always have the option to upgrade your plan to unlock additional capabilities for project, program, or portfolio management. You can also add or remove users, purchase more licenses, or cancel your subscription at any time. These actions are subject to terms at Smartsheet User Agreement. 
+ Do you have a service availability guarantee?
+Yes, for customers with Enterprise plans. These plans are covered by our Service Level Agreement.
+ What forms of payment do you accept?
+We accept major credit cards (Visa, Mastercard, Discover, American Express) and ACH direct debit. For Enterprise subscriptions that meet a minimum fee, we offer invoicing for payment via credit card, check, ACH, or wire. Payment options may vary by billing country.
+ In which currencies do you accept payment?
+AUD (Australian Dollar)
+CAD (Canadian Dollar)
+CHF (Swiss Franc)
+DKK (Danish Krone)
+EUR (Euro)
+GBP (British Pound)
+JPY (Japanese Yen)
+NOK (Norwegian Krone)
+NZD (New Zealand Dollar)
+SEK (Swedish Krona)
+SGD (Singapore Dollar)
+USD (US Dollar)
+ZAR (South African Rand)
+ Can someone help customize a proposal for my team?
+Yes! We take into account your business, along with factors like compliance, license management, Integrations, and support needs to customize a solution for you.
+Contact Sales
+ Is there a version of Smartsheet for Government agencies? 
+Yes! We have Smartsheet Gov. Learn more about the capabilities of Smartsheet Gov. For more information, contact Sales.
+Please note: Smartsheet Gov customers who purchase through an authorized sales representative will remain on the legacy collaborator model. However, if they purchase online and agree to our terms and conditions, they will transition to the new user subscription model.
+ Is Smartsheet available in regions other than the US?
+Yes! We offer Smartsheet Regions. Learn more about Smartsheet Regions or contact our sales team.
+Still have questions? Let’s talk
+Contact us
+ Smartsheet
+ Product
+ Product
+ Overview
+ Solutions
+ Features
+ Integrations
+ Pricing & plans
+ Advanced Work Management
+ Professional services
+ Trust Center
+ Template Gallery
+ Why Smartsheet
+ Start a trial
+ View pricing and plans
+ Resources
+ Resources
+ Content Center
+ Product insights
+ Help and Learning
+ Smartsheet University
+ Training options
+ Support
+ Community
+ Partner program
+ Release updates
+ Developers & API
+ Watch a demo
+ Company
+ Company
+ About us
+ Leadership
+ Newsroom
+ Corporate responsibility
+ Customer stories
+ Careers
+ We're hiring! 
+ Privacy
+ Legal
+ Contact us
+ Learn
+ Learn
+ Project management templates
+ Smartsheet dashboard gallery
+ 5 steps for getting started with the Smartsheet API
+ 3 formulas to look up data in Smartsheet
+ Unlock the power of Smartsheet with AI
+ Learn more about ENGAGE
+ Select your language
+ EnglishDeutschEspañolFrançaisItalianoPortuguêsPусский日本語
+ Facebook
+ X
+ LinkedIn
+ TikTok
+ YouTube
+ Instagram
+©2026. All Rights Reserved Smartsheet Inc.
+ •
+Machine Translation Disclaimer
+ •
+Cookie Preferences
+ •
+Your Privacy Choices

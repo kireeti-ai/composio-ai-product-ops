@@ -1,0 +1,75 @@
+{
+  "run_id": "dataset-live-v3-20261123_2020",
+  "snapshot_at": "2026-11-23T20:16:44+0530",
+  "registry_positions": 100,
+  "unique_ids": 100,
+  "accepted_extraction_positions": 54,
+  "stored_result_versions": 60,
+  "status_counts": {
+    "COMPLETED_BASELINE": 25,
+    "UNPLANNED": 29,
+    "EXTRACTED_batchA": 22,
+    "EXTRACTED_corrected5": 5,
+    "EXTRACTED_batchB": 2,
+    "PAUSED_PROVIDER_QUOTA": 1,
+    "EXCLUDED_IDENTITY_UNRESOLVED": 2,
+    "COMPLETED_BASELINE_QUARANTINED": 1,
+    "HELD_NEO4J_OPTION_B_PREPARED": 1,
+    "BLOCKED_C_identity_review": 7,
+    "EXTRACTION_FAILED_INVALID_JSON": 1,
+    "HELD_IDENTITY_PROVISIONAL": 2,
+    "BLOCKED_D_retrieval_gap": 2
+  },
+  "model_generation_or_retrieval_during_recovery": false,
+  "approval_file_created": false,
+  "deployment_or_publication": false,
+  "groq_last_error": {
+    "at": "2026-11-23T20:05:38+05:30",
+    "limit_tpd": 200000,
+    "used_tpd": 199639,
+    "requested_tokens": 4028,
+    "retry_after_seconds": 1585,
+    "soft_cap_tpd": 180000,
+    "state": "paused; daily reset/capacity must be re-established"
+  },
+  "supervisor": {
+    "pid": 98429,
+    "termination": "SIGTERM, absent on verification"
+  },
+  "frozen_checks": {
+    "baseline_entries": 151,
+    "baseline_mismatches": 0,
+    "v1f_plan_matches_frozen_hash": true,
+    "runner_v6_matches_frozen_hash": true
+  },
+  "source_sha256": {
+    "src/assemble_dataset.py": "7106eeba687807e58432c3207524975f277bfd4fe645727f460701645353b2d0",
+    "src/build_report.py": "0f1f52b015d24b8f1353535ff4298d5a46595275ce042da946c4faca6e9c127c",
+    "src/report_template.html": "8b60ef93326915fca91e0804cc0751304586665fbd6717dcef831d6b9c684a8e",
+    "tests/test_dataset_status.py": "a7716f777d1aceac90cc37e8ead5e1d7ed6a24b366002323f0206fcc01244269"
+  },
+  "inputs": [
+    "runs/bench5-v1-20261123_191136",
+    "runs/correction5-v1-20261123_192852",
+    "runs/p1-batchA-groq-20261123_193428",
+    "runs/p1-batchB-groq-20261123_195002",
+    "runs/p1-batchB-groq-20261123_195002/IDENTITY_GATE.json"
+  ],
+  "report_sha256": "0b41d306b12c577c65f28ab99fba8e182942737f3982dd46772a14a2fa59a238",
+  "tests": {
+    "dataset_status": "PASS",
+    "eval_score": "12 passed",
+    "bench5_v2": "26 passed",
+    "pilot5_v7": "26 passed",
+    "runner_v1f": "PASS",
+    "neo4j_surfaces": "PASS",
+    "verify_v2": "13 passed",
+    "eval_agreement": "6 passed",
+    "pass2_pilot": "6 passed",
+    "pass2_pilot_v2": "7 passed",
+    "claims_guard": "6 passed",
+    "quota_plan": "8 passed",
+    "eval_seal": "5 passed",
+    "html_js": "node --check PASS"
+  }
+}

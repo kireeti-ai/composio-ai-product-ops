@@ -1,0 +1,8 @@
+{
+ "url": "https://github.com/github/github-mcp-server",
+ "requested_at": "2026-11-23T19:29:32+05:30",
+ "charge_usd": 0.0,
+ "status": "error",
+ "error": "KeyError: 'data'",
+ "completed_at": "2026-11-23T19:29:40+05:30"
+}

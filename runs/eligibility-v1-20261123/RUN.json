@@ -1,0 +1,9 @@
+{
+ "run_id": "eligibility-v1-20261123",
+ "code": "src/eligibility.py",
+ "code_sha256": "0e96d7fe2a0339d53e1189970b9f9354111278e027451e0679525af50277b1fa",
+ "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+ "created": "2026-11-23T17:22:42+0530",
+ "network": false,
+ "llm": null
+}

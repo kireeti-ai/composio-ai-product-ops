@@ -1,0 +1,30 @@
+{
+ "id": 4,
+ "name": "Attio",
+ "checks": [
+  {
+   "field": "auth_methods",
+   "claim": "Attio API supports these auth methods: oauth2, api_key, bearer_token, basic",
+   "verdict": "contradicted",
+   "reason": "Excerpt only mentions OAuth 2.0 and API key; no evidence for bearer token or basic authentication support."
+  },
+  {
+   "field": "access",
+   "claim": "Developer access for Attio is 'self_serve_free' (Developers can generate an API key for a single workspace or use OAuth 2.0 for up to 25 workspaces without publishing.)",
+   "verdict": "supported",
+   "reason": "Excerpt confirms API key for a single workspace and OAuth for up to 25 workspaces without publishing."
+  },
+  {
+   "field": "api_types",
+   "claim": "Attio offers these API types: rest, sdk_or_cli_only",
+   "verdict": "not_enough_info",
+   "reason": "Excerpt confirms REST API but does not mention a SDK\u2011or\u2011CLI\u2011only API type."
+  },
+  {
+   "field": "existing_mcp",
+   "claim": "MCP server status for Attio: official",
+   "verdict": "not_enough_info",
+   "reason": "Excerpt lacks any mention of MCP server status or its official designation."
+  }
+ ]
+}

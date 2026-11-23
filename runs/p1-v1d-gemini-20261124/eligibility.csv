@@ -1,0 +1,32 @@
+id,name,eligible,phase,blocking,identity,api_surface,ops,access
+27,Telegram,True,1,,resolved_by_original_hint,not_individually_assessed,2,explicit_prior
+32,Meta Ads,True,1,,resolved_by_original_hint,not_individually_assessed,0,explicit_prior
+33,LinkedIn Ads,True,1,,resolved_by_original_hint,partial,0,explicit_prior
+34,GoHighLevel,True,1,,resolved_by_original_hint,not_individually_assessed,123,explicit_prior
+39,Threads (Meta),True,1,,resolved_by_original_hint,not_individually_assessed,3,explicit_prior
+41,Shopify,True,1,,resolved_by_original_hint,not_individually_assessed,0,explicit_prior
+43,BigCommerce,True,1,,resolved_by_original_hint,not_individually_assessed,2,explicit_prior
+52,SE Ranking,True,1,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,0,explicit_prior
+53,Ahrefs,True,1,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,0,explicit_prior
+56,Firecrawl,True,1,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,4,explicit_prior
+76,Monday.com,True,1,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,0,explicit_prior
+65,Supabase,True,1,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,0,explicit
+72,Airtable,True,1,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,0,explicit
+71,Notion,True,1,,reconstructed_list_name_only_not_authoritative,partial,2,explicit
+61,GitHub,True,1,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,0,explicit
+38,Pinterest,True,2,,resolved_by_original_hint,not_individually_assessed,1,explicit
+62,Vercel,True,2,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,5,inferred_self_serve
+63,Netlify,True,2,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,9,inferred_self_serve
+36,Klaviyo,True,2,,resolved_by_original_hint,not_individually_assessed,2,inferred_self_serve
+29,Aircall,True,2,,resolved_by_original_hint,not_individually_assessed,0,partial
+47,Ecwid,True,2,,resolved_by_original_hint,partial,1,partial
+44,Salesforce Commerce Cloud,True,2,,resolved_by_original_hint,not_individually_assessed,3,partial
+26,Discord,True,2,,resolved_by_original_hint,not_individually_assessed,1,partial
+70,Sentry,True,2,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,3,partial
+25,Pumble,True,2,,resolved_by_original_hint,not_individually_assessed,0,partial
+75,Asana,True,2,,reconstructed_list_name_only_not_authoritative,not_individually_assessed,2,partial
+46,Squarespace,True,2,,resolved_by_original_hint,not_individually_assessed,6,partial
+20,Gladly,False,,official evidence still unresolved after retry (pricing empty on 2 attempts; onboarding page thin),resolved_by_original_hint,not_assessed,,unresolved
+73,Linear,False,,"identity provisional, not confirmed",reconstructed_list_name_only_not_authoritative,not_assessed,,n/a
+78,Coda,False,,"identity provisional, not confirmed",reconstructed_list_name_only_not_authoritative,not_assessed,,n/a
+66,Neo4j,False,,API scope ambiguity (Aura management vs database Query API),reconstructed_list_name_only_not_authoritative,not_assessed,,partial

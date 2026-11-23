@@ -1,0 +1,223 @@
+{
+ "created": "2026-11-23T18:37:03+0530",
+ "automatic_gates": [
+  {
+   "id": "A1",
+   "name": "baseline intact (151 files)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A2",
+   "name": "first run index still matches (72 files)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A3",
+   "name": "previous 178-file index still matches (no earlier artifact was modified)",
+   "status": "PASS",
+   "detail": "all match"
+  },
+  {
+   "id": "A4",
+   "name": "frozen v1f + execution config (19 checks)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A5",
+   "name": "no approval files exist anywhere",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A6",
+   "name": "ledger reconciles: 75 calls / 74 apps / 26 baseline / 100 total / groups 28+2+39+6",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A7",
+   "name": "offline test suites (regression; synthetic data; NOT evidence of accuracy)",
+   "status": "PASS",
+   "detail": "{\"eval_score\": 12, \"eval_agreement\": 6, \"verify_v2\": 13, \"pass2_pilot\": 6, \"quota_plan\": 8, \"eval_seal\": 5, \"claims_guard\": 6, \"pass2_pilot_v2\": 7, \"runner_v1f\": 34, \"neo4j_surfaces\": 13}"
+  },
+  {
+   "id": "A8",
+   "name": "dry runs make no network/model call (v1f, Neo4j, Neo4j retrieval, verifier, pilot)",
+   "status": "PASS",
+   "detail": "{\"v1f\": true, \"neo4j_optionB\": true, \"neo4j_retrieval\": true, \"verifier_v2\": true, \"pass2_pilot\": true}"
+  },
+  {
+   "id": "A9",
+   "name": "human-eval blind sheets empty + clean; 0 labels",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A10",
+   "name": "secret audit: no key value outside .env",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A11",
+   "name": "Pass 2 pilot items built: 4 replays + 12 negative + 12 positive controls; stage-2 sheet blank",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A12",
+   "name": "quota templates are BLANK (limits not assumed) and the planner refuses blanks",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A13",
+   "name": "Groq reconciliation: 75 pilot calls = 12 new + 63 identical (56 distinct + 7 repeats); baseline 99 actual (103 ceiling); recommended minimum 411 / expected 703 / worst 2055",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A14",
+   "name": "provenance-by-status cross-tab: original 50 / reconstructed 50 / every status column == master coverage / all derivation checks pass",
+   "status": "PASS",
+   "detail": "12 checks"
+  },
+  {
+   "id": "A15",
+   "name": "pilot v2: 89 real calls = 50 (CORE) + 12 (S1b) + 27 (S2REST); 77 ledger + 12 new; criteria pre-registered by hash",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "A16",
+   "name": "claims policy present and enforced by a tested guard (only tier T3 may claim accuracy)",
+   "status": "PASS",
+   "detail": ""
+  }
+ ],
+ "automatic_all_pass": true,
+ "pending": [
+  {
+   "id": "U1",
+   "gate": "Gemini limits observed after the 13:30 IST reset (G1-G8)",
+   "owner": "user",
+   "blocks": "ALL Gemini calls"
+  },
+  {
+   "id": "U2",
+   "gate": "Approve Gemini models + per-model caps + phases in APPROVED.json (Phase 1 first = 15 calls)",
+   "owner": "user",
+   "blocks": "Phase 1"
+  },
+  {
+   "id": "U3",
+   "gate": "Acknowledge reconstructed provenance: 8 of the 15 Phase-1 apps and 12 of the 28 v1f apps are from the reconstructed list (membership unverified)",
+   "owner": "user",
+   "blocks": "Phase 1 reporting"
+  },
+  {
+   "id": "U4",
+   "gate": "Groq limits observed (Q1-Q2) + approve pilot-v2 max_calls (>= 170 attempts: 89 calls x 1.71 = 153 expected, + margin) and min_interval_s; confirm or change the PRE-REGISTERED S1/S2 criteria before the pilot (they are then hashed)",
+   "owner": "user",
+   "blocks": "Pass 2 pilot"
+  },
+  {
+   "id": "U5",
+   "gate": "Identity decisions: Sherlock, Harvest, fanbasis, Linear, Coda, Waterfall.io, Clay (6 gated calls + #58 re-extraction)",
+   "owner": "user",
+   "blocks": "group D (6 calls)"
+  },
+  {
+   "id": "U6",
+   "gate": "Approve free retrievals: Neo4j gaps (<=5 calls) and expansion (~300 calls)",
+   "owner": "user",
+   "blocks": "groups B(recommended)/C"
+  },
+  {
+   "id": "U7",
+   "gate": "Name two independent labelers + one adjudicator",
+   "owner": "user",
+   "blocks": "human evaluation + pilot stage 2"
+  },
+  {
+   "id": "U8",
+   "gate": "Rotate all exposed keys; remove unused keys from .env",
+   "owner": "user",
+   "blocks": "deployment / publication"
+  },
+  {
+   "id": "U9",
+   "gate": "Deployment / publication approval (secret audit must pass again first)",
+   "owner": "user",
+   "blocks": "deployment"
+  },
+  {
+   "id": "H1",
+   "gate": "Human labels: independent labelling, agreement >= 0.70, blind adjudication, truth freeze",
+   "owner": "humans",
+   "blocks": "any accuracy claim"
+  }
+ ],
+ "verdict": "NO-GO FOR EXECUTION until the pending gates are resolved; structural preparation is complete",
+ "staged_go_decisions": [
+  {
+   "stage": "GO-1",
+   "scope": "Phase 1: 15 Gemini calls (v1f frozen)",
+   "needs": [
+    "A1-A12 PASS",
+    "U1",
+    "U2",
+    "U3"
+   ]
+  },
+  {
+   "stage": "GO-2",
+   "scope": "Pass 2 pilot v2: CORE 50 -> S1b 12 -> S2REST 27 (89 real calls; challenge tests, NOT accuracy)",
+   "needs": [
+    "GO-1 outputs exist",
+    "U4",
+    "U7 for the S2 human labels"
+   ]
+  },
+  {
+   "stage": "GO-3",
+   "scope": "Phase 2 (13) + Neo4j (2)",
+   "needs": [
+    "GO-1 reviewed",
+    "U1/U2 caps renewed",
+    "U6 recommended for Neo4j"
+   ]
+  },
+  {
+   "stage": "GO-4",
+   "scope": "expansion retrieval then extraction (39) + gated (6)",
+   "needs": [
+    "U5",
+    "U6",
+    "new versioned plans after retrieval",
+    "U1/U2"
+   ]
+  },
+  {
+   "stage": "GO-5",
+   "scope": "remaining Pass 2 verification (411 distinct planned calls in total, ~703 attempts; ceiling for the 300 new-record calls)",
+   "needs": [
+    "pilot criteria pass",
+    "U4"
+   ]
+  },
+  {
+   "stage": "GO-6",
+   "scope": "human evaluation + analysis + HTML + deployment",
+   "needs": [
+    "U7",
+    "H1",
+    "U8",
+    "U9"
+   ]
+  }
+ ]
+}

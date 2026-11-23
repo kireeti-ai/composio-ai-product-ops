@@ -1,0 +1,67 @@
+{
+ "id": 14,
+ "name": "Front",
+ "pass1_sha": "625422c07d2f82f6",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Front OAuth apps are documented as an authentication method",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "API tokens and OAuth flows both use Bearer tokens in Authorization header",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "terminology_difference",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Front API tokens function as API keys, just different terminology",
+    "needs_human": true
+   }
+  ],
+  "access": [
+   {
+    "item": "unknown :: Sources document self-serve API token generation and OAuth app creation in developer settings, but do not specify whether credentials are available on a free tier or require a paid plan.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No mention of tier or payment requirements in excerpts.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states Front exposes a Core REST API",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "... and a beta MCP server; authentication is via Front API tokens or Front OAuth apps depending on the surface.",
+    "suggested_value": "",
+    "reason": "Excerpt describes MCP as beta, not official",
+    "flag": "contradiction_without_verifiable_quote",
+    "needs_human": true
+   }
+  ]
+ },
+ "complete": true
+}

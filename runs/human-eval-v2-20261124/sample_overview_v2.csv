@@ -1,0 +1,40 @@
+frame,registry_id,app,registry_category,provenance,stratum
+A,1,Salesforce,CRM and Sales,notion,baseline pilot
+A,3,Pipedrive,CRM and Sales,notion,baseline pilot
+A,9,Copper,CRM and Sales,notion,baseline pilot
+A,13,Freshdesk,Support and Helpdesk,notion,baseline pilot
+A,14,Front,Support and Helpdesk,notion,baseline pilot
+A,16,LiveAgent,Support and Helpdesk,notion,baseline pilot
+A,21,Slack,Communications and Messaging,notion,baseline pilot
+A,22,Twilio,Communications and Messaging,notion,baseline pilot
+A,28,WhatsApp Business,Communications and Messaging,notion,baseline pilot
+A,49,Amazon Selling Partner,Ecommerce,notion,baseline pilot
+A,51,DataForSEO,"Data, SEO and Scraping",reconstructed,baseline pilot
+A,84,Paygent Connect,Finance and Fintech,reconstructed,baseline pilot
+B,20,Gladly,Support and Helpdesk,notion,frozen v1f target
+B,25,Pumble,Communications and Messaging,notion,frozen v1f target
+B,26,Discord,Communications and Messaging,notion,frozen v1f target
+B,27,Telegram,Communications and Messaging,notion,frozen v1f target
+B,38,Pinterest,"Marketing, Ads, Email and Social",notion,frozen v1f target
+B,39,Threads (Meta),"Marketing, Ads, Email and Social",notion,frozen v1f target
+B,44,Salesforce Commerce Cloud,Ecommerce,notion,frozen v1f target
+B,53,Ahrefs,"Data, SEO and Scraping",reconstructed,frozen v1f target
+B,61,GitHub,"Developer, Infra and Data platforms",reconstructed,frozen v1f target
+B,62,Vercel,"Developer, Infra and Data platforms",reconstructed,frozen v1f target
+B,63,Netlify,"Developer, Infra and Data platforms",reconstructed,frozen v1f target
+B,65,Supabase,"Developer, Infra and Data platforms",reconstructed,frozen v1f target
+C,24,Lark (Larksuite),Communications and Messaging,notion,3B_partial_targeted_reretrieval
+C,30,Vonage,Communications and Messaging,notion,3A_core_ready_access_topup
+C,35,Mailchimp,"Marketing, Ads, Email and Social",notion,3A_core_ready_access_topup
+C,37,systeme.io,"Marketing, Ads, Email and Social",notion,3A_core_ready_access_topup
+C,48,Gumroad,Ecommerce,notion,3A_core_ready_access_topup
+C,64,Cloudflare,"Developer, Infra and Data platforms",reconstructed,3A_core_ready_access_topup
+C,79,Smartsheet,Productivity and Project Management,reconstructed,3B_partial_targeted_reretrieval
+C,82,Plaid,Finance and Fintech,reconstructed,4_no_retrieval_full_discovery
+C,89,Ramp,Finance and Fintech,reconstructed,4_no_retrieval_full_discovery
+C,95,Reducto,"AI, Research and Media-native",reconstructed,4_no_retrieval_full_discovery
+C,96,Devin,"AI, Research and Media-native",reconstructed,4_no_retrieval_full_discovery
+C,100,Grain,"AI, Research and Media-native",reconstructed,4_no_retrieval_full_discovery
+CAL,6,Podio,CRM and Sales,notion,calibration only (not scored)
+CAL,12,Intercom,Support and Helpdesk,notion,calibration only (not scored)
+CAL,23,Zoho Cliq,Communications and Messaging,notion,calibration only (not scored)

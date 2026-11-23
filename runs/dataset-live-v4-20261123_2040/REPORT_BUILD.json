@@ -1,0 +1,54 @@
+{
+  "run_id": "dataset-live-v4-20261123_2040",
+  "snapshot_at": "2026-11-23T20:38:59+0530",
+  "registry_positions": 100,
+  "accepted_primary_extractions": 54,
+  "frozen_v1f_plan_hash_verified": true,
+  "runner_v6_hash_verified": true,
+  "baseline_files_verified": 151,
+  "baseline_mismatches": 0,
+  "notion_reconciliation": "incomplete_authoritative_source_unavailable",
+  "model_generation_calls": 0,
+  "retrieval_calls": 0,
+  "secrets_detected_in_generated_artifacts": 0,
+  "deployed_or_published": false,
+  "APPROVED_json_created": false,
+  "tests": {
+    "test_report_generation": "6 passed",
+    "test_verify_v2_isolated": "13 passed",
+    "javascript_syntax": "passed",
+    "full_unittest_discovery": "68 passed, 1 failure in test_verify_v2 quota test; test passes when run in isolation"
+  },
+  "known_limitations": [
+    "Original Notion assignment remains inaccessible; registry has not been corrected or declared authoritative.",
+    "IDs 51-100 remain reconstructed candidates; their membership, order, and categories are not source-verified.",
+    "Human-labelled claims: 0; no accuracy or improvement claim is made.",
+    "Browser screenshot visual check completed. Browser-side interaction evaluation was blocked by the local approval policy; filtering is covered by offline helper tests."
+  ],
+  "inventory": [
+    {
+      "path": "runs/dataset-live-v4-20261123_2040/DATASET.json",
+      "sha256": "5c6a854b8103be894e885d97223bbd066a2edfd3725e56cd878368f2944f718f"
+    },
+    {
+      "path": "runs/dataset-live-v4-20261123_2040/DATASET_FLAT.csv",
+      "sha256": "3e4c335ec6f1cb8ced02bfbc72b20590e37c6623bb4f6772eca41337a3157dfc"
+    },
+    {
+      "path": "runs/dataset-live-v4-20261123_2040/REPORT.html",
+      "sha256": "92367502ee18a8c4cab6ca137b9b41f640bcd1074c682fa7fe8935cd3a7886a5"
+    },
+    {
+      "path": "runs/dataset-live-v4-20261123_2040/build_report.py",
+      "sha256": "48d0e4cf2c92faaa158837388c930c944e1165dc57a57fe744febbbee3f340ce"
+    },
+    {
+      "path": "runs/dataset-live-v4-20261123_2040/report_analytics.py",
+      "sha256": "9128d00c4148b20ed14a2050752405f9a4988d069a8fcfddea35348179f285a6"
+    },
+    {
+      "path": "runs/dataset-live-v4-20261123_2040/report_template.html",
+      "sha256": "f4674c5fecb0ae87aeaaab603d7e7b30a95906c43a437d43027feecb6634636c"
+    }
+  ]
+}

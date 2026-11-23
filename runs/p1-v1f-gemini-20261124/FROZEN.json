@@ -1,0 +1,78 @@
+{
+ "frozen_at": "2026-11-23T18:06:40+0530",
+ "status": "ACCEPTED 28-TARGET CANDIDATE PLAN - FROZEN (user decision). Not approved for execution: no APPROVED.json.",
+ "decision": "v1f accepted as the 28-target candidate plan = the 27 targets of v1e + Gladly at registry ID 20; all previous versions preserved; extraction prompt and schema frozen for these 28 targets",
+ "ids": [
+  27,
+  32,
+  33,
+  34,
+  39,
+  41,
+  43,
+  52,
+  53,
+  56,
+  76,
+  65,
+  72,
+  71,
+  61,
+  38,
+  62,
+  63,
+  36,
+  29,
+  47,
+  44,
+  26,
+  70,
+  25,
+  75,
+  46,
+  20
+ ],
+ "plan_sha256": "ea4cc11984948ed19ced66e3a4d3a0d8965011aade16396b2a7ed493c5bac274",
+ "app_status_sha256": "6ff3f60c375f8ab8d5ce50bdc4627383f925fe134a2d89e1d55a009f31b5b06c",
+ "eligibility_csv_sha256": "142791be5e0e9a11c807a80dc457083fde85f0cb3cdbc337e8065fab30786792",
+ "registry_validation_sha256": "30c033e81625e8059b1460c93faba16e7c1ce757b8fbee756a8b1e710d00bed2",
+ "readme_sha256": "240515aa02583ee6c44ce4d1135f9d7793e12c56d757925a2f0b48ecdea012ac",
+ "runner_path": "src/run_p1.py",
+ "runner_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+ "runner_recovery_copy": "run_p1_FROZEN_runner_v6.py",
+ "frozen_prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+ "frozen_schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+ "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+ "previous_versions_preserved": [
+  "audit-raw-v1-20261123",
+  "audit-raw-v2-20261123",
+  "eligibility-v1-20261123",
+  "human-eval-v1-20261124",
+  "p1-neo4j-optionB-20261124",
+  "p1-v1b-gemini-20261124",
+  "p1-v1c-gemini-20261124",
+  "p1-v1d-gemini-20261124",
+  "p1-v1e-gemini-20261124",
+  "schema-proposal-v1-20261124",
+  "security-audit-v1-20261124",
+  "topup-v1-20261123",
+  "topup-v1r-20261123",
+  "topup-v1s-20261123"
+ ],
+ "outside_this_plan": {
+  "neo4j": "runs/p1-neo4j-optionB-20261124 (Option B, held, not approved)",
+  "held": [
+   73,
+   78
+  ],
+  "excluded": [
+   58,
+   80,
+   50
+  ]
+ },
+ "allowed_additions": [
+  "APPROVED.json"
+ ],
+ "rule": "any change to PLAN.json or src/run_p1.py makes the runner refuse to start"
+}

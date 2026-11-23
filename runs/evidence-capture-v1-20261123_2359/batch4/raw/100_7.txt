@@ -1,0 +1,17 @@
+
+Official Grain MCP Server: Quick Start Guide — Grain Developers
+/
+MCP Docs
+API Docs ↗
+grain.com ↗
+Official Grain MCP Server
+Claude 60-Second Setup
+ChatGPT Quick Setup
+Available MCP Tools and Basic Usage Examples
+Structured Reporting Examples
+FAQ
+Official Grain MCP Server: Quick Start Guide
+The Grain MCP (Model Context Protocol) connects Claude.ai (and other AI chat clients) directly to your meeting data in Grain, enabling powerful AI-powered individual workflows as well as customer and team analytics/reporting directly within Claude.ai. While we are working on support for ChatGPT (email mike (at) grain (dot) com if you want to be on the ChatGPT early access list), we encourage users who plan to prioritize MCP in their workflow to use Claude as it's support for MCP is currently meaningfully more mature and robust.
+Next
+Claude 60-Second Setup
+→

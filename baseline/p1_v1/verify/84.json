@@ -1,0 +1,66 @@
+{
+ "id": 84,
+ "name": "Paygent Connect",
+ "pass1_sha": "3250ab5c23c8cefe",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "bearer_token",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Authorization header uses Bearer token",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "SDK initialization requires an api_key",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can sign up and get an API key from the dashboard immediately.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt says sign up and get API key from dashboard.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "REST endpoints are documented in the excerpts.",
+    "needs_human": false
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "verdict": "contradicted",
+    "evidence_quote": "These are plain REST calls (curl and Python\n\n```\nhttpx\n```",
+    "suggested_value": "",
+    "reason": "Excerpt shows REST calls, contradicting SDK\u2011only claim.",
+    "needs_human": true
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention any MCP",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

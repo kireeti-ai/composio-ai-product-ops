@@ -1,0 +1,155 @@
+{
+ "tag": "groq_orgA",
+ "app": 75,
+ "name": "Asana",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 11,
+ "latency_s": 3.69,
+ "tokens_in": 3369,
+ "tokens_out": 856,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "quote": "A personal access token (PAT) contains your security credentials for the Asana platform. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developers.asana.com/docs/authentication",
+    "quote": "OAuth is more complex to implement than using token\u2011based auth (i.e., PATs and SAs), but it offers more features and security.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "quote": "You can generate a personal access token from the Asana developer console.",
+    "issues": [
+     "not_in_shown_evidence"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.asana.com/docs/quick-start",
+    "quote": "The Asana API is a RESTful interface with predictable resource\u2011oriented URLs, accepts JSON or form\u2011encoded requests, returns JSON, and uses standard HTTP features.",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "quote": "If you build an app, and the app needs to perform actions on behalf of users ... you should use OAuth.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 1,
+   "unsupported": 3,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 5,
+  "evidence_valid": 1,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 1,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 3,
+   "not_in_shown_evidence": 1
+  }
+ },
+ "output": {
+  "one_liner": "Asana is a work management platform that offers a RESTful API for programmatic access to tasks, projects, and other workspace data.",
+  "auth_methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can generate a personal access token (PAT) in the Asana developer console without needing a paid plan.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "buildability": "yes",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "quote": "A personal access token (PAT) contains your security credentials for the Asana platform. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developers.asana.com/docs/authentication",
+    "quote": "OAuth is more complex to implement than using token\u2011based auth (i.e., PATs and SAs), but it offers more features and security."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "quote": "You can generate a personal access token from the Asana developer console."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.asana.com/docs/quick-start",
+    "quote": "The Asana API is a RESTful interface with predictable resource\u2011oriented URLs, accepts JSON or form\u2011encoded requests, returns JSON, and uses standard HTTP features."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "quote": "If you build an app, and the app needs to perform actions on behalf of users ... you should use OAuth."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "bc14bffb3d7d87fa617c042feda7c74fc2d687aa50cb4ea806b8a4a978139904",
+ "at": "2026-11-23T19:51:39+05:30"
+}

@@ -1,0 +1,56 @@
+{
+ "id": 7,
+ "name": "Zoho CRM",
+ "category": "CRM and Sales",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://zoho.com/crm/developer/docs/api/v8/api-collection.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/",
+  "https://www.zoho.com/crm/developer/docs/",
+  "https://www.zoho.com/crm/developer/"
+ ],
+ "one_liner": "Zoho CRM provides REST and GraphQL APIs, multi-language SDKs, and built-in MCP server capabilities to extend and automate customer relationship management workflows.",
+ "auth_methods": [
+  "oauth2"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers can create a fully featured free Developer Edition account to build and test applications.",
+ "api_types": [
+  "rest",
+  "graphql"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://zoho.com/crm/developer/docs/api/v8/api-collection.html",
+   "quote": "client-id: The consumer key generated from the connected app. You get this value when you register your application.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://www.zoho.com/crm/developer/",
+   "quote": "The fully featured free Developer Edition is the perfect environment for users to learn their way around Zoho CRM's configuration, data model, and developer tools without risking access to any of your production data.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://www.zoho.com/crm/developer/docs/",
+   "quote": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://www.zoho.com/crm/developer/",
+   "quote": "Configure an MCP server to enable AI agents to autonomously perform end-to-end tasks, removing repetitive manual steps across 950+ Zoho and third-party services.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

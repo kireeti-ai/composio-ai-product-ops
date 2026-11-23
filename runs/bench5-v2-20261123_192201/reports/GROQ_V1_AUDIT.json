@@ -1,0 +1,587 @@
+{
+ "created": "2026-11-23T19:26:32+05:30",
+ "method": "offline deterministic re-validation (validate_v2) + MCP mention search over FULL and SHOWN evidence; NOT independent human ground truth",
+ "apps": [
+  {
+   "id": 27,
+   "name": "Telegram",
+   "existing_mcp_v1": "none_found",
+   "mcp_mentions_in_full_evidence": 0,
+   "mcp_mentions_in_shown_evidence": 0,
+   "mcp_mentions_dropped_by_reduction": 0,
+   "mcp_full_examples": [],
+   "validation_v2": {
+    "evidence": [
+     {
+      "field": "access",
+      "url": "https://core.telegram.org/api/obtaining_api_id",
+      "quote": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "auth_methods",
+      "url": "https://core.telegram.org/widgets/login",
+      "quote": "Telegram offers app and website developers a free and open platform that lets over 1\u202fbillion users seamlessly sign up and log in with their Telegram accounts.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "auth_methods",
+      "url": "https://core.telegram.org/api/obtaining_api_id",
+      "quote": "Everyone is welcome to use our open source code. ... It is necessary that you obtain your own API id before you publish your app.",
+      "quote_found": false,
+      "url_in_sources": true,
+      "quote_in_full_evidence": false,
+      "issues": [
+       "stitched_ellipsis",
+       "not_contiguous_in_cited_page"
+      ],
+      "valid": false
+     },
+     {
+      "field": "api_types",
+      "url": "https://core.telegram.org/widgets/login",
+      "quote": "Login Widget ... returns an ID token containing user claims.",
+      "quote_found": false,
+      "url_in_sources": true,
+      "quote_in_full_evidence": false,
+      "issues": [
+       "stitched_ellipsis",
+       "not_contiguous_in_cited_page"
+      ],
+      "valid": false
+     },
+     {
+      "field": "existing_mcp",
+      "url": "",
+      "quote": "unknown",
+      "quote_found": false,
+      "url_in_sources": false,
+      "quote_in_full_evidence": false,
+      "issues": [
+       "placeholder_or_too_short",
+       "url_not_in_sources"
+      ],
+      "valid": false
+     }
+    ],
+    "claims": [
+     {
+      "field": "auth_methods",
+      "item": "oauth2",
+      "state": "unsupported"
+     },
+     {
+      "field": "auth_methods",
+      "item": "api_key",
+      "state": "unsupported"
+     },
+     {
+      "field": "access",
+      "item": "self_serve_free",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "api_types",
+      "item": "rest",
+      "state": "unsupported"
+     },
+     {
+      "field": "existing_mcp",
+      "item": "none_found",
+      "state": "not_found_in_provided_evidence"
+     }
+    ],
+    "claim_state_counts": {
+     "unsupported": 3,
+     "supported_lexical": 1,
+     "not_found_in_provided_evidence": 1
+    },
+    "evidence_total": 5,
+    "evidence_valid": 2,
+    "issue_counts": {
+     "placeholder_or_too_short": 1,
+     "stitched_ellipsis": 2,
+     "too_long": 0,
+     "url_not_in_sources": 1,
+     "not_contiguous_in_cited_page": 2,
+     "not_in_shown_evidence": 0
+    }
+   },
+   "v1_validation": {
+    "quote_found": 2,
+    "n_evidence": 5
+   }
+  },
+  {
+   "id": 32,
+   "name": "Meta Ads",
+   "existing_mcp_v1": "none_found",
+   "mcp_mentions_in_full_evidence": 0,
+   "mcp_mentions_in_shown_evidence": 0,
+   "mcp_mentions_dropped_by_reduction": 0,
+   "mcp_full_examples": [],
+   "validation_v2": {
+    "evidence": [
+     {
+      "field": "auth_methods",
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md",
+      "quote": "Every Marketing API call requires an access token as a parameter.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "access",
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/using-the-api/faq.md",
+      "quote": "To use the Marketing API in production, you must submit your app for review and receive approval.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "api_types",
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md",
+      "quote": "Every Marketing API call requires an access token as a parameter.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "existing_mcp",
+      "url": "unknown",
+      "quote": "unknown",
+      "quote_found": false,
+      "url_in_sources": false,
+      "quote_in_full_evidence": false,
+      "issues": [
+       "placeholder_or_too_short",
+       "url_not_in_sources"
+      ],
+      "valid": false
+     }
+    ],
+    "claims": [
+     {
+      "field": "auth_methods",
+      "item": "oauth2",
+      "state": "unsupported"
+     },
+     {
+      "field": "access",
+      "item": "approval_or_review_required",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "api_types",
+      "item": "rest",
+      "state": "unsupported"
+     },
+     {
+      "field": "existing_mcp",
+      "item": "none_found",
+      "state": "not_found_in_provided_evidence"
+     }
+    ],
+    "claim_state_counts": {
+     "unsupported": 2,
+     "supported_lexical": 1,
+     "not_found_in_provided_evidence": 1
+    },
+    "evidence_total": 4,
+    "evidence_valid": 3,
+    "issue_counts": {
+     "placeholder_or_too_short": 1,
+     "stitched_ellipsis": 0,
+     "too_long": 0,
+     "url_not_in_sources": 1,
+     "not_contiguous_in_cited_page": 0,
+     "not_in_shown_evidence": 0
+    }
+   },
+   "v1_validation": {
+    "quote_found": 3,
+    "n_evidence": 4
+   }
+  },
+  {
+   "id": 41,
+   "name": "Shopify",
+   "existing_mcp_v1": "official",
+   "mcp_mentions_in_full_evidence": 2,
+   "mcp_mentions_in_shown_evidence": 2,
+   "mcp_mentions_dropped_by_reduction": 0,
+   "mcp_full_examples": [
+    {
+     "url": "https://shopify.dev/docs/api",
+     "ctx": "o shopify's developer docs, api schemas, and shopify cli, so they can help you build across the whole platform. shopify mcp lets merchants and partners set up and manage a store through the ai agent of their choice. dev stores are stores with test data that you build and test agains"
+    },
+    {
+     "url": "https://shopify.dev/docs",
+     "ctx": "orrectly instead of guessing. before you install, make sure you have node.js 18 or higher. for agent skills and the dev mcp server, see the shopify ai toolkit page. claude code in your terminal, run claude plugin install: claude plugin install shopify-ai-toolkit@claude-plugins-offic"
+    }
+   ],
+   "validation_v2": {
+    "evidence": [
+     {
+      "field": "auth_methods",
+      "url": "https://shopify.dev/docs/api/usage/authentication",
+      "quote": "GraphQL Admin API | Your app, on behalf of a merchant | OAuth, usually token exchange",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "access",
+      "url": "https://shopify.dev/docs/api",
+      "quote": "The Dev Dashboard is where you create and manage apps, set up dev stores, and see how your app performs for merchants.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "api_types",
+      "url": "https://shopify.dev/docs/api",
+      "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "existing_mcp",
+      "url": "https://shopify.dev/docs/api",
+      "quote": "Shopify MCP lets merchants and partners set up and manage a store through the AI agent of their choice.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     }
+    ],
+    "claims": [
+     {
+      "field": "auth_methods",
+      "item": "oauth2",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "auth_methods",
+      "item": "api_key",
+      "state": "unsupported"
+     },
+     {
+      "field": "access",
+      "item": "self_serve_free",
+      "state": "unsupported"
+     },
+     {
+      "field": "api_types",
+      "item": "rest",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "api_types",
+      "item": "graphql",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "existing_mcp",
+      "item": "official",
+      "state": "supported_lexical"
+     }
+    ],
+    "claim_state_counts": {
+     "supported_lexical": 4,
+     "unsupported": 2
+    },
+    "evidence_total": 4,
+    "evidence_valid": 4,
+    "issue_counts": {
+     "placeholder_or_too_short": 0,
+     "stitched_ellipsis": 0,
+     "too_long": 0,
+     "url_not_in_sources": 0,
+     "not_contiguous_in_cited_page": 0,
+     "not_in_shown_evidence": 0
+    }
+   },
+   "v1_validation": {
+    "quote_found": 4,
+    "n_evidence": 4
+   }
+  },
+  {
+   "id": 53,
+   "name": "Ahrefs",
+   "existing_mcp_v1": "none_found",
+   "mcp_mentions_in_full_evidence": 3,
+   "mcp_mentions_in_shown_evidence": 0,
+   "mcp_mentions_dropped_by_reduction": 3,
+   "mcp_full_examples": [
+    {
+     "url": "https://docs.ahrefs.com/",
+     "ctx": "anage your api keys changelog latest api updates and changes openapi spec full machine-readable spec for every endpoint mcp connect your ahrefs data to ai assistants and agents to enhance their answers with real marketing insights. introduction what is mcp and how to get started cla"
+    },
+    {
+     "url": "https://docs.ahrefs.com/",
+     "ctx": "our ahrefs data to ai assistants and agents to enhance their answers with real marketing insights. introduction what is mcp and how to get started claude desktop / web connect ahrefs to claude on desktop or web chatgpt setup use ahrefs data in chatgpt conversations claude code integ"
+    },
+    {
+     "url": "https://docs.ahrefs.com/",
+     "ctx": "up use ahrefs data in chatgpt conversations claude code integrate ahrefs into your coding workflow introduction what is mcp and how to get started claude desktop / web connect ahrefs to claude on desktop or web chatgpt setup use ahrefs data in chatgpt conversations claude code integ"
+    }
+   ],
+   "validation_v2": {
+    "evidence": [
+     {
+      "field": "auth_methods",
+      "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+      "quote": "Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "access",
+      "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+      "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "api_types",
+      "url": "https://docs.ahrefs.com/en/api/reference/public",
+      "quote": "https://api.ahrefs.com/v3/public",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [
+       "placeholder_or_too_short"
+      ],
+      "valid": false
+     },
+     {
+      "field": "existing_mcp",
+      "url": "https://docs.ahrefs.com/",
+      "quote": "unknown",
+      "quote_found": false,
+      "url_in_sources": true,
+      "quote_in_full_evidence": false,
+      "issues": [
+       "placeholder_or_too_short",
+       "not_contiguous_in_cited_page"
+      ],
+      "valid": false
+     }
+    ],
+    "claims": [
+     {
+      "field": "auth_methods",
+      "item": "bearer_token",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "access",
+      "item": "self_serve_trial_or_paid_plan",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "api_types",
+      "item": "rest",
+      "state": "unsupported"
+     },
+     {
+      "field": "existing_mcp",
+      "item": "none_found",
+      "state": "not_found_in_provided_evidence"
+     }
+    ],
+    "claim_state_counts": {
+     "supported_lexical": 2,
+     "unsupported": 1,
+     "not_found_in_provided_evidence": 1
+    },
+    "evidence_total": 4,
+    "evidence_valid": 2,
+    "issue_counts": {
+     "placeholder_or_too_short": 2,
+     "stitched_ellipsis": 0,
+     "too_long": 0,
+     "url_not_in_sources": 0,
+     "not_contiguous_in_cited_page": 1,
+     "not_in_shown_evidence": 0
+    }
+   },
+   "v1_validation": {
+    "quote_found": 3,
+    "n_evidence": 4
+   }
+  },
+  {
+   "id": 61,
+   "name": "GitHub",
+   "existing_mcp_v1": "none_found",
+   "mcp_mentions_in_full_evidence": 0,
+   "mcp_mentions_in_shown_evidence": 0,
+   "mcp_mentions_dropped_by_reduction": 0,
+   "mcp_full_examples": [],
+   "validation_v2": {
+    "evidence": [
+     {
+      "field": "auth_methods",
+      "url": "https://docs.github.com/enterprise/11.10.340/developer/v3/auth",
+      "quote": "While the API provides multiple methods for authentication, we strongly recommend using OAuth for production applications.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "auth_methods",
+      "url": "https://docs.github.com/enterprise/11.10.340/developer/v3/auth",
+      "quote": "Alternatively, you can authenticate using personal access tokens or OAuth tokens.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "auth_methods",
+      "url": "https://docs.github.com/enterprise/11.10.340/developer/v3/auth",
+      "quote": "This approach is useful if your tools only support Basic Authentication but you want to take advantage of OAuth access token security features.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "auth_methods",
+      "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+      "quote": "header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}'",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "access",
+      "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+      "quote": "Click **Generate new token**.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "api_types",
+      "url": "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+      "quote": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+      "quote_found": true,
+      "url_in_sources": true,
+      "quote_in_full_evidence": true,
+      "issues": [],
+      "valid": true
+     },
+     {
+      "field": "existing_mcp",
+      "url": "https://github.com/pricing",
+      "quote": "Free: 2,000 minutes/month ... Enterprise: 50,000 CI/CD minutes/month",
+      "quote_found": false,
+      "url_in_sources": true,
+      "quote_in_full_evidence": false,
+      "issues": [
+       "stitched_ellipsis",
+       "not_contiguous_in_cited_page"
+      ],
+      "valid": false
+     }
+    ],
+    "claims": [
+     {
+      "field": "auth_methods",
+      "item": "oauth2",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "auth_methods",
+      "item": "api_key",
+      "state": "unsupported"
+     },
+     {
+      "field": "auth_methods",
+      "item": "basic",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "auth_methods",
+      "item": "bearer_token",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "access",
+      "item": "self_serve_free",
+      "state": "unsupported"
+     },
+     {
+      "field": "api_types",
+      "item": "rest",
+      "state": "supported_lexical"
+     },
+     {
+      "field": "existing_mcp",
+      "item": "none_found",
+      "state": "not_found_in_provided_evidence"
+     }
+    ],
+    "claim_state_counts": {
+     "supported_lexical": 4,
+     "unsupported": 2,
+     "not_found_in_provided_evidence": 1
+    },
+    "evidence_total": 7,
+    "evidence_valid": 6,
+    "issue_counts": {
+     "placeholder_or_too_short": 0,
+     "stitched_ellipsis": 1,
+     "too_long": 0,
+     "url_not_in_sources": 0,
+     "not_contiguous_in_cited_page": 1,
+     "not_in_shown_evidence": 0
+    }
+   },
+   "v1_validation": {
+    "quote_found": 6,
+    "n_evidence": 7
+   }
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+title: MCP
+source_url: /developer-api/v1/mcp
+summary: The Model Context Protocol (MCP) lets AI assistants work with your systems directly. Ramp runs two MCP servers, one for your Ramp account and one for Ramp Data benchmarks.
+
+content:
+The [Model Context Protocol (MCP)↗](<https://modelcontextprotocol.io/introduction>) lets AI assistants work with your systems directly. Ramp runs two MCP servers, one for your Ramp account and one for Ramp Data benchmarks.
+
+- [Ramp MCP](</developer-api/v1/ramp-mcp>): connect AI assistants to your Ramp account to analyze spend, process approvals, and take permitted actions.
+
+- [Ramp Data MCP](</developer-api/v1/ramp-data-mcp>): query Ramp Rate benchmarks and AI Index adoption metrics. Requires a Ramp Data API key.
+
+Terminals and coding agents can also connect with [Ramp CLI](</developer-api/v1/cli>). Coding agents that need these developer docs can read [`llms.txt`↗](<https://docs.ramp.com/llms.txt>); it replaces the retired Developer MCP server.

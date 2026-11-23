@@ -1,0 +1,93 @@
+{
+ "run_id": "manual-research-evidence-v2-20261123_2310",
+ "source_mode": "WebSearch summaries restricted to official vendor domains; NO contiguous quotes captured, so nothing here is quote-verified",
+ "model_calls": 0,
+ "paid_calls": 0,
+ "records": [
+  {
+   "app_id": 73,
+   "name": "Linear",
+   "registry_hint": "developers.linear.app",
+   "records": [
+    {
+     "field": "authentication",
+     "claim": "API accepts personal API keys (Authorization header) and OAuth2 bearer tokens; client-credentials tokens exist for server-to-server.",
+     "status": "search_summary_only_unquoted",
+     "evidence": [
+      {
+       "url": "https://linear.app/developers/oauth-2-0-authentication",
+       "quote": null,
+       "retrieved_at_utc": "2026-11-23T16:23:52.960883Z"
+      },
+      {
+       "url": "https://linear.app/developers/graphql",
+       "quote": null,
+       "retrieved_at_utc": "2026-11-23T16:23:52.960883Z"
+      }
+     ]
+    },
+    {
+     "field": "api_surface",
+     "claim": "GraphQL API with a TypeScript SDK.",
+     "status": "search_summary_only_unquoted",
+     "evidence": [
+      {
+       "url": "https://linear.app/developers/graphql",
+       "quote": null,
+       "retrieved_at_utc": "2026-11-23T16:23:52.960883Z"
+      },
+      {
+       "url": "https://linear.app/developers/sdk",
+       "quote": null,
+       "retrieved_at_utc": "2026-11-23T16:23:52.960883Z"
+      }
+     ]
+    }
+   ],
+   "unknown_fields": [
+    "access/pricing",
+    "MCP",
+    "Composio coverage",
+    "buildability"
+   ]
+  },
+  {
+   "app_id": 86,
+   "name": "QuickBooks",
+   "registry_hint": "developer.intuit.com",
+   "records": [
+    {
+     "field": "authentication",
+     "claim": "QuickBooks Online API uses OAuth 2.0 (authorization code, scope com.intuit.quickbooks.accounting); access tokens last 60 min.",
+     "status": "search_summary_only_unquoted",
+     "evidence": [
+      {
+       "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+       "quote": null,
+       "retrieved_at_utc": "2026-11-23T16:23:52.960883Z"
+      }
+     ]
+    },
+    {
+     "field": "access",
+     "claim": "Client ID/secret come from the Intuit Developer portal with separate sandbox and production keys.",
+     "status": "search_summary_only_unquoted",
+     "evidence": [
+      {
+       "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+       "quote": null,
+       "retrieved_at_utc": "2026-11-23T16:23:52.960883Z"
+      }
+     ]
+    }
+   ],
+   "unknown_fields": [
+    "API types/operations",
+    "MCP",
+    "Composio coverage",
+    "buildability",
+    "production-access gating"
+   ]
+  }
+ ]
+}

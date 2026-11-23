@@ -1,0 +1,149 @@
+{
+ "tag": "groq_orgA",
+ "app": 46,
+ "name": "Squarespace",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 12,
+ "latency_s": 2.73,
+ "tokens_in": 3317,
+ "tokens_out": 551,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "authenticate requests by using an API key or OAuth access token.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developers.squarespace.com/oauth",
+    "quote": "Authorization ... Basic <base64> ... OAuth 2.0 authentication is started between the client and Squarespace APIs.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "Depending on your development needs, you can use a generated API key or start the OAuth process with Squarespace to become a registered OAuth client.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.squarespace.com/commerce-apis/website-overview",
+    "quote": "Obtain an API key or use OAuth to authenticate your requests",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "Squarespace Extensions are required to use OAuth.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "supported_lexical": 3,
+   "unsupported": 1,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 5,
+  "evidence_valid": 4,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 1,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Squarespace provides Commerce REST APIs secured via API keys or OAuth 2.0 for merchant site data.",
+  "auth_methods": [
+   "oauth2",
+   "api_key"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can generate an API key in the Squarespace admin or start the OAuth client process to obtain credentials.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "narrow",
+  "existing_mcp": "none_found",
+  "buildability": "yes",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "authenticate requests by using an API key or OAuth access token."
+   },
+   {
+    "field": "auth_methods",
+    "url": "https://developers.squarespace.com/oauth",
+    "quote": "Authorization ... Basic <base64> ... OAuth 2.0 authentication is started between the client and Squarespace APIs."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "Depending on your development needs, you can use a generated API key or start the OAuth process with Squarespace to become a registered OAuth client."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.squarespace.com/commerce-apis/website-overview",
+    "quote": "Obtain an API key or use OAuth to authenticate your requests"
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "Squarespace Extensions are required to use OAuth."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "507e078be29d735769ede70506958f3b4320cfa34beaad47d11c3b97ad455d38",
+ "at": "2026-11-23T19:52:38+05:30"
+}

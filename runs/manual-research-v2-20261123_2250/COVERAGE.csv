@@ -1,0 +1,47 @@
+id,name,cached_pages,official_domain_matches,quote_candidates,failed_attempts,status
+15,Pylon,18,18,10,4,manual_review_required
+24,Lark (Larksuite),21,21,10,0,manual_review_required
+31,Google Ads,14,14,10,2,manual_review_required
+37,systeme.io,19,0,0,0,manual_review_required
+40,SendGrid,22,13,6,0,manual_review_required
+42,WooCommerce,23,23,10,2,manual_review_required
+45,Magento (Adobe Commerce),16,16,8,2,manual_review_required
+48,Gumroad,16,16,10,4,manual_review_required
+50,fanbasis,0,0,0,0,official_retrieval_gap
+54,MrScraper,16,16,10,0,manual_review_required
+55,Apify,19,17,10,0,manual_review_required
+57,Bright Data,18,18,10,0,manual_review_required
+58,Sherlock,0,0,0,0,official_retrieval_gap
+59,Waterfall.io,0,0,0,0,official_retrieval_gap
+60,Clay,0,0,0,0,official_retrieval_gap
+64,Cloudflare,22,22,10,1,manual_review_required
+66,Neo4j,2,2,4,1,manual_review_required
+67,Snowflake,16,16,10,2,manual_review_required
+68,MongoDB Atlas,0,0,0,0,official_retrieval_gap
+69,Datadog,17,15,10,2,manual_review_required
+71,Notion,14,14,8,0,manual_review_required
+73,Linear,0,0,0,0,official_retrieval_gap
+74,Jira,2,0,0,0,manual_review_required
+77,ClickUp,20,20,10,0,manual_review_required
+78,Coda,0,0,0,0,official_retrieval_gap
+79,Smartsheet,19,17,10,1,manual_review_required
+80,Harvest,0,0,0,0,official_retrieval_gap
+81,Stripe,11,11,10,0,manual_review_required
+82,Plaid,12,12,10,2,manual_review_required
+83,Binance,2,0,0,4,manual_review_required
+85,iPayX,7,7,1,0,manual_review_required
+86,QuickBooks,0,0,0,0,official_retrieval_gap
+87,Xero,8,8,10,2,manual_review_required
+88,Brex,15,15,10,0,manual_review_required
+89,Ramp,12,12,10,1,manual_review_required
+90,PitchBook,11,0,0,0,manual_review_required
+91,NotebookLM,0,0,0,0,official_retrieval_gap
+92,Otter AI,0,0,0,0,official_retrieval_gap
+93,Fathom,6,0,0,0,manual_review_required
+94,Consensus,10,0,0,1,manual_review_required
+95,Reducto,9,0,0,1,manual_review_required
+96,Devin,13,0,0,0,manual_review_required
+97,higgsfield,11,11,8,1,manual_review_required
+98,Mermaid CLI,0,0,0,0,official_retrieval_gap
+99,YouTube Transcript,0,0,0,0,official_retrieval_gap
+100,Grain,13,0,0,0,manual_review_required

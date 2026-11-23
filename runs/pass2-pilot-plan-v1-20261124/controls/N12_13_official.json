@@ -1,0 +1,62 @@
+{
+ "id": 13,
+ "name": "Freshdesk",
+ "category": "Support and Helpdesk",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developers.freshdesk.com/",
+  "https://support.freshdesk.com/support/solutions/articles/50000000978-authenticating-users-into-the-help-widget",
+  "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+  "https://support.freshdesk.com/support/solutions/articles/50000009511-automation-examples-using-webhooks"
+ ],
+ "one_liner": "Freshdesk is a cloud-based customer support software that provides ticketing, automation, and helpdesk management tools.",
+ "auth_methods": [
+  "api_key",
+  "jwt_or_signed"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers can sign up for a free Freshdesk account directly on the website to access profile settings and generate API keys.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "official",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+   "quote": "Copy-paste this as required to authenticate third-party solutions.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developers.freshdesk.com/",
+   "quote": "Signup for free",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000009511-automation-examples-using-webhooks",
+   "quote": "Under URL, use Freshdesk\u2019s Update ticket API call.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developers.freshdesk.com/",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ],
+ "planted_control": {
+  "field": "existing_mcp",
+  "planted_item": "official",
+  "original_value": "none_found",
+  "proof": "regex found no support in any stored source page: \\bmcp\\b|model context protocol"
+ }
+}

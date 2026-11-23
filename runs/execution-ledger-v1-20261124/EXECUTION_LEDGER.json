@@ -1,0 +1,4426 @@
+{
+ "reconciliation": {
+  "created": "2026-11-23T18:21:58+0530",
+  "total_apps": 100,
+  "apps_with_existing_baseline_record": 26,
+  "apps_with_a_new_gemini_call": 74,
+  "gemini_calls_total_minimum": 75,
+  "formula": "28 (v1f) + 2 (Neo4j, 1 app) + 39 (expansion waves 3A+3B+4) + 6 (identity-gated) = 75 calls over 74 apps",
+  "calls_by_group": {
+   "A_v1f_frozen": 28,
+   "B_neo4j_optionB": 2,
+   "C_expansion": 39,
+   "D_identity_gated": 6
+  },
+  "apps_by_group": {
+   "A_v1f_frozen": 28,
+   "B_neo4j_optionB": 1,
+   "C_expansion": 39,
+   "D_identity_gated": 6
+  },
+  "the_six_identity_gated_calls": {
+   "73": {
+    "app": "Linear",
+    "status": "HELD_IDENTITY_PROVISIONAL",
+    "why_gated": "identity provisional (name + domain consistency only)",
+    "what_unlocks_it": "user confirms identity; access-evidence top-up (free retrieval)",
+    "provenance": "reconstructed"
+   },
+   "78": {
+    "app": "Coda",
+    "status": "HELD_IDENTITY_PROVISIONAL",
+    "why_gated": "identity provisional; superhuman.com hits suggest docs migration",
+    "what_unlocks_it": "user confirms identity and canonical docs; access top-up",
+    "provenance": "reconstructed"
+   },
+   "80": {
+    "app": "Harvest",
+    "status": "EXCLUDED_IDENTITY_UNRESOLVED",
+    "why_gated": "3 different products retrieved (getharvest / harvestapi / Greenhouse Harvest API); #80 has NO hint (reconstructed list)",
+    "what_unlocks_it": "authoritative identity (Notion hint) then fresh targeted retrieval",
+    "provenance": "reconstructed"
+   },
+   "50": {
+    "app": "fanbasis",
+    "status": "EXCLUDED_IDENTITY_UNRESOLVED",
+    "why_gated": "fanbasis.io unconfirmed; openstage.live excluded; dev-docs password-gated",
+    "what_unlocks_it": "user confirms fanbasis.io; retrieval of public docs may be impossible (docs gated)",
+    "provenance": "original"
+   },
+   "59": {
+    "app": "Waterfall.io",
+    "status": "EXPANSION_3H_PROVISIONAL_IDENTITY",
+    "why_gated": "provisional identity (user decision); reconstructed list",
+    "what_unlocks_it": "user confirms identity; access top-up",
+    "provenance": "reconstructed"
+   },
+   "60": {
+    "app": "Clay",
+    "status": "EXPANSION_3H_PROVISIONAL_IDENTITY",
+    "why_gated": "provisional identity (user decision); reconstructed list",
+    "what_unlocks_it": "user confirms identity; access top-up",
+    "provenance": "reconstructed"
+   }
+  },
+  "commitment_breakdown": {
+   "committed_after_approval(A)": 28,
+   "conditional_retrieval_recommended(B)": 2,
+   "conditional_on_retrieval_and_identity(C)": 39,
+   "conditional_on_identity(D)": 6
+  },
+  "why_no_double_counting": [
+   "the 6 gated apps are NOT in the 28 (v1f) nor in the 39: wave 3H (Waterfall.io, Clay) is excluded from the 39 and counted once in the 6",
+   "Neo4j (#66) is not in the 28 and not in the 39; its 2 calls are 1 app x 2 surfaces",
+   "Sherlock (#58) and Front (#14) already have baseline records and are NOT counted (optional re-extraction listed separately)",
+   "41 unplanned apps = 39 (group C) + 2 (3H, counted in group D): checked",
+   "unique (app, surface) pairs = 75; apps with a new call = 74; 26 baseline + 74 = 100: checked"
+  ],
+  "not_in_the_75": {
+   "optional_reextraction_58_and_14": 2,
+   "corrected_pass_estimate_20pct": 15,
+   "note": "a corrected pass would be a new versioned run"
+  },
+  "groq_verification": {
+   "records": 101,
+   "planned_calls": 403,
+   "note": "baseline records use the measured plan (103); new records use 4 per record (estimate)"
+  },
+  "approvable_now": {
+   "count": 28,
+   "group": "A_v1f_frozen (needs your approval + quota check only)"
+  },
+  "conditional": {
+   "count": 47,
+   "note": "B + C + D need retrieval and/or identity confirmation and their own approved plans"
+  }
+ },
+ "apps": [
+  {
+   "registry_id": 1,
+   "app": "Salesforce",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [
+    "baseline_record_written_twice(final version verified)"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 2,
+   "app": "HubSpot",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [
+    "baseline_record_written_twice(final version verified)"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 3,
+   "app": "Pipedrive",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [
+    "baseline_record_written_twice(final version verified)"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 4,
+   "app": "Attio",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 5,
+   "app": "Twenty",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [
+    "baseline_record_written_twice(final version verified)"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 6,
+   "app": "Podio",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 7,
+   "app": "Zoho CRM",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 8,
+   "app": "Close",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 9,
+   "app": "Copper",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 10,
+   "app": "DealCloud",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "CRM and Sales",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 11,
+   "app": "Zendesk",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 12,
+   "app": "Intercom",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 13,
+   "app": "Freshdesk",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 14,
+   "app": "Front",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [
+    "baseline_record_weak_sources(dev.frontapp.com never fetched)"
+   ],
+   "optional_calls": "re-extraction after identity/source fix (NOT in the 75)"
+  },
+  {
+   "registry_id": 15,
+   "app": "Pylon",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3B_partial_targeted_reretrieval",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G045"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 16,
+   "app": "LiveAgent",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 17,
+   "app": "Plain",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 18,
+   "app": "Help Scout",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 19,
+   "app": "Gorgias",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 20,
+   "app": "Gladly",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Support and Helpdesk",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (D_added_access_explicit_account_gated)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G028"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 21,
+   "app": "Slack",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 22,
+   "app": "Twilio",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 23,
+   "app": "Zoho Cliq",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 24,
+   "app": "Lark (Larksuite)",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3B_partial_targeted_reretrieval",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G046"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 25,
+   "app": "Pumble",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G025"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 26,
+   "app": "Discord",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G023"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 27,
+   "app": "Telegram",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G001"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 28,
+   "app": "WhatsApp Business",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 29,
+   "app": "Aircall",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G020"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 30,
+   "app": "Vonage",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Communications and Messaging",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G031"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 31,
+   "app": "Google Ads",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3B_partial_targeted_reretrieval",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G047"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 32,
+   "app": "Meta Ads",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G002"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 33,
+   "app": "LinkedIn Ads",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G003"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 34,
+   "app": "GoHighLevel",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G004"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 35,
+   "app": "Mailchimp",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G032"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 36,
+   "app": "Klaviyo",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (B_access_inferred_self_serve)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G019"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 37,
+   "app": "systeme.io",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G033"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 38,
+   "app": "Pinterest",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (B2_topup_access_explicit_phase2)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G016"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 39,
+   "app": "Threads (Meta)",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G005"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 40,
+   "app": "SendGrid",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Marketing, Ads, Email and Social",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G034"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 41,
+   "app": "Shopify",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G006"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 42,
+   "app": "WooCommerce",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G035"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 43,
+   "app": "BigCommerce",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G007"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 44,
+   "app": "Salesforce Commerce Cloud",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G022"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G036"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 46,
+   "app": "Squarespace",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G027"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 47,
+   "app": "Ecwid",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G021"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 48,
+   "app": "Gumroad",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G037"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 49,
+   "app": "Amazon Selling Partner",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 50,
+   "app": "fanbasis",
+   "provenance_group": "ORIGINAL_NOTION_LIST_1_50",
+   "original_notion_membership_verified": true,
+   "registry_category": "Ecommerce",
+   "master_status": "EXCLUDED_IDENTITY_UNRESOLVED",
+   "plan_ref": "excluded pending authoritative identity resolution",
+   "execution_group": "D_identity_gated",
+   "gemini_call_ids": [
+    "G073"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 51,
+   "app": "DataForSEO",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 52,
+   "app": "SE Ranking",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G008"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 53,
+   "app": "Ahrefs",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G009"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 54,
+   "app": "MrScraper",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G038"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 55,
+   "app": "Apify",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3B_partial_targeted_reretrieval",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G048"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 56,
+   "app": "Firecrawl",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G010"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 57,
+   "app": "Bright Data",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G039"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 58,
+   "app": "Sherlock",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "COMPLETED_BASELINE_QUARANTINED",
+   "plan_ref": "baseline Pass 1 + Pass 2 exist",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 3,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified",
+    "baseline_record_identity_contaminated_QUARANTINED"
+   ],
+   "optional_calls": "re-extraction after identity/source fix (NOT in the 75)"
+  },
+  {
+   "registry_id": 59,
+   "app": "Waterfall.io",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3H_provisional_identity_hold",
+   "execution_group": "D_identity_gated",
+   "gemini_call_ids": [
+    "G074"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified",
+    "identity_PROVISIONAL_not_confirmed"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 60,
+   "app": "Clay",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Data, SEO and Scraping",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3H_provisional_identity_hold",
+   "execution_group": "D_identity_gated",
+   "gemini_call_ids": [
+    "G075"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified",
+    "identity_PROVISIONAL_not_confirmed"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 61,
+   "app": "GitHub",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_topup_access_explicit)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G015"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 62,
+   "app": "Vercel",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (B_access_inferred_self_serve)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G017"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 63,
+   "app": "Netlify",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (B_access_inferred_self_serve)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G018"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 64,
+   "app": "Cloudflare",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G040"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 65,
+   "app": "Supabase",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_topup_access_explicit)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G012"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 66,
+   "app": "Neo4j",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "HELD_NEO4J_OPTION_B_PREPARED",
+   "plan_ref": "p1-neo4j-optionB (2 surface calls), outside the 28",
+   "execution_group": "B_neo4j_optionB",
+   "gemini_call_ids": [
+    "G029",
+    "G030"
+   ],
+   "gemini_calls_min": 2,
+   "groq_verification_calls_planned": 8,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 67,
+   "app": "Snowflake",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G041"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 68,
+   "app": "MongoDB Atlas",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G042"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 69,
+   "app": "Datadog",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3B_partial_targeted_reretrieval",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G049"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 70,
+   "app": "Sentry",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Developer, Infra and Data platforms",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G024"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 71,
+   "app": "Notion",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_topup_access_explicit)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G014"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 72,
+   "app": "Airtable",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_topup_access_explicit)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G013"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 73,
+   "app": "Linear",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "HELD_IDENTITY_PROVISIONAL",
+   "plan_ref": "held pending identity confirmation (no authority for #51-100)",
+   "execution_group": "D_identity_gated",
+   "gemini_call_ids": [
+    "G070"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 74,
+   "app": "Jira",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G043"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 75,
+   "app": "Asana",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G026"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 76,
+   "app": "Monday.com",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "PLANNED_FROZEN_V1F",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "execution_group": "A_v1f_frozen",
+   "gemini_call_ids": [
+    "G011"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 77,
+   "app": "ClickUp",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3A_core_ready_access_topup",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G044"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 78,
+   "app": "Coda",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "HELD_IDENTITY_PROVISIONAL",
+   "plan_ref": "held pending identity confirmation (no authority for #51-100)",
+   "execution_group": "D_identity_gated",
+   "gemini_call_ids": [
+    "G071"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 79,
+   "app": "Smartsheet",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 3B_partial_targeted_reretrieval",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G050"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 80,
+   "app": "Harvest",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Productivity and Project Management",
+   "master_status": "EXCLUDED_IDENTITY_UNRESOLVED",
+   "plan_ref": "excluded pending authoritative identity resolution",
+   "execution_group": "D_identity_gated",
+   "gemini_call_ids": [
+    "G072"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 81,
+   "app": "Stripe",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G051"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 82,
+   "app": "Plaid",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G052"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 83,
+   "app": "Binance",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G053"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 84,
+   "app": "Paygent Connect",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "COMPLETED_BASELINE",
+   "plan_ref": "baseline Pass 1 (V1, reconstructed code) + Pass 2 (old verifier flags)",
+   "execution_group": "E_baseline_record_exists_no_new_gemini_call",
+   "gemini_call_ids": [],
+   "gemini_calls_min": 0,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "re-verify baseline record with verifier v2 (measured plan)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 85,
+   "app": "iPayX",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G054"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 86,
+   "app": "QuickBooks",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G055"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 87,
+   "app": "Xero",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G056"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 88,
+   "app": "Brex",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G057"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 89,
+   "app": "Ramp",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G058"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 90,
+   "app": "PitchBook",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "Finance and Fintech",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G059"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 91,
+   "app": "NotebookLM",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G060"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 92,
+   "app": "Otter AI",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G061"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 93,
+   "app": "Fathom",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G062"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 94,
+   "app": "Consensus",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G063"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 95,
+   "app": "Reducto",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G064"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 96,
+   "app": "Devin",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G065"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 97,
+   "app": "higgsfield",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G066"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 98,
+   "app": "Mermaid CLI",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G067"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 99,
+   "app": "YouTube Transcript",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G068"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  },
+  {
+   "registry_id": 100,
+   "app": "Grain",
+   "provenance_group": "RECONSTRUCTED_LIST_51_100",
+   "original_notion_membership_verified": false,
+   "registry_category": "AI, Research and Media-native",
+   "master_status": "UNPLANNED",
+   "plan_ref": "p1-expansion-v1 4_no_retrieval_full_discovery",
+   "execution_group": "C_expansion",
+   "gemini_call_ids": [
+    "G069"
+   ],
+   "gemini_calls_min": 1,
+   "groq_verification_calls_planned": 4,
+   "groq_note": "~4 field calls per record (estimate)",
+   "flags": [
+    "reconstructed_list_membership_NOT_verified"
+   ],
+   "optional_calls": ""
+  }
+ ],
+ "gemini_calls": [
+  {
+   "call_id": "G001",
+   "registry_id": 27,
+   "app": "Telegram",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G002",
+   "registry_id": 32,
+   "app": "Meta Ads",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G003",
+   "registry_id": 33,
+   "app": "LinkedIn Ads",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G004",
+   "registry_id": 34,
+   "app": "GoHighLevel",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G005",
+   "registry_id": 39,
+   "app": "Threads (Meta)",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G006",
+   "registry_id": 41,
+   "app": "Shopify",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G007",
+   "registry_id": 43,
+   "app": "BigCommerce",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G008",
+   "registry_id": 52,
+   "app": "SE Ranking",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G009",
+   "registry_id": 53,
+   "app": "Ahrefs",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G010",
+   "registry_id": 56,
+   "app": "Firecrawl",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G011",
+   "registry_id": 76,
+   "app": "Monday.com",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_prior_access_evidence_sufficient)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_prior'",
+   "inputs": "4 baseline + 0 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G012",
+   "registry_id": 65,
+   "app": "Supabase",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_topup_access_explicit)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit'",
+   "inputs": "4 baseline + 4 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G013",
+   "registry_id": 72,
+   "app": "Airtable",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_topup_access_explicit)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit'",
+   "inputs": "4 baseline + 4 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G014",
+   "registry_id": 71,
+   "app": "Notion",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_topup_access_explicit)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit'",
+   "inputs": "4 baseline + 2 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G015",
+   "registry_id": 61,
+   "app": "GitHub",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 1 (A_topup_access_explicit)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit'",
+   "inputs": "4 baseline + 3 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G016",
+   "registry_id": 38,
+   "app": "Pinterest",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (B2_topup_access_explicit_phase2)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit'",
+   "inputs": "4 baseline + 3 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G017",
+   "registry_id": 62,
+   "app": "Vercel",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (B_access_inferred_self_serve)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'inferred_self_serve' - NEVER report as confirmed",
+   "inputs": "4 baseline + 4 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G018",
+   "registry_id": 63,
+   "app": "Netlify",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (B_access_inferred_self_serve)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'inferred_self_serve' - NEVER report as confirmed",
+   "inputs": "4 baseline + 4 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G019",
+   "registry_id": 36,
+   "app": "Klaviyo",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (B_access_inferred_self_serve)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'inferred_self_serve' - NEVER report as confirmed",
+   "inputs": "4 baseline + 4 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G020",
+   "registry_id": 29,
+   "app": "Aircall",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'partial' - NEVER report as confirmed",
+   "inputs": "4 baseline + 4 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G021",
+   "registry_id": 47,
+   "app": "Ecwid",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'partial' - NEVER report as confirmed",
+   "inputs": "4 baseline + 3 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G022",
+   "registry_id": 44,
+   "app": "Salesforce Commerce Cloud",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'partial' - NEVER report as confirmed",
+   "inputs": "4 baseline + 3 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G023",
+   "registry_id": 26,
+   "app": "Discord",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'partial' - NEVER report as confirmed",
+   "inputs": "4 baseline + 1 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G024",
+   "registry_id": 70,
+   "app": "Sentry",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'partial' - NEVER report as confirmed",
+   "inputs": "4 baseline + 3 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G025",
+   "registry_id": 25,
+   "app": "Pumble",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'partial' - NEVER report as confirmed",
+   "inputs": "4 baseline + 3 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G026",
+   "registry_id": 75,
+   "app": "Asana",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'partial' - NEVER report as confirmed",
+   "inputs": "4 baseline + 3 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G027",
+   "registry_id": 46,
+   "app": "Squarespace",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (C_access_partial)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'partial' - NEVER report as confirmed",
+   "inputs": "4 baseline + 4 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G028",
+   "registry_id": 20,
+   "app": "Gladly",
+   "surface_id": "default",
+   "group": "A_v1f_frozen",
+   "plan_ref": "p1-v1f phase 2 (D_added_access_explicit_account_gated)",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction (frozen prompt+schema); access state 'explicit_account_gated'",
+   "inputs": "4 baseline + 3 verified top-up pages (cached)",
+   "prerequisites": [
+    "APPROVED.json for p1-v1f",
+    "per-model caps",
+    "quota check"
+   ],
+   "commitment": "COMMITTED_AFTER_APPROVAL",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G029",
+   "registry_id": 66,
+   "app": "Neo4j",
+   "surface_id": "aura_management_api",
+   "group": "B_neo4j_optionB",
+   "plan_ref": "p1-neo4j-optionB call 1",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Surface-labelled extraction 'Neo4j - Aura Management API' (frozen prompt+schema; combined into one app record in reporting only)",
+   "inputs": "4 cached page(s) specific to this surface",
+   "prerequisites": [
+    "APPROVED.json for neo4j plan",
+    "recommended: 3 gap retrievals first (need approval)",
+    "identity: reconstructed list (#66 membership unverified)"
+   ],
+   "commitment": "CONDITIONAL_RETRIEVAL_RECOMMENDED",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G030",
+   "registry_id": 66,
+   "app": "Neo4j",
+   "surface_id": "database_query_api",
+   "group": "B_neo4j_optionB",
+   "plan_ref": "p1-neo4j-optionB call 2",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Surface-labelled extraction 'Neo4j - Database Query API' (frozen prompt+schema; combined into one app record in reporting only)",
+   "inputs": "1 cached page(s) specific to this surface",
+   "prerequisites": [
+    "APPROVED.json for neo4j plan",
+    "recommended: 3 gap retrievals first (need approval)",
+    "identity: reconstructed list (#66 membership unverified)"
+   ],
+   "commitment": "CONDITIONAL_RETRIEVAL_RECOMMENDED",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G031",
+   "registry_id": 30,
+   "app": "Vonage",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G032",
+   "registry_id": 35,
+   "app": "Mailchimp",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G033",
+   "registry_id": 37,
+   "app": "systeme.io",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G034",
+   "registry_id": 40,
+   "app": "SendGrid",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G035",
+   "registry_id": 42,
+   "app": "WooCommerce",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G036",
+   "registry_id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G037",
+   "registry_id": 48,
+   "app": "Gumroad",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G038",
+   "registry_id": 54,
+   "app": "MrScraper",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G039",
+   "registry_id": 57,
+   "app": "Bright Data",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G040",
+   "registry_id": 64,
+   "app": "Cloudflare",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G041",
+   "registry_id": 67,
+   "app": "Snowflake",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G042",
+   "registry_id": 68,
+   "app": "MongoDB Atlas",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G043",
+   "registry_id": 74,
+   "app": "Jira",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G044",
+   "registry_id": 77,
+   "app": "ClickUp",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3A_core_ready_access_topup",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G045",
+   "registry_id": 15,
+   "app": "Pylon",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3B_partial_targeted_reretrieval",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G046",
+   "registry_id": 24,
+   "app": "Lark (Larksuite)",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3B_partial_targeted_reretrieval",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G047",
+   "registry_id": 31,
+   "app": "Google Ads",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3B_partial_targeted_reretrieval",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: resolved_by_original_hint",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G048",
+   "registry_id": 55,
+   "app": "Apify",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3B_partial_targeted_reretrieval",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G049",
+   "registry_id": 69,
+   "app": "Datadog",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3B_partial_targeted_reretrieval",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G050",
+   "registry_id": 79,
+   "app": "Smartsheet",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 3B_partial_targeted_reretrieval",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "4 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G051",
+   "registry_id": 81,
+   "app": "Stripe",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G052",
+   "registry_id": 82,
+   "app": "Plaid",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G053",
+   "registry_id": 83,
+   "app": "Binance",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G054",
+   "registry_id": 85,
+   "app": "iPayX",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G055",
+   "registry_id": 86,
+   "app": "QuickBooks",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G056",
+   "registry_id": 87,
+   "app": "Xero",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G057",
+   "registry_id": 88,
+   "app": "Brex",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G058",
+   "registry_id": 89,
+   "app": "Ramp",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G059",
+   "registry_id": 90,
+   "app": "PitchBook",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G060",
+   "registry_id": 91,
+   "app": "NotebookLM",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: may lack a public REST API",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G061",
+   "registry_id": 92,
+   "app": "Otter AI",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G062",
+   "registry_id": 93,
+   "app": "Fathom",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G063",
+   "registry_id": 94,
+   "app": "Consensus",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G064",
+   "registry_id": 95,
+   "app": "Reducto",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G065",
+   "registry_id": 96,
+   "app": "Devin",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G066",
+   "registry_id": 97,
+   "app": "higgsfield",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G067",
+   "registry_id": 98,
+   "app": "Mermaid CLI",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: CLI tool; may fit sdk_or_cli_only",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G068",
+   "registry_id": 99,
+   "app": "YouTube Transcript",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: generic name; may not be a single product",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G069",
+   "registry_id": 100,
+   "app": "Grain",
+   "surface_id": "default",
+   "group": "C_expansion",
+   "plan_ref": "p1-expansion-v1 wave 4_no_retrieval_full_discovery",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction after wave retrieval; schema stress hypothesis: none",
+   "inputs": "0 cached page(s) + top-up/discovery pages NOT YET RETRIEVED",
+   "prerequisites": [
+    "free retrieval (approval needed)",
+    "relevance audit",
+    "identity: NO AUTHORITY (reconstructed list): confirm against original Notion table",
+    "new versioned plan after retrieval",
+    "APPROVED.json for that plan"
+   ],
+   "commitment": "CONDITIONAL_ON_RETRIEVAL_AND_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G070",
+   "registry_id": 73,
+   "app": "Linear",
+   "surface_id": "default",
+   "group": "D_identity_gated",
+   "plan_ref": "HELD_IDENTITY_PROVISIONAL",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction ONLY after identity is confirmed and evidence is retrieved (identity provisional (name + domain consistency only))",
+   "inputs": "retrieval required first",
+   "prerequisites": [
+    "identity confirmation by the user",
+    "user confirms identity; access-evidence top-up (free retrieval)",
+    "new versioned plan + approval"
+   ],
+   "commitment": "CONDITIONAL_ON_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G071",
+   "registry_id": 78,
+   "app": "Coda",
+   "surface_id": "default",
+   "group": "D_identity_gated",
+   "plan_ref": "HELD_IDENTITY_PROVISIONAL",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction ONLY after identity is confirmed and evidence is retrieved (identity provisional; superhuman.com hits suggest docs migration)",
+   "inputs": "retrieval required first",
+   "prerequisites": [
+    "identity confirmation by the user",
+    "user confirms identity and canonical docs; access top-up",
+    "new versioned plan + approval"
+   ],
+   "commitment": "CONDITIONAL_ON_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G072",
+   "registry_id": 80,
+   "app": "Harvest",
+   "surface_id": "default",
+   "group": "D_identity_gated",
+   "plan_ref": "EXCLUDED_IDENTITY_UNRESOLVED",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction ONLY after identity is confirmed and evidence is retrieved (3 different products retrieved (getharvest / harvestapi / Greenhouse Harvest API); #80 has NO hint (reconstructed list))",
+   "inputs": "retrieval required first",
+   "prerequisites": [
+    "identity confirmation by the user",
+    "authoritative identity (Notion hint) then fresh targeted retrieval",
+    "new versioned plan + approval"
+   ],
+   "commitment": "CONDITIONAL_ON_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G073",
+   "registry_id": 50,
+   "app": "fanbasis",
+   "surface_id": "default",
+   "group": "D_identity_gated",
+   "plan_ref": "EXCLUDED_IDENTITY_UNRESOLVED",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction ONLY after identity is confirmed and evidence is retrieved (fanbasis.io unconfirmed; openstage.live excluded; dev-docs password-gated)",
+   "inputs": "retrieval required first",
+   "prerequisites": [
+    "identity confirmation by the user",
+    "user confirms fanbasis.io; retrieval of public docs may be impossible (docs gated)",
+    "new versioned plan + approval"
+   ],
+   "commitment": "CONDITIONAL_ON_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "original_notion_page_public_data"
+  },
+  {
+   "call_id": "G074",
+   "registry_id": 59,
+   "app": "Waterfall.io",
+   "surface_id": "default",
+   "group": "D_identity_gated",
+   "plan_ref": "EXPANSION_3H_PROVISIONAL_IDENTITY",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction ONLY after identity is confirmed and evidence is retrieved (provisional identity (user decision); reconstructed list)",
+   "inputs": "retrieval required first",
+   "prerequisites": [
+    "identity confirmation by the user",
+    "user confirms identity; access top-up",
+    "new versioned plan + approval"
+   ],
+   "commitment": "CONDITIONAL_ON_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  },
+  {
+   "call_id": "G075",
+   "registry_id": 60,
+   "app": "Clay",
+   "surface_id": "default",
+   "group": "D_identity_gated",
+   "plan_ref": "EXPANSION_3H_PROVISIONAL_IDENTITY",
+   "model_policy": "primary gemini-2.5-flash -> fallback gemini-3.5-flash (decided at run time by approved list + per-model caps; record stores the actual model)",
+   "purpose": "Pass-1 extraction ONLY after identity is confirmed and evidence is retrieved (provisional identity (user decision); reconstructed list)",
+   "inputs": "retrieval required first",
+   "prerequisites": [
+    "identity confirmation by the user",
+    "user confirms identity; access top-up",
+    "new versioned plan + approval"
+   ],
+   "commitment": "CONDITIONAL_ON_IDENTITY",
+   "min_attempts": 1,
+   "max_attempts_per_model": 3,
+   "verification_groq_calls_min": 4,
+   "source_provenance": "reconstructed_secondary_source"
+  }
+ ],
+ "verification_tasks": [
+  {
+   "record_ref": "baseline/p1_v1/pass1/1.json",
+   "registry_id": 1,
+   "app": "Salesforce",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/2.json",
+   "registry_id": 2,
+   "app": "HubSpot",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/3.json",
+   "registry_id": 3,
+   "app": "Pipedrive",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/4.json",
+   "registry_id": 4,
+   "app": "Attio",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/5.json",
+   "registry_id": 5,
+   "app": "Twenty",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/6.json",
+   "registry_id": 6,
+   "app": "Podio",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/7.json",
+   "registry_id": 7,
+   "app": "Zoho CRM",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/8.json",
+   "registry_id": 8,
+   "app": "Close",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/9.json",
+   "registry_id": 9,
+   "app": "Copper",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/10.json",
+   "registry_id": 10,
+   "app": "DealCloud",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/11.json",
+   "registry_id": 11,
+   "app": "Zendesk",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/12.json",
+   "registry_id": 12,
+   "app": "Intercom",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/13.json",
+   "registry_id": 13,
+   "app": "Freshdesk",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/14.json",
+   "registry_id": 14,
+   "app": "Front",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/16.json",
+   "registry_id": 16,
+   "app": "LiveAgent",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/17.json",
+   "registry_id": 17,
+   "app": "Plain",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/18.json",
+   "registry_id": 18,
+   "app": "Help Scout",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/19.json",
+   "registry_id": 19,
+   "app": "Gorgias",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/21.json",
+   "registry_id": 21,
+   "app": "Slack",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/22.json",
+   "registry_id": 22,
+   "app": "Twilio",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/23.json",
+   "registry_id": 23,
+   "app": "Zoho Cliq",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/28.json",
+   "registry_id": 28,
+   "app": "WhatsApp Business",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/49.json",
+   "registry_id": 49,
+   "app": "Amazon Selling Partner",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/51.json",
+   "registry_id": 51,
+   "app": "DataForSEO",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/58.json",
+   "registry_id": 58,
+   "app": "Sherlock",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 3
+  },
+  {
+   "record_ref": "baseline/p1_v1/pass1/84.json",
+   "registry_id": 84,
+   "app": "Paygent Connect",
+   "surface_id": "default",
+   "kind": "re-verify baseline record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G001)",
+   "registry_id": 27,
+   "app": "Telegram",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G002)",
+   "registry_id": 32,
+   "app": "Meta Ads",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G003)",
+   "registry_id": 33,
+   "app": "LinkedIn Ads",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G004)",
+   "registry_id": 34,
+   "app": "GoHighLevel",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G005)",
+   "registry_id": 39,
+   "app": "Threads (Meta)",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G006)",
+   "registry_id": 41,
+   "app": "Shopify",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G007)",
+   "registry_id": 43,
+   "app": "BigCommerce",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G008)",
+   "registry_id": 52,
+   "app": "SE Ranking",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G009)",
+   "registry_id": 53,
+   "app": "Ahrefs",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G010)",
+   "registry_id": 56,
+   "app": "Firecrawl",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G011)",
+   "registry_id": 76,
+   "app": "Monday.com",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G012)",
+   "registry_id": 65,
+   "app": "Supabase",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G013)",
+   "registry_id": 72,
+   "app": "Airtable",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G014)",
+   "registry_id": 71,
+   "app": "Notion",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G015)",
+   "registry_id": 61,
+   "app": "GitHub",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G016)",
+   "registry_id": 38,
+   "app": "Pinterest",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G017)",
+   "registry_id": 62,
+   "app": "Vercel",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G018)",
+   "registry_id": 63,
+   "app": "Netlify",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G019)",
+   "registry_id": 36,
+   "app": "Klaviyo",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G020)",
+   "registry_id": 29,
+   "app": "Aircall",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G021)",
+   "registry_id": 47,
+   "app": "Ecwid",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G022)",
+   "registry_id": 44,
+   "app": "Salesforce Commerce Cloud",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G023)",
+   "registry_id": 26,
+   "app": "Discord",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G024)",
+   "registry_id": 70,
+   "app": "Sentry",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G025)",
+   "registry_id": 25,
+   "app": "Pumble",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G026)",
+   "registry_id": 75,
+   "app": "Asana",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G027)",
+   "registry_id": 46,
+   "app": "Squarespace",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G028)",
+   "registry_id": 20,
+   "app": "Gladly",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G029)",
+   "registry_id": 66,
+   "app": "Neo4j",
+   "surface_id": "aura_management_api",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G030)",
+   "registry_id": 66,
+   "app": "Neo4j",
+   "surface_id": "database_query_api",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G031)",
+   "registry_id": 30,
+   "app": "Vonage",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G032)",
+   "registry_id": 35,
+   "app": "Mailchimp",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G033)",
+   "registry_id": 37,
+   "app": "systeme.io",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G034)",
+   "registry_id": 40,
+   "app": "SendGrid",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G035)",
+   "registry_id": 42,
+   "app": "WooCommerce",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G036)",
+   "registry_id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G037)",
+   "registry_id": 48,
+   "app": "Gumroad",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G038)",
+   "registry_id": 54,
+   "app": "MrScraper",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G039)",
+   "registry_id": 57,
+   "app": "Bright Data",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G040)",
+   "registry_id": 64,
+   "app": "Cloudflare",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G041)",
+   "registry_id": 67,
+   "app": "Snowflake",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G042)",
+   "registry_id": 68,
+   "app": "MongoDB Atlas",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G043)",
+   "registry_id": 74,
+   "app": "Jira",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G044)",
+   "registry_id": 77,
+   "app": "ClickUp",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G045)",
+   "registry_id": 15,
+   "app": "Pylon",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G046)",
+   "registry_id": 24,
+   "app": "Lark (Larksuite)",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G047)",
+   "registry_id": 31,
+   "app": "Google Ads",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G048)",
+   "registry_id": 55,
+   "app": "Apify",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G049)",
+   "registry_id": 69,
+   "app": "Datadog",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G050)",
+   "registry_id": 79,
+   "app": "Smartsheet",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G051)",
+   "registry_id": 81,
+   "app": "Stripe",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G052)",
+   "registry_id": 82,
+   "app": "Plaid",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G053)",
+   "registry_id": 83,
+   "app": "Binance",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G054)",
+   "registry_id": 85,
+   "app": "iPayX",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G055)",
+   "registry_id": 86,
+   "app": "QuickBooks",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G056)",
+   "registry_id": 87,
+   "app": "Xero",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G057)",
+   "registry_id": 88,
+   "app": "Brex",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G058)",
+   "registry_id": 89,
+   "app": "Ramp",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G059)",
+   "registry_id": 90,
+   "app": "PitchBook",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G060)",
+   "registry_id": 91,
+   "app": "NotebookLM",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G061)",
+   "registry_id": 92,
+   "app": "Otter AI",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G062)",
+   "registry_id": 93,
+   "app": "Fathom",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G063)",
+   "registry_id": 94,
+   "app": "Consensus",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G064)",
+   "registry_id": 95,
+   "app": "Reducto",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G065)",
+   "registry_id": 96,
+   "app": "Devin",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G066)",
+   "registry_id": 97,
+   "app": "higgsfield",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G067)",
+   "registry_id": 98,
+   "app": "Mermaid CLI",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G068)",
+   "registry_id": 99,
+   "app": "YouTube Transcript",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G069)",
+   "registry_id": 100,
+   "app": "Grain",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G070)",
+   "registry_id": 73,
+   "app": "Linear",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G071)",
+   "registry_id": 78,
+   "app": "Coda",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G072)",
+   "registry_id": 80,
+   "app": "Harvest",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G073)",
+   "registry_id": 50,
+   "app": "fanbasis",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G074)",
+   "registry_id": 59,
+   "app": "Waterfall.io",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  },
+  {
+   "record_ref": "(new record from G075)",
+   "registry_id": 60,
+   "app": "Clay",
+   "surface_id": "default",
+   "kind": "verify new record (v2)",
+   "groq_calls_planned": 4
+  }
+ ]
+}

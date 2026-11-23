@@ -1,0 +1,705 @@
+[
+ {
+  "claim_id": "91:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "user-credential access token via gcloud print-access-token"
+  ],
+  "uncovered": [
+   "Bearer header"
+  ],
+  "reason": "Quote says gcloud auth print-access-token generates an access token for your user, but never mentions a Bearer header."
+ },
+ {
+  "claim_id": "91:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "billing enabled",
+   "per-user license",
+   "Cloud NotebookLM User role"
+  ],
+  "uncovered": [
+   "Discovery Engine API enabled"
+  ],
+  "reason": "Quotes cover 'billing is enabled', 'assign a license to your user account' and the 'Cloud NotebookLM User role', but none mentions enabling the Discovery Engine API."
+ },
+ {
+  "claim_id": "91:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "REST projects.locations.notebooks"
+  ],
+  "uncovered": [],
+  "reason": "Quote names 'The projects.locations.notebooks REST' surface directly."
+ },
+ {
+  "claim_id": "91:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Pre-GA terms"
+  ],
+  "uncovered": [
+   "that the Notebooks API specifically is labelled Preview"
+  ],
+  "reason": "Quote gives generic Pre-GA 'as is' wording but does not itself say the Notebooks API is Preview."
+ },
+ {
+  "claim_id": "91:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "old name still shown on subscription page",
+   "product renamed"
+  ],
+  "uncovered": [],
+  "reason": "Quote says the subscription page 'displays the previous name NotebookLM Enterprise', which implies the rename and states the stale label."
+ },
+ {
+  "claim_id": "92:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Otter MCP server",
+   "host mcp.otter.ai"
+  ],
+  "uncovered": [],
+  "reason": "Marketing quote names 'Otter's MCP Server' and the oauth-protected-resource metadata is served from mcp.otter.ai."
+ },
+ {
+  "claim_id": "92:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "OAuth",
+   "scopes profile:read and conversations:read"
+  ],
+  "uncovered": [
+   "bearer header"
+  ],
+  "reason": "Quotes show 'OAuth-authenticated' and scopes_supported profile:read/conversations:read, but no quote mentions a bearer header."
+ },
+ {
+  "claim_id": "92:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Otter API & Webhooks appears on pricing page"
+  ],
+  "uncovered": [
+   "that it sits in the Enterprise card specifically"
+  ],
+  "reason": "Quote shows 'Otter API & Webhooks' after 'HIPAA compliance (add-on)' but plain text does not show which plan card it belongs to."
+ },
+ {
+  "claim_id": "92:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Custom pricing",
+   "request-a-demo on blog"
+  ],
+  "uncovered": [
+   "'Schedule a demo' on the pricing card",
+   "that Custom pricing card is Enterprise"
+  ],
+  "reason": "Quotes give 'Custom pricing' and 'Request a demo' but not the card's 'Schedule a demo' text or its Enterprise attribution."
+ },
+ {
+  "claim_id": "93:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API key generated in User Settings",
+   "OAuth for public apps",
+   "REST page says API keys"
+  ],
+  "uncovered": [
+   "X-Api-Key header name"
+  ],
+  "reason": "Quotes support 'generate an API key' in User Settings and OAuth for 'public app', but the 'X-Api-Key' header name is not in any quote."
+ },
+ {
+  "claim_id": "93:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "self-serve key generation",
+   "API and webhooks on all plans"
+  ],
+  "uncovered": [],
+  "reason": "FAQ quote says 'included on all plans' and 'Generate a key in User Settings'."
+ },
+ {
+  "claim_id": "93:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "subject to review"
+  ],
+  "uncovered": [
+   "registration via a form"
+  ],
+  "reason": "Quote says OAuth apps are 'subject to review' but 'Configure your redirects and receive your OAuth credentials' does not mention a form."
+ },
+ {
+  "claim_id": "93:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "REST",
+   "TS/Python SDKs",
+   "webhooks"
+  ],
+  "uncovered": [],
+  "reason": "Quotes name 'REST API', 'official TypeScript and Python SDKs' and 'webhook events'."
+ },
+ {
+  "claim_id": "93:4",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "60/60s global",
+   "heavy 30/60s"
+  ],
+  "uncovered": [
+   "downloads 30/60s"
+  ],
+  "reason": "Quotes give 60 calls and 30 heavy calls per 60 seconds but nothing about downloads."
+ },
+ {
+  "claim_id": "93:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "keys per-user",
+   "no org-level keys"
+  ],
+  "uncovered": [
+   "sees only own or shared meetings"
+  ],
+  "reason": "Quotes say 'scoped to the user' and 'no org-level keys' but not that visibility is limited to own or shared meetings."
+ },
+ {
+  "claim_id": "93:6",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official MCP server",
+   "URL https://api.fathom.ai/mcp"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'official MCP' server and gives 'MCP server URL: https://api.fathom.ai/mcp'."
+ },
+ {
+  "claim_id": "94:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "AI research engine"
+  ],
+  "uncovered": [
+   "scholarly papers"
+  ],
+  "reason": "Quote says 'AI research engine' but this quote does not mention scholarly papers."
+ },
+ {
+  "claim_id": "94:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "GET /v1/search",
+   "POST /v1/threads",
+   "api.consensus.app"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show 'GET /v1/search', 'POST /v1/threads' and a curl to api.consensus.app/v1/search."
+ },
+ {
+  "claim_id": "94:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API key",
+   "x-api-key header"
+  ],
+  "uncovered": [],
+  "reason": "Quote shows -H \"x-api-key: $CONSENSUS_API_KEY\"."
+ },
+ {
+  "claim_id": "94:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "PKCE S256",
+   "dynamic client registration",
+   "scope search"
+  ],
+  "uncovered": [
+   "authorization-code grant"
+  ],
+  "reason": "Metadata quotes give S256, registration_endpoint and scopes_supported [\"search\"], but no quote states the authorization-code grant type."
+ },
+ {
+  "claim_id": "94:4",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Consensus MCP exists",
+   "server healthy at mcp.consensus.app"
+  ],
+  "uncovered": [
+   "exact /mcp URL path in a quote"
+  ],
+  "reason": "Quotes say Consensus is available via MCP and mcp.consensus.app is 'healthy', but the https://mcp.consensus.app/mcp path is not quoted."
+ },
+ {
+  "claim_id": "94:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Create API key button",
+   "plan-tiered API access"
+  ],
+  "uncovered": [
+   "Cloudflare 403 on curl"
+  ],
+  "reason": "Quotes show 'Create API key' and 'What each Consensus plan includes on the API' but nothing about the Cloudflare 403 observation."
+ },
+ {
+  "claim_id": "95:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Bearer API key",
+   "key created in Studio",
+   "MCP OAuth device-code flow saves key"
+  ],
+  "uncovered": [
+   "CLI uses the device flow"
+  ],
+  "reason": "Quotes cover 'Authorization: Bearer', Studio API Keys and the MCP 'OAuth device-code flow', but CLI login is not mentioned."
+ },
+ {
+  "claim_id": "95:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "self-serve signup",
+   "free usage credit",
+   "standard rates after free"
+  ],
+  "uncovered": [
+   "pay-as-you-go wording",
+   "Enterprise via sales"
+  ],
+  "reason": "Quotes show 'Sign up for a free account' and 'Free $150', but nothing about pay-as-you-go by name or Enterprise via sales."
+ },
+ {
+  "claim_id": "95:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Python SDK",
+   "Go SDK",
+   "CLI"
+  ],
+  "uncovered": [
+   "REST",
+   "Node SDK"
+  ],
+  "reason": "Quotes show 'pip install reductoai', the Go SDK and the 'Reducto CLI', but no REST or Node mention."
+ },
+ {
+  "claim_id": "95:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "page concurrency",
+   "429 on requests-per-second cap"
+  ],
+  "uncovered": [
+   "per-API-key scope",
+   "edge limit"
+  ],
+  "reason": "Quotes cover 'Page concurrency' and 'cap requests per second... return 429' but not that it is per API key or applied at the edge."
+ },
+ {
+  "claim_id": "95:4",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "hosted URL https://mcp.reducto.ai/mcp"
+  ],
+  "uncovered": [
+   "bearer key for hosted",
+   "local uvx server"
+  ],
+  "reason": "Quote gives 'hosted server runs at https://mcp.reducto.ai/mcp' but nothing on bearer key or the local uvx server."
+ },
+ {
+  "claim_id": "96:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "cog_ prefix",
+   "Authorization header",
+   "legacy keys deprecated"
+  ],
+  "uncovered": [
+   "Bearer scheme",
+   "service user key recommended",
+   "personal access token",
+   "apk_ prefix"
+  ],
+  "reason": "Quotes show 'cog_ prefix' and 'Legacy API keys are deprecated' but not service user vs PAT or the apk_ prefix."
+ },
+ {
+  "claim_id": "96:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "service users provisioned in Settings > Devin API per org/enterprise",
+   "enterprise PATs governed by policy, disabled by default"
+  ],
+  "uncovered": [
+   "plan requirement not stated (absence claim)"
+  ],
+  "reason": "Quotes state the Settings > Devin API path and 'disabled by default' PAT policy, but a quote cannot prove that no plan requirement exists."
+ },
+ {
+  "claim_id": "96:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Organization scope /v3/organizations/*",
+   "role-based"
+  ],
+  "uncovered": [
+   "Enterprise scope /v3/enterprise/*"
+  ],
+  "reason": "Quotes show '/v3/organizations/*' and 'Assign a role', but no quote shows the /v3/enterprise/* scope."
+ },
+ {
+  "claim_id": "96:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "REST"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'programmatically interact with Devin using our REST APIs'."
+ },
+ {
+  "claim_id": "96:4",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "MCP base URL mcp.devin.ai",
+   "API key required"
+  ],
+  "uncovered": [
+   "/mcp path"
+  ],
+  "reason": "Quotes give 'Base Server URL: https://mcp.devin.ai/' and 'need a Devin API key' but not the /mcp path."
+ },
+ {
+  "claim_id": "96:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "legacy apk_ keys limited to repository documentation tools",
+   "others reject"
+  ],
+  "uncovered": [],
+  "reason": "Quote says legacy 'apk_' keys 'only work with the repository documentation tools', matching 'wiki tools'."
+ },
+ {
+  "claim_id": "96:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "$80 per month price",
+   "cloud agents access"
+  ],
+  "uncovered": [
+   "Free",
+   "Pro $20",
+   "Max $200",
+   "Teams label for $80",
+   "Enterprise via sales"
+  ],
+  "reason": "Quotes show only 'Access to cloud agents' and '$80 per month' with no plan names, so Free, Pro $20, Max $200 and Enterprise are unsupported."
+ },
+ {
+  "claim_id": "97:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Authorization: Key ID:SECRET",
+   "credentials created in Console"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show 'Authorization : Key YOUR_KEY_ID:YOUR_KEY_SECRET' and 'Create and manage API credentials in Higgsfield Console'."
+ },
+ {
+  "claim_id": "97:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "sign in via auth login",
+   "no API key",
+   "uses plan credits"
+  ],
+  "uncovered": [
+   "browser sign-in"
+  ],
+  "reason": "Quotes say 'higgsfield auth login. No API key needed' and 'plan credits' but never say the sign-in is via browser."
+ },
+ {
+  "claim_id": "97:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API charges account balance",
+   "funds expire after one year"
+  ],
+  "uncovered": [
+   "CLI/MCP bill plan credits"
+  ],
+  "reason": "Quotes cover 'charges... to your account balance' and 'expire one year', but nothing about CLI/MCP billing plan credits."
+ },
+ {
+  "claim_id": "97:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "webhook",
+   "status response (polling-like)",
+   "skills install tooling"
+  ],
+  "uncovered": [
+   "REST stated",
+   "queue stated",
+   "CLI stated explicitly"
+  ],
+  "reason": "Quotes mention 'status response and the webhook' and 'npx skills add', but never say REST, queue or CLI."
+ },
+ {
+  "claim_id": "97:4",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "concurrency-based limit",
+   "per account"
+  ],
+  "uncovered": [
+   "per model",
+   "queue-full returns 429"
+  ],
+  "reason": "Quotes state 'primary generation limit is concurrency' and 'limits assigned to your account' but nothing on model scope or 429."
+ },
+ {
+  "claim_id": "97:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Higgsfield MCP for chat agents"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'MCP is a full connection for chat agents'; the claim itself concedes the URL was not captured."
+ },
+ {
+  "claim_id": "98:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "CLI",
+   "mermaid definition to SVG/PNG/PDF"
+  ],
+  "uncovered": [],
+  "reason": "Quote says it 'takes a mermaid definition file as input and generates an SVG/PNG/PDF file'."
+ },
+ {
+  "claim_id": "98:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "MIT"
+  ],
+  "uncovered": [],
+  "reason": "LICENSE says 'MIT License' and package.json has \"license\": \"MIT\"."
+ },
+ {
+  "claim_id": "98:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "CLI mmdc",
+   "Node.js API",
+   "Docker image"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show 'mmdc -i', 'Node.JS API' and 'docker pull minlag/mermaid-cli'."
+ },
+ {
+  "claim_id": "98:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Node API not semver-covered"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'the NodeJS API is not covered by semver'."
+ },
+ {
+  "claim_id": "99:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Bearer API key",
+   "MCP OAuth 2.1 or API key bearer"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'Bearer token authentication' and 'OAuth 2.1... or an API key sent as a Bearer token'."
+ },
+ {
+  "claim_id": "99:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "100 free credits no card"
+  ],
+  "uncovered": [
+   "self-serve signup",
+   "$5/month for 1,000 credits"
+  ],
+  "reason": "Quotes show '100 free credits... no card required' and 'Top-ups at $2.50 per 1K' but not the $5/month 1,000-credit plan."
+ },
+ {
+  "claim_id": "99:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "REST v2"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show base 'https://transcriptapi.com/api/v2' and 'GET /youtube/transcript'."
+ },
+ {
+  "claim_id": "99:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "200 requests per minute",
+   "per account"
+  ],
+  "uncovered": [
+   "Starter Monthly plan attribution",
+   "300 for Annual"
+  ],
+  "reason": "Quotes give '200 requests per minute' and 'applies per account' but no plan names and no 300 figure."
+ },
+ {
+  "claim_id": "99:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "hosted MCP at https://transcriptapi.com/mcp"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'runs a hosted (remote) MCP server at https://transcriptapi.com/mcp'."
+ },
+ {
+  "claim_id": "100:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Bearer",
+   "PAT",
+   "WAT",
+   "OAuth2 code + PKCE"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show 'Bearer TOKEN', PAT, WAT and 'Authorization Code flow, including the PKCE extension'."
+ },
+ {
+  "claim_id": "100:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "something available on every plan incl. Free",
+   "something admin-only on Business/Enterprise"
+  ],
+  "uncovered": [
+   "token names PAT/WAT not in quotes",
+   "OAuth2 for distributed integrations"
+  ],
+  "reason": "Quotes give 'Available on every plan, including Free' and 'Business and Enterprise' but name neither PAT nor WAT and say nothing of OAuth2."
+ },
+ {
+  "claim_id": "100:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "URL https://api.grain.com/_/mcp",
+   "OAuth",
+   "PAT works",
+   "workspace tokens rejected"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'Grain's MCP server uses OAuth', personal-scope tokens work, and 'workspace scope are not accepted'."
+ },
+ {
+  "claim_id": "100:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "'Plan required' column",
+   "'Business or Enterprise' value"
+  ],
+  "uncovered": [
+   "'Any plan' value"
+  ],
+  "reason": "Quotes show 'Plan required' and 'Business or Enterprise' but 'Any plan' never appears."
+ },
+ {
+  "claim_id": "100:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "300 req/min per token",
+   "120 req/min",
+   "cap 30"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show '300 requests per minute per token' versus '120 req/min' and '30 requests', matching the stated conflict."
+ },
+ {
+  "claim_id": "100:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "webhooks",
+   "REST v2"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show webhook registration and the '/public-api/v2/token-info' endpoint."
+ },
+ {
+  "claim_id": "100:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "header Public-Api-Version",
+   "2025-10-31 vs 2026-10-01 disagreement"
+  ],
+  "uncovered": [
+   "header being required"
+  ],
+  "reason": "Quotes show 'Public-Api-Version: 2026-10-01' and 'current API version is 2025-10-31' but nothing says the header is required."
+ }
+]

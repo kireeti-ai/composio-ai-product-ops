@@ -1,0 +1,127 @@
+ API Keys | SendGrid Docs | Twilio Skip to content Skip to navigation Skip to topbar Twilio SendGrid Docs UI Account and settings Account management Accessing email accounts Account under review Account details Twilio Login for SendGrid Cloud marketplace account access Alerts API keys Add a custom TLS configuration Inbound parse Troubleshooting account login issues Mail settings Notifications Resetting your username and password I didn't receive the password reset email Is SendGrid PCI compliant? Underused mail setting retirement Test your sending speed Tracking settings Two-factor authentication Upgrading your plan Verifying your account Billing Billing Taxes and tax-exempt status IP management IP access management Dedicated IP addresses IP pools Security Compromised account recovery Forced password reset FAQ Is SendGrid HIPAA Compliant? Authenticate senders Authenticate all senders from a domain Authenticate a single sender Configure link branding Configure reverse DNS Configure Sign in with Apple feature Verify senders with SPF Verify message integrity with DKIM Enforce authentication with DMARC Twilio SendGrid single sign-on SSO with Azure SSO with Okta SSO API Reference Teammates & Subusers Subusers Teammates Teammate Permissions Troubleshooting Troubleshooting Delays and Latency Troubleshooting Sender Authentication Analytics and reporting Email Insights Email Insights Overview tab Delivery Errors tab Audience Health tab Filters and dimensions Data freshness and retention Differences from Stats Statistics Statistics overview Browser comparison statistics Browser statistics Category statistics Category comparison statistics Device statistics Geographic statistics Global statistics Google Analytics and SendGrid statistics Mailbox provider statistics Mailbox provider comparison Marketing Campaigns statistics overview Marketing Campaigns statistics Subuser statistics comparison Subuser statistics Click tracking Click tracking best practices Email event tracking Email activity feed Email logs Spam Reports Expert insights Interpret expert insights Subscribe to expert insights SendGrid Partners Email Event Data with Keen Integrations Overview Segment Manage contacts Manage contacts with Marketing Campaigns Build your contact list Create and manage contacts Use custom fields Validate email addresses Format a CSV file Segment your contacts Sending email Create an email Marketing Campaign Email sending preparation Send one-time emails with Single Sends A/B test your Single Send Manage recipients who unsubscribe Add sender details Add dynamic content with Handlebars Use weblink to allow email views in-browser Test email messages Get started with automation Delivery & optimization Deliverability Overview Manage blocked messages Manage bounced messages Content Delivery Networks Google feedback loop (Spam complaints) Validate an email address Check the headers or raw source of an email message Design email templates Cross-platform email design Create an email design Choose a message editor Use the code editor Use the design editor Send an email with dynamic templates Fix HTML format issues Edit images Substitution and section tags Tracking Suppression of email senders Global unsubscribes Group unsubscribes List-Unsubscribe Recipient subscription preferences Unsubscribe with subscription tracking Universal links Partner offerings Sending attachments with Digioh Search Search Log in Sign up Page tools Copy as markdown Useful for sharing or LLM Copy and view Copy as markdown View as markdown Open in assistant Open in ChatGPT Open in Claude Open in Cursor Open in Perplexity Build with AI Connect your AI agent Install Twilio Skills Accelerate development with AI On this page Manage API keys Create an API key Store your API key in an environment variable Edit your API key Delete your API key Replace your API key Test your API key Looking for more inspiration? Visit the Developer Hub On this page Manage API keys Create an API key Store your API key in an environment variable Edit your API key Delete your API key Replace your API key Test your API key Copy as markdown Copy and view Copy as markdown View as markdown Open in assistant Open in ChatGPT Open in Claude Open in Cursor Open in Perplexity Build with AI Connect your AI agent Install Twilio Skills API Keys (warning) Twilio SendGrid API key limitations 
+ Twilio supports a key longer than 69 characters. No exceptions can be made for third-party infrastructure. 
+ Twilio limits accounts to 100 API keys. 
+ You can't give an API key greater permissions than your own. 
+ The Twilio SendGrid Console displays the API key only once at creation. 
+ Treat your API key like a password and store it somewhere safe. 
+ Twilio can't retrieve or restore an unknown or deleted API key. 
+ To authenticate access to Twilio SendGrid services, use Application Programming Interface (API) keys. 
+ They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid's services. 
+ Manage API keys Go to Settings > API Keys . The API Keys page displays your current API keys with the following parameters: 
+ Parameter Purpose Name The name you defined for your API key. API Key ID The way you would reference your API key for management through the API. Action Actions you can perform on your API keys, such as editing or deleting the key. 
+ Create an API key To use the Mail API, you need an API key. 
+ Go to Settings > API Keys . The API Keys page appears. 
+ Click Create API Key . The Create API Key appears. 
+ Type a human-readable name for your API key in the API Key Name box. 
+ Choose the permissions for your API Key: 
+ API key permission Access details for account Full Access Grants all API endpoints full access to your account. Custom Access Choose both which API endpoints and which access levels each have to your account. Billing Access Grants all billing API endpoints full access to your account. Email Address Validation Access Grants read access to the reporting console and full access to validation API endpoints on your account. 
+ View all access details for custom access 
+ API Keys 
+ Alerts 
+ Category Management 
+ Deliverability Insights 
+ Design Library 
+ Email Activity 
+ Email Testing 
+ IP Management 
+ Inbound Parse 
+ Mail Send
+ Mail Send 
+ Scheduled Sends 
+ Mail Settings
+ Address Allow List 
+ BCC 
+ Bounce Purge 
+ Event Notification 
+ Footer 
+ Forward Bounce 
+ Forward Spam 
+ Legacy Email Template 
+ Mail Settings 
+ Plain Content 
+ Spam Checker 
+ Marketing
+ Automation 
+ Marketing 
+ Marketing Campaigns 
+ Partners 
+ Recipients Data Erasure 
+ SSO Settings 
+ Security 
+ Sender Authentication 
+ Stats
+ Browser Stats 
+ Category Stats 
+ Email Clients and Devices 
+ Geographical 
+ Global Stats 
+ Mailbox Provider Stats 
+ Parse Webhook 
+ Stats Overview 
+ Subuser Stats 
+ Subusers 
+ Suppressions
+ Suppressions 
+ Unsubscribe Groups 
+ Teammates
+ SSO Teammates 
+ Teammates 
+ Template Engine 
+ Tracking
+ Click Tracking 
+ Google Analytics 
+ Open Tracking 
+ Subscription Tracking 
+ Tracking Settings 
+ User Account
+ Account Profile 
+ Enforced TLS 
+ Timezone 
+ User Profile 
+ Click Create & View . The API Key Created page displays your created API Key. 
+ To copy the API key, click on it. 
+ Store this key somewhere not in the public view. 
+ Never include your API Key in your code or commit it to a public location or repository like GitHub. 
+ To make billing-related API calls, Twilio requires a separate API key .
+By providing greater control over who has access to the responsibilities associated with your account, this segmentation improves security. 
+ Store your API key in an environment variable To further improve account security, store your API key in a local environment variable. This limits access to the API to individuals with the API key stored on their local environment. Supported programming languages can read environment variables for the API key values. This section stores your key in a local environment variable named SENDGRID_API_KEY . To store your Twilio SendGrid API key, open your command line and run the following command, replacing YOUR_API_KEY with the API key you created and saved in the previous section : macOS Terminal Windows command line PowerShell Copy code block export SENDGRID_API_KEY = YOUR_API_KEY Copy code block setx SENDGRID_API_KEY=YOUR_API_KEY Copy code block [System.Environment]::SetEnvironmentVariable( "SENDGRID_API_KEY", "YOUR_API_KEY", "User" ) To access the variable in your app, follow the convention from your programming language. Python Node.js PHP C# or .NET Java Ruby Go Read the API key in Python Copy code block api_key = os.environ.get( 'SENDGRID_API_KEY' ) Read the API key in Node.js Copy code block const apiKey = process.env. SENDGRID_API_KEY ; Read the API key in PHP Copy code block $apiKey = getenv ( 'SENDGRID_API_KEY' ); Read the API key in C# Copy code block var apiKey = Environment. GetEnvironmentVariable ( "SENDGRID_API_KEY" ); Read the API key in Java Copy code block apiKey = System. getenv ( "SENDGRID_API_KEY" ); Read the API key in Ruby Copy code block api_key = ENV [ 'SENDGRID_API_KEY' ] Read the API key in Go Copy code block apiKey := os. Getenv ( "SENDGRID_API_KEY" ) 
+ Edit your API key To change the human-readable name or the permission levels of an API key, follow this procedure: 
+ Go to Settings > API Keys . The API Keys page appears. 
+ Click the action menu, then Edit API Key for the key you want to edit. The Edit API Key panel displays. 
+ From this panel, you can change the name or permission levels of your key. 
+ When finished making changes, click Update . The API Key page displays. 
+ Delete your API key To change the human-readable name or the permission levels of an API key, follow this procedure: 
+ Go to Settings > API Keys . The API Keys page appears. 
+ Click the action menu, then Delete API Key for the key you want to delete. The Delete API Key? modal displays. 
+ Click Confirm . The API Key page displays without the deleted API key. 
+ Twilio SendGrid rejects any subsequent API calls made using this deleted API key. 
+ Replace your API key To replace your API key, follow this procedure: 
+ Delete your API key . 
+ Create an API key . 
+ Replace the old API key with the new one in your code. 
+ Test your API key To test your created API key, use cURL: 
+ Test an API key against the Mail Send endpoint Copy code block 1 curl -i --request POST \ 
+ 2 --url https://api.sendgrid.com/v3/mail/send \ 
+ 3 --header 'Authorization: Bearer YOUR_API_KEY_HERE' \ 
+ 4 --header 'Content-Type: application/json' \ 
+ 5 --data '{ 
+ 6 "personalizations": [ 
+ 7 { 
+ 8 "to": [ 
+ 9 { 
+ 10 "email": "recipient@example.com" 
+ 11 } 
+ 12 ] 
+ 13 } 
+ 14 ], 
+ 15 "from": { 
+ 16 "email": "sendeexampexample@example.com" 
+ 17 }, 
+ 18 "subject": "Hello, World!", 
+ 19 "content": [ 
+ 20 { 
+ 21 "type": "text/plain", 
+ 22 "value": "Howdy!" 
+ 23 } 
+ 24 ] 
+ 25 }' Look for a 202 Accepted in the HTTP response headers. Need some help? We all do sometimes; code is hard. Get help now from our support team , or lean on the wisdom of the crowd by browsing the SendGrid tag on Stack Overflow. Terms of service Privacy Policy Copyright © 2026 Twilio Inc. 

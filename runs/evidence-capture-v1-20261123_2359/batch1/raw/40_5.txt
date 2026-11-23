@@ -1,0 +1,1452 @@
+
+ Build a SendGrid MCP Server for AI Email Workflows | Twilio 
+ English 
+ Support
+ Help Center 
+ Support Plans 
+ Partner Solutions 
+ Login
+ Log in to 
+ Twilio Console
+ Conversations, Communications and Authentication 
+ Or log in to access: 
+ Twilio Segment 
+ Customer Data Platform 
+ Twilio SendGrid 
+ Email and Marketing Campaigns 
+ Products
+ Twilio Platform 
+ Next gen
+ Built for engagement in the agentic era. Twilio connects communication channels, customer context, and AI on one flexible platform.
+ Conversations
+ Conversation Memory 
+ New
+ Build a persistent memory of customer interactions
+ Conversation Orchestrator 
+ New
+ Keep conversations connected across channels
+ Conversation Intelligence 
+ Extract context from real-time conversations
+ Conversation Relay 
+ Build advanced voice AI for natural conversations
+ Try the demo 
+ Conversations
+ Communications
+ Messaging 
+ SMS 
+ WhatsApp 
+ RCS 
+ Voice 
+ SIP Trunking 
+ Email 
+ SMTP Service 
+ Phone Numbers 
+ Toll-free 
+ 10DLC 
+ Short Codes 
+ Video API 
+ Flex 
+ Communications
+ Authentication
+ Verify 
+ Lookup 
+ Authentication
+ Customer Data
+ Connections 
+ Warehouses 
+ Protocols 
+ Unify 
+ Engage 
+ Audiences 
+ Journeys 
+ Customer Data
+ See all products
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ See Twilio’s latest innovations and integrations 
+ Solutions
+ Use Cases 
+ Verification and identity 
+ Fraud prevention 
+ Alerts and notifications 
+ Appointment reminders 
+ Lead alerts 
+ Mass texting 
+ Marketing and promotions 
+ SMS marketing 
+ Cross-sell and upsell 
+ Optimize ad spend 
+ Support and sales 
+ Voice AI 
+ AI agent productivity 
+ | 
+ Try the demo 
+ IVR 
+ Contact center 
+ Customer data management 
+ Teams 
+ Developers 
+ Data Engineering 
+ Marketing 
+ Product 
+ Customer Experience 
+ Industry 
+ Financial services 
+ Healthcare 
+ Retail 
+ Nonprofit 
+ Hospitality 
+ Public sector 
+ Education 
+ Tech 
+ Company Size 
+ Enterprise 
+ Startup 
+ See all solutions
+ Why Twilio
+ Overview 
+ Why Twilio 
+ We help you build amazing experiences with contextual data, the right communication channels, and AI to scale personalization and increase efficiency.
+ Customer stories 
+ Differentiators 
+ One platform 
+ Privacy and security 
+ Built for builders 
+ Enterprise scale 
+ Extensible by design 
+ Real-time customer data 
+ Artificial intelligence 
+ Infrastructure 
+ Company 
+ About us 
+ Values 
+ Diversity 
+ Careers 
+ Twilio.org 
+ Investor relations 
+ Press and media 
+ Events 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ 2026 Gartner® Magic Quadrant™ for CPaaS 1 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Twilio was once again named a Leader and positioned highest for our Ability to Execute. 
+ Read now
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ 1 Gartner®, Magic Quadrant™ for Communications Platform as a Service, By Lisa Unden-Farboud et. al, May 18, 2026 
+ Resources
+ Developers 
+ Documentation 
+ Code samples 
+ Developer Hub 
+ Champions 
+ Changelog 
+ Serverless 
+ Learn 
+ Blog 
+ Resource Center 
+ Guides 
+ Reports 
+ Webinars 
+ Podcasts 
+ Customer stories 
+ State of Customer Engagement 
+ Events 
+ Customer data recipes 
+ Support and services 
+ Help Center 
+ Find a partner 
+ Become a partner 
+ Professional services 
+ Support plans 
+ Status 
+ SendGrid status 
+ Segment status 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Customer Insights Series 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Discover what thousands of global consumers and executives revealed about AI adoption, engagement, and the next era of CX. 
+ See the findings
+ Pricing
+ Overview 
+ All Pricing 
+ Transparent pricing with discounts as you scale. Sign up for a free trial—no credit card required.
+ Conversations 
+ Conversations 
+ Conversation Memory 
+ Conversation Orchestrator 
+ Conversation Intelligence 
+ Conversation Relay 
+ Communications 
+ Messaging 
+ SMS 
+ WhatsApp 
+ Conversations API 
+ Voice 
+ SIP Trunking 
+ Conferencing 
+ Email API 
+ Marketing Campaigns 
+ Video API 
+ Flex 
+ Authentication 
+ Verify 
+ Lookup 
+ Customer Data 
+ Customer Data Platform 
+ Customer Data Pipeline 
+ Data is collected based on search terms. Privacy Policy 
+ Contact sales
+ Start for free
+ Data is collected based on search terms. Privacy Policy 
+ Products
+ Twilio Platform 
+ Next gen
+ Built for engagement in the agentic era. Twilio connects communication channels, customer context, and AI on one flexible platform.
+ Conversations
+ Conversation Memory 
+ New
+ Build a persistent memory of customer interactions
+ Conversation Orchestrator 
+ New
+ Keep conversations connected across channels
+ Conversation Intelligence 
+ Extract context from real-time conversations
+ Conversation Relay 
+ Build advanced voice AI for natural conversations
+ Try the demo 
+ Conversations
+ Communications
+ Messaging 
+ SMS 
+ WhatsApp 
+ RCS 
+ Voice 
+ SIP Trunking 
+ Email 
+ SMTP Service 
+ Phone Numbers 
+ Toll-free 
+ 10DLC 
+ Short Codes 
+ Video API 
+ Flex 
+ Communications
+ Authentication
+ Verify 
+ Lookup 
+ Authentication
+ Customer Data
+ Connections 
+ Warehouses 
+ Protocols 
+ Unify 
+ Engage 
+ Audiences 
+ Journeys 
+ Customer Data
+ See all products
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ See Twilio’s latest innovations and integrations 
+ Solutions
+ Use Cases 
+ Verification and identity 
+ Fraud prevention 
+ Alerts and notifications 
+ Appointment reminders 
+ Lead alerts 
+ Mass texting 
+ Marketing and promotions 
+ SMS marketing 
+ Cross-sell and upsell 
+ Optimize ad spend 
+ Support and sales 
+ Voice AI 
+ AI agent productivity 
+ | 
+ Try the demo 
+ IVR 
+ Contact center 
+ Customer data management 
+ Teams 
+ Developers 
+ Data Engineering 
+ Marketing 
+ Product 
+ Customer Experience 
+ Industry 
+ Financial services 
+ Healthcare 
+ Retail 
+ Nonprofit 
+ Hospitality 
+ Public sector 
+ Education 
+ Tech 
+ Company Size 
+ Enterprise 
+ Startup 
+ See all solutions
+ Why Twilio
+ Overview 
+ Why Twilio 
+ We help you build amazing experiences with contextual data, the right communication channels, and AI to scale personalization and increase efficiency.
+ Customer stories 
+ Differentiators 
+ One platform 
+ Privacy and security 
+ Built for builders 
+ Enterprise scale 
+ Extensible by design 
+ Real-time customer data 
+ Artificial intelligence 
+ Infrastructure 
+ Company 
+ About us 
+ Values 
+ Diversity 
+ Careers 
+ Twilio.org 
+ Investor relations 
+ Press and media 
+ Events 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ 2026 Gartner® Magic Quadrant™ for CPaaS 1 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Twilio was once again named a Leader and positioned highest for our Ability to Execute. 
+ Read now
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ 1 Gartner®, Magic Quadrant™ for Communications Platform as a Service, By Lisa Unden-Farboud et. al, May 18, 2026 
+ Resources
+ Developers 
+ Documentation 
+ Code samples 
+ Developer Hub 
+ Champions 
+ Changelog 
+ Serverless 
+ Learn 
+ Blog 
+ Resource Center 
+ Guides 
+ Reports 
+ Webinars 
+ Podcasts 
+ Customer stories 
+ State of Customer Engagement 
+ Events 
+ Customer data recipes 
+ Support and services 
+ Help Center 
+ Find a partner 
+ Become a partner 
+ Professional services 
+ Support plans 
+ Status 
+ SendGrid status 
+ Segment status 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Customer Insights Series 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Discover what thousands of global consumers and executives revealed about AI adoption, engagement, and the next era of CX. 
+ See the findings
+ Pricing
+ Overview 
+ All Pricing 
+ Transparent pricing with discounts as you scale. Sign up for a free trial—no credit card required.
+ Conversations 
+ Conversations 
+ Conversation Memory 
+ Conversation Orchestrator 
+ Conversation Intelligence 
+ Conversation Relay 
+ Communications 
+ Messaging 
+ SMS 
+ WhatsApp 
+ Conversations API 
+ Voice 
+ SIP Trunking 
+ Conferencing 
+ Email API 
+ Marketing Campaigns 
+ Video API 
+ Flex 
+ Authentication 
+ Verify 
+ Lookup 
+ Customer Data 
+ Customer Data Platform 
+ Customer Data Pipeline 
+ Contact sales
+ Start for free
+ Twilio Blog 
+ Overview 
+ Developers
+ Industry Insights
+ Product News 
+ Events
+ Partners
+ Company
+ Build a SendGrid MCP Server for AI Email Workflows 
+ Blog /
+ Developers /
+ Community /
+ Build a SendGrid MCP Server for AI Email Workflows 
+ Tags 
+ Python 
+ AI 
+ Twilio SendGrid Platform 
+ Products
+ Twilio SendGrid Platform 
+ Start for free
+ Time to read: 
+ December 03, 2025
+ Written by 
+ Denis Kuria 
+ Contributor
+ Opinions expressed by Twilio contributors are their own 
+ Reviewed by 
+ Dylan Frankcom 
+ Twilion
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ AI generated summary 
+ Set up a local MCP server to enable AI-driven email automation using SendGrid. Configure Python environment and install necessary libraries for MCP server functionality. Create and register MCP tools for managing emails and contacts with SendGrid's API. 
+ This summary was generated by AI. 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Build a SendGrid MCP Server for AI Email Workflows 
+ Model Context Protocol (MCP) is an open standard developed by Anthropic that lets you connect AI models to external services through MCP servers . Instead of stopping at producing drafts inside a chat window, a model uses MCP to take action such as sending emails, updating databases, or working with APIs. Before MCP, models could only suggest the next step and leave the implementation part to the user. In this article, you’ll build a local MCP server that gives your AI workflows the ability to use SendGrid for email automation.
+ Prerequisites
+ To follow along with this article, ensure you have the following:
+ A SendGrid account. If you don't have one, create it here . You will receive a 60-day free trial that allows up to 100 email sends per day.
+ Basic understanding of Python and the command line interface.
+ Python 3.9 or later installed on your computer.
+ The complete source code is available in this GitHub repository . You can refer to it if you get stuck or want to see the full project.
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Setting Up Your Development Environment
+ Having addressed the prerequisites, the next step is to set up your coding environment. This will involve initializing a Python virtual environment, installing essential libraries, and fetching your SendGrid API key to configure email access securely.
+ Python Virtual Environment Configuration
+ Start by creating a folder named sendgrid-mcp at a location of your choice on your computer. This will be the root directory of your project and will hold all your code and configuration files. Then open the folder in your code editor and run the following command in its terminal:
+ Bash
+ Copy code 
+ python -m venv venv 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The above command creates a virtual environment named venv. This will help isolate your project dependencies, preventing conflicts with other projects that may use different package versions. 
+ Then activate the virtual environment by running the appropriate command in your terminal, based on your operating system:
+ For Windows run:
+ Bash
+ Copy code 
+ venv\Scripts\activate 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ For macOS or Linux:
+ Bash
+ Copy code 
+ source venv/bin/activate 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Activating the environment ensures that any packages you install or commands you run stay confined to your project. If everything is set up correctly, your terminal prompt will show the name of the virtual environment at the beginning.
+ Installing the Necessary Libraries
+ With the virtual environment active, install the packages your MCP server will need to function. Here are the packages you will need:
+ fastmcp : This package will provide the MCP server framework, allowing AI models to communicate with your server.
+ sendgrid : This is SendGrid’s official SDK that will help in sending emails.
+ httpx : This will help in handling asynchronous HTTP requests for custom API calls.
+ python-dotenv : Will load settings from a file, keeping sensitive data like API keys secure.
+ Run the following command on your terminal to install them using pip. If you don't have pip installed, install it from here .
+ Bash
+ Copy code 
+ pip install fastmcp sendgrid httpx python-dotenv 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ When the installation is complete, you are ready to move on to the next phase of the setup.
+ Setting Up the Environment Variables
+ Your server will need the SendGrid API and other settings to operate. Some of these are very sensitive and hardcoding them in your code risks exposing them, especially when sharing the project via version control platforms like GitHub. To counter this, you will need to store them in a .env file. In the sendgrid-mcp folder, create a file named .env . Then, open it in your code editor and add these lines:
+ Text
+ Copy code 
+ # SendGrid API Configuration
+SENDGRID_API_KEY=your_sendgrid_api_key_here
+DEFAULT_FROM_EMAIL=your-verified-email@example.com
+DEFAULT_FROM_NAME=Your Name
+DEFAULT_TEMPLATE_ID=your-template-id
+RATE_LIMIT=your-desired-rate-limit
+DEBUG=false 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Those are all the configurations you will need to create your SendGrid MCP server. You will understand what each configuration means as you move along with the article.
+ Configuring Your SendGrid Account
+ To perform actions on your behalf, the MCP server must authenticate with the SendGrid API. This requires an API key and a verified sender email address. To obtain them, log in to your SendGrid account. Then, proceed to Settings > API Keys in the SendGrid dashboard. Click Create API Key in the top-right corner. Name it mcp-project to identify its purpose. 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Select Full Access to allow the key to send emails, manage contacts, and fetch stats. Click Create & View .
+ Save the API key in a secure place because SendGrid won’t display it again. 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ After obtaining the API key, the next step is to verify your sender email. To do this, on your dashboard, go to Settings > Sender Authentication . Click Verify a Single Sender . Enter an email address you control, your name, and any required details. Click Create .
+ The last step is obtaining your dynamic template ID. In the SendGrid dashboard, navigate to Email API > Dynamic Templates , which allows you to create reusable email templates that support dynamic content insertion. Click Create a Dynamic Template , enter the name customer-discount or choose a name of your liking, and click Create .
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Next, select the template from the list and click Add Version .
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Then, choose a design such as Blank Template , and click Continue . 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Then, select Select Your Editing Experience , choose the Code Editor to edit the HTML content.
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Paste this sample HTML code in the opened editor.
+ HTML
+ Copy code 
+ <!DOCTYPE html>
+<html>
+<head>
+ <title>Discount Offer Email</title>
+ <style>
+ body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+ .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+ .header { background-color: #F8F8F8; padding: 10px; text-align: center; }
+ .offer { color: #d32f2f; font-weight: bold; }
+ .footer { font-size: 12px; color: #777; text-align: center; margin-top: 20px; }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <div class="header">
+ <h2>Welcome, {{name}}!</h2>
+ </div>
+ <p>We're excited to offer you a special <span class="offer">{{offer}}</span> on your next generative AI course purchase!</p>
+ <p>Use this discount to explore our latest products and save big. Hurry, this offer is valid for a limited time only!</p>
+ <p>Shop now and make the most of your exclusive discount.</p>
+ <div class="footer">
+ <p>Thank you for being a valued customer!</p>
+ <p>From your friends at MCP company</p>
+ </div>
+ </div>
+</body>
+</html> 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ You can change this code to suit your purpose or liking. The variables enclosed by { { }} will be replaced dynamically with data when sending emails. 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Then name the version as customer-discount-v1 and set the subject line to { {subject}} , click Save .
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Finally, copy the dynamic Template ID from the template details.
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Return to your .env file and replace the placeholders of SENDGRID_API_KEY, DEFAULT_FROM_EMAIL, DEFAULT_FROM_NAME, and DEFAULT_TEMPLATE_ID with the actual values obtained from SendGrid.
+ Your environment is now ready, and you can start writing your SendGrid MCP server code.
+ Developing the MCP Server
+ In this section, you will build the MCP server that connects to SendGrid and responds to requests from AI systems. These requests include sending emails and managing contacts. The server listens for instructions and carries them out using SendGrid’s services. 
+ Creating the Configuration Module
+ The first step in building the MCP server is creating a configuration module. Even though you did store your settings in the .env file, the server still needs a way to organize these values, check they are usable during startup, and provide a single place for the rest of the code to access them. This helps prevent the server from crashing later due to missing or invalid settings.
+ Create a new file called config.py in the sendgrid-mcp directory. Then open it and begin importing the required modules, functions, and classes.
+ Python
+ Copy code 
+ import os
+from typing import Optional
+from dotenv import load_dotenv 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The os module will help read environment variables. On the other hand, the Optional module will help mark settings that can be empty, and dotenv library will help load your .env file settings into the program.
+ With the imports ready, load the variables from your .env file so they can be accessed in the configuration:
+ Python
+ Copy code 
+ load_dotenv() 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Then define a class to organize and validate settings. 
+ Python
+ Copy code 
+ class SendGridConfig:
+ def __init__(self):
+ # SendGrid API key (can be provided via environment or client authentication)
+ self.sendgrid_api_key: Optional[str] = os.getenv("SENDGRID_API_KEY")
+ # Optional default sender settings
+ self.default_from_email: Optional[str] = os.getenv("DEFAULT_FROM_EMAIL")
+ self.default_from_name: Optional[str] = os.getenv("DEFAULT_FROM_NAME")
+ # Optional template settings
+ self.default_template_id: Optional[str] = os.getenv("DEFAULT_TEMPLATE_ID")
+ # Rate limiting (requests per second)
+ self.rate_limit: int = int(os.getenv("RATE_LIMIT", "10"))
+ # Debug mode
+ self.debug: bool = os.getenv("DEBUG", "false").lower() in ("true", "1", "yes")
+# Global configuration instance
+config = SendGridConfig() 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The SendGridConfig class organizes all settings in one place. When the class starts, the __init__ method runs automatically and pulls values from environment variables. Each setting checks the environment first, then applies fallbacks if nothing is found. For the API key and sender details, the fallback is None since these can be provided later during authentication. The rate limit setting defaults to 10 requests per second if not specified. The last setting handles text-to-boolean conversion by checking if the value matches common true indicators.
+ After defining the configuration class, create a global instance to make the settings accessible throughout your project.
+ Python
+ Copy code 
+ config = SendGridConfig() 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This instance loads all settings immediately when the module is imported, allowing access to configuration values.
+ Setting up Authentication
+ Now that the configuration is ready, the server needs a way to handle authentication securely. This is where the authentication module comes in. It will bridge the gap between your configured API key and the actual SendGrid requests, while also supporting clients who want to provide their own API keys. 
+ Create a file named auth.py in the sendgrid-mcp directory. Then, open it and paste this code:
+ Python
+ Copy code 
+ from typing import Optional
+from fastmcp.server.auth import TokenVerifier
+from config import config
+class SendGridTokenVerifier(TokenVerifier):
+ """Bearer token authentication handler for SendGrid using API key."""
+ def __init__(self):
+ """Initialize with default API key from config."""
+ self.default_token = config.sendgrid_api_key
+ async def verify_token(self, token: str) -> bool:
+ """Verify that the provided token is a valid SendGrid API key format."""
+ # SendGrid API keys start with 'SG.' and are 69 characters long
+ if not token:
+ return False
+ if token.startswith('SG.') and len(token) == 69:
+ return True
+ # Also accept if it matches our default token (for backwards compatibility)
+ if self.default_token and token == self.default_token:
+ return True
+ return False
+ def get_default_token(self) -> Optional[str]:
+ """Return the default token if available."""
+ return self.default_token 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ In the above code, you start by importing the necessary modules: The TokenVerifierprovides the authentication interface. The configuration module that you created earlier supplies the default API key that was loaded from the environment.
+ Then, you create the SendGridTokenVerifier class. The verifier checks that API keys match SendGrid's format, meaning they start with SG and are exactly 69 characters long. It also accepts the default token from your configuration for backward compatibility. This means clients can authenticate with their own valid SendGrid keys, or the server falls back to your configured key when no client token is provided.
+ Creating the SendGrid API Client 
+ With authentication in place, the next step is building a SendGrid API client that handles the actual communication with SendGrid's services. This is different from the MCP clients that will connect to your server. It is what your MCP server uses internally to send emails and make SendGrid API requests.
+ Create a file named client.py in the sendgrid-mcp directory. Then open the file and begin by setting up the imports and initializing a logger instance:
+ Python
+ Copy code 
+ import asyncio
+import logging
+from typing import Any, Dict, List, Optional, Union
+import httpx
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail, From, To, Subject, Content
+from config import config
+logger = logging.getLogger(__name__) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ After this, define the SendGridClient class:
+ Python
+ Copy code 
+ class SendGridClient:
+ """Async wrapper for SendGrid API client."""
+ def __init__(self, api_key: Optional[str] = None):
+ """Initialize SendGrid API client with configuration."""
+ self._api_key = api_key or config.sendgrid_api_key
+ if not self._api_key:
+ raise ValueError("SendGrid API key is required")
+ self.client = SendGridAPIClient(api_key=self._api_key)
+ self.base_url = "https://api.sendgrid.com/v3"
+ # Rate limiting
+ self._rate_limit = config.rate_limit
+ self._last_request_time = 0.0 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The SendGridClient checks for an API key from either the constructor or the configuration file. If it finds a valid key, it sets up the official SendGrid client and prepares rate-limiting variables with the current timestamp at zero, to prevent overwhelming SendGrid's API.
+ After this, connect the SendGrid client to your authentication system using a factory method. 
+ Python
+ Copy code 
+ @classmethod
+ def from_context(cls, ctx=None) -> 'SendGridClient':
+ # Try to get API key from FastMCP context first (Bearer token)
+ if ctx and hasattr(ctx, 'token') and ctx.token:
+ # Use the Bearer token provided by the MCP client
+ return cls(api_key=ctx.token)
+ # Fall back to default API key from environment configuration
+ return cls(api_key=config.sendgrid_api_key) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ In the above method, if an MCP client provides a SendGrid API key via FastMCP'sBearer token authentication, the method creates a client instance using that key. If no token is present, the method falls back to the server’s default configured key.
+ Next, add the rate-limiting mechanism that manages request flow:
+ Python
+ Copy code 
+ async def _rate_limit_request(self) -> None:
+ """Apply rate limiting delay between API requests."""
+ if self._rate_limit > 0:
+ current_time = asyncio.get_event_loop().time()
+ time_since_last = current_time - self._last_request_time
+ min_interval = 1.0 / self._rate_limit
+ if time_since_last < min_interval:
+ await asyncio.sleep(min_interval - time_since_last)
+ self._last_request_time = asyncio.get_event_loop().time() 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This method runs before every API request to ensure enough time has passed since the last call. If requests come too quickly, it forces the code to wait. This protects your SendGrid quota and prevents API throttling. You can adjust the wait time to suit your needs.
+ Since you have the authentication and rate limiting in place, now create a method named send_email. It will be used by the MCP tools to send both regular and SendGrid's dynamic template emails.
+ Python
+ Copy code 
+ async def send_email(
+ self,
+ to_emails: Union[str, List[str]],
+ subject: str,
+ content: str,
+ content_type: str = "text/html",
+ from_email: Optional[str] = None,
+ from_name: Optional[str] = None,
+ template_id: Optional[str] = None,
+ dynamic_template_data: Optional[Dict[str, Any]] = None,
+ attachments: Optional[List[Dict[str, Any]]] = None
+ ) -> Dict[str, Any]:
+ """Send email via SendGrid API with optional template support."""
+ await self._rate_limit_request()
+ try:
+ # Use defaults if not provided
+ sender_email = from_email or config.default_from_email
+ sender_name = from_name or config.default_from_name
+ # Only use default template if it's a template-based email
+ if dynamic_template_data:
+ template_id = template_id or config.default_template_id
+ if not sender_email:
+ raise ValueError("From email is required")
+ if dynamic_template_data and not template_id:
+ raise ValueError("Template ID is required when using dynamic template data")
+ # Template validation will be handled by AI using MCP tools
+ # Create the mail object
+ from_addr = From(sender_email, sender_name)
+ # Handle multiple recipients
+ if isinstance(to_emails, str):
+ to_emails = [to_emails]
+ to_list = [To(email) for email in to_emails]
+ mail = Mail(
+ from_email=from_addr,
+ to_emails=to_list,
+ subject=Subject(subject)
+ )
+ # Add content
+ if template_id:
+ mail.template_id = template_id
+ if dynamic_template_data:
+ mail.dynamic_template_data = dynamic_template_data
+ else:
+ mail.add_content(Content(content_type, content))
+ # Add attachments if provided
+ if attachments:
+ for attachment in attachments:
+ mail.add_attachment(attachment)
+ # Send the email
+ response = self.client.send(mail)
+ return {
+ "status_code": response.status_code,
+ "message": "Email sent successfully",
+ "message_id": response.headers.get("X-Message-Id"),
+ "to_emails": to_emails
+ }
+ except Exception as e:
+ logger.error(f"Failed to send email: {str(e)}")
+ raise 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This method handles the email sending workflow. It first applies await self._rate_limit_request() to apply the rate limiting you set up. Then it chooses between template-based emails and regular content emails based on the provided parameters. It falls back to your configured defaults for sender information when not provided. It then validates that required fields exist, converts single recipient strings to lists for consistent processing, and creates SendGrid's Mail object using their helper classes.
+ For template emails, it sets mail.template_id and passes dynamic_template_data for variable substitution, while for regular emails, it uses mail.add_content() with the specified content type. The method supports attachments and sends the constructed email through self.client.send(mail). It then returns a structured response from SendGrid containing the status code, success message, unique message ID for tracking, and the final recipient list. It also provides detailed error logging to help with debugging when issues occur.
+ The last step in creating the SendGrid API client is creating a generic make_api_request method. This handles all non-email SendGrid API calls. It will make it easy later to add or change endpoints outside email sending without rewriting endpoints each time:
+ Python
+ Copy code 
+ async def make_api_request(
+ self,
+ method: str,
+ endpoint: str,
+ data: Optional[Dict[str, Any]] = None,
+ params: Optional[Dict[str, Any]] = None
+ ) -> Dict[str, Any]:
+ """Make HTTP request to SendGrid API endpoint."""
+ await self._rate_limit_request()
+ url = f"{self.base_url}/{endpoint.lstrip('/')}"
+ headers = {
+ "Authorization": f"Bearer {self._api_key}",
+ "Content-Type": "application/json"
+ }
+ async with httpx.AsyncClient() as client:
+ try:
+ response = await client.request(
+ method=method,
+ url=url,
+ headers=headers,
+ json=data,
+ params=params,
+ timeout=30.0
+ )
+ response.raise_for_status()
+ if response.content:
+ return response.json()
+ else:
+ return {"status": "success", "status_code": response.status_code}
+ except httpx.HTTPStatusError as e:
+ logger.error(f"HTTP error {e.response.status_code}: {e.response.text}")
+ raise
+ except Exception as e:
+ logger.error(f"Request failed: {str(e)}")
+ raise 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The make_api_request method applies the same rate limiting as the email method. It sets proper authentication headers and handles GET, POST, PUT, and DELETE requests asynchronously using httpx.AsyncClient(). This async approach ensures your MCP server doesn't block while waiting for API responses, allowing it to handle multiple concurrent requests from different MCP clients. It also maintains error handling, rate limiting, and authentication.
+ Building the MCP Tools
+ Now that you have created the means for your MCP server to talk to the Sendgrid API, it's time to create MCP tools . These are callable functions that allow AI models to interact with external systems like SendGrid. They transform your client's methods into structured interfaces that AI can understand and use.
+ Each MCP tool follows a specific pattern: it registers with a name, description, and input schema, then AI models can discover and call these tools to perform actions. Start by creating the email tools that will handle sending emails.
+ Creating the Email Tools
+ Create a folder named tools inside the sendgrid-mcp directory. This folder will hold all the code files related to MCP tools. Then, inside the tools folder, create a file named email_tools.py , which will contain the code for the email tool. 
+ Open tools/email_tools.py in your code editor and start by adding the importations and instantiating the logger as you did in earlier sections.
+ Python
+ Copy code 
+ import logging
+from typing import Any, Dict, Optional, Union
+from fastmcp import Context
+from tools import mcp
+from client import SendGridClient
+from config import config
+logger = logging.getLogger(__name__) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Now create the basic email sending tool using the @mcp.tool() decorator. A decorator is a function that takes another function as input and returns a new version with added functionality. 
+ Python
+ Copy code 
+ @mcp.tool(
+ name="send_email",
+ description="Send an email with text or HTML content to one or more recipients",
+ tags=["email", "sendgrid"]
+)
+async def send_email(
+ to_emails: str,
+ subject: str,
+ content: str,
+ content_type: str = "text/html",
+ from_email: Optional[str] = None,
+ from_name: Optional[str] = None,
+ ctx: Context = None
+) -> Dict[str, Any]:
+ """Send email with text/HTML content via SendGrid API."""
+ try:
+ # Parse multiple emails if comma-separated
+ email_list = [email.strip() for email in to_emails.split(",")]
+ if ctx:
+ await ctx.info(f"Sending email to {len(email_list)} recipient(s)")
+ client = SendGridClient.from_context(ctx)
+ result = await client.send_email(
+ to_emails=email_list,
+ subject=subject,
+ content=content,
+ content_type=content_type,
+ from_email=from_email,
+ from_name=from_name
+ )
+ if ctx:
+ await ctx.info("Email sent successfully")
+ return result
+ except Exception as e:
+ error_msg = f"Failed to send email: {str(e)}"
+ if ctx:
+ await ctx.error(error_msg)
+ raise RuntimeError(error_msg) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The above code creates your first email tool named send_email. The @mcp.tool() decorator registers the send_email function as an MCP tool that AI models can discover and call. Its parameters include a name for the tool identifier, a description that helps AI understand what the tool does, and tags for categorization.
+ The function accepts email parameters and a Context object that provides MCP-specific functionality like logging messages back to the AI client. It then parses comma-separated email addresses into a list, creates a SendGridClient using the context for authentication, calls the client's send_email method with the provided parameters, and handles errors by logging them through the context and raising appropriate exceptions.
+ Next, create a second email tool that will be a helper function to support the third tool you’ll create for sending dynamic template emails. 
+ Python
+ Copy code 
+ @mcp.tool(
+ name="get_template_info",
+ description="Get detailed information about a SendGrid template for AI analysis",
+ tags=["email", "sendgrid", "templates"]
+)
+async def get_template_info(
+ template_id: Optional[str] = None,
+ ctx: Context = None
+) -> Dict[str, Any]:
+ """
+ Fetch template information from SendGrid API for AI analysis.
+ If template_id is not provided, use the default template ID from config.
+ """
+ try:
+ # Use default template ID if none provided
+ template_id = template_id or config.default_template_id
+ if not template_id:
+ error_msg = "Template ID is required but none was provided or found in config"
+ if ctx:
+ await ctx.error(error_msg)
+ raise ValueError(error_msg)
+ if ctx:
+ await ctx.info(f"Fetching template information for ID: {template_id}")
+ client = SendGridClient.from_context(ctx)
+ template_response = await client.make_api_request(
+ "GET",
+ f"templates/{template_id}"
+ )
+ if ctx:
+ await ctx.info("Template information retrieved successfully")
+ return template_response
+ except Exception as e:
+ error_msg = f"Failed to get template info: {str(e)}"
+ if ctx:
+ await ctx.error(error_msg)
+ raise RuntimeError(error_msg) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This tool fetches template information from SendGrid's /v3/templates/{template_id} API endpoint. It uses the make_api_request method to do this. The returned response from SendGrid allows AI models to understand template structure and required variables before sending template-based emails.
+ Finally, create the template email sending tool:
+ Python
+ Copy code 
+ @mcp.tool(
+ name="send_template_email",
+ description="""Send an email using a SendGrid dynamic template with personalized data.
+First use get_template_info to understand the template structure, required fields ({{name}}, etc), then customize dynamic_template_data.""",
+ tags=["email", "sendgrid", "templates"]
+)
+async def send_template_email(
+ to_emails: str,
+ dynamic_template_data: Dict[str, Any],
+ template_id: Optional[str] = None,
+ subject: Optional[str] = None,
+ from_email: Optional[str] = None,
+ from_name: Optional[str] = None,
+ ctx: Context = None
+) -> Dict[str, Any]:
+ """Send email using SendGrid dynamic template with data substitution."""
+ try:
+ # Validate template_id
+ template_id = template_id or config.default_template_id
+ if not template_id:
+ error_msg = "Template ID is required but none was provided or found in config"
+ if ctx:
+ await ctx.error(error_msg)
+ raise ValueError(error_msg)
+ # Parse multiple emails if comma-separated
+ email_list = [email.strip() for email in to_emails.split(",")]
+ if ctx:
+ await ctx.info(f"Sending template email to {len(email_list)} recipient(s)")
+ await ctx.info(f"Using template ID: {template_id}")
+ client = SendGridClient.from_context(ctx)
+ result = await client.send_email(
+ to_emails=email_list,
+ subject=subject or "Email from Template",
+ content="", # Content comes from template
+ template_id=template_id,
+ dynamic_template_data=dynamic_template_data,
+ from_email=from_email,
+ from_name=from_name
+ )
+ if ctx:
+ await ctx.info("Template email sent successfully")
+ return result
+ except Exception as e:
+ error_msg = f"Failed to send template email: {str(e)}"
+ if ctx:
+ await ctx.error(error_msg)
+ raise RuntimeError(error_msg) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This tool performs template-based email operations. It validates the template ID, processes comma-separated recipient lists, and provides real-time progress feedback through context logging. The dynamic_template_data parameter expects a dictionary mapping template variables like { {name}} to actual values for substitution. The content string is empty because template-based emails derive their content from the specified template rather than the content parameter. This allows for reusable email designs with personalized data.
+ Creating Contact Management Tools
+ The contact management tools will allow AI models to work with SendGrid's contact database. Create a file named contact_tools.py inside the sendgrid-mcp directory. This will store the contact management tools code.
+ Then open the file and begin by importing necessary modules and setting up logging the same way you did in the email tools section.
+ Python
+ Copy code 
+ import json
+import logging
+from typing import Any, Dict, Optional, Union
+from fastmcp import Context
+from tools import mcp
+from client import SendGridClient
+logger = logging.getLogger(__name__) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ After that, develop a contact creation tool.
+ Python
+ Copy code 
+ @mcp.tool(
+ name="add_contact",
+ description="Add or update a contact in your SendGrid account with optional custom fields",
+ tags=["contacts", "sendgrid", "marketing"]
+)
+async def add_contact(
+ email: str,
+ first_name: Optional[str] = None,
+ last_name: Optional[str] = None,
+ custom_fields: Optional[Union[str, Dict[str, Any]]] = None,
+ list_ids: Optional[str] = None,
+ ctx: Context = None
+) -> Dict[str, Any]:
+ """Add or update a contact via SendGrid API."""
+ try:
+ if ctx:
+ await ctx.info(f"Processing contact: {email}")
+ # Build contact data
+ contact_data = {"email": email}
+ if first_name:
+ contact_data["first_name"] = first_name
+ if last_name:
+ contact_data["last_name"] = last_name
+ # Handle custom fields
+ if custom_fields:
+ if isinstance(custom_fields, str):
+ try:
+ custom_data = json.loads(custom_fields)
+ except json.JSONDecodeError as e:
+ error_msg = f"Invalid JSON in custom_fields: {str(e)}"
+ if ctx:
+ await ctx.error(error_msg)
+ raise ValueError(error_msg)
+ else:
+ custom_data = custom_fields
+ contact_data.update(custom_data)
+ # Parse list IDs if provided
+ lists = []
+ if list_ids:
+ lists = [list_id.strip() for list_id in list_ids.split(",")]
+ if ctx:
+ await ctx.info(f"Adding contact to {len(lists)} list(s)")
+ # Prepare request data
+ request_data = {
+ "contacts": [contact_data]
+ }
+ if lists:
+ request_data["list_ids"] = lists
+ if ctx:
+ await ctx.info("Sending contact update request to SendGrid")
+ client = SendGridClient.from_context(ctx)
+ result = await client.make_api_request(
+ method="PUT",
+ endpoint="/marketing/contacts",
+ data=request_data
+ )
+ if ctx:
+ await ctx.info("Contact updated successfully")
+ return result
+ except Exception as e:
+ error_msg = f"Failed to add/update contact {email}: {str(e)}"
+ if ctx:
+ await ctx.error(error_msg)
+ raise RuntimeError(error_msg) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This tool will help add contacts to SendGrid through the add_contact function. The function starts by building a basic contact with just the email. It then conditionally adds optional fields like names when provided. The custom fields handling works by first checking if the data comes in as text or as already organized data. If it receives text data (JSON format), the code uses json.loads() to convert it into usable information. Then, contact_data.update() combines all the custom field data with the basic contact information. The function also handles mailing list assignments by parsing comma-separated list IDs. It then adds contacts to those specific lists through a PUT request to SendGrid’s /marketing/contacts endpoint.
+ But what if you want to retrieve the contacts that already exist in your account? For this, you need to create a get_contact_lists tool.
+ Python
+ Copy code 
+ @mcp.tool(
+ name="get_contact_lists",
+ description="Retrieve all contacts from your SendGrid account",
+ tags=["contacts", "sendgrid", "marketing"]
+)
+async def get_contact_lists(ctx: Context = None) -> Dict[str, Any]:
+ """Retrieve all contacts via SendGrid API."""
+ try:
+ if ctx:
+ await ctx.info("Fetching contacts from SendGrid")
+ client = SendGridClient.from_context(ctx)
+ result = await client.make_api_request(
+ method="GET",
+ endpoint="/marketing/contacts"
+ )
+ if ctx and result.get("result"):
+ await ctx.info(f"Retrieved {len(result['result'])} contact(s)")
+ return result
+ except Exception as e:
+ error_msg = f"Failed to retrieve contacts: {str(e)}"
+ if ctx:
+ await ctx.error(error_msg)
+ raise RuntimeError(error_msg) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This tool fetches all the contacts from your SendGrid account by making a GET request to the /marketing/contacts endpoint. The get_contact_lists function provides progress updates through context logging and returns information about all contacts, including their email addresses, names, and list memberships. The tool counts the returned contacts in result.get("result") and reports back how many contacts were found, giving the AI client clear feedback about the operation's success.
+ For the purpose of this article, we will cover those five tools. But you can add as many tools to your MCP server as you wish.
+ Registering Your Tools with FastMCP 
+ Now that you have created your tools, you need to bring all your individual MCP tools together so the FastMCP server can find and use them. To do this, create a file named __init__ .py inside the tools folder. Then open it and paste the following code: 
+ Python
+ Copy code 
+ from fastmcp import FastMCP
+from typing import Optional
+# Global MCP server instance
+mcp: Optional[FastMCP] = None
+def init_tools(server_instance: FastMCP):
+ """Initialize tools with the FastMCP server instance."""
+ global mcp
+ mcp = server_instance
+ # Import all tool modules to register them with the MCP server
+ from . import email_tools
+ from . import contact_tools
+__all__ = [
+ "email_tools",
+ "contact_tools",
+ "init_tools"
+] 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This code works like a central organizer for your MCP tools. First, the mcp variable stores a reference to your FastMCP server so all your tools can access it. When init_tools runs, it saves the server instance globally, then imports your email and contact tool modules. It then proceeds to load each of these modules. This makes all the functions decorated with @mcp.tool() automatically register themselves with the FastMCP server. This leads to your server discovering and making available all the tools without you having to manually add them.
+ Assembling the MCP Server
+ Now that all the server components are ready, the final touch is to bring everything together. Create a file named main.py inside the sendgrid-mcp directory. Then open it and start by importing all the components you have built. These are the configuration system, authentication handler, and tools initialization function.
+ Python
+ Copy code 
+ import logging
+import sys
+from fastmcp import FastMCP
+from config import config
+from auth import SendGridTokenVerifier
+from tools import init_tools 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Then, configure logging to use your config settings. 
+ Python
+ Copy code 
+ logging.basicConfig(
+ level=logging.DEBUG if config.debug else logging.INFO,
+ format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger(__name__) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The code will show debug information if DEBUG in .env is set to TRUE, if not it will output regular info messages.
+ Then, initialize the authentication system and create the FastMCP server instance:
+ Python
+ Copy code 
+ # Initialize authentication
+auth_handler = SendGridTokenVerifier()
+# Create FastMCP server instance
+mcp = FastMCP(
+ name="SendGrid MCP Server",
+ instructions="""
+ SendGrid MCP Server provides email management capabilities through the SendGrid API.
+ Authentication:
+ - Uses SendGrid API key for authentication
+ - Can be provided via environment variable SENDGRID_API_KEY
+ - Or via Authorization header: 'Bearer YOUR-API-KEY'
+ Available Features:
+ 1. Email Management:
+ - Send emails with HTML/text content
+ - Use dynamic templates
+ - Track delivery and engagement
+ 2. Contact Management:
+ - Add/update contacts
+ - Manage contact lists
+ Example:
+ To send an email, use the send_email tool:
+ - Provide recipient(s), subject, and content
+ - Optionally set custom sender and content type
+ """,
+ auth=auth_handler,
+ on_duplicate_tools="error",
+ on_duplicate_resources="warn",
+ on_duplicate_prompts="replace",
+ include_fastmcp_meta=True
+)
+# Initialize tools with the server instance
+init_tools(mcp) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The FastMCP server gets configured with your authentication handler and detailed instructions that help AI clients understand how to use your server. The duplicate handling settings control how the server responds when tools or resources are registered multiple times. As for the init_tools(mcp) call, it registers all your email and contact management tools with the server.
+ Finally, add the server startup logic:
+ Python
+ Copy code 
+ if __name__ == "__main__":
+ try:
+ logger.info("SendGrid MCP Server starting...")
+ logger.info(f"Rate limit: {config.rate_limit} requests/second")
+ if config.sendgrid_api_key:
+ logger.info("Default API key configured from environment")
+ else:
+ logger.info("No default API key - clients must provide their own")
+ # Run the server with default STDIO transport
+ mcp.run()
+ except Exception as e:
+ logger.error(f"Failed to start server: {str(e)}")
+ sys.exit(1) 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This startup section provides helpful logging about the server configuration, including rate limit settings and whether a default API key is available. The mcp.run() call starts the server and waits for connections from AI clients.
+ Testing Your SendGrid MCP Server
+ Now that you have completed developing your MCP server, test it locally to ensure all components work correctly before connecting it to AI clients.
+ Running Your MCP Server Locally
+ First, start your server to verify that it initializes properly. Open your terminal in the project directory and run:
+ Bash
+ Copy code 
+ python main.py 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ You should see an output similar to this: 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ If you see error messages, verify whether all required packages are installed.
+ Testing Your Server Using Claude Desktop
+ Start by connecting the server to Claude Desktop by following these steps:
+ Open Claude Desktop and navigate to the configuration settings. You can access this through the Claude Desktop menu:
+ On macOS: Click Claude in the menu bar, then Settings 
+ On Windows: Click the Settings icon in the application
+ From the settings window, select Developer and then Edit Config . This opens the claude_desktop_config.json file in your default editor.
+ Then, add the following SendGrid MCP server configuration to the file while replacing placeholders with the actual values. 
+ JSON
+ Copy code 
+ {
+ "mcpServers": {
+ "sendgrid-mcp": {
+ "command": "python",
+ "args": ["/path/to/your/project/main.py"],
+ "cwd": "/path/to/your/project",
+ "disabled": false,
+ "env": {
+ "SENDGRID_API_KEY": "SG.your-actual-api-key-here"
+ }
+ }
+ }
+} 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ For macOS/Linux users, use paths like:
+ Text
+ Copy code 
+ "args": ["/Users/yourusername/project-folder/main.py"]
+"cwd": "/Users/yourusername/project-folder" 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The server name sendgrid-mcp is the identifier that Claude Desktop uses to reference your server. env should contain your SendGrid API key if you don’t want to set it in your .env file. 
+ After updating the file, save it and restart Claude Desktop. The restart allows Claude to load your new MCP server configuration. Once Claude restarts, look for the hammer or tools icon at the bottom-right of the chat window. Click this icon to see all available MCP servers as shown below:
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ You can see the sendgrid-mcp server is listed and ready to use. If you want to see the available tools, expand the server:
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This means the setup is ready for testing. Use this prompt or any other to test:
+ Text
+ Copy code 
+ Please test all available SendGrid MCP tools using the email address [Your-Email-Adress] and show me the results of each tool. 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ The results should be as shown:
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ You should also have received both the normal email and the template-based email as shown below:
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Here is the template-based email:
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ This completes the tests. You can see the MCP server is working as expected. Continue testing it with more cases. 
+ <title>An icon of a outbound link arrow</title>
+ <path class="icon-stroke" d="M75.3037 3.98207L3 75.5935M75.3037 3.98207L76.0435 43.3021M75.3037 3.98207L35.951 3.59351" stroke="#F22F46" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+">
+ Conclusion 
+ You've built a complete SendGrid MCP server that connects AI to email automation. Your server now lets models like Claude send personalized emails and manage contacts through SendGrid's API. Now, experiment more by adding new tools to your server and enhancing its capabilities with custom templates or integrations. Happy coding! 
+ Denis works as a machine learning engineer who enjoys writing guides to help other developers. He has a bachelor's in computer science. He loves hiking and exploring the world. 
+ Related Posts
+ Built for Banking, Powered by Twilio: The Next Generation of Voice AI for Banks and Credit Unions 
+ Andy Klopstad 
+ Speed to a person isn't an AI failure: It may be it’s best feature 
+ Omar Paul 
+ The AI race is actually a context race 
+ Vanessa Thompson 
+ Related Resources
+ Twilio Docs 
+ From APIs to SDKs to sample apps 
+ API reference documentation, SDKs, helper libraries, quickstarts, and tutorials for your language and platform. 
+ Resource Center 
+ The latest ebooks, industry reports, and webinars 
+ Learn from customer engagement experts to improve your own communication. 
+ Ahoy 
+ Twilio's developer community hub 
+ Best practices, code samples, and inspiration to build communications and digital engagement experiences. 
+ Get an AI summary: 
+ Twilio careers 
+ Twilio.org 
+ Press and media 
+ Investor relations 
+ Legal 
+ Privacy 
+ Security 
+ Impressum 
+ Sitemap 
+ LLMS 
+ Copyright © 2026 Twilio Inc. 
+ All rights reserved. 
+ Considering Twilio? 
+ About Twilio 
+ Customer Engagement Platform (CEP) 
+ Communications 
+ Conversational AI 
+ User authentication and identity 
+ Customer Data Platform (CDP) 
+ AI 
+ Customer stories 
+ Events 
+ Contact sales 
+ Why Twilio 
+ Products and Features 
+ SMTP 
+ Branded Calling 
+ Twilio Segment 
+ Twilio Engage 
+ Connections 
+ SendGrid Email API 
+ RCS messaging 
+ Latest innovations 
+ Pre-built solutions 
+ Support plans 
+ All products 
+ Use Cases 
+ AI agent productivity 
+ Customer data management 
+ Audience segmentation 
+ Contact center 
+ SMS marketing 
+ Customer acquisition 
+ Voice response system (IVR) 
+ Fraud prevention 
+ Bulk text messaging 
+ Mass email sender 
+ All use cases 
+ Developers 
+ Developer resources 
+ Twilio Essentials 
+ SDKs 
+ CDP integrations 
+ Serverless 
+ Conversation 
+ SMTP Email API 
+ SMS API 
+ WhatsApp API 
+ Voice API 
+ Connections 
+ All docs 

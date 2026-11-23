@@ -1,0 +1,78 @@
+{
+ "id": 6,
+ "name": "Podio",
+ "category": "CRM and Sales",
+ "model": "gemini-2.5-flash",
+ "pages_read": [
+  "https://developers.podio.com/authentication",
+  "https://developers.podio.com/authentication/server_side",
+  "https://developers.podio.com/doc/oauth-authorization",
+  "https://developers.podio.com/clients/python"
+ ],
+ "one_liner": "Podio provides an API for integrating with its CRM and sales platform, allowing external applications to manage data and automate workflows.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token",
+  "other"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers must register an application to obtain a Client ID and Client Secret for authentication.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "medium",
+ "existing_mcp": "community",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.podio.com/authentication",
+   "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.podio.com/authentication",
+   "quote": "token_type: \"bearer\"",
+   "quote_found": false,
+   "url_in_sources": true
+  },
+  {
+   "field": "auth_methods",
+   "url": "https://developers.podio.com/authentication",
+   "quote": "Username & password flow. Use this flow only if none of the other flows are suitable. It requires the user's username and password to be shared.",
+   "quote_found": false,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developers.podio.com/authentication",
+   "quote": "Before you can use the Podio API you must register your application.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://developers.podio.com/authentication/server_side",
+   "quote": "HTTP METHOD: POST URL: https://api.podio.com/oauth/token/v2 HEADER: \"Content-Type: application/json\"",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_breadth",
+   "url": "https://developers.podio.com/clients/python",
+   "quote": "Currently authentication and the app/item APIs are supported in their entirety, while some user and space functions are also available.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developers.podio.com/clients/python",
+   "quote": "Citrix does not maintain these libraries. We encourage customers to fork the library code and make any required fixes to continue using these libraries.",
+   "quote_found": true,
+   "url_in_sources": true
+  }
+ ]
+}

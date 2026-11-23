@@ -1,0 +1,357 @@
+{
+ "id": 85,
+ "name": "iPayX",
+ "started": "2026-11-23T19:39:21+05:30",
+ "searches": [
+  {
+   "q": "iPayX API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:23+05:30"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:25+05:30"
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:27+05:30"
+  },
+  {
+   "q": "iPayX MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:39:28+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://ipayx.ai/mcp",
+   "requested_at": "2026-11-23T19:39:33+05:30",
+   "status": "ok",
+   "final_url": "https://www.ipayx.ai/mcp",
+   "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+   "chars": 804,
+   "sha256": "104e14f909cacd8a7777e3c3a0f4b48bd9b200ac8e0c4398913da7fce86013b0",
+   "text": "# iPayX Protocol \u2014 Neutral FX Verification Layer\n\niPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\n\n## How It Works\n\n* Enter your transaction \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied.\n* We capture the mid-market rate \u2013 From regulated interbank data sources at the exact transaction time.\n* Instant audit report \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\n\n## Trust & Compliance\n\nMSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada \ud83c\udde8\ud83c\udde6\n\n## Links\n\nContact: info@ipayx.ai",
+   "retrieved_at": "2026-11-23T19:39:33+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://ipayx.ai/docs/mcp-server",
+   "requested_at": "2026-11-23T19:39:41+05:30",
+   "status": "ok",
+   "final_url": "https://www.ipayx.ai/docs/mcp-server",
+   "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+   "chars": 804,
+   "sha256": "104e14f909cacd8a7777e3c3a0f4b48bd9b200ac8e0c4398913da7fce86013b0",
+   "text": "# iPayX Protocol \u2014 Neutral FX Verification Layer\n\niPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\n\n## How It Works\n\n* Enter your transaction \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied.\n* We capture the mid-market rate \u2013 From regulated interbank data sources at the exact transaction time.\n* Instant audit report \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\n\n## Trust & Compliance\n\nMSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada \ud83c\udde8\ud83c\udde6\n\n## Links\n\nContact: info@ipayx.ai",
+   "retrieved_at": "2026-11-23T19:39:41+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://ipayx.ai/mcp-marketplace",
+   "requested_at": "2026-11-23T19:39:42+05:30",
+   "status": "ok",
+   "final_url": "https://www.ipayx.ai/mcp-marketplace",
+   "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+   "chars": 804,
+   "sha256": "104e14f909cacd8a7777e3c3a0f4b48bd9b200ac8e0c4398913da7fce86013b0",
+   "text": "# iPayX Protocol \u2014 Neutral FX Verification Layer\n\niPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\n\n## How It Works\n\n* Enter your transaction \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied.\n* We capture the mid-market rate \u2013 From regulated interbank data sources at the exact transaction time.\n* Instant audit report \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\n\n## Trust & Compliance\n\nMSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada \ud83c\udde8\ud83c\udde6\n\n## Links\n\nContact: info@ipayx.ai",
+   "retrieved_at": "2026-11-23T19:39:42+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://ipayx.ai/docs/mcp-server?lang=en",
+   "requested_at": "2026-11-23T19:39:44+05:30",
+   "status": "ok",
+   "final_url": "https://www.ipayx.ai/docs/mcp-server?lang=en",
+   "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+   "chars": 804,
+   "sha256": "104e14f909cacd8a7777e3c3a0f4b48bd9b200ac8e0c4398913da7fce86013b0",
+   "text": "# iPayX Protocol \u2014 Neutral FX Verification Layer\n\niPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\n\n## How It Works\n\n* Enter your transaction \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied.\n* We capture the mid-market rate \u2013 From regulated interbank data sources at the exact transaction time.\n* Instant audit report \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\n\n## Trust & Compliance\n\nMSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada \ud83c\udde8\ud83c\udde6\n\n## Links\n\nContact: info@ipayx.ai",
+   "retrieved_at": "2026-11-23T19:39:44+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://ipayx.ai/mcp-marketplace?lang=en",
+   "requested_at": "2026-11-23T19:39:49+05:30",
+   "status": "ok",
+   "final_url": "https://www.ipayx.ai/mcp-marketplace?lang=en",
+   "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+   "chars": 804,
+   "sha256": "104e14f909cacd8a7777e3c3a0f4b48bd9b200ac8e0c4398913da7fce86013b0",
+   "text": "# iPayX Protocol \u2014 Neutral FX Verification Layer\n\niPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\n\n## How It Works\n\n* Enter your transaction \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied.\n* We capture the mid-market rate \u2013 From regulated interbank data sources at the exact transaction time.\n* Instant audit report \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\n\n## Trust & Compliance\n\nMSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada \ud83c\udde8\ud83c\udde6\n\n## Links\n\nContact: info@ipayx.ai",
+   "retrieved_at": "2026-11-23T19:39:49+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://ipayx.ai/docs/api?lang=en",
+   "requested_at": "2026-11-23T19:39:50+05:30",
+   "status": "ok",
+   "final_url": "https://www.ipayx.ai/docs/api?lang=en",
+   "title": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer",
+   "chars": 804,
+   "sha256": "104e14f909cacd8a7777e3c3a0f4b48bd9b200ac8e0c4398913da7fce86013b0",
+   "text": "# iPayX Protocol \u2014 Neutral FX Verification Layer\n\niPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\n\n## How It Works\n\n* Enter your transaction \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied.\n* We capture the mid-market rate \u2013 From regulated interbank data sources at the exact transaction time.\n* Instant audit report \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\n\n## Trust & Compliance\n\nMSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada \ud83c\udde8\ud83c\udde6\n\n## Links\n\nContact: info@ipayx.ai",
+   "retrieved_at": "2026-11-23T19:39:50+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/docs/api?lang=en",
+   "title": "ipayx.ai/docs/api",
+   "snippet": "FX audit engine that powers iPayX. Detect hidden bank spreads vs mid-market benchmark on any currency transaction. Bearer auth, OpenAPI 3.1, signed webhooks.\n[Get an API"
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/docs/api",
+   "title": "FX Audit API Docs \u00b7 iPayX Protocol",
+   "snippet": "```\nPOST\n## /audit\nRun a forensic audit on a single transaction. Returns a 0\u201310 score, hidden spread vs mid-market, and estimated loss.\nbash\n```\ncurl -X POST"
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/developers",
+   "title": "FX Audit API & MCP \u2014 Developer Documentation \u2014 iPayX",
+   "snippet": "Method | Endpoint | Description | Status |\n|---|---|---|---|\n| POST | /v1/audit | Returns structured FX audit analysis for one or more transactions, including per-partner score and thresholds applied."
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/mcp",
+   "title": "ipayx.ai/mcp",
+   "snippet": "3.1 Spec\nFor non-MCP platforms (Zapier, n8n, Pipedream, ChatGPT Custom GPT, Microsoft Copilot).\n[View spec](https://www.ipayx.ai/.well-known/openapi.json) [View MCP"
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/developers/sandbox",
+   "title": "ipayx.ai/developers/sandbox",
+   "snippet": "Bearer ipx_live_\u2026`\nPOST\n`/audit`\nSubmit up to 50 FX transactions per request. The API fetches the mid-market rate at the time of each transaction, computes the spread and implicit cost, and"
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/developers?lang=en",
+   "title": "ipayx.ai/developers",
+   "snippet": "API Base URL\n`https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/fx-audit-engine`"
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/integrations/microsoft-foundry",
+   "title": "iPayX FX Audit on Microsoft Azure Foundry",
+   "snippet": "[Get an API key](/dashboard)[Read full MCP docs](/docs/mcp-server)"
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+   "title": "GitHub - iPAYX-Technologies/mcp-fx-audit",
+   "snippet": "**Live endpoint (Cloudflare):** `https://wild-bird-a412.ybolduc.workers.dev/mcp`"
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/docs/mcp-server",
+   "title": "iPayX MCP Server \u2014 Documentation",
+   "snippet": "- **Production MCP:** `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server`\n- **Documentation:** `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server/docs`"
+  },
+  {
+   "q": "iPayX API documentation",
+   "url": "https://ipayx.ai/mcp-marketplace",
+   "title": "iPayX MCP Marketplace \u2014 Forensic FX audit for every AI agent",
+   "snippet": "`{ \"mcpServers\": { \"ipayx-fx-audit\": { \"url\": \"https://mcp.ipayx.ai/mcp\", \"transport\": \"streamable-http\" } } }`\nServer URL: `https://mcp.ipayx.ai/mcp` \u00b7 Transport: Streamable HTTP"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://ipayx.ai/developers",
+   "title": "FX Audit API & MCP \u2014 Developer Documentation \u2014 iPayX",
+   "snippet": "## Authentication\nAuthenticate every request using your production API key in the Authorization header.\n`Authorization: Bearer ipx_live_your_key`\nGenerate and manage your key in the Dashboard. Keys"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://ipayx.ai/developers?lang=en",
+   "title": "ipayx.ai/developers",
+   "snippet": "Get API Key [Try Sandbox](https://www.ipayx.ai/developers/sandbox)"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://ipayx.ai/docs/api?lang=en",
+   "title": "ipayx.ai/docs/api",
+   "snippet": "## Authentication\nEvery request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.\nHTTP\n```\nAuthorization: Bearer ipx_live_xxxxxxxxxxxx\n```"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://ipayx.ai/docs/mcp-server?lang=en",
+   "title": "ipayx.ai/docs/mcp-server",
+   "snippet": "in `Authorization` header.\n- **Format:** `ipx_live_xxxxx` (production) or `ipx_test_xxxxx` (sandbox).\n- **How to get a key:** [Open your iPayX dashboard \u2192 API keys](https://www.ipayx.ai/dashboard).\n"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://ipayx.ai/docs/api",
+   "title": "FX Audit API Docs \u00b7 iPayX Protocol",
+   "snippet": "## Authentication\nEvery request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.\nHTTP\n```\nAuthorization: Bearer ipx_live_xxxxxxxxxxxx\n```"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://ipayx.ai/developers/sandbox",
+   "title": "ipayx.ai/developers/sandbox",
+   "snippet": "`Authorization`\nstring\nrequired\n`Bearer ipx_live_\u2026` \u2014 generate keys from /developers while signed in."
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://ipayx.ai/integrations/microsoft-foundry",
+   "title": "iPayX FX Audit on Microsoft Azure Foundry",
+   "snippet": "auth={\"type\": \"bearer\", \"token\": \"<YOUR_IPAYX_API_KEY>\"}\n\n[Get an API key](/dashboard)[Read full MCP docs](/docs/mcp-server)"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://ipayx.ai/docs/mcp-server",
+   "title": "iPayX MCP Server \u2014 Documentation",
+   "snippet": "## 3. Authentication\n- **Method:** HTTP Bearer token in `Authorization` header.\n- **Format:** `ipx_live_xxxxx` (production) or `ipx_test_xxxxx` (sandbox).\n- **How to get a key:** [Open your iPayX"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://docs.i-pay.io/preparation-steps/creating-api-key",
+   "title": "Creating an API Key | iPay API Documentation",
+   "snippet": "The system generates a unique API key.\nimportant\n**Reach out to the iPay Team either directly, or via [[email protected]](/cdn-cgi/l/email-protection#ea889f9983848f9999aa83c79a8b93c48385) to"
+  },
+  {
+   "q": "iPayX API authentication OAuth API key developer",
+   "url": "https://auth0.com/blog/why-migrate-from-api-keys-to-oauth2-access-tokens",
+   "title": "Why You Should Migrate to OAuth 2.0 From API Keys",
+   "snippet": "2.0](https://auth0.com/docs/authenticate/protocols/oauth) emerged as the option offering more robust security, greater flexibility, and a better developer experience. Let\u2019s explore the advantages of"
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/docs/api?lang=en",
+   "title": "ipayx.ai/docs/api",
+   "snippet": "vs mid-market benchmark on any currency transaction. Bearer auth, OpenAPI 3.1, signed webhooks.\n[Get an API key](https://www.ipayx.ai/pricing) [ OpenAPI"
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/developers?lang=en",
+   "title": "ipayx.ai/developers",
+   "snippet": "Get API Key [Try Sandbox](https://www.ipayx.ai/developers/sandbox)"
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/api-terms",
+   "title": "API Terms of Service \u2013 iPayX Protocol",
+   "snippet": "and per-audit overage charges are billed monthly via Stripe and follow the published pricing tiers (Starter, Growth, Enterprise). Overage usage beyond the included monthly quota is billed at the"
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/developers",
+   "title": "FX Audit API & MCP \u2014 Developer Documentation \u2014 iPayX",
+   "snippet": "Rate Limits\nDeveloper \u2014 $99/mo \u00b7 100 audits/mo \u00b7 sandbox\nStarter API \u2014 $499/mo \u00b7 2,500 audits/mo \u00b7 95% SLA\nPro API \u2014 $1,499/mo \u00b7 10,000 audits/mo \u00b7 99.5% SLA\nScale API \u2014 $4,999/mo \u00b7 50,000"
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/mcp-marketplace?lang=en",
+   "title": "ipayx.ai/mcp-marketplace",
+   "snippet": "The public read tools (live mid-market rate lookup, single transaction audit) are free with per-IP rate limiting. The full forensic report tool requires a Bearer API token from the iPayX dashboard."
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/pricing",
+   "title": "ipayx.ai/pricing",
+   "snippet": "## Forensic FX reports for finance teams. Audit API for fintechs.\nFree audit included. Upgrade to signed reports or production-grade API."
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai",
+   "title": "ipayx.ai",
+   "snippet": "## REST API + SDKs for FX audit automation.\nGenerate API keys, embed the audit widget, plug into Zapier or n8n. Audit-grade JSON output, SHA256 hash-chain receipts, FINTRAC-ready logs."
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/docs/mcp-server?lang=en",
+   "title": "ipayx.ai/docs/mcp-server",
+   "snippet": "in `Authorization` header.\n- **Format:** `ipx_live_xxxxx` (production) or `ipx_test_xxxxx` (sandbox).\n- **How to get a key:** [Open your iPayX dashboard \u2192 API keys](https://www.ipayx.ai/dashboard)."
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/developers/sandbox",
+   "title": "ipayx.ai/developers/sandbox",
+   "snippet": "# iPayX FX Proof API\nAudit FX transactions against the mid-market rate. Returns the hidden spread, true cost, and an FX score (1\u201310)."
+  },
+  {
+   "q": "iPayX API access pricing plans developer account",
+   "url": "https://ipayx.ai/docs/mcp-server",
+   "title": "iPayX MCP Server \u2014 Documentation",
+   "snippet": "### full_forensic_fx_report\nPaid tier ($199)\nFull forensic audit including spread breakdown, projected loss, and partner routing intelligence. Requires a paid Bearer token."
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://ipayx.ai/developers",
+   "title": "FX Audit API & MCP \u2014 Developer Documentation \u2014 iPayX",
+   "snippet": "MCP Server \u2014 Model Context Protocol\nOfficially listed on the MCP Registry (v1.3.3)"
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://ipayx.ai/developers?lang=en",
+   "title": "ipayx.ai/developers",
+   "snippet": "One stable endpoint. A native MCP server. Audit-grade FX proof your sales team \u2014 or your AI agents \u2014 deliver in under 30 seconds.\n\nMCP Server URL\n`https://mcp.ipayx.ai/mcp`"
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://ipayx.ai/docs/mcp-server",
+   "title": "iPayX MCP Server \u2014 Documentation",
+   "snippet": "HTTP Bearer token in `Authorization` header.\n- **Format:** `ipx_live_xxxxx` (production) or `ipx_test_xxxxx` (sandbox).\n- **How to get a key:** [Open your iPayX dashboard \u2192 API keys](/dashboard)."
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://ipayx.ai/mcp",
+   "title": "ipayx.ai/mcp",
+   "snippet": "Perplexity \u2014 Connector setup Copy\n```\nConnector URL: https://mcp.ipayx.ai/mcp\nType: MCP (Streamable HTTP)\nAuth: None (public tools rate-limited per IP)\n```"
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://ipayx.ai/docs/mcp-server?lang=en",
+   "title": "ipayx.ai/docs/mcp-server",
+   "snippet": "to real-time FX audit verdicts.\n## 1. Endpoints\n- **Production MCP:** `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server`\n- **Documentation:**"
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://ipayx.ai/mcp-marketplace",
+   "title": "iPayX MCP Marketplace \u2014 Forensic FX audit for every AI agent",
+   "snippet": "iPayX exposes a Model Context Protocol (MCP) server that lets AI agents like Claude, Cursor, Perplexity and ChatGPT call forensic FX audit tools in real time. iPayX Protocol detects hidden bank markup"
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://ipayx.ai/integrations/microsoft-foundry",
+   "title": "iPayX FX Audit on Microsoft Azure Foundry",
+   "snippet": "[Get an API key](/dashboard)[Read full MCP docs](/docs/mcp-server)"
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+   "title": "GitHub - iPAYX-Technologies/mcp-fx-audit",
+   "snippet": "**Live endpoint (Cloudflare):** `https://wild-bird-a412.ybolduc.workers.dev/mcp`"
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://mcp.so/servers/mcp-fx-audit-ipayx-stellar",
+   "title": "Ipayx Fx Audit MCP Server: Tools, Setup & Config",
+   "snippet": "Ipayx Fx Audit is an MCP server that audits foreign exchange (FX) fees, compares currency conversion margins across providers, and scores cross-border payment ..."
+  },
+  {
+   "q": "iPayX MCP server official",
+   "url": "https://raw.githubusercontent.com/ipayx-stellar/mcp-fx-audit/HEAD/README.md",
+   "title": "raw.githubusercontent.com/ipayx-stellar/mcp-fx-audit/HEAD/README.md",
+   "snippet": "\u2014 audit FX fees, compare currency conversion margins and score cross-border payment invoices, directly inside Claude, Cursor, Cline, ChatGPT or any MCP-compatible AI client."
+  }
+ ],
+ "official_domain_candidates": {
+  "ipayx.ai": 34
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "ipayx.ai",
+ "completed": "2026-11-23T19:39:50+05:30"
+}

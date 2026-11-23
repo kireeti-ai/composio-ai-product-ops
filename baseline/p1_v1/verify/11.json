@@ -1,0 +1,74 @@
+{
+ "id": 11,
+ "name": "Zendesk",
+ "pass1_sha": "fd828ae8dbe63f4b",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "Zendesk supports using OAuth access tokens to authenticate API requests.",
+    "suggested_value": "",
+    "reason": "Excerpt explicitly states OAuth is supported.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "terminology_difference",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "OAuth access token functions as a bearer token.",
+    "needs_human": true
+   },
+   {
+    "item": "basic",
+    "verdict": "supported",
+    "evidence_quote": "If you're an existing Zendesk customer and are currently using basic authentication or API tokens, you will have to migrate to OAuth access tokens.",
+    "suggested_value": "",
+    "reason": "Excerpt mentions basic authentication as an existing method.",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "terminology_difference",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "API tokens are equivalent to API keys.",
+    "needs_human": true
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_trial_or_paid_plan :: Developers can sign up for a free 14-day trial account to test the Sunshine platform and APIs.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt explicitly offers a free 14\u2011day trial for developers.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts state Zendesk APIs are organized around REST principles",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt does not mention any MCP information",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

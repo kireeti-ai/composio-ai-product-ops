@@ -1,0 +1,147 @@
+{
+ "created": "2026-11-23T18:35:14+0530",
+ "replaces": "runs/pass2-pilot-plan-v1-20261124 (unchanged, superseded for call accounting)",
+ "stages": {
+  "CORE": {
+   "records": [
+    4,
+    5,
+    8,
+    9,
+    11,
+    14,
+    17,
+    18,
+    19,
+    23,
+    28,
+    49,
+    84
+   ],
+   "calls": 50,
+   "reuse": "official baseline re-verification files"
+  },
+  "S1b": {
+   "controls": [
+    {
+     "control_id": "N01_23_soap",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N01_23_soap.json",
+     "sha256": "e9e501159cc0ea8ad6e22a6f931a0ba00a5015296ce7d433a23534ba7e051d9f",
+     "field": "api_types",
+     "planted_item": "soap"
+    },
+    {
+     "control_id": "N02_19_websocket",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N02_19_websocket.json",
+     "sha256": "39052c13f1b6e9c84f54187261126ab385a14ecbbfd6ca72c59db44ed45e071a",
+     "field": "api_types",
+     "planted_item": "websocket"
+    },
+    {
+     "control_id": "N03_8_jwt_or_signed",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N03_8_jwt_or_signed.json",
+     "sha256": "a7991cd8c1344deab023f263569a1bb3efa170ba31123a344ef4466df93e7501",
+     "field": "auth_methods",
+     "planted_item": "jwt_or_signed"
+    },
+    {
+     "control_id": "N04_3_official",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N04_3_official.json",
+     "sha256": "5b87a8ddbb0a86f508a737189729f17b932e8855e4439b9a134b904979b0e07b",
+     "field": "existing_mcp",
+     "planted_item": "official"
+    },
+    {
+     "control_id": "N05_12_soap",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N05_12_soap.json",
+     "sha256": "6952578b1f2b1c5985e4e28f46f3a491de30a11919550ad0e15c061c514eb928",
+     "field": "api_types",
+     "planted_item": "soap"
+    },
+    {
+     "control_id": "N06_18_websocket",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N06_18_websocket.json",
+     "sha256": "eb15cdd00246c222b46d10dbc24769f8f3212b07ee2af9c2d4114a3814af0e49",
+     "field": "api_types",
+     "planted_item": "websocket"
+    },
+    {
+     "control_id": "N07_11_jwt_or_signed",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N07_11_jwt_or_signed.json",
+     "sha256": "c0839b5ded3c7ec8c6b79407073398d2877dc1fef0eab6036d5cdfdc6787eb21",
+     "field": "auth_methods",
+     "planted_item": "jwt_or_signed"
+    },
+    {
+     "control_id": "N08_14_soap",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N08_14_soap.json",
+     "sha256": "25f22d5a9ea952319af526c2dfb4292af4841403d7fa53d78d6b3803a85beb33",
+     "field": "api_types",
+     "planted_item": "soap"
+    },
+    {
+     "control_id": "N09_9_official",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N09_9_official.json",
+     "sha256": "7ed5c93a4367adad7f7b593f0670399faea12abe9bd55a3c50c1cc94772887a0",
+     "field": "existing_mcp",
+     "planted_item": "official"
+    },
+    {
+     "control_id": "N10_51_websocket",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N10_51_websocket.json",
+     "sha256": "cbe8b9bb44bae1bf66029cad9ce8991025b3180fcb994a7c82a419874b050dc8",
+     "field": "api_types",
+     "planted_item": "websocket"
+    },
+    {
+     "control_id": "N11_49_jwt_or_signed",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N11_49_jwt_or_signed.json",
+     "sha256": "2caeeee362b17bd7366accb3653c480cab466634f2a0de416114b5424b56e336",
+     "field": "auth_methods",
+     "planted_item": "jwt_or_signed"
+    },
+    {
+     "control_id": "N12_13_official",
+     "path": "runs/pass2-pilot-plan-v1-20261124/controls/N12_13_official.json",
+     "sha256": "287335d0290e90b768156a9b525eb01e0dfe7e267e6a34999e72d1e3fd9004e1",
+     "field": "existing_mcp",
+     "planted_item": "official"
+    }
+   ],
+   "calls": 12,
+   "reuse": "none: distinct prompts (planted claims)"
+  },
+  "S2REST": {
+   "records": [
+    1,
+    3,
+    13,
+    16,
+    21,
+    22,
+    51
+   ],
+   "calls": 27,
+   "reuse": "official baseline re-verification files"
+  }
+ },
+ "pilot_real_calls": 89,
+ "of_which_ledger_calls": 77,
+ "of_which_new": 12,
+ "expected_attempts": 153,
+ "worst_case_attempts": 445,
+ "analyses_not_extra_calls": {
+  "S1a": "4 items inside CORE results",
+  "S1c": "12 items inside CORE results",
+  "S2": "Frame-A claims inside CORE + S2REST results (68 labelled items; human source-grounding sheet unchanged: runs/pass2-pilot-plan-v1-20261124/stage2_source_grounding_sheet_TEMPLATE.csv)"
+ },
+ "criteria": {
+  "version": "v2-PROPOSED (the user may change it BEFORE the pilot; it is hashed and frozen at that point)",
+  "stop_rule": "run CORE -> grade S1a/S1c; then S1b -> grade; stop at the first FAIL, fix by versioning the verifier (v2.1), re-run only the affected stage",
+  "S1a": "PASS iff 0 of the 4 replayed known-false items has final verdict 'contradicted' (the 5 deterministic known cases are covered by the unit tests, which are regression only)",
+  "S1b": "PASS iff 0 of 12 planted claims has final verdict 'supported'; any 'contradicted' on a planted claim must carry an explicit negating quote and is reported",
+  "S1c": "PASS iff 0 of 12 positive controls is 'contradicted' AND at least 9 of 12 are 'supported' (sensitivity floor 75%, proposed)",
+  "S2": "needs >= 40 human-labelled claim items else INCONCLUSIVE; PASS iff false_supported <= 1 AND false_contradicted <= 1 AND no failure cause repeats; CONDITIONAL iff false_supported + false_contradicted <= 3 AND no cause repeats; otherwise FAIL",
+  "meaning": "ALL of S1 is a controlled challenge test and S2 is a source-grounded check: neither supports an accuracy claim. Only independent human-labelled evaluation (protocol v2, tier T3) does."
+ }
+}

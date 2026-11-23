@@ -1,0 +1,403 @@
+{
+ "baseline_id": "p1_v1",
+ "snapshot_time": "2026-11-23T17:09:36+0530",
+ "host_python": "3.10.13",
+ "packages": {
+  "composio": "0.27.0",
+  "composio-client": "2.0.0-rc.14",
+  "httpx": "0.28.1",
+  "beautifulsoup4": null,
+  "requests": "2.34.2"
+ },
+ "processes": {
+  "research_pid_57351": "stopped with SIGTERM at ~17:08:43 IST; exited within ~2s; no SIGKILL",
+  "verify_pid_91246": "stopped with SIGTERM at ~17:08:43 IST; exited within ~2s; no SIGKILL",
+  "post_stop_integrity": "all JSON files parsed (138 checked), no partial/corrupt/zero-byte files"
+ },
+ "counts": {
+  "apps_registry": 100,
+  "pass1_records": 26,
+  "verify_results": 26,
+  "verify_complete": 26,
+  "raw_retrievals": 81,
+  "raw_without_pass1": 55,
+  "apps_without_raw_or_pass1": 19
+ },
+ "ids": {
+  "pass1": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   16,
+   17,
+   18,
+   19,
+   21,
+   22,
+   23,
+   28,
+   49,
+   51,
+   58,
+   84
+  ],
+  "verify": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   16,
+   17,
+   18,
+   19,
+   21,
+   22,
+   23,
+   28,
+   49,
+   51,
+   58,
+   84
+  ],
+  "raw": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   84
+  ],
+  "raw_without_pass1": [
+   15,
+   20,
+   24,
+   25,
+   26,
+   27,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   50,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80
+  ],
+  "no_raw_no_pass1": [
+   81,
+   82,
+   83,
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99,
+   100
+  ]
+ },
+ "pass1_model_distribution": {
+  "gemini-2.5-flash": 9,
+  "gemini-3.5-flash": 17
+ },
+ "pass1_models_by_id": {
+  "gemini-3.5-flash": [
+   3,
+   5,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   17,
+   18,
+   19,
+   21,
+   23,
+   49,
+   51
+  ],
+  "gemini-2.5-flash": [
+   1,
+   2,
+   4,
+   6,
+   16,
+   22,
+   28,
+   58,
+   84
+  ]
+ },
+ "hashes": {
+  "PROMPT_sha256_V1": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+  "PROMPT_sha256_V2": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+  "SCHEMA_sha256_V1": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "SCHEMA_sha256_V2": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "VERIFIER_RULES_sha256": "122fc1a589ffcac3bb0d57e22957a6e0e52ba10897e7a53684d52e9828a99d13",
+  "verifier_model": "openai/gpt-oss-120b",
+  "research_v1_reconstructed_file_sha256": "bd27fb7a962a05205e50b6e374162026076592ec69ff89f75da876d9021b9859",
+  "research_v2_ondisk_file_sha256": "04efe43f14e22aada16b21432d2062954b4253bd6c78646e078027ef6a7fc9e1"
+ },
+ "source_code_sha256_at_snapshot": {
+  "src/mcp.py": "f38e0b6d627dfc7b7208ca4d4fa94c0f465e0c9e4f1ef8ce26fa3e573b34e1aa",
+  "src/research.py": "04efe43f14e22aada16b21432d2062954b4253bd6c78646e078027ef6a7fc9e1",
+  "src/stats.py": "44b37bddc702174b4b98b6e67466546a9ac9e50a148cd7275f5b5f785c9c7dff",
+  "src/validate_apps.py": "cf9ee8de5a52833b61a5eb72f83a026a416b0b764b74a34c85e904dac5c20c37",
+  "src/verify.py": "da6cf56f2db4caf4ccfe34935599e21304edd34dd46c10dd77132ff9925214a5",
+  "data/apps.json": "6ee8d2dcddd29bc3cae5f22c4f99c2993701bdf867fe806fd1bba57face090cc"
+ },
+ "pass1_generation": {
+  "code": "V1 (reconstructed, see caveat)",
+  "generation_params": "temperature 0, responseMimeType application/json, responseSchema=SCHEMA",
+  "provider": "Gemini via generativelanguage.googleapis.com (key 1 only)",
+  "retrieval": "Composio MCP -> TINYFISH_SEARCH_WEB / TINYFISH_FETCH_URLS (instant account, $0)",
+  "record_fields_missing": [
+   "prompt_sha",
+   "schema_sha",
+   "code_version",
+   "fetched_at",
+   "created_at"
+  ]
+ },
+ "known_duplicate_writes": {
+  "description": "Ids 1,2,3,5 were written twice ~16:19-16:20 by two overlapping research runs; the surviving record equals the later 'done' event. Pass 2 verified the final versions (pass1_sha matches 26/26).",
+  "log_done_events": {
+   "1": [
+    {
+     "t": "16:19:45",
+     "model": "gemini-2.5-flash"
+    },
+    {
+     "t": "16:20:01",
+     "model": "gemini-2.5-flash"
+    }
+   ],
+   "2": [
+    {
+     "t": "16:20:01",
+     "model": "gemini-2.5-flash"
+    },
+    {
+     "t": "16:20:05",
+     "model": "gemini-2.5-flash"
+    }
+   ],
+   "3": [
+    {
+     "t": "16:19:46",
+     "model": "gemini-2.5-flash"
+    },
+    {
+     "t": "16:20:46",
+     "model": "gemini-3.5-flash"
+    }
+   ],
+   "5": [
+    {
+     "t": "16:20:15",
+     "model": "gemini-2.5-flash"
+    },
+    {
+     "t": "16:20:48",
+     "model": "gemini-3.5-flash"
+    }
+   ]
+  }
+ },
+ "deleted_v0_smoke_test_outputs": {
+  "description": "Before the full run, work/raw and work/pass1 outputs of the first (V0, batched-fetch) smoke test were deleted by the assistant and regenerated with V1. Contents are NOT recoverable; only the log 'done' events remain. Per the session transcript, 4 of 5 were all-'unknown' because of a batch-fetch bug.",
+  "ids": [
+   4,
+   28,
+   49,
+   58,
+   84
+  ],
+  "surviving_log_events_first_run": {
+   "4": {
+    "t": "16:14:59",
+    "model": "gemini-2.5-flash"
+   },
+   "28": {
+    "t": "16:15:56",
+    "model": "gemini-3.5-flash"
+   },
+   "49": {
+    "t": "16:15:02",
+    "model": "gemini-2.5-flash"
+   },
+   "58": {
+    "t": "16:15:49",
+    "model": "gemini-2.5-flash"
+   },
+   "84": {
+    "t": "16:16:27",
+    "model": "gemini-2.5-flash"
+   }
+  }
+ },
+ "v1_reconstruction_caveat": "research_v1 was reconstructed in memory by reversing the V1->V2 patch on the on-disk file. Not byte-verified. Evidence V2 never ran: no 'combo_retired' log events, no record model string with '@' suffix. PROMPT and SCHEMA hashes are identical between V1 and V2.",
+ "other_caveats": [
+  "Pass 1 mixes two Gemini models (see distribution).",
+  "Cached retrievals were validated structurally only (parse, page counts, thin/block markers), not semantically; none count as researched apps.",
+  "MCP search hits (q='... MCP server') were stored but never fetched.",
+  "Pages truncated at 9000 characters.",
+  "Gemini free tier daily quota was exhausted on key 1 for gemini-2.5-flash and gemini-3.5-flash at snapshot.",
+  "Groq verdicts are flags, not ground truth."
+ ],
+ "excluded": [
+  ".env (secrets)",
+  ".venv",
+  "__pycache__"
+ ]
+}

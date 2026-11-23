@@ -1,0 +1,33 @@
+{
+ "app_id": 20,
+ "name": "Gladly",
+ "tool": "composio:TINYFISH_FETCH_URLS",
+ "session": "tail",
+ "fetched": [
+  {
+   "url": "https://gladly.com/gladly-pricing-support-and-service-packages",
+   "category": "pricing",
+   "source": "stored_search_hit",
+   "requested_at": "2026-11-23T17:32:25+05:30",
+   "charge_usd": 0.0,
+   "status": "empty",
+   "error": "[{'candidate_selectors': None, 'error': 'page_not_found', 'status': 404, 'unmatched_selectors': None, 'url': 'https://gladly.com/gladly-pricing-support-and-service-packages'}]",
+   "completed_at": "2026-11-23T17:32:28+05:30"
+  },
+  {
+   "url": "https://gladly.com/get-started-2",
+   "category": "onboarding",
+   "source": "stored_search_hit",
+   "requested_at": "2026-11-23T17:32:28+05:30",
+   "charge_usd": 0.0,
+   "status": "ok",
+   "final_url": "https://www.gladly.ai/get-started-2/",
+   "title": "Request a demo | AI customer experience without compromise | Gladly",
+   "chars": 322,
+   "truncated_at_30000": false,
+   "sha256": "04a8d3d153d0c460bd6aa76874e356295a04b9127d7202dd20d99040686af356",
+   "text": "Book in under a minute. No sales pressure.\n\n#### Your customers want answers, not ticket numbers.\n\nGladly helps brands resolve more conversations with AI while keeping every interaction personal and on-brand.\n\nRothy\u2019s, for example, now resolves 31% of conversations automatically.\n\n##### Book a personalized 30-minute demo",
+   "completed_at": "2026-11-23T17:33:03+05:30"
+  }
+ ]
+}

@@ -1,0 +1,863 @@
+[
+ {
+  "claim_id": "15:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Bearer authentication"
+  ],
+  "uncovered": [
+   "API token",
+   "REST API"
+  ],
+  "reason": "Quote says 'The Pylon API uses Bearer authentication' but never says 'API token' or REST."
+ },
+ {
+  "claim_id": "15:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Only Admins create tokens"
+  ],
+  "uncovered": [
+   "self-serve within existing workspace",
+   "no trial/pricing gate found (absence)"
+  ],
+  "reason": "'Only Admins can create and manage API tokens' covers the admin part, but nothing quoted shows self-serve or the absence of a pricing gate."
+ },
+ {
+  "claim_id": "15:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "no scopes",
+   "access by role",
+   "tokens do not expire"
+  ],
+  "uncovered": [],
+  "reason": "Quote states 'Tokens don't expire, and their access is controlled only by the role. There are no separate scopes.'"
+ },
+ {
+  "claim_id": "15:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "30/120/300 requests per minute",
+   "per-endpoint"
+  ],
+  "uncovered": [
+   "per-org"
+  ],
+  "reason": "Quote says 'Every endpoint uses one of three limits: 30, 120, or 300 requests per minute' but does not say limits are per organization."
+ },
+ {
+  "claim_id": "15:4",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "TypeScript/Python/Go SDKs",
+   "experimental CLI",
+   "webhooks"
+  ],
+  "uncovered": [
+   "REST API"
+  ],
+  "reason": "Quotes cover 'use our SDKs', 'experimental Pylon CLI' and 'Receive webhooks' but none uses the word REST."
+ },
+ {
+  "claim_id": "15:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "MCP server exists"
+  ],
+  "uncovered": [
+   "hosted"
+  ],
+  "reason": "'The Pylon MCP Server exposes Pylon data to AI tools' shows an MCP server but not that it is hosted."
+ },
+ {
+  "claim_id": "15:7",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "docs page: OAuth 2.0 or API token",
+   "support article: OAuth only"
+  ],
+  "uncovered": [],
+  "reason": "Both conflicting statements ('OAuth 2.0 or an API token' vs 'only supports OAuth authentication') are quoted, which is the conflict the claim reports."
+ },
+ {
+  "claim_id": "15:8",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "region-specific base URLs"
+  ],
+  "uncovered": [
+   "REST",
+   "admin-created",
+   "bearer token"
+  ],
+  "reason": "Quote lists 'US region: https://api.usepylon.com EU region: https://api.eu.usepylon.com' but says nothing of bearer token, admin creation or REST."
+ },
+ {
+  "claim_id": "24:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "self-built app gets tenant_access_token",
+   "max 2h validity",
+   "app_secret"
+  ],
+  "uncovered": [
+   "app_id"
+  ],
+  "reason": "Quotes cover the self-built app token and the 2-hour maximum plus an app_secret parameter row, but app_id is not quoted."
+ },
+ {
+  "claim_id": "24:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "custom-app permissions need tenant admin review",
+   "no-review permissions exist"
+  ],
+  "uncovered": [
+   "sensitive scopes need review"
+  ],
+  "reason": "Quotes state custom-app permissions need the tenant admin's review and mention no-review permissions, but no quote says sensitive ones need review."
+ },
+ {
+  "claim_id": "24:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "needs-review level (sensitive data)"
+  ],
+  "uncovered": [
+   "no-review level",
+   "applies to custom apps"
+  ],
+  "reason": "Quote defines the needs-review list for sensitive data permissions but does not mention the no-review level or custom apps."
+ },
+ {
+  "claim_id": "24:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API interfaces encapsulated as MCP tools"
+  ],
+  "uncovered": [
+   "REST server APIs"
+  ],
+  "reason": "Quote says the tool 'encapsulates Feishu/Lark Open Platform API interfaces as MCP tools' but does not say REST."
+ },
+ {
+  "claim_id": "24:6",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official",
+   "Beta",
+   "lark-openapi-mcp under larksuite"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'Feishu/Lark official OpenAPI MCP' and 'currently in Beta stage' from the larksuite repo."
+ },
+ {
+  "claim_id": "24:7",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "App ID/App Secret for authentication"
+  ],
+  "uncovered": [
+   "user-identity calls need OAuth login"
+  ],
+  "reason": "Quote 'Obtain the App ID and App Secret, which will be used for API authentication' does not mention OAuth login for user identity."
+ },
+ {
+  "claim_id": "24:8",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "conditional on tenant-admin approval"
+  ],
+  "uncovered": [],
+  "reason": "Quote says custom-app permissions applied for by developers 'need to pass the review of the tenant administrator', supporting the conditional Yes."
+ },
+ {
+  "claim_id": "31:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "OAuth 2.0 user credentials or service account via ADC",
+   "developer token sunset"
+  ],
+  "uncovered": [],
+  "reason": "Quotes state 'Application Default Credentials (OAuth 2.0 user credentials or service account)' and 'sunset developer tokens ... September 9, 2026'."
+ },
+ {
+  "claim_id": "31:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "four access levels",
+   "production needs approved cloud project"
+  ],
+  "uncovered": [
+   "level names Test/Explorer/Basic/Standard (not listed)"
+  ],
+  "reason": "Quotes say 'four different API access levels' and a CLOUD_PROJECT_NOT_APPROVED_FOR_PRODUCTION error, but the level names are not quoted."
+ },
+ {
+  "claim_id": "31:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Explorer 2,880",
+   "Standard unlimited"
+  ],
+  "uncovered": [
+   "Test 15,000",
+   "Basic 15,000"
+  ],
+  "reason": "Quotes give Explorer '2,880 operations / day' and Standard 'Unlimited' but neither Test nor Basic."
+ },
+ {
+  "claim_id": "31:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "gRPC use"
+  ],
+  "uncovered": [
+   "REST not confirmed (absence cannot be proven by a quote)"
+  ],
+  "reason": "Quote shows 'gRPC request header' but cannot prove the absence/non-confirmation of REST."
+ },
+ {
+  "claim_id": "31:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Test level for test accounts",
+   "15,000 ops/day"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'Test | Test accounts | 15,000 operations / day' states both parts."
+ },
+ {
+  "claim_id": "31:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official Google Ads MCP server"
+  ],
+  "uncovered": [],
+  "reason": "Repo README quote says 'server that enables LLMs and AI agents to query and manage' from the googleads repo."
+ },
+ {
+  "claim_id": "31:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "remote HTTP uses OAuth 2.0 web application credentials"
+  ],
+  "uncovered": [
+   "local stdio uses ADC"
+  ],
+  "reason": "Quote 'OAuth 2.0 Web application credentials for remote HTTP' covers remote only, not the local stdio ADC part."
+ },
+ {
+  "claim_id": "31:7",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Explorer approval allows production use"
+  ],
+  "uncovered": [
+   "Basic/Standard approval",
+   "production requires approval (only implied)"
+  ],
+  "reason": "Quote covers 'Explorer access (automated review and approval...)' but not Basic or Standard."
+ },
+ {
+  "claim_id": "37:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "X-API-Key header",
+   "only option"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'your only option right now is to attach your API key to the X-API-Key header'."
+ },
+ {
+  "claim_id": "37:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Settings menu in profile"
+  ],
+  "uncovered": [
+   "key creation step",
+   "'Public API keys' label",
+   "self-serve"
+  ],
+  "reason": "Quote shows Settings > 'MCP & API keys' navigation but not creating a key or the 'Public API keys' name."
+ },
+ {
+  "claim_id": "37:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "indefinite expiration by leaving field empty"
+  ],
+  "uncovered": [
+   "key-count cap not found (absence)"
+  ],
+  "reason": "Quote 'leave the Expiration field empty' covers indefinite keys but cannot prove no key-count cap exists."
+ },
+ {
+  "claim_id": "37:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "quota shared across keys"
+  ],
+  "uncovered": [
+   "429 response",
+   "X-RateLimit headers"
+  ],
+  "reason": "Quote 'Shared Quota' covers the shared limit but 429 and the X-RateLimit headers are not quoted."
+ },
+ {
+  "claim_id": "37:4",
+  "verdict": "none",
+  "contradicts": false,
+  "components_covered": [],
+  "uncovered": [
+   "REST",
+   "webhooks"
+  ],
+  "reason": "Quotes are only the title 'Systeme.io Public API' and an MCP welcome line; neither mentions REST or webhooks."
+ },
+ {
+  "claim_id": "37:7",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official MCP server",
+   "initial release"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'The Systeme.io MCP server is in its initial release.'"
+ },
+ {
+  "claim_id": "37:8",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "contacts",
+   "newsletters"
+  ],
+  "uncovered": [
+   "tags",
+   "contact fields"
+  ],
+  "reason": "Quote says 'contact and newsletter management' but tags and contact fields are not named."
+ },
+ {
+  "claim_id": "37:9",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "free plan exists"
+  ],
+  "uncovered": [],
+  "reason": "Quote lists 'Free, Startup, Webinar, Unlimited Plans'; the unverified API entitlement is a stated gap, not a world claim."
+ },
+ {
+  "claim_id": "37:10",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API key usable via X-API-Key"
+  ],
+  "uncovered": [
+   "account requirement"
+  ],
+  "reason": "Quote covers the API key in the 'X-API-Key header' but an account is not mentioned."
+ },
+ {
+  "claim_id": "40:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API key as Bearer token"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'Authorization header with the value Bearer <YOUR_API_KEY_HERE>'."
+ },
+ {
+  "claim_id": "40:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Create API Key button"
+  ],
+  "uncovered": [
+   "Settings > API Keys path",
+   "account needed"
+  ],
+  "reason": "Quote 'Click Create API Key.' lacks the Settings > API Keys path and any account mention."
+ },
+ {
+  "claim_id": "40:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Full Access",
+   "Custom Access"
+  ],
+  "uncovered": [
+   "Billing Access"
+  ],
+  "reason": "Quotes define 'Full Access' and 'Custom Access' but not Billing Access."
+ },
+ {
+  "claim_id": "40:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "fixed per-endpoint limits per refresh period"
+  ],
+  "uncovered": [
+   "429 on exceed",
+   "no numeric global limit (absence)"
+  ],
+  "reason": "Quote 'Each endpoint permits a fixed number of requests per refresh period' does not mention 429."
+ },
+ {
+  "claim_id": "40:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "REST v3 API",
+   "SDKs in seven languages"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'provides a REST interface' and 'SDKs for seven different languages'."
+ },
+ {
+  "claim_id": "40:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "free trial",
+   "no credit card"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'Sign up for a free trial\u2014no credit card required.' matches; plan details are explicitly not claimed."
+ },
+ {
+  "claim_id": "40:7",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "community tutorial exists (third_party)",
+   "Twilio-labs MCP repo exists"
+  ],
+  "uncovered": [
+   "SendGrid coverage of the repo",
+   "no official SendGrid MCP (absence)"
+  ],
+  "reason": "Quotes show a blog titled 'Build a SendGrid MCP Server' and a repo exposing 'all of Twilio APIs', but cannot prove SendGrid coverage or absence of an official one."
+ },
+ {
+  "claim_id": "40:8",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API usable with API key"
+  ],
+  "uncovered": [],
+  "reason": "Bearer API key quote shows the v3 API is callable with a key."
+ },
+ {
+  "claim_id": "42:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Basic Auth with consumer key/secret",
+   "OAuth 1.0a one-legged"
+  ],
+  "uncovered": [
+   "HTTPS vs HTTP transport split"
+  ],
+  "reason": "Quotes name HTTP Basic Auth key/secret and 'OAuth 1.0a one-legged' but the quoted text does not tie them to HTTPS and HTTP."
+ },
+ {
+  "claim_id": "42:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "WooCommerce > Settings > Advanced > REST API location"
+  ],
+  "uncovered": [
+   "generated by store admin",
+   "per-store"
+  ],
+  "reason": "Quote gives the menu path but does not say the store admin generates keys."
+ },
+ {
+  "claim_id": "42:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "read/write permission per key",
+   "user chosen"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'choose a user ... and give the key read/write permissions'."
+ },
+ {
+  "claim_id": "42:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "REST API integration with WordPress"
+  ],
+  "uncovered": [
+   "v3 current",
+   "webhooks as an API feature"
+  ],
+  "reason": "Quotes say 'fully integrated with the WordPress REST API' and mention 'tool to test webhooks', not v3 or webhooks themselves."
+ },
+ {
+  "claim_id": "42:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "abilities registered",
+   "developer preview"
+  ],
+  "uncovered": [
+   "WordPress MCP Adapter"
+  ],
+  "reason": "Quotes cover 'registers product and order abilities' and 'developer preview' but not the MCP Adapter."
+ },
+ {
+  "claim_id": "42:7",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "username + Application Password",
+   "not REST API key"
+  ],
+  "uncovered": [],
+  "reason": "Quotes: 'authenticate using a WordPress username and an Application Password' and 'Do not use ... a WooCommerce REST API key'."
+ },
+ {
+  "claim_id": "42:8",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "per-store REST settings"
+  ],
+  "uncovered": [
+   "no central tenant",
+   "per-merchant credentials"
+  ],
+  "reason": "Quote only gives the menu path in a store's settings; per-merchant credentials and no central tenant are not stated."
+ },
+ {
+  "claim_id": "45:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "OAuth 1.0a for third-party apps",
+   "tokens for mobile"
+  ],
+  "uncovered": [
+   "login credentials for admins/customers"
+  ],
+  "reason": "Quotes cover 'OAuth 1.0a' and 'tokens' for mobile but not login credentials."
+ },
+ {
+  "claim_id": "45:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "traditional admin/integration token methods unsupported in SaaS"
+  ],
+  "uncovered": [
+   "Adobe IMS OAuth 2"
+  ],
+  "reason": "Quote says traditional methods are 'not supported in SaaS environments' but does not name Adobe IMS OAuth 2."
+ },
+ {
+  "claim_id": "45:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Adobe Developer Console",
+   "Adobe Organization Admin"
+  ],
+  "uncovered": [],
+  "reason": "Quote lists 'Access to Adobe Developer Console' and 'An Adobe Organization Admin account'."
+ },
+ {
+  "claim_id": "45:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "REST",
+   "GraphQL",
+   "SOAP"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'Support for GraphQL, REST ... and SOAP'."
+ },
+ {
+  "claim_id": "45:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "page says webhooks unsupported"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'The system does not currently support webhooks.' matches the claim about what the page says."
+ },
+ {
+  "claim_id": "45:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "per-user configurable permissions"
+  ],
+  "uncovered": [
+   "defined per resource in webapi.xml/ACL"
+  ],
+  "reason": "Quote about 'unique set of permissions ... configured in the Admin' lacks webapi.xml or ACL."
+ },
+ {
+  "claim_id": "45:9",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "SaaS differs from traditional methods"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'traditional admin and integration token generation methods is not supported in SaaS' implies auth differs by deployment."
+ },
+ {
+  "claim_id": "48:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "OAuth REST API"
+  ],
+  "uncovered": [
+   "token generated on application page"
+  ],
+  "reason": "Quote 'OAuth API is based around REST' is covered; 'to get the token you will use with the API' is a fragment that does not mention the application page."
+ },
+ {
+  "claim_id": "48:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "license verify needs no OAuth app (fragment)"
+  ],
+  "uncovered": [
+   "register OAuth app in settings",
+   "self-serve"
+  ],
+  "reason": "Fragments 'To start using the API, you'll need to' and 'does not require an OAuth application' do not state registering in settings."
+ },
+ {
+  "claim_id": "48:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "view_sales",
+   "edit_products"
+  ],
+  "uncovered": [
+   "account",
+   "view_profile",
+   "view_payouts"
+  ],
+  "reason": "Quotes show only name: 'view_sales' and name: 'edit_products'."
+ },
+ {
+  "claim_id": "48:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "JSON responses"
+  ],
+  "uncovered": [
+   "REST",
+   "resource subscription endpoints"
+  ],
+  "reason": "Quote 'We return JSON for every request' does not say REST or resource subscriptions."
+ },
+ {
+  "claim_id": "48:6",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official connector",
+   "URL gumroad.com/chatgpt/v1/mcp",
+   "OAuth"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'URL `https://gumroad.com/chatgpt/v1/mcp`, and OAuth.' plus the connector page."
+ },
+ {
+  "claim_id": "48:7",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "all eight listed tools"
+  ],
+  "uncovered": [],
+  "reason": "Quote lists get_account, list_products, get_product, create_draft_product, publish_product, unpublish_product, list_sales, list_payouts."
+ },
+ {
+  "claim_id": "48:8",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Gumroad account needed"
+  ],
+  "uncovered": [
+   "OAuth app",
+   "self-serve API route"
+  ],
+  "reason": "Quote 'You'll need a Gumroad account and an assistant that supports MCP' concerns MCP, not an OAuth app."
+ },
+ {
+  "claim_id": "50:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "became Commas",
+   "operated by FanBasis, Inc."
+  ],
+  "uncovered": [],
+  "reason": "Quotes 'On July 14, 2026, FanBasis became Commas' and 'Commas is operated by FanBasis, Inc.'"
+ },
+ {
+  "claim_id": "50:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "marketing claims APIs and SDKs"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'Embedded checkouts, multi-rail payouts, APIs and SDKs.'"
+ },
+ {
+  "claim_id": "50:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "MCP beta listed on marketing page"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'MCP beta Run Commas from your AI assistant.'"
+ },
+ {
+  "claim_id": "50:4",
+  "verdict": "none",
+  "contradicts": false,
+  "components_covered": [],
+  "uncovered": [
+   "no developer docs found",
+   "contact/sales path"
+  ],
+  "reason": "Quote 'Enterprise sellers make more money here.' says nothing about docs or contacting sales."
+ },
+ {
+  "claim_id": "54:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "x-api-token header",
+   "Marketplace Bearer"
+  ],
+  "uncovered": [],
+  "reason": "Quotes cover 'x-api-token HTTP header' and 'Marketplace endpoints ... Bearer token'."
+ },
+ {
+  "claim_id": "54:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "token managed in dashboard",
+   "Essential $99/month"
+  ],
+  "uncovered": [
+   "free start offered"
+  ],
+  "reason": "Quotes 'managed directly from your MrScraper dashboard' and 'Essential $99 /month' do not show a free start."
+ },
+ {
+  "claim_id": "54:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "api.app.mrscraper.com/api/v1 HTTP API"
+  ],
+  "uncovered": [],
+  "reason": "Curl quote shows 'https://api.app.mrscraper.com/api/v1/subscription-accounts'."
+ },
+ {
+  "claim_id": "54:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "concurrent requests 20 and 200"
+  ],
+  "uncovered": [
+   "plan labels Essential/Enterprise"
+  ],
+  "reason": "Quote 'Concurrent requests 20 200' has no plan names attached."
+ },
+ {
+  "claim_id": "54:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "MCP URL"
+  ],
+  "uncovered": [],
+  "reason": "Quote shows \"url\": \"https://mcp.mrscraper.com/mcp\"."
+ },
+ {
+  "claim_id": "54:6",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API key only when OAuth 2.1 unusable",
+   "Bearer key"
+  ],
+  "uncovered": [],
+  "reason": "Quotes 'API key only when the client cannot use OAuth 2.1' and 'Authorization: Bearer <key>'."
+ },
+ {
+  "claim_id": "54:7",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "API token usable"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'Include your API token in the x-api-token HTTP header' shows REST use is possible."
+ }
+]

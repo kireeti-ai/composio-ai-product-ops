@@ -1,0 +1,142 @@
+{
+ "tag": "groq_orgA",
+ "app": 36,
+ "name": "Klaviyo",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 4,
+ "latency_s": 2.3,
+ "tokens_in": 3539,
+ "tokens_out": 555,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth ... and public key authentication.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://developers.klaviyo.com/en/docs/get_started",
+    "quote": "Log in, grab your API credentials, and start developing.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "All /api endpoints use API private keys to authenticate requests.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developers.klaviyo.com/en/docs/get_started",
+    "quote": "Are you looking to build an integration with Klaviyo and become a partner? Check out our partner resources.",
+    "issues": [],
+    "valid": true
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 5,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 4,
+  "evidence_valid": 3,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 1,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 1,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Klaviyo offers REST APIs for marketing automation with private key, OAuth, and public key authentication, accessible via self\u2011service API keys.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "bearer_token"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers can create private or public API keys directly in their Klaviyo test account without contacting sales.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "buildability": "yes",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth ... and public key authentication."
+   },
+   {
+    "field": "access",
+    "url": "https://developers.klaviyo.com/en/docs/get_started",
+    "quote": "Log in, grab your API credentials, and start developing."
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "All /api endpoints use API private keys to authenticate requests."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developers.klaviyo.com/en/docs/get_started",
+    "quote": "Are you looking to build an integration with Klaviyo and become a partner? Check out our partner resources."
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "2b764b599618e5d17987ba2e50fa607712768bb48ec76c1a15fd3cb716333c46",
+ "at": "2026-11-23T19:45:37+05:30"
+}

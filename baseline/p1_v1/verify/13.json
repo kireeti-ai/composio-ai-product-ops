@@ -1,0 +1,58 @@
+{
+ "id": 13,
+ "name": "Freshdesk",
+ "pass1_sha": "8ab03be48c06d4bc",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "api_key",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt explains locating and using API key for authentication.",
+    "needs_human": false
+   },
+   {
+    "item": "jwt_or_signed",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No mention of JWT or signed token authentication in excerpt.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can sign up for a free Freshdesk account directly on the website to access profile settings and generate API keys.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms free signup but does not mention profile settings or API key generation.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt shows using Freshdesk\u2019s Update ticket API via webhook, confirming a REST API is available.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention any MCP existence or absence.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

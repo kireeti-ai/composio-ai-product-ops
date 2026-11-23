@@ -1,0 +1,58 @@
+{
+ "id": 23,
+ "name": "Zoho Cliq",
+ "pass1_sha": "9736a7e9c9bd428c",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt states both API versions use the same OAuth tokens.",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No mention of API key authentication in the provided excerpts.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can register applications in the Zoho Developer Console to obtain OAuth credentials and API tokens.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms registration in Developer Console to obtain OAuth token and API tokens.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt explicitly describes Zoho Cliq's REST API.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "none_found",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention any MCP for Zoho Cliq.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

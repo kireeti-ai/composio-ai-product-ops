@@ -1,0 +1,158 @@
+
+From paper search to evidence review—now through the API and MCP - Consensus
+tag -->
+Solutions
+Product
+Resources
+Pricing
+About
+Contact Us
+Search for Free
+Search for Free
+Blog
+Oct 27, 2026
+From paper search to evidence review—now through the API and MCP
+The Consensus Research Agent, now available through the API and MCP.
+Daniel DSouza
+Head of Growth, Consensus
+Your pipeline has narrowed thousands of target–disease pairs to twelve candidates. Before committing bench time, your team needs to review the evidence for each: which studies are relevant, what the trials found, and where the findings conflict.
+If you’re building this workflow with a search API, you still have to assemble and assess that evidence once you’ve found the papers.
+Threads makes the Consensus Research Agent—the same one that runs on consensus.app —available through the API and MCP. Send a research question and get back a cited synthesis, including supporting quotes and the source sections they came from. You can follow up in the same thread to narrow the question or look more closely at conflicting results.
+Teams already use Consensus Search for large-scale screening. Owkin connected the Consensus MCP to K Pro, their AI scientist, and got 25x the paper coverage, shipping the integration in days instead of months. Phylo benchmarked several search providers, chose Consensus, and now screens about 20,000 drug targets against hundreds of diseases through the API. Both use Search, not Threads. Threads adds a way to request an assessment of the literature for the questions that come out of that screening.
+Using Threads in a screening workflow
+Start with Search. GET /v1/search returns ranked peer-reviewed papers in seconds, each with study design, journal rank, and sample size. Use those results to screen target–disease pairs and build your shortlist. Search also supports workflows such as nightly literature feeds or your own ranking model.
+Request a review. For each shortlisted target, send a research question to POST /v1/threads, or call create_thread over MCP:
+For IL-23 in ulcerative colitis, summarize the mechanistic rationale, results from randomized trials, and any contradictions between them.
+You can use the same filters as Search, or focus the research on specific papers or a Library collection. The agent plans its searches, follows citations forward and back, reads full text, and screens the papers it finds.
+Threads run asynchronously: start one, then poll until the answer is ready. Pro reviews about 20 papers in a few minutes. Deep produces a longer, structured review from up to 100 papers and can take up to about ten minutes.
+Check the claims against the sources. Each assessment includes cited papers and supporting quotes, labeled with the source section they came from. A scientist can read the passage behind a claim, check the agent’s interpretation, and decide whether to open the paper for a closer look.
+The response also reports how many papers the agent retrieved, screened, and included. Pass include_trace=true to request a log of its steps. You’ll still need to judge whether the interpretation holds up and whether the review has missed important evidence.
+Follow up. Add a turn to the same thread to ask, for example, “restrict that to RCTs since 2015” or “now compare against the second compound.” The agent keeps the earlier context. Each thread also has a link that a scientist can open in Consensus to continue the review.
+Explore the shortlist question in Consensus → What is the evidence that IL-23 inhibition is effective in ulcerative colitis?
+Reviewing evidence for trial design
+A clinical development team could use a Thread filtered to human RCTs to review GLP-1 receptor agonist trials in NASH. The question can ask for endpoints, comparators, populations, effect sizes, and any conflicting findings. A follow-up such as “now only trials with biopsy-confirmed endpoints” narrows the review. The biostatistician can check the supporting methods and results passages.
+Explore the trial-design question in Consensus → What endpoints have randomized trials of GLP-1 receptor agonists in NASH used?
+Threads searches our peer-reviewed corpus rather than the open web. It won’t ask clarifying questions, so include the relevant scope, constraints, and context in your initial question.
+If you’re already using Search to build a shortlist, try a Thread on one of the questions your team needs to review.
+See it in practice
+Explore our upcoming and on-demand workshops:
+Discover what’s new in the API: Evidence as Infrastructure: The Consensus Research Agent in the API.
+For pharma and biotech teams: How Pharma Teams Find Literature Faster with Consensus.
+Build along workshop: Build an Automated AI Literature Monitor with the Consensus API.
+Browse workshops and recordings →
+Read the Threads quickstart →
+Create an API key →
+Connect Consensus to your MCP client →
+WRITTEN BY
+Daniel DSouza
+Head of Growth, Consensus
+More by Daniel
+More from the blog
+All posts
+Oct 8, 2026
+How to Use Consensus for Research: Following One Question From Search to Library
+Go from a plain-English question to papers you've checked yourself, organized and ready to build on, without losing track of where any claim came from.
+how-to-use-consensus-for-research
+Oct 5, 2026
+Introducing Skills: Research on Repeat
+Skills are ready-to-run workflows for common research tasks: reviewing a field, tracing citations, finding evidence for a claim, and checking a draft’s sources.
+introducing-skills
+Oct 1, 2026
+Announcing our Partnership with ASM and Rockefeller University Press
+Consensus welcomes ASM and Rockefeller University Press to a growing roster of publisher partners
+announcing-our-partnership-with-the-american-society-for-microbiology-and-rockefeller-university-press
+Helping the world understand , create , and share good science.
+Stay Connected
+Get updates about new features, announcements and stories from the world of Consensus
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Use Cases
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Legal
+Privacy Policy
+Terms of Service
+© 2026 Consensus NLP, Inc. All rights reserved.
+Helping the world understand , create , and share good science.
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Use Cases
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Privacy
+Terms
+© 2026 Consensus NLP, Inc. All rights reserved.
+Helping the world understand , create , and share good science.
+Product
+Research Agent
+Library
+Full Text Access
+Citation Graph
+MCP
+API
+The Consensus Corpus
+Pricing
+Solutions
+Universities
+Researchers
+Clinicians
+Community Stories
+Resources
+Learn
+Teach
+Share
+Tutorials
+Workshops
+Blog
+Docs
+Company
+About
+Careers
+Contact Us
+Privacy Policy
+Terms of Service
+© 2026 Consensus NLP, Inc. All rights reserved.

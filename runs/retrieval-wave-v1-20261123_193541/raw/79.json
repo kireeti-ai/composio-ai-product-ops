@@ -1,0 +1,351 @@
+{
+ "id": 79,
+ "name": "Smartsheet",
+ "started": "2026-11-23T19:38:35+05:30",
+ "searches": [
+  {
+   "q": "Smartsheet API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:37+05:30"
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:38+05:30"
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:40+05:30"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:38:42+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "requested_at": "2026-11-23T19:38:45+05:30",
+   "status": "ok",
+   "final_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "title": "Smartsheet MCP server introduction",
+   "chars": 4346,
+   "sha256": "9cbe57663b4a5051303dcbdc81a940575fe8802a7f7f1fa505efe521f804beb9",
+   "text": "# Smartsheet MCP server introduction\n\n* Copy for LLM\n\n  Copy page as Markdown for LLMs\n* View as Markdown\n\n  Open this page as Markdown\n* Open in ChatGPT\n\n  Get insights from ChatGPT\n* Open in Claude\n\n  Get insights from Claude\n* Connect to Cursor\n\n  Install MCP server on Cursor\n* Connect to VS Code\n\n  Install MCP server on VS Code\n\nInteract with your project data in Smartsheet using the Smartsheet MCP server connected to Claude, ChatGPT, and other AI clients. Once connected, you can use natural language to read, analyze, and manage Smartsheet data to complement how you make decisions and get work done.\n\n**Required plan:** Business, Enterprise, or Advanced Work Management\n\n> ## \ud83d\ude80 What's new!\n>\n> * **MCP Connectors for ChatGPT, Microsoft 365 Copilot, Gemini Enterprise Plus, and Amazon Quick:** Work with your Smartsheet projects in ChatGPT, Microsoft 365 Copilot (plus configuration video), Gemini Enterprise Plus, and Amazon Quick.\n> * **CLI Agent Power Tools available!:** Use these open-source sub-agents locally to scan for bottlenecks and risks, clone project sheets, reassign tasks, and prepare for stand-ups and status communication. Check out the CLI Agent Power Tools overview.\n> * **Automated workflow management tools:** Create, enable/disable, and list your sheet workflow automations. Learn more at Automated workflows.\n> * **Scenario planning tools:** Experiment with project plan variations, mitigate risks, and increase project velocity right from within you favorite AI assistant. Refer to Scenario planning for details.\n> * **Plan management tools:** List a user's plans, query user seat usage and activity, and get license usage snapshots for plans. Check out the details at User plans.\n> * **Portfolio tools:** Create and manage portfolios, including templates and projects. Learn more at Portfolios.\n\n**Ready to dive in? Start here**\n\nOur Quickstart walks you through connecting the Smartsheet MCP server as an interactive companion in Claude Code. (These connection principles work across MCP-compatible AI clients.)\n\n## Why use the MCP server?\n\nThe Smartsheet MCP server bridges the gap between Smartsheet and AI models, allowing you to:\n\n* Access Smartsheet data in real time\n* Apply AI reasoning with Smartsheet's project and data management features\n* Integrate with popular AI platforms including ChatGPT, Claude, Cursor, Microsoft 365 Copilot, and Gemini Enterprise Plus, or custom AI clients.\n* Automate complex tasks that require both data analysis and decision-making\n\nInstead of manually copying data into an AI or writing custom API integrations, you can connect Smartsheet to AI clients to query projects, transform data, and trigger actions.\n\n## How it works\n\nThe MCP server exposes Smartsheet capabilities as tools that AI models can invoke. When you integrate Smartsheet with an AI client:\n\n1. The AI client can access (with your consent) predefined tools to summarize sheets, create rows, update data, and more.\n2. The client determines which tools are needed to solve your requests.\n3. The MCP server executes the request and returns structured data.\n4. The AI client processes the results and provides a response.\n\nThis enables natural interactions like: *\"Show me all overdue tasks from the Marketing sheet and create a summary report\"* or *\"Update all project statuses based on the latest timeline changes.\"*\n\n## Getting started\n\nDive into the following articles to connect your AI clients to the MCP server and familiarize yourself with the server's tools.\n\n* Quickstart walks you through connecting the Smartsheet MCP server as an interactive companion in Claude Code. Query sheet structure, examine data patterns, and gather the information you need to write effective API code for sheet updates. (These connection principles work across MCP-compatible AI clients.)\n* Install the Smartsheet MCP server has step-by-step instructions for connecting the Smartsheet MCP server to an AI client you use.\n* Create a workspace with AI demonstrates creating a populated workspace based on the description of the work you're doing.\n* Smartsheet MCP prompt library provides over one hundred example prompts, including prompts for onboarding to projects, detecting risks, auditing data, and comparing scenarios.\n\nFor a deeper dive into the MCP server capabilities, check out Smartsheet MCP server tools.",
+   "retrieved_at": "2026-11-23T19:38:45+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-quickstart",
+   "requested_at": "2026-11-23T19:38:52+05:30",
+   "status": "ok",
+   "final_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-quickstart",
+   "title": "Quickstart with the MCP server",
+   "chars": 3763,
+   "sha256": "9ab964ad7cb13380804e97b4b23b64394b28e9991f6664985594f8bf56b90375",
+   "text": "# Quickstart with the MCP server\n\n* Copy for LLM\n\n  Copy page as Markdown for LLMs\n* View as Markdown\n\n  Open this page as Markdown\n* Open in ChatGPT\n\n  Get insights from ChatGPT\n* Open in Claude\n\n  Get insights from Claude\n* Connect to Cursor\n\n  Install MCP server on Cursor\n* Connect to VS Code\n\n  Install MCP server on VS Code\n\nHere you'll connect to Claude Code and use the MCP server as your coding companion to explore sheet structure, understand your data, and prepare for writing API code. (These connection principles work across MCP-compatible AI clients.)\n\nThese connection principles work across MCP-compatible AI clients. For client-specific setup, see Install the Smartsheet MCP server.\n\n## Step 1: Set an API token environment variable\n\nIf you don't already have a Smartsheet API token, generate one following the instructions here.\n\nThen set an environment variable to hold your token value, for referencing in your configuration.\n\n```\nexport SMARTSHEET_API_TOKEN=\"token value\"\n```\n\nThe command may vary depending on your operating system and/or shell environment.\n\n## Step 2: Configure your MCP server connection\n\nUse Claude Code's CLI, to configure your connection.\n\n```\nclaude mcp add --transport http smartsheet-mcp \\\n    https://mcp.smartsheet.com \\\n    -H \"Authorization:Bearer ${SMARTSHEET_API_TOKEN}\"\n```\n\nIf you're using a regional server outside of the US, replace the MCP server URL with one for your region:\n\n* For Europe, use `https://mcp.smartsheet.eu`\n* For Australia, use `https://mcp.smartsheet.au`\n\n## Step 3: Test your connection\n\nIn your agent chat, test your connection.\n\n**Prompt:**\n\n> List the Smartsheet MCP server tools.\n\nThe response includes Smartsheet tools such as `get_sheet_summary` and more.\n\nYou've connected to the Smartsheet MCP server; you're ready to start coding.\n\n## Step 4: Start coding with help from AI\n\nConnected to the MCP server, AI is your Smartsheet coding companion.\n\nAlso, you can leverage the MCP server in agent development.\n\nThe following example conversation demonstrates getting sheet's column structure, so you can code sheet updates.\n\n**Prompt:**\n\n> Get the columns for my sheet called \"ABC Task Intake\".\n\n**Response:**\n\n> I'll search for the \"ABC Task Intake\" sheet first to get its ID, then run get\\_columns on it.\n>\n> *Search Smartsheet Assets >*\n>\n> Perfect! Found it. Now let me get the columns for that sheet:\n>\n> *Get Columns >*\n>\n> Perfect! Here's the complete column schema for the \"ABC Task Intake\" sheet (ID: 1234567890) with **5 columns**:\n>\n> | # | Column Name | Type | Primary | System Type | ID | Options | Validation | Width |\n> | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n> | 1 | ID | TEXT\\_NUMBER | **Yes** | - | 7851536014413700 | - | No | 150 |\n> | 2 | Task Name | TEXT\\_NUMBER | No | - | 2222036480200580 | - | No | 150 |\n> | 3 | Status | PICKLIST | No | - | 6725636107571076 | Not started, In progress, Complete | Yes | 150 |\n> | 4 | Assignee | CONTACT\\_LIST | No | - | 4473836293885828 | - | No | 150 |\n> | 5 | Created date | DATETIME | No | CREATED\\_DATE | 18168501538692 | - | No | 150 |\n>\n> **Key observations:**\n>\n> * **Primary column**: \"ID\" (TEXT\\_NUMBER)\n> * **System column**: \"Created date\" (automatically populated system column)\n> * **Status tracking**: Picklist with 3 predefined options (Not started, In progress, Complete) with validation enabled\n> * **Contact assignment**: \"Assignee\" column for tracking task owners\n> * **Simple structure**: This is a straightforward task intake sheet with 5 essential columns for tracking basic task information\n\nNow you know the sheet structure and can add and update rows in your sheet!\n\n## What's next?\n\nExplore the Smartsheet MCP server tools to learn the latest capabilities and get work done faster.",
+   "retrieved_at": "2026-11-23T19:38:52+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools",
+   "requested_at": "2026-11-23T19:38:56+05:30",
+   "status": "empty",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+   "requested_at": "2026-11-23T19:38:57+05:30",
+   "status": "ok",
+   "final_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+   "title": "Install the Smartsheet MCP server",
+   "chars": 2406,
+   "sha256": "a2a8cbd0499b6a376626604e1fe274ecfb6365d69e23147cfba6534ae73554c9",
+   "text": "# Install the Smartsheet MCP server\n\n* Copy for LLM\n\n  Copy page as Markdown for LLMs\n* View as Markdown\n\n  Open this page as Markdown\n* Open in ChatGPT\n\n  Get insights from ChatGPT\n* Open in Claude\n\n  Get insights from Claude\n* Connect to Cursor\n\n  Install MCP server on Cursor\n* Connect to VS Code\n\n  Install MCP server on VS Code\n\nYou can connect various AI assistants to the Smartsheet Model Context Protocol (MCP) server. Connected to the Smartsheet MCP server, you can interact with your Smartsheet data using natural language.\n\n**Required plan:** Business, Enterprise, or Advanced Work Management\n\nThis article:\n\n* Defines connection prerequisites\n* Provides an overview of the installation steps\n* Links to setup instructions for various AI assistants\n\nStart with considering what's required.\n\n## Prerequisites\n\nHere's what a Smartsheet MCP server connection requires:\n\n* Network access to a Smartsheet production server environment\n* Valid Smartsheet API token, unless you're connecting an AI tool that supports Smartsheet's OAuth, such as ChatGPT (web or mobile), Claude AI, Claude Desktop, Gemini Enterprise Plus, or Microsoft 365 Copilot.\n\n  To create an API token, refer to the Get started article.\n* URL for the MCP server production environment in your target region. Refer to the table below.\n\n**Region URLs**\n\n| **Region** | **Environment** | **MCP server URL** |\n| --- | --- | --- |\n| United States | US production | `https://mcp.smartsheet.com` |\n| Europe | EU production | `https://mcp.smartsheet.eu` |\n| Australia | AU production | `https://mcp.smartsheet.au` |\n\n## Connect to the MCP server\n\nHere are links to various AI assistant setup instructions.\n\n| **AI Assistant** | **Instructions** |\n| --- | --- |\n| Amazon Quick | Instructions |\n| ChatGPT and ChatGPT mobile app | Instructions |\n| Claude and Claude Desktop | Instructions |\n| Claude Code | Instructions |\n| Codex | Instructions |\n| Cursor | Instructions |\n| Gemini CLI | Instructions |\n| Gemini Enterprise Plus | Instructions |\n| Microsoft 365 Copilot | Instructions |\n\nIf you want to connect a custom, MCP-compliant assistant to the Smartsheet MCP server, refer to Manually configure the MCP Server\n\n## What's next?\n\nOnce you're connected to the MCP server, you can:\n\n* Check out the example prompts described in Smartsheet MCP prompt library.\n* Learn more about the MCP server's capabilities at Smartsheet MCP server tools.",
+   "retrieved_at": "2026-11-23T19:38:57+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+   "requested_at": "2026-11-23T19:39:17+05:30",
+   "status": "ok",
+   "final_url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+   "title": "Smartsheet MCP Server now generally available!",
+   "chars": 2875,
+   "sha256": "2950edd53cd1f4eaad2639e88bfea82acb4e9378be9b0f7a2476ba8ee6f62d6c",
+   "text": "Article\n\n# Smartsheet MCP Server now generally available!\n\nPM\n\nProduct Marketing\n\n**March 24, 2026**\n\nYou can now connect Smartsheet to any MCP-compliant AI tool through the new Smartsheet MCP Server \u2014 an open, protocol-based integration layer built on Anthropic's Model Context Protocol standard.\n\nConnect your Smartsheet account and immediately start asking natural-language questions about your project data. The MCP Server routes requests through Smartsheet REST API, pulling structured data with rich metadata \u2014 row relationships, column types, cell history, comments \u2014 all respecting the authenticated user's permissions. The MCP Server is also engineered with proprietary data optimization that compresses and filters payloads, so teams get faster AI responses at lower token costs as usage scales.\n\nWhat used to require building dashboards, writing formulas, configuring reports, or exporting data now happens in seconds. Ask \"What are the top blockers in Q3?\" or \"Summarize project risks for exec review\" and get contextually rich, intelligent responses.\n\nYou can also take action directly from your conversation \u2014 update task status and dates, add or modify columns, manage risks, or create new assets based on your Smartsheet data.\n\nThe shift is from reactive reporting to proactive intelligence. With the MCP Server, AI tools surface risks before they escalate and take approved actions \u2014 all governed by organization-level controls. Leadership gets answers from live data without needing Smartsheet training, and developers can redirect time spent fielding ad hoc reporting requests toward higher-value work.\n\nThe MCP Server is open by design. It works with any MCP-compliant client \u2014 commercial AI assistants like Claude, ChatGPT, Gemini, etc., custom enterprise AI platforms, open-source agent frameworks, or internal copilots. One standardized endpoint, no vendor lock-in. And as Smartsheet's API capabilities expand, the MCP Server ensures AI tools keep pace automatically.\n\n**How to get started:** To use the Smartsheet MCP Server, you'll need:\n\n* A Smartsheet Business or Enterprise plan\n* An MCP-compliant AI tool\n\n**Get connected:** If you're already building on the Smartsheet API, you have the foundation \u2014 the MCP Server leverages the same REST API infrastructure, authentication model, and data structures you already work with. Connect your first MCP-compliant AI tool today.\n\nIf you're using Claude, a direct Smartsheet connector is available in Claude's Settings > Connectors. For all other MCP-compliant tools, use the MCP Server endpoint with OAuth 2.0 or a personal access token. Check out\u00a0Smartsheet MCP Server Documentation and our\u00a0blog for the full details.\n\n**Environment Availability:**Commercial US, Commercial EU, Commercial AU\n\n**Plan Availability:** Business, Enterprise, AWM\n\n**Subscription Model Availability:** Legacy and User Model",
+   "retrieved_at": "2026-11-23T19:39:17+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+   "requested_at": "2026-11-23T19:39:19+05:30",
+   "status": "ok",
+   "final_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+   "title": "Manually configure the MCP server",
+   "chars": 3586,
+   "sha256": "9142c2a7bac7b6c657bb76eac799308490364a796eb2eded96e35c6b04d6eb89",
+   "text": "# Manually configure the MCP server\n\n* Copy for LLM\n\n  Copy page as Markdown for LLMs\n* View as Markdown\n\n  Open this page as Markdown\n* Open in ChatGPT\n\n  Get insights from ChatGPT\n* Open in Claude\n\n  Get insights from Claude\n* Connect to Cursor\n\n  Install MCP server on Cursor\n* Connect to VS Code\n\n  Install MCP server on VS Code\n\nIf your AI assistant uses a command-line interface (CLI) or integrates with an integrated development environment (IDE), it's likely that you will have to configure Smartsheet MCP Server access using a configuration file or command-line parameters. Exact paths and formats (for example, JSON, TOML, and others) vary by AI assistant. And some assistants support using environment values.\n\n## Environment variables\n\nFor confidential information, such as Smartsheet API tokens, consider using environment variables.\n\nTo create an API token, refer to the Get started article.\n\nAPI tokens are unnecessary if your AI assistant supports Smartsheet's OAuth, such as ChatGPT (web or mobile), Claude AI, Claude Desktop, Gemini Enterprise Plus, or Microsoft 365 Copilot.\n\nBenefits:\n\n* No secrets in configuration files that might get shared or committed\n* One place to update when rotating tokens\n* Same configuration file works for everyone on a team (each person sets their own environment variable)\n* Same environment variable referenced for all MCP server configs for all assistants\n\nSet an environment variable (the name is arbitrary).\n\n```\nexport SMARTSHEET_API_TOKEN=\"value\"\n```\n\nIf you configure your connection via a terminal command or a configuration file, use your environment variable (`${SMARTSHEET_API_TOKEN}`) in place of your API token.\n\n## Example configuration\n\nHere's an MCP server configuration from a `settings.json` file for Gemini CLI:\n\n```\n{\n  \"mcpServers\": {\n    \"smartsheet-mcp\": {\n      \"httpUrl\": \"https://mcp.smartsheet.com\",\n      \"headers\": {\n        \"Authorization\": \"Bearer ${SMARTSHEET_API_TOKEN}\"\n      }\n    }\n  }\n}\n```\n\nIn the above example, you would replace:\n\n* `smartsheet-mcp` with an arbitrary name you want to use for your connection.\n* The URL with your region's URL, if you're using a regional server outside the US.\n* `${SMARTSHEET_API_TOKEN}` with the environment variable for your Smartsheet API token.\n\nIf you want to connect to Smartsheet production servers in multiple regions simultaneously, add their configurations to your `mcpServers` object.\n\nFor example,\n\n```\n{\n  \"mcpServers\": {\n    \"smartsheet-us\": {\n      \"httpUrl\": \"https://mcp.smartsheet.com\",\n      \"headers\": {\n        \"Authorization\": \"Bearer ${SMARTSHEET_API_TOKEN}\"\n      }\n    },\n    \"smartsheet-eu\": {\n      \"httpUrl\": \"https://mcp.smartsheet.eu\",\n      \"headers\": {\n        \"Authorization\": \"Bearer ${SMARTSHEET_API_TOKEN_EU}\"\n      }\n    },\n    \"smartsheet-au\": {\n      \"httpUrl\": \"https://mcp.smartsheet.au\",\n      \"headers\": {\n        \"Authorization\": \"Bearer ${SMARTSHEET_API_TOKEN_AU}\"\n      }\n    }\n  }\n}\n```\n\nThe configuration above registers connections to production servers for the United States, European Union, and Australia regions.\n\n## Testing your server connection\n\nAfter registering the Smartsheet MCP Server and connecting to it, test your server connection.\n\nTest prompt:\n\n```\nList the Smartsheet MCP server tools.\n```\n\nThe response includes Smartsheet tools such as `get_sheet_summary` and more.\n\n## What's next?\n\nOnce you're connected to the MCP server, you can:\n\n* Check out the example prompts described in Smartsheet MCP prompt library.\n* Learn more about the MCP server's capabilities at Smartsheet MCP server tools.",
+   "retrieved_at": "2026-11-23T19:39:19+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+   "title": "Get Started",
+   "snippet": "You can call other Smartsheet operations the same way, from within the Smartsheet API documentation site."
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+   "title": "Smartsheet OpenAPI Reference",
+   "snippet": "Welcome to the OpenAPI reference documentation for the Smartsheet API! Smartsheet API allows uploading files to sheets, rows, and comments."
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "title": "Smartsheet API introduction",
+   "snippet": "API enables you to programmatically access and manage your organization's Smartsheet resources. The [API Reference](https://developers.smartsheet.com/api/smartsheet/openapi) includes object"
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://smartsheet.redoc.ly/?iOS=",
+   "title": "Official API and SDK Documentation",
+   "snippet": "The new Smartsheet API reference documentation site is located at https://developers.smartsheet.com/api."
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi/sheets/getsheet",
+   "title": "Get sheet",
+   "snippet": "Cell objects retrieved through the Smartsheet APIs have two main attributes representing cell values: Cell.value, and Cell.displayValue. A third attribute, Cell.objectValue is currently used"
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides",
+   "title": "Smartsheet API guides",
+   "snippet": "These guides provide describe key concepts and provide instruction necessary to build robust and efficient integrations."
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/",
+   "title": "Smartsheet Developers & API",
+   "snippet": "Smartsheet Developers & API. Explore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community building on Smartsheet."
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/pagination.md",
+   "title": "developers.smartsheet.com/api/smartsheet/guides/basics/pagination.md",
+   "snippet": "pagination\nThe Smartsheet API supports token-based pagination for some endpoints. With token-based pagination, an endpoint retrieves the number of items specified in your request. If more"
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/http-and-rest",
+   "title": "HTTP and REST",
+   "snippet": "To get a list of sheets, use the following:\n`GET https://api.smartsheet.com/2.0/sheets`\nThis returns a list of Sheet objects, where each sheet has an **id** attribute."
+  },
+  {
+   "q": "Smartsheet API documentation",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi/users",
+   "title": "Users",
+   "snippet": "Welcome to the OpenAPI reference documentation for the Smartsheet API! Important: The Smartsheet API is restricted to users on Business and Enterprise plans ..."
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+   "title": "Tokens",
+   "snippet": "The Smartsheet API utilizes OAuth 2.0 for authentication and authorization. An Authorization HTTP header containing an access token is required to authenticate ..."
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "title": "Authentication",
+   "snippet": "The API authenticates using access tokens (API keys). You can [generate access tokens](https://help.smartsheet.com/articles/2482389-generate-API-key) in the Smartsheet UI."
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+   "title": "OAuth",
+   "snippet": "Now, you have a developer profile with which to register apps that use OAuth."
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi.md",
+   "title": "developers.smartsheet.com/api/smartsheet/openapi.md",
+   "snippet": "## Security\n### OAuth2\nType: oauth2\n### APIToken\nAPI Token.\nType: http\nScheme: bearer"
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://smartsheet.com/content-center/managing-work/it-management/authentication-mastery-smartsheet-api",
+   "title": "Authentication Mastery with Smartsheet API",
+   "snippet": "URL with an authorization code\n4. You exchange that code for an access token and refresh token\n5. You use the access token for API calls; when it expires, you use the refresh token to get a new one"
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+   "title": "Generate an API access token",
+   "snippet": "A Smarsheet API access token allows you to access and manage your organization's Smartsheet plan and data via the [Smartsheet API](https://developers.smartsheet.com/api/smartsheet/introduction).\n###"
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://developers.smartsheet.com/blog/creating-a-smartsheet-o-auth-flow-in-node-js.html",
+   "title": "Creating a Smartsheet OAuth Flow in Node.js",
+   "snippet": "a Smartsheet OAuth flow, the developer must create a Smartsheet developer account and register their application with Smartsheet. The first step of the 3-legged OAuth flow is requesting an"
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://github.com/smartsheet-samples/oauth-flow-sample-node",
+   "title": "GitHub - smartsheet-samples/oauth-flow-sample-node: Sample node application for setting up an oAuth flow in Smartsheet",
+   "snippet": "#### Step 1: Register a Developer Account\n- [Register a developer account](https://developers.smartsheet.com/register) with Smartsheet. This gives your Smartsheet account access to 'Developer Tools'."
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://dev.to/zuplo/a-developers-guide-to-the-smartsheet-api-23k9",
+   "title": "api",
+   "snippet": "According to the Smartsheet Security Whitepaper, \"The Smartsheet API uses OAuth 2.0 for authentication and authorization. An HTTP header ..."
+  },
+  {
+   "q": "Smartsheet API authentication OAuth API key developer",
+   "url": "https://community.smartsheet.com/discussion/123693/how-to-create-permanent-api-key-after-authenticate-by-oauth2/p1",
+   "title": "How to create permanent API key ...",
+   "snippet": "From GUI smartsheet, I can generate an API key for Rest API. But I need to build an application that authenticate user by OAuth2, ..."
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi/users",
+   "title": "Users",
+   "snippet": "The Developer Agreement governs the use of the Smartsheet API and Smartsheet. Plans: Only Enterprise and Advanced Work Management plans"
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+   "title": "Get Started",
+   "snippet": "## Generate an API access token\n**Required plan:** Business, Enterprise, or Advanced Work Management\nGenerate an API access token in the Smartsheet UI.\n1. Go to the Smartsheet UI.\n2. Select your"
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "title": "Smartsheet API introduction",
+   "snippet": "**Required plan:** Business, Enterprise, or Advanced Work Management\n**Developer Agreement:** The [Developer Agreement](https://www.smartsheet.com/legal/developer-program-agreement) governs the use"
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://developers.smartsheet.com/api-faq",
+   "title": "API FAQ | Smartsheet Developers",
+   "snippet": "**Is there a fee to use the API?**\nNo. The use of the API is free to all Smartsheet customers, regardless of plan, and third party application developers."
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi.md",
+   "title": "developers.smartsheet.com/api/smartsheet/openapi.md",
+   "snippet": "A sheet summary allows users to define, organize, and report on custom project and business metadata. Sheet summary is only available to customers with business or enterprise plans."
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://developers.smartsheet.com/register.html",
+   "title": "developers.smartsheet.com/register.html",
+   "snippet": "a Smartsheet account and just want to generate an Access Token. NOTE: Only licensed Smartsheet users on Business and Enterprise plans have access to the API by generating Access Tokens. You can find"
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+   "title": "Smartsheet OpenAPI Reference",
+   "snippet": "Generate an API access token and make a request. These API operations allow you to access the user's favorite API-supported objects, token is required to ..."
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://smartsheet.com/integrations",
+   "title": "Integrations",
+   "snippet": "The Smartsheet API is free and available for use for any users with a Smartsheet license on a Business plan or higher. For more information on the Smartsheet API, please review \u200b\u200b[5 steps for getting"
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://community.smartsheet.com/en/discussion/113329/using-smartsheet-api-to-access-user-data-outside-of-my-own-account",
+   "title": "User",
+   "snippet": "I would like to build an OAuth integration with Smartsheet that would allow me to access data from users whose Smartsheet accounts are different ..."
+  },
+  {
+   "q": "Smartsheet API access pricing plans developer account",
+   "url": "https://dev.to/zuplo/a-developers-guide-to-the-smartsheet-api-23k9",
+   "title": "A Developer\u2019s Guide to the Smartsheet API",
+   "snippet": "is crucial when planning your API integration strategy.\n### Free Individual Plan\nThe Free tier includes basic API access but has significant limitations:\n- Lower API request rate limits\n-"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "title": "Smartsheet MCP server introduction",
+   "snippet": "with your project data in Smartsheet using the Smartsheet MCP server connected to Claude, ChatGPT, and other AI clients. Once connected, you can use natural language to read, analyze, and manage"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-quickstart",
+   "title": "Quickstart with the MCP server",
+   "snippet": "Here you'll connect to Claude Code and use the MCP server as your coding companion to explore sheet structure, understand your data, and prepare for writing API code. (These connection principles work"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools",
+   "title": "Smartsheet MCP server tools",
+   "snippet": "The Smartsheet Model Context Protocol (MCP) server provides a way to leverage Smartsheet\u2019s public API via AI clients, allowing you to interact with your data using natural language. The MCP server's"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+   "title": "Install the Smartsheet MCP server",
+   "snippet": "You can connect various AI assistants to the Smartsheet Model Context Protocol (MCP) server. Connected to the Smartsheet MCP server, you can interact with your Smartsheet data using natural language."
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/changelog",
+   "title": "Smartsheet AI & MCP server changelog",
+   "snippet": "tool to create_dashboard_with_ai\nDate: Oct-26-2026\nWe renamed the `create_dashboard` tool to `create_dashboard_with_ai` on the Smartsheet MCP Server. Its parameters and response are"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+   "title": "Smartsheet MCP Server now generally available!",
+   "snippet": "2026**\nYou can now connect Smartsheet to any MCP-compliant AI tool through the new Smartsheet MCP Server \u2014 an open, protocol-based integration layer built on Anthropic's Model Context Protocol"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/manually-configure-the-mcp-server",
+   "title": "Manually configure the MCP server",
+   "snippet": "for Gemini CLI:\n```\n{\n\"mcpServers\": {\n\"smartsheet-mcp\": {\n\"httpUrl\": \"https://mcp.smartsheet.com\",\n\"headers\": {\n\"Authorization\": \"Bearer ${SMARTSHEET_API_TOKEN}\"\n}\n"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+   "title": "Smartsheet MCP Server overview",
+   "snippet": "(MCP) Server enables you to manage projects and Smartsheet data from within Smart Assist and AI assistants, such as Claude, ChatGPT, Microsoft 365 Copilot, Gemini Enterprise Plus, Cursor, and others."
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server/connect-codex",
+   "title": "Connect Codex to the Smartsheet MCP server",
+   "snippet": "name for the Smartsheet MCP server connection\n**Streamable HTTP:** (Toggle on this option)\n**URL:** `https://mcp.smartsheet.com` (If you're using a regional server outside the US, specify [that"
+  },
+  {
+   "q": "Smartsheet MCP server official",
+   "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available?srsltid=AYCX9vI-lfUpFfqvjNnlhDVFsyetGWp94j0X9ZZSedgi9iQF1skAeI47",
+   "title": "Smartsheet MCP Server now generally available!",
+   "snippet": "You can now connect Smartsheet to any MCP-compliant AI tool through the new Smartsheet MCP Server \u2014 an open, protocol-based integration layer ..."
+  }
+ ],
+ "official_domain_candidates": {
+  "smartsheet.com": 36
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "smartsheet.com",
+ "completed": "2026-11-23T19:39:19+05:30"
+}

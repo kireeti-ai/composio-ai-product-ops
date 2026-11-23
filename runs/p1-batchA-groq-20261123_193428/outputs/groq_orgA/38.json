@@ -1,0 +1,142 @@
+{
+ "tag": "groq_orgA",
+ "app": 38,
+ "name": "Pinterest",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 1,
+ "latency_s": 2.24,
+ "tokens_in": 2523,
+ "tokens_out": 739,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+    "quote": "\"Token used to authenticate API requests.\"",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://dev.pinterest.com/docs/getting-started",
+    "quote": "\"Application requests are reviewed by Pinterest.\"",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+    "quote": "\"In this reference, you will find information on all endpoints available in the Pinterest API.\"",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+    "quote": "unknown",
+    "issues": [
+     "placeholder_or_too_short",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "bearer_token",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "approval_or_review_required",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "unsupported"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "none_found",
+    "state": "not_found_in_provided_evidence"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 4,
+   "not_found_in_provided_evidence": 1
+  },
+  "evidence_total": 4,
+  "evidence_valid": 0,
+  "issue_counts": {
+   "placeholder_or_too_short": 1,
+   "stitched_ellipsis": 0,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 4,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Pinterest API lets developers manage pins, boards, ads, analytics and more via a RESTful interface.",
+  "auth_methods": [
+   "oauth2",
+   "bearer_token"
+  ],
+  "access": "approval_or_review_required",
+  "access_note": "Apps must be reviewed and approved by Pinterest before API access is granted.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "none_found",
+  "buildability": "yes_with_caveats",
+  "blocker": "requires app review and approval before any API calls can be made",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+    "quote": "\"Token used to authenticate API requests.\""
+   },
+   {
+    "field": "access",
+    "url": "https://dev.pinterest.com/docs/getting-started",
+    "quote": "\"Application requests are reviewed by Pinterest.\""
+   },
+   {
+    "field": "api_types",
+    "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+    "quote": "\"In this reference, you will find information on all endpoints available in the Pinterest API.\""
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://developers.pinterest.com/docs/api/v5/introduction/?",
+    "quote": "unknown"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "15209f90affface49de0393bc09cd8ed1721616eeff633dd5bcf81668c3843a7",
+ "at": "2026-11-23T19:42:37+05:30"
+}

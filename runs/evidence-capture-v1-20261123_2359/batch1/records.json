@@ -1,0 +1,2004 @@
+{
+ "batch": "evidence-capture-v1-20261123_2359/batch1",
+ "records": [
+  {
+   "app_id": 15,
+   "name": "Pylon",
+   "identity_note": "Pylon (usepylon.com) customer-support/B2B helpdesk platform; docs.usepylon.com and support.usepylon.com are official.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "Bearer API token for REST API",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+       "title": "Pylon docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:39Z",
+       "quote": "The Pylon API uses Bearer authentication.",
+       "quote_sha256": "39adf36c808ee24fd09ae3874cecf2cb60a8a036b94b2f9362b95bfd4718bce1",
+       "raw_file": "raw/15_1.txt",
+       "page_sha256": "e33ef7ed4e60bb1f97201e2bbbca14897e579a8507e2da44226209e1e8f9d068"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Only Admins can create API tokens (self-serve within an existing Pylon workspace); no trial/pricing gate found on API page",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+       "title": "Pylon docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:39Z",
+       "quote": "Only Admins can create and manage API tokens.",
+       "quote_sha256": "c601bf92085461f3df88cbaf5853a39aea54dc46ed36c41b7bf7ea71d5bbd405",
+       "raw_file": "raw/15_1.txt",
+       "page_sha256": "e33ef7ed4e60bb1f97201e2bbbca14897e579a8507e2da44226209e1e8f9d068"
+      }
+     ],
+     "note": "Whether a paid plan is required to have a workspace/API was not on reviewed pages."
+    },
+    {
+     "field": "scopes",
+     "value": "No scopes; access by role only; tokens do not expire",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+       "title": "Pylon docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:39Z",
+       "quote": "Tokens don't expire, and their access is controlled only by the role. There are no separate scopes.",
+       "quote_sha256": "012915a17693d4b1b5b01c930e1f2b97ff79f05d1ca17435dc5cce0e64a7823b",
+       "raw_file": "raw/15_1.txt",
+       "page_sha256": "e33ef7ed4e60bb1f97201e2bbbca14897e579a8507e2da44226209e1e8f9d068"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Per-org per-endpoint limits of 30, 120 or 300 requests/minute",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/developer/api/rate-limits",
+       "title": "Pylon docs: Rate limits",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:49Z",
+       "quote": "Every endpoint uses one of three limits: 30, 120, or 300 requests per minute",
+       "quote_sha256": "720c55d5f8678f8e7116b26cb6d57eadeaa2e2758bd598e46edb26284be2bd06",
+       "raw_file": "raw/15_5.txt",
+       "page_sha256": "11fddcb163fa958ee6485bba9a54b90c856aea7b9f4993039ba32c021161d04c"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST API plus SDKs (TypeScript, Python, Go), experimental CLI, and webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+       "title": "Pylon docs: Developer API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:46Z",
+       "quote": "To call the API from TypeScript, Python, or Go, use our SDKs",
+       "quote_sha256": "54a455d0e38cc58b09281db1240d7eb88c46707de787c4009f48256a6a9bf4bd",
+       "raw_file": "raw/15_4.txt",
+       "page_sha256": "7a3871534c343f9b3e627de3a055c0eeecf526bdf60cf30dd3218610b0fb827e"
+      },
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+       "title": "Pylon docs: Developer API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:46Z",
+       "quote": "Try our experimental Pylon CLI",
+       "quote_sha256": "3248ca8f70368bad69e3fb078dc8bd4e228835949237069cf0529b3504279c88",
+       "raw_file": "raw/15_4.txt",
+       "page_sha256": "7a3871534c343f9b3e627de3a055c0eeecf526bdf60cf30dd3218610b0fb827e"
+      },
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+       "title": "Pylon docs: Webhooks",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:50Z",
+       "quote": "Receive webhooks for various events happening in Pylon.",
+       "quote_sha256": "d2007d7ca516ba935d78ea6f6e8d6e79a819539d18147f6454dfaaa9e5a7f4c9",
+       "raw_file": "raw/15_6.txt",
+       "page_sha256": "eeb5a6c9687944ee0c551c32f633f86f9fcc467bc0d0d4ed17da48035e97705e"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "No sandbox/test environment documented on reviewed pages",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: hosted MCP server",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+       "title": "Pylon docs: Pylon MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:43Z",
+       "quote": "The Pylon MCP Server exposes Pylon data to AI tools that support the Model Context Protocol",
+       "quote_sha256": "a58b932a1d3d60b85dcba68eaceabb9717c5600aebd7720442973afc3529063d",
+       "raw_file": "raw/15_2.txt",
+       "page_sha256": "4587b1ed1413432d59cebcb1b3d8a3eb1a20220d002bee8b3676a3c6cae7c6a5"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp_auth",
+     "value": "CONFLICT: MCP docs page says OAuth 2.0 or API token; support article says OAuth only",
+     "status": "conflicting",
+     "evidence": [
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+       "title": "Pylon docs: Pylon MCP",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:43Z",
+       "quote": "Auth: OAuth 2.0 or an API token.",
+       "quote_sha256": "f32722c252e2183ffcad438d8a5dcaca1b59b41e35be3552fd5e0f82c7cb70ef",
+       "raw_file": "raw/15_2.txt",
+       "page_sha256": "4587b1ed1413432d59cebcb1b3d8a3eb1a20220d002bee8b3676a3c6cae7c6a5"
+      },
+      {
+       "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+       "title": "Pylon support: connect MCP",
+       "source_type": "official_help",
+       "retrieved_at_utc": "2026-11-23T16:31:45Z",
+       "quote": "The Pylon MCP server only supports OAuth authentication. API key authentication is not currently available",
+       "quote_sha256": "a77c461eb58b001586a799726c2529b8427ac0b81319191fe327b51ff51f3869",
+       "raw_file": "raw/15_3.txt",
+       "page_sha256": "0036286691af95ecd0ad0ea3ee44394222f7eb8db07d9a27efd36031ea83fbcf"
+      }
+     ],
+     "note": "Both are official Pylon pages; support article states \"Last updated 25 days ago\" at fetch; docs page date not shown. Not resolved."
+    },
+    {
+     "field": "buildability",
+     "value": "Yes: REST with admin-created bearer token, region-specific base URLs",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+       "title": "Pylon docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:39Z",
+       "quote": "US region: https://api.usepylon.com EU region: https://api.eu.usepylon.com",
+       "quote_sha256": "543040b489845840ad71d44b7001a95cfb6487401b9723b4b384f5613af36c42",
+       "raw_file": "raw/15_1.txt",
+       "page_sha256": "e33ef7ed4e60bb1f97201e2bbbca14897e579a8507e2da44226209e1e8f9d068"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "bearer_api_token",
+     "oauth2 (hosted MCP)",
+     "api_token (MCP, per docs page; disputed)"
+    ],
+    "access": "self_serve_admin_token (Admin role required)",
+    "api_types": [
+     "rest",
+     "sdk",
+     "webhooks",
+     "cli (experimental)"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none for REST; MCP auth docs conflict"
+   },
+   "prior_record_corrections": [
+    "Prior said rest only; docs also list SDKs (TS/Python/Go), webhooks and experimental CLI.",
+    "Prior \"no pricing/trial gate verified\" stays unverified; no pricing page opened."
+   ],
+   "open_questions": [
+    "Is API available on all Pylon plans? No pricing page opened.",
+    "Which MCP auth statement is current (docs vs support article)?",
+    "Sandbox existence."
+   ]
+  },
+  {
+   "app_id": 24,
+   "name": "Lark (Larksuite)",
+   "identity_note": "Larksuite (open.larksuite.com), international sibling of Feishu. Docs retrieved as Chinese-language pages from the English domain; quotes are in Chinese.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "Custom (self-built) app exchanges app_id and app_secret for tenant_access_token (max 2h validity)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+       "title": "Lark Open Platform: tenant_access_token (custom app)",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:47Z",
+       "quote": "自建应用通过此接口获取 `tenant_access_token`。",
+       "quote_sha256": "c323471efd106ec182e3d9518c70d4f1f0a1049e1b7392b93c545efc75400664",
+       "raw_file": "raw/24_1.txt",
+       "page_sha256": "cce06aa9697e1d49d5a30f5e942c0436472821a5a88169bfc535810c0134e26a"
+      },
+      {
+       "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+       "title": "Lark Open Platform: tenant_access_token (custom app)",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:47Z",
+       "quote": "`tenant_access_token` 的最大有效期是 2 小时。",
+       "quote_sha256": "8a04002ebfc814c90798e41999701f582b508e8de24328a422a4001aa2a8bebe",
+       "raw_file": "raw/24_1.txt",
+       "page_sha256": "cce06aa9697e1d49d5a30f5e942c0436472821a5a88169bfc535810c0134e26a"
+      },
+      {
+       "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+       "title": "Lark Open Platform: tenant_access_token (custom app)",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:47Z",
+       "quote": "app_secret | string | 是 | 应用秘钥，创建应用后获得。",
+       "quote_sha256": "4ea0f82f482c023d962c45935ea1b705aa3511636a400b60c0c665c5aaeba014",
+       "raw_file": "raw/24_1.txt",
+       "page_sha256": "cce06aa9697e1d49d5a30f5e942c0436472821a5a88169bfc535810c0134e26a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Custom-app API permissions must be approved by the tenant admin; some scopes are no-review, sensitive ones need review",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+       "title": "Lark Open Platform: Apply for API permissions",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "**企业自建应用**：应用开发者申请的权限需要通过 **租户管理员** 的审核。",
+       "quote_sha256": "868600890f36310d27fbfa02f111b644f38860f9de5694838f02b8faf905714e",
+       "raw_file": "raw/24_2.txt",
+       "page_sha256": "607bc935d780f0225afbad521bf80905fd540cae7542a094e1a8503519159c67"
+      },
+      {
+       "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+       "title": "Lark Open Platform: Apply for API permissions",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "免审权限 | 租户管理员可以根据本租户实际数据管控诉求，配置免审权限来减轻审核负担。",
+       "quote_sha256": "5a211a572b6663136eeb27a0143fc975e1038845ffeaf6a4e00f5fe6a43937f1",
+       "raw_file": "raw/24_2.txt",
+       "page_sha256": "607bc935d780f0225afbad521bf80905fd540cae7542a094e1a8503519159c67"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "scopes",
+     "value": "Permission (scope) levels: no-review and needs-review for custom apps",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+       "title": "Lark Open Platform: Apply for API permissions",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "需审核权限 | 对于涉及敏感数据的权限，请纳入需审核权限列表。",
+       "quote_sha256": "9df4ba93ba0f615f6814e2df5fbb73a131dc347415d910a13092b92a2b588db3",
+       "raw_file": "raw/24_2.txt",
+       "page_sha256": "607bc935d780f0225afbad521bf80905fd540cae7542a094e1a8503519159c67"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST server APIs; official OpenAPI MCP tool wraps them",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://github.com/larksuite/lark-openapi-mcp",
+       "title": "GitHub larksuite/lark-openapi-mcp",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "The tool encapsulates Feishu/Lark Open Platform API interfaces as MCP tools",
+       "quote_sha256": "be7f015a1bc4c33f42e0c169acc348f35c40cbab10c7ce886644145507219adf",
+       "raw_file": "raw/24_4.txt",
+       "page_sha256": "f123973a9816e9cb9f481ea55d7b4de00027f158066813c6fef20dbe10b5feda"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Not captured from reviewed pages",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "Not captured",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official (Beta) lark-openapi-mcp repo under larksuite org",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://github.com/larksuite/lark-openapi-mcp",
+       "title": "GitHub larksuite/lark-openapi-mcp",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool",
+       "quote_sha256": "df925c444788a1ab030311c551e7c7942afa8a2851c6c10a2d22a4f78f54c35f",
+       "raw_file": "raw/24_4.txt",
+       "page_sha256": "f123973a9816e9cb9f481ea55d7b4de00027f158066813c6fef20dbe10b5feda"
+      },
+      {
+       "url": "https://github.com/larksuite/lark-openapi-mcp",
+       "title": "GitHub larksuite/lark-openapi-mcp",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "This tool is currently in Beta stage.",
+       "quote_sha256": "4809145542ca97ed9a4a16adad0bf8c49ba3d24d50d4b5aad48597994114e16f",
+       "raw_file": "raw/24_4.txt",
+       "page_sha256": "f123973a9816e9cb9f481ea55d7b4de00027f158066813c6fef20dbe10b5feda"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp_auth",
+     "value": "MCP uses App ID/App Secret; user-identity calls need OAuth login",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://github.com/larksuite/lark-openapi-mcp",
+       "title": "GitHub larksuite/lark-openapi-mcp",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:31:50Z",
+       "quote": "Obtain the App ID and App Secret, which will be used for API authentication",
+       "quote_sha256": "2a813402977ee1c1857104a90195f067b4673c3d355d982469372b84668ff417",
+       "raw_file": "raw/24_4.txt",
+       "page_sha256": "f123973a9816e9cb9f481ea55d7b4de00027f158066813c6fef20dbe10b5feda"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "Yes, conditional on tenant-admin approval of requested scopes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes.md",
+       "title": "Lark Open Platform: Apply for API permissions",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:31:48Z",
+       "quote": "**企业自建应用**：应用开发者申请的权限需要通过 **租户管理员** 的审核。",
+       "quote_sha256": "868600890f36310d27fbfa02f111b644f38860f9de5694838f02b8faf905714e",
+       "raw_file": "raw/24_2.txt",
+       "page_sha256": "607bc935d780f0225afbad521bf80905fd540cae7542a094e1a8503519159c67"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "app_id+app_secret -> tenant_access_token",
+     "user OAuth 2.0 (user_access_token, per MCP repo)"
+    ],
+    "access": "self_serve app creation; tenant admin approval of scopes",
+    "api_types": [
+     "rest"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "tenant admin must approve custom-app permissions"
+   },
+   "prior_record_corrections": [
+    "Prior said mcp none_found_in_reviewed_sources; an official larksuite/lark-openapi-mcp repo (Beta) exists and was fetched.",
+    "Prior listed oauth2_client_credentials and sdk; neither was confirmed by a quote here."
+   ],
+   "open_questions": [
+    "Rate limits; sandbox; English-language versions of pages; whether a free Lark tenant can create custom apps."
+   ]
+  },
+  {
+   "app_id": 31,
+   "name": "Google Ads",
+   "identity_note": "Google Ads API (developers.google.com/google-ads).",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "OAuth 2.0 (user credentials/ADC or service account); developer token sunset",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+       "title": "Google Ads API: MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "Authentication: Application Default Credentials (OAuth 2.0 user\ncredentials or service account) for local stdio",
+       "quote_sha256": "bfa2a4b0977af9b71ea8320c9a101aa4a42d1d188520427902b9eb7d09f76df7",
+       "raw_file": "raw/31_1.txt",
+       "page_sha256": "e0ec945d8ef3fb254afccfca26c6a0625ba5d45f17d2d3cf3702723e759833b9"
+      },
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+       "title": "Google Ads API: MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "Google\nsunset developer tokens ( GOOGLE_ADS_DEVELOPER_TOKEN ) on\nSeptember 9, 2026.",
+       "quote_sha256": "34a1a033bf2d2d0e71970f30c637e20aa59c2394ed2fb57cc87ce728c3f7524d",
+       "raw_file": "raw/31_1.txt",
+       "page_sha256": "e0ec945d8ef3fb254afccfca26c6a0625ba5d45f17d2d3cf3702723e759833b9"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "API access level is tied to the Google Cloud project: Test, Explorer, Basic, Standard (application required for production)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+       "title": "Google Ads API: Access levels",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "There are four different API access levels listed in order in the\ntable.",
+       "quote_sha256": "8a2677e9d8257fd2583e5ab3cc59d0cdc9c5db41e64536e976b2dd302a3725f4",
+       "raw_file": "raw/31_2.txt",
+       "page_sha256": "98b8a2742711e912598d5b50dae34fb8f1db4c4d7d13665de8d7f9fa8754b71b"
+      },
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+       "title": "Google Ads API: MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "Otherwise, production calls fail with an\n AuthorizationError.CLOUD_PROJECT_NOT_APPROVED_FOR_PRODUCTION error.",
+       "quote_sha256": "2d3400a38105194dbde9787050d23ddb710e065de959b7287ceda0ccb016366f",
+       "raw_file": "raw/31_1.txt",
+       "page_sha256": "e0ec945d8ef3fb254afccfca26c6a0625ba5d45f17d2d3cf3702723e759833b9"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Daily operation limits: Test 15,000; Explorer 2,880 production ops/day; Basic 15,000; Standard unlimited",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+       "title": "Google Ads API: Access levels",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "Explorer \n Test and production accounts \n 2,880 operations / day for production accounts",
+       "quote_sha256": "16f4353e2f11350e31bdb95d1466bc6688cf27c4d79ddafe97a08e69e96ba8b9",
+       "raw_file": "raw/31_2.txt",
+       "page_sha256": "98b8a2742711e912598d5b50dae34fb8f1db4c4d7d13665de8d7f9fa8754b71b"
+      },
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+       "title": "Google Ads API: Access levels",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "Standard \n Test and production accounts \n Unlimited operations / day for both test and production accounts",
+       "quote_sha256": "449d3a1046433c1644f18a652ff596938074cdf2ace0f343e7b643468f7e0fba",
+       "raw_file": "raw/31_2.txt",
+       "page_sha256": "98b8a2742711e912598d5b50dae34fb8f1db4c4d7d13665de8d7f9fa8754b71b"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "API reachable via gRPC (MCP telemetry header is a gRPC request header); REST not confirmed here",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+       "title": "Google Ads API: MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "Appends google-ads-mcp/VERSION to the x-goog-api-client \ngRPC request header",
+       "quote_sha256": "31216575b95b77df9b26e9047882cd88e4fe9bb12257c62a66ad075070f3a79c",
+       "raw_file": "raw/31_1.txt",
+       "page_sha256": "e0ec945d8ef3fb254afccfca26c6a0625ba5d45f17d2d3cf3702723e759833b9"
+      }
+     ],
+     "note": "Prior record claimed rest/grpc/sdk; only gRPC use is quoted. REST/SDK not verified from fetched pages."
+    },
+    {
+     "field": "sandbox",
+     "value": "Test access level for test accounts (15,000 ops/day)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+       "title": "Google Ads API: Access levels",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "Test \n Test accounts \n 15,000 operations / day",
+       "quote_sha256": "2c38d555d5106511838bec261a9ea79fb96df7d4f351e4b3f3a758cc5c4bd409",
+       "raw_file": "raw/31_2.txt",
+       "page_sha256": "98b8a2742711e912598d5b50dae34fb8f1db4c4d7d13665de8d7f9fa8754b71b"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: Google Ads MCP server (docs + googleads/google-ads-mcp repo)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/googleads/google-ads-mcp/main/README.md",
+       "title": "GitHub googleads/google-ads-mcp README",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "server that enables LLMs and AI agents to query and manage",
+       "quote_sha256": "d292326d6bc9649d3784593b5af22cf9573c3b5290e043202357abb5c0069bb5",
+       "raw_file": "raw/31_3.txt",
+       "page_sha256": "c7bda71a72ff8eace9d412238f635b1e679dadf28258b05360ae9aeaeaecae05"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp_auth",
+     "value": "Local stdio uses ADC; remote Streamable HTTP uses OAuth 2.0 web credentials",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+       "title": "Google Ads API: MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:03Z",
+       "quote": "or OAuth 2.0 Web\napplication credentials for remote HTTP",
+       "quote_sha256": "d6b253d5820cbde757b3bf29bd4b60020c8c178b54da409aa570a557ca684d6a",
+       "raw_file": "raw/31_1.txt",
+       "page_sha256": "e0ec945d8ef3fb254afccfca26c6a0625ba5d45f17d2d3cf3702723e759833b9"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "Conditional: production use requires Explorer/Basic/Standard approval of the Cloud project",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+       "title": "Google Ads API: Access levels",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:06Z",
+       "quote": "Explorer access (automated review and approval in\nmost cases, for up to 2,880 operations per day against production accounts)",
+       "quote_sha256": "c08e1b3adcf90e67dc4ac14ac71284bc88a519e81fa95ec5b9179ff5ca9611db",
+       "raw_file": "raw/31_2.txt",
+       "page_sha256": "98b8a2742711e912598d5b50dae34fb8f1db4c4d7d13665de8d7f9fa8754b71b"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "oauth2",
+     "service_account"
+    ],
+    "access": "Cloud-project access level (Test auto; Explorer automated review; Basic/Standard by application)",
+    "api_types": [
+     "grpc",
+     "rest (unverified)",
+     "mcp"
+    ],
+    "mcp_status": "official",
+    "buildability": "conditional",
+    "blocker": "access-level approval for production volume"
+   },
+   "prior_record_corrections": [
+    "Prior said README still mentions developer token; the fetched README (raw/31_3) contains no \"developer token\"/DEVELOPER_TOKEN text, so no README-vs-docs conflict was verified.",
+    "Prior api_types rest/sdk not confirmed by quotes; gRPC is."
+   ],
+   "open_questions": [
+    "REST/SDK support not quoted; review timelines for Basic/Standard not captured."
+   ]
+  },
+  {
+   "app_id": 37,
+   "name": "systeme.io",
+   "identity_note": "systeme.io funnel/email platform; developer.systeme.io and help.systeme.io are official.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "API key in X-API-Key header (only option)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.systeme.io/reference/api",
+       "title": "systeme.io Public API reference",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:13Z",
+       "quote": "your only option right now is to attach your API key to the X-API-Key header of each request",
+       "quote_sha256": "189d2797439d72ef51d8f465b930b181967a60a2627dd3d82181382b08fe46f7",
+       "raw_file": "raw/37_2.txt",
+       "page_sha256": "d7ea2b597705b11f676a5b9f53e22ad0d0d10a39ac5ecf416089f04bb84638a0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Self-serve: key created in profile settings under Public API keys (account required)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+       "title": "systeme.io help: public API",
+       "source_type": "official_help",
+       "retrieved_at_utc": "2026-11-23T16:32:11Z",
+       "quote": "Click on your profile picture and select Settings (1). In the left menu, click MCP & API keys (2).",
+       "quote_sha256": "b275bb7ed80a1eb0dfb0cdca164f2c0081d30271a55fc2bfaf328a224b260ecc",
+       "raw_file": "raw/37_1.txt",
+       "page_sha256": "64c86d9da1fe4fa972a1de72ab0771513e0fe7ca2e3047995a5bb4be471f43a1"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "key_limits",
+     "value": "Key expiration is user-set or indefinite; key-count cap not found on reviewed pages",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+       "title": "systeme.io help: public API",
+       "source_type": "official_help",
+       "retrieved_at_utc": "2026-11-23T16:32:11Z",
+       "quote": "Note: To keep your API key active indefinitely, leave the 'Expiration' field empty.",
+       "quote_sha256": "91634ffaee2c95c9b0bbd4f7fb173e5f84928ba513ce8d1efdf0ad766d4d84c5",
+       "raw_file": "raw/37_1.txt",
+       "page_sha256": "64c86d9da1fe4fa972a1de72ab0771513e0fe7ca2e3047995a5bb4be471f43a1"
+      }
+     ],
+     "note": "Prior said max 2-3 keys; not found in fetched text."
+    },
+    {
+     "field": "rate_limits",
+     "value": "Rate limited with 429; headers X-RateLimit-Limit/Remaining/Refill; quota shared across keys (numeric limit not given)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.systeme.io/reference/api",
+       "title": "systeme.io Public API reference",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:13Z",
+       "quote": "Shared Quota : The request limit is collectively applied across all your API keys and tokens.",
+       "quote_sha256": "763d1fcfe4e540349985a28a883d10543a7df9215703a286bd24b4f80913a005",
+       "raw_file": "raw/37_2.txt",
+       "page_sha256": "d7ea2b597705b11f676a5b9f53e22ad0d0d10a39ac5ecf416089f04bb84638a0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST and webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.systeme.io/reference/api",
+       "title": "systeme.io Public API reference",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:13Z",
+       "quote": "Systeme.io Public API",
+       "quote_sha256": "d939832fecdcdec5a0e355bf705adee9879a5889ca4278144e994cda3bdab0ca",
+       "raw_file": "raw/37_2.txt",
+       "page_sha256": "d7ea2b597705b11f676a5b9f53e22ad0d0d10a39ac5ecf416089f04bb84638a0"
+      },
+      {
+       "url": "https://developer.systeme.io/docs/mcp-server.md",
+       "title": "systeme.io MCP Server docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:34:12Z",
+       "quote": "Welcome to the Systeme.io MCP Server overview.",
+       "quote_sha256": "1143218092e2bfdb99dca5be5f50c1731c18b890152e058d4a77c0542d91d40d",
+       "raw_file": "raw/37_5.txt",
+       "page_sha256": "2c03c307b94cd3ca50cecb88c58b1885c3e03a3f69fb94291a605ce42c7166d5"
+      }
+     ],
+     "note": "Webhooks documented in developer.systeme.io llms.txt index (not saved as raw); not quoted."
+    },
+    {
+     "field": "webhooks",
+     "value": "Webhook docs exist but not saved as raw page",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "Not found",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: systeme.io MCP Server (initial release)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.systeme.io/docs/mcp-server.md",
+       "title": "systeme.io MCP Server docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:34:12Z",
+       "quote": "The Systeme.io MCP server is in its initial release.",
+       "quote_sha256": "47ad35781713a2754c528065b1e0931f4604ea807ee1d59530d629a9bccf67e1",
+       "raw_file": "raw/37_5.txt",
+       "page_sha256": "2c03c307b94cd3ca50cecb88c58b1885c3e03a3f69fb94291a605ce42c7166d5"
+      },
+      {
+       "url": "https://developer.systeme.io/docs/mcp-server.md",
+       "title": "systeme.io MCP Server docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:34:12Z",
+       "quote": "To authenticate with the MCP server, you must use your MCP key.",
+       "quote_sha256": "6fe946b063831622146c74ecb376838e42b43e8228e69c2a9d68c3bbb1db2613",
+       "raw_file": "raw/37_5.txt",
+       "page_sha256": "2c03c307b94cd3ca50cecb88c58b1885c3e03a3f69fb94291a605ce42c7166d5"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp_scope",
+     "value": "MCP currently covers contacts, tags, contact fields, newsletters",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.systeme.io/docs/mcp-server.md",
+       "title": "systeme.io MCP Server docs",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:34:12Z",
+       "quote": "The Systeme.io MCP server currently supports **contact and newsletter management**.",
+       "quote_sha256": "9cb5a79fafaab78183ad3a1dc7a05dc3fda2e24af98d8a4d1734f299219b01bb",
+       "raw_file": "raw/37_5.txt",
+       "page_sha256": "2c03c307b94cd3ca50cecb88c58b1885c3e03a3f69fb94291a605ce42c7166d5"
+      }
+     ],
+     "note": "Help-center category lists further guides (funnels, products, automation) that were not opened; docs page says other features not yet supported - possible staleness, not resolved."
+    },
+    {
+     "field": "pricing_gate",
+     "value": "Free plan exists; whether API/MCP is available on free plan not verified",
+     "status": "not_verified",
+     "evidence": [
+      {
+       "url": "https://systeme.io/pricing",
+       "title": "systeme.io pricing",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:20Z",
+       "quote": "Systeme.io Pricing — Free, Startup, Webinar, Unlimited Plans",
+       "quote_sha256": "942b018f4444f9e68d561ab4d4e53ecba115d3cc7925350f4f19ec6a948583f0",
+       "raw_file": "raw/37_4.txt",
+       "page_sha256": "3d304f31eb31f34e6b8b08fea1aa2a439080252d9ce31c04ed814a53e1884afe"
+      }
+     ],
+     "note": "Quote only shows plans exist, not API entitlement."
+    },
+    {
+     "field": "buildability",
+     "value": "Yes with an account and API key",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.systeme.io/reference/api",
+       "title": "systeme.io Public API reference",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:13Z",
+       "quote": "your only option right now is to attach your API key to the X-API-Key header of each request",
+       "quote_sha256": "189d2797439d72ef51d8f465b930b181967a60a2627dd3d82181382b08fe46f7",
+       "raw_file": "raw/37_2.txt",
+       "page_sha256": "d7ea2b597705b11f676a5b9f53e22ad0d0d10a39ac5ecf416089f04bb84638a0"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "api_key (X-API-Key)",
+     "mcp_key (X-MCP-Key header or mcpKey query param)"
+    ],
+    "access": "self_serve (account + key); plan entitlement unverified",
+    "api_types": [
+     "rest"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified; plan gating unverified"
+   },
+   "prior_record_corrections": [
+    "Prior said mcp none_found; an official MCP Server doc page (developer.systeme.io/docs/mcp-server) and a help-center MCP category exist.",
+    "Prior key-cap \"2 vs 3\" not reproduced in fetched pages.",
+    "Prior cited Composio third-party listing; not fetched, dropped."
+   ],
+   "open_questions": [
+    "Is Public API/MCP available on the free plan?",
+    "Numeric rate limit.",
+    "Webhook docs not saved."
+   ]
+  },
+  {
+   "app_id": 40,
+   "name": "SendGrid",
+   "identity_note": "Twilio SendGrid; docs now on twilio.com/docs/sendgrid; sendgrid.com/pricing serves a Twilio page.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "API key sent as Bearer token",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+       "title": "Twilio SendGrid docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:22Z",
+       "quote": "include an Authorization header with the value Bearer <YOUR_API_KEY_HERE>",
+       "quote_sha256": "750c50d9ca3bd7b3fd32e5baa533f3b0681b0a8b32a583bdeb03ab3a564f67eb",
+       "raw_file": "raw/40_3.txt",
+       "page_sha256": "fa5ccfef2190084da513e536d5d37b4b64f60e8fd90c184a2484616f48cc6e17"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Self-serve: Settings > API Keys > Create API Key (account needed)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+       "title": "SendGrid docs: API keys",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:22Z",
+       "quote": "Click Create API Key .",
+       "quote_sha256": "191f5a82ead6197c499ebbe8bf285e54a70e3e34d9da7ba5751b106eb3010f6b",
+       "raw_file": "raw/40_2.txt",
+       "page_sha256": "7e2bf6c540b2497a92c9164d55876dd3d6a9a5a7c04de41a2663f7b6598d6bd3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "scopes",
+     "value": "Key permission levels: Full Access, Custom Access, Billing Access, etc.",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+       "title": "SendGrid docs: API keys",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:22Z",
+       "quote": "Full Access Grants all API endpoints full access to your account.",
+       "quote_sha256": "c702aedccb622bea0fce647a7d65b72da4b475bb4a7a87e8464854146d0e5c92",
+       "raw_file": "raw/40_2.txt",
+       "page_sha256": "7e2bf6c540b2497a92c9164d55876dd3d6a9a5a7c04de41a2663f7b6598d6bd3"
+      },
+      {
+       "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+       "title": "SendGrid docs: API keys",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:22Z",
+       "quote": "Custom Access Choose both which API endpoints and which access levels each have to your account.",
+       "quote_sha256": "fc8a6678806ba7bf11a52f858195efe0471f2a41f9382cd649ee6983621f6afa",
+       "raw_file": "raw/40_2.txt",
+       "page_sha256": "7e2bf6c540b2497a92c9164d55876dd3d6a9a5a7c04de41a2663f7b6598d6bd3"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Fixed per-endpoint request limits per refresh period; 429 on exceed (no numeric global limit)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits",
+       "title": "SendGrid docs: Rate limits",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "Each endpoint permits a fixed number of requests per refresh period.",
+       "quote_sha256": "74b00886958e4ad8aef9acdaad673e4294e1f4ece739e7eeedcbbd9aa690f058",
+       "raw_file": "raw/40_6.txt",
+       "page_sha256": "3e88cb1bf2e5c3ca9707d725b05cd6cc38b564771e2433def3faa6ee853811ef"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST v3 API with SDKs in seven languages",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+       "title": "SendGrid v3 API reference",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:21Z",
+       "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale",
+       "quote_sha256": "6d098cd898a5ab1c45f001c6f534ac07f338466f999b917be653b5681198982f",
+       "raw_file": "raw/40_1.txt",
+       "page_sha256": "cfff9aac913d5904965ebeb8e655183e192f7f4e5fc600ba095a3f588e4ec492"
+      },
+      {
+       "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits",
+       "title": "SendGrid docs: Rate limits",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "The Twilio SendGrid Web REST API v3 provides SDKs for seven different languages.",
+       "quote_sha256": "ac9fa047d846d45b523e52be68981fa74f66c858677fb7fca1d0940ded39c3f3",
+       "raw_file": "raw/40_6.txt",
+       "page_sha256": "3e88cb1bf2e5c3ca9707d725b05cd6cc38b564771e2433def3faa6ee853811ef"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "free_tier",
+     "value": "Pricing page says free trial, no credit card; plan details not quoted",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://sendgrid.com/en-us/pricing",
+       "title": "sendgrid.com/en-us/pricing (Twilio pricing page)",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:32:26Z",
+       "quote": "Sign up for a free trial—no credit card required.",
+       "quote_sha256": "3a24791221847210e483667bbdd06e5a3783b629b1649b1c59e5a8f19837198a",
+       "raw_file": "raw/40_4.txt",
+       "page_sha256": "2b644343a540d0b442e3c9fa31a25732deaa4bbe45906eeea48e3869d1ff1641"
+      }
+     ],
+     "note": "Free-plan limits unverified."
+    },
+    {
+     "field": "sandbox",
+     "value": "Not verified (sandbox mode not looked up)",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "third_party community tutorial; Twilio-labs generic MCP repo exists but SendGrid coverage not verified",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+       "title": "Twilio blog (community contributor)",
+       "source_type": "third_party",
+       "retrieved_at_utc": "2026-11-23T16:32:32Z",
+       "quote": "Build a SendGrid MCP Server for AI Email Workflows",
+       "quote_sha256": "9eeb3805784bc175bf006a03b594a92375eb13deb13c8e74f37130beff76c60a",
+       "raw_file": "raw/40_5.txt",
+       "page_sha256": "a2e11ca789550a07ea4640ad546a5db5c76e8ba31d2fe3cf296e26b323a628d5"
+      },
+      {
+       "url": "https://github.com/twilio-labs/mcp",
+       "title": "GitHub twilio-labs/mcp",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:34:37Z",
+       "quote": "This is a monorepo for the Model Context Protocol server that exposes all of Twilio APIs.",
+       "quote_sha256": "11fcee9e86e46a64d552aafa8a8fad16fc03185b246786fce5e0e33ec25d6086",
+       "raw_file": "raw/40_7.txt",
+       "page_sha256": "7e44b18515cddd48f20fd94f7de3242ef709df24686c5abfcac68de041f5e711"
+      }
+     ],
+     "note": "Blog says opinions are contributor-owned. Twilio MCP repo is twilio-labs (alpha); whether SendGrid v3 is exposed was not verified. No dedicated official SendGrid MCP seen in reviewed pages."
+    },
+    {
+     "field": "buildability",
+     "value": "Yes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+       "title": "Twilio SendGrid docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:22Z",
+       "quote": "include an Authorization header with the value Bearer <YOUR_API_KEY_HERE>",
+       "quote_sha256": "750c50d9ca3bd7b3fd32e5baa533f3b0681b0a8b32a583bdeb03ab3a564f67eb",
+       "raw_file": "raw/40_3.txt",
+       "page_sha256": "fa5ccfef2190084da513e536d5d37b4b64f60e8fd90c184a2484616f48cc6e17"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "api_key (bearer)"
+    ],
+    "access": "self_serve (account + API key)",
+    "api_types": [
+     "rest",
+     "sdk"
+    ],
+    "mcp_status": "third_party",
+    "buildability": "yes",
+    "blocker": "none identified"
+   },
+   "prior_record_corrections": [
+    "Prior said \"no official SendGrid MCP found\"; reviewed pages still show none dedicated, but twilio-labs/mcp (official Twilio org, alpha) covers Twilio APIs and its SendGrid coverage is unverified.",
+    "Prior free-plan limit remains unverified."
+   ],
+   "open_questions": [
+    "Does twilio-labs/mcp expose SendGrid endpoints?",
+    "Free plan limits; sandbox mode."
+   ]
+  },
+  {
+   "app_id": 42,
+   "name": "WooCommerce",
+   "identity_note": "WooCommerce (WordPress plugin; self-hosted per store). developer.woocommerce.com official.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "HTTP Basic Auth with consumer key/secret over HTTPS; OAuth 1.0a over HTTP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+       "title": "WooCommerce dev docs: REST API authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "You may use HTTP Basic Auth by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password.",
+       "quote_sha256": "552319ac6808617c720d9449d30192663109a76aef2ba302f1f199e1406efa8d",
+       "raw_file": "raw/42_1.txt",
+       "page_sha256": "3604457928f94e0ff5241a159ccc630cde92dc536e305cb5075eaf688b87c4c4"
+      },
+      {
+       "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+       "title": "WooCommerce dev docs: REST API authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "You must use OAuth 1.0a \"one-legged\" authentication",
+       "quote_sha256": "78c1a7b67822933aa944155f29091618b0f636c29345b22f44cdb3ba57fdb155",
+       "raw_file": "raw/42_1.txt",
+       "page_sha256": "3604457928f94e0ff5241a159ccc630cde92dc536e305cb5075eaf688b87c4c4"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Per-store: keys generated by the store admin in WooCommerce > Settings > Advanced > REST API",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+       "title": "WooCommerce dev docs: REST API authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "go to WooCommerce > Settings > Advanced > REST API.",
+       "quote_sha256": "66cb0d6572cb25f4c0339262bf9d8e8951c90245309b77bb6f6a326a05c464dd",
+       "raw_file": "raw/42_1.txt",
+       "page_sha256": "3604457928f94e0ff5241a159ccc630cde92dc536e305cb5075eaf688b87c4c4"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "scopes",
+     "value": "Keys are read/write permission per key, tied to a chosen user",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+       "title": "WooCommerce dev docs: REST API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:57Z",
+       "quote": "choose a user with access to orders etc, and give the key read/write permissions",
+       "quote_sha256": "7831f57b7c463f912ddc102e3f171ff5f347e8857631a8a548da7cbfb9e90d28",
+       "raw_file": "raw/42_4.txt",
+       "page_sha256": "4589ff91e532fe7bebab53d0cded16a75a0e87315ea756cbedd878294c0e2b97"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST API (v3 current), webhooks",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+       "title": "WooCommerce dev docs: REST API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:57Z",
+       "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API.",
+       "quote_sha256": "8064aa473140f4b0908d455de3827b08c116c9d5293e3c3aceb43068d208b523",
+       "raw_file": "raw/42_4.txt",
+       "page_sha256": "4589ff91e532fe7bebab53d0cded16a75a0e87315ea756cbedd878294c0e2b97"
+      },
+      {
+       "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+       "title": "WooCommerce dev docs: REST API",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:57Z",
+       "quote": "Hookbin - Another tool to test webhooks.",
+       "quote_sha256": "a1407fa19ad2047e04e51a4ad1f000d3d259b61d364668fc82c69926a8ed64cb",
+       "raw_file": "raw/42_4.txt",
+       "page_sha256": "4589ff91e532fe7bebab53d0cded16a75a0e87315ea756cbedd878294c0e2b97"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Not documented on reviewed pages (self-hosted; host-dependent)",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "No hosted sandbox; each store is its own instance",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official (developer preview): WooCommerce abilities exposed via WordPress MCP Adapter",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.woocommerce.com/docs/features/mcp/",
+       "title": "WooCommerce dev docs: MCP integration",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:57Z",
+       "quote": "WooCommerce registers product and order abilities in WordPress.",
+       "quote_sha256": "523e9343459d974e493630343ae34c72e65defd74592063bf71c5ebf8614726d",
+       "raw_file": "raw/42_3.txt",
+       "page_sha256": "7ae0854bff355db3b282f580d934fabf9e1f30745e2f44859c595995be171897"
+      },
+      {
+       "url": "https://developer.woocommerce.com/docs/features/mcp/",
+       "title": "WooCommerce dev docs: MCP integration",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:57Z",
+       "quote": "The MCP implementation in WooCommerce is currently in developer preview.",
+       "quote_sha256": "162fe02b4fc3f7f6ce0e2a61f9974c7eb2d3d3a9ad37db061d31d93e5920daaf",
+       "raw_file": "raw/42_3.txt",
+       "page_sha256": "7ae0854bff355db3b282f580d934fabf9e1f30745e2f44859c595995be171897"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp_auth",
+     "value": "Remote HTTP uses WordPress username + Application Password, not REST API keys",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.woocommerce.com/docs/features/mcp/",
+       "title": "WooCommerce dev docs: MCP integration",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:57Z",
+       "quote": "Remote HTTP connections authenticate using a WordPress username and an Application Password .",
+       "quote_sha256": "84c5243582ac41beb2c1981f474194b0d188b1ef4c28d0f2c5b24da79e731b06",
+       "raw_file": "raw/42_3.txt",
+       "page_sha256": "7ae0854bff355db3b282f580d934fabf9e1f30745e2f44859c595995be171897"
+      },
+      {
+       "url": "https://developer.woocommerce.com/docs/features/mcp/",
+       "title": "WooCommerce dev docs: MCP integration",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:57Z",
+       "quote": "Do not use your account password or a WooCommerce REST API key.",
+       "quote_sha256": "90f0a324458c97e2c51f9d4c9d3586bda5a69bc64e3fccd2b3c65576dc0082c6",
+       "raw_file": "raw/42_3.txt",
+       "page_sha256": "7ae0854bff355db3b282f580d934fabf9e1f30745e2f44859c595995be171897"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "Yes, but credentials are per merchant store; no central tenant",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+       "title": "WooCommerce dev docs: REST API authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:33Z",
+       "quote": "go to WooCommerce > Settings > Advanced > REST API.",
+       "quote_sha256": "66cb0d6572cb25f4c0339262bf9d8e8951c90245309b77bb6f6a326a05c464dd",
+       "raw_file": "raw/42_1.txt",
+       "page_sha256": "3604457928f94e0ff5241a159ccc630cde92dc536e305cb5075eaf688b87c4c4"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "basic_auth (consumer key/secret, HTTPS)",
+     "oauth1.0a (HTTP)",
+     "application_password (MCP)"
+    ],
+    "access": "self_serve_per_store (store admin generates keys)",
+    "api_types": [
+     "rest",
+     "webhooks",
+     "mcp"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "per-store credentials; no central tenant"
+   },
+   "prior_record_corrections": [
+    "Prior said mcp none_found; official WooCommerce MCP integration doc (developer preview) exists and was fetched."
+   ],
+   "open_questions": [
+    "Rate limits (store/host-dependent); MCP page mentions removal of /wp-json/woocommerce/mcp in WooCommerce 11.3 - version availability not checked."
+   ]
+  },
+  {
+   "app_id": 45,
+   "name": "Magento (Adobe Commerce)",
+   "identity_note": "Adobe Commerce / Magento Open Source (developer.adobe.com/commerce); two models: self-hosted (PaaS/on-prem/Open Source) and Adobe Commerce as a Cloud Service (SaaS).",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "Self-hosted: OAuth 1.0a for third-party apps, tokens for mobile, login credentials for admins/customers",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+       "title": "Adobe Commerce web API docs: getting started",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:59Z",
+       "quote": "Third-party applications authenticate with OAuth 1.0a .",
+       "quote_sha256": "e377dccd1d2a9dc01e677a331d629f1618929ca308de5f557fa614a06eea39fc",
+       "raw_file": "raw/45_3.txt",
+       "page_sha256": "1be2de175719c08d5055dbddea69d0968245ca2781033f6223f21e4d13de73af"
+      },
+      {
+       "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+       "title": "Adobe Commerce web API docs: getting started",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:59Z",
+       "quote": "Mobile applications authenticate using tokens .",
+       "quote_sha256": "272da0500cdccb3395e31c47705ba4921a4fff71f5505c04a6219bf2ca835ebb",
+       "raw_file": "raw/45_3.txt",
+       "page_sha256": "1be2de175719c08d5055dbddea69d0968245ca2781033f6223f21e4d13de73af"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "authentication_saas",
+     "value": "SaaS: Adobe IMS OAuth 2; traditional admin/integration token methods not supported",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+       "title": "Adobe Commerce web API docs: REST authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:58Z",
+       "quote": "The traditional admin and integration token generation methods is not supported in SaaS environments.",
+       "quote_sha256": "8e35ff6ca0803b71391131140486867ee067884ca838bfac40db4c18caea9aaa",
+       "raw_file": "raw/45_1.txt",
+       "page_sha256": "d0a29f4449eb83574203f99ae83d787ea64f997363b48c61bff1966adcdd58fe"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "SaaS server-to-server needs Adobe Developer Console access and an Adobe Organization Admin account",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server/",
+       "title": "Adobe Commerce web API docs: server-to-server auth",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:59Z",
+       "quote": "Access to Adobe Developer Console \n An Adobe Organization Admin account",
+       "quote_sha256": "3629b8d4ffc7e7311422d9d052504d8cf0561a3ae338fd65161d52d9a5971ca7",
+       "raw_file": "raw/45_2.txt",
+       "page_sha256": "87e029b0dcf9644b350474096c3b9de2230dd2f7ba50afdee82cc17333470c1c"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST, GraphQL, SOAP",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+       "title": "Adobe Commerce web API docs: getting started",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:59Z",
+       "quote": "Support for GraphQL , REST (Representational State Transfer) and SOAP (Simple Object Access Protocol).",
+       "quote_sha256": "d94a012a25f2c7941ace62cfbff4019ed9b7cc1233b9ee6a5d5f1e9dedd1f8fc",
+       "raw_file": "raw/45_3.txt",
+       "page_sha256": "1be2de175719c08d5055dbddea69d0968245ca2781033f6223f21e4d13de73af"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "webhooks",
+     "value": "Getting-started page says webhooks not supported (possible stale text)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+       "title": "Adobe Commerce web API docs: getting started",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:59Z",
+       "quote": "The system does not currently support webhooks.",
+       "quote_sha256": "8379f9905b1115abc939d57e3fb58249a26297ed067a160e5921480dbdb92204",
+       "raw_file": "raw/45_3.txt",
+       "page_sha256": "1be2de175719c08d5055dbddea69d0968245ca2781033f6223f21e4d13de73af"
+      }
+     ],
+     "note": "This page statement may be outdated relative to Adobe Commerce extensibility features; not cross-checked."
+    },
+    {
+     "field": "scopes",
+     "value": "Permissions defined per resource in webapi.xml/ACL; each administrator or integration user has configurable permissions",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+       "title": "Adobe Commerce web API docs: authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:34:30Z",
+       "quote": "Each administrator or integration user can have a unique set of permissions which is configured in the Admin.",
+       "quote_sha256": "20af1cbf3da2bfdda09990f1fe0f16304e8a104eff8bc43d8be0ffcdda67710d",
+       "raw_file": "raw/45_6.txt",
+       "page_sha256": "7ac436adf04d2e8d66c59fcef9b5ca286ba5f019da86b8cb9afd49bbe36b316c"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Not found",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "Not found",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "No MCP page found in the 8 Adobe pages fetched; existence not ruled out",
+     "status": "not_verified",
+     "evidence": [],
+     "note": "Only developer.adobe.com/commerce/webapi pages were opened; no MCP search done."
+    },
+    {
+     "field": "buildability",
+     "value": "Conditional on deployment model (different auth in self-hosted vs SaaS)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+       "title": "Adobe Commerce web API docs: REST authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:32:58Z",
+       "quote": "The traditional admin and integration token generation methods is not supported in SaaS environments.",
+       "quote_sha256": "8e35ff6ca0803b71391131140486867ee067884ca838bfac40db4c18caea9aaa",
+       "raw_file": "raw/45_1.txt",
+       "page_sha256": "d0a29f4449eb83574203f99ae83d787ea64f997363b48c61bff1966adcdd58fe"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "oauth1.0a",
+     "admin/integration/customer token (self-hosted)",
+     "oauth2 via Adobe IMS (SaaS)"
+    ],
+    "access": "self-hosted: create integration in Admin; SaaS: Adobe Developer Console + Org Admin",
+    "api_types": [
+     "rest",
+     "graphql",
+     "soap"
+    ],
+    "mcp_status": "not_verified",
+    "buildability": "conditional",
+    "blocker": "two deployment models with different auth; per-instance credentials"
+   },
+   "prior_record_corrections": [
+    "Prior said mcp none_found_in_reviewed_sources; no MCP search was performed in this pass, so downgraded to not_verified.",
+    "Prior listed \"admin/integration token\" for self-hosted; quote supports tokens generally and OAuth 1.0a."
+   ],
+   "open_questions": [
+    "Official Adobe Commerce MCP? Not searched.",
+    "Rate limits; webhook support conflicts with Adobe extensibility product."
+   ]
+  },
+  {
+   "app_id": 48,
+   "name": "Gumroad",
+   "identity_note": "Gumroad. gumroad.com/api is a client-rendered page (no text in HTML), so evidence comes from the official antiwork/gumroad repo files that render those docs and the MCP connector page.",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "OAuth-based REST API; access token generated on the application page",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Introduction.tsx",
+       "title": "Gumroad source: API documentation component Introduction",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:22Z",
+       "quote": "The Gumroad OAuth API is based around REST.",
+       "quote_sha256": "99c9b9481e64a7413c6725cd67e25e43a02f519afc9264a65f9731d5d3dbeedb",
+       "raw_file": "raw/48_9.txt",
+       "page_sha256": "2f086fcf0e6ec807b7da458f3f026c894f16079f19b76192d475179763e8aa18"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Authentication.tsx",
+       "title": "Gumroad source: API documentation component Authentication",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:21Z",
+       "quote": "to get the token you will use with the API.",
+       "quote_sha256": "04308d6d65b4b2912d8e42475dfdfab7c9112c16769a1631cd8c87f4edf0a983",
+       "raw_file": "raw/48_8.txt",
+       "page_sha256": "eecc1e27a260cf56f3be18d51f5dbaf7e880cf891be8daab731a30cdf6863858"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Self-serve: register an OAuth application in settings; license verify endpoint needs no app",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Introduction.tsx",
+       "title": "Gumroad source: API documentation component Introduction",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:22Z",
+       "quote": "To start using the API, you'll need to",
+       "quote_sha256": "cfcf0c624af2adfe0a75beff11e62ed22be363457e5ebc18c2ebbe90bfd9a8aa",
+       "raw_file": "raw/48_9.txt",
+       "page_sha256": "2f086fcf0e6ec807b7da458f3f026c894f16079f19b76192d475179763e8aa18"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Introduction.tsx",
+       "title": "Gumroad source: API documentation component Introduction",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:22Z",
+       "quote": "does not require an OAuth application.",
+       "quote_sha256": "cfe7423f51b8b5096ee7e743f6db40fe0bceb0cef23066a4b3a5bab27de4f82f",
+       "raw_file": "raw/48_9.txt",
+       "page_sha256": "2f086fcf0e6ec807b7da458f3f026c894f16079f19b76192d475179763e8aa18"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "scopes",
+     "value": "Scopes include account, view_profile, edit_products, view_sales, view_payouts, etc.",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Scopes.tsx",
+       "title": "Gumroad source: API documentation component Scopes",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:23Z",
+       "quote": "name: \"view_sales\",",
+       "quote_sha256": "8ce3b731e78348a6d44c73aa2ce67f6ae1da46616c20878ddbe977209f3acc9f",
+       "raw_file": "raw/48_10.txt",
+       "page_sha256": "df3ffeaae33438310095de02de2793f714208741d0bc4d7368d72a3f131b9e29"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Scopes.tsx",
+       "title": "Gumroad source: API documentation component Scopes",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:23Z",
+       "quote": "name: \"edit_products\",",
+       "quote_sha256": "7b4c77f351ed84f949525d39b65677dc4b043e1aa996d1d4919f1866420770d0",
+       "raw_file": "raw/48_10.txt",
+       "page_sha256": "df3ffeaae33438310095de02de2793f714208741d0bc4d7368d72a3f131b9e29"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "REST JSON API; resource subscriptions (webhooks-like) endpoints documented",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/javascript/components/ApiDocumentation/Introduction.tsx",
+       "title": "Gumroad source: API documentation component Introduction",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:22Z",
+       "quote": "We return JSON for every request",
+       "quote_sha256": "2b67bae648a4f5b21222f168cc15142b4bc5b12b7a2cf38dc6284bbb5d96975e",
+       "raw_file": "raw/48_9.txt",
+       "page_sha256": "2f086fcf0e6ec807b7da458f3f026c894f16079f19b76192d475179763e8aa18"
+      }
+     ],
+     "note": "Resource subscription component file fetched (48_13) but not quoted."
+    },
+    {
+     "field": "rate_limits",
+     "value": "Not found",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "Not found",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: Gumroad MCP connector (gumroad.com/chatgpt/v1/mcp, OAuth)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/views/mcp_connectors/index.html.erb",
+       "title": "Gumroad MCP connector page (repo view)",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:24Z",
+       "quote": "Connect your Gumroad store to the AI assistant you already use.",
+       "quote_sha256": "e2bd081b9827c5ba4812c90245ccc39ca5916bcf03599fcb49158cb76612e5e1",
+       "raw_file": "raw/48_12.txt",
+       "page_sha256": "fefcf23606a4babc9c848c86580ecfef4deccbb34b31d0bad11506448fa82e64"
+      },
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/docs/mcp-review-walkthrough.md",
+       "title": "Gumroad MCP review walkthrough",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:23Z",
+       "quote": "URL `https://gumroad.com/chatgpt/v1/mcp`, and OAuth.",
+       "quote_sha256": "d8f39d7bdcdf6c2f303d57b38dad1a02cec06363f2bb1c7f2e90b4576a2b8ea4",
+       "raw_file": "raw/48_11.txt",
+       "page_sha256": "86c98a384e6f889b442a1ec3a8ed1f29cff7b1056291549d6299fdc550d71f6b"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp_scope",
+     "value": "MCP tools: get_account, list_products, get_product, create_draft_product, publish/unpublish, list_sales, list_payouts",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/docs/mcp-review-walkthrough.md",
+       "title": "Gumroad MCP review walkthrough",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:23Z",
+       "quote": "`get_account`, `list_products`, `get_product`,\n  `create_draft_product`, `publish_product`, `unpublish_product`, `list_sales`,\n  and `list_payouts`.",
+       "quote_sha256": "bf2cbc37fe6053bd5078a07b07d311e25697b0e413a646f341052a1f66b0eb43",
+       "raw_file": "raw/48_11.txt",
+       "page_sha256": "86c98a384e6f889b442a1ec3a8ed1f29cff7b1056291549d6299fdc550d71f6b"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "Yes (self-serve account + OAuth app)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://raw.githubusercontent.com/antiwork/gumroad/main/app/views/mcp_connectors/index.html.erb",
+       "title": "Gumroad MCP connector page (repo view)",
+       "source_type": "official_repo",
+       "retrieved_at_utc": "2026-11-23T16:35:24Z",
+       "quote": "You’ll need a Gumroad account and an assistant that supports MCP.",
+       "quote_sha256": "a3c24ce92fd278e195651798627c0f9b7468f92490af2abd63fa2bf221cb4ef9",
+       "raw_file": "raw/48_12.txt",
+       "page_sha256": "fefcf23606a4babc9c848c86580ecfef4deccbb34b31d0bad11506448fa82e64"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "token_endpoint",
+     "value": "Prior record noted token endpoint discrepancy across mirrors; not re-verified",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "oauth2",
+     "access token generated for own application"
+    ],
+    "access": "self_serve (account + registered OAuth application)",
+    "api_types": [
+     "rest",
+     "resource_subscriptions"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified; live docs page not text-retrievable via curl"
+   },
+   "prior_record_corrections": [
+    "Prior said mcp none_found; official repo contains MCP connector page, walkthrough and server code, and it is reachable at gumroad.com/chatgpt/v1/mcp per repo docs.",
+    "Prior \"personal_access_token\" is not quoted; repo says token is generated on the application page."
+   ],
+   "open_questions": [
+    "Live gumroad.com/api content could not be fetched as text (JS-rendered); repo is main-branch source, not necessarily deployed copy.",
+    "Token endpoint/rate limits."
+   ]
+  },
+  {
+   "app_id": 50,
+   "name": "fanbasis",
+   "identity_note": "FanBasis rebranded to Commas on July 14, 2026 (commas.com); fanbasis.com resolves to commas.com. Registry hint fanbasis.com.",
+   "claims": [
+    {
+     "field": "identity",
+     "value": "fanbasis.com is now Commas, operated by FanBasis, Inc.",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://commas.com/fanbasis-is-now-commas",
+       "title": "FanBasis Is Now Commas",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:35:48Z",
+       "quote": "On July 14, 2026, FanBasis became Commas .",
+       "quote_sha256": "aa37ace4a5648c21c29d02b5bfb7e81bd34f29b89988207c69d2b1622bf45c12",
+       "raw_file": "raw/50_6.txt",
+       "page_sha256": "05f632a2f8168eb66fdce304341ba18e9b23a47de1f1e02a957c3755e5f8b7d0"
+      },
+      {
+       "url": "https://commas.com/fanbasis-is-now-commas",
+       "title": "FanBasis Is Now Commas",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:35:48Z",
+       "quote": "Commas is operated by FanBasis, Inc.",
+       "quote_sha256": "5ff3a39467d6fd1623b86539826391722fe5fee0863a26a5882ac7242beed998",
+       "raw_file": "raw/50_6.txt",
+       "page_sha256": "05f632a2f8168eb66fdce304341ba18e9b23a47de1f1e02a957c3755e5f8b7d0"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "api_types",
+     "value": "Marketing claims APIs and SDKs for enterprise (no developer docs reached)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://commas.com/",
+       "title": "Commas (formerly FanBasis) site",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:35:49Z",
+       "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs.",
+       "quote_sha256": "5fb5e31f2009f3f2956fe1de931455b780f51f8970e8f36dcae8417b93d680ec",
+       "raw_file": "raw/50_7.txt",
+       "page_sha256": "c87b37498acbebce873cc17c2b839ec4aa49aa89473364d5ceda363c831c184c"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "Marketing page lists \"MCP beta\"; no developer/MCP docs fetched",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://commas.com/",
+       "title": "Commas (formerly FanBasis) site",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:35:49Z",
+       "quote": "MCP beta Run Commas from your AI assistant.",
+       "quote_sha256": "ff37e0c1a57d2ebea5cb43de24d03a53ae8f1f5cb32b0086928111e2fe2827e5",
+       "raw_file": "raw/50_7.txt",
+       "page_sha256": "c87b37498acbebce873cc17c2b839ec4aa49aa89473364d5ceda363c831c184c"
+      }
+     ],
+     "note": "Only a marketing claim; no docs verified; status kept to not_verified in summary."
+    },
+    {
+     "field": "authentication",
+     "value": "No developer docs found",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "No developer docs found; enterprise page suggests contact/sales",
+     "status": "not_verified",
+     "evidence": [
+      {
+       "url": "https://commas.com/enterprises",
+       "title": "Commas Enterprise",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:35:47Z",
+       "quote": "Enterprise sellers make more money here.",
+       "quote_sha256": "3433734838dd4586bbd67050a3dcd8f02b5d540c255621c3092914886a93ad30",
+       "raw_file": "raw/50_5.txt",
+       "page_sha256": "5fcdbe944e8362b1f4a75d398ba4e869280323fb8f853c5a83dbfa2f36f16f89"
+      }
+     ],
+     "note": "Quote does not establish access terms."
+    },
+    {
+     "field": "rate_limits",
+     "value": "unknown",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "unknown",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "Unknown: no public developer documentation located",
+     "status": "unknown",
+     "evidence": [],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [],
+    "access": "unknown",
+    "api_types": [
+     "unknown (marketing mentions APIs/SDKs)"
+    ],
+    "mcp_status": "not_verified",
+    "buildability": "unknown",
+    "blocker": "no public developer docs located; brand renamed to Commas"
+   },
+   "prior_record_corrections": [
+    "Prior registry hint fanbasis.com is now the Commas brand (rename July 14, 2026).",
+    "Prior said identity of creator-facing API unresolved; still unresolved but the marketing page now shows an \"MCP beta\" product claim not in prior record."
+   ],
+   "open_questions": [
+    "Where are Commas developer docs (docs.commas.com etc. did not resolve)?",
+    "Real auth/access terms.",
+    "Is \"MCP beta\" public?"
+   ]
+  },
+  {
+   "app_id": 54,
+   "name": "MrScraper",
+   "identity_note": "MrScraper web-scraping API (docs.mrscraper.com).",
+   "claims": [
+    {
+     "field": "authentication",
+     "value": "REST: API token in x-api-token header; Marketplace endpoints use Authorization: Bearer",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.mrscraper.com/docs/api/authentication",
+       "title": "MrScraper docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:27Z",
+       "quote": "Include your API token in the x-api-token HTTP header on every request:",
+       "quote_sha256": "7edf3af0a4976a4862444eda50ad61a4dfca4b43f250198044db239dbf874f51",
+       "raw_file": "raw/54_1.txt",
+       "page_sha256": "d4917318d42323116f58e965d42feafdcf3d1760586878e6c58f250429cefef4"
+      },
+      {
+       "url": "https://docs.mrscraper.com/docs/api/authentication",
+       "title": "MrScraper docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:27Z",
+       "quote": "For Marketplace endpoints , authenticate using the standard RFC 6750 Authorization header with a Bearer token:",
+       "quote_sha256": "f5d1b906837968d51cbbba3c80e1843a373a35aba2fb673530a22c8228f2c463",
+       "raw_file": "raw/54_1.txt",
+       "page_sha256": "d4917318d42323116f58e965d42feafdcf3d1760586878e6c58f250429cefef4"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "access",
+     "value": "Self-serve: create token in dashboard (account required); free start offered, paid Essential plan $99/month",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.mrscraper.com/docs/api/authentication",
+       "title": "MrScraper docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:27Z",
+       "quote": "API tokens are managed directly from your MrScraper dashboard.",
+       "quote_sha256": "802ca477bdc8a306e94e9b8e4c1114c2365451af78c411a745a99faed6bd90a1",
+       "raw_file": "raw/54_1.txt",
+       "page_sha256": "d4917318d42323116f58e965d42feafdcf3d1760586878e6c58f250429cefef4"
+      },
+      {
+       "url": "https://mrscraper.com/pricing",
+       "title": "MrScraper pricing",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:33:38Z",
+       "quote": "Essential $99 \n/month",
+       "quote_sha256": "483b6830277a60c8e84fbe99854b08e41560f4b7f6203bbef99078909652a007",
+       "raw_file": "raw/54_4.txt",
+       "page_sha256": "435bf37387eedc63cd0e652962e8e180e174150cc6d9221f3d43c8c72b61e24e"
+      }
+     ],
+     "note": "Free-tier limits not quoted."
+    },
+    {
+     "field": "api_types",
+     "value": "HTTP API under api.app.mrscraper.com/api/v1 (REST-style; no explicit REST wording quoted)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.mrscraper.com/docs/api/authentication",
+       "title": "MrScraper docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:27Z",
+       "quote": "curl -X GET \"https://api.app.mrscraper.com/api/v1/subscription-accounts\"",
+       "quote_sha256": "1618ff91ec92c3b2f85844b0e15b94a331eb1e854f3c7e75f461bb71e9e774cd",
+       "raw_file": "raw/54_1.txt",
+       "page_sha256": "d4917318d42323116f58e965d42feafdcf3d1760586878e6c58f250429cefef4"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "rate_limits",
+     "value": "Pricing lists concurrent requests: 20 (Essential), 200 (Enterprise)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://mrscraper.com/pricing",
+       "title": "MrScraper pricing",
+       "source_type": "official_marketing",
+       "retrieved_at_utc": "2026-11-23T16:33:38Z",
+       "quote": "Concurrent requests 20 200",
+       "quote_sha256": "0194dd0bf8d81159bfb52ae6eb3861baadb7c28c75333e791b45f3e60db4f929",
+       "raw_file": "raw/54_4.txt",
+       "page_sha256": "435bf37387eedc63cd0e652962e8e180e174150cc6d9221f3d43c8c72b61e24e"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "sandbox",
+     "value": "Not found",
+     "status": "not_verified",
+     "evidence": [],
+     "note": ""
+    },
+    {
+     "field": "mcp",
+     "value": "official: hosted MCP at https://mcp.mrscraper.com/mcp",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+       "title": "MrScraper docs: MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:31Z",
+       "quote": "\"url\" : \"https://mcp.mrscraper.com/mcp\"",
+       "quote_sha256": "f8a1d325d7f988a6f0a6aff939360ec1e505ed161db37691da6a4c856a1327e2",
+       "raw_file": "raw/54_2.txt",
+       "page_sha256": "73d3e80cd871705fff1738c98b898471c68dde9ada68f5441255b5fed063714a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "mcp_auth",
+     "value": "MCP: OAuth 2.1 browser sign-in primary; API key as Bearer fallback (resolves prior conflict)",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+       "title": "MrScraper docs: MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:31Z",
+       "quote": "An API key only when the client cannot use\nOAuth 2.1 or when running the server locally",
+       "quote_sha256": "51dff88533c49bdc08aebd7698c22de0ada69022413a558ad303f0e9cb22b460",
+       "raw_file": "raw/54_2.txt",
+       "page_sha256": "73d3e80cd871705fff1738c98b898471c68dde9ada68f5441255b5fed063714a"
+      },
+      {
+       "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+       "title": "MrScraper docs: MCP server",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:31Z",
+       "quote": "sent as Authorization: Bearer <key>.",
+       "quote_sha256": "bacaa96445c0039c9146eae6af05f995598f834e7be7033f95eb9d38ed6bc569",
+       "raw_file": "raw/54_2.txt",
+       "page_sha256": "73d3e80cd871705fff1738c98b898471c68dde9ada68f5441255b5fed063714a"
+      }
+     ],
+     "note": ""
+    },
+    {
+     "field": "buildability",
+     "value": "Yes",
+     "status": "supported_by_quote",
+     "evidence": [
+      {
+       "url": "https://docs.mrscraper.com/docs/api/authentication",
+       "title": "MrScraper docs: Authentication",
+       "source_type": "official_docs",
+       "retrieved_at_utc": "2026-11-23T16:33:27Z",
+       "quote": "Include your API token in the x-api-token HTTP header on every request:",
+       "quote_sha256": "7edf3af0a4976a4862444eda50ad61a4dfca4b43f250198044db239dbf874f51",
+       "raw_file": "raw/54_1.txt",
+       "page_sha256": "d4917318d42323116f58e965d42feafdcf3d1760586878e6c58f250429cefef4"
+      }
+     ],
+     "note": ""
+    }
+   ],
+   "summary": {
+    "auth_methods": [
+     "api_token (x-api-token)",
+     "bearer (marketplace endpoints; MCP fallback)",
+     "oauth2.1 (MCP)"
+    ],
+    "access": "self_serve (account + dashboard token)",
+    "api_types": [
+     "rest"
+    ],
+    "mcp_status": "official",
+    "buildability": "yes",
+    "blocker": "none identified"
+   },
+   "prior_record_corrections": [
+    "Prior MCP-auth \"conflict\" (API key vs OAuth 2.1) is explained by the official MCP page: OAuth 2.1 default, API key bearer fallback.",
+    "Prior \"bearer (v1)\" refined: Bearer applies to Marketplace endpoints and MCP fallback; x-api-token for others."
+   ],
+   "open_questions": [
+    "Free-tier limits; sandbox; pricing page shows only Essential/Enterprise tiers."
+   ]
+  }
+ ]
+}

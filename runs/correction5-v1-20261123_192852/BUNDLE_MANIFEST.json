@@ -1,0 +1,51 @@
+{
+ "created": "2026-11-23T19:30:10+05:30",
+ "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+ "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+ "apps": [
+  {
+   "id": 27,
+   "name": "Telegram",
+   "est_tokens": 1764,
+   "change": "reduction-v2 only",
+   "prompt_sha256": "2c92ebd406c33612f97729624dd5124c7d824307f42726051fb6936ed9b41244"
+  },
+  {
+   "id": 32,
+   "name": "Meta Ads",
+   "est_tokens": 2107,
+   "change": "reduction-v2 only",
+   "prompt_sha256": "7d1c8f67351a1ea3ac7843870499ca0b7af78d56a9cf7ca737709534b3a8b8bf"
+  },
+  {
+   "id": 41,
+   "name": "Shopify",
+   "est_tokens": 2621,
+   "change": "reduction-v2 only",
+   "prompt_sha256": "15214844ac637a4f1ae067d12e144b43dab0b2683f9cff461f9096bfa7f305d3"
+  },
+  {
+   "id": 53,
+   "name": "Ahrefs",
+   "est_tokens": 1791,
+   "change": "reduction-v2 only",
+   "prompt_sha256": "3e35588490a9025b97bb82eab29bff4bfd7b1596ff0b5313c7d2c269de0a138d"
+  },
+  {
+   "id": 61,
+   "name": "GitHub",
+   "est_tokens": 5565,
+   "change": {
+    "dropped_stale_pages": [
+     "https://docs.github.com/enterprise/11.10.340/developer/v3/auth"
+    ],
+    "added": [
+     "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+     "https://docs.github.com/en/copilot/concepts/context/mcp"
+    ]
+   },
+   "prompt_sha256": "9d7212a4e95c8b7c72d783231341b58d7cd901ac751e97a527693cf08e7450f4"
+  }
+ ]
+}

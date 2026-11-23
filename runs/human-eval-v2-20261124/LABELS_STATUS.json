@@ -1,0 +1,10 @@
+{
+ "labels_total_rows": {
+  "A": 84,
+  "B": 84,
+  "C": 84,
+  "CAL": 21
+ },
+ "labels_completed": 0,
+ "status": "0 labels exist; every truth column is blank by construction. No ground truth has been invented."
+}

@@ -1,0 +1,357 @@
+{
+ "id": 57,
+ "name": "Bright Data",
+ "started": "2026-11-23T19:36:37+05:30",
+ "searches": [
+  {
+   "q": "Bright Data API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:39+05:30"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:41+05:30"
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:43+05:30"
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:36:45+05:30"
+  }
+ ],
+ "fetched": [
+  {
+   "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+   "requested_at": "2026-11-23T19:36:46+05:30",
+   "status": "ok",
+   "final_url": "https://docs.brightdata.com/products/mcp-server/faqs",
+   "title": "Bright Data MCP FAQs - Bright Data Docs",
+   "chars": 10600,
+   "sha256": "e36f722f0f4f8da9f3ad95f5cb7359eed79305f9982085fe6fc87a42194b416a",
+   "text": "## Building an AI startup?\n\nYou might be eligible for our Startup Program. Get fully funded access to the infrastructure you\u2019re reading about right now (up to $20K value).\n\nWhat is Bright Data MCP Server?\n\nBright Data MCP (Model Context Protocol) is a server that enables LLMs, AI agents, and applications to access, discover, and extract web data in real-time.   \nIt allows MCP clients like Claude Desktop, Cursor, and Windsurf to search the web, navigate websites, take actions, and retrieve data without getting blocked, making it perfect for web scraping tasks.\\\n\n* New MCP users get a **free tier** with 5,000 requests per month\n\nThe MCP server provides advanced capabilities, including:\n\n* Bypassing geo-restrictions to access content regardless of location\n* Navigating websites with bot detection protection\n* Structured data extraction from platforms like Amazon, LinkedIn, Instagram, and many other data feeds\n* Remote browser automation for complex web interactions\n* Access to a global IP network to avoid blocking or rate limiting\n\n**Get started with Bright Data MCP:**\n\n1. **Explore the MCP GitHub repository** to review the source code, contribute, or deploy your own instance.\n2. **Read the MCP documentation** to understand the API, request structure, and supported features.\n3. Get your API key\n4. **Try the Bright Data AI Playground** to test and experiment with live requests in a no-code environment.\n\nAre there limitations for the Bright Data free tier?\n\nYes. The MCP server uses your account\u2019s free tier of 5,000 credits per month. Web search (SERP API) and web page scraping (Fetch API) cost one credit per request.\n\nWhere do I get my API keys?\n\nYou can get your API token from the user settings page in your Bright Data account. Make sure you have an account on brightdata.com - new users get free credit for testing, and pay-as-you-go options are available after that.\n\nDo I need a username to use the MCP server?\n\nNo. The Bright Data MCP server only requires an API token, for both the remote (hosted) and local (self-hosted) setup. Usernames (format: `brd-customer-{customer_id}-zone-{zone_name}`) are only used for native proxy access and are not needed for MCP, SDK or API integrations.If a third-party tool or integration asks for a username, you can leave it empty or check whether it is actually configuring proxy access.\n\nHow do I use Bright Data MCP Server?\n\nBright Data MCP (Model Context Protocol) is a server that allows AI agents, LLMs, and dev tools to access and extract real-time web data using Bright Data\u2019s infrastructure. It is available as both a remote (hosted) and local (self-hosted) server.To get started: **BrightData MCP Overview****Helpful links:**\n\nWhat can I do with Bright Data MCP Server?\n\nBright Data MCP allows you to integrate real-time web access into your AI agents or dev tools. It supports:**Search & Scraping:**\n\n* `search_engine`: Search Bing and Google\n* `scrape_as_markdown`: Get content as Markdown, text, HTML or ld\\_json\n* `session_stats`: Monitor tool usage\n\n**Structured Data Extraction:**\n\n* `search_scrapers`, `get_scraper_details`, `run_scraper`: Find and run any of thousands of pre-built scrapers (Amazon, LinkedIn, Instagram, Facebook, X, YouTube, Zillow and more)\n* `get_scraper_progress`, `get_scraper_results`: Check a long run and collect its records\n\n**Browser Automation:**\n\n* `scraping_browser_navigate`, `scraping_browser_click_ref`, `scraping_browser_type_ref`\n* `scraping_browser_get_html`, `scraping_browser_screenshot`, `scraping_browser_wait_for_ref`\n\n**\ud83d\udd17 Full list of tools:** MCP Tools on GitHub\n\nWhich AI agents and tools can integrate with Bright Data MCP Server?\n\nBright Data MCP is designed to work with a wide range of AI tools and agents, including:\n\n* **Claude Desktop** (Anthropic)\n* **Cursor IDE**\n* **Windsurf**\n* **LangChain**\n* **AutoGPT / AgentGPT**\n* **Smithery**\n* **Custom LLMs or AI agents** that support MCP\n\nThese tools can use MCP to:\n\n* Perform real-time web searches\n* Scrape structured data\n* Automate browser interactions\n* Access geo-restricted or protected content\n\nTry it live: Bright Data AI Playground\n\nHow do I enable browser control tools?\n\nBrowser control tools are enabled by default. All you need is your Bright Data API key, the MCP server automatically creates and configures the required browser zone for you.\n\nWhat tools are available in the Bright Data MCP Server?\n\nFor the full list of tools, please refer to our GitHub repo: MCP Tools.Bright Data MCP offers a comprehensive set of tools, including:**Search and basic scraping:**\n\n* `search_engine`: Search results from Bing or Google\n* `scrape_as_markdown`: Scrape a webpage and get results as Markdown, text, HTML or ld\\_json\n* `session_stats`: View tool usage during the current session\n\n**Structured data extraction:**\n\n* `search_scrapers`, `get_scraper_details`, `run_scraper`: Find and run any of thousands of pre-built scrapers (Amazon, LinkedIn, ZoomInfo, Instagram, Facebook, X, Zillow, Booking.com, YouTube and more)\n* `get_scraper_progress`, `get_scraper_results`: Check a long run and collect its records\n\n**Browser automation:**\n\n* `scraping_browser_navigate`: Navigate to a URL\n* `scraping_browser_go_back`/`scraping_browser_go_forward`: Navigate browser history\n* `scraping_browser_click_ref`: Click on an element\n* `scraping_browser_type_ref`: Type text into an element\n* `scraping_browser_wait_for_ref`: Wait for an element to appear\n* `scraping_browser_screenshot`: Take a screenshot\n* `scraping_browser_get_html`/`scraping_browser_get_text`: Get page content\n\nHow do I handle timeout issues when using Bright Data MCP Server?\n\nSome web data tools can take longer to execute, especially when dealing with complex websites. To ensure your agent can consume the data:\n\n1. Set a high enough timeout in your agent settings (180 seconds is recommended)\n2. For particularly slow sites, you may need to increase this value further\n3. `run_scraper` waits up to 45 seconds, then returns a `snapshot_id`. Poll `get_scraper_progress` and call `get_scraper_results` instead of raising the timeout\n4. For browser automation sequences, keep operations close together in time\n\nWhat security considerations should I keep in mind?\n\nAlways treat scraped web content as untrusted data. Never use raw scraped content directly in LLM prompts to avoid potential prompt injection risks. Instead:\n\n* Filter and validate all web data before passing it to the LLM\n* Use structured data extraction rather than raw text when possible\n* Be cautious with executing JavaScript from scraped content\n\nWhy am I getting a 'spawn npx ENOENT' error?\n\nThis error occurs when your system cannot find the `npx` command. To fix it:\n\n1. Find your Node.js path:\n   * On macOS: Run `which node` in Terminal\n   * On Windows: Run `where node` in Command Prompt\n2. Update your MCP configuration to use the full path instead of `npx`:\n\n```\n{\n  \"mcpServers\": {\n    \"Bright Data\": {\n      \"command\": \"/usr/local/bin/node\", // Replace with your actual Node.js path\n      \"args\": [\"node_modules/@brightdata/mcp/index.js\"],\n      \"env\": {\n        \"API_TOKEN\": \"YOUR_API_KEY\"\n      }\n    }\n  }\n}\n```\n\nHow do I monitor my usage and costs?\n\nYou can use the `session_stats` tool to check your usage during the current session. For comprehensive usage tracking and billing information, log in to your Bright Data account dashboard. The `session_stats` tool will show you information about:\n\n* Number of requests made during the current session\n* Tools used and their frequency\n\nIs there a playground where I can try Bright Data MCP Server?\n\nYes, you can try Bright Data MCP without any setup using the Bright Data AI Playground. It provides an easy way to explore the capabilities of Bright Data MCP without any local setup. Just sign in and start experimenting with web data collection!\n\nHow do I connect my AI agent with Bright Data's MCP?\n\nYou can connect your AI agent with Bright Data by following these steps:\n\n1. Install Node.js (only required for the self-hosted option)\n2. Create a Bright Data account (new users get free credit for testing)\n3. Copy your API key from the user settings page (new users receive an **API key** in the welcome email)\n4. Configure your agent with your API key. For more detailed examples, visit us on GitHub or check our MCP documentation.\n\nWhen using MCP, should I create zones or configure them?\n\nNo, zones are created automatically for you. All you need is Node.js (for self-hosted) and your Bright Data API key. If you want to change your zone name to something specific, you can always do so through the control panel.\n\nIs there a free access tier for the Bright Data MCP?\n\nYes! Every Bright Data account gets **5,000 free credits per month**, and the MCP server draws from them. They cover web search and web page scraping. See What is the MCP free tier? below for more details.\n\nWhat is the MCP free tier?\n\nThe MCP free tier allows you to connect your AI agent via MCP (Model Context Protocol) to Bright Data services for free.\nYou get up to 5,000 requests per month for web search and for fetching any public web page, at no cost. This is ideal for testing, development, or light usage.The MCP free tier is not a separate grant. It is the same account-level free tier of 5,000 credits per month, drawn from a single shared pool. MCP search runs on the SERP API and page scraping on the Fetch API, and both are covered by the free credits.For more information, see the Remote MCP Quickstart.\n\nWhat happens when the free tier limit is reached?\n\nThe MCP server uses your account\u2019s 5,000 free credits per month. When they run out:\n\n* **With funds in your account:** the MCP server keeps working, and usage is charged to your pre-paid balance.\n* **Without funds:** requests fail until you add funds, or until the credits renew on the first of the next month.\n\nTo avoid interruptions, turn on auto-recharge in Billing Settings. You don\u2019t need to create a new zone or change your MCP configuration.\n\nCan I run multiple MCP instances in parallel?\n\nYes, you can run multiple MCP instances for parallelized workloads. However, if you are using the self-hosted (local) MCP with `npx`, each instance downloads and caches the package separately, which can consume significant disk space.For parallel use cases, we recommend using the **Remote MCP** instead. It requires no local installation, runs entirely in the cloud, and eliminates disk space concerns. Simply point each instance to the remote endpoint:\n\n```\nhttps://mcp.brightdata.com/sse?token=YOUR_API_TOKEN\n```\n\nSee the Remote MCP Quickstart for setup instructions.",
+   "retrieved_at": "2026-11-23T19:36:46+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.brightdata.com/products/mcp-server/overview",
+   "requested_at": "2026-11-23T19:36:51+05:30",
+   "status": "ok",
+   "final_url": "https://docs.brightdata.com/products/mcp-server/overview",
+   "title": "MCP server overview - Bright Data Docs",
+   "chars": 2000,
+   "sha256": "44e95eea83fcdc8fc6e7070be253a701896ca70b962a675690796a4035094613",
+   "text": "## Building an AI startup?\n\nYou might be eligible for our Startup Program. Get fully funded access to the infrastructure you\u2019re reading about right now (up to $20K value).\n\nThe **Bright Data MCP server** gives AI agents and assistants real-time access to public web data through the Model Context Protocol (MCP). Connect it to Claude, Cursor or any MCP-compatible client, and your agent can search, scrape and read live web pages without you building or maintaining data pipelines.\nSearch runs on the SERP API and page scraping on the Fetch API, so you never manage proxies or anti-bot handling yourself. Every new account includes 5,000 free requests per month. You can run the server two ways: a fully managed remote server, or a self-hosted local instance.\n\n## Get started for free\n\nStart using the Bright Data MCP server with **5,000 requests** per month, completely free.\n\n## Choose your MCP server\n\n## Remote (hosted) MCP\n\nLaunch a fully managed MCP server in the cloud, no setup required.\n\n## Local (self-hosted) MCP\n\nSet up your own MCP server instance on-premise or in your private cloud.\n\n**Optimize your token usage:** Select only the tools you need using tool groups (e.g., `groups=scrapers,browser`) or individual tools (e.g., `tools=run_scraper`). This reduces context size and maximizes your usage.\n\n## Explore MCP server resources\n\n## Tools\n\nDiscover the built-in tools available for your MCP server.\n\n## FAQs\n\nGet quick answers to frequently asked MCP server questions.\n\n## Usage examples\n\nLearn from practical examples to accelerate your implementation.\n\n## Integrations\n\nConnect the MCP server with leading AI platforms like Claude, Cursor and more.\n\n## Source code\n\nExplore the MCP server source code on GitHub.\n\nThe MCP free tier is the same account-level free tier of 5,000 credits per month, drawn from a single shared pool. For team accounts, that free tier is shared across all users within the account. If you require additional credits, please contact your account manager.",
+   "retrieved_at": "2026-11-23T19:36:51+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://brightdata.com/ai/mcp-server",
+   "requested_at": "2026-11-23T19:36:53+05:30",
+   "status": "ok",
+   "final_url": "https://brightdata.com/ai/mcp-server",
+   "title": "The Bright Data MCP Server - Start with a Free Plan",
+   "chars": 1623,
+   "sha256": "c29c7f48d2289b03d468723bd2c4315d03e79d2bc7d5cd1c55db922e840277cc",
+   "text": "# The Bright Data MCP: Connect your AI to the internet\n\nBright Data\u2019s Bright Data MCP solves web access for LLMs and AI agents, allowing them to effectively search, extract and navigate the web without getting blocked.\n\nNo credit card required\n\n* Search the web  \n  in real-time\n* Extract data  \n  from any website\n* Navigate and interact  \n  with pages\n* Bypass blocks  \n  and restrictions\n\n## Trusted by 50,000+ customers worldwide\n\n## The Ultimate MCP Tool to Connect Your AI to the Web\n\nEnjoy 5,000 MCP requests every month - for free!\n\n## One MCP for the Web\n\nBright Data MCP is an all-in-one tool for seamlessly searching the web, navigating websites, taking action and retrieving data \u2013 without getting blocked.\n\nSearch\n\n* Retrieve real-time results from major search engines\n* Target specific geographies for localized data discovery\n* Fetch relevant URLs and snippets for further crawling\n\nCrawl\n\n* Crawl and extract complete websites - not just single pages\n* Output data in LLM-ready formats for easy integration\n* Scale effortlessly to handle large and complex crawling tasks\n\nAccess\n\n* Fetche any public web content reliably and efficiently\n* Bypass geo-restrictions and solve CAPTCHAs automatically\n* Render JavaScript to retrieve dynamic content\n\nNavigate\n\n* Automate agent actions on dynamic or interactive sites at scale\n* Power remote browser sessions to streamline workflows\n* Mimic real user behavior to bypass advanced bot protections\n\n## Real-World Examples From the Community\n\nReady to give your AI the keys to the Web?\n\nGet started with Bright Data MCP today and unlock the full potential of your AI",
+   "retrieved_at": "2026-11-23T19:36:53+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.brightdata.com/products/mcp-server/remote/quickstart",
+   "requested_at": "2026-11-23T19:36:54+05:30",
+   "status": "ok",
+   "final_url": "https://docs.brightdata.com/products/mcp-server/remote/quickstart",
+   "title": "How to get started with remote MCP server - Bright Data Docs",
+   "chars": 1569,
+   "sha256": "80db25582c66bc6ae0b60188df6c096c107af9a3d74ace17cd5a0d7d63bb0479",
+   "text": "## Building an AI startup?\n\nYou might be eligible for our Startup Program. Get fully funded access to the infrastructure you\u2019re reading about right now (up to $20K value).\n\n1\n\nPrerequisites\n\nBefore getting started, make sure you have the following:\n\n## Bright Data Account\n\n*Sign up for free and receive **5,000 requests** per month at no cost.*\n\n## Your Bright Data API Key\n\n*New users receive their API key via the welcome email.*\n\n2\n\nSelect Your Endpoint\n\nUse one of the following endpoints to connect to the Remote MCP Server:\n\n```\nhttps://mcp.brightdata.com/sse?token=YOUR_API_TOKEN\n```\n\n```\nhttps://mcp.brightdata.com/mcp?token=YOUR_API_TOKEN\n```\n\nReplace `YOUR_API_TOKEN` with your actual Bright Data API token.\n\nNo username is required. The Remote MCP server authenticates with your API token only. Usernames (format: `brd-customer-{customer_id}-zone-{zone_name}`) are for native proxy access, not MCP. If a third-party tool asks for a username, leave it empty.\n\n3\n\nChoose Your Client\n\nSelect and configure your preferred client:\n\n* Claude\n* Cursor\n* n8n\n\n4\n\nQuick Examples\n\nTry these sample prompts with your MCP Server:\n\nExtract real-time data from Google\n\n\u201cExtract all flight times departing from JFK Airport to Heathrow in the next 24 hours.\u201d\n\nExtract company data from LinkedIn\n\n\u201cExtract the Bright Data overview section from LinkedIn.\u201d\n\nExtract dynamic data from eBay\n\n\u201cGo to ebay.com, click the \u2018Shop by category\u2019 button in the navigation bar, and extract all categories.\u201d\n\n## Advanced Configuration\n\nSee the Advanced Configuration page for more details.",
+   "retrieved_at": "2026-11-23T19:36:54+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://brightdata.com/ai/mcp-server/claude",
+   "requested_at": "2026-11-23T19:36:56+05:30",
+   "status": "ok",
+   "final_url": "https://brightdata.com/ai/mcp-server/claude",
+   "title": "Bright Data's Claude MCP Server",
+   "chars": 1628,
+   "sha256": "fc11e438f9589dbfdf1a4eb569fdbfb867e45acc1c44dc8394b95eb4e4fde871",
+   "text": "# Claude MCP Server\n\nConnect Claude to the entire web with Bright Data\u2019s enterprise-grade scraping infrastructure. Extract, analyze, and process real-time data from any website.\n\nGet startedCheck the repo\n\nNo credit card required\n\n## The Ultimate MCP Tool to Connect Claude to the Web\n\nGet startedCheck the repo\n\n## Want to try the MCP without setting up anything?\n\nCheck the repo\n\n## One MCP for the Web\n\nBright Data MCP for Claude is your all-in-one solution for real-time web search, site navigation, smart actions, and clean data access - no blocks, optimized for Claude models.\n\nSearch\n\n---\n\n* Enable Claude to retrieve real-time results from major search engines\n* Target specific geographies for Claude with localized data discovery\n* Fetch relevant URLs and snippets for Claude to analyze or crawl further\n\nCrawl\n\n---\n\n* Let Claude crawl and extract entire websites\u2014not just single pages\n* Output data in Claude-ready formats for seamless LLM integration\n* Effortlessly scale site crawling for Claude, no matter the project size\n\nAccess\n\n---\n\n* Give Claude reliable access to any public web content\n* Bypass geo-restrictions and CAPTCHAs automatically for Claude\n* Render JavaScript to retrieve dynamic content for Claude's use\n\nNavigate\n\n---\n\n* Automate Claude agent actions on dynamic or interactive sites at scale\n* Power remote browser sessions for Claude to streamline workflows\n* Mimic real user behavior for Claude to bypass advanced bot protections\n\nGet startedCheck the repo\n\n## Ready to Supercharge Claude?\n\nGet started with Claude MCP Server in minutes. No setup required.\n\nTry it now\n\nNo credit card required",
+   "retrieved_at": "2026-11-23T19:36:56+05:30",
+   "charge_usd": 0.0
+  },
+  {
+   "url": "https://docs.brightdata.com/products/mcp-server/remote/oauth",
+   "requested_at": "2026-11-23T19:36:57+05:30",
+   "status": "ok",
+   "final_url": "https://docs.brightdata.com/products/mcp-server/remote/oauth",
+   "title": "Bright Data MCP OAuth 2.1 setup - Bright Data Docs",
+   "chars": 20488,
+   "sha256": "0e0e90efde54cab5928e93bb5f87786b067edb9153af54924f4e29a93fb34eb9",
+   "text": "This guide shows you how to authenticate an MCP client to the Bright Data MCP server with OAuth 2.1, so a user signs in through a browser instead of pasting a Bright Data API key into a config file.\nThe Bright Data MCP server at `https://mcp.brightdata.com` is an OAuth 2.1 protected resource. It advertises its authorization server through RFC 9728 discovery metadata, and any MCP client that implements the Model Context Protocol authorization spec can connect without hardcoded credentials. The authorization server is `https://brightdata.com`.\nFour requirements are enforced on every request. Get these wrong and the flow fails before a token is ever issued:\n\n1. **PKCE with `S256` is mandatory.** The `plain` method is rejected.\n2. **The `resource` parameter is mandatory** on both the authorization request and the token request, per RFC 8707.\n3. **Clients are public.** The token endpoint accepts `token_endpoint_auth_method: none`, so there is no client secret.\n4. **The only scope is `mcp`.**\n\n## Which authentication methods does the Bright Data MCP server support?\n\nThe Bright Data MCP server accepts two authentication methods. Both reach the same tools and draw on the same account credits.\n\n\n| Method | How the credential is sent | Best for |\n| --- | --- | --- |\n| API key | `?token=YOUR_API_TOKEN` query parameter on `/mcp` or `/sse` | Server-side agents, CI jobs and scripts you control end to end |\n| OAuth 2.1 | `Authorization: Bearer <access_token>` request header | Distributed MCP clients, desktop assistants and any app used by someone who is not you |\n\nThe API key method is documented in the remote MCP server quickstart. Use OAuth 2.1 when the person running the client is not the person who owns the Bright Data account, or when you do not want a long-lived key sitting in a config file.\n\n## Prerequisites\n\nBefore you start, make sure you have:\n\n* A Bright Data account. New accounts include 5,000 free requests per month.\n* An MCP client that implements the Model Context Protocol authorization spec, or your own OAuth 2.1 client code.\n* A redirect URI you control. Loopback addresses such as `http://localhost:8765/callback` are accepted for native and desktop clients.\n\n## How to run the OAuth 2.1 authorization code flow\n\nThe flow spans two hosts. `mcp.brightdata.com` holds the tools, `brightdata.com` issues the tokens, and the user\u2019s browser enters only during authorization.\n\n\n1\n\nTrigger the 401 challenge\n\nCall the MCP endpoint without a token. The Bright Data MCP server returns `401 Unauthorized` with a `WWW-Authenticate` header that points at its protected resource metadata.\n\n```\ncurl -i -X POST https://mcp.brightdata.com/mcp \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/json, text/event-stream' \\\n  -d '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{},\"clientInfo\":{\"name\":\"my-client\",\"version\":\"1.0.0\"}}}'\n```\n\nThe response header is the entry point to the whole flow:\n\n```\nHTTP/2 401\nwww-authenticate: Bearer resource_metadata=\"https://mcp.brightdata.com/.well-known/oauth-protected-resource\", scope=\"mcp\"\n```\n\nParse `resource_metadata` from this header rather than hardcoding the URL. That is what makes the client portable across MCP servers.\n\n2\n\nFetch the protected resource metadata\n\nRequest the URL from the `resource_metadata` parameter to learn which authorization server issues tokens for this resource.\n\n```\ncurl -s https://mcp.brightdata.com/.well-known/oauth-protected-resource\n```\n\n```\n{\n  \"resource\": \"https://mcp.brightdata.com\",\n  \"authorization_servers\": [\"https://brightdata.com\"],\n  \"scopes_supported\": [\"mcp\"],\n  \"bearer_methods_supported\": [\"header\"]\n}\n```\n\nTwo values matter downstream. The `resource` value is what you send as the `resource` parameter in steps 4 and 5. The single entry in `authorization_servers` is the issuer you query in step 3.\n\n3\n\nFetch the authorization server metadata\n\nRequest the RFC 8414 metadata document from the issuer to get the endpoint URLs and the server\u2019s capabilities.\n\n```\ncurl -s https://brightdata.com/.well-known/oauth-authorization-server\n```\n\n```\n{\n  \"issuer\": \"https://brightdata.com\",\n  \"authorization_endpoint\": \"https://brightdata.com/users/auth/mcp/authorize\",\n  \"token_endpoint\": \"https://brightdata.com/users/auth/mcp/token\",\n  \"registration_endpoint\": \"https://brightdata.com/users/auth/mcp/register\",\n  \"jwks_uri\": \"https://brightdata.com/users/auth/mcp/jwks\",\n  \"response_types_supported\": [\"code\"],\n  \"grant_types_supported\": [\"authorization_code\", \"refresh_token\"],\n  \"code_challenge_methods_supported\": [\"S256\"],\n  \"token_endpoint_auth_methods_supported\": [\"none\"],\n  \"scopes_supported\": [\"mcp\"],\n  \"resource_parameter_supported\": true,\n  \"agent_auth\": {\n    \"skill\": \"https://brightdata.com/auth.md\",\n    \"register_uri\": \"https://brightdata.com/users/auth/agent_registration/auth\",\n    \"claim_uri\": \"https://brightdata.com/users/auth/agent_registration/claim\",\n    \"identity_types_supported\": [\"identity_assertion\"],\n    \"identity_assertion\": {\n      \"assertion_types_supported\": [\"verified_email\"],\n      \"credential_types_supported\": [\"api_key\"]\n    }\n  }\n}\n```\n\nRead the endpoint URLs from this document. Do not hardcode them, because a discovery-driven client keeps working if an endpoint path changes.The `agent_auth` block is a Bright Data extension, not part of RFC 8414. It lets an agent that has no Bright Data account yet discover the agent registration protocol from the same document, instead of concluding that a human has to sign up first. Agent registration is a separate flow from OAuth 2.1 and issues an API key, not an OAuth access token.\n\n4\n\nRegister a client\n\nRegister once with the RFC 7591 dynamic client registration endpoint to get a `client_id`. Registration is open, so no existing credential is needed.\n\nThis endpoint registers an OAuth client application against a Bright Data account that already exists. It does not create the account. To create a brand new Bright Data account for your user, follow the agent registration protocol instead, then come back to this step.\n\n```\ncurl -s -X POST https://brightdata.com/users/auth/mcp/register \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n    \"client_name\": \"My MCP Client\",\n    \"redirect_uris\": [\"http://localhost:8765/callback\"],\n    \"grant_types\": [\"authorization_code\", \"refresh_token\"],\n    \"response_types\": [\"code\"],\n    \"token_endpoint_auth_method\": \"none\",\n    \"scope\": \"mcp\"\n  }'\n```\n\nThe server responds with `201 Created`:\n\n```\n{\n  \"client_id\": \"dIaOwFk5ge6QYbqN_V0lglzqRv2Pth6c\",\n  \"client_id_issued_at\": 1787574414,\n  \"client_name\": \"My MCP Client\",\n  \"redirect_uris\": [\"http://localhost:8765/callback\"],\n  \"grant_types\": [\"authorization_code\", \"refresh_token\"],\n  \"response_types\": [\"code\"],\n  \"token_endpoint_auth_method\": \"none\",\n  \"scope\": \"mcp\"\n}\n```\n\nNo `client_secret` is returned, because clients are public. Store the `client_id` and reuse it. Every `redirect_uri` you plan to use has to be listed at registration time, since an unregistered redirect URI is rejected with `400 Bad Request`.\n\n5\n\nSend the user to the authorization endpoint\n\nGenerate a PKCE verifier and challenge, then open the authorization URL in the user\u2019s browser.\n\n```\nimport base64, hashlib, secrets, urllib.parse\n\nverifier = base64.urlsafe_b64encode(secrets.token_bytes(32)).decode().rstrip(\"=\")\nchallenge = base64.urlsafe_b64encode(\n    hashlib.sha256(verifier.encode()).digest()\n).decode().rstrip(\"=\")\nstate = secrets.token_urlsafe(16)\n\nparams = {\n    \"response_type\": \"code\",\n    \"client_id\": \"dIaOwFk5ge6QYbqN_V0lglzqRv2Pth6c\",\n    \"redirect_uri\": \"http://localhost:8765/callback\",\n    \"scope\": \"mcp\",\n    \"state\": state,\n    \"code_challenge\": challenge,\n    \"code_challenge_method\": \"S256\",\n    \"resource\": \"https://mcp.brightdata.com\",\n}\nurl = \"https://brightdata.com/users/auth/mcp/authorize?\" + urllib.parse.urlencode(params)\nprint(url)\n```\n\nKeep the `verifier` in memory for step 6 and keep the `state` value so you can compare it against the value that comes back. If the user is not signed in, the authorization endpoint redirects to `https://brightdata.com/cp/start?mcp=1&need_login=1&next=...` and returns to the flow after sign-in.After the user approves, the browser is redirected to your `redirect_uri` with the authorization code:\n\n```\nhttp://localhost:8765/callback?code=AUTH_CODE_HERE&state=STATE_FROM_ABOVE\n```\n\nReject the response if `state` does not match the value you sent.\n\n6\n\nExchange the code for an access token\n\nPost the code, the PKCE verifier and the `resource` value to the token endpoint. All five parameters are required.\n\n```\ncurl -s -X POST https://brightdata.com/users/auth/mcp/token \\\n  -H 'Content-Type: application/x-www-form-urlencoded' \\\n  -d 'grant_type=authorization_code' \\\n  -d 'code=AUTH_CODE_HERE' \\\n  -d 'client_id=dIaOwFk5ge6QYbqN_V0lglzqRv2Pth6c' \\\n  -d 'redirect_uri=http://localhost:8765/callback' \\\n  -d 'code_verifier=YOUR_PKCE_VERIFIER' \\\n  -d 'resource=https://mcp.brightdata.com'\n```\n\nSend the returned access token as a bearer header on every MCP request. The protected resource metadata lists `header` as the only supported bearer method, so a token in a query string is not accepted.\n\n```\ncurl -X POST https://mcp.brightdata.com/mcp \\\n  -H 'Authorization: Bearer ACCESS_TOKEN_HERE' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/json, text/event-stream' \\\n  -d '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/list\",\"params\":{}}'\n```\n\n## OAuth 2.1 endpoint reference\n\n| Purpose | URL |\n| --- | --- |\n| Protected resource metadata (RFC 9728) | `https://mcp.brightdata.com/.well-known/oauth-protected-resource` |\n| Authorization server metadata (RFC 8414) | `https://brightdata.com/.well-known/oauth-authorization-server` |\n| Authorization | `https://brightdata.com/users/auth/mcp/authorize` |\n| Token | `https://brightdata.com/users/auth/mcp/token` |\n| Dynamic client registration (RFC 7591) | `https://brightdata.com/users/auth/mcp/register` |\n| JSON Web Key Set | `https://brightdata.com/users/auth/mcp/jwks` |\n\nThe authorization server metadata is also served from `https://mcp.brightdata.com/.well-known/oauth-authorization-server`, and the protected resource metadata is also served from the path-insertion variant `https://mcp.brightdata.com/.well-known/oauth-protected-resource/mcp`. Clients that probe either location resolve correctly.\n\nThe two copies of the authorization server metadata are not identical. The copy served from `https://brightdata.com` includes `\"resource_parameter_supported\": true`. The copy served from `https://mcp.brightdata.com` omits that field, even though the server rejects any authorization or token request that arrives without a `resource` parameter. Read the copy at the issuer root, `https://brightdata.com/.well-known/oauth-authorization-server`, which is the location RFC 8414 specifies and the only one that advertises the requirement.\n\n## What does the authorization server enforce?\n\nThe Bright Data authorization server rejects requests that do not meet these five rules. The error strings below are returned verbatim, which makes them useful assertions in a test suite.\n\n\n| Rule | Rejected request | Response |\n| --- | --- | --- |\n| PKCE is required | Authorization request with no `code_challenge` | `invalid_request`, `Missing required parameter: code_challenge` |\n| Only `S256` is accepted | `code_challenge_method=plain` | `invalid_request`, `Unsupported code_challenge_method; only S256 is supported` |\n| `resource` is required | Authorization request with no `resource` | `invalid_request`, `resource parameter is required (RFC 8707)` |\n| `resource` is required on token exchange | Token request with no `resource` | `invalid_request`, `Missing or invalid required parameters: code, code_verifier, redirect_uri, client_id, resource` |\n| Only two grant types | `grant_type=client_credentials` | `unsupported_grant_type`, `Supported grant types: authorization_code, refresh_token` |\n\nTwo failures are returned as `400 Bad Request` without a redirect, which is the behavior the OAuth 2.0 Security Best Current Practice prescribes so that an attacker cannot use the authorization server as an open redirector:\n\n* An unknown `client_id`.\n* A `redirect_uri` that was not registered for that `client_id`.\n\n## How to handle 401 responses and refresh tokens\n\nTreat any `401` from `https://mcp.brightdata.com` as the signal to refresh, then retry the request once. Do not schedule refreshes against a hardcoded lifetime, because the `WWW-Authenticate` challenge is the authoritative signal.\nRequest a new access token with the `refresh_token` grant. The `resource` parameter is required here too:\n\n```\ncurl -s -X POST https://brightdata.com/users/auth/mcp/token \\\n  -H 'Content-Type: application/x-www-form-urlencoded' \\\n  -d 'grant_type=refresh_token' \\\n  -d 'refresh_token=YOUR_REFRESH_TOKEN' \\\n  -d 'client_id=dIaOwFk5ge6QYbqN_V0lglzqRv2Pth6c' \\\n  -d 'resource=https://mcp.brightdata.com'\n```\n\nIf the refresh token is itself invalid or already used, the server returns `invalid_grant` with the description `Invalid, expired, or already used refresh token`. Send the user back through the authorization flow in step 5 when that happens.\n\n## How to test your OAuth 2.1 integration\n\nVerify discovery and enforcement with `curl` before you write any client code. None of these checks need a token or a browser.\nConfirm the server challenges an unauthenticated request:\n\n```\ncurl -si -X POST https://mcp.brightdata.com/mcp \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/json, text/event-stream' \\\n  -d '{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{},\"clientInfo\":{\"name\":\"t\",\"version\":\"1.0.0\"}}}' \\\n  | grep -i 'www-authenticate'\n```\n\nExpected output:\n\n```\nwww-authenticate: Bearer resource_metadata=\"https://mcp.brightdata.com/.well-known/oauth-protected-resource\", scope=\"mcp\"\n```\n\nConfirm that PKCE and the `resource` parameter are enforced. Both requests return a redirect carrying an OAuth error, so no token is issued:\n\n```\nCLIENT_ID=your_client_id_here\nAUTH=https://brightdata.com/users/auth/mcp/authorize\nBASE=\"response_type=code&client_id=$CLIENT_ID&redirect_uri=http%3A%2F%2Flocalhost%3A8765%2Fcallback&scope=mcp&state=test\"\n\n# No code_challenge: expect Missing required parameter: code_challenge\ncurl -s -o /dev/null -w '%{redirect_url}\\n' \"$AUTH?$BASE&resource=https%3A%2F%2Fmcp.brightdata.com\"\n\n# No resource: expect resource parameter is required (RFC 8707)\ncurl -s -o /dev/null -w '%{redirect_url}\\n' \"$AUTH?$BASE&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256\"\n```\n\nOnce the flow works end to end, add these four assertions to your client\u2019s test suite so a regression fails the build:\n\n1. A request with no token returns `401` and a `WWW-Authenticate` header containing `resource_metadata`.\n2. A request with a valid bearer token returns a `tools/list` result with a non-empty `tools` array.\n3. A request with a deliberately corrupted bearer token returns `401`, not `200`.\n4. The `state` value returned to your redirect URI matches the value your client sent.\n\n## Troubleshooting OAuth 2.1 errors\n\n| Error | Cause | Fix |\n| --- | --- | --- |\n| `Missing required parameter: code_challenge` | The authorization request omitted PKCE | Generate a verifier, send its SHA-256 hash as `code_challenge` with `code_challenge_method=S256` |\n| `Unsupported code_challenge_method; only S256 is supported` | The client sent `plain` | Switch to `S256`. `plain` is not accepted |\n| `resource parameter is required (RFC 8707)` | The authorization request omitted `resource` | Add `resource=https://mcp.brightdata.com` |\n| `Missing or invalid required parameters: ...` | The token request is missing one of `code`, `code_verifier`, `redirect_uri`, `client_id` or `resource` | Send all five. `resource` is the one most clients forget |\n| `Invalid, expired, or already used code` | The authorization code was reused, expired or paired with the wrong verifier | Restart the authorization flow. Codes are single use |\n| `unsupported_grant_type` | The client tried a grant other than `authorization_code` or `refresh_token` | Use the authorization code flow. Client credentials are not supported |\n| `400 Bad Request` with no redirect | Unknown `client_id`, or a `redirect_uri` that was not registered | Register the client, and list every redirect URI you use at registration time |\n| `401` on `/mcp` with a token that used to work | The access token expired | Refresh with the `refresh_token` grant, then retry the request once |\n| `403 Forbidden` with an HTML body and no OAuth error | The client sent the Python standard library default User-Agent (`Python-urllib/*`), which `brightdata.com` blocks | Set an explicit `User-Agent` header on every request to the authorization server. Clients using `requests`, `httpx`, `aiohttp`, Node, Go, Java or okhttp are unaffected |\n\n## FAQ\n\n### Do I have to migrate from API keys to OAuth 2.1?\n\nNo. The `?token=YOUR_API_TOKEN` query parameter on `https://mcp.brightdata.com/mcp` and `https://mcp.brightdata.com/sse` continues to work. OAuth 2.1 is an additional method, not a replacement.\n\n### Which scope should I request?\n\nRequest `mcp`. It is the only scope the Bright Data MCP server publishes in `scopes_supported`, on both the protected resource metadata and the authorization server metadata.\n\n### Is a client secret required?\n\nNo. The authorization server publishes `token_endpoint_auth_methods_supported: [\"none\"]`, so Bright Data MCP clients are public clients. PKCE, not a secret, is what binds the authorization code to the client that requested it.\n\n### Can I skip dynamic client registration and use a preconfigured client ID?\n\nDynamic client registration at `https://brightdata.com/users/auth/mcp/register` is the supported path, and it is open, so any client can register itself without a credential. Register once and store the returned `client_id` rather than registering on every launch.\n\n### Does client registration create a Bright Data account?\n\nNo. `https://brightdata.com/users/auth/mcp/register` registers an OAuth client application and returns a `client_id`. The user still needs a Bright Data account to sign in with at the authorization endpoint. To create that account programmatically, follow the agent registration protocol, which takes the user\u2019s email address and a 6-character code emailed to them, then returns an API key. The authorization server advertises that protocol in the `agent_auth` block of its metadata document.\n\n### Why does my Python client get a 403 instead of an OAuth error?\n\nSet an explicit `User-Agent` header. Requests to `https://brightdata.com` that carry the Python standard library default User-Agent (`Python-urllib/*`) are rejected with `403 Forbidden` before they reach the authorization server, so no OAuth error body comes back to explain the failure.\nThe rejection matches on the User-Agent string alone. An identical client sending an identical request over the same TLS connection succeeds as soon as the header changes, so no other property of the client is involved. Verified against `https://brightdata.com/.well-known/oauth-authorization-server` and the registration endpoint:\n\n\n| Client | User-Agent sent | Result |\n| --- | --- | --- |\n| `requests` 2.32.5 | `python-requests/2.32.5` | `200` and `201` |\n| `urllib3` 2.4.0 | urllib3 default | `200` and `201` |\n| `aiohttp` 3.13.5 | `Python/3.9 aiohttp/3.13.5` | `200` and `201` |\n| `urllib` (standard library) | `Python-urllib/3.9` | `403` and `403` |\n| `urllib` with an explicit header | `my-mcp-client/1.0` | `200` and `201` |\n\nOnly the Python standard library default is affected. Clients built on `requests`, `httpx`, `aiohttp`, Node, Go, Java or okhttp send their own User-Agent and need no change.\n\n```\nimport urllib.request\n\nreq = urllib.request.Request(\n    \"https://brightdata.com/.well-known/oauth-authorization-server\",\n    headers={\"User-Agent\": \"my-mcp-client/1.0\"},\n)\nwith urllib.request.urlopen(req) as response:\n    metadata = response.read()\n```\n\n### Which MCP transports support OAuth 2.1?\n\nBoth. The Streamable HTTP endpoint `https://mcp.brightdata.com/mcp` and the SSE endpoint `https://mcp.brightdata.com/sse` return the same `401` challenge and accept the same bearer token.\n\n## Remote MCP server advanced configuration\n\nSelect tool groups, switch zones and tune the remote Bright Data MCP server.",
+   "retrieved_at": "2026-11-23T19:36:57+05:30",
+   "charge_usd": 0.0
+  }
+ ],
+ "candidate_hits": [
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/introduction",
+   "title": "Bright Data Docs",
+   "snippet": "Guides, quickstarts and API references for Bright Data Scraper API, Scraper Studio, Web Unlocker API, SERP API, proxies, datasets and Bright Data MCP."
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/api-reference/SDK",
+   "title": "Python SDK",
+   "snippet": "URL scraping, search engines, platform-specific scrapers (LinkedIn, Amazon, Instagram, TikTok, YouTube, Reddit, Pinterest, ChatGPT, Perplexity, Digikey), Scraper Studio, datasets, and the Browser API."
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/api-reference/scrapers/synchronous-requests",
+   "title": "Synchronous requests",
+   "snippet": "This synchronous API endpoint allows users to send a scraping request and receive the results in real-time directly in the response, at the point of request - such as a terminal or application -"
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/api-reference/SDK-JS",
+   "title": "JavaScript SDK",
+   "snippet": "## Datasets API\nQuery and download from any of the 126+ Bright Data datasets."
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://brightdata.com/glossary/api",
+   "title": "APIs",
+   "snippet": "An API (Application Programming Interface) is a set of defined rules and protocols that allow different software applications to communicate with each other ..."
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/products/scrapers/fetch-api/send-first-request",
+   "title": "Fetch API endpoints",
+   "snippet": "This guide shows you how to send each type of Bright Data Fetch API request. It covers a single URL, country targeting, returning only some fields and async batches."
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/api-reference/rest-api/serp/serp-api",
+   "title": "SERP API",
+   "snippet": "SDK\nFor an easy start using our tools check out our new Python SDK.\n#### Authorizations\nUse your Bright Data API Key as a Bearer token in the Authorization header.\nHow to authenticate:\n1. Obtain"
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/products/scrapers/overview",
+   "title": "Scraper API - Bright Data Docs",
+   "snippet": "Browse Bright Data Scraper API scrapers for Amazon, LinkedIn, Instagram, TikTok and thousands more sites. Pre-built scrapers return structured JSON on ..."
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/products/serp-api/send-your-first-request",
+   "title": "Send your first SERP API request",
+   "snippet": "In order to access SERP API, you will need to provide credentials which are comprised of:\n1. Your customer ID\n2. Your SERP API zone name\n3. Your SERP API password\n4. Bright Data SSL certificate"
+  },
+  {
+   "q": "Bright Data API documentation",
+   "url": "https://docs.brightdata.com/api-reference/rest-api/scraper/asynchronous-requests",
+   "title": "Scraper async requests",
+   "snippet": "[https://brightdata.com/cp/setting/users](https://brightdata.com/cp/setting/users)\n2. Include the API Key in the Authorization header of your requests\n3. Format: `Authorization: Bearer YOUR_API_KEY`"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/api-reference/authentication",
+   "title": "Authentication",
+   "snippet": "This `<token>` is your **API key**, which is required for every API request.\n\n| **Authentication** | [API key](/api-reference/authentication#how-do-i-generate-a-new-api-key%3F) | `username:password` |"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/api-reference/proxy-manager/generate_token_for_token_based_authentication",
+   "title": "Generate API key",
+   "snippet": "Generate a Bright Data Proxy Manager API key for token-based authentication. Endpoint: GET /api/gen_token on port 22999. API endpoint: GET /api/gen_token"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/api-reference/account-management-api/Add_a_Zone",
+   "title": "Add a zone",
+   "snippet": "Learn how to get your Bright Data API key: [https://docs.brightdata.com/api-reference/authentication](https://docs.brightdata.com/api-reference/authentication)"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/products/cli/installation",
+   "title": "Install the Bright Data CLI",
+   "snippet": "command to connect your Bright Data account:\n```\nbrightdata login\n```\nThis opens your browser for secure OAuth authentication. Once complete, the CLI:\n1. Validates and stores your API key"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/api-reference/rest-api/scraper/asynchronous-requests",
+   "title": "Scraper async requests",
+   "snippet": "API Key as a Bearer token in the Authorization header.\nHow to authenticate:\n1. Obtain your API Key from the Bright Data account settings at"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/products/cli/commands",
+   "title": "Bright Data CLI command reference",
+   "snippet": "| Flag | Description |\n|---|---|\n| `-k, --api-key <key>` | Override API key for this request |"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/products/serp-api/send-your-first-request",
+   "title": "Send your first SERP API request",
+   "snippet": "- Single API key authentication: Secure and easy to use, replacing the need for username-password management."
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/api-reference/proxy/proxy_api_auth",
+   "title": "Proxy API authentication",
+   "snippet": "There are two available authentication methods to access Proxy networks.\n1. Username and password combination\n2. Using API key"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://docs.brightdata.com/api-reference/rest-api/serp/serp-api",
+   "title": "SERP API",
+   "snippet": "Learn how to get your Bright Data API key: [https://docs.brightdata.com/api-reference/authentication](https://docs.brightdata.com/api-reference/authentication)"
+  },
+  {
+   "q": "Bright Data API authentication OAuth API key developer",
+   "url": "https://brightdata.com/glossary/api",
+   "title": "APIs",
+   "snippet": "An API (Application Programming Interface) is a set of defined rules and protocols that allow different software applications to communicate with each other."
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_pricing_plans",
+   "title": "Get pricing plans",
+   "snippet": "object[]\nYour current plan and the plans available to your account."
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://docs.brightdata.com/api-reference/authentication",
+   "title": "Authentication",
+   "snippet": "Both API and Native access methods are billed at the same rate. Usage is charged according to your pricing plan for each Bright Data product."
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://docs.brightdata.com/general/account/billing-and-pricing/free-tier",
+   "title": "Free tier",
+   "snippet": "to **all new accounts** and is applied automatically at signup. The following account types are **not** eligible:\n- Accounts on custom PAYG pricing plans\n- Accounts on pre-commit (subscription) plans"
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://docs.brightdata.com/general/account/billing-and-pricing/faqs",
+   "title": "Billing and pricing FAQs",
+   "snippet": "Absolutely!You can use Bright Data datacenter, ISP and residential networks without monthly commitment.\nSimply click the pencil next to the zone name and adjust the plan to \u2018Pay-As-You-Go\u2019"
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://brightdata.com/llms.txt",
+   "title": "brightdata.com/llms.txt",
+   "snippet": "- Prices below are starting prices.\n- The free tier covers Web Unlocker API, SERP API, Web Scraper API and Scraper Studio. It does not cover proxies or Browser API."
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://brightdata.com/pricing/serp",
+   "title": "SERP API Pricing Plans",
+   "snippet": "Every plan gives you full access - pay less per record as you scale ; Data Collection. Automated proxy management; Full browser rendering ; Performance at Scale."
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://brightdata.com/pricing",
+   "title": "Web Scraper API Pricing",
+   "snippet": "Datasets Pricing. Access the data you need without coding using our ready-to-use datasets. Subscription option; Dedicated account manager; No coding."
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://brightdata.com/pricing/crawl-api",
+   "title": "Crawl API Pricing Plans",
+   "snippet": "Crawl API pricing plans. Choose the right plan for you to easily automate data extraction from any website."
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://brightdata.com/pricing/web-scraper",
+   "title": "Web Scraper API Pricing Plans",
+   "snippet": "parsing included.\nGet started\n- Pay only for success, no hidden fees\n- Start free with 5,000 monthly credits\n- No upfront commitment, cancel anytime\n- 24/7 expert support and enterprise"
+  },
+  {
+   "q": "Bright Data API access pricing plans developer account",
+   "url": "https://docs.brightdata.com/products/scrapers/scrapers-library/faqs",
+   "title": "Scraper API FAQs",
+   "snippet": "Studio](/products/scraper-studio/overview) or ask about [managed services](https://brightdata.com/pricing/managed-services)."
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://docs.brightdata.com/products/mcp-server/faqs",
+   "title": "Bright Data MCP FAQs",
+   "snippet": "Bright Data MCP (Model Context Protocol) is a server that allows AI agents, LLMs, and dev tools to access and extract real-time web data using Bright Data\u2019s infrastructure. It is available as both a"
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://docs.brightdata.com/products/mcp-server/overview",
+   "title": "MCP server overview",
+   "snippet": "The **Bright Data MCP server** gives AI agents and assistants real-time access to public web data through the Model Context Protocol (MCP). Connect it to Claude, Cursor or any MCP-compatible client,"
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://brightdata.com/ai/mcp-server",
+   "title": "The Bright Data MCP Server - Start with a Free Plan",
+   "snippet": "Bright Data\u2019s Bright Data MCP solves web access for LLMs and AI agents, allowing them to effectively search, extract and navigate the web without getting blocked."
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://docs.brightdata.com/products/mcp-server/remote/quickstart",
+   "title": "How to get started with remote MCP server",
+   "snippet": "\nReplace `YOUR_API_TOKEN` with your actual Bright Data API token.\nNo username is required. The Remote MCP server authenticates with your API token only. Usernames (format:"
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://brightdata.com/ai/mcp-server/claude",
+   "title": "Claude MCP server",
+   "snippet": "Connect Claude to real-time web data with Bright Data MCP Server. Seamlessly search, crawl, and automate web tasks at scale\u2014no blocks, fast and easy for ..."
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://docs.brightdata.com/products/mcp-server/remote/oauth",
+   "title": "Bright Data MCP OAuth 2.1 setup - Bright Data Docs",
+   "snippet": "of pasting a Bright Data API key into a config file. The Bright Data MCP server at `https://mcp.brightdata.com` is an OAuth 2.1 protected resource. It advertises its authorization server"
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://docs.brightdata.com/general/docs-mcp",
+   "title": "Query Bright Data docs from your agent",
+   "snippet": "## Bright Data MCP Server\nAdd live web data access - search, scrape, and extract from the web"
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://brightdata.com/pricing/mcp-server",
+   "title": "MCP Server Pricing - Bright Data",
+   "snippet": "### What is Bright Data MCP Server?\nBright Data MCP (Model Context Protocol) is a server that enables LLMs, AI agents, and applications to access, discover, and extract web data in real-time. It"
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://brightdata.com/blog/ai/web-mcp-free-tier",
+   "title": "Free Tier for Agent Developers",
+   "snippet": "# Solving Web Access for Agents (For Free!) With the Bright Data MCP, by Bright Data\nBright Data\u2019s Web MCP Server now offers free, fast web access tools for AI agent developers."
+  },
+  {
+   "q": "Bright Data MCP server official",
+   "url": "https://docs.brightdata.com/products/mcp-server/integrations/claude-code",
+   "title": "Claude Code MCP server integration",
+   "snippet": "To integrate Bright Data into Claude Code, simply copy this command to your terminal:\n```\nclaude mcp add --transport sse brightdata \"https://mcp.brightdata.com/sse?token=YOUR_API_KEY\"\n```"
+  }
+ ],
+ "official_domain_candidates": {
+  "brightdata.com": 40
+ },
+ "identity_flag": "single_domain_name_match",
+ "selected_domain": "brightdata.com",
+ "completed": "2026-11-23T19:36:57+05:30"
+}

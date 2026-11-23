@@ -1,0 +1,330 @@
+
+ GitHub - IpayX-org/ipayx: https://ipayx.vercel.app/ · GitHub
+ Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHubRepository hosting, code review, and collaboration
+CopilotAI coding agent for tasks, projects, and automated work
+Build & Ship
+ActionsCI/CD and automation
+Code QualityQuality analysis, fixes, and enforcement
+CodespacesCloud development environments
+Secure
+Code SecurityVulnerability detection and remediation
+Secret ProtectionSecret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
+Changelog
+ChangelogYour source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced SecurityEnterprise-grade code security
+Copilot for businessEnterprise-grade AI features
+Premium SupportEnterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub UniverseThe event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search/
+Sign inSign up
+Appearance settings
+ You signed in with another tab or window. Reload to refresh your session.
+ You signed out in another tab or window. Reload to refresh your session.
+ You switched accounts on another tab or window. Reload to refresh your session.
+Dismiss alert
+{{ message }}
+IpayX-org
+ipayx
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security and quality
+Insights
+More items
+ipayxPublic
+NotificationsYou must be signed in to change notification settings
+Fork0 (0)
+Star0 (0)You must be signed in to star a repository
+About
+https://ipayx.vercel.app/
+ipayx.vercel.app/
+Resources
+Readme
+Activity
+Custom properties
+Stars
+0 stars
+Watchers
+0 watching
+Forks
+0 forks
+Report repository
+main
+BranchesTags
+Go to fileCode
+Open more actions menu
+Latest commit
+History19 Commits
+19 Commits
+Folders and files
+NameName
+Last commit message
+Last commit date
+app
+app
+components
+components
+contexts
+contexts
+hooks
+hooks
+lib
+lib
+prisma
+prisma
+public
+public
+.gitignore
+.gitignore
+.npmrc
+.npmrc
+README.md
+README.md
+docker-compose.yml
+docker-compose.yml
+eslint.config.mjs
+eslint.config.mjs
+middleware.ts
+middleware.ts
+next.config.ts
+next.config.ts
+package-lock.json
+package-lock.json
+package.json
+package.json
+postcss.config.mjs
+postcss.config.mjs
+tsconfig.json
+tsconfig.json
+View all files
+Repository files navigation
+README
+More items
+iPayX
+Invoice in USDC. Get paid from any chain. One balance on Arc.
+iPayX is a proof-of-concept for teams that bill in stablecoins but do not want payers juggling bridge steps, wallet addresses, and payment hashes over email. You issue a professional invoice with a pay link; the client pays USDC from Ethereum, Base, Arbitrum, or Avalanche testnets; settlement routes to your Circle programmable wallet on Arc Testnet via CCTP. One dashboard for invoices sent, bills to pay, deposits, transfers, and balance.
+What it does
+For vendors (iPayX accounts)
+Create invoices with line items, due dates, notes, and invoice numbers
+Send pay links by email (Resend) or copy the link manually
+Track Sent vs To pay — match incoming bills by wallet or email
+View Arc wallet balance, deposit from other chains, and transfer USDC out
+Sign in with Google or email verification code (Circle W3S)
+For payers (no account required)
+Open /pay/[token] and pay with MetaMask
+Pay from the chain where USDC already sits; bridging is handled in-flow
+Minimum $3 for cross-chain transfers
+Public marketing site
+Landing, how-it-works, about, and help pages, plus live platform metrics (users, invoices, payments, USDC volume).
+Product boundaries (this build)
+In scope
+Out of scope
+Arc + EVM testnets, USDC
+Mainnet production treasury
+Invoicing → pay → balance
+Full accounting / ERP
+Circle MPC wallets (no key export)
+Self-custody private keys
+Sign-in: Google and email OTP create separate Circle wallets for the same email. Use one method consistently.
+Technical implementation
+Stack
+Layer
+Technology
+Frontend
+Next.js 16 (App Router), React 19, Tailwind CSS 4
+API
+Next.js Route Handlers under app/api/
+Database
+Prisma 6 + PostgreSQL (Neon in prod; SQLite optional locally via schema.postgres.prisma swap)
+Auth & wallets
+Circle W3S — Google OAuth + email OTP
+Cross-chain
+Circle App Kit + CCTP (@circle-fin/app-kit, viem adapters)
+Payer checkout
+MetaMask + bridge client (lib/bridge-client.ts)
+Invoice email
+Resend (optional; login OTP uses Circle Console SMTP)
+Sessions
+HttpOnly ipayx_session cookie; Circle tokens encrypted at rest (SESSION_SECRET + jose)
+Architecture (high level)
+Marketing (app/(site)/) → public pages, /api/metrics
+Login (app/login/) → Circle SDK → POST /api/auth/session
+Dashboard (app/dashboard/) → session-gated UI
+Pay (app/pay/[token]/) → public invoice + MetaMask + CCTP bridge
+API (app/api/) → auth, invoices, payments, bridge, metrics
+lib/ → auth, prisma, invoices, email, circle-*, bridge
+middleware.ts → protects /dashboard/* and most /api/*
+Payment flow
+Vendor creates invoice → stored in Postgres with publicToken
+Client opens pay URL → GET /api/invoices/public?token=…
+Client signs bridge tx in browser → platform watcher + invoice status: paid
+USDC credited on vendor Arc wallet via Circle / CCTP path
+Data model (Prisma)
+User — walletAddress, optional email, relations to sent/received invoices
+Session — encrypted circleUserTokenEnc / circleEncryptionKeyEnc, expiry
+Invoice + InvoiceItem — status, parties, publicToken, txHash, line items
+Security notes
+API routes require ipayx_session except public invoice, session bootstrap, metrics, and login OTP endpoint
+Production cookies: secure: true when NODE_ENV=production
+Secrets only in .env.local (gitignored); never commit API keys or PLATFORM_EVM_PRIVATE_KEY
+Project layout
+app/
+ (site)/ # marketing routes
+ dashboard/ # overview, invoices, payments, wallet, deposit, transfer
+ login/ # Circle sign-in
+ pay/[token]/ # public payer UI
+ api/ # REST-style handlers
+components/ # layout, marketing, invoices, payments, auth
+lib/ # business logic & integrations
+prisma/ # schema (postgresql provider for deploy)
+Quick start
+cp .env.example .env.local
+# Fill Circle, Google, DATABASE_URL (postgresql://…), SESSION_SECRET, etc.
+npm install
+npm run db:push # loads .env.local via dotenv-cli
+npm run dev
+Open http://localhost:3000.
+Google OAuth: set NEXT_PUBLIC_GOOGLE_REDIRECT_URI=http://localhost:3000/auth/callback and add the same URI in Google Cloud Console (no trailing slash).
+Prisma: CLI reads .env by default; npm run db:push uses .env.local so DATABASE_URL must be a postgresql:// URL when using the Postgres schema.
+Environment variables
+Variable
+Required
+Purpose
+DATABASE_URL
+Yes
+Postgres connection string
+SESSION_SECRET
+Yes
+Encrypts session / Circle credentials (openssl rand -hex 32)
+CIRCLE_API_KEY
+Yes
+Circle Developer API
+NEXT_PUBLIC_CIRCLE_APP_ID
+Yes
+W3S app ID
+NEXT_PUBLIC_GOOGLE_CLIENT_ID
+Yes
+Google OAuth
+NEXT_PUBLIC_GOOGLE_REDIRECT_URI
+Yes
+OAuth callback (/auth/callback)
+PLATFORM_EVM_PRIVATE_KEY
+Yes
+Platform Arc watcher for bridge settlement
+CIRCLE_ENTITY_SECRET
+Yes*
+Bridge outbound (*or parsed from CIRCLE_API_KEY)
+NEXT_PUBLIC_APP_URL
+Yes
+Base URL for pay links in emails
+RESEND_API_KEY
+No
+Invoice notification emails
+EMAIL_FROM
+No
+Sender address (Resend sandbox: onboarding@resend.dev)
+Scripts
+Command
+Description
+npm run dev
+Next.js dev server
+npm run build
+prisma generate + production build
+npm run db:push
+Sync schema to DB (uses .env.local)
+npm run db:studio
+Prisma Studio
+Deploy
+Use Vercel + Neon Postgres (SQLite does not work on serverless). Set all env vars in the Vercel dashboard; set NEXT_PUBLIC_APP_URL and Google redirect URI to your production domain. Keep /docs local (gitignored) for detailed deploy and email setup notes.
+Disclaimer
+iPayX is a testnet POC for demonstration. Not financial advice. Review amounts in MetaMask before confirming transactions. Circle user-controlled wallets do not expose exportable private keys.
+About
+https://ipayx.vercel.app/
+ipayx.vercel.app/
+Resources
+Readme
+Activity
+Custom properties
+Stars
+0 stars
+Watchers
+0 watching
+Forks
+0 forks
+Report repository
+Releases
+Packages
+Contributors
+Languages
+Footer
+ © 2026 GitHub, Inc.
+Footer navigation
+ Terms
+ Privacy
+ Security
+ Status
+ Community
+ Docs
+ Contact
+ Manage cookies
+ Do not share my personal information
+ You can’t perform that action at this time.

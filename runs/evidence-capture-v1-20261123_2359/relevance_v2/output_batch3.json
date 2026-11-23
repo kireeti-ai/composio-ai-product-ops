@@ -1,0 +1,578 @@
+[
+ {
+  "claim_id": "79:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "personal access token (access tokens/API keys)",
+   "OAuth 2.0 flow"
+  ],
+  "uncovered": [
+   "Bearer header scheme",
+   "3-legged designation"
+  ],
+  "reason": "Quote 0 says the API 'authenticates using access tokens (API keys)' and quote 1 requires an 'OAuth flow', but neither says 'Bearer' or '3-legged'."
+ },
+ {
+  "claim_id": "79:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Developer Tools account registration for OAuth apps"
+  ],
+  "uncovered": [
+   "agreement acceptance",
+   "tokens generated in UI by a user"
+  ],
+  "reason": "Quotes show 'Developer Tools ... registering client applications' and 'enter the email address of a user account', but nothing about agreement acceptance or UI-generated tokens."
+ },
+ {
+  "claim_id": "79:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "access scopes concept"
+  ],
+  "uncovered": [
+   "example WRITE_SHEETS",
+   "scopes requested in authorization request"
+  ],
+  "reason": "The quote says 'Access scopes specify the types of resources your app needs' but does not mention WRITE_SHEETS or that they go in the authorization request."
+ },
+ {
+  "claim_id": "79:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official MCP server"
+  ],
+  "uncovered": [],
+  "reason": "Quotes from developers.smartsheet.com install docs give 'Smartsheet's OAuth' and the endpoint 'https://mcp.smartsheet.com', supporting a vendor-published MCP server."
+ },
+ {
+  "claim_id": "81:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "HTTP Basic",
+   "restricted API key",
+   "OAuth for MCP",
+   "agent API keys for MCP"
+  ],
+  "uncovered": [
+   "secret and publishable keys",
+   "Bearer"
+  ],
+  "reason": "Quotes cover 'HTTP Basic Auth', 'Restricted API key', 'OAuth' and 'Agent API keys' for MCP, but never mention Bearer, secret, or publishable keys."
+ },
+ {
+  "claim_id": "81:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "keys created in Dashboard",
+   "sandbox keys available (implied by 'account or sandbox')"
+  ],
+  "uncovered": [
+   "absence of sales/partner approval cannot be proven by a quote"
+  ],
+  "reason": "The quote 'Use the API keys page in the Dashboard to create ... keys for the account or sandbox' supports Dashboard creation, but 'no approval quoted' is an absence claim."
+ },
+ {
+  "claim_id": "81:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "sandboxes",
+   "test keys"
+  ],
+  "uncovered": [],
+  "reason": "Quote states 'Sandbox keys start with pk_test_ ... rk_test_ ... sk_test_', matching 'Sandboxes with test keys'."
+ },
+ {
+  "claim_id": "81:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "live 100 rps",
+   "sandbox 25 rps"
+  ],
+  "uncovered": [],
+  "reason": "Quotes state 'Live mode: 100 requests per second' and 'Sandbox: 25 requests per second'."
+ },
+ {
+  "claim_id": "81:4",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "webhooks"
+  ],
+  "uncovered": [
+   "REST"
+  ],
+  "reason": "The quote about 'raw body of the request to perform signature verification' is webhook-related, but nothing quoted states a REST API."
+ },
+ {
+  "claim_id": "81:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official MCP server"
+  ],
+  "uncovered": [],
+  "reason": "Quotes from docs.stripe.com say 'The Stripe Model Context Protocol (MCP) server provides tools' and give 'https://mcp.stripe.com'."
+ },
+ {
+  "claim_id": "82:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "client_id",
+   "secret"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'endpoints require a client_id and secret' sent in the body or PLAID-CLIENT-ID/PLAID-SECRET headers."
+ },
+ {
+  "claim_id": "82:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Dashboard account provides client_id/secret"
+  ],
+  "uncovered": [
+   "Production approval for the API generally (quote is MCP-specific)"
+  ],
+  "reason": "Quote 0 covers 'create an account on the Plaid Dashboard ... client_id and secret', but 'approved for Production access' appears only as a condition 'to use the MCP server'."
+ },
+ {
+  "claim_id": "82:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "free Sandbox"
+  ],
+  "uncovered": [],
+  "reason": "Quote states 'Sandbox is a free test environment'."
+ },
+ {
+  "claim_id": "82:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Development described in past tense ('was a Plaid environment')"
+  ],
+  "uncovered": [
+   "explicit statement that Development was retired/replaced",
+   "resolution of prior conflict"
+  ],
+  "reason": "Quote 0 says Development 'was' an environment, but the 'replaced by Trial plans' sentence is about Limited Production, not Development."
+ },
+ {
+  "claim_id": "82:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "JSON over HTTP"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'The Plaid API is JSON over HTTP' states the parenthetical; the word REST itself is not used."
+ },
+ {
+  "claim_id": "82:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "local MCP server for development",
+   "remote Dashboard MCP hosted by Plaid"
+  ],
+  "uncovered": [
+   "Sandbox scope of local MCP"
+  ],
+  "reason": "Quotes say 'local MCP server for development' and 'remote MCP server hosted by Plaid', but 'Sandbox' is never tied to the local server."
+ },
+ {
+  "claim_id": "82:6",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "rate limit errors exist (RATE_LIMIT_EXCEEDED)"
+  ],
+  "uncovered": [
+   "per-Item/per-client limits table"
+  ],
+  "reason": "The truncated quote 'rate limit for a' only shows that rate limits exist and cannot prove a per-Item/per-client table or the absence of numbers."
+ },
+ {
+  "claim_id": "83:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "HMAC, RSA, Ed25519 supported",
+   "Ed25519 recommended"
+  ],
+  "uncovered": [
+   "SIGNED endpoints need signature"
+  ],
+  "reason": "Quotes give '- Ed25519 (recommended)' and 'We support HMAC, RSA, and Ed25519 keys' but say nothing about signatures on SIGNED endpoints."
+ },
+ {
+  "claim_id": "83:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "API key required for authenticated endpoints"
+  ],
+  "uncovered": [
+   "absence of creation/account steps cannot be proven"
+  ],
+  "reason": "Quote 'API keys required to access authenticated endpoints' covers the first part; 'not quoted' is an absence a quote cannot prove."
+ },
+ {
+  "claim_id": "83:2",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "WebSocket API",
+   "WebSocket streams"
+  ],
+  "uncovered": [
+   "REST",
+   "user data stream"
+  ],
+  "reason": "README rows list 'Spot WebSocket API' and 'Spot Market Data WebSocket streams' but neither REST nor user data stream appears."
+ },
+ {
+  "claim_id": "83:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "limits based on IPs, not API keys"
+  ],
+  "uncovered": [
+   "RAW_REQUESTS/REQUEST_WEIGHT/ORDERS"
+  ],
+  "reason": "Quote states 'limits ... are based on the IPs, not the API keys' but the rate-limit types are not named."
+ },
+ {
+  "claim_id": "83:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "SPOT Testnet exists"
+  ],
+  "uncovered": [],
+  "reason": "README row 'API docs for features available only on SPOT Testnet' shows the Testnet exists."
+ },
+ {
+  "claim_id": "85:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "vendor-published MCP server"
+  ],
+  "uncovered": [],
+  "reason": "Vendor llms.txt gives 'Endpoint: https://mcp.ipayx.ai/mcp' and 'Streamable HTTP (MCP spec)'; self-published, as the note says."
+ },
+ {
+  "claim_id": "85:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Bearer API key (ipx_live_...)"
+  ],
+  "uncovered": [
+   "scoped to full_forensic_fx_report",
+   "other tools public and rate-limited per IP"
+  ],
+  "reason": "Quotes show 'Authorization: Bearer <ipx_live_...>' but name no tool and say nothing about public per-IP access."
+ },
+ {
+  "claim_id": "85:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "free allowance",
+   "paid API plans"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'free allowance of 3 audits per IP per month' with no API key and 'API plans from $99/mo'."
+ },
+ {
+  "claim_id": "85:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "OpenAPI 3.1 REST"
+  ],
+  "uncovered": [
+   "MCP"
+  ],
+  "reason": "Quote 'OpenAPI 3.1: https://www.ipayx.ai/.well-known/openapi.json' covers REST but no quote in this set mentions MCP."
+ },
+ {
+  "claim_id": "85:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "anonymous 10 req/min + 100/day",
+   "authenticated 30 req/min"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'anonymous = 10 req/min + 100/day; authenticated = 30 req/min' matches; the 'one endpoint' scope is not shown but is a minor qualifier."
+ },
+ {
+  "claim_id": "86:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "OAuth 2.0",
+   "Intuit Developer Portal app"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'register an app on the Intuit Developer Portal' and 'OAuth 2.0 Authentication'."
+ },
+ {
+  "claim_id": "86:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "register app on Intuit Developer Portal"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'You must register an app on the Intuit Developer Portal' states it; 'account registration' is implied."
+ },
+ {
+  "claim_id": "86:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "sandbox supported"
+  ],
+  "uncovered": [],
+  "reason": "Config line 'QUICKBOOKS_ENVIRONMENT=sandbox' shows a sandbox setting is supported."
+ },
+ {
+  "claim_id": "86:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "local stdio server"
+  ],
+  "uncovered": [
+   "official ownership by Intuit"
+  ],
+  "reason": "Quote says 'this is a local MCP server ... stdio subprocess' but 'official' rests only on the github.com/intuit URL, not quoted text."
+ },
+ {
+  "claim_id": "87:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Xero OAuth2 with custom connections",
+   "two auth modes exist"
+  ],
+  "uncovered": [
+   "bearer token mode via MCP"
+  ],
+  "reason": "Quotes say 'OAuth2 authentication with custom connections' and 'There are 2 modes of authentication' but the second mode (bearer token) is not shown."
+ },
+ {
+  "claim_id": "87:1",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "Starter no charge",
+   "connection limits (flattened table)"
+  ],
+  "uncovered": [
+   "developer account requirement"
+  ],
+  "reason": "Quotes show 'Monthly Tier FeeNo charge$35 AUD...' and 'Connections (maximum)5...' but no developer account requirement."
+ },
+ {
+  "claim_id": "87:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "per-tier daily limits"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'Rate Limits1000 per day per org5000 per day per org...' gives daily per-org limits per tier."
+ },
+ {
+  "claim_id": "87:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "no new Custom Connection apps",
+   "from 1 Dec 2026"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'From 1 December 2026 ... you won't be able to: Create a new Custom Connection app'."
+ },
+ {
+  "claim_id": "87:4",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "MCP server for Xero"
+  ],
+  "uncovered": [
+   "official ownership by XeroAPI"
+  ],
+  "reason": "Quote 'MCP server implementation for Xero' does not state who owns it; official status rests on the repo path."
+ },
+ {
+  "claim_id": "87:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "Demo Company"
+  ],
+  "uncovered": [],
+  "reason": "Quote recommends 'a Demo Company ... pre-loaded sample data'."
+ },
+ {
+  "claim_id": "88:0",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "user token generated from dashboard",
+   "OAuth for MCP"
+  ],
+  "uncovered": [
+   "Bearer scheme",
+   "created by admin"
+  ],
+  "reason": "Quotes say 'generate a user token from your Brex dashboard' and MCP 'supports OAuth with Dynamic Client Registration' but not Bearer or admin."
+ },
+ {
+  "claim_id": "88:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "account admin or card admin",
+   "developer API agreement"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'as an account admin or card admin' and 'not accepted the developer API agreement'."
+ },
+ {
+  "claim_id": "88:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "90 days unused"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'expire if they are not used to make an API call for 90 days'."
+ },
+ {
+  "claim_id": "88:3",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "only production server offered"
+  ],
+  "uncovered": [
+   "absence of sandbox cannot be fully proven"
+  ],
+  "reason": "Quote 'currently only offers a production API server' strongly implies no sandbox but is an absence claim, so not direct."
+ },
+ {
+  "claim_id": "88:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official hosted MCP",
+   "beta"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say server 'hosted at https://api.brex.com/mcp' and 'Enable the beta ... Beta features'."
+ },
+ {
+  "claim_id": "88:5",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "scopes chosen at token creation"
+  ],
+  "uncovered": [],
+  "reason": "Quote 'Choose what level of data access ... these are the scopes your token will have'."
+ },
+ {
+  "claim_id": "89:0",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "OAuth 2.0",
+   "client credentials server-to-server"
+  ],
+  "uncovered": [],
+  "reason": "Quotes say 'Ramp uses OAuth 2.0' and table row 'Client Credentials | Internal integrations, server-to-server'."
+ },
+ {
+  "claim_id": "89:1",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "admin access to create developer app"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'create a developer app ... Admin access is required.'"
+ },
+ {
+  "claim_id": "89:2",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "resource:permission pattern"
+  ],
+  "uncovered": [],
+  "reason": "Quote says 'Scopes follow the pattern `resource:permission`'."
+ },
+ {
+  "claim_id": "89:3",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "200 req/10s per source IP"
+  ],
+  "uncovered": [],
+  "reason": "Quote says '200 requests per 10 seconds per source IP address'."
+ },
+ {
+  "claim_id": "89:4",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "demo-api.ramp.com sandbox",
+   "access request form"
+  ],
+  "uncovered": [],
+  "reason": "Quotes give 'Sandbox API base URL: https://demo-api.ramp.com' and 'Request access using the sandbox access form'."
+ },
+ {
+  "claim_id": "89:5",
+  "verdict": "partial",
+  "contradicts": false,
+  "components_covered": [
+   "webhooks"
+  ],
+  "uncovered": [
+   "REST"
+  ],
+  "reason": "Quote about 'Webhooks allow your application to receive real-time notifications' covers webhooks only; REST is not stated."
+ },
+ {
+  "claim_id": "89:6",
+  "verdict": "direct",
+  "contradicts": false,
+  "components_covered": [
+   "official hosted MCP"
+  ],
+  "uncovered": [],
+  "reason": "Quotes show 'claude mcp add ... https://mcp.ramp.com/mcp' and the redirect URI allowlist error for custom clients."
+ }
+]

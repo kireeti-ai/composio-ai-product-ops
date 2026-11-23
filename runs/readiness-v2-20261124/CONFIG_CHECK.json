@@ -1,0 +1,101 @@
+{
+ "created": "2026-11-23T18:27:26+0530",
+ "passed": true,
+ "checks": [
+  {
+   "check": "v1f PLAN.json equals frozen hash",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "runner src/run_p1.py equals frozen hash",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "v1f status/eligibility/validation files equal frozen hashes",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "no approval files exist (APPROVED.json / APPROVED_PASS2.json / RETRIEVAL_APPROVED.json)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": ".env present with owner-only mode",
+   "passed": true,
+   "detail": "keys present: ['COMPOSIO_API_KEY', 'GEMINI_API_KEY', 'GEMINI_API_KEY_2', 'GROQ_API_KEY', 'OPENROUTER_API_KEY']"
+  },
+  {
+   "check": "Gemini runners mention only GEMINI_API_KEY as a variable to read",
+   "passed": true,
+   "detail": "{'src/run_p1.py': ['GEMINI_API_KEY', 'GEMINI_API_KEY_2'], 'src/run_neo4j_surfaces.py': ['GEMINI_API_KEY']}"
+  },
+  {
+   "check": "no executable code path reads GEMINI_API_KEY_2 (no key rotation)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "run_p1 reads the key only via startswith('GEMINI_API_KEY=')",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "run_neo4j_surfaces reads the key only via startswith('GEMINI_API_KEY=')",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "verify_v2 reads only GROQ_API_KEY",
+   "passed": true,
+   "detail": "['GROQ_API_KEY']"
+  },
+  {
+   "check": "legacy scripts are neutralised (refuse to run)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "runner requires per-model caps",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "runner stops on first daily-quota 429 (no retry loop)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "runner refuses without APPROVED.json",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "verifier v2: mandatory call cap + retry-exhaustion stop + checkpointing",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "verifier v2 refuses outputs inside baseline/ or work/",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "Gladly/Neo4j/expansion plans exist and are unapproved",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "baseline intact",
+   "passed": true,
+   "detail": "151 files"
+  },
+  {
+   "check": "unused keys flagged for removal (not removed)",
+   "passed": true,
+   "detail": "OPENROUTER_API_KEY and GEMINI_API_KEY_2 are not used by any executable script"
+  }
+ ]
+}

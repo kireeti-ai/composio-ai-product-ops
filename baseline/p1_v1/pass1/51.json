@@ -1,0 +1,55 @@
+{
+ "id": 51,
+ "name": "DataForSEO",
+ "category": "Data, SEO and Scraping",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://docs.dataforseo.com/v3/auth",
+  "https://docs.dataforseo.com/v3/",
+  "https://dataforseo.com/apis",
+  "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+ ],
+ "one_liner": "DataForSEO provides comprehensive REST APIs for search engine results, keyword data, backlinks, and digital marketing analytics.",
+ "auth_methods": [
+  "basic"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Users can create a free account to obtain API credentials directly from the account dashboard.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://docs.dataforseo.com/v3/auth",
+   "quote": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://docs.dataforseo.com/v3/auth",
+   "quote": "Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://docs.dataforseo.com/v3/",
+   "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://docs.dataforseo.com/v3/",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ]
+}

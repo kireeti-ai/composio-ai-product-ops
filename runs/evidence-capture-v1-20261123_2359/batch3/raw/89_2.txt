@@ -1,0 +1,138 @@
+Connecting · Docs · agents.ramp.com
+[H]Home[D]Docs[S]Skills[C]Community
+Talk to the team
+Search⌘K
+Overview
+Introduction
+Getting Started
+Guides
+Connecting
+Identity
+Payments
+Travel
+Incorporation
+Zoom integration for Glass
+Reference
+Agent Tools
+API Reference↗
+App↗
+Ramp CLI on Github↗
+Python SDK↗
+Ramp Skills in Github↗
+Guides
+Guides
+Connecting
+There are three ways to connect your agents to Ramp:
+MCP, CLI, and API connection options
+CriterionCLIMCP ConnectorsAPI
+Set upCLI
+InstantMCP Connectors
+Instant to 15 minutesAPI
+Hours to days
+How it runsCLI
+In a terminal, local agent, script, or CIMCP Connectors
+Inside a conversational assistantAPI
+In deterministic code
+Permission and AttributionCLI
+Actions are attributed to the acting user or agent. The agent acts as the
+Ramp user who authenticated the connection. Permissions do not exceed the
+user or agent's role.MCP Connectors
+Actions are attributed to the acting user or agent. The agent acts as the
+Ramp user who authenticated the connection. Permissions do not exceed the
+user or agent's role.API
+Access is limited to the scopes granted to your app.
+StrengthsCLI
+Structured output, broad workflows, and easy local automationMCP Connectors
+Easy setup, already available in some cases, and instant with Claude chat
+or an out-of-the-box connectorAPI
+Maximum control over interfaces, workflows, and backend logic
+WeaknessesCLI
+Requires installation and access to a coding agent or terminalMCP Connectors
+Slower performanceAPI
+Requires the most engineering, security, and lifecycle ownership
+Use the Ramp app when a person needs to review context,
+handle an exception, or complete work directly. The
+Agent Tools reference lists every tool available
+in the CLI and MCP.
+CLI
+Use the CLI when the agent has terminal access, needs structured output, or
+should follow a repeatable skill. The CLI works well in Claude Code, Codex,
+Cursor, scripts, and CI.
+Copy install command
+Connect via MCP
+Choose the client you already use. Each link opens the fastest available way to
+add Ramp.
+ClaudeConnect Ramp in Claude and authorize the Ramp account you want the assistant to use.→ChatGPTAdd the Ramp app in ChatGPT and complete browser authorization.→CursorInstall Ramp MCP in Cursor with one click, then authorize your Ramp account.→Other MCP clientsConnect another client or gateway using Ramp's hosted server URL.→
+Coding agents
+# Claude Code
+claude mcp add --transport http ramp https://mcp.ramp.com/mcp
+# Codex
+codex mcp add ramp --url https://mcp.ramp.com/mcp
+Coding agents can also use the CLI.
+What the connection can do
+The connection acts as the Ramp user who authorized it and never exceeds that
+user's permissions. On the consent screen, the user chooses Full access or
+Read-only. Connections expire after 30 days; reconnect to renew. Admins
+control who can connect with the Manage connections to Ramp via MCP, CLI and
+other AI connectors role permission and can revoke connections; revoking one
+cuts off every AI tool that shares it. See
+Manage connected AI tools.
+Developer API
+Use the API when your product owns the interface and backend workflow. Your
+team is responsible for OAuth, scopes, webhooks, retries, and the customer
+experience.
+View API reference
+Custom MCP clients
+Point the client at https://mcp.ramp.com/mcp. For the Ramp sandbox
+(demo.ramp.com, the same environment as the CLI's --env sandbox), use
+https://demo-mcp.ramp.com/mcp. Clients that read MCP JSON usually expect:
+{
+ "mcpServers": {
+ "ramp": {
+ "url": "https://mcp.ramp.com/mcp"
+ }
+ }
+}
+Custom clients and gateways need their exact redirect URI allowlisted before
+authorization can complete:
+Use https://, or http:// only with localhost or 127.0.0.1. Ramp also
+accepts the claude://, cursor://, grokbot://, and perplexity-app://
+schemes; other custom schemes are not supported.
+Submit the exact host. Wildcard subdomains are not supported.
+Request redirect URI access
+for the client or gateway.
+Troubleshooting
+Authentication stops working
+Connections expire after 30 days. Disconnect and reconnect Ramp in the client to
+renew. If a custom client keeps stale credentials, clear its cached MCP auth.
+Write tools are missing
+The connection may be read-only. Reconnect and choose Full access, and
+check that the user's Ramp role allows the action.
+The CLI keeps logging out
+CLI sessions stay signed in while they are used and refresh on each use. After
+a period of inactivity, run ramp auth login again. If it happens sooner,
+confirm that the runtime preserves ~/.config/ramp/config.toml; ephemeral
+coding environments may replace that file between sessions.
+A query returns too much data
+Reporting queries return up to 1,000 rows per page. Narrow the date range or
+filters, or ask the agent to page through the results.
+Unsupported redirect URI
+See Custom MCP clients to submit the exact URI.
+A receipt attachment does not reach MCP
+Chat attachments are not forwarded to Ramp MCP. Ask the agent for a receipt
+upload link, or use the Ramp CLI or Ramp app.← PreviousGetting StartedOverviewNext →IdentityGuides
+On this page
+Connecting
+CLI
+Connect via MCP
+Coding agents
+What the connection can do
+Developer API
+Custom MCP clients
+Troubleshooting
+Authentication stops working
+Write tools are missing
+The CLI keeps logging out
+A query returns too much data
+Unsupported redirect URI
+A receipt attachment does not reach MCP

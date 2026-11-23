@@ -1,0 +1,716 @@
+{
+ "ready_full_total": 31,
+ "eligible_identity_clear": [
+  27,
+  32,
+  33,
+  34,
+  39,
+  41,
+  43,
+  52,
+  53,
+  56,
+  76,
+  29,
+  36,
+  46,
+  65,
+  66,
+  71,
+  72,
+  75,
+  20,
+  25,
+  26,
+  38,
+  44,
+  47,
+  61,
+  62,
+  63,
+  70
+ ],
+ "held": [
+  {
+   "id": 73,
+   "name": "Linear",
+   "official_usable_pages": 2,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api_key",
+    "apikey",
+    "basic auth",
+    "bearer"
+   ],
+   "api_sufficient": true,
+   "api_hits": 7,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "",
+   "hold_reason": "identity unconfirmed (Linear)",
+   "mcp_official_domain_hits": 1,
+   "truncated": true
+  },
+  {
+   "id": 78,
+   "name": "Coda",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api token",
+    "api-key",
+    "bearer"
+   ],
+   "api_sufficient": true,
+   "api_hits": 9,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "'approval' is OAuth consent screen",
+   "hold_reason": "identity unconfirmed (Coda)",
+   "mcp_official_domain_hits": 1,
+   "truncated": true
+  }
+ ],
+ "rows": [
+  {
+   "id": 20,
+   "name": "Gladly",
+   "official_usable_pages": 3,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "api token",
+    "api-key",
+    "basic auth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 2,
+   "api_borderline": true,
+   "access_evidence": "insufficient",
+   "access_note": "",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 4,
+   "truncated": false
+  },
+  {
+   "id": 25,
+   "name": "Pumble",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "api key",
+    "api-key",
+    "bearer"
+   ],
+   "api_sufficient": true,
+   "api_hits": 5,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "matches are about integrations' pricing, not API access",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 3,
+   "truncated": true
+  },
+  {
+   "id": 26,
+   "name": "Discord",
+   "official_usable_pages": 3,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api token",
+    "api_key",
+    "basic auth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 13,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "'approval' hits are OAuth consent",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 0,
+   "truncated": true
+  },
+  {
+   "id": 27,
+   "name": "Telegram",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "basic auth",
+    "bearer",
+    "client secret",
+    "client_secret"
+   ],
+   "api_sufficient": true,
+   "api_hits": 5,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "'free of charge' for developers",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 0,
+   "truncated": true
+  },
+  {
+   "id": 29,
+   "name": "Aircall",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api token",
+    "basic auth",
+    "bearer"
+   ],
+   "api_sufficient": true,
+   "api_hits": 9,
+   "api_borderline": false,
+   "access_evidence": "partial",
+   "access_note": "private vs approved tech partner integrations",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 2,
+   "truncated": false
+  },
+  {
+   "id": 32,
+   "name": "Meta Ads",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "client_secret",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 7,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "production use requires app review",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 4,
+   "truncated": false
+  },
+  {
+   "id": 33,
+   "name": "LinkedIn Ads",
+   "official_usable_pages": 3,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 4,
+   "api_borderline": true,
+   "access_evidence": "sufficient",
+   "access_note": "Development vs Standard tier; upgrade request with video",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 0,
+   "truncated": false
+  },
+  {
+   "id": 34,
+   "name": "GoHighLevel",
+   "official_usable_pages": 2,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "bearer",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 35,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "'API access is available across HighLevel subscription plans'",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 6,
+   "truncated": true
+  },
+  {
+   "id": 36,
+   "name": "Klaviyo",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api-key",
+    "api_key",
+    "bearer"
+   ],
+   "api_sufficient": true,
+   "api_hits": 15,
+   "api_borderline": false,
+   "access_evidence": "partial",
+   "access_note": "OAuth for tech partners; no explicit access terms",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 8,
+   "truncated": true
+  },
+  {
+   "id": 38,
+   "name": "Pinterest",
+   "official_usable_pages": 3,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "bearer",
+    "client secret",
+    "client_secret",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 7,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 2,
+   "truncated": false
+  },
+  {
+   "id": 39,
+   "name": "Threads (Meta)",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 30,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "permissions need App Review",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 0,
+   "truncated": false
+  },
+  {
+   "id": 41,
+   "name": "Shopify",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api token",
+    "client secret",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 8,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "'Some APIs also require Shopify's approval or a specific Shopify plan'",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 5,
+   "truncated": false
+  },
+  {
+   "id": 43,
+   "name": "BigCommerce",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api token",
+    "bearer",
+    "client secret",
+    "client_secret"
+   ],
+   "api_sufficient": true,
+   "api_hits": 25,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "free trial/sandbox store for API testing",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 6,
+   "truncated": true
+  },
+  {
+   "id": 44,
+   "name": "Salesforce Commerce Cloud",
+   "official_usable_pages": 3,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "bearer",
+    "client secret",
+    "client_secret",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 14,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 5,
+   "truncated": true
+  },
+  {
+   "id": 46,
+   "name": "Squarespace",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "bearer",
+    "client_secret",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 35,
+   "api_borderline": false,
+   "access_evidence": "partial",
+   "access_note": "OAuth/API-key availability notes only",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 2,
+   "truncated": true
+  },
+  {
+   "id": 47,
+   "name": "Ecwid",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "bearer",
+    "client_secret"
+   ],
+   "api_sufficient": true,
+   "api_hits": 4,
+   "api_borderline": true,
+   "access_evidence": "insufficient",
+   "access_note": "",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 0,
+   "truncated": false
+  },
+  {
+   "id": 52,
+   "name": "SE Ranking",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "api key",
+    "api_key",
+    "apikey"
+   ],
+   "api_sufficient": true,
+   "api_hits": 15,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "subscription limits + credit balance for Data API",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 3,
+   "truncated": false
+  },
+  {
+   "id": 53,
+   "name": "Ahrefs",
+   "official_usable_pages": 3,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "api key",
+    "api_key",
+    "bearer",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 19,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "'available on eligible paid plans'; limited free test queries",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 8,
+   "truncated": false
+  },
+  {
+   "id": 56,
+   "name": "Firecrawl",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api-key",
+    "api_key",
+    "apikey"
+   ],
+   "api_sufficient": true,
+   "api_hits": 24,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "free account gives API key; 'neither needs approval'",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 5,
+   "truncated": true
+  },
+  {
+   "id": 61,
+   "name": "GitHub",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "basic auth",
+    "bearer",
+    "oauth",
+    "personal access token"
+   ],
+   "api_sufficient": true,
+   "api_hits": 41,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "'approval' hits are org PAT policy",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 8,
+   "truncated": true
+  },
+  {
+   "id": 62,
+   "name": "Vercel",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api-key",
+    "api_key",
+    "apikey"
+   ],
+   "api_sufficient": true,
+   "api_hits": 25,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "'approval' hits are OAuth consent",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 9,
+   "truncated": true
+  },
+  {
+   "id": 63,
+   "name": "Netlify",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api token",
+    "bearer",
+    "client secret"
+   ],
+   "api_sufficient": true,
+   "api_hits": 30,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "'waitlist' is for a new UI, not the API",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 5,
+   "truncated": true
+  },
+  {
+   "id": 65,
+   "name": "Supabase",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "api key",
+    "api-key",
+    "apikey",
+    "bearer",
+    "jwt"
+   ],
+   "api_sufficient": true,
+   "api_hits": 5,
+   "api_borderline": false,
+   "access_evidence": "partial",
+   "access_note": "pricing section exists but about Auth MAU",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 9,
+   "truncated": true
+  },
+  {
+   "id": 66,
+   "name": "Neo4j",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "basic auth",
+    "bearer",
+    "jwt"
+   ],
+   "api_sufficient": true,
+   "api_hits": 2,
+   "api_borderline": true,
+   "access_evidence": "partial",
+   "access_note": "AuraDB Free/Professional trial rate limits",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 4,
+   "truncated": true
+  },
+  {
+   "id": 70,
+   "name": "Sentry",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api_key",
+    "bearer",
+    "client_secret"
+   ],
+   "api_sufficient": true,
+   "api_hits": 14,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 10,
+   "truncated": true
+  },
+  {
+   "id": 71,
+   "name": "Notion",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api token",
+    "api_key",
+    "bearer"
+   ],
+   "api_sufficient": true,
+   "api_hits": 3,
+   "api_borderline": true,
+   "access_evidence": "partial",
+   "access_note": "PAT creation restricted on Business/Enterprise by default",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 5,
+   "truncated": false
+  },
+  {
+   "id": 72,
+   "name": "Airtable",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api-key",
+    "bearer",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 6,
+   "api_borderline": false,
+   "access_evidence": "partial",
+   "access_note": "some features Enterprise Scale/Business only",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 6,
+   "truncated": true
+  },
+  {
+   "id": 73,
+   "name": "Linear",
+   "official_usable_pages": 2,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api_key",
+    "apikey",
+    "basic auth",
+    "bearer"
+   ],
+   "api_sufficient": true,
+   "api_hits": 7,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "",
+   "hold_reason": "identity unconfirmed (Linear)",
+   "mcp_official_domain_hits": 1,
+   "truncated": true
+  },
+  {
+   "id": 75,
+   "name": "Asana",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api token",
+    "bearer",
+    "oauth"
+   ],
+   "api_sufficient": true,
+   "api_hits": 22,
+   "api_borderline": false,
+   "access_evidence": "partial",
+   "access_note": "Enterprise+ admin controls affect PATs",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 5,
+   "truncated": true
+  },
+  {
+   "id": 76,
+   "name": "Monday.com",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api token",
+    "api_key",
+    "apikey"
+   ],
+   "api_sufficient": true,
+   "api_hits": 15,
+   "api_borderline": false,
+   "access_evidence": "sufficient",
+   "access_note": "sign up + trial account for building apps",
+   "hold_reason": null,
+   "mcp_official_domain_hits": 10,
+   "truncated": false
+  },
+  {
+   "id": 78,
+   "name": "Coda",
+   "official_usable_pages": 4,
+   "auth_sufficient": true,
+   "auth_kinds_seen": [
+    "access token",
+    "api key",
+    "api token",
+    "api-key",
+    "bearer"
+   ],
+   "api_sufficient": true,
+   "api_hits": 9,
+   "api_borderline": false,
+   "access_evidence": "insufficient",
+   "access_note": "'approval' is OAuth consent screen",
+   "hold_reason": "identity unconfirmed (Coda)",
+   "mcp_official_domain_hits": 1,
+   "truncated": true
+  }
+ ],
+ "access_counts": {
+  "sufficient": 11,
+  "partial": 8,
+  "insufficient": 10
+ }
+}

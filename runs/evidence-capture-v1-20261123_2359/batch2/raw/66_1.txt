@@ -1,0 +1,536 @@
+
+Authentication - Neo4j Aura
+ Docs
+Docs
+Neo4j DBMS
+Getting Started
+Operations
+Migration and Upgrade
+Data Ingestion Guide
+Status Codes
+Java Reference
+Kerberos Add-on
+Neo4j Aura
+Neo4j Tools
+Neo4j Bloom
+Neo4j Browser
+Neo4j Data Importer
+Neo4j Desktop
+Neo4j Enterprise Studio
+Neo4j Ops Manager
+Neodash commercial
+Neo4j Graph Data Science
+Neo4j Graph Data Science Library
+Neo4j Graph Data Science Client
+Neo4j Graph Analytics for Snowflake
+Cypher Query Language
+Cypher
+Cypher Cheat Sheet
+APOC Library
+Generative AI
+Neo4j GraphRAG for Python
+Embeddings and vector indexes tutorial
+GenAI plugin
+Vector search indexes
+Vector search functions
+GraphQL vector index search documentation
+Create applications
+Python Driver
+Go Driver
+Java Driver
+JDBC Driver
+JavaScript Driver
+.Net Driver
+MCP
+Neo4j GraphQL Library
+Neo4j Visualization Library
+OGM Library
+Spring Data Neo4j
+HTTP API
+Neo4j Query API
+Bolt
+Connect data sources
+Neo4j Connector for Apache Spark
+Neo4j Connector for Apache Kafka
+Change Data Capture (CDC)
+BigQuery to Neo4j
+Google Cloud to Neo4j
+Labs
+GenAI Ecosystem
+LLM Knowledge Graph Builder
+Vector Index & Search
+LangChain
+LangChain.js
+LlamaIndex
+Haystack
+DSPy
+Agent Memory
+Getting Started
+Tutorials
+Framework Integrations
+MCP Server
+Developer Tools
+APOC Extended
+Aura CLI
+arrows.app
+Cypher Workbench
+ETL Tool
+NeoDash
+Frameworks & Integrations
+Needle Starter Kit
+Neo4j Plugin for Liquibase
+Neo4j Migrations
+neomodel
+RDF & Linked Data
+Neosemantics (Java)
+RDFLib-Neo4j (Python)
+Get Help
+Community Forum
+Discord Chat
+Product Support
+Neo4j Developer Blog
+Neo4j Videos
+GraphAcademy
+Beginners Courses
+Neo4j Fundamentals
+Cypher Fundamentals
+Importing Data Fundamentals
+Importing CSV Data
+Graph Data Modeling
+Data Scientist Courses
+Get started with Graph Data Science
+Path Finding
+Generative AI Courses
+Neo4j & Generative AI Fundamentals
+Vector Indexes & Unstructured Data
+Constructing Knowledge Graphs
+Building Agents in Neo4j Aura
+Neo4j Certification
+Neo4j Certified Professional
+Neo4j Graph Data Science Certification
+Get Started Free
+Theme
+Light
+Dark
+Search
+Skip to content
+Neo4j Aura
+ Neo4j Aura
+Introduction
+About Aura
+Visual tour
+Neo4j AuraDB quotas and limits
+Quick start
+Free trial
+Create an account
+Create an instance
+Connect to an instance
+Migrate metadata
+Aura Assistant
+Cloud provider marketplaces
+Manage instances
+Instance actions
+Instance details
+Instances explorer (Preview feature)
+Multiple databases
+Self-managed instances
+Secondaries
+Resources
+Custom endpoints
+Migration Readiness Report
+Develop
+Regions
+Backup, export, restore, and upload
+Vector optimization
+Cypher version
+Manage projects
+Create a project
+Delete and restore projects
+Virtual Graph (Public Preview)
+Graph analytics in Aura
+Overview
+Aura Graph Analytics
+Alternative deployment options
+Migrate to Aura Graph Analytics
+Aura Agent
+Import data
+What is Import?
+Quick start
+Visual tour
+Data provision
+Model data
+Map data
+Indexes and constraints
+Run the import
+Data sources
+Appendix
+Query data
+What is Query?
+Visual tour
+Query operations
+Command reference
+Explore data with Bloom
+What is Bloom?
+Quick start
+Visual tour
+Bloom overview
+Perspective drawer
+Styling
+Search bar
+Card list
+Scene interactions
+Perspectives
+Perspectives - A business view of the graph
+Creation and use
+Refresh Perspectives
+Database scans
+Bloom features in detail
+Graph pattern search
+Search phrases for advanced queries
+Scene actions
+Full-text search
+Edit graph data
+Graph Data Science integration
+Slicer
+Scenes and sharing data
+Default actions and shortcuts
+Dashboards
+Overview
+Create dashboards with AI
+Create dashboards with Cypher
+Managing dashboards
+Import and export
+Sharing dashboards
+Visualizations
+Graph
+Table
+Line chart
+Bar chart
+Pie chart
+Scatter chart
+Single value
+Text
+Map
+Interactivity in dashboards
+Filters
+Filter types
+Multi select filters
+Parameters
+List parameters
+Actions
+Cell click action
+Row select action
+FAQ and resources
+Document Intelligence (Preview feature)
+What is Document Intelligence?
+Quick start
+Visual tour
+Data provision
+Indexes and constraints
+Import
+Fleet Manager
+Overview
+Add a deployment
+Inspect deployment
+Deployment details
+Fleet Manager procedures
+Migrate to Aura
+Data transparency
+Aura API
+Aura CLI
+Deployment health check
+APOC support
+Aura CLI
+Introduction
+Installation
+Initial configuration
+Working with AuraDB tenants
+Managing AuraDB instances
+Configuration
+Migration
+Metrics
+View metrics
+Metrics integration
+Introduction
+Integration Process
+Endpoint Status
+Examples
+Reference
+Logs
+Query log analyzer
+Security log analyzer
+Log forwarding
+Download logs
+Activity feed
+Security
+Multi-factor authentication
+Single sign-on
+IP filtering
+Aura IP addresses and ports
+Secure connections
+Private endpoints for Business Critical on AWS (Preview feature)
+Encryption
+Customer Managed Keys
+Tool authentication with Aura user
+Inactive organization member pruning
+User management
+Billing and usage
+Cost explorer
+Billing dimensions
+Payment options
+Billing alerts
+Connecting applications
+Drivers and libraries
+Using Query API
+Neo4j Connectors
+Neo4j Connector for Apache Spark
+Neo4j Connector for Apache Kafka
+Neo4j Connector for BI
+Aura API
+Overview
+Authentication
+Create an AuraDB instance in the terminal
+API Specification
+Support
+Tutorials
+Upgrade and migration
+Migrate a version 4 instance to the latest version
+Migrate from self-managed Neo4j to Aura
+Migrating your AuraDB Free instance to another AuraDB tier
+Migrate an AuraDS Professional instance to AuraDB Professional
+Integrating with Neo4j Connectors
+Using the Neo4j Connector for Apache Spark
+Using the Neo4j BI Connector
+Improving Cypher performance
+Troubleshooting
+Is this page helpful?
+Neo4j Aura
+ Aura API
+ Authentication
+Raise an issue
+Authentication
+The Aura API uses OAuth 2.0 for API authentication.
+Creating credentials
+All tiers can create Aura API credentials.
+API credentials are linked to the user account, inheriting its capabilities and roles.
+The API credentials never expire unless you delete them.
+To create credentials in the Aura console go to the 
+Client credentials page
+ in your browser, or:
+Go to your profile menu from the top right corner of your screen
+Select 
+Account Settings
+Select the 
+Client credentials
+ tab and 
+Aura API
+Select the 
+Create client credential
+ button
+Enter a Client 
+Name
+, and select 
+Create
+.
+Save
+ the Client ID and Client Secret you are given in the resulting modal.
+You cannot retrieve your Client Secret after you close the modal, so save it securely.
+Authenticating API requests
+To authenticate API requests to the 
+Aura API
+, you must provide a Bearer Token in the 
+Authorization
+ header of each request as shown below:
+Authorization: Bearer <access_token>
+You can use the 
+Authorize
+ button on the 
+Aura API
+ page to authenticate and test endpoints directly using your client ID and client secret. The UI sets the 
+Authorization
+ header for you.
+Token endpoint
+You can use the following 
+/oauth/token
+ endpoint to obtain a Bearer Token for authenticating API requests.
+Authentication to the token endpoint uses HTTP Basic Authentication, where the client ID and client secret are provided as the username and password, respectively.
+Request parameters
+Method: 
+POST
+Token URL: 
+https://api.neo4j.io/oauth/token
+Request header
+Parameter
+Value
+Authorization 
+[
+1
+]
+Basic <credentials>
+[
+2
+]
+Content-Type
+application/x-www-form-urlencoded
+1
+. This header is set for you when providing your client ID as the username and client secret as the password.
+2
+. Where 
+<credentials>
+ is the base64-encoded string of your client ID and client secret, joined by a colon (
+:
+).
+Request body
+Parameter
+Value
+grant_type
+client_credentials
+Both the request and response contain sensitive information and must be kept secure.
+You are responsible for keeping the client credentials and access tokens confidential, whether in transit (by specifying HTTPS), if stored at rest, in log files, etc.
+Request examples
+curl --request POST 'https://api.neo4j.io/oauth/token' \
+ --user '<client_id>:<client_secret>' \ 
+(1)
+ --header 'Content-Type: application/x-www-form-urlencoded' \
+ --data-urlencode 'grant_type=client_credentials'
+1
+The 
+--user
+ option sets the 
+Authorization
+ header for you, handling the base64 encoding of the client ID and client secret.
+import requests
+from requests.auth import HTTPBasicAuth
+# Make the request to the Aura API Auth endpoint
+response = requests.request(
+ "POST",
+ "https://api.neo4j.io/oauth/token",
+ headers={"Content-Type": "application/x-www-form-urlencoded"},
+ data={"grant_type": "client_credentials"},
+ auth=HTTPBasicAuth(client_id, client_secret) 
+(1)
+)
+print(response.json())
+1
+client_id
+ and 
+client_secret
+ must be set to the values obtained from the Aura Console.
+Response body example
+{
+ "access_token": "<token>", 
+(1)
+ "expires_in": 3600, 
+(2)
+ "token_type": "bearer"
+}
+1
+The 
+access_token
+ returned here is what you will provide as the Bearer Token in the 
+Authorization
+ header of Aura API requests.
+2
+The value of 
+expires_in
+ is the token expiration time in seconds.
+Once the token expires, the application must request a new one.
+HTTP response codes
+Code
+Message
+Description
+200
+Success
+Access token requested successfully.
+400
+Bad Request
+Request is invalid.
+401
+Unauthorized
+The provided credentials are invalid, expired, or revoked.
+403
+Forbidden
+The request body is invalid.
+404
+Not Found
+The request body is missing.
+Excessive token requests
+Excessive token requests may cause inefficiencies or rate-limiting.
+You can optimize your API usage by following these steps:
+Retrieve the token once per hour:
+ As tokens remain valid for an hour, reduce the frequency of token requests and reuse the same token for multiple API calls.
+Implement token caching:
+ Store the token securely within your system to reuse it for subsequent requests during its validity period, minimizing unnecessary calls to the endpoint.
+Token expiration
+Access tokens are temporary and expire after one hour.
+If you send a request to the Aura API using an expired token, you will receive a 
+403 Forbidden
+ response.
+To continue using the API, you must obtain a new token using the Aura API credentials.
+Overview
+Create an AuraDB instance in the terminal
+ Join the User Research panel
+Influence the future of Neo4j products by sharing your experiences with a researcher.
+ Learn more
+Products
+Neo4j Graph Database
+Neo4j AuraDB
+Neo4j Graph Data Science
+Deployment Center
+Professional Services
+Pricing
+Developers
+Developer Home
+Documentation
+Deployment Center
+Developer Blog
+Community
+Virtual Events
+GraphAcademy
+Learn
+Resource Library
+Neo4j Blog
+GraphAcademy
+Research Center
+Case Studies
+Events Calendar
+NODES 2026
+Webinars
+Company
+About Us
+Newsroom
+Awards and Honors
+Careers
+Culture
+Leadership
+Support
+Social Networks
+© 
+2026
+ Neo4j, Inc.
+Terms
+ | 
+Privacy Policy
+ | 
+Sitemap
+Neo4j
+®
+, Neo Technology
+®
+, Cypher
+®
+, Neo4j
+®
+ Bloom
+™
+, Neo4j
+®
+ AuraDB
+℠
+ and
+ Neo4j
+®
+ AuraDS
+℠
+ are registered trademarks
+ of Neo4j, Inc. All other marks are owned by their respective companies.

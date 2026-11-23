@@ -1,0 +1,263 @@
+{
+ "created": "2026-11-23T18:36:03+0530",
+ "derivation": "independent (primary artifacts) then reconciled against master coverage + ledger",
+ "matrix": {
+  "ORIGINAL_NOTION_LIST_1_50": {
+   "COMPLETED_BASELINE": 23,
+   "COMPLETED_BASELINE_QUARANTINED": 0,
+   "PLANNED_FROZEN_V1F": 16,
+   "HELD_NEO4J_OPTION_B_PREPARED": 0,
+   "HELD_IDENTITY_PROVISIONAL": 0,
+   "EXCLUDED_IDENTITY_UNRESOLVED": 1,
+   "UNPLANNED": 10
+  },
+  "RECONSTRUCTED_LIST_51_100": {
+   "COMPLETED_BASELINE": 2,
+   "COMPLETED_BASELINE_QUARANTINED": 1,
+   "PLANNED_FROZEN_V1F": 12,
+   "HELD_NEO4J_OPTION_B_PREPARED": 1,
+   "HELD_IDENTITY_PROVISIONAL": 2,
+   "EXCLUDED_IDENTITY_UNRESOLVED": 1,
+   "UNPLANNED": 31
+  }
+ },
+ "row_sums": {
+  "ORIGINAL_NOTION_LIST_1_50": 50,
+  "RECONSTRUCTED_LIST_51_100": 50
+ },
+ "column_sums": {
+  "COMPLETED_BASELINE": 25,
+  "COMPLETED_BASELINE_QUARANTINED": 1,
+  "PLANNED_FROZEN_V1F": 28,
+  "HELD_NEO4J_OPTION_B_PREPARED": 1,
+  "HELD_IDENTITY_PROVISIONAL": 2,
+  "EXCLUDED_IDENTITY_UNRESOLVED": 2,
+  "UNPLANNED": 41
+ },
+ "master_counts": {
+  "COMPLETED_BASELINE": 25,
+  "UNPLANNED": 41,
+  "PLANNED_FROZEN_V1F": 28,
+  "EXCLUDED_IDENTITY_UNRESOLVED": 2,
+  "COMPLETED_BASELINE_QUARANTINED": 1,
+  "HELD_NEO4J_OPTION_B_PREPARED": 1,
+  "HELD_IDENTITY_PROVISIONAL": 2
+ },
+ "id_lists": {
+  "ORIGINAL_NOTION_LIST_1_50|COMPLETED_BASELINE": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   16,
+   17,
+   18,
+   19,
+   21,
+   22,
+   23,
+   28,
+   49
+  ],
+  "ORIGINAL_NOTION_LIST_1_50|COMPLETED_BASELINE_QUARANTINED": [],
+  "ORIGINAL_NOTION_LIST_1_50|PLANNED_FROZEN_V1F": [
+   20,
+   25,
+   26,
+   27,
+   29,
+   32,
+   33,
+   34,
+   36,
+   38,
+   39,
+   41,
+   43,
+   44,
+   46,
+   47
+  ],
+  "ORIGINAL_NOTION_LIST_1_50|HELD_NEO4J_OPTION_B_PREPARED": [],
+  "ORIGINAL_NOTION_LIST_1_50|HELD_IDENTITY_PROVISIONAL": [],
+  "ORIGINAL_NOTION_LIST_1_50|EXCLUDED_IDENTITY_UNRESOLVED": [
+   50
+  ],
+  "ORIGINAL_NOTION_LIST_1_50|UNPLANNED": [
+   15,
+   24,
+   30,
+   31,
+   35,
+   37,
+   40,
+   42,
+   45,
+   48
+  ],
+  "RECONSTRUCTED_LIST_51_100|COMPLETED_BASELINE": [
+   51,
+   84
+  ],
+  "RECONSTRUCTED_LIST_51_100|COMPLETED_BASELINE_QUARANTINED": [
+   58
+  ],
+  "RECONSTRUCTED_LIST_51_100|PLANNED_FROZEN_V1F": [
+   52,
+   53,
+   56,
+   61,
+   62,
+   63,
+   65,
+   70,
+   71,
+   72,
+   75,
+   76
+  ],
+  "RECONSTRUCTED_LIST_51_100|HELD_NEO4J_OPTION_B_PREPARED": [
+   66
+  ],
+  "RECONSTRUCTED_LIST_51_100|HELD_IDENTITY_PROVISIONAL": [
+   73,
+   78
+  ],
+  "RECONSTRUCTED_LIST_51_100|EXCLUDED_IDENTITY_UNRESOLVED": [
+   80
+  ],
+  "RECONSTRUCTED_LIST_51_100|UNPLANNED": [
+   54,
+   55,
+   57,
+   59,
+   60,
+   64,
+   67,
+   68,
+   69,
+   74,
+   77,
+   79,
+   81,
+   82,
+   83,
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99,
+   100
+  ]
+ },
+ "planned_phase_split": {
+  "ORIGINAL_NOTION_LIST_1_50": {
+   "1": 7,
+   "2": 9
+  },
+  "RECONSTRUCTED_LIST_51_100": {
+   "1": 8,
+   "2": 4
+  }
+ },
+ "expansion_wave_split": {
+  "3B_partial_targeted_reretrieval": {
+   "ORIGINAL_NOTION_LIST_1_50": 3,
+   "RECONSTRUCTED_LIST_51_100": 3
+  },
+  "3A_core_ready_access_topup": {
+   "ORIGINAL_NOTION_LIST_1_50": 7,
+   "RECONSTRUCTED_LIST_51_100": 7
+  },
+  "3H_provisional_identity_hold": {
+   "ORIGINAL_NOTION_LIST_1_50": 0,
+   "RECONSTRUCTED_LIST_51_100": 2
+  },
+  "4_no_retrieval_full_discovery": {
+   "ORIGINAL_NOTION_LIST_1_50": 0,
+   "RECONSTRUCTED_LIST_51_100": 19
+  }
+ },
+ "checks": [
+  {
+   "check": "original IDs 1-50 sum to 50",
+   "passed": true,
+   "detail": "50"
+  },
+  {
+   "check": "reconstructed IDs 51-100 sum to 50",
+   "passed": true,
+   "detail": "50"
+  },
+  {
+   "check": "grand total 100",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "independent status == master coverage status for EVERY app",
+   "passed": true,
+   "detail": "0 mismatches"
+  },
+  {
+   "check": "every status column total == master coverage count",
+   "passed": true,
+   "detail": "{\"COMPLETED_BASELINE\": [25, 25], \"COMPLETED_BASELINE_QUARANTINED\": [1, 1], \"PLANNED_FROZEN_V1F\": [28, 28], \"HELD_NEO4J_OPTION_B_PREPARED\": [1, 1], \"HELD_IDENTITY_PROVISIONAL\": [2, 2], \"EXCLUDED_IDENTITY_UNRESOLVED\": [2, 2], \"UNPLANNED\": [41, 41]}"
+  },
+  {
+   "check": "provenance == master coverage provenance for every app",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "ledger provenance_group agrees for every app",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "status == ledger master_status for every app",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "v1f phase split sums to the PLANNED column (15 + 13 = 28)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "expansion waves sum to the UNPLANNED column (41) and to the expansion plan",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "a reconstructed app is never flagged as notion-verified (master + ledger)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "baseline records: 25 + 1 quarantined = 26 = files in baseline/p1_v1/pass1",
+   "passed": true,
+   "detail": ""
+  }
+ ]
+}

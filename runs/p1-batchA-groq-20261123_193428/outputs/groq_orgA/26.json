@@ -1,0 +1,147 @@
+{
+ "tag": "groq_orgA",
+ "app": 26,
+ "name": "Discord",
+ "status": "ok",
+ "model": "openai/gpt-oss-120b",
+ "model_returned": "openai/gpt-oss-120b",
+ "model_identity_verified": true,
+ "attempts_for_app": 8,
+ "latency_s": 2.67,
+ "tokens_in": 2085,
+ "tokens_out": 868,
+ "cost_usd": 0,
+ "validation_schema": {
+  "json_ok": true,
+  "schema_ok": true,
+  "errors": []
+ },
+ "validation_v2": {
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.discord.com/developers/reference",
+    "quote": "1. Using a bot token found on the Bot page within your app\u2019s settings... 2. Using an OAuth2 bearer token gained through the OAuth2 API. 3. Using basic authentication with credentials as the client ID and client secret...",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "access",
+    "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+    "quote": "A Discord application is the core entity that represents your integration with the Discord platform... created in the Discord Developer Portal.",
+    "issues": [
+     "stitched_ellipsis",
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+    "quote": "The HTTP API is a REST API that lets you interact and modify core Discord resources like channels, servers (or guilds), users, and messages.",
+    "issues": [],
+    "valid": true
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.discord.com/developers/discord-social-sdk/how-to/use-with-discord-apis",
+    "quote": "Discord Social SDK downloaded and configured",
+    "issues": [
+     "not_contiguous_in_cited_page"
+    ],
+    "valid": false
+   }
+  ],
+  "claims": [
+   {
+    "field": "auth_methods",
+    "item": "oauth2",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "api_key",
+    "state": "unsupported"
+   },
+   {
+    "field": "auth_methods",
+    "item": "basic",
+    "state": "unsupported"
+   },
+   {
+    "field": "access",
+    "item": "self_serve_free",
+    "state": "unsupported"
+   },
+   {
+    "field": "api_types",
+    "item": "rest",
+    "state": "supported_lexical"
+   },
+   {
+    "field": "existing_mcp",
+    "item": "official",
+    "state": "unsupported"
+   }
+  ],
+  "claim_state_counts": {
+   "unsupported": 5,
+   "supported_lexical": 1
+  },
+  "evidence_total": 4,
+  "evidence_valid": 1,
+  "issue_counts": {
+   "placeholder_or_too_short": 0,
+   "stitched_ellipsis": 2,
+   "too_long": 0,
+   "url_not_in_sources": 0,
+   "not_contiguous_in_cited_page": 3,
+   "not_in_shown_evidence": 0
+  }
+ },
+ "output": {
+  "one_liner": "Discord is a communications platform offering bots, rich presence, voice chat and a REST API plus SDKs for building integrations.",
+  "auth_methods": [
+   "oauth2",
+   "api_key",
+   "basic"
+  ],
+  "access": "self_serve_free",
+  "access_note": "Developers create an application in the Discord Developer Portal to obtain bot tokens and OAuth2 credentials at no cost.",
+  "api_types": [
+   "rest"
+  ],
+  "api_breadth": "broad",
+  "existing_mcp": "official",
+  "buildability": "yes",
+  "blocker": "none",
+  "evidence": [
+   {
+    "field": "auth_methods",
+    "url": "https://docs.discord.com/developers/reference",
+    "quote": "1. Using a bot token found on the Bot page within your app\u2019s settings... 2. Using an OAuth2 bearer token gained through the OAuth2 API. 3. Using basic authentication with credentials as the client ID and client secret..."
+   },
+   {
+    "field": "access",
+    "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+    "quote": "A Discord application is the core entity that represents your integration with the Discord platform... created in the Discord Developer Portal."
+   },
+   {
+    "field": "api_types",
+    "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+    "quote": "The HTTP API is a REST API that lets you interact and modify core Discord resources like channels, servers (or guilds), users, and messages."
+   },
+   {
+    "field": "existing_mcp",
+    "url": "https://docs.discord.com/developers/discord-social-sdk/how-to/use-with-discord-apis",
+    "quote": "Discord Social SDK downloaded and configured"
+   }
+  ]
+ },
+ "raw_text": null,
+ "prompt_sha256": "6fbadbe34b14d6896ae22a389d23944490d185dbd9b2270e07cb72165ee60e30",
+ "at": "2026-11-23T19:48:37+05:30"
+}

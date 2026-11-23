@@ -1,0 +1,48 @@
+---
+updatedAt: 2026-04-13T18:53:49.000Z
+agentTools:
+  projectIndex: https://developer.clickup.com/llms.txt
+---
+
+# API availability by Plan
+
+Our Public API is available on all [ClickUp Plans](https://clickup.com/pricing) . Some endpoints and parameters are limited by plan.
+
+# Endpoints available on the Enterprise Plan
+
+The following endpoints are only available on the Enterprise Plan:
+
+**Manage users**
+
+* [Invite User To Workspace](https://developer.clickup.com/reference/inviteusertoworkspace)
+* [Get User](https://developer.clickup.com/reference/getuser)
+* [Edit User On Workspace](https://developer.clickup.com/reference/edituseronworkspace)
+* [Remove User From Workspace](https://developer.clickup.com/reference/removeuserfromworkspace)
+
+**Manage guests**
+
+* [Invite Guest To Workspace](https://developer.clickup.com/reference/inviteguesttoworkspace)
+* [Get Guest](https://developer.clickup.com/reference/getguest)
+* [Edit Guest On Workspace](https://developer.clickup.com/reference/editguestonworkspace)
+* [Remove Guest From Workspace](https://developer.clickup.com/reference/removeguestfromworkspace)
+* [Add Guest To Task](https://developer.clickup.com/reference/addguesttotask)
+* [Remove Guest From Task](https://developer.clickup.com/reference/removeguestfromtask)
+* [Add Guest To List](https://developer.clickup.com/reference/addguesttolist)
+* [Remove Guest From List](https://developer.clickup.com/reference/removeguestfromlist)
+* [Add Guest To Folder](https://developer.clickup.com/reference/addguesttofolder)
+* [Remove Guest From Folder](https://developer.clickup.com/reference/removeguestfromfolder)
+
+# Parameters available by Plan
+
+When using [Update Space](https://developer.clickup.com/reference/updatespace):
+
+* `admin_can_manage` is only available on the Enterprise Plan.
+
+When using [Create a time entry](https://developer.clickup.com/reference/createatimeentry), [Start a time Entry](https://developer.clickup.com/reference/startatimeentry), or [Update a time Entry](https://developer.clickup.com/reference/updateatimeentry) :
+
+* Unlimited uses of `tags` is available on the Business Plus and Enterprise Plan. [Learn more](https://help.clickup.com/hc/en-us/articles/29754533547415-Time-Tracking-feature-availability-and-limits)
+* The `tid` parameter associates time entries with tasks. Unlimited uses of time entries that are not associated with tasks is available on the Business Plus and Enterprise Plan. [Learn more](https://help.clickup.com/hc/en-us/articles/29754533547415-Time-Tracking-feature-availability-and-limits)
+
+When using [Create a time entry](https://developer.clickup.com/reference/createatimeentry):
+
+* Unlimited uses of `assignee`parameter for other people is available on the Business Plus and Enterprise Plan.

@@ -1,0 +1,122 @@
+
+Security for other integrations
+Developer
+Documentation
+Resources
+News and Updates
+Get Support
+Sign in
+Developer
+Get Support
+Sign in
+DOCUMENTATION
+Cloud
+Data Center
+Resources
+News and Updates
+Get support
+Sign in
+Developer
+Sign in
+DOCUMENTATION
+Cloud
+Data Center
+Resources
+News and Updates
+Get support
+Sign in
+Jira Cloud platform
+Guides
+Reference
+REST API
+Document Format
+Jira expressions
+Entity properties
+JQL search extensibility
+Connect
+Resources
+Changelog
+Jira Cloud platform
+Guides
+Reference
+Resources
+Changelog
+About Jira Cloud platform
+Introduction and basics
+Getting started with Forge
+Security
+Security overview
+Security for Forge apps
+Scopes for OAuth 2.0 (3LO) and Forge apps
+OAuth 2.0 (3LO) apps
+Basic auth for REST APIs
+Data security policy developer guide
+Learning
+Forge tutorials and example apps
+Rate limiting
+Build an app that respects rate limits
+Bulk Operation APIs: Additional Examples and FAQs
+Privacy guidelines
+User privacy guide for app developers
+Profile visibility
+Building blocks
+Forge concepts
+Storing data with entity properties
+Jira expressions
+Other considerations
+Atlassian Design Guidelines
+Atlaskit
+Atlassian Marketplace
+Cloud app licensing
+Developer canary program
+Developing apps for Jira Cloud mobile
+Last updated Nov 23, 2026
+Security for other integrations
+Integrations with Jira Cloud can be implemented by allowing external applications or services, scripts, or even bots, to access Jira's APIs directly. If you are not doing this and you are using the Connect framework instead, see 
+Security for Connect apps
+.
+Authentication and authorization are the two key parts of implementing security. Authentication tells Jira Cloud the identity of your integration, and authorization determines what actions it can take within Jira. If you are building an integration that does not use Atlassian Connect, there are two methods that you can use for authentication and authorization:
+OAuth 2.0 authorization code grants (3LO)
+: This is the recommended method. You should use this for most cases.
+Basic authentication
+: You should only use this method for tools like personal scripts or bots.
+OAuth 2.0 authorization code grants (3LO)
+OAuth 2.0 authorization code grants, also known as three-legged OAuth, is a token-based method for authentication and authorization. This method allows your integration to access Atlassian product APIs on a user's behalf. Unlike two-legged OAuth, three-legged OAuth involves the end user in the authorization process by asking them to consent to access to their data.
+Authenticated access is provided by an access token that is used to make calls to the API. OAuth 2.0 authorization code grants require an app created in the 
+developer console
+. This app provides the authentication credentials that are used to get an access token for the desired API.
+Authorization for OAuth 2.0 authorization code grants is implemented via scopes. Scopes statically specify the maximum set of actions that an app may perform (see 
+scopes
+). Note, OAuth 2.0 authorization code-only scopes are different to 
+Connect scopes
+.
+To learn more, read 
+OAuth 2.0 authorization code grants (3LO)
+.
+Basic authentication
+Basic authentication uses an API token to authenticate the client. The token is generated from a user's Atlassian Account, encoded, then added to the header for requests to the API.
+Authorization for basic authentication is based on the permissions of the user you used to generate the API token. For example, if you are using basic authentication, your user must have the 
+Edit Issue
+ permission on an issue in order to make a PUT request to the 
+/issue
+ resource.
+We recommend that you don't use basic authentication. It may be easier to implement, but it is much less secure. Consider using OAuth 2.0 authorization code grants (3LO) instead.
+To learn more, read 
+Basic auth for REST APIs
+.
+Rate this page:
+Unusable
+Poor
+Okay
+Good
+Excellent
+Changelog
+System status
+Privacy
+Notice at Collection
+Developer Terms
+Trademark
+Cookie preferences
+© 
+2026
+ Atlassian

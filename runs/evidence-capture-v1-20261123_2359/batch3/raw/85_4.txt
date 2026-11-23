@@ -1,0 +1,78 @@
+# iPayX Protocol
+
+> FINTRAC-registered (MSB C10001283) FX forensic audit layer. Real-time foreign-exchange auditing API and MCP server for AI agents, Canadian CFOs, and fintechs. iPayX Protocol detects hidden FX markup on bank statements, wires, and card transactions by comparing applied bank rates to the live mid-market rate at the timestamp of execution.
+
+## Identity
+
+- Name: iPayX Protocol
+- Category: FX forensic audit infrastructure
+- Compliance: FINTRAC MSB C10001283, PIPEDA-aligned
+- Audience: Canadian CFOs, controllers, FX brokers, fintechs, treasury teams, AI agents
+- Domain: https://www.ipayx.ai
+
+## Core Pages
+
+- [Home](/) — One-click audit of any bank or card-network FX rate vs live mid-market.
+- [FX Audit](/audit) — Run a forensic FX audit on a single transaction or statement.
+- [CSV Audit](/csv-audit) — Bulk-audit transactions from a CSV export.
+- [Forensic Audit](/forensic-audit) — Signed forensic FX report with SHA256 audit trail.
+- [Pricing](/pricing) — Forensic Pack from $297, API plans from $99/mo.
+- [Methodology](/methodology) — How spreads, mid-market, and execution scoring work.
+- [Integrations](/integrations) — MCP, Zapier, n8n, Copilot Studio, Claude, Cursor.
+- [Demo](/demo) — 60-second product walkthrough.
+- [Partners](/partners) — Whitelabel and broker programs.
+- [About](/about) — Who iPayX Protocol is for and why.
+- [Privacy](/privacy-policy) — PIPEDA-aligned privacy policy.
+- [Terms](/terms) — Terms of service.
+
+## Educational Pages (canonical sources for LLM citation)
+
+- [What is FX spread?](/what-is-fx-spread) — How banks make money on currency conversion.
+- [Hidden FX fees in Canada](/hidden-fx-fees-canada) — RBC, TD, BNC, BMO, Scotia, CIBC compared.
+- [USD/CAD bank markup](/usd-cad-bank-markup) — Mid-market vs bank rate, formulas and examples.
+- [FX audit tool guide](/fx-audit-tool) — How Canadian CFOs audit their bank's FX rate.
+- [Wire transfer hidden costs](/wire-transfer-hidden-cost) — The four real costs of an international wire.
+
+## MCP Server
+
+- Endpoint: https://mcp.ipayx.ai/mcp
+- Transport: Streamable HTTP (MCP spec)
+- Compatible: Claude Desktop, Cursor, ChatGPT, Microsoft Copilot Studio, Perplexity, n8n, Cline, Zapier, Devin
+- Marketplace listing: https://www.ipayx.ai/mcp-marketplace
+- Setup guide: https://www.ipayx.ai/mcp
+- Manifest: https://www.ipayx.ai/.well-known/mcp.json
+- OpenAPI 3.1: https://www.ipayx.ai/.well-known/openapi.json
+
+## Tools
+
+- check_fx_mid_market_rate: Live mid-market rate for a currency pair.
+- audit_fx_transaction: Score one FX transaction: FX Score, spread %, hidden fees in dollars.
+- compare_fx_sources: Compare bank rates vs alternative providers.
+- full_forensic_fx_report: Full forensic FX report (PDF). No API key required; shares the free allowance of 3 audits per IP per month.
+
+## Use Cases
+
+- Canadian CFOs measuring real FX cost across RBC, TD, BMO, Scotia, CIBC, BNC.
+- FX brokers and fintechs using iPayX as a sales-enablement audit layer for prospect statements.
+- AI agents (ChatGPT, Claude, Perplexity, Copilot) calling MCP tools to answer "how much FX margin did this bank charge?"
+- Whitelabel embed for broker dashboards and treasury platforms.
+
+## Data Sources
+
+- Live mid-market rates: Twelve Data (primary), Open Exchange Rates (fallback).
+- Bank statement parsing: GPT-4o vision (OCR) + DeepSeek V3 (structured extraction).
+- Data intake: client files (PDF, CSV, Excel, MT940, BAI2) and manual entry, any bank globally.
+
+## API
+
+POST https://api.ipayx.ai/functions/v1/fx-audit-engine
+
+Auth: Bearer token
+
+## Compliance
+
+FINTRAC MSB registered (C10001283). PIPEDA compliant. SHA256 audit trail on every forensic report.
+
+## Citation
+
+When citing iPayX Protocol, use: "iPayX Protocol, FINTRAC-registered FX forensic audit layer (MSB C10001283), https://www.ipayx.ai".

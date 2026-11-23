@@ -1,0 +1,143 @@
+
+Rate Limits | Reducto Documentation
+Skip to content
+This page is available in Markdown format. Markdown is recommended for AI
+consumption. See https://docs.reducto.ai/reference/rate-limits/index.md for this page, or
+https://docs.reducto.ai/llms.txt for the full documentation index.
+Search documentation Ctrl K
+Get started
+Overview API quickstart Studio quickstart Agent guide
+Developer tools
+Reducto CLI Reducto MCP server
+Core functions
+Upload
+Overview Uploading large files
+Parse
+Overview Parse r-1, r-1 mini Response format Best practices
+Extract
+Overview Response format Schema keywords Best practices Contextual schema optimization
+Overview API reducto-beta MCP
+Split Classify
+Overview Response format Best practices
+Edit
+Workflows and pipelines
+Pipelines
+Pipeline basics Multi-document pipelines
+Chaining API calls Async processing & webhooks
+Async processing Svix webhooks Direct webhooks Batch processing Batch queue Deleting jobs & uploads
+Configurations
+Configuration overview Parse configurations
+Chunking methods Table output formats Page ranges Processing settings Spreadsheet processing Additional document data Add-ons
+Parse citations Chart extraction LLM enrichment
+Legacy settings
+Extract configurations
+Deep extract Array extraction Citations
+Split configurations
+Split configuration Deep split
+Classify configurations
+Classify configuration
+Edit configurations
+Form schema
+Reference
+Changelog Model versions Version pinning Error codes Citation location Rate limits Concurrency throttle (legacy) Checking API health & usage Usage and pricing Pricing migration guide Usage export API Per-page billing breakdown Glossary Frequently asked questions Legacy credit usage More answers
+Account information Credit usage and rates Legacy credit rates Job ID not found System status URL responses
+Studio
+Get started
+Studio quickstart
+Pipelines
+Parse pipeline Extract pipeline Split pipeline Edit pipeline Deploying to production
+Account
+Account & settings Roles & permissions
+Reducto API Reducto Office
+Guides API reference SDKs Cookbooks Deploy
+Ask AI
+Log in
+Rate Limits
+Copy page Copied
+Overview Page Concurrency  r-1  r-1 mini Limit Mechanisms How Page Concurrency Works Edge Rate Limits  Per API Key
+Note
+Legacy Parse uses a different concurrency model. See Concurrency Throttle (Legacy) .
+Page Concurrency
+Page concurrency is the number of pages of your r-1 and r-1 mini jobs that Reducto processes at the same time for your account. Pages above the limit wait in a queue, and Reducto processes them as soon as capacity is available.
+r-1
+Tier
+US
+EU
+Standard
+500
+250
+Growth
+2,000
+1,000
+Enterprise
+4,000+
+2,000+
+r-1 mini
+Tier
+US
+EU
+Standard
+50
+25
+Growth
+1,000
+500
+Enterprise
+2,000+
+1,000+
+Enterprise accounts can get custom caps. Contact sales to discuss.
+US is the default region. The EU column applies to requests that you send to the EU region . All values are in pages of your jobs in progress at the same time.
+Limit Mechanisms
+Mechanism
+Applies to
+What it limits
+When you exceed it
+Returns
+Page concurrency
+r-1 and r-1 mini jobs
+Pages in progress at the same time for your account
+Work waits in a queue, then runs
+200 (after wait)
+Edge rate limits
+Every request
+Requests per second for each API key
+Reducto rejects the request at the ingress
+429
+Sync connections
+Sync requests ( /parse , /extract , /split )
+Open connections that wait for a result. Keep at most 50 to 200 at the same time, and use async for more.
+The connection stays open until the job completes, up to the 15-minute (900s) timeout
+200 , or a timeout
+Concurrency throttle (legacy)
+Legacy Parse jobs
+Parse batches in progress at the same time for your account
+Work waits in a queue, then runs
+200 (after wait)
+How Page Concurrency Works
+Work above the cap waits. Reducto queues the extra work and runs it when other work completes. You see added latency, not a 429 .
+Higher limits. If your tail latency increases at high volume, the cause is work that waits in the queue. Contact sales for higher limits.
+The cap is fixed. The cap does not grow with your traffic.
+Each model has its own cap. r-1 pages do not count against the r-1 mini cap, and r-1 mini pages do not count against the r-1 cap.
+Each region has its own cap. Pages in the US region do not count against your EU cap.
+Edge Rate Limits
+Edge rate limits apply to every request at the ingress and protect against accidental floods. They cap requests per second , not concurrent work. Requests above the cap return 429 immediately. The SDKs retry 429 responses with exponential backoff automatically.
+Per API Key
+Endpoint scope
+Limit
+429 response body
+All endpoints
+1,000 req/s sustained
+{"message": "[CODE 1000] rate limit exceeded, retry with exponential backoff"}
+GET /job/{job_id}
+300 req/s sustained
+{"message": "[CODE 2000] rate limit exceeded, please use webhooks instead of polling"}
+If you hit [CODE 2000] , you’re polling job status faster than necessary. Switch to webhooks so Reducto pushes results when ready.
+← Previous Citation location Next → Concurrency throttle (legacy)
+On this page
+Page Concurrency r-1 r-1 mini Limit Mechanisms How Page Concurrency Works Edge Rate Limits Per API Key
+esc
+Type to search…
+↑ ↓ Navigate ↵ Open esc Close
+⌘ ↵ Ask AI
+Ask the docs
+↵

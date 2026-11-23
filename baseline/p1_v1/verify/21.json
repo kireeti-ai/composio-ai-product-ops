@@ -1,0 +1,78 @@
+{
+ "id": 21,
+ "name": "Slack",
+ "pass1_sha": "7c78e75d12c06642",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "OAuth 2.0 flow described",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "terminology_difference",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Access tokens imply bearer usage",
+    "needs_human": true
+   },
+   {
+    "item": "jwt_or_signed",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "No mention of JWT or signed tokens",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Developers can create Slack apps for free and optionally set up a developer sandbox workspace.",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt mentions optional sandbox but does not state apps are free.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "The tokens awarded to your app can be used in requests to the Web API.",
+    "reason": "Slack Web API is a RESTful HTTP interface.",
+    "needs_human": false
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpts do not mention SDK or CLI\u2011only access.",
+    "needs_human": false
+   },
+   {
+    "item": "websocket",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Websocket usage is not referenced in the excerpts.",
+    "needs_human": false
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpt mentions Slack MCP Plugin but does not state it is official.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

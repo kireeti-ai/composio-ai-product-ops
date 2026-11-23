@@ -1,0 +1,91 @@
+{
+ "created": "2026-11-23T17:58:26+0530",
+ "passed": true,
+ "checks": [
+  {
+   "check": "28 plan targets",
+   "passed": true,
+   "detail": "28 ids"
+  },
+  {
+   "check": "no duplicate registry IDs in plan",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "all IDs within registry 1..100 and present in registry",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "no duplicate app names among targets",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "no duplicate IDs in APP_STATUS (one entry per registry ID)",
+   "passed": true,
+   "detail": "31 entries"
+  },
+  {
+   "check": "every APP_STATUS entry matches registry id/name",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "Gladly keeps registry ID 20 and name 'Gladly'",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "no app was assigned ID 28 as a new app: registry 28 is WhatsApp Business and is NOT in the plan",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "no target already has a baseline Pass-1 record (nothing is regenerated)",
+   "passed": true,
+   "detail": "overlap=[]"
+  },
+  {
+   "check": "held/excluded apps absent from plan (Linear 73, Coda 78, Neo4j 66, Sherlock 58, Harvest 80, fanbasis 50)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "provenance present for every target",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "12 reconstructed-list targets all flagged membership-NOT-verified",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "apps 1-50 flagged verified; none of #51-100 flagged verified",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "registry source field agrees with provenance",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "27 v1e targets unchanged + exactly one addition (20)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "uncertainty states preserved for all 27 and present for Gladly",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "Gladly excluded pages (SDK, Ordergroove auth, sidekick) are not in its inputs",
+   "passed": true,
+   "detail": ""
+  }
+ ]
+}

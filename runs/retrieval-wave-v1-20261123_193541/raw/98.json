@@ -1,0 +1,281 @@
+{
+ "id": 98,
+ "name": "Mermaid CLI",
+ "started": "2026-11-23T19:42:06+05:30",
+ "searches": [
+  {
+   "q": "Mermaid CLI API documentation",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:42:08+05:30"
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:42:11+05:30"
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:42:12+05:30"
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "ok": true,
+   "n": 10,
+   "error": null,
+   "at": "2026-11-23T19:42:14+05:30"
+  }
+ ],
+ "fetched": [],
+ "candidate_hits": [
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://mermaid.ai/open-source/config/mermaidCLI.html",
+   "title": "mermaid CLI",
+   "snippet": "The Mermaid command-line interface has moved to the mermaid-cli project, which converts Mermaid definitions to SVG, PNG, and PDF. Please read its documentation ..."
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://unpkg.com/mermaid@0.5.6/exdoc/mermaidCLI.html",
+   "title": "Generation of diagrams and flowcharts from text in a similar manner as markdown.",
+   "snippet": "mermaid globally (`npm install -g mermaid`) will expose the `mermaid` command to your environment, allowing you to generate PNGs from any file containing mermaid markup via the command line."
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://github.com/mermaid-js/mermaid-cli",
+   "title": "mermaid-js/mermaid-cli: Command line tool for the Mermaid library",
+   "snippet": "This is a command-line interface (CLI) for mermaid. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output."
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://pypi.org/project/mermaid-cli",
+   "title": "mermaid-cli",
+   "snippet": "A command-line interface and Python library for [mermaid](https://mermaidjs.github.io/), which allows you to generate diagrams and flowcharts from text.\nThis code has been ported to Python from the"
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "title": "mermaid-cli/README.md at master \u00b7 mermaid-js/mermaid-cli",
+   "snippet": "that **the NodeJS API is not covered by semver**, as `mermaid-cli` follows `mermaid`'s versioning.\n```\nimport { run } from \"@mermaid-js/mermaid-cli\";\nawait run(\n\"input.mmd\",\n\"output.svg\","
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://tessl.io/registry/tessl/npm-mermaid-js--mermaid-cli/11.6.0/files/docs/nodejs-api.md",
+   "title": "Tessl Tile for npm/@mermaid-js/mermaid-cli@11.6.0",
+   "snippet": "Command-line interface for converting Mermaid diagrams to SVG, PNG, and PDF formats"
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+   "title": "raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+   "snippet": "It's possible to call `mermaid-cli` via a Node.JS API.\nPlease be aware that **the NodeJS API is not covered by semver**, as `mermaid-cli` follows\n`mermaid`'s versioning."
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://mermaid2img.com/blog/another-way-to-convert-mermaid-to-img-for-developer",
+   "title": "Mermaid CLI Guide: Convert Mermaid to PNG, SVG, and PDF",
+   "snippet": "- **Node.js API** (programmatic control inside scripts):\n```ts\nimport { run } from \"@mermaid-js/mermaid-cli\"\nawait run(\n\"input.mmd\",\n\"output.svg\",\n// optional options object\n)\n"
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://mintlify.wiki/mermaid-js/mermaid-cli/reference/node-api",
+   "title": "Node.js API Reference",
+   "snippet": "`run()`\nHigh-level function that renders a Mermaid file (or Markdown file containing Mermaid blocks) and writes the result to disk or stdout. This is the function used internally by the `mmdc` CLI."
+  },
+  {
+   "q": "Mermaid CLI API documentation",
+   "url": "https://mermaid.ai/open-source/config/usage.html",
+   "title": "Usage | Mermaid",
+   "snippet": "Editor](https://mermaid.live/) would be sufficient, however you may also opt to deploy mermaid as a dependency or using the [Mermaid API](https://mermaid.ai/open-source/config/setup/README.html)."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://workos.com/blog/cli-authentication-guide",
+   "title": "The developer's guide to CLI authentication",
+   "snippet": "This article compares the three most common approaches to CLI authentication (API keys, token files, and the OAuth Device Flow) and lays out ..."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://gerred.github.io/building-an-agentic-system/second-edition/part-i-foundations/chapter-3-authentication-and-identity.html",
+   "title": "Authentication and Identity - The Agentic Systems Series",
+   "snippet": "Developer tools need a hybrid approach that combines the security of OAuth with the simplicity of API keys. This pattern addresses the CLI authentication ..."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://github.com/data-mermaid/mermaid-api/blob/master/docs/source/authentication.rst",
+   "title": "mermaid-api/docs/source/authentication.rst at master",
+   "snippet": "MERMAID secures its API in two ways, for two different kinds of client: Writing a script, notebook, or any other code that talks to the API? Use an API key."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://buildwithfern.com/post/api-authentication-integration-tools-oauth-claude",
+   "title": "Top API authentication integration tools for OAuth and complex auth ...",
+   "snippet": "Compare the top API authentication tools for OAuth integration and complex auth across authorization servers, gateways, and generated ..."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://blog.logto.io/cli-authentication-methods",
+   "title": "Getting CLI authentication right: the complete guide to all 4 methods",
+   "snippet": "The 4 CLI auth methods that matter, how GitHub, AWS, and AI tools implement them, and the security mistakes you'll want to avoid."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://developer.cisco.com/meraki/api-v1/authorization/",
+   "title": "Authentication - Meraki Dashboard API v1",
+   "snippet": "There are two forms of authentication and authorization for dashboard API: App-scoped access - Uses OAuth 2.0 grants; Admin-scoped access - Uses API keys ..."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://docs.here.com/identity-and-access-management/docs/readme",
+   "title": "Introduction to HERE Identity and Access Management",
+   "snippet": "HERE Identity & Access Management (IAM) lets you securely authenticate identities and manage access to HERE services and resources."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://api7.ai/learning-center/api-101/authentication-authorization-apis",
+   "title": "Authentication and Authorization in APIs",
+   "snippet": "API gateways support various authentication and authorization methods, such as API key validation, OAuth token validation, and JWT validation."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://developers.liveperson.com/oauth-1-0-api-keys.html",
+   "title": "OAuth 1.0 API keys",
+   "snippet": "API keys are security tokens that you use to access Conversational Cloud services. The API key gets installed automatically and assumes the security settings ..."
+  },
+  {
+   "q": "Mermaid CLI API authentication OAuth API key developer",
+   "url": "https://developer.lucid.co/reference/using-the-key",
+   "title": "Using the key",
+   "snippet": "An API Key can be used to make requests to Lucid APIs and get access to the key owner's data. To make an authenticated request, include an. Authorization header ..."
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://ohmymermaid.com/pricing",
+   "title": "Architecture mirror for vibe coding",
+   "snippet": "- Unlimited projects\n- Unlimited push history\n- Private sharing (org members)\n- 4 editor seats included\n- Additional seats $10/mo each\nAll plans include local CLI usage. Viewer seats are always free."
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://mermaid.ai/faq",
+   "title": "Mermaid FAQ: Answers to Pricing, Features & Security",
+   "snippet": "Enterprise includes everything in Premium, plus SSO, dedicated account support, custom contract and invoicing, and easy user consolidation. It\u2019s designed for large teams with compliance needs."
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://mermaid-25331.zendesk.com/hc/en-us/articles/50917391038483-What-plans-are-available",
+   "title": "What plans are available?",
+   "snippet": "per user per month (billed annually). Unlimited diagrams, 300 AI credits per year.\n- Premium \u2014 $20 per user per month (billed annually). Unlimited diagrams, 2,000 AI credits, unlimited free viewer"
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://mermaid.js.org/intro/",
+   "title": "About Mermaid",
+   "snippet": "\u200b Mermaid lets you create diagrams and visualizations using text and code. It is a JavaScript based diagramming and charting tool"
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://github.com/mermaid-js/mermaid-cli",
+   "title": "GitHub - mermaid-js/mermaid-cli: Command line tool for the Mermaid library",
+   "snippet": "It's possible to call `mermaid-cli` via a Node.JS API. Please be aware that **the NodeJS API is not covered by semver**, as `mermaid-cli` follows `mermaid`'s versioning."
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://mermaid.ai/pricing",
+   "title": "Mermaid Pricing: Plans for Individuals & Teams",
+   "snippet": "### Basic\n[Get started](https://mermaid.ai/app/sign-up)\n### Plus\n[Get started for free](https://mermaid.ai/app/sign-up)\n### Premium\n[Get started](https://mermaid.ai/app/sign-up)"
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://mermaid.ai/docs/workspace-and-admin/manage-your-account",
+   "title": "Manage your account \u2014 Mermaid Chart",
+   "snippet": "New accounts start on the Basic plan with a 7-day free trial. During the trial you have access to the full editor, limited AI, and up to 3 diagrams. No credit card required."
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://mermaid2img.com/blog/another-way-to-convert-mermaid-to-img-for-developer",
+   "title": "Mermaid CLI Guide: Convert Mermaid to PNG, SVG, and PDF",
+   "snippet": "Install and use @mermaid-js/mermaid-cli (mmdc) to export Mermaid diagrams as PNG, SVG, or PDF locally, in scripts, and in CI workflows."
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://mermaid.ai/docs/blog/posts/mermaid-chart-officially-launched-with-sharable-diagram-links-and-presentation-mode",
+   "title": "Mermaid officially launched with sharable diagram links and presentation mode",
+   "snippet": "offers a [range of pricing tiers](https://mermaid.ai/pricing) to fit your needs. The Basic plan is free and includes up to three diagrams with limited AI and one team & project creation. The Plus"
+  },
+  {
+   "q": "Mermaid CLI API access pricing plans developer account",
+   "url": "https://www.npmjs.com/mermaid-cli",
+   "title": "mermaid-cli",
+   "snippet": "Pricing \u00b7 Documentation. npm. Sign UpSign In. Search. This package has been deprecated. Author message: mermaid-cli is now part of mermaid core."
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://mermaid.ai/docs/ai/mcp-server",
+   "title": "MCP Server \u2014 Mermaid Chart",
+   "snippet": "- **HTTP Streamable Mode (For remote servers) :**\n```\n{\n\"servers\": {\n\"mermaid-mcp\": {\n\"url\": \"https://mcp.mermaid.ai/mcp\",\n\"type\": \"http\"\n}\n}\n}\n```"
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://github.com/andrewginns/mermaid-mcp-server",
+   "title": "GitHub - andrewginns/mermaid-mcp-server: Python MCP Server abstracting the official mermaid-cli for ease of use",
+   "snippet": "out of the box use.\n## Overview\nPython MCP server for validating Mermaid diagrams and (optionally) rendering them as PNG images. It uses the Mermaid CLI tool to perform the validation and rendering."
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://mcp.mermaid.ai",
+   "title": "mcp.mermaid.ai",
+   "snippet": "are connected to the comprehensive Mermaid MCP"
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://mermaid-25331.zendesk.com/hc/en-us/articles/51112817195923-Mermaid-MCP-Server",
+   "title": "Mermaid MCP Server",
+   "snippet": "Mermaid MCP Server is listed on the official Claude MCP directory. You can connect it through the Mermaid dashboard, or configure it manually."
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://mermaid.ai/docs/ai/mcp-apps-server/v2",
+   "title": "Claude MCP App v2 \u2014 Mermaid Chart",
+   "snippet": "copy functionality, and repair options for invalid syntax. Authenticated users can save, update, and list their personal diagrams.\n**Server URL:** `https://chatgpt.mermaid.ai/anthropic/v2/mcp`"
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://github.com/Volare-Consulting-Software/mermaid-mcp",
+   "title": "GitHub - Volare-Consulting-Software/mermaid-mcp: MCP server that renders Mermaid diagrams to PNG via mermaid-cli",
+   "snippet": "```\n{\n\"mcpServers\": {\n\"mermaid\": {\n\"command\": \"node\",\n\"args\": [\"/absolute/path/to/mermaid-mcp/dist/index.js\"]\n}\n}\n}\n```"
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://github.com/codingthefuturewithai/mcp_mermaid_image_gen",
+   "title": "GitHub - codingthefuturewithai/mcp_mermaid_image_gen: MCP server that generates diagrams from Mermaid code in multiple formats (SVG, PNG, PDF).",
+   "snippet": "- **Mermaid CLI**: The server will automatically install a local copy if not found in PATH. For manual system-wide installation: `npm install -g @mermaid-js/mermaid-cli`"
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://mcp.so/servers/mermaid-mcp-server",
+   "title": "Mermaid MCP Server: Tools, Setup & Config",
+   "snippet": "from textual descriptions.\n## How to use Mermaid MCP Server?\nRun the server with `npx -y @peng-shawn/mermaid-mcp-server`. Configure it as an MCP tool in Claude Desktop, Cursor, or Cline using"
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://mcp.pub/servers/mcp-mermaid/",
+   "title": "MCP Mermaid MCP Server \u2013 Features, Use Cases, Setup & Alternatives",
+   "snippet": "MCP Mermaid is an MCP server that allows AI agents to generate Mermaid diagrams and charts dynamically. It supports full Mermaid syntax and ..."
+  },
+  {
+   "q": "Mermaid CLI MCP server official",
+   "url": "https://www.youtube.com/watch?v=LFTCtqwfWGc",
+   "title": "Use Mermaid MCP Server to Generate Diagrams From Your Codebase",
+   "snippet": "Explore how Mermaid MCP Server works through a VS Code demo, including setup, prompt-based diagram creation, understanding a codebase and\u00a0..."
+  }
+ ],
+ "official_domain_candidates": {},
+ "identity_flag": "no_domain_matched_name",
+ "completed": "2026-11-23T19:42:14+05:30"
+}

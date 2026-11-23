@@ -1,0 +1,125 @@
+{
+ "id": 20,
+ "name": "Gladly",
+ "category": "Support and Helpdesk",
+ "model": "m1",
+ "pages_read": [
+  "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+  "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+  "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "https://developer.gladly.com/",
+  "https://help.gladly.com/implementation/docs/difference-between-sandbox-and-production",
+  "https://help.gladly.com/docs/manage-app-integrations",
+  "https://help.gladly.com/docs/set-up-mcp-connections"
+ ],
+ "one_liner": "FAKE",
+ "auth_methods": [
+  "unknown"
+ ],
+ "access": "unknown",
+ "access_note": "",
+ "api_types": [
+  "unknown"
+ ],
+ "api_breadth": "unknown",
+ "existing_mcp": "unknown",
+ "buildability": "unknown",
+ "blocker": "",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "x",
+   "quote": "zz",
+   "quote_found": false,
+   "url_in_sources": false
+  }
+ ],
+ "meta": {
+  "run_id": "gl",
+  "code_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+  "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+  "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+  "temperature": 0,
+  "key_id": "GEMINI_API_KEY",
+  "extracted_at": "2026-11-23T20:39:40+05:30",
+  "request_attempts": 1,
+  "excluded_pages": [],
+  "tier": "D_added_access_explicit_account_gated",
+  "uncertainty": {
+   "access_state": "explicit_account_gated",
+   "access_confirmed": true,
+   "rule": "explicit account-gating evidenced by verified quotes (still subject to verification); pricing is UNKNOWN - never report a price or plan requirement",
+   "field_states": {
+    "auth": "per_user_api_tokens",
+    "api_surface": "partial",
+    "mcp": "client_only_evidence (Gladly AI is an MCP CLIENT of external servers; no Gladly MCP server evidenced)",
+    "pricing": "unknown"
+   }
+  },
+  "registry_provenance": {
+   "source": "original_notion_page_public_data",
+   "original_notion_membership_verified": true,
+   "note": "apps 1-50 were read from the original Notion page's public data endpoint at fetch time"
+  },
+  "api_surface_state": {
+   "measured_operations_count": 0,
+   "state": "partial",
+   "basis": "REST API, Lookup API, App Platform, Chat SDK, Help Center API and webhooks are named; no operations itemized (REST reference fetch failed twice)"
+  },
+  "retrieval_topup": [
+   {
+    "path": "runs/topup-v1s-20261123/gladly/attempts_round2.json",
+    "raw_sha256": "62c26f4e70133fbef61c5f33803af819fd79d1934bacddf44a98314430b8dac4",
+    "tool": "composio:TINYFISH_FETCH_URLS",
+    "pages": [
+     {
+      "url": "https://help.gladly.com/implementation/docs/difference-between-sandbox-and-production",
+      "sha256": "6f79938bad9a8fa011faff0670d6462b2c9e647cf361adfdb9c7c41f66bb43a9",
+      "fetched_at": "2026-11-23T17:50:19+05:30",
+      "chars": 899,
+      "truncated_in_prompt": false
+     },
+     {
+      "url": "https://help.gladly.com/docs/manage-app-integrations",
+      "sha256": "2f406668e829acf35957b66115b25487bb91b09466760959aad4c48a2665f7d8",
+      "fetched_at": "2026-11-23T17:50:20+05:30",
+      "chars": 2868,
+      "truncated_in_prompt": false
+     },
+     {
+      "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+      "sha256": "b88885a6437b27e02a6b5a59d8cc2e3abc70abedabaf3f3124a9d722074c8c9a",
+      "fetched_at": "2026-11-23T17:50:25+05:30",
+      "chars": 10633,
+      "truncated_in_prompt": true
+     }
+    ]
+   }
+  ],
+  "retrieval": {
+   "path": "baseline/p1_v1/raw/20.json",
+   "raw_sha256": "03d8ffe7969bb931b2100c97f82e864bd2a8d963a3e23e20caff1ccbe393b817",
+   "fetched_at": "2026-11-23T16:27:54+05:30",
+   "tool": "composio:TINYFISH_FETCH_URLS",
+   "pages": [
+    {
+     "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+     "chars": 3163
+    },
+    {
+     "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+     "chars": 648
+    },
+    {
+     "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+     "chars": 5592
+    },
+    {
+     "url": "https://developer.gladly.com/",
+     "chars": 935
+    }
+   ]
+  }
+ }
+}

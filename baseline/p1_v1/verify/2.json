@@ -1,0 +1,71 @@
+{
+ "id": 2,
+ "name": "HubSpot",
+ "pass1_sha": "93a29b0e67feb0b9",
+ "model": "openai/gpt-oss-120b",
+ "ground_truth": false,
+ "fields": {
+  "auth_methods": [
+   {
+    "item": "oauth2",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "reason": "OAuth authentication is required for multi\u2011account apps per the overview excerpt.",
+    "needs_human": false
+   },
+   {
+    "item": "api_key",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "reason": "Excerpt describes service keys but does not use the term API key.",
+    "needs_human": false
+   },
+   {
+    "item": "bearer_token",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "reason": "Service key can be included as a Bearer token in the Authorization header.",
+    "needs_human": false
+   }
+  ],
+  "access": [
+   {
+    "item": "self_serve_free :: Service keys, which allow direct REST API access, are currently in public beta.",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpt confirms service keys enable direct REST API access and are in public beta.",
+    "needs_human": false
+   }
+  ],
+  "api_types": [
+   {
+    "item": "rest",
+    "verdict": "supported",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Service keys let you query HubSpot's REST APIs directly without CLI.",
+    "needs_human": false
+   },
+   {
+    "item": "sdk_or_cli_only",
+    "verdict": "contradicted",
+    "evidence_quote": "If you need to set up a simple third-party integration with HubSpot or try out specific HubSpot API endpoints, you can use service keys to query HubSpot\u2019s REST APIs directly without having to use the CLI or other platform developer tools first.",
+    "suggested_value": "",
+    "reason": "Direct REST access via service keys disproves SDK/CLI\u2011only claim.",
+    "needs_human": true
+   }
+  ],
+  "existing_mcp": [
+   {
+    "item": "official",
+    "verdict": "insufficient_evidence",
+    "evidence_quote": "",
+    "suggested_value": "",
+    "reason": "Excerpts do not mention existing_mcp or its official status.",
+    "needs_human": false
+   }
+  ]
+ },
+ "complete": true
+}

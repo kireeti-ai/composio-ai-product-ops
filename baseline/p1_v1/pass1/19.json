@@ -1,0 +1,56 @@
+{
+ "id": 19,
+ "name": "Gorgias",
+ "category": "Support and Helpdesk",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developers.gorgias.com/reference/get-user",
+  "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+  "https://developers.gorgias.com/",
+  "https://docs.gorgias.com/en-US/articles/developer-resources-18370"
+ ],
+ "one_liner": "Gorgias is an e-commerce customer support desk that provides a REST API to manage support users, tickets, and integrations.",
+ "auth_methods": [
+  "oauth2",
+  "bearer_token"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Private apps do not require approval and can be built directly using REST API credentials, whereas public apps require joining the Developer Portal and app review.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "medium",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+   "quote": "In order to be able to have an approved public app with Gorgias, it is required that the app is using OAuth2 for authentication.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developers.gorgias.com/",
+   "quote": "For Private apps there is no need for approval. Go ahead and use it!",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+   "quote": "Gorgias has an open REST API - go to Settings \u2192 You \u2192 REST API to access your unique credentials.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developers.gorgias.com/",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ]
+}

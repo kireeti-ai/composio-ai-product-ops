@@ -1,0 +1,126 @@
+{
+ "id": 65,
+ "name": "Supabase",
+ "category": "Developer, Infra and Data platforms",
+ "model": "m1",
+ "pages_read": [
+  "https://supabase.com/docs/guides/getting-started/api-keys",
+  "https://supabase.com/docs/guides/auth",
+  "https://supabase.com/docs/guides/self-hosting/self-hosted-auth-keys",
+  "https://supabase.com/docs/guides/functions/auth-headers",
+  "https://supabase.com/docs/guides/platform/billing-faq",
+  "https://supabase.com/pricing",
+  "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+  "https://supabase.com/docs/guides/api/api-keys.md"
+ ],
+ "one_liner": "FAKE",
+ "auth_methods": [
+  "unknown"
+ ],
+ "access": "unknown",
+ "access_note": "",
+ "api_types": [
+  "unknown"
+ ],
+ "api_breadth": "unknown",
+ "existing_mcp": "unknown",
+ "buildability": "unknown",
+ "blocker": "",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "x",
+   "quote": "zz",
+   "quote_found": false,
+   "url_in_sources": false
+  }
+ ],
+ "meta": {
+  "run_id": "d",
+  "code_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+  "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+  "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+  "temperature": 0,
+  "key_id": "GEMINI_API_KEY",
+  "extracted_at": "2026-11-23T20:39:40+05:30",
+  "request_attempts": 1,
+  "excluded_pages": [],
+  "tier": "A_topup_access_explicit",
+  "uncertainty": {
+   "access_state": "explicit",
+   "access_confirmed": true,
+   "rule": "may be reported as evidenced, subject to verification"
+  },
+  "registry_provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "api_surface_state": {
+   "measured_operations_count": 0,
+   "state": "not_individually_assessed"
+  },
+  "retrieval_topup": [
+   {
+    "path": "runs/topup-v1-20261123/raw/65.json",
+    "raw_sha256": "92ad1d6d189b50225b0c041de1d12305bad16fa3ebb348e070be40cf4450edb1",
+    "tool": "composio:TINYFISH_FETCH_URLS",
+    "pages": [
+     {
+      "url": "https://supabase.com/docs/guides/platform/billing-faq",
+      "sha256": "0057f95459a76dc9ed51b70167e9072548a6a8d052e798d233478d2e956c7f8f",
+      "fetched_at": "2026-11-23T17:31:55+05:30",
+      "chars": 17514,
+      "truncated_in_prompt": true
+     },
+     {
+      "url": "https://supabase.com/pricing",
+      "sha256": "63e08da82aba7449ea3f4b6c1081530867bba87aec8b42cd59a0ece6efb26de2",
+      "fetched_at": "2026-11-23T17:31:59+05:30",
+      "chars": 20345,
+      "truncated_in_prompt": true
+     },
+     {
+      "url": "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+      "sha256": "1798288e97e3b29a5eaeaddd8bcc4224bef30ac93fdcd8d281548b927f320fc3",
+      "fetched_at": "2026-11-23T17:32:02+05:30",
+      "chars": 11419,
+      "truncated_in_prompt": true
+     },
+     {
+      "url": "https://supabase.com/docs/guides/api/api-keys.md",
+      "sha256": "05e201d2426c40f9076a5daf8949a0d0468963f09bcbba45313e5ac45986724e",
+      "fetched_at": "2026-11-23T17:32:04+05:30",
+      "chars": 20728,
+      "truncated_in_prompt": true
+     }
+    ]
+   }
+  ],
+  "retrieval": {
+   "path": "baseline/p1_v1/raw/65.json",
+   "raw_sha256": "3538a7bd1b035b9d3bfe663a8ce788b1c45dd90143b456ec84090fad07a270de",
+   "fetched_at": "2026-11-23T16:58:04+05:30",
+   "tool": "composio:TINYFISH_FETCH_URLS",
+   "pages": [
+    {
+     "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+     "chars": 9000
+    },
+    {
+     "url": "https://supabase.com/docs/guides/auth",
+     "chars": 3529
+    },
+    {
+     "url": "https://supabase.com/docs/guides/self-hosting/self-hosted-auth-keys",
+     "chars": 8736
+    },
+    {
+     "url": "https://supabase.com/docs/guides/functions/auth-headers",
+     "chars": 3139
+    }
+   ]
+  }
+ }
+}

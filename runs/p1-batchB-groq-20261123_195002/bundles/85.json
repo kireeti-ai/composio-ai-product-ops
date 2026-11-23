@@ -1,0 +1,22 @@
+{
+ "id": 85,
+ "name": "iPayX",
+ "reduction": "reduction-v2",
+ "budget_chars": 12000,
+ "pages": [],
+ "prompt": "You research apps for an agent-toolkit builder. App: iPayX (category: Finance and Fintech; hint: none).\nUsing ONLY the SOURCES below, fill the schema. Rules:\n- access: can a developer get credentials themselves for free (self_serve_free), only on a paid plan/trial, only after app review/approval, or only via partnership/contact sales?\n- buildability: could this be an agent toolkit today (yes / yes_with_caveats / no); blocker = main obstacle, else \"none\".\n- existing_mcp only if SOURCES show it; otherwise none_found (or unknown if sources are silent).\n- evidence: for each of auth_methods, access, api_types, existing_mcp give a url from SOURCES and a SHORT VERBATIM quote (<=200 chars) copied exactly from that source's text. No quote available -> say unknown, do not invent.\n- If sources are insufficient, use \"unknown\". Never guess from memory.\nSOURCES:\n",
+ "prompt_sha256": "a389c92217a99d5bcacb9405252d7f7da5b01f92ae7cf0b8e1a293ff4002d715",
+ "est_tokens": 270,
+ "identity": {
+  "id": 85,
+  "name": "iPayX",
+  "tier": "B_name_resolved_candidate",
+  "accepted_domains": [
+   "ipayx.ai"
+  ],
+  "pages_usable": 6,
+  "why": "exactly one domain label equals the app name (reconstructed-list app: identity NOT confirmed by the original list)",
+  "source_run": "runs/retrieval-wave-v1-20261123_193541",
+  "provenance": "reconstructed_candidate_UNVERIFIED"
+ }
+}

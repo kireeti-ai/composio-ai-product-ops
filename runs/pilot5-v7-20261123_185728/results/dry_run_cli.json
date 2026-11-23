@@ -1,0 +1,27 @@
+{
+ "dry_run": true,
+ "generation_calls": 0,
+ "authorized": false,
+ "apps": [
+  {
+   "id": 27,
+   "prompt_chars": 24015
+  },
+  {
+   "id": 32,
+   "prompt_chars": 20504
+  },
+  {
+   "id": 41,
+   "prompt_chars": 18131
+  },
+  {
+   "id": 53,
+   "prompt_chars": 9853
+  },
+  {
+   "id": 61,
+   "prompt_chars": 39172
+  }
+ ]
+}

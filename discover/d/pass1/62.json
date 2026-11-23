@@ -1,0 +1,133 @@
+{
+ "id": 62,
+ "name": "Vercel",
+ "category": "Developer, Infra and Data platforms",
+ "model": "m1",
+ "pages_read": [
+  "https://vercel.com/docs",
+  "https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys",
+  "https://vercel.com/docs/rest-api",
+  "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+  "https://vercel.com/docs/pricing",
+  "https://vercel.com/pricing",
+  "https://vercel.com/docs/accounts/access-tokens",
+  "https://vercel.com/docs/cli/signup"
+ ],
+ "one_liner": "FAKE",
+ "auth_methods": [
+  "unknown"
+ ],
+ "access": "unknown",
+ "access_note": "",
+ "api_types": [
+  "unknown"
+ ],
+ "api_breadth": "unknown",
+ "existing_mcp": "unknown",
+ "buildability": "unknown",
+ "blocker": "",
+ "evidence": [
+  {
+   "field": "access",
+   "url": "x",
+   "quote": "zz",
+   "quote_found": false,
+   "url_in_sources": false
+  }
+ ],
+ "meta": {
+  "run_id": "d",
+  "code_sha256": "71d0f19e74765f5942402ff5be29b4429650b5506ebbe6c668638cf234a15c14",
+  "prompt_sha256": "13eaee38702bfb72c6d92529a50eedc26bf7eebecc46cac27a2b516cb20c58ae",
+  "schema_sha256": "c5082c7feb4a2256d30b9b2ce051cc3360c6bdae74f509f01a0713a5b97300e9",
+  "baseline_manifest_sha256": "e254e4e28287b1078dcc31cb1936af44e98bc5ac5c625aaaa26874438064079c",
+  "temperature": 0,
+  "key_id": "GEMINI_API_KEY",
+  "extracted_at": "2026-11-23T20:39:40+05:30",
+  "request_attempts": 1,
+  "excluded_pages": [],
+  "tier": "B_access_inferred_self_serve",
+  "uncertainty": {
+   "access_state": "inferred_self_serve",
+   "access_confirmed": false,
+   "rule": "NEVER report as confirmed self-serve; label 'inferred'; model output on `access` is a hypothesis"
+  },
+  "registry_provenance": {
+   "source": "reconstructed_secondary_source",
+   "original_notion_membership_verified": false,
+   "note": "name/category/order come from a secondary public report; membership in the original Notion list is NOT verified; no identity authority"
+  },
+  "api_surface_state": {
+   "measured_operations_count": 5,
+   "state": "not_individually_assessed"
+  },
+  "retrieval_topup": [
+   {
+    "path": "runs/topup-v1-20261123/raw/62.json",
+    "raw_sha256": "6e886f1fc4fb31c7cd1af83b987ed8ce24fbc934d0580ba52f9b2093c541c12a",
+    "tool": "composio:TINYFISH_FETCH_URLS",
+    "pages": [
+     {
+      "url": "https://vercel.com/docs/pricing",
+      "sha256": "6c4cc0a472049240fcd036c11032b5c246185fef0f651047db51583cbda88c70",
+      "fetched_at": "2026-11-23T17:33:08+05:30",
+      "chars": 8967,
+      "truncated_in_prompt": false
+     },
+     {
+      "url": "https://vercel.com/pricing",
+      "sha256": "9748058cd96598030bdc0e7f9f5e0def795896d392769a94a86097cc517646f0",
+      "fetched_at": "2026-11-23T17:33:14+05:30",
+      "chars": 13683,
+      "truncated_in_prompt": true
+     },
+     {
+      "url": "https://vercel.com/docs/accounts/access-tokens",
+      "sha256": "5225c3f0e3ba0246e76745422e16ac0539ee5e1869eaeacb4737d955497af890",
+      "fetched_at": "2026-11-23T17:33:19+05:30",
+      "chars": 10189,
+      "truncated_in_prompt": true
+     }
+    ]
+   },
+   {
+    "path": "runs/topup-v1r-20261123/raw/62.json",
+    "raw_sha256": "1967fc5ae3a26b00796e648eacb016ead649c0f994dab94736a87f8da83a77a9",
+    "tool": "composio:TINYFISH_FETCH_URLS",
+    "pages": [
+     {
+      "url": "https://vercel.com/docs/cli/signup",
+      "sha256": "71b040d99300e23a5643102f07e7e08ee1387e7865d782c7d765ebab7b8a38dd",
+      "fetched_at": "2026-11-23T17:42:00+05:30",
+      "chars": 1398,
+      "truncated_in_prompt": false
+     }
+    ]
+   }
+  ],
+  "retrieval": {
+   "path": "baseline/p1_v1/raw/62.json",
+   "raw_sha256": "2f08d4f3e6094600c416f28f7c3e4cc104e6617b1039afd86a569b0b9215971c",
+   "fetched_at": "2026-11-23T16:55:59+05:30",
+   "tool": "composio:TINYFISH_FETCH_URLS",
+   "pages": [
+    {
+     "url": "https://vercel.com/docs",
+     "chars": 6490
+    },
+    {
+     "url": "https://vercel.com/docs/ai-gateway/authentication-and-byok/api-keys",
+     "chars": 6243
+    },
+    {
+     "url": "https://vercel.com/docs/rest-api",
+     "chars": 1293
+    },
+    {
+     "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+     "chars": 9000
+    }
+   ]
+  }
+ }
+}

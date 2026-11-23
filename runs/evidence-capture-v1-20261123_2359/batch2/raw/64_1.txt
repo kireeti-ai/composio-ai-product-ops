@@ -1,0 +1,393 @@
+
+Create API token · Cloudflare Fundamentals docs
+Skip to content
+Documentation Index
+Fetch the complete documentation index at: https://developers.cloudflare.com/fundamentals/llms.txt
+Use this file to discover all available pages before exploring further.
+Docs
+Directory
+API
+SDKs
+Changelog
+Search
+Ctrl
+K
+Log in
+Dashboard
+Home
+/
+Cloudflare Fundamentals
+/
+…
+Cloudflare's API
+/
+Get started
+/
+Create API token
+Create API token
+Last updated 
+Nov 6, 2026
+|
+Copy as Markdown
+|
+View as Markdown
+|
+Agent setup
+Prerequisite
+Before you begin, 
+find your zone and account IDs
+.
+Determine if you want a user token or an 
+Account API token
+. Use Account API tokens if you prefer service tokens that are not associated with users and your 
+desired API endpoints are compatible
+.
+From the 
+Cloudflare dashboard
+ ↗︎
+, go to 
+My Profile
+ > 
+API Tokens
+ for user tokens. For Account Tokens, go to 
+Manage Account
+ > 
+API Tokens
+.
+Select 
+Create Token
+.
+Add a token name to describe why or how the token is used.
+Select a template from the available 
+API token templates
+ or start from scratch. Templates include policies with predefined permissions. The following example uses the 
+Edit zone DNS
+ template.
+Create a policy to organize the token's permissions. Select a policy type (
+Account
+, 
+User
+, or 
+Zone
+), then select resource rules within the policy to specify which resources the permissions apply to, such as specific accounts or zones.
+Choose the permissions to grant within the policy. Most permissions offer 
+Edit
+ or 
+Read
+ access. 
+Edit
+ is full CRUDL (create, read, update, delete, list) access, while 
+Read
+ is the read permission and list where appropriate. For example, 
+Zone DNS Read
+ for 
+example.com
+ allows the token to read DNS records only for that zone. Refer to the 
+available token permissions
+ for more information.
+(Optional) Restrict how a token is used in the 
+Token expiration
+ and 
+Client IP Address Filtering
+ fields.
+Select 
+Continue to summary
+.
+Review the token summary. Select 
+Back
+ to make adjustments. You can also edit a token after creation.
+Select 
+Create Token
+ to generate the token's secret.
+Copy the secret to a secure place.
+Warning
+The token secret is 
+only shown once
+. Do not store the secret in plaintext where others can access it. Anyone with this token can perform the authorized actions against the resources that the token has access to.
+The token secret page also includes an example command to test the token. Use the 
+/user/tokens/verify
+ endpoint to fetch the current status of the given token.
+curl
+ "https://api.cloudflare.com/client/v4/user/tokens/verify"
+ \
+--header 
+"Authorization: Bearer <API_TOKEN>"
+The result:
+{
+ "result"
+: {
+ "id"
+: 
+"100bf38cc8393103870917dd535e0628"
+,
+ "status"
+: 
+"active"
+ },
+ "success"
+: 
+true
+,
+ "errors"
+: [],
+ "messages"
+: [
+ {
+ "code"
+: 
+10000
+,
+ "message"
+: 
+"This API Token is valid and active"
+,
+ "type"
+: 
+null
+ }
+ ]
+}
+New API tokens use the 
+cfut_
+ prefixed 
+scannable format
+, which allows credential scanning tools to detect leaked tokens.
+With this you have successfully created an API token and can start working with the Cloudflare API. After creating your first API token, you can create additional API tokens 
+via the API
+.
+Previous
+Under a DDoS attack?
+Next
+Get Global API key (legacy)
+Was this helpful?
+Yes
+No
+Edit page
+Report issue
+On this page
+Overview
+Edit page
+Report issue
+Cloudflare Fundamentals
+/
+Overview
+Concepts
+How Cloudflare DNS works
+Traffic flow through Cloudflare
+Accounts, zones, and profiles
+Cloudflare IP addresses
+Get started
+Accounts
+Create account
+Account security
+Add abuse contact
+Allow Cloudflare access
+Leaked Password Notifications
+Manage active sessions
+Review audit logs - v1
+Audit Logs - v2
+SCIM provisioning
+Overview
+Authentik
+Microsoft Entra
+Okta
+Troubleshooting
+Secure compromised account
+Set up SSO ↗︎
+Zone holds
+Find account and zone IDs
+Change Super Administrator
+Organizations
+Overview
+Organizations for Enterprise
+Organizations for MSSP and Distributors
+Policy sharing
+Limitations and troubleshooting
+Members and permissions
+Members and permissions
+Manage
+Policies
+Roles
+Role scopes
+User Groups
+New
+Set up dashboard SSO
+User profiles
+Overview
+Verify email address
+Log in to Cloudflare
+Profile settings
+Account recovery
+Delete your Cloudflare account
+Email address and password
+Multi-Factor Email Authentication
+Two-factor authentication
+Domains
+Overview
+Add multiple sites via automation
+Change your domain version
+Manage subdomains
+Move a domain between Cloudflare accounts
+Onboard a domain
+Pause Cloudflare
+Redirect one domain to another
+Remove a domain
+Star domains
+Performance
+Improve SEO
+Maintenance mode
+Minimize downtime
+Optimize site speed ↗︎
+Prepare for surges or spikes in web traffic ↗︎
+Test speed
+Security
+Prevent DDoS attacks ↗︎
+Protect your origin server
+Recovering from a hacked site
+Scan for PCI compliance
+Secure your website ↗︎
+Under a DDoS attack?
+Cloudflare's API
+Get started
+Create API token
+Get Global API key (legacy)
+Get Origin CA keys
+Deprecated
+Token formats
+Account API tokens
+How to
+Make API calls
+Create tokens via API
+Control API Access
+Restrict tokens
+Roll tokens
+API token template URLs
+Reference
+REST API ↗︎
+API
+GraphQL API ↗︎
+Wrangler API ↗︎
+API token permissions
+API deprecations
+API token templates
+Rate limits
+SDKs
+Troubleshooting
+OAuth Applications on Cloudflare
+Overview
+Create your OAuth client
+Integrate your OAuth client with Cloudflare
+Authorizing an application
+Reference
+Migration guides
+SCIM migration
+Policies
+Cloudflare Cookies
+Compliance documentation
+Content Security Policies (CSPs)
+Delivering Videos with Cloudflare
+Licenses
+Project Cybersafe Schools
+Abuse
+Overview
+Review abuse policies
+Complaint types
+Providing specific URLs
+Customer abuse report obligations
+View and submit reports
+Blocked Content
+SDK ecosystem support policy
+Troubleshooting
+/cdn-cgi/ endpoint
+Account and domain management best practices
+Cloudflare and Google Analytics
+Cloudflare crawlers
+Cloudflare HTTP headers
+Cloudflare Ray ID
+Cloudy AI agent
+Beta
+Connection limits
+Cryptographic Attestation of Personhood
+Error responses
+Glossary
+Markdown for Agents
+Network Layers
+Network ports
+Partners
+Redirects
+Scans and penetration testing policy
+TCP connections
+Under Attack mode
+RSS Feeds
+Available RSS Feeds
+Consuming RSS Feeds
+Agent resources
+Agent setup ↗︎
+Cloudflare Skills ↗︎
+Code Mode MCP Server ↗︎
+Domain-specific MCP Servers ↗︎
+MCP
+Cloudflare Fundamentals llms.txt ↗︎
+Cloudflare Fundamentals llms-full.txt ↗︎
+Cloudflare Docs llms.txt ↗︎
+Cloudflare Docs llms-full.txt ↗︎
+Getting started
+Plans
+Contact sales
+Partners
+Find a partner
+Startups
+Under attack?
+Domain name search
+Company
+About
+Careers
+Investors
+Press
+Press kit
+Global network
+Public interest
+Project Galileo
+Athenian Project
+Cloudflare for Campaigns
+Project Fairshot
+Impact/ESG
+Compliance
+Compliance resources
+Trust Hub
+Data Protection
+Responsible AI
+Transparency report
+Report abuse
+Resources
+App innovation report
+Cloudflare Radar
+Case studies
+Status
+Support
+Events
+Blog
+Developers
+Documentation
+Learning center
+Community
+Solutions
+SSE and SASE platform
+Cloudflare AI Cloud
+AI Security
+Frontend Development Platform
+Multi-Tenant Platform Development
+Web Security Platform
+Start Building
+Log In
+© 2026 Cloudflare, Inc.
+Privacy policy
+|
+Report security issues
+|
+Terms of use
+|
+Trademark
+|
+Your privacy choices
+Docs

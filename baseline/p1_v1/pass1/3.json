@@ -1,0 +1,56 @@
+{
+ "id": 3,
+ "name": "Pipedrive",
+ "category": "CRM and Sales",
+ "model": "gemini-3.5-flash",
+ "pages_read": [
+  "https://developers.pipedrive.com/docs/api/v1/Persons",
+  "https://developers.pipedrive.com/docs/api/v1/Oauth",
+  "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+  "https://developers.pipedrive.com/"
+ ],
+ "one_liner": "Pipedrive is a sales CRM platform with a RESTful API and webhooks for managing leads, deals, contacts, activities, and sales pipelines.",
+ "auth_methods": [
+  "oauth2",
+  "api_key"
+ ],
+ "access": "self_serve_free",
+ "access_note": "Developers can sign up for a free Sandbox Account to experiment and build integrations in a risk-free environment.",
+ "api_types": [
+  "rest"
+ ],
+ "api_breadth": "broad",
+ "existing_mcp": "none_found",
+ "buildability": "yes",
+ "blocker": "none",
+ "evidence": [
+  {
+   "field": "auth_methods",
+   "url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+   "quote": "Calls to our API are validated against an API token or an access_token when using OAuth 2.0.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "access",
+   "url": "https://developers.pipedrive.com/",
+   "quote": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "api_types",
+   "url": "https://pipedrive.com/en/blog/new-pipedrive-api-reference",
+   "quote": "Pipedrive is a sales CRM with an intuitive RESTful API, webhooks, app extensions and API clients to help you build an app for the Pipedrive Marketplace.",
+   "quote_found": true,
+   "url_in_sources": true
+  },
+  {
+   "field": "existing_mcp",
+   "url": "https://developers.pipedrive.com/",
+   "quote": "unknown",
+   "quote_found": false,
+   "url_in_sources": true
+  }
+ ]
+}
