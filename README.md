@@ -1,6 +1,6 @@
 # Composio AI Product Ops take-home: 100-app integration-readiness research
 
-Self-contained case study: [`report/index.html`](report/index.html) (open it in a browser; no server needed). Rebuilt from the saved audit data, never hand-edited.
+Live case study: https://kireeti-ai.github.io/composio-ai-product-ops-research/ (static copy of `report/index.html`, served from the `gh-pages` branch). Source: https://github.com/kireeti-ai/composio-ai-product-ops-research. Self-contained case study file: [`report/index.html`](report/index.html) (open it in a browser; no server needed). Rebuilt from the saved audit data, never hand-edited.
 
 ## Status (read before relying on any number)
 
