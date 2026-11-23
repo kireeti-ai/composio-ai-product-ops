@@ -15,5 +15,5 @@ for d in (a,b): d.pop('created',None)
 assert a==b, "re-consolidation differs from the stored CONSOLIDATED.json"
 print("re-consolidation identical to stored CONSOLIDATED.json")
 PY
-python3 -I src/build_report.py runs/dataset-live-v7-20261124_0010/DATASET.json "$OUT"
+python3 -I src/build_report.py runs/dataset-live-v8-20261124_0330/DATASET.json "$OUT"
 echo "report: $OUT"

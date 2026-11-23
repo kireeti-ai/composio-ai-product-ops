@@ -149,6 +149,7 @@ def main():
         source_check = json.loads(source_path.read_text())
     legacy = legacy_verification()
     labels = human_labels()
+    labels["labelled_claims"] = evidence_ledger({})["human"]["labelled"] or labels.get("labelled_claims", 0)
     retrieval = retrieval_stats()
     report_data = build_report_data(dataset["rows"], registry, comparison, legacy, labels,
                                     retrieval, source_check, source_metadata())

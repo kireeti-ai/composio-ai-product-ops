@@ -144,9 +144,27 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
     states = Counter(c["state"] for a in extracted for c in a["claims"])
     quotes = [e for a in extracted for e in a["evidence"]]
     quote_valid = sum(e["valid"] and e["source_confirmed"] for e in quotes)
-    access_apps = [a for a in extracted if a["access"] not in (None, "unknown", "undeterminable")]
+    BAD = ("unsupported", "conflicting")   # review verdicts that remove a first-pass claim from the findings
+    profiled = []
+    for a in apps:
+        if a["primary_version"]:
+            drop = {(c["field"], str(c["claim"])) for c in (a.get("claim_review") or []) if c["verdict"] in BAD}
+            one = lambda f, v: None if (f, str(v)) in drop else v
+            pr = {"access": one("access", a["access"]), "mcp": one("existing_mcp", a["mcp"]), "buildability": one("buildability", a["buildability"]),
+                  "auth": [x for x in a["auth"] if ("auth_methods", x) not in drop], "api_types": [x for x in a["api_types"] if ("api_types", x) not in drop],
+                  "blocker": (a["blocker"] or "none"), "sup_access": bool(_evidence_support(a, "access")), "sup_build": bool(_evidence_support(a, "access")) and bool(_evidence_support(a, "auth_methods")), "tier": "first_pass"}   # buildability is a judgement: require quote-supported access and auth
+        elif (a.get("manual") or {}).get("profile"):
+            m = a["manual"]["profile"]
+            pr = {"access": m["access"], "mcp": m["mcp"], "buildability": m["buildability"], "auth": m["auth"], "api_types": m["api_types"], "blocker": m["blocker"] or "none",
+                  "sup_access": m["quoted"]["access"], "sup_build": m["quoted"]["access"] and m["quoted"]["auth"], "tier": "source_quoted"}
+        else:
+            continue
+        a["profile"] = pr
+        profiled.append({"id": a["id"], "name": a["name"], "category": a["category"], "access_label": a["access_label"] if a["primary_version"] else label(pr["access"]), **pr})
+    UNK = (None, "unknown", "undeterminable")
+    access_apps = [a for a in profiled if a["access"] not in UNK]
     access_counts = Counter(a["access"] for a in access_apps)
-    mcp_apps = [a for a in extracted if a["mcp"] not in (None, "unknown", "undeterminable")]
+    mcp_apps = [a for a in profiled if a["mcp"] not in UNK]
     mcp_counts = Counter(a["mcp"] for a in mcp_apps)
     gate_values = {"approval_or_review_required", "partner_or_contact_sales"}
     category_access = defaultdict(list)
@@ -159,29 +177,41 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
                           "rate": len(gated) / len(group) if group else None,
                           "ids": [a["id"] for a in gated]})
 
-    easy = [a for a in extracted if a["buildability"] == "yes" and a["access"] == "self_serve_free" and
-            bool(_evidence_support(a, "access")) and bool(_evidence_support(a, "buildability"))]
-    outreach = [a for a in extracted if a["access"] in gate_values and bool(_evidence_support(a, "access"))]
+    easy = [a for a in profiled if a["buildability"] == "yes" and a["access"] == "self_serve_free" and a["sup_access"] and a["sup_build"]]
+    outreach = [a for a in profiled if a["access"] in gate_values and a["sup_access"]]
+    auth_apps = [a for a in profiled if a["auth"]]
+    auth_counts = Counter(x for a in auth_apps for x in set(a["auth"]))
+    build_apps = [a for a in profiled if a["buildability"] not in UNK]
+    build_counts = Counter(a["buildability"] for a in build_apps)
+    blockers = Counter(a["blocker"] for a in profiled if a["blocker"] and a["blocker"] != "none")
     original_n = sum(a["provenance"] == "original_segment" for a in apps)
     reconstructed_n = sum(a["provenance"] == "reconstructed_segment" for a in apps)
 
     findings = []
     n, total = len(extracted), len(apps)
-    findings.append(_finding("Coverage", f"{n} of {total} registry positions have a current primary extraction.",
-                             "This measures completed records, not confirmed membership in the original assignment.",
-                             [a["id"] for a in extracted], f"{n}/{total}"))
+    n1, n2 = len(extracted), len([a for a in apps if not a["primary_version"] and (a.get("manual") or {}).get("profile")])
+    findings.append(_finding("Coverage", f"{n1 + n2} of {total} registry positions have research behind them: {n1} first-pass extractions and {n2} source-quoted records.",
+                             "All 100 positions are in the supplied assignment list. The two groups were checked differently; see Verification.",
+                             [a["id"] for a in profiled], f"{n1 + n2}/{total}"))
+    if auth_apps:
+        top = auth_counts.most_common(3)
+        findings.append(_finding("Authentication", "Most common methods across apps with a known method: " + "; ".join(f"{label(k)} {v} of {len(auth_apps)}" for k, v in top) + ".",
+                                 f"Apps often support several methods, so shares add to more than 100%. {total - len(auth_apps)} positions have no usable authentication finding.",
+                                 [a["id"] for a in auth_apps], f"{top[0][1]}/{len(auth_apps)}"))
     if states:
         supported = states.get("supported_lexical", 0); claims_n = sum(states.values())
-        findings.append(_finding("Evidence checks", f"{supported} of {claims_n} claim items have a matching quotation and source in the stored evidence.",
-                                 "This is a text and source check, not proof that the claim is factually correct.",
-                                 [a["id"] for a in extracted if any(c["state"] == "supported_lexical" for c in a["claims"])],
-                                 f"{supported}/{claims_n}"))
+        nm = [a for a in apps if not a["primary_version"] and (a.get("manual") or {}).get("claims")]
+        nc = [c for a in nm for c in a["manual"]["claims"]]; ns = sum(c["verdict"] == "supported_by_official_quote" for c in nc)
+        findings.append(_finding("Evidence checks", f"First-pass positions: {supported} of {claims_n} claim items have a matching quotation and source. Source-quoted positions: {ns} of {len(nc)} claims are directly supported by an official quotation.",
+                                 "Two different checks with their own denominators: a text and source check is not proof that a claim is factually correct, and neither is human verification.",
+                                 [a["id"] for a in extracted if any(c["state"] == "supported_lexical" for c in a["claims"])] + [a["id"] for a in nm],
+                                 f"{supported}/{claims_n} · {ns}/{len(nc)}"))
     else:
         findings.append(_finding("Evidence checks", "Not yet established", "No claim items are available to measure.", [], None, False))
     if access_counts:
         k, v = access_counts.most_common(1)[0]
-        findings.append(_finding("How access is described", f"The most common model-coded access label is “{label(k)}” ({v} of {len(access_apps)} classified apps).",
-                                 "Treat this as a research lead until a person checks the source and actual developer-access requirements.",
+        findings.append(_finding("How access is described", f"The most common access label is “{label(k)}” ({v} of {len(access_apps)} classified apps; {total - len(access_apps)} of {total} positions could not be classified).",
+                                 "First-pass labels that review found unsupported or conflicting are excluded. Treat this as a research lead until a person checks the source and actual developer-access requirements.",
                                  [a["id"] for a in access_apps if a["access"] == k], f"{v}/{len(access_apps)}"))
     else:
         findings.append(_finding("How access is described", "Not yet established", "No usable access classifications are present.", [], None, False))
@@ -199,10 +229,21 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
                                  f"{hi['gated']}/{hi['observed']} vs {lo['gated']}/{lo['observed']}"))
     else:
         findings.append(_finding("Category differences", "Not yet established", "Fewer than two categories have at least two classified apps.", [], None, False))
+    if mcp_apps:
+        o = mcp_counts.get("official", 0)
+        findings.append(_finding("AI-assistant (MCP) connection", f"An official MCP server was found for {o} of {len(mcp_apps)} apps with an MCP finding ({mcp_counts.get('community', 0)} community, {mcp_counts.get('none_found', 0)} none found in reviewed sources).",
+                                 f"{total - len(mcp_apps)} of {total} positions have no MCP finding. None found means not found in the reviewed sources, not that none exists.",
+                                 [a["id"] for a in mcp_apps if a["mcp"] == "official"], f"{o}/{len(mcp_apps)}"))
+    if build_apps:
+        y = build_counts.get("yes", 0); c = build_counts.get("yes_with_caveats", 0)
+        tb = blockers.most_common(1)
+        findings.append(_finding("Buildability and blockers", f"{y} of {len(build_apps)} apps with a verdict look buildable today and {c} more with caveats.",
+                                 "Verdicts are model judgements from the evidence. Blockers are mostly app-specific: approval or review, plan limits, per-tenant credentials, enterprise licences.",
+                                 [a["id"] for a in build_apps if a["buildability"] == "yes"], f"{y}/{len(build_apps)}"))
     human_n = int(human_labels.get("labelled_claims", 0))
     if human_n:
-        findings.append(_finding("Independent review", f"{human_n} claim labels are present in the human-evaluation sheets.",
-                                 "Accuracy reporting still depends on the frozen evaluation protocol and adjudication state.", [], str(human_n)))
+        findings.append(_finding("Independent review", f"{human_n} sampled claims have a human label; the rest of the findings are model-reviewed.",
+                                 "Too few labels for an accuracy rate; see Verification for hits and misses.", [], str(human_n)))
     else:
         findings.append(_finding("Independent review", "No human-labelled claims are present yet.",
                                  "No accuracy, precision or recall estimate is reported.", [], "0 labelled claims"))
@@ -237,9 +278,9 @@ def build_report_data(rows, registry, comparison, legacy_verification, human_lab
         "claims": sum(states.values()), "claim_states": dict(states),
         "evidence": len(quotes), "evidence_valid": quote_valid,
         "evidence_not_source_confirmed": sum(not e["source_confirmed"] for e in quotes),
-        "access": dict(access_counts), "access_observed": len(access_apps),
+        "positions_researched": len(profiled), "access": dict(access_counts), "access_observed": len(access_apps), "auth": dict(auth_counts), "auth_observed": len(auth_apps), "build_counts": dict(build_counts),
         "mcp": dict(mcp_counts), "mcp_observed": len(mcp_apps),
-        "buildability": dict(Counter(a["buildability"] for a in extracted if a["buildability"])),
+        "buildability": dict(build_counts),
         "category_access": cat_stats, "easy_wins": [a["id"] for a in easy],
         "outreach": [a["id"] for a in outreach], "category_counts": dict(Counter(a["category"] for a in apps)),
         "provenance_counts": {"original_segment": original_n, "reconstructed_segment": reconstructed_n},
